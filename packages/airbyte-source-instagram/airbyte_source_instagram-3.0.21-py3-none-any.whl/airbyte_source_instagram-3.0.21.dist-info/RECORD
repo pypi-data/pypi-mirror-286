@@ -1,0 +1,16 @@
+source_instagram/__init__.py,sha256=lxHpaDmWsQesJBRe5BfPeh0NRWjhzMoiwk68mlltEgo,67
+source_instagram/api.py,sha256=n7GqMCexO-TQLc3Mb8GrmqA3zm1OUmt27KNGwt7_6i8,4887
+source_instagram/common.py,sha256=-mgPmRMKy-xuTR6GFphJ7CfgT39EIe2cr57VlBlBnvs,3264
+source_instagram/components.py,sha256=MXCiezm3-ts01JfbISbFxyrCMxYb407J7s5XiAk1smE,9510
+source_instagram/manifest.yaml,sha256=F9KjzmqnRwBG8hIoqyJfq8sX0Xy-IXTNPTCln28tnWc,35507
+source_instagram/run.py,sha256=CeRHNC6RQXORfA3hyPYJVl8Lj0bMRjTC3ZdRXZtnTqA,239
+source_instagram/schemas/media_insights.json,sha256=uj74NdoU-Ae1h0GgcUYLsH2w82UA7rXiCZa9OSzVnJ8,2012
+source_instagram/schemas/story_insights.json,sha256=B7V7nwr8TgyhEg8qrhQq_IAL6ijYcZgKjRKoWYxEaO4,907
+source_instagram/schemas/user_insights.json,sha256=NanoFtJqVvWb-YlvAs83Kw5EbfION6s5wBr19DiozAk,2566
+source_instagram/source.py,sha256=1nXwpcnrHWU2Mc1CksMGa685QRUfWN3H1ccTDbfffA0,2465
+source_instagram/spec.json,sha256=UtKBjUCOqlyEzQmGeub5jOcN0MGrTXAiFW1xHXrs15k,2780
+source_instagram/streams.py,sha256=Li8QywOsveD-kbfXU1gEpua3e7LxrJeDD3G_k2xIEzc,10801
+airbyte_source_instagram-3.0.21.dist-info/METADATA,sha256=NzAw4J1p2lihj6EMWMMjRmNwTTp-Oxud-qNKBhEm--c,5362
+airbyte_source_instagram-3.0.21.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_instagram-3.0.21.dist-info/entry_points.txt,sha256=ACC0YR3W7fNmskJI9UnseS8774nr8s6_SrPwTMZhWBQ,61
+airbyte_source_instagram-3.0.21.dist-info/RECORD,,
