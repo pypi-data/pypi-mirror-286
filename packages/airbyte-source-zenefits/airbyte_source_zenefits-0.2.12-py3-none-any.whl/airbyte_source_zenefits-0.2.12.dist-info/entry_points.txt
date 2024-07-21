@@ -1,0 +1,3 @@
+[console_scripts]
+source-zenefits=source_zenefits.run:run
+
