@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "day-equity-fyers-historical"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+polars = "^1.2.1"
+fyers-apiv3 = "^3.1.2"
+python-dotenv = "^1.0.1"
+loguru = "^0.7.2"
+datetime = "^5.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
