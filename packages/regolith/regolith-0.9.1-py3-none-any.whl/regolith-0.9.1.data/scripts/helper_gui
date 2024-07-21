@@ -1,0 +1,4 @@
+#!python
+from regolith.helper_gui_main import main
+
+main()

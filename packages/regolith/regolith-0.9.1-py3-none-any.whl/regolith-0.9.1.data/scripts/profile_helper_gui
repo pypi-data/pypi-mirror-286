@@ -1,0 +1,4 @@
+#!python
+import cProfile
+
+cProfile.run("main()", sort="cumtime")
