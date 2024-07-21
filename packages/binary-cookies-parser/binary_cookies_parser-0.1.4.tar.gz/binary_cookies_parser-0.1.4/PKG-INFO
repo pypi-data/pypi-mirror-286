@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: binary-cookies-parser
+Version: 0.1.4
+Summary: Parses binary cookies from a given .binarycookies file
+Author: Daniel Tom
+Author-email: daniel.tom@xebia.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: pytest (>=8.2.2,<9.0.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Binary Cookies Reader
+
+This project provides a CLI tool to read and interpret binary cookie files.
+The project is based on the cookie reader written by Satishb3 
+
+## Requirements
+
+- Python 3.8 or higher
+
+## Installation
+```bash 
+pip install binary-cookies-parser
+```
+If you want to use the parser as CLI, it's recommended to use pipx to install the package in an isolated environment.
+
+## Usage
+After installation, you can use the command-line interface to read a binary cookies file:
+
+```bash
+bcparser <path_to_binary_cookies_file>
+```
+Replace <path_to_binary_cookies_file> with the path to the binary cookie file you want to read.
+
+Or use it in Python:
+
+```python
+from binary_cookies_parser.parser import read_binary_cookies_file
+
+cookies = read_binary_cookies_file("path/to/cookies.binarycookies")
+```
