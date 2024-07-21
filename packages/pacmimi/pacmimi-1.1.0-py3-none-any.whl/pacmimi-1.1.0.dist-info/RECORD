@@ -1,0 +1,10 @@
+pacmimi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pacmimi/app_version.py,sha256=CqDGE4B1ZqZ-56mxeOFcXRTmlxrdOh4ayrjbcPjziE4,411
+pacmimi/main.py,sha256=zQnN3ri4bNcy_7WCkIk-tvEjWIJbx6Zb3xLvfX0FGNc,7153
+pacmimi/mirrorlist.py,sha256=--noSL5pIOPkxDQdkpVOyNJrEQxSe7BJlcCLBPRVJ7Q,5474
+pacmimi-1.1.0.dist-info/LICENSE,sha256=hEEIyBVj-F90Y7vEWchtC7t9MT9_9zknTB_54pgA30Y,1488
+pacmimi-1.1.0.dist-info/METADATA,sha256=ldXYarnA6mh3H0TINFHjLCWPEdjf2PcWpLWB3f4ytwk,4415
+pacmimi-1.1.0.dist-info/WHEEL,sha256=rWxmBtp7hEUqVLOnTaDOPpR-cZpCDkzhhcBce-Zyd5k,91
+pacmimi-1.1.0.dist-info/entry_points.txt,sha256=zaa96dQlG0aY9tPxkdG6dao8aD9jYPDmm5bNW1LBu-4,46
+pacmimi-1.1.0.dist-info/top_level.txt,sha256=cwLevBwwZ7XLVWU8qcv8Nx-SRbB5p1NOeWq21gwvl_I,8
+pacmimi-1.1.0.dist-info/RECORD,,
