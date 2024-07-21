@@ -1,0 +1,90 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+.coverage*
+.vscode
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.eggs
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.orig
+.pytest_cache
+CHANGELOG.md
+CHANGELOG.rst
+junit-results.xml
+.github_changelog_generator/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+doc/_build/
+doc/auto_examples
+doc/auto_plotly_examples
+doc/auto_pyvista_examples
+doc/tutorials/
+doc/gen_modules/
+doc/sg_execution_times.rst
+
+# Test builds
+sphinx_gallery/tests/tinybuild/doc/gen_modules/
+sphinx_gallery/tests/tinybuild/doc/auto_*/
+sphinx_gallery/tests/tinybuild/doc/_build/
+sphinx_gallery/tests/tinybuild/doc/sg_execution_times.rst
+sphinx_gallery/tests/tinybuild/tiny_html/
+junit-results.xml
+
+# PyBuilder
+target/
+
+# General temporary files to ignore
+*.swp
+*.swo
+
+# VisualStudioCode
+.history
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# Default JupyterLite content
+jupyterlite_contents
