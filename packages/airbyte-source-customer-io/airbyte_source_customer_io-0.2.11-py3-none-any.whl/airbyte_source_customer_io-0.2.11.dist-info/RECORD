@@ -1,0 +1,9 @@
+main.py,sha256=86FiZNRrxa85fMKQSY0HzQDN-n66mwwErUFImzeqEpM,139
+source_customer_io/__init__.py,sha256=ei-QjIbnDSxlz77USqqevJbSWKPqHqZf2xCQqjdIinQ,132
+source_customer_io/manifest.yaml,sha256=dQN0FWQXscX8_ULhESeFmC2fyVRQWAG-tEw-mEGJn5o,8317
+source_customer_io/run.py,sha256=cs-TMmCWzfkqBgeWMuBe86ZM_ZXh5PR64bfWT9_unNA,233
+source_customer_io/source.py,sha256=Ui_t6N_FvqrCd1zs-90gSfI7Qkkhr_lHg9UwLoKNzu0,479
+airbyte_source_customer_io-0.2.11.dist-info/METADATA,sha256=mVGDDJDORbygaftuGmL6nqjHkg9FXE_GJ5VrX3k0O2w,5968
+airbyte_source_customer_io-0.2.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_customer_io-0.2.11.dist-info/entry_points.txt,sha256=VRaH0IjTQAZBph5IAa2A4HCQv8xjPXCvcVkzoQGLXpg,65
+airbyte_source_customer_io-0.2.11.dist-info/RECORD,,
