@@ -1,0 +1,3 @@
+[console_scripts]
+movs-validator = movsvalidator:main
+
