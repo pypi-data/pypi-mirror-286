@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sugar_spider_serpapi
+Version: 0.0.1
+Author: Woojin Cho
+Author-email: w.cho@cj.net
+License: CJCJ Internal Only
+Requires-Python: >=3.9
+Requires-Dist: aiohttp
+Requires-Dist: aiolimiter
+Requires-Dist: click
+Requires-Dist: google-search-results
+Requires-Dist: pendulum
+Requires-Dist: redis[hiredis]
+

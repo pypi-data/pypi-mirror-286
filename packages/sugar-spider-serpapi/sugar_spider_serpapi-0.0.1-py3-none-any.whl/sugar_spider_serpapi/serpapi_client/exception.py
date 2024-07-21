@@ -1,0 +1,2 @@
+class SerpApiError(Exception):
+    pass
