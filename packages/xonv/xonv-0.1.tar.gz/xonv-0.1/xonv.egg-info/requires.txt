@@ -1,0 +1,12 @@
+matplotlib
+numpy
+tqdm
+h5py
+gitpython
+mpire
+torch
+seaborn
+
+[pytorch]
+torch
+torch-cuda==12.1
