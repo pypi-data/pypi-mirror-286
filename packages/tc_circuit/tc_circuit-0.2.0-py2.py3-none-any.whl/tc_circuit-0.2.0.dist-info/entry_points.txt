@@ -1,0 +1,6 @@
+[console_scripts]
+tc-to-json=tc_circuit.to_json:main
+
+[gui_scripts]
+tc-viewer=tc_circuit.pygame_viewer:main
+
