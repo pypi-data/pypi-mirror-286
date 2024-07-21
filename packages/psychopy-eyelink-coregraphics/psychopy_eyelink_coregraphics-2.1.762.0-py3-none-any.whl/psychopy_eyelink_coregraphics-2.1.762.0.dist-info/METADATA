@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: psychopy-eyelink-coregraphics
+Version: 2.1.762.0
+Summary: Implementation of the EyeLink core graphics set of handlers for PsychoPy.
+Author-email: Marcus Johnson <marcus@sr-research.com>, Jono Batten <jono@sr-research.com>, Brian Richardson <brian@sr-research.com>, SR Research Support <support@sr-research.com>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: homepage, https://www.sr-research.com
+Project-URL: documentation, https://www.sr-research.com/support
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sr-research-pylink
+
+# psychopy-eyelink-coregraphics
+
+This package from [SR Research Ltd.](https://www.sr-research.com/) provides an implementation of the EyeLink Core Graphics library's callback-handling using [PsychoPy](https://psychopy.org/) libraries.
+
+For PsychoPy users who are interested in manually scripting psychophysical experimental paradigms that integrate eye-tracking methodology using EyeLink devices from [SR Research Ltd.](https://www.sr-research.com), this package provides the interface between the core API integration (c.f. [sr-research-pylink](https://pypi.org/project/sr-research-pylink/), a dependency package of psychopy-eyelink-coregraphics)) and the graphics interface provided by the psychopy.visual class. This psychopy-eyelink-coregraphics package is also a dependency of the [EyeLink plugin for PsychoPy Builder](https://pypi.org/project/psychopy-eyelink/) from [SR Research Ltd.](https://www.sr-research.com/), which may be preferred by PsychoPy/EyeLink users who prefer the PsychoPy Builder interface rather than scripting their projects in PsychoPy Coder or other IDEs.
+
+Please visit the [SR Research Support Forums](https://www.sr-research.com/support) for more information, educational material and Q&A.
