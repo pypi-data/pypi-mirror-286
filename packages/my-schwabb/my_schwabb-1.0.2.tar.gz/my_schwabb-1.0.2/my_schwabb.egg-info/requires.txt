@@ -1,0 +1,14 @@
+aiohttp
+requests
+orjson
+pysynchronizer
+websockets
+
+[mysql]
+pymysql
+
+[redis]
+redis
+
+[websocket]
+websockets
