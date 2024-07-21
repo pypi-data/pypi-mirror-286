@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-zebedee-sdk"
+version = "0.0.1"
+description = ""
+authors = ["DesKaOne <37358597+DesKaOne@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "3.9.5"
+pydantic = "2.7.4"
+pydantic-settings = "2.3.3"
+pydantic-core = "2.18.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

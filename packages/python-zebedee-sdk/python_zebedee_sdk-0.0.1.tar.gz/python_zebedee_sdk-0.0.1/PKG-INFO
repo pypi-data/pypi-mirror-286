@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: python-zebedee-sdk
+Version: 0.0.1
+Summary: 
+Author: DesKaOne
+Author-email: 37358597+DesKaOne@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (==3.9.5)
+Requires-Dist: pydantic (==2.7.4)
+Requires-Dist: pydantic-core (==2.18.4)
+Requires-Dist: pydantic-settings (==2.3.3)
+Description-Content-Type: text/markdown
+
+
