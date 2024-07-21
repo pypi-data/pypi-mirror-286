@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+chemtensor/__init__.py
+chemtensor.egg-info/PKG-INFO
+chemtensor.egg-info/SOURCES.txt
+chemtensor.egg-info/dependency_links.txt
+chemtensor.egg-info/requires.txt
+chemtensor.egg-info/top_level.txt

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: chemtensor
+Version: 0.0.1
+Summary: Python interface to ChemTensor: tensor network algorithms for chemical systems
+Home-page: https://github.com/qc-tum/chemtensor
+Author: Christian B. Mendl
+Author-email: "Christian B. Mendl" <christian.b.mendl@gmail.com>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/qc-tum/chemtensor
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+
+ChemTensor
+==========
+
+Tensor network algorithms for chemical systems.
+
+This package is currently a placeholder and will provide a Python interface to `chemtensor <https://github.com/qc-tum/chemtensor>`_.

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chemtensor"
+version = "0.0.1"
+description = "Python interface to ChemTensor: tensor network algorithms for chemical systems"
+readme = "README.rst"
+authors = [{ name = "Christian B. Mendl", email = "christian.b.mendl@gmail.com" }]
+license = { text = "Apache-2.0" }
+requires-python = ">=3.7"
+dependencies = [
+    "numpy",
+]
+
+[project.urls]
+Homepage = "https://github.com/qc-tum/chemtensor"
