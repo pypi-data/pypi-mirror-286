@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: my_node_selector
+Version: 1.0.0
+Summary: A node selector application
+Author: karthick kumar
+Author-email: karthick.kumar@gdn-commerce.com
+Description-Content-Type: text/markdown
+Requires-Dist: tkinter
+Requires-Dist: Pillow
+Requires-Dist: requests
+
+# My Node Selector
+
+A node selector application built with Python and Tkinter.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install my_node_selector
