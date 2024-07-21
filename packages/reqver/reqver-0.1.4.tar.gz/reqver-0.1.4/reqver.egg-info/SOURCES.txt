@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+reqver/__init__.py
+reqver/cli.py
+reqver.egg-info/PKG-INFO
+reqver.egg-info/SOURCES.txt
+reqver.egg-info/dependency_links.txt
+reqver.egg-info/entry_points.txt
+reqver.egg-info/requires.txt
+reqver.egg-info/top_level.txt
+tests/__init__.py
+tests/test_reqver.py
+tests/testdata/requirements.txt
