@@ -1,0 +1,16 @@
+shieldapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shieldapi/keycloak_utils.py,sha256=I1Oz_m8DgQ5xGRCo85Q6lw7Z_kt36z6PFMfGPAGcKeI,14525
+shieldapi/frameworks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shieldapi/frameworks/fastapi.py,sha256=acAhAGkaN37fTUn2b4KPHvFcRFmTA8v2vnIEH_wskRY,5485
+shieldapi/frameworks/flask.py,sha256=tqwRDHMLeaVzZR_qvjV6cSkxBWcZKC_GLqS1CoHYkR4,3854
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=NcBejTTe_hC2tlxTpCWRCJErHwucYII_0ml43H1HXg4,518
+tests/mock.py,sha256=NZ7KUj5f7mZTpx_Re3fUmRIJ_A6XDwdMygwhBxQXqp8,2369
+tests/test_fastapi.py,sha256=q6FrEKf1N9qd5ulNeHxnU0zO_sWD3tNZc16OFgZd1Ps,3178
+tests/test_flask.py,sha256=8PfHATUvx2tePeYL6mHheWZ90TAv2obu2dGQ_B6KRG8,789
+tests/test_keycloak_utils.py,sha256=mKlRuNvdK-s0iLShh0exW_RRmt5y4ElHWTG081ftxnE,4707
+shieldapi-1.2.0.dist-info/LICENSE,sha256=Mb4AMpANQymZqBk8jkFQLzXAfjDbYPTxBdvdUkUjJ2I,1491
+shieldapi-1.2.0.dist-info/METADATA,sha256=LXvdwf3CCV8I4iK6OWYiGa5bGdzjahg0sqTNBjN8y0Q,19386
+shieldapi-1.2.0.dist-info/WHEEL,sha256=rWxmBtp7hEUqVLOnTaDOPpR-cZpCDkzhhcBce-Zyd5k,91
+shieldapi-1.2.0.dist-info/top_level.txt,sha256=3Ohn103e0r89q0KbiIN8rVmvDGJnrWr-2Cyg8Cv626I,16
+shieldapi-1.2.0.dist-info/RECORD,,
