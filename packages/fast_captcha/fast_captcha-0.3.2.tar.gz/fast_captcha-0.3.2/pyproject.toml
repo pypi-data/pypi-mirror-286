@@ -1,0 +1,71 @@
+[project]
+name = "fast_captcha"
+description = "Fast to use captcha"
+dynamic = []
+authors = [
+    { name = "Wu Clan", email = "jianhengwu0407@gmail.com" },
+]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.8,<4.0"
+dependencies = [
+    "Pillow>=10.0.0",
+]
+version = "0.3.2"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/wu-clan/fast_captcha"
+repository = "https://github.com/wu-clan/fast_captcha"
+
+[tool.pdm.version]
+source = "file"
+path = "fast_captcha/__init__.py"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest<8.0.0,>=7.0.0",
+]
+lint = [
+    "pre-commit>=3.0.0",
+    "ruff>=0.5.0",
+]
+
+[tool.pdm.scripts]
+lint = "pre-commit run --all-files"
+
+[tool.ruff]
+line-length = 120
+cache-dir = "./.ruff_cache"
+
+[tool.ruff.lint]
+extend-select = [
+    "I",
+]
+
+[tool.ruff.lint.isort]
+lines-between-types = 1
+order-by-type = true
+
+[tool.ruff.format]
+quote-style = "single"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
