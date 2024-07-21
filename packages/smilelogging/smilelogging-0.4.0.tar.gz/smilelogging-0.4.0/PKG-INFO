@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: smilelogging
+Version: 0.4.0
+Summary: Python logging package for easy reproducible experimenting in research.
+Home-page: https://github.com/MingSun-Tse/smilelogging
+Download-URL: https://github.com/MingSun-Tse/smilelogging/archive/refs/tags/v0.4.0.tar.gz
+Author: Huan Wang
+Author-email: wang.huan@northeastern.edu
+License: MIT
+Keywords: logging,reproducible experimenting
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: Pillow
+Requires-Dist: PyYAML
+Requires-Dist: lmdb
+Requires-Dist: configargparse
+Requires-Dist: pytz
+Requires-Dist: pynvml
+Requires-Dist: colorama
+Requires-Dist: torchsummaryX
