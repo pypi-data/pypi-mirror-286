@@ -1,0 +1,14 @@
+movslib-0.0.0.dist-info/METADATA,sha256=qBuOUtgP_-8x6rpVUVScJ12Bj7iaX-59Os7uBpzzG4M,472
+movslib-0.0.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+movslib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+movslib/estrattoconto/__init__.py,sha256=_U2pqSZmrhkLYXqpJ-fTyOaTRIbTt5WElvEGRVKbL2Q,4965
+movslib/estrattoconto/template_1.json,sha256=N5wQRW0y-sb2Np5dETy_EKejYnlFEjw81XUnt5dwUHg,1250
+movslib/estrattoconto/template_2.json,sha256=B-kMKB9cFxNbz3p2pd17A8s25Qi1KFLPm_nT8iH1mwg,1394
+movslib/estrattoconto/template_3.json,sha256=fjq5h0ut3pfO3ZkVw1eYkXi7rpoize5G1JZuR9wy6_0,1538
+movslib/iterhelper.py,sha256=FS10g9GBH5wwaUmbTwVa0BFx8lw0UUOoAUw8lnu77G0,336
+movslib/model.py,sha256=fjTWLV2Zp4bsK1yelyFh3wj2OezKmBXicBWDy2V5Rw8,1092
+movslib/movs.py,sha256=6Y6CkJ53Rz7wOl6Uf9apKtiWbKDxLO1OBYE2FfwvtIQ,4972
+movslib/postepay.py,sha256=T2J6k3PGD0vNyuzhy2fAaJIfYYezyM0PBmHm_mMXvbU,3237
+movslib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+movslib/scansioni.py,sha256=anZcelEjCSF0Je8nfVE-52Zopo3vIvx7MPpOi3kY5xY,1436
+movslib-0.0.0.dist-info/RECORD,,
