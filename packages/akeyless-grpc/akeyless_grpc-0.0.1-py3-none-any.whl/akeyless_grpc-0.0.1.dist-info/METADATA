@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: akeyless-grpc
+Version: 0.0.1
+Summary: Akeyless gRPC SDK for Python
+Author: Akeyless Security
+Author-email: refael@akeyless.io
+Maintainer: Akeyless Security
+License: Apache License 2.0
+Keywords: Akeyless,akeyless sdk,encryption
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Description-Content-Type: text/plain
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+
+Akeyless gRPC client
