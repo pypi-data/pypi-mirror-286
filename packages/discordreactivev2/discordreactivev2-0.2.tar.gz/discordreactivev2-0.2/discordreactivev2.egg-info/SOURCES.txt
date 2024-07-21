@@ -1,0 +1,7 @@
+setup.py
+discordreactivev2/__init__.py
+discordreactivev2/utils.py
+discordreactivev2.egg-info/PKG-INFO
+discordreactivev2.egg-info/SOURCES.txt
+discordreactivev2.egg-info/dependency_links.txt
+discordreactivev2.egg-info/top_level.txt
