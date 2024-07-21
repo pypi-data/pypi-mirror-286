@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: philbot-voice
+Version: 2.12.0
+Summary: 
+Author: philipp.lengauer
+Author-email: p.lengauer@gmail.com
+Requires-Python: ==3.12.4
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Flask (==3.0.3)
+Requires-Dist: PyNaCl (==1.5.0)
+Requires-Dist: PyOgg (==0.6.14a1)
+Requires-Dist: opentelemetry-exporter-otlp-proto-http (==1.25.0)
+Requires-Dist: opentelemetry-instrumentation (==0.45b0)
+Requires-Dist: opentelemetry-instrumentation-flask (==0.45b0)
+Requires-Dist: opentelemetry-instrumentation-requests (==0.45b0)
+Requires-Dist: opentelemetry-instrumentation-system-metrics (==0.45b0)
+Requires-Dist: opentelemetry-instrumentation-urllib (==0.45b0)
+Requires-Dist: opentelemetry-instrumentation-urllib3 (==0.45b0)
+Requires-Dist: opentelemetry-resourcedetector-docker (==0.4.0)
+Requires-Dist: opentelemetry-resourcedetector-kubernetes (==0.3.0)
+Requires-Dist: opentelemetry-resourcedetector-process (==0.3.0)
+Requires-Dist: opentelemetry-sdk (==1.25.0)
+Requires-Dist: websocket-client (==1.8.0)
+Requires-Dist: yt_dlp (==2024.7.16)
