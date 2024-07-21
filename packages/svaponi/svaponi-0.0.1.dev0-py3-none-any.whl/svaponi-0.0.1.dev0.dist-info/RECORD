@@ -1,0 +1,6 @@
+src/hello/__init__.py,sha256=M4zJ1JGnJFpHwphyZ1DzBJDfBXZ7LEyBNystb548FD8,29
+src/hello/greeter.py,sha256=5pcRMbB8DiB7jhwbE2Xj0h0CDm6xE2tvp_DQ7ksyx94,59
+svaponi-0.0.1.dev0.dist-info/LICENSE,sha256=J8EB_BgwVr7Zvg8-BqQD39CqgjMJDYWBo2QcgkNDBYE,1070
+svaponi-0.0.1.dev0.dist-info/METADATA,sha256=lFDVc3btLqJQh6we_t4ODLqFAH1mYj3qiHLTkVVtFhU,1287
+svaponi-0.0.1.dev0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+svaponi-0.0.1.dev0.dist-info/RECORD,,

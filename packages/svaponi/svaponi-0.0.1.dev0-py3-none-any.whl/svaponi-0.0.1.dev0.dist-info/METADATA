@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: svaponi
+Version: 0.0.1.dev0
+Summary: Boilerplate repository to kickstart 🚀 your [PyPi](https://pypi.org/) package project.
+Home-page: https://svaponi.github.io/hello-pypi
+License: MIT
+Author: svaponi
+Author-email: 10941963+svaponi@users.noreply.github.com
+Requires-Python: >=3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/svaponi/hello-pypi
+Description-Content-Type: text/markdown
+
+# Hello PyPi
+
+[![Test](https://github.com/svaponi/hello-pypi/actions/workflows/run-tests.yml/badge.svg)](https://github.com/svaponi/hello-pypi/actions/workflows/run-tests.yml)
+[![Coverage Status](https://coveralls.io/repos/github/svaponi/hello-pypi/badge.svg?branch=main)](https://coveralls.io/github/svaponi/hello-pypi?branch=main)
+[![PyPI version](https://badge.fury.io/py/hello-pypi.svg)](https://badge.fury.io/py/hello-pypi)
+
+## Usage
+
+See [USAGE.md](/USAGE.md).
+
+## Contributing
+
+See [CONTRIBUTING.md](/CONTRIBUTING.md).
+
