@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+smiles_autoencoder/__init__.py
+smiles_autoencoder/encoding.py
+smiles_autoencoder/model.py
+smiles_autoencoder.egg-info/PKG-INFO
+smiles_autoencoder.egg-info/SOURCES.txt
+smiles_autoencoder.egg-info/dependency_links.txt
+smiles_autoencoder.egg-info/requires.txt
+smiles_autoencoder.egg-info/top_level.txt
