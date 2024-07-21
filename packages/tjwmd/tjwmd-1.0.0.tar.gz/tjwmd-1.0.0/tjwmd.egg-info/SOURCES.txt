@@ -1,0 +1,9 @@
+README.md
+setup.py
+tjwmd/__init__.py
+tjwmd/tjwmd.py
+tjwmd.egg-info/PKG-INFO
+tjwmd.egg-info/SOURCES.txt
+tjwmd.egg-info/dependency_links.txt
+tjwmd.egg-info/requires.txt
+tjwmd.egg-info/top_level.txt
