@@ -1,0 +1,16 @@
+alembic
+argon2-cffi
+cryptography
+Flask
+Flask-Alembic
+flask-babel
+flask-login
+flask-sqlalchemy
+flask-wtf
+loguru
+pg8000
+PyMySQL
+python-ulid
+teritorio
+waitress
+wtforms
