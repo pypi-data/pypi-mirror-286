@@ -1,0 +1,86 @@
+Metadata-Version: 2.3
+Name: inferno-ai
+Version: 0.0.1
+Summary: An Extensible Spiking Neural Network Library
+Project-URL: Homepage, https://github.com/mdominijanni/inferno
+Project-URL: Documentation, https://inferno-ai.dev
+Author-email: Marissa Dominijanni <mdomini@buffalo.edu>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023-2024, Marissa Dominijanni
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Requires-Dist: einops~=0.7
+Requires-Dist: numpy~=1.26
+Provides-Extra: torch
+Requires-Dist: torch==2.3.1; (sys_platform == 'darwin') and extra == 'torch'
+Requires-Dist: torch==2.3.1; (sys_platform == 'linux') and extra == 'torch'
+Requires-Dist: torch==2.3.1; (sys_platform == 'win32') and extra == 'torch'
+Requires-Dist: torchvision==0.18.1; (sys_platform == 'darwin') and extra == 'torch'
+Requires-Dist: torchvision==0.18.1; (sys_platform == 'linux') and extra == 'torch'
+Requires-Dist: torchvision==0.18.1; (sys_platform == 'win32') and extra == 'torch'
+Description-Content-Type: text/markdown
+
+![Inferno Header](./misc/assets/inferno-header-github.png)
+
+## About
+Inferno is an extensible library for simulating spiking neural networks. It is built on top of [PyTorch](https://github.com/pytorch/pytorch) and is designed with machine learning practitioners in mind. This project is still an early release and features may be subject to change.
+
+## Installation
+### With PyTorch 2.2.2 (CPU Only)
+#### Pip
+```
+pip install inferno[torch]
+```
+
+### Without PyTorch
+#### Pip
+```
+pip install inferno
+```
+*Note: Inferno is still dependent upon PyTorch and a version of PyTorch must be installed.*
+
+### With PyTorch 2.2.2 and CUDA 12 (Linux and Windows Only)
+#### Pip
+```
+pip install inferno
+pip install torch==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cu121
+```
+
+### With PyTorch 2.2.2 and CUDA 11 (Linux and Windows Only)
+#### Pip
+```
+pip install inferno
+pip install torch==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cu118
+```
