@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+dynamic = ["readme", "version"]
+name = "match-diff-lines"
+license = {file = "LICENSE"}
+maintainers = [
+    {name = "Florian Schulze", email = "mail@florian-schulze.net"}
+]
+requires-python = ">=3.9"
+
+
+[tool.ruff]
+target-version = "py39"
+
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN", # annotations
+    "D", # docstrings
+    "E501", # line too long
+]
+
+
+[tool.ruff.lint.isort]
+case-sensitive = true
+force-single-line = true
+from-first = true
+lines-after-imports = 2
+no-sections = true
+order-by-type = false
+
+
+[tool.ruff.lint.per-file-ignores]
+"test_*.py" = [
+    "S101", # ignore - assert keyword
+]
+
+
+[tool.setuptools]
+py-modules = [
+    "match_diff_lines"
+]
+
+
+[tool.setuptools.dynamic]
+version = {attr = "match_diff_lines.__version__"}
+readme = {file = ["README.rst", "CHANGELOG.rst"]}

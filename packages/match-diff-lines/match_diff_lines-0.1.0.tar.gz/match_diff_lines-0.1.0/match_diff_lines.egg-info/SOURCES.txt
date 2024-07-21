@@ -1,0 +1,9 @@
+CHANGELOG.rst
+LICENSE
+README.rst
+match_diff_lines.py
+pyproject.toml
+match_diff_lines.egg-info/PKG-INFO
+match_diff_lines.egg-info/SOURCES.txt
+match_diff_lines.egg-info/dependency_links.txt
+match_diff_lines.egg-info/top_level.txt
