@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pynasa
+Version: 1.0.0
+Summary: Python library and command-line utility for the NASA API (https://api.nasa.gov/)
+Home-page: https://github.com/techatlasdev/pynasa
+Author: Giovanny Jimenez
+Author-email: gjimenezdeza@gmail.com
+Keywords: NASA,API,space,astronomy,science,data,python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Description-Content-Type: text/x-rst
+Requires-Dist: requests
+
+# PyNASA
