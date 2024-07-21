@@ -1,0 +1,6 @@
+networkx<4.0,>=3.3
+requests<3.0,>=2.26.0
+tqdm<5.0,>=4.62.3
+pandas<3.0,>=2.2.2
+numpy<2.0,>=1.26.4
+filehash<0.3,>=0.2.dev1
