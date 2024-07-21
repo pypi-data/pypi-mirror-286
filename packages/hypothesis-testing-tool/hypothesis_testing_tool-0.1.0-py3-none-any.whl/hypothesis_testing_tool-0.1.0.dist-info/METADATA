@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hypothesis-testing-tool
+Version: 0.1.0
+Summary: A tool for doing hypothesis testing
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: scipy (>=1.14.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Description
+
+A package to run hypothesis testing
+
