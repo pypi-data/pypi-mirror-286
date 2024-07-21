@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dockrich
+Version: 0.0.2
+Summary: A tool to pretty print Docker command outputs
+Home-page: https://github.com/yourusername/dockrich
+Author: Prasaanth Sakthivel
+Author-email: prasaanth@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+
+```text
+A tool to pretty print Docker command outputs
+```
+
+```bash
+
+$ dockrich -h or dockrich --help
+
+```
+
+![usage](/images/img1.png)
