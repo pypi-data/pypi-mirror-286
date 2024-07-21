@@ -1,0 +1,14 @@
+README.rst
+setup.py
+ModelCompresLight/Compression/__init__.py
+ModelCompresLight/Compression/PyTorch/__init__.py
+ModelCompresLight/Compression/tensorflow_v2/__init__.py
+ModelCompresLight/MakGraph/__init__.py
+ModelCompresLight/McUtils/__init__.py
+ModelCompresLight/ModelCompresLight.egg-info/PKG-INFO
+ModelCompresLight/ModelCompresLight.egg-info/SOURCES.txt
+ModelCompresLight/ModelCompresLight.egg-info/dependency_links.txt
+ModelCompresLight/ModelCompresLight.egg-info/requires.txt
+ModelCompresLight/ModelCompresLight.egg-info/top_level.txt
+ModelCompresLight/config/__init__.py
+ModelCompresLight/test/__init__.py
