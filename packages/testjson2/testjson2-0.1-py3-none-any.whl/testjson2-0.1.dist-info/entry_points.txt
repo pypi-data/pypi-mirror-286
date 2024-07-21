@@ -1,0 +1,3 @@
+[console_scripts]
+run_my_script = my_script:main
+
