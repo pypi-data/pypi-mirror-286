@@ -1,0 +1,12 @@
+LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+README.md,sha256=qLuaGjJORJFGZ2gWEB0FKKUY9nb8Gx9Cnk6AydImiUg,5039
+py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcnnm/.DS_Store,sha256=Ja0F3KU-Qaff22IrrDiuRzE46kjH4dXhtKv7hdig_ZA,6148
+mcnnm/__init__.py,sha256=LaNnpTVc3CeZRcMJrqbQV_yfu3XS3JksDI1NNJh8BAY,141
+mcnnm/estimate.py,sha256=j4tVg3haAUWGPDd7a2ZJN0FkBKW3UbAjOLvxzi2iwAc,28637
+mcnnm/types.py,sha256=_6NLfHSKHm3CGx4tKtfjcVQjSdC8PCVXGW_DVfiJK9c,150
+mcnnm/util.py,sha256=0Ig6O3IfMU6DiB7c0cTdjiQJw4Xk6CJo8f6G4RgjgVY,12641
+lightweight_mcnnm-0.1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+lightweight_mcnnm-0.1.0.dist-info/METADATA,sha256=252rQGuqctCRVcBhAieVEBagg63rTKyV3AIK6HmB6LM,6054
+lightweight_mcnnm-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lightweight_mcnnm-0.1.0.dist-info/RECORD,,
