@@ -1,0 +1,13 @@
+brain_games/.flake8,sha256=aXd8eOlDt45WfCeySb_AX9cQQd5Y6qvOLfzRde3NSCw,102
+brain_games/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brain_games/cli.py,sha256=7aZMig_pOMflfQ2BEFrHHdoh2-Hcp_BuYWbq7vyyYY8,167
+brain_games/pyproject.toml,sha256=8WLPVNZZpQ6ydVTfwhB0SXkeoI8zJ6_FPi9uOeOPibA,416
+brain_games/README.md,sha256=PhKAb0GXEBnbVLjXxpDNHV4s3s6kWx36teNpDj9qydY,187
+brain_games/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brain_games/scripts/brain_even.py,sha256=bVx8jv9oSR560R7gSJtPgf3jpFeSxfRmNxBVVdO61Vg,1113
+brain_games/scripts/brain_games.py,sha256=RdOnshAVP3rAMP1Z0vrPJTQB3nDlYmwiGuO4c2jF8tc,190
+brain_games/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lysenkov_code-0.1.0.dist-info/entry_points.txt,sha256=iSaLuFH5GP2fC-f5p-Gjs0pMDpFfWYhYgN3NpLbFefw,68
+lysenkov_code-0.1.0.dist-info/METADATA,sha256=dU5ZTo4ol05h99WWJNom1qqUeV08cWy862qlI3Hp5B8,445
+lysenkov_code-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lysenkov_code-0.1.0.dist-info/RECORD,,
