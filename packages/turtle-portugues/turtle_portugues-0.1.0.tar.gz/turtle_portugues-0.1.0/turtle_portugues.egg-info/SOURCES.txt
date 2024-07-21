@@ -1,0 +1,7 @@
+LICENCE
+README.md
+setup.py
+turtle_portugues.egg-info/PKG-INFO
+turtle_portugues.egg-info/SOURCES.txt
+turtle_portugues.egg-info/dependency_links.txt
+turtle_portugues.egg-info/top_level.txt
