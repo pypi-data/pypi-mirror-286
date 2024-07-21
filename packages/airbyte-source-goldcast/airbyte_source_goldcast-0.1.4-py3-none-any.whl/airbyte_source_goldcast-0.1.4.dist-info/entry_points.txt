@@ -1,0 +1,3 @@
+[console_scripts]
+source-goldcast=source_goldcast.run:run
+

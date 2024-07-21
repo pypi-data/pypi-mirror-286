@@ -1,0 +1,10 @@
+main.py,sha256=v1hjkgm52lG0R7yjBfCfiCMOlCKNaX5uCiVSj9PUjWw,251
+source_goldcast/__init__.py,sha256=e8wZY_M1tzkj8EqaUEGDDyE12l8Mt_ark8kY6CPDq9o,128
+source_goldcast/manifest.yaml,sha256=jCP8jwrVrrRVOn84_3n_Wzp_3ltLv3hniTIgTntodNE,35520
+source_goldcast/run.py,sha256=cl1R8d_bQpEeNuftlGuTCaWnpsXcBr13UD95KgVAiok,229
+source_goldcast/schemas/event_agenda.json,sha256=omRYtpO9ogE4HiVd9ccfRo2m8FCzDbb11A6JUqMRW4c,8725
+source_goldcast/source.py,sha256=FeSBpfbUS45Hrc4H7BaVblTjo8aGHMGakRM16phq3L0,477
+airbyte_source_goldcast-0.1.4.dist-info/METADATA,sha256=2SbPzibQgrnTIvid32mbaOcNvKtkVP5He8HA1JBsHk0,5714
+airbyte_source_goldcast-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_goldcast-0.1.4.dist-info/entry_points.txt,sha256=Y9gLOpAJwePiD7I__NeqL3bbkvUce8hWePDIRib4Ttg,59
+airbyte_source_goldcast-0.1.4.dist-info/RECORD,,
