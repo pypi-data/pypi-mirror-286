@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyesapi
+Version: 0.2.4
+Summary: A customized Python interface to Eclipse Scripting API
+Home-page: https://github.com/VarianAPIs/PyESAPI
+Author: Michael M. Folkerts
+Author-email: Michael.Folkerts@varian.com
+License: MIT
+Requires-Python: >=3.7, <4
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pythonnet
+Requires-Dist: pynetdicom
+
+Leverages the pythonnet project to interface with dotnet CLI to launch a stand-alone instance of ESAPI runtime. Helper functions and classes have been added to return numpy arrays and manage collections (of IEnumerable).
