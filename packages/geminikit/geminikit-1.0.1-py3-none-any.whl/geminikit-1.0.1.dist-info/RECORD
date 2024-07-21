@@ -1,0 +1,9 @@
+geminikit/__init__.py,sha256=5hJaqgnA9vGgcWlanFcnokMgxozcDxmHM-8FJ60nYu0,96
+geminikit/asynic_gemini.py,sha256=xR7rKZpMx4W33fZStYk7cvA6lp7t1IuyAq-SQ_ck93Q,11393
+geminikit/gemini.py,sha256=1cH-ofRlVom3ygpa2i8psd1omr68jNpkEKoYKEKgLsI,11546
+geminikit/headers.py,sha256=f34s116JdgKTmeBpySpjmoOWgEDGBIv4GZVsZeDSBE4,3281
+geminikit/helpers.py,sha256=ZOmHav27jggjjMJZqZCf5jt93AZc06utWgXljxaKUWI,247
+geminikit-1.0.1.dist-info/METADATA,sha256=UoIcLkHmj2wLAQhA-RvoXmVxscrrg333_VGj0wunADw,988
+geminikit-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+geminikit-1.0.1.dist-info/top_level.txt,sha256=n01sefum8d6uMCLHmWP8GgCjJ1vJ73RnEhhDmF5S15k,10
+geminikit-1.0.1.dist-info/RECORD,,
