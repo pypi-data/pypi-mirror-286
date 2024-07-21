@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: movslib
+Version: 0.0.0
+Project-URL: Homepage, https://github.com/ZeeD/movslib
+Project-URL: Repository, https://github.com/ZeeD/movslib.git
+Requires-Python: ==3.12.*
+Requires-Dist: pypdf>=4.2.0
+Requires-Dist: tabula-py[jpype]>=2.9.3
+Requires-Dist: mypy>=1.10.1; extra == "dev"
+Requires-Dist: ruff>=0.5.0; extra == "dev"
+Requires-Dist: coverage>=7.5.4; extra == "dev"
+Requires-Dist: pandas-stubs>=2.2.2.240603; extra == "dev"
+Provides-Extra: dev
