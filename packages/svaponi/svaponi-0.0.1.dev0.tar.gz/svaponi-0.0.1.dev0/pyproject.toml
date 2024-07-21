@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "svaponi"
+version = "0.0.1.dev"
+description = "Boilerplate repository to kickstart 🚀 your [PyPi](https://pypi.org/) package project."
+authors = ["svaponi <10941963+svaponi@users.noreply.github.com>"]
+packages = [{ include = "src/hello" }]
+readme = "README.md"
+homepage = "https://svaponi.github.io/hello-pypi"
+repository = "https://github.com/svaponi/hello-pypi"
+license = "MIT"
+# See https://pypi.org/classifiers/
+classifiers = ['Development Status :: 3 - Alpha']
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.0.1"
+pytest = "^8.3.1"
+
+[tool.poetry.group.coverage]
+optional = true
+
+[tool.poetry.group.coverage.dependencies]
+coveralls = { version = "^4.0.0", python = ">=3.9,<3.13" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
