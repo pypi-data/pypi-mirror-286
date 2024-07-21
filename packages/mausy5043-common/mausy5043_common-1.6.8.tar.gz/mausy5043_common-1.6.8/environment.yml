@@ -1,0 +1,16 @@
+# When making changes to this file update requirements.txt also !!
+# Usage: conda -v env update -n mausy5043-common --file environment.yml
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - pandas-stubs
+  - pip
+  # Not on conda channels:
+  - pip:
+      - pylint
