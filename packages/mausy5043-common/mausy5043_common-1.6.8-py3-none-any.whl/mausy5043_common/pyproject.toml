@@ -1,0 +1,47 @@
+# pyproject.toml
+
+# Hatchling  https://packaging.python.org/en/latest/key_projects/#hatch
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mausy5043-common"
+version = "1.6.8"  # latest production version
+# version = "1.5.4" # latest test version
+description = "Common python functions"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+  { name="Mausy5043" },
+]
+keywords = [
+    "private",
+    "Raspberry Pi",
+    "Debian Linux"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+]
+
+[tool.hatch.build.targets.wheel.force-include]
+"./pyproject.toml" = "mausy5043_common/pyproject.toml"
+
+[project.urls]
+"Homepage" = "https://github.com/Mausy5043/mausy5043-common"
+"Bug Tracker" = "https://github.com/Mausy5043/mausy5043-common/issues"
+
+# [tool.setuptools.package-data]
+# "mausy5043-common" = ["py.typed"]
