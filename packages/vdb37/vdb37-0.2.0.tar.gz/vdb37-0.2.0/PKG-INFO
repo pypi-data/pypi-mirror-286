@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: vdb37
+Version: 0.2.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Simple vector database with Rust.
+Keywords: vector,database,vdb,vector-database,rust
+Author-email: AWeirdDev <aweirdscratcher@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/AWeirdScratcher/vdb37
+Project-URL: Bug Tracker, https://github.com/AWeirdScratcher/vdb37/issues
+
+# vdb37
+Vector database. 37 is a prime number.
+
+```python
+from vdb37 import VectorDatabase, Vector
+
+db = VectorDatabase()
+db.insert(Vector([1, 2, 3]))
+db.search(Vector([1, 2, 2]), k=1)
+```
+
+## Why?
+This is just a simple vector database implementation. I asked AI for help as my math is undoubtedly bad.
+
+The backend is PyO3.
+
