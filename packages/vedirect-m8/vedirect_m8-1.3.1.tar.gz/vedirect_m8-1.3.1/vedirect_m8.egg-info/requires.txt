@@ -1,0 +1,9 @@
+pyserial>=3.5
+ve_utils>=2.5.3
+
+[MQTT]
+paho-mqtt>=1.6.1
+
+[TEST]
+pytest>=7.4.1
+coverage>=7.3.1
