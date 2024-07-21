@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+dockrich/__init__.py
+dockrich/dockcompose.py
+dockrich/dockmanager.py
+dockrich/dockrich.py
+dockrich.egg-info/PKG-INFO
+dockrich.egg-info/SOURCES.txt
+dockrich.egg-info/dependency_links.txt
+dockrich.egg-info/entry_points.txt
+dockrich.egg-info/requires.txt
+dockrich.egg-info/top_level.txt
