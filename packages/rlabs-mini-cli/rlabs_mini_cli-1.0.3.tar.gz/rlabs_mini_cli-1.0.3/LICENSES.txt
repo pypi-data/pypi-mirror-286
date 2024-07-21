@@ -1,0 +1,52 @@
+Pygments
+2.18.0
+BSD License
+
+iniconfig
+2.0.0
+MIT License
+
+markdown-it-py
+3.0.0
+MIT License
+
+mdurl
+0.1.2
+MIT License
+
+mypy
+1.10.0
+MIT License
+
+mypy-extensions
+1.0.0
+MIT License
+
+packaging
+24.0
+Apache Software License; BSD License
+
+pluggy
+1.5.0
+MIT License
+
+pytest
+8.2.1
+MIT License
+
+rich
+13.7.1
+MIT License
+
+rlabs-mini-cli
+1.0.2
+GNU Lesser General Public License v3 or later (LGPLv3+)
+
+toml
+0.10.2
+MIT License
+
+typing_extensions
+4.12.0
+Python Software Foundation License
+
