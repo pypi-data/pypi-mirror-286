@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: django-command-message
+Version: 0.0.0
+Summary: Django command messages (stdout)
+Keywords: django
+Classifier: Framework :: Django
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+Requires-Dist: setuptools
+
+### Installation
+```bash
+$ pip install django-command-message
+```
+
+#### `settings.py`
+```python
+INSTALLED_APPS+=['django_command_message']
+```
+
+#### `migrate`
+```bash
+$ python manage.py migrate
+```
+
+### Features
++   database messages
++   admin
++   print message if `settings.DEBUG==True`
+
+### Models
+model|table|columns/fields
+-|-|-
+`Command`|`django_command_message`|`id`,`command`,`message`,`created_at`
+
+### Examples
+`MessageMixin`
+```python
+from django_command_message.mixins import MessageMixin
+
+class Command(MessageMixin,BaseCommand):
+    def handle(self, *args, **options):
+        self.message('message')
+```
+
+`Message` model
+```python
+from django_command_message.models import Message
+
+Message(command='name',message="message").save()
+```
+
