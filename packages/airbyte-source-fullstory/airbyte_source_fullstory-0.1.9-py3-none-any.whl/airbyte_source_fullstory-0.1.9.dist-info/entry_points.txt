@@ -1,0 +1,3 @@
+[console_scripts]
+source-fullstory=source_fullstory.run:run
+
