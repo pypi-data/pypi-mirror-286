@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+discolytics/__init__.py
+discolytics/core.py
+discolytics.egg-info/PKG-INFO
+discolytics.egg-info/SOURCES.txt
+discolytics.egg-info/dependency_links.txt
+discolytics.egg-info/requires.txt
+discolytics.egg-info/top_level.txt
