@@ -1,0 +1,16 @@
+asterpy/__init__.py,sha256=kHnS1TkrNswPOx0rxH__8xHAOZOpHYum5od7S5XmMj0,1515
+asterpy/channel.py,sha256=46howxm7pN1Uw68zJK-JW2ScUff_IlRJevx4kw6SeNE,1743
+asterpy/client.py,sha256=yPBPDAuXX4GeVJaoMJpNkhZKm8d1cNtLCwKYe-sC_tY,5936
+asterpy/connection_mode.py,sha256=F6Ew84_8xt-lIWA-WAgIHx4uYBpPfoE-WDPscSzeujI,172
+asterpy/debug.py,sha256=dvoMSr-vXLnFjIpLSrTR7YWAt3IJlA5N6Mi5RvORR4A,70
+asterpy/emoji.py,sha256=whftrAqSVO9VHdRk10QJ1zDXcRLcoZDXbLrcgf3y_L8,369
+asterpy/error.py,sha256=H_zSj4-QB_AGM0PLWnfszb1faVhX7-TD96qLzUfm3QI,39
+asterpy/message.py,sha256=lccJF2psi8N0ARJs9-6AblnUodNAaPE5JVTJww7lNG8,1376
+asterpy/server.py,sha256=WsvM1rFXRScGZPOp4NV9SQHbhhcbaW-keJ3q1zf6SOo,11733
+asterpy/sync.py,sha256=VH_d1Y3yEdsqeu55icMcU6odqNB3ThWhROafVR3YAMg,2049
+asterpy/user.py,sha256=rEkmFLs21RZ-yLezy6HhUuySiRkTJiNUaSd2wHDtdvo,867
+asterpy-0.4.0.dist-info/LICENSE,sha256=isWXFycsw-YZqTaVXpybJIK0jqM_0Xz21yDdb0k2nbw,1071
+asterpy-0.4.0.dist-info/METADATA,sha256=59sv4pmRumhsIW-dRcSxX-9UDTKkm_rG0bzrPtIvkXU,1395
+asterpy-0.4.0.dist-info/WHEEL,sha256=rWxmBtp7hEUqVLOnTaDOPpR-cZpCDkzhhcBce-Zyd5k,91
+asterpy-0.4.0.dist-info/top_level.txt,sha256=VtI9zHNap65LkG85el14ptDRqmmcggGfl2N8_DaKZcQ,8
+asterpy-0.4.0.dist-info/RECORD,,
