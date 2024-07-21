@@ -1,0 +1,8 @@
+source_mailjet_mail/__init__.py,sha256=wz_O88qdpwHzZcWM3MkaFWgRCJRKphrxFtMLXycEqNM,134
+source_mailjet_mail/manifest.yaml,sha256=bBviXBDdhgUboCTJqSdZcAT9Ut-AdJPXgqe81hdYFLk,11702
+source_mailjet_mail/run.py,sha256=7RNCqxNb5XDoP0SRtS8aGqKTDmnJbV9gnMAs87dT7Ec,246
+source_mailjet_mail/source.py,sha256=RDyoxKQ67KPIeZwhf-FRJkm8JvJAGIBIWiQmMP1bOIc,480
+airbyte_source_mailjet_mail-0.1.12.dist-info/METADATA,sha256=3cYKFX_VA4UsmTQjNacMobsvB7mXujnjqSEQngfXNnA,5325
+airbyte_source_mailjet_mail-0.1.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_mailjet_mail-0.1.12.dist-info/entry_points.txt,sha256=y6j4s6d6npL7k8Ehz_2SMgzmdQdNoQUPTBJ4d5gyktY,67
+airbyte_source_mailjet_mail-0.1.12.dist-info/RECORD,,
