@@ -1,0 +1,8 @@
+source_rd_station_marketing/__init__.py,sha256=98gUYH9khxAjAxgUkyqu7cu2ZiEVomh6vLVcGHt9Iuc,148
+source_rd_station_marketing/manifest.yaml,sha256=-cjJIJeBVE7EVe01p2puLOFd_S7LydGkO22wicnOB-Q,26264
+source_rd_station_marketing/run.py,sha256=8h9epWlsq5wPZX6R7R37kJai91U6QjdCMi57sZlNcBU,249
+source_rd_station_marketing/source.py,sha256=T32SGcnUioZrvYMyaug4zdlZUvgrwBkhuOiVqSDOILQ,487
+airbyte_source_rd_station_marketing-0.2.5.dist-info/METADATA,sha256=G9b031jJ63tgRP3huELdgCQ3yffxyr9yOzQwnwu3YI8,5499
+airbyte_source_rd_station_marketing-0.2.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_rd_station_marketing-0.2.5.dist-info/entry_points.txt,sha256=OkN1cZ53DpuDBz5c9MfKXwfTSErEnUtxt-EEQrheJZg,83
+airbyte_source_rd_station_marketing-0.2.5.dist-info/RECORD,,
