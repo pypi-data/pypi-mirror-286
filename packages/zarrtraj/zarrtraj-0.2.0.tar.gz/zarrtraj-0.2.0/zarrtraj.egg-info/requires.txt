@@ -1,0 +1,15 @@
+MDAnalysis>=2.7.0
+zarr>=2.11.0
+kerchunk>=0.2.6
+h5py>=3.11.0
+s3fs>=2024.3.0
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest>=7.4.0
+pytest-xdist>=3.5.0
+pytest-cov>=4.1.0
+MDAnalysisTests>=2.7.0
