@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: py4mbd
+Version: 0.0.1
+Summary: Framework for implementing Model Based Design in Python
+Home-page: https://github.com/Palani-SN/py4mbd
+Author: Palani-SN
+Author-email: psn396@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: blessings~=1.7
+Provides-Extra: dev
+Requires-Dist: pytest>=3.7; extra == "dev"
+Requires-Dist: check-manifest; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# py4mbd
+
+- Framework for implementing Model Based Design in Python
+
