@@ -1,0 +1,48 @@
+# `sophi-app-internal` Python Package
+
+## Overview
+sophi-app-internal is a Python package designed to facilitate secure and authenticated HTTP request handling, particularly in environments where JWT (JSON Web Token) authentication is used. The package includes utilities for validating JWTs, fetching public keys, and constructing HTTP request objects with robust header and parameter management.
+
+## Features
+JWT validation and verification using Auth0.
+Secure fetching of JSON Web Key Sets (JWKS).
+Construction and management of HTTP request objects with headers, parameters, and body handling.
+Installation
+To install the sophi-app-internal package, use the following command:
+
+```bash
+pip install sophi-app-internal
+```
+
+## Token Validator Usage
+### Setting Up Variables
+Before using the package, ensure you have set up the necessary variables:
+
+- AUTH0_DOMAIN: Your Auth0 domain, e.g. `<tenant>.us.auth0.com`.
+- AUDIENCE: The expected token audience. **You need to [register your API](https://auth0.com/docs/get-started/auth0-overview/set-up-apis) on Auth0 before getting a valid audience value**.
+
+You can set these variables in your environment:
+
+```python
+auth0_domain = "app-dev.us.auth0.com"
+audience = [
+    "https://api.example.com/",
+    "https://website.us.auth0.com/userinfo"
+  ]
+token = "<your token>"
+```
+Note: ensure you pass the token after parsing the `Authorization` header and removing the `Bearer` keyword.
+
+### Example Code
+Validating JWTs
+Here's an example of how to validate a JWT using the token_validator function.
+
+```python
+from sophi_app_internal import token_validator
+
+try:
+    claims = token_validator(token, audience, auth0_domain)
+    print(claims)
+except Exception as e:
+    print(e)
+```
