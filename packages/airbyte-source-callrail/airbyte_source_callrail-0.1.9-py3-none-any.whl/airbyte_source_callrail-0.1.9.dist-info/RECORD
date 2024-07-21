@@ -1,0 +1,13 @@
+source_callrail/__init__.py,sha256=OZBJ6mFccZGsugrK4wFVwzX3ZumGNvEOzSsxWeeSGzM,128
+source_callrail/manifest.yaml,sha256=zXaovXadAw7Yy6GX80ikenSIsF-xY2ppAr1cBroQaFA,4497
+source_callrail/run.py,sha256=OVMQNGXkJ6sWBKAiXpQ-qLXAt-Wqe5JpMfyZ-JxqRho,236
+source_callrail/schemas/calls.json,sha256=Fohorb6hPRE1wOC54J1BXe8P-DpK1mqyPLPFNbWr3zM,4823
+source_callrail/schemas/companies.json,sha256=Gxkc5fN79j37jbMKIUdaLn_i9Hl4U2Nn2lS3Vepxtjw,1180
+source_callrail/schemas/conversations.json,sha256=Hm81V-tSo3MAj5fMWH85IhTykIMe58bj8VJ4HAHsINA,1437
+source_callrail/schemas/users.json,sha256=cds3yCpxgDdVP_fm6ZM-M89GxVARy-zbQWctuf3zK9Y,441
+source_callrail/source.py,sha256=cavdLfo9DCdVhYuDTyb-9isHZ8DrUA_gKeb6QShzkMc,477
+source_callrail/spec.yaml,sha256=4W5BavQR1fk5aetHq6nw0ml0RPx4bzHU0PTH-e1sQOc,646
+airbyte_source_callrail-0.1.9.dist-info/METADATA,sha256=zAHeGMvjvr0928mcuWWGUzHB1Hu2MZuHdZAnz3STZYU,5241
+airbyte_source_callrail-0.1.9.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_callrail-0.1.9.dist-info/entry_points.txt,sha256=1n6Jyuwb6t9A5D4SLDwdfR9PIxgMLR7l2cIWVvrO13E,59
+airbyte_source_callrail-0.1.9.dist-info/RECORD,,
