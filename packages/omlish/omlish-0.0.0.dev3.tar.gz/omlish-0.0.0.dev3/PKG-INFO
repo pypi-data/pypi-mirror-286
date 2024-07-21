@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: omlish
+Version: 0.0.0.dev3
+Summary: omlish
+Author: wrmsr
+License: BSD-3-Clause
+Project-URL: source, https://github.com/wrmsr/omlish
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+License-File: LICENSE
+Provides-Extra: async
+Requires-Dist: anyio; extra == "async"
+Provides-Extra: http
+Requires-Dist: httpx; extra == "http"
+Provides-Extra: sql
+Requires-Dist: sqlalchemy; extra == "sql"
+Provides-Extra: wrapt
+Requires-Dist: wrapt; extra == "wrapt"
+Provides-Extra: yaml
+Requires-Dist: pyyaml; extra == "yaml"
+Provides-Extra: server
+Requires-Dist: h11; extra == "server"
+Requires-Dist: h2; extra == "server"
+Requires-Dist: priority; extra == "server"
+Requires-Dist: wsproto; extra == "server"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
