@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+gg_transfer.egg-info/PKG-INFO
+gg_transfer.egg-info/SOURCES.txt
+gg_transfer.egg-info/dependency_links.txt
+gg_transfer.egg-info/entry_points.txt
+gg_transfer.egg-info/requires.txt
+gg_transfer.egg-info/top_level.txt
+ggtransfer/__init__.py
+ggtransfer/__main__.py
+ggtransfer/_exceptions.py
+ggtransfer/_receive.py
+ggtransfer/_send.py
