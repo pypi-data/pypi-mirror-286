@@ -1,0 +1,99 @@
+[project]
+name = "dbt-pumpkin"
+description = ""
+authors = [
+  {name = "Denis Kokorin", email = "kokorin86@gmail.com"}
+]
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.9"
+dependencies = [
+  "ruamel-yaml>=0.17",
+  "click>=8.1.0"
+]
+dynamic = ["version"]
+
+[project.urls]
+"Source code" = "https://github.com/kokorin/dbt-pumpkin"
+
+[project.scripts]
+dbt-pumpkin = "dbt_pumpkin.cli:main"
+
+[tool.hatch]
+
+[tool.hatch.version]
+source = "versioningit"
+
+[tool.hatch.build]
+exclude = [
+  "/.cache",
+  "/.github",
+  "/tests",
+  "/.pre-commit-config.yaml",
+  "/.gitignore"
+]
+artifacts = ["dbt_pumpkin/version.py"]
+
+[tool.hatch.build.hooks.version]
+path = "dbt_pumpkin/version.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "dbt-core~=1.8.0",
+  "dbt-duckdb~=1.8.0"
+]
+
+[tool.hatch.envs.default.env-vars]
+EXPECTED_PYTHON_VERSION = "3.12"
+EXPECTED_DBT_VERSION = "1.8"
+DBT_PROJECT_DIR = "tests/my_pumpkin"
+DBT_PROFILES_DIR = "tests/my_pumpkin"
+# There is an issue with dbt clean when running ouutside project
+DBT_CLEAN_PROJECT_FILES_ONLY = "False"
+
+[tool.hatch.envs.hatch-test]
+dependencies = [
+  "pytest",
+  "dbt-core~={matrix:dbt}.0",
+  "dbt-duckdb~={matrix:dbt}.0"
+]
+
+[tool.hatch.envs.hatch-test.env-vars]
+EXPECTED_PYTHON_VERSION = "{matrix:python}"
+EXPECTED_DBT_VERSION = "{matrix:dbt}"
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.9", "3.10", "3.11"]
+dbt = ["1.5", "1.6", "1.7", "1.8"]
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.12"]
+dbt = ["1.7", "1.8"]
+
+[tool.versioningit]
+
+[tool.versioningit.vcs]
+method = "git"
+default-tag = "v0.0.0"
+
+[tool.ruff]
+# cache directory for GH actions
+extend-exclude = [".cache"]
+
+[tool.yamlfix]
+explicit_start = false
+whitelines = 1
+sequence_style = "keep_style"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+  "ignore:.*PyType_Spec with a metaclass that has custom tp_new.*:DeprecationWarning",
+  "ignore:.*datetime.datetime.utcnow\\(\\) is deprecated.*:DeprecationWarning",
+  "ignore:.*method is deprecated, use 'warning' instead.*:DeprecationWarning",
+  "ignore:.*invalid escape sequence.*:DeprecationWarning"
+]
+
+[build-system]
+requires = ["hatchling", "versioningit"]
+build-backend = "hatchling.build"

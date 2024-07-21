@@ -1,0 +1,8 @@
+__pycache__
+/.hatch
+/.vscode
+/.idea
+/dist
+
+#auto-generated
+/dbt_pumpkin/version.py
