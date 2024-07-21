@@ -1,0 +1,14 @@
+ipipneo/__init__.py,sha256=EHDeCMzGPRx1wjd1_hG9AGarg_Iwe9mVK5Cij3Iveug,128
+ipipneo/facet.py,sha256=q2C8oCStWiisQiq6L95uvvw2mf6VfYTHg6UpauOrObY,10179
+ipipneo/ipipneo.py,sha256=XdBwHiHp4hYGJPd5IpefSfOzMEe4AkwCg1Y6KPlbnv0,13304
+ipipneo/model.py,sha256=XBdgI0RBmhy8PgvTHsQRAyIjZIXUS7O5yWebgkDPC2o,2274
+ipipneo/norm.py,sha256=LapXN6h1jT6FinAnEiJD0Y5bnEMmuZxQeZ6ckjOJXg8,32645
+ipipneo/quiz.py,sha256=jIUuFTfr7H5jYD9HCiMgrUh0hQ5kkIWfBYvDkdrjsBY,13229
+ipipneo/reverse.py,sha256=DnM6CURCBqCSVq08plGix3sOGtU2bK5RGrsWLYbTbXM,7352
+ipipneo/utility.py,sha256=zZDjM5SufqV1kFbOekyCbPpwYqQd1fL3BRVrk5T7VuY,6040
+five_factor_e-1.12.1.dist-info/LICENSE,sha256=AdI3hJSqBOqHZsioSRWohdUEE4wAkCW3IFothwgpv4g,1075
+five_factor_e-1.12.1.dist-info/METADATA,sha256=ESzI_6HdwFehRmGPkRHGfAHHLuOUwqYbPxOx0Z776DU,12033
+five_factor_e-1.12.1.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+five_factor_e-1.12.1.dist-info/entry_points.txt,sha256=RylU-0UmFTKLrI9hBK0ijCUpYIe39l9ssK6BtVgKozU,51
+five_factor_e-1.12.1.dist-info/top_level.txt,sha256=dK47F8W_hfKOsz_EAEQYJ2flKEcHnOEvzEOxDfMCVMs,8
+five_factor_e-1.12.1.dist-info/RECORD,,
