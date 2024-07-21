@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "AdalFlow"
+version = "0.0.0-alpha.1"
+description = "adalflow"
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
