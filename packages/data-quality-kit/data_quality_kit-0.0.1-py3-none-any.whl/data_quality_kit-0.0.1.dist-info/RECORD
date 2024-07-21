@@ -1,0 +1,16 @@
+data-quality-kit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data-quality-kit/check_pk_duplicates.py,sha256=MPa7EnNjpLc8VcBsLmK-3gy7NKQa_cXASy0XduODHRI,687
+data-quality-kit/data_quality.py,sha256=83TGGNiCyTAGsdlG4DqOWLklcvrZO0JmJiYSbzMK8CQ,368
+data-quality-kit/validate_formats.py,sha256=2JWq3HGKzN4ArHzs0xiuCfpMSsBSWj-FTqmrWFmkLRY,940
+data-quality-kit/validate_nulls.py,sha256=3Q5kRqT778olZqZnj1v3TyF3DYlqQNgbNib-1BHiRlg,794
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/global_test_data.py,sha256=gRe-VnLyOwvOb14a4Rhnh6OPe0WmbMQOx0XrP3rM4RY,369
+tests/test_check_pk_duplicates.py,sha256=8cjYhdDYpcLdRsptEVO8NHc3DmS4XRFk8Gt49ywLMUs,584
+tests/test_data_quality.py,sha256=h9nuTmkU9GukFIc8Rs7vP-aBazuNfRyNqMixPlrwbFY,372
+tests/test_validate_formats.py,sha256=4OXbizhIXFQxRF2cQ3_m5hn_mbTmlu0hrv2UstNqU48,723
+tests/test_validate_nulls.py,sha256=odG79dAzD_s-iOhMAmvVvWYMAtEGnHu7-wmfpCFMeHY,810
+data_quality_kit-0.0.1.dist-info/LICENSE,sha256=dKWdFUsShdnITF9ptwZ9x0wUQHPAdH_fSts34jG6TCw,11525
+data_quality_kit-0.0.1.dist-info/METADATA,sha256=b6Q4zMNRLA6pEGGDceih2Lk_uFWQI2v_vj5WvgYC8wA,2313
+data_quality_kit-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+data_quality_kit-0.0.1.dist-info/top_level.txt,sha256=ExgaiWgktvaIkDxVSpyC2aCG504RK_7jy_EbOWI1OQA,23
+data_quality_kit-0.0.1.dist-info/RECORD,,
