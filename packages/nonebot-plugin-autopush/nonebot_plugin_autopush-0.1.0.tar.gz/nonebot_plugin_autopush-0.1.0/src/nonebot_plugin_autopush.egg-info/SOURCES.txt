@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/nonebot_plugin_autopush/__init__.py
+src/nonebot_plugin_autopush/__main__.py
+src/nonebot_plugin_autopush/config.py
+src/nonebot_plugin_autopush/push.py
+src/nonebot_plugin_autopush/servers.py
+src/nonebot_plugin_autopush.egg-info/PKG-INFO
+src/nonebot_plugin_autopush.egg-info/SOURCES.txt
+src/nonebot_plugin_autopush.egg-info/dependency_links.txt
+src/nonebot_plugin_autopush.egg-info/requires.txt
+src/nonebot_plugin_autopush.egg-info/top_level.txt
