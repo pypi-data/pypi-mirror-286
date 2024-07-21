@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AsyncContextStack
+Version: 0.2.1
+Summary: Async context manager for nesting async context stacks
+Author: Chris Lee
+Author-email: chris@cosmosnexus.co
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
