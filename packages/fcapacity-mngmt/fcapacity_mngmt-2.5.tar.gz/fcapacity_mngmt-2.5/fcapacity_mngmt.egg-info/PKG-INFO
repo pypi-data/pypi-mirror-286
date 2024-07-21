@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: fcapacity_mngmt
+Version: 2.5
+Author: Jorge Marmol
+Author-email: marmoljorge98@gmail.com
+Requires-Dist: azure-identity
+Requires-Dist: azure-mgmt-resource
