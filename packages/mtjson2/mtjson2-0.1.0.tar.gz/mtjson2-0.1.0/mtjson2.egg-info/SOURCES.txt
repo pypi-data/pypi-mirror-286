@@ -1,0 +1,5 @@
+setup.py
+mtjson2.egg-info/PKG-INFO
+mtjson2.egg-info/SOURCES.txt
+mtjson2.egg-info/dependency_links.txt
+mtjson2.egg-info/top_level.txt
