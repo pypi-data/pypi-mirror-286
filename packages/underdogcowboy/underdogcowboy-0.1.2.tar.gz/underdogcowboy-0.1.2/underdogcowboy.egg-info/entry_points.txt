@@ -1,0 +1,2 @@
+[console_scripts]
+underdogcowboy = underdogcowboy.main:main
