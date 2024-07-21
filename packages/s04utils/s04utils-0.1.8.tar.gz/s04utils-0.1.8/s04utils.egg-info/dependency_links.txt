@@ -1,0 +1,1 @@
+https://github.com/JKL453/sfHMM.git@main#egg=sfHMM
