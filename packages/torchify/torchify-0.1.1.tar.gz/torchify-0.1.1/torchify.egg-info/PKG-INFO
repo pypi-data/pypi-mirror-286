@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: torchify
+Version: 0.1.1
+Summary: A Keras-like API for PyTorch with support for image and tabular data
+Home-page: https://github.com/Amirtesh/Pytorch-Torchify/tree/main
+Author: Amirtesh Raghuram
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: torch>=1.10.0
+Requires-Dist: numpy
+Requires-Dist: matplotlib
