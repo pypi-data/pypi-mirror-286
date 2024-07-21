@@ -1,0 +1,4 @@
+[console_scripts]
+jumble-cfg=jumble.config.config_cli:main
+prolog=jumble.prolog:main
+
