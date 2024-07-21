@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+simple_sock/__init__.py
+simple_sock/sock.py
+simple_sock.egg-info/PKG-INFO
+simple_sock.egg-info/SOURCES.txt
+simple_sock.egg-info/dependency_links.txt
+simple_sock.egg-info/top_level.txt
+tests/test.py
