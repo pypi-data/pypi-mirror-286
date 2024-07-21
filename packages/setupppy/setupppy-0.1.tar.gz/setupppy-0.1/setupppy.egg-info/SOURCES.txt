@@ -1,0 +1,10 @@
+README.md
+setup.py
+setupppy/__init__.py
+setupppy/main.py
+setupppy.egg-info/PKG-INFO
+setupppy.egg-info/SOURCES.txt
+setupppy.egg-info/dependency_links.txt
+setupppy.egg-info/entry_points.txt
+setupppy.egg-info/requires.txt
+setupppy.egg-info/top_level.txt
