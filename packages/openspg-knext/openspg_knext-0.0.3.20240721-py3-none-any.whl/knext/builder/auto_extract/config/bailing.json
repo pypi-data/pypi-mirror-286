@@ -1,0 +1,7 @@
+{
+    "model": "bailing",
+    "uid": "266141",
+    "scene_name": "bailing_1b_chat_20240229",
+    "chain_name": "v1",
+    "lora_name": "flash_extractor_v1_epoch60"
+}

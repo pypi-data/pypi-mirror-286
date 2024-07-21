@@ -1,0 +1,10 @@
+namespace DEFAULT
+
+Text(文本): BasicType
+
+Chunk(文本块): EntityType
+     properties:
+        title(标题): Text
+          index: TextAndVector
+        info(信息): Text
+        content(内容): Text

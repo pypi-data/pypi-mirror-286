@@ -1,0 +1,13 @@
+{
+    "model": "gpt-4",
+    "visitDomain": "BU_atlas",
+    "visitBiz": "BU_atlas_gpt4",
+    "visitBizLine": "BU_atlas_gpt4_leiwa",
+    "cacheInterval": -1,
+    "apiKey": "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",
+    "key": "gs540iivzezmidi3",
+    "url": "https://zdfmng.alipay.com/commonQuery/queryData",
+    "maxToken": "4096",
+    "temperature": "1",
+    "n": "1"
+}

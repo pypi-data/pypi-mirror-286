@@ -1,0 +1,13 @@
+{
+    "model": "gpt-3.5-turbo",
+    "visitDomain": "BU_cto",
+    "visitBiz": "BU_cto_engine",
+    "visitBizLine": "BU_cto_engine_line",
+    "cacheInterval": -1,
+    "apiKey": "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",
+    "key": "gs540iivzezmidi3",
+    "url": "https://zdfmng.alipay.com/commonQuery/queryData",
+    "maxToken": "4096",
+    "temperature": "1",
+    "n": "1"
+}
