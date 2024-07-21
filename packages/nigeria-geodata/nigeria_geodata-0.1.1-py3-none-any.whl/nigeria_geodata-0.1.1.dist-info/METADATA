@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: nigeria-geodata
+Version: 0.1.1
+Summary: Fast and efficient access to geospatial data for Nigeria. Ideal for developers and analysts working with Nigerian geospatial information.
+License: LICENSE
+Keywords: Nigeria,geodata,grid3
+Author: Emmanuel Jolaiya
+Author-email: jolaiyaemmanuel@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pre-commit (>=3.7.1,<4.0.0)
+Project-URL: Bug Tracker, https://github.com/jeafreezy/nigeria_geodata/issues
+Project-URL: Documentation, https://nigeria_geodata.github.io
+Project-URL: Homepage, https://nigeria_geodata.github.io
+Project-URL: Repository, https://github.com/jeafreezy/nigeria_geodata
+Description-Content-Type: text/markdown
+
+# Nigeria Geodata
+
