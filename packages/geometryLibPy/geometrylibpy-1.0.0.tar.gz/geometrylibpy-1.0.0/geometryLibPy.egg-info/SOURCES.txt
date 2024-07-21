@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+GeometryLibPy/__init__.py
+GeometryLibPy/geometry.py
+geometryLibPy.egg-info/PKG-INFO
+geometryLibPy.egg-info/SOURCES.txt
+geometryLibPy.egg-info/dependency_links.txt
+geometryLibPy.egg-info/top_level.txt
