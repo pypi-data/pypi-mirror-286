@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: runstream
+Version: 0.2.0
+Summary: Client SDK for the Runstream observability platform for LLM applications.
+Home-page: https://runstream.dev
+License: Apache-2.0
+Author: Reforged
+Author-email: support@reforged.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: orjson (>=3.10.0,<4.0.0)
+Requires-Dist: pydantic (>=1,<2.7.4) ; python_full_version < "3.12.4"
+Requires-Dist: pydantic (>=2.7.4,<3.0.0) ; python_full_version >= "3.12.4"
+Requires-Dist: requests (>=2.0.0,<3.0.0)
+Project-URL: Repository, https://github.com/reforged-dev/runstream-sdk
+Description-Content-Type: text/markdown
+
+# Runstream Client SDK
+
+This repository contains the Python Client SDK needed to connect your LLM application with the Runstream observability platform.
+
+## License
+
+Copyright 2024-present Reforged LLC.
+
+Licensed under the [Apache License, Version 2.0](LICENSE).
+
