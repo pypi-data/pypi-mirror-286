@@ -1,0 +1,7 @@
+TensorFrost/TensorFrost.cp311-win_amd64.pyd,sha256=NpX7dbZiN_ZvIj6jwuxrtdBVjOc77HyNcNFsDAg9K20,1538048
+TensorFrost/__init__.py,sha256=WI_rIKqPWPO5iyOveY7ZVrJ8JEDwamKpATPRYPrpUXw,26
+TensorFrost/glad_gl_core_46.dll,sha256=zh0vrxgEY785D8daqJ6jVpXtk8wWQMXgbAo_DLPr0EE,308736
+TensorFrost-0.5.3.dist-info/METADATA,sha256=IZPsDETZo7JKqDkIsOnPoT9fAwk5mJrB7dvrDTs9eEw,22393
+TensorFrost-0.5.3.dist-info/WHEEL,sha256=xNX8h2ugFfBIeBy24VoKk9AQIDwj1kpwo8PCjZONI3M,101
+TensorFrost-0.5.3.dist-info/top_level.txt,sha256=PafjOtDEIhPtrWPB_5a-_4FdGJWufiVjVInbJLp8nZc,12
+TensorFrost-0.5.3.dist-info/RECORD,,
