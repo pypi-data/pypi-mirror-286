@@ -1,0 +1,3 @@
+[console_scripts]
+ride = robotide.__main__:main
+ride_postinstall = robotide.postinstall.__main__:main
