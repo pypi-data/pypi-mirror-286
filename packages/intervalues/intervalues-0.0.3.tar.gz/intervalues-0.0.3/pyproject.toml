@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intervalues"
+# version = "0.0.1"
+authors = [
+  { name="Bert de Bruijn", email="lpdebruijn@gmail.com" },
+]
+description = "Efficient combining of intervals of numbers."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "intervalues.__version__"}
+#version = {file = "intervalues/VERSION"}
+
+[project.urls]
+Homepage = "https://gitlab.com/bert.debruijn/intervalues"
+Issues = "https://gitlab.com/bert.debruijn/intervalues/-/issues"
