@@ -1,0 +1,12 @@
+arkose/__init__.py,sha256=MFelG9HxqmoMgjU5KytcrChlfCXDoXMGb2wyMPhSLDg,114
+arkose/api.py,sha256=a48hzzAbK_awcPZ8jb-y6IghOthVTTRZ-oyZaEWNloE,1742
+arkose/crypt.py,sha256=4kFDdfekwjMo0LuFOoakz6Epg5oW86QAUqYhmSCLj8c,1125
+arkose/fingerprint.py,sha256=9q6u4NQJC9XcJfxMWAssFh3gIf3eHCei8UL9oAUwoqg,70987
+arkose/murmur.py,sha256=Us_VJVio8aNKIkjTrxs82bL7DrIUfUy6O7MewupUgMI,4887
+arkose/session.py,sha256=EPZnzxczQNeAK3PzRJVxcTV2G3H4Scr1KuZ_Mgg0--s,5803
+arkose/utils.py,sha256=4CsWZciAzesymnQgOmKxhMtgL0qpeMVT5h12S1Zez7U,1465
+arkose-1.0.5.dist-info/LICENSE,sha256=TT5IS5aDaKhSwmhCuPV_PHV8lt4BGUEZYD7JtZHSyNc,35560
+arkose-1.0.5.dist-info/METADATA,sha256=jkbiIlDHg1J1IiLAqJqc7zH2N_hOun_H08xXLBInKoI,4351
+arkose-1.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+arkose-1.0.5.dist-info/top_level.txt,sha256=H-W8dSe9Z_R88AVz0KAHgX3ndyDucuPjv03tu21SKKk,7
+arkose-1.0.5.dist-info/RECORD,,
