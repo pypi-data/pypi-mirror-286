@@ -1,0 +1,9 @@
+main.py,sha256=07XCfWtq53LmlF8pIFQuFHCOqQzjgobiuT6QrFZanBs,143
+source_microsoft_teams/__init__.py,sha256=piKYmLfqN9-OWKSLTCQriN3lBHm5DpY2nwtNVQ_WaiQ,140
+source_microsoft_teams/manifest.yaml,sha256=0Cnvh-JHTzY3ZPthj_nbMLkJ_lDyqnMv0ZfTHGSry6o,232141
+source_microsoft_teams/run.py,sha256=evREHx_N9B9uTbzjKEXr2va6q5uQ9F4257yg8LBkFQw,241
+source_microsoft_teams/source.py,sha256=LQeWyNCVTgF7I-iBRxl0RpiKLmVOV7gZQjTv95EAvgU,483
+airbyte_source_microsoft_teams-1.1.7.dist-info/METADATA,sha256=j1Cy7njH4NzvlYUJtDKc8UQo0mlz9Wgw5-hY3teI_Wc,5379
+airbyte_source_microsoft_teams-1.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_microsoft_teams-1.1.7.dist-info/entry_points.txt,sha256=28Y9e6QH7XjYHaObacEFM-a__Tj7MM3DmwBcV1PqFfI,73
+airbyte_source_microsoft_teams-1.1.7.dist-info/RECORD,,

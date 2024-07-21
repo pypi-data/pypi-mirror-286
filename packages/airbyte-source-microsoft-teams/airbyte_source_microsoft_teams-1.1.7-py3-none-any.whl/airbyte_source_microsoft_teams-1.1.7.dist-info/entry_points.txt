@@ -1,0 +1,3 @@
+[console_scripts]
+source-microsoft-teams=source_microsoft_teams.run:run
+
