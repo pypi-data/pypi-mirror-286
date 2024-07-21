@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: pelican-css-cache-bust
+Version: 0.2.0
+Summary: Calculate a CSS_FILE_CACHE_BUST value to use as cache bust query strings
+Author-email: Diego Escalante Urrelo <diegoe@gnome.org>
+Maintainer-email: Diego Escalante Urrelo <diegoe@gnome.org>
+Project-URL: Homepage, https://github.com/diegoe/pelican-css-cache-bust
+Project-URL: Issues, https://github.com/diegoe/pelican-css-cache-bust/issues
+Project-URL: Repository, https://github.com/diegoe/pelican-css-cache-bust.git
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Framework :: Pelican
+Classifier: Framework :: Pelican :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: pelican
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: flake8-docstrings; extra == "dev"
+Requires-Dist: flake8-import-order; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# pelican-css-cache-bust
+A Pelican plugin to append a cache buster query string to your `CSS_FILE`.
+
+## Set up
+* Define `CSS_FILE` in `pelicanconf.py`
+* `CSS_FILE` can be a filename or partial path
+* `CSS_FILE` should be findable in any of `THEME_STATIC_PATHS`
+
+### Use in templates
+* Use `{{ CSS_FILE }}{{ CSS_FILE_CACHE_BUST }}` in your templates
+* `CSS_FILE_CACHE_BUST` already includes a query prefix: `?`
+
+## Example
+```python
+# pelicanconf.py
+CSS_FILE = "css/main.css"
+THEME = "custom_theme"
+THEME_STATIC_PATHS = ["static", "other"]
+# You can explicitly enable this plugin. Note this disables auto discovery
+# PLUGINS = ["css_cache_bust"]
+```
+
+Pelican will resolve `THEME` to a full path and the plugin will search
+for:
+```
+(resolved-path)/custom_theme/static/css/main.css
+(resolved-path)/custom_theme/other/css/main.css
+```
+
+Any template can use the generated setting like:
+```jinja
+<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/{{ CSS_FILE }}{{ CSS_FILE_CACHE_BUST }}" />
+```
+
+Adjust as necessary for your specific theme.

@@ -1,0 +1,12 @@
+AUTHORS
+LICENSE
+README.md
+pyproject.toml
+pelican/plugins/css_cache_bust/__init__.py
+pelican/plugins/css_cache_bust/css_cache_bust.py
+pelican/plugins/css_cache_bust/test_css_cache_bust.py
+pelican_css_cache_bust.egg-info/PKG-INFO
+pelican_css_cache_bust.egg-info/SOURCES.txt
+pelican_css_cache_bust.egg-info/dependency_links.txt
+pelican_css_cache_bust.egg-info/requires.txt
+pelican_css_cache_bust.egg-info/top_level.txt
