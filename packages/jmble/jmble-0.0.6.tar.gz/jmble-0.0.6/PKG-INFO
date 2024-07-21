@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: jmble
+Version: 0.0.6
+Summary: 
+Author: Joseph Bochinski
+Author-email: jmbochinski@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: yamllib (>=0.0.1,<0.0.2)
+Description-Content-Type: text/markdown
+
+

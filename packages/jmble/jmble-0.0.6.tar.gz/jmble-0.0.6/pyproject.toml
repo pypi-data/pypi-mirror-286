@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "jmble"
+version = "0.0.6"
+description = ""
+authors = ["Joseph Bochinski <jmbochinski@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+toml = "^0.10.2"
+yamllib = "^0.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jumble-cfg = "jumble.config.config_cli:main"
+prolog = "jumble.prolog:main"
