@@ -1,0 +1,3 @@
+[console_scripts]
+bulk_checksum_compare = bulk_checksum.compare:compare_main
+bulk_checksum_generate = bulk_checksum.generate:generate_main
