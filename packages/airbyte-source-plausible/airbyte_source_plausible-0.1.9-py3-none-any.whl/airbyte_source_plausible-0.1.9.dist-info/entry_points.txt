@@ -1,0 +1,3 @@
+[console_scripts]
+source-plausible=source_plausible.run:run
+

@@ -1,0 +1,9 @@
+main.py,sha256=hdaE3mV9d3HWOoit1fyfUon7W10WongaMrmSLGfS_GU,137
+source_plausible/__init__.py,sha256=wTPTI6mfQ--uADvrNc8qe5Wvpt2Pm4lRWkER2neuzp0,130
+source_plausible/manifest.yaml,sha256=L0WnSqxI-vmVycxkF7qV6HDk6w2AyBvexdKOUHxOYhA,3485
+source_plausible/run.py,sha256=w2QyYBLRxrpPFfZ0ggNsF5FfVbCMt2Ppe9u3HlkbHWM,231
+source_plausible/source.py,sha256=q_oCbCqs44x4YxWa79FoUIVE6ihBKJ-w63JcqoMTu0I,478
+airbyte_source_plausible-0.1.9.dist-info/METADATA,sha256=5PvlfcXsTWmVRA-x-RBbTYu_SI4qFcmT4hJUNbJ7N3M,5264
+airbyte_source_plausible-0.1.9.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_plausible-0.1.9.dist-info/entry_points.txt,sha256=GgK64_6i3o45j2eiCvsEbEqKtpGhgFwDiFerLOe1pQQ,61
+airbyte_source_plausible-0.1.9.dist-info/RECORD,,
