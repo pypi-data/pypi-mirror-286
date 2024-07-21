@@ -1,0 +1,13 @@
+xdgenvpy/__init__.py,sha256=vkkr46VLli-j8B84jh0ZDQ5QGBRsQNImDiQ8GEQ-fwc,283
+xdgenvpy/__main__.py,sha256=icJFaGyNVNjmxSxMuli69YR694olHGjMrk_2MPmKtHg,5417
+xdgenvpy/_defaults.py,sha256=siIoeSZx_xBDN-W3HqTRiherV60NHcCzuQQT23inwao,6688
+xdgenvpy/xdgenv.py,sha256=IQ8hHIg8qa3M3bf2iNPCH7qghFQyFP5VyqM1e6iWlCU,13732
+xdgenvpy-2.4.0.data/data/man/man1/xdg-env.1.gz,sha256=yrv0eX1TxqXpEDs4el93F_qDr03SgKNB3qLOxDlt92U,2143
+xdgenvpy-2.4.0.data/data/man/man3/xdgenvpy.3.gz,sha256=6MfFRf1j1yjJPKXanplsHuzFPfrJXG2YMuV_JYFe1hE,1415
+xdgenvpy-2.4.0.data/scripts/xdg-env-completion.sh,sha256=Ud1wXwsnIu6I3QQRYsRY4M7I1XrSPxGrp63ehGFA_0o,1212
+xdgenvpy-2.4.0.dist-info/LICENSE.md,sha256=ZaifCszG8AZCBvrYiF-mECSsB72LvBtFjGtw9VcP3GU,1108
+xdgenvpy-2.4.0.dist-info/METADATA,sha256=SVJGWM-qoAAryH2MIS-AOJ73l_PM7zWFLQ68sb2qp7E,7288
+xdgenvpy-2.4.0.dist-info/WHEEL,sha256=rWxmBtp7hEUqVLOnTaDOPpR-cZpCDkzhhcBce-Zyd5k,91
+xdgenvpy-2.4.0.dist-info/entry_points.txt,sha256=tZWJLSmw6ePU9QAWOhM1VBRvzT4DbmfehxZRRg3R-p0,51
+xdgenvpy-2.4.0.dist-info/top_level.txt,sha256=4VDUKYBDwTlQkgD7RaAAdbCFX-vRLUvPcVS-VDAEiuY,9
+xdgenvpy-2.4.0.dist-info/RECORD,,
