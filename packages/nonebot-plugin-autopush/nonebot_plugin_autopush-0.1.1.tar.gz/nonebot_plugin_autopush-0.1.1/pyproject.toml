@@ -1,0 +1,35 @@
+[project]
+name = "nonebot-plugin-autopush"
+version = "0.1.1"
+description = "NoneBot2 自动状态推送"
+authors = [
+    {name = "XiaoDeng3386", email = "1744793737@qq.com"},
+]
+dependencies = [
+    "nonebot2>=2.2.0",
+    "httpx>=0.27.0",
+    "nonebot-plugin-apscheduler>=0.5.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "httpx[socks]>=0.27.0",
+    "nb-cli>=1.4.1",
+]
+
+[tool.nonebot]
+adapters = []
+plugins = []
+plugin_dirs = ["src"]
+builtin_plugins = []
