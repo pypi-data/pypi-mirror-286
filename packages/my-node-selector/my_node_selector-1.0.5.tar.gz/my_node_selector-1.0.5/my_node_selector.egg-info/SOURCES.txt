@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+my_node_selector/init.py
+my_node_selector/main.py
+my_node_selector.egg-info/PKG-INFO
+my_node_selector.egg-info/SOURCES.txt
+my_node_selector.egg-info/dependency_links.txt
+my_node_selector.egg-info/entry_points.txt
+my_node_selector.egg-info/not-zip-safe
+my_node_selector.egg-info/requires.txt
+my_node_selector.egg-info/top_level.txt
