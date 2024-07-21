@@ -1,0 +1,8 @@
+source_emailoctopus/__init__.py,sha256=t59ScKS9gY3WcVOlnI_jjg9x4dU7h8l3NdWX4WNlFfI,136
+source_emailoctopus/manifest.yaml,sha256=n_sUfPJVjKRrGfO_W54UtnnYZagf_QFjCxq63V7U6_8,6750
+source_emailoctopus/run.py,sha256=zmTseE0z7gNf3Fas--YAze2WpdWY9vTN-vm0pQGqf5E,248
+source_emailoctopus/source.py,sha256=62GSOpRDQwWKXeUsl6A7NsjEpSJfJOlP5-Mp6tBcJZ4,481
+airbyte_source_emailoctopus-0.1.12.dist-info/METADATA,sha256=Zupukq4t08d7mAglFFUaWeQuVLzn7L19rzmQiUX0rJE,5337
+airbyte_source_emailoctopus-0.1.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_emailoctopus-0.1.12.dist-info/entry_points.txt,sha256=O68MWmPUjYm84jpNDbbbGoIm_Gd5pph45KP30gTK2GM,67
+airbyte_source_emailoctopus-0.1.12.dist-info/RECORD,,
