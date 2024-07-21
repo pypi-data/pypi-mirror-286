@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "brain-games"
+version = "0.1.0"
+description = ""
+authors = ["LysenkovIlya <lysenkov_iv21@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

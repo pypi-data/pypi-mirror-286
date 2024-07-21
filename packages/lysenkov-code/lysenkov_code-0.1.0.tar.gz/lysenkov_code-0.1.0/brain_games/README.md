@@ -1,0 +1,1 @@
+<a href="https://codeclimate.com/github/LysenkovIlya-Hexlet/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/8fdf39f98f54ce74e1fe/maintainability" /></a>
