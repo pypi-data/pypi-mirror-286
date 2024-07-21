@@ -1,0 +1,37 @@
+[project]
+name = "dashai_test_image_classification_plugin"
+version = "0.0.3"
+
+dependencies = [
+    'torchvision == 0.14.0',
+    'dashai_test_classification_metrics_package',
+]
+
+authors = [
+  { name="DashAI team" },
+  { email="dashaisoftware@gmail.com" },
+]
+
+keywords = [
+    "DashAI",
+    "Model",
+    "Task",
+    "Dataloader",
+]
+
+description = "Image Classification Package for DashAI"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.entry-points.'dashai.plugins']
+imageClassificationTask = 'dashai_test_image_classification_plugin.image_classification_task:ImageClassificationTask'
+imageClassificationModel = 'dashai_test_image_classification_plugin.image_classification_model:ImageClassificationModel'
+imageDataloader = 'dashai_test_image_classification_plugin.image_dataloader:ImageDataloader'
+
+[project.urls]
+Homepage = "https://github.com/DashAISoftware/DashAI"
+Issues = "https://github.com/DashAISoftware/DashAI/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
