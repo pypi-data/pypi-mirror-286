@@ -1,0 +1,8 @@
+darts~=0.27
+yfinance
+fmpsdk
+optuna==3.4.0
+huggingface_hub
+gradio
+loguru
+duckdb
