@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: aifaker
+Version: 0.0.3
+Summary: Faker information generator powered by LLM
+Author-email: YZFly <zphyix@protonmail.com>
+Requires-Dist: python-dotenv
+Requires-Dist: openai>=0.27.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
