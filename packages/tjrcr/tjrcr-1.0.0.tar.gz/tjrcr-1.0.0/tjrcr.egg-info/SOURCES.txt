@@ -1,0 +1,9 @@
+README.md
+setup.py
+tjrcr/__init__.py
+tjrcr/tjrcr.py
+tjrcr.egg-info/PKG-INFO
+tjrcr.egg-info/SOURCES.txt
+tjrcr.egg-info/dependency_links.txt
+tjrcr.egg-info/requires.txt
+tjrcr.egg-info/top_level.txt
