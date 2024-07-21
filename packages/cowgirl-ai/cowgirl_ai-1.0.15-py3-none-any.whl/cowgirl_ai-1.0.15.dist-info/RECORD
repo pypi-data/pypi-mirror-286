@@ -1,0 +1,14 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/cli.py,sha256=ngJuyv6Z_SfAK8XW0-__3ZVteDf_WgSG8gdBpzoe1UY,2268
+cowgirl_ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cowgirl_ai/load_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cowgirl_ai/load_files/client.py,sha256=KGQjsqhTdeIArcdL3QaXwxr64hhXLyM5vhrwH0CO1os,642
+cowgirl_ai/load_files/file_manager.py,sha256=sEywgAvCpu_Ns9tAF-MFsrgd2VmDu1uQCxjpUXHOI5k,3502
+cowgirl_ai/load_files/search.py,sha256=586L8CwftpSfricbUTc7z-93vE7MtHGqqVLKuRZCQ0Y,2533
+cowgirl_ai/load_files/vector_manager.py,sha256=dlx8ASWhCY5y_R3HQTTQ6s6L_ojaodOp0dTASzLp14k,3236
+cowgirl_ai-1.0.15.dist-info/LICENSE,sha256=m0qBgCW5OTBIEaCrLeP3bPwuV4FyUBkbXp-KWZxNX2E,1070
+cowgirl_ai-1.0.15.dist-info/METADATA,sha256=yb3HJuPPpQ6lboljO9TOKzzkLImPf8KbOd6c8bd3aUA,1301
+cowgirl_ai-1.0.15.dist-info/WHEEL,sha256=rWxmBtp7hEUqVLOnTaDOPpR-cZpCDkzhhcBce-Zyd5k,91
+cowgirl_ai-1.0.15.dist-info/entry_points.txt,sha256=6mN_bnKkYLU3x9gplUAeCKXDYgPqGE7WjiCCRJmUzyw,43
+cowgirl_ai-1.0.15.dist-info/top_level.txt,sha256=zb34OGVkAz4Sm5Q83QIYrj39IAbHMVuE7EDLFRioSFQ,15
+cowgirl_ai-1.0.15.dist-info/RECORD,,
