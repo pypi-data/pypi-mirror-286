@@ -1,0 +1,8 @@
+setup.py
+matrix_manipulation/__init__.py
+matrix_manipulation/module.py
+matrix_manipulation_abd.egg-info/PKG-INFO
+matrix_manipulation_abd.egg-info/SOURCES.txt
+matrix_manipulation_abd.egg-info/dependency_links.txt
+matrix_manipulation_abd.egg-info/requires.txt
+matrix_manipulation_abd.egg-info/top_level.txt
