@@ -1,0 +1,8 @@
+source_toggl/__init__.py,sha256=sa87gT4VYoVpxFiluUnslZBridnZPdXWUzBdGlt1XSY,122
+source_toggl/manifest.yaml,sha256=GzYzFDxQUaT_i7x_vW1kHrs1ty52lGnygNOXK2oSn1M,14133
+source_toggl/run.py,sha256=jw7fqb4Ypgoto5ZHArDl0LI9WbcoqW6d1CMfMpKYjls,223
+source_toggl/source.py,sha256=KBK_ZM7NckkawaNwsktXRdoWjN1PsWuvtRF_n1KXMp8,474
+airbyte_source_toggl-0.1.10.dist-info/METADATA,sha256=pfvgZvKNcMJCOLKgu4nLOrklgE-AOT-s3rBJT3V6vMo,5184
+airbyte_source_toggl-0.1.10.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_toggl-0.1.10.dist-info/entry_points.txt,sha256=D3L-30bzS2E6MD-rmD8drZhA3GeXM-TX5sxRUzA32Z0,53
+airbyte_source_toggl-0.1.10.dist-info/RECORD,,
