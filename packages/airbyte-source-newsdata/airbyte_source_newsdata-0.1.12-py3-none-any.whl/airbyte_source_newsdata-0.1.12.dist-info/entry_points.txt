@@ -1,0 +1,3 @@
+[console_scripts]
+source-newsdata=source_newsdata.run:run
+
