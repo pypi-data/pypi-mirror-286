@@ -1,0 +1,8 @@
+pyproject.toml
+app_injector/__init__.py
+app_injector/main.py
+app_injector.egg-info/PKG-INFO
+app_injector.egg-info/SOURCES.txt
+app_injector.egg-info/dependency_links.txt
+app_injector.egg-info/entry_points.txt
+app_injector.egg-info/top_level.txt

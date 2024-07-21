@@ -1,0 +1,2 @@
+[console_scripts]
+app-injector = app_injector.main:main
