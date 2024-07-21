@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Man_os1
+Version: 0.1.1
+Summary: 'Man_os1' is a Python library for managing files and folders easily and quickly. The library includes multiple functions for creating, reading, writing, and deleting files and folders, as well as changing directories and listing directory contents.
+Home-page: https://github.com/ZOUITANE-Ahmed/Man_os1.git
+Author: Ahmed ZOUITANE
+Author-email: zouitane.ahmed02@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
