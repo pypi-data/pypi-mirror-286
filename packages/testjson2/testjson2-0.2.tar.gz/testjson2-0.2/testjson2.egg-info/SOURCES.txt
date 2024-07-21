@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+testjson2.egg-info/PKG-INFO
+testjson2.egg-info/SOURCES.txt
+testjson2.egg-info/dependency_links.txt
+testjson2.egg-info/entry_points.txt
+testjson2.egg-info/requires.txt
+testjson2.egg-info/top_level.txt

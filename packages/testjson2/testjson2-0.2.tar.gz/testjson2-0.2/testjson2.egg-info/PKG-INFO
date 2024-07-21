@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: testjson2
+Version: 0.2
+Summary: A library that runs a script upon installation
+Home-page: http://example.com/my_library
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# My Library
+
+This is a library that runs a script upon installation.
+
+
