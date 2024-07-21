@@ -1,0 +1,2 @@
+[console_scripts]
+toolshelf = toolshelf.entry_points.toolshelf_runner:run_toolshelf
