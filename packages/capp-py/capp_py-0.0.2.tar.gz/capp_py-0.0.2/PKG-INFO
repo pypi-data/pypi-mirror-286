@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: capp-py
+Version: 0.0.2
+Summary: Python clienet for capp
+Author-Email: Capp Team <gocappio@gmail.com>
+License: Apache 2.0
+Requires-Python: <4.0,>=3.9
+Requires-Dist: protobuf<6.0.0,>=5.27.1
+Description-Content-Type: text/markdown
+
+# Python Client for capp
+
+## Develop
+
+We use [`pdm`](<https://pdm-project.org/en/latest/>) for Python project management.
+
+```bash
+python3 -m venv --prompt py-capp .venv
+source .venv/bin/activate
+pdm install
+```
