@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "runstream"
+version = "0.2.0"
+description = "Client SDK for the Runstream observability platform for LLM applications."
+license = "Apache-2.0"
+authors = ["Reforged <support@reforged.dev>"]
+readme = "README.md"
+packages = [{include = "runstream"}]
+repository = "https://github.com/reforged-dev/runstream-sdk"
+homepage = "https://runstream.dev"
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+orjson = "^3.10.0"
+pydantic = [{version = ">=1,<2.7.4", python = "<3.12.4"}, {version = "^2.7.4", python=">=3.12.4"}]
+requests = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
