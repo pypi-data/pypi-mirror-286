@@ -1,0 +1,82 @@
+# nb_probability Package
+
+A Python package for working with Gaussian and Binomial distributions. This package provides classes and methods to calculate and visualize Gaussian and Binomial distributions.
+
+## Features
+
+- Calculate mean and standard deviation for Gaussian and Binomial distributions
+- Compute probability density functions
+- Plot distributions using Matplotlib
+- Read data from files and update distribution statistics
+
+## Installation
+
+You can install the package using pip:
+
+pip install nb_probability
+
+
+Usage
+Here are some examples of how to use the package:
+
+Gaussian Distribution
+The Gaussian class provides methods to calculate and visualize Gaussian distributions.
+
+from probability_distributions import Gaussian
+
+# Create a Gaussian distribution
+gaussian = Gaussian(mean=0, stdev=1)
+
+# Calculate mean and standard deviation
+mean = gaussian.calculate_mean()
+stdev = gaussian.calculate_stdev()
+
+# Print mean and standard deviation
+print(f'Mean: {mean}, Standard Deviation: {stdev}')
+
+# Plot the Gaussian distribution
+gaussian.plot_histogram_pdf()
+
+Methods
+calculate_mean(): Calculates the mean of the data set.
+calculate_stdev(sample=True): Calculates the standard deviation of the data set.
+read_data_file(file_name, sample=True): Reads data from a file and updates the mean and standard deviation.
+plot_histogram(): Plots a histogram of the data.
+pdf(x): Calculates the probability density function for a given point.
+plot_histogram_pdf(n_spaces=50): Plots the normalized histogram and probability density function.
+__add__(self, other): Adds two Gaussian distributions.
+__repr__(): Returns the string representation of the Gaussian distribution.
+Binomial Distribution
+The Binomial class provides methods to calculate and visualize Binomial distributions.
+
+Example
+
+from probability_distributions import Binomial
+
+# Create a Binomial distribution
+binomial = Binomial(prob=0.5, size=20)
+
+# Calculate mean and standard deviation
+mean = binomial.calculate_mean()
+stdev = binomial.calculate_stdev()
+
+# Print mean and standard deviation
+print(f'Mean: {mean}, Standard Deviation: {stdev}')
+
+# Plot the Binomial distribution
+binomial.plot_bar_pdf()
+
+Methods
+calculate_mean(): Calculates the mean of the Binomial distribution.
+calculate_stdev(): Calculates the standard deviation of the Binomial distribution.
+replace_stats_with_data(file_name): Reads data from a file and updates n, p, mean, and stdev.
+plot_bar(): Plots a bar chart of the data.
+pdf(k): Calculates the probability density function for a given number of positive outcomes.
+plot_bar_pdf(): Plots the probability density function.
+__add__(self, other): Adds two Binomial distributions with equal p values.
+__repr__(): Returns the string representation of the Binomial distribution.
+Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+License
+This project is licensed under the MIT License - see the LICENSE.txt file for details.

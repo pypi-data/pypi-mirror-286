@@ -1,0 +1,14 @@
+License.txt
+README.md
+setup.cfg
+setup.py
+src/nb_probability/Binomialdistribution.py
+src/nb_probability/Gaussiandistribution.py
+src/nb_probability/Generaldistribution.py
+src/nb_probability/__init__.py
+src/nb_probability.egg-info/PKG-INFO
+src/nb_probability.egg-info/SOURCES.txt
+src/nb_probability.egg-info/dependency_links.txt
+src/nb_probability.egg-info/requires.txt
+src/nb_probability.egg-info/top_level.txt
+tests/test.py
