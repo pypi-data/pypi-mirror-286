@@ -1,0 +1,236 @@
+Metadata-Version: 2.1
+Name: instantllm
+Version: 1.0.0.1
+Summary: Instantllm is the backend server for the Instant LLM app, enabling users to effortlessly connect and interact with any self-hosted large language model through our user-friendly mobile interface.
+Author: RubenRobadin
+Author-email: rubenjesusrobadin11@gmail.com
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# InstantLLM
+
+InstantLLM is the backend server for the Instant LLM app, enabling users to effortlessly connect and interact with any self-hosted large language model through a user-friendly mobile interface.
+
+Simply download the app on your phone, install the InstantLLM library, and with a few lines of code, you'll be able to leverage your self-hosted model seamlessly.
+
+Remember to first visit our official [website](https://sites.google.com/view/instantllm/home) to pay for the amount of characters you want to use with our interface and you can continue!! (no accounts required!)
+
+Work flow with InstantLLM
+- Implement our library with the model you want to host (Llama3, Gemma2, Mistral...)
+- Run the implementation on your machine (examples below)
+- Download our free InstantLLM app on your phone
+- Join our discord server and run the !gettoken command to get your model token
+- In our app swipe left and tap `add model`
+- Name your model however you want to save it in our app and then paste your model token in the `token from your model provider` field and press `add model`
+- Select your model and have fun using your own hosted model anywhere in the world!
+
+Join our [discord](https://discord.gg/KCBYrYbhyE) server to get your model token
+
+## Features
+
+- Interface for any self-hosted large language model.
+- Easy integration with a few lines of code.
+- User-friendly mobile interface.
+- Supports adding, removing, and selecting models.
+- Allows chatting with models and managing chats.
+
+## Requirements
+- python 3.11 (or greater)
+- ollama (recommended)
+
+## Installation
+
+Install our library using pip:
+```sh
+pip install instantllm
+```
+
+# Usage 
+## Basic Example
+This is a toy example showing how a echo implementation would work, a message is sent from the InstantLLM app, that message is recieved by our server, redirected to your implementation, the response sent back to our server and finally shown in our InstantLLM app
+### 1 Create a message handler:
+
+```python
+from instantllm import InstantLLMClient
+from typing import Callable, Dict, Any
+import asyncio
+
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    message_payload = message['message']
+
+    full_response = f"Processed from pc: {message_payload['message']['content']}"
+    for i in range(1, len(full_response) + 1):
+        partial_response = full_response[:i]
+        response = {
+            "role": "assistant",
+            "content": partial_response
+        }
+
+        if not await client.send_message(token, response):
+            print("Message sending stopped")
+            break
+        await asyncio.sleep(0.1)
+
+async def main():
+    global client
+    API_KEY = "YOUR_API_KEY"
+
+    client = InstantLLMClient(API_KEY)
+    client.set_message_handler(message_handler)
+    client.show_logs = False
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+This example will echo the message sent back to the instant llm app
+
+### 2 Run the main function to start the client.
+
+# Real Use Case with Ollama
+### 1 Helper functions and global variables:
+```python
+from instantllm import InstantLLMClient
+from typing import Callable, Dict, Any
+import asyncio
+import ollama
+
+def sendtomodel(context, model_name):
+    response = ollama.chat(model=model_name, messages=context)
+    return response
+
+def addtocontext(role='user', text='', response={}, context=[]):
+    if role == 'user':
+        message = {'role': role, 'content': text}
+        context.append(message)
+    elif role == 'assistant':
+        message = response['message']
+        context.append(message)
+    return context
+
+context_window = []
+```
+### 2 Create the message handler:
+```python
+async def message_handler(message: Dict[str, Any]):
+    global context_window
+    token = message['token']
+    message_payload = message['message']['message']['content']
+    print(f"Received message: {message}")
+
+    context_window = addtocontext(role='user', text=message_payload, context=context_window)
+    stream = ollama.chat(
+        model='llama3:8b',
+        messages=context_window,
+        stream=True,
+    )
+
+    model_response = ''
+    for chunk in stream:
+        model_response += chunk['message']['content']
+        response = {
+            "role": "assistant",
+            "content": model_response
+        }
+        print(model_response)
+
+        if not await client.send_message(token, response):
+            print("Message sending stopped")
+            break
+
+    context_window = addtocontext(role='assistant', text=model_response, context=context_window)
+```
+### 3 Create the main function:
+```python
+async def main():
+    global client
+    API_KEY = "YOUR_API_KEY"
+
+    client = InstantLLMClient(API_KEY)
+    client.set_message_handler(message_handler)
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+### Your entire server should look like this
+```python
+from instantllm import InstantLLMClient
+from typing import Callable, Dict, Any
+import asyncio
+import ollama
+
+def sendtomodel(context, model_name):
+    response = ollama.chat(model=model_name, messages=context)
+    return response
+
+def addtocontext(role='user', text='', response={}, context=[]):
+    if role == 'user':
+        message = {'role': role, 'content': text}
+        context.append(message)
+    elif role == 'assistant':
+        message = response['message']
+        context.append(message)
+    return context
+
+context_window = []
+
+async def message_handler(message: Dict[str, Any]):
+    global context_window
+    token = message['token']
+    message_payload = message['message']['message']['content']
+    print(f"Received message: {message}")
+
+    context_window = addtocontext(role='user', text=message_payload, context=context_window)
+    stream = ollama.chat(
+        model='llama3:8b',
+        messages=context_window,
+        stream=True,
+    )
+
+    model_response = ''
+    for chunk in stream:
+        model_response += chunk['message']['content']
+        response = {
+            "role": "assistant",
+            "content": model_response
+        }
+        print(model_response)
+
+        if not await client.send_message(token, response):
+            print("Message sending stopped")
+            break
+
+    context_window = addtocontext(role='assistant', text=model_response, context=context_window)
+
+async def main():
+    global client
+    API_KEY = "YOUR_API_KEY"
+
+    client = InstantLLMClient(API_KEY)
+    client.set_message_handler(message_handler)
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+After running the main function, you will be able to use your self hosted model in our InstantLLM app anywhere in the world
+by just having an internet connection
+Now you just have to add your model token in our InstantLLM app, give it any name you want and select your model
+To get your model token please join our discord server and run the !gettoken command
+You will recieve your model token ready to use, you can also share your model token to anyone you want to give access to use your self hosted model 
+
+# Project Structure
+- InstantLLM Server: Hosted by us
+- 3rd Party Server: Hosted by our users with their self-hosted models using the example above
+- InstantLLM App: Interface for using your self-hosted models.
+
+# Contributing
+Contributions are welcome! Please open an issue or submit a pull request on GitHub.
+
