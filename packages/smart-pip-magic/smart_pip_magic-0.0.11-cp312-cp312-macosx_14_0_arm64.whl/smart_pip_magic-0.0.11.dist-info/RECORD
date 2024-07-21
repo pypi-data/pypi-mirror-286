@@ -1,0 +1,8 @@
+example.cpython-312-darwin.so,sha256=SLKOrSLUrTnWehRcOcb0-G-TEBTy0J8Q98yAsEJI2no,50176
+imports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imports/analyze.py,sha256=oVmTbm-BmfZxTaZf10VLVsWcjNqhQLIf2SBI9Cc0mNg,1948
+smart_pip/__init__.py,sha256=_PhJ1IxuzbLcKon_M1cYT6V_Kca6kjVbY2ZyJy314GQ,933
+smart_pip_magic-0.0.11.dist-info/METADATA,sha256=-6fW071Qx8G4Z9dUO4pf0cSMioXo0wf9UVmCari0Hi4,1011
+smart_pip_magic-0.0.11.dist-info/WHEEL,sha256=f4PWeLQ74jh_9kDgGmArnPhl-3pR9BBAJzc-aRPiB_M,113
+smart_pip_magic-0.0.11.dist-info/licenses/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+smart_pip_magic-0.0.11.dist-info/RECORD,,
