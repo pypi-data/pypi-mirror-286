@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smiles_autoencoder"
+version = "0.0.1"
+authors = [
+    { name="Travis Kessler", email="travis.j.kessler@gmail.com" },
+]
+description = "Autoencoders for SMILES strings"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy==2.0.0",
+    "scikit-learn==1.5.1",
+    "torch==2.3.1"
+]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tjkessler/smiles-autoencoder"
+"Bug Tracker" = "https://github.com/tjkessler/smiles-autoencoder/issues"
