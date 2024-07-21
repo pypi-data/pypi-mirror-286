@@ -1,0 +1,10 @@
+xlwt
+psutil
+ultralytics
+opencv-python
+matplotlib
+tqdm
+pycocotools
+websocket-client
+openpyxl
+openai
