@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=70.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sabbaticas"
+version = "0.0.1"
+description = "sabbaticas - thoughts and methodology in code."
+authors = [
+    {name = "Peter Freiberg", email = "peter.freiberg@gmail.com"}
+]
+dependencies = [
+    "Click",
+    "prettytable",
+]
+
+requires-python = ">=3.10"
+readme = "README.md"
+keywords = ["analytics", "git", "appsec", "devsecops", "software security"]
+license = {file = "LICENSE"}
+
+classifiers = [
+      "Development Status :: 3 - Alpha",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python"
+]
+
+[project.scripts]
+sabbaticas = "sabbaticas_cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/sabbaticas/sabbaticas-cli"
+Repository = "https://github.com/sabbaticas/sabbaticas-cli.git"

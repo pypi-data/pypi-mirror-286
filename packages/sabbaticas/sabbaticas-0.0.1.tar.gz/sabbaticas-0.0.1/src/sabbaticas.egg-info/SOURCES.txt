@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/sabbaticas_cli.py
+src/sabbaticas.egg-info/PKG-INFO
+src/sabbaticas.egg-info/SOURCES.txt
+src/sabbaticas.egg-info/dependency_links.txt
+src/sabbaticas.egg-info/entry_points.txt
+src/sabbaticas.egg-info/requires.txt
+src/sabbaticas.egg-info/top_level.txt

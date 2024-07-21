@@ -1,0 +1,2 @@
+[console_scripts]
+sabbaticas = sabbaticas_cli:cli
