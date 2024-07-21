@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: noset-library
+Version: 0.1
+Summary: Repositório com funções frequentemente usadas em scripts dados noset para reutilização de código
+Home-page: https://github.com/nosportugal/noset-library
+Download-URL: https://github.com/nosportugal/noset-library/archive/refs/tags/v_01.tar.gz
+Author: hfgarcia
+Author-email: henrique.garcia@nos.pt
+Keywords: DATABASES,SFTP,ETLs
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas
+Requires-Dist: pandas-gbq
+Requires-Dist: sqlalchemy
+Requires-Dist: requests
+Requires-Dist: pymysql
+Requires-Dist: paramiko

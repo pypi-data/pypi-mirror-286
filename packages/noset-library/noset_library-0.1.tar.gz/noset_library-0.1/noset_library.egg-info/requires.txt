@@ -1,0 +1,6 @@
+pandas
+pandas-gbq
+sqlalchemy
+requests
+pymysql
+paramiko
