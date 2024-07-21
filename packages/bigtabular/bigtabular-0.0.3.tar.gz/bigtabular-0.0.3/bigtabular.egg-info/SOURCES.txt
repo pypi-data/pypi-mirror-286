@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+bigtabular/__init__.py
+bigtabular/_modidx.py
+bigtabular/core.py
+bigtabular/data.py
+bigtabular/learner.py
+bigtabular.egg-info/PKG-INFO
+bigtabular.egg-info/SOURCES.txt
+bigtabular.egg-info/dependency_links.txt
+bigtabular.egg-info/entry_points.txt
+bigtabular.egg-info/not-zip-safe
+bigtabular.egg-info/requires.txt
+bigtabular.egg-info/top_level.txt

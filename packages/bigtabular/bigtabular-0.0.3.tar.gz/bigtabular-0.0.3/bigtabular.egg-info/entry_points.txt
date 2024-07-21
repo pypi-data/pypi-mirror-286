@@ -1,0 +1,2 @@
+[nbdev]
+bigtabular = bigtabular._modidx:d
