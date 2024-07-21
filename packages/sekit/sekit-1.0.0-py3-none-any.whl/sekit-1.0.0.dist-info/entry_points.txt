@@ -1,0 +1,6 @@
+[console_scripts]
+sekit-jymatplot=sekit.jymatplot.__main__:main
+sekit-search=sekit.search.__main__:main
+sekit-spartan=sekit.spartan.__main__:main
+sekit-stats=sekit.stats.__main__:main
+
