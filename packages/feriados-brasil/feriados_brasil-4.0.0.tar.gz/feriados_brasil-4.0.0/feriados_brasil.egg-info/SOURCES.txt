@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+feriado_teste/__init__.py
+feriado_teste/feriados.py
+feriados_brasil.egg-info/PKG-INFO
+feriados_brasil.egg-info/SOURCES.txt
+feriados_brasil.egg-info/dependency_links.txt
+feriados_brasil.egg-info/requires.txt
+feriados_brasil.egg-info/top_level.txt
