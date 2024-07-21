@@ -1,0 +1,2 @@
+[pygments.lexers]
+барвінок = pygments_periwinkle_lexer:PeriwinkleLexer
