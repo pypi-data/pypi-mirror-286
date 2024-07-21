@@ -1,0 +1,3 @@
+[console_scripts]
+bcparser=binary_cookies_parser.__main__:main
+
