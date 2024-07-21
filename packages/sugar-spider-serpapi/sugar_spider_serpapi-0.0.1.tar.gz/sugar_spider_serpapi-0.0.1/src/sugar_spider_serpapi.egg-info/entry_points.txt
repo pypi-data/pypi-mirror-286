@@ -1,0 +1,2 @@
+[console_scripts]
+sugar-spider-serpapi = sugar_spider_serpapi.scripts:sugar_spider_serpapi

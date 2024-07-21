@@ -1,0 +1,6 @@
+aiohttp
+aiolimiter
+click
+google-search-results
+pendulum
+redis[hiredis]
