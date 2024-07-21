@@ -1,0 +1,15 @@
+django_statsd/__about__.py,sha256=PGStb7ii9tQSeZioCoXc7whM8qMdRKg9jVuwto9RgA4,314
+django_statsd/__init__.py,sha256=wmLOcupJwHfPm-r8EISipZEbhrB7H9tJfIZAH8ogUhY,383
+django_statsd/celery.py,sha256=pfWITw2WIRJjTxfT-jx8s01mha_huQhh8L7TdsDO_2c,981
+django_statsd/database.py,sha256=uxGLs5v38PmoobpiRQCSL205jCXN6pJ3JPaQAONQXf8,418
+django_statsd/json.py,sha256=c6hgeceIbCWiHJBYAAPMtV9YwsjAimm4x59jiIJ7Oyg,708
+django_statsd/middleware.py,sha256=h2SQb-KMJbdcNmjie5aLtN-OnvRVWeEncdG5dslPFMM,10037
+django_statsd/redis.py,sha256=fNQAJPmtJJUOR0LMPL2BTLie8oRdmsRqLtXUjJnT35o,609
+django_statsd/settings.py,sha256=poSD68dbKBYA3SZvrzmkeLqnjP1ZIevlUNMeqtjZSaI,1561
+django_statsd/templates.py,sha256=ED4IFk8d1JZqg2FylkFGeeg4nz8w5KyEsqfKZHni6hU,609
+django_statsd/urls.py,sha256=r_PFZAS4ghbxIjUqKeoZhcGnrl9OCwzQIoJfj76MXNY,1386
+django_statsd/utils.py,sha256=cbH8OPzNpb4uc7kpdnUOqEwRs7YOsoFCrMnrFh2ugeU,780
+django_statsd-2.7.0.dist-info/METADATA,sha256=hXusf6ZLz7fJyznHA4LNyh7MPTvOdumWOXp97SwA0qk,3447
+django_statsd-2.7.0.dist-info/WHEEL,sha256=Bg2tc0y2BWmjPleo_9t49Eo5MV2MiaNGRw6ZlQNGo9o,109
+django_statsd-2.7.0.dist-info/top_level.txt,sha256=EhpHWxdLb-1xL2RPcYScHixDKMmlrAg4DLK-h9Gnxjs,14
+django_statsd-2.7.0.dist-info/RECORD,,
