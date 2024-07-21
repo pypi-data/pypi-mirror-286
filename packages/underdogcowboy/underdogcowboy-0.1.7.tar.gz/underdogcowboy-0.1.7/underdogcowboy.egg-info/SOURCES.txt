@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+underdogcowboy/__init__.py
+underdogcowboy/main.py
+underdogcowboy.egg-info/PKG-INFO
+underdogcowboy.egg-info/SOURCES.txt
+underdogcowboy.egg-info/dependency_links.txt
+underdogcowboy.egg-info/entry_points.txt
+underdogcowboy.egg-info/requires.txt
+underdogcowboy.egg-info/top_level.txt
+underdogcowboy/core/__init__.py
+underdogcowboy/core/config_manager.py
+underdogcowboy/core/dialog_manager.py
+underdogcowboy/core/model.py
+underdogcowboy/core/timeline_editor.py
