@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: setupppy
+Version: 0.1
+Summary: End To End Project Folder Structure Setup Tool
+Author: Adarsh Kesharwani
+Author-email: akesherwani900@gmail.com
+Keywords: python,setup,mlops,end to end,project
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools ==71.0.4
+Requires-Dist: wheel ==0.43.0
+
+# SetUp 
+## End To End Project Folder Structure Setup Tool
