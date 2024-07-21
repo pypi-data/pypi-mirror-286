@@ -1,0 +1,11 @@
+files_flattener/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+files_flattener/__main__.py,sha256=Bd45rZU3i-Pd04VAAKIHNep86URzFfLRzKXAAmM134I,1228
+files_flattener/cli.py,sha256=RdQLIfgA2DIxndtuuPcHSxjiLb0ryPjNGShTZLA5ebs,584
+files_flattener/core.py,sha256=nUDw0i1riAxmH8kYRsq023xJ_0HGdsQO62ogWwOOOS8,2967
+files_flattener/files_flattener.py,sha256=Ee3e0nES8i_dA7j16NURbQIlMBQDKpTA1S2xPnYDiSU,2065
+files_flattener-0.1.0.dist-info/LICENSE,sha256=s474erVglCJ7dGH4aS2d21Y8XzipV20bSoMDj_biYPw,1090
+files_flattener-0.1.0.dist-info/METADATA,sha256=3rUWPnG9KBeyUDn0m0tUB4lvCZeIaiD70cCTRkF1aBo,2938
+files_flattener-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+files_flattener-0.1.0.dist-info/entry_points.txt,sha256=41ym4ycJa1y617MrpyhqCBeAfT_nsIx_nV_yLNIomfo,49
+files_flattener-0.1.0.dist-info/top_level.txt,sha256=h1bActF1gowwye4DakT7i34PCDw1nuapRXv07vsqFAM,16
+files_flattener-0.1.0.dist-info/RECORD,,
