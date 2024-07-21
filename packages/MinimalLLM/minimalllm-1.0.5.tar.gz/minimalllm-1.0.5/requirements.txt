@@ -1,0 +1,8 @@
+numpy
+httpx
+pillow
+litellm
+tenacity
+tqdm
+json2html
+pytest
