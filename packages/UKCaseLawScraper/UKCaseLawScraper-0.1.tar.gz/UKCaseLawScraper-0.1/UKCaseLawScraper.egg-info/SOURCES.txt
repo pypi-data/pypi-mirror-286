@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+UKCaseLawScraper/CaseHeaderScraper.py
+UKCaseLawScraper/CaseInfoScraper.py
+UKCaseLawScraper/FullTextScraper.py
+UKCaseLawScraper/Save_to_json.py
+UKCaseLawScraper/__init__.py
+UKCaseLawScraper.egg-info/PKG-INFO
+UKCaseLawScraper.egg-info/SOURCES.txt
+UKCaseLawScraper.egg-info/dependency_links.txt
+UKCaseLawScraper.egg-info/top_level.txt
+tests/__init__.py
+tests/test_module1.py
+tests/test_module2.py
+tests/test_module3.py
