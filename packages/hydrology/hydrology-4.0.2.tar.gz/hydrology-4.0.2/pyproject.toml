@@ -1,0 +1,67 @@
+
+
+[tool.poetry]
+name = "hydrology"
+version = "4.0.2"
+description = "Load data from the UK Hydology API"
+authors = ["Edward Jex <edwardjex@live.co.uk>"]
+license = "LICENCE"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = [
+    "Hydology",
+    "API",
+    "UK",
+    "Water",
+    "Data",
+    "Environment Agency",
+    "River",
+    "Flood",
+    "Rain",
+    "Weather",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+polars = { extras = ["timezone"], version = "^1.2.1" }
+httpx = "^0.27.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pytest-asyncio = "^0.23.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio", "pytest-httpx"]
+dev = ["ruff"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+target-version = "py310"
+
+[tool.ruff.lint]
+
+fixable = ["ALL"]
+unfixable = []
+
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
