@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/aifaker/__init__.py
+src/aifaker/modules.py
+src/aifaker.egg-info/PKG-INFO
+src/aifaker.egg-info/SOURCES.txt
+src/aifaker.egg-info/dependency_links.txt
+src/aifaker.egg-info/top_level.txt
