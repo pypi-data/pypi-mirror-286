@@ -1,0 +1,11 @@
+discord_dumper/__init__.py,sha256=L4ZVfyNvq7atmQrWVRgRyT8JlTXb-xvS5GqvLK2M5H0,356
+discord_dumper/__main__.py,sha256=C6QGzQd2GueipBSDmyL0NqrwtzhwtL4xx_uiOusN9JY,368
+discord_dumper/cli.py,sha256=kNx3zPnGG0cw3Q-vRCMJNykdR110nOOlu5q1_GKigIo,2475
+discord_dumper/core.py,sha256=08jOKxV3va4BsDnSi5rNM73Hs5fudbRzt7Q_J5hm-zQ,487
+discord_dumper/dumper.py,sha256=LfG5Uw4OJ6aRLFQSs1H2K3IXuDe9dNQ7JRbBQYb4C4g,6065
+discord_dumper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discord_dumper-0.0.1.dist-info/LICENSE,sha256=kYRz570GVPktzhJxWtaencsrsjdKSetpe5WISlDrvnY,1093
+discord_dumper-0.0.1.dist-info/METADATA,sha256=CjfPpOFCNW5DRcqlF7nZIFHwZQjycI1miQIE3r8QKJs,7146
+discord_dumper-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+discord_dumper-0.0.1.dist-info/entry_points.txt,sha256=Q861jV41S0KwUtVGd-NSaXoIeo0KW8YUf5N0qOyi4VY,64
+discord_dumper-0.0.1.dist-info/RECORD,,

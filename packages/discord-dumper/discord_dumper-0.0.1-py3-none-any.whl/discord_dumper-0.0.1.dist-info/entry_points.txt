@@ -1,0 +1,3 @@
+[console_scripts]
+discord-dumper=discord_dumper.cli:entrypoint
+
