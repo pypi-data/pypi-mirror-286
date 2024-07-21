@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "LittleKnow"
+version = "1.0.2"
+description = "this is a little know base"
+authors = ["sf"]
+license = "MIT"
+readme = "README.md"
+
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bs4 = "^0.0.2"
+diskcache = "^5.6.3"
+shortuuid = "^1.0.13"
+modelscope = "^1.16.1"
+gne = "^0.3.1"
+jieba = "^0.42.1"
+haystack-bm25 = "^1.0.2"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
