@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: medhaai
+Version: 0.4.0
+Summary: A flexible and powerful multi-agent AI framework for building advanced AI applications
+Home-page: https://github.com/sarath59/medhaAI
+Author: Sarath Kavuru
+Author-email: sarathc225@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pydantic-settings>=2.0.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: anthropic>=0.3.0
+Requires-Dist: aiohttp>=3.7.4
+Requires-Dist: beautifulsoup4>=4.9.3
+Requires-Dist: trafilatura>=1.4.0
+Requires-Dist: opentelemetry-api>=1.12.0
+Requires-Dist: opentelemetry-sdk>=1.12.0
+Requires-Dist: asyncio>=3.4.3
+Provides-Extra: dev
+Requires-Dist: pytest>=6.2.5; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.15.1; extra == "dev"
+Requires-Dist: black>=21.9b0; extra == "dev"
+Requires-Dist: isort>=5.9.3; extra == "dev"
+
+# MedhaAI
+
+MedhaAI is a flexible and powerful multi-agent AI framework for building advanced AI applications. It provides a set of tools and abstractions that allow developers to create complex, collaborative AI systems with ease.
+
+## Features
+
+- Multi-agent system with prioritized agents
+- Support for multiple LLM providers (OpenAI, Anthropic)
+- Flexible memory systems
+- Advanced planning and execution modules
+- Customizable toolkit system with advanced web scraping capabilities
+- Live streaming of agent activities
+- Performance monitoring and tracing
+- Asynchronous operations for improved performance
+
+## Installation
+
+To install MedhaAI, simply use pip:
+
+```bash
+pip install medhaai
+```
+
+## Quick Start
+
+Here's a simple example to get you started with MedhaAI:
+
+```python
+import asyncio
+from medhaai import MedhaConfig, BaseLLM, BaseAgent, MedhaMultiAgentSystem
+
+async def main():
+    config = MedhaConfig()
+    llm = BaseLLM.create("openai", api_key=config.openai_api_key)
+    agent = BaseAgent.create("general", name="GeneralAgent", role="assistant", llm=llm)
+    mas = MedhaMultiAgentSystem(task_decomposition_llm=llm)
+    mas.add_agent(agent)
+    result = await mas.run_task("Research and summarize the latest advancements in quantum computing")
+    print(result)
+
+asyncio.run(main())
+```
+
+## Documentation
+
+For more detailed information and advanced usage, please refer to our [documentation](https://medhaai.readthedocs.io).
+
+## Contributing
+
+Contributions are welcome! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
