@@ -1,0 +1,1 @@
+print("[+] Pyreshut was installed")
