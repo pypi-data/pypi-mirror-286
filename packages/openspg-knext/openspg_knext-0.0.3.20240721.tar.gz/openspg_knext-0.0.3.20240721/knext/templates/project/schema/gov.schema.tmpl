@@ -1,0 +1,38 @@
+namespace {{namespace}}
+
+Chunk(文本块): EntityType
+     properties:
+        info(信息): Text
+        content(内容): Text
+
+AdministrativeArea(行政区域): EntityType
+     properties:
+        locateIn(位于): AdministrativeArea
+
+GovernmentService(政府服务): EntityType
+     properties:
+        workHours(工作时间): Text
+        telephone(联系电话): Text
+        completionTime(承诺完结时间): Text
+        cost(费用): Text
+        subService(子事项): GovernmentService
+        requiredMaterial(所需材料): Material
+        conditions(受理条件): ApplyCondition
+        location(位于): AdministrativeArea
+        chunk(对应原文块): Chunk
+
+Material(材料): EntityType
+     properties:
+        requires(文件要求): Text
+            desc: 必须在【无, 原件, 复印件, 原件和复印件, 原件或复印件, 电子版】范围内
+            constraint: Enum(无,原件,复印件,原件和复印件,原件或复印件,电子版)
+        numberOfCopies(复印件份数): Text
+        chunk(对应原文块): Chunk
+
+ApplyCondition(受理条件): EntityType
+     properties:
+        value(条件值): Text
+            constraint: MultiValue
+        constraint(约束): Text
+            constraint: Enum(必须满足,满足其一)
+        chunk(对应原文块): Chunk

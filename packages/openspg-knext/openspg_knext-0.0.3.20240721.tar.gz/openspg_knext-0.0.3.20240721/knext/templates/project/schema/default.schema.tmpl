@@ -1,0 +1,130 @@
+namespace {{namespace}}
+
+Chunk(文本块): EntityType
+     properties:
+        info(信息): Text
+        content(内容): Text
+
+Time(时间): EntityType
+     desc: 指特定的时刻、时期或历史阶段，可以精确到年、月、日、小时或更具体的时间单位
+Role(角色): EntityType
+     desc: 反映个体或实体在特定情境或系统中所担任的职责、功能或社会地位，如职业角色、家庭角色等
+CreativeWork(作品与出版物): EntityType
+     desc: 指通过创造性劳动和艺术表达产生的作品，例如书籍、音乐作品、电影、画作、软件以及广义上的内容产物
+Event(事件): EntityType
+     desc: 指具体发生的活动或事情，可以是历史事件、社会活动、自然现象等，并常包括时间和地点的信息
+Item(物体与物品): EntityType
+     desc: 实体世界中的有形物品，如工具、家具、衣物、技术设备等，它们常具有实用价值或象征意义
+Organism(生物): EntityType
+     desc: 生活在地球上的各种有机体，包括人类、动物、植物、微生物等，拥有生命特征的实体
+VirtualEntity(虚拟事物): EntityType
+     desc:  存在于数字空间或人类想象中的实体，如网站、数字货币、虚拟角色、概念和理念等
+Place(区域地点): EntityType
+     desc: 代表一个具体的地理位置或虚拟空间，可以是自然地点也可以是人造建筑，例如城市、建筑物、在线会议空间等
+     properties:
+        streetAddress(街道地址): Text
+        postalCode(邮政编码): Text
+        locality(城市名): Text
+        region(省名): Text
+        country(国家名): Text
+        basicInfo(基础信息): Text
+        otherInfo(其他信息): Text
+Person(人物): EntityType
+     desc: 指一个具有身份认同的个体，该实体具备多种属性和社会关系，并能在社会和文化环境中以个人的身份活动
+     properties:
+            additionalName(别名):Text
+                desc: 人物的别名、外号、外文名、艺名或曾用名
+            gender(性别):Text
+                desc: 人物的性别，男或女
+            ethnicity(民族):Text
+                desc: 人物所属的民族，包括汉族和其他少数民族共56个民族
+            height(身高):Text
+                desc: 人物的身高，通常以厘米为单位
+
+            educationLevel(学历):Text
+                desc: 人物获得的学历水平，例如初中、高中、本科、硕士等
+            awards(荣誉):Text
+                desc: 人物获得的特定领域或活动中取得显著成就的荣誉或奖励
+            basicInfo(基础信息): Text
+            otherInfo(其他信息): Text
+            nativePlace(祖籍):Place
+                desc: 人物的籍贯地，具体到省或市
+            birthDate(出生日期):Time
+                desc: 人物的出生日期，通常包括年、月、日
+            deathDate(逝世日期):Time
+                desc: 人物的逝世日期，通常包括年、月、日
+            major(职业):Role
+                desc: 人物在高等教育阶段所学的专业或从事的职业
+            nationality(国籍):Place
+                desc: 人物所拥有的国籍
+            birthPlace(出生地):Place
+                desc: 人物出生的具体地点
+            deathPlace(逝世地点):Place
+                desc: 人物去世的具体地点
+            graduatedSchool(毕业院校):Organization
+                desc: 人物毕业院校的名称
+            workLocation(工作地点):Place
+                desc: 人物的工作地点
+            workUnit(工作单位):Organization
+                desc: 人物所在的工作单位
+            majorWorks(代表作品):CreativeWork
+                desc: 人物创作的代表作品名称
+            homeLocation(家庭地址):Place
+                desc: 人物的家庭住址
+            father(父亲):Person
+                desc: 人物的父亲
+            mother(母亲):Person
+                desc: 人物的母亲
+            spouse(配偶):Person
+                desc: 人物的配偶
+            sibling(兄弟姐妹):Person
+                desc: 人物的兄弟姐妹
+            children(子女):Person
+                desc: 人物的子女
+
+
+Organization(组织机构): EntityType
+    desc:  指由多个人组成并为共同目标而工作的实体，如公司、政府机关、非营利组织、学术机构等
+    properties:
+        website(官方网站): Text
+            desc: 该机构官方网站的URL链接
+        telephone(联系电话): Text
+            desc: 机构的联系电话号码
+        faxNumber(传真号码): Text
+            desc: (可选)机构的传真号码
+        email(电子邮件): Text
+            desc: 机构的官方电子邮件地址
+        industry(所属行业): Text
+            desc: 表示机构所在的行业领域
+        basicInfo(基础信息): Text
+        otherInfo(其他信息): Text
+        foundingDate(成立日期): Time
+            desc: 机构创立的具体日期
+        address(地址信息): Place
+            desc: 包含详细地理位置信息的地址
+        affiliatedOrganizations(关联机构): Organization
+            desc: 上级机构、下级机构或合作伙伴等关联组织
+        founder(创始人): Person
+            desc: 创立该机构的个人
+        subsidiaries(子公司): Organization
+            desc: 该机构下属的所有子公司或分支机构
+
+PersonExperienceEvent(人物经历事件): EventType
+    properties:
+        subject(主体): Person
+          desc: 经历 生老病死、家庭生活、教育经历、职业履历、荣誉获奖、军旅生涯 等事件的人物主体
+        eventType(事件类型): Text
+          desc: 事件类型,如生老病死、家庭生活、教育经历、职业履历、发表作品、荣誉获奖、军旅生涯 等
+        location(地点): Text
+        eventDescription(事件描述): Text
+          desc: 事件描述，尽量精简
+        eventSummary(事件摘要): Text
+          desc: 一句话对事件进行简要概述
+        startTime(开始时间): Time
+        endTime(结束时间): Time
+        objectPerson(客体人物): Person
+          desc: 事件涉及的客体人物，可能关联多个
+        objectOrganization(客体机构): Organization
+          desc: 事件涉及的的客体机构，可能关联多个
+        objectCreativeWork(客体创作): CreativeWork
+          desc: 事件涉及的客体创作，可能关联多个

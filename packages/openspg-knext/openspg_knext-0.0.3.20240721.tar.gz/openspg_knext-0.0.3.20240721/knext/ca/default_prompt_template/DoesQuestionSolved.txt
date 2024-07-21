@@ -1,0 +1,20 @@
+要求: 
+1. 根据question和answer，判断这个问题是不是被解决了
+2. 如果已经被解决，回答是
+3. 如果没有被解决，根据question和answer重新构建一个问题，能够更容易被回答
+例子1:
+llm_input: 
+question: 钱学森的妻子的爸爸是谁?
+answer: 蒋百里
+llm_output: 是
+例子2：
+llm_input:
+question: 钱学森的妻子的爸爸是谁?
+answer: 不知道
+llm_output:否
+根据以上的要求和例子，判断以下问题是不是一个被解决的问题?
+llm_input: 
+question: $question
+answer: $answer
+llm_output:
+'''
