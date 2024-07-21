@@ -1,0 +1,9 @@
+pandas
+openpyxl
+PySimpleGUI
+numpy
+xlrd
+jinja2
+paramiko
+netmiko
+ntc-templates
