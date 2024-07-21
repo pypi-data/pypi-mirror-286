@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: gdbot
+Version: 1.1.0
+Summary: Python Library for creating Geometry Dash Comment Bots.
+Home-page: https://github.com/SevenworksDev/GDBotPy
+Author: SevenworksDev
+Author-email: mail@sevenworks.eu.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# GDBot.py
+Python Library for creating Geometry Dash Comment Bots. More info about this later (probably)
+(Pretty much inspired by Discord.py along with CallocGD's GD-Comment-Bot-Wrapper project)
+
+# Examples
+## Simple Bot
+mmmmmmmmmmm
+```python
+from gdbot import GDBot
+
+# Configure our login.
+bot = GDBot("USERNAME", "PASSWORD", "LEVEL ID")
+
+# Code to execute when ready.
+@bot.on_ready
+def ready(bot: GDBot):
+    print(f"Bot is ready and logged in as {bot.username}")
+
+# Code to execute when error (WIP idc)
+@bot.on_error
+def error(bot: GDBot, err: Exception):
+    print(f"Err: {err}")
+
+# Code to execute when banned (temporary or permanantly [unused])
+@bot.on_banned
+def banned(bot: GDBot):
+    print(f"Bot has been banned.")
+
+# Simple command returning "Hello SevenworksGD!"
+@bot.command("/hello")
+def hello(bot: GDBot, data: dict):
+    bot.comment(f'Hello {data.get("username")}!')
+
+# Simple command returning your accountID.
+@bot.command("/getMyAccID")
+def hello(bot: GDBot, data: dict):
+    bot.comment(f'{data.get("username")} accountID: [{data.get("accountID")}]')
+
+# Simple command using arguments.
+@bot.command("/shut")
+def hello(bot: GDBot, data: dict):
+    un = data.get("comment").split("/shut ")[1]
+	if un:
+        bot.comment(f'{data.get("username")} told you to shut yo mouth {un}')
+    else:
+	    bot.comment(f'@{data.get("username")} usage: /shut [target user]')
+
+bot.run()
+```
+## Simple Bot (Loading Commands)
+```python
+from gdbot import GDBot
+
+# Configure our login.
+bot = GDBot("USERNAME", "PASSWORD", "LEVEL ID")
+
+# Code to execute when ready.
+@bot.on_ready
+def ready(bot: GDBot):
+    print(f"Bot is ready and logged in as {bot.username}")
+
+# Code to execute when error (WIP idc)
+@bot.on_error
+def error(bot: GDBot, err: Exception):
+    print(f"Err: {err}")
+
+# Code to execute when banned (temporary or permanantly [unused])
+@bot.on_banned
+def banned(bot: GDBot):
+    print(f"Bot has been banned.")
+
+# This loads all commands from the commands folder.
+bot.load_commands("commands")
+
+# And if you want to catergorize this:
+bot.load_commands("commands/fun")
+bot.load_commands("commands/ai")
+bot.load_commands("commands/moderation")
+bot.load_commands("commands/etc")
+
+bot.run()
+```
+and in `commands/hello.py`:
+```python
+def hello(bot, comment):
+    bot.comment(f"Hello!")
+
+hello.__command__ = "/hello"
+```
+
