@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_datasphere.egg-info/PKG-INFO
+yandex_datasphere.egg-info/SOURCES.txt
+yandex_datasphere.egg-info/dependency_links.txt
+yandex_datasphere.egg-info/top_level.txt
