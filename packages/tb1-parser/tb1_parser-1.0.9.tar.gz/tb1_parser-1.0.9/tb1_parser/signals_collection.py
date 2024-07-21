@@ -1,0 +1,3 @@
+class SignalsCollection(tuple):
+    
+    pass
