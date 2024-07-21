@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: LittleKnow
+Version: 1.0.2
+Summary: this is a little know base
+License: MIT
+Author: sf
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bs4 (>=0.0.2,<0.0.3)
+Requires-Dist: diskcache (>=5.6.3,<6.0.0)
+Requires-Dist: gne (>=0.3.1,<0.4.0)
+Requires-Dist: haystack-bm25 (>=1.0.2,<2.0.0)
+Requires-Dist: jieba (>=0.42.1,<0.43.0)
+Requires-Dist: modelscope (>=1.16.1,<2.0.0)
+Requires-Dist: shortuuid (>=1.0.13,<2.0.0)
+Description-Content-Type: text/markdown
+
+
+# LittleKnow 轻量知识库模块
+
+## 概述
+LittleKnow 是一个基于 BM2.5 算法的文本检索系统，它能够对知识库中的内容进行高效检索。系统支持添加文本知识、进行网络搜索以及查询特定文本。
+
+## 功能特点
+- **文本知识添加**：用户可以向知识库中添加文本，以供检索使用。
+- **网络搜索**：系统能够根据用户输入的关键词进行网络搜索，获取相关信息。
+- **文本查询**：用户可以查询知识库中与特定文本相关的信息，系统支持返回前K个最相关结果。
+
+## 使用方法
+
+### 1. 初始化知识库
+首先，需要创建一个 `LittleKnow` 实例，并指定知识库的名称。
+
+```python
+lk = LittleKnow(know_name="大语言模型测试知识库2")
+```
+
+### 2. 添加文本知识
+将文本添加到知识库中，以便后续检索。
+
+```python
+lk.add_know(text)
+```
+
+### 3. 进行网络搜索
+使用 `know_net_work_search` 方法，根据用户输入的关键词进行网络搜索。
+
+```python
+res = lk.know_net_work_search("大语言模型")
+print(res)
+```
+
+### 4. 查询知识库
+使用 `query` 方法查询知识库中与特定文本相关的信息，可以通过 `top_k` 参数指定返回结果的数量。
+
+```python
+results = lk.query("模型主体为4层FSMN结构", top_k=5)
+```
+
+## 技术细节
+- **BM2.5 算法**：BM2.5（Best Matching 2.5）是一种基于概率的文本检索算法，它能够根据文本的相关性对搜索结果进行排序。
+
+## 应用场景
+LittleKnow 适用于需要大量文本检索和知识管理的场景，例如企业知识库、在线帮助系统等。
+
+## 注意事项
+- 确保输入的文本格式正确，以避免检索错误。
+- 网络搜索功能依赖于网络环境，可能受到网络速度和稳定性的影响。
+
+## 版本信息
+- 当前文档描述的是 LittleKnow 系统的使用和功能，适用于版本 2.5。
+
+## 联系我们
+如有任何问题或需要技术支持，请联系我们的客服团队。
+
