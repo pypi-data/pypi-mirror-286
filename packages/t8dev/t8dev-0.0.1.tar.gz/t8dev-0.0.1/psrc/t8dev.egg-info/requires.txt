@@ -1,0 +1,16 @@
+r8format>=0.0.5
+patool
+
+[all]
+py65
+requests
+pytest
+
+[extsim]
+py65
+
+[pytest]
+pytest
+
+[toolset]
+requests
