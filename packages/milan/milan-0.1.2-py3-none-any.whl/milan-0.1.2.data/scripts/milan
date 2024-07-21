@@ -1,0 +1,14 @@
+#!python
+
+import sys
+
+from milan.cli.cli import cli
+
+
+if __name__ == '__main__':
+    exit_code = cli(
+        argv=sys.argv,
+        setup_logging=True,
+    )
+
+    sys.exit(exit_code)
