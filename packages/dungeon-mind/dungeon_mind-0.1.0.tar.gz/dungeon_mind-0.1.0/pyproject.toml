@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dungeon-mind"
+version = "0.1.0"
+description = "AI-powered game management system that enhances tabletop role-playing experiences"
+authors = ["sebastian-hsu <sebastian.hsu@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dungeon_mind", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11,<3.13"
+pyautogen = "^0.2.32"
+game-realm-keeper = "^0.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
