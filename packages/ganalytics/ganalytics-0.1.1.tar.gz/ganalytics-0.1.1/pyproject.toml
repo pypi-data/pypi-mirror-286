@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ganalytics"
+version = "0.1.1"
+authors = [
+    {name="Mesake Navunawa", email="mesake.navunawa@gmail.com" },
+]
+description = "A python library for simple interaction with the Google Analytics API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'google-analytics-data>=0.18.8,<0.19.0',
+    'pydantic>=2.8.2,<2.9.0',
+    'python-decouple>=3.8,<3.9',
+    'injector>=0.22.0,<0.23.0',
+    'coloredlogs>=15.0.1,<15.1.0',
+]
+
+[project.urls]
+Homepage = "https://github.com/Mesake94/ganalytics.git"
+
+
