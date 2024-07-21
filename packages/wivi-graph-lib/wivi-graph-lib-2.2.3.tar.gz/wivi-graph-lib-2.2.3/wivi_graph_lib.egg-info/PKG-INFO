@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: wivi-graph-lib
+Version: 2.2.3
+Author: Awais Ayub
+Author-email: aayub@intrepidcs.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
