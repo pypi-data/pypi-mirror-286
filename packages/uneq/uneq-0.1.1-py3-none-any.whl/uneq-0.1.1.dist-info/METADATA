@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: uneq
+Version: 0.1.1
+Summary: 
+Author: f0e
+Author-email: 7321764+f0e@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ffmpeg-progress-yield (>=0.7.8,<0.8.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: rich-click (>=1.8.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# unEQ
+
+CLI application for removing EQ from video files. Supports Equaliser APO configs.
+
+## Requirements
+
+- FFmpeg
+
+## Usage
+
+`uneq -i [video path] -e [eq config path]`
+
+## Limitations
+
+Currently only supports PK (peak), LSC (low shelf) and HSC (high shelf) filter types.
+
