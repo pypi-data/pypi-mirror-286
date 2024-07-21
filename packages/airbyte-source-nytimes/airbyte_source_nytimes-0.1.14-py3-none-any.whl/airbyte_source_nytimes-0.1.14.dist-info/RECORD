@@ -1,0 +1,9 @@
+source_nytimes/__init__.py,sha256=HTDSSRJ_BQa5HUCA1apfP-0aVSoYoB9zHOlOaD7FnNQ,126
+source_nytimes/manifest.yaml,sha256=JrZ2FZU7tOm8fxXdf2RkDzSxC8sCmNnF-bPn6MJUSZ4,27389
+source_nytimes/run.py,sha256=Z3Ls8Za95sYy7CkCFrfupz8q1YyEq9wq_vVZUtHWvFk,233
+source_nytimes/source.py,sha256=EIoqIP1Sz5-oxDpMmIhqfvgUJ5ocBZ5Y1dhYH1-sK9Q,476
+source_nytimes/spec.yaml,sha256=3CH6-2D9lG98qtZidio0Y_N6imL66bhLNoeWjP-gP38,1244
+airbyte_source_nytimes-0.1.14.dist-info/METADATA,sha256=8tgoSOtFEMxLl_Ym1D6s8_Cbusw5U2YbqJzUF6nQW8A,5232
+airbyte_source_nytimes-0.1.14.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_nytimes-0.1.14.dist-info/entry_points.txt,sha256=kfZd4z87ZF03Vk42BXUSy9Wpd_HQt5pzloj9UljVVvQ,57
+airbyte_source_nytimes-0.1.14.dist-info/RECORD,,
