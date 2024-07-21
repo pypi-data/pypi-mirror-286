@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+bulk_checksum/compare.py
+bulk_checksum/generate.py
+bulk_checksum.egg-info/PKG-INFO
+bulk_checksum.egg-info/SOURCES.txt
+bulk_checksum.egg-info/dependency_links.txt
+bulk_checksum.egg-info/entry_points.txt
+bulk_checksum.egg-info/requires.txt
+bulk_checksum.egg-info/top_level.txt
+test/test_compare.py

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bulk_checksum"
+version = "0.0.1"
+description = "CLI utility for verifiying bulk file copying"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "click~=8.1.7"
+]
+
+
+[project.scripts]
+bulk_checksum_generate = "bulk_checksum.generate:generate_main"
+bulk_checksum_compare = "bulk_checksum.compare:compare_main"
