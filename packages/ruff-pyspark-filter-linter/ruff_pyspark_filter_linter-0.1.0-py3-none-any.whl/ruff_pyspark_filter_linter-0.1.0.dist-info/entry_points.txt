@@ -1,0 +1,2 @@
+[console_scripts]
+ruff-pyspark-filter-linter = ruff_pyspark_filter_linter.linter:lint_files
