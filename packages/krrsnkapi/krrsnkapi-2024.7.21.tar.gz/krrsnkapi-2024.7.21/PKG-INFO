@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: krrsnkapi
+Version: 2024.7.21
+Summary: Модуль для лёгкого использования моего бесполезного API
+Home-page: https://github.com/kararasenok-gd/krrsnkapi/
+Author: kararasenok-gd
+Author-email: kararasenok_gd@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+# krrsnk-api
+Everything about this project located [here](https://github.com/kararasenok-gd/krrsnkapi/)
+
+# Documentation
+[API](https://github.com/kararasenok-gd/krrsnkapi/blob/main/docs.md)
+ [Module](https://github.com/kararasenok-gd/krrsnkapi/blob/main/module.md)
