@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "FindMy"
+version = "v0.7.0"
+description = "Everything you need to work with Apple's Find My network!"
+authors = ["Mike Almeloo <git@mikealmel.ooo>"]
+readme = "README.md"
+packages = [{ include = "findmy" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+srp = "^1.0.21"
+cryptography = "^43.0.0"
+beautifulsoup4 = "^4.12.3"
+aiohttp = "^3.9.5"
+bleak = "^0.22.2"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.0"
+sphinx = "^7.2.6"
+sphinx-autoapi = "^3.0.0"
+pyright = "^1.1.350"
+ruff = "0.5.2"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+# rule overrides
+typeCheckingMode = "standard"
+reportImplicitOverride = true
+
+[tool.ruff]
+exclude = [
+    "docs/",
+]
+
+select = [
+    "ALL",
+]
+ignore = [
+    "ANN101", # annotations on `self`
+    "ANN102", # annotations on `cls`
+    "FIX002", # resolving TODOs
+
+    "D203", # one blank line before class docstring
+    "D212", # multi-line docstring start at first line
+    "D105", # docstrings in magic methods
+
+    "S101",  # assert statements
+
+    "PLR2004", # "magic" values >.>
+    "FBT",     # boolean "traps"
+]
+
+line-length = 100
+
+[tool.ruff.lint.per-file-ignores]
+"examples/*" = [
+    "T201",  # use of "print"
+    "S101",  # use of "assert"
+    "D",  # documentation
+    "INP001",  # namespacing
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
