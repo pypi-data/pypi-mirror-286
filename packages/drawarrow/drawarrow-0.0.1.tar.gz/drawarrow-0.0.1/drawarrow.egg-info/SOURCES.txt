@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+drawarrow/__init__.py
+drawarrow/main.py
+drawarrow.egg-info/PKG-INFO
+drawarrow.egg-info/SOURCES.txt
+drawarrow.egg-info/dependency_links.txt
+drawarrow.egg-info/requires.txt
+drawarrow.egg-info/top_level.txt
