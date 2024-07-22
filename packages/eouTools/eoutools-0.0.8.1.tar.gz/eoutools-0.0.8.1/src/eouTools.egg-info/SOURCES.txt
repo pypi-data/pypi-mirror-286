@@ -1,0 +1,9 @@
+README.md
+installation.md
+pyproject.toml
+setup.cfg
+src/eouTools.egg-info/PKG-INFO
+src/eouTools.egg-info/SOURCES.txt
+src/eouTools.egg-info/dependency_links.txt
+src/eouTools.egg-info/requires.txt
+src/eouTools.egg-info/top_level.txt
