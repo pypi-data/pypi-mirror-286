@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+strto/__init__.py
+strto/constants.py
+strto/parsers.py
+strto.egg-info/PKG-INFO
+strto.egg-info/SOURCES.txt
+strto.egg-info/dependency_links.txt
+strto.egg-info/requires.txt
+strto.egg-info/top_level.txt
+tests/test_parser.py
