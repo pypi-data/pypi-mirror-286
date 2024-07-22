@@ -1,0 +1,3 @@
+[console_scripts]
+uneq=uneq.cli:cli
+
