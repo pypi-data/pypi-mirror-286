@@ -1,0 +1,5 @@
+include cythonfragmentparser/requirements.txt
+include cythonfragmentparser/thirdparty.json
+include cythonfragmentparser/README.MD
+include cythonfragmentparser/cyfragmentparser.pyx
+include cythonfragmentparser/cyfragmentparser_compile.py
