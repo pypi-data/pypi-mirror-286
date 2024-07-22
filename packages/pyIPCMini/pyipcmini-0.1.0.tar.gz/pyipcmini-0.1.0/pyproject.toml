@@ -1,0 +1,131 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyIPCMini"
+dynamic = ["version"]
+requires-python = ">=3.7"
+# license = { file = "LICENSE" }
+description = "pyIPCMini is a package to communicate and control via USB/serial the ion pump controller type IPCMini from Agilent."
+authors = [{ name = "Benjamin Pasquiou", email = "benjamin.pasquiou@univ-paris13.fr" }]
+readme = "README.md"
+
+keywords = ["IPCMini", "driver", "ion pump"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: BSD License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Programming Language :: Python :: 3.14',
+    'Topic :: Scientific/Engineering',
+    'Topic :: System :: Hardware :: Hardware Drivers',
+    'Typing :: Typed',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: Unix',
+    'Operating System :: MacOS',
+]
+
+dependencies = ["pyserial", "python-dateutil"]
+
+[project.scripts]
+pyIPCMini = "pyipcmini.scripts.single_measurement:main"
+
+[project.urls]
+Homepage = "https://github.com/benjaminpasquiou/pyIPCMini"
+Documentation = "https://pyIPCMini.readthedocs.io"
+Repository = "https://github.com/benjaminpasquiou/pyIPCMini.git"
+Issues = "https://github.com/benjaminpasquiou/pyIPCMini/issues"
+Changelog = "https://github.com/benjaminpasquiou/pyIPCMini/blob/main/CHANGELOG.md"
+
+
+[tool.setuptools.packages.find]
+include = ["pyipcmini*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "pyipcmini.version.__version__" }
+
+
+
+# pixi related settings. Only useful for the project development.
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+pyIPCMini = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.feature.linter.dependencies]
+# pixi add -f linter pylint
+# pixi add -f linter pyserial
+# pixi add -f linter python-dateutil
+# pixi add -f linter ruff
+pylint = ">=2.7.2,<2.8"
+pyserial = ">=3.5,<4"
+python-dateutil = ">=2.9.0,<2.10"
+ruff = ">=0.5.0,<0.6"
+
+[tool.pixi.feature.linter.tasks]
+pylint-check = "pylint pyipcmini"
+# "pixi run -e linter pylint --generate-rcfile | out-file -encoding utf8 .pylintrc"
+pylint-check-rc = "pylint --rcfile=.pylintrc pyipcmini"
+ruff-check = "ruff check pyipcmini --select ALL"
+ruff-check-fix = "ruff check --fix pyipcmini --select ALL"
+
+[tool.pixi.feature.pypi-release.dependencies]
+# pixi add -f pypi-release build
+# pixi add -f pypi-release twine
+build = ">=0.7.0,<0.8"
+twine = ">=5.1.1,<5.2"
+
+[tool.pixi.feature.pypi-release.tasks]
+build-sdist = "python -m build --sdist"
+build-wheel = "python -m build --wheel"
+publish-test-pypi = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
+publish-pypi = "twine upload dist/*"
+
+[tool.pixi.feature.docs.dependencies]
+# pixi add -f docs sphinx=7.3
+# pixi add -f docs numpydoc
+# pixi add -f docs pydata-sphinx-theme
+# pixi add -f docs python-dateutil
+# pixi add -f docs nbsphinx
+# pixi add -f docs nbsphinx-link
+# pixi add -f docs docutils==0.20   because 0.21 makes mistake
+# pixi add -f docs ipykernel
+# pixi add -f docs myst-parser
+sphinx = "7.3.*"
+numpydoc = ">=1.7.0,<1.8"
+pydata-sphinx-theme = ">=0.15.4,<0.16"
+python-dateutil = ">=2.9.0,<2.10"
+nbsphinx = ">=0.9.4,<0.10"
+nbsphinx-link = ">=1.3.0,<1.4"
+docutils = "==0.20"
+ipykernel = ">=6.29.5,<6.30"
+myst-parser = ">=3.0.1,<3.1"
+
+[tool.pixi.feature.docs.tasks]
+build-apidoc = "sphinx-apidoc -f -o doc/source/ pyipcmini"
+build-doc = "cd doc; make html"
+
+
+[tool.pixi.environments]
+# pixi project environment add linter -f linter
+# pixi project environment add publish -f pypi-release
+# pixi project environment add docu -f docs
+linter = ["linter"]
+publish = ["pypi-release"]
+docu = ["docs"]
+
+[tool.pixi.dependencies]
+pre-commit = ">=3.7.1,<3.8"
