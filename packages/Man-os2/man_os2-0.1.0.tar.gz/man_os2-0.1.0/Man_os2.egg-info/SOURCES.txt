@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+Man_os2.egg-info/PKG-INFO
+Man_os2.egg-info/SOURCES.txt
+Man_os2.egg-info/dependency_links.txt
+Man_os2.egg-info/requires.txt
+Man_os2.egg-info/top_level.txt
