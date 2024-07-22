@@ -1,0 +1,9 @@
+numpyvision/__init__.py,sha256=1umJixDGU1xDK65WUEF0_z_MLx59bxGsMiFcTCCVUrs,906
+numpyvision/datasets/__init__.py,sha256=HYFYZJFPfiJghhPBQnGam1LXGfG7oG-IzNHhTkPt0HY,125
+numpyvision/datasets/mnist.py,sha256=ZyOVAAaqzau4JG3WmFxWyGzqnZGzetsWFuvaAPpWk-A,20271
+numpyvision/datasets/utils.py,sha256=1VvOQroK3hgj4d-wSEyjQUzmDtbxvmlMJHGJ3wgStM4,6085
+numpyvision-0.5.0.dist-info/LICENSE,sha256=h6LSmOzMMpneOoKz2Xh81ZumYbF77NCRNjrgVVfGFeo,1500
+numpyvision-0.5.0.dist-info/METADATA,sha256=TGBs-tuXT567kJtaTeDlxnz7Whis6qCSp9T5E_VSzes,3035
+numpyvision-0.5.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+numpyvision-0.5.0.dist-info/top_level.txt,sha256=Gd_WFEllNG5Rr6370BjdEse1-WucDVOtLm-dkXNaYSQ,12
+numpyvision-0.5.0.dist-info/RECORD,,
