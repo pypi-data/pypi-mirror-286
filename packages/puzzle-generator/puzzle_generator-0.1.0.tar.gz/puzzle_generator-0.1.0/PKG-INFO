@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: puzzle-generator
+Version: 0.1.0
+Summary: Generates python code representing a puzzle
+License: MIT
+Author: piotr.idzik
+Author-email: vil02_puzzle_generator@10g.pl
+Requires-Python: >=3.10,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+`puzzle_generator`
+==================
+
+Basic functionality of
+[`puzzle_generator`](https://github.com/vil02/puzzle_generator)
+it to generate a piece of python code representing a puzzle/quiz.
+The answers and the upcoming questions are stored in an encrypted form,
+so it is _difficult_ to read them before providing correct answers.
+The output is a single file without any dependencies.
+
+Examples and documentation can be found on [GitHub](https://github.com/vil02/puzzle_generator).
