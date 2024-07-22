@@ -1,0 +1,14 @@
+jugmt/__init__.py,sha256=RaANGbRu5e-vehwXI1-Qe2ggPPfs1TQaZj072JdbLk4,22
+jugmt/cli.py,sha256=oE8UjWV9qpjKSN5XgR1FZxUlbFIE-Pb0C6_g3p7aXg8,1760
+jugmt/document.py,sha256=cieK6fGdKuwNHy_SpCLDv83jYfkOxzeM05MIkPqG7ag,7197
+jugmt/schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jugmt/schema/checker.py,sha256=7pi5-s90o4cFW9X30trHZ3NVE63pPWSTu8stxQpCz1w,462
+jugmt/schema/document.figures.schema.json,sha256=fzSq4DAVntObexPGBEupE9BtNo9YC2aYppfjbVFuyYw,3705
+jugmt/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jugmt/templates/document.figures.html.jinja2,sha256=lFyEX5hhLIr6M3GpkStU7D7x_WsD8M-JIa0pYyEmfG4,866
+jugmt-0.7.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+jugmt-0.7.0.dist-info/METADATA,sha256=WkamJXVh8R63Uj6TCYNMFVk03NEIsLQ4n9J5f83uLtg,1788
+jugmt-0.7.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+jugmt-0.7.0.dist-info/entry_points.txt,sha256=Vmh3bFAPbJZKoAuZUXTsDr4xFS_lgrLXsXe8xZ_0flw,41
+jugmt-0.7.0.dist-info/top_level.txt,sha256=oyEkSZY2snIy7-P0dRlAKh-DrlPTs0hR0FqqTORJvmg,6
+jugmt-0.7.0.dist-info/RECORD,,
