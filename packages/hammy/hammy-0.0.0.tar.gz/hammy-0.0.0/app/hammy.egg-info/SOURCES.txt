@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+app/hammy.egg-info/PKG-INFO
+app/hammy.egg-info/SOURCES.txt
+app/hammy.egg-info/dependency_links.txt
+app/hammy.egg-info/requires.txt
+app/hammy.egg-info/top_level.txt
