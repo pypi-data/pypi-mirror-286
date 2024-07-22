@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+add-dependencies/__init__.py
+add-dependencies/main.py
+add_dependencies.egg-info/PKG-INFO
+add_dependencies.egg-info/SOURCES.txt
+add_dependencies.egg-info/dependency_links.txt
+add_dependencies.egg-info/requires.txt
+add_dependencies.egg-info/top_level.txt
