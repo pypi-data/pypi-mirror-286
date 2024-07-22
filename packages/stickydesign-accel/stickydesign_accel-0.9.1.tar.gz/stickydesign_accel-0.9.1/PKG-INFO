@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: stickydesign-accel
+Version: 0.9.1
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Rust
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy
+Requires-Dist: stickydesign ~=0.9.1
+Requires-Dist: pytest ; extra == 'test'
+Provides-Extra: test
+Summary: Accelerated functions in Rust for stickydesign.
+Author-email: Constantine Evans <const@costi.net>
+License: BSD 3-Clause
+Project-URL: homepage, https://dna.caltech.edu/StickyDesign
+Project-URL: source, https://github.com/DNA-and-Natural-Algorithms-Group/stickydesign
+Project-URL: tracker, https://github.com/DNA-and-Natural-Algorithms-Group/stickydesign/issues
+Project-URL: download, https://github.com/DNA-and-Natural-Algorithms-Group/stickydesign/releases
+Project-URL: changelog, https://github.com/DNA-and-Natural-Algorithms-Group/stickydesign/blob/master/docs/changelog.rst
