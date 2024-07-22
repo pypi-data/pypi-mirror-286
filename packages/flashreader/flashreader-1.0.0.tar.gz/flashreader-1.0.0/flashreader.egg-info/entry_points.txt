@@ -1,0 +1,2 @@
+[console_scripts]
+realpython = flashreader.__main__:main
