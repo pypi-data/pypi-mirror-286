@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mili-ui
+Version: 0.9.0
+Summary: Minimal immediate-mode python user interface library
+Author: damusss
+License: MIT License
+Project-URL: Homepage, https://github.com/damusss/mili
+Project-URL: Issues, https://github.com/damusss/mili/issues
+Project-URL: Documentation, https://github.com/damusss/mili/blob/main/guide/guide.md
+Keywords: gui,ui,pygame,pygame-ce
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pygame-ce>=2.5.0
+
+# MILI
+
+Minimal immediate-mode python user interface library.
+
+# [MILI Guide](https://github.com/damusss/mili/blob/main/guide/guide.md)
+
+# Image Viewer
+
+Run from source the image viewer:
+```shell
+pip install -r requirements.txt
+python ImageViewer.py
+``` 
+Build the image viewer:
+```shell
+pip install pyinstaller
+pip install -r requirements.txt
+pyinstaller --onefile ImageViewer.py
+start dist/ImageViewer.exe
+```
