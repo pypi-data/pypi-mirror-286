@@ -1,0 +1,7 @@
+README.md
+setup.py
+azizitc/__init__.py
+azizitc.egg-info/PKG-INFO
+azizitc.egg-info/SOURCES.txt
+azizitc.egg-info/dependency_links.txt
+azizitc.egg-info/top_level.txt

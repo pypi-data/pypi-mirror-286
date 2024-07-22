@@ -1,0 +1,1 @@
+This is Text Color Plugin for CKEditor 4. It allows you to change the color of the text in the editor.
