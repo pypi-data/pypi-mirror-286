@@ -1,0 +1,12 @@
+scrapy
+html2text
+instructor
+litellm
+pandas
+pydantic
+
+[dev]
+black
+bumpver
+pip-tools
+wheel
