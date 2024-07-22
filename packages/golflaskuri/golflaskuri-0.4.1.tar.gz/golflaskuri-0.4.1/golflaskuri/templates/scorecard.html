@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <title>{{ course.name }}</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <style>
+    .th-Punainen {
+      background-color: #CD5C5C;
+      color: #212121;
+    }
+
+    .th-Keltainen {
+      background-color: #EEE8AA;
+      color: #212121;
+    }
+
+    .th-Sininen {
+      background-color: #4682B4;
+      color: #212121;
+    }
+
+    .th-Valkoinen {
+      background-color: #FFF5EE;
+      color: #212121;
+    }
+  </style>
+  <script defer data-domain="golf.atk.works" src="https://vakoilu.atk.works/js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  {% if not course %}
+  <h1>Tuntematon kenttä</h1>
+  <a href="/">Alkuun</a>
+  {% else %}
+  <h1>{{ course.name }}</h1>
+  <a href="/">Alkuun</a>
+  {% endif %}
+  <footer>
+    <p>This site does not use any cookies</p>
+    <p>© ATK Works 2024</p>
+  </footer>
+</body>
+
+</html>

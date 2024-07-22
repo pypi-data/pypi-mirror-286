@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: golflaskuri
+Version: 0.4.1
+Summary: 
+Author: Panu Oksiala
+Author-email: panu@oksiala.fi
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.111.0,<0.112.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+
