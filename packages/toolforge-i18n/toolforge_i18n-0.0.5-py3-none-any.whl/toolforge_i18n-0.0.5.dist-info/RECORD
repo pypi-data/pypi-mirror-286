@@ -1,0 +1,15 @@
+toolforge_i18n/__init__.py,sha256=_PtxtFjraSELoiQuhbOOVo1VIxnWr00Vg6idsy3AwAk,176
+toolforge_i18n/flask_things.py,sha256=zNWF2PmPfLDPj6udcue_lEJbxWcFlfNr_Wd1VkdOdcM,7874
+toolforge_i18n/formatters.py,sha256=-9YdMS6wDfwuEm2Sy8-mRG8MxnhQGwBulaSE4hNx6oA,14625
+toolforge_i18n/get_gender.py,sha256=pFTwATIn7KXQshKSHaK5OZHvPAknlnbWG6m_r1LAFL8,942
+toolforge_i18n/language_info.py,sha256=I1tzuIZ_3yGuHdxZNpT8_ZXrlRg9DzdZkXGOJ2H_nPk,2577
+toolforge_i18n/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toolforge_i18n/pytest_plugin.py,sha256=gR7RWQJm888O6732soZnPCEfttJIO9OJ_YhFRhk5wk0,11276
+toolforge_i18n/translations.py,sha256=ObJ12OeefebmgPKxroB7-98v-9elA2W6JburfsqrnIk,11470
+toolforge_i18n/translations_checks.py,sha256=YRCTY0Y-YWFPe3zNYJmK2IUUkt3L_diuhXrybFiRmnw,8957
+toolforge_i18n/user_agent.py,sha256=aow7KiXX0NprAev2JAXvQAAXZpRLT2UlJJYzehREOXg,1145
+toolforge_i18n-0.0.5.dist-info/METADATA,sha256=8QH_i3pGNAgmALd974HmKOzXCS49uR33xnbs40Ua0tY,5638
+toolforge_i18n-0.0.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+toolforge_i18n-0.0.5.dist-info/entry_points.txt,sha256=OHW742iCT0Xxy7ccobidBqgMJ-GhCla3wkjNRGdmZMs,57
+toolforge_i18n-0.0.5.dist-info/licenses/LICENSE,sha256=gBjEEukRmM7Bifa7hLlNZHD4L4kgT6EvXJcaZ3Zim0M,1477
+toolforge_i18n-0.0.5.dist-info/RECORD,,
