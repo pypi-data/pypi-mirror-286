@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: strool
+Version: 1.0.0
+Summary: Small module to control strings with booleans
+Project-URL: Homepage, https://github.com/1emank/strool
+Project-URL: Issues, https://github.com/1emank/strool/issues
+Author-email: Carlos González <carlos.a.gb95@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# strool
+
+It's a lot like strings, but with boolean controls. They could display
+the text or not, depending on the parameters.
+
+Inside the module there's available:
+- Strool (str bool): gives text if "case" is True.
+- Strook (str case): gives text if "case" can be found in "cases".
+- Strool.whoosh: returns an invisible version of the string provided. It
+can be the object's "self". To do that, don't pass any argument.
+
+Strook inherits from Strool, so `isinstance(Strook(), Strool)` will
+return True. Check each one for more details.
+
+The recommended way to import is one of the following:
+- import strool as st : to use "st.l" and "st.k"
+- from strool import * : to use "Strool" or "Strook" directly.
+
+## Installation
+
+From your console write `pip install strool`
+
+### Contact
+
+Carlos González
+
+carlos.a.gb95@gmail.com
