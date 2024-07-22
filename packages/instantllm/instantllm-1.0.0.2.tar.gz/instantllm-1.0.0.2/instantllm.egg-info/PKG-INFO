@@ -1,0 +1,625 @@
+Metadata-Version: 2.1
+Name: instantllm
+Version: 1.0.0.2
+Summary: InstantLLM is the backend server for the free Instant LLM app, enabling users to effortlessly connect and interact with any self-hosted large language model through a user-friendly mobile interface anywhere in the world.
+Author: RubenRobadin
+Author-email: rubenjesusrobadin11@gmail.com
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# InstantLLM
+
+InstantLLM is the backend server for the free Instant LLM app, enabling users to effortlessly connect and interact with any self-hosted large language model through a user-friendly mobile interface anywhere in the world.
+
+Simply download the InstantLLM app on your phone, install the InstantLLM library, and with a few lines of code, you'll be able to leverage your self-hosted model seamlessly.
+
+Remember to first visit our official [website](https://sites.google.com/view/instantllm/home) to pay for the amount of characters you want to use with our interface and you can continue!! (don't worry paying just 1$ is more than 65000 characters) and no accounts required!
+
+Next join our [discord](https://discord.gg/KCBYrYbhyE) server, there you will get your api key and your model token
+
+Workflow with InstantLLM
+- Implement our library with the model you want to host (Llama3, Gemma2, Mistral...)
+- Join our discord server and send the `!getapikey` command to get your api key (keep your api key secure)
+- And again send the `!gettoken` command with your api key to get your model token `!gettoken <api_key>`
+- Run the implementation on your machine (examples below)
+- Download our free InstantLLM app on your phone
+- In our app swipe left and tap `add model`
+- Name your model however you want to save it in our app and then paste your model token in the `token from your model provider` field and press `add model`
+- Select your model in our app and have fun using your own hosted model anywhere in the world!
+
+Join our [discord](https://discord.gg/KCBYrYbhyE) server to get your model token and api key
+
+# Project Structure
+- InstantLLM Server: Hosted by us
+- 3rd Party Server: Hosted by our users with their self-hosted models using the examples below
+- InstantLLM App: Mobile interface to use your self-hosted models.
+
+## Api usage
+- You can increase your usage of your api key by paying for more tokens in our [website](https://sites.google.com/view/instantllm/home) (pay as you use)
+- When you send the command  !gettoken <api_key> in our discord server you are linking that newly created model token to your api key
+- You can have as many api keys as you want
+- When you pay for your tokens in our [website](https://sites.google.com/view/instantllm/home), the total combined usage of your api keys will be increased by that amount
+
+## Features
+
+- Interface for any self-hosted large language model.
+- Easy integration with a few lines of code.
+- User-friendly mobile interface.
+- Supports adding, removing, and selecting models.
+- Allows chatting with models and managing chats.
+
+## Requirements
+- python 3.11 (or greater)
+- ollama (recommended)
+
+## Installation
+
+Install our library using pip:
+```sh
+pip install instantllm
+```
+
+
+## Dont want to read all the documentation? just copy this example below
+Remember first to pay for the amount of characters you want to use in our interface from our official [website](https://sites.google.com/view/instantllm/home) (don't worry paying just 1$ is more than 65000 characters) then join our [discord](https://discord.gg/KCBYrYbhyE) server to get your api key and model token
+
+Explanations on how to use your model token and api key are in the [discord](https://discord.gg/KCBYrYbhyE) server
+```python
+from instantllm import InstantLLMClient
+from typing import Callable, Dict, Any
+import asyncio
+import ollama
+
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    context_window = message['message']['message']
+
+    #strean responses from ollama
+    stream = ollama.chat(
+        model='llama3:8b',
+        messages=context_window,
+        stream=True,
+    )
+    model_response = ''
+    for chunk in stream:
+        model_response += chunk['message']['content']
+
+        response = {
+            "role": "assistant",
+            "content": model_response
+        }
+
+        if not await client.send_message(token, response):
+            print("Message sending stopped")
+            break
+
+async def main():
+    global client
+    SERVER_URL = "ws://instantllm.ddns.net"
+    API_KEY = "YOUR_API_KEY"  # Replace with your actual API key
+
+    client = InstantLLMClient(api_key=API_KEY,server_url=SERVER_URL)
+    client.set_message_handler(message_handler)
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+After running this example you just have to paste your `model token` in our InstantLLM app and select your model to use it in our mobile app
+More information available in this documentation and in our [discord](https://discord.gg/KCBYrYbhyE) server
+
+
+
+# The Message Handeler
+To use our InstantLLM app with your favorite language model you only have to create your custom `Message Handeler` function, that function is used to take the incoming message from our server to your implementation, generate the model response from that message and finally send the generated response back to our server to then be shown in the InstantLLM app
+
+The message handeler has 3 parts:
+- Function declaration with token and context window separation
+- Your custom process to generate a response from an incoming message
+- Function to send the response back to our server
+
+Before we go any further explaining how you have to create the message handeler you have to know the structure of the incoming message that you will receive
+
+When a message is sent through the InstantLLM app to our server and then redirected back to you, the response will be a json that looks like this
+```
+{'token': '795ca495-9512-4d9a-8b3a-817405cae78d', 'message': {'action': 'n/a', 'message': [{'content': 'hi', 'role': 'user'}]}}
+```
+`token`: A unique token that identifies the client and chat that is sending the message
+
+`message`: A json containing metadata about the message and the message itself
+- `action`: Can be `n/a` or `STOP`, the action sent by the InstantLLM server will be `STOP` only if the user using the InstantLLM app presses the  square stop button to stop receiving messages and stop the inference of the model in your implementation, otherwise the server will always send `n/a` (How to use this `action` will be explained in the examples)
+- `message`: Is the entire context window of the chat that the message was sent from
+
+The entire context window of the chat is sent always by the InstantLLM server to make the implementation with ollama or any other language model inference api easier, you wont need to save the context window on your backend, just handle the inference of the model
+
+
+
+### 1 - Token and context window
+In your message handeler you first have to extract the `token` and `message` (the context window) from that json response from our server like this
+
+```python
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    context_window = message['message']['message']
+```
+
+The context window is a list with dictionaries that have 2 parameters `role` and `content`
+
+```
+[{'content': 'hi', 'role': 'user'}]
+```
+When a LLM sends a message in the chat, their response is saved with the `role` of `assistant`
+```
+[{'content': 'hi', 'role': 'user'}, {'content': 'Hi how can i help you today!', 'role': 'assistant'}]
+```
+
+### 2 - Your custom response function
+You now have the entire context window of the chat you can send those messages to your favorite inference api, in this example we will use ollama for self hosted models, but you can use any other api (Gemini, OpenAi, Groq)
+
+By using streaming with ollama, the response generation should look like this
+```python
+    #strean responses from ollama
+    stream = ollama.chat(
+        model='llama3:8b',
+        messages=context_window,
+        stream=True,
+    )
+```
+We will use `llama3:8b` as our self hosted model, also we specify the messages to be equal to the context window we got from the response from the InstantLLM server and set stream = True
+
+So far the message handeler looks like this
+```python
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    context_window = message['message']['message']
+
+    #strean responses from ollama
+    stream = ollama.chat(
+        model='llama3:8b',
+        messages=context_window,
+        stream=True,
+    )
+```
+
+### 3 - Send response back to the InstantLLM server
+Because we are using streaming we have to iterate through the chunks in the stream generated by the ollama response, to do that we create a `model_response` variable to save the response from ollama and also create a for loop to get each chunk. Every time we get a chunk from a response the `model_response` variable is updated then the payload for the json is created and finally sent to the InstantLLM server
+```python
+model_response = ''
+for chunk in stream:
+    model_response += chunk['message']['content']
+
+    response = {
+        "role": "assistant",
+        "content": model_response
+    }
+
+    if not await client.send_message(token, response):
+        print("Message sending stopped")
+        break
+```
+The `send_message` function HAS TO BE inside the for loop when streaming with this exact format because IF the user presses the square stop button in the InstantLLM app that will send a request to stop the streaming of the response to your implementation, if that happens it will break out of the loop and it will stop sending messages (print message is optional but recommended for debugging)
+
+Format: 
+```python
+if not await client.send_message(token, response):
+    print("Message sending stopped")
+    break
+```
+
+Your entire `message_handeler` function using ollama with streaming should look like this
+```python
+#1 Obligatory - async function, token and context extraction
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    context_window = message['message']['message']
+
+    #-------------- Start of custom response generation --------------
+    #strean responses from ollama
+    stream = ollama.chat(
+        model='llama3:8b',
+        messages=context_window,
+        stream=True,
+    )
+    model_response = ''
+    for chunk in stream:
+        model_response += chunk['message']['content']
+
+        #2 Obligatory - When streaming responses the send message has to be inside the for loop with the mentioned format
+        #and the response json has to be in this format also
+        response = {
+            "role": "assistant",
+            "content": model_response
+        }
+
+        if not await client.send_message(token, response):
+            print("Message sending stopped")
+            break
+    #-------------- End of custom response generation --------------
+```
+
+# Usage 
+# Basic Toy Example
+This is a toy example showing how an "echo" implementation would work, if you want to see the real implementation with ollama please scroll down to the `Real Use Case with Ollama` section of this documentation, this example will send back the last message sent by the user
+- A message is sent from the InstantLLM app to our server
+- That message is redirected to your implementation 
+- After the message is processed by your implementation the response is sent to our server
+- And finally the response is sent from our server to the InstantLLM app
+
+Steps:
+- 1 Create your own message handeler
+- 2 Create the main function and asign your message handeler in the InstantLLMClient instance
+
+### 1 Create a message handler:
+
+```python
+from instantllm import InstantLLMClient
+from typing import Callable, Dict, Any
+import asyncio
+
+#create your message handeler
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    message_payload = message['message']['message'][-1]['content']
+
+    full_response = f"Processed from pc: {message_payload}"
+    for i in range(1, len(full_response) + 1):
+        partial_response = full_response[:i]
+
+        response = {
+            "role": "assistant",
+            "content": partial_response
+        }
+
+        if not await client.send_message(token, response):
+            print("Message sending stopped")
+            break
+        await asyncio.sleep(0.1)
+
+async def main():
+    global client
+    API_KEY = "YOUR_API_KEY"
+
+    client = InstantLLMClient(API_KEY)
+    client.set_message_handler(message_handler)
+    client.show_logs = False
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+This example will echo the message sent back to the instant llm app
+
+### 2 Run the main function to start the client.
+When you run that example, your implementation will connect to the InstantLLM server and wait for messages, when a user sends a message that same message will be sent back to the InstantLLM app
+
+If this example works as intended you can now try some real use case, below is an example using Ollama to get responses from self hosted models
+
+# Real Use Case with Ollama
+## Streaming response from ollama to the InstantLLM app
+In this case streaming makes reference to sending each token generated by the LLM as they are being generated directly to the instant llm app, we will be creating an implementation of the InstantLLM library using ollama with streaming enabled and using `llama3:8b` as the self hosted model
+### 1 Helper functions and global variables:
+To start your implementation with the InstantLLM library first you have to import some libraries
+```python
+from instantllm import InstantLLMClient
+from typing import Callable, Dict, Any
+import asyncio
+import ollama
+```
+### 2 Create the message handler:
+Here because we are streaming responses from ollama we will use the same message handeler explained in the `The Message Handeler` part of this documentation
+```python
+#1 Obligatory - async function, token and context extraction
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    context_window = message['message']['message']
+
+    #-------------- Start of custom response generation --------------
+    #strean responses from ollama
+    stream = ollama.chat(
+        model='llama3:8b',
+        messages=context_window,
+        stream=True,
+    )
+    model_response = ''
+    for chunk in stream:
+        model_response += chunk['message']['content']
+
+        #2 Obligatory - When streaming responses the send message has to be inside the for loop with the mentioned format
+        #and the response json has to be in this format also
+        response = {
+            "role": "assistant",
+            "content": model_response
+        }
+
+        if not await client.send_message(token, response):
+            print("Message sending stopped")
+            break
+    #-------------- End of custom response generation --------------
+```
+### 3 Create the main function:
+Finally you just have to create the main function to host and use your self hosted model with the InstantLLM app, remember to get your api key and model token from our [discord](https://discord.gg/KCBYrYbhyE) server
+```python
+async def main():
+    global client
+    SERVER_URL = "ws://instantllm.ddns.net"
+    API_KEY = "YOUR_API_KEY"  # Replace with your actual API key
+
+    client = InstantLLMClient(api_key=API_KEY,server_url=SERVER_URL)
+    client.set_message_handler(message_handler)
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+### Your entire server should look like this
+```python
+from instantllm import InstantLLMClient
+from typing import Callable, Dict, Any
+import asyncio
+import ollama
+
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    context_window = message['message']['message']
+
+    #strean responses from ollama
+    stream = ollama.chat(
+        model='llama3:8b',
+        messages=context_window,
+        stream=True,
+    )
+    model_response = ''
+    for chunk in stream:
+        model_response += chunk['message']['content']
+
+        response = {
+            "role": "assistant",
+            "content": model_response
+        }
+
+        if not await client.send_message(token, response):
+            print("Message sending stopped")
+            break
+
+async def main():
+    global client
+    SERVER_URL = "ws://instantllm.ddns.net"
+    API_KEY = "YOUR_API_KEY"  # Replace with your actual API key
+
+    client = InstantLLMClient(api_key=API_KEY,server_url=SERVER_URL)
+    client.set_message_handler(message_handler)
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+After running the main function, you will be able to use your self hosted model in our InstantLLM app anywhere in the world
+by just having an internet connection
+Now you just have to add your model token in our InstantLLM app, give it any name you want and select your model
+To get your model token please join our discord server and run the !gettoken command
+You will recieve your model token ready to use, you can also share your model token to anyone you want to give access to use your self hosted model 
+
+
+
+## Sending response from ollama to the InstantLLM app (Without streaming)
+
+This is the same message handeler but without streaming responses from ollama, this implementation can be used if you dont want to use your api calls too often, by just sending a response when you have the entire text generated you can save your api usage (pay as you use)
+
+### 1 Helper functions and global variables:
+We will import the same libraries as we used in the streaming enabled example
+```python
+from instantllm import InstantLLMClient
+from typing import Callable, Dict, Any
+import asyncio
+import ollama
+```
+
+### 2 Send message function to ollama and message handeler function
+Because we won't use streaming in this example, we have to change how messages are sent to ollama in the message handeler, we will use the `ollama.chat` function to send the context window to ollama to get a response from the model we selected
+
+Create the sendtomodel function
+```python
+def sendtomodel(context, model_name):
+    response = ollama.chat(model=model_name, messages=context)
+    return response
+```
+And now we simply just add that function in the message handeler like this
+```python
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    context_window = message['message']['message']
+    print(f"Received message: {message}")
+
+    model_response = sendtomodel(context=context_window,model_name='llama3:8b')
+    model_response = model_response['message']['content']
+
+    response = {
+        "role": "assistant",
+        "content": model_response
+    }
+
+    await client.send_message(token, response)
+```
+In this example the square stop button wont stop your implementation from sending messages to the InstantLLM app, to use the stop messages button from the InstantLLM app is recomended to use the streaming version of this code
+
+After adding the `sendtomodel` function to the `message_handeler` your entire implementation without using streaming should look like this
+```python
+from instantllm import InstantLLMClient
+from typing import Callable, Dict, Any
+import asyncio
+import ollama
+
+def sendtomodel(context, model_name):
+    response = ollama.chat(model=model_name, messages=context)
+    return response
+
+async def message_handler(message: Dict[str, Any]):
+    token = message['token']
+    context_window = message['message']['message']
+    print(f"Received message: {message}")
+
+    model_response = sendtomodel(context=context_window,model_name='llama3:8b')
+    model_response = model_response['message']['content']
+
+    response = {
+        "role": "assistant",
+        "content": model_response
+    }
+
+    await client.send_message(token, response)
+
+
+async def main():
+    global client
+    SERVER_URL = "ws://instantllm.ddns.net"
+    API_KEY = "YOUR_API_KEY"  # Replace with your actual API key
+
+    client = InstantLLMClient(api_key=API_KEY,server_url=SERVER_URL)
+    client.set_message_handler(message_handler)
+
+    await client.run()
+
+if _name_ == "_main_":
+    asyncio.run(main())
+```
+After running this example and sending a message through the InstantLLM app, your self hosted model will generate the entire response to then send the message back to the InstantLLM app, the stop button in the app wont stop the generation of the response so you will have to wait for your model to finish generating its response to be able to send a new message
+
+> The streaming example is recommended to have the functionality of the stop button
+
+
+## Info messages
+By default the InstantLLM library will print in the console some information related to connections, reconnections, incoming messages and outgoing messages
+
+You can disable them completely or only disable the information you dont want to see by changing some boolean flags in the instance of the InstantLLM class
+
+Example of info messages:
+- Info about the connection with the InstantLLM server
+- Info about the received message
+- Info about the outgoing message
+
+Console output:
+```
+INFO:instantllm.main:Connecting to server
+INFO:instantllm.main:Connected to server
+INFO:instantllm.main:Received message: {'token': '4e33c59a-2c9a-44cc-ac16-1fe3b9588e01', 'message': {'action': 'n/a', 'message': [{'content': 'hi', 'role': 'user'}]}}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'P'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Pr'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Pro'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Proc'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Proce'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Proces'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Process'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processe'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed '}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed f'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed fr'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed fro'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from '}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from p'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc:'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc: '}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc: h'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc: hi'}
+```
+
+
+### show_received_message flag
+If this variable is set to false it wont show the received message from the InstantLLM server to your implementation, default `True`
+```python
+async def main():
+    global client
+    API_KEY = "YOUR_API_KEY"
+
+    client = InstantLLMClient(API_KEY)
+    client.set_message_handler(message_handler)
+    client.show_received_message = False #Info about the received message disabled
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+Console output:
+```
+INFO:instantllm.main:Connecting to InstantLLM
+INFO:instantllm.main:Connecting to server
+INFO:instantllm.main:Connected to server
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'P'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Pr'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Pro'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Proc'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Proce'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Proces'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Process'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processe'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed '}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed f'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed fr'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed fro'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from '}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from p'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc:'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc: '}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc: h'}
+INFO:instantllm.main:Sent message: {'role': 'assistant', 'content': 'Processed from pc: hi'}
+```
+
+### show_sent_message flag
+If this variable is set to false it wont show the sent message from your implementation to the InstantLLM server, default `True`
+```python
+async def main():
+    global client
+    API_KEY = "YOUR_API_KEY"
+
+    client = InstantLLMClient(API_KEY)
+    client.set_message_handler(message_handler)
+    client.show_sent_message = False #Info about the sent message disabled
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+Console output:
+```
+INFO:instantllm.main:Connecting to InstantLLM
+INFO:instantllm.main:Connecting to server
+INFO:instantllm.main:Connected to server
+INFO:instantllm.main:Received message: {'token': 'f30490ee-ce75-4841-85c6-09f8e08ed3a1', 'message': {'action': 'n/a', 'message': [{'content': 
+'hi', 'role': 'user'}]}}
+```
+
+
+### show_logs flag
+If this variable is set to false it will disable the info messages in the console completely, default `True` (will override the `show_received_message` and `show_sent_message` flags)
+```python
+async def main():
+    global client
+    API_KEY = "YOUR_API_KEY"
+
+    client = InstantLLMClient(API_KEY)
+    client.set_message_handler(message_handler)
+    client.show_logs = False #Info messages disabled completely
+
+    await client.run()
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+
+# Contributing
+Contributions are welcome! Please open an issue or submit a pull request on GitHub.
+
