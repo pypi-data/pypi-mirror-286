@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: azizitc
+Version: 0.1.0
+Summary: A simple package for changing text color in terminal.
+Home-page: https://github.com/Azizi030/textcolor
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This is Text Color Plugin for CKEditor 4. It allows you to change the color of the text in the editor.
