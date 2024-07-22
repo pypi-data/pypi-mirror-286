@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mrfhelper
+Version: 1.3
+Summary: Generate tcl scripts of moment resisting frame for analysis using OpenSees
+Author: Wenchen Lie
+Author-email: 438171766@qq.com
+Requires: matplotlib
+Requires: wsection
+
