@@ -1,0 +1,8 @@
+*.cpython*.pyc
+venv/
+src/venv/
+src/__pycache__
+.idea/
+*.conf
+examples/
+dist/*
