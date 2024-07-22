@@ -1,0 +1,11 @@
+heytextual/__init__.py,sha256=eTyHXLpPj0uL9aaROmQJ71CiaGMeTGQ0tOItmrXHLzA,36
+heytextual/client.py,sha256=kC5ylg1KnMOCXjU9-Y2r2Ux2vs8ICWG_I-1W22oi8oY,1510
+heytextual/endpoints.py,sha256=Rig2jrNURxSdU3efnTSRxutvbvvOJ6cDwAWR3kk-cSM,214
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=M6RIo-PuGoMN-w-LKREBNlGW2rSPA2VBdLdTSGzkofo,534
+heytextual-0.1.4.dist-info/LICENSE,sha256=Ht1EXTVwmeqJrVEL5sMnVW7ALZJo6FcOWOSHMO-nR94,1077
+heytextual-0.1.4.dist-info/METADATA,sha256=JzQK3SHDGrhr25Cjt0r_MLlhjoNbJG-2xMytpl1lpY4,323
+heytextual-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+heytextual-0.1.4.dist-info/entry_points.txt,sha256=69Sd7DAZeXdKl2vIm_xF7y2fmA_u6b269aGsrFBO2NE,47
+heytextual-0.1.4.dist-info/top_level.txt,sha256=rNHweVUL45aFDCwt28jkf22otTD0uEVuXpX574-OLao,17
+heytextual-0.1.4.dist-info/RECORD,,
