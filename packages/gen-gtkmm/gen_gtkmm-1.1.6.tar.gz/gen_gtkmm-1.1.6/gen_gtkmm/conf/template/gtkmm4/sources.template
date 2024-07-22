@@ -1,0 +1,17 @@
+#
+# @brief   ${PRO}
+# @version 1.1.6
+# @date    ${DATE}
+# @company None, free software to use ${YEAR}
+# @author  Vladimir Roncevic <elektron.ronca@gmail.com>
+#
+
+SOURCES = \
+	../model/model.cc \
+	../view/home.cc \
+	../view/about/about.cc \
+	../view/help/help.cc \
+	../view/settings/settings.cc \
+	../application.cc \
+	../main.cc
+
