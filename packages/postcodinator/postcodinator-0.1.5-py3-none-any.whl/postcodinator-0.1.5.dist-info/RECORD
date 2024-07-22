@@ -1,0 +1,7 @@
+postcodinator/__init__.py,sha256=QFcsBQvPHtrGagPzOhIuL8MPUCXZvEityP2QUG_Y-XI,31
+postcodinator/postcodinator.py,sha256=QrTMC8kKteMcqDrGXIZMuGr_g2UYDnod_e4qQmzSBSg,6458
+postcodinator/data/postcode_data.parquet,sha256=3BTam30UpdLTjqhDQYL4OgKKvZD0UTjqfguTmDO2bco,68780655
+postcodinator-0.1.5.dist-info/METADATA,sha256=p2UTCUUG5FPSHwr50CnE0rJnS5F6HWWsD9hlnAH8nss,3923
+postcodinator-0.1.5.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+postcodinator-0.1.5.dist-info/top_level.txt,sha256=cuvlohMpJQpCMdFY9f9LMkTiNINRzSZ-hPn3cFZDx_s,14
+postcodinator-0.1.5.dist-info/RECORD,,
