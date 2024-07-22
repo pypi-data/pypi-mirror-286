@@ -1,0 +1,67 @@
+Metadata-Version: 2.3
+Name: ceylon
+Version: 0.14.12
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langchain ==0.2.6
+Requires-Dist: langchain-community ==0.2.6
+Requires-Dist: networkx ==3.3
+Requires-Dist: pydantic ==2.7.4
+Requires-Dist: langchain ==0.2.6
+Requires-Dist: ollama ==0.2.1
+Requires-Dist: openai ==1.35.7
+Requires-Dist: ct3 ==3.3.3
+Requires-Dist: langchain-experimental ==0.0.62
+License-File: LICENSE
+Summary: Ceylon is an advanced multi-agent platform specifically developed for Ceylon Aritficial Intelligence.
+Keywords: Aritifical Intelligence,Multi Agent Systems,CEYLON,Ceylon Aritficial Intelligence.
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Project-URL: Homepage, https://ceylon.ai
+Project-URL: Documentation, https://ceylon.ai
+Project-URL: Repository, https://github.com/ceylonai/ceylon
+Project-URL: Issues, https://github.com/ceylonai/ceylon/issues
+Project-URL: Changelog, https://github.com/ceylonai/ceylon/blob/master/CHANGELOG.md
+
+# Ceylon : A Multi-Agent System (MAS)
+
+[![PyPI - Version](https://img.shields.io/pypi/v/ceylon.svg)](https://pypi.org/project/ceylon)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ceylon.svg)](https://pypi.org/project/ceylon)
+
+## Introduction
+
+Welcome to the Ceylon: Multi-Agent System (MAS) project! This system is designed to manage and automate task flows among
+multiple agents, each with specific roles and responsibilities.
+
+## Features
+
+- **Agent Management**: Easily define and manage agents with specific roles.
+- **Task Automation**: Automate task flow based on agent input and predefined sequences.
+- **Scalability**: Scalable to handle multiple agents and complex workflows.
+- **Customization**: Highly customizable to fit different use cases.
+- **Networking**: Developed as a distributed system.
+- **Efficient Message Propagation**: Utilizes a robust framework for efficient and reliable message propagation.
+- **Interoperability and Performance**: Ensures seamless interoperability across different programming languages while
+  providing memory safety and high performance.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](../../LICENSE) file for details.
+
+## Contributing
+
+We welcome contributions! Please read our [contributing guidelines](../../LCONTRIBUTING.md) before submitting a pull request.
+
+## Contact
+
+For questions or support, please contact us at [support@ceylon.ai](mailto:support@ceylon.ai).
