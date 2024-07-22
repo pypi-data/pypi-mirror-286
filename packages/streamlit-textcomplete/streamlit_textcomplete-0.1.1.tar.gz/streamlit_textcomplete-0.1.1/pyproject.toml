@@ -1,0 +1,90 @@
+[tool.poetry]
+name = "streamlit-textcomplete"
+version = "0.1.1"
+description = "Streamlit autocomplete Textcomplete editor for HTMLTextAreaElement"
+authors = ["voznik <mrvoznik@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/voznik/streamlit-textcomplete"
+repository = "https://github.com/voznik/streamlit-textcomplete"
+keywords = ["streamlit", "textarea", "autocomplete", "textcomplete", "emoji"]
+packages = [{ include = "textcomplete" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.36.0"
+pandas = "^2.2.2"
+emoji = "^2.12.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+playwright = "^1.45.0"
+pytest-playwright = "^0.5.1"
+pytest = "^7.4.4"
+isort = "^5.13.2"
+mypy = "^1.11.0"
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip = ["./.venv", "./direnv", ".env"]
+
+[tool.black]
+exclude = '''
+(
+  /(
+      \.vscode
+    | \.git
+    | \.pytest_cache
+    | \.mypy_cache
+    | \.venv
+    | \.env
+    | \.direnv
+  )/
+)
+'''
+include = '\.pyi?$'
+line-length = 100
+
+[tool.flake8]
+max-line-length = 100
+ignore = ["E501"]
+
+[tool.mypy]
+files = ["**/*.py"]
+follow_imports = "silent"
+ignore_missing_imports = true
+scripts_are_modules = true
+python_version = "3.10"
+
+
+[tool.ruff]
+exclude = [
+  ".git",
+  ".vscode",
+  ".pytest_cache",
+  ".mypy_cache",
+  ".venv",
+  ".env",
+  ".direnv",
+  "streamlit_patches.py",
+]
+target-version = "py310"
+ignore = ["E501"]
+line-length = 100
+select = ["B", "E", "F", "W", "I"]
+
+[tool.ruff.per-file-ignores]
+
+[tool.semantic_release]
+version_variable = [
+    "textcomplete/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
