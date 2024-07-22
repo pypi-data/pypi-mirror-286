@@ -1,0 +1,8 @@
+Cython
+adbshellexecuter
+flatten_any_dict_iterable_or_whatsoever
+nested2nested
+numpy
+pandas
+parifinder
+setuptools
