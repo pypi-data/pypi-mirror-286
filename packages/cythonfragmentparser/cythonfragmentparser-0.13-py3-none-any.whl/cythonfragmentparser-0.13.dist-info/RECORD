@@ -1,0 +1,11 @@
+cythonfragmentparser/README.MD,sha256=d7_MaKu9-0GArUSNGY_iPy0WPusPKgHm-9hvQ9e9eDM,769
+cythonfragmentparser/__init__.py,sha256=5Z9q_dWRikibttWcY4nhYob94Zm_y4_yqNvlMw5NlV8,1054
+cythonfragmentparser/cyfragmentparser.pyx,sha256=coWG0C1JgB6f_CEh82iS73FLj4rWhiZjvUgErY3gqvQ,27615
+cythonfragmentparser/cyfragmentparser_compile.py,sha256=3NReiCnLWtXwJk6tjE37qAC8mdIWaS5bHQ__QGRlcaY,3585
+cythonfragmentparser/requirements.txt,sha256=MyfZVhE-_ogT0VDBgkfL5iDnnKSllhzZfEpXUo0Mq3w,119
+cythonfragmentparser/thirdparty.json,sha256=M4m1s33AZEccYto71mUiPfcYSZRcV_6x5O6Ji-SrvHs,55493
+cythonfragmentparser-0.13.dist-info/LICENSE.rst,sha256=JG2U-syJOvqaKI4hLK8jP4BdnxFaMsrMir_Qn5dbgdc,1148
+cythonfragmentparser-0.13.dist-info/METADATA,sha256=ZcE8ZHP1U0MK1AERdvPFIWwLbuak0sqeRdXWUXNRg9g,1633
+cythonfragmentparser-0.13.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cythonfragmentparser-0.13.dist-info/top_level.txt,sha256=14HTrmGjvaold2KK-M7-dK6ZBavk61ald8fEZOtrmko,21
+cythonfragmentparser-0.13.dist-info/RECORD,,
