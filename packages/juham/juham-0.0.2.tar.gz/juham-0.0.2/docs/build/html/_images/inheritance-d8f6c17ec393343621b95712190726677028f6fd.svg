@@ -1,0 +1,470 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" width="576pt" height="471pt" viewBox="0.00 0.00 576.00 471.10">
+<ns0:g id="graph0" class="graph" transform="scale(0.936585 0.936585) rotate(0) translate(4 499)">
+<ns0:title>inheritancef87f166e6b</ns0:title>
+
+<ns0:g id="node1" class="node">
+<ns0:title>Base</ns0:title>
+<ns0:g id="a_node1"><ns0:a ns1:href="..\juham\base\index.html#juham.base.Base" ns1:title="An automation object with MQTT networking, time series database and" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="147.88,-267 93.88,-267 93.88,-247 147.88,-247 147.88,-267" />
+<ns0:text text-anchor="middle" x="120.88" y="-253.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Base</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node4" class="node">
+<ns0:title>EnergyCostCalculator</ns0:title>
+<ns0:g id="a_node4"><ns0:a ns1:href="..\juham\automation\index.html#juham.automation.EnergyCostCalculator" ns1:title="Energy revenue/cost calculator for calculating energy balance between" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="298.25,-248 187.75,-248 187.75,-228 298.25,-228 298.25,-248" />
+<ns0:text text-anchor="middle" x="243" y="-234.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">EnergyCostCalculator</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge2" class="edge">
+<ns0:title>Base-&gt;EnergyCostCalculator</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M148.24,-252.83C158.12,-251.27 169.8,-249.42 181.5,-247.57" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="182.2,-249.23 186.86,-246.72 181.65,-245.77 182.2,-249.23" />
+</ns0:g>
+
+<ns0:g id="node6" class="node">
+<ns0:title>ForecastRecord</ns0:title>
+<ns0:g id="a_node6"><ns0:a ns1:href="..\juham\ts\index.html#juham.ts.ForecastRecord" ns1:title="Forecast database record." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="285.5,-210 200.5,-210 200.5,-190 285.5,-190 285.5,-210" />
+<ns0:text text-anchor="middle" x="243" y="-196.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">ForecastRecord</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge3" class="edge">
+<ns0:title>Base-&gt;ForecastRecord</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M137.94,-246.6C151.01,-238.42 170.11,-227.09 187.75,-219 192.57,-216.79 197.74,-214.67 202.89,-212.71" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="204.11,-214.13 208.2,-210.75 202.9,-210.84 204.11,-214.13" />
+</ns0:g>
+
+<ns0:g id="node7" class="node">
+<ns0:title>Group</ns0:title>
+<ns0:g id="a_node7"><ns0:a ns1:href="..\juham\base\index.html#juham.base.Group" ns1:title="Group base class that can consist of `Base` and `Group` objects as" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="270,-172 216,-172 216,-152 270,-152 270,-172" />
+<ns0:text text-anchor="middle" x="243" y="-158.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Group</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge4" class="edge">
+<ns0:title>Base-&gt;Group</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M128.27,-246.63C138.77,-230.42 161.17,-199.06 187.75,-181 194.39,-176.49 202.22,-172.93 209.83,-170.18" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="210.7,-171.74 214.87,-168.47 209.57,-168.42 210.7,-171.74" />
+</ns0:g>
+
+<ns0:g id="node17" class="node">
+<ns0:title>JShelly</ns0:title>
+<ns0:g id="a_node17"><ns0:a ns1:href="..\juham\shelly\index.html#juham.shelly.JShelly" ns1:title="Base class for shelly product family." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="270,-134 216,-134 216,-114 270,-114 270,-134" />
+<ns0:text text-anchor="middle" x="243" y="-120.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">JShelly</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge13" class="edge">
+<ns0:title>Base-&gt;JShelly</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M125.12,-246.54C132.55,-224.28 152.9,-171.87 187.75,-143 194.06,-137.77 201.9,-133.95 209.64,-131.16" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="210.59,-132.69 214.79,-129.46 209.5,-129.36 210.59,-132.69" />
+</ns0:g>
+
+<ns0:g id="node18" class="node">
+<ns0:title>PowerPlanRecord</ns0:title>
+<ns0:g id="a_node18"><ns0:a ns1:href="..\juham\ts\index.html#juham.ts.PowerPlanRecord" ns1:title="Power plan time series record." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="289.62,-400 196.38,-400 196.38,-380 289.62,-380 289.62,-400" />
+<ns0:text text-anchor="middle" x="243" y="-386.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">PowerPlanRecord</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge15" class="edge">
+<ns0:title>Base-&gt;PowerPlanRecord</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M125.12,-267.46C132.55,-289.72 152.9,-342.13 187.75,-371 190.34,-373.15 193.2,-375.06 196.19,-376.76" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="195.8,-378.53 201.05,-379.26 197.4,-375.41 195.8,-378.53" />
+</ns0:g>
+
+<ns0:g id="node19" class="node">
+<ns0:title>PowerRecord</ns0:title>
+<ns0:g id="a_node19"><ns0:a ns1:href="..\juham\ts\index.html#juham.ts.PowerRecord" ns1:title="Power utilization record." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="279.88,-362 206.12,-362 206.12,-342 279.88,-342 279.88,-362" />
+<ns0:text text-anchor="middle" x="243" y="-348.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">PowerRecord</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge16" class="edge">
+<ns0:title>Base-&gt;PowerRecord</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M128.27,-267.37C138.77,-283.58 161.17,-314.94 187.75,-333 191.5,-335.54 195.62,-337.78 199.87,-339.75" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="199.73,-341.59 205.02,-341.96 201.11,-338.38 199.73,-341.59" />
+</ns0:g>
+
+<ns0:g id="node21" class="node">
+<ns0:title>RThread</ns0:title>
+<ns0:g id="a_node21"><ns0:a ns1:href="..\juham\web\index.html#juham.web.RThread" ns1:title="RThread" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="270,-438 216,-438 216,-418 270,-418 270,-438" />
+<ns0:text text-anchor="middle" x="243" y="-424.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">RThread</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge21" class="edge">
+<ns0:title>Base-&gt;RThread</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M123.4,-267.12C127.99,-294.09 144.16,-368.45 187.75,-409 193.86,-414.69 201.78,-418.69 209.66,-421.49" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="209.63,-423.32 214.93,-423.19 210.7,-419.99 209.63,-423.32" />
+</ns0:g>
+
+<ns0:g id="node22" class="node">
+<ns0:title>RPowerPlan</ns0:title>
+<ns0:g id="a_node22"><ns0:a ns1:href="..\juham\automation\index.html#juham.automation.RPowerPlan" ns1:title="Automation class for optimized control of home energy consumers e.g hot" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="277.62,-324 208.38,-324 208.38,-304 277.62,-304 277.62,-324" />
+<ns0:text text-anchor="middle" x="243" y="-310.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">RPowerPlan</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge19" class="edge">
+<ns0:title>Base-&gt;RPowerPlan</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M137.94,-267.4C151.01,-275.58 170.11,-286.91 187.75,-295 192.57,-297.21 197.74,-299.33 202.89,-301.29" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="202.9,-303.16 208.2,-303.25 204.11,-299.87 202.9,-303.16" />
+</ns0:g>
+
+<ns0:g id="node31" class="node">
+<ns0:title>WaterCirculator</ns0:title>
+<ns0:g id="a_node31"><ns0:a ns1:href="..\juham\automation\index.html#juham.automation.WaterCirculator" ns1:title="Hot Water Circulation Controller." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="284.75,-286 201.25,-286 201.25,-266 284.75,-266 284.75,-286" />
+<ns0:text text-anchor="middle" x="243" y="-272.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">WaterCirculator</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge31" class="edge">
+<ns0:title>Base-&gt;WaterCirculator</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M148.24,-261.17C161.89,-263.33 178.99,-266.03 194.83,-268.54" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="195.1,-270.35 200.31,-269.41 195.65,-266.9 195.1,-270.35" />
+</ns0:g>
+
+<ns0:g id="node2" class="node">
+<ns0:title>Object</ns0:title>
+<ns0:g id="a_node2"><ns0:a ns1:href="..\juham\base\index.html#juham.base.Object" ns1:title="Base class of everything. Serves as the foundational class offering &#160;key" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="54,-96 0,-96 0,-76 54,-76 54,-96" />
+<ns0:text text-anchor="middle" x="27" y="-82.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Object</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge1" class="edge">
+<ns0:title>Object-&gt;Base</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M33.61,-96.44C49.15,-125.37 92.84,-206.69 111.38,-241.2" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="110.07,-242.45 113.98,-246.03 113.16,-240.8 110.07,-242.45" />
+</ns0:g>
+
+<ns0:g id="node11" class="node">
+<ns0:title>JDatabase</ns0:title>
+<ns0:g id="a_node11"><ns0:a ns1:href="..\juham\base\index.html#juham.base.JDatabase" ns1:title="The base class for data storage classes.Serves as an abstract interface for managing" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="151.75,-96 90,-96 90,-76 151.75,-76 151.75,-96" />
+<ns0:text text-anchor="middle" x="120.88" y="-82.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">JDatabase</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge7" class="edge">
+<ns0:title>Object-&gt;JDatabase</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M54.08,-86C63.13,-86 73.46,-86 83.2,-86" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="83.75,-87.75 88.75,-86 83.75,-84.25 83.75,-87.75" />
+</ns0:g>
+
+<ns0:g id="node15" class="node">
+<ns0:title>JMqtt</ns0:title>
+<ns0:g id="a_node15"><ns0:a ns1:href="..\juham\base\index.html#juham.base.JMqtt" ns1:title="Abstract base class for MQTT brokers." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="147.88,-20 93.88,-20 93.88,0 147.88,0 147.88,-20" />
+<ns0:text text-anchor="middle" x="120.88" y="-6.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">JMqtt</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge10" class="edge">
+<ns0:title>Object-&gt;JMqtt</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M38.04,-75.73C49.91,-63.83 70.52,-43.96 90,-29 92.32,-27.22 94.8,-25.45 97.31,-23.74" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="98.62,-24.98 101.83,-20.76 96.69,-22.06 98.62,-24.98" />
+</ns0:g>
+
+<ns0:g id="node3" class="node">
+<ns0:title>Client</ns0:title>
+<ns0:g id="a_node3"><ns0:a ns1:title="MQTT version 3.1/3.1.1/5.0 client class.">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="147.88,-58 93.88,-58 93.88,-38 147.88,-38 147.88,-58" />
+<ns0:text text-anchor="middle" x="120.88" y="-44.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Client</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node16" class="node">
+<ns0:title>JPaho2</ns0:title>
+<ns0:g id="a_node16"><ns0:a ns1:href="..\juham\mqtt\index.html#juham.mqtt.JPaho2" ns1:title="MQTT broker implementation based on paho.mqtt Python package." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="270,-20 216,-20 216,0 270,0 270,-20" />
+<ns0:text text-anchor="middle" x="243" y="-6.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">JPaho2</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge11" class="edge">
+<ns0:title>Client-&gt;JPaho2</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M148.24,-39.66C166.31,-33.94 190.4,-26.32 209.64,-20.24" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="210.74,-21.72 214.98,-18.55 209.68,-18.39 210.74,-21.72" />
+</ns0:g>
+
+<ns0:g id="node5" class="node">
+<ns0:title>Filterer</ns0:title>
+<ns0:g id="a_node5"><ns0:a ns1:title="A base class for loggers and handlers which allows them to share">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="54,-476 0,-476 0,-456 54,-456 54,-476" />
+<ns0:text text-anchor="middle" x="27" y="-462.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Filterer</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node14" class="node">
+<ns0:title>Logger</ns0:title>
+<ns0:g id="a_node14"><ns0:a ns1:title="Instances of the Logger class represent a single logging channel. A">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="147.88,-476 93.88,-476 93.88,-456 147.88,-456 147.88,-476" />
+<ns0:text text-anchor="middle" x="120.88" y="-462.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">Logger</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge14" class="edge">
+<ns0:title>Filterer-&gt;Logger</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M54.08,-466C64.37,-466 76.3,-466 87.16,-466" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="87.65,-467.75 92.65,-466 87.65,-464.25 87.65,-467.75" />
+</ns0:g>
+
+<ns0:g id="node8" class="node">
+<ns0:title>HomeWizardWaterMeter</ns0:title>
+<ns0:g id="a_node8"><ns0:a ns1:href="..\juham\web\index.html#juham.web.HomeWizardWaterMeter" ns1:title="Homewizard watermeter sensor." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="607,-495 483.75,-495 483.75,-475 607,-475 607,-495" />
+<ns0:text text-anchor="middle" x="545.38" y="-481.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">HomeWizardWaterMeter</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="node9" class="node">
+<ns0:title>RCloud</ns0:title>
+<ns0:g id="a_node9"><ns0:a ns1:href="..\juham\web\index.html#juham.web.RCloud" ns1:title="Base class for automation objects that query data using a URL." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="418,-457 364,-457 364,-437 418,-437 418,-457" />
+<ns0:text text-anchor="middle" x="391" y="-443.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">RCloud</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge5" class="edge">
+<ns0:title>RCloud-&gt;HomeWizardWaterMeter</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M418.19,-453.53C439.62,-458.88 470.49,-466.57 496.34,-473.02" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="496.44,-474.85 501.71,-474.36 497.29,-471.45 496.44,-474.85" />
+</ns0:g>
+
+<ns0:g id="node23" class="node">
+<ns0:title>RSpotHintaFi</ns0:title>
+<ns0:g id="a_node23"><ns0:a ns1:href="..\juham\web\index.html#juham.web.RSpotHintaFi" ns1:title="RSpotHintaFi" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="582.25,-457 508.5,-457 508.5,-437 582.25,-437 582.25,-457" />
+<ns0:text text-anchor="middle" x="545.38" y="-443.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">RSpotHintaFi</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge20" class="edge">
+<ns0:title>RCloud-&gt;RSpotHintaFi</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M418.19,-447C441.2,-447 475.08,-447 501.95,-447" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="502.51,-448.75 507.51,-447 502.51,-445.25 502.51,-448.75" />
+</ns0:g>
+
+<ns0:g id="node25" class="node">
+<ns0:title>RVisualCrossing</ns0:title>
+<ns0:g id="a_node25"><ns0:a ns1:href="..\juham\web\index.html#juham.web.RVisualCrossing" ns1:title="This class constructs a data acquisition object for reading weather" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="589.38,-419 501.38,-419 501.38,-399 589.38,-399 589.38,-419" />
+<ns0:text text-anchor="middle" x="545.38" y="-405.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">RVisualCrossing</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge23" class="edge">
+<ns0:title>RCloud-&gt;RVisualCrossing</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M418.19,-440.47C439.62,-435.12 470.49,-427.43 496.34,-420.98" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="497.29,-422.55 501.71,-419.64 496.44,-419.15 497.29,-422.55" />
+</ns0:g>
+
+<ns0:g id="node10" class="node">
+<ns0:title>JConsole</ns0:title>
+<ns0:g id="a_node10"><ns0:a ns1:href="..\juham\database\index.html#juham.database.JConsole" ns1:title="Database interface that simply dumps the written records to stdout" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="270.88,-58 215.12,-58 215.12,-38 270.88,-38 270.88,-58" />
+<ns0:text text-anchor="middle" x="243" y="-44.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">JConsole</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge6" class="edge">
+<ns0:title>JDatabase-&gt;JConsole</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M152.19,-76.41C169.55,-70.92 191.34,-64.02 209.12,-58.4" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="210.02,-59.95 214.25,-56.78 208.96,-56.62 210.02,-59.95" />
+</ns0:g>
+
+<ns0:g id="node12" class="node">
+<ns0:title>JInflux</ns0:title>
+<ns0:g id="a_node12"><ns0:a ns1:href="..\juham\database\index.html#juham.database.JInflux" ns1:title="Influx time series database version 3." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="270,-96 216,-96 216,-76 270,-76 270,-96" />
+<ns0:text text-anchor="middle" x="243" y="-82.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">JInflux</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge8" class="edge">
+<ns0:title>JDatabase-&gt;JInflux</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M152.19,-86C169.64,-86 191.59,-86 209.41,-86" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="210.02,-87.75 215.02,-86 210.02,-84.25 210.02,-87.75" />
+</ns0:g>
+
+<ns0:g id="node13" class="node">
+<ns0:title>JLog</ns0:title>
+<ns0:g id="a_node13"><ns0:a ns1:href="..\juham\base\index.html#juham.base.JLog" ns1:title="Default logger for logging events to application log and/or to" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="270,-476 216,-476 216,-456 270,-456 270,-476" />
+<ns0:text text-anchor="middle" x="243" y="-462.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">JLog</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge9" class="edge">
+<ns0:title>Logger-&gt;JLog</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M148.24,-466C166.23,-466 190.19,-466 209.39,-466" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="209.94,-467.75 214.94,-466 209.94,-464.25 209.94,-467.75" />
+</ns0:g>
+
+<ns0:g id="edge12" class="edge">
+<ns0:title>JMqtt-&gt;JPaho2</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M148.24,-10C166.23,-10 190.19,-10 209.39,-10" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="209.94,-11.75 214.94,-10 209.94,-8.25 209.94,-11.75" />
+</ns0:g>
+
+<ns0:g id="node20" class="node">
+<ns0:title>RBoiler</ns0:title>
+<ns0:g id="a_node20"><ns0:a ns1:href="..\juham\automation\index.html#juham.automation.RBoiler" ns1:title="Automation class for controlling Shelly Wifi relay. Subscribes to" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="418,-191 364,-191 364,-171 418,-171 418,-191" />
+<ns0:text text-anchor="middle" x="391" y="-177.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">RBoiler</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge17" class="edge">
+<ns0:title>JShelly-&gt;RBoiler</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.24,-132.31C279.23,-135.39 289.29,-139.09 298.25,-143 314.83,-150.23 317.64,-154.84 334.25,-162 341.73,-165.23 349.96,-168.28 357.74,-170.97" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="357.57,-172.76 362.87,-172.7 358.69,-169.44 357.57,-172.76" />
+</ns0:g>
+
+<ns0:g id="node26" class="node">
+<ns0:title>ShellyMotion</ns0:title>
+<ns0:g id="a_node26"><ns0:a ns1:href="..\juham\shelly\index.html#juham.shelly.ShellyMotion" ns1:title="Shelly Motion 2 - a wifi motion sensor with light and temperature metering." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="427.12,-153 354.88,-153 354.88,-133 427.12,-133 427.12,-153" />
+<ns0:text text-anchor="middle" x="391" y="-139.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">ShellyMotion</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge24" class="edge">
+<ns0:title>JShelly-&gt;ShellyMotion</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.44,-127.44C292.11,-130.26 323.16,-134.3 348.19,-137.56" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="348.48,-139.36 353.67,-138.27 348.93,-135.89 348.48,-139.36" />
+</ns0:g>
+
+<ns0:g id="node27" class="node">
+<ns0:title>ShellyMotionSimulator</ns0:title>
+<ns0:g id="a_node27"><ns0:a ns1:href="..\juham\shelly\index.html#juham.shelly.ShellyMotionSimulator" ns1:title="Simulator for Shelly Motion 2 - a wifi motion sensor. Spawns a thread" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="447.75,-357 334.25,-357 334.25,-337 447.75,-337 447.75,-357" />
+<ns0:text text-anchor="middle" x="391" y="-343.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">ShellyMotionSimulator</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge26" class="edge">
+<ns0:title>JShelly-&gt;ShellyMotionSimulator</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.39,-127.84C280.35,-130.54 291.01,-135.15 298.25,-143 341.2,-189.61 305.08,-224.73 334.25,-281 344.58,-300.92 361.88,-320.1 374.47,-332.6" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="373.53,-334.13 378.34,-336.37 375.98,-331.62 373.53,-334.13" />
+</ns0:g>
+
+<ns0:g id="node28" class="node">
+<ns0:title>ShellyPlus1</ns0:title>
+<ns0:g id="a_node28"><ns0:a ns1:href="..\juham\shelly\index.html#juham.shelly.ShellyPlus1" ns1:title="Shelly Plus 1 smart relay time series record." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="424.88,-115 357.12,-115 357.12,-95 424.88,-95 424.88,-115" />
+<ns0:text text-anchor="middle" x="391" y="-101.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">ShellyPlus1</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge27" class="edge">
+<ns0:title>JShelly-&gt;ShellyPlus1</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.44,-120.56C292.79,-117.65 325.13,-113.44 350.54,-110.14" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="351.36,-111.79 356.09,-109.41 350.9,-108.32 351.36,-111.79" />
+</ns0:g>
+
+<ns0:g id="node29" class="node">
+<ns0:title>ShellyPlus1Simulator</ns0:title>
+<ns0:g id="a_node29"><ns0:a ns1:href="..\juham\shelly\index.html#juham.shelly.ShellyPlus1Simulator" ns1:title="Simulator for ShellyPlus1 wifi relay." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="445.5,-272 336.5,-272 336.5,-252 445.5,-252 445.5,-272" />
+<ns0:text text-anchor="middle" x="391" y="-258.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">ShellyPlus1Simulator</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge29" class="edge">
+<ns0:title>JShelly-&gt;ShellyPlus1Simulator</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.35,-129.39C279.85,-132.27 290.21,-136.6 298.25,-143 321.69,-161.66 316.17,-176.11 334.25,-200 347.05,-216.92 363.47,-234.78 375.16,-246.97" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="374.29,-248.58 379.02,-250.96 376.81,-246.15 374.29,-248.58" />
+</ns0:g>
+
+<ns0:g id="node30" class="node">
+<ns0:title>ShellyPro3EM</ns0:title>
+<ns0:g id="a_node30"><ns0:a ns1:href="..\juham\shelly\index.html#juham.shelly.ShellyPro3EM" ns1:title="The Shelly Pro3EM energy meter." target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="430.12,-77 351.88,-77 351.88,-57 430.12,-57 430.12,-77" />
+<ns0:text text-anchor="middle" x="391" y="-63.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">ShellyPro3EM</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge30" class="edge">
+<ns0:title>JShelly-&gt;ShellyPro3EM</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.24,-115.69C279.23,-112.61 289.29,-108.91 298.25,-105 314.83,-97.77 317.64,-93.16 334.25,-86 339.49,-83.74 345.1,-81.56 350.66,-79.54" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="351.82,-80.98 355.94,-77.66 350.65,-77.69 351.82,-80.98" />
+</ns0:g>
+
+<ns0:g id="edge18" class="edge">
+<ns0:title>RThread-&gt;RCloud</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.44,-431.44C294.83,-434.62 331.13,-439.34 357.33,-442.75" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="357.82,-444.58 363.01,-443.49 358.27,-441.11 357.82,-444.58" />
+</ns0:g>
+
+<ns0:g id="node24" class="node">
+<ns0:title>RTracker</ns0:title>
+<ns0:g id="a_node24"><ns0:a ns1:href="..\juham\simulation\index.html#juham.simulation.RTracker" ns1:title="A tracker automation object. Spawns async thread to generate geographic" target="_top">
+<ns0:polygon fill="white" stroke="black" stroke-width="0.5" points="418.5,-419 363.5,-419 363.5,-399 418.5,-399 418.5,-419" />
+<ns0:text text-anchor="middle" x="391" y="-405.5" font-family="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans" font-size="10.00">RTracker</ns0:text>
+</ns0:a>
+</ns0:g>
+</ns0:g>
+
+<ns0:g id="edge22" class="edge">
+<ns0:title>RThread-&gt;RTracker</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.44,-424.56C294.68,-421.4 330.68,-416.72 356.84,-413.32" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="357.78,-414.96 362.51,-412.58 357.33,-411.49 357.78,-414.96" />
+</ns0:g>
+
+<ns0:g id="edge25" class="edge">
+<ns0:title>RThread-&gt;ShellyMotionSimulator</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.22,-420.33C279.31,-417.28 289.42,-413.44 298.25,-409 325.57,-395.27 354.36,-374.67 372.24,-361.04" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="373.49,-362.28 376.39,-357.85 371.36,-359.51 373.49,-362.28" />
+</ns0:g>
+
+<ns0:g id="edge28" class="edge">
+<ns0:title>RThread-&gt;ShellyPlus1Simulator</ns0:title>
+<ns0:path fill="none" stroke="black" stroke-width="0.5" d="M270.32,-423.38C280.03,-420.57 290.55,-416.1 298.25,-409 327.22,-382.3 313.33,-361.38 334.25,-328 346.17,-308.98 363.2,-289.65 375.29,-276.87" />
+<ns0:polygon fill="black" stroke="black" stroke-width="0.5" points="376.79,-277.83 378.99,-273.01 374.26,-275.41 376.79,-277.83" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

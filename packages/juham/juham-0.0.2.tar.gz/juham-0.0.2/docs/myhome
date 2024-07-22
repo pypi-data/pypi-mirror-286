@@ -1,0 +1,10 @@
+2024-07-11 17:27:06,910 [MainThread  ] [INFO ]  No configuration file C:\Users\juham\.juham\config\MyHomeApp.json found
+2024-07-11 17:27:12,144 [MainThread  ] [INFO ]  Configuration file C:\Users\juham\.juham\config\MyHomeApp.json created
+2024-07-11 17:57:44,311 [MainThread  ] [INFO ]  Configuration file C:\Users\juham\.juham\hiplis\MyHomeApp.json created
+2024-07-13 18:16:13,603 [MainThread  ] [INFO ]  No configuration file C:\Users\juham\.juham\config\ShellyMotion.json found
+2024-07-13 18:16:13,616 [MainThread  ] [INFO ]  No configuration file C:\Users\juham\.juham\config\ShellyPro3EM.json found
+2024-07-13 18:16:15,455 [MainThread  ] [INFO ]  Configuration file C:\Users\juham\.juham\config\ShellyPro3EM.json created
+2024-07-13 18:16:15,457 [MainThread  ] [INFO ]  Configuration file C:\Users\juham\.juham\config\ShellyMotion.json created
+2024-07-13 18:19:16,520 [MainThread  ] [INFO ]  No configuration file C:\Users\juham\.juham\config\WaterCirculator.json found
+2024-07-13 18:19:17,506 [MainThread  ] [INFO ]  Configuration file C:\Users\juham\.juham\config\WaterCirculator.json created
+2024-07-14 07:11:23,782 [MainThread  ] [INFO ]  Configuration file C:\Users\juham\.juham\config\HomeWizardWaterMeter.json created
