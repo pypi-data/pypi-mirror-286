@@ -1,0 +1,11 @@
+supafunc/__init__.py,sha256=Y8ncO0cdMUkhjwJyb3pUuYO8nPPrRtzvkhtygDaEj9k,821
+supafunc/_async/__init__.py,sha256=U4S_2y3zgLZVfMenHRaJFBW8yqh2mUBuI291LGQVOJ8,35
+supafunc/_async/functions_client.py,sha256=yjfytGQKr78HKQKyNy5at7z9B3rCuvfyuG34JLg1m6g,3134
+supafunc/_sync/__init__.py,sha256=U4S_2y3zgLZVfMenHRaJFBW8yqh2mUBuI291LGQVOJ8,35
+supafunc/_sync/functions_client.py,sha256=c0sOqkgaWfvsjSqt63YM3rwestM6poSwcxBkwF0pGko,3107
+supafunc/errors.py,sha256=2UwuE3q0PLQuFlOZHqcRMBIAFsh-_v6yp7pROQlzIcE,999
+supafunc/utils.py,sha256=y7l5xxuwQW8cdzFzn2lwBK0_xEZ-SvYzTKk-ipXwDFI,241
+supafunc-0.5.0.dist-info/LICENSE,sha256=48n0MgJUQxqPFT6HBjBa7aDfSU8a31WVjAfUuL5mpEs,1065
+supafunc-0.5.0.dist-info/METADATA,sha256=ldIxYbYV8TqCyb3Qlry36fHyR2yNuS2YzwanQKsY-Jg,1170
+supafunc-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+supafunc-0.5.0.dist-info/RECORD,,
