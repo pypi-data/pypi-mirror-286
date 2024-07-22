@@ -1,0 +1,8 @@
+setup.py
+subtitle/__init__.py
+subtitle/subtrans.py
+subtranslate.egg-info/PKG-INFO
+subtranslate.egg-info/SOURCES.txt
+subtranslate.egg-info/dependency_links.txt
+subtranslate.egg-info/requires.txt
+subtranslate.egg-info/top_level.txt
