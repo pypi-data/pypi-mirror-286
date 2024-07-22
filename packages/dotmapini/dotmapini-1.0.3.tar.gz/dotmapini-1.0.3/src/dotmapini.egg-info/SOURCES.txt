@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/dotmapini/__init__.py
+src/dotmapini/exceptions.py
+src/dotmapini.egg-info/PKG-INFO
+src/dotmapini.egg-info/SOURCES.txt
+src/dotmapini.egg-info/dependency_links.txt
+src/dotmapini.egg-info/top_level.txt
+tests/test.py
