@@ -1,0 +1,2 @@
+[console_scripts]
+pyIPCMini = pyipcmini.scripts.single_measurement:main

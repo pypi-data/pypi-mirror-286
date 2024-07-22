@@ -1,0 +1,17 @@
+pyipcmini/__init__.py,sha256=Le6pH2ti4psMDttm59K2OkVdkgYyztUD5dCMP-oyV00,444
+pyipcmini/usb_ion_pump.py,sha256=wmt-8kzPTgM4wv69T67_dxQQcnF_rzC1CNpJpxdeToo,8862
+pyipcmini/version.py,sha256=L1tKLDe8z5N4QmRlBgvOqBwzloYNQywIhE8t0tXXql4,51
+pyipcmini/functions/__init__.py,sha256=GeWlSzrb1kvxBwJrgEZLmDJxFxHbRD77GK-EayCYZ0M,429
+pyipcmini/functions/ion_pump.py,sha256=9NSVR0CWGSeUROIX9lRItuTYDuBj2EX0mrhFvRfCQc4,2952
+pyipcmini/functions/ion_pump_base_functions.py,sha256=F7Kt3QGiP_UmDO_OliioBB1cjk5wImFpF0-KbjlzgcM,7485
+pyipcmini/functions/ion_pump_dic.py,sha256=BLSVp9uOakxMOyOvzxVcNaCMuNeXr5acxxev709PT2s,3761
+pyipcmini/functions/ion_pump_read_functions.py,sha256=k5oxf0d5h01UXC8d0XUdoe6X5Yn-H39e2SWPvPG3ZPQ,15218
+pyipcmini/functions/ion_pump_set_functions.py,sha256=eeJpxsfp5tkX8Ks0ZmSL_w2TMYPliVl3ogx6UQEbiMo,12717
+pyipcmini/scripts/__init__.py,sha256=MCUg05rVFKgJzs18dvCGP5T0d1yE_uH4KzQVVS4hGVw,370
+pyipcmini/scripts/single_measurement.py,sha256=dPjR1GjFVtUYuguCohvT7KVbMkfsNEwotV1mmGYExCM,3348
+pyIPCMini-0.1.0.dist-info/LICENSE,sha256=v0wH63Kjt0pZ9OnvCLcj88xb4YuH99-byA3OJLVLHz0,1539
+pyIPCMini-0.1.0.dist-info/METADATA,sha256=fwsRfb4uYW6273kPZmEDqeZzM0ENskzIQ11SqYt5P1Q,4052
+pyIPCMini-0.1.0.dist-info/WHEEL,sha256=rWxmBtp7hEUqVLOnTaDOPpR-cZpCDkzhhcBce-Zyd5k,91
+pyIPCMini-0.1.0.dist-info/entry_points.txt,sha256=6h3xqzO5mveYNgwsW1fySUaYmDj8-18iEKuCD1xBJFk,72
+pyIPCMini-0.1.0.dist-info/top_level.txt,sha256=7iP8HH2TNyjOr_EhYllO5M1nt2osF3xUqB6i9vIByH4,10
+pyIPCMini-0.1.0.dist-info/RECORD,,

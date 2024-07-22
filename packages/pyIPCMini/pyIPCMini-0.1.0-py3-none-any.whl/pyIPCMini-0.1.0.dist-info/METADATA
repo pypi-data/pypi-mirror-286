@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: pyIPCMini
+Version: 0.1.0
+Summary: pyIPCMini is a package to communicate and control via USB/serial the ion pump controller type IPCMini from Agilent.
+Author-email: Benjamin Pasquiou <benjamin.pasquiou@univ-paris13.fr>
+Project-URL: Homepage, https://github.com/benjaminpasquiou/pyIPCMini
+Project-URL: Documentation, https://pyIPCMini.readthedocs.io
+Project-URL: Repository, https://github.com/benjaminpasquiou/pyIPCMini.git
+Project-URL: Issues, https://github.com/benjaminpasquiou/pyIPCMini/issues
+Project-URL: Changelog, https://github.com/benjaminpasquiou/pyIPCMini/blob/main/CHANGELOG.md
+Keywords: IPCMini,driver,ion pump
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Classifier: Typing :: Typed
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial
+Requires-Dist: python-dateutil
+
+# pyIPCMini
+
+pyIPCMini is a package to communicate and control via USB/serial the ion pump controller type IPCMini from Agilent.
+
+It has been tested using the RS232 protocol, with the pump's DB9 connector hooked to a USB-serial converter based on FTDI chip.
+
+This is an unofficial package for the [IPCMini](https://www.agilent.com/en/product/vacuum-technologies/ion-pumps-controllers/ion-pump-controllers/ipcmini-ion-pump-controller) and it is not supported by the equipment's vendor.
+
+## Installation
+
+You can install this package from PyPI, using the following command:
+
+    pip install pyIPCMini
+
+Alternatively, you can clone the latest version from github:
+
+    git clone https://github.com/benjaminpasquiou/pyIPCMini.git
+
+
+## Usage
+
+### Python package
+
+For starting using this package, you can see these [useful examples](https://github.com/benjaminpasquiou/pyIPCMini/blob/main/notebooks/Examples.ipynb).
+
+You can also look into the [package documentation](https://pyIPCMini.readthedocs.io).
+
+### Application
+
+For using the application on the command line, to see the help message, you can first use:
+
+    pyIPCMini -h
+
+An example of a working command:
+
+    pyIPCMini -p "/dev/ttyUSB0" -l "My pump" --show
+
+The application's functionalities are very limited and are just examples for you to build on and obtain something that matches your needs.
+You then would have to use a combination of *python -m build -- wheel* and *python -m pip install pyIPCMini-X.X.X-py3-none-any.whl* within the python environment of your choice, to install your own modified version of the application.
+
+## Warning
+
+An ion pump is a sensitive device, and if not used properly it can potentially cause harm to the user, to the device itself, or to other pieces of equipment. This package should only be used by trained operators. Please read Agilent IPCMini's manual and make sure that you can safely operate the pump in manual mode, before using the package for remote control. Please also consult the package's documentation at [https://pyIPCMini.readthedocs.io](https://pyIPCMini.readthedocs.io) before using any of its functionalities. Also, let me reminds you of no-liability statement in the package's [license](https://github.com/benjaminpasquiou/pyIPCMini/blob/main/LICENSE).
