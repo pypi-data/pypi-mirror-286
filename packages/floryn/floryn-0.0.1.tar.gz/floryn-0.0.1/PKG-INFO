@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: floryn
+Version: 0.0.1
+Summary: Plot proportionally filled text with color
+Author-email: M Iqbal Tawakal <mit.iqi@gmail.com>
+Project-URL: Repository, https://github.com/mitbal/floryn.git
+Keywords: matplotlib,plot,data science
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: matplotlib>=3.9.0
+
+# Floryn
+
+Floryn is a package to create a visualization plot where the text is filled up to certain percentage.
+This is used to emphasize the value, for example by comparing the before and after a product launch, in terms of percentage, compared to a target value.
+
+## How to install
+simply run
+`pip install floryn`
+
+## How to run
+```python
+import floryn
+
+floryn.pp('Halo halo Bandung', percentage=0.5, color='denim blue', ax=None)
+```
+
+and this the example output
+![Output](output.png "Result")
+
+See example notebook for more plotting option, including different orientation, and even how to create an animation
