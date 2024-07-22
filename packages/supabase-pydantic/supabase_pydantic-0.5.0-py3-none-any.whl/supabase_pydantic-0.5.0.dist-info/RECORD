@@ -1,0 +1,17 @@
+supabase_pydantic/cli.py,sha256=XY37Cg1Lulc17D_0xlxNWhg5247ZDPzU30jhQ-PYwo0,9256
+supabase_pydantic/util/__init__.py,sha256=HAIPQY2Um-VO5OAZ5V6acl9AhdTCrIj7TaVbwI5sdUA,1172
+supabase_pydantic/util/constants.py,sha256=njVZXQ6u7RmTLY2ZKIgIy8v-dZj9JLp_lsxRaT49pfo,7840
+supabase_pydantic/util/dataclasses.py,sha256=Nlz0wfXwg2DHk2TWgswqfRX_p6ikgnvZXGSCIwTMxzc,8521
+supabase_pydantic/util/db.py,sha256=eiV-dpu42606hUQvdjxUUXwK-pMtyyyFj3EDPWcEM5w,754
+supabase_pydantic/util/fake.py,sha256=KYLBeywb8hgmA2_c294fH-K3VIwRKxyJCl6wdB11eEs,1397
+supabase_pydantic/util/json.py,sha256=dBn2goFuworqkRpNnHruYLGMOqSN5tpNVHKy99Tf66o,470
+supabase_pydantic/util/marshalers.py,sha256=18iZZ6ATk7c3dmmQofOYsqBbFQWaSuPck21lh39y04s,9864
+supabase_pydantic/util/sorting.py,sha256=Z064f8T0GeBO4wT3mnEGYnwiW-OWcjhTR-ZGZQ37FEA,1965
+supabase_pydantic/util/string.py,sha256=BcBeYZNh4yKunj8Fy2llBTpW26lwsGK0E-okZJ19GIw,197
+supabase_pydantic/util/util.py,sha256=fdNMOo7zqgR1jtgzSanFgGx-QkIUA6ui-IhhvK8tRKQ,1376
+supabase_pydantic/util/writer.py,sha256=-WUGmP4Cmmbb3tmkZIHOOaJw7Tqn4_ddF2TxGZ4bVdg,20895
+supabase_pydantic-0.5.0.dist-info/LICENSE,sha256=buOLK5ZR7EBQ2SP4-9U8TFQGVXukr4-bQW84kShokZk,1087
+supabase_pydantic-0.5.0.dist-info/METADATA,sha256=6lM2m6ctk4PYULpF2BcX2GsdcQIZpEN_xy96TGJOcrA,2398
+supabase_pydantic-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+supabase_pydantic-0.5.0.dist-info/entry_points.txt,sha256=epT_NB3dQ2ZCXP8-JK6CELctOVaPVtAIccEtRtDPyFc,103
+supabase_pydantic-0.5.0.dist-info/RECORD,,
