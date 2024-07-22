@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+MANIFEST.in
+pyproject.toml
+.github/workflows/publish-to-pypi.yaml
+django_admin_action_forms/__init__.py
+django_admin_action_forms/apps.py
+django_admin_action_forms/decorators.py
+django_admin_action_forms.egg-info/PKG-INFO
+django_admin_action_forms.egg-info/SOURCES.txt
+django_admin_action_forms.egg-info/dependency_links.txt
+django_admin_action_forms.egg-info/top_level.txt
+django_admin_action_forms/static/django_admin_action_forms/css/action_form.css
+django_admin_action_forms/templates/admin/django_admin_action_forms/action_form.html
