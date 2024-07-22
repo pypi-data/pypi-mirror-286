@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+dockerfile_git_hash.egg-info/PKG-INFO
+dockerfile_git_hash.egg-info/SOURCES.txt
+dockerfile_git_hash.egg-info/dependency_links.txt
+dockerfile_git_hash.egg-info/entry_points.txt
+dockerfile_git_hash.egg-info/top_level.txt
