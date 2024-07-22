@@ -1,0 +1,3 @@
+[console_scripts]
+setup = setupppy.main:main
+setupppy = setupppy:welcome
