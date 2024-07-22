@@ -1,0 +1,9 @@
+video_highlight_detection/__init__.py,sha256=vc9owSvqMYv0zsVEE34BLxXP26hmI_EtOtkd5IpujzU,154
+video_highlight_detection/common.py,sha256=Si4ZvbkkaVGyKrOa7gmsVNWS2Abtji-V5nEsJhrIM3M,188
+video_highlight_detection/video_highlight_detection.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+video_highlight_detection-0.0.1.dist-info/LICENSE,sha256=RlpGQ8mB0m4DJUjVeskYoik8qmuPuUR2Z8WyXf7jflQ,1073
+video_highlight_detection-0.0.1.dist-info/METADATA,sha256=RtKm7GSNfN8h4JhhFJtXSL8Aeajk2aC4LBXM8T56R-Y,1529
+video_highlight_detection-0.0.1.dist-info/WHEEL,sha256=ANi2y8tYx-p70pj7MSdqQMJNFJEUgAOyfPpHzqz0w84,109
+video_highlight_detection-0.0.1.dist-info/entry_points.txt,sha256=YiqA6P4zktJAycexKo_bHNvtZ8bp9IyKIIjXqF4cREg,81
+video_highlight_detection-0.0.1.dist-info/top_level.txt,sha256=JBPy5jMCW2rlZ3JnXscVYqAz2WhO3x1DCT18bt_OwW8,26
+video_highlight_detection-0.0.1.dist-info/RECORD,,
