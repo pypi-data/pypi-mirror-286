@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ozmadb-py"
+version = "0.0.3"
+description = "OzmaDB Python client"
+authors = ["Nikolay Amiantov <namiantov@ozma.io>"]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License"
+]
+
+[tool.poetry.dependencies]
+python = ">= 3.10"
+aiohttp = ">= 3.9.1, < 4.0.0"
+pydantic = ">= 2.5.3, < 3.0.0"
+pyjwt = ">= 2.8.0, < 3.0.0"
+cryptography = ">= 41.0.7"
+isodate = "^0.6.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.10"
+pyright = "^1.1.369"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ozmadb-py
+Version: 0.0.3
+Summary: OzmaDB Python client
+Author: Nikolay Amiantov
+Author-email: namiantov@ozma.io
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: cryptography (>=41.0.7)
+Requires-Dist: isodate (>=0.6.1,<0.7.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
