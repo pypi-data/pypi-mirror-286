@@ -1,0 +1,11 @@
+conjugate_prior/__init__.py,sha256=Rkg_JH1hKgg9uIzWRBlFb6i3PaLCaxqm1Y_3bfzPcfU,132
+conjugate_prior/beta.py,sha256=fEWwFeEIu98f3avFxnriTxJfXmm1CpApB79BzZKcZu4,2806
+conjugate_prior/dirichlet.py,sha256=zrF8Xa8-uAb0RMhf3pFQD35jooXlspdvdAlm8Zu0gKI,1533
+conjugate_prior/gamma.py,sha256=e9nFO9fJb46UZQkZwSEVWxDQsMqp6YaZ7QP-cW0hGbo,2540
+conjugate_prior/invgamma.py,sha256=pIDFpSOHnRUtTj1JR3D_NQTA_RoKdJgjlbBu4rbJVS4,2207
+conjugate_prior/normal.py,sha256=23S3QtBT_ikOiW_j79BvyMjOYjropiB2typ0qsoWxQ0,2198
+conjugate_prior-0.8.dist-info/LICENSE,sha256=fh5VyQaw_J4eFBUcL9U7gF2vNxiUVJokt44SNy4TyXk,1066
+conjugate_prior-0.8.dist-info/METADATA,sha256=0KsRNi7MLH5OEc9YNRP-uASJA23B_KQrd6mr2thzcFg,3928
+conjugate_prior-0.8.dist-info/WHEEL,sha256=rWxmBtp7hEUqVLOnTaDOPpR-cZpCDkzhhcBce-Zyd5k,91
+conjugate_prior-0.8.dist-info/top_level.txt,sha256=A1ixJmHRsPigxvYhljjIuRH1u6nOt6xrXWcShGCMQo4,16
+conjugate_prior-0.8.dist-info/RECORD,,
