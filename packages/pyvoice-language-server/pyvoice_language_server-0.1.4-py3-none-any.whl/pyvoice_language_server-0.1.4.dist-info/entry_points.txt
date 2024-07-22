@@ -1,0 +1,3 @@
+[console_scripts]
+pyvoice=pyvoice.__main__:main
+
