@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/chzzk/__init__.py
+src/chzzk/chzzk.py
+src/chzzk.egg-info/PKG-INFO
+src/chzzk.egg-info/SOURCES.txt
+src/chzzk.egg-info/dependency_links.txt
+src/chzzk.egg-info/top_level.txt
