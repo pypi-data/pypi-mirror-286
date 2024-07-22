@@ -1,0 +1,3 @@
+[console_scripts]
+mpd-tpd=mpd_tpd.cli:commandline_mpd_tpd
+
