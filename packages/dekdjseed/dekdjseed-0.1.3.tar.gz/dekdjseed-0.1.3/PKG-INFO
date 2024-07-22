@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dekdjseed
+Version: 0.1.3
+Author-Email: sanzenwin <sanzenwin@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: Faker<=2.0.1
+Requires-Dist: toposort<=1.7
+Requires-Dist: dekdjtools<1.0.0
+Description-Content-Type: text/markdown
+
+Django public components.
