@@ -1,0 +1,106 @@
+[tool.poetry]
+name = "aio-taginfo"
+version = "0.4.0"
+description = "Async client for the OpenStreetMap taginfo API"
+authors = ["Tim Wiechers <mail@timwie.dev>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/timwie/aio-taginfo"
+documentation = "https://www.timwie.dev/aio-taginfo/"
+packages = [{ include = "aio_taginfo" }]
+include = ["RELEASES.md"]
+keywords = [
+    "geospatial",
+    "gis",
+    "openstreetmap",
+    "osm",
+    "taginfo",
+    "spatial-analysis",
+    "spatial-data",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: aiohttp",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP",
+    "Typing :: Typed",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.poetry.urls]
+"Release Notes" = "https://github.com/timwie/aio-taginfo/blob/main/RELEASES.md"
+"Test Coverage" = "https://codecov.io/gh/timwie/aio-taginfo"
+
+[tool.poetry.dependencies]
+aiohttp = { version = "^3.9", extras = ["speedups"] }
+pydantic = "^2.4"
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+aioresponses = "^0.7.6"
+codecov = "^2.1.13"
+invoke = "^2.2.0"
+isort = "^5.13.2"
+loguru = "^0.7.2"
+mypy = "^1.11.0"
+pdoc = "^14.5.1"
+pytest = "^8.3.1"
+pytest-asyncio = "^0.23.5"
+pytest-cov = "^5.0.0"
+pytest-randomly = "^3.15.0"
+ruff = "^0.5.0"
+pyright = "^1.1.372"
+
+[tool.ruff]
+# https://docs.astral.sh/ruff/settings/
+# https://docs.astral.sh/ruff/rules/
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "COM812", "D203", "D212", "FIX", "G004", "I", "ISC001", "PLR0913", "PLR2004", "S101", "SLF001", "TD",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["ANN", "ASYNC230", "C408", "C901", "D", "E501", "F401", "F811", "PLR0915"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.black]
+# https://github.com/psf/black#configuration
+line-length = 100
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/options.html
+profile = "black"
+line_length=100
+indent='    '
+multi_line_output=6
+lines_after_imports=2
+known_first_party="aio_taginfo"
+sections="STDLIB,FIRSTPARTY,THIRDPARTY,LOCALFOLDER"
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-library-stubs-or-py-typed-marker
+ignore_missing_imports = true
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+skip_empty = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
