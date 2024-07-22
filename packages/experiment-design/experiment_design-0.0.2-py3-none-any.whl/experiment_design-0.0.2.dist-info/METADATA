@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: experiment-design
+Version: 0.0.2
+Summary: Tools to create designs of experiments
+License: MIT
+Author: Can Bogoclu
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=2.0.1,<3.0.0)
+Requires-Dist: scipy (>=1.12.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+[![tests](https://github.com/canbooo/experimental-design/actions/workflows/tests.yml/badge.svg)](https://github.com/canbooo/experimental-design/actions/workflows/tests.yml)
+
+# `experiment-design`: Tools to create and extend experiment plans
+
+Documentation is under construction. You can install using
+
+`pip install experiment-design`
+
+See  [demos](./demos) for example usage.
+
+## Create and extend Latin hypercube designs
+
+![LHS extension by doubling](./media/lhs_extension_by_doubling.gif)
+
+![LHS extension one by one](./media/lhs_extension_by_constant.gif)
+
+![Local LHS extension](./media/lhs_extension_local.gif)
+
+## Orthogonal designs with any[^1] distribution
+
+![OS extension by doubling](./media/os_extension_by_doubling.gif)
+
+[^1]: As long as it is supported by `scipy.stats`
+
+## Create and extend correlated designs
+
+![Correlated LHS](./media/lhs_correlation.gif)
+
