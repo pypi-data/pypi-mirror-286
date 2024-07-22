@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: pary
+Version: 0.0.2
+Summary: A productivity package for actuaries and data analysts.
+Project-URL: Homepage, https://dev.azure.com/mclavier/Pary
+Project-URL: Issues, https://dev.azure.com/mclavier/Pary
+Author-email: Mathieu Clavier <mathieu.clavier@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
