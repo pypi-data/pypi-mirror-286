@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: rajan_screener
+Version: 0.0.0
+Summary: The rajan_screener package is a comprehensive toolkit designed for analyzing and visualizing stock market data from the screener.in.
+Project-URL: Homepage, https://github.com/rajanbajaj/rajan_screener
+Project-URL: Issues, https://github.com/rajanbajaj/rajan_screener/issues
+Author-email: Rajan Bajaj <rajanbajajkota@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# rajan_screener
+This is a python package to use screener.in website get indian stock market related data
