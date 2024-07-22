@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: scrapy-llm
+Version: 0.1.6
+Summary: LLM integration for Scrapy
+Author-email: blacksuan19 <py@blacksuan19.dev>
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: scrapy
+Requires-Dist: html2text
+Requires-Dist: instructor
+Requires-Dist: litellm
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+
+# Scrapy-LLM
+
+LLM integration for scrapy as a middleware.
+
+[![view - Documentation](https://img.shields.io/badge/PyPi-0.1.6-blue?style=for-the-badge)](https://pypi.org/project/scrapy-llm "view package on PyPi")
+&nbsp;&nbsp;&nbsp;
+<!-- [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](https://redash.blacksuan19.dev/ "go to documentation") -->
+<!-- &nbsp;&nbsp;&nbsp; -->
+[![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)](# "Build with github actions")
+
+## Installation
+
+```bash
+pip install scrapy-llm
+```
+
+## Usage
+
+```python
+# settings.py
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_llm.handler.LlmExtractorMiddleware'
+    ...
+}
+```
