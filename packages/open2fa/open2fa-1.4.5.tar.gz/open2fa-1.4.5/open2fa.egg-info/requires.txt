@@ -1,0 +1,17 @@
+requests
+logfunc<3
+cryptography<42
+pyshared<2
+base58==2.1.1
+
+[dev]
+pytest
+pytest-cov
+pytest-xdist
+pytest-html
+black
+isort
+flake8
+twine
+build
+pyshared
