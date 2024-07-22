@@ -1,0 +1,13 @@
+pylegs/__init__.py,sha256=Zw8kBs287OVlEu5X8P0aHCDZkEkp7oWoo7nE8DdMFxA,34
+pylegs/archive.py,sha256=SDPWZT1f75yjZGICRzdLQj_klOB3EW0c-5PeLFqFPwc,25850
+pylegs/config.py,sha256=ZKsrtoqLaHRr2TtDFg-1WR0K67YDUClzWh6qsu6bZGA,1085
+pylegs/cutout.py,sha256=F8qgxjdr_xNPhlkXA_4p_wi32h7kO9IHgFosyIQNhz8,6505
+pylegs/io.py,sha256=EmL-ACSNufCWuEDRCQg-VrbuJjC4tJoYFhkAgrIv5_s,21979
+pylegs/tap.py,sha256=bPmDWNgelGy79GK30SmKJlF_F12UKDXvVAIqkR-x3cU,6759
+pylegs/utils.py,sha256=7bwoDEGTpkJlFFUcQRrhiKuFLqu30SDQQgFi3lyVOoI,7046
+pylegs/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylegs/tests/test_utils.py,sha256=Z1qDAsYhkHRs2PwinGGG8R-1MUIYsg0bdCkgMBpJW3U,14
+pylegs-0.0.2.dist-info/METADATA,sha256=JZeYLuHxz3M2FfZUmZ50aFu9nK3vOoytoFHBDexOwHU,1575
+pylegs-0.0.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pylegs-0.0.2.dist-info/top_level.txt,sha256=SOvYL6m8dqwaa2Ga5RXHqskIGbTvsvnMaF1u3hva1dA,7
+pylegs-0.0.2.dist-info/RECORD,,
