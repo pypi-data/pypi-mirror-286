@@ -1,0 +1,7 @@
+README.md
+setup.py
+LLM4HW.egg-info/PKG-INFO
+LLM4HW.egg-info/SOURCES.txt
+LLM4HW.egg-info/dependency_links.txt
+LLM4HW.egg-info/requires.txt
+LLM4HW.egg-info/top_level.txt
