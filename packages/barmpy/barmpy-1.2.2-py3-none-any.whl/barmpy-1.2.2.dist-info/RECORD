@@ -1,0 +1,13 @@
+barmpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+barmpy/barn.py,sha256=vzeNor93Kez6ccCEfzIJPaQSDxnEC2JM1Z0WTY_vSnk,41872
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/ols.py,sha256=4bZekp-yD4yB2UkDvK4c-Giqi0dYBBN7msWp305ymY0,849
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_barn.py,sha256=gjwRzOQRMjK3XFwWF_HcnCdqnLsfGGFIWHHvE7Icv4s,6290
+test/test_nn.py,sha256=K3PMyy8NsR9zoqAQc-FOPS-HDjVAEepa3jlnu9tLJ9Q,3546
+test/test_tfnn.py,sha256=3IscPEe09_WfsDDgccR-DMkC0Bf0GcdkQn3ri8RSAFM,3773
+barmpy-1.2.2.dist-info/LICENSE,sha256=j1rM303c9uRQBc6SMYbDV5tgTjrEyqtZkcorXAAHqKg,1075
+barmpy-1.2.2.dist-info/METADATA,sha256=ugzSkWaf69HJofklmmtIN20NYJQLBOdhT4yK6B2s0pk,2730
+barmpy-1.2.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+barmpy-1.2.2.dist-info/top_level.txt,sha256=eLCK5hr5hNq7M5Nqr48cZwpg70QA7zVYtCv4-mKU2d8,21
+barmpy-1.2.2.dist-info/RECORD,,
