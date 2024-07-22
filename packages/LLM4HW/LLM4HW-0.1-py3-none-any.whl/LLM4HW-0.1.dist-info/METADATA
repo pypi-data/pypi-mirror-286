@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: LLM4HW
+Version: 0.1
+Summary: Everything you need to install for the LLM4HW tool
+Home-page: https://github.com/annnnie-qiu/annie_install
+Author: Siyu Qiu
+Author-email: siyu.qiu1@unsw.edu.au
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: openai
+Requires-Dist: Flask
+Requires-Dist: python-dotenv
+
+# Annnie File
+
+An all-in-one package for connecting to an LLM (Large Language Model) to ask questions directly within the Vivado IDE.
+
+## Installation
+
+To install this package, use pip:
+
+```sh
+pip install annie_install
+
+```
+## System Dependencies
+
+Before installing the Python package, you need to install some system-level dependencies. For Debian-based systems (like Ubuntu), you can use `apt-get`:
+
+```sh
+sudo apt-get update
+sudo apt-get install python3-tk
+```
