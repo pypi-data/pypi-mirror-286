@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "strool"
+version = "1.0.1"
+authors = [
+  { name="Carlos González", email="carlos.a.gb95@gmail.com" },
+]
+description = "Small module to control strings with booleans"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/1emank/strool"
+Issues = "https://github.com/1emank/strool/issues"
