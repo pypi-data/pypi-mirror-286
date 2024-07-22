@@ -1,0 +1,7 @@
+numpy
+
+[all]
+video-highlight-detection[extra]
+
+[extra]
+pandas

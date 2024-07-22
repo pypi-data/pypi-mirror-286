@@ -1,0 +1,2 @@
+[console_scripts]
+video_highlight_detection = video_highlight_detection.cli:main
