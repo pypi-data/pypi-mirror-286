@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone.pdfexport"
+      >
+<head>
+  <style tal:content="view/get_styles"></style>
+  <link rel="canonical" href="${view/canonical_url}" />
+</head>
+<body class="template-pdf-export portaltype-${python: view.portal_type}">
+
+  <header class="pdf-header">
+      <img src="${view/img_src}">
+  </header>
+
+  <div id="pdf-content"></div>
+
+</body>
+</html>
