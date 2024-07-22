@@ -1,0 +1,11 @@
+pelican/plugins/feed_content_footer/__init__.py,sha256=I-FsIHrOyiUlxVXgpaozdmcds9O4615X6QVpithVycI,51
+pelican/plugins/feed_content_footer/feed_content_footer.py,sha256=F6wa4cbG_CrCmplJhZJ6q7Nb_2sGDd5PV4mBVvelpS8,946
+pelican/plugins/feed_content_footer/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pelican/plugins/feed_content_footer/tests/content/foo.md,sha256=gTnoB0wBXiLEXLmLf8ZA7-ywtw_1NoAAh9uy0M_cxko,1783
+pelican/plugins/feed_content_footer/tests/content/test.md,sha256=JRqfSqT6XyA6wPxDeco1DRXtWmPb2mBep1pjpZU4sv8,3622
+pelican/plugins/feed_content_footer/tests/pelicanconf.py,sha256=_5qsAW5FK5XWvw4GanzjfhZfO4Eec_-4bjhvPnrjoAM,393
+pelican/plugins/feed_content_footer/tests/test_feed_content_footer.py,sha256=e2WSCuvJO5qGtRo4rPtamF7Gyvem7NArUYzzz1hxUJg,3257
+pelican_feed_content_footer-1.0.dist-info/LICENSE,sha256=yF6-wjajX8INjiA5Ih53X1fpyrp3Ueh6KAqsu242Rzs,34196
+pelican_feed_content_footer-1.0.dist-info/METADATA,sha256=9RDDHhn4hXJqX5uL6dJ_1rNF_Cz8FIIA89WrWQEp930,2603
+pelican_feed_content_footer-1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pelican_feed_content_footer-1.0.dist-info/RECORD,,
