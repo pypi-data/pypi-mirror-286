@@ -1,0 +1,38 @@
+[project]
+name = "typerx"
+version = "0.1.2"
+description = "A Typer extension for building complex CLI applications, with dataclass support."
+authors = [
+    {name = "sagewe", email = "sagewe@fastmail.com"},
+]
+dependencies = [
+    "typer",
+    "pydantic",
+]
+requires-python = ">3.7"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=24.4.2",
+    "isort>=5.13.2",
+    "transformers[torch]",
+    "pytest>=8.3.1",
+]
+[tool.isort]
+profile = "black"
+skip_glob = []
+
+[tool.black]
+line-length = 119
+target-version = ['py310']
+include = '\.pyi?$'
+extend-exclude = '''
+(
+)
+'''
