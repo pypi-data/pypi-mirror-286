@@ -1,0 +1,112 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs", "hatch-conda"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mobiedantic"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "BSD-3-Clause"
+keywords = []
+authors = [
+  { name = "Jan Eglinger", email = "jan.eglinger@fmi.ch" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "pydantic",
+]
+
+[project.urls]
+Documentation = "https://github.com/fmi-faim/mobiedantic#readme"
+Issues = "https://github.com/fmi-faim/mobiedantic/issues"
+Source = "https://github.com/fmi-faim/mobiedantic"
+
+[project.optional-dependencies]
+hatch = ["hatch-conda>=0.5.2,<0.6"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.envs.hatch-test]
+type = "conda"
+command = "mamba"
+environment-file = "environment.yml"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/mobiedantic tests}"
+
+[tool.coverage.run]
+source_pkgs = ["mobiedantic", "tests"]
+branch = true
+parallel = true
+
+[tool.coverage.paths]
+mobiedantic = ["src/mobiedantic", "*/mobiedantic/src/mobiedantic"]
+tests = ["tests", "*/mobiedantic/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+show_missing = true
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["win-64", "osx-64"]
+
+[tool.pixi.system-requirements]
+macos = "12.7"
+
+[tool.pixi.pypi-dependencies]
+mobiedantic = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+datamodel-code-generator = ">=0.25.8,<0.26"
+jupyter = ">=1.0.0,<1.1"
+httpx = ">=0.27.0,<0.28"
+pydantic = ">=2.8.2,<2.9"
+
+[tool.pixi.feature.hatch.dependencies]
+hatch = "*"
+conda = ">=24.5.0,<24.6"
+mamba = ">=1.5.8,<1.6"
+
+[tool.pixi.feature.hatch.tasks]
+test = "hatch test"
+
+[tool.pixi.feature.mobie.dependencies]
+mobie_utils = "*"
+pytest = ">=8.2.2,<8.3"
+
+[tool.pixi.environments]
+hatch = ["hatch"]
+mobie = ["mobie"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+ignore = ["N815", "UP006","UP007"]
+
+[tool.ruff.format]
+quote-style = "single"
