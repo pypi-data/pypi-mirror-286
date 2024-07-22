@@ -1,0 +1,13 @@
+jmarkov/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jmarkov/ctmc.py,sha256=JV1G1qBWNecnqrZXrplQrPZ1BT27fu27u07bt-V5EF0,7283
+jmarkov/dtmc.py,sha256=6H-lfaelR5j9cbIOpVgCHEMGXUjT_n12z3Q9tGsbjUI,9180
+jmarkov/markov_chain.py,sha256=IdJxqfudti4lceWfpRR-r3vy0AbbsGNzjP662HPCF10,816
+jmarkov/mdp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jmarkov/mdp/dtmdp.py,sha256=0W31b8ebqE75SqjnLawUHgBLRfzLhAfh4KAj6IBpUEw,9373
+jmarkov/phase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jmarkov/phase/ctph.py,sha256=29vKGGaFPBVj7DndO5CGFBna_2JWOzyTtfjy2kWzF-w,2159
+jmarkov/phase/dtph.py,sha256=m7YQGpOarxYYFEYQl4XRy65FXY5n1mhvBv8A07ncZb4,1899
+jmarkov-0.0.1.dist-info/METADATA,sha256=JuyPvbb7Qxp3ouGr4D668KIBBsbhtWi0E2oddYbTHPs,677
+jmarkov-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+jmarkov-0.0.1.dist-info/licenses/LICENSE,sha256=bDkGfTup1HnHpyVtgn2N5sZUHHhux3olwawM3_ijDiM,14474
+jmarkov-0.0.1.dist-info/RECORD,,
