@@ -1,0 +1,47 @@
+name: 'jsonld'
+description: 'jsonld base class'
+id: https://w3id.org/cde/jsonld/v1.0/
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  cred: https://w3id.org/vc/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  dc: http://purl.org/dc/elements/1.1/
+  rdf: https://www.w3.org/RDF/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  vs: http://www.w3.org/2003/06/sw-vocab-status/ns#
+  jsonld: https://w3id.org/cde/jsonld/v1.0/#
+default_prefix: 'jsonld'
+default_range: string
+slots:
+  id:
+    identifier: true
+    required: true
+    range: string
+    slot_uri: jsonld:id
+  hasLabel:
+    range: string
+    multivalued: true
+    slot_uri: rdfs:label
+  hasComment:
+    range: string
+    multivalued: true
+    slot_uri: rdfs:comment
+  hasTitle:
+    range: string
+    multivalued: true
+    slot_uri: dc:title
+  hasDescription:
+    range: string
+    multivalued: true
+    slot_uri: dc:description
+classes:
+  JsonLDObject:
+    slots:
+    - id
+    - hasLabel
+    - hasDescription
+    - hasComment
+    - hasTitle
+    class_uri: jsonld:JsonLDObject
