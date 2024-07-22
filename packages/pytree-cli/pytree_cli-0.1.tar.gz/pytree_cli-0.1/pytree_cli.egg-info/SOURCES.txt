@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pytree/__init__.py
+pytree/cli.py
+pytree_cli.egg-info/PKG-INFO
+pytree_cli.egg-info/SOURCES.txt
+pytree_cli.egg-info/dependency_links.txt
+pytree_cli.egg-info/entry_points.txt
+pytree_cli.egg-info/top_level.txt
+tests/test_main.py

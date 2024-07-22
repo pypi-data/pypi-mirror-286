@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pytree-cli
+Version: 0.1
+Summary: A command-line tool to print directory trees
+Author: Brendan Martin
+Author-email: contact@brmartin.com
+License: MIT
+Keywords: tree directory structure
+License-File: LICENSE
+
+This tool prints a directory tree structure and allows excluding specific directory contents.
