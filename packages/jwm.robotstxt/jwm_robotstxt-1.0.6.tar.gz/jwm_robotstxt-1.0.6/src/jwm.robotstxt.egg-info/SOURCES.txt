@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./src/jwm/robotstxt/googlebot.cc
+src/jwm.robotstxt.egg-info/PKG-INFO
+src/jwm.robotstxt.egg-info/SOURCES.txt
+src/jwm.robotstxt.egg-info/dependency_links.txt
+src/jwm.robotstxt.egg-info/requires.txt
+src/jwm.robotstxt.egg-info/top_level.txt
+src/jwm/robotstxt/__init__.py
+src/jwm/robotstxt/googlebot.pyi
