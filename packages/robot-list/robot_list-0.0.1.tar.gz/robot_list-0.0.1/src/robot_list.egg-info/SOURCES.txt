@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/robot_list/__init__.py
+src/robot_list/robot_list.py
+src/robot_list.egg-info/PKG-INFO
+src/robot_list.egg-info/SOURCES.txt
+src/robot_list.egg-info/dependency_links.txt
+src/robot_list.egg-info/top_level.txt
