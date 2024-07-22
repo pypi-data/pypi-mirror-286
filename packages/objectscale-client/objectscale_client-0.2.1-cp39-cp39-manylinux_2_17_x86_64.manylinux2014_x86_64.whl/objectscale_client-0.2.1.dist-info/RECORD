@@ -1,0 +1,5 @@
+objectscale_client-0.2.1.dist-info/METADATA,sha256=Nt0STF3S2cExg6yDt-UnjTYuF3msoe7iHd7DuFEUXCc,726
+objectscale_client-0.2.1.dist-info/WHEEL,sha256=7WQXo-DyJikNS__3YGnYu_GR-RciZxr7kr6jtbowDRw,127
+objectscale_client/__init__.py,sha256=5pHHmKgegy7pmrRwXkiHeooSEQOPScEor85Kn1Y4OgE,155
+objectscale_client/objectscale_client.cpython-39-x86_64-linux-gnu.so,sha256=kesg2o7v6wzN5iCDiAeV09T6JYWW5QHXQphr3eEGKDA,6322472
+objectscale_client-0.2.1.dist-info/RECORD,,
