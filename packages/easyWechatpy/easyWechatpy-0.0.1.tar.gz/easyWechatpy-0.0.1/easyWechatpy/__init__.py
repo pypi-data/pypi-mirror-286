@@ -1,0 +1,1 @@
+from .weChatRobot import WechatRobot

@@ -1,0 +1,10 @@
+README.md
+setup.py
+easyWechatpy/__init__.py
+easyWechatpy/weChatRobot.py
+easyWechatpy.egg-info/PKG-INFO
+easyWechatpy.egg-info/SOURCES.txt
+easyWechatpy.egg-info/dependency_links.txt
+easyWechatpy.egg-info/not-zip-safe
+easyWechatpy.egg-info/requires.txt
+easyWechatpy.egg-info/top_level.txt
