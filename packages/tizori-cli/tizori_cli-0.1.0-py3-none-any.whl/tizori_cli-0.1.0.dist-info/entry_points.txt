@@ -1,0 +1,3 @@
+[console_scripts]
+tizori=tizori_cli.main:app
+
