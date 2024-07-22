@@ -1,0 +1,12 @@
+gluex.hddm_s-2.1.13-py3.8-nspkg.pth,sha256=H0CA2RmzIe1ZtqBy6UP1gDHkUq3jGaV8kwwGzl_caco,462
+gluex.hddm_s-2.1.13.dist-info/RECORD,,
+gluex.hddm_s-2.1.13.dist-info/LICENSE,sha256=guNhQjgEXYGAl4Nghfk09_ps1QJs-mwri2sFQcz2878,1070
+gluex.hddm_s-2.1.13.dist-info/namespace_packages.txt,sha256=CBmpdIxuAgfQSUFy5mVeRVoHecxPqFxATtlaygCwyG8,6
+gluex.hddm_s-2.1.13.dist-info/WHEEL,sha256=hJLBfMg5T8fViKTEYZh_q5Y2yNlgYFQi6YOw2ohvWm8,107
+gluex.hddm_s-2.1.13.dist-info/top_level.txt,sha256=CBmpdIxuAgfQSUFy5mVeRVoHecxPqFxATtlaygCwyG8,6
+gluex.hddm_s-2.1.13.dist-info/METADATA,sha256=Lvb_qsF8WM1-BDv4RKs6EnuPjTWzY8SEkrPgSxTFKbM,2972
+gluex/hddm_s.cpython-38-darwin.so,sha256=4HjBes8kZ6qrTCe2U4yYeZiJG1MRP-AZRy3e9skvlok,16259192
+gluex/hddm_s/setup_hddm_s.py,sha256=Y-UOZM2osNstbK1IA91pTpdI8GnIk2DhJVlT5OHnRRg,5800
+gluex/hddm_s/event.xml,sha256=OnOm2dRhY2471AmZVX4Hh2xqOz9UOAQXUD-uEDHvbHo,16558
+gluex/hddm_s/pyhddm_s.cpp,sha256=Bhfoe_tKM9SFk_SLrIpU0pB48vuYSdOLmDbwjr1WN0s,1836002
+gluex/hddm_s/hddm_s++.cpp,sha256=r32_E5doho9m3qm338UCIQraYI9Cn4ikDrG3HCgD8vo,726733
