@@ -1,0 +1,6 @@
+pillow==10.2
+markdownify
+httpx
+openai
+python-dotenv
+colorlog==6.8.2
