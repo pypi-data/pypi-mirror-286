@@ -1,0 +1,4 @@
+twine
+safety
+uvicorn
+flask==0.5
