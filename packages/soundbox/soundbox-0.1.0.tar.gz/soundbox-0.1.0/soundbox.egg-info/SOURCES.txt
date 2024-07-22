@@ -1,0 +1,6 @@
+setup.py
+soundbox.py
+soundbox.egg-info/PKG-INFO
+soundbox.egg-info/SOURCES.txt
+soundbox.egg-info/dependency_links.txt
+soundbox.egg-info/top_level.txt
