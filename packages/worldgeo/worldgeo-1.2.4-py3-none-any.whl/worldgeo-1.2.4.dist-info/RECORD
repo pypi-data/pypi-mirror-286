@@ -1,0 +1,12 @@
+worldgeo/__init__.py,sha256=1oipCaxUpZHIGy1orPgAxHFQIyifKbY8cTO72vIxxwI,59
+worldgeo/builder.py,sha256=UO_-a_n87TvhKq4JXJsMtyFBHYTqvn6Eq2EnwQQdlXg,4668
+worldgeo/collect.py,sha256=ZnntoSujcvQ0IwbHFJWf0QCBhov5CFTPi-0_c7F6pWA,959
+worldgeo/countries.py,sha256=qUGh5DoM0NlUW3xgTKbchuGVSkjDzE7ZnK3huFsoYSk,289
+worldgeo/index.py,sha256=XIgnfiLp3cS5bnYHVFcZtzxBf3VhNa7WuvqdqY55EEY,3046
+worldgeo/misc.py,sha256=3Ix_yaoUt6smzb0gzjb3wYybBZd2wXjIXlgAROdLV7E,427
+worldgeo/sharded.py,sha256=HDSeVy3tIpBCB9Gs6rMi9XpI1bIbFZAtdzA9ldjEXGI,2003
+worldgeo-1.2.4.dist-info/METADATA,sha256=-BjfA1ELCbSTpsCRYGrfJfQ72ys0uH1Xh5c2YCq8Qkw,1918
+worldgeo-1.2.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+worldgeo-1.2.4.dist-info/entry_points.txt,sha256=KAP1UQ2I0Pk8Mv6hGHVOvpPQAn77c5Paf1l8fB57JfQ,56
+worldgeo-1.2.4.dist-info/top_level.txt,sha256=_I_eC_LucmZl_c9TASBgBBpWGfSAmfbZ0OL5Ea6UWmA,9
+worldgeo-1.2.4.dist-info/RECORD,,
