@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pkgsize
+Version: 1.0.0
+Summary: CLI for finding size of Python libraries on PyPi, and comparing size with other libraries.
+Home-page: https://gitlab.com/navid-m/pkgsize
+Author: Navid M
+Author-email: navidnm_@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+#### pkgsize
+
+CLI for finding size of Python libraries on PyPi, and comparing size with other libraries.
+
+---
+
+Useful for keeping dependencies lightweight in Python projects.
+
+---
+
+Example usage:
+
+```
+C:\>pkgsize https://pypi.org/project/sanic/
+
+Size of https://pypi.org/project/sanic/: 17.62 MB
+```
+
+```
+C:\>pkgsize https://pypi.org/project/Eel/ https://pypi.org/project/pywebview/
+
+Size of https://pypi.org/project/Eel/: 0.52 MB
+Size of https://pypi.org/project/pywebview/: 278.48 MB
+
+----------------------------
+Size difference: 277.96 MB
+----------------------------
+```
