@@ -1,0 +1,9 @@
+fastorm/__init__.py,sha256=Y5kaVmqkYKn63WGzDKLW32yU23sqa4q7auBge6Swp1E,128772
+fastorm/classes.py,sha256=CxUTd4Mghav_dwuLiZIMHj4hXQ6jadyff_k7JQaz97A,3837
+fastorm/compat.py,sha256=ticUmfcoWoPypCj41NAX36jOoeTsubihMlo0qulfeMg,3596
+fastorm/query.py,sha256=RtT1BwuKpprNJRb-NZM6d7txoCX-T2ro3P2McYdjv1s,4456
+fastorm/utils.py,sha256=rgYCxQV7Gmad0qllxW1bpjbnY8lOfa9zQORcmS8H2Bw,1940
+fastorm-0.0.17.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+fastorm-0.0.17.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+fastorm-0.0.17.dist-info/METADATA,sha256=zc5HmeUoR4VD3MWy-duiri4Z78qhci-vqWA4kUYoHPg,4513
+fastorm-0.0.17.dist-info/RECORD,,
