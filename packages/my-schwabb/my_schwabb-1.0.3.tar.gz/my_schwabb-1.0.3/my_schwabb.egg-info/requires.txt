@@ -1,0 +1,15 @@
+aiohttp[speedups]
+async_timeout
+requests
+orjson
+pysynchronizer
+websockets
+
+[mysql]
+pymysql
+
+[redis]
+redis
+
+[websocket]
+websockets
