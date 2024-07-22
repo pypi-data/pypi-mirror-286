@@ -1,0 +1,1 @@
+from .CaptchaClass import FlaskCaptcha
