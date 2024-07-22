@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: add-dependencies
+Version: 2.3
+License-File: LICENSE
+Requires-Dist: flask <=0.5
+
