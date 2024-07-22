@@ -1,0 +1,10 @@
+rule:
+  group:
+    case::label:
+      case: 'lower'
+    case::keyword:
+      case: 'upper'
+    case::name:
+      case: 'lower'
+  library_500:
+    disable: True
