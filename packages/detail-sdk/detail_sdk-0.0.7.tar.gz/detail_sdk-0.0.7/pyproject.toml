@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "detail-sdk"
+version = "0.0.7"
+packages = [{include = "detail/client"}]
+include = ["detail/__init__.py"]
+description = ""
+readme = "pypi-readme.md"
+homepage = "https://detail.dev"
+authors = ["Detail <pypi@detail.dev>"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.12"  # <3.12 due to python-minifier
+forbiddenfruit = "*"
+opentelemetry-exporter-otlp = "*"
+opentelemetry-exporter-otlp-proto-http = "*"
+opentelemetry-instrumentation-django = "*"
+opentelemetry-instrumentation-flask = "*"
+opentelemetry-sdk = "*"
+types-psycopg2 = "*"
+wrapt = "*"
+vcrpy = "*"
+
+coverage = {version = "*", optional = true}
+psycopg2 = {version = "*", optional = true}
+psycopg2-binary = {version = "*", optional = true}
+
+[tool.poetry.extras]
+replay = ['coverage', 'psycopg2']
+replay-binary = ['coverage', 'psycopg2-binary']
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+arrow = "*"
+coverage = "*"
+django = "*"
+django-stubs = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+mypy = "*"
+pre-commit = "*"
+psycopg2-binary ="*"
+pytest = "*"
+redis = "*"
+ruff = "*"
+python-minifier = "*"
+requests = "*"
+click = "*"
+celery = "*"
+sentry-sdk = "*"
+werkzeug = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore:::.*opentelemetry.*"]
+
+[tool.ruff]
+src = ["detail", "examples"]
+lint.extend-select = ["I"]
+lint.isort.known-third-party = ["coverage"]
