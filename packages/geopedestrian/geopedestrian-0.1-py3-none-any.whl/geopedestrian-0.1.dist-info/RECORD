@@ -1,0 +1,9 @@
+geopedestrian/__init__.py,sha256=epueyGXJo64neQl8rHw7H1eNZPyn3UYDN7xKuh32te8,58
+geopedestrian/categories.py,sha256=0HiuYAztZRJZ2XY-qigrV-4vuXTX9syu-eMUzghpN1Q,1452
+geopedestrian/services.py,sha256=39TJ_xqLBiNUaCqVoM042JGzezfb4mZ1jsYzLhrk4qc,6010
+geopedestrian/data/places-categories.json,sha256=t3c19a6Cqtt9V8p2V178bTJzLGA9aozwWe2366uCVwc,153906
+geopedestrian-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+geopedestrian-0.1.dist-info/METADATA,sha256=H261-9qEUysH0TWQP9WeNwMg5NH0J4zBu1IWXKuos2M,938
+geopedestrian-0.1.dist-info/WHEEL,sha256=rWxmBtp7hEUqVLOnTaDOPpR-cZpCDkzhhcBce-Zyd5k,91
+geopedestrian-0.1.dist-info/top_level.txt,sha256=cKIRGp-vNbIi_ch_ySWdXllCmuJWBOaacUcnmi24r1E,14
+geopedestrian-0.1.dist-info/RECORD,,
