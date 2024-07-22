@@ -1,0 +1,13 @@
+litrepl/__init__.py,sha256=d-fLIxcgNLOmSqYaPkpYDB5iecW-z4A8-Xns6MfMmKQ,1260
+litrepl/base.py,sha256=1zM0dEt8Yj4I1Ny7QjrLx3jyDNISHu6JoOxHvSGdHNg,29093
+litrepl/eval.py,sha256=weplV1TSQL8Hzni6DuELrFQrYDoerxGpgk4cK97ZW2k,13757
+litrepl/revision.py,sha256=SLYrnfyUADfxgi84G-hQYNVR1snXwx1afdNaq0QB3gk,88
+litrepl/semver.py,sha256=tIgTYMeDOXyJAKOHBJTpFE2VhbD_LiuKnNEQW-aV_tA,51
+litrepl/types.py,sha256=-aVnFFYNgLe1DZjFkWsONNeIsNZVxwCGZBaTMpn7fjE,3021
+litrepl/utils.py,sha256=hlzIAlxrtncKn0urHP24o2U8WeE63p40UjKViLV2SNc,2960
+litrepl-3.4.0.data/scripts/litrepl,sha256=qNpbrwygIolKh8Xqekvt2ZiyB6DhL5Jl165eigz5Gj0,8746
+litrepl-3.4.0.dist-info/LICENSE.txt,sha256=UCNFkryaigkm2-bbmfJky8E5zOALkNXynbTP3mnJKiA,1514
+litrepl-3.4.0.dist-info/METADATA,sha256=4l3uePEtTwGP7u3oQnXNf7CeZcCw2lOrDdq_JsVIZPg,26396
+litrepl-3.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+litrepl-3.4.0.dist-info/top_level.txt,sha256=B8LgH6I6XyqxllcC2VIcnjNlpyoF4rGC6iXRmSYfN2I,8
+litrepl-3.4.0.dist-info/RECORD,,
