@@ -1,0 +1,2 @@
+[console_scripts]
+match-diff-lines = match_diff_lines:main
