@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: firedis
+Version: 0.1.3
+Summary: Fast, type-safe, custom Namespaces for local Redis
+Author-email: Ryan Young <dev@ryayoung.com>
+License-Expression: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: hiredis
+Requires-Dist: redis
+Description-Content-Type: text/markdown
+
+# Firedis
+
+```
+pip install firedis
+```
+
+A faster, type-safe Python client for your **local** Redis server. Optimized for ultra high
+frequency, synchronous transactions over a **Unix socket, or localhost**
+
+**130,000+** synchronous transactions per second while serializing/deserializing any Python
+object in/out of Redis.
+
+
+```py
+import datetime as dt
+from firedis import Firedis, Namespace
+
+class MyRedis(Firedis):
+    login_times: Namespace[dt.datetime]
+    numbers: Namespace[int | float]
+    documents: Namespace[dict[str, str]]
+
+
+r = MyRedis()  # Takes same arguments as `redis.Redis()`
+
+r.login_times.set("Peter", dt.datetime.now())
+r.numbers.set('foo', 1)
+r.documents.set('bar', {'a': 'A', 'b': 'B'})
+```
+
+## Static Type Safety, and direct storage of Python objects
+
+- ...
+
+## Performance
+
+- ...
+
+## Mirrors `redis.Redis()` API
+
+- ...
+
