@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: una
+Version: 0.0.1
+Summary: Build tool
+Author-email: Chris Arderne <chris@rdrn.me>
+License: MIT License
+License-File: LICENSE
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# una
