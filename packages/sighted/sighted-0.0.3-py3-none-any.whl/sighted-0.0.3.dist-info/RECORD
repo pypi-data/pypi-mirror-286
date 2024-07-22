@@ -1,0 +1,12 @@
+sighted/__init__.py,sha256=s_uFxSLns32dNFUYyMxvP_OuLrtsLsOgvrihs0u0-wk,42
+sighted/language.py,sha256=fCX-EH6bV1L4xfpWb5H57erq_tm7i6w_KqrUoFnMe60,2520
+sighted/parts_of_speech.py,sha256=zTgYkhnXcZViRL6Mnx1Fml5P2kky7DZpGVLpo6kajq8,585
+sighted/en_core_web_sm/__init__.py,sha256=yOtXB5wD_EFXwif2QXgfvLPp0RQ5q-G_C3LkwPp4o40,237
+sighted/literal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sighted/literal/algo.py,sha256=RbElHh7WtpC0NcS3E3z34HgIDJfmsF4dSzJAHXP-76s,486
+sighted/literal/lang.py,sha256=tjERxnX4fIaGFnZp2m2JD6tmFaWOV4miabrB87zOPgw,1126
+sighted-0.0.3.dist-info/LICENSE,sha256=U_OAfcqPhLtYTp1FklOIU_XYbu2yS_Xm7tV0RCQdhp0,1072
+sighted-0.0.3.dist-info/METADATA,sha256=eeCbjyBWEThKS4oFYFowTzH93hlsLX34sj4yrkwLZE4,6385
+sighted-0.0.3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+sighted-0.0.3.dist-info/top_level.txt,sha256=SFn1ON66FRINOMCPG5v8ftZ3cHG6SU1jki9vkYo7b8U,8
+sighted-0.0.3.dist-info/RECORD,,
