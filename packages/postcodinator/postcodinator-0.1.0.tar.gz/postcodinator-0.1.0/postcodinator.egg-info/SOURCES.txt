@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+postcodinator/__init__.py
+postcodinator/postcodinator.py
+postcodinator.egg-info/PKG-INFO
+postcodinator.egg-info/SOURCES.txt
+postcodinator.egg-info/dependency_links.txt
+postcodinator.egg-info/requires.txt
+postcodinator.egg-info/top_level.txt
+postcodinator/data/postcode_data.parquet
