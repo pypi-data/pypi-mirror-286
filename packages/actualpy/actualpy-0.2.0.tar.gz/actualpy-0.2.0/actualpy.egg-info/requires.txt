@@ -1,0 +1,5 @@
+cryptography
+proto-plus
+python-dateutil
+requests
+sqlmodel
