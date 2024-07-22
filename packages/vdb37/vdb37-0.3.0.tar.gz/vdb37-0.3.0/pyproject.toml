@@ -1,0 +1,27 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "vdb37"
+description = "Simple vector database with Rust."
+keywords = ["vector", "database", "vdb", "vector-database", "rust"]
+authors = [
+  { name = "AWeirdDev", email = "aweirdscratcher@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/AWeirdDev/vdb37"
+"Bug Tracker" = "https://github.com/AWeirdDev/vdb37/issues"
+
+[tool.maturin]
+python-source = "python"
+features = ["pyo3/extension-module"]
