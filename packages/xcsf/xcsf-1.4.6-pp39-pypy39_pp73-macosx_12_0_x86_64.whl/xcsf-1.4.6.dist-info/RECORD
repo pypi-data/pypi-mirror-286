@@ -1,0 +1,12 @@
+xcsf/xcsf.pypy39-pp73-darwin.so,sha256=82EGEnNfBVaYbXWSqlIJY5y9GTUdERActNH-mCPLGS4,756992
+xcsf/__init__.py,sha256=89PbuaHxjtDCAhXRcnTqNfVgKK6MlpnmXHMg5f9Y6ko,20
+xcsf/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xcsf/utils/viz.py,sha256=wgwH9x5JKJhF4XPgubmjzbqWs1EHRnK8nNYJNeqapOw,5883
+xcsf/.dylibs/libstdc++.6.dylib,sha256=DoTuMDxvtIMeoXr-JyiYhjFCtMedVweJmYK6aYtj1d4,3628848
+xcsf/.dylibs/libgcc_s.1.1.dylib,sha256=OQpEXDuA8UzehqeeBbgnS8e9dacsmULv17_Jro6j6KQ,147472
+xcsf/.dylibs/libgomp.1.dylib,sha256=csVPZQAxF6TJLI0OdXzcuDtcH0bcNindp1tk89iUDkc,416368
+xcsf-1.4.6.dist-info/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+xcsf-1.4.6.dist-info/RECORD,,
+xcsf-1.4.6.dist-info/WHEEL,sha256=xQSXUg9D0RKZUQpSbrp4YBSHZIApYCG1toZoTU1y9rg,115
+xcsf-1.4.6.dist-info/top_level.txt,sha256=pqvumbTrd2SU-bWSMB5byaZo79ysSK1qMZ8vuWXVP_g,15
+xcsf-1.4.6.dist-info/METADATA,sha256=m-GTdqsQrbyBPp2ZUALMMZScEhX-KLnU-cIQXjYMZhw,5134
