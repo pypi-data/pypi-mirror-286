@@ -1,0 +1,12 @@
+gluex.hddm_r-2.1.13-py3.8-nspkg.pth,sha256=H0CA2RmzIe1ZtqBy6UP1gDHkUq3jGaV8kwwGzl_caco,462
+gluex/hddm_r.pypy38-pp73-x86-linux-gnu.so,sha256=YEoUDjZwvzLvgKohj0GwqrR3wZ-aqUVZtf_n98YV_Lo,19471748
+gluex/hddm_r/hddm_r++.cpp,sha256=BY9CBHaKIah8ZxzMYc8TWvMtj2EkxkgD2iRQ41nQmRs,377574
+gluex/hddm_r/rest.xml,sha256=137x7i4W_rRHYohrOQ9JVuyBmvFbAsErfPL9i7o5uIk,11117
+gluex/hddm_r/setup_hddm_r.py,sha256=AyF_miGzljQs_LPqs1xvH5j4bsT24F8X8L2kcUII2_8,5800
+gluex/hddm_r/pyhddm_r.cpp,sha256=Sc-zay4xfft3mJ9p1fh9acEGn0whKWCLLKS4TOnZkGw,1014184
+gluex.hddm_r-2.1.13.dist-info/LICENSE,sha256=guNhQjgEXYGAl4Nghfk09_ps1QJs-mwri2sFQcz2878,1070
+gluex.hddm_r-2.1.13.dist-info/WHEEL,sha256=G9nxPjF9kZId1DIeInjM0-0hA5T5lyrUK3PAXOT4_HM,157
+gluex.hddm_r-2.1.13.dist-info/top_level.txt,sha256=CBmpdIxuAgfQSUFy5mVeRVoHecxPqFxATtlaygCwyG8,6
+gluex.hddm_r-2.1.13.dist-info/RECORD,,
+gluex.hddm_r-2.1.13.dist-info/METADATA,sha256=chDNLlRqr8yAFUGSzi45Qc088bCbF7uRj7wjI4qpk1c,3002
+gluex.hddm_r-2.1.13.dist-info/namespace_packages.txt,sha256=CBmpdIxuAgfQSUFy5mVeRVoHecxPqFxATtlaygCwyG8,6
