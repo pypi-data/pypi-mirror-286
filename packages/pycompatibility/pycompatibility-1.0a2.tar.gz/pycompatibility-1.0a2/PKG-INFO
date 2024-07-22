@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pycompatibility
+Version: 1.0a2
+Summary: Python3 library for checking code compatibility with different Python versions.
+Author-email: Juan Bindez <juanbindez780@gmail.com>
+License: MIT license
+Project-URL: Homepage, https://github.com/JuanBindez/pycompatibility
+Project-URL: Bug Reports, https://github.com/JuanBindez/pycompatibility/issues
+Project-URL: Read the Docs, http://pycompatibility.readthedocs.io/
+Keywords: compatibility,python,code,check
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pycompatibility
+
+
+## Python3 library for checking code compatibility with different Python versions.
+
+
+### Install
+
+    pip install pycompatibility
+
+### test code:
+
+```python
+from pycompatibility import CompatibilityChecker
+
+checker = CompatibilityChecker("script.py")
+checker.verify()
+
+```
+
+### command line just pass the name of the script as an argument which will show compatibility
+
+    pycompatibility script.py
