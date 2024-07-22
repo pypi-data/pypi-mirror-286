@@ -1,0 +1,7 @@
+flatpak_cargo_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flatpak_cargo_generator/script.py,sha256=vhVdAIOceBxdMXaJH6yrLls6Qj6Ixzx3maa35dOjeG0,14572
+flatpak_cargo_generator-0.1.0.dist-info/LICENSE.md,sha256=dUhuoK-TCRQMpuLEAdfme-qPSJI0TlcH9jlNxeg9_EQ,1056
+flatpak_cargo_generator-0.1.0.dist-info/METADATA,sha256=PKu6swku8_EnIJQNB1WBq3aG6PvpTMIdtzeJOBTt2qM,1129
+flatpak_cargo_generator-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+flatpak_cargo_generator-0.1.0.dist-info/entry_points.txt,sha256=1EgZu8-TzvS_4qBfk20PNVYewKNQlCr4EHkaCdVPU_o,79
+flatpak_cargo_generator-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: flatpak-cargo-generator
+Version: 0.1.0
+Summary: Unofficial Pypi distribution of the Flatpak's cargo dependency generator
+Author: Flatpak team
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.5,<4.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# Flatpak Cargo Generator
+
+This is an unofficial Pypi distribution of the [flatpak-cargo-generator](https://github.com/flatpak/flatpak-builder-tools/blob/master/cargo/flatpak-cargo-generator.py) script, ensuring library dependencies are installed and the script is available on your PATH as `flatpak-cargo-generator`.
+
+See [here](https://github.com/flatpak/flatpak-builder-tools/blob/master/cargo/README.md) for instructions.
+
