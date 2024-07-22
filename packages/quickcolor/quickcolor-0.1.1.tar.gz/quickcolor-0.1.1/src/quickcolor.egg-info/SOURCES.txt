@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/quickcolor/__init__.py
+src/quickcolor/color_cli.py
+src/quickcolor/color_def.py
+src/quickcolor/color_show.py
+src/quickcolor.egg-info/PKG-INFO
+src/quickcolor.egg-info/SOURCES.txt
+src/quickcolor.egg-info/dependency_links.txt
+src/quickcolor.egg-info/entry_points.txt
+src/quickcolor.egg-info/requires.txt
+src/quickcolor.egg-info/top_level.txt
