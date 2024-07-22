@@ -1,0 +1,9 @@
+README.md
+setup.py
+hello_gemini/__init__.py
+hello_gemini/main.py
+hello_gemini.egg-info/PKG-INFO
+hello_gemini.egg-info/SOURCES.txt
+hello_gemini.egg-info/dependency_links.txt
+hello_gemini.egg-info/entry_points.txt
+hello_gemini.egg-info/top_level.txt
