@@ -1,0 +1,23 @@
+[project]
+name = "robot_list"
+version = "0.0.2"
+authors = [
+  { name="Venixa Innovations", email="venixainnovations@gmail.com" },
+]
+description = "This is a package which lists the robot framework tests using robot command line arguments"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Venixa/robot_list"
+Issues = "https://github.com/Venixa/robot_list/issues"
+
+[build-system]
+
+requires=['setuptools', 'xmltodict==0.13.0']
+build-backend = "setuptools.build_meta"
