@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: streamlit-study
+Version: 0.1.0
+Summary: Stre;amlit package
+Author-email: hun0219 <gsw98000@gmail.com>
+License: MIT
+Project-URL: github, https://github.com/hun0219/streamlit_hun0219
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# streamlit
+## **기능**
+- 국가별 실시간
+- 뉴욕 우버 픽업 정보
+## **설치 및 실행**
+```py
+pip install streamlit
+streamlit run country_time.py
+streamlit run ap1.py
+```
+## **실행 결과**
+- 국가별 실시간
+
+![image](https://github.com/user-attachments/assets/8b5c90fd-5652-421c-b789-0605584b5aaa)
+
+- 뉴욕 우버 픽업 정보
+  
+![uber_1](https://github.com/user-attachments/assets/23fba00f-ab9b-43e3-aed9-007c3f0dc9f8)
+
