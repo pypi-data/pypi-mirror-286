@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "perlin-numpy"
+version = "0.0.1"
+license = {text = "MIT License"}
+authors = [{name = "Pierre Vigier"}]
+maintainers = [{name = "Martin Cejp"}]
+requires-python = ">=3"
+dependencies = [
+    "numpy>=1.15",
+]
+
+[project.optional-dependencies]
+docs = ["sphinx", "sphinx_rtd_theme"]
+
+[project.urls]
+Documentation = "https://perlin-numpy.readthedocs.io/"
+Repository = "https://github.com/pvigier/perlin-numpy"
