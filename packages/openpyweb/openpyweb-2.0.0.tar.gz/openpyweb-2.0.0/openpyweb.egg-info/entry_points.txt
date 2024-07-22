@@ -1,0 +1,6 @@
+[console_scripts]
+openpyweb = openpyweb.cmd.help:main
+openpyweb-docs = openpyweb.cmd.doc:main
+openpyweb-install = openpyweb.cmd.install:main
+openpyweb-server = openpyweb.cmd.server:main
+openpyweb-start = openpyweb.cmd.start:main

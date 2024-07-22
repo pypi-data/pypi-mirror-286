@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: openpyweb
+Version: 2.0.0
+Summary: openpyweb is a python framework built to enhance web development fast and easy, also help web developers to build more apps with less codes
+Home-page: https://github.com/emmanuelessiens/openpyweb
+Author: Emmanuel Essien
+Author-email: emmanuelessiens@outlook.com
+Maintainer: Emmanuel Essien
+Maintainer-email: emmanuelessiens@outlook.com
+License: GPL3
+Keywords: mvc,oop,module,python,framework,web,app,openpyweb,web,web development
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python
+Requires-Python: >3, >=3.3
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Requires-Dist: colorama
+Requires-Dist: mysql-connector-python
+Requires-Dist: psycopg2-binary
+Requires-Dist: cx-Oracle
+
+# Openpyweb
+
+[![Build Status](https://img.shields.io/pypi/v/openpyweb)](https://pypi.python.org/pypi/openpyweb)
+[![Downloads](https://pepy.tech/badge/openpyweb)](https://pypi.python.org/pypi/openpyweb)
+[![Wheel](https://img.shields.io/pypi/wheel/openpyweb.svg)](https://pypi.python.org/pypi/openpyweb)
+[![Python Version](https://img.shields.io/pypi/pyversions/openpyweb)](https://pypi.python.org/pypi/openpyweb)
+[![License](https://img.shields.io/pypi/l/openpyweb)](https://pypi.python.org/pypi/openpyweb)
+[![Gitter](https://badges.gitter.im/openpyweb/community.svg)](https://gitter.im/openpyweb/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Docs](https://img.shields.io/readthedocs/openpyweb)](https://openpyweb.readthedocs.io/en/latest)
+[![lint_python](https://github.com/emmanuelessiens/openpyweb/workflows/lint_python/badge.svg)](https://github.com/emmanuelessiens/openpyweb/actions)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/emmanuelessiens/openpyweb/blob/master/CONTRIBUTING.md)
+
+> openpyweb is a python framework built to enhance fast and easy web development, helping web developers build more apps with fewer codes.
+> The framework uses an Expressive Architectural Pattern, structured on a Model-View-Controller (MVC), and bundles of components to reuse while deploying the framework.
+
+[![Made with python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://pypi.python.org/pypi/openpyweb)
+
+## How to setup
+
+openpyweb provides an inbuilt server for deployment and can as well be run on, WAMP, XAMPP, LAMP or MAMP, using CGI.
+
+To Create openpyweb Project Folder
+
+```
+$ openpyweb-start
+```
+
+To Run openpyweb Server
+
+```
+$ openpyweb-server
+```
+
+To Install Project Requirements from `requirements.txt` file.
+
+```
+$ openpyweb-install
+```
+
+To Read openpyweb Docs
+
+```
+$ openpyweb-docs
+```
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/emmanuelessiens/openpyweb/issues).
+
+For guidance on setting up a development environment and how to make a contribution to openpyweb, see the [contributing guidelines.](https://github.com/emmanuelessiens/openpyweb/blob/master/CONTRIBUTING.md)
+
+## Documentation on how to?
+
+- [Getting Started](https://openpyweb.readthedocs.io/en/latest)
+
+## Assistance
+
+Having issue using or implementing modules and functions, upload your openpyweb project on github, open an issues. our contributors and maintainers will look into it.
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+Support openpyweb and the libraries it uses. In order to grow the community of contributors and users, and allow the maintainers to devote more time to the projects, [please donate today.](https://liberapay.com/openpyweb/)
+
+## Contact
+
+**Name:** Emmanuel Essien
+
+**Email:** emmanuelessiens@outlook.com
