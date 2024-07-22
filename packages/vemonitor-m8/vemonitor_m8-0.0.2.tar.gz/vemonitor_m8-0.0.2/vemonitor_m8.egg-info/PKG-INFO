@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: vemonitor_m8
+Version: 0.0.2
+Summary: Solar Plant Monitoring
+Home-page: https://github.com/vemonitor/vemonitor_m8
+Author: Eli Serra
+Author-email: eli.serra173@gmail.com
+License: Apache
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >3.5.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jsonschema
+Requires-Dist: pyyaml
+Requires-Dist: simplejson
+Requires-Dist: redis
+Requires-Dist: vedirect_m8
+Requires-Dist: ve_utils
+Provides-Extra: test
+Requires-Dist: pytest>=7.1.2; extra == "test"
+Requires-Dist: coverage; extra == "test"
+
+# VeMonitor_m8
+
+![CI](https://github.com/vemonitor/vemonitor_m8/actions/workflows/python-package.yml/badge.svg?branch=main)
+[![PyPI package](https://img.shields.io/pypi/v/vemonitor_m8.svg)](https://pypi.org/project/vemonitor_m8/)
+[![codecov](https://codecov.io/gh/vemonitor/vemonitor_m8/graph/badge.svg?token=M7VgGzkApi)](https://codecov.io/gh/vemonitor/vemonitor_m8)
+
+Victron Serial VeDirect Monitoring App

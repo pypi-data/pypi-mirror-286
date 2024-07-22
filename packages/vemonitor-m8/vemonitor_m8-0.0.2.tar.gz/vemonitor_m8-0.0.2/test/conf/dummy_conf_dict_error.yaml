@@ -1,0 +1,15 @@
+# ---------------------------
+# Unit test conf
+# Use YAML syntax
+# ---------------------------
+Imports:
+    - "dummy_conf_list.yaml"
+    
+
+Dummy 1:
+  - 1
+  - 2
+
+Dummy 2:
+  - 2
+  - 3

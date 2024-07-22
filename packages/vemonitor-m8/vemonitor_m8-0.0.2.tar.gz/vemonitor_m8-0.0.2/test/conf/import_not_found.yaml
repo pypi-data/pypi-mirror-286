@@ -1,0 +1,14 @@
+# ---------------------------
+# Unit test conf
+# Use YAML syntax
+# ---------------------------
+Imports:
+    - "not_found.yaml"
+
+Dummy 1:
+  - 1
+  - 2
+
+Dummy 2:
+  - 2
+  - 3 

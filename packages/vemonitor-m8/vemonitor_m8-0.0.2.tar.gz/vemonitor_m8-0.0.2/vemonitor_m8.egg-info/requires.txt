@@ -1,0 +1,10 @@
+jsonschema
+pyyaml
+simplejson
+redis
+vedirect_m8
+ve_utils
+
+[TEST]
+pytest>=7.1.2
+coverage
