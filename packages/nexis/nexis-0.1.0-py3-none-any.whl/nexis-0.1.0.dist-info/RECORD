@@ -1,0 +1,13 @@
+nexis/__init__.py,sha256=OOZUyP_OsQZQzT0ko92hr-Z7KXGDmQCNgK-3VmNPIRc,264
+nexis/__main__.py,sha256=Iey1BubjLeVyWslLWfB0cqJDupbDyisdmh_hIcyXYlA,100
+nexis/__version__.py,sha256=8YxSIQX78RqWKFi_WwuF7dVunHwO2F1jV-x2lG1uDxk,101
+nexis/entrypoint.py,sha256=gM7xnO9tHIU8pOJfESERhGgwto6CqTXFtybjw7evGc8,321
+nexis/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nexis/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nexis/utils/compat.py,sha256=K0Qa7n5aep3FToLeFISGuQp6NLzxu3gvawbI-yrSmVE,220
+nexis/version.py,sha256=pVaX0Rv7HZrgJc4taexuLZG4sxIzfMPReaO34W1mBIg,144
+nexis-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nexis-0.1.0.dist-info/METADATA,sha256=iZzaYkvQluTngd0sSZMocXs2ohCIYgSp_nyGp0m9wBs,5728
+nexis-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nexis-0.1.0.dist-info/entry_points.txt,sha256=ir5lVCcez9HrYn9jsmtZM3xh-jjouGXctZXV6a4i2YU,47
+nexis-0.1.0.dist-info/RECORD,,
