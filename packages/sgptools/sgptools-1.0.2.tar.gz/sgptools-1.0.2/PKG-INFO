@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sgptools
+Version: 1.0.2
+Summary: Software Suite for Sensor Placement and Informative Path Planning
+Home-page: https://www.itskalvik.com/sgp-tools
+Author: Kalvik
+Author-email: itskalvik@gmail.com
+License: Apache-2.0
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: apricot-select==0.6.0
+Requires-Dist: matplotlib==3.5.2
+Requires-Dist: pandas==1.4.3
+Requires-Dist: scikit-learn==1.1.1
+Requires-Dist: scipy==1.8.1
+Requires-Dist: tensorflow==2.13.0
+Requires-Dist: tensorflow_probability==0.21.0
+Requires-Dist: gpflow==2.7.0
+Requires-Dist: numpy==1.23.5
+Requires-Dist: ortools==9.2.9972
+Requires-Dist: scikit-image
+Requires-Dist: shapely
+Requires-Dist: cma
+Requires-Dist: bayesian-optimization
+Requires-Dist: pillow
+Requires-Dist: hkb_diamondsquare
