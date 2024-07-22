@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: pelican-feed-content-footer
+Version: 1.0
+Summary: Pelican plugin that adds a footer to RSS/Atom feed items content.
+Home-page: https://tmb.codeberg.page/pelican-feed-content-footer/
+License: AGPL-3.0-only
+Author: Tobias Bölz
+Author-email: tobias@boelz.eu
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pelican
+Classifier: Framework :: Pelican :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pelican (>=4.5,<5.0)
+Project-URL: Repository, https://git.boelz.eu/tmb/pelican-feed-content-footer/
+Description-Content-Type: text/markdown
+
+# Feed Content Footer: A Plugin for Pelican
+
+Pelican plugin that adds a footer to RSS/Atom feed items content.
+
+Website: https://tmb.codeberg.page/pelican-feed-content-footer/  
+Repository: https://git.boelz.eu/tmb/pelican-feed-content-footer/  
+Codeberg mirror: https://codeberg.org/tmb/pelican-feed-content-footer/
+
+## Installation
+
+This plugin can be installed via:
+
+```sh
+$ python -m pip install pelican-feed-content-footer
+```
+
+As long as you have not explicitly added a `PLUGINS` setting to your Pelican settings file, then the newly-installed plugin should be automatically detected and enabled. Otherwise, you must add `feed_content_footer` to your existing `PLUGINS` list. For more information, please see the [How to Use Plugins](https://docs.getpelican.com/en/latest/plugins.html#how-to-use-plugins) documentation.
+
+## Usage
+
+Add the following to your settings file:
+
+### `FEED_CONTENT_FOOTER`
+
+A string that will be appended to the content of every entry in your Atom feed and, if `RSS_FEED_SUMMARY_ONLY` is `False`, to the description of every item in your RSS feed inside a HTML footer tag.
+
+## Development
+
+This package uses [Poetry](https://python-poetry.org/).
+
+Run tests with all supported versions of Python and Pelican:
+
+```sh
+$ poetry run nox -rs test
+```
+
+Run linters:
+
+```sh
+$ poetry run nox -s lint
+```
+
+Run code coverage check:
+
+```sh
+$ poetry run nox -s coverage
+```
+
+## License
+
+This project is licensed under the AGPL-3.0 license.
+
