@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: log4mongo
+Version: 1.8.0
+Summary: Python logging handler for MongoDB
+Author-email: Oz N Tiram <oz.tiram@gmail.com>, Valdimir Goeje <vladimir.gorej@gmail.com>
+Project-URL: homepage, https://github.com/log4mongo/log4mongo-python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
