@@ -1,0 +1,2 @@
+[console_scripts]
+exereverse = exereverse.cli:main

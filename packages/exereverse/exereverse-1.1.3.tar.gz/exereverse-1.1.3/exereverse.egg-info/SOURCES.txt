@@ -1,0 +1,12 @@
+README.md
+setup.py
+exereverse/__init__.py
+exereverse/cli.py
+exereverse/extractor.py
+exereverse/post_install.py
+exereverse/pyinstxtractor.py
+exereverse.egg-info/PKG-INFO
+exereverse.egg-info/SOURCES.txt
+exereverse.egg-info/dependency_links.txt
+exereverse.egg-info/entry_points.txt
+exereverse.egg-info/top_level.txt
