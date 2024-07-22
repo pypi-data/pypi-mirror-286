@@ -1,0 +1,7 @@
+numpy
+cupy
+pydub
+soundfile
+mutagen
+scipy
+tqdm
