@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_zeal.egg-info/PKG-INFO
+src/django_zeal.egg-info/SOURCES.txt
+src/django_zeal.egg-info/dependency_links.txt
+src/django_zeal.egg-info/top_level.txt
+src/zeal/__init__.py
+src/zeal/apps.py
+src/zeal/errors.py
+src/zeal/listeners.py
+src/zeal/middleware.py
+src/zeal/patch.py
+src/zeal/util.py
+tests/test_listeners.py
+tests/test_nplusones.py
+tests/test_patch.py
