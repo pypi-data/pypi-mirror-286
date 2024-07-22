@@ -1,0 +1,6 @@
+README.md
+setup.py
+auto_tqdm.egg-info/PKG-INFO
+auto_tqdm.egg-info/SOURCES.txt
+auto_tqdm.egg-info/dependency_links.txt
+auto_tqdm.egg-info/top_level.txt
