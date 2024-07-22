@@ -1,0 +1,22 @@
+#  ╭──────────────────────────────────────────────────────────╮
+#  │ DimReduction Sample Configuration                        │
+#  ╰──────────────────────────────────────────────────────────╯
+
+data_choices:
+  DimReduction:
+    breast_cancer:
+      generator:
+        - load_breast_cancer
+model_choices:
+  DimReduction:
+    tSNE:
+      perplexity:
+        - 15
+        - 30
+
+implementation_choices:
+  DimReduction:
+    DimReduction:
+      tSNETrainer:
+        n_jobs:
+          - 1
