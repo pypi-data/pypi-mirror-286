@@ -1,0 +1,4 @@
+tensorflow>=2.11.1
+keras>=3.0.0
+pandas==2.0.3
+networkx==3.1
