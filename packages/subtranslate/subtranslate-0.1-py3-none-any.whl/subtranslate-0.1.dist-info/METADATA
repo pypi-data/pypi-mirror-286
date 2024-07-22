@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: subtranslate
+Version: 0.1
+Author: kumaresankp
+Requires-Dist: pysrt
+Requires-Dist: translate
+
