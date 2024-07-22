@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Torchify/TabularNet.py
+Torchify/VisionNet.py
+Torchify/__init__.py
+torchify.egg-info/PKG-INFO
+torchify.egg-info/SOURCES.txt
+torchify.egg-info/dependency_links.txt
+torchify.egg-info/requires.txt
+torchify.egg-info/top_level.txt
