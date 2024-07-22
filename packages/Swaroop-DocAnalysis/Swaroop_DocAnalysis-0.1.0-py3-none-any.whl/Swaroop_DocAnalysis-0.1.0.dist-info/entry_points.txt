@@ -1,0 +1,2 @@
+[console_scripts]
+test_package = test_package.main:main

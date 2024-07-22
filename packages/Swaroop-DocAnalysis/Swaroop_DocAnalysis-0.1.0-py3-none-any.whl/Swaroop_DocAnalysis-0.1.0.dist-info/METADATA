@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Swaroop_DocAnalysis
+Version: 0.1.0
+License-File: LICENSE
+Requires-Dist: difflib
+Requires-Dist: ultralytics
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: pytesseract
+Requires-Dist: logging
+Requires-Dist: json
+Requires-Dist: opencv-python
+Requires-Dist: Flask
+
