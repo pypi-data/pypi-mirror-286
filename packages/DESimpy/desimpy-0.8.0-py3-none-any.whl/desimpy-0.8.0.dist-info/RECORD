@@ -1,0 +1,9 @@
+desimpy/__init__.py,sha256=gHYzTGtFCZxn9qcNv7XykIsUj5Hcb2KWU_gAaP7bR7w,92
+desimpy/agent.py,sha256=pROBZP46KaRbefPK4byDDBOQm4mvhm6xXuzEFxGOAV4,318
+desimpy/des.py,sha256=jtFT9wp-7bbvseigEnnF7k_dx3yysv-EO0CZ9IfKqGE,1789
+desimpy/distributions.py,sha256=VXmODkEbyTpOXVZpZ8cKu84OWu8byH0ztf4NxbVnlTU,7307
+desimpy/service_network.py,sha256=oDmc3qC-6H7K_QBSIieWDMiw5abQlmoy2hnBaNOsHMo,7194
+desimpy-0.8.0.dist-info/METADATA,sha256=3d4B7Co5scv5qKspA8Fa-9oJmD8iI97-DPqdoTYc8Qo,1498
+desimpy-0.8.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+desimpy-0.8.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+desimpy-0.8.0.dist-info/RECORD,,
