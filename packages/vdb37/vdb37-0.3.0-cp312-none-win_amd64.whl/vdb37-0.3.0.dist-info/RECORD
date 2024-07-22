@@ -1,0 +1,9 @@
+vdb37-0.3.0.dist-info/METADATA,sha256=pbeJtWI2VoqZvj-rAuxM1vuhYRIK5LyCHtNCuaRAXZk,936
+vdb37-0.3.0.dist-info/WHEEL,sha256=sQXnPsWoXsDCZmdDlJigIim-C6FshLZQTsYzMDlXQVI,95
+vdb37/embeddings.py,sha256=WqKHhcRSC8ZTxcLNuGPfZnvejzKKfLjmzTZRYc9Bziw,2834
+vdb37/kv.py,sha256=BrnhryzQiWa2GvnFoEnx6ldrRukJr7JB_iuvr6YyPyw,954
+vdb37/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vdb37/vdb37.pyi,sha256=xrGZE39XI_xlsrWstwq1B7fUk4ojvrjZxzk--cv7R_I,2739
+vdb37/__init__.py,sha256=jXjWexmbIA6xfXPfRAqM9HZU4rQ0doLFb6W0rwKD-YY,159
+vdb37/vdb37.cp312-win_amd64.pyd,sha256=HSq_pw9wr8k9slcGf1OFICPffEKVA_ixTrSME5umYn8,1730589
+vdb37-0.3.0.dist-info/RECORD,,
