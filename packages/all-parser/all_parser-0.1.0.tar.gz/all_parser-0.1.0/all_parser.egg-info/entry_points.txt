@@ -1,0 +1,2 @@
+[console_scripts]
+all_parser = all_parser.cmd:parse

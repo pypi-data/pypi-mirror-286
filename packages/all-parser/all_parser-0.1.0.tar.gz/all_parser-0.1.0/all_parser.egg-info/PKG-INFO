@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: all_parser
+Version: 0.1.0
+Requires-Dist: click
+Requires-Dist: python-docx
+Requires-Dist: PyPDF2
+Requires-Dist: PyYAML
