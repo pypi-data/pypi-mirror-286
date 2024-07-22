@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+donald_hello_pp/__init__.py
+donald_hello_pp/main.py
+donald_hello_pp.egg-info/PKG-INFO
+donald_hello_pp.egg-info/SOURCES.txt
+donald_hello_pp.egg-info/dependency_links.txt
+donald_hello_pp.egg-info/requires.txt
+donald_hello_pp.egg-info/top_level.txt
