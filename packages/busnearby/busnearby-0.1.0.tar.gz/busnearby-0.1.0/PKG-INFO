@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: busnearby
+Version: 0.1.0
+Summary: A library to get bus times from the Bus Nearby API
+Home-page: https://github.com/t0mer/py-busnearby
+Download-URL: https://github.com/t0mer/py-busnearby/
+Author: Tomer Klein
+Author-email: tomer.klein@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/t0mer/py-busnearby
+Project-URL: Source, https://github.com/t0mer/py-busnearby
+Keywords: public transportation,bus,trains,home automation
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.8.0
+
+# py-busnearby
+Unofficial python client for busnearby service https://www.busnearby.co.il/
