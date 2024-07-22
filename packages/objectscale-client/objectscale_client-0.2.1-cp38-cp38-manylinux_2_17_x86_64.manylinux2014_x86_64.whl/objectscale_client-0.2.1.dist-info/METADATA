@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: objectscale_client
+Version: 0.2.1
+Classifier: Programming Language :: Rust
+Summary: ObjectScale python client.
+Keywords: objectscale,client
+Author: Luis Liu <luis_liu@dell.com>
+Author-email: Luis Liu <luis_liu@dell.com>
+License: Apache-2.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/vangork/objectscale-client
+
+# ObjectScale Python client
+
+To generate wheels using a docker approach
+```
+docker run --rm -v $(pwd)/..:/io -w /io/python -e http_proxy=http://172.17.0.1:1090 -e https_proxy=http://172.17.0.1:1090  ghcr.io/pyo3/maturin build --release --strip -i python3.9
+```
+
+To publish the artifacts.
+```
+pip install twine
+
+
+```
+
