@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numpyvision"
+authors = [
+  { name="Piotr Czarnik", email="ptr.czarnik@gmail.com" },
+]
+description = "numpyvision: Vision datasets as numpy arrays"
+dynamic = ["version"]
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22"]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pczarnik/numpyvision"
+
+[project.optional-dependencies]
+tqdm = ["tqdm"]
+
+[tool.setuptools.dynamic]
+version = {attr = "numpyvision.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["numpyvision", "numpyvision.datasets"]

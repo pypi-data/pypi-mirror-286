@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+numpyvision/__init__.py
+numpyvision.egg-info/PKG-INFO
+numpyvision.egg-info/SOURCES.txt
+numpyvision.egg-info/dependency_links.txt
+numpyvision.egg-info/requires.txt
+numpyvision.egg-info/top_level.txt
+numpyvision/datasets/__init__.py
+numpyvision/datasets/mnist.py
+numpyvision/datasets/utils.py
