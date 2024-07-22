@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test.py
+tsitools/__init__.py
+tsitools/test.py
+tsitools.egg-info/PKG-INFO
+tsitools.egg-info/SOURCES.txt
+tsitools.egg-info/dependency_links.txt
+tsitools.egg-info/requires.txt
+tsitools.egg-info/top_level.txt
