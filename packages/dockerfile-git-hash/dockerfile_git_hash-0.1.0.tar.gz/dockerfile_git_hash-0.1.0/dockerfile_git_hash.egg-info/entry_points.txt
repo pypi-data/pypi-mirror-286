@@ -1,0 +1,2 @@
+[console_scripts]
+dockerfile-git-hash = dockerfile_git_hash.dockerfile_git_hash:main
