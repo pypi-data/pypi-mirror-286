@@ -1,0 +1,11 @@
+numpy~=1.20
+typing_extensions~=4.0
+
+[accel]
+stickydesign-accel==0.9.1
+
+[tests]
+pytest-cov
+pytest-benchmark
+pytest
+hypothesis
