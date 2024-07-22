@@ -1,0 +1,1 @@
+default_app_config = "App_Test.app.App_TestAppConfig"
