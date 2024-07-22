@@ -1,0 +1,11 @@
+graceful/__init__.py,sha256=7maOAoTIey9j89j9Hzr071fohTF4Qh7KjGzKmBTzh2k,149
+graceful/cookie.py,sha256=Jh93JhQBlaTka3bHJHemg9cz8KsoMr7hSVPu8oYxVJ4,2332
+graceful/graceful.py,sha256=6Hg2SAKxzW46k_v_knnkOjZsu_5JigaEMFMreJJrKBA,10055
+graceful/request.py,sha256=8s_oWMbViFwf-vtWMNC9Pc61MJmwUrXoW5BUBTL4oh4,2657
+graceful/response.py,sha256=fwcuCXnpGlbn2UKy-ANQwn_iasoF1yQv8pFvVb5b2xg,7364
+graceful/template.py,sha256=E4RUTWf-nECIY6AchFmx7iQ2ts8q5fdYg05mptBHjXo,2461
+graceful_web-1.0.0.dist-info/LICENSE,sha256=cl__1Zlj-5t1JJ1YxHr8eLCLf-WkvRnEAJg1VAU2npo,1078
+graceful_web-1.0.0.dist-info/METADATA,sha256=dJzhLDB8cM9d1vd4QFDnD4SPEOZAKW_wiDnSN555hHU,4926
+graceful_web-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+graceful_web-1.0.0.dist-info/top_level.txt,sha256=hIGSLA2L719FsfzB93FjIjXB2tLeoLuzrmWlMQAAxoc,9
+graceful_web-1.0.0.dist-info/RECORD,,
