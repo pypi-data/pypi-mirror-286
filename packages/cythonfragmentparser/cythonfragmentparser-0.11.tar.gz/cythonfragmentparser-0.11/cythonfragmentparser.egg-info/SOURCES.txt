@@ -1,0 +1,16 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cythonfragmentparser/README.MD
+cythonfragmentparser/__init__.py
+cythonfragmentparser/cyfragmentparser.pyx
+cythonfragmentparser/cyfragmentparser_compile.py
+cythonfragmentparser/requirements.txt
+cythonfragmentparser/thirdparty.json
+cythonfragmentparser.egg-info/PKG-INFO
+cythonfragmentparser.egg-info/SOURCES.txt
+cythonfragmentparser.egg-info/dependency_links.txt
+cythonfragmentparser.egg-info/requires.txt
+cythonfragmentparser.egg-info/top_level.txt
