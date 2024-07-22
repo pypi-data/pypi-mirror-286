@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: epyfun
+Version: 0.3.8
+Summary: epyfun
+Home-page: https://github.com/edalfon/epyfun
+License: MIT
+Author: Eduardo Alfonso-Sierra
+Author-email: edalfon@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: chardet (>=5.2.0)
+Requires-Dist: pandas (>=2.1.4)
+Requires-Dist: pandas-stubs (>=2.2.2.240514,<3.0.0.0)
+Requires-Dist: plotly (>=5.18.0)
+Requires-Dist: requests (>=2.32.2,<3.0.0)
+Requires-Dist: types-requests (>=2.32.0.20240523,<3.0.0.0)
+Project-URL: Changelog, https://github.com/edalfon/epyfun/releases
+Project-URL: Documentation, https://epyfun.readthedocs.io
+Project-URL: Repository, https://github.com/edalfon/epyfun
+Description-Content-Type: text/markdown
+
+# epyfun
+
+[![PyPI](https://img.shields.io/pypi/v/epyfun.svg)][pypi status]
+[![Status](https://img.shields.io/pypi/status/epyfun.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/epyfun)][pypi status]
+[![License](https://img.shields.io/pypi/l/epyfun)][license]
+
+[![Read the documentation at https://epyfun.readthedocs.io/](https://img.shields.io/readthedocs/epyfun/latest.svg?label=Read%20the%20Docs)][read the docs]
+[![Tests](https://github.com/edalfon/epyfun/workflows/Tests/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/edalfon/epyfun/branch/main/graph/badge.svg)][codecov]
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+
+[pypi status]: https://pypi.org/project/epyfun/
+[read the docs]: https://epyfun.readthedocs.io/
+[tests]: https://github.com/edalfon/epyfun/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/edalfon/epyfun
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+
+## Features
+
+- TODO
+
+## Requirements
+
+- TODO
+
+## Installation
+
+You can install _epyfun_ via [pip] from [PyPI]:
+
+```console
+$ pip install epyfun
+```
+
+## Usage
+
+Please see the [Command-line Reference] for details.
+
+## Contributing
+
+Contributions are very welcome.
+To learn more, see the [Contributor Guide].
+
+## License
+
+Distributed under the terms of the [MIT license][license],
+_epyfun_ is free and open source software.
+
+## Issues
+
+If you encounter any problems,
+please [file an issue] along with a detailed description.
+
+## Credits
+
+This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter] template.
+
+[@cjolowicz]: https://github.com/cjolowicz
+[pypi]: https://pypi.org/
+[hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+[file an issue]: https://github.com/edalfon/epyfun/issues
+[pip]: https://pip.pypa.io/
+
+<!-- github-only -->
+
+[license]: https://github.com/edalfon/epyfun/blob/main/LICENSE
+[contributor guide]: https://github.com/edalfon/epyfun/blob/main/CONTRIBUTING.md
+[command-line reference]: https://epyfun.readthedocs.io/en/latest/usage.html
+
