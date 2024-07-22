@@ -1,0 +1,8 @@
+boundvor/__init__.py,sha256=bIoZhhAmxyzbNZf-IgJF0IfPgcOL3ZzejJ7zyQRP8nw,66
+boundvor/geometry.py,sha256=9oRaejfz2RW26qMFp8KtE9vq9o5dtlvRJ_Qv8Q6fBOY,2906
+boundvor/voronoi.py,sha256=wwt1LmYqYf34z0DtPesVFgn8nlCff7Obe03WjHnZyw0,3877
+boundvor-0.1.0.dist-info/LICENSE,sha256=SEzVwc4_scOjigy_febTeuJVNs08zt6-i-aDOurPUr8,1070
+boundvor-0.1.0.dist-info/METADATA,sha256=Lnh9kpz0PbuwHPHYvR729zGuI3bJYWbNRiceyVwLfDg,2923
+boundvor-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+boundvor-0.1.0.dist-info/top_level.txt,sha256=6Dfyew0ZvoMp6hCHDX-SRRTvqAIbkp0-BnpLbu3ZSkY,9
+boundvor-0.1.0.dist-info/RECORD,,
