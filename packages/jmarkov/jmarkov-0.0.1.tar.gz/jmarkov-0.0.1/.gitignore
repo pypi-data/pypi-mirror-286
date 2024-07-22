@@ -1,0 +1,6 @@
+jmarkov/__pycache__/
+tests/__pycache__/
+jmarkov/phase/__pycache__/
+jmarkov/mdp/__pycache__/
+docs/build/
+docs/build/html

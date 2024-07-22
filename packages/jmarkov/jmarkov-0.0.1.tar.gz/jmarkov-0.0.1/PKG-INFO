@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: jmarkov
+Version: 0.0.1
+Summary: A python package for Markov chain modeling
+Project-URL: Homepage, https://github.com/copa-uniandes/jmarkov
+Project-URL: Issues, https://github.com/copa-uniandes/jmarkov/issues
+Author-email: Juan F Perez <juanfernando.perez@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: typing
+Description-Content-Type: text/markdown
+
+# jmarkov
+jMarkov is a library to simplify the modeling of systems with Markov chains.
