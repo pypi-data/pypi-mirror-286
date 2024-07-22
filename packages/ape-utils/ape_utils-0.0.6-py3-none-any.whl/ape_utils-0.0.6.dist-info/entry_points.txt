@@ -1,0 +1,5 @@
+[console_scripts]
+ape_utils = ape_utils._cli:cli
+
+[ape_cli_subcommands]
+ape_utils = ape_utils._cli:cli
