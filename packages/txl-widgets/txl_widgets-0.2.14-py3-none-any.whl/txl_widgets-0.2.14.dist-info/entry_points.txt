@@ -1,0 +1,5 @@
+[asphalt.components]
+widgets = txl_widgets.components:WidgetsComponent
+
+[txl.components]
+widgets = txl_widgets.components:WidgetsComponent
