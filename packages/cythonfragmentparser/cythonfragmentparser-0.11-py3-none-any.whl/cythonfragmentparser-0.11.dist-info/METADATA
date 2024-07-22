@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: cythonfragmentparser
+Version: 0.11
+Summary: fragment parser for Android
+Home-page: https://github.com/hansalemaos/cythonfragmentparser
+Author: Johannes Fischer
+Author-email: aulasparticularesdealemaosp@gmail.com
+License: MIT
+Keywords: Android,fragments
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: Cython
+Requires-Dist: flatten-any-dict-iterable-or-whatsoever
+Requires-Dist: nested2nested
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: parifinder
+Requires-Dist: setuptools
+
+
+# fragment parser for Android
+
+### Tested against Windows 10 / Python 3.11 / Anaconda / Windows 
+
+### pip install cythonfragmentparser
+
+### Cython and a C compiler must be installed!
+
+```PY
+from cythondfprint import add_printer
+from cythonfragmentparser import parse_fragments_active_screen
+import shutil
+add_printer(1)
+adbexe = shutil.which("adb.exe")
+counter=0
+try:
+    while True:
+        df = parse_fragments_active_screen(
+            serial="127.0.0.1:5585",
+            adb_path=adbexe,
+            number_of_max_views=1,
+            screen_width=900,
+            screen_height=1600,
+            subproc_shell=False,
+        )
+        print(df)
+        counter=counter+1
+        print(counter)
+except KeyboardInterrupt:
+    pass
+```
