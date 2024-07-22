@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: ndict-tools
+Version: 0.0.2
+Summary: An implementation of nested dictionaries
+Project-URL: Homepage, https://github.com/biface/ndt
+Project-URL: Issues, https://github.com/biface/ndt/issues
+Author: biface
+License-File: LICENSE.md
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Python package for creating and managing nested dictionaries
+
+In standard Python, dictionaries within dictionaries are possible, but there are
+no features for searching and managing keys and values within nested dictionaries.
+
+My research and tests on nested or stacked dictionary libraries have not given me
+any satisfaction. The module I'm closest to is
+[the slightly older one from 2015](https://pypi.org/project/nested_dict/);
+however, it doesn't manage an  end-to-end "nested dictionary" object architecture...
+and it was fun to redevelop such a module.
+
+## License
+
+See [License](LICENSE.md)
