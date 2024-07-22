@@ -1,0 +1,9 @@
+pydataspace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydataspace/data/jsonLDObject.yaml,sha256=l-fx4m4AAUz3FEfRnuH_YpletfKw1z2s9WNrygMEB94,1093
+pydataspace/jsonLDObject/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydataspace/jsonLDObject/context.py,sha256=5EkfjkVZRIqBlqzFNX--tJIXHpuMlXY9WHuSSgDu7s0,978
+pydataspace/jsonLDObject/jsonLDObject.py,sha256=yntzBvbHfZlPx5HDA2g0tN3s4PO8h-rlQuAF1bpWEQs,4699
+pydataspace_jsonLDObject-0.0.0.0.dist-info/METADATA,sha256=QqLgE5QB-8lwY7XmQedmln3-OxWRd3sRbZDpgPjnHrc,928
+pydataspace_jsonLDObject-0.0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pydataspace_jsonLDObject-0.0.0.0.dist-info/top_level.txt,sha256=C-E1WCa2e5Oj6k66hbX3SPeCF5UcAfvv7TiBdShz4Ek,12
+pydataspace_jsonLDObject-0.0.0.0.dist-info/RECORD,,
