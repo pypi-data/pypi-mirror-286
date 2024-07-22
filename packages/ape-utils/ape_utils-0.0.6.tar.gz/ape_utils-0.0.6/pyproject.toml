@@ -1,0 +1,272 @@
+[project]
+name = "ape-utils"
+dynamic = ["version"]
+description = "Utility plugin to expose some of the Ape's awesome features to CLI"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+keywords = ["ethereum"]
+authors = [
+  { name = "SAIKAT KARMAKAR", email = "github.maturity983@passinbox.com" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "eth-ape>=0.8.9",
+  "ethpm_types",
+  "multicall",
+  "rich-click", # https://github.com/ewels/rich-click
+]
+
+
+# Cli tool name & options
+[project.scripts]
+ape_utils = "ape_utils._cli:cli"
+
+
+# Make it work with cli like ape call, ape abi_encode etc.
+[project.entry-points.ape_cli_subcommands]
+ape_utils = "ape_utils._cli:cli"
+
+
+[project.urls]
+Documentation = "https://github.com/Aviksaikat/ape-utils#readme"
+Issues = "https://github.com/Aviksaikat/ape-utils/issues"
+Source = "https://github.com/Aviksaikat/ape-utils"
+
+
+[tool.hatch.version]
+source = "regex_commit"
+commit_extra_args = ["-e"]
+path = "src/ape_utils/__version__.py"
+
+
+##################
+# External Tools #
+##################
+
+[tool.mypy]
+files = ["ape_utils"]
+exclude = ["build/", "dist/", "docs/", "tests/"]
+disallow_untyped_defs = true
+disallow_any_unimported = true
+no_implicit_optional = true
+check_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true
+show_error_codes = true
+ignore_missing_imports = true
+# plugins = ["pydantic.mypy"]
+
+
+[tool.ruff]
+target-version = "py39"
+line-length = 120
+indent-width = 4
+include = [
+  "src/**/*.py",
+  "src/**/*.pyi",
+  "tests/**/*.py",
+  "tests/**/*.pyi"
+]
+exclude = ["tests", "src/ape_utils/_version.py"]
+
+
+[tool.ruff.lint]
+preview = true # preview features & checks, use with caution
+extend-select = [ # features in preview
+    "W292", # missing-newline-at-end-of-file
+]
+select = [
+    "A",
+    "ARG",
+    "B",
+    "C",
+    "DTZ",
+    "E",
+    "EM",
+    "F",
+    "FBT", # Boolean trap
+    "ICN",
+    "ISC",
+    "I",
+    "N",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "Q",
+    "RUF",
+    "S",
+    "T",
+    "TID",
+    "UP",
+    "W",
+    "YTT",
+    "RUF100", # Automatically remove unused # noqa directives
+]
+ignore = [
+    # Allow non-abstract empty methods in abstract base classes
+    "B027",
+    # Allow boolean positional values in function calls, like `dict.get(... True)`
+    "FBT003",
+    # Ignore checks for possible passwords
+    "S105", "S106", "S107",
+    # Ignore complexity
+    "C901", "PLR0911", "PLR0912", "PLR0913", "PLR0915",
+    "PLC1901", # empty string comparisons
+    "PLW2901", # `for` loop variable overwritten
+    "SIM114", # Combine `if` branches using logical `or` operator
+    "E203", # Whitespace before :, needed for black compatability and also `ruff format`
+    "ISC001", # causes unexpected behaviour with formatter
+]
+
+
+[tool.ruff.lint.isort]
+known-first-party = ["ape_utils"]
+
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+
+[tool.ruff.lint.per-file-ignores]
+# Allow print/pprint
+"examples/*" = ["T201"]
+# Tests can use magic values, assertions, and relative imports
+"tests/**/*" = ["PLR2004", "S101", "TID252"]
+
+
+[tool.coverage.run]
+source_pkgs = ["src/ape_utils", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/ape_utils/__version__.py",
+]
+
+
+[tool.coverage.paths]
+ape_utils = ["src/ape_utils", "*/ape_utils/src/ape_utils"]
+tests = ["tests", "*/ape_utils/tests"]
+
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+
+[tool.hatch.envs.default]
+installer = "pip"
+# dependencies = []
+post-install-commands = ["pre-commit install"]
+
+
+[tool.hatch.envs.lint]
+# If you define environments with dependencies that only slightly differ from their
+# inherited environments, you can use the extra-dependencies option to avoid redeclaring the
+# dependencies option: https://hatch.pypa.io/latest/config/environment/overview/#dependencies
+extra-dependencies = [
+    "mypy",
+    "ruff",
+    "commitizen",
+    "mdformat>=0.7.17",
+    "mdformat-gfm>=0.3.5",
+    "mdformat-frontmatter>=0.4.1",
+    "mdformat-pyproject>=0.0.1",
+]
+
+
+[tool.hatch.envs.lint.scripts]
+# check = "mypy --install-types --non-interactive {args:ape_utils tests}"
+typing = [
+  "echo \"VERSION: `mypy --version`\"",
+  "mypy --install-types --non-interactive src/{args}"
+]
+lint = [
+  "echo \"ruff VERSION: `ruff --version`\"",
+  "ruff format .",
+  "ruff check . --fix",
+  "mypy src/ape_utils/",
+  "echo \"mdformat VERSION: `mdformat --version`\"",
+  "mdformat README.md docs/examples.md",
+  "echo \"check VERSION: `check --version`\"",
+  "cz check --rev-range $(git rev-list --all --reverse | head -1)..HEAD"
+]
+lint-check = [
+  "echo \"VERSION: `ruff --version`\"",
+  "ruff format --check .",
+  "ruff check .",
+  "mypy src/ape_utils/"
+]
+
+
+# Docs env dendencies
+[tool.hatch.envs.docs]
+dependencies = [
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocs-gen-files",
+  "mkdocstrings[python]",
+  "linkchecker",
+  "ape_utils @ {root:uri}/"
+]
+
+
+[tool.hatch.envs.docs.scripts]
+docs-serve = "mkdocs serve"
+docs-build = "mkdocs build --clean --strict"
+# --ignore-url=None since the SUMMARY.md file leaves a <toc>None</toc> in sitemap.xml
+validate = "linkchecker --ignore-url=/reference --ignore-url=None site"
+# https://github.com/linkchecker/linkchecker/issues/678
+build-check = [
+  "docs-build",
+  "validate",
+]
+
+
+[tool.hatch.envs.test]
+extra-dependencies = ["pytest", "pytest-xdist", "pytest-cov", "hypothesis"]
+
+
+[tool.hatch.envs.test.scripts]
+test = "pytest"
+test-cov-xml = "pytest --cov-report=xml"
+
+
+[tool.pytest.ini_options]
+addopts = "-p no:ape_test"
+python_files = "test_*.py"
+testpaths = "tests"
+
+
+# Replace tox & nox
+[[tool.hatch.envs.test.matrix]]
+python = ["3.9", "3.10", "3.11", "3.12"]
+# python = ["3.9"]
+
+
+# Build configs
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/**/*.py",
+]
+
+
+[build-system]
+requires = ["hatchling", "hatch-regex-commit"]
+build-backend = "hatchling.build"
