@@ -1,0 +1,7 @@
+openai
+pydantic
+jsonschema
+colorama
+json_repair
+pillow
+requests

@@ -1,0 +1,10 @@
+README.md
+setup.py
+ai_function_helper/__init__.py
+ai_function_helper/helper.py
+ai_function_helper.egg-info/PKG-INFO
+ai_function_helper.egg-info/SOURCES.txt
+ai_function_helper.egg-info/dependency_links.txt
+ai_function_helper.egg-info/requires.txt
+ai_function_helper.egg-info/top_level.txt
+tests/test_helper.py
