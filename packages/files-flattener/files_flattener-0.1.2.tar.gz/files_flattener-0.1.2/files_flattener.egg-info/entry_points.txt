@@ -1,0 +1,2 @@
+[console_scripts]
+flt = files_flattener.cli:main
