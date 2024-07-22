@@ -1,0 +1,11 @@
+gym_2048/__init__.py,sha256=RZnAhmd_3XBBGrPzwSwc7uVGZEFOBMmVgXYfAY93UMU,361
+gym_2048/env.py,sha256=X0iJ0PUPVh3z5ADN6Ir3gezw3zqleMclBS6IkCF9IY4,17154
+gym_2048/game.py,sha256=Fp3eYKRoizzEyb8rxHJ5wtzPqOoWTuea56Ao3qvcaDE,3634
+gym_2048/is_possible.py,sha256=fLLqF6S34afOSNWLJDDtmE4140s-i3xJgyYSx2ywpY4,2218
+gym_2048/playground.py,sha256=EoJ1MuOJ_O9__YHx967UbdUu8NjgiRMDoLUqhtiVQzQ,979
+gym_2048/test.py,sha256=552V8JBXbswKVpl_R-Jat0A7EV_SX3we5zbAxqcIuec,12005
+gym_2048_extended-2.5.dist-info/LICENSE,sha256=POvNWxwOZ5qsPggvuqtlVPYPOfrX8dW1P1GoA08hAt4,1070
+gym_2048_extended-2.5.dist-info/METADATA,sha256=oO77EDfxbYCOrY9yK7O7AJKy_mOaINlWvnqcEcRmbu4,3328
+gym_2048_extended-2.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gym_2048_extended-2.5.dist-info/top_level.txt,sha256=OiyG0tpsg6iqp083rbamjjlvbBxHmHaRqTczyPlLjxw,9
+gym_2048_extended-2.5.dist-info/RECORD,,
