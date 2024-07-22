@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+files_flattener/__init__.py
+files_flattener/cli.py
+files_flattener/core.py
+files_flattener.egg-info/PKG-INFO
+files_flattener.egg-info/SOURCES.txt
+files_flattener.egg-info/dependency_links.txt
+files_flattener.egg-info/entry_points.txt
+files_flattener.egg-info/requires.txt
+files_flattener.egg-info/top_level.txt
