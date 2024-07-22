@@ -1,0 +1,11 @@
+__init__.py,sha256=Km32jaDXZcR92PPsNmGfxE2M9YKUIaKtaQnGzAIuCJ4,74
+quickcolor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickcolor/color_cli.py,sha256=P5tvNErVXDHFoIZV8bJnkH_Fzyvdsuot9O-z7yEUosc,2373
+quickcolor/color_def.py,sha256=yJ4WIWITOBsgUDbTCSO65zDhhGf5LL6BfGi8aR295rE,3076
+quickcolor/color_show.py,sha256=bbpQzQe0tvcXiSaPVEr9X06X9XXSXvD0k8sjZKHF2Kc,1936
+quickcolor-0.1.1.dist-info/LICENSE,sha256=CvU0N-48sD8IqaKmoIaueaII5ZV3xgMoYyf-yp1gshw,1067
+quickcolor-0.1.1.dist-info/METADATA,sha256=s_krozelEsCUcV17v9JOJfh8xgfof2Oj5D8qeaFlvzk,2502
+quickcolor-0.1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+quickcolor-0.1.1.dist-info/entry_points.txt,sha256=i8d6G2Bpht5uEjDCfaUkDzPbKjiQXp-P1LIZJc-yJfk,48
+quickcolor-0.1.1.dist-info/top_level.txt,sha256=dH1mHbHxE4fHblKPts55KFyGLC9jpA-N1w2yWHEhVL8,20
+quickcolor-0.1.1.dist-info/RECORD,,
