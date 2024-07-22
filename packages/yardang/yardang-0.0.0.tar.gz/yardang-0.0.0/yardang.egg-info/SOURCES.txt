@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+yardang.egg-info/PKG-INFO
+yardang.egg-info/SOURCES.txt
+yardang.egg-info/dependency_links.txt
+yardang.egg-info/top_level.txt
