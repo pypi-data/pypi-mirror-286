@@ -1,0 +1,2 @@
+[console_scripts]
+pdf2sb = pdf2sb:main
