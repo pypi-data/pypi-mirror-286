@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+VirtualCam/Install.bat
+VirtualCam/InstallMultipleDevices.bat
+VirtualCam/Uninstall.bat
+VirtualCam/UnityCaptureFilter32.dll
+VirtualCam/UnityCaptureFilter64.dll
+VirtualCam/__init__.py
+VirtualCam/_core.py
+VirtualCam.egg-info/PKG-INFO
+VirtualCam.egg-info/SOURCES.txt
+VirtualCam.egg-info/dependency_links.txt
+VirtualCam.egg-info/requires.txt
+VirtualCam.egg-info/top_level.txt
