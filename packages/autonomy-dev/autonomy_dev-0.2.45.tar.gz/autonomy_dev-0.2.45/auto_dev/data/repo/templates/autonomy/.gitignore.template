@@ -1,0 +1,8 @@
+__pycache__
+.env
+
+*private_key*
+keys.json
+
+agent/
+service/
