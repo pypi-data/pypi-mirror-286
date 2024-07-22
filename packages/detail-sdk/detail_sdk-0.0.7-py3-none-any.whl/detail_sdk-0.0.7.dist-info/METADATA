@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: detail-sdk
+Version: 0.0.7
+Summary: 
+Home-page: https://detail.dev
+Author: Detail
+Author-email: pypi@detail.dev
+Requires-Python: >=3.8,<3.12
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: replay
+Provides-Extra: replay-binary
+Requires-Dist: coverage ; extra == "replay" or extra == "replay-binary"
+Requires-Dist: forbiddenfruit
+Requires-Dist: opentelemetry-exporter-otlp
+Requires-Dist: opentelemetry-exporter-otlp-proto-http
+Requires-Dist: opentelemetry-instrumentation-django
+Requires-Dist: opentelemetry-instrumentation-flask
+Requires-Dist: opentelemetry-sdk
+Requires-Dist: psycopg2 ; extra == "replay"
+Requires-Dist: psycopg2-binary ; extra == "replay-binary"
+Requires-Dist: types-psycopg2
+Requires-Dist: vcrpy
+Requires-Dist: wrapt
+Description-Content-Type: text/markdown
+
+# detail-sdk
+
+Add this snippet to your app to generate traces.
+It's important for it to run as early as possible before other imports:
+
+```python
+from detail.client import instrument
+instrument()
+```
