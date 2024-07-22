@@ -1,0 +1,3 @@
+[console_scripts]
+drowsy-recorder=drowsy_recorder:main
+
