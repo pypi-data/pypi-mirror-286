@@ -1,0 +1,5 @@
+[asphalt.components]
+console = txl_console.components:ConsoleComponent
+
+[txl.components]
+console = txl_console.components:ConsoleComponent
