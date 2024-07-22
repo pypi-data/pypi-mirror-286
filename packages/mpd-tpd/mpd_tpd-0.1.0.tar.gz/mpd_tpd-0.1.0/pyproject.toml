@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mpd-tpd"
+version = "0.1.0"
+description = "Command line tool which tells you how much money you can spend per day until your next payday"
+authors = ["J-sephB-lt-n <joseph.jazz.bolton@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mpd-tpd = "mpd_tpd.cli:commandline_mpd_tpd"
