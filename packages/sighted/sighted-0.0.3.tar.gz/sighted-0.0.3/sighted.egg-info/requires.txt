@@ -1,0 +1,5 @@
+spacy>=3.7.5
+
+[dev]
+coverage
+pytest-cookies

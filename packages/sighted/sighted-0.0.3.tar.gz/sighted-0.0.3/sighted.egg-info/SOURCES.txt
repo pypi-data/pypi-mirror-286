@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+sighted/__init__.py
+sighted/language.py
+sighted/parts_of_speech.py
+sighted.egg-info/PKG-INFO
+sighted.egg-info/SOURCES.txt
+sighted.egg-info/dependency_links.txt
+sighted.egg-info/requires.txt
+sighted.egg-info/top_level.txt
+sighted/en_core_web_sm/__init__.py
+sighted/literal/__init__.py
+sighted/literal/algo.py
+sighted/literal/lang.py
