@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pykoopman_ae
+Version: 0.1.0
+Summary: Python package PyKoopman-AE for the data-driven identification of the Koopman Operator-based models for dynamical systems using autoencoders.
+Home-page: https://github.com/SuchethShenoy/pykoopman-ae
+Author: Sucheth Shenoy
+Author-email: sucheth17@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch==1.12.1
+Requires-Dist: tqdm==4.65.0
+
+# PyKoopman-AE
+
+Python package PyKoopman-AE for the data-driven identification of the Koopman Operator-based models for dynamical systems using autoencoders.
+
+## To Do
+1. Deploy the python package.
+2. Add documentation: Instructions for installation and usage.
