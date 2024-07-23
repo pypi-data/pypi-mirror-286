@@ -1,0 +1,11 @@
+rich==13.7.1
+
+[dev]
+block_wrangler[fuzzy_tags]
+Jinja2==3.1.4
+setuptools
+twine
+build
+
+[fuzzy_tags]
+rapidfuzz
