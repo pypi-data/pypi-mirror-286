@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sthali-db
+Version: 0.0.0.6
+Summary: A FastAPI package dependency for SthaliCRUD perform DB queries
+Author-email: Jhunu Fernandes <jhunu.fernandes@gmail.com>
+Project-URL: Homepage, https://github.com/jhunufernandes/sthali-db
+Project-URL: Bug Tracker, https://github.com/jhunufernandes/sthali-db/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi >=0.111.1
+Requires-Dist: pydantic >=2.8.2
+Requires-Dist: tinydb >=4.8.0
+Provides-Extra: dev
+Requires-Dist: ruff >=0.5.2 ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Provides-Extra: stage
+Requires-Dist: build ; extra == 'stage'
+Requires-Dist: coverage ; extra == 'stage'
+Provides-Extra: tests
+Requires-Dist: coverage ; extra == 'tests'
+
+# sthali-db
+A FastAPI package dependency for SthaliCRUD perform DB queries
