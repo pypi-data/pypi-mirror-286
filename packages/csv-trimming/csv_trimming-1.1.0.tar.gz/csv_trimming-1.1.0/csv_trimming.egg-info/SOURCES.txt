@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+csv_trimming/__init__.py
+csv_trimming/__version__.py
+csv_trimming/logger.py
+csv_trimming/trim.py
+csv_trimming.egg-info/PKG-INFO
+csv_trimming.egg-info/SOURCES.txt
+csv_trimming.egg-info/dependency_links.txt
+csv_trimming.egg-info/requires.txt
+csv_trimming.egg-info/top_level.txt
+tests/test_cases.py
+tests/test_trim_with_correlation.py
+tests/test_trimming.py
+tests/test_version.py

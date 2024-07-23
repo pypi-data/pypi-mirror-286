@@ -1,0 +1,11 @@
+pandas
+scipy
+numpy
+
+[test]
+pytest
+pytest-cov
+tqdm
+validate_version_code
+random_csv_generator
+ugly_csv_generator
