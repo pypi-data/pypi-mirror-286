@@ -1,0 +1,17 @@
+skollama/__init__.py,sha256=H9yhoMA5k3pVsRtLDMN1-RzhXu5UowWNg4q3lb9PgDM,57
+skollama/classification/__init__.py,sha256=w79tVVc6S5JNinMZ54qWhbH1_cT27SzbPVfDUpM9kcs,642
+skollama/llm/ollama/completion.py,sha256=-3qC4s8LQgoR3qBJqkHmd66zB1qFTYLc8cQ3JE4dxqE,485
+skollama/llm/ollama/embedding.py,sha256=euNAf83ai5FmRnUFz1nMkt5a6a9zz6uVTW-H1pWG6uw,884
+skollama/llm/ollama/mixin.py,sha256=gBU-xoN1eXQcdkzJWi9FGoke3tHe0dR1Mc8yt9plBHs,6142
+skollama/llm/ollama/clients/ollama/completion.py,sha256=xoB1L33sAKl1viByXz47gbAEP9B9bogR2i4KRNmM3oI,860
+skollama/llm/ollama/clients/ollama/credentials.py,sha256=zN7s3txrI-tuipVy-J_hSJ1JAhgqO65hELsl8MZvA8w,329
+skollama/llm/ollama/clients/ollama/embedding.py,sha256=5caKcxHXQCVUlikyNoR2A6UAnnWj9-BSnYoRq_zykN4,1288
+skollama/models/ollama/vectorization.py,sha256=ovdSs3H1MXkfhqSuHcbkH46dt-m9BVH91ZZGz7j0fEM,1466
+skollama/models/ollama/classification/few_shot.py,sha256=_aE5qCcCzsYqE1QW_ARUP6Ik0aVB-LUp2hxtfxDwILk,3566
+skollama/models/ollama/classification/zero_shot.py,sha256=sGIoI3TSv9Wll6lfyzxpZ2jKFgKEM-NkmvTikR_ODuk,2690
+skollama/text2text/__init__.py,sha256=EKTQKCPT3l66utgozAHOv7NfzqVnasUCBYQ2VdRXkjQ,384
+skollama/vectorization/__init__.py,sha256=gzsEK2MaEZYeqJTqi1PIWeBIpINjS7EBkm3ECJkVxuc,101
+scikit_ollama-0.1.0.dist-info/METADATA,sha256=fFyElTqH04b0Srusaklp8TiYGNA_L_Olh_ylQddNj0g,2525
+scikit_ollama-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+scikit_ollama-0.1.0.dist-info/top_level.txt,sha256=0CoAVUqsnd2D9ADSwvPtrLOz3U5dE3u45HOdnjbR5eI,9
+scikit_ollama-0.1.0.dist-info/RECORD,,
