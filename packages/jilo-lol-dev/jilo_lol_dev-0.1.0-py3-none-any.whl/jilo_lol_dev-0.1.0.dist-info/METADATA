@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jilo-lol-dev
+Version: 0.1.0
+Summary: A Python package for performing math operation with joy inside of you
+Home-page: UNKNOWN
+Author: Jilo Developer
+Author-email: chibuezeadeyemi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
