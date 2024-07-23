@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hellostreamlit_wc
+Version: 0.1.0
+Summary: Practice streamlit
+Author-email: whitecapella1 <whitecapella@naver.com>
+License: MIT
+Requires-Python: ==3.11.*
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit >=1.36.0
+
+# hellostreamlit_wc
+
+## introduction
+this repository is practice streamlit on wsl
+
