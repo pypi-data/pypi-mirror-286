@@ -1,0 +1,12 @@
+polars_istr-0.1.1.dist-info/METADATA,sha256=QQepVsnSpiCtoT_B5VZSlXp5BeTVYy6CD864pXTArd4,1495
+polars_istr-0.1.1.dist-info/WHEEL,sha256=Z7z_TcN-SqAJ4k-DAgSbQsbDhIg--F0f-wRIhoPNirs,102
+polars_istr-0.1.1.dist-info/license_files/LICENSE.txt,sha256=CQ0WEokIss5KNGCRIGlGkphL_1J7_cpiuoJsvuOQyP0,1063
+polars_istr/__init__.py,sha256=AUM3ou4OOM7_S-CjDkZgAb5i6PQpofhHhOFWE6Hu5X0,183
+polars_istr/url.py,sha256=oE4R-UJD7LuNaRHzXl71eXdHLXjgL5WIcCVVPZbtFhU,1972
+polars_istr/isin.py,sha256=yH9bJ6Ho574Qo6ZiTz39f64Oyv0w-jwjz-17N5Wgd68,1525
+polars_istr/cusip.py,sha256=P5OFGJVRvbFoGKXGMdgbNlMCQXB9YYtftTfrFuo3zfc,3953
+polars_istr/iban.py,sha256=_BEREyssaFsculrqRPDARDwCu_dQ5bLoGI3aPKKCe_E,2295
+polars_istr/type_alias.py,sha256=dRvapNz8tYpb62we5itDo6qh_UZBlhf2nSTKuOpSkGU,279
+polars_istr/_utils.py,sha256=5io4IV_zHqt1H7Pu9mQysaHRUY-n0Mfnr9V2pjd9urc,1910
+polars_istr/_polars_istr.abi3.so,sha256=RVXLui83E9pT3mrax3XezzGDzlMdOEb4SE5Woopvp6g,10905368
+polars_istr-0.1.1.dist-info/RECORD,,
