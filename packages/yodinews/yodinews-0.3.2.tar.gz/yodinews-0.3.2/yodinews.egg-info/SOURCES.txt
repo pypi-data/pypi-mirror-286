@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pixelyodi/__init__.py
+pixelyodi/main.py
+yodinews.egg-info/PKG-INFO
+yodinews.egg-info/SOURCES.txt
+yodinews.egg-info/dependency_links.txt
+yodinews.egg-info/top_level.txt
