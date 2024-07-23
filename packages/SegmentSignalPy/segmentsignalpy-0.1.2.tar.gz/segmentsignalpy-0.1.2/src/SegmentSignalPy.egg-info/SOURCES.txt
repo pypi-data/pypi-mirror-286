@@ -1,0 +1,13 @@
+License.txt
+README.md
+pyproject.toml
+setup.py
+src/CPP Static Library/SegmentSignal.cpp
+src/CPP Static Library/SegmentSignalFunctions.cpp
+src/CPP Static Library/SegmentationResults.cpp
+src/Python Extension/SegmentationResultsPy.cpp
+src/Python Extension/module.cpp
+src/SegmentSignalPy.egg-info/PKG-INFO
+src/SegmentSignalPy.egg-info/SOURCES.txt
+src/SegmentSignalPy.egg-info/dependency_links.txt
+src/SegmentSignalPy.egg-info/top_level.txt
