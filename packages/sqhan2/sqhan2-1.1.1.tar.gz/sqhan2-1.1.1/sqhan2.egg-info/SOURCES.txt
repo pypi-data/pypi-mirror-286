@@ -1,0 +1,6 @@
+README.md
+setup.py
+sqhan2.egg-info/PKG-INFO
+sqhan2.egg-info/SOURCES.txt
+sqhan2.egg-info/dependency_links.txt
+sqhan2.egg-info/top_level.txt

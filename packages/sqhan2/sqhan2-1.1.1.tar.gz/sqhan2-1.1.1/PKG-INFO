@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sqhan2
+Version: 1.1.1
+Summary: A brief description of the package
+Home-page: https://github.com/yourusername/mypackage
+Author: Han Shaoqing
+Author-email: sqhan1@whu.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+sqhan1 packages for torch!
