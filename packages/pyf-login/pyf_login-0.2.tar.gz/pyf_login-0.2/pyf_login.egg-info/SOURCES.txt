@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyf_login/__init__.py
+pyf_login/jwt_token.py
+pyf_login/urls.py
+pyf_login/utils.py
+pyf_login/views.py
+pyf_login.egg-info/PKG-INFO
+pyf_login.egg-info/SOURCES.txt
+pyf_login.egg-info/dependency_links.txt
+pyf_login.egg-info/requires.txt
+pyf_login.egg-info/top_level.txt
