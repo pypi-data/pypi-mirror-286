@@ -1,0 +1,18 @@
+[package]
+name = "hf_transfer"
+version = "0.1.7-dev1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "hf_transfer"
+crate-type = ["cdylib"]
+
+[dependencies]
+futures = "0.3.30"
+openssl = { version = "0.10.66", features = ["vendored"] }
+pyo3 = { version = "0.22.2", features = ["extension-module"] }
+rand = "0.8.5"
+reqwest = { version = "0.12.5", features = ["stream"] }
+tokio = { version = "1.38.1", features = ["rt", "rt-multi-thread", "fs"] }
+tokio-util = { version = "0.7", features = ["codec"] }
