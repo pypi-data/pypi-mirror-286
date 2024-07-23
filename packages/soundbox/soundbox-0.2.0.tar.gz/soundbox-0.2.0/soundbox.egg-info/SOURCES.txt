@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+qoa.h
+setup.py
+soundbox.cpp
+stb_vorbis.h
+soundbox.egg-info/PKG-INFO
+soundbox.egg-info/SOURCES.txt
+soundbox.egg-info/dependency_links.txt
+soundbox.egg-info/top_level.txt
