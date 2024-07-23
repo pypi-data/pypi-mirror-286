@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: unfolding-vis
+Version: 1.0.1
+Summary: Library for generating thorough web-visualization of Petri nets' unfoldings
+Home-page: https://github.com/TimurTimergalin/pn-unfoldings-visualizations
+Author: TimurTimergalin
+Author-email: tmtimergalin8080@gmail.com
+Keywords: petri-nets unfoldings visualization
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pm4py-pn-unfoldings
+Requires-Dist: pm4py
+
+# unfolding-viz
+## Установка
+> pip install unfolding-viz
+## Описание
+Библиотека, основанная на [pm4py-pn-unfoldings](https://github.com/TimurTimergalin/Unfoldings), для создания 
+интерактивных визуализаций разверток сетей Петри
+## Пример использования
+Чтобы создать визуализацию, используется функция `visualize`. Пример её использования можно найти в *example.py*.
