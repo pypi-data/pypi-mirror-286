@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: arkose
+Version: 2.0.1
+Summary: A Python package to interact with Funcaptcha (Arkose Labs)
+Home-page: https://github.com/Micxzy/arkose
+Author: Micxzy
+Author-email: no@dont.email.me
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: requests
+Requires-Dist: pycryptodome
+
+# Arkose (Funcaptcha)
+
+Arkose is a Python package designed to interact with Funcaptcha (Arkose Labs) to get CAPTCHA challenges programmatically. This package is useful for automating the interaction with Funcaptcha's challenge system, including token retrieval, challenge handling, and image downloading.
+
+## Installation
+
+To install Arkose, use pip:
+
+```bash
+pip install arkose
+```
+
+## Usage
+
+Here is a basic example of how to use the `arkose` package to interact with Funcaptcha:
+
+```python
+import arkose
+import asyncio
+
+async def main():
+    
+     token_response = await arkose.getTOKEN(
+        surl="https://client-api.arkoselabs.com", # support all service urls
+        publicKey="2CB16598-CB82-4CF7-B332-5990DB66F3AB",
+        site="https://iframe.arkoselabs.com",
+        data={"blob": blob}, # this is optional
+        proxy={   # proxy is optional
+            "http": "http://username:password@127.0.0.1:8080",
+            "https": "http://username:password127.0.0.1:8080"
+        }
+        headers={ # optional headers
+            "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36'
+            }
+    )
+    token = token_response.get('token')
+    if not token:
+        print("No token found in response.")
+        return
+    
+    fc = arkose.RequestSession(token, "https://www.roblox.com/login", proxy={}, headers={})  # headers and proxy are optional
+    
+    # check if token is supressed
+    issup = fc.is_token_supress()
+    if issup != False:
+        # retorn a solve token
+        print(issup)
+        
+        # output: {
+            # "solve": true, 
+            # "token": "97117e43f211370e2.1934698704|r=ap-southeast-1"
+        # }
+        return
+    
+    # request session
+    fc = fc.request()
+    
+    # get all the challenge information
+    challenge = fc.get_challenge()
+    
+    # challenge informations
+    print(f"Challenge name: {fc.challenge_name()}")
+    print(f"Challenge wave: {fc.wavecount()}")
+    print(f"Challenge link: {fc.get_challenge_links()}")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+Additional usage, when generating a BDA:
+
+```python
+import arkose
+
+bda = arkose.getBda(
+    userAgent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36",
+    site="https://roblox.com/login",
+    surl="https://roblox-api.arkoselabs.com",
+)
+
+print(bda)
+```
+
+## Functions
+- `arkose.getTOKEN(surl, publicKey, site, data, headers)`: Retrieves a token from the Arkose API.
+- `arkose.is_token_supress(token)`: Checks if the token is suppressed.
+- `arkose.RequestSession(token)`: Creates a session for making requests with the provided token.
+
+## Requirements
+
+- `requests`
+- `asyncio`
+- `json`
+- `base64`
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Micxzy/arkose/blob/main/LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please open an issue on the [GitHub repository](https://github.com/Micxzy/arkose).
