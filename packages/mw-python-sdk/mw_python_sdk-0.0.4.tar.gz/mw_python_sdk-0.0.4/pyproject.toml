@@ -1,0 +1,31 @@
+[project]
+name = "mw-python-sdk"
+version = "0.0.4"
+authors = [
+    { name="Peng Gao", email="mike@heywhale.com" },
+]
+description = "ModelWhale SDK"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ['PyJWT', 'requests', 'boto3', 'tqdm']
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[project.urls]
+Homepage = "https://github.com/Kesci/mw-python-sdk"
+Issues = "https://github.com/Kesci/mw-python-sdk/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
