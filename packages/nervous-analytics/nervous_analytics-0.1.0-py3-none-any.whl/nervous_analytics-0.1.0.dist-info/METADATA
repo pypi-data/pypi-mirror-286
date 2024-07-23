@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: nervous-analytics
+Version: 0.1.0
+Summary: A package to extract ECG and EDA features localization in real-time.
+Home-page: https://github.com/INL-Biomedical-Sensor/Nervous-Analytics
+License: MIT
+Author: Tristan Habémont
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyWavelets (>=1.6.0,<2.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: scipy (>=1.14.0,<2.0.0)
+Requires-Dist: tensorflow (>=2.16.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Nervous Analytics
+
+Package allowing to extract locations of R-peak from ECG signals in real time.
+The ECG process is mainly based on this [paper](https://doi.org/10.1016/j.eswa.2022.117187).
+
+## Installation
+
+```bash
+pip install nervous_analytics
+```
+
+## Architecture
+
+Our algorithm is composed of three stages. In first the pre-processing stage denoise and prepare the ECG signal using
+a wavelet transform and a band-pass filter. Next, in the ML inference stage, the features are extracted from
+using two U-net CNN & LSTM based models. Finally, the post-processing stage is responsible for the decision-making...
+
+### 1. Pre-processing
+
+<img src="nervous_analytics/assets/pre_process_modules.png" width="400">
+
+### 2. ML Inference
+
+### 3. Post-processing
+
+<img src="nervous_analytics/assets/post_process_modules.png" width="400">
+
+## Results
+
