@@ -1,0 +1,18 @@
+.env
+image-gen/images
+image-gen/old-diffusers
+image-gen/app/huggingface
+chatdev/WareHouse/*
+chatdev/server/node_modules
+.DS_Store
+.structurizr
+
+# Pants workspace files
+/.pants.d
+/dist/
+
+# Bazel worskpace files
+/bazel-*
+
+# MkDocs generated files
+site/
