@@ -1,0 +1,45 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "knewkarma"
+version = "5.3.4"
+description = "A Reddit Data Analysis Toolkit"
+authors = ["Richard Mwewa <rly0nheart@duck.com>"]
+readme = "README.md"
+license = "MIT License"
+documentation = "https://knewkarma.readthedocs.io"
+repository = "https://github.com/bellingcat/knewkarma"
+keywords = ["reddit", "reddit-api", "reddit-data-analysis"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Visual Basic",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/bellingcat/knewkarma/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.4"
+pandas = "^2.1.4"
+psutil = "^5.9.4"
+rich = "^13.3.1"
+rich-argparse = "^1.4.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+poetry = "^1.8.3"
+pytest = "^7.4.3"
+pytest-asyncio = "^0.23.2"
+tenacity = "^8.3.0"
+
+[tool.poetry.scripts]
+knewkarma = "knewkarma._cli:start"
