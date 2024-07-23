@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+aphro/__init__.py
+aphro.egg-info/PKG-INFO
+aphro.egg-info/SOURCES.txt
+aphro.egg-info/dependency_links.txt
+aphro.egg-info/top_level.txt
