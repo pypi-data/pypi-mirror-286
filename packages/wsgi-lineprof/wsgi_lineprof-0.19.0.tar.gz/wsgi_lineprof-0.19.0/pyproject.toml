@@ -1,0 +1,106 @@
+[build-system]
+requires = ["Cython>=3,<4", "setuptools>=62.3.0", "setuptools_scm[toml]>=6.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wsgi_lineprof"
+description = "WSGI middleware for line-by-line profiling"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Yusuke Miyazaki", email="miyazaki.dev@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Programming Language :: C",
+    "Programming Language :: Cython",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware",
+    "Topic :: Software Development",
+    "Topic :: System :: Benchmark",
+]
+dependencies = [
+    "colorama>=0.4.1",
+    "Jinja2",
+    "pytz",
+    "typing-extensions"
+]
+
+dynamic = ["readme", "version"]
+
+[project.optional-dependencies]
+benchmark = [
+    "asv>=0.4,<0.5",
+    "virtualenv"
+]
+benchmark-deps = [
+    "Jinja2==2.10",
+    "WebTest==2.0.32"
+]
+docs = [
+    "Sphinx>=6,<7",
+    "sphinx_rtd_theme>=1,<2"
+]
+test = [
+    "mypy>=1,<2",
+    "pytest>=7,<8",
+    "pytest-cov>=4,<5",
+    "pytest-mock>=1.11",
+    "pytest-randomly",
+    "types-colorama",
+    "types-pytz"
+]
+
+[project.urls]
+Documentation = "https://wsgi-lineprof.readthedocs.io"
+Source = "https://github.com/ymyzk/wsgi_lineprof"
+
+[tool.cibuildwheel]
+skip = "cp36-* pp*"
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "if typing.TYPE_CHECKING:"
+]
+ignore_errors = true
+
+[tool.isort]
+profile = "black"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst"]}
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["."]
+include = ["extensions", "wsgi_lineprof"]
+
+[tool.setuptools.package-data]
+wsgi_lineprof = ["py.typed", "*.pyi"]
+"wsgi_lineprof.templates" = ["*.html"]
+
+[tool.setuptools_scm]
+write_to = "wsgi_lineprof/version.py"
