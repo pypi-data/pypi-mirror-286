@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+Image_to_Table.egg-info/PKG-INFO
+Image_to_Table.egg-info/SOURCES.txt
+Image_to_Table.egg-info/dependency_links.txt
+Image_to_Table.egg-info/requires.txt
+Image_to_Table.egg-info/top_level.txt
+image_to_table/__init__.py
+image_to_table/animation.py
+image_to_table/generate.py
+image_to_table/json_extractor.py
+image_to_table/visualiser.py
