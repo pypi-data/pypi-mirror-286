@@ -1,0 +1,358 @@
+# hyperprotocols
+
+## Advanced Web Utilities
+
+[![PyPI version](https://badge.fury.io/py/hyperprotocols.svg)](https://badge.fury.io/py/hyperprotocols)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+`hyperprotocols` is a Python package that provides advanced utilities for web scraping, HTML manipulation, and API interaction.
+
+### Installation
+
+```bash
+pip install hyperprotocols
+```
+
+### Features
+
+- **HYPERTEXT**: Extract and manipulate HTML content into structured data
+- **TRANSFERPROTOCOLS**: Utilities for API interactions, including payload fuzzing, pagination handling, and ultimate recursion
+
+### Usage
+
+#### HYPERTEXT
+
+Extract and manipulate HTML content:
+
+```python
+from hyperprotocols.HYPERTEXT import hypertext
+
+# Fetch and parse HTML content
+content = hypertext.fetch("https://example.com")
+html = hypertext(content)
+
+# Convert HTML to structured schema
+schema = html.Schematize()
+
+'''
+Outputs:
+{
+
+  "selector": "[document]",
+
+  "class": [],
+
+  "id": "",
+
+  "path": "",
+
+  "content": "Example DomainExample DomainThis domain is for use in illustrative examples in documents. You may use this\n    domain in literature without prior coordination or asking for permission.More information...",
+
+  "count": 1,
+
+  "children": [
+
+    {
+
+      "selector": "html",
+
+      "class": [],
+
+      "id": "",
+
+      "path": "",
+
+      "content": "Example DomainExample DomainThis domain is for use in illustrative examples in documents. You may use this\n    domain in literature without prior coordination or asking for permission.More information...",
+
+      "count": 1,
+
+      "children": [
+
+        {
+
+          "selector": "head",
+
+          "class": [],
+
+          "id": "",
+
+          "path": "html",
+
+          "content": "Example Domain",
+
+          "count": 1,
+
+          "children": [
+
+            {
+
+              "selector": "title",
+
+              "class": [],
+
+              "id": "",
+
+              "path": "html > head",
+
+              "content": "Example Domain",
+
+              "count": 1,
+
+              "children": []
+
+            },
+
+            {
+
+              "selector": "meta",
+
+              "class": [],
+
+              "id": "",
+
+              "path": "html > head",
+
+              "content": "",
+
+              "count": 1,
+
+              "children": []
+
+            },
+
+            {
+
+              "selector": "meta",
+
+              "class": [],
+
+              "id": "",
+
+              "path": "html > head",
+
+              "content": "",
+
+              "count": 1,
+
+              "children": []
+
+            },
+
+            {
+
+              "selector": "meta",
+
+              "class": [],
+
+              "id": "",
+
+              "path": "html > head",
+
+              "content": "",
+
+              "count": 1,
+
+              "children": []
+
+            },
+
+            {
+
+              "selector": "style",
+
+              "class": [],
+
+              "id": "",
+
+              "path": "html > head",
+
+              "content": "body {\n        background-color: #f0f0f2;\n        margin: 0;\n        padding: 0;\n        font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        \n    }\n    div {\n        width: 600px;\n        margin: 5em auto;\n        padding: 2em;\n        background-color: #fdfdff;\n        border-radius: 0.5em;\n        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);\n    }\n    a:link, a:visited {\n        color: #38488f;\n        text-decoration: none;\n    }\n    @media (max-width: 700px) {\n        div {\n            margin: 0 auto;\n            width: auto;\n        }\n    }",
+
+              "count": 1,
+
+              "children": []
+
+            }
+
+          ]
+
+        },
+
+        {
+
+          "selector": "body",
+
+          "class": [],
+
+          "id": "",
+
+          "path": "html",
+
+          "content": "Example DomainThis domain is for use in illustrative examples in documents. You may use this\n    domain in literature without prior coordination or asking for permission.More information...",
+
+          "count": 1,
+
+          "children": [
+
+            {
+
+              "selector": "div",
+
+              "class": [],
+
+              "id": "",
+
+              "path": "html > body",
+
+              "content": "Example DomainThis domain is for use in illustrative examples in documents. You may use this\n    domain in literature without prior coordination or asking for permission.More information...",
+
+              "count": 1,
+
+              "children": [
+
+                {
+
+                  "selector": "h1",
+
+                  "class": [],
+
+                  "id": "",
+
+                  "path": "html > body > div",
+
+                  "content": "Example Domain",
+
+                  "count": 1,
+
+                  "children": []
+
+                },
+
+                {
+
+                  "selector": "p",
+
+                  "class": [],
+
+                  "id": "",
+
+                  "path": "html > body > div",
+
+                  "content": "This domain is for use in illustrative examples in documents. You may use this\n    domain in literature without prior coordination or asking for permission.",
+
+                  "count": 1,
+
+                  "children": []
+
+                },
+
+                {
+
+                  "selector": "p",
+
+                  "class": [],
+
+                  "id": "",
+
+                  "path": "html > body > div",
+
+                  "content": "More information...",
+
+                  "count": 1,
+
+                  "children": [
+
+                    {
+
+                      "selector": "a",
+
+                      "class": [],
+
+                      "id": "",
+
+                      "path": "html > body > div > p",
+
+                      "content": "More information...",
+
+                      "count": 1,
+
+                      "children": [],
+
+                      "urls": {
+
+                        "href": "https://www.iana.org/domains/example"
+
+                      }
+
+                    }
+
+                  ]
+
+                }
+
+              ]
+
+            }
+
+          ]
+
+        }
+
+      ]
+
+    }
+
+  ]
+
+}
+'''
+```
+
+#### TRANSFERPROTOCOLS
+
+Fuzz API payloads and handle paginated requests:
+
+```python
+from hyperprotocols.TRANSFERPROTOCOLS import PayloadFuzzer, recursively
+import requests
+
+
+payload = {
+    'keywords': '',
+    'brands': 'gucci',
+    'categories': 'shirts',
+    'page': 1
+}
+
+# Handle paginated API requests
+@recursively(pkwarg='payload', paginator='page', breakat=50)
+def fetch(payload):
+	url = "http://example.com"
+	with PayloadFuzzer(payload, fuzzable=['keywords', 'brands', 'categories']) as variations:
+	    for variant in variations:
+		    response = requests.get(url, variation)
+		    # Your request processing logic here
+		    pass
+
+'''
+fuzzed variations:
+    {'keywords': 'gucci', 'brands': '', 'categories': 'shirts', 'page': 1}
+    > brand swapped into a keyword
+    > > with recursively:
+    > > > [{'keywords': 'gucci', 'brands': '', 'categories': 'shirts', 'page': 1}, {'keywords': 'gucci', 'brands': '', 'categories': 'shirts', 'page': 2}, ...{'keywords': 'gucci', 'brands': '', 'categories': 'shirts', 'page': 50}]
+    {'keywords': 'shirts', 'brands': 'gucci', 'categories': '', 'page': 1}
+    > category swapped into a keyword
+    > > with recursively:
+    > > > [{'keywords': 'shirts', 'brands': 'gucci', 'categories': '', 'page': 1}, {'keywords': 'shirts', 'brands': 'gucci', 'categories': '', 'page': 2}, ...{'keywords': 'shirts', 'brands': 'gucci', 'categories': '', 'page': 50}]
+    {'keywords': 'gucci shirts', 'brands': '', 'categories': '', 'page': 1}
+    > brand and category swapped into a keyword
+    > > with recursively:
+    > > > [{'keywords': 'gucci shirts', 'brands': '', 'categories': '', 'page': 1}, {'keywords': 'gucci shirts', 'brands': '', 'categories': '', 'page': 2}, ... {'keywords': 'gucci shirts', 'brands': '', 'categories': '', 'page': 50}]
+'''
+
+```
+
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

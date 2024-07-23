@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hyperprotocols/HYPERTEXT.py
+hyperprotocols/TRANSFERPROTOCOLS.py
+hyperprotocols/__init__.py
+hyperprotocols.egg-info/PKG-INFO
+hyperprotocols.egg-info/SOURCES.txt
+hyperprotocols.egg-info/dependency_links.txt
+hyperprotocols.egg-info/top_level.txt
