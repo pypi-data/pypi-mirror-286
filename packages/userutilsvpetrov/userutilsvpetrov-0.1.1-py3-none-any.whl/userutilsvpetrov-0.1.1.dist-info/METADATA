@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: userutilsvpetrov
+Version: 0.1.1
+Summary: A package for user utilities
+Home-page: 
+Author: Vladimir Petrov
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: pydantic
+Requires-Dist: sqlalchemy
+Requires-Dist: alembic
+Requires-Dist: email-validator
+Requires-Dist: python-dateutil
+
+This is a package that provides utilities for user management.
