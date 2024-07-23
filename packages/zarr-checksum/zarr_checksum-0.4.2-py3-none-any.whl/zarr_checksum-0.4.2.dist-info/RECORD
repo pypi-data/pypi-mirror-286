@@ -1,0 +1,15 @@
+zarr_checksum/__init__.py,sha256=CWuC0rc8Zn6CJ21VC7xas_AbAYkbYamFtef6btQFlZk,538
+zarr_checksum/checksum.py,sha256=2R2vZZXFvtQinXpFBIKY6xiGwQ7n2lM2-Af4ht5rmCs,2933
+zarr_checksum/cli.py,sha256=lLXjQOW6Qx7DUITVW-b8C25wxLyaeSPd0N21bcYYDA8,1077
+zarr_checksum/generators.py,sha256=-wVxEDY4F7ftWlcmgOyPWBW1n5lWyE4ok4f_RdwNK2E,3666
+zarr_checksum/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zarr_checksum/tests/test_checksum.py,sha256=KaRWGOy4zFs3obhuzsReDGOTUjK5A1LO2OcA92PPd-s,1197
+zarr_checksum/tests/test_generators.py,sha256=TIrpY_VEbeHLV--75fbwHm4Y8Tehl_O4zPyr3_dCkB4,1497
+zarr_checksum/tests/test_tree.py,sha256=RK8GeSyK00W9aO7ZyyTqj22zEFb962xIEPGriH6jnOU,1185
+zarr_checksum/tree.py,sha256=JIOC0O_MYSuu8eY8SbRvzI9hxWj2HbMUIPRVcqyuj90,3176
+zarr_checksum-0.4.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+zarr_checksum-0.4.2.dist-info/METADATA,sha256=KnHaSbD86haJlD-E0y3oRN-ttAPcRvUe9f2a8MKVYsE,3161
+zarr_checksum-0.4.2.dist-info/NOTICE,sha256=19vRFu9A93g0FOWdnBTP8Y7JA7F0PWjcEXLq2ILH8Jg,554
+zarr_checksum-0.4.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+zarr_checksum-0.4.2.dist-info/entry_points.txt,sha256=DsxbaoWcB8n7rRFKM5FzX2dtSwJVKt_wwwMRKq3ywWw,49
+zarr_checksum-0.4.2.dist-info/RECORD,,
