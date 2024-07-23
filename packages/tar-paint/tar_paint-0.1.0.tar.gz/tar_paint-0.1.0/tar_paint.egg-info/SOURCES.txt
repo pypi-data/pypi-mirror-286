@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tar_paint/__init__.py
+tar_paint/main.py
+tar_paint.egg-info/PKG-INFO
+tar_paint.egg-info/SOURCES.txt
+tar_paint.egg-info/dependency_links.txt
+tar_paint.egg-info/entry_points.txt
+tar_paint.egg-info/requires.txt
+tar_paint.egg-info/top_level.txt
