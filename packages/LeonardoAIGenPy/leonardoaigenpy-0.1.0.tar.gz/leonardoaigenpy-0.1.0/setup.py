@@ -1,0 +1,25 @@
+from setuptools import setup, find_packages
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setup(
+    name="LeonardoAIGenPy",
+    version="0.1.0",
+    author="Joe Wilson",
+    author_email="your-email@example.com",
+    description="A Python package for interacting with Leonardo AI for image generation and upscaling.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/yourusername/LeonardoAIGenPy",
+    packages=find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.6",
+    install_requires=[
+        "requests",
+    ],
+)
