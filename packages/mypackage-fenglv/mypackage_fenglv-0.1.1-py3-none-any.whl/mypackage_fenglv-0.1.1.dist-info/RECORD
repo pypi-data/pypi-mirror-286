@@ -1,0 +1,9 @@
+mypackage/__init__.py,sha256=x4n3fSpyOaA9Trw56cF7W6fqBk5e3G7xBe0bBdEnArQ,57
+mypackage/module.py,sha256=Fbkp5omx6jIobs2dHvIzGf0_d06APmwCkO9xcjsj9Lg,69
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_module.py,sha256=wEP3B0SsH0jfW3D2kuYlgvSxBVBuKtVQ-E0R519FmLk,255
+mypackage_fenglv-0.1.1.dist-info/LICENSE,sha256=P-_SQj3PdGSSQdNdeun_tgPOoIHpsZaVIC-x21dtLlA,1066
+mypackage_fenglv-0.1.1.dist-info/METADATA,sha256=qq7ho6RMfCdJDnvkwTwcPs3zLf3OT6aakc9KeoGlS64,577
+mypackage_fenglv-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mypackage_fenglv-0.1.1.dist-info/top_level.txt,sha256=EPaQ7bohfbQYpXluIecATfHFlNVEU6p7LxDTpUYjEV8,16
+mypackage_fenglv-0.1.1.dist-info/RECORD,,
