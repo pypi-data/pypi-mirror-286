@@ -1,0 +1,2 @@
+[console_scripts]
+wstatus = website_status_checker.checker:check_websites_cli
