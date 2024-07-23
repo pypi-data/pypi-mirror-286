@@ -1,0 +1,7 @@
+[console_scripts]
+bj=blackjack_cli.console:bj
+blackjack=blackjack_cli.console:bj
+hit=blackjack_cli.console:hit
+stand=blackjack_cli.console:stand
+stay=blackjack_cli.console:stand
+
