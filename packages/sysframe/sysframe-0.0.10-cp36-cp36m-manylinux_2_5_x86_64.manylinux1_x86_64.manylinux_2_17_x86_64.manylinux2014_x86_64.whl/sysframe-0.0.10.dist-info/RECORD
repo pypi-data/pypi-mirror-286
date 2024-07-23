@@ -1,0 +1,14 @@
+sysframe-0.0.10.dist-info/METADATA,sha256=roQlFQqUTCwdqoLdlGDqeLe6PvKPORDnInNf49CxDmk,1538
+sysframe-0.0.10.dist-info/LICENSE,sha256=31yjAttdR6OSInWiSqTcPX9vXGxcVBFJFfEl6hqWIhc,1062
+sysframe-0.0.10.dist-info/top_level.txt,sha256=zEAhkGF0gAS4whdDEaw5Wm7xeVOccrILp_VU0Qn-XKc,9
+sysframe-0.0.10.dist-info/WHEEL,sha256=FxvOBIPWULmQmkts83LAmRSb1PKBOerW3I7FsMSIXDA,221
+sysframe-0.0.10.dist-info/RECORD,,
+sysframe/__init__.py,sha256=m5PdnRxbnP7JlHNjDJLeYl5Gqz0iXteN3bwWHwdgDQQ,47
+sysframe/membridge/__init__.py,sha256=PuOHNIwoh755WI55UTv8qf9PDkYmbf9Gn1scH-eoj8U,24
+sysframe/membridge/membridge.c,sha256=Mg1CQR0_OM63M9iNrvqbp-6zTw7SzrtL-ykdgYXWU4c,12628
+sysframe/membridge/membridge.cpython-36m-x86_64-linux-gnu.so,sha256=Q2NQUuzWTDmwZVZgnzDHaReXLPwcm7XQZh3bD-DkraM,47752
+sysframe/membridge/membridge.pyi,sha256=cdYZAoJlRknY6AfewiNbCTnxmTUNIppbfYDwlKk5g40,410
+sysframe/pybytes/__init__.py,sha256=5AaG8kSwBxaBM0mVkcix9C7lTQwYkOlBKgSAU7HkVRs,22
+sysframe/pybytes/pybytes.pyi,sha256=umz_ypiZF5OIzuApUZlD_LxEvvxOY4IUqk2_IxYvmvA,228
+sysframe/pybytes/pybytes.cpython-36m-x86_64-linux-gnu.so,sha256=vpLN_A-wsnD3NDHg3MiKLQYeBzJqa2ff75gKrp364aM,95280
+sysframe/pybytes/pybytes.c,sha256=uaS33NzJ5oEYYGTkxrefyblGvOFXGKmpq6rPWpAcVzg,31685
