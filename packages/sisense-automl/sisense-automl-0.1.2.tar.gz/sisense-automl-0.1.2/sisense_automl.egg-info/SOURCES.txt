@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sisense_automl/__init__.py
+sisense_automl/common_imports.py
+sisense_automl/sisense_automl.py
+sisense_automl.egg-info/PKG-INFO
+sisense_automl.egg-info/SOURCES.txt
+sisense_automl.egg-info/dependency_links.txt
+sisense_automl.egg-info/requires.txt
+sisense_automl.egg-info/top_level.txt

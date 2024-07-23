@@ -1,0 +1,8 @@
+# Include the README file
+include README.md
+
+# Include the LICENSE file
+include LICENSE
+
+# Include all Python files in the package directory
+recursive-include sisense_automl *.py
