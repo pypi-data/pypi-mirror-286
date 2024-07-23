@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pixelyodi/__init__.py
+pixelyodi/main.py
+yodinew.egg-info/PKG-INFO
+yodinew.egg-info/SOURCES.txt
+yodinew.egg-info/dependency_links.txt
+yodinew.egg-info/top_level.txt
