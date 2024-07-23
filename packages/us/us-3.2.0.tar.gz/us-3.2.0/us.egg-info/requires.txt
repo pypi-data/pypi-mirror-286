@@ -1,0 +1,7 @@
+jellyfish
+
+[dev]
+flake8
+black
+pytest
+pytz
