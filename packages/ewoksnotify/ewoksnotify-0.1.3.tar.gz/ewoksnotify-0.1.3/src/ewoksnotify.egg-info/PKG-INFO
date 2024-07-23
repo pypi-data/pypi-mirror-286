@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ewoksnotify
+Version: 0.1.3
+Summary: Ewoks common notification tools
+Home-page: https://gitlab.esrf.fr/workflow/ewoks/ewoksnotify/
+Author: ESRF
+Author-email: henri.payno@esrf.fr
+License: MIT
+Project-URL: Source, https://gitlab.esrf.fr/workflow/ewoks/ewoksnotify/
+Project-URL: Documentation, https://ewoksnotify.readthedocs.io/
+Project-URL: Tracker, https://gitlab.esrf.fr/workflow/ewoks/ewoksnotify/issues/
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: base
+Provides-Extra: icat
+Provides-Extra: full
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: orange
+License-File: LICENSE.md
+
+# ewoksnotify
+
+Project to group some ewoks tasks that can be of general interest.
