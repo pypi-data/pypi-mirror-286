@@ -1,0 +1,197 @@
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = ['setuptools >= 64.0.0']
+
+[project]
+authors = [
+  {email = 'victor.ferat@unige.ch', name = 'Victor Férat'},
+]
+classifiers = [
+  'Intended Audience :: Developers',
+  'Intended Audience :: Science/Research',
+  'License :: OSI Approved :: BSD License',
+  'Natural Language :: English',
+  'Operating System :: MacOS',
+  'Operating System :: Microsoft :: Windows',
+  'Operating System :: Unix',
+  'Programming Language :: Python :: 3 :: Only',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.9',
+  'Topic :: Scientific/Engineering',
+]
+dependencies = [
+  'decorator',
+  'jinja2',
+  'joblib',
+  'matplotlib>=3.5',
+  'mne>=1.2',
+  'numpy>=1.21',
+  'packaging',
+  'pooch',
+  'psutil',
+  'scikit-learn',
+  'scipy',
+]
+description = 'A simple open source Python package for EEG microstate segmentation.'
+keywords = [
+  'brain',
+  'eeg',
+  'microstates',
+  'neuroimaging',
+  'neuroscience',
+  'python',
+]
+license = {file = 'LICENSE'}
+maintainers = [
+  {email = 'mathieu.scheltienne@fcbg.ch', name = 'Mathieu Scheltienne'},
+  {email = 'victor.ferat@unige.ch', name = 'Victor Férat'},
+]
+name = 'pycrostates'
+readme = 'README.md'
+requires-python = '>=3.9'
+version = '0.6.0'
+
+[project.optional-dependencies]
+all = [
+  'pycrostates[build]',
+  'pycrostates[docs]',
+  'pycrostates[style]',
+  'pycrostates[test]',
+]
+build = ['build', 'twine']
+docs = [
+  'intersphinx_registry',
+  'memory-profiler',
+  'numpydoc',
+  'pandas',
+  'pydata-sphinx-theme',
+  'pymatreader',
+  'seaborn',
+  'sphinx',
+  'sphinx-copybutton',
+  'sphinx-design',
+  'sphinx-issues',
+  'sphinx_gallery',
+  'sphinxcontrib-bibtex',
+]
+stubs = [
+  'isort',
+  'mypy',
+  'ruff>=0.1.8',
+]
+style = [
+  'bibclean',
+  'codespell[toml]>=2.2.4',
+  'isort',
+  'pydocstyle[toml]',
+  'ruff>=0.1.8',
+  'toml-sort',
+  'yamllint',
+]
+test = [
+  'pymatreader',
+  'pytest-cov',
+  'pytest>=8.0',
+]
+
+[project.scripts]
+pycrostates-sys_info = 'pycrostates.commands.sys_info:run'
+
+[project.urls]
+documentation = 'https://pycrostates.readthedocs.io/en/master/'
+homepage = 'https://pycrostates.readthedocs.io/en/master/'
+source = 'https://github.com/vferat/pycrostates'
+tracker = 'https://github.com/vferat/pycrostates/issues'
+
+[tool.codespell]
+check-filenames = true
+check-hidden = true
+ignore-words = '.codespellignore'
+skip = 'build,.git,.mypy_cache,.pytest_cache,paper/*'
+
+[tool.coverage.report]
+exclude_lines = [
+  'if __name__ == .__main__.:',
+  'if TYPE_CHECKING:',
+  'pragma: no cover',
+]
+precision = 2
+
+[tool.coverage.run]
+branch = true
+cover_pylib = false
+omit = [
+  '**/__init__.py',
+  '**/pycrostates/_version.py',
+  '**/pycrostates/conftest.py',
+  '**/pycrostates/utils/_fixes.py',
+  '**/tests/**',
+]
+
+[tool.isort]
+extend_skip_glob = [
+  'docs/*',
+  'paper/',
+  'pycrostates/html_templates/repr/*',
+  'setup.py',
+  'tutorials/*',
+]
+line_length = 88
+multi_line_output = 3
+profile = 'black'
+py_version = 39
+
+[tool.pydocstyle]
+add_ignore = 'D100,D104,D107'
+convention = 'numpy'
+ignore-decorators = '(copy_doc|property|.*setter|.*getter|pyqtSlot|Slot)'
+match = '^(?!setup|__init__|test_|_typing).*\.py'
+match-dir = '^pycrostates.*'
+
+[tool.pytest.ini_options]
+addopts = '--durations 20 --junit-xml=junit-results.xml -v --color=yes'
+junit_family = 'xunit2'
+minversion = '8.0'
+
+[tool.ruff]
+extend-exclude = [
+  'doc',
+  'setup.py',
+]
+line-length = 88
+target-version = 'py39'
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+ignore = []
+select = ['A', 'B', 'E', 'F', 'UP', 'W']
+
+[tool.ruff.lint.per-file-ignores]
+'*' = [
+  'B904', # 'Within an except clause, raise exceptions with raise ... from ...'
+  'UP007', # 'Use `X | Y` for type annotations', requires python 3.10
+]
+'*.pyi' = ['E501']
+'*/cluster/_base.pyi' = ['B006']
+'*/segmentation/_base.pyi' = ['F811']
+'__init__.py' = ['F401']
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+'pycrostates.datasets' = ['**/*.txt']
+'pycrostates.html_templates' = ['repr/*.jinja']
+
+[tool.setuptools.packages.find]
+exclude = ['pycrostates*tests']
+include = ['pycrostates*']
+
+[tool.tomlsort]
+all = true
+ignore_case = true
+trailing_comma_inline_array = true
