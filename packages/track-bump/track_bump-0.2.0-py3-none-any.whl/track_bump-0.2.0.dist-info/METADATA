@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: track-bump
+Version: 0.2.0
+Summary: 
+Author: Julien Brayere
+Author-email: julien.brayere@tracktor.fr
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: piou (>=0.14.2,<0.15.0)
+Description-Content-Type: text/markdown
+
+# Track-bump 
+
+
+Utility library to bump the version / tags or a project repository
+following the following pattern:
+
+![CI](./static/ci.png)
+
+# How to use
+
+
