@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: metatrader-sockets-client
+Version: 0.0.1
+Summary: Client SDK of MetaTrader Sockets API
+Home-page: https://github.com/FortesenseLabs/metatrader-terminal
+Download-URL: https://github.com/FortesenseLabs/metatrader-terminal/archive/refs/tags/v0.0.1.tar.gz
+Author: Fortesense Labs
+Author-email: fortesenselabs@gmail.com
+License: GPL-3.0
+Project-URL: Bug Reports, https://github.com/FortesenseLabs/metatrader-terminal/issues
+Project-URL: Source, https://github.com/FortesenseLabs/metatrader-terminal
+Project-URL: Documentation, https://github.com/FortesenseLabs/metatrader-terminal/docs
+Keywords: metatrader,api,socket-io,mt5,mt4,websockets,mt5-ea,f-api,historical-data,financial-data,stocks,funds,etfs,indices,currency crosses,bonds,commodities,crypto currencies,synthetic instruments,trading,investment,portfolio,backtesting,quantitative analysis
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: colorlog
+Requires-Dist: pydantic==2.8.0
+Requires-Dist: asyncio==3.4.3
+Requires-Dist: aiohttp==3.9.5
+Requires-Dist: aiofiles==24.1.0
+Requires-Dist: python-socketio==5.11.3
+
+# MetaTrader Sockets API Client
+
+Client SDK of MetaTrader Sockets API
+
+## Download
+
+```bash
+git clone https://github.com/FortesenseLabs/metatrader-terminal.git
+cd metatrader-terminal
+```
+
+## Install
+
+### Optional: use a virtual Python environment such as `venv`
+
+```bash
+python3 -m venv .venv # Use alternative venv manager if desired
+source .venv/bin/activate
+```
+
+```bash
+pip install --upgrade pip
+pip install -e .
+```
