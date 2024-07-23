@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: xxpaper
+Version: 1.2.post2
+Summary: Tools for generating printable files for 18xx games.
+Home-page: https://github.com/clearclaw/cfgstack
+License: GPL-3.0-only
+Author: J C Lawrence
+Author-email: claw@kanga.nu
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cfgstack (>=0.2.post1,<0.3)
+Requires-Dist: clip-py (>=0.3.2,<0.4.0)
+Requires-Dist: findfile-path (>=0.2.post1,<0.3)
+Requires-Dist: logtool (>=0.4.post1,<0.5)
+Requires-Dist: path (>=16.14.0,<17.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: raven (>=6.10.0,<7.0.0)
+Requires-Dist: reportlab (>=4.2.2,<5.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/clearclaw/cfgstack
+Description-Content-Type: text/x-rst
+
+XXPaper
+=======
+
+Installation:
+
+	     pip install xxpaper
+
+XXPaper generates artfiles representing charters, privates,
+shares, station markers, trains and (linear) stock markets (2D stock
+markets coming later) as defined by a configuration passed on the
+command line.  All art is made using a format which is friendly to
+die-cutting.
+
+This is now version 1.x of XXPaper.  It is not backward compatible
+with v0.x versions of XXPaper.  Many things are different.  Some of
+them are better.  Maybe a few things are worse.  Sample configuration
+files can be found in the "samples" directory of the source tree.
+Their number will grow over time.
+
+Note: XXPaper is now a Python3 project.  It may still work under
+Python 2, but that is neither tested or expected.
+
+-- JCL
+
