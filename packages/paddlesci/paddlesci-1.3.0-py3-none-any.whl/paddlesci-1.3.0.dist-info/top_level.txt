@@ -1,0 +1,4 @@
+competition
+deploy
+docker
+ppsci
