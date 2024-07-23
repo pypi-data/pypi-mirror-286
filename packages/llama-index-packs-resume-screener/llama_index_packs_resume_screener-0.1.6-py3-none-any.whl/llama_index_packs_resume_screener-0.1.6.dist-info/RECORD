@@ -1,0 +1,5 @@
+llama_index/packs/resume_screener/__init__.py,sha256=Wg_CF9uUDoU3CU5iROPW6N8kMtfPayRHbGgvCfhBopA,104
+llama_index/packs/resume_screener/base.py,sha256=FZOOSpsHNG8LvaYHNYH2zHpeIbk2NtWUwBbzfX_d0Kc,2799
+llama_index_packs_resume_screener-0.1.6.dist-info/METADATA,sha256=90wWNZfuHXZqGGqeJN0jhlEURL1QtCNcylGPXy0RRtw,2861
+llama_index_packs_resume_screener-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_packs_resume_screener-0.1.6.dist-info/RECORD,,
