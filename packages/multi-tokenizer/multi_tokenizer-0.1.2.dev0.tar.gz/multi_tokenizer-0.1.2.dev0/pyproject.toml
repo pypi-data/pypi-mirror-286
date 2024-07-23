@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "multi-tokenizer"
+version = "0.1.2-dev"
+description = ""
+authors = ["chandralegend <irugalbandarachandra@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tokenizers = "^0.19.1"
+lingua-language-detector = "^2.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pytest-xdist = "^3.6.1"
+pre-commit = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
