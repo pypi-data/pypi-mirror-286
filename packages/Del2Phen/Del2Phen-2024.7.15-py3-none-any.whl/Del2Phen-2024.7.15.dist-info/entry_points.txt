@@ -1,0 +1,2 @@
+[console_scripts]
+del2phen = del2phen.analysis.__main__:main
