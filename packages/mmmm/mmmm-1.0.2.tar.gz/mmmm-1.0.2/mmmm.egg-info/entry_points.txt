@@ -1,0 +1,3 @@
+[console_scripts]
+mmmm = mmmm._main:_main
+
