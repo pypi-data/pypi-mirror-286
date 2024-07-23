@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+dataprob
+
+[test]
+coverage
+flake8
+pytest
+genbadge
