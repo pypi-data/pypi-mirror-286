@@ -1,0 +1,2 @@
+[console_scripts]
+feriados-municipios = feriados_municipios.main:main
