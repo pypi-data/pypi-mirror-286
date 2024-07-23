@@ -1,0 +1,10 @@
+README.md
+setup.py
+abstra_connectors/__init__.py
+abstra_connectors/monday.py
+abstra_connectors/monday_test.py
+abstra_connectors.egg-info/PKG-INFO
+abstra_connectors.egg-info/SOURCES.txt
+abstra_connectors.egg-info/dependency_links.txt
+abstra_connectors.egg-info/requires.txt
+abstra_connectors.egg-info/top_level.txt
