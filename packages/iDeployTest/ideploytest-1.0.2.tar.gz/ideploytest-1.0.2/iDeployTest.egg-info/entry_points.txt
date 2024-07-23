@@ -1,0 +1,2 @@
+[console_scripts]
+iDeployTest = iDeployTest.main:initialize_ui

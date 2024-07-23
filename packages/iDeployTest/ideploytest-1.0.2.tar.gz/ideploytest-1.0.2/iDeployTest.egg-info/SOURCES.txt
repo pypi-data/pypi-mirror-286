@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+iDeployTest/init.py
+iDeployTest/main.py
+iDeployTest.egg-info/PKG-INFO
+iDeployTest.egg-info/SOURCES.txt
+iDeployTest.egg-info/dependency_links.txt
+iDeployTest.egg-info/entry_points.txt
+iDeployTest.egg-info/not-zip-safe
+iDeployTest.egg-info/requires.txt
+iDeployTest.egg-info/top_level.txt
