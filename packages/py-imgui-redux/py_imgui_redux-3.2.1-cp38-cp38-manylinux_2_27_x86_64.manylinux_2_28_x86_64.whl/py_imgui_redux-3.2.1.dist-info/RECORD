@@ -1,0 +1,10 @@
+imgui.cpython-38-x86_64-linux-gnu.so,sha256=7E45c1JaLHjIRUtc7s9m66_3ozFo3b1DGJUKhAD7NbI,7134104
+imgui/__init__.pyi,sha256=gdNOT78UNTsHwXxL8ETRDXztNA-KCUoIw2V7QzM9bLo,108737
+imgui/glfw/__init__.pyi,sha256=L5UBLPWxhp9UGG8u42vD3vwh5kQnHNQljQZ7Ezmpewk,24453
+imgui/imnodes/__init__.pyi,sha256=DDkUWETxgrxAwu1Pz0mnRsviFB9VmMhTvg-kOCD6GAg,13328
+imgui/implot/__init__.pyi,sha256=lFDo8Q6BsVaET7c6y4zdAvqpExvSd7tOMPy91L62uZs,38023
+py_imgui_redux-3.2.1.dist-info/LICENSE,sha256=fDrCLKI_lLbO88WTSx4QGbbOEZrWhcw0TBLOQxkydX4,1070
+py_imgui_redux-3.2.1.dist-info/METADATA,sha256=JvEOmEJaxwgG9UT9g90Nv-2ozzHidPAIyV7ZBPRn-ck,7799
+py_imgui_redux-3.2.1.dist-info/WHEEL,sha256=MYRdEmYw_s0wtmsv3CWkq_uW2nAhTr68GJPYpj89L6Q,148
+py_imgui_redux-3.2.1.dist-info/top_level.txt,sha256=15onHRujL1_V625VUUaELFCxh9bOaAi5IzpVBJIPyHI,6
+py_imgui_redux-3.2.1.dist-info/RECORD,,
