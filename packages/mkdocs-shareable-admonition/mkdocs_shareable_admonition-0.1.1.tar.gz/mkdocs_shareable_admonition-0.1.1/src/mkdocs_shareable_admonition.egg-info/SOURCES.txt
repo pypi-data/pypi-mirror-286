@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/mkdocs_shareable_admonition.egg-info/PKG-INFO
+src/mkdocs_shareable_admonition.egg-info/SOURCES.txt
+src/mkdocs_shareable_admonition.egg-info/dependency_links.txt
+src/mkdocs_shareable_admonition.egg-info/entry_points.txt
+src/mkdocs_shareable_admonition.egg-info/requires.txt
+src/mkdocs_shareable_admonition.egg-info/top_level.txt
+src/templates/admonition_template.html
