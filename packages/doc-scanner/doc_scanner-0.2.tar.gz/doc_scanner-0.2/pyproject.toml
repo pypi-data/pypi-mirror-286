@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doc-scanner"
+version = "0.2"
+description = "A script to scan HTML documents for forbidden phrases stored in a CSV."
+authors = [
+  { name = "Marcin Walczak" }
+]
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "beautifulsoup4",
+  "requests",
+  "pandas"
+]
+
+[project.scripts]
+docscanner = "docscanner.docscanner:main"
+
+[tool.setuptools]
+packages = ["docscanner"]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.package-data]
+"docscanner" = ["data/Style Guide Phrases.csv"]
