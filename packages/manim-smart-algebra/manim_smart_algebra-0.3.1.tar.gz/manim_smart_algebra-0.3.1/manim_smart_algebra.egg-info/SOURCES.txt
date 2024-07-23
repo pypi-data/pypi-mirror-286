@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+manim_smart_algebra/__init__.py
+manim_smart_algebra/actions.py
+manim_smart_algebra/expressions.py
+manim_smart_algebra/nicknames.py
+manim_smart_algebra/utils.py
+manim_smart_algebra.egg-info/PKG-INFO
+manim_smart_algebra.egg-info/SOURCES.txt
+manim_smart_algebra.egg-info/dependency_links.txt
+manim_smart_algebra.egg-info/requires.txt
+manim_smart_algebra.egg-info/top_level.txt
