@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+src/jgo/__init__.py
+src/jgo/__main__.py
+src/jgo/jgo.py
+src/jgo/util.py
+src/jgo.egg-info/PKG-INFO
+src/jgo.egg-info/SOURCES.txt
+src/jgo.egg-info/dependency_links.txt
+src/jgo.egg-info/entry_points.txt
+src/jgo.egg-info/requires.txt
+src/jgo.egg-info/top_level.txt
+tests/test_managed.py
+tests/test_parsington.py
+tests/test_run.py
