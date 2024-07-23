@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Agent99
+Version: 0.0.1
+Summary: Chat and Agent Project
+Home-page: https://github.com/GaryOcean428/Agent99
+Author: Braden James Lang
+Author-email: braden.lang77@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package 
+    This is a simple example package. You can use
+    [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+    to write your content.
