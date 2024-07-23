@@ -1,0 +1,4 @@
+[dashai.plugins]
+bow = dashai_test_text_classification_plugin.bow_text_classification_model:BagOfWordsTextClassificationModel
+textClassificationModel = dashai_test_text_classification_plugin.text_classification_model:TextClassificationModel
+textClassificationTask = dashai_test_text_classification_plugin.text_classification_task:TextClassificationTask
