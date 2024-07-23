@@ -1,0 +1,13 @@
+google-cloud-aiplatform
+google-cloud-storage
+pandas
+numpy
+xgboost
+scikit-learn
+statsmodels
+
+[dev]
+build
+twine
+pip-tools
+bumpver
