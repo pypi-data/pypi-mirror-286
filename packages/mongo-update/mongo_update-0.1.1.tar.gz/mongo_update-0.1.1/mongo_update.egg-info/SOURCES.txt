@@ -1,0 +1,9 @@
+README.txt
+license.txt
+setup.py
+mongo_update/__init__.py
+mongo_update/mongo_update.py
+mongo_update.egg-info/PKG-INFO
+mongo_update.egg-info/SOURCES.txt
+mongo_update.egg-info/dependency_links.txt
+mongo_update.egg-info/top_level.txt
