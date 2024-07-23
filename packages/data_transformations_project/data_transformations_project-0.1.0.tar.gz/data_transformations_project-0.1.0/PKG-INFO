@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: data_transformations_project
+Version: 0.1.0
+Summary: A library for common data transformations
+License: MIT
+Author: pratik_thakur
+Author-email: pratikthakur08@yahoo.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.21,<2.0)
