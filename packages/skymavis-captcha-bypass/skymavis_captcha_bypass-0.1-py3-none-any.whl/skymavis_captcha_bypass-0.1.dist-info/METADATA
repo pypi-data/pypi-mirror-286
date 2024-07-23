@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: skymavis_captcha_bypass
+Version: 0.1
+Summary: Module Bypass Sky Mavis Security Verification
+Author: Phuc Vo
+Author-email: phuc.vo@skymavis.com
+Description-Content-Type: text/markdown
+Requires-Dist: numpy ==2.0.1
+Requires-Dist: opencv-python ==4.10.0.84
+Requires-Dist: opencv-python-headless ==4.10.0.84
+Requires-Dist: Pillow ==10.4.0
+Requires-Dist: selenium ==4.23.0
+Requires-Dist: setuptools ==71.1.0
+
