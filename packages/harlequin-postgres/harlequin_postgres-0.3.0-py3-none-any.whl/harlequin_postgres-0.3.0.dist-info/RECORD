@@ -1,0 +1,11 @@
+harlequin_postgres/__init__.py,sha256=ZUrCa_NVFJRbvxKXuzBhW2VS1RlR4hTJFL210L0r-x8,104
+harlequin_postgres/adapter.py,sha256=DYwUzsSnA-LkasGGT6oKLg2qNO--Fp3PjgCFooBMVR0,13827
+harlequin_postgres/cli_options.py,sha256=gblCHw4a8KhCdUxvWapJWoC8Sw9_iu4IkR_NFD0anDI,4281
+harlequin_postgres/completions.py,sha256=5tBeS44bVHNtcUKiJwa5F4m49h9ZNzQPz-rNxZxW4sM,2371
+harlequin_postgres/keywords.tsv,sha256=M2RalObpueTjNFgjgsqVLZqv8yZJLkIi68deFsvmpdI,36042
+harlequin_postgres/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harlequin_postgres-0.3.0.dist-info/LICENSE,sha256=Wdf1mXEX48JTe3Unchs3u8M7sUOB6v0fGsMI5WP7bB4,1068
+harlequin_postgres-0.3.0.dist-info/METADATA,sha256=Szvzu-PSMoCXuYUrwAgJJAHEUH58jktbK-5_L0WoJAU,2337
+harlequin_postgres-0.3.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+harlequin_postgres-0.3.0.dist-info/entry_points.txt,sha256=wGOeVVp9meAYkVPIny5_dApH0h6Wg3ktne7TlRNnxyI,74
+harlequin_postgres-0.3.0.dist-info/RECORD,,
