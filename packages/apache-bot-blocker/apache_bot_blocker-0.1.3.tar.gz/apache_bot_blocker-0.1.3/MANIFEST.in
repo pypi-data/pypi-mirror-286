@@ -1,0 +1,5 @@
+include *.txt
+include *.ini
+include LICENSE
+include README.md
+recursive-include apache_bot_blocker *
