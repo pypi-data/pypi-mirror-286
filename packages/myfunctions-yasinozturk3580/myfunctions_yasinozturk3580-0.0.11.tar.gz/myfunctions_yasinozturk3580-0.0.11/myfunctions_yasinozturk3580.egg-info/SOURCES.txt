@@ -1,0 +1,8 @@
+README.md
+setup.py
+myfunctions_yasinozturk3580/__init__.py
+myfunctions_yasinozturk3580/math.py
+myfunctions_yasinozturk3580.egg-info/PKG-INFO
+myfunctions_yasinozturk3580.egg-info/SOURCES.txt
+myfunctions_yasinozturk3580.egg-info/dependency_links.txt
+myfunctions_yasinozturk3580.egg-info/top_level.txt
