@@ -1,0 +1,7 @@
+README.md
+setup.py
+SuckSCrypt.egg-info/PKG-INFO
+SuckSCrypt.egg-info/SOURCES.txt
+SuckSCrypt.egg-info/dependency_links.txt
+SuckSCrypt.egg-info/requires.txt
+SuckSCrypt.egg-info/top_level.txt
