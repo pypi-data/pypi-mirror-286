@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: mymath_module
+Version: 0.2.1
+Summary: A custom math operations package
+Home-page: https://github.com/xing24xing/MyMathModule
+Author: Khushi Pandey
+Author-email: khushipandey260304.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+# mymath_custome
+
+`mymath_custome` is a custom Python module that provides a variety of mathematical functions, including arithmetic operations, factorials, prime number checks, and more.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install mymath_custome
+=======
+# MyMathModule
+>>>>>>> b49b7df4997d2aa360320a77bfa6cff29849838f
+=======
+# MyMathModule
+>>>>>>> 365ae124a6209a86fd8d0e65f4f66334d46cfca1
