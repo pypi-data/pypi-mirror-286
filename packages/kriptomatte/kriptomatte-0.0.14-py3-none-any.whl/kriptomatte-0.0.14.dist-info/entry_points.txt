@@ -1,0 +1,2 @@
+[console_scripts]
+kriptomatte = kriptomatte.kripto_decode:cli
