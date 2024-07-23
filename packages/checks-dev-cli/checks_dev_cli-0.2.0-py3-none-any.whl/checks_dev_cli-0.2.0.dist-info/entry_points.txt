@@ -1,0 +1,3 @@
+[console_scripts]
+checks=checks_dev_cli.cli:cli
+
