@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ejabberd-extauth
+Version: 1.0.0
+Summary: Library for writing ejabberd external auth scripts in Python
+Home-page: https://codeberg.org/Natureshadow/ejabberd-extauth
+License: MIT
+Keywords: ejabberd,xmpp
+Author: Dominik George
+Author-email: nik@naturalnet.de
+Requires-Python: >=3.11,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet :: XMPP
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Project-URL: Repository, https://codeberg.org/Natureshadow/ejabberd-extauth
+Description-Content-Type: text/markdown
+
+# ejabberd-extauth
+
+ejabberd-extauth is a library for writing scripts that support
+[ejabberd's external authentication mechanism](https://docs.ejabberd.im/developer/guide/#external-authentication).
+
+## How to implement an extauth script
+
+While documentation is still missing, you can find examples here:
+
+* [extauth script for OIDC Password Grant Flow](https://codeberg.org/Natureshadow/ejabberd-extauth-oidc-password)
+
