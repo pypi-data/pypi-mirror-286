@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/albumsPicker/__init__.py
+src/albumsPicker/album.py
+src/albumsPicker/albums.json
+src/albumsPicker/albums_picker.py
+src/albumsPicker/qobuz_essential_discography.json
+src/albums_picker.egg-info/PKG-INFO
+src/albums_picker.egg-info/SOURCES.txt
+src/albums_picker.egg-info/dependency_links.txt
+src/albums_picker.egg-info/entry_points.txt
+src/albums_picker.egg-info/requires.txt
+src/albums_picker.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+include src/albumsPicker/albums.json
+include src/albumsPicker/qobuz_essential_discography.json
