@@ -1,0 +1,7 @@
+action_1_template:
+  -
+    action: get the time
+    expected: the result is a timestamp
+  -
+    action: get the date
+    expected: the result is a date

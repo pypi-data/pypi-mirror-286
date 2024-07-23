@@ -1,0 +1,32 @@
+{
+  "waking_up_word": "computer",
+  "waking_up_sound": true,
+  "deactivate_sound": true,
+  "rules": "rules.yaml",
+  "index": "indices.yaml",
+  "cache_filename": "knowledge_cache",
+  "prompt_filename": "main.prompt",
+  "functions": "functions.py",
+  "max_recursion": 2,
+  "frontend_port": 8090,
+  "llm_model": {
+    "model_host": "localhost",
+    "model_port": 8080,
+    "temperature": 0.4
+  },
+  "listener_model": {
+    "model_host": "localhost",
+    "model_port": 8080,
+    "listener_hotword_logp": -8,
+    "listener_volume_threshold": 0.6,
+    "listener_silence_timeout": 0.7
+  },
+  "speaker_model": {
+    "model_host": "localhost",
+    "model_port": 8080
+  },
+  "text_embedding_model": {
+    "model_host": "localhost",
+    "model_port": 8080
+  }
+}
