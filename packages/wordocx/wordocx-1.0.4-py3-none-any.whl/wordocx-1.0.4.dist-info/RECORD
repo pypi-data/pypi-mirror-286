@@ -1,0 +1,11 @@
+wordocx/__init__.py,sha256=e9e_YsvBkE4jBymWkfJcXtIun5OJdTFcmtyZfzhaeqI,198
+wordocx/addComment.py,sha256=tqe3mSADYBCVXR2Mg8F8mvv-8VTvbkg5pH72mVF6cXk,1881
+wordocx/getComments.py,sha256=fuFeLM8Z8sr0jjZSEfhfK61OxfxMsbYWU-8t_dWawmE,622
+wordocx/parsedocx.py,sha256=K75o31w_YUcd_uKXFM6JX5P3uhFXnGG0igSJM_nBIpg,2097
+wordocx/parsejson.py,sha256=n-HfU8k-1ZLG_NOIoqrk8erPuNZyE7W4WE18u1ra2n4,2111
+wordocx/trackChanges.py,sha256=bs0BmssSRtKSUz78tjleEhHSpnPwTkF4aWqc3IYeOYk,471
+wordocx-1.0.4.dist-info/LICENSE,sha256=50gS-EUudL6zgSye4kmYcv70ToWwvyubtA7a5IO1-lk,1070
+wordocx-1.0.4.dist-info/METADATA,sha256=EAiF0GVHye9whn2lS5J89smutRu3TY_V4oKQihVmQyY,891
+wordocx-1.0.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+wordocx-1.0.4.dist-info/top_level.txt,sha256=riL87PckwGSEvbC-SXfDcHviKYFOvy9GjYruhwB5eAU,8
+wordocx-1.0.4.dist-info/RECORD,,
