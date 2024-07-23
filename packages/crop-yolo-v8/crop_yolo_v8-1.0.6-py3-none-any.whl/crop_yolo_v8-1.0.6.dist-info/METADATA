@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: crop-yolo-v8
+Version: 1.0.6
+Summary: put yolov8m/n/x.pt in ~/.yolov8 and run
+Author: tadeasf
+Author-email: taddy.fort@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Requires-Dist: ultralytics (>=8.2.61,<9.0.0)
+Description-Content-Type: text/markdown
+
+
