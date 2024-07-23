@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-project-reporting
+Version: 16.0.20240722.0
+Summary: Meta package for oca-project-reporting Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-project-task-report <16.1dev,>=16.0dev
+
+UNKNOWN
