@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mongo_update
+Version: 0.1.2
+Author: xigua, 
+License-File: license.txt
+
+
+      mongodb数据上传, 下载。
+      
