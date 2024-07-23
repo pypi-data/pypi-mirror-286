@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+shareable_admonition = shareable_admonition:ShareableAdmonitionPlugin
