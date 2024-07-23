@@ -1,0 +1,8 @@
+
+[dev]
+asv==0.6.3
+jupyter
+pre-commit
+pytest
+pytest-cov
+ruff
