@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pgtui"
+authors = [{ name="Ivan Habunek", email="ivan@habunek.com" }]
+description = "PostgreSQL terminal user interface"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.11"
+dynamic = ["version"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+dependencies = [
+    "click",
+    "pgcli",
+    "psycopg[binary]",
+    "sqlparse",
+    "textual[syntax]>=0.71.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools_scm]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "flake8",
+    "mypy",
+    "pyright",
+    "textual-dev",
+    "twine",
+    "vermin",
+]
+
+[project.urls]
+"Homepage" = "https://codeberg.org/ihabunek/pgtui"
+
+[project.scripts]
+pgtui = "pgtui.cli:main"
+
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "strict"
+
+[tool.ruff]
+line-length = 100
