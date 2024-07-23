@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: awhd8uwgadhuyawd
+Version: 0.1.0
+Summary: Add your description here
+Author-email: "2.30am" <111672334+am230@users.noreply.github.com>
+Requires-Python: >=3.8
+Requires-Dist: click>=8.1.7
+Requires-Dist: pytest>=8.3.1
+Description-Content-Type: text/markdown
+
+# templatepy
+
+Describe your project here.
