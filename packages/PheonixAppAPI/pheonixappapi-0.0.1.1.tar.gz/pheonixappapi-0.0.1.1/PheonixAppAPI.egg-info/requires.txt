@@ -1,0 +1,10 @@
+PyQt5
+wikipedia
+xlsxwriter
+requests
+qdarkstyle
+validate_email
+opencv-python
+zlib
+pyttsx3
+speech_recognition
