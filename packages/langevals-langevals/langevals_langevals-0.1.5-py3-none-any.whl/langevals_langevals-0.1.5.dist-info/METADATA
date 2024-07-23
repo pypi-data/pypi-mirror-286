@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: langevals-langevals
+Version: 0.1.5
+Summary: LangEvals home-made evaluators.
+License: MIT
+Author: Rogerio Chaves
+Author-email: rogerio@langwatch.ai
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dspy-ai (>=2.4.9,<3.0.0)
+Requires-Dist: langevals-core (>=0.1.5,<0.2.0)
+Requires-Dist: litellm (>=1.41.25,<2.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: openai (>=1.27.0)
