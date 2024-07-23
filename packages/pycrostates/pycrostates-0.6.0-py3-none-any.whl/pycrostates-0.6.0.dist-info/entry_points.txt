@@ -1,0 +1,2 @@
+[console_scripts]
+pycrostates-sys_info = pycrostates.commands.sys_info:run
