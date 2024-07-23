@@ -1,0 +1,10 @@
+numpy
+owslib
+geopandas
+requests
+
+[all]
+pyinpe[extra]
+
+[extra]
+pandas
