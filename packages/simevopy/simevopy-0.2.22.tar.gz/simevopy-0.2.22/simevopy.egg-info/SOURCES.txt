@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+simevopy.egg-info/PKG-INFO
+simevopy.egg-info/SOURCES.txt
+simevopy.egg-info/dependency_links.txt
+simevopy.egg-info/top_level.txt
