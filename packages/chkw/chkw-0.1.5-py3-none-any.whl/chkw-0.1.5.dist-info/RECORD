@@ -1,0 +1,10 @@
+chkw/__init__.py,sha256=Y51abKc77F5zEUtQyehUC9c1SaSy4h9fiTfZAsEbwa4,18
+chkw/cli.py,sha256=-RTY9kYL4LFnsgj4Si_i9L6Wxu21lwQ6maTJssj1WLc,1444
+chkw/evaluator/__init__.py,sha256=MCqpLf4gLlZcSFOuKnvE_V8NTbJVFSyMzULDTqCCZjw,2670
+chkw/tokenizer/__init__.py,sha256=p_YA9yEgpHL42WaDcU0yKR7yQGv-i-P6FIQncmJvW_E,985
+chkw/transcompiler/__init__.py,sha256=0RHZAvG9fQZfGOEjfaFyDMaXniFLoT2CV5pA9s8GCcI,529
+chkw-0.1.5.dist-info/METADATA,sha256=Inf_VzV1dsTj2Cmxcz4WL-jLsHGRHYjxbYXsxdrtRPY,70
+chkw-0.1.5.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+chkw-0.1.5.dist-info/entry_points.txt,sha256=yyqHUz2P0U6UCh-7zBm-U1JYVUEnlYg4F0MAAF-uJV0,38
+chkw-0.1.5.dist-info/top_level.txt,sha256=N9uaOnzRfnjYHWpmILQCeptuEtqBvBYyJXvidkvd0BA,5
+chkw-0.1.5.dist-info/RECORD,,
