@@ -1,0 +1,9 @@
+scrapemaster/__init__.py,sha256=mCBQOcOM-2JJmX85zpW_KH5lauX-M9pq2UyiYNp150c,42
+scrapemaster/core.py,sha256=Iczv3nY152xTlneuJvRnMzL4o_6rD-iMXxf_W_6GVPo,12281
+scrapemaster/exceptions.py,sha256=HpyhAY_Jr-Bl_HfLAvQbtJKcC8dP23G8xFhyz5-I48c,214
+scrapemaster/utils.py,sha256=PP0hPtxyPABNuB-F8gavoA8AWtEAnAbzseSAVKvsF8I,105
+scrapemaster-0.1.4.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+scrapemaster-0.1.4.dist-info/METADATA,sha256=7k_5F8pVZulIhKvLl_lBRs4wo6PurNE0DxFKBrzHqnc,2264
+scrapemaster-0.1.4.dist-info/WHEEL,sha256=y4mX-SOX4fYIkonsAGA5N0Oy-8_gI4FXw5HNI1xqvWg,91
+scrapemaster-0.1.4.dist-info/top_level.txt,sha256=sJC5j7fHJaLbE_CYl4nyt3whKKi1mLaNaWjQUDou1Q4,13
+scrapemaster-0.1.4.dist-info/RECORD,,
