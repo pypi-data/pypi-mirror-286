@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tiana-sis
+Version: 0.0.1.1
+Summary: TIANA: Tool for Inference of Anomalies found by a Neural network Algorithm
+Home-page: https://github.com/stelais/tiana
+Author: Stela IS, TIANA authors
+Author-email: stela.ishitanisilva@nasa.gov
+License: MIT
+Keywords: Astronomy,Microlensing,Science,Neural Networks
+Platform: Mac OS 14.5
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.2
+Requires-Dist: pandas>=2.1.4
+Requires-Dist: matplotlib>=3.8.3
+Requires-Dist: bokeh>=3.1.0
+Requires-Dist: scikit-learn>=1.4.1
+Requires-Dist: tqdm>=4.66.1
