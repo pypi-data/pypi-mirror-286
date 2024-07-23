@@ -1,0 +1,4 @@
+include VERSION
+include requirements.txt
+include **/_src/_*.py
+include **/_src/_*.ipynb
