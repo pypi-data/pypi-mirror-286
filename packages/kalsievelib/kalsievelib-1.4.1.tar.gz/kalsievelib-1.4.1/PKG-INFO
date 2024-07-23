@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: kalsievelib
+Version: 1.4.1
+Summary: Client-side SIEVE library
+Home-page: https://github.com/amonak/kalsievelib
+Author: Alphamonak Solutions
+Author-email: amonak@alphamonak.com
+License: MIT
+Keywords: sieve,managesieve,parser,client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Email :: Filters
+Requires-Python: >=3.7
+License-File: COPYING
+
+kalsievelib
+===========
+
+Client-side kalsievelib
+
+
+
