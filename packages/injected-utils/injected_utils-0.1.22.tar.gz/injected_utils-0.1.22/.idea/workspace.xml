@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75143575-a48d-4a0e-b304-68682145d958" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/injected_utils/pickling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/injected_utils/progress.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="cqkfc5kg" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2Slye3vHYwkt9LhAfsjVioUiO1S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/s22625/repos/injected_utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pyproject.toml.poetry" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75143575-a48d-4a0e-b304-68682145d958" name="Changes" comment="" />
+      <created>1689735553719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689735553719</updated>
+      <workItem from="1689735555043" duration="8000" />
+      <workItem from="1689736958037" duration="677000" />
+      <workItem from="1705981872326" duration="1832000" />
+      <workItem from="1706083907597" duration="1815000" />
+      <workItem from="1706167496360" duration="1211000" />
+      <workItem from="1712111212195" duration="3423000" />
+      <workItem from="1712131805805" duration="235000" />
+      <workItem from="1712132077038" duration="3664000" />
+      <workItem from="1713256760363" duration="592000" />
+      <workItem from="1715850800241" duration="1235000" />
+      <workItem from="1716531924426" duration="595000" />
+      <workItem from="1717127105520" duration="452000" />
+      <workItem from="1717127616560" duration="599000" />
+      <workItem from="1717377143376" duration="729000" />
+      <workItem from="1717393912382" duration="283000" />
+      <workItem from="1717394241876" duration="599000" />
+      <workItem from="1717396150626" duration="593000" />
+      <workItem from="1717492335313" duration="11000" />
+      <workItem from="1717731770153" duration="3537000" />
+      <workItem from="1718086828233" duration="1504000" />
+      <workItem from="1718161998325" duration="595000" />
+      <workItem from="1718248163982" duration="905000" />
+      <workItem from="1718251951228" duration="597000" />
+      <workItem from="1718597637209" duration="593000" />
+      <workItem from="1718779666143" duration="175000" />
+      <workItem from="1718938078315" duration="2231000" />
+      <workItem from="1719222854115" duration="595000" />
+      <workItem from="1719237559236" duration="594000" />
+      <workItem from="1719298876081" duration="593000" />
+      <workItem from="1719315384101" duration="590000" />
+      <workItem from="1719321920836" duration="593000" />
+      <workItem from="1719326439786" duration="595000" />
+      <workItem from="1719543780886" duration="594000" />
+      <workItem from="1719558791026" duration="3794000" />
+      <workItem from="1719810034051" duration="1716000" />
+      <workItem from="1720507114242" duration="1878000" />
+      <workItem from="1720780990560" duration="80000" />
+      <workItem from="1720871382163" duration="690000" />
+      <workItem from="1720875113299" duration="1075000" />
+      <workItem from="1721034870731" duration="1355000" />
+      <workItem from="1721314123481" duration="589000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
