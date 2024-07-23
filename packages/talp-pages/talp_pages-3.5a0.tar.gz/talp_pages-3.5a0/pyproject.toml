@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "talp-pages"
+version = "3.5a"
+description = "Command line tools to generate performance reports using the TALP module of DLB"
+authors = ["Valentin Seitz <valentin.seitz@bsc.es>"]
+maintainers = ["Valentin Seitz <valentin.seitz@bsc.es>"]
+readme = "README.md"
+license = "GPL-3.0-only"
+keywords = ["HPC", "Performance Analysis","Profiling","Continuous Performance Analysis"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: System :: Distributed Computing"
+]
+
+homepage = "https://pm.bsc.es/gitlab/dlb/dlb/"
+repository= "https://pm.bsc.es/gitlab/dlb/dlb/"
+include = [
+    "talp_pages/templates/*.jinja"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-gitlab = "^4.4.0"
+jinja2 = "^3.1.4"
+pandas = "^2.2.2"
+
+
+[tool.poetry.scripts]
+talp_add_to_db = 'talp_pages.talp_add_to_db:main'
+talp_report = 'talp_pages.talp_report:main'
+talp_badge = 'talp_pages.talp_badge:main'
+talp_report_ts = 'talp_pages.talp_report_ts:main'
+talp_pages = 'talp_pages.talp_pages:main'
+talp_download_artifacts_gitlab = 'talp_pages.download_artifacts_gitlab:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

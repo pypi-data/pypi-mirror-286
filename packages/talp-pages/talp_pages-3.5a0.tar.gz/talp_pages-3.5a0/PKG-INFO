@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: talp-pages
+Version: 3.5a0
+Summary: Command line tools to generate performance reports using the TALP module of DLB
+Home-page: https://pm.bsc.es/gitlab/dlb/dlb/
+License: GPL-3.0-only
+Keywords: HPC,Performance Analysis,Profiling,Continuous Performance Analysis
+Author: Valentin Seitz
+Author-email: valentin.seitz@bsc.es
+Maintainer: Valentin Seitz
+Maintainer-email: valentin.seitz@bsc.es
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: System :: Distributed Computing
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: python-gitlab (>=4.4.0,<5.0.0)
+Project-URL: Repository, https://pm.bsc.es/gitlab/dlb/dlb/
+Description-Content-Type: text/markdown
+
+![TALP LOGO](https://pm.bsc.es/gitlab/dlb/talp-pages/-/raw/add-v1/talp_dlb_logo.png){height=250px}
+
+# Talp Pages
+
+TALP Pages is a collection of Python scripts to postprocess the `json` outputs of [DLB TALP](https://pm.bsc.es/ftp/dlb/doc/user-guide/intro.html#talp-tracking-application-live-performance) and Gitlab pipeline snippets [that can be included](https://docs.gitlab.com/ee/ci/yaml/#include) in your project.
+This makes it easy to integrate TALP into your CI/CD setup and run Continous Benchmarking without having to code up your own solution.
+
+**We provide:**
+
+- talp_pages: Command line tool to generate static html pages
+- Artifact management: A easy way to use Gitlab Artifacts to generate time series data plots.
+- Reusable Jobs that easily integrate into a existing Gitlab CI enviroment
+
+## Use python package
+
+Talp-Pages is written in Python (3.9+). We rely on [poetry](https://python-poetry.org/) for packaging.
+To use, simply install via:
+
+```pip install talp-pages```
+
+From there you should have the following command-line tools available:
+
+- `talp_report`
+- `talp_add_to_db`
+- `talp_badge`
+- `talp_report_ts`
+- `talp_pages`
+- `talp_download_artifacts`
+
+## Use Gitlab Jobs
+
+In order to use the GitlabJobs to generate the Talp Pages automagically, just adopt the configuration showcased in the [example application](https://gitlab.com/valentin.seitz1/sample-application)
+
+We also provide documentation on the individual jobs:
+
+- [add-to-db](gitlab-templates/add-to-db/README.md)
+- [generate-html](gitlab-templates/generate-html/README.md)
+
+## License
+
+Talp-Pages is available under the General Public License v3.0.
+
