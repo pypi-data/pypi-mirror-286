@@ -1,0 +1,9 @@
+funpoetry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funpoetry/command.py,sha256=HUMUYCSQA4q-6hNXgITgeGkgGc8BuMnTt00BUvAamLE,455
+funpoetry/version/__init__.py,sha256=eFSXxMhT5emdw78F9EeROdeX4JXRSrpNcVfi3WEAxbo,98
+funpoetry/version/upgrade.py,sha256=aDIpOjqhu8c5IhCetrqvOMTOrvYq_1gh6_JOFgFMVOA,1633
+funpoetry-0.1.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+funpoetry-0.1.6.dist-info/METADATA,sha256=EwD2uAVprIXWlYcNGksGe9i_j60RGlhGIKhpXZLNNqI,420
+funpoetry-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+funpoetry-0.1.6.dist-info/entry_points.txt,sha256=CgIhlW-UbDchmLUuY1JjNDXToslp_4OuMEh7Ixa3Rg4,57
+funpoetry-0.1.6.dist-info/RECORD,,
