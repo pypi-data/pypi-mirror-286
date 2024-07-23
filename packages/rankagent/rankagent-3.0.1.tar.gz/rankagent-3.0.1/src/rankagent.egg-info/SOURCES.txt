@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/rankagent.egg-info/PKG-INFO
+src/rankagent.egg-info/SOURCES.txt
+src/rankagent.egg-info/dependency_links.txt
+src/rankagent.egg-info/entry_points.txt
+src/rankagent.egg-info/requires.txt
+src/rankagent.egg-info/top_level.txt
+src/sample/__init__.py
+src/sample/package_data.dat
+src/sample/simple.py
+tests/test_simple.py
