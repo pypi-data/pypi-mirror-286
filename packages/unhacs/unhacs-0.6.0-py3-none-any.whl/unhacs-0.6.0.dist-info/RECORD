@@ -1,0 +1,10 @@
+unhacs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unhacs/__main__.py,sha256=DgsNMkPa5D8dsRu92Rpvnzdvcl__-iTLL9_wg6kNU18,68
+unhacs/git.py,sha256=JAUtbLb1vzUB6Ipx3YnCsyk7Lf0kJ8RtyhuTZWsYq9c,2821
+unhacs/main.py,sha256=rW7dMowId4lkGPT_KxLtWgg5pKrnRKE8wVoNCRWA9Sw,10010
+unhacs/packages.py,sha256=EQXPRXzHKYoqwOGgvumfG5ff2SKMHBHjnrRwXaQpRPE,15315
+unhacs-0.6.0.dist-info/LICENSE,sha256=CuJQApZ9wizIG4w8pXQjVMQoa_0iayZv2iLxEnCJBfs,1096
+unhacs-0.6.0.dist-info/METADATA,sha256=o6h9iFh4wDqFl5TtsAoXkUD88sNjx2_nS-NdghrGCIc,2671
+unhacs-0.6.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+unhacs-0.6.0.dist-info/entry_points.txt,sha256=cQAC-e07VKKKwob5QgAqTWVz9Z9sUYN1Beb6E7iKduA,43
+unhacs-0.6.0.dist-info/RECORD,,
