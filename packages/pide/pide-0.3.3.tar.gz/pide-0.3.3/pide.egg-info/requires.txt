@@ -1,0 +1,7 @@
+h5py
+harmonica
+matplotlib
+numpy
+pyproj
+santex
+scipy
