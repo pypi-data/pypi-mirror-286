@@ -1,0 +1,10 @@
+file(GLOB_RECURSE TEST_FILES *.cpp)
+find_package(GTest REQUIRED)
+
+include_directories(SYSTEM ${GTest_INCLUDE_DIR})
+include_directories(BEFORE INTERFACE ../{{ project.structure.header_path }})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+add_executable(Test{{ project.meta_data.name }} ${TEST_FILES})
+
+target_link_libraries(Test{{ project.meta_data.name }} PRIVATE ${CMAKE_PROJECT_NAME} GTest::gtest GTest::gtest_main)
