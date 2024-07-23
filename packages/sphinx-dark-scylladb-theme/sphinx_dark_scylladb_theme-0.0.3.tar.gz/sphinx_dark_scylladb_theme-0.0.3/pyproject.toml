@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "sphinx-dark-scylladb-theme"
+version = "0.0.3"
+description = "A Sphinx Theme for ScyllaDB documentation projects"
+authors = ["David García <hi@davidgarcia.dev>", "Daniel Reis <danielhe4rt@gmail.com>"]
+exclude = [".github", "config", "docs", "extensions", ".postcss.config.js", ".prettierrc.json", "deploy.sh", "src", "package.json", "package-lock.json"]
+readme = "PYPI.rst"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sphinx-collapse = "^0.1.1"
+sphinx-copybutton = "^0.5.2"
+beautifulsoup4 = "^4.12.3"
+sphinx-tabs = "^3.4.5"
+pyyaml = "^6.0.1"
+Sphinx-Substitution-Extensions = "^2022.2.16"
+sphinx-notfound-page = "^1.0.2"
+setuptools = "^70.1.1"
+livereload = "^2.7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2.2"
+sphinx-autobuild = "^2024.4.16"
+pre-commit = "^3.7.1"
+myst-parser = "^3.0.1"
+sphinx-multiversion-scylla = "^0.3.1"
+sphinx-sitemap = "^2.6.0"
+redirects_cli ="^0.1.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
