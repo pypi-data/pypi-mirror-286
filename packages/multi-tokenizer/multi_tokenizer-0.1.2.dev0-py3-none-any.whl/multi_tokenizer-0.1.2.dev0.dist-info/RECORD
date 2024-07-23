@@ -1,0 +1,12 @@
+multi_tokenizer/__init__.py,sha256=PeYenjtOUkxxYpmiCq6pBA_OaVzGX-GuyC8heJj_aZQ,355
+multi_tokenizer/language_detect.py,sha256=KES6E3wK4w0m4iqe-y7bPakANCAZSlIOJ_No7mhbZYI,2900
+multi_tokenizer/pretrained/__init__.py,sha256=E5-Xb_C0nspHPJ-Ha6zdpkOjXtXUN9Ze-Ao17kxsAE0,1995
+multi_tokenizer/pretrained/chinese_tokenizer.json,sha256=MvNDQRIEpXQkkzNvo5hzBIbFnIULM8ZpipX2cgpXe4Y,2018477
+multi_tokenizer/pretrained/english_tokenizer.json,sha256=KEhFe5CpSC3f7ocOZbmXbaeHpttb-QrunOd4FB4kEbY,848625
+multi_tokenizer/pretrained/hindi_tokenizer.json,sha256=gJGkZX2rYxCuRfFQUG31NtOUJOuRrkOhUuGqhOJS6FU,360706
+multi_tokenizer/pretrained/spanish_tokenizer.json,sha256=be-UChYw-K0KzAMyr9wPE-QCetWXwf4AHiSR8lO-z8o,1151404
+multi_tokenizer/tokenizer.py,sha256=8SBSZBZ7BEzVoTUXpyYPzVfef8GRlyBLqBM6Nm-amI4,7517
+multi_tokenizer-0.1.2.dev0.dist-info/LICENSE,sha256=bz-xAMkaTLOSzuA8CO7zU06zhLZB7oBQzwtR_23XBoo,1078
+multi_tokenizer-0.1.2.dev0.dist-info/METADATA,sha256=rlwI6YEGZwUJWsRP_hZoqqaXcwz1FfHN_-twkGjWq9w,4287
+multi_tokenizer-0.1.2.dev0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+multi_tokenizer-0.1.2.dev0.dist-info/RECORD,,
