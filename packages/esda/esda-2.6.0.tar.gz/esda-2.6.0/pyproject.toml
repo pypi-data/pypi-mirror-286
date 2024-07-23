@@ -1,0 +1,114 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name = "esda"
+dynamic = ["version"]
+authors = [
+    { name = "Serge Rey", email = "sjsrey@gmail.com" },
+    { name = "Levi Wolf", email = "levi.john.wolf@bristol.ac.uk" },
+]
+maintainers = [{ name = "esda contributors" }]
+license = { text = "BSD 3-Clause" }
+description = "Exploratory Spatial Data Analysis in PySAL"
+keywords = ["exploratory data analysis, spatial statistics"]
+readme = { text = """\
+Exploratory Spatial Data Analysis in PySAL
+
+
+.. _PySAL: http://pysal.org
+""", content-type = "text/x-rst" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "geopandas>=0.12",
+    "libpysal>=4.12",
+    "numpy>=1.24",
+    "pandas>1.5",
+    "scikit-learn>=1.2",
+    "scipy>=1.9",
+    "shapely>=2.0",
+]
+
+
+[project.urls]
+Home = "https://pysal.org/esda/"
+Repository = "https://github.com/pysal/esda"
+
+[project.optional-dependencies]
+plus = [
+    "numba>=0.57",
+    "rtree>=1.0",
+]
+tests = [
+    "codecov",
+    "folium",
+    "mapclassify",
+    "matplotlib",
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist",
+]
+dev = [
+    "ruff",
+    "pre-commit"
+]
+docs = [
+    "nbsphinx",
+    "numpydoc",
+    "pandoc",
+    "sphinx",
+    "sphinxcontrib-bibtex",
+    "sphinx_bootstrap_theme",
+]
+notebooks = [
+    "matplotlib-scalebar",
+    "seaborn",
+    "watermark",
+]
+
+
+[tool.setuptools.packages.find]
+include = ["esda", "esda.*"]
+
+[tool.ruff]
+line-length = 88
+lint.select = ["E", "F", "W", "I", "UP", "N", "B", "A", "C4", "SIM", "ARG"]
+lint.ignore = [
+    "B006",
+    "B008",
+    "B009",
+    "B010",
+    "C408",
+    "E731",
+    "F401",
+    "F403",
+    "N803",
+    "N806",
+    "N999",
+    "UP007"
+]
+exclude = ["esda/tests/*", "docs/*"]
+
+[tool.coverage.run]
+source = ["./esda"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "if self.debug:",
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "except ModuleNotFoundError:",
+    "except ImportError",
+]
+ignore_errors = true
+omit = ["esda/tests/*", "docs/conf.py"]
