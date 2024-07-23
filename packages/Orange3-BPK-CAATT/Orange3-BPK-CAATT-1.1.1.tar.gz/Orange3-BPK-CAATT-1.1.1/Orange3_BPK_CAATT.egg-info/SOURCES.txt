@@ -1,0 +1,13 @@
+README.md
+setup.py
+Orange3_BPK_CAATT.egg-info/PKG-INFO
+Orange3_BPK_CAATT.egg-info/SOURCES.txt
+Orange3_BPK_CAATT.egg-info/dependency_links.txt
+Orange3_BPK_CAATT.egg-info/entry_points.txt
+Orange3_BPK_CAATT.egg-info/top_level.txt
+caatt/OWDuplicateChecker.py
+caatt/OWSequenceChecker.py
+caatt/__init__.py
+caatt/icons/bpkcaatt.svg
+caatt/icons/duplicate.svg
+caatt/icons/sequence.svg

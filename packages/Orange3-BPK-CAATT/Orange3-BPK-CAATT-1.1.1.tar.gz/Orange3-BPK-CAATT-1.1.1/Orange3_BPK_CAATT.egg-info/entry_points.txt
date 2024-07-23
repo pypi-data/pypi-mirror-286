@@ -1,0 +1,2 @@
+[orange.widgets]
+BPK CAATT = caatt
