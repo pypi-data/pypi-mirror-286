@@ -1,0 +1,16 @@
+vytal/Inter.ttf,sha256=dGQx6VD9KNKbAYnXCNSlhSqEWO2zGEOH6tzunl40Z2w,862936
+vytal/__init__.py,sha256=EeCnHamzppb5ksxNSXwxXuqd6_K5sF39Q_uVIlxKkSU,420
+vytal/adtech.py,sha256=qEXbtjwEP46bMOVwuDJ7A9DjdMhBL4c1rFV5ld6IqZM,34856
+vytal/background.png,sha256=pHJmz0B_e17kEHg5X5fToPHyd7axeb5EIee2vpRTjM4,628153
+vytal/client.py,sha256=4wllZgaCLnAyQ09HQe_UyPC95P8DtSt1QPYUw0EgZzk,31018
+vytal/client_old.py,sha256=Dc-Quk2OHf8t9MBPtu4UrOM7E_NLPM1oYILVJefJgjM,30182
+vytal/cogsci.py,sha256=XOdoxGLW2HIRdzgSZeSZeG_-jEWwimAD1oHf3jKpH3I,17410
+vytal/hci.py,sha256=a5Wjx1y2_p1K013p8rVIcoH6LTznMs0Gs_nBtxBBQuE,14422
+vytal-0.1.17.data/data/vytal/config/config.json,sha256=ZKN90WlHbDbMqv_nDj-gaSPJQbP12Q42oyJVDAzai0I,38
+vytalgaze-client/__init__.py,sha256=9KfgRKg1-nrzcawunzo1KpKmNwgOPfPGb78k2B24fig,269
+vytalgaze-client/client.py,sha256=ankNvTuqXuymGXXmTUEARnda0rolQblhTzPvxDa3xrI,3402
+vytal-0.1.17.dist-info/LICENSE,sha256=Tcf8-8c_IHCVaHa7KtbEvHyNqWWgWp_klE0q5l_TW8U,1084
+vytal-0.1.17.dist-info/METADATA,sha256=d4bG8agRlnr3qYT3GZW5WnTWlu284rdVurJk5dNpJ1o,1367
+vytal-0.1.17.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vytal-0.1.17.dist-info/top_level.txt,sha256=A3C2Ze7WH5ROkp_-yBGQNW__HVzEH0snWrIpreErNsY,6
+vytal-0.1.17.dist-info/RECORD,,
