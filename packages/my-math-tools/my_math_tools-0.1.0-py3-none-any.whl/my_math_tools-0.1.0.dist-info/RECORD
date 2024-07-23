@@ -1,0 +1,9 @@
+my_math_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_math_tools/core.py,sha256=VTxvPcb8XfnWqkxNq-AB3ohNRKc2-Mf9mBaK7tBv5GE,95
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=sfhKTHIN_Rh2D4yNj9RPmp00ysA3yRI5zE7k7LoRxfk,393
+my_math_tools-0.1.0.dist-info/LICENSE,sha256=NMw5XtMoc-PhcFsRaomGhrRc1QHoIoY4znXdBES9PkM,141
+my_math_tools-0.1.0.dist-info/METADATA,sha256=c9yjLm5X2j2NmWrnxpfCdaQ5UN8QDAcbqZrpViMDG_4,536
+my_math_tools-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+my_math_tools-0.1.0.dist-info/top_level.txt,sha256=3_jRmL4zPeG1Z_GD_nrWBiWHA_Cj8j-Ub-NVDylPGQw,20
+my_math_tools-0.1.0.dist-info/RECORD,,
