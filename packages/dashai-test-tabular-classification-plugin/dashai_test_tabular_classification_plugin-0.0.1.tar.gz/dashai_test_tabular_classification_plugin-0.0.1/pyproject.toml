@@ -1,0 +1,34 @@
+[project]
+name = "dashai_test_tabular_classification_plugin"
+version = "0.0.1"
+dependencies = [
+    'scikit-learn >= 1.2.1',
+    'dashai_test_classification_metrics_plugin',
+]
+authors = [
+  { name="DashAI team" },
+  { email="dashaisoftware@gmail.com" },
+]
+keywords = [
+    "DashAI",
+		"Task",
+		"Model",
+		"Dataloader"
+]
+description = "Tabular Classification Plugin"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.entry-points.'dashai.plugins']
+tabularModel = 'dashai_test_tabular_classification_plugin.tabular_classification_model:TabularClassificationModel'
+tabularTask = 'dashai_test_tabular_classification_plugin.tabular_classification_task:TabularClassificationTask'
+knn = 'dashai_test_tabular_classification_plugin.scikit_learn.k_neighbors_classifier:KNeighborsClassifier'
+randomForest = 'dashai_test_tabular_classification_plugin.scikit_learn.random_forest_classifier:RandomForestClassifier'
+svc = 'dashai_test_tabular_classification_plugin.scikit_learn.svc:SVC'
+hgboosting = 'dashai_test_tabular_classification_plugin.scikit_learn.hist_gradient_boosting_classifier:HistGradientBoostingClassifier'
+decisionTree = 'dashai_test_tabular_classification_plugin.scikit_learn.decision_tree_classifier:DecisionTreeClassifier'
+scikit = 'dashai_test_tabular_classification_plugin.sklearn_like_model:SklearnLikeModel'
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
