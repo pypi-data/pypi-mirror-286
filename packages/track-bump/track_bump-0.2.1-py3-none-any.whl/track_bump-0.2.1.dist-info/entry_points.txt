@@ -1,0 +1,3 @@
+[console_scripts]
+track-bump=track_bump.__main__:run
+
