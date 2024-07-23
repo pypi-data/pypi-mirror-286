@@ -1,0 +1,17 @@
+NuMPI/MPIStub.py,sha256=aIqnBye_R16WtWDpyLzuP2Da6q6BouN32lQz6iWOO5I,7465
+NuMPI/__init__.py,sha256=2BSnvM9ek9_sVM8QXaTSqTjrEXNHh9wklbgNVtex22Q,1602
+NuMPI/IO/MPIFileIO.py,sha256=E40d21bUNnd8cHSPw_E8T6HI06Qxh__WOlogFj4sEb8,10241
+NuMPI/IO/__init__.py,sha256=k1eo_ohSpLLPvEHmZ9n2NyNdaDV6YFI4o-OrEo_E7_c,1294
+NuMPI/Optimization/CCGWithRestart.py,sha256=Rbx9wvW3r7bkIwN2y__JdiOwByAYTz1-cJAkdn-w76w,7253
+NuMPI/Optimization/CCGWithoutRestart.py,sha256=W7m6qJ0fHj-OMfKoz1U98RKbWk5HzClfP5AAJEYlGGY,7693
+NuMPI/Optimization/LBFGS.py,sha256=-mZRr1rgT87LMfZujTrsxFDBrlVJ5vbDI9Y0m6bsFp0,15874
+NuMPI/Optimization/LineSearch.py,sha256=E1TV3bR17eyCF7BIoLBd6u_gyVO1o2K2_b0_dVDhF5Q,11946
+NuMPI/Optimization/Result.py,sha256=j7njS_CYJG31ofofa8cwxBnU8GF_7R28N-2f2g2FGa4,1668
+NuMPI/Optimization/Wolfe.py,sha256=2T1RixpxY3WHvxefAXu1yRO-B6bvCa6MYH67p5qVP9M,2129
+NuMPI/Optimization/__init__.py,sha256=PqKl90JMEqwoTucu5hq5Lv3_oYr2Nb4K5n-OR7r5-BU,1190
+NuMPI/Tools/Reduction.py,sha256=Ucfii01085bLl8jPkAliJRm0xs0Yb0aQXB3X2ko72Ik,6188
+NuMPI/Tools/__init__.py,sha256=omFGqVjF2yYU0xx-yPbGLMft8QAU1vR4uUIAiJRdiLo,1198
+numpi-0.6.0.dist-info/LICENSE.md,sha256=JTNu9uz2t1MS4b2CtwQKA9UqqU8G1EXN6EWnIQzfOkg,1041
+numpi-0.6.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+numpi-0.6.0.dist-info/METADATA,sha256=bM9Ec54EGhjmA2MtWzJPsDZOqgRYvJURWvUHYlP1L2Q,2976
+numpi-0.6.0.dist-info/RECORD,,
