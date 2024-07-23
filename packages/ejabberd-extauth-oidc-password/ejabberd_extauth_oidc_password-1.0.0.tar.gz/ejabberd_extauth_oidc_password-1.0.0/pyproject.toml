@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ejabberd-extauth-oidc-password"
+version = "1.0.0"
+description = "ejabberd extauth script to use OpenID Connect with the Resource Owner Password Grant Flow"
+authors = ["Dominik George <nik@naturalnet.de>"]
+repository = "https://codeberg.org/Natureshadow/ejabberd-extauth-oidc-password"
+keywords = ["ejabberd", "xmpp", "oidc"]
+classifiers = [
+  "Intended Audience :: System Administrators",
+  "Topic :: Communications :: Chat",
+  "Topic :: Internet :: XMPP",
+]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ejabberd-extauth = "^1.0.0"
+requests-oauthlib = "^2.0.0"
+pydantic = "^2.8.2"
+
+[tool.poetry.scripts]
+ejabberd_extauth_oidc_password = "ejabberd_extauth_oidc_password:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
