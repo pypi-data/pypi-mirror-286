@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: spy-tool
+Version: 0.1.1
+Summary: 
+Author: mathewgeola
+Author-email: mathewgeola@163.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorlog (>=6.8.2,<7.0.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: opencv-python (>=4.10.0.84,<5.0.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: py-mini-racer (>=0.6.0,<0.7.0)
+Requires-Dist: pyexecjs (>=1.5.1,<2.0.0)
+Requires-Dist: pyzbar (>=0.1.9,<0.2.0)
+Description-Content-Type: text/markdown
+
+#spy_tool
+
