@@ -1,0 +1,12 @@
+bitdeer_ai/__about__.py,sha256=VqGQ3cIYHqnHCJ5yTJIFd3ebgsCZVMRq_C0YTb4SNjw,128
+bitdeer_ai/__init__.py,sha256=-2I7Ut9wPL86__O3-ogShI5qS67H9fDhSwt3CkxpFTg,106
+bitdeer_ai/training/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bitdeer_ai/training/client.py,sha256=q3MwnhcOA-BBC-EOlZVl4hbMCKwEeZsGssRoHucbK9I,9030
+bitdeer_ai/training/model.py,sha256=SGA8-Y3gZ2XYu08cHxXtobtVma-1Ij8QwIPS0w_Gn2s,3455
+bitdeer_ai/training/resource_pb2.py,sha256=pHCeYBRgaOQo6-Hvmb44Bzw_cSSXri5Rtz_HPP8YzBg,3102
+bitdeer_ai/training/training_pb2.py,sha256=MCr7ef9Xok8IhnM4RNcpqd8h1n-0iHKCr6XqeDynr7o,10526
+bitdeer_ai/training/training_pb2_grpc.py,sha256=4DrRe6mJlXm6j4sBpa9RbTe8ARYIifKQcYX0J5JNpSs,17935
+btdr_ai_sdk-0.0.3.dist-info/METADATA,sha256=fIWp3JY_NOUJ-VoKJo1qryfXdWmrP_BAuBzikyMztWc,1426
+btdr_ai_sdk-0.0.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+btdr_ai_sdk-0.0.3.dist-info/licenses/LICENSE.txt,sha256=axYbM386G7GWHXT7Li_iM9dMsUJpgdIOJmiWB0Faj1w,1096
+btdr_ai_sdk-0.0.3.dist-info/RECORD,,
