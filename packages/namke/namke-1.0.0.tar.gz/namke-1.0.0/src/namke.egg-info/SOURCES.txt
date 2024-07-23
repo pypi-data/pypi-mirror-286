@@ -1,0 +1,17 @@
+setup.py
+src/namke.egg-info/PKG-INFO
+src/namke.egg-info/SOURCES.txt
+src/namke.egg-info/dependency_links.txt
+src/namke.egg-info/top_level.txt
+src/param/__init__.py
+src/param/command.py
+src/param/make.py
+src/param/multi_value.py
+src/param/optional.py
+src/param/param.py
+src/param/single_value.py
+src/tool/__init__.py
+src/tool/gcc.py
+src/tool/make.py
+src/tool/nasm.py
+src/tool/utility.py
