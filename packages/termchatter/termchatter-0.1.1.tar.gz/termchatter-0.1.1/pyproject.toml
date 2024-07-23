@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "termchatter"
+version = "0.1.1"
+description = "A simple terminal-based chatting app using Pusher"
+authors = ["GrimmTMM <themagnetboy1207@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pysher = "^1.0.8"
+pusher = "^3.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+termchatter = "termchatter.termchatter:main"
