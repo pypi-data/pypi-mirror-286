@@ -1,0 +1,10 @@
+ndfetcher/__init__.py,sha256=ELrd3xJH-8Owxez4lxmxWlg7IQk8bbNgQJ9EmzH_SbE,64
+ndfetcher/data.py,sha256=fI4GQJRiD0Jj5-4k7Rclqkeg7kx2CnHeCLKX39-uiwQ,2564
+ndfetcher/download.py,sha256=W0jhpfe_e7fpuh9hroGKWHTrC3RARJBBzjPCIkSPFwE,2987
+ndfetcher/find.py,sha256=5gml4dJwjEkNOa6AmgO-a-7WFaufz8KwNJ46mW97T2A,1517
+ndfetcher-0.1.0.dist-info/LICENSE,sha256=Y25gkkouzxbrUNG1xbtiIj4GTDtXdswGKbd_z6LS1AI,1071
+ndfetcher-0.1.0.dist-info/METADATA,sha256=N1CFGnuFiZT8RxygknRUMCrhDovMtd3Cl-9PSSCbUL0,1438
+ndfetcher-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+ndfetcher-0.1.0.dist-info/entry_points.txt,sha256=8Vf28kCXDWPgZwvdFCa2Sd8t0-ZDmGIPJRPVilwRN6U,93
+ndfetcher-0.1.0.dist-info/top_level.txt,sha256=aOEh1czIa9-NJyJmULkQYwApf4oSTQWWG3vDyT07GCI,10
+ndfetcher-0.1.0.dist-info/RECORD,,
