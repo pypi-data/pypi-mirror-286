@@ -1,0 +1,9 @@
+textevaluator/__init__.py,sha256=0dB8S3Sgp5VszSpRSRG72FJHnVSEmCN_A1K4lIZR5rc,32
+textevaluator/model.py,sha256=DSiwRY1-JQ8--_omO5bnZ_CEnpJISmwDOGUBKhySu_Y,1801
+textevaluator/data/data.json,sha256=q-D3rXQL9ZS48_Cl-n8H7fmJECOSwbUrtd93nsYtKn4,359412
+textevaluator/data/my_model.h5,sha256=O-9VR1uhDfzo8GKfViFxav6PNtP9MDFHicozhzWcB-E,5055912
+textevaluator-0.4.dist-info/METADATA,sha256=dFjtTREFzioH-sQ8Y8gJBiVL3kAObeInb_vPNCHE-20,1079
+textevaluator-0.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+textevaluator-0.4.dist-info/entry_points.txt,sha256=wnMCBS0z5ZcIt-FCNX8yjAV9e2U9eui6d9vWStwivRw,53
+textevaluator-0.4.dist-info/top_level.txt,sha256=KahYuTcsVh69ekbsYDeXFbYn44eCqckuzbaTURGFDJs,14
+textevaluator-0.4.dist-info/RECORD,,
