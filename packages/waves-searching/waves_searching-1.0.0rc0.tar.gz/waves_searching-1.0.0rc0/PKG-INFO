@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: waves_searching
+Version: 1.0.0rc0
+Summary: Find dispersion relation in PDE, systems of PDE, and discrete analogs
+Home-page: https://www.nsu.ru/n/
+Author: A.Dzhanbekova, S.Kotov, M.Malyutin, M.Samoilov, V.Utupyina, M.Arendarenko, T.Savvateeva
+Author-email: 
+Project-URL: github, https://github.com/great-mathematical-workshop-2024/WavesSearching
+Keywords: PDE,Continuum mechanics,computer algebra,python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+WavesSearching is the library made to automate the process of finding dispersion relations in equations, systems of equations and their discrete analogs.
+
+The library is an addon of SymPy library, which means that the user will be able to input equations as SymPy expressions and obtain DRs as SymPy expressions to work with them further.
+
+It should be noted that some variables (specifically x, t, h, tau, C, omega, k) are already reserved for the algorithms. Also so far only one type of waves is supported, that is U0 * exp(I * (k*x - w\*t)).
+
+The library is still in development, so it is expected that the functionality will be extended in future.
