@@ -1,0 +1,6 @@
+claudette
+cairosvg
+
+[dev]
+python-dotenv
+pillow
