@@ -1,0 +1,14 @@
+ks_longport_trade_api/./.gitignore,sha256=eOt_WIh4Q7_8meDFVlUvnlCPFCSKtIOdM3LTqhqkVrM,2173
+ks_longport_trade_api/./LICENSE.txt,sha256=4zOlefTQ3eDOhYSM_1aF7XuO4Eo6LqJACxQVEyxznvI,1104
+ks_longport_trade_api/./README.en.md,sha256=ScY_oHLT0QW7wTixWKs55F2r4GU6zRbGJCWHCctVQKE,991
+ks_longport_trade_api/./README.md,sha256=CzTXAySaC9jYQzHZFR5Mjmng66KtbgouLczC87vIp7o,978
+ks_longport_trade_api/./__about__.py,sha256=6FxpBMWxJ-N3xSZOBe5mY8GfBbN0JTF2dd8m9Pbk7iE,129
+ks_longport_trade_api/./__init__.py,sha256=P-qQgQzKk1CbIV-WZc5cu4cIzLXaBxvyP9cuv2iD--k,53
+ks_longport_trade_api/./ks_longport_trade_api.py,sha256=WopiCltEVJAik4rhZ_UFAWQQmldVsAA4llN1N9G4s2M,22992
+ks_longport_trade_api/./pyproject.toml,sha256=xoWEF3baLUq6Ixe9uX0QXM6FKTFXP6INdndeda8dLXE,2216
+ks_longport_trade_api/./requirements.txt,sha256=QSVNQKGovp-uHHZ4MlBd36Oe8FqrRNOGz0E-yCLoh3w,204
+ks_longport_trade_api/./setup.py,sha256=YQ7t2PbcGICWPX79TCjzQ6yEi9pLGOxvFZGVaSpxKKQ,890
+ks_longport_trade_api-0.0.5.dist-info/METADATA,sha256=plvE5Uqsd-XYFQqLX5HzIn_mJ6rAttTEbMddKqAap3g,1942
+ks_longport_trade_api-0.0.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ks_longport_trade_api-0.0.5.dist-info/licenses/LICENSE.txt,sha256=4zOlefTQ3eDOhYSM_1aF7XuO4Eo6LqJACxQVEyxznvI,1104
+ks_longport_trade_api-0.0.5.dist-info/RECORD,,
