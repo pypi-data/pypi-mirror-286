@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fred-mc"
+version = "0.0.1"
+authors = [
+  { name="FRED Collaboration", email="angelo.schiavi@uniroma1.it" },
+]
+description = "FRED Monte Carlo platform"
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS :: MacOS X"
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+

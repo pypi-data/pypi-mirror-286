@@ -1,0 +1,40 @@
+Metadata-Version: 2.3
+Name: fred-mc
+Version: 0.0.1
+Summary: FRED Monte Carlo platform
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: FRED Collaboration <angelo.schiavi@uniroma1.it>
+License-File: LICENSE
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: <4.0,>=3.10
+Description-Content-Type: text/markdown
+
+FRED-mc repository
+==================
+
+FRED (Fast paRticle thErapy Dose evaluator) is a fast Monte-Carlo platform for particle transport in heterogeneous media. The main motivation is to allow a rapid recalculation of dose deposition in the context of Particle Therapy. FRED can transport protons, light ions, neutrons and other particles through voxelized regions. A complete treatment plan can be recalculated importing patient data (e.g. CT scans) and delivery plans (namely fields and pencil beams).
+
+FRED can run on CPU hardware exploiting multi-core parallelism as well as on single or multiple GPU cards using OpenCL.
+
+Documentation and tutorial
+----------------------------
+The documentation of the functions implemented in FRED is available at [www.fred-mc.org](https://www.fred-mc.org).
+
+
+Installation
+----------------------------
+The stable version of FRED-mc is available via pip.
+
+For new installation:
+
+  $ pip install fred-mc
+
+To update existing installation:
+
+$ pip install --upgrade fred-mc
+
