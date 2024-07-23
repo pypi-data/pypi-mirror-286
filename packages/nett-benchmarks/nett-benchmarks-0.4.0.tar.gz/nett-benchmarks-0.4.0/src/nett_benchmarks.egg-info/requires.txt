@@ -1,0 +1,12 @@
+mlagents==1.0.0
+stable-baselines3[extra]==1.8.0
+sb3-contrib==1.8.0
+torchvision
+timm
+nvidia-ml-py
+lightning==2.2.5
+lightning-bolts==0.7.0
+scikit-learn==1.5.0
+
+[notebook]
+ipywidgets
