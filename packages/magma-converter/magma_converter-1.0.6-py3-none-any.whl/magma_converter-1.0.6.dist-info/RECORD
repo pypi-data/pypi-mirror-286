@@ -1,0 +1,9 @@
+magma_converter/__init__.py,sha256=mUV3IFsaYEYZNK_Z8nhlaFILjCPoGt6fqxS6-cblolk,429
+magma_converter/convert.py,sha256=Fjko1FYF8SEzNOqZcaUwGXwkIOszq77RZO0xhwXfWOE,8462
+magma_converter/new_trace.py,sha256=mB4ZPy9b-xEoJRtvDqLTBzEy9wi_8jgfCl8CaohVSEo,2815
+magma_converter/sds.py,sha256=5PTts_e7yDtqaOBxHHZ4uFe_4eCXQaI8kiA_QgbB16I,7163
+magma_converter/utilities.py,sha256=TylFoayy5h80jJkDEAhFuIjIYszCY-CpmiZQDI-35hM,4558
+magma_converter-1.0.6.dist-info/LICENSE,sha256=pE1O25Tsk65Je-IPi1aWBUnI9S4T2wgabc-qYqe4xuM,1084
+magma_converter-1.0.6.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+magma_converter-1.0.6.dist-info/METADATA,sha256=4ixVNZIjAoe-uGeOxdZqeXsCmQ_RGQbxNcbiQFmL8yA,1702
+magma_converter-1.0.6.dist-info/RECORD,,
