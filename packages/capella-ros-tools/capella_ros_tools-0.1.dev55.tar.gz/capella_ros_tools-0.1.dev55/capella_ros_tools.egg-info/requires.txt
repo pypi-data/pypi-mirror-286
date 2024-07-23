@@ -1,0 +1,17 @@
+click
+capellambse<0.6,>=0.5.64
+
+[docs]
+furo
+ipython
+nbsphinx
+sphinx-copybutton
+tomli
+jinja2
+pyyaml
+sphinx
+sphinx-argparse-cli
+
+[test]
+pytest
+pytest-cov
