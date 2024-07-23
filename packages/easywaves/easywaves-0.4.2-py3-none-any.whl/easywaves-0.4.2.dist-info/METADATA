@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: easywaves
+Version: 0.4.2
+Summary: A module for easing and waves
+Home-page: https://github.com/jamescarruthers/easywaves
+Author: James Carruthers
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# easywaves
+Create smooth lines and waves
