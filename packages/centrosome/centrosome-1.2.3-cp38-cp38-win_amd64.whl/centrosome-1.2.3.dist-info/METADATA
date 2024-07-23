@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: centrosome
+Version: 1.2.3
+Summary: An open source image processing library
+Home-page: https://github.com/CellProfiler/centrosome
+Author: Nodar Gogoberidze
+Author-email: ngogober@broadinstitute.org
+License: BSD
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+Requires-Dist: deprecation
+Requires-Dist: matplotlib <3.8,>=3.1.3
+Requires-Dist: contourpy <1.2.0
+Requires-Dist: numpy <2,>=1.18.2
+Requires-Dist: scikit-image <0.22.0,>=0.17.2
+Requires-Dist: PyWavelets <1.5
+Requires-Dist: scipy <1.11,>=1.4.1
+Provides-Extra: dev
+Requires-Dist: black ==19.10b0 ; extra == 'dev'
+Requires-Dist: pre-commit ==1.20.0 ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ==5.2.2 ; extra == 'test'
+
