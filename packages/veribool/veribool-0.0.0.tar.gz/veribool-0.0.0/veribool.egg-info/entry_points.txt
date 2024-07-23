@@ -1,0 +1,2 @@
+[console_scripts]
+veribool = veribool:main

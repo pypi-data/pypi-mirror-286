@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+veribool/__init__.py
+veribool/compiler.py
+veribool/verifier.py
+veribool.egg-info/PKG-INFO
+veribool.egg-info/SOURCES.txt
+veribool.egg-info/dependency_links.txt
+veribool.egg-info/entry_points.txt
+veribool.egg-info/top_level.txt
