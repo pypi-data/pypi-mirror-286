@@ -1,0 +1,15 @@
+qat/anapli/__init__.so,sha256=MeajG3-J1_d-EhWx2QM1Awz76cN-WO7KoHTO_-TDxJs,94192
+qat/anapli/crossing_lattice.so,sha256=uKH0FG_KeySnQuVAaXpvu7WVxZMHJTuLAenRfYGn7pc,284464
+qat/anapli/geometry.so,sha256=O2qvCVce-b2VU1PhhD3Ol7bYsfkreDRzsMOwHW6Haww,587888
+qat/anapli/ising_crossing_lattice.so,sha256=cZ4GNMepQsec4BBFDTXFYtoiXqvkC2HUzZBOC1puWwU,173680
+qat/anapli/mwis_crossing_lattice.so,sha256=9MlH3fYhM_oSBhnTrzymtQP4R1beNuk4DMbRvtAxDeE,136128
+qat/anapli/optimal_layout.so,sha256=G9RmWd_4G-VOJazoCo9GKKAiM1QtAqSjtU7i5avD_WI,335648
+qat/anapli/optimization.so,sha256=ikgBLzpaNsGOHF8D5yTSv8fNXAIn7BO9tJ-T14sry0Y,291152
+qat/anapli/qubo_crossing_lattice.so,sha256=f_GCTOaVTNAt5-mOmVriBjPZ7v02C4Ln2NRH61SRmk4,173920
+qat/anapli/schedule.so,sha256=xnpBQgyluKMyFOSrYveiQQ5_IfxSfX168P46Z3fSoDQ,389008
+qat/anapli/version.so,sha256=-klmn1rK3QM3WVlaTOz5SKjDwQcroyLg_COgeNoG4O0,92848
+qat_anapli-0.0.1.dist-info/LICENSE.txt,sha256=Vl03FJBySK7FEYdw_Y0dV66UAVedEyIuqJTJxREyRgs,4752
+qat_anapli-0.0.1.dist-info/METADATA,sha256=yzxgqsQMd9t9S_4tarWSJi9wZvP0EfshPDYI8L0Ypzw,1721
+qat_anapli-0.0.1.dist-info/WHEEL,sha256=plpH5xBa8nTIpe2lU6xgdoZ9R5iL_g7APBIN8PJRI3Y,109
+qat_anapli-0.0.1.dist-info/top_level.txt,sha256=EtiE-lzXpV6tDPK3leIRADd9p6cOal7g6fxvqQ-u_yc,4
+qat_anapli-0.0.1.dist-info/RECORD,,
