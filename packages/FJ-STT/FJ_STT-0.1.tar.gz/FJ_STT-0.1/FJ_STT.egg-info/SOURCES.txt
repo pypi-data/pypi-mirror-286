@@ -1,0 +1,6 @@
+setup.py
+FJ_STT/__init__.py
+FJ_STT.egg-info/PKG-INFO
+FJ_STT.egg-info/SOURCES.txt
+FJ_STT.egg-info/dependency_links.txt
+FJ_STT.egg-info/top_level.txt
