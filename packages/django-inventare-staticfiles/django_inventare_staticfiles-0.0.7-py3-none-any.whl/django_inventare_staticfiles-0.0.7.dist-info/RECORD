@@ -1,0 +1,10 @@
+django_inventare_staticfiles/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_inventare_staticfiles/apps.py,sha256=y8MKJrmBvArPIG_Q6lH2Cer9EXNanzr-eSCrUvHvsw4,186
+django_inventare_staticfiles/finders.py,sha256=_KIN9CKmTpq0I3IXILZjbeDaxeNp0d8n2mQhSbShD3g,6419
+django_inventare_staticfiles/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_inventare_staticfiles/templatetags/remote_url.py,sha256=QrwmIMCZQDBWaSqMQYzdzirisjCjn5FXGwHAE6aAidE,454
+django_inventare_staticfiles-0.0.7.dist-info/LICENSE,sha256=NIZbIe5Vu7aONllqsza4jDzNgdA695tOmmshtaYnT1c,1073
+django_inventare_staticfiles-0.0.7.dist-info/METADATA,sha256=EU0LW5bP7CKl7B36bE5oBRHqPvd1scoZrFvNEfs_UR0,2841
+django_inventare_staticfiles-0.0.7.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+django_inventare_staticfiles-0.0.7.dist-info/top_level.txt,sha256=29Fl53XuR32zhZF4td0lRzdDcq4eOQgu6N5tsel39ew,29
+django_inventare_staticfiles-0.0.7.dist-info/RECORD,,
