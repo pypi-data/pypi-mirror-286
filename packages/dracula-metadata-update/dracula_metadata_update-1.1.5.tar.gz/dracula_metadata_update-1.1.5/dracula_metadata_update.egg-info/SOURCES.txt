@@ -1,0 +1,9 @@
+README.md
+setup.py
+dracula/dracula.py
+dracula_metadata_update.egg-info/PKG-INFO
+dracula_metadata_update.egg-info/SOURCES.txt
+dracula_metadata_update.egg-info/dependency_links.txt
+dracula_metadata_update.egg-info/entry_points.txt
+dracula_metadata_update.egg-info/requires.txt
+dracula_metadata_update.egg-info/top_level.txt
