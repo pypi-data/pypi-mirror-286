@@ -1,0 +1,2 @@
+[console_scripts]
+dfa-gen = dfa_gen.generate_dfa:main

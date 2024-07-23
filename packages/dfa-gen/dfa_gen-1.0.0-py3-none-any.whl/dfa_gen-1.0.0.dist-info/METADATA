@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dfa-gen
+Version: 1.0.0
+Requires-Dist: pandas
+Requires-Dist: graphviz
+
