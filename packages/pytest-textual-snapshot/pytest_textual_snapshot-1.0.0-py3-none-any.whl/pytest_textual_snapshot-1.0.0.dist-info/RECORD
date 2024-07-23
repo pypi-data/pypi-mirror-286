@@ -1,0 +1,7 @@
+pytest_textual_snapshot.py,sha256=N_1SQY6-PBcVdjE78Ai4b2wawGcsOjAXqqBO_ZeErqA,13100
+resources/snapshot_report_template.jinja2,sha256=TAHqe3V8LEgcp6VKWi4quMB5ZJ-JLfwH1wwgqWDwBzA,12526
+pytest_textual_snapshot-1.0.0.dist-info/LICENSE,sha256=Wo8hP76U7YIWDW7FKe_oaoGbWPsDjPLq4uZgUj-xo1k,1078
+pytest_textual_snapshot-1.0.0.dist-info/METADATA,sha256=HP944sMagcfOvwKVu7YycQxCljdgwoXdWKrKJ12nAWE,4713
+pytest_textual_snapshot-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pytest_textual_snapshot-1.0.0.dist-info/entry_points.txt,sha256=ka5bpn5owTSRcgPvFQ-_zKkpbq-YgJcgyOYHT-A0C4k,53
+pytest_textual_snapshot-1.0.0.dist-info/RECORD,,
