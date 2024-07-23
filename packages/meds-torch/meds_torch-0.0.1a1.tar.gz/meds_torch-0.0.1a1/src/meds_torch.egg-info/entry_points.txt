@@ -1,0 +1,3 @@
+[console_scripts]
+meds-torch-eval = meds_torch.eval:main
+meds-torch-train = meds_torch.train:main
