@@ -1,0 +1,7 @@
+betty.model.presence\_role module
+=================================
+
+.. automodule:: betty.model.presence_role
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,25 @@
+betty.cli.commands package
+==========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 999
+
+   betty.cli.commands.clear_caches
+   betty.cli.commands.config
+   betty.cli.commands.demo
+   betty.cli.commands.dev_init_translation
+   betty.cli.commands.dev_update_translations
+   betty.cli.commands.docs
+   betty.cli.commands.generate
+   betty.cli.commands.serve
+
+Module contents
+---------------
+
+.. automodule:: betty.cli.commands
+   :members:
+   :undoc-members:
+   :show-inheritance:

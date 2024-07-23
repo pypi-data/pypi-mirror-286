@@ -1,0 +1,7 @@
+betty.cli.commands.dev\_init\_translation module
+================================================
+
+.. automodule:: betty.cli.commands.dev_init_translation
+   :members:
+   :undoc-members:
+   :show-inheritance:

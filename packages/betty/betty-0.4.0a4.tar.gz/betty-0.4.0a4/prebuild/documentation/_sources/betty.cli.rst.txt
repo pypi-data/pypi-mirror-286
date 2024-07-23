@@ -1,0 +1,18 @@
+betty.cli package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 999
+
+   betty.cli.commands
+
+Module contents
+---------------
+
+.. automodule:: betty.cli
+   :members:
+   :undoc-members:
+   :show-inheritance:

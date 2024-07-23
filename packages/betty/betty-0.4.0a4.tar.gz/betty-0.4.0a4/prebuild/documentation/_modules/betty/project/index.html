@@ -1,0 +1,1828 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../../../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="author" title="About these documents" href="../../../about/" /><link rel="index" title="Index" href="../../../genindex/" /><link rel="search" title="Search" href="../../../search/" />
+
+    <link rel="shortcut icon" href="../../../_static/betty.ico"/><!-- Generated with Sphinx 7.4.7 and Furo 2024.07.18 -->
+        <title>betty.project - Betty 0.4.0a4 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=613ab9ff" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?v=302659d7" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../"><div class="brand">Betty 0.4.0a4 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../../../_static/betty-32x32.png" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Betty 0.4.0a4 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../search/" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../installation/">Installation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Installation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation/pip/">Installation via <code class="docutils literal notranslate"><span class="pre">pip</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation/source/">Installation from source</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../usage/">Usage</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Usage</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../usage/ancestry/">Ancestry</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Ancestry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/citation/">Citation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/date/">Dates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/enclosure/">Enclosure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/event/">Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/event-type/">Event Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/file/">File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/file-reference/">File reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/link/">Link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/media-type/">Media Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/note/">Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/person/">Person</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/person-name/">Person Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/place/">Place</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/place-name/">Place Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/presence/">Presence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/presence-role/">Presence Role</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/privacy/">Privacy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/ancestry/source/">Source</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../usage/assets/">Asset Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../usage/cli/">The command line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../usage/configuration/">Application configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../usage/env/">Environment variables</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../usage/extension/">Extensions</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Extensions</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/extension/cotton_candy/">The <em>Cotton Candy</em> extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/extension/deriver/">The <em>Deriver</em> extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/extension/gramps/">The <em>Gramps</em> extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/extension/http_api_doc/">The <em>HTTP API Documentation</em> extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/extension/maps/">The <em>Maps</em> extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/extension/nginx/">The <em>nginx</em> extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/extension/privatizer/">The <em>Privatizer</em> extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/extension/trees/">The <em>Trees</em> extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/extension/wikipedia/">The <em>Wikipedia</em> extension</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../usage/gedcom/">GEDCOM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../usage/npm/">npm</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../usage/plugin/">Plugins</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Plugins</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/plugin/entry_point/">Entry point plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../usage/project/">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Projects</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/project/configuration/">Project configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../usage/templating/">Templating</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of Templating</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/templating/filters/">Filters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/templating/globals/">Globals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../usage/templating/tests/">Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../usage/translation/">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../development/">Development</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Development</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../development/extension/">Developing a Betty extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../development/translation/">Working on Betty’s translations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../development/test/">Testing Betty’s source code</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../py-modindex/">API Documentation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../about/">About</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of About</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../about/contributing/">Contributing to Betty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../about/license/">Copyright &amp; license</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <h1>Source code for betty.project</h1><div class="highlight"><pre>
+<span></span>&quot;&quot;&quot;
+Provide the project API.
+
+Projects are how people use Betty. A project is a workspace, starting out with the user&#39;s configuration,
+and combining it with the resulting ancestry, allowing the user to perform tasks, such as generating a
+site from the entire project.
+&quot;&quot;&quot;
+
+from __future__ import annotations
+
+from contextlib import suppress, asynccontextmanager
+from graphlib import TopologicalSorter, CycleError
+from pathlib import Path
+from reprlib import recursive_repr
+from typing import Any, Generic, final, Iterable, Self, TYPE_CHECKING, TypeVar, Iterator
+from urllib.parse import urlparse
+
+from aiofiles.tempfile import TemporaryDirectory
+from typing_extensions import override
+
+from betty import fs, event_dispatcher
+from betty import model
+from betty.assertion import (
+    Assertion,
+    RequiredField,
+    OptionalField,
+    assert_record,
+    assert_setattr,
+    assert_str,
+    assert_bool,
+    assert_dict,
+    assert_locale,
+    assert_int,
+    assert_positive_number,
+    assert_fields,
+)
+from betty.assertion.error import AssertionFailed
+from betty.assets import AssetRepository
+from betty.asyncio import wait_to_thread
+from betty.classtools import repr_instance
+from betty.config import (
+    Configuration,
+    Configurable,
+)
+from betty.config.collections.mapping import ConfigurationMapping
+from betty.config.collections.sequence import ConfigurationSequence
+from betty.core import CoreComponent
+from betty.event_dispatcher import EventDispatcher, EventHandlerRegistry
+from betty.hashid import hashid
+from betty.locale import DEFAULT_LOCALE
+from betty.locale.localizable import _
+from betty.locale.localizer import LocalizerRepository
+from betty.model import Entity, UserFacingEntity
+from betty.model.ancestry import Ancestry, Person, Event, Place, Source
+from betty.plugin.assertion import assert_plugin
+from betty.project import extension
+from betty.project.extension import (
+    Extension,
+    ConfigurableExtension,
+    build_extension_type_graph,
+    CyclicDependencyError,
+)
+from betty.project.factory import ProjectDependentFactory
+from betty.render import Renderer, SequentialRenderer
+from betty.serde.dump import (
+    Dump,
+    VoidableDump,
+    void_none,
+    minimize,
+    VoidableDumpMapping,
+)
+from betty.serde.format import FormatRepository
+from betty.typing import Void
+
+if TYPE_CHECKING:
+    from betty.plugin import PluginId
+    from collections.abc import AsyncIterator, Sequence
+    from betty.app import App
+    from betty.url import LocalizedUrlGenerator, StaticUrlGenerator
+    from betty.jinja2 import Environment
+
+_EntityT = TypeVar(&quot;_EntityT&quot;, bound=Entity)
+
+
+#: The default age by which people are presumed dead.
+DEFAULT_LIFETIME_THRESHOLD = 125
+
+
+<div class="viewcode-block" id="EntityReference">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityReference">[docs]</a>
+@final
+class EntityReference(Configuration, Generic[_EntityT]):
+    &quot;&quot;&quot;
+    Configuration that references an entity from the project&#39;s ancestry.
+    &quot;&quot;&quot;
+
+<div class="viewcode-block" id="EntityReference.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityReference.__init__">[docs]</a>
+    def __init__(
+        self,
+        entity_type: type[_EntityT] | None = None,
+        entity_id: str | None = None,
+        *,
+        entity_type_is_constrained: bool = False,
+    ):
+        super().__init__()
+        self._entity_type = entity_type
+        self._entity_id = entity_id
+        self._entity_type_is_constrained = entity_type_is_constrained</div>
+
+
+    @property
+    def entity_type(self) -&gt; type[_EntityT] | None:
+        &quot;&quot;&quot;
+        The referenced entity&#39;s type.
+        &quot;&quot;&quot;
+        return self._entity_type
+
+    @entity_type.setter
+    def entity_type(self, entity_type: type[_EntityT]) -&gt; None:
+        if self._entity_type_is_constrained:
+            raise AttributeError(
+                f&quot;The entity type cannot be set, as it is already constrained to {self._entity_type}.&quot;
+            )
+        self._entity_type = entity_type
+
+    @property
+    def entity_id(self) -&gt; str | None:
+        &quot;&quot;&quot;
+        The referenced entity&#39;s ID.
+        &quot;&quot;&quot;
+        return self._entity_id
+
+    @entity_id.setter
+    def entity_id(self, entity_id: str) -&gt; None:
+        self._entity_id = entity_id
+
+    @entity_id.deleter
+    def entity_id(self) -&gt; None:
+        self._entity_id = None
+
+    @property
+    def entity_type_is_constrained(self) -&gt; bool:
+        &quot;&quot;&quot;
+        Whether the entity type may be changed.
+        &quot;&quot;&quot;
+        return self._entity_type_is_constrained
+
+<div class="viewcode-block" id="EntityReference.update">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityReference.update">[docs]</a>
+    @override
+    def update(self, other: Self) -&gt; None:
+        self._entity_type = other._entity_type
+        self._entity_type_is_constrained = other._entity_type_is_constrained
+        self._entity_id = other._entity_id</div>
+
+
+<div class="viewcode-block" id="EntityReference.load">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityReference.load">[docs]</a>
+    @override
+    def load(
+        self,
+        dump: Dump,
+    ) -&gt; None:
+        if isinstance(dump, dict) or not self.entity_type_is_constrained:
+            assert_record(
+                RequiredField(
+                    &quot;entity_type&quot;,
+                    assert_plugin(model.ENTITY_TYPE_REPOSITORY)
+                    | assert_setattr(self, &quot;entity_type&quot;),
+                ),
+                OptionalField(
+                    &quot;entity_id&quot;,
+                    assert_str() | assert_setattr(self, &quot;entity_id&quot;),
+                ),
+            )(dump)
+        else:
+            assert_str()(dump)
+            assert_setattr(self, &quot;entity_id&quot;)(dump)</div>
+
+
+<div class="viewcode-block" id="EntityReference.dump">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityReference.dump">[docs]</a>
+    @override
+    def dump(self) -&gt; VoidableDump:
+        if self.entity_type_is_constrained:
+            return void_none(self.entity_id)
+
+        if self.entity_type is None or self.entity_id is None:
+            return Void
+
+        dump: VoidableDumpMapping[VoidableDump] = {
+            &quot;entity_type&quot;: (
+                self._entity_type.plugin_id() if self._entity_type else Void
+            ),
+            &quot;entity_id&quot;: self._entity_id,
+        }
+
+        return minimize(dump)</div>
+
+
+    @override
+    def __eq__(self, other: Any) -&gt; bool:
+        if not isinstance(other, EntityReference):
+            return NotImplemented
+        return (
+            self.entity_type == other.entity_type and self.entity_id == other.entity_id
+        )</div>
+
+
+
+<div class="viewcode-block" id="EntityReferenceSequence">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityReferenceSequence">[docs]</a>
+@final
+class EntityReferenceSequence(
+    Generic[_EntityT], ConfigurationSequence[EntityReference[_EntityT]]
+):
+    &quot;&quot;&quot;
+    Configuration for a sequence of references to entities from the project&#39;s ancestry.
+    &quot;&quot;&quot;
+
+<div class="viewcode-block" id="EntityReferenceSequence.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityReferenceSequence.__init__">[docs]</a>
+    def __init__(
+        self,
+        entity_references: Iterable[EntityReference[_EntityT]] | None = None,
+        *,
+        entity_type_constraint: type[_EntityT] | None = None,
+    ):
+        self._entity_type_constraint = entity_type_constraint
+        super().__init__(entity_references)</div>
+
+
+<div class="viewcode-block" id="EntityReferenceSequence.load_item">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityReferenceSequence.load_item">[docs]</a>
+    @override
+    def load_item(self, dump: Dump) -&gt; EntityReference[_EntityT]:
+        configuration = EntityReference[_EntityT](
+            # Use a dummy entity type for now to satisfy the initializer.
+            # It will be overridden when loading the dump.
+            Entity  # type: ignore[arg-type]
+            if self._entity_type_constraint is None
+            else self._entity_type_constraint,
+            entity_type_is_constrained=self._entity_type_constraint is not None,
+        )
+        configuration.load(dump)
+        return configuration</div>
+
+
+    @override
+    def _on_add(self, configuration: EntityReference[_EntityT]) -&gt; None:
+        super()._on_add(configuration)
+
+        entity_type_constraint = self._entity_type_constraint
+        entity_reference_entity_type = configuration._entity_type
+
+        if entity_type_constraint is None:
+            configuration._entity_type_is_constrained = False
+            return
+
+        configuration._entity_type_is_constrained = True
+
+        if (
+            entity_reference_entity_type == entity_type_constraint
+            and configuration.entity_type_is_constrained
+        ):
+            return
+
+        expected_entity_type_label = entity_type_constraint.plugin_label()
+
+        if entity_reference_entity_type is None:
+            raise AssertionFailed(
+                _(
+                    &quot;The entity reference must be for an entity of type {expected_entity_type_label}, but instead does not specify an entity type at all.&quot;
+                ).format(
+                    expected_entity_type_label=expected_entity_type_label,
+                )
+            )
+
+        actual_entity_type_label = entity_type_constraint.plugin_label()
+
+        raise AssertionFailed(
+            _(
+                &quot;The entity reference must be for an entity of type {expected_entity_type_label}, but instead is for an entity of type {actual_entity_type_label}.&quot;
+            ).format(
+                expected_entity_type_label=expected_entity_type_label,
+                actual_entity_type_label=actual_entity_type_label,
+            )
+        )</div>
+
+
+
+<div class="viewcode-block" id="ExtensionConfiguration">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfiguration">[docs]</a>
+@final
+class ExtensionConfiguration(Configuration):
+    &quot;&quot;&quot;
+    Configure a single extension for a project.
+    &quot;&quot;&quot;
+
+<div class="viewcode-block" id="ExtensionConfiguration.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfiguration.__init__">[docs]</a>
+    def __init__(
+        self,
+        extension_type: type[Extension],
+        *,
+        enabled: bool = True,
+        extension_configuration: Configuration | None = None,
+    ):
+        super().__init__()
+        self._extension_type = extension_type
+        self._enabled = enabled
+        if extension_configuration is None and issubclass(
+            extension_type, ConfigurableExtension
+        ):
+            extension_configuration = extension_type.default_configuration()
+        self._set_extension_configuration(extension_configuration)</div>
+
+
+    @override
+    def __eq__(self, other: Any) -&gt; bool:
+        if not isinstance(other, self.__class__):
+            return NotImplemented
+        if self.extension_type != other.extension_type:
+            return False
+        if self.enabled != other.enabled:
+            return False
+        if self.extension_configuration != other.extension_configuration:
+            return False
+        return True
+
+    @property
+    def extension_type(self) -&gt; type[Extension]:
+        &quot;&quot;&quot;
+        The extension type.
+        &quot;&quot;&quot;
+        return self._extension_type
+
+    @property
+    def enabled(self) -&gt; bool:
+        &quot;&quot;&quot;
+        Whether the extension is enabled.
+        &quot;&quot;&quot;
+        return self._enabled
+
+    @enabled.setter
+    def enabled(self, enabled: bool) -&gt; None:
+        self._enabled = enabled
+
+    @property
+    def extension_configuration(self) -&gt; Configuration | None:
+        &quot;&quot;&quot;
+        Get the extension&#39;s own configuration.
+        &quot;&quot;&quot;
+        return self._extension_configuration
+
+    def _set_extension_configuration(
+        self, extension_configuration: Configuration | None
+    ) -&gt; None:
+        self._extension_configuration = extension_configuration
+
+<div class="viewcode-block" id="ExtensionConfiguration.update">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfiguration.update">[docs]</a>
+    @override
+    def update(self, other: Self) -&gt; None:
+        self._extension_type = other._extension_type
+        self._enabled = other._enabled
+        self._set_extension_configuration(other._extension_configuration)</div>
+
+
+<div class="viewcode-block" id="ExtensionConfiguration.load">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfiguration.load">[docs]</a>
+    @override
+    def load(self, dump: Dump) -&gt; None:
+        assert_record(
+            RequiredField(
+                &quot;extension&quot;,
+                assert_plugin(extension.EXTENSION_REPOSITORY)
+                | assert_setattr(self, &quot;_extension_type&quot;),
+            ),
+            OptionalField(&quot;enabled&quot;, assert_bool() | assert_setattr(self, &quot;enabled&quot;)),
+            OptionalField(
+                &quot;configuration&quot;,
+                self._assert_load_extension_configuration(self.extension_type),
+            ),
+        )(dump)</div>
+
+
+    def _assert_load_extension_configuration(
+        self, extension_type: type[Extension]
+    ) -&gt; Assertion[Any, Configuration]:
+        def _assertion(value: Any) -&gt; Configuration:
+            extension_configuration = self._extension_configuration
+            if isinstance(extension_configuration, Configuration):
+                extension_configuration.load(value)
+                return extension_configuration
+            raise AssertionFailed(
+                _(&quot;{extension_type} is not configurable.&quot;).format(
+                    extension_type=extension_type.plugin_id()
+                )
+            )
+
+        return _assertion
+
+<div class="viewcode-block" id="ExtensionConfiguration.dump">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfiguration.dump">[docs]</a>
+    @override
+    def dump(self) -&gt; VoidableDump:
+        return minimize(
+            {
+                &quot;extension&quot;: self.extension_type.plugin_id(),
+                &quot;enabled&quot;: self.enabled,
+                &quot;configuration&quot;: (
+                    minimize(self.extension_configuration.dump())
+                    if issubclass(self.extension_type, Configurable)
+                    and self.extension_configuration
+                    else Void
+                ),
+            }
+        )</div>
+</div>
+
+
+
+<div class="viewcode-block" id="ExtensionConfigurationMapping">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfigurationMapping">[docs]</a>
+@final
+class ExtensionConfigurationMapping(
+    ConfigurationMapping[type[Extension], ExtensionConfiguration]
+):
+    &quot;&quot;&quot;
+    Configure a project&#39;s extensions.
+    &quot;&quot;&quot;
+
+    @override
+    def _minimize_item_dump(self) -&gt; bool:
+        return True
+
+<div class="viewcode-block" id="ExtensionConfigurationMapping.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfigurationMapping.__init__">[docs]</a>
+    def __init__(
+        self,
+        configurations: Iterable[ExtensionConfiguration] | None = None,
+    ):
+        super().__init__(configurations)</div>
+
+
+<div class="viewcode-block" id="ExtensionConfigurationMapping.load_item">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfigurationMapping.load_item">[docs]</a>
+    @override
+    def load_item(self, dump: Dump) -&gt; ExtensionConfiguration:
+        dict_dump = assert_fields(
+            RequiredField(&quot;extension&quot;, assert_plugin(extension.EXTENSION_REPOSITORY))
+        )(dump)
+        configuration = ExtensionConfiguration(dict_dump[&quot;extension&quot;])
+        configuration.load(dump)
+        return configuration</div>
+
+
+    @override
+    def _get_key(self, configuration: ExtensionConfiguration) -&gt; type[Extension]:
+        return configuration.extension_type
+
+    @override
+    def _load_key(
+        self,
+        item_dump: Dump,
+        key_dump: str,
+    ) -&gt; Dump:
+        dict_dump = assert_dict()(item_dump)
+        dict_dump[&quot;extension&quot;] = key_dump
+        return dict_dump
+
+    @override
+    def _dump_key(self, item_dump: VoidableDump) -&gt; tuple[VoidableDump, str]:
+        dict_dump = assert_dict()(item_dump)
+        return dict_dump, dict_dump.pop(&quot;extension&quot;)
+
+<div class="viewcode-block" id="ExtensionConfigurationMapping.enable">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfigurationMapping.enable">[docs]</a>
+    def enable(self, *extension_types: type[Extension]) -&gt; None:
+        &quot;&quot;&quot;
+        Enable the given extensions.
+        &quot;&quot;&quot;
+        for extension_type in extension_types:
+            try:
+                self._configurations[extension_type].enabled = True
+            except KeyError:
+                self.append(ExtensionConfiguration(extension_type))</div>
+
+
+<div class="viewcode-block" id="ExtensionConfigurationMapping.disable">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ExtensionConfigurationMapping.disable">[docs]</a>
+    def disable(self, *extension_types: type[Extension]) -&gt; None:
+        &quot;&quot;&quot;
+        Disable the given extensions.
+        &quot;&quot;&quot;
+        for extension_type in extension_types:
+            with suppress(KeyError):
+                self._configurations[extension_type].enabled = False</div>
+</div>
+
+
+
+<div class="viewcode-block" id="EntityTypeConfiguration">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityTypeConfiguration">[docs]</a>
+@final
+class EntityTypeConfiguration(Configuration):
+    &quot;&quot;&quot;
+    Configure a single entity type for a project.
+    &quot;&quot;&quot;
+
+<div class="viewcode-block" id="EntityTypeConfiguration.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityTypeConfiguration.__init__">[docs]</a>
+    def __init__(
+        self,
+        entity_type: type[Entity],
+        *,
+        generate_html_list: bool | None = None,
+    ):
+        super().__init__()
+        self._entity_type = entity_type
+        self.generate_html_list = generate_html_list  # type: ignore[assignment]</div>
+
+
+    @override
+    def __eq__(self, other: Any) -&gt; bool:
+        if not isinstance(other, self.__class__):
+            return NotImplemented
+        if self.entity_type != other.entity_type:
+            return False
+        if self.generate_html_list != other.generate_html_list:
+            return False
+        return True
+
+    @property
+    def entity_type(self) -&gt; type[Entity]:
+        &quot;&quot;&quot;
+        The configured entity type.
+        &quot;&quot;&quot;
+        return self._entity_type
+
+    @property
+    def generate_html_list(self) -&gt; bool:
+        &quot;&quot;&quot;
+        Whether to generate listing web pages for entities of this type.
+        &quot;&quot;&quot;
+        return self._generate_html_list or False
+
+    @generate_html_list.setter
+    def generate_html_list(self, generate_html_list: bool | None) -&gt; None:
+        if generate_html_list and not issubclass(self._entity_type, UserFacingEntity):
+            raise AssertionFailed(
+                _(
+                    &quot;Cannot generate pages for {entity_type}, because it is not a user-facing entity type.&quot;
+                ).format(entity_type=self._entity_type.plugin_label())
+            )
+        self._generate_html_list = generate_html_list
+
+<div class="viewcode-block" id="EntityTypeConfiguration.update">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityTypeConfiguration.update">[docs]</a>
+    @override
+    def update(self, other: Self) -&gt; None:
+        self._entity_type = other._entity_type
+        self._generate_html_list = other._generate_html_list</div>
+
+
+<div class="viewcode-block" id="EntityTypeConfiguration.load">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityTypeConfiguration.load">[docs]</a>
+    @override
+    def load(self, dump: Dump) -&gt; None:
+        assert_record(
+            RequiredField[Any, type[Entity]](
+                &quot;entity_type&quot;,
+                assert_str()
+                | assert_plugin(model.ENTITY_TYPE_REPOSITORY)
+                | assert_setattr(self, &quot;_entity_type&quot;),
+            ),
+            OptionalField(
+                &quot;generate_html_list&quot;,
+                assert_bool() | assert_setattr(self, &quot;generate_html_list&quot;),
+            ),
+        )(dump)</div>
+
+
+<div class="viewcode-block" id="EntityTypeConfiguration.dump">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityTypeConfiguration.dump">[docs]</a>
+    @override
+    def dump(self) -&gt; VoidableDump:
+        dump: VoidableDumpMapping[VoidableDump] = {
+            &quot;entity_type&quot;: self._entity_type.plugin_id(),
+            &quot;generate_html_list&quot;: (
+                Void if self._generate_html_list is None else self._generate_html_list
+            ),
+        }
+
+        return minimize(dump)</div>
+</div>
+
+
+
+<div class="viewcode-block" id="EntityTypeConfigurationMapping">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityTypeConfigurationMapping">[docs]</a>
+@final
+class EntityTypeConfigurationMapping(
+    ConfigurationMapping[type[Entity], EntityTypeConfiguration]
+):
+    &quot;&quot;&quot;
+    Configure the entity types for a project.
+    &quot;&quot;&quot;
+
+    @override
+    def _minimize_item_dump(self) -&gt; bool:
+        return True
+
+    @override
+    def _get_key(self, configuration: EntityTypeConfiguration) -&gt; type[Entity]:
+        return configuration.entity_type
+
+    @override
+    def _load_key(
+        self,
+        item_dump: Dump,
+        key_dump: str,
+    ) -&gt; Dump:
+        dict_dump = assert_dict()(item_dump)
+        assert_plugin(model.ENTITY_TYPE_REPOSITORY)(key_dump)
+        dict_dump[&quot;entity_type&quot;] = key_dump
+        return dict_dump
+
+    @override
+    def _dump_key(self, item_dump: VoidableDump) -&gt; tuple[VoidableDump, str]:
+        dict_dump = assert_dict()(item_dump)
+        return dict_dump, dict_dump.pop(&quot;entity_type&quot;)
+
+<div class="viewcode-block" id="EntityTypeConfigurationMapping.load_item">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.EntityTypeConfigurationMapping.load_item">[docs]</a>
+    @override
+    def load_item(self, dump: Dump) -&gt; EntityTypeConfiguration:
+        # Use a dummy entity type for now to satisfy the initializer.
+        # It will be overridden when loading the dump.
+        configuration = EntityTypeConfiguration(
+            Entity  # type: ignore[type-abstract]
+        )
+        configuration.load(dump)
+        return configuration</div>
+</div>
+
+
+
+<div class="viewcode-block" id="LocaleConfiguration">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.LocaleConfiguration">[docs]</a>
+@final
+class LocaleConfiguration(Configuration):
+    &quot;&quot;&quot;
+    Configure a single project locale.
+    &quot;&quot;&quot;
+
+<div class="viewcode-block" id="LocaleConfiguration.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.LocaleConfiguration.__init__">[docs]</a>
+    def __init__(
+        self,
+        locale: str,
+        *,
+        alias: str | None = None,
+    ):
+        super().__init__()
+        self._locale = locale
+        if alias is not None and &quot;/&quot; in alias:
+            raise AssertionFailed(_(&quot;Locale aliases must not contain slashes.&quot;))
+        self._alias = alias</div>
+
+
+    @override  # type: ignore[callable-functiontype]
+    @recursive_repr()
+    def __repr__(self) -&gt; str:
+        return repr_instance(self, locale=self.locale, alias=self.alias)
+
+    @override
+    def __eq__(self, other: Any) -&gt; bool:
+        if not isinstance(other, self.__class__):
+            return NotImplemented
+        if self.locale != other.locale:
+            return False
+        if self.alias != other.alias:
+            return False
+        return True
+
+    @override
+    def __hash__(self) -&gt; int:
+        return hash((self._locale, self._alias))
+
+    @property
+    def locale(self) -&gt; str:
+        &quot;&quot;&quot;
+        An `IETF BCP 47 &lt;https://tools.ietf.org/html/bcp47&gt;`_ language tag.
+        &quot;&quot;&quot;
+        return self._locale
+
+    @property
+    def alias(self) -&gt; str:
+        &quot;&quot;&quot;
+        A shorthand alias to use instead of the full language tag, such as when rendering URLs.
+        &quot;&quot;&quot;
+        if self._alias is None:
+            return self.locale
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias: str | None) -&gt; None:
+        self._alias = alias
+
+<div class="viewcode-block" id="LocaleConfiguration.update">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.LocaleConfiguration.update">[docs]</a>
+    @override
+    def update(self, other: Self) -&gt; None:
+        self._locale = other._locale
+        self._alias = other._alias</div>
+
+
+<div class="viewcode-block" id="LocaleConfiguration.load">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.LocaleConfiguration.load">[docs]</a>
+    @override
+    def load(self, dump: Dump) -&gt; None:
+        assert_record(
+            RequiredField(&quot;locale&quot;, assert_locale() | assert_setattr(self, &quot;_locale&quot;)),
+            OptionalField(&quot;alias&quot;, assert_str() | assert_setattr(self, &quot;alias&quot;)),
+        )(dump)</div>
+
+
+<div class="viewcode-block" id="LocaleConfiguration.dump">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.LocaleConfiguration.dump">[docs]</a>
+    @override
+    def dump(self) -&gt; VoidableDump:
+        return minimize({&quot;locale&quot;: self.locale, &quot;alias&quot;: void_none(self._alias)})</div>
+</div>
+
+
+
+<div class="viewcode-block" id="LocaleConfigurationMapping">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.LocaleConfigurationMapping">[docs]</a>
+@final
+class LocaleConfigurationMapping(ConfigurationMapping[str, LocaleConfiguration]):
+    &quot;&quot;&quot;
+    Configure a project&#39;s locales.
+    &quot;&quot;&quot;
+
+<div class="viewcode-block" id="LocaleConfigurationMapping.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.LocaleConfigurationMapping.__init__">[docs]</a>
+    def __init__(
+        self,
+        configurations: Iterable[LocaleConfiguration] | None = None,
+    ):
+        super().__init__(configurations)
+        self._ensure_locale()</div>
+
+
+    @override
+    def _on_remove(self, configuration: LocaleConfiguration) -&gt; None:
+        super()._on_remove(configuration)
+        self._ensure_locale()
+
+    def _ensure_locale(self) -&gt; None:
+        if len(self) == 0:
+            self.append(LocaleConfiguration(DEFAULT_LOCALE))
+
+    @override
+    def _get_key(self, configuration: LocaleConfiguration) -&gt; str:
+        return configuration.locale
+
+    @override
+    def _load_key(
+        self,
+        item_dump: Dump,
+        key_dump: str,
+    ) -&gt; Dump:
+        dict_item_dump = assert_dict()(item_dump)
+        dict_item_dump[&quot;locale&quot;] = key_dump
+        return dict_item_dump
+
+    @override
+    def _dump_key(self, item_dump: VoidableDump) -&gt; tuple[VoidableDump, str]:
+        dict_item_dump = assert_dict()(item_dump)
+        return dict_item_dump, dict_item_dump.pop(&quot;locale&quot;)
+
+<div class="viewcode-block" id="LocaleConfigurationMapping.load_item">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.LocaleConfigurationMapping.load_item">[docs]</a>
+    @override
+    def load_item(self, dump: Dump) -&gt; LocaleConfiguration:
+        item = LocaleConfiguration(&quot;und&quot;)
+        item.load(dump)
+        return item</div>
+
+
+    @property
+    def default(self) -&gt; LocaleConfiguration:
+        &quot;&quot;&quot;
+        The default language.
+        &quot;&quot;&quot;
+        return next(iter(self._configurations.values()))
+
+    @default.setter
+    def default(self, configuration: LocaleConfiguration | str) -&gt; None:
+        if isinstance(configuration, str):
+            configuration = self[configuration]
+        self._configurations[configuration.locale] = configuration
+        self._configurations.move_to_end(configuration.locale, False)
+
+    @property
+    def multilingual(self) -&gt; bool:
+        &quot;&quot;&quot;
+        Whether the configuration is multilingual.
+        &quot;&quot;&quot;
+        return len(self) &gt; 1</div>
+
+
+
+<div class="viewcode-block" id="ProjectConfiguration">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ProjectConfiguration">[docs]</a>
+@final
+class ProjectConfiguration(Configuration):
+    &quot;&quot;&quot;
+    Provide the configuration for a :py:class:`betty.project.Project`.
+    &quot;&quot;&quot;
+
+<div class="viewcode-block" id="ProjectConfiguration.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ProjectConfiguration.__init__">[docs]</a>
+    def __init__(
+        self,
+        configuration_file_path: Path,
+        *,
+        base_url: str | None = None,
+        root_path: str = &quot;&quot;,
+        clean_urls: bool = False,
+        title: str = &quot;Betty&quot;,
+        author: str | None = None,
+        entity_types: Iterable[EntityTypeConfiguration] | None = None,
+        extensions: Iterable[ExtensionConfiguration] | None = None,
+        debug: bool = False,
+        locales: Iterable[LocaleConfiguration] | None = None,
+        lifetime_threshold: int = DEFAULT_LIFETIME_THRESHOLD,
+        name: str | None = None,
+    ):
+        super().__init__()
+        self._configuration_file_path = configuration_file_path
+        self._name = name
+        self._computed_name: str | None = None
+        self._base_url = &quot;https://example.com&quot; if base_url is None else base_url
+        self._root_path = root_path
+        self._clean_urls = clean_urls
+        self._title = title
+        self._author = author
+        self._entity_types = EntityTypeConfigurationMapping(
+            entity_types
+            or [
+                EntityTypeConfiguration(
+                    entity_type=Person,
+                    generate_html_list=True,
+                ),
+                EntityTypeConfiguration(
+                    entity_type=Event,
+                    generate_html_list=True,
+                ),
+                EntityTypeConfiguration(
+                    entity_type=Place,
+                    generate_html_list=True,
+                ),
+                EntityTypeConfiguration(
+                    entity_type=Source,
+                    generate_html_list=True,
+                ),
+            ]
+        )
+        self._extensions = ExtensionConfigurationMapping(extensions or ())
+        self._debug = debug
+        self._locales = LocaleConfigurationMapping(locales or ())
+        self._lifetime_threshold = lifetime_threshold</div>
+
+
+    @property
+    def configuration_file_path(self) -&gt; Path:
+        &quot;&quot;&quot;
+        The path to the configuration&#39;s file.
+        &quot;&quot;&quot;
+        return self._configuration_file_path
+
+    @configuration_file_path.setter
+    def configuration_file_path(self, configuration_file_path: Path) -&gt; None:
+        if configuration_file_path == self._configuration_file_path:
+            return
+        formats = FormatRepository()
+        formats.format_for(configuration_file_path.suffix[1:])
+        self._configuration_file_path = configuration_file_path
+
+    @property
+    def name(self) -&gt; str | None:
+        &quot;&quot;&quot;
+        The project&#39;s machine name.
+        &quot;&quot;&quot;
+        return self._name
+
+    @name.setter
+    def name(self, name: str) -&gt; None:
+        self._name = name
+
+    @property
+    def project_directory_path(self) -&gt; Path:
+        &quot;&quot;&quot;
+        The project directory path.
+
+        Betty will look for resources in this directory, and place generated artifacts there. It is expected
+        that no other applications or projects share this same directory.
+        &quot;&quot;&quot;
+        return self.configuration_file_path.parent
+
+    @property
+    def output_directory_path(self) -&gt; Path:
+        &quot;&quot;&quot;
+        The output directory path.
+        &quot;&quot;&quot;
+        return self.project_directory_path / &quot;output&quot;
+
+    @property
+    def assets_directory_path(self) -&gt; Path:
+        &quot;&quot;&quot;
+        The :doc:`assets directory path &lt;/usage/assets&gt;`.
+        &quot;&quot;&quot;
+        return self.project_directory_path / &quot;assets&quot;
+
+    @property
+    def www_directory_path(self) -&gt; Path:
+        &quot;&quot;&quot;
+        The WWW directory path.
+        &quot;&quot;&quot;
+        return self.output_directory_path / &quot;www&quot;
+
+<div class="viewcode-block" id="ProjectConfiguration.localize_www_directory_path">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ProjectConfiguration.localize_www_directory_path">[docs]</a>
+    def localize_www_directory_path(self, locale: str) -&gt; Path:
+        &quot;&quot;&quot;
+        Get the WWW directory path for a locale.
+        &quot;&quot;&quot;
+        if self.locales.multilingual:
+            return self.www_directory_path / self.locales[locale].alias
+        return self.www_directory_path</div>
+
+
+    @property
+    def title(self) -&gt; str:
+        &quot;&quot;&quot;
+        The project&#39;s human-readable title.
+        &quot;&quot;&quot;
+        return self._title
+
+    @title.setter
+    def title(self, title: str) -&gt; None:
+        self._title = title
+
+    @property
+    def author(self) -&gt; str | None:
+        &quot;&quot;&quot;
+        The project&#39;s author.
+        &quot;&quot;&quot;
+        return self._author
+
+    @author.setter
+    def author(self, author: str | None) -&gt; None:
+        self._author = author
+
+    @property
+    def base_url(self) -&gt; str:
+        &quot;&quot;&quot;
+        The project&#39;s public URL&#39;s base URL.
+
+        If the public URL is ``https://example.com``, the base URL is ``https://example.com``.
+        If the public URL is ``https://example.com/my-ancestry-site``, the base URL is ``https://example.com``.
+        If the public URL is ``https://my-ancestry-site.example.com``, the base URL is ``https://my-ancestry-site.example.com``.
+        &quot;&quot;&quot;
+        return self._base_url
+
+    @base_url.setter
+    def base_url(self, base_url: str) -&gt; None:
+        base_url_parts = urlparse(base_url)
+        if not base_url_parts.scheme:
+            raise AssertionFailed(
+                _(
+                    &quot;The base URL must start with a scheme such as https://, http://, or file://.&quot;
+                )
+            )
+        if not base_url_parts.netloc:
+            raise AssertionFailed(_(&quot;The base URL must include a path.&quot;))
+        self._base_url = &quot;%s://%s&quot; % (base_url_parts.scheme, base_url_parts.netloc)
+
+    @property
+    def root_path(self) -&gt; str:
+        &quot;&quot;&quot;
+        The project&#39;s public URL&#39;s root path.
+
+        If the public URL is ``https://example.com``, the root path is an empty string.
+        If the public URL is ``https://example.com/my-ancestry-site``, the root path is ``/my-ancestry-site``.
+        &quot;&quot;&quot;
+        return self._root_path
+
+    @root_path.setter
+    def root_path(self, root_path: str) -&gt; None:
+        self._root_path = root_path.strip(&quot;/&quot;)
+
+    @property
+    def clean_urls(self) -&gt; bool:
+        &quot;&quot;&quot;
+        Whether to generate clean URLs such as ``/person/first-person`` instead of ``/person/first-person/index.html``.
+
+        Generated artifacts will require web server that supports this.
+        &quot;&quot;&quot;
+        return self._clean_urls
+
+    @clean_urls.setter
+    def clean_urls(self, clean_urls: bool) -&gt; None:
+        self._clean_urls = clean_urls
+
+    @property
+    def locales(self) -&gt; LocaleConfigurationMapping:
+        &quot;&quot;&quot;
+        The available locales.
+        &quot;&quot;&quot;
+        return self._locales
+
+    @property
+    def entity_types(self) -&gt; EntityTypeConfigurationMapping:
+        &quot;&quot;&quot;
+        The available entity types.
+        &quot;&quot;&quot;
+        return self._entity_types
+
+    @property
+    def extensions(self) -&gt; ExtensionConfigurationMapping:
+        &quot;&quot;&quot;
+        Then extensions running within this application.
+        &quot;&quot;&quot;
+        return self._extensions
+
+    @property
+    def debug(self) -&gt; bool:
+        &quot;&quot;&quot;
+        Whether to enable debugging for project jobs.
+
+        This setting is disabled by default.
+
+        Enabling this generally results in:
+
+        - More verbose logging output
+        - job artifacts (e.g. generated sites)
+        &quot;&quot;&quot;
+        return self._debug
+
+    @debug.setter
+    def debug(self, debug: bool) -&gt; None:
+        self._debug = debug
+
+    @property
+    def lifetime_threshold(self) -&gt; int:
+        &quot;&quot;&quot;
+        The lifetime threshold indicates when people are considered dead.
+
+        This setting defaults to :py:const:`betty.project.DEFAULT_LIFETIME_THRESHOLD`.
+
+        The value is an integer expressing the age in years over which people are
+        presumed to have died.
+        &quot;&quot;&quot;
+        return self._lifetime_threshold
+
+    @lifetime_threshold.setter
+    def lifetime_threshold(self, lifetime_threshold: int) -&gt; None:
+        assert_positive_number()(lifetime_threshold)
+        self._lifetime_threshold = lifetime_threshold
+
+<div class="viewcode-block" id="ProjectConfiguration.update">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ProjectConfiguration.update">[docs]</a>
+    @override
+    def update(self, other: Self) -&gt; None:
+        self._base_url = other._base_url
+        self._title = other._title
+        self._author = other._author
+        self._root_path = other._root_path
+        self._clean_urls = other._clean_urls
+        self._debug = other._debug
+        self._lifetime_threshold = other._lifetime_threshold
+        self._locales.update(other._locales)
+        self._extensions.update(other._extensions)
+        self._entity_types.update(other._entity_types)</div>
+
+
+<div class="viewcode-block" id="ProjectConfiguration.load">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ProjectConfiguration.load">[docs]</a>
+    @override
+    def load(self, dump: Dump) -&gt; None:
+        assert_record(
+            OptionalField(&quot;name&quot;, assert_str() | assert_setattr(self, &quot;name&quot;)),
+            RequiredField(&quot;base_url&quot;, assert_str() | assert_setattr(self, &quot;base_url&quot;)),
+            OptionalField(&quot;title&quot;, assert_str() | assert_setattr(self, &quot;title&quot;)),
+            OptionalField(&quot;author&quot;, assert_str() | assert_setattr(self, &quot;author&quot;)),
+            OptionalField(
+                &quot;root_path&quot;, assert_str() | assert_setattr(self, &quot;root_path&quot;)
+            ),
+            OptionalField(
+                &quot;clean_urls&quot;,
+                assert_bool() | assert_setattr(self, &quot;clean_urls&quot;),
+            ),
+            OptionalField(&quot;debug&quot;, assert_bool() | assert_setattr(self, &quot;debug&quot;)),
+            OptionalField(
+                &quot;lifetime_threshold&quot;,
+                assert_int() | assert_setattr(self, &quot;lifetime_threshold&quot;),
+            ),
+            OptionalField(&quot;locales&quot;, self.locales.load),
+            OptionalField(&quot;extensions&quot;, self.extensions.load),
+            OptionalField(&quot;entity_types&quot;, self.entity_types.load),
+        )(dump)</div>
+
+
+<div class="viewcode-block" id="ProjectConfiguration.dump">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ProjectConfiguration.dump">[docs]</a>
+    @override
+    def dump(self) -&gt; VoidableDumpMapping[Dump]:
+        return minimize(
+            {  # type: ignore[return-value]
+                &quot;name&quot;: void_none(self.name),
+                &quot;base_url&quot;: self.base_url,
+                &quot;title&quot;: self.title,
+                &quot;root_path&quot;: void_none(self.root_path),
+                &quot;clean_urls&quot;: void_none(self.clean_urls),
+                &quot;author&quot;: void_none(self.author),
+                &quot;debug&quot;: void_none(self.debug),
+                &quot;lifetime_threshold&quot;: void_none(self.lifetime_threshold),
+                &quot;locales&quot;: self.locales.dump(),
+                &quot;extensions&quot;: self.extensions.dump(),
+                &quot;entity_types&quot;: self.entity_types.dump(),
+            },
+            True,
+        )</div>
+</div>
+
+
+
+<div class="viewcode-block" id="Project">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.Project">[docs]</a>
+@final
+class Project(Configurable[ProjectConfiguration], CoreComponent):
+    &quot;&quot;&quot;
+    Define a Betty project.
+
+    A project combines project configuration and the resulting ancestry.
+    &quot;&quot;&quot;
+
+<div class="viewcode-block" id="Project.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.Project.__init__">[docs]</a>
+    def __init__(
+        self,
+        app: App,
+        configuration: ProjectConfiguration,
+        *,
+        ancestry: Ancestry | None = None,
+    ):
+        super().__init__()
+        self._app = app
+        self._configuration = configuration
+        self._ancestry = Ancestry() if ancestry is None else ancestry
+
+        self._assets: AssetRepository | None = None
+        self._localizers: LocalizerRepository | None = None
+        self._url_generator: LocalizedUrlGenerator | None = None
+        self._static_url_generator: StaticUrlGenerator | None = None
+        self._jinja2_environment: Environment | None = None
+        self._renderer: Renderer | None = None
+        self._extensions: _ProjectExtensions | None = None
+        self._event_dispatcher: EventDispatcher | None = None
+        self._entity_types: set[type[Entity]] | None = None</div>
+
+
+<div class="viewcode-block" id="Project.new_temporary">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.Project.new_temporary">[docs]</a>
+    @classmethod
+    @asynccontextmanager
+    async def new_temporary(
+        cls, app: App, *, ancestry: Ancestry | None = None
+    ) -&gt; AsyncIterator[Self]:
+        &quot;&quot;&quot;
+        Creat a new, temporary, isolated project.
+
+        The project will not leave any traces on the system, except when it uses
+        global Betty functionality such as caches.
+        &quot;&quot;&quot;
+        async with (
+            TemporaryDirectory() as project_directory_path_str,
+        ):
+            yield cls(
+                app,
+                ProjectConfiguration(Path(project_directory_path_str) / &quot;betty.json&quot;),
+                ancestry=ancestry,
+            )</div>
+
+
+<div class="viewcode-block" id="Project.bootstrap">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.Project.bootstrap">[docs]</a>
+    @override
+    async def bootstrap(self) -&gt; None:
+        await super().bootstrap()
+        for project_extension_batch in self.extensions:
+            batch_event_handlers = EventHandlerRegistry()
+            for project_extension in project_extension_batch:
+                await self._async_exit_stack.enter_async_context(project_extension)
+                project_extension.register_event_handlers(batch_event_handlers)
+            self.event_dispatcher.add_registry(batch_event_handlers)</div>
+
+
+    @property
+    def app(self) -&gt; App:
+        &quot;&quot;&quot;
+        The application this project is run within.
+        &quot;&quot;&quot;
+        return self._app
+
+    @property
+    def name(self) -&gt; str:
+        &quot;&quot;&quot;
+        The project name.
+
+        If no project name was configured, this defaults to the hash of the configuration file path.
+        &quot;&quot;&quot;
+        if self._configuration.name is None:
+            return hashid(str(self._configuration.configuration_file_path))
+        return self._configuration.name
+
+    @property
+    def ancestry(self) -&gt; Ancestry:
+        &quot;&quot;&quot;
+        The project&#39;s ancestry.
+        &quot;&quot;&quot;
+        return self._ancestry
+
+    @property
+    def assets(self) -&gt; AssetRepository:
+        &quot;&quot;&quot;
+        The assets file system.
+        &quot;&quot;&quot;
+        if self._assets is None:
+            self._assert_bootstrapped()
+            asset_paths = [self.configuration.assets_directory_path]
+            for extension in self.extensions.flatten():
+                extension_assets_directory_path = extension.assets_directory_path()
+                if extension_assets_directory_path is not None:
+                    asset_paths.append(extension_assets_directory_path)
+            # Mimic :py:attr:`betty.app.App.assets`.
+            asset_paths.append(fs.ASSETS_DIRECTORY_PATH)
+            self._assets = AssetRepository(*asset_paths)
+        return self._assets
+
+    @property
+    def localizers(self) -&gt; LocalizerRepository:
+        &quot;&quot;&quot;
+        The available localizers.
+        &quot;&quot;&quot;
+        if self._localizers is None:
+            self._assert_bootstrapped()
+            self._localizers = LocalizerRepository(self.assets)
+        return self._localizers
+
+    @property
+    def url_generator(self) -&gt; LocalizedUrlGenerator:
+        &quot;&quot;&quot;
+        The (localized) URL generator.
+        &quot;&quot;&quot;
+        if self._url_generator is None:
+            from betty.url import ProjectUrlGenerator
+
+            self._assert_bootstrapped()
+            self._url_generator = ProjectUrlGenerator(self)
+        return self._url_generator
+
+    @property
+    def static_url_generator(self) -&gt; StaticUrlGenerator:
+        &quot;&quot;&quot;
+        The static URL generator.
+        &quot;&quot;&quot;
+        if self._static_url_generator is None:
+            from betty.url import StaticPathUrlGenerator
+
+            self._assert_bootstrapped()
+            self._static_url_generator = StaticPathUrlGenerator(self.configuration)
+        return self._static_url_generator
+
+    @property
+    def jinja2_environment(self) -&gt; Environment:
+        &quot;&quot;&quot;
+        The Jinja2 environment.
+        &quot;&quot;&quot;
+        if not self._jinja2_environment:
+            from betty.jinja2 import Environment
+
+            self._assert_bootstrapped()
+            self._jinja2_environment = Environment(self)
+
+        return self._jinja2_environment
+
+    @property
+    def renderer(self) -&gt; Renderer:
+        &quot;&quot;&quot;
+        The (file) content renderer.
+        &quot;&quot;&quot;
+        if not self._renderer:
+            from betty.jinja2 import Jinja2Renderer
+
+            self._renderer = SequentialRenderer(
+                [
+                    Jinja2Renderer(self.jinja2_environment, self.configuration),
+                ]
+            )
+
+        return self._renderer
+
+    @property
+    def extensions(self) -&gt; _ProjectExtensions:
+        &quot;&quot;&quot;
+        The enabled extensions.
+        &quot;&quot;&quot;
+        if self._extensions is None:
+            self._assert_bootstrapped()
+            extension_types_enabled_in_configuration = set()
+            for (
+                project_extension_configuration
+            ) in self.configuration.extensions.values():
+                if project_extension_configuration.enabled:
+                    wait_to_thread(
+                        project_extension_configuration.extension_type.enable_requirement().assert_met()
+                    )
+                    extension_types_enabled_in_configuration.add(
+                        project_extension_configuration.extension_type
+                    )
+
+            extension_types_sorter = TopologicalSorter(
+                wait_to_thread(
+                    build_extension_type_graph(extension_types_enabled_in_configuration)
+                )
+            )
+            try:
+                extension_types_sorter.prepare()
+            except CycleError:
+                raise CyclicDependencyError(
+                    [
+                        app_extension_configuration.extension_type
+                        for app_extension_configuration in self.configuration.extensions.values()
+                    ]
+                ) from None
+
+            extensions = []
+            while extension_types_sorter.is_active():
+                extension_types_batch = extension_types_sorter.get_ready()
+                extensions_batch = []
+                for extension_type in extension_types_batch:
+                    extension = self.new_dependent(extension_type)
+                    if (
+                        isinstance(extension, ConfigurableExtension)
+                        and extension_type in self.configuration.extensions
+                    ):
+                        extension.configuration.update(
+                            self.configuration.extensions[
+                                extension_type
+                            ].extension_configuration
+                        )
+                    extensions_batch.append(extension)
+                    extension_types_sorter.done(extension_type)
+                extensions.append(
+                    sorted(
+                        extensions_batch, key=lambda extension: extension.plugin_id()
+                    )
+                )
+            self._extensions = _ProjectExtensions(extensions)
+
+        return self._extensions
+
+    @property
+    def event_dispatcher(self) -&gt; EventDispatcher:
+        &quot;&quot;&quot;
+        The event dispatcher.
+        &quot;&quot;&quot;
+        if self._event_dispatcher is None:
+            self._assert_bootstrapped()
+            self._event_dispatcher = EventDispatcher()
+
+        return self._event_dispatcher
+
+<div class="viewcode-block" id="Project.new_dependent">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.Project.new_dependent">[docs]</a>
+    def new_dependent(
+        self, dependent: type[_ProjectDependentFactoryT]
+    ) -&gt; _ProjectDependentFactoryT:
+        &quot;&quot;&quot;
+        Create a new instance of a type that depends on a ``self``.
+        &quot;&quot;&quot;
+        return dependent.new_for_project(self)</div>
+</div>
+
+
+
+_ProjectDependentFactoryT = TypeVar(
+    &quot;_ProjectDependentFactoryT&quot;, bound=ProjectDependentFactory
+)
+
+
+@final
+class _ProjectExtensions:
+    &quot;&quot;&quot;
+    Manage the extensions running within the :py:class:`betty.project.Project`.
+    &quot;&quot;&quot;
+
+    def __init__(self, project_extensions: Sequence[Sequence[Extension]]):
+        super().__init__()
+        self._project_extensions = project_extensions
+
+    def __getitem__(self, extension_id: PluginId) -&gt; Extension:
+        extension_type = wait_to_thread(
+            extension.EXTENSION_REPOSITORY.get(extension_id)
+        )
+        for project_extension in self.flatten():
+            if type(project_extension) is extension_type:
+                return project_extension
+        raise KeyError(f&#39;Unknown extension of type &quot;{extension_type}&quot;&#39;)
+
+    def __iter__(self) -&gt; Iterator[Iterator[Extension]]:
+        &quot;&quot;&quot;
+        Iterate over all extensions, in topologically sorted batches.
+
+        Each item is a batch of extensions. Items are ordered because later items depend
+        on earlier items. The extensions in each item do not depend on each other and their
+        order has no meaning. However, implementations SHOULD sort the extensions in each
+        item in a stable fashion for reproducability.
+        &quot;&quot;&quot;
+        # Use a generator so we discourage calling code from storing the result.
+        for batch in self._project_extensions:
+            yield (project_extension for project_extension in batch)
+
+    def flatten(self) -&gt; Iterator[Extension]:
+        &quot;&quot;&quot;
+        Get a sequence of topologically sorted extensions.
+        &quot;&quot;&quot;
+        for batch in self:
+            yield from batch
+
+    def __contains__(self, extension_id: PluginId) -&gt; bool:
+        try:
+            self[extension_id]
+        except KeyError:
+            return False
+        else:
+            return True
+
+
+<div class="viewcode-block" id="ProjectEvent">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ProjectEvent">[docs]</a>
+class ProjectEvent(event_dispatcher.Event):
+    &quot;&quot;&quot;
+    An event that is dispatched within the context of a :py:class:`betty.project.Project`.
+    &quot;&quot;&quot;
+
+<div class="viewcode-block" id="ProjectEvent.__init__">
+<a class="viewcode-back" href="../../../betty.project/#betty.project.ProjectEvent.__init__">[docs]</a>
+    def __init__(self, project: Project):
+        self._project = project</div>
+
+
+    @property
+    def project(self) -&gt; Project:
+        &quot;&quot;&quot;
+        The :py:class:`betty.project.Project` this event is dispatched within.
+        &quot;&quot;&quot;
+        return self._project</div>
+
+</pre></div>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; Bart Feenstra and contributors
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script src="../../../_static/documentation_options.js?v=05a282a8"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    </body>
+</html>

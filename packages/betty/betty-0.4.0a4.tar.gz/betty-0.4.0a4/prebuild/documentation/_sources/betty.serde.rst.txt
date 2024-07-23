@@ -1,0 +1,19 @@
+betty.serde package
+===================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 999
+
+   betty.serde.dump
+   betty.serde.format
+
+Module contents
+---------------
+
+.. automodule:: betty.serde
+   :members:
+   :undoc-members:
+   :show-inheritance:
