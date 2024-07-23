@@ -1,0 +1,346 @@
+Week 1 + 2
+
+
+
+
+
+
+Task #1: Write a for loop to print all the numbers from 1 to 10.
+
+Code:
+i = 1
+while i <= 10:
+ print(i)
+ i += 1
+
+
+
+
+Task #2: Write a for loop to print the squares of numbers from 1 to 5.
+
+Code:
+i = 1
+while i <= 5:
+ print(i ** 2)
+ i += 1
+
+
+
+
+Task #3: Write a for loop to calculate the sum of all numbers from 1 to 100.
+
+Code:
+total_sum = 0
+i = 1
+while i <= 100:
+ total_sum += i
+ i += 1
+print("Sum of numbers from 1 to 100:", total_sum)
+
+
+
+
+
+
+
+Week 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Task #1: Write a python program that searches a number in a list consisting of 10 elements.
+
+Code:
+array = [5, 2, 8, 10, 15, 3, 7, 12, 9, 6]
+target = 10
+for num in array:
+ if num == target:
+  print("Number 10 found in the list.")
+  break
+else:
+  print("Number 10 not found in the list.")
+
+
+
+
+Task #2: Write a program to find the maximum value in a list of
+numbers.
+
+Code:
+numbers = [5, 8, 2, 10, 6, 3]
+max_value = max(numbers)
+print("Maximum value in the list:", max_value)
+
+
+
+
+Task #3: Write a program to find the minimum value in a list of
+numbers.
+
+Code:
+numbers = [5, 8, 2, 10, 6, 3]
+min_value = min(numbers)
+print("Minimum value in the list:", min_value)
+
+
+
+
+
+
+Task #4: Write a program to find the index of a specific value in a
+list.
+
+Code:
+def linear_search(arr, target):
+ for i in range(len(arr)):
+  if arr[i] == target:
+   return i
+ return -1
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
+target_value = 5
+result = linear_search(my_list, target_value)
+if result != -1:
+ print(f"Found {target_value} at index {result}")
+else:
+ print(f"{target_value} not found in the list")
+
+
+
+
+Task #5: Write a program to count the number of occurrences of a
+specific value in a list.
+
+Code:
+def linear_search(arr, target):
+ x = 0
+ for i in range(len(arr)):
+  if arr[i] == target:
+   x+=1
+ return x
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
+target_value = 7
+result = linear_search(my_list, target_value)
+if result != -1:
+ print(f"Found {target_value} like {result} times")
+
+
+
+
+Task #6: DFS code
+
+Code:
+graph = {
+ '5' : ['3','7'],
+ '3' : ['2', '4'],
+ '7' : ['8'],
+ '2' : [],
+ '4' : ['8'],
+ '8' : []
+}
+visited = set() # Set to keep track of visited nodes of graph.
+def dfs(visited, graph, node): #function for dfs
+ if node not in visited:
+  print (node)
+  visited.add(node)
+  for neighbour in graph[node]:
+   dfs(visited, graph, neighbour)
+print("Following is the Depth-First Search")
+dfs(visited, graph, '5')
+
+
+
+
+
+
+
+
+Week 4
+
+
+
+Video to frames
+
+
+
+
+import cv2
+
+def video_to_frames(input_video_path, output_frame_dir, frame_rate):
+    # Open the video file
+    cap = cv2.VideoCapture(input_video_path)
+
+    # Get the frames per second (fps) of the video
+    fps = int(cap.get(cv2.CAP_PROP_FPS))
+
+    # Calculate the frame interval for the desired frame rate
+    frame_interval = fps // frame_rate
+
+    frame_count = 0
+
+    # Create the output directory if it doesn't exist
+    import os
+    os.makedirs(output_frame_dir, exist_ok=True)
+
+    while True:
+        ret, frame = cap.read()
+
+        if not ret:
+            break
+
+        # Save the frame
+        if frame_count % frame_interval == 0:
+            frame_filename = f"{output_frame_dir}/frame_{frame_count}.jpg"
+            cv2.imwrite(frame_filename, frame)
+
+        frame_count += 1
+
+    cap.release()
+
+if __name__ == "__main__":
+    input_video_path = r"/content/drive/MyDrive/input/cars.mp4"  # Replace with your input video file path
+    output_frame_dir = r"/content/drive/MyDrive/output/"  # Output directory to save frames
+frame_rate = 5  # Desired frame rate in frames per second
+
+    video_to_frames(input_video_path, output_frame_dir, frame_rate)
+
+
+
+
+
+
+
+
+
+
+Week 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+Task #1: Write the algorithm for greedy best first search
+
+Code:
+def greedy_best_first_search(graph, start, goal, heuristic):
+    visited = set()
+    priority_queue = [(heuristic[start], start)]
+    
+    while priority_queue:
+        h, current = priority_queue.pop(0)
+        visited.add(current)
+        
+        if current == goal:
+            print("Goal found!")
+            return
+        
+        print("Current node:", current)
+        for neighbour in graph[current]:
+            if neighbour not in visited:
+                priority_queue.append((heuristic[neighbour], neighbour))
+                priority_queue.sort()  # Sort based on heuristic value
+
+    print("Goal not found!")
+
+# Example graph
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D'],
+    'C': ['A', 'D'],
+    'D': ['B', 'C']
+}
+
+# Example heuristic values
+heuristic_values = {
+    'A': 7,
+    'B': 5,
+    'C': 3,
+    'D': 1
+}
+
+# Perform search
+greedy_best_first_search(graph, 'A', 'D', heuristic_values)
+
+
+
+
+
+
+
+
+
+
+Week 6
+
+
+
+
+
+
+A star code
+
+
+
+
+def a_star_search(graph, start, goal, heuristic):
+    visited = set()
+    open_list = [(heuristic[start], start)]
+    came_from = {}
+    cost_so_far = {start: 0}
+
+    while open_list:
+        open_list.sort()  # Sort based on heuristic value
+        _, current = open_list.pop(0)
+        visited.add(current)
+
+        if current == goal:
+            print("Goal found!")
+            return
+
+        print("Current node:", current)
+        for neighbour, cost in graph[current].items():
+            new_cost = cost_so_far[current] + cost
+            if neighbour not in cost_so_far or new_cost < cost_so_far[neighbour]:
+                cost_so_far[neighbour] = new_cost
+                priority = new_cost + heuristic[neighbour]
+                open_list.append((priority, neighbour))
+                came_from[neighbour] = current
+
+    print("Goal not found!")
+
+# Example graph
+graph = {
+    'A': {'B': 2, 'C': 4},
+    'B': {'A': 2, 'D': 5},
+    'C': {'A': 4, 'D': 3},
+    'D': {'B': 5, 'C': 3}
+}
+
+# Example heuristic values
+heuristic_values = {
+    'A': 5,
+    'B': 4,
+    'C': 2,
+    'D': 0
+}
+
+# Perform search
+a_star_search(graph, 'A', 'D', heuristic_values)

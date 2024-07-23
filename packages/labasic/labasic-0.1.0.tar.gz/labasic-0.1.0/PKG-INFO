@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: labasic
+Version: 0.1.0
+Summary: basic operations
+Home-page: https://github.com/TCIDENEB/labasic
+License: MIT
+Keywords: basic
+Author: KBE
+Requires-Python: >=3.12.4,<3.13.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Project-URL: Repository, https://github.com/TCIDENEB/labasic
+Description-Content-Type: text/markdown
+
+'basic operations'

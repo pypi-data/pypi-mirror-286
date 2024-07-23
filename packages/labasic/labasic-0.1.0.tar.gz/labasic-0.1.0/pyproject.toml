@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "labasic"
+version = "0.1.0"
+description = "basic operations"
+authors = ["KBE"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/TCIDENEB/labasic"
+keywords = ["basic"]
+
+[tool.poetry.dependencies]
+python = "~3.12.4"
+
+[build-system]
+requires = [
+	"poetry-core"
+]
+build-backend = "poetry.core.masonry.api"

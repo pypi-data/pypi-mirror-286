@@ -1,0 +1,20 @@
+# Define the tree structure
+tree = {
+    1: [2, 5, 7],
+    2: [3, 4],
+    5: [6],
+    7: [8, 9]
+}
+
+# Perform Depth-First Search (DFS) recursively
+def dfs(node, visited):
+    if node not in visited:
+        print(node)
+        visited.add(node)
+        if node in tree:
+            for neighbor in tree[node]:
+                dfs(neighbor, visited)
+
+# Start DFS from the root node (1)
+print("Depth-First Search (DFS):")
+dfs(1, set())
