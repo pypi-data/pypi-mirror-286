@@ -1,0 +1,42 @@
+{
+    "pipeline": "pipeline_id",
+    "job details": {
+        "job category": "preprocessing",
+        "job name": "wdu_pdf2md",
+        "job type": "pure python",
+        "job id": "job_id",
+        "start_time": "2024-07-02 09:35:05",
+        "end_time": "2024-07-02 09:38:00",
+        "status": "success"
+    },
+    "code": {
+        "github": "github",
+        "commit_hash": "12345",
+        "path": "path"
+    },
+    "job_input_params": {
+        "wdu_rest_host": "main-service-multi.apps.fmaas-instructlab-01.fmaas.res.ibm.com",
+        "wdu_rest_port": "80",
+        "checkpointing": false,
+        "max_files": -1,
+        "random_samples": -1,
+        "files_to_use": [".zip"]
+    },
+    "job_output_stats": {
+        "source_files": 1,
+        "source_size": 1135117,
+        "result_files": 1,
+        "result_size": 62852,
+        "processing_time": 174.9624707698822,
+        "nrows": 3,
+        "nsuccess": 3
+    },
+    "source": {
+        "name": "/Users/kun-lungwu-m1/GUF_dev_klwu/dev_wdu/data-prep-kit-inner/transforms/universal/wdu_pdf2md/python/test-data/input",
+        "type": "path"
+    },
+    "target": {
+        "name": "/Users/kun-lungwu-m1/GUF_dev_klwu/dev_wdu/data-prep-kit-inner/transforms/universal/wdu_pdf2md/python/output",
+        "type": "path"
+    }
+}
