@@ -1,0 +1,2 @@
+[console_scripts]
+frozone = comibat.__main__:cli

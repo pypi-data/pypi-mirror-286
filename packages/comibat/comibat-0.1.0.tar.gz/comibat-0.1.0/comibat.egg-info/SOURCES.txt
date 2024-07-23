@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+comibat/__init__.py
+comibat/__main__.py
+comibat/main.py
+comibat.egg-info/PKG-INFO
+comibat.egg-info/SOURCES.txt
+comibat.egg-info/dependency_links.txt
+comibat.egg-info/entry_points.txt
+comibat.egg-info/requires.txt
+comibat.egg-info/top_level.txt
