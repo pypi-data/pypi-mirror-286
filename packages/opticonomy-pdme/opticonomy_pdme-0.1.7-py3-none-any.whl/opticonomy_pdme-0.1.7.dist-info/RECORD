@@ -1,0 +1,10 @@
+pdme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdme/evaluate.py,sha256=zGgTRZp_8TBq4tfpPnx1OATquOJcyBJEcpE1Krv4yro,2653
+pdme/generate_bootstrap_prompts.py,sha256=5IagiJxZiKeQMNhDFk9FALasWxqJ9VwJnpFZG5lVcMY,489
+pdme/hti.py,sha256=-1DY-wjQirl-G5eY8wQtPVH3vUsJqg1G1YNziPF4fU0,542
+opticonomy_pdme-0.1.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opticonomy_pdme-0.1.7.dist-info/METADATA,sha256=h6bYhEBXCQ_atyl1oCOCgpa9FswZP3PJFPEAyiw0pLs,7420
+opticonomy_pdme-0.1.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+opticonomy_pdme-0.1.7.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+opticonomy_pdme-0.1.7.dist-info/top_level.txt,sha256=jhIPL4QjR7bcf0TJorlOuuBp7elNtPGvArbIPTwU0O8,5
+opticonomy_pdme-0.1.7.dist-info/RECORD,,
