@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: qcanvas
+Version: 1.0.3.post1
+Summary: QCanvas is a desktop client for Canvas LMS.
+Author: QCanvas
+Author-email: QCanvas@noreply.codeberg.org
+Requires-Python: >=3.12,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiosqlite (>=0.20.0,<0.21.0)
+Requires-Dist: asynctaskpool (>=0.2.1,<0.3.0)
+Requires-Dist: lightdb (>=2.0,<3.0)
+Requires-Dist: platformdirs (>=4.2.2,<5.0.0)
+Requires-Dist: pyqtdarktheme-fork (>=2.3.2,<3.0.0)
+Requires-Dist: qasync (>=0.27.1,<0.28.0)
+Requires-Dist: qcanvas-api-clients (>=0.2.2,<0.3.0)
+Requires-Dist: qcanvas-backend (==0.1.10a1)
+Requires-Dist: qtpy (>=2.4.1,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.31,<3.0.0)
+Description-Content-Type: text/markdown
+
+# QCanvas
+
+QCanvas is a desktop client for Canvas LMS.
+
+# Downloads
+
+Download it from [releases](https://github.com/QCanvas/QCanvasApp/releases)
+
+# Development/Run from source
+
+## Prerequisites
+
+- Python 3.12+ (use [pyenv](https://github.com/pyenv/pyenv) if your distro does not have that version)
+- [Pipx](https://pipx.pypa.io/stable/) (optional)
+- Poetry (recommended to install using `pipx install poetry`)
+- [Appimagetool](https://github.com/AppImage/appimagetool) (Only for building the appimage)
+
+## Get started
+
+```bash
+git clone https://github.com/QCanvas/QCanvasApp.git
+cd QCanvasApp
+
+# Enter shell and run it
+poetry shell
+poetry install
+python qcanvas/run.py
+
+# Alternatively you can run it like this:
+poetry install
+poetry run python qcanvas/run.py
+```
+
+## Build custom AppImage
+
+```bash
+bash build_appimage.sh
+```
