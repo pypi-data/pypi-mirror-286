@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: toolbox51
+Version: 0.0.1.dev1
+Author-email: crasylph <crasylph@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: all
+
+# toolbox51
