@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+numba
+numba-scipy
+mpmath
+
+[test]
+pytest

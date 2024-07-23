@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Beetroot-SEB"
+version="1.1.0"
+authors = [
+    {name = "Lorenzo Peri", email = "lorenzo@quantummotion.tech"},
+]
+description = "Beetroot - The definitive library for Single Elctron Box simulations"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+readme = "README.md"
+dependencies = [
+    'numpy',
+    'scipy',
+    'matplotlib',
+    'numba',
+    'numba-scipy',
+    'mpmath'
+]
+
+[project.urls]
+Homepage = "https://https://github.com/LorenzoPeri17/Beetroot"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+filterwarnings = [
+    "ignore",
+]
+
+[tool.setuptools.package-dir]
+Beetroot = "src/Beetroot"
