@@ -1,0 +1,18 @@
+[project]
+name = "crafty_controller_api"
+version = "0.1.1"
+authors = [
+  { name="Makhuta", email="matykubla@gmail.com" },
+]
+description = "Python library for Crafty Controller API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Makhuta/crafty_controller_api"
+Issues = "https://github.com/Makhuta/crafty_controller_api/issues"

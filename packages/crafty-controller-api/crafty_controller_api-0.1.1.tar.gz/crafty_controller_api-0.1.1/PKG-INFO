@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: crafty_controller_api
+Version: 0.1.1
+Summary: Python library for Crafty Controller API
+Author-email: Makhuta <matykubla@gmail.com>
+Project-URL: Homepage, https://github.com/Makhuta/crafty_controller_api
+Project-URL: Issues, https://github.com/Makhuta/crafty_controller_api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Crafty Controller API
+
+Python library for [Crafty Controller](https://craftycontrol.com) API
