@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: nonebot_plugin_remake
+Version: 0.4.2
+Summary: 适用于 Nonebot2 的人生重开模拟器插件
+Home-page: https://github.com/noneplugin/nonebot-plugin-remake
+License: MIT
+Author: meetwq
+Author-email: meetwq@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Pillow (>=10.0.0,<11.0.0)
+Requires-Dist: nonebot-plugin-alconna (>=0.45.1,<1.0.0)
+Requires-Dist: nonebot2 (>=2.3.0,<3.0.0)
+Project-URL: Repository, https://github.com/noneplugin/nonebot-plugin-remake
+Description-Content-Type: text/markdown
+
+# nonebot-plugin-remake
+
+适用于 [Nonebot2](https://github.com/nonebot/nonebot2) 的人生重开模拟器
+
+这垃圾人生一秒也不想待了？立即重开！
+
+
+### 安装
+
+- 使用 nb-cli
+
+```
+nb plugin install nonebot_plugin_remake
+```
+
+- 使用 pip
+
+```
+pip install nonebot_plugin_remake
+```
+
+
+### 使用
+
+#### 触发方式：
+
+**以下命令需要加[命令前缀](https://nonebot.dev/docs/appendices/config#command-start-和-command-separator) (默认为`/`)，可自行设置为空**
+
+```
+@机器人 remake/liferestart/人生重开/人生重来
+```
+
+
+#### 示例：
+
+<div align="left">
+  <img src="https://s2.loli.net/2023/08/02/25YjUFKwvnWisNr.jpg" width="400" />
+  <img src="https://s2.loli.net/2023/08/02/b4L7WvnAyHeYUPZ.jpg" width="400" />
+</div>
+
+
+### 特别感谢
+
+- [VickScarlet/lifeRestart](https://github.com/VickScarlet/lifeRestart) やり直すんだ。そして、次はうまくやる。
+
+- [cc004/lifeRestart-py](https://github.com/cc004/lifeRestart-py) lifeRestart game in python
+
+- [DaiShengSheng/lifeRestart_bot](https://github.com/DaiShengSheng/lifeRestart_bot) 适用于HoshinoBot下的人生重来模拟器插件
+
