@@ -1,0 +1,2 @@
+[console_scripts]
+telegram_pydantic_compile = telegram_pydantic_compiler.compiler:start
