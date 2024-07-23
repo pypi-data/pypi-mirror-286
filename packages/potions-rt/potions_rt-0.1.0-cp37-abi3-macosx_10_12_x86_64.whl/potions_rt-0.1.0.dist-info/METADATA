@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: potions-rt
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Potions: Reactive Transport Equation
+This is the repository for the reactive transport model **potions**, or whatever the name of this project ends up being.
+
+# Using the hydrologic model
+## Hydrologic portion
+To begin running a hydrologic model, you can either define a hydrologic model in code or load in an input file. The input file format is described later on.
+
+### Defining a model
+To define a hydrologic model from code
