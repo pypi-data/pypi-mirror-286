@@ -1,0 +1,14 @@
+captum
+numpy
+optuna
+requests
+scikit-learn
+torch_optimizer
+tqdm
+
+[cuda]
+torch==1.10.0+cu113
+torchvision==0.10.0+cu113
+
+[document]
+sphinx_rtd_theme
