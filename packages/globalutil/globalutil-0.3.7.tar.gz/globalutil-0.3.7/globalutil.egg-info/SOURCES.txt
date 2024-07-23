@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+globalutil/__init__.py
+globalutil.egg-info/PKG-INFO
+globalutil.egg-info/SOURCES.txt
+globalutil.egg-info/dependency_links.txt
+globalutil.egg-info/top_level.txt
+tests/test_gutil_filesystem.py
