@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pygame_utility
+Version: 0.1.0
+Summary: "Package containing simple utility functions for pygame"
+Home-page: https://github.com/FluffyRudy/pygame_util
+Author: FluffyRudy
+Project-URL: Bug Tracker, https://github.com/FluffyRudy/pygame_util/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pygame >=2.0.0
+
+# pygame-utility
+
+**Note: This package is currently under development. Features and documentation may change as updates are made.**
+
+`pygame-utility` is a simple utility package for Pygame that helps with bulk image loading with alpha conversion and organizing images based on state 
