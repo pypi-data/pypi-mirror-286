@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+silabi_tokenizer/__init__.py
+silabi_tokenizer/base_tokenizer.py
+silabi_tokenizer/hf_tokenizer.py
+silabi_tokenizer/kiswahili_tokenizer.py
+silabi_tokenizer/silabi_generator.py
+silabi_tokenizer/test.py
+silabi_tokenizer.egg-info/PKG-INFO
+silabi_tokenizer.egg-info/SOURCES.txt
+silabi_tokenizer.egg-info/dependency_links.txt
+silabi_tokenizer.egg-info/requires.txt
+silabi_tokenizer.egg-info/top_level.txt
