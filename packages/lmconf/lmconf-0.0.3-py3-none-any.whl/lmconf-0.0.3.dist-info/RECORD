@@ -1,0 +1,12 @@
+lmconf/__init__.py,sha256=NBOH2kg_7r3_z2dVzYvQXwTCn3yMBTbFosMaFgMA59o,100
+lmconf/_version.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+lmconf/config.py,sha256=Ui9f13R2kVxJ6bpA_tAfqYXbQNri5uoe73YBHheSOYw,3630
+lmconf/env_cache_settings.py,sha256=_QrmWN65-0MtZ8FaVrCJ3xFeljCFOHMnB6DLIvhCSac,1649
+lmconf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lmconf/settings.py,sha256=huK2wz0zSd-ycyt40Hf3ctLyNigk-zUcnijZUBRatqU,2018
+lmconf/llm_configs/azure_openai.py,sha256=x1qcXoO9GcS94wUQ5luzWK6rER_nMxB2OsXJ9DxDLXc,914
+lmconf/llm_configs/tongyi.py,sha256=rnTgTKCKcGrQXg218zafvRl9yUtkIegEwkbIzWs59x4,1062
+lmconf-0.0.3.dist-info/METADATA,sha256=38LcuzKjNv1Hz5KuJUjFMpgT1dLnZA3sD4qLE6ECQfg,1122
+lmconf-0.0.3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+lmconf-0.0.3.dist-info/top_level.txt,sha256=2hLsHfbs-g3vEDiPHmeJc1MyrmleGdbJNz2mYAQBq3E,7
+lmconf-0.0.3.dist-info/RECORD,,
