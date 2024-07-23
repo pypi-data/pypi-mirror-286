@@ -1,0 +1,133 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "HelloAssoAPIWrapper"
+dynamic = ["version"]
+description = "Python wrapper for Helloasso APIV5"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [{ name = "AEECL ECLAIR" }]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: Pydantic",
+    "Framework :: Pydantic :: 2",
+]
+dependencies = ["helloasso-apiv5==1.0.0", "pydantic>=2.5"]
+
+[project.urls]
+Source = "https://github.com/aeecleclair/HelloAssoAPIWrapper"
+
+[tool.hatch.version]
+path = "helloasso_api_wrapper/__about__.py"
+
+[tool.hatch.build]
+packages = ["helloasso_api_wrapper/"]
+
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.default]
+installer = "uv"
+
+[tool.ruff]
+# By default ruff also respect gitignore files
+# Same as Black.
+line-length = 88
+indent-width = 4
+target-version = "py311"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`), pycodestyle (`E`, `W`), isort (`I`), pep8-naming (`N`), flake8-bugbear (`B`)
+# T201: check for prints, C90: mccabe complexity
+select = [
+    "F",
+    "E",
+    "W",
+    "I",
+    "T201",
+    "C90",
+    "DTZ",
+    "UP",
+    "ASYNC",
+    "S",
+    "B",
+    "A",
+    "COM",
+    "C4",
+    "ISC",
+    "ICN",
+    "INP",
+    "PIE",
+    "T20",
+    "PYI",
+    "PT",
+    "Q",
+    "SLF",
+    "SLOT",
+    "SIM",
+    "TCH",
+    "PTH",
+    "RUF",
+] # "B", "N" to add later
+ignore = [
+    "E203",
+    "E266",
+    "E501",
+    "F403",
+    "S104",
+    "B008",
+    "C401",
+    "ISC001",
+    "SIM102",
+    "SIM105",
+    "RUF012", # We may want to enable "Mutable class attributes should be annotated with `typing.ClassVar`"
+    "TCH001", # Pydantic requires import to be made outside of type checking block
+    "TCH003", # Pydantic requires import to be made outside of type checking block
+]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+
+[tool.ruff.lint.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 18.
+max-complexity = 18
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[tool.mypy]
+python_version = "3.11"
+plugins = ["pydantic.mypy"]
+exclude = '''(?x)(
+      .git
+    | __pycache__
+    | .pytest_cache
+    | .venv
+    | build
+    | dist
+)'''
+strict = true
+disallow_any_generics = false
+
+[[tool.mypy.overrides]]
+module = ["helloasso_api"]
+ignore_missing_imports = true
