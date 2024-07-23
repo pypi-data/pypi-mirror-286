@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+file_organizers/file_preparing.py
+file_organizers/file_reading.py
+metrics_plotter/metrics_plotting.py
+metrics_plotter/threshold_metrics.py
+tiana_sis.egg-info/PKG-INFO
+tiana_sis.egg-info/SOURCES.txt
+tiana_sis.egg-info/dependency_links.txt
+tiana_sis.egg-info/not-zip-safe
+tiana_sis.egg-info/requires.txt
+tiana_sis.egg-info/top_level.txt
