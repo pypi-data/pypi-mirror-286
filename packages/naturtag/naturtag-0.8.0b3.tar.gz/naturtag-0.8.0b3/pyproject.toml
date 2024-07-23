@@ -1,0 +1,129 @@
+[tool.poetry]
+name = 'naturtag'
+version = "0.8.0.b3"
+description = 'Tag your nature photos with iNat taxonomy and observation metadata'
+authors = ['Jordan Cook']
+license = 'MIT'
+readme = 'README.md'
+homepage = 'https://github.com/pyinat/naturtag'
+repository = 'https://github.com/pyinat/naturtag'
+documentation = 'https://naturtag.readthedocs.io'
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Environment :: Console',
+    'Environment :: MacOS X',
+    'Environment :: Win32 (MS Windows)',
+    'Environment :: X11 Applications',
+    'Intended Audience :: Developers',
+    'Intended Audience :: End Users/Desktop',
+    'Intended Audience :: Science/Research',
+    'Typing :: Typed',
+]
+include = [
+    { path = '*.md' },
+    { path = 'assets' },
+    { path = 'docs', format = 'sdist' },
+    { path = 'test', format = 'sdist' },
+]
+exclude = [
+    'assets/demo_images/*',
+    'assets/screenshots/*',
+    'assets/icons/*-preview.*',
+    'assets/icons/*.bmp',
+    'assets/icons/*.xcf',
+
+]
+
+[tool.poetry.dependencies]
+python                      = '>=3.10,<3.12'
+attrs                       = '>=21.2'
+click                       = '>=8.0'
+click-help-colors           = '>=0.9'
+pillow                      = '>=10.0'
+pyexiv2                     = '>=2.10'
+pyinaturalist               = '>=0.19'
+pyinaturalist-convert       = '>=0.6.5'
+pyside6                     = '^6.7.2'
+pyqtdarktheme               = '^2.1.0'
+pyyaml                      = '>=6.0'
+qtawesome                   = '^1.1.1'
+sqlalchemy                  = '^2.0.23'
+tablib                      = '^3.0'
+
+# Documentation dependencies needed for Readthedocs builds
+furo                        = {optional=true, version='^2024.7'}
+linkify-it-py               = {optional=true, version='^2.0'}
+myst-parser                 = {optional=true, version='^3.0'}
+sphinx                      = {optional=true, version='^7.4'}
+sphinx-autodoc-typehints    = {optional=true, version='^1.17'}
+sphinx-copybutton           = {optional=true, version='>=0.5'}
+sphinx-design               = {optional=true, version='>=0.2'}
+sphinxcontrib-apidoc        = {optional=true, version='^0.5'}
+
+[tool.poetry.dev-dependencies]
+babel                       = '>=2.0'
+coverage                    = '^7.0'
+nox                         = '^2023.4'
+nox-poetry                  = '^1.0'
+pre-commit                  = '^3.5'
+prettyprinter               = '^0.18'
+pyinstaller                 = '^6.1'
+pytest                      = '^8.2'
+pytest-cov                  = '>=3.0'
+pytest-xdist                = '>=2.2'
+
+[tool.poetry.extras]
+all = []
+docs = [
+    'furo',
+    'linkify-it-py',
+    'myst-parser',
+    'sphinx',
+    'sphinx-autodoc-typehints',
+    'sphinx-copybutton',
+    'sphinx-design',
+    'sphinxcontrib-apidoc',
+]
+
+[tool.poetry.scripts]
+nt = 'naturtag.cli:main'
+naturtag = 'naturtag.cli:main'
+naturtag-ui = 'naturtag.app.app:main'
+
+[build-system]
+requires = ['poetry-core>=1.0.0']
+build-backend = 'poetry.core.masonry.api'
+
+[tool.coverage.html]
+directory = 'test-reports'
+
+[tool.coverage.run]
+branch = true
+source = ['naturtag']
+
+[tool.coverage.report]
+exclude_lines = ['pragma: no cover', 'if TYPE_CHECKING:']
+
+[tool.mypy]
+ignore_missing_imports = true
+files = ['naturtag']
+
+[tool.ruff]
+fix = true
+unsafe-fixes = true
+line-length = 100
+output-format = 'grouped'
+target-version = 'py311'
+
+[tool.ruff.lint]
+select = ['B', 'C4', 'C90', 'E', 'F', 'I']
+ignore = ['B023']
+
+[tool.ruff.format]
+quote-style = 'single'
+
+[tool.ruff.lint.isort]
+known-first-party = ['test']
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 120
