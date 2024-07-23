@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: classes_aux
+Version: 0.1.5
+Summary: attempt to keep all useful classes and classesTemplates in one place
+Home-page: https://github.com/centroid457/
+Author: Andrei Starichenko
+Author-email: centroid@mail.ru
+Project-URL: Source, https://github.com/centroid457/classes_aux
+Keywords: __cmp__,__getattr__,number
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![Ver/TestedPython](https://img.shields.io/pypi/pyversions/classes_aux)
+![Ver/Os](https://img.shields.io/badge/os_development-Windows-blue)  
+![repo/Created](https://img.shields.io/github/created-at/centroid457/classes_aux)
+![Commit/Last](https://img.shields.io/github/last-commit/centroid457/classes_aux)
+![Tests/GitHubWorkflowStatus](https://github.com/centroid457/classes_aux/actions/workflows/test_linux.yml/badge.svg)
+![Tests/GitHubWorkflowStatus](https://github.com/centroid457/classes_aux/actions/workflows/test_windows.yml/badge.svg)  
+![repo/Size](https://img.shields.io/github/repo-size/centroid457/classes_aux)
+![Commit/Count/t](https://img.shields.io/github/commit-activity/t/centroid457/classes_aux)
+![Commit/Count/y](https://img.shields.io/github/commit-activity/y/centroid457/classes_aux)
+![Commit/Count/m](https://img.shields.io/github/commit-activity/m/centroid457/classes_aux)
+
+# classes_aux (current v0.1.5/![Ver/Pypi Latest](https://img.shields.io/pypi/v/classes_aux?label=pypi%20latest))
+
+## DESCRIPTION_SHORT
+attempt to keep all useful classes and classesTemplates in one place
+
+## DESCRIPTION_LONG
+designed for ...
+
+
+## Features
+1. cmp  
+2. getattr prefix  
+3. getattr echo  
+4. middle group  
+5. NumberArithm  
+
+
+********************************************************************************
+## License
+See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
+
+
+## Release history
+See the [HISTORY.md](HISTORY.md) file for release history.
+
+
+## Installation
+```commandline
+pip install classes-aux
+```
+
+
+## Import
+```python
+from classes_aux import *
+```
+
+
+********************************************************************************
+## USAGE EXAMPLES
+See tests, sourcecode and docstrings for other examples.  
+
+------------------------------
+### 1. example1.py
+```python
+
+```
+
+********************************************************************************
