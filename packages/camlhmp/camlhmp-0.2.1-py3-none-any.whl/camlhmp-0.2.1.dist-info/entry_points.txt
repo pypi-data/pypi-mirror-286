@@ -1,0 +1,6 @@
+[console_scripts]
+camlhmp=camlhmp.cli.camlhmp:main
+camlhmp-blast=camlhmp.cli.blast:main
+camlhmp-blast-region=camlhmp.cli.blast_region:main
+camlhmp-extract=camlhmp.cli.extract:main
+
