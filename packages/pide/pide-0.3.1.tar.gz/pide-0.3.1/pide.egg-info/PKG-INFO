@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pide
+Version: 0.3.1
+Summary: A library for petrophysical interpretations of geophysical models.
+Home-page: https://github.com/sinanozaydin/pide
+Author: Sinan Ozaydin, Lu Li, Utpal Singh, Patrice F. Rey, Maria Constanza Manassero
+Author-email: sinan.ozaydin@protonmail.com
+License: GNU Lesser General Public License v3 (LGPLv3)
+Keywords: petrophysics,geodynamic modelling,magnetotelluric,electrical conductivity,seismic velocity
+Platform: UNKNOWN
+Requires-Python: >3.8
+License-File: LICENSE
+
+UNKNOWN
+
