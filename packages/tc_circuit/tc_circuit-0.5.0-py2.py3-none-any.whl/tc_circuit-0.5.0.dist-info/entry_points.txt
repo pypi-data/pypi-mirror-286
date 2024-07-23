@@ -1,0 +1,7 @@
+[console_scripts]
+tc-to-json=tc_circuit.to_json:main
+tc-to-svg=tc_circuit.to_svg:main
+
+[gui_scripts]
+tc-viewer=tc_circuit.pygame_viewer:main
+
