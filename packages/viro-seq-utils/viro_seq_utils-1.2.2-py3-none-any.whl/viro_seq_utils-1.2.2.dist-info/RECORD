@@ -1,0 +1,13 @@
+viro_seq_utils/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+viro_seq_utils/aln_utils.py,sha256=w1oof1yWJyfJ57X4dnbkx3NOfP7mFgPAItBLw8i53aY,26551
+viro_seq_utils/phylo_utils.py,sha256=MH7SLhjDsLOKI0dzm_ZXTVaWcCoTLx52HcyINo2gUZQ,3922
+viro_seq_utils/run.py,sha256=TidYtSza_kqVEH7Jqy3sO_X4NSTdgNj5m5BcWPQlEgw,2267
+viro_seq_utils/seq_utils.py,sha256=9rInFcyu7k7ClHTqAS4yCqE2JybtfQbS0XCu-4tOg4w,18385
+viro_seq_utils/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+viro_seq_utils/tests/tests_aln_utils.py,sha256=fsLAlqoYNTMcxidgSmcX7BUlfEQ4UIv8Tfb_peGTpwA,4466
+viro_seq_utils/tests/tests_seq_utils.py,sha256=DW8d3hvnnvoKvPqca34R4T6N7pwiBItyhDs0vdsaT2Y,4401
+viro_seq_utils-1.2.2.dist-info/LICENSE,sha256=L78Fso8_Y03f8oRSv0SOdwJDwr1DxsZSP_0rG_MRn60,35083
+viro_seq_utils-1.2.2.dist-info/METADATA,sha256=CbU28dFB9yzNcXhI9VoNOPhC41JNYVTpdsFh9QQcnAA,2459
+viro_seq_utils-1.2.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+viro_seq_utils-1.2.2.dist-info/top_level.txt,sha256=GfDpIfj2Cly0zvaJkMWsa6P_-VefyBEb1bZYlc2b1H8,15
+viro_seq_utils-1.2.2.dist-info/RECORD,,
