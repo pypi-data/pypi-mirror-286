@@ -1,0 +1,11 @@
+dcmp/__init__.py,sha256=0SWjAbxkD-XOVL-nBhqhur_vIXdh_WpTCoD3__zNEHo,45
+dcmp/cli.py,sha256=DnOYzObAIiVf0rl1xzHuUlf4O1jPyZKzefdqNX2BbPo,1048
+dcmp/predictor.py,sha256=83nBt8b-I4JJY4KdBUpz7g6RPGrQHwrekHvXUzFJU6Q,3839
+dcmp/utils.py,sha256=WMQBmVKkavyxdJgFONo1sxvm35oC99gX9nuQB9Mj06E,2621
+model/mlp_9998.pkl,sha256=8WDqIGeSAV0vf7VJZj0DoaP3B7qPGXWFpvWT_hxtfaA,25297793
+dcmp-0.1.2.dist-info/LICENSE,sha256=wJy8Zt9Ai4m-7ic7iVFOBHW__H_5HIciw93LMiQGVpU,1076
+dcmp-0.1.2.dist-info/METADATA,sha256=hzZDC8Zy01-R0A_YH8s3KJw8yGMfkbYxZmWtpnTpyLQ,5700
+dcmp-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dcmp-0.1.2.dist-info/entry_points.txt,sha256=pyrf6d2Kkqw3ST_WiczxhQLJ_U5PCFmvGts7KWV_Fgc,39
+dcmp-0.1.2.dist-info/top_level.txt,sha256=1fgyy0l5jl5uHpW-WjZJsZYQt-LN-YeDbvB3Vqb761E,5
+dcmp-0.1.2.dist-info/RECORD,,
