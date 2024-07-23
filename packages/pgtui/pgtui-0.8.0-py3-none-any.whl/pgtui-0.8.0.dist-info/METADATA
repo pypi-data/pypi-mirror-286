@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pgtui
+Version: 0.8.0
+Summary: PostgreSQL terminal user interface
+Author-email: Ivan Habunek <ivan@habunek.com>
+License: Copyright 2024 pgtui contributors
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the “Software”), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+        of the Software, and to permit persons to whom the Software is furnished to do
+        so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://codeberg.org/ihabunek/pgtui
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: pgcli
+Requires-Dist: psycopg[binary]
+Requires-Dist: sqlparse
+Requires-Dist: textual[syntax] >=0.71.0
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pyright ; extra == 'dev'
+Requires-Dist: textual-dev ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: vermin ; extra == 'dev'
+
+pgtui
+=====
+
+Terminal user interface for PostgreSQL.
+
+Currently in early development, but getting there.
+
+## Key bindings
+
+* `Tab` - Switch between the editor and results grid
+* `Ctrl+C` - Exit
+
+Editor:
+
+* `Ctrl+Enter` - Execute selected query or query under cursor if none selected
+* `Ctrl+F` - Format query under cursor
+* `Ctrl+S` - Select query under cursor
+* `Ctrl+Space` - Show autocomplete
+
+Editor while autocomplete is open:
+
+* `Up/Down/PageUp/Pagedow` - Select row
+* `Enter` or `Tab` - Apply autocomplete
+* `Esc` - Hide autocomplete
+
+Results grid:
+
+* `S` - Change between cell, line and row selection
+
+## TODO
+
+* see about selecting rows/columns/blocks in the datatable
+    * https://github.com/Textualize/textual/discussions/3606
