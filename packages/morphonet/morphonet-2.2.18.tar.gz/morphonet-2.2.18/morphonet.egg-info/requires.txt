@@ -1,0 +1,9 @@
+requests
+numpy
+vtk
+imageio
+scikit-image
+scipy
+vtk
+nibabel
+imageio-ffmpeg
