@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/hellostreamlit_wc/__init__.py
+src/hellostreamlit_wc/hello.py
+src/hellostreamlit_wc.egg-info/PKG-INFO
+src/hellostreamlit_wc.egg-info/SOURCES.txt
+src/hellostreamlit_wc.egg-info/dependency_links.txt
+src/hellostreamlit_wc.egg-info/requires.txt
+src/hellostreamlit_wc.egg-info/top_level.txt
