@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: OCR_Lib
+Version: 0.1
+Summary: OCR model for text extraction and recognition
+Author: Theduyet1812
+Author-email: theduyet1812@gmail.com
+Requires-Dist: torch
+Requires-Dist: torchvision==0.13
+Requires-Dist: opencv-python
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Requires-Dist: vietocr
+Requires-Dist: einops
+Requires-Dist: numpy==1.24.1

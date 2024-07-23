@@ -1,0 +1,8 @@
+torch
+torchvision==0.13
+opencv-python
+scikit-image
+scipy
+vietocr
+einops
+numpy==1.24.1

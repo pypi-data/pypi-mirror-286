@@ -1,0 +1,9 @@
+setup.py
+OCR/__init__.py
+OCR/main.py
+OCR_Lib.egg-info/PKG-INFO
+OCR_Lib.egg-info/SOURCES.txt
+OCR_Lib.egg-info/dependency_links.txt
+OCR_Lib.egg-info/entry_points.txt
+OCR_Lib.egg-info/requires.txt
+OCR_Lib.egg-info/top_level.txt
