@@ -1,0 +1,5 @@
+setup.py
+extendederrors.egg-info/PKG-INFO
+extendederrors.egg-info/SOURCES.txt
+extendederrors.egg-info/dependency_links.txt
+extendederrors.egg-info/top_level.txt
