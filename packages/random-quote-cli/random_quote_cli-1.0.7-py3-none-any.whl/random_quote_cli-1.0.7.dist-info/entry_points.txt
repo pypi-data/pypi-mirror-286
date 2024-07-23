@@ -1,0 +1,2 @@
+[console_scripts]
+random-quote-cli = random_quote.cli:main

@@ -1,0 +1,9 @@
+random_quote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+random_quote/cli.py,sha256=VMf7keKyGAJ6dnZow7nPrZqYnyM0uJa2PTU51OQq6RQ,1420
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=oGnvBLyFx-dBkvbpDj5eW5irfO0LJdUI9RhObrKGrME,1507
+random_quote_cli-1.0.7.dist-info/METADATA,sha256=EyVimGpqOh0MUm5MAdimn9s4k9zxPglyZqsaHuivqJg,346
+random_quote_cli-1.0.7.dist-info/WHEEL,sha256=y4mX-SOX4fYIkonsAGA5N0Oy-8_gI4FXw5HNI1xqvWg,91
+random_quote_cli-1.0.7.dist-info/entry_points.txt,sha256=ffW06VFgb_g67LD25oN7jeG1h186B-NhFGGqIzIuI_Q,59
+random_quote_cli-1.0.7.dist-info/top_level.txt,sha256=qedbcAAoIl7Qk7whuTNPIyt-PNd5wEqp8Le1lVkXF8I,19
+random_quote_cli-1.0.7.dist-info/RECORD,,
