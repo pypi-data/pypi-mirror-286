@@ -1,0 +1,3 @@
+[console_scripts]
+nccmp=nccompare.cli:main
+
