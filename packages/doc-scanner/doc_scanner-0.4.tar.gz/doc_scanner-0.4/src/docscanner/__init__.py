@@ -1,0 +1,1 @@
+from .docscanner import main
