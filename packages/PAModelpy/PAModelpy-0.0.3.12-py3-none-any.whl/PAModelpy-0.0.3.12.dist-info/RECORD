@@ -1,0 +1,15 @@
+PAModelpy/CatalyticEvent.py,sha256=vD_9KL8sOcRKZxpPYWdkFJ15XFQEzyfOzw4x-arhGjA,17154
+PAModelpy/Constraints.py,sha256=AO7P8s8VJlhY7EivkH1af3cu_pX8hT7EnCyMxlx9ZrM,917
+PAModelpy/Enzyme.py,sha256=VjJKTN7IgNdh14fRuuGwH_857ZnL-XAV8bKL53HV6ng,36210
+PAModelpy/EnzymeSectors.py,sha256=xLRiRQUIp87-rNMpoT2s8qLPZDMdH2V6D3fUW6okIEA,20407
+PAModelpy/PAMValidator.py,sha256=l1N3izVKdsILGDMQiP5LSDAFCZQcmE0ZeZxxXRv8x-g,26431
+PAModelpy/PAModel.py,sha256=2vRcQlYCfRXC_Gjm3NRBYf9WeRRUVnqPvrN3ZsVbrcA,91903
+PAModelpy/__init__.py,sha256=VO2c8zllD1wJ85gw2sv297a7NRry-wBcvwm35kkU84U,185
+PAModelpy/configuration.py,sha256=tBv9sDdhgnIYNsmnF92ZdssZfDkkKaA-QSm3tv3mYc0,2253
+flux_analysis/__init__.py,sha256=kk7UY5xclzUjt0dLXlxU76pnmNPNp00u6td3NAjEAp4,40
+flux_analysis/flux_variability_analysis.py,sha256=YLV-9HsEzfjX4A1sbbplZjfhQHYC1IOHSpjA2GiAmAs,11439
+flux_analysis/recombinant_protein_expression.py,sha256=3oZqs6BksuaHBc9ghBexIddpIQUtXG_gu3G59M3_yxk,2772
+PAModelpy-0.0.3.12.dist-info/METADATA,sha256=Y7HEm7JcznF3QGfpIpek3drF7p8EFI9SPtySTYQf1LM,3769
+PAModelpy-0.0.3.12.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+PAModelpy-0.0.3.12.dist-info/top_level.txt,sha256=g2sfSPp3Ai57u66H3aJBgkbbh85YyCNfsQPQCuHQip0,24
+PAModelpy-0.0.3.12.dist-info/RECORD,,
