@@ -1,0 +1,7 @@
+PyQt6
+boost_histogram
+uproot
+matplotlib
+mplhep
+pyhf
+cabinetry
