@@ -1,0 +1,2 @@
+include my_node_selector/resources/*.png
+include README.md
