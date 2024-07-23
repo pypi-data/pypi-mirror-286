@@ -1,0 +1,15 @@
+tcod/ecs/__init__.py,sha256=11GtThx19-v-kgJtW0i74oKryjYT1vV2JlRQjGPMUII,967
+tcod/ecs/_converter.py,sha256=Oi_xZkDaFBcEMca4vkiamq_buXmiSZplsM_nNSjTfBM,1542
+tcod/ecs/_version.py,sha256=RJsy8uWs8qZxJkJDWoHW0Aq5OxT3nWdPoy_rCgcbBXY,411
+tcod/ecs/callbacks.py,sha256=om5jRTFKTgksjDjR0JgGRwmeAmBtaX-p6FYkDG3c7KU,2386
+tcod/ecs/constants.py,sha256=r6wrvxvo74zBkTrwKaThID448VM7KOsOVnb6zH-9Ksw,243
+tcod/ecs/entity.py,sha256=bsyhuMxYqqL5SiaEH2P5CNLY3tV2k9wZ_MlMNzqYqCk,39662
+tcod/ecs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tcod/ecs/query.py,sha256=SaLyz7cGVHqncdUydPvGJLeApEuV5W-080_KvfvJSB0,17899
+tcod/ecs/registry.py,sha256=JNiebYl8OL9UnQhmM8agx9Ph0UHHMfWO9hYcuoyfm1k,11952
+tcod/ecs/typing.py,sha256=9WcqGn5lqVSIdpIJFmyNFX27uv9OnGY6oiDwMKLc2OM,1133
+tcod/ecs/world.py,sha256=K8kDVVj6qGzfpxb--1OFDEMYx6LqN_aic0J0TeGRcFE,203
+tcod_ecs-5.2.0.dist-info/LICENSE,sha256=dqYeJ8YwB0GdrjCbu42NM1_qc6kyclO1abUgLGxqDNc,1084
+tcod_ecs-5.2.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+tcod_ecs-5.2.0.dist-info/METADATA,sha256=hSMjxwGMVH8OhljqhXW0rf1xcSw-lPQfHwivTbXOgXA,13880
+tcod_ecs-5.2.0.dist-info/RECORD,,
