@@ -1,0 +1,39 @@
+[tool.poetry]
+authors = ["J C Lawrence <claw@kanga.nu>"]
+description = "Load stacks of JSON, TOML or YAML data"
+keywords = ["configfile", "file stacks", "reference trees"]
+license = "GPL-3.0-only"
+name = "cfgstack"
+packages = [{include = "cfgstack"}]
+readme = "README.rst"
+repository = "https://github.com/clearclaw/cfgstack"
+version="0.2.post2"
+
+[tool.poetry.dependencies]
+findfile_path = ">=0.2.post1"
+logtool= ">=0.4.post1"
+path = ">=16.14.0"
+python = "^3.8"
+addict = "^2.4.0"
+pyyaml = "^6.0.1"
+toml = "^0.10.2"
+
+[tool.poetry-dynamic-versioning]
+dirty = true
+enable = false
+format-jinja = """
+    {%- if dirty != "dirty" -%}
+        {{ serialize_pep440(base, stage, revision, distance|string) }}
+    {%- else -%}
+        {{ serialize_pep440(base, stage, revision, dev=distance, metadata=[commit]) }}
+    {%- endif -%}
+"""
+metadata = true
+style = "pep440"
+tagged-metadata = true
+pattern = "default-unprefixed"
+vcs = "git"
+
+[build-system]
+build-backend = "poetry_dynamic_versioning.backend"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
