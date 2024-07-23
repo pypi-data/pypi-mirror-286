@@ -1,0 +1,12 @@
+snippets/__init__.py,sha256=LHoJdQZwnKw7ec037O93XLxiq6fp3hXaawfLIbT2S4g,562
+snippets/decorators.py,sha256=040lTRkRNnWcTR4cN4LxsM5FnccA99xQAn-SY8WINxc,7200
+snippets/evaluate.py,sha256=jI9Jg0H9aHWS-jOpUrf5v-RHxz4b-oo1_nAY9NpOJxE,2936
+snippets/logs.py,sha256=T_YJ-j4ksw8rHlyWP3JiozfOOeuRj7QpNcYIIETpfxw,5276
+snippets/mixin.py,sha256=puLYgcDWMUwioKkFGn7EkxMFvC4Rx-0lKmYG5MRbSGU,560
+snippets/perf.py,sha256=X3eWkP9vx8zfST2BPlHf9vCeUR9timZR2_lMHY_EOQY,1875
+snippets/utils.py,sha256=Q9qfWN5dC1vbzJjrmAJJ4Lln-V1ms02b11y8DowQK3M,15029
+python_snippets-0.0.54.dist-info/METADATA,sha256=7r8WaGObKTM9byTSckQyHR1eYIzaNjvcwy89rO7WUOo,452
+python_snippets-0.0.54.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+python_snippets-0.0.54.dist-info/top_level.txt,sha256=O8zXwLIX8D3QYlfHY9sODIL8UyQtt-lulgDT2t5SrLI,9
+python_snippets-0.0.54.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+python_snippets-0.0.54.dist-info/RECORD,,
