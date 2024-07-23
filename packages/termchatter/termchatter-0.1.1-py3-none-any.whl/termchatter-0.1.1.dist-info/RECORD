@@ -1,0 +1,12 @@
+termchatter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+termchatter/credits.py,sha256=8nRv0T31iBtNRMIaXzqpd-w0vicxE3R8lGP1Pkm-Wfw,3223
+termchatter/pusher_checker.py,sha256=B9a3dlhvHx0FBnH6UbxtYTfw9l7EPTi3TUfEHXM2y50,366
+termchatter/receive_message.py,sha256=dZ51Bgioa6G8sNpNvxMQYoxxha8dD4LICGz3hZn87zE,1270
+termchatter/send_message.py,sha256=B4TeXqNrY4-y6E5dfMIj3EPRnjIy8LOP4J1md0O8-GQ,1452
+termchatter/setting_paths.py,sha256=McwDQmLTwf4gqkqeztYlkaLU1U_1ne7pGWOV3XL0WYk,256
+termchatter/setup.py,sha256=ErNpZEqGrmbXmGRRD2VgcIlZLgi2NehLDoMdXEwcGBM,828
+termchatter/termchatter.py,sha256=EJoikrsZVyAMrr6xvNxaFI3ZHCH_YbD590ktKyx9yx8,1439
+termchatter-0.1.1.dist-info/METADATA,sha256=aN1o-ZftvtaZPAnqLIz6P6Q-66EMdU0tg8warQEyJEY,603
+termchatter-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+termchatter-0.1.1.dist-info/entry_points.txt,sha256=Ca87EXWXgjN9wzIjJfARREmXs6zqisoZyOGGHOpSN4I,60
+termchatter-0.1.1.dist-info/RECORD,,
