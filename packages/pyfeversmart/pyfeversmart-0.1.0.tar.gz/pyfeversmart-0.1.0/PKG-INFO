@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: pyfeversmart
+Version: 0.1.0
+Summary: Python library to decode FeverSmart BLE broadcasts
+Project-URL: Homepage, https://github.com/danharvey/pyfeversmart
+Project-URL: Issues, https://github.com/danharvey/pyfeversmart/issues
+Author-email: Daniel Harvey <danharvey42@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: bluetooth-sensor-state-data>=1.6
+Requires-Dist: cryptography>=41.0.7
+Requires-Dist: home-assistant-bluetooth>=1.6
+Requires-Dist: sensor-state-data>=2.9
+Description-Content-Type: text/markdown
+
+# 
+Python library to decode FeverSmart BLE broadcasts
+
+# Tests
+```
+py.test
+```
+
+# Build
+```
+$ python3 -m pip install --upgrade build
+$ python3 -m build
+```
