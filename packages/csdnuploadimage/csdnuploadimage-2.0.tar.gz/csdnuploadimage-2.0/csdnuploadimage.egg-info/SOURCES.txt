@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+csdnuploadimage/__init__.py
+csdnuploadimage.egg-info/PKG-INFO
+csdnuploadimage.egg-info/SOURCES.txt
+csdnuploadimage.egg-info/dependency_links.txt
+csdnuploadimage.egg-info/requires.txt
+csdnuploadimage.egg-info/top_level.txt
+csdnuploadimage/core/__init__.py
+csdnuploadimage/core/uploadImage.py
+csdnuploadimage/utils/__init__.py
+csdnuploadimage/utils/getUploadValidInfo.py
+csdnuploadimage/utils/uploadImage.py
