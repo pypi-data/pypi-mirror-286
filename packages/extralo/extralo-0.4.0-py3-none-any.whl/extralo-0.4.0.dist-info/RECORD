@@ -1,0 +1,9 @@
+extralo/__init__.py,sha256=1U-empCbwdLG-u88shXpc_vF2Pqbq2f9HHGK9KREqh0,570
+extralo/destinations.py,sha256=6qSJ1UTHTlr26vq4AEzObBm78bUlwvoBu5SeLhXmqDo,1062
+extralo/etl.py,sha256=Ra53urrkPqhrqxGCFaScypE3KQNqo0HUdqauRF1LVZU,1223
+extralo/sources.py,sha256=9XVQdKd45JWdPUi-WKz8uPj5H_76FHF_Iu-zDSdLIFo,1152
+extralo/transformers.py,sha256=kkYtZjZw8OOoGJn0KilelGZuFe9k1Amn7M3ixg-BEvU,369
+extralo-0.4.0.dist-info/METADATA,sha256=1Wlpabe3pkjXc7S4fHOa42t_A9iTAe9f-uGnVXtrrUg,638
+extralo-0.4.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+extralo-0.4.0.dist-info/top_level.txt,sha256=25S1HntOWjZDyA9aNG9gOOkCgSjMzD9HpwYIBOARBbQ,8
+extralo-0.4.0.dist-info/RECORD,,
