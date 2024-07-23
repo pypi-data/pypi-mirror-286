@@ -1,0 +1,8 @@
+empathi/dataset.py,sha256=24qtIIvJ7Qkuu4R5ZPqwNYlcB0fZB4uKhnZFxRwIZo0,8958
+empathi/predict.py,sha256=RMj4rXu-ZTQR7kWJ6ddfX5UTG-AoV78W4AG38dOUuiI,10670
+empathi/score.py,sha256=vdPcYTB7WwvgtHXQ5tsICgY0PQmbsdh9PFlYSyaXw34,4598
+empathi/train.py,sha256=jh-9rgkzdrTJgKzUk-B9uMXJNdjTk7_4CF2JFrdndmM,4838
+empathi-0.0.1.dist-info/METADATA,sha256=p0uY0kDs2pgV7-KLeLOO3k8sV2W9BPOx5D7bZ5jTpmY,1922
+empathi-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+empathi-0.0.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+empathi-0.0.1.dist-info/RECORD,,
