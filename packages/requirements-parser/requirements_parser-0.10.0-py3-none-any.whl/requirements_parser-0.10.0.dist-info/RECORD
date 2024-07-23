@@ -1,0 +1,11 @@
+requirements/__init__.py,sha256=GQoMX1qmsOluK9jJRNz-8_Enwl3sqXgC8WE9_l-4te0,884
+requirements/fragment.py,sha256=SA97pTTeIyhiFxquzXpm8-cb1DlDw_e6j0D1B4aOYXE,2057
+requirements/parser.py,sha256=utXpRczX1SSh0qnHo5fsNg4ETxZhsn0_dNQL_Wep2u0,3484
+requirements/py.typed,sha256=81t2EMnJWSI3ep7v28uT_iFiU9nz-mf3QhMetyMDdLQ,810
+requirements/requirement.py,sha256=7QOBnpWkd8BgXGoHZC_VeD1pD1nRmvp9tpVISkLLAFA,10632
+requirements/vcs.py,sha256=8D1R_fAqSkWXdp_I8GjUfxTh3029VssndHaIC0pBPcc,1063
+requirements_parser-0.10.0.dist-info/AUTHORS.md,sha256=GTCA489ypsIsveSwuq_DW50GFZsI3x4FMz93tEljw3M,269
+requirements_parser-0.10.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+requirements_parser-0.10.0.dist-info/METADATA,sha256=ogvAfzbul78m6Qu2cPuIN5PPiISfYdVkdzw2z3xmeFw,4663
+requirements_parser-0.10.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+requirements_parser-0.10.0.dist-info/RECORD,,
