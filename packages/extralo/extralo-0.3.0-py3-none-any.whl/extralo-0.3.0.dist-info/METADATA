@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: extralo
+Version: 0.3.0
+Summary: ETL for Python
+Author-email: Vitor Capdeville <vgcapdeville@hotmail.com>
+Maintainer-email: Vitor Capdeville <vgcapdeville@hotmail.com>
+Keywords: etl,data,data-engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: sqlalchemy
+
+# ETL using python
+
+Python package for extracting data from a source, transforming it and loading it to a destination.
+
+The package has a structure that allows adding functionality to the data pipeline in a single place, keeping this separated from the actual extract, transform and load logic.
