@@ -1,0 +1,21 @@
+# Python 2.7
+# Embedded file name: simple_source/branching/05_ifelse.py
+
+ L. 101         3  LOAD_NAME                0
+
+ L. 114      None  POP_JUMP_IF_FALSE        3
+
+ L. 100         4  LOAD_CONST            1  6
+
+ L.  90      None  STORE_NAME               9
+
+ L. 110      None  JUMP_FORWARD             12
+
+ L. 100         6  LOAD_CONST            2  15
+
+ L.  90      None  STORE_NAME               18
+             21_0  COME_FROM                None
+
+ L. 100      None  LOAD_CONST               21
+
+ L.  83      None  RETURN_VALUE             24

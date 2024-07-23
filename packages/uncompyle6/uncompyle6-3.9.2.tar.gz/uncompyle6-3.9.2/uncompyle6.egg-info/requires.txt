@@ -1,0 +1,7 @@
+click
+spark-parser<1.9.0,>=1.8.9
+xdis<6.2.0,>=6.1.0
+
+[dev]
+pre-commit
+pytest
