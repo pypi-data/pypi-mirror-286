@@ -1,0 +1,2 @@
+[console_scripts]
+langsmith-evaluation-helper = langsmith_evaluation_helper.cli:main
