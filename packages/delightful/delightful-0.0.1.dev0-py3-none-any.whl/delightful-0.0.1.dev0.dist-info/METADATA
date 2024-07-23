@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: delightful
+Version: 0.0.1.dev0
+Summary: Delightful utilities for backend
+Author-email: Mykyta Holubakha <hilobakho@gmail.com>
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
