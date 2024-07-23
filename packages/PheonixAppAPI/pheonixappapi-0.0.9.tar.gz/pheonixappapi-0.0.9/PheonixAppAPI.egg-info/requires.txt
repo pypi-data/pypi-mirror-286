@@ -1,0 +1,15 @@
+PyQt5
+wikipedia
+pickle
+configparser
+xlsxwriter
+requests
+http
+socket
+qdarkstyle
+ctypes
+validate_email
+opencv-python
+zlib
+pyttsx3
+speech_recognition
