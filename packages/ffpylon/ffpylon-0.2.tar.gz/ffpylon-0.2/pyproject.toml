@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ffpylon"
+authors = [{name = "nickdecodes", email = "nickdecodes@163.com"}]
+dynamic = [
+    "urls",
+    "version",
+    "description",
+    "dependencies",
+    "readme",
+    "keywords",
+    "requires-python",
+]
+license = {file = "LICENSE"}
