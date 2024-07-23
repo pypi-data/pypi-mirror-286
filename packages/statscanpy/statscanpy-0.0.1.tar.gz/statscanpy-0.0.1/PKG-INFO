@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: statscanpy
+Version: 0.0.1
+Summary: A short description of your package
+Description-Content-Type: text/markdown
+
+# StatsCanPy
+Basic package for accessing StatsCan data.
