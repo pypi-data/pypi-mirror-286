@@ -1,0 +1,10 @@
+synodic_utilities-0.1.1.dev9.dist-info/METADATA,sha256=kTDozhYfYmVETpbRTr3sFveyXR3CzbOfXFJ4iCFXP3g,486
+synodic_utilities-0.1.1.dev9.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+synodic_utilities-0.1.1.dev9.dist-info/licenses/LICENSE.md,sha256=wUELBJ0UKnpv6gI6lccpfQn9LyXZRT0vaLfW-pZDIuc,1073
+synodic_utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synodic_utilities/exception.py,sha256=Ar5knRJh4NH31lR-XEyQ0QNdHa_17Kx2LujqAj5aTVg,764
+synodic_utilities/plugin.py,sha256=uD0hYnvlQF3OHkzvqUYgcjGvd5CkX2UCZ7CEFQ2bBNI,774
+synodic_utilities/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synodic_utilities/subprocess.py,sha256=K-l1SRXJzqbR7hgAlPiReHomifmnz9roXbbfetOwxrw,1247
+synodic_utilities/utility.py,sha256=_cT9_FRyGyxYA_aptoOxDAXwvvEMlxDQFxBp4Kzw5do,1011
+synodic_utilities-0.1.1.dev9.dist-info/RECORD,,
