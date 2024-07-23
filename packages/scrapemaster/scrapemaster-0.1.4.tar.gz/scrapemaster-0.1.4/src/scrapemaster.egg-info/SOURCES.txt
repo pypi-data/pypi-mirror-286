@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/scrapemaster/__init__.py
+src/scrapemaster/core.py
+src/scrapemaster/exceptions.py
+src/scrapemaster/utils.py
+src/scrapemaster.egg-info/PKG-INFO
+src/scrapemaster.egg-info/SOURCES.txt
+src/scrapemaster.egg-info/dependency_links.txt
+src/scrapemaster.egg-info/requires.txt
+src/scrapemaster.egg-info/top_level.txt
+tests/test_core.py
+tests/test_utils.py
