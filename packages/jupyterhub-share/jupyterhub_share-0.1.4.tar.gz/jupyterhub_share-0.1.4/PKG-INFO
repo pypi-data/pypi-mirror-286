@@ -1,0 +1,58 @@
+Metadata-Version: 2.3
+Name: jupyterhub-share
+Version: 0.1.4
+Summary: JupyterHub Share feature. Enables to easily share chosen UserOptions.
+Author-email: Tim Kreuzer <t.kreuzer@fz-juelich.de>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, Forschungszentrum Juelich GmbH
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Keywords: jupyterhub
+Requires-Python: >=3.11
+Requires-Dist: escapism
+Requires-Dist: jinja2
+Requires-Dist: jupyterhub>=4.0.0
+Requires-Dist: traitlets
+Requires-Dist: urllib3
+Description-Content-Type: text/markdown
+
+# JupyterHub User Options Share
+This small package allows users to share their chosen `user_options` with others.  
+In combination with the right `options_form`, it can lead to FAIR digital objects in your JupyterHub installation.
+
+## Installation
+`pip install jupyterhub-share`
+
+## Configuration
+In the `jupyterhub_config.py` file one have to add `import jupyterhub_share`.  
+Furthermore, the new `spawn.html` template file must be used.  
+
+## Usage
+Users may select the `user_options` as they're used to. Before clicking on "Start", one can click on the share icon next to "Server Options". This will generate a unique URL. If any user opens this link, they'll redirected to the spawn page with the previously selected `user_options`.
+
+![Screenshot](./screenshot.jpg "Screenshot")
