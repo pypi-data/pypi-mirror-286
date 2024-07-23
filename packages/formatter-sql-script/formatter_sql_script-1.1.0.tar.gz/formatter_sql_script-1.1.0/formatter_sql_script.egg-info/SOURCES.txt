@@ -1,0 +1,7 @@
+README.md
+formatter_sql_script.py
+setup.py
+formatter_sql_script.egg-info/PKG-INFO
+formatter_sql_script.egg-info/SOURCES.txt
+formatter_sql_script.egg-info/dependency_links.txt
+formatter_sql_script.egg-info/top_level.txt
