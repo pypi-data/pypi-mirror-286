@@ -1,0 +1,9 @@
+README.md
+setup.py
+awseasy/__init__.py
+awseasy/ec2.py
+awseasy.egg-info/PKG-INFO
+awseasy.egg-info/SOURCES.txt
+awseasy.egg-info/dependency_links.txt
+awseasy.egg-info/requires.txt
+awseasy.egg-info/top_level.txt
