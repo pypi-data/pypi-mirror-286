@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+vks_bootstraper/__init__.py
+vks_bootstraper/__main__.py
+vks_bootstraper/metadata.py
+vks_bootstraper.egg-info/PKG-INFO
+vks_bootstraper.egg-info/SOURCES.txt
+vks_bootstraper.egg-info/dependency_links.txt
+vks_bootstraper.egg-info/entry_points.txt
+vks_bootstraper.egg-info/requires.txt
+vks_bootstraper.egg-info/top_level.txt

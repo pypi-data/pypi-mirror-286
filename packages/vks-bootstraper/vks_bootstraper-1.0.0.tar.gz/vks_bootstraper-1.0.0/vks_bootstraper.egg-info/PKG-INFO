@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vks-bootstraper
+Version: 1.0.0
+Summary: The CLI tool to boostrap the instances of VKS clusters.
+Author-email: "Cuong. Duong Manh" <cuongdm3@vng.com.vn>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Requires-Dist: click>=8.0.3
+Requires-Dist: setuptools>=65.5.0
+Requires-Dist: pyyaml>=5.4.1
+
+# vks-bootstraper
