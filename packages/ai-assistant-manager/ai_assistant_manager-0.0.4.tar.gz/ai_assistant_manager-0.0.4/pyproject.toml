@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-assistant-manager"
+dynamic = ["version"]
+description = "This repository provides tools and services to manage OpenAI Assistants, including creating, listing, and deleting assistants, as well as handling vector stores and retrieval files."
+license = { file = "LICENSE" }
+readme = "README.md"
+authors = [{ name = "Justin Beall", email = "jus.beall@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = ["loguru", "openai", "python-dotenv"]
+
+[project.urls]
+repository = "https://github.com/DEV3L/open-ai-assistant"
+
+[tool.hatch.version]
+path = "setup.cfg"
+pattern = "version = (?P<version>\\S+)"
+
+[tool.hatch.build.targets.sdist]
+include = ["/ai_assistant_manager"]
+artifact = { name = "ai-assistant-manager" }
+
+[tool.hatch.build.targets.wheel]
+packages = ["ai_assistant_manager"]
+artifact = { name = "ai-assistant-manager" }
+
+[tool.hatch.envs.default]
+type = "virtual"
+path = ".venv"
+dependencies = ["pyright", "pytest", "pytest-cov"]
+
+[tool.hatch.envs.default.scripts]
+build = "python run_end_to_end.py"
+test = "pytest --cache-clear --cov --cov-report lcov --cov-report term"
+
+[tool.hatch.envs.hatch-static-analysis]
+config-path = "ruff_defaults.toml"
+
+[tool.ruff]
+extend = "ruff_defaults.toml"
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "parents"
