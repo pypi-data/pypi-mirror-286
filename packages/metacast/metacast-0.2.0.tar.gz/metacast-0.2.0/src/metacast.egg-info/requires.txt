@@ -1,0 +1,10 @@
+numpy>=1.26.3
+pandas>=2.1.4
+scipy>=1.11.4
+pingouin>=0.5.4
+tqdm>=4.66.1
+dask>=2024.2.1
+distributed>=2024.2.1
+bokeh>=3.3.4
+seaborn>=0.13.2
+jupyter>=1.0.0
