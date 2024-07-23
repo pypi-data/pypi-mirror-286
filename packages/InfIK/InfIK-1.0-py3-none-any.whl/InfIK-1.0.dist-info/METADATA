@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: InfIK
+Version: 1.0
+Summary: A flexible inverse kinematics solver that supports any number of servo motors in series
+License-File: LICENSE
+Requires-Dist: numpy >=2.0.0
+
