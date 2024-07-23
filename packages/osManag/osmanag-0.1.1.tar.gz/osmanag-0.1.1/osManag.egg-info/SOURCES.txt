@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+osManag/__init__.py
+osManag/osManag.py
+osManag.egg-info/PKG-INFO
+osManag.egg-info/SOURCES.txt
+osManag.egg-info/dependency_links.txt
+osManag.egg-info/requires.txt
+osManag.egg-info/top_level.txt
