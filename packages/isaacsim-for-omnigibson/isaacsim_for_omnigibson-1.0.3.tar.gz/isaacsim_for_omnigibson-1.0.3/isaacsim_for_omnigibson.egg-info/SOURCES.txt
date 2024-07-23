@@ -1,0 +1,7 @@
+README.md
+setup.py
+isaacsim_for_omnigibson.egg-info/PKG-INFO
+isaacsim_for_omnigibson.egg-info/SOURCES.txt
+isaacsim_for_omnigibson.egg-info/dependency_links.txt
+isaacsim_for_omnigibson.egg-info/not-zip-safe
+isaacsim_for_omnigibson.egg-info/top_level.txt
