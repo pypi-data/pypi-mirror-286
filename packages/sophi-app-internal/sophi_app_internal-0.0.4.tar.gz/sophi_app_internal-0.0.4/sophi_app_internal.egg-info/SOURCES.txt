@@ -1,0 +1,11 @@
+README.md
+setup.py
+sophi_app_internal/__init__.py
+sophi_app_internal/cosmos_client.py
+sophi_app_internal/main.py
+sophi_app_internal/token_validation.py
+sophi_app_internal.egg-info/PKG-INFO
+sophi_app_internal.egg-info/SOURCES.txt
+sophi_app_internal.egg-info/dependency_links.txt
+sophi_app_internal.egg-info/requires.txt
+sophi_app_internal.egg-info/top_level.txt
