@@ -1,0 +1,12 @@
+example.py,sha256=KTsoRhSg6vtnVFp751zw43JBNWeHsS7b5F76ytc00vo,2383
+python_table_print/__init__.py,sha256=ImgSKXbl10SoWzrawRxORc3WQXdQ9Iz2nLPO2U7sng4,71
+python_table_print/cell.py,sha256=385VZHwhX-n_BXRaTuRe14tR-w8kVBFV3868v3lBn50,3435
+python_table_print/column.py,sha256=gnSMbwlgZ8Z44tTzeTk2Bfq35hgWqISegT9BZPc7jQw,169
+python_table_print/justification.py,sha256=nkKAwq9qWcVddgyCBjjPixBH44pKfc30ajCXoCMp_vc,150
+python_table_print/row.py,sha256=tyJVWx_Xj4uVY8wYzK_5LUETMqyoGZE6tOEgupztt74,1878
+python_table_print/table.py,sha256=L0_S2DtRn02HntYBCJbJs6u_IBfP1iguoZzsoR-oYyE,10361
+python_table_print-0.4.4.dist-info/LICENSE,sha256=lqlcAm-dsCrhtf5ZD_bRTrvOVr2ZUOyBCj2C1EJVwyQ,1070
+python_table_print-0.4.4.dist-info/METADATA,sha256=BHIqMrYbI4pcX4XYe5eagFV_0ft0abI5QHFvDpajJxo,12543
+python_table_print-0.4.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+python_table_print-0.4.4.dist-info/top_level.txt,sha256=3QxG-9qy35t9TOJQbO6trUKWdPMq0Di1_iYAsSD0WFQ,27
+python_table_print-0.4.4.dist-info/RECORD,,
