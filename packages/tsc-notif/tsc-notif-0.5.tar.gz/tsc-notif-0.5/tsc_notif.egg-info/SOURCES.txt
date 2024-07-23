@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+readme.md
+setup.py
+url.txt
+version.txt
+tsc_notif/__init__.py
+tsc_notif/handle_msg.py
+tsc_notif/supervisor_eventlistener.py
+tsc_notif/utils.py
+tsc_notif.egg-info/PKG-INFO
+tsc_notif.egg-info/SOURCES.txt
+tsc_notif.egg-info/dependency_links.txt
+tsc_notif.egg-info/entry_points.txt
+tsc_notif.egg-info/requires.txt
+tsc_notif.egg-info/top_level.txt
