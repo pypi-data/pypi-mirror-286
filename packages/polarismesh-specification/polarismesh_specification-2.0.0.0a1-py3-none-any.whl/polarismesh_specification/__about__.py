@@ -1,0 +1,4 @@
+# SPDX-FileCopyrightText: 2023-present {authemail@qq.com} <authemail@qq.com>
+#
+# SPDX-License-Identifier: MIT
+__version__ = "v2.0.0.0-alpha.1"
