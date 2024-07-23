@@ -1,0 +1,11 @@
+README.md
+setup.py
+darkfeed/__init__.py
+darkfeed/main.py
+darkfeed.egg-info/PKG-INFO
+darkfeed.egg-info/SOURCES.txt
+darkfeed.egg-info/dependency_links.txt
+darkfeed.egg-info/entry_points.txt
+darkfeed.egg-info/requires.txt
+darkfeed.egg-info/top_level.txt
+darkfeed/lib/dark.py
