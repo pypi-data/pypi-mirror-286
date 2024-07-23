@@ -1,0 +1,7 @@
+README.md
+setup.py
+nmake/__init__.py
+nmake.egg-info/PKG-INFO
+nmake.egg-info/SOURCES.txt
+nmake.egg-info/dependency_links.txt
+nmake.egg-info/top_level.txt
