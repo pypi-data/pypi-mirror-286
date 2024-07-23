@@ -1,0 +1,15 @@
+wrapt>=1.15.0
+typer
+toml
+
+[httpx]
+httpx
+
+[pycryptodome]
+pycryptodome
+
+[pydantic]
+pydantic
+
+[redis]
+redis
