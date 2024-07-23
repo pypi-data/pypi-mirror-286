@@ -1,0 +1,12 @@
+underdogcowboy/__init__.py,sha256=MECwnOQJLi0aWQUbIo860squk0fHhoa0wYhdmm1X0UE,454
+underdogcowboy/main.py,sha256=GxjssP9YO2nhmxGq0EcTRDB0_Wo4sKJp1vvjIpEeSdA,301
+underdogcowboy/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+underdogcowboy/core/config_manager.py,sha256=LptP2U96I3HYE7fJ2_RqReqLOL0Rb9I2TNMBgNDBS4s,8059
+underdogcowboy/core/dialog_manager.py,sha256=hPfTtDgXXf837mFHXqOFWeRtA9S79l_eb2tpMLhnnq4,1842
+underdogcowboy/core/model.py,sha256=NnfOrz_n6WSG7ybe3dgHIAIgFuYLZDhrRlagN2BB3vo,13278
+underdogcowboy/core/timeline_editor.py,sha256=yiiyWiQtSHo4D8sKoluF2vX7QddlEWgOTsEB9JRtMXU,30811
+underdogcowboy-0.1.10.dist-info/METADATA,sha256=S0lvb86cddvsdjGGAG2kOV3R7EPXaauR6hy_d7H3SM8,4786
+underdogcowboy-0.1.10.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+underdogcowboy-0.1.10.dist-info/entry_points.txt,sha256=_U1mVK4l06yFDljZUYxLxXszeYD2p4SdqPSw-edSedc,76
+underdogcowboy-0.1.10.dist-info/top_level.txt,sha256=BCuj94WnbWh1RgpnwO1U9QI2YWPTpCv0wVl20IcaVMw,15
+underdogcowboy-0.1.10.dist-info/RECORD,,
