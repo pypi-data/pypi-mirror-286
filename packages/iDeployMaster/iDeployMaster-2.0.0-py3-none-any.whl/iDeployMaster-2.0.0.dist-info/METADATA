@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: iDeployMaster
+Version: 2.0.0
+Requires-Dist: Pillow
+Requires-Dist: requests
+
