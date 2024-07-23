@@ -1,0 +1,89 @@
+Metadata-Version: 2.3
+Name: telegram_pydantic
+Version: 0.181.7
+Summary: Set of telegram pydantic models
+Project-URL: Source, https://github.com/pylakey/telegram_pydantic
+Project-URL: Homepage, https://github.com/pylakey/telegram_pydantic
+Author-email: pylakey <pylakey@protonmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 pylakey
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Framework :: AsyncIO
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: pydantic<3,>=2
+Description-Content-Type: text/markdown
+
+# telegram_pydantic - Set of Pydantic models, generated according to Telegram TL Scheme
+
+[![PyPI version shields.io](https://img.shields.io/pypi/v/telegram_pydantic.svg)](https://pypi.python.org/pypi/telegram_pydantic/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/telegram_pydantic.svg)](https://pypi.python.org/pypi/telegram_pydantic/)
+[![PyPI license](https://img.shields.io/pypi/l/telegram_pydantic.svg)](https://pypi.python.org/pypi/telegram_pydantic/)
+
+> Layer 181
+
+## Example
+
+```python
+from pydantic import TypeAdapter
+
+from telegram_pydantic import base
+from telegram_pydantic import types
+
+ta = TypeAdapter(base.Message)  # Base Constructor
+
+json_data = {
+    "_": "types.Message",
+    "id": 1,
+    "peer_id": {"_": "types.PeerUser", "user_id": 1},
+    "date": 1720715931,
+    "message": "Hello, World!",
+    "out": False,
+    "mentioned": False,
+    "media_unread": False,
+    "silent": False,
+    "post": False,
+    "from_scheduled": False,
+    "legacy": False,
+    "edit_hide": False,
+    "pinned": False,
+    "noforwards": False,
+    "invert_media": False,
+    "offline": False,
+    "saved_peer_id": {"_": "types.PeerUser", "user_id": 1},
+    "entities": [],
+    "restriction_reason": []
+}
+
+message = ta.validate_python(json_data)
+
+print(isinstance(message, types.Message))  # True 
+
+```
+
+
+## LICENSE
+
+This project is licensed under the terms of the MIT license.
