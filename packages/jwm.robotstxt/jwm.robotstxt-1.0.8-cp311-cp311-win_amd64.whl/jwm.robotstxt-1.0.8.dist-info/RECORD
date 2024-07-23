@@ -1,0 +1,9 @@
+jwm/robotstxt/__init__.py,sha256=G1XvZnVj8kXsmS_DN0DkZX5ZIvYIRDXMrhTUpDPs7nk,69
+jwm/robotstxt/googlebot.cc,sha256=BijzH0zB7jGXxN6sxmkhv-BS9gGMeObb9BT8wcTS7-w,11944
+jwm/robotstxt/googlebot.cp311-win_amd64.pyd,sha256=GM4uvhb3BmGHimh20jW2xFM2skk-j8VL4FJHV5s06jg,193024
+jwm/robotstxt/googlebot.pyi,sha256=fYV9snKDSGH_AZ_HirJxM31GQCZBHVEC6UBKMPzWA_8,7290
+jwm.robotstxt-1.0.8.dist-info/LICENSE,sha256=58dzSSVWv5wFH15mBK9MZierzGlcFflHdgPLjUEyBeo,1097
+jwm.robotstxt-1.0.8.dist-info/METADATA,sha256=xnTwhNuT9-6Uhla8F41v_MW5AwBeRlErR5f4uHv1f38,5831
+jwm.robotstxt-1.0.8.dist-info/WHEEL,sha256=SXv4eJlzP0RNHYKzGRJ91eDhAFO0Eo2_AdrKMJ52XEE,101
+jwm.robotstxt-1.0.8.dist-info/top_level.txt,sha256=eQb2ekHS6E6uNFVAC3IPVKPY8xumQvTybb078Ht8rJY,4
+jwm.robotstxt-1.0.8.dist-info/RECORD,,
