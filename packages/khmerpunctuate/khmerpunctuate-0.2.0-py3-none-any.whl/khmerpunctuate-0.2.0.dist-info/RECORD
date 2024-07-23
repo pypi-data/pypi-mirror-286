@@ -1,0 +1,11 @@
+khmerpunctuate/__init__.py,sha256=QjIQ3cR874qjUMK2tKYk8IQZ3PzAru6GAFjOk-Gv2B0,69
+khmerpunctuate/tagger.py,sha256=VE36kjOFmeR4cp2pzk1ZPMcpKtraXUImj-TSGGARtlA,2464
+khmerpunctuate/tokenizer.json,sha256=G5GSG5-3wvuixizQNwyX0E1HUn_EZtoU-gAwnz1Xonw,863541
+khmerpunctuate/utils.py,sha256=Ft3POO4mRMpLOtFR3GXxRzvxjpuTterth0eZfU_hmyk,446
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tag.py,sha256=4nPEIaLrjaZqKAXJ_qxx6MH13qM8gvSg6C83d4Er6hc,1736
+khmerpunctuate-0.2.0.dist-info/LICENSE,sha256=2dd6r8x1qP518Rlp6S892GyXf9vNUPjjfbF5rYp2bFA,1070
+khmerpunctuate-0.2.0.dist-info/METADATA,sha256=ojH7W4odZlcHCNz5zw7QezTM_L5dlW-SQ1pzZ_MIF60,5103
+khmerpunctuate-0.2.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+khmerpunctuate-0.2.0.dist-info/top_level.txt,sha256=GHmdLkxuIEJia77S5pb54bNIz53tsSF315VFu84hHCw,21
+khmerpunctuate-0.2.0.dist-info/RECORD,,
