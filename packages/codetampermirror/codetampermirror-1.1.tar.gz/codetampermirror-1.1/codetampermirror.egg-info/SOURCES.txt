@@ -1,0 +1,9 @@
+README.md
+setup.py
+codetampermirror/__init__.py
+codetampermirror/main.py
+codetampermirror.egg-info/PKG-INFO
+codetampermirror.egg-info/SOURCES.txt
+codetampermirror.egg-info/dependency_links.txt
+codetampermirror.egg-info/entry_points.txt
+codetampermirror.egg-info/top_level.txt
