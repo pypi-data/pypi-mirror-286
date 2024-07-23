@@ -1,0 +1,15 @@
+matplotlib
+numpy
+pandas
+scipy
+tqdm
+
+[dev]
+black
+flake8
+isort
+setuptools
+sphinx
+sphinx_rtd_theme
+twine
+wheel
