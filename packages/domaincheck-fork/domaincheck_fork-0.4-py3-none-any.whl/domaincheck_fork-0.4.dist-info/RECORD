@@ -1,0 +1,9 @@
+domaincheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+domaincheck/domaincheck.py,sha256=DoBFvTgDkhPXGonEHsRXhxlZtljYlyOI_LpCFKpcXIM,13711
+domaincheck_fork-0.4.data/data/share/man/man1/domaincheck.1,sha256=GhB4DV98zgX7UryJox1mBy_JUIdPwvN27fBuaafsNSA,3799
+domaincheck_fork-0.4.data/scripts/domaincheck.py,sha256=AbplFHUYopfZnmcOMUzNlWp5miQTL3JAjTQm349kHBM,13696
+domaincheck_fork-0.4.dist-info/LICENSE,sha256=xwrSDNXTkoRhU71jlgmffyUYCVorfyb1nO3LG4jjfjs,1214
+domaincheck_fork-0.4.dist-info/METADATA,sha256=LW12ToUgMDB7ZvGgCjupCxPtOFWwG9Rit1ExyvYzbL0,434
+domaincheck_fork-0.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+domaincheck_fork-0.4.dist-info/top_level.txt,sha256=Vcuo-GY-pMWDXtICfPot-70ZVdjzDu8Jq7XgDpqQs70,12
+domaincheck_fork-0.4.dist-info/RECORD,,
