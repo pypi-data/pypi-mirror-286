@@ -1,0 +1,6 @@
+setup.py
+jilo_lol_dev.egg-info/PKG-INFO
+jilo_lol_dev.egg-info/SOURCES.txt
+jilo_lol_dev.egg-info/dependency_links.txt
+jilo_lol_dev.egg-info/requires.txt
+jilo_lol_dev.egg-info/top_level.txt
