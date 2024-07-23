@@ -1,0 +1,14 @@
+fastapi>=0.111.1
+pydantic>=2.8.2
+tinydb>=4.8.0
+
+[dev]
+ruff>=0.5.2
+coverage
+
+[stage]
+build
+coverage
+
+[tests]
+coverage
