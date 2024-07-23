@@ -1,0 +1,16 @@
+sssimp/__init__.py,sha256=uA6NbF6nLq-6cmu3b-eXl0WEs0dX_FhYHkwhLohttvM,893
+sssimp/__main__.py,sha256=spRI5dX2rCjfQdb9LW1rqdBDWMJ0xuowXKdb9b3p55o,3389
+sssimp/config.py,sha256=FAm9VOCNSi5BfEy1ojkrGsT5XAzKyqHnPjjCI3lz9lw,625
+sssimp/filters.py,sha256=JN04OFHc_B_qdD7kVbZYyvvpy0a-O8VNFfDJdWRQEFk,678
+sssimp/utils.py,sha256=FOi3wZztUrJy_n2DI95MYQxexrIpUzsQS0kWmmqKF-o,938
+sssimp/generators/css.py,sha256=1ZTQcYQ9a8lwrovVh0lWUqEV4lt3SetrfEt5mGiwzCY,1037
+sssimp/generators/data.py,sha256=QBU7Cg58Ev0PTwGDaxTgYJD4TyneCFp1iW-ArZW92AA,1711
+sssimp/generators/html.py,sha256=x8v93vdadfySpO7ywJQK8ZzKXqDWURmujJK0i9AFrRM,1966
+sssimp/generators/jinja.py,sha256=Whm0_QCLG5qf3jgOniY3m7VuYIX8zY8gy1U5HCh17ic,682
+sssimp/generators/markdown.py,sha256=8yps7OSPf-V5zabY9gc3oA1Nrs22VPxM7s3CUB1xWsI,4638
+sssimp-0.1.3.dist-info/LICENSE,sha256=NCAYxTvPh_0-dBvEYqY4I5DNq8xblGUqvqz2PIk4V9k,1061
+sssimp-0.1.3.dist-info/METADATA,sha256=qXuwusln_V2wFl3o1RvbNgv-vUecRPxNMjBxXS6vxJ0,6995
+sssimp-0.1.3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+sssimp-0.1.3.dist-info/entry_points.txt,sha256=x23w9f5EW0oYJ3DHYGLC3_BHbU1QIHMoYJZPHwXdzpI,48
+sssimp-0.1.3.dist-info/top_level.txt,sha256=llkxzg5_iKauuOiLYi6l4kFlB-fQ_7tuiEDBNfGtCZg,7
+sssimp-0.1.3.dist-info/RECORD,,
