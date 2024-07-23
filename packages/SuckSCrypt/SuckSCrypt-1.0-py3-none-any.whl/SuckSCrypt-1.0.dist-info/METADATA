@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: SuckSCrypt
+Version: 1.0
+Summary: A Fastest & Secure Encryption System.
+Home-page: https://github.com/IT-Club-SMKN-21-Jakarta/SuckSCrypt
+Author: KyzuneX
+Author-email: kyzunex@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pycryptodome
+
