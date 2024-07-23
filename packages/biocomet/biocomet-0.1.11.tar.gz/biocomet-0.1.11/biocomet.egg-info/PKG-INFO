@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: biocomet
+Version: 0.1.11
+Summary: A brief description of the biocomet package
+Home-page: https://github.com/NiRuff/COMET/tree/master_kegg
+Author: Nicolas Ruffini
+Author-email: nicolas.ruffini@lir-mainz.de
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy>=1.19.2
+Requires-Dist: pandas>=1.2.0
+Requires-Dist: scikit-learn>=0.24
+Requires-Dist: matplotlib>=3.4
+Requires-Dist: seaborn>=0.11
+Requires-Dist: beautifulsoup4>=4.9
+Requires-Dist: requests>=2.25
+Requires-Dist: jupyter>=1.0.0
+Requires-Dist: ipython>=7.22.0
+Requires-Dist: python-igraph>=0.10.9
+Requires-Dist: leidenalg>=0.10.2
+Requires-Dist: tqdm>=4.66.2
+Requires-Dist: wordcloud>=1.9.3
+Requires-Dist: networkx>=3.2.1
+Requires-Dist: python-louvain>=0.16
+Requires-Dist: stringdb>=0.1.5
