@@ -1,0 +1,12 @@
+tensornet-tools/bin/tn_tools.sh,sha256=aR64ezZnPzbERiW44q5k2UFyUIok0XmhaZVPKFxzOXk,3201
+tensornet-tools/config/tn_tool_env.yaml,sha256=AyyAEqUfHzqYb60ClLnKfkcqukDdRfrPunFFl4II_wE,99
+tensornet-tools/python/merge_extra_embedding.py,sha256=tjfV38IdLAHVV2YcB_qNQc0WEU_Xfr58u8uzafUFjDw,2486
+tensornet-tools/python/merge_sparse.py,sha256=K5nKxuZi9w2h7ouu7XWFgdLZFNmO8fcOv17bgh86RMU,1314
+tensornet-tools/python/resize_dense.py,sha256=EAGaRo65hPTIIiZbK6ak0HhrQiK69n3MvMLssO8iHaM,1328
+tensornet-tools/python/resize_sparse.py,sha256=nvgfUC5i7Tia9PlCy2iT_p8Lkf6Ta4iZBHusq8BRd_4,1556
+tensornet-tools/python/utils.py,sha256=cYH2UFIQaHWeUomb_fOHynWMRfhI14uO2dOQEI0lDi8,14360
+qihoo_tensornet_tools-0.1.3.post2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+qihoo_tensornet_tools-0.1.3.post2.dist-info/METADATA,sha256=Vs2xNCu2_6IOZaaj1FVO3AaI-bMrc-NVel0O8E1-J3A,599
+qihoo_tensornet_tools-0.1.3.post2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+qihoo_tensornet_tools-0.1.3.post2.dist-info/top_level.txt,sha256=FneM3dVR8JtpfBXlPzd3RHEiKxdvDlDJv2GIiplrzag,16
+qihoo_tensornet_tools-0.1.3.post2.dist-info/RECORD,,

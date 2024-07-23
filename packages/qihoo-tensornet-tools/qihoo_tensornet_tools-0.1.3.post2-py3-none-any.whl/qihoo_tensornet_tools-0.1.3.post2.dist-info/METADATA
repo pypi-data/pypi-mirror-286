@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qihoo-tensornet-tools
+Version: 0.1.3.post2
+Summary: tools for tensornet
+Home-page: https://github.com/Qihoo360/tensornet
+Author: jiangxinglei
+Author-email: jiangxinglei@360.cn
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+multi tools for tensornet. E.g. merge/resize sparse or dense table, include external embeddings
