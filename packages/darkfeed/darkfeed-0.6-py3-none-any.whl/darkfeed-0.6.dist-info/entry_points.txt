@@ -1,0 +1,2 @@
+[console_scripts]
+darkfeed = darkfeed.main:main
