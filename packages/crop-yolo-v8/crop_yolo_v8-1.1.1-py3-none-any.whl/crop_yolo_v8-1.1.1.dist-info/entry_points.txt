@@ -1,0 +1,3 @@
+[console_scripts]
+crop-yolo-v8=crop_yolo_v8.main:main
+
