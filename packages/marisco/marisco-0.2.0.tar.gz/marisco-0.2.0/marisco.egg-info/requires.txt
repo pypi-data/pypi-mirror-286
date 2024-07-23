@@ -1,0 +1,14 @@
+pandas==2.2
+openpyxl==3.1.0
+fastcore
+tqdm
+netcdf4
+tomli
+tomli-w
+shapely
+pyzotero
+jellyfish
+xarray
+
+[dev]
+unitest
