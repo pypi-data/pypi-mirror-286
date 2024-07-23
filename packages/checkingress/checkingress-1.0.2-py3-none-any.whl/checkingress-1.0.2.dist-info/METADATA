@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: checkingress
+Version: 1.0.2
+Summary: Check ingress status of your instance
+Home-page: https://devnull.cn
+Author: Xizhen Du
+Author-email: xizhendu@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: theid
+
+# ingress-check-sdk-python
