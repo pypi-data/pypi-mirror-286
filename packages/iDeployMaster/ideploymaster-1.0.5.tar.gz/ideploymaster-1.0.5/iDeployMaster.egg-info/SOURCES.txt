@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+iDeployMaster/init.py
+iDeployMaster/main.py
+iDeployMaster.egg-info/PKG-INFO
+iDeployMaster.egg-info/SOURCES.txt
+iDeployMaster.egg-info/dependency_links.txt
+iDeployMaster.egg-info/entry_points.txt
+iDeployMaster.egg-info/not-zip-safe
+iDeployMaster.egg-info/requires.txt
+iDeployMaster.egg-info/top_level.txt
