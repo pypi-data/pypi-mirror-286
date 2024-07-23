@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/ytsearch.py
+src/youtube_search2.egg-info/PKG-INFO
+src/youtube_search2.egg-info/SOURCES.txt
+src/youtube_search2.egg-info/dependency_links.txt
+src/youtube_search2.egg-info/requires.txt
+src/youtube_search2.egg-info/top_level.txt
+tests/test_search.py

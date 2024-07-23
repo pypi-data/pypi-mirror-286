@@ -1,0 +1,54 @@
+[project]
+name = "youtube_search2"
+version = "2.1.7"
+authors = [
+  { name = "Joe Tatusko", email = "tatuskojc@gmail.com"},
+]
+maintainers = [
+  { name = "Patryk Ladocha", email = "patrykladocha76@gmail.com" },
+]
+description = "a youtube_search fork with additional features and patches."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8"
+]
+dependencies = [
+"certifi>=2024.2.2",
+"chardet>=5.2.0",
+"idna>=3.6",
+"requests>=2.31.0",
+"urllib3>=2.2.1",
+"beautifulsoup4>=4.12.3",
+"lxml>=5.1.0"
+]
+
+keywords = ["yt", "ytsearch", "youtube_search", "youtube_search2", "youtube-search"]
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://github.com/xNykram/youtube_search2"
+Issues = "https://github.com/xNykram/youtube_search2/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+python_files = 'test*.py'
+addopts = "--cov=. --cov-report=html:coverage-report -p no:warnings"
+testpaths = "tests"
+minversion = "6.0"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = ["tests/*", "__init__.py"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 75
