@@ -1,0 +1,13 @@
+pyerrorschema/__init__.py,sha256=VArhd0YGBI_THloJwgnq4lCLNCXZOziU5MeUKLUOskA,224
+pyerrorschema/err_base.py,sha256=hcT11jpyLfk6OSqU1xb_zgvw32HAsAnX2LTSLrTbFL4,2156
+pyerrorschema/err_group.py,sha256=n8A1wHLB_qY49Gx8xosSMOBjzi88bT5jG5OaDfqsLnM,1942
+pyerrorschema/fastapi/__init__.py,sha256=7xbIDDaXNq_QSqwkor1SzkjJEev0FdMXsttCs219OAU,88
+pyerrorschema/fastapi/fastapi_base.py,sha256=qKopECZRYrnu_Z7-bk2J1sipoHqMgGj03s1YEhzVETQ,1815
+pyerrorschema/fastapi/fastapi_group.py,sha256=X8Dyh3fHuYs6lOdLxVqkQXDeTYMhnobxXQY3Co83u28,863
+pyerrorschema/utils/__init__.py,sha256=-P5BmNcikhsc3Tqvs0zaCU0MCD1t0GTzFBfPtK4ieZQ,43
+pyerrorschema/utils/decorators.py,sha256=B8MQqzbd-VkKWifzHbbm6W4jtM0VshDM8o6sa1cPZhY,711
+pyerrorschema-1.0.0.dist-info/LICENSE.txt,sha256=A7rB4UyEX3MfqKHLzQfc4ef1KYIW7U1kcV9xCyc-_40,1530
+pyerrorschema-1.0.0.dist-info/METADATA,sha256=bN_SAAMAjvKw2FcbutHne6Cm4oKLLu5Lxl5y68Lu7z8,3091
+pyerrorschema-1.0.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pyerrorschema-1.0.0.dist-info/top_level.txt,sha256=JZxuu2xBH7kHSmMrGdRiIlWORxWZgPoT138hhKkwT44,14
+pyerrorschema-1.0.0.dist-info/RECORD,,
