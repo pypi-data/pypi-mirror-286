@@ -1,0 +1,10 @@
+sysframe/__init__.py,sha256=m5PdnRxbnP7JlHNjDJLeYl5Gqz0iXteN3bwWHwdgDQQ,47
+sysframe/membridge/__init__.py,sha256=PuOHNIwoh755WI55UTv8qf9PDkYmbf9Gn1scH-eoj8U,24
+sysframe/membridge/membridge.cpython-36m-x86_64-linux-gnu.so,sha256=7BiAooj8Hxi2LaVBXPz83IeoHibZ43FTj0TThrY23-Y,130128
+sysframe/pybytes/__init__.py,sha256=5AaG8kSwBxaBM0mVkcix9C7lTQwYkOlBKgSAU7HkVRs,22
+sysframe/pybytes/pybytes.cpython-36m-x86_64-linux-gnu.so,sha256=Rch1ZzvOA_uaTpuMZsGmE9oHWmVpAgn8S6GMWYeT82M,95280
+sysframe-0.0.3.dist-info/METADATA,sha256=2I1OlCyemTl-biIqxEtQxYf6BDvHEy0rarwbP3mBYdI,1537
+sysframe-0.0.3.dist-info/LICENSE,sha256=31yjAttdR6OSInWiSqTcPX9vXGxcVBFJFfEl6hqWIhc,1062
+sysframe-0.0.3.dist-info/top_level.txt,sha256=zEAhkGF0gAS4whdDEaw5Wm7xeVOccrILp_VU0Qn-XKc,9
+sysframe-0.0.3.dist-info/WHEEL,sha256=FxvOBIPWULmQmkts83LAmRSb1PKBOerW3I7FsMSIXDA,221
+sysframe-0.0.3.dist-info/RECORD,,
