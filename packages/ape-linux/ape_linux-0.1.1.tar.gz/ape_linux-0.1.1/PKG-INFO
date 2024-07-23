@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: ape-linux
+Version: 0.1.1
+Summary: AI for Linux commands
+Home-page: https://github.com/sbalian/ape
+License: MIT
+Keywords: ai,llm,linux,openai
+Author: Seto Balian
+Author-email: seto.balian@gmail.com
+Maintainer: Seto Balian
+Maintainer-email: seto.balian@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Requires-Dist: openai (>=1.30.3,<2.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Project-URL: Repository, https://github.com/sbalian/ape
+Description-Content-Type: text/markdown
+
+# Ape
+
+Ape is an AI for Linux commands.
+
+```sh
+ape "Find all the important PDF files in user/projects. An important PDF file has 'attention' in its name. Write the results to important_files.txt and then move it to Documents."
+```
+
+Output:
+
+```text
+find ~/user/projects -type f -name "*attention*.pdf" > important_files.txt && mv important_files.txt ~/Documents/
+```
+
+Currently, only [OpenAI](https://openai.com/api/) is supported.
+
+To install:
+
+```bash
+pipx install ape-linux
+```
+
+Next, set your API key:
+
+```bash
+export OPENAI_API_KEY=key
+```
+
+To run:
+
+```bash
+ape "Create a symbolic link called win pointing to /mnt/c/Users/jdoe"
+```
+
+Output:
+
+```text
+ln -s /mnt/c/Users/jdoe win
+```
+
+Another example:
+
+```bash
+ape "Delete all the .venv directories under projects/"
+```
+
+Output:
+
+```text
+find projects/ -type d -name ".venv" -exec rm -rf {} +
+```
+
+If you try to ask something unrelated to Linux commands, you should get "Please rephrase." printed:
+
+```bash
+ape "Tell me about monkeys"
+```
+
+Output:
+
+```text
+Please rephrase.
+```
+
+You can change the model using `--model`. The default is `gpt-4o`.
+See [here](https://platform.openai.com/docs/models) for a list of models. For example:
+
+```bash
+ape "List the contents of the working directory with as much detail as possible" --model gpt-3.5-turbo
+```
+
+Output:
+
+```text
+ls -lha
+```
+
+If you pass `--execute`, the tool will run the command for you after printing it! Be careful with this as LLMs often make mistakes:
+
+```bash
+ape "Who am I logged in as?"
+```
+
+Output:
+
+```text
+whoami
+jdoe
+```
+
+For more help:
+
+```bash
+ape --help
+```
+
+See also: [Gorilla](https://github.com/gorilla-llm)
+
