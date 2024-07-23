@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: px-chain-caller
+Version: 1.0.0
+Summary: Simple utility for lazy call chain resolving
+Home-page: https://github.com/preusx/python-chain-caller
+Author: Alex Tkachenko
+Author-email: preusx.dev@gmail.com
+License: MIT
+Download-URL: https://github.com/preusx/python-chain-caller/archive/1.0.0.tar.gz
+Description: # Chain Caller
+        [ ![Travis status](https://travis-ci.org/preusx/python-chain-caller.svg?branch=master) ](https://travis-ci.org/preusx/python-chain-caller)
+        
+        Simple utility for lazy call chain resolving.
+        
+Platform: UNKNOWN
