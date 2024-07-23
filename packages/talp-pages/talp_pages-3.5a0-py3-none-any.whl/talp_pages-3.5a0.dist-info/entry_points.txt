@@ -1,0 +1,8 @@
+[console_scripts]
+talp_add_to_db=talp_pages.talp_add_to_db:main
+talp_badge=talp_pages.talp_badge:main
+talp_download_artifacts_gitlab=talp_pages.download_artifacts_gitlab:main
+talp_pages=talp_pages.talp_pages:main
+talp_report=talp_pages.talp_report:main
+talp_report_ts=talp_pages.talp_report_ts:main
+

@@ -1,0 +1,11 @@
+talp_pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talp_pages/download_artifacts_gitlab.py,sha256=iTU1D3fuXNSpzpr-PN_8Ofab_GdCuQDiI84Sit4E930,3367
+talp_pages/talp_badge.py,sha256=y81oqNhg26qAs2pAxYhAxO0-yq5dVNWY57BnGdEpj4M,3669
+talp_pages/talp_common.py,sha256=GD3k09sIkwOkXh-ksJFs80yTDZ-ktopvRrUGYWn3MvI,1089
+talp_pages/talp_pages.py,sha256=UEITuSsy-_N2s3U0ZdGQKY3yI_BrVXzxW-3bU2iwV8s,10677
+talp_pages/templates/landing_page.jinja,sha256=Ke9y-ocolFVaQuuiEjmEKL1h_0NRszqv1mC9zU0YK3U,212499
+talp_pages/templates/time_series.jinja,sha256=9NUDSLnK-T6ttb92HiNeNKQugBLHN_wwZRU8ZnM1ilA,105355
+talp_pages-3.5a0.dist-info/METADATA,sha256=FtWthmzo-IPQL3MgG8QNM1BGvRXNnf6rdFPe_l0XdPg,2837
+talp_pages-3.5a0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+talp_pages-3.5a0.dist-info/entry_points.txt,sha256=kjYQHQYC-iFhhsyay6LhyfMtnWrbejJ4tC73lWwlF9Y,300
+talp_pages-3.5a0.dist-info/RECORD,,
