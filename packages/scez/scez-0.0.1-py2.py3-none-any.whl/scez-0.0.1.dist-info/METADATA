@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: scez
+Version: 0.0.1
+Summary: Single Cell Analysis, Easy Mode!
+License: MIT
+Author: Abe Arab
+Author-email: abarbiology@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Source, https://github.com/abearab/scez
+Description-Content-Type: text/markdown
+
+## scez – single cell, easy mode
+[![package](https://github.com/abearab/scez/actions/workflows/main.yml/badge.svg)](https://github.com/abearab/scez/actions/workflows/main.yml)
+
+### Installation
+Make sure you have mamba installed in your base environment. If not, install it with:
+```bash
+conda install mamba -n base -c conda-forge
+```
+Then, create a new conda environment with the provided `environment.yml` file and activate it. This will install all necessary dependencies for scez.
+```bash
+conda env create -f environment.yml
+
+conda activate scez
+```
+Finally, install scez with:
+
+```bash
+pip install scez
+```
+
+Or, if you want to install the latest version from the repository:
+```bash
+pip install git+https://github.com/abearab/scez.git
+```
+
