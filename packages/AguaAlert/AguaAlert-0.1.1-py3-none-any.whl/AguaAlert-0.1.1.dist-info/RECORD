@@ -1,0 +1,12 @@
+AguaAlert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AguaAlert/analisis.py,sha256=Vu8SlY3hKYbrFszzRuZocyVspsbG3pfbydcS_A3RIhE,1426
+AguaAlert/main_menu.py,sha256=1qdzashr0x8Vb356qf7onJ6HbVThGwEZEu6bLfyeus0,2473
+AguaAlert/pozos.py,sha256=mZQGYcqFaQ_KyeASi6tXOeZKyUQz5uKUZ5Jfnq_7uxY,1616
+AguaAlert/prediccion.py,sha256=RnoRp4t43s3UYIQwtMrLxAQwkGdYXH0TnNYRL_X4fTE,1286
+AguaAlert/reportes.py,sha256=nYx5-LomRMjg3_YOBrFkz7WeCoqUxAxIXWp7pTePiiA,557
+AguaAlert/visualizacion.py,sha256=UacU6Jixp5JrjAZGYyiV3MTLplt8VdHtYJ4PFHT7KoY,728
+AguaAlert-0.1.1.dist-info/LICENSE,sha256=0wYS5JinlEeqJ24Ai2SiuVNX0aHLcQb20Ib0UjiWXoM,488
+AguaAlert-0.1.1.dist-info/METADATA,sha256=93F9AM1spCZwfPMSWuifQ4RMH2zdDaSYhnRHla16G9M,2324
+AguaAlert-0.1.1.dist-info/WHEEL,sha256=y4mX-SOX4fYIkonsAGA5N0Oy-8_gI4FXw5HNI1xqvWg,91
+AguaAlert-0.1.1.dist-info/top_level.txt,sha256=xTnnao0EJzvEcnTfvOs39sKlTwyX6bD73UdZDNpuOj4,10
+AguaAlert-0.1.1.dist-info/RECORD,,

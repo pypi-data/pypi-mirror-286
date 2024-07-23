@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: AguaAlert
+Version: 0.1.1
+Summary: Sistema de predicción de niveles de aguas subterráneas utilizando datos de precipitación.
+Home-page: https://github.com/yourusername/AguaAlert
+Author: José Rodríguez, Anderson Pineda, Andriana Espinoza, Cesar Villavicencio, Jhon Castillo
+Author-email: jdrodriguez30@utpl.edu.ec
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy ==1.24.1
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+Requires-Dist: scipy
+Requires-Dist: openpyxl
+
+# AguaAlertEC
+
+![](logo.png)
+
+AguaAlert estÃ¡ dirigido a los Gobiernos AutÃ³nomos Descentralizados Municipales, universidades y demÃ¡s instituciones que necesiten una evaluaciÃ³n rÃ¡pida de los principales cauces de una ciudad afectada por las lluvias intensas y con la cual podrÃ¡n generar acciones inmediatas y a largo plazo para la recuperaciÃ³n de estas zonas frente a las afectaciones identificadas.
+
+Es un paquete para la gestiÃ³n y anÃ¡lisis de datos de niveles de aguas subterrÃ¡neas y precipitaciones. Incluye funcionalidades para registrar datos, analizarlos y realizar predicciones basadas en modelos de regresiÃ³n.
+
+## InstalaciÃ³n
+
+Puedes instalar el paquete usando:
+!pip install AguaAlert
+
+## Funcionamiento de los mÃ³dulos
+* pozos.py
+
+Registra una nueva ubicaciÃ³n y sus niveles de agua histÃ³ricos.
+
+Registra datos histÃ³ricos de precipitaciÃ³n para una ubicaciÃ³n.
+
+* analisis.py
+
+Convierte los datos de un archivo CSV a una matriz de Numpy.
+
+Analiza la relaciÃ³n entre la precipitaciÃ³n y los niveles de agua.
+
+* prediccion.py
+
+Convierte los datos de un archivo CSV a una matriz de Numpy.
+
+Predice el nivel de agua para una precipitaciÃ³n prevista en una ubicaciÃ³n especÃ­fica.
+
+* reportes.py
+
+Genera un reporte con un resumen de los datos registrados.
+
+* visualizacion.py
+
+Visualiza los datos registrados mediante grÃ¡ficos.
+
+* main_menu.py
+
+Muestra el menÃº principal del sistema de predicciÃ³n de niveles de aguas subterrÃ¡neas.
