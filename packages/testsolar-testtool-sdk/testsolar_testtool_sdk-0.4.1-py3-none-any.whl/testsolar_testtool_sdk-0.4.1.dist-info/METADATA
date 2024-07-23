@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: testsolar-testtool-sdk
+Version: 0.4.1
+Summary: Python3 SDK for TestSolar testtool
+Author-email: asiazhang <asiazhang2002@gmail.com>
+License: Apache License 2.0
+Project-URL: repository, https://github.com/OpenTestSolar/testtool-sdk-python
+Keywords: testsolar
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: portalocker >=2.7
+Requires-Dist: dacite >=1.8.1
+
+# testtool-sdk-python
+Python TestTool SDK for TestSolar
+
+注意：
+
+- 需要Python >= 3.7
+- 如果需要使用Python2，请访问：https://github.com/OpenTestSolar/testtool-sdk-python-py2
+
+## 如何使用
+
+```shell
+pip install testsolar-testtool-sdk
+```
