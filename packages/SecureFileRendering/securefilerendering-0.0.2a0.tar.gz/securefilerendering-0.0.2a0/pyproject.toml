@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0","Flask-Session>=0.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SecureFileRendering"
+license = {file = "LICENSE.txt"}
+keywords = ["file secure", "secure render", "file secure render", "secure file render", "setuptools", "securefile"]
+dynamic = ["version"]
+authors = [
+  { name="Souvik Mondal", email="mondalsouvik480@gmail.com" },
+]
+description = "A package for rendering file securely"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/S-Mondal/SecureFileRendering"
+
+[tool.setuptools.dynamic]
+version = {file = "src/VERSION"}

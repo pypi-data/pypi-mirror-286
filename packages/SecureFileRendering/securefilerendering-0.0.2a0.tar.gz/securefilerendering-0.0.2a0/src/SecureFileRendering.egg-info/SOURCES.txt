@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/VERSION
+src/SecureFileRendering/__init__.py
+src/SecureFileRendering/secure_file.py
+src/SecureFileRendering.egg-info/PKG-INFO
+src/SecureFileRendering.egg-info/SOURCES.txt
+src/SecureFileRendering.egg-info/dependency_links.txt
+src/SecureFileRendering.egg-info/top_level.txt
