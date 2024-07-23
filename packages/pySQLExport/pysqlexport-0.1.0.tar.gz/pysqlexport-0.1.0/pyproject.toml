@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pySQLExport"
+version = "0.1.0"
+authors = [
+  { name="Aaron Mathis", email="aaron.mathis@gmail.com" },
+]
+description = "A command line tool to interact with databases and export to other formats."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/aaronlmathis/pySQLExport"
+Issues = "https://github.com/aaronlmathis/pySQLExport/issues"
