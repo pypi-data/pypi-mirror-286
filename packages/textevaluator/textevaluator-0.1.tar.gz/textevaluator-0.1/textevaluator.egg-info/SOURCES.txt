@@ -1,0 +1,12 @@
+README.md
+setup.py
+textevaluator/__init__.py
+textevaluator/model.py
+textevaluator.egg-info/PKG-INFO
+textevaluator.egg-info/SOURCES.txt
+textevaluator.egg-info/dependency_links.txt
+textevaluator.egg-info/entry_points.txt
+textevaluator.egg-info/requires.txt
+textevaluator.egg-info/top_level.txt
+textevaluator/data/data.json
+textevaluator/data/my_model.h5
