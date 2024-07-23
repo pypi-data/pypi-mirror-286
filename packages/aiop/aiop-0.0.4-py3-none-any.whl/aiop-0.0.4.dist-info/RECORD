@@ -1,0 +1,10 @@
+bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bin/main.py,sha256=3c2lbsZOuk_G3fpadpuy2t4nUqCwovWtqHEg8nmEolI,5678
+common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common/ai.py,sha256=oOtb5bwBZSaB3kyoMEK-4JIrw8K2GI4VlW9D2MV08LQ,847
+aiop-0.0.4.dist-info/LICENSE,sha256=eyWjxC4Y_RZUin21806aFuIn6qXrBRpZCNJW_JR3XhM,632
+aiop-0.0.4.dist-info/METADATA,sha256=syHLyx0shfkP8Dg8vTXGVPEbDjIAYJUhkXjLNhVK7p8,1234
+aiop-0.0.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+aiop-0.0.4.dist-info/entry_points.txt,sha256=O-B76HSJdi-OsSfIR-EGtuyxmOVXzfJ7sAvQSzDpx58,38
+aiop-0.0.4.dist-info/top_level.txt,sha256=DCQpAP8mlf56PWuTe7FHouqPOM8_l0fVv3ZRfhO68pY,11
+aiop-0.0.4.dist-info/RECORD,,
