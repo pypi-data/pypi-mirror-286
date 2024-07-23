@@ -1,0 +1,9 @@
+french_cities/__init__.py,sha256=Gg8wxXllvcMeCSzFl5z1lIEE9chMly78HZZA3pAvhVk,465
+french_cities/city_finder.py,sha256=OX9rGXFIYHo6DFtKMFdHIBr2enUuqgu4ivZCzChD828,40749
+french_cities/config.py,sha256=Bhf5prz6ThXvIT6A-Khz03gOKf8f7zFa_OY5mMB1lV8,185
+french_cities/departement_finder.py,sha256=OAbExadF4iRCntY1qJrWBKAmgMK8VxRIB3UkAcnuklQ,14317
+french_cities/utils.py,sha256=ZmaR7mdC_2pnjnYc19rebLbkRqlej1m3cczPvWSFy5k,1095
+french_cities/vintage.py,sha256=_A5EHnwP-k8rzwEGXrKr4SCAF4cGgmxlMQ95VwdUGoY,9479
+french_cities-0.4.1.dist-info/METADATA,sha256=DuiG3eOBzjWn6sISpJYEa7H0lYqJMOAHEimUFXvsOms,10707
+french_cities-0.4.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+french_cities-0.4.1.dist-info/RECORD,,
