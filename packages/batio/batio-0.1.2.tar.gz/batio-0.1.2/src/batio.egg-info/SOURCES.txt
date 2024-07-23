@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/batio/__init__.py
+src/batio/ansi_escapes.py
+src/batio/events.py
+src/batio/linux_terminal.py
+src/batio/vt100_terminal.py
+src/batio/windows_terminal.py
+src/batio.egg-info/PKG-INFO
+src/batio.egg-info/SOURCES.txt
+src/batio.egg-info/dependency_links.txt
+src/batio.egg-info/top_level.txt
