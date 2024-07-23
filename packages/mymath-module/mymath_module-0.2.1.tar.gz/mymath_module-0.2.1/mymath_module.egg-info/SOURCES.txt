@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mymath_module/__init__.py
+mymath_module/mymath.py
+mymath_module.egg-info/PKG-INFO
+mymath_module.egg-info/SOURCES.txt
+mymath_module.egg-info/dependency_links.txt
+mymath_module.egg-info/not-zip-safe
+mymath_module.egg-info/top_level.txt
