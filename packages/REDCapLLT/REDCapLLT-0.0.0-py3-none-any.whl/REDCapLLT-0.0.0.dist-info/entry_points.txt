@@ -1,0 +1,2 @@
+[console_scripts]
+redcapllt = my_package.redcapllt:main
