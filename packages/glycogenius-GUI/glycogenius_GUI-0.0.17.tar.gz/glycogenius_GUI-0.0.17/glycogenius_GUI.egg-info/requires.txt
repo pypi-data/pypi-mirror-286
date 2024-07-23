@@ -1,0 +1,15 @@
+pandas
+scipy
+pyteomics==4.6.3
+pillow
+ttkwidgets
+matplotlib
+dill
+numpy
+lxml
+openpyxl
+setuptools
+xlsxwriter
+psutil
+pyqt5
+glycogenius==1.1.24
