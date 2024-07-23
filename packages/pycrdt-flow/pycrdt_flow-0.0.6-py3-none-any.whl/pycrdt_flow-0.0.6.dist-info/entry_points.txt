@@ -1,0 +1,2 @@
+[console_scripts]
+flow_server = pycrdt_flow.backend.cli:cli
