@@ -1,0 +1,15 @@
+*.pyc
+*.pyo
+*.*~
+*.*~*
+.tox/
+.cache/
+.hypothesis/
+build/
+dist/
+__pycache__/
+.mypy_cache/
+.coverage*
+*.egg-info/
+monkeytype.sqlite3
+src/xotl/tools/_version.py
