@@ -1,0 +1,14 @@
+nook/__init__.py,sha256=xqUvayGAromfg5B1NzM-66u9srMwWAs4LK2L38lb_c4,137
+nook/commands.py,sha256=nMDwZn5cH8HEBh9xPCPg21vSH9FJrVVPXwXkET6U8FI,871
+nook/main.py,sha256=AdpJw1y20LT7kZ88F3i-RzBt8Hi9o5qSVcTUK-bKdec,263
+nook/utils.py,sha256=6aNgMTQAeiy-OzhTFVSmtWOuBzBCEbl7zmpBuJvQBo4,1817
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=gozvJCgC6nTymy9s5vJDoKOdgkiYaNGl5M3e8czuQvU,1225
+tests/test_utils.py,sha256=SBu3ZNXbJYKgmIwk_NON0mVd1_a3o0bcjFNaBxKg0o4,723
+tests/utils.py,sha256=-ClB7X-Qbk4OEjzGaxZ2SdvUqTq9xDK42fn18UFz4sw,474
+venv/bin/activate_this.py,sha256=qDezTgSWWeApEoBd4Yg5DVwIkSm70JMftkHp_T-BQco,1200
+nook-0.1.1.dist-info/METADATA,sha256=tHg2M4LQSxbsNNAA4mjYkuldu5k-bTFZ1bUAO1i4jVU,2855
+nook-0.1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+nook-0.1.1.dist-info/entry_points.txt,sha256=Hr2OAxTCSCBnGowUHhikTL00tFoyE3z4Eag2U65259c,39
+nook-0.1.1.dist-info/top_level.txt,sha256=hsfMw7_J66hNinToGZ5KuQfjCIz89zpVH_uFL9PmaEE,16
+nook-0.1.1.dist-info/RECORD,,
