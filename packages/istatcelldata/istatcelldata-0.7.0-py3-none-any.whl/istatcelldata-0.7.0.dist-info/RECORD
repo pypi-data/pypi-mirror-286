@@ -1,0 +1,14 @@
+istatcelldata/__init__.py,sha256=JcfLdloHWa5WVgbOFhoWmaPlZPJa91_r5ayzJTCPEb0,99
+istatcelldata/config.py,sha256=gdHWcASMWtVecoUaFGBfUb7JX-tOjspW7_rAajj90OY,6522
+istatcelldata/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+istatcelldata/data/census_1991_2001.py,sha256=FuqO5UFGOi7Og7f3LcvOk0Jh7w3g2jBHS9-9IT2enTM,8609
+istatcelldata/data/manage_data.py,sha256=s0kdDfzAPgB2bIJUpgYVMGJsijesj9lpoM-ptMNE0tA,3148
+istatcelldata/download.py,sha256=RhkOpS1XFfTxj0S1g1tI0bk32ZVzKkn2o0nt1sehop4,7009
+istatcelldata/generic.py,sha256=ev6ezwz2ElyACHQQwsWBbMagoLdPk4R3HeElsuP1FEU,4531
+istatcelldata/geodata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+istatcelldata/geodata/manage_geodata.py,sha256=8sCmeBBhGp4coC1jqv7KOjaUK1cFvaYOST_kCOqje6w,5176
+istatcelldata/processes.py,sha256=jCCSejkDgJ4Kv0YA2eHwJah8dwExzT5RUPIU5LyAM3Y,4857
+istatcelldata-0.7.0.dist-info/LICENSE,sha256=4FIN0Bhmc7SGwMKqKokYc8h4qhgvwqV6ShQRjZ1T9xI,1076
+istatcelldata-0.7.0.dist-info/METADATA,sha256=edaGI0KpTD8vdOzAxpf7px9OSnFR27TKwoZ20mwuj0Q,1850
+istatcelldata-0.7.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+istatcelldata-0.7.0.dist-info/RECORD,,
