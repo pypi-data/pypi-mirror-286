@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tc_circuit
+Version: 0.4.0
+Summary: A collection of tools for working with and specifically compiling TC circuits
+Author-email: MegaIng <trampchamp@hotmail.de>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pydantic
+Requires-Dist: save-monger
+Requires-Dist: pygame-ce
+Project-URL: Home, https://github.com/MegaIng/tc_circuit
