@@ -1,0 +1,407 @@
+/* variables --------------------------------------------------------------- */
+:root {
+    --grid-gutter: 24px;
+    --grid-gutter-half: 12px;
+    --grid-gutter-quarter: 6px;
+    --grid-gutter-eighth: 3px;
+
+    --color-black:  #000000;
+    --color-white:  #FFFFFF;
+    --color-grey-1: #F1F1F1;
+    --color-grey-2: #E3E3E3;
+    --color-grey-3: #DDDDDD;
+    --color-grey-4: #545454;
+    --color-blue:   #88BBFF;
+
+    --color-marker: #00FF00;
+
+    --default-border-radius: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-black:  #E3E3E3;
+        --color-white:  #3C3C3C;
+        --color-grey-1: #282828;
+        --color-grey-2: #1F2020;
+        --color-grey-3: #1F2020;
+        --color-grey-4: #E3E3E3;
+        --color-blue:   #88BBFF;
+    }
+}
+
+/* fonts ------------------------------------------------------------------- */
+/* Google Material Icons */
+/* source: https://developers.google.com/fonts/docs/material_icons */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url(assets/fonts/google-material-design-icons/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf) format('truetype'),
+        url(assets/fonts/google-material-design-icons/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2) format('woff2'),
+}
+
+.material-icon {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* page -------------------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+main {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 100%;
+    width: 100%;
+}
+
+main > #background {
+    grid-row: 1;
+    grid-column: 1;
+
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+main > .grid {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#pixel {
+    position: absolute;
+    z-index: 1000001;
+    left: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* marker ------------------------------------------------------------------ */
+#marker {
+    display: none;
+    position: absolute;
+    z-index: 1000001;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-marker);
+}
+
+/* cursor ------------------------------------------------------------------ */
+#cursor {
+    position: fixed;
+    z-index: 1000000;
+    width: 28px;
+    height: 28px;
+}
+
+/* grid -------------------------------------------------------------------- */
+.grid,
+.row,
+.column {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: var(--grid-gutter);
+}
+
+.grid {
+    padding: var(--grid-gutter);
+}
+
+.column {
+    flex-direction: column;
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* browser window ---------------------------------------------------------- */
+.browser-window {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 3px 3px 12px 0px rgb(0 0 0 / 50%);
+    border: 1px solid var(--color-grey-3);
+    border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+}
+
+.browser-window .top-bar {
+    display: flex;
+}
+
+.browser-window .tab-panes {
+    flex-grow: 1;
+}
+
+.browser-window .tab-panes .tab-pane {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+}
+
+.browser-window .tab-panes .tab-pane iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* browser-window / top-bar ------------------------------------------------ */
+.top-bar {
+    background-color: var(--color-grey-2);
+    padding-top: var(--grid-gutter-quarter);
+}
+
+
+/* browser-window / top-bar / tabs ----------------------------------------- */
+.dots {
+    display: flex;
+    align-items: center;
+    gap: var(--grid-gutter-quarter);
+    padding: 0 var(--grid-gutter-half);
+    margin-top: calc(var(--grid-gutter-quarter) * -1);
+}
+
+.dot {
+    height: var(--grid-gutter-half);
+    width: var(--grid-gutter-half);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.red {
+    background: #ED594A;
+}
+
+.dot.yellow {
+    background: #F4BD00;
+}
+
+.dot.green {
+    background: #00D500;
+}
+
+.tab,
+.tab * {
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    gap: var(--grid-gutter-quarter);
+    width: 200px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: var(--grid-gutter-quarter);
+    background-color: var(--color-white);
+    border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+}
+
+.tab .material-icon {
+    font-size: 16px;
+    color: var(--color-grey-4);
+}
+
+.tab-title {
+    display: block;
+    flex-grow: 1;
+
+    color: var(--color-black);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tab-icon img {
+  width: 16px;
+  height: 16px;
+}
+
+/* browser-window / toolbar ------------------------------------------------ */
+.toolbars {
+    background-color: var(--color-white);
+    padding: var(--grid-gutter-quarter);
+    border-bottom: 1px solid var(--color-grey-2);
+}
+
+.toolbar {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content auto max-content;
+}
+
+.toolbar .controls {
+    grid-row: 1;
+    grid-column: 1;
+
+    padding-right: var(--grid-gutter-quarter);
+}
+
+.toolbar .address-bar {
+    grid-row: 1;
+    grid-column: 2;
+
+}
+
+.toolbar .menu {
+    grid-row: 1;
+    grid-column: 3;
+
+}
+
+.toolbar .controls,
+.toolbar .menu {
+    display: flex;
+    align-items: center;
+    gap: var(--grid-gutter-quarter);
+}
+
+.toolbar .controls .material-icon,
+.toolbar .menu .material-icon {
+    font-size: 22px;
+    color: var(--color-grey-4);
+    cursor: pointer;
+}
+
+/* browser-window / toolbar / address-bar ---------------------------------- */
+.toolbar .address-bar {
+    color: var(--color-black);
+    font-size: 14px;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    align-items: center;
+}
+
+.toolbar .address-bar .address-bar-background {
+    width: 100%;
+    height: 24px;
+
+    background-color: var(--color-grey-1);
+    border: 2px solid var(--color-grey-1);
+    border-radius: 100px;
+
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.toolbar .address-bar input {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: none;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 100%;
+    padding-left: var(--grid-gutter-half);
+    padding-right: var(--grid-gutter-half);
+}
+
+.toolbar .address-bar .url {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content max-content max-content auto;
+    align-items: center;
+}
+
+.toolbar .address-bar .url .icon {
+    grid-row: 1;
+    grid-column: 1;
+
+    font-size: 16px;
+    padding-left: 6px;
+    padding-right: 4px;
+}
+
+.toolbar .address-bar .url .protocol {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.toolbar .address-bar .url .separator {
+    grid-row: 1;
+    grid-column: 3;
+
+    color: #757575;
+}
+
+.toolbar .address-bar .url .text {
+    grid-row: 1;
+    grid-column: 4;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* focus */
+.toolbar .address-bar.focus .address-bar-background {
+    border-color: var(--color-blue);
+}
+
+.toolbar .address-bar.focus input {
+    display: block;
+}
+
+.toolbar .address-bar.focus .url {
+    display: none;
+}
+
+/* secure */
+.toolbar .address-bar.secure .material-icon,
+.toolbar .address-bar.secure .protocol {
+    color: #4CAF50;
+}
