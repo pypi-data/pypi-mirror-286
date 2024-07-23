@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools", "cython", "numpy", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MDANSE"
+version = "2.0.0a2"
+description = 'MDANSE Core package - Molecular Dynamics trajectory handling and analysis code'
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+keywords = ["molecular dynamics", "science", "simulation", "analysis"]
+authors = [
+  {name = "Maciej Bartkowiak", email = "maciej.bartkowiak@stfc.ac.uk"}
+]
+maintainers = [
+  {name = "Sanghamitra Mukhopadhyay", email = "sanghamitra.mukhopadhyay@stfc.ac.uk"}
+]
+classifiers = [
+        'Development Status :: 3 - Alpha',
+
+        'Intended Audience :: Science/Research',
+        'Topic :: Scientific/Engineering :: Chemistry',
+        'Topic :: Scientific/Engineering :: Physics',
+
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3 :: Only',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+        'Operating System :: OS Independent'
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "h5py",
+    "ase",
+    "rdkit"
+]
+
+# dynamic = ["version", "description"]
+
+[project.urls]
+homepage = "https://www.isis.stfc.ac.uk/Pages/MDANSEproject.aspx"
+documentation = "https://mdanse.readthedocs.io/en/protos/"
+repository = "https://github.com/ISISNeutronMuon/MDANSE"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.scripts]
+mdanse = "MDANSE.Scripts.mdanse:main"
+mdanse_job = "MDANSE.Scripts.mdanse_job:main"
+
+# [tool.setuptools.packages.find]
+# where = ["src"]
