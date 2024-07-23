@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+pylegs/__init__.py
+pylegs/archive.py
+pylegs/config.py
+pylegs/cutout.py
+pylegs/io.py
+pylegs/tap.py
+pylegs/utils.py
+pylegs.egg-info/PKG-INFO
+pylegs.egg-info/SOURCES.txt
+pylegs.egg-info/dependency_links.txt
+pylegs.egg-info/requires.txt
+pylegs.egg-info/top_level.txt
+pylegs/tests/__init__.py
+pylegs/tests/test_utils.py
