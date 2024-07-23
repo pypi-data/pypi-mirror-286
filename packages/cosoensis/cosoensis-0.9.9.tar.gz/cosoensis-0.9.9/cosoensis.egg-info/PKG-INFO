@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cosoensis
+Version: 0.9.9
+Summary: Command-line Mastodon client
+Home-page: https://codeberg.org/gwync/cosoensis
+Author: Gwyn Ciesla
+Author-email: gwync@protonmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: COPYING
+Requires-Dist: Mastodon.py
+Requires-Dist: beautifulsoup4
