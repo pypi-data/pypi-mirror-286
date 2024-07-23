@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: racs-py-lib
+Version: 0.1.5
+Author: miilkaa
+Requires-Dist: requests
+
