@@ -1,0 +1,10 @@
+imgui.cp39-win_amd64.pyd,sha256=oQNtzn85wdO1SpD3Zfb5il4dmEb0rPsXi6MDljpW0Uk,3192832
+imgui/__init__.pyi,sha256=4nrY50vm8_-yaojDaBWijF6bfNzBTmlS9v_rx8Z7UsA,112745
+imgui/glfw/__init__.pyi,sha256=2wBI1njFbZsL-s2TlZXSISQff-x0g-ynk7Q9_LiZaFQ,25485
+imgui/imnodes/__init__.pyi,sha256=6hQaovVz7YOV4RgFOoJoEN59EAkDX1uzz6J_Ta8eRQU,13825
+imgui/implot/__init__.pyi,sha256=5ngapE7EugoP7ZsbLPqQ2pmBwqbNuTYsOxEhkUc_uLg,39323
+py_imgui_redux-3.2.1.dist-info/LICENSE,sha256=fDrCLKI_lLbO88WTSx4QGbbOEZrWhcw0TBLOQxkydX4,1070
+py_imgui_redux-3.2.1.dist-info/METADATA,sha256=pjYEEo2NWwH3bMosh9uG-wGaxOWeP_dPagbYEkvD5Pg,8074
+py_imgui_redux-3.2.1.dist-info/WHEEL,sha256=-m8ftBXVeIYHa7aZlZxO3wBC7WYAmtNVZ4Gch9Ybu2M,99
+py_imgui_redux-3.2.1.dist-info/top_level.txt,sha256=15onHRujL1_V625VUUaELFCxh9bOaAi5IzpVBJIPyHI,6
+py_imgui_redux-3.2.1.dist-info/RECORD,,
