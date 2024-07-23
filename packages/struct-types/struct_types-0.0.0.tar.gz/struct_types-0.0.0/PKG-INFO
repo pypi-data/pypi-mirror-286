@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: struct-types
+Version: 0.0.0
+Summary: Static + runtime class declaration level interface validation
+Author-Email: gekkotadev <114091010+GekkotaDev@users.noreply.github.com>
+License: Apache-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# Struct Types
+
+Validate your classes against interfaces the familiar way, just import `does`
+
+## Example
+
+```python
+from abc import abstractmethod
+from typing import Protocol, runtime_checkable
+
+from does import does
+
+@runtime_checkable
+class Notifier(Protocol):
+    @abstractmethod
+    def notify(self):
+        pass
+
+
+class EmailService:
+    def __init__(self):
+        does(Notifier).match(EmailService)
+        # Type mismatch; EmailService does not implement .notify
+```
