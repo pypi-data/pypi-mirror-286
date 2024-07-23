@@ -1,0 +1,27 @@
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "temod-open-api"
+version = "1.0.0"
+authors = [
+  { name="PyAxolotl", email="abdellatifzied.saada@gmail.com" },
+]
+description = "Simplifies usage of external apis in your programs by combining open api's standard definition of HTTP apis and Temod"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    'oauthlib >= 3.2.2',
+    'python-json-logger >= 2.0.4',
+    'requests >= 2.28.2'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TuburboMajus/temod-open-api"
+"Bug Tracker" = "https://github.com/TuburboMajus/temod-open-api/issues"

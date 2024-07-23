@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: temod-open-api
+Version: 1.0.0
+Summary: Simplifies usage of external apis in your programs by combining open api's standard definition of HTTP apis and Temod
+Author-email: PyAxolotl <abdellatifzied.saada@gmail.com>
+Project-URL: Homepage, https://github.com/TuburboMajus/temod-open-api
+Project-URL: Bug Tracker, https://github.com/TuburboMajus/temod-open-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: oauthlib>=3.2.2
+Requires-Dist: python-json-logger>=2.0.4
+Requires-Dist: requests>=2.28.2
+
+# temod-open-api
+Simplifies usage of external apis in your programs by combining open api's standard definition of HTTP apis and Temod
