@@ -1,0 +1,2 @@
+[console_scripts]
+text-evaluator = text_evaluator:main
