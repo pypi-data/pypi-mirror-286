@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mixscatter"
+version = "0.2.3"
+description = """\
+A versatile tool for calculating scattering functions of particle mixtures, \
+particularly for small-angle scattering (SAS) or static and dynamic light scattering (SLS & DLS) \
+applications.\
+"""
+readme = "README.md"
+authors = [
+    { name = "Joel Diaz Maier", email = "joel.diazmaier@gmail.de" }
+]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.12",
+    "typing_extensions>=4.0.0;python_version<'3.11'"
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+    "Development Status :: 4 - Beta"
+]
+keywords = [
+    "scattering",
+    "small-angle scattering",
+    "SAS",
+    "dynamic light scattering",
+    "DLS",
+    "light scattering",
+    "particle analysis",
+    "particle mixture",
+    "scattering functions",
+    "form factors",
+    "structure factors",
+    "scattering experiments",
+    "scientific computing",
+    "scientific analysis",
+    "scientific visualization",
+    "physical chemistry",
+    "materials science",
+    "research tools",
+    "data analysis",
+]
+
+[project.optional-dependencies]
+tests = ["pytest~=8.2", "pytest-cov~=5.0", "pytest-mock~=3.14"]
+lint = ["ruff~=0.4"]
+type-check = ["mypy~=1.10", "mypy-einsum~=1.0", "types-PyYAML~=6.0"]
+docs = ["mkdocs-material~=9.5", "mkdocstrings[python]~=0.25"]
+example = ["matplotlib~=3.8"]
+dev = ["mixscatter[tests, lint, type-check, docs, example]", "pre-commit~=3.7", "nox"]
+
+[project.urls]
+Repository = "https://github.com/joelmaier/mixscatter"
+Documentation = "https://joelmaier.github.io/mixscatter"
+
+[tool.ruff]
+line-length = 120
+
+[tool.mypy]
+strict = true
+python_version = "3.12"
+ignore_missing_imports = true
+plugins = ["numpy.typing.mypy_plugin", "mypy_einsum"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--strict-markers --tb=short --disable-warnings"
+testpaths = [
+    "tests"
+]
+
+[tool.coverage.run]
+branch = true
+source = [
+    "mixscatter"
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
