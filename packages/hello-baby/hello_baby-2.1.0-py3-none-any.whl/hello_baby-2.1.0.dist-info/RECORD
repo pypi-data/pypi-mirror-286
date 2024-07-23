@@ -1,0 +1,10 @@
+hello_baby/__init__.py,sha256=oFx3N9GArPO8FMWWKJgF71QsVRhAbDQgTnktJrNuoF0,363
+hello_baby/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hello_baby/get_quote.py,sha256=OAw0fotEIoi2XO9VsjO6--fSlDaemSGuOret_CGzFdU,341
+hello_baby/main.py,sha256=fgnS5wy0vGPtt04zf_w_uVyz5AGs5SVqKeTwXwzFRMA,1093
+hello_baby/quotes.py,sha256=LOHgsh8NPvQeL7u2sG1hUk-tmCqS0ifUvNCFh5iv0Ao,625
+hello_baby-2.1.0.dist-info/LICENSE,sha256=EzEJLKi9sPEfsAgln160vqVCemV1ZNNzx1f7db10U5I,1063
+hello_baby-2.1.0.dist-info/METADATA,sha256=qaqGhEF11IeEoHEaP48aeeKrnbOiodwyc6cam_F1VTc,430
+hello_baby-2.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+hello_baby-2.1.0.dist-info/entry_points.txt,sha256=t0EsNRpksHHn8bnnhwxMZH2UU1KjaLg8G8vScKUrxbk,50
+hello_baby-2.1.0.dist-info/RECORD,,
