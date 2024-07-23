@@ -1,0 +1,25 @@
+<header class="bg-header border-header mt-3 mx-3 p-3">
+    <div class="align-items-center d-flex flex-row">
+        <span class="logo me-3">&nbsp;</span>
+        <div class="d-flex flex-column flex-grow-1">
+            <div class="d-flex flex-row">
+                <span class="fs-3 fw-bold text-white me-2">{{ config.module_code }}</span>
+                <span class="fs-3 fw-light text-white">{{ config.module_title }}</span>
+            </div>
+            <span class="fs-6 fst-italic fw-light text-white">{{ page.title }}</span>
+        </div>
+        <button id="themeDropdown" class="text-white btn btn-sm fs-5" type="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            <i id="themeIcon" class="bi bi-circle-half"></i>
+            <div></div>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+            <a id="lightThemeOption" class="dropdown-item theme-dd-option py-2" onclick="setTheme('light')">
+                <i class="bi bi-brightness-high-fill me-1"></i>&nbsp;Light
+            </a>
+            <a id="darkThemeOption" class="dropdown-item theme-dd-option py-2" onclick="setTheme('dark')">
+                <i class="bi bi-moon-stars-fill me-1"></i>&nbsp;Dark
+            </a>
+        </div>
+    </div>
+</header>
