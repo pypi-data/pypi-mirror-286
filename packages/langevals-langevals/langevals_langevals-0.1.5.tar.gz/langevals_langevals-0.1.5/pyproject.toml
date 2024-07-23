@@ -1,0 +1,22 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "langevals-langevals"
+version = "0.1.5"
+description = "LangEvals home-made evaluators."
+authors = [ "Rogerio Chaves <rogerio@langwatch.ai>", "Yevhenii Budnyk <y.budnyk789@gmail.com>",]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+litellm = "^1.41.25"
+langevals-core = "^0.1.5"
+openai = ">=1.27.0"
+numpy = "^1.26.4"
+dspy-ai = "^2.4.9"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+python-dotenv = "1.0.1"
