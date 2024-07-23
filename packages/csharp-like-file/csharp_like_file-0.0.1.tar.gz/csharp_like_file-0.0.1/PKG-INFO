@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: csharp_like_file
+Version: 0.0.1
+Summary: System.IO.File-like in Python.
+Author-email: yueyinqiu <yueyinqiu@outlook.com>
+License: MIT License
+Project-URL: Repository, https://github.com/yueyinqiu/csharp_like_file.git
+Keywords: file

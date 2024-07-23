@@ -1,0 +1,6 @@
+pyproject.toml
+csfile/__init__.py
+csharp_like_file.egg-info/PKG-INFO
+csharp_like_file.egg-info/SOURCES.txt
+csharp_like_file.egg-info/dependency_links.txt
+csharp_like_file.egg-info/top_level.txt
