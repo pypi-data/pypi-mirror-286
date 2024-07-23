@@ -1,0 +1,24 @@
+{
+    "externalSymbolLinkMappings": {
+        "y-protocols": {
+            "Awareness": "https://docs.yjs.dev/api/about-awareness"
+        },
+        "yjs": {
+            "Array": "https://docs.yjs.dev/api/shared-types/y.array",
+            "Doc": "https://docs.yjs.dev/api/y.doc",
+            "Map": "https://docs.yjs.dev/api/shared-types/y.map",
+            "Text": "https://docs.yjs.dev/api/shared-types/y.text",
+            "UndoManager": "https://docs.yjs.dev/api/undo-manager",
+            "YArrayEvent": "https://docs.yjs.dev/api/shared-types/y.array#y.arrayevent-api",
+            "YEvent": "https://docs.yjs.dev/api/y.event",
+            "YMapEvent": "https://docs.yjs.dev/api/shared-types/y.map#y.mapevent-api",
+            "YTextEvent": "https://docs.yjs.dev/api/shared-types/y.text#y.textevent-api"
+        }
+    },
+    "githubPages": false,
+    "navigationLinks": {
+        "GitHub": "https://github.com/Wh1isper/pycrdt-flow"
+    },
+    "titleLink": "https://github.com/Wh1isper/pycrdt-flow",
+    "out": "./docs"
+}

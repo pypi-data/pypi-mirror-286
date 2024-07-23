@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pycrdt_flow"
+description = "A CRDT lib and backend for react flow"
+keywords = ["pycrdt_flow", "react-flow", "react", "CRDT"]
+requires-python = ">=3.10"
+dependencies = ["pycrdt", "loguru", "python-jose[cryptography]"]
+dynamic = ["version"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+
+[project.optional-dependencies]
+service = [
+    "click",
+    "redis>=4.2.0rc1",
+    "asyncpg",
+    "psycopg2-binary",
+    "sqlalchemy[asyncio]",
+    "importlib_metadata",
+    "alembic",
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic >=2,<3",
+]
+test = [
+    "pytest",
+    "pytest-asyncio",
+    "docker",
+    "pytest-cov",
+    "pycrdt-flow[service]",
+]
+docs = ["Sphinx", "pydata-sphinx-theme", "sphinx-click", "autodoc_pydantic"]
+
+[project.scripts]
+flow_server = "pycrdt_flow.backend.cli:cli"
+
+[[project.authors]]
+name = "wh1isper"
+email = "jizhongsheng957@gmail.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "BSD 3-Clause License"
+
+[project.urls]
+Source = "https://github.com/wh1isper/pycrdt_flow"
+
+[tool.check-manifest]
+ignore = [".*"]
+
+[tool.hatch.version]
+path = "pycrdt_flow/__init__.py"

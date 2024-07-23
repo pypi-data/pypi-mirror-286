@@ -1,0 +1,99 @@
+Metadata-Version: 2.3
+Name: pycrdt_flow
+Version: 0.0.6
+Summary: A CRDT lib and backend for react flow
+Project-URL: Source, https://github.com/wh1isper/pycrdt_flow
+Author-email: wh1isper <jizhongsheng957@gmail.com>
+License: BSD 3-Clause License
+License-File: LICENSE
+Keywords: CRDT,pycrdt_flow,react,react-flow
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Requires-Dist: loguru
+Requires-Dist: pycrdt
+Requires-Dist: python-jose[cryptography]
+Provides-Extra: docs
+Requires-Dist: autodoc-pydantic; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-click; extra == 'docs'
+Provides-Extra: service
+Requires-Dist: alembic; extra == 'service'
+Requires-Dist: asyncpg; extra == 'service'
+Requires-Dist: click; extra == 'service'
+Requires-Dist: fastapi; extra == 'service'
+Requires-Dist: importlib-metadata; extra == 'service'
+Requires-Dist: psycopg2-binary; extra == 'service'
+Requires-Dist: pydantic<3,>=2; extra == 'service'
+Requires-Dist: redis>=4.2.0rc1; extra == 'service'
+Requires-Dist: sqlalchemy[asyncio]; extra == 'service'
+Requires-Dist: uvicorn[standard]; extra == 'service'
+Provides-Extra: test
+Requires-Dist: alembic; extra == 'test'
+Requires-Dist: asyncpg; extra == 'test'
+Requires-Dist: click; extra == 'test'
+Requires-Dist: docker; extra == 'test'
+Requires-Dist: fastapi; extra == 'test'
+Requires-Dist: importlib-metadata; extra == 'test'
+Requires-Dist: psycopg2-binary; extra == 'test'
+Requires-Dist: pydantic<3,>=2; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: redis>=4.2.0rc1; extra == 'test'
+Requires-Dist: sqlalchemy[asyncio]; extra == 'test'
+Requires-Dist: uvicorn[standard]; extra == 'test'
+Description-Content-Type: text/markdown
+
+![](https://img.shields.io/github/license/wh1isper/pycrdt-flow)
+![](https://img.shields.io/github/v/release/wh1isper/pycrdt-flow)
+![](https://img.shields.io/docker/image-size/wh1isper/pycrdt-flow)
+![](https://img.shields.io/pypi/dm/pycrdt-flow)
+![](https://img.shields.io/github/last-commit/wh1isper/pycrdt-flow)
+![](https://img.shields.io/pypi/pyversions/pycrdt-flow)
+[![codecov](https://codecov.io/gh/Wh1isper/pycrdt-flow/graph/badge.svg?token=YiMyTkjtG8)](https://codecov.io/gh/Wh1isper/pycrdt-flow)
+
+## WIP: This project is still in development and experimental
+
+I am seeking a way to build a collaborative flow editor for react flow.
+
+# pycrdt-flow
+
+> I'm building this project based on eact flow first, and will also support Svelte flow if I can!
+> About React Flow: [https://reactflow.dev](https://reactflow.dev) and xyflow: [xyflow](https://github.com/xyflow/xyflow)
+
+## Install
+
+`pip install pycrdt-flow`
+
+Or use docker image
+
+`docker pull wh1isper/pycrdt-flow`
+
+## Usage
+
+TBD
+
+## Develop
+
+Install pre-commit before commit
+
+```
+pip install pre-commit
+pre-commit install
+```
+
+Install package locally
+
+```
+pip install -e .[test]
+```
+
+Run unit-test before PR
+
+```
+pytest -v
+```
