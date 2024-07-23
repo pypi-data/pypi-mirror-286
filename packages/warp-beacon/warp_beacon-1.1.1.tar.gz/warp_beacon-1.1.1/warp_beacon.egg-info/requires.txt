@@ -1,0 +1,8 @@
+ffmpeg-python
+python-telegram-bot
+pytubefix
+av
+urlextract
+pillow
+pymongo
+instagrapi==2.0.0
