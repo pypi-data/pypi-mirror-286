@@ -1,0 +1,2 @@
+tourist==1.0.1a2
+beautifulsoup4==4.12.3

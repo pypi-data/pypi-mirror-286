@@ -1,0 +1,6 @@
+examples/
+tests/
+Makefile
+Dockerfile.sam
+docker-compose.yml
+terraform/
