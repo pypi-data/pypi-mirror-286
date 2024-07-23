@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "fuel-efficency-jm"
+version = "0.1.0"
+description = "Map the most fuel-efficient path through various terrains."
+authors = ["José Marcos"]
+readme = "README.md"
+packages = [
+    { include = "fuel_efficency" },
+]
+
+[tool.poetry.dependencies]
+python = "3.10.*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+pytest-cov = "^5.0.0"
+
+[tool.poetry.group.code-quality.dependencies]
+mypy = "^1.10.1"
+ruff = "^0.5.2"
+
+[tool.mypy]
+python_version = "3.10"
+exclude = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+exclude = ["tests"]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
