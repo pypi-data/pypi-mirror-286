@@ -1,0 +1,10 @@
+random_string_detector/__init__.py,sha256=OXb-989RTc-yUj-nSi4YDfIJGB9OIDn9fMMS_P6FxqM,100
+random_string_detector/detector.py,sha256=7SpbdJyAM_h2j-D-OGs8Ff0h7p7YeeJLpefiQDCBdww,3656
+random_string_detector/preprocessing.py,sha256=H5U32yYhcXSmxKlZQSyKIim5N_9PQ1md_tJmv8jTCwo,2705
+random_string_detector/bigrams/__init__.py,sha256=k-dmclTYzjAB0FGffLq1lj2if9bA4uLbHQtgFHA_B9o,199
+random_string_detector/bigrams/english.py,sha256=flJqwTYNix6ke-EVkAsuIlcMu0_xqmqZEfWG-0qGTyM,23589
+random_string_detector/bigrams/portuguese.py,sha256=STtJ9_p14RgCiq7wwlNB_JRt0FvrzFE1ID6KbAQz38E,23433
+random_string_detector-1.0.3.dist-info/METADATA,sha256=5rcrh5a71o3DEzRh9HJ9UaNm_tmp5FMVW7yW0-L2fm8,4496
+random_string_detector-1.0.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+random_string_detector-1.0.3.dist-info/licenses/LICENSE,sha256=lLtfByBDql4LV5VM7V9PupN8nP7RTuTM8IHSbLRzclw,1071
+random_string_detector-1.0.3.dist-info/RECORD,,
