@@ -1,0 +1,13 @@
+pymultifit/__init__.py,sha256=7uOyynSAzwFl5oujR0O7LLVNTq__TIRt6dRAtlrgwMI,142
+pymultifit/gaussian_f.py,sha256=SA5KihLlEsRx0bMCizUjn1NS1QVdeHvmHf-I_hNYQ4E,1136
+pymultifit/laplace_f.py,sha256=-q_jDcbUJnMo7JZqp0vZOyY6_PG-c-bSPjSLWHV30BY,1201
+pymultifit/logNorm_f.py,sha256=dbEiotjYuFqqUFoDrz9yEAcL_ZSFjXBaRQP-8NVJZFA,2213
+pymultifit/skewNorm_f.py,sha256=MmPCpKNyrKSZHLnHwJpQ-MRnbeYa1F7zxpDAWkjXeoc,1292
+pymultifit/backend/__init__.py,sha256=ab5KImdo-Prz9T-K2CbYDWvmJoAuT3NQR4OOiGU_kwE,100
+pymultifit/backend/multiFitter.py,sha256=R3XLZ85HA2cPuvqScQoF8G7s27iM7mG1kxC2AZ-7_Ls,5105
+pymultifit/backend/utilities.py,sha256=NnMF1YM_2Tj5FI5O1833lwil-6awF6aGtO9a5-gb9QQ,3417
+pymultifit-0.1.0.dist-info/LICENSE,sha256=58GEbLt_35XXdCS-WkuoHsxQEjnTRkoPbL30hRWquZ8,1080
+pymultifit-0.1.0.dist-info/METADATA,sha256=1pdnOhKBr-rDbdMskHCRModajDzgpClQcHcBfCmN5l8,667
+pymultifit-0.1.0.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+pymultifit-0.1.0.dist-info/top_level.txt,sha256=gwo-E0g8iPpVMCR9agfALy83s8oeo7-pHBMw8AWQGKE,11
+pymultifit-0.1.0.dist-info/RECORD,,
