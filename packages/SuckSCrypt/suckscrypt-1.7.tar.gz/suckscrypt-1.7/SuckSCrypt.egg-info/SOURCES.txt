@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+SuckSCrypt.egg-info/PKG-INFO
+SuckSCrypt.egg-info/SOURCES.txt
+SuckSCrypt.egg-info/dependency_links.txt
+SuckSCrypt.egg-info/requires.txt
+SuckSCrypt.egg-info/top_level.txt
+suckscrypt/__init__.py
+suckscrypt/core.py
+suckscrypt/pyarmor_runtime_000000/__init__.py
+suckscrypt/pyarmor_runtime_000000/pyarmor_runtime.pyd
