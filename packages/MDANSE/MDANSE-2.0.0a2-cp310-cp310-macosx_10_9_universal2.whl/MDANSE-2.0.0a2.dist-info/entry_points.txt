@@ -1,0 +1,3 @@
+[console_scripts]
+mdanse = MDANSE.Scripts.mdanse:main
+mdanse_job = MDANSE.Scripts.mdanse_job:main
