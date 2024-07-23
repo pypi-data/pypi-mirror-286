@@ -1,0 +1,568 @@
+LAB 2:
+Question:
+Write a Python program to count the elements in a list until an element is a tuple. Hint: Use isinstance(object, type).
+def count_until_tuple(lst):
+    count = 0
+    for element in lst:
+        if isinstance(element, tuple):
+            break
+        count += 1
+    return count
+
+# Example usage:
+my_list = [1, 2, 3, (4, 5), 6, 7]
+print("Number of elements until tuple:", count_until_tuple(my_list))
+Question:
+Count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.Sample List: ['abc', ' xyz', 'aba', '1221', 'xyzzyx', 'aa', '122'] Expected Result: 4
+def count_strings_with_same_first_and_last(strings):
+    count = 0
+    for string in strings:
+        if len(string) >= 2 and string[0] == string[-1]:
+            count += 1
+    return count
+
+# Sample list of strings
+sample_list = ['abc', ' xyz', 'aba', '1221', 'xyzzyx', 'aa', '122']
+
+# Count strings meeting the criteria
+result = count_strings_with_same_first_and_last(sample_list)
+print("Number of strings where first and last characters are the same:", result)
+
+
+Question:
+Write a Python program to remove an empty tuple(s) from a list of tuples. Sample L = [(), (), (",), ('a', 'b'),(), (a', 'b', 'c'), () , ('d')] Result = [(",), (a', 'b'), (a', 'b', 'c'), ('d')]
+def remove_empty_tuples(lst):
+    return [tup for tup in lst if tup]
+
+# Sample list of tuples
+L = [(), (), (",), ('a', 'b'),(), ('a', 'b', 'c'), () , ('d')]
+
+# Remove empty tuples
+result = remove_empty_tuples(L)
+print("Result:", result)
+
+Question:
+Write a Python script to generate and print a dictionary that contains a number (between 1 and n) in the form ('x', x*x). Sample: Input a number 4 Output: {'1': 1, '2': 4, '3': 9, '4': 16}
+def generate_square_dictionary(n):
+    square_dict = {}
+    for x in range(1, n + 1):
+        square_dict[str(x)] = x * x
+    return square_dict
+
+# Input number from the user
+n = int(input("Input a number: "))
+
+# Generate and print the dictionary
+result = generate_square_dictionary(n)
+print("Output:", result)
+
+
+Question:
+Create a dictionary of phone numbers. Find the name 'usman' and get his phone number and country code.
+Sample:
+Enter Name: Touqeer Ali
+- Information.
+Name: Touqeer Ali
+Country Code: +92
+Phone No: 3428650577
+
+def find_contact(contacts, name):
+    for contact in contacts:
+        if contact['Name'].lower() == name.lower():
+            return contact
+
+# Dictionary of phone numbers
+phone_numbers = [
+    {'Name': 'Touqeer Ali', 'Country Code': '+92', 'Phone No': '3428650577'},
+    {'Name': 'Usman', 'Country Code': '+1', 'Phone No': '1234567890'},
+    {'Name': 'John Doe', 'Country Code': '+44', 'Phone No': '9876543210'}
+]
+
+# Input name from the user
+name = input("Enter Name: ")
+
+# Find the contact information
+contact_info = find_contact(phone_numbers, name)
+
+# Print the information if found
+if contact_info:
+    print("- Information.")
+    print("Name:", contact_info['Name'])
+    print("Country Code:", contact_info['Country Code'])
+    print("Phone No:", contact_info['Phone No'])
+else:
+    print("Name not found in contacts.")
+
+LAB 3:
+A loop may be used to access all elements of an array.
+# define a list with three elements
+myList = ["abc", 123, "xyz"]
+# use the len( ) function to determine the number of elements in the list 
+# display this value to the screen
+myListLength = len(myList)
+print("\nThe length of myList is", myListLength)
+# display the values of the list to the screen 
+print("\nmyList contains the following values:") 
+index = 0
+while (index < myListLength):
+	print("index: ", index, "value: ", myList[index]) 
+	index = index + 1
+
+While defining a list in the code is all well and good, it would be even better to be able to generate the list 
+with data from the user or a file. The append( )method provides this capability. Add the following to 
+the end of the program code in order to add to myList.
+# prompt the user for two more elements for the list 
+myList = ["abc", 123, "xyz"]
+value1 = float(input("\nEnter a decimal value: ")) 
+value2 = input("Enter your name: ")
+
+# add the values to the list 
+myList.append(value1) 
+myList.append(value2)
+
+# display the values of the list to the screen 
+print("\nmyList contains the following values:") 
+index = 0
+myListLength = len(myList)
+while (index < myListLength):
+    print("index:", index, "value:", myList[index]) 
+    index = index + 1
+
+write a python program to implement list operations(add,append,extend and delete)
+def add_to_list(lst, item):
+    lst.append(item)
+    return lst
+def append_to_list(lst, item):
+    lst.append(item)
+    return lst
+def extend_list(lst, items):
+    lst.extend(items)
+    return lst
+def delete_from_list(lst, item):
+    lst.remove(item)
+    return lst
+my_list = [1, 2, 3]
+my_list = add_to_list(my_list, 4)
+print(my_list)
+my_list = append_to_list(my_list, 5)
+print(my_list)
+my_list = extend_list(my_list, [6, 7, 8])
+print(my_list)
+my_list = delete_from_list(my_list, 5)
+print(my_list)
+
+
+Use for loops to make a turtle draw these regular polygons (regular means all sides the same lengths, all angles the same):
+a. An equilateral triangle
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.patches import Polygon
+
+# Function to draw an equilateral triangle
+def draw_equilateral_triangle():
+    fig, ax = plt.subplots()
+    triangle = Polygon(np.array([[0, 0], [1, 0], [0.5, np.sqrt(3)/2]]), closed=True)
+    ax.add_patch(triangle)
+    ax.set_xlim(-0.1, 1.1)
+    ax.set_ylim(-0.1, np.sqrt(3)/2 + 0.1)
+    ax.set_aspect('equal', adjustable='box')
+    ax.axis('off')
+    plt.show()
+
+# Draw an equilateral triangle
+draw_equilateral_triangle()
+b. square 
+import matplotlib.pyplot as plt
+
+# Function to draw a square
+def draw_square():
+    fig, ax = plt.subplots()
+    square = plt.Rectangle((0, 0), 1, 1, fill=None, edgecolor='black')
+    ax.add_patch(square)
+    ax.set_xlim(-0.1, 1.1)
+    ax.set_ylim(-0.1, 1.1)
+    ax.set_aspect('equal', adjustable='box')
+    ax.axis('off')
+    plt.show()
+
+# Draw a square
+draw_square()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Function to draw a regular polygon
+def draw_polygon(sides):
+    angle = 360 / sides
+    points = []
+    for i in range(sides):
+        x = np.cos(np.deg2rad(i * angle))
+        y = np.sin(np.deg2rad(i * angle))
+        points.append((x, y))
+    points.append(points[0])  # Connect the last point to the first point to close the shape
+    return list(zip(*points))  # Separate x and y coordinates
+
+# Draw a hexagon
+hexagon_x, hexagon_y = draw_polygon(6)
+plt.plot(hexagon_x, hexagon_y, 'b-')
+plt.title('Hexagon')
+plt.axis('equal')
+plt.show()
+
+# Draw an octagon
+octagon_x, octagon_y = draw_polygon(8)
+plt.plot(octagon_x, octagon_y, 'r-')
+plt.title('Octagon')
+plt.axis('equal')
+plt.show()
+
+Write a python program to print the multiplication table for the given number?
+def print_multiplication_table(number):
+    print(f"Multiplication Table for {number}:")
+    for i in range(1, 11):
+        print(f"{number} x {i} = {number * i}")
+
+# Get input from the user
+number = int(input("Enter a number: "))
+
+# Call the function to print the multiplication table
+print_multiplication_table(number)
+
+Given a list iterate it and display numbers which are divisible by 5 and if you find number greater than 150 stop the loop 
+iteration
+list1 = [12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200]
+list1 = [12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200]
+print("Numbers divisible by 5 and less than or equal to 150:")
+for num in list1:
+    if num > 150:
+        break
+    if num % 5 == 0:
+        print(num)
+LAB 4:
+BFS Search 
+from collections import defaultdict, deque
+
+class Graph:
+    def __init__(self):
+        self.graph = defaultdict(list)
+        
+    def add_edge(self, u, v):
+        self.graph[u].append(v)
+        
+    def bfs(self, start):
+        visited = set()
+        queue = deque([start])
+        
+        while queue:
+            vertex = queue.popleft()
+            if vertex not in visited:
+                print(vertex, end=' ')
+                visited.add(vertex)
+                for neighbor in self.graph[vertex]:
+                    if neighbor not in visited:
+                        queue.append(neighbor)
+
+# Example usage:
+if __name__ == "__main__":
+    g = Graph()
+    g.add_edge(0, 1)
+    g.add_edge(0, 2)
+    g.add_edge(1, 2)
+    g.add_edge(2, 0)
+    g.add_edge(2, 3)
+    g.add_edge(3, 3)
+    
+    print("BFS starting from vertex 2:")
+    g.bfs(2)
+
+DFS:
+ Depth First Search (DFS) traversal algorithm for a graph represented using an adjacency list
+from collections import defaultdict
+
+class Graph:
+    # Constructor
+    def __init__(self):
+        # default dictionary to store graph
+        self.graph = defaultdict(list)
+
+    # function to add an edge to graph
+    def addEdge(self, u, v):
+        self.graph[u].append(v)
+
+    # A function used by DFS
+    def DFSUtil(self, v, visited):
+        # Mark the current node as visited
+        # and print it
+        visited.add(v)
+        print(v, end=' ')
+        # Recur for all the vertices
+        # adjacent to this vertex
+        for neighbour in self.graph[v]:
+            if neighbour not in visited:
+                self.DFSUtil(neighbour, visited)
+
+    # The function to do DFS traversal. It uses
+    # recursive DFSUtil()
+    def DFS(self, v):
+        # Create a set to store visited vertices
+        visited = set()
+        # Call the recursive helper function
+        # to print DFS traversal
+        self.DFSUtil(v, visited)
+
+# Driver code
+# Create a graph given
+# in the above diagram
+g = Graph()
+g.addEdge(0, 1)
+g.addEdge(0, 2)
+g.addEdge(1, 2)
+g.addEdge(2, 0)
+g.addEdge(2, 3)
+g.addEdge(3, 3)
+print("Following is DFS from (starting from vertex 2)")
+g.DFS(2)
+
+ Depth First Search (DFS) algorithm for a directed graph represented using an adjacency list.
+from collections import defaultdict
+
+# This class represents a
+# directed graph using adjacency
+# list representation
+class Graph:
+    # Constructor
+    def __init__(self):
+        # default dictionary to store graph
+        self.graph = defaultdict(list)
+
+    # function to add an edge to graph
+    def addEdge(self, u, v):
+        self.graph[u].append(v)
+
+    # A function used by DFS
+    def DFSUtil(self, v, visited):
+        # Mark the current node as visited and print it
+        visited.add(v)
+        print(v, end=" ")
+
+        # Recur for all the vertices adjacent to this vertex
+        for neighbour in self.graph[v]:
+            if neighbour not in visited:
+                self.DFSUtil(neighbour, visited)
+
+    # The function to do DFS traversal. It uses recursive DFSUtil()
+    def DFS(self):
+        # Create a set to store all visited vertices
+        visited = set()
+
+        # Call the recursive helper function to print DFS traversal starting from all vertices one by one
+        for vertex in list(self.graph):
+            if vertex not in visited:
+                self.DFSUtil(vertex, visited)
+
+# Driver code
+# Create a graph given in the above diagram
+g = Graph()
+g.addEdge(0, 1)
+g.addEdge(0, 2)
+g.addEdge(1, 2)
+g.addEdge(2, 0)
+g.addEdge(2, 3)
+g.addEdge(3, 3)
+
+print("Following is Depth First Traversal:")
+g.DFS()
+LAB 5:
+Write a python program for Depth First Search for INORDER,
+PREORDER and POSTORDER Traversing Methods.
+class TreeNode:
+    def __init__(self, key):
+        self.left = None
+        self.right = None
+        self.val = key
+
+def inorder(root):
+    if root:
+        inorder(root.left)
+        print(root.val, end=" ")
+        inorder(root.right)
+
+def preorder(root):
+    if root:
+        print(root.val, end=" ")
+        preorder(root.left)
+        preorder(root.right)
+
+def postorder(root):
+    if root:
+        postorder(root.left)
+        postorder(root.right)
+        print(root.val, end=" ")
+
+# Driver code
+if __name__ == "__main__":
+    root = TreeNode(1)
+    root.left = TreeNode(2)
+    root.right = TreeNode(3)
+    root.left.left = TreeNode(4)
+    root.left.right = TreeNode(5)
+
+    print("Inorder traversal:")
+    inorder(root)
+
+    print("\nPreorder traversal:")
+    preorder(root)
+
+    print("\nPostorder traversal:")
+    postorder(root)
+
+LAB 6:
+A* search:
+from collections import deque
+
+class Graph:
+    def __init__(self, adjacency_list):
+        self.adjacency_list = adjacency_list
+
+    def get_neighbors(self, v):
+        return self.adjacency_list[v]
+
+    def h(self, n):
+        H = {'A': 1, 'B': 1, 'C': 1, 'D': 1}
+        return H[n]
+
+    def a_star_algorithm(self, start_node, stop_node):
+        open_list = set([start_node])
+        closed_list = set([])
+        g = {start_node: 0}
+        parents = {start_node: start_node}
+
+        while open_list:
+            n = min(open_list, key=lambda x: g[x] + self.h(x))
+
+            if n == stop_node:
+                reconst_path = []
+                while parents[n] != n:
+                    reconst_path.append(n)
+                    n = parents[n]
+                reconst_path.append(start_node)
+                reconst_path.reverse()
+                print('Path found: {}'.format(reconst_path))
+                return reconst_path
+
+            for (m, weight) in self.get_neighbors(n):
+                if m not in open_list and m not in closed_list:
+                    open_list.add(m)
+                    parents[m] = n
+                    g[m] = g[n] + weight
+                else:
+                    if g[m] > g[n] + weight:
+                        g[m] = g[n] + weight
+                        parents[m] = n
+                        if m in closed_list:
+                            closed_list.remove(m)
+                            open_list.add(m)
+            open_list.remove(n)
+            closed_list.add(n)
+        print('Path does not exist!')
+        return None
+
+# Create an instance of the Graph class with the provided adjacency list
+adjacency_list = {
+    'A': [('B', 1), ('C', 3), ('D', 7)],
+    'B': [('D', 5)],
+    'C': [('D', 12)]
+}
+
+g = Graph(adjacency_list)
+
+# Test the A* algorithm
+start_node = 'A'
+stop_node = 'D'
+print(f"Finding path from {start_node} to {stop_node}:")
+g.a_star_algorithm(start_node, stop_node)
+
+
+Write Heuristic Greedy Best search python program.
+from queue import PriorityQueue
+class Graph:
+    def __init__(self, adjacency_list):
+        self.adjacency_list = adjacency_list
+
+    def get_neighbors(self, v):
+        return self.adjacency_list[v]
+
+    # Heuristic function
+    def h(self, n):
+        H = {'A': 10, 'B': 5, 'C': 7, 'D': 3}
+        return H[n]
+
+    def greedy_best_first_search(self, start_node, stop_node):
+        visited = set()
+        pq = PriorityQueue()
+        pq.put((0, start_node))
+
+        while not pq.empty():
+            cost, node = pq.get()
+            visited.add(node)
+            print(node, end=" ")
+
+            if node == stop_node:
+                print("\nGoal reached!")
+                return True
+
+            for (neighbour, _) in self.get_neighbors(node):
+                if neighbour not in visited:
+                    priority = self.h(neighbour)
+                    pq.put((priority, neighbour))
+
+        print("\nGoal not reachable!")
+        return False
+
+# Define the adjacency list for the graph
+adjacency_list = {
+    'A': [('B', 1), ('C', 3), ('D', 7)],
+    'B': [('D', 5)],
+    'C': [('D', 12)]
+}
+
+# Create an instance of the Graph class
+g = Graph(adjacency_list)
+
+# Test the Greedy Best-First Search algorithm
+start_node = 'A'
+stop_node = 'D'
+print(f"Greedy Best-First Search from {start_node} to {stop_node}:")
+g.greedy_best_first_search(start_node, stop_node)
+
+
+
+
+
+Create Root
+class Node:
+def __init__(self, data): 
+ self.left = None 
+ self.right = None 
+ self.data = data
+def PrintTree(self): 
+print(self.data , end = " ") 
+root = Node(10)
+LAB # 05
+print("Tree is: " , end = " ") 
+root.PrintTree()
+Inserting into a Tree
+# Compare the new value with the parent node
+if self.data:
+if data < self.data:
+if self.left is None:
+self.left = Node(data)
+else:
+self.left.insert(data)
+elif data > self.data:
+if self.right is None:
+self.right = Node(data)
+else:
+self.right.insert(data)
+else:
+self.data = data
