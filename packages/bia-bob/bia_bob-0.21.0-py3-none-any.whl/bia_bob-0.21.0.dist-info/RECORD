@@ -1,0 +1,15 @@
+bia_bob/__init__.py,sha256=bS4k35-EAN3lTwugCEJ788w4VRiKb5534JiAGMPXJbE,424
+bia_bob/_accelerate.py,sha256=yt7uPDUky1xYmh690J2xIqW-vDF_Z5YfB-x8IW1K2D8,1336
+bia_bob/_bug_fixing.py,sha256=PnMC-PVF671foZ6yMV74DVJzQUUAe_N72u8qXNkb8PY,1259
+bia_bob/_document.py,sha256=849jXY-S9CTD8C0CLxUL2Hm1ZEWtg450E8Pn1vu7FSk,1061
+bia_bob/_machinery.py,sha256=fmcBAL4lC_a2rOtx12jbeFc0S865QASSKcZXORrkX-A,10838
+bia_bob/_notebook_generation.py,sha256=VgwzBYXbeZjH2iE7-X0pJhMHnzXrRTafRlH_XhXZ550,9723
+bia_bob/_terminal.py,sha256=RhUiVd2HlMAbLYVMFG3RiKL7hEA_NhggreJV2bzO-rI,370
+bia_bob/_utilities.py,sha256=PRG9GZptWxafNmoT3EXp_lCKsIdDjatSD7M24RTKoQE,18743
+bia_bob/_tests/__init__.py,sha256=QNSEDdZvE5B8NuVasnkmp4FJsr5Sxc6jDcDY4B8biNU,31
+bia_bob-0.21.0.dist-info/LICENSE,sha256=bmFnHRmtW9xWiREm-CsO3xgbidrU9tpAzzppMyTtiXg,1546
+bia_bob-0.21.0.dist-info/METADATA,sha256=Ah7nIR0BawsWdc9BUcPe9P1kp7MIZMuN4eMYzIJmz6Q,15450
+bia_bob-0.21.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+bia_bob-0.21.0.dist-info/entry_points.txt,sha256=8zXBE2Enswxwg1AXWSFj0MxDrRG2vMWY6P-x1YAfGdg,69
+bia_bob-0.21.0.dist-info/top_level.txt,sha256=XsOEYj2eu4_lj5BBoCRWEUHq5hjSEC1Yavb66vMOS5s,8
+bia_bob-0.21.0.dist-info/RECORD,,
