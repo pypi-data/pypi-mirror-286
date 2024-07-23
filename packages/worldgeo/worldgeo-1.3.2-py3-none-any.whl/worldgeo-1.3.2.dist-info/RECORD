@@ -1,0 +1,11 @@
+worldgeo/__init__.py,sha256=1oipCaxUpZHIGy1orPgAxHFQIyifKbY8cTO72vIxxwI,59
+worldgeo/builder.py,sha256=utYJzLIZFTGKCdKMCkceRRdtbQuhN9JwCxJl9EgvIKM,7652
+worldgeo/collect.py,sha256=ZnntoSujcvQ0IwbHFJWf0QCBhov5CFTPi-0_c7F6pWA,959
+worldgeo/index.py,sha256=9xAPtYAyV9O10kkw8LE9eepEP4YLs-Ugz_j7CZ-pguo,3531
+worldgeo/misc.py,sha256=yivnK8d3hSg6C90k-kMz_KzCkLimbHZEGeWdQGum3dQ,897
+worldgeo/sharded.py,sha256=zqDmC_rdsck6bKX93PuZ6JPr4I0QyYkUxoLXc1KGGK8,2535
+worldgeo-1.3.2.dist-info/METADATA,sha256=McDK_9WJgMQT5wFcZ5q0GdYWWkOAqmHV8KrtPGxC7u4,2531
+worldgeo-1.3.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+worldgeo-1.3.2.dist-info/entry_points.txt,sha256=KAP1UQ2I0Pk8Mv6hGHVOvpPQAn77c5Paf1l8fB57JfQ,56
+worldgeo-1.3.2.dist-info/top_level.txt,sha256=_I_eC_LucmZl_c9TASBgBBpWGfSAmfbZ0OL5Ea6UWmA,9
+worldgeo-1.3.2.dist-info/RECORD,,
