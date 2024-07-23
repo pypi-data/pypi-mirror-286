@@ -1,0 +1,13 @@
+nullval/__init__.py,sha256=3D8xO5Nn7i4u2_TsY6WSpu45MjhNbJUB2iuFlFFM0u0,211
+nullval/auto.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nullval/lagrange_interpolation.py,sha256=lyBXUCixLgG7Oys2PH96HeeRBOZ75-fOMWDs8mPYsn8,2130
+nullval/linear_interpolation.py,sha256=JyIGMx1y3piXTyqLZplebcJfd9YTFZYOy6yzejhiAcw,2673
+nullval/loader.py,sha256=GV5yj1Rc-9O11VAY_xy43c4oTcwrMIcVps7gvSxhigg,4811
+nullval/polynomial_interpolation.py,sha256=g69I-8yHBPLSR9CZNvLzIm3DKhcG2LO4kaQztyz_ONQ,3506
+nullval/rough.py,sha256=6BCSZ9BC6trO_oxBJ4KDwI9UlR8hflI0Nk673rmi0co,1984
+nullval/spline_interpolation.py,sha256=PRhlGYqu1CHhM_VnekRyFXmtidqNZwkR0EEToT4XYGE,3615
+nullval/trigonometric_interpolation.py,sha256=0itOqTDU56r3dXSAOLoQrWWmd3lqtVuDIsX5Gj0AGLQ,5407
+nullval-0.2.0.dist-info/LICENSE,sha256=65vgo7Cwi_Xp9_q0QC_yeqm-pV72l-PE8gyvXqKXvXg,1092
+nullval-0.2.0.dist-info/METADATA,sha256=jWHffKAaKU9N_Sf8SXmoKTItpbnWdbxMae1hMNWRCao,5172
+nullval-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nullval-0.2.0.dist-info/RECORD,,
