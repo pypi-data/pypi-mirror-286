@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ampur
+Version: 0.1.0
+Summary: This program profiles according to the standards set by BRL implemented by GDE
+Author: Siphiwe Themba
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Ampur
+
+
+
+
+
+#######################    Adding New Learners    ####################### 
+Ensure that the imported file has:
+    Only one sheet
+    Columns                                                                                         # very important, verbatim
+        SenPha: 'First Name', Surname, ID No., Home Language, Grade, Class (Only)
+        FET: First Name, Surname, ID/Passport Number, Home Language, Stream (A, B, C, etc.), Math Type (A or B)
+                                                    # streams are set at the beginning and saved as presets
+
+        
+
+#######################    Adding New Learners    #######################
+
+
+
+
+#######################    Removing Learners    #######################
+Ensure that the imported file has:
+    Only one sheet
+    Columns 
+        First Name, Surname, ID/Passport Number, Grade, Class
+  
+
