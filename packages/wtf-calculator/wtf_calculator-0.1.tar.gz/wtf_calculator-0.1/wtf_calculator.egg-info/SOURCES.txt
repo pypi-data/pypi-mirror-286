@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+tests/test_wtf_calculator.py
+wtf_calculator/__init__.py
+wtf_calculator.egg-info/PKG-INFO
+wtf_calculator.egg-info/SOURCES.txt
+wtf_calculator.egg-info/dependency_links.txt
+wtf_calculator.egg-info/top_level.txt
