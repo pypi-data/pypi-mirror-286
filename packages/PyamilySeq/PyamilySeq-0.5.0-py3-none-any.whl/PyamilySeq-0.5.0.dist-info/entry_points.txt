@@ -1,0 +1,3 @@
+[console_scripts]
+PyamilySeq = PyamilySeq.PyamilySeq:main
+Seq-Combiner = PyamilySeq.Seq_Combiner:main
