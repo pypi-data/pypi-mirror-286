@@ -1,0 +1,16 @@
+atptools/__init__.py,sha256=OYzCZIVmrtoiNFuZFr0Dbag7ofz0DO4eh1_UaAeviQY,426
+atptools/c_py.py,sha256=XcT-NvkDfObdIJH7kjtV1txuV0mLOBq94w4Odr8hjAw,110
+atptools/csv.py,sha256=0cJY2jTZGxGYGslLts1iNRT1X1NCB6a99ylQ4woMWuU,937
+atptools/csv_object.py,sha256=HIAzpgfk35TLkQh4vQ50xkB8EJCGfnRuNsjfuTsYTRk,1296
+atptools/dataset.py,sha256=g_Ckicz4kmpTPsV8fcTfmyUZMt2EmvQNeJI8gP10nNY,1400
+atptools/dictionary.py,sha256=hUvmytlzrbXGjoim5QBUp1SmItBhic51jP3IBLeH65w,2419
+atptools/records.py,sha256=XACJKu-MRyEcUoCHZJC2atKyroZl2AJMSSHYOi5STGo,3879
+atptools/utils.py,sha256=6Rscn16ELl9UhlmP_8E3WdPN8Vma0OdQ7EhpOeMXSRw,233
+atptools/io/__init__.py,sha256=E8f4thDyUn6Ib0URoBQ5X65X2cdyBvpTrrgrB7h2d8Q,149
+atptools/io/aio.py,sha256=ucBaLQyJ1UyaDqzFTGljTyhG7pESZblkMPZBxOxqMwI,699
+atptools/io/io.py,sha256=84M6HmJz666fVvZjvSAO9Akl1RrjwEc25mbvIuW08kk,706
+atptools-0.0.16.dist-info/LICENSE,sha256=0E7yzRoDwMb52rK09-mK79-b_Y5wqgm_HQ1XNcnIM-M,1067
+atptools-0.0.16.dist-info/METADATA,sha256=Qhn0JBumPHzLIKwNmRNR5zAV10rQSWzyF5LVA35S7tE,1070
+atptools-0.0.16.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+atptools-0.0.16.dist-info/top_level.txt,sha256=5NBDQKCWCwquv58K_laklaYUlOJoR0pAcUc-jXN1ILg,9
+atptools-0.0.16.dist-info/RECORD,,
