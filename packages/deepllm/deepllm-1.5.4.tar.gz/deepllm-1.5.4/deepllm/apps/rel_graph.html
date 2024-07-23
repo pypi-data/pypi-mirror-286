@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1200px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "green", "id": "Delayed braking response", "label": "Delayed braking response", "mass": 4, "shape": "box"}, {"color": "green", "id": "Risk", "label": "Risk", "mass": 4, "shape": "box"}, {"color": "green", "id": "Higher insurance premiums", "label": "Higher insurance premiums", "mass": 4, "shape": "box"}, {"color": "green", "id": "Vehicle damage costs", "label": "Vehicle damage costs", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Safety issue\"", "label": "\"Safety issue\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "Costs", "label": "Costs", "mass": 4, "shape": "box"}, {"color": "green", "id": "Severe injury likelihood", "label": "Severe injury likelihood", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Risk\"", "label": "\"Risk\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Driving behavior\"", "label": "\"Driving behavior\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "Reduced reaction time", "label": "Reduced reaction time", "mass": 4, "shape": "box"}, {"color": "green", "id": "tailgate when driving", "label": "tailgate when driving", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Expenses\"", "label": "\"Expenses\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "Higher collision likelihood", "label": "Higher collision likelihood", "mass": 4, "shape": "box"}, {"color": "green", "id": "Law", "label": "Law", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"behavior\"", "label": "\"behavior\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "Psychological effect", "label": "Psychological effect", "mass": 4, "shape": "box"}, {"color": "green", "id": "Emotional trauma impact", "label": "Emotional trauma impact", "mass": 4, "shape": "box"}, {"color": "green", "id": "Increased accident risk", "label": "Increased accident risk", "mass": 4, "shape": "box"}, {"color": "green", "id": "Compromised driving safety", "label": "Compromised driving safety", "mass": 4, "shape": "box"}, {"color": "green", "id": "\"Performance impairment\"", "label": "\"Performance impairment\"", "mass": 4, "shape": "box"}, {"color": "green", "id": "Legal consequences", "label": "Legal consequences", "mass": 4, "shape": "box"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "blue", "from": "Compromised driving safety", "label": "is", "to": "\"Risk\""}, {"arrows": "to", "color": "blue", "from": "Delayed braking response", "label": "is", "to": "\"Driving behavior\""}, {"arrows": "to", "color": "blue", "from": "Emotional trauma impact", "label": "is", "to": "Psychological effect"}, {"arrows": "to", "color": "blue", "from": "Higher collision likelihood", "label": "is", "to": "\"Risk\""}, {"arrows": "to", "color": "blue", "from": "Higher insurance premiums", "label": "is", "to": "Costs"}, {"arrows": "to", "color": "blue", "from": "Increased accident risk", "label": "is", "to": "\"Safety issue\""}, {"arrows": "to", "color": "blue", "from": "Increased accident risk", "label": ":", "to": "Higher insurance premiums"}, {"arrows": "to", "color": "blue", "from": "Increased accident risk", "label": ":", "to": "Severe injury likelihood"}, {"arrows": "to", "color": "blue", "from": "Increased accident risk", "label": ":", "to": "Vehicle damage costs"}, {"arrows": "to", "color": "blue", "from": "Increased accident risk", "label": ":", "to": "Legal consequences"}, {"arrows": "to", "color": "blue", "from": "Increased accident risk", "label": ":", "to": "Emotional trauma impact"}, {"arrows": "to", "color": "blue", "from": "Legal consequences", "label": "is", "to": "Law"}, {"arrows": "to", "color": "blue", "from": "Reduced reaction time", "label": "is", "to": "\"Performance impairment\""}, {"arrows": "to", "color": "blue", "from": "Reduced reaction time", "label": ":", "to": "Increased accident risk"}, {"arrows": "to", "color": "blue", "from": "Reduced reaction time", "label": ":", "to": "Delayed braking response"}, {"arrows": "to", "color": "blue", "from": "Reduced reaction time", "label": ":", "to": "Higher collision likelihood"}, {"arrows": "to", "color": "blue", "from": "Reduced reaction time", "label": ":", "to": "Compromised driving safety"}, {"arrows": "to", "color": "blue", "from": "Severe injury likelihood", "label": "is", "to": "Risk"}, {"arrows": "to", "color": "blue", "from": "Vehicle damage costs", "label": "is", "to": "\"Expenses\""}, {"arrows": "to", "color": "blue", "from": "tailgate when driving", "label": "is", "to": "\"behavior\""}, {"arrows": "to", "color": "blue", "from": "tailgate when driving", "label": ":", "to": "Increased accident risk"}, {"arrows": "to", "color": "blue", "from": "tailgate when driving", "label": ":", "to": "Reduced reaction time"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
