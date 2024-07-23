@@ -1,0 +1,14 @@
+data/icon.png,sha256=j7f3-X9ku3A_QmRRlDAoQaIVYY8-6s6VPmj9dl05HYU,41871
+data/models/bbox_model.pt,sha256=OaeytfeZ-qE5Hql7_NwLkpnyDYTyMWpP-JGNxGheQKo,8701922
+data/models/model.pt,sha256=3o7nxpZU0N05NdxKXYRXHY7PRjemv8Ad85nEwryG4P0,8698000
+deepbet/__init__.py,sha256=awG9z3qFJ7XQdSy2W5jze8B5-1b67p5dxjyaPFqv8ag,72
+deepbet/bet.py,sha256=vbx5HAtqNXhEMBQGxzDPcotZdoYXb2VFjxWQjJqHkfU,5414
+deepbet/ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepbet/ui/cli.py,sha256=g488DvfyhRmDHk98nXLY_jQuKw5XgLtyXrvRiQmhwvA,2551
+deepbet/ui/gui.py,sha256=K0lZT9CsTOJaq-n4qkwTrjOaPt8MFM34XRaGHPIy_Jk,5906
+deepbet/utils.py,sha256=TjrmtRHMYhk18_C7VyMcXln9V2QDgjhmAWnpOdmoOvQ,2248
+deepbet-1.0.1.dist-info/LICENSE,sha256=osgee6lBXekQUWvLL4Pnap2IF1hqKUWTRpXfTVla3qU,1110
+deepbet-1.0.1.dist-info/METADATA,sha256=mDEeYT5wTP48o7VwvFn5zCGFown02a7JbKFbMXbAvaw,4340
+deepbet-1.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+deepbet-1.0.1.dist-info/entry_points.txt,sha256=5VNwOoUeOb-oPrIQZSMncPcVFwqqIitKX8nHNnsnsE4,89
+deepbet-1.0.1.dist-info/RECORD,,
