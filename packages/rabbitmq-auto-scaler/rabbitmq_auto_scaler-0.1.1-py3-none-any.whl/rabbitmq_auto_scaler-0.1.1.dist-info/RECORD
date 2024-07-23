@@ -1,0 +1,12 @@
+auto_scaler/__init__.py,sha256=bnOAQUviCbjfGsSrxMk3u7kJ3_uEHYbsC7gXRu5Dzms,198
+auto_scaler/async_thread_worker.py,sha256=MT00IKQmS6ablZnWLGQjmp0cJ_0Q54MGwAI9X9NSagw,1148
+auto_scaler/autoscaler.py,sha256=2LWSwhPq7vhZUbAtGAeeU8wrmw3WvoxABpapdyma-HI,4154
+auto_scaler/base_auto_scaler.py,sha256=gVCGsXCdTc0bIxYv0IYuXVE7HiXY8qVQnJoNRsIWimo,1081
+auto_scaler/connection_pool.py,sha256=1iXNvFiFC-5eC9z6Ui0ZYCUmFhrzYYF473nAVJC0Bmc,1675
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_autoscaler.py,sha256=c1Knc7mF0K0t4ltZulJQBHsblpWlZqY_6Tg4SXrSHEo,2322
+rabbitmq_auto_scaler-0.1.1.dist-info/LICENSE,sha256=WyPmA2p8SHiRafXXS1_Jve8rTRrysin44I6vMBH3EjI,1067
+rabbitmq_auto_scaler-0.1.1.dist-info/METADATA,sha256=tXLEXz_zdh8bOwqignNineE-hgdRHhpPZci4bhKESdY,5711
+rabbitmq_auto_scaler-0.1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+rabbitmq_auto_scaler-0.1.1.dist-info/top_level.txt,sha256=z5Srzq62QpXSDyxif4_mSY2v21cmwmkMa8QPp2ZVexs,18
+rabbitmq_auto_scaler-0.1.1.dist-info/RECORD,,
