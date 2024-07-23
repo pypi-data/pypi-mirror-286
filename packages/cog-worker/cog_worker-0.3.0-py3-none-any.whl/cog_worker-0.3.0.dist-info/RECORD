@@ -1,0 +1,12 @@
+cog_worker/__init__.py,sha256=cMjDemK58ri18Sv9BJOyAz47hpcRH97bcdvFEh-103E,314
+cog_worker/distributed.py,sha256=X3r-1Ef04nlyTZisMhMU1A6xZL6_NsAuCLAFAzjXncI,6900
+cog_worker/manager.py,sha256=YB6BeoU2hqyTHrfO_vXVUQ3bTDMvBihAGG_X6_2O5Oc,17456
+cog_worker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cog_worker/types.py,sha256=9UKK4Zie1XMbT_pHttRDC8Zb2kxkoxQ4xdfbJLM2cVo,1781
+cog_worker/utils.py,sha256=jRGUecMR-0vzfiYoLL3uBz0eNRLGYE5py_pxRo76y1E,1018
+cog_worker/worker.py,sha256=ckp0BH_isKKD-nPiwmVLKesvan5Iqs1srQ_ju3tbLN4,11352
+cog_worker-0.3.0.dist-info/LICENSE.txt,sha256=Sd40qFfjMndidtlw_mKQ5TPBLSpk-wSFMtfDM1qTfoA,1073
+cog_worker-0.3.0.dist-info/METADATA,sha256=eBsRiQCCRfvclSGDVTaPYGdlYgqlPBGRSrKH-7I9340,5999
+cog_worker-0.3.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+cog_worker-0.3.0.dist-info/top_level.txt,sha256=jUWy8Vkc6yjVPFbIip1rX4W37aFxIAfpiVFs8mbmOr0,11
+cog_worker-0.3.0.dist-info/RECORD,,
