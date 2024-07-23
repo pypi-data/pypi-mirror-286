@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block body %}
+  <article>
+    {% if not chapter %}
+      No such chapter.
+    {% else %}
+      <h1>{{ chapter.title }}</h1>
+      <fieldset class="grid">
+        {% if chapter.ebook %}
+          <form method="post" action="/series/{{ chapter.series_id }}/chapter/{{ chapter.id }}/ebook">
+            <button type="submit" class="outline">
+              {{ macros.icon_sync(size=24) }}
+              Force Send
+            </button>
+          </form>
+          <form method="get" action="/series/{{ chapter.series_id }}/chapter/{{ chapter.id }}/ebook">
+            <button type="submit">
+              {{ macros.icon_download(size=24) }}
+              Download
+            </button>
+          </form>
+        {% endif %}
+        <form method="post" action="/series/{{ chapter.series_id }}/chapter/{{ chapter.id }}/export">
+          <button type="submit" class="secondary">
+            {{ macros.icon_new(size=24) }}
+            Create Epub
+          </button>
+        </form>
+      </fieldset>
+      <ul>
+        <li>
+          <a href="{{ chapter.url }}">Link</a>
+        </li>
+        <li>Number: {{ chapter.number }}</li>
+        <li>Size:{{ "%0.f" | format(chapter.size_kb) }} Kb</li>
+        <li>
+          Published: <em data-tooltip="{{ chapter.published_at | format_datetime }}">{{ chapter.published_at | relative_datetime }}</em>
+        </li>
+        <li>
+          Created: <em data-tooltip="{{ chapter.created_at | format_datetime }}">{{ chapter.created_at | relative_datetime }}</em>
+        </li>
+        <li>
+          Sent: <em data-tooltip="{{ chapter.sent_at | format_datetime }}">{{ chapter.sent_at | relative_datetime }}</em>
+        </li>
+      </ul>
+      {% if chapter.content %}
+        <details>
+          <summary role="button" class="secondary">Chapter Content</summary>
+          <p>{{ chapter.content | safe }}</p>
+        </details>
+      {% else %}
+        <p>No content found.</p>
+      {% endif %}
+    {% endif %}
+  </article>
+{% endblock %}

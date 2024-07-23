@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block body %}
+  {% if not series %}
+    <article>No such series.</article>
+  {% else %}
+    <article>
+      <h1>{{ series.title }}</h1>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Length</th>
+            <th scope="col">Published At</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for c in chapter_list %}
+            <tr>
+              <td>{{ c.number }}</td>
+              <th scope="row">
+                <a href="/series/{{ c.series_id }}/chapter/{{ c.id }}">{{ c.title }}</a>
+              </th>
+              <td>{{ "%.0f"|format(c.size_kb) }} Kb</td>
+              <td>
+                <em data-tooltip="{{ c.published_at | format_datetime }}">{{ c.published_at | relative_datetime }}</em>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </article>
+  {% endif %}
+{% endblock %}

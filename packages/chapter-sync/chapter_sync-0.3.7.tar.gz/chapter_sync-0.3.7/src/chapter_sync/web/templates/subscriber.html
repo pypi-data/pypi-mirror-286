@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block body %}
+  <article>
+    {% if not subscriber %}
+      No such subscriber.
+    {% else %}
+      <h2>{{ subscriber.email }}</h2>
+      <form method="post" action="/subscriber/{{ subscriber.id }}">
+        <fieldset class="grid">
+          <label>
+            Email
+            <input type="text"
+                   name="email"
+                   id="email"
+                   placeholder="{{ subscriber.email }}" />
+          </label>
+          <label>
+            Created
+            <p>
+              <em id="created_at"
+                  data-tooltip="{{ subscriber.created_at | format_datetime }}">{{ subscriber.created_at | relative_datetime }}</em>
+            </p>
+          </label>
+        </fieldset>
+        <fieldset>
+          <h2>Subscriptions</h2>
+          {% for series in subscribed_series %}
+            <label>
+              <input name="series"
+                     type="checkbox"
+                     role="switch"
+                     checked
+                     value="{{ series.id }}" />
+              {{ series.title }}
+            </label>
+          {% endfor %}
+          {% for series in unsubscribed_series %}
+            <label>
+              <input name="series" type="checkbox" role="switch" value="{{ series.id }}" />
+              {{ series.title }}
+            </label>
+          {% endfor %}
+        </fieldset>
+        <fieldset class="grid">
+          <button type="submit">
+            {{ macros.icon("save") }}
+            Save
+          </button>
+        </fieldset>
+      </form>
+    {% endif %}
+  </article>
+{% endblock %}

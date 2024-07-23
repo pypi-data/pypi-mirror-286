@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block body %}
+  <h1>Series</h1>
+  {% if not series_list %}
+    <p>There are no series available.</p>
+  {% else %}
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Link</th>
+          <th scope="col">Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Chapters</th>
+          <th scope="col">Last Updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in series_list %}
+          <tr>
+            <td>
+              <a href="{{ s.url }}">Link</a>
+            </td>
+            <td>
+              <a href="/series/{{ s.id }}">{{ s.title }}</a>
+            </td>
+            <td>{{ s.author }}</td>
+            <td>{{ s.chapters | length }}</td>
+            <td>{{ s.last_built_at and s.last_built_at | relative_datetime }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+  <article>
+    <form method="post" action="/series">
+      <fieldset class="grid">
+        <label>
+          Name
+          <input type="text" name="name" id="name" placeholder="Name" required />
+        </label>
+        <label>
+          URL
+          <input type="text" name="url" id="url" placeholder="https://..." required />
+        </label>
+        <label>
+          Type
+          <select id="type" name="type">
+            <option value="custom">Custom</option>
+            <option value="royal-road">Royal Road</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset class="grid">
+        <label>
+          Auto Attribute
+          <label>
+            <input id="auto"
+                   name="auto"
+                   type="checkbox"
+                   value="true"
+                   checked
+                   role="switch" />
+          </label>
+        </label>
+        <label id="author-input">
+          Author
+          <input type="text" name="author" id="author" placeholder="" />
+        </label>
+        <label id="title-input">
+          Title
+          <input type="text" name="title" id="title" placeholder="" />
+        </label>
+        <label id="cover-url-input">
+          Cover URL
+          <input type="text" name="cover_url" id="cover_url" placeholder="" />
+        </label>
+      </fieldset>
+      <fieldset class="grid" id="auto-inputs">
+        <label>
+          Settings
+          <textarea id="settings" name="settings" rows="3" placeholder="{}" aria-label="Settings JSON">
+        </textarea>
+        </label>
+      </fieldset>
+      <fieldset class="grid" id="auto-inputs">
+        <input type="submit" value="Add">
+      </fieldset>
+    </form>
+  </article>
+  <script type="text/javascript">
+      const auto = document.querySelector("#auto");
+      const author_input = document.querySelector("#author-input");
+      const title_input = document.querySelector("#title-input");
+      const cover_url_input = document.querySelector("#cover-url-input");
+
+      function clickHandler(value) {
+        author_input.hidden = value;
+        title_input.hidden = value;
+        cover_url_input.hidden = value;
+      } 
+
+      clickHandler(auto.checked);
+      auto.addEventListener("click", function(e) {clickHandler(e.target.checked)});
+  </script>
+{% endblock %}
