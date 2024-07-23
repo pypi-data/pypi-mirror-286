@@ -1,0 +1,12 @@
+stressanapi/CHANGELOG.md,sha256=_B4Gsi8RUwm5TywwWJKMOf_EQUn2np5djznIzDk68JI,2221
+stressanapi/README.md,sha256=-8094wINpY9Jlew-qMGRnDsq5f8fD0Yhmhn1X5H-fBw,11231
+stressanapi/example.json,sha256=1J4nx_M5I94w2kWhccgv1O4U6xl0n80G7hU81TSiaKA,485
+stressanapi/simple_stressanapi_server.py,sha256=iDhfx6k7uZHTgAPtOf3SpxOj6s8G0pBQBg49RznGnUw,6006
+stressanapi/stressanapi.py,sha256=2HRV0WaTQN_fZulgqWo-yjB1rGjTpaREzExzzgMv-Pg,109964
+stressanapi/test_stressanapi.py,sha256=7mfK_hxGavJalKmpSZ2aIXhnPCvDAzDNkGKbjhGibzE,2353
+stressanapi-1.0.3.dist-info/LICENSE,sha256=sYzAJea5NHrOARpMS_MLYDt8HlQl89atTqKneNYio0E,1073
+stressanapi-1.0.3.dist-info/METADATA,sha256=1mWW6t8hErtt7N5cBG-BcsCFz-Y2x0AdYq9hT3zY7SQ,13257
+stressanapi-1.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+stressanapi-1.0.3.dist-info/entry_points.txt,sha256=p526OZ75j-kfDAQjsUv8lB7SFWTc1brnUNUSipnotS0,150
+stressanapi-1.0.3.dist-info/top_level.txt,sha256=XAk4wk1Q1YvvI2h6QByRA00nR_oO54WRrlH4WLSOd_M,12
+stressanapi-1.0.3.dist-info/RECORD,,
