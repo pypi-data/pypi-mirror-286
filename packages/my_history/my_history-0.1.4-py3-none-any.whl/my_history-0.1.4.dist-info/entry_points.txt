@@ -1,0 +1,2 @@
+[console_scripts]
+cnt = my_history.cli:cnt
