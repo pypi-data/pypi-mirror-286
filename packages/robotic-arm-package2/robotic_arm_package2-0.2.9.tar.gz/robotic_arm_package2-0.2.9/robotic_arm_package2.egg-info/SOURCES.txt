@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+robotic_arm_package2/__init__.py
+robotic_arm_package2/rm_ctypes_wrap.py
+robotic_arm_package2/rm_robot_interface.py
+robotic_arm_package2.egg-info/PKG-INFO
+robotic_arm_package2.egg-info/SOURCES.txt
+robotic_arm_package2.egg-info/dependency_links.txt
+robotic_arm_package2.egg-info/top_level.txt
