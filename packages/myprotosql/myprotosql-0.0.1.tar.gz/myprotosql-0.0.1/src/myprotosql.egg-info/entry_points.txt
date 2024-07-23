@@ -1,0 +1,3 @@
+[console_scripts]
+protoc-gen-myprotosql = myprotosql:run_plugin
+protoc-gen-myprotosql-dump = myprotosql:dump_request
