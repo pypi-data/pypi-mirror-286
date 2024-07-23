@@ -1,0 +1,10 @@
+setup.py
+auth_utils/__init__.py
+auth_utils/exceptions.py
+auth_utils/middlewares.py
+auth_utils/schemas.py
+authutilsvpetrov.egg-info/PKG-INFO
+authutilsvpetrov.egg-info/SOURCES.txt
+authutilsvpetrov.egg-info/dependency_links.txt
+authutilsvpetrov.egg-info/requires.txt
+authutilsvpetrov.egg-info/top_level.txt
