@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: attack-evaluation
+Version: 0.1.1
+Summary: A package for evaluating adversarial attacks on deep learning models
+Home-page: https://github.com/Cyberus-MLSec/eval_adv_attack
+Author: Sahbaaz Ansari
+Author-email: mlsecadversarialattack@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: torchattacks
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+## Evauate attacks
+
+A package for evaluating adversarial attacks on deep learning models.
+
+## Installation
+
+```bash
+pip install my_adversarial_attacks
+```
