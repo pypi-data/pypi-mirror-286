@@ -1,0 +1,3 @@
+[console_scripts]
+ctdfjorder-cli=ctdfjorder.cli:cli
+
