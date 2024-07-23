@@ -1,0 +1,2 @@
+[console_scripts]
+yodi_umbaji = yodi_umbaji.main:main
