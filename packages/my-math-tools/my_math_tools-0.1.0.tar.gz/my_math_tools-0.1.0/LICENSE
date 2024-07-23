@@ -1,0 +1,8 @@
+
+#### Step 8: Create the License File
+
+Choose a license and add it to the `LICENSE` file. For example, MIT License:
+
+```text
+MIT License
+...
