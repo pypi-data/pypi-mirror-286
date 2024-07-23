@@ -1,0 +1,10 @@
+async_pyserial/__init__.py,sha256=i7SNhG9VtmsnMcKk9l3ZwWfF9pLhhRvah1GxSWZo_nA,1673
+async_pyserial/async_pyserial_core.pyi,sha256=RQYnrZ10kAdE4oAi7Ov-gEn4rmScU3zWsBWYs2Wi-dM,591
+async_pyserial/async_pyserial_core.pypy310-pp73-win_amd64.pyd,sha256=1eSvECa-1VTedZaq76u18Rq9NGJ6OLfcw36lR7kffOo,168448
+async_pyserial/common.py,sha256=C2auxjTyrBUSvMdRuXKGD11GSUCmaQMjDAAp81x1zxc,1779
+async_pyserial/native_serialport.py,sha256=GxQNkPZ0Y-jRKzxe5jppxMihnoJ4v-uiVdfDKpOagoI,761
+async_pyserial-0.1.1.dist-info/LICENSE,sha256=c7NmZZK7Eu8JF7Wj4Ooc5KnBWBZM7Km-JoqTFtKorGE,1084
+async_pyserial-0.1.1.dist-info/METADATA,sha256=epJcjFj4LN_4pfZpkuYHZdt70Iv2pEd-w6p0ibpUu_w,4452
+async_pyserial-0.1.1.dist-info/WHEEL,sha256=4huiSeEiiL7kwJ-vXqdtIIIeg0KnmyxshSjZtpFv2sg,108
+async_pyserial-0.1.1.dist-info/top_level.txt,sha256=ZYJ--QOjI99KGE_T-Dh8B1D01DKcnf6F2okN7SU1A78,15
+async_pyserial-0.1.1.dist-info/RECORD,,
