@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "genome-kmers"
+version = "0.1.2"
+description = "fast and memory-efficient genomic k-mer calculations"
+authors = ["Matthew Perkett"]
+readme = "README.md"
+license = "LICENSE"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+biopython = "^1.83"
+numba = "^0.59.1"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+sphinx = "^7.3.7"
+sphinx-rtd-theme = "^2.0.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+pytest-mock = "^3.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = ["src"]
+
+[project.urls]
+Homepage = "https://genome-kmers.readthedocs.io/en/latest/index.html"
+Documentation = "https://genome-kmers.readthedocs.io/en/latest/index.html"
+Issues = "https://github.com/mrperkett/genome-kmers/issues"
