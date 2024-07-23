@@ -1,0 +1,10 @@
+LICENSE
+README.md
+__init__.py
+setup.py
+user_agent_tools.py
+user_agent_tools.egg-info/PKG-INFO
+user_agent_tools.egg-info/SOURCES.txt
+user_agent_tools.egg-info/dependency_links.txt
+user_agent_tools.egg-info/requires.txt
+user_agent_tools.egg-info/top_level.txt
