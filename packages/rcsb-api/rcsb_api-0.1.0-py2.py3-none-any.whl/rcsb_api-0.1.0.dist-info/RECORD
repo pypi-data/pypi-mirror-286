@@ -1,0 +1,10 @@
+rcsbapi/__init__.py,sha256=2o-SSg314fRdacwvS2y9rSwKJDZCtCkZzXXsWdYXUsQ,210
+rcsbapi/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rcsbapi/data/query.py,sha256=eqe2HOz77ij1Td2pyjCLplozDcD2wqwZioCAETTypI4,5280
+rcsbapi/data/schema.py,sha256=NtOHJsPfs0cDLM9KlwihqKI2O-rXc7J_6j1a4z7qnlk,28112
+rcsbapi/resources/data_api_schema.json,sha256=IvL7hB6--kzk2Uy6vzejsTKc6xvmSjapzIr2E4Zjs8E,1771007
+rcsb_api-0.1.0.dist-info/LICENSE,sha256=jFdfp4-j1dWjHcGjkMswp9D4sXxRsjz01ixAIQRo3OY,1065
+rcsb_api-0.1.0.dist-info/METADATA,sha256=GICo8qWtW3j6YTVyd24oOmeF8tTS5MseZdp28DCgD8I,18381
+rcsb_api-0.1.0.dist-info/WHEEL,sha256=ANi2y8tYx-p70pj7MSdqQMJNFJEUgAOyfPpHzqz0w84,109
+rcsb_api-0.1.0.dist-info/top_level.txt,sha256=jcE11C-JZ-lfORcm-78iwwnXdiSWltaHWesYk9dzeuE,8
+rcsb_api-0.1.0.dist-info/RECORD,,
