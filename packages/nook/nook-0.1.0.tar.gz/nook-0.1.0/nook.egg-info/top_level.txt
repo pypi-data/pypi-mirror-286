@@ -1,0 +1,4 @@
+dist
+nook
+tests
+venv
