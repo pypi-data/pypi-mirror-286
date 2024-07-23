@@ -1,0 +1,92 @@
+Metadata-Version: 2.3
+Name: jdbc-wrapper
+Version: 0.1.0
+Summary: Add your description here
+Author-email: phi <phi.friday@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Choi Min-yeong
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.9
+Requires-Dist: jpype1>=1.2.1
+Requires-Dist: tomli>=1.1.0; python_version < '3.11'
+Requires-Dist: typing-extensions>=4.4.0
+Provides-Extra: asyncio
+Requires-Dist: greenlet; extra == 'asyncio'
+Provides-Extra: sqlalchemy
+Requires-Dist: greenlet; extra == 'sqlalchemy'
+Requires-Dist: sqlalchemy[asyncio]>=2; extra == 'sqlalchemy'
+Provides-Extra: test
+Requires-Dist: anyio>=4.4.0; extra == 'test'
+Requires-Dist: filelock>=3.15.4; extra == 'test'
+Requires-Dist: greenlet; extra == 'test'
+Requires-Dist: pytest-cov>=5.0.0; extra == 'test'
+Requires-Dist: pytest-dotenv>=0.5.2; extra == 'test'
+Requires-Dist: pytest-icdiff>=0.9; extra == 'test'
+Requires-Dist: pytest-xdist[psutil]>=3.6.1; extra == 'test'
+Requires-Dist: pytest>=8.2.2; extra == 'test'
+Requires-Dist: sqlalchemy[asyncio]>=2; extra == 'test'
+Provides-Extra: typing
+Requires-Dist: types-greenlet; extra == 'typing'
+Description-Content-Type: text/markdown
+
+# jdbc-wrapper
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## warning
+This is a library I created for my own practice.
+If you want to find a proper library, 
+- try `psycopg` (aka `psycopg3`) for `postgresql`, 
+- `pyodbc` and `aioodbc` for `mssql`,
+- `pysqlite` and `aiosqlite` for `sqlite`.
+
+## how to install
+```shell
+$ pip install jdbc-wrapper
+# or
+$ pip install "jdbc-wrapper[asyncio]"
+# or
+$ pip install "jdbc-wrapper[sqlalchemy]"
+```
+
+## how to use
+see [examples](https://github.com/phi-friday/jdbc-wrapper/tree/main/examples)
+
+## TODO
+* [ ] more tests
+> 1. support mssql
+> 2. postgresql thread test in github action(why..?)
+* [ ] support mssql(macos m1 docker issue...)
+* [ ] more sqlalchemy dialect
+* [ ] datetime, date, time type issue
+
+## License
+
+MIT, see [LICENSE](https://github.com/phi-friday/jdbc_wrapper/blob/main/LICENSE).
