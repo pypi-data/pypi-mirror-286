@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/shutdown_computer/__init__.py
+src/shutdown_computer/main.py
+src/shutdown_computer.egg-info/PKG-INFO
+src/shutdown_computer.egg-info/SOURCES.txt
+src/shutdown_computer.egg-info/dependency_links.txt
+src/shutdown_computer.egg-info/top_level.txt
