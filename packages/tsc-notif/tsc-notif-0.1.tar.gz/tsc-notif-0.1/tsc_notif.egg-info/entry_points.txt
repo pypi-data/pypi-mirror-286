@@ -1,0 +1,2 @@
+[console_scripts]
+supervisor-eventlistener = tsc_notif.supervisor_eventlistener:main
