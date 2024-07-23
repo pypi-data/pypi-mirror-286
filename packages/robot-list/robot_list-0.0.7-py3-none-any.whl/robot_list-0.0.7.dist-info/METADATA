@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: robot_list
+Version: 0.0.7
+Summary: This is a package which lists the robot framework tests using robot command line arguments
+Home-page: https://github.com/Venixa/robot_list
+Author: Venixa Innovations
+Author-email: venixainnovations@gmail.com
+Project-URL: Bug Tracker, https://github.com/Venixa/robot_list/issues
+Keywords: robot framework list,list robotframework tests,list robot
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xmltodict ==0.13.0
+
+# robot_list
+List the robot tests by taking robot flags are command as cmd line arguments </br>
+
+Usage: </br>
+python -m robot_list.robot_list '--include test1 --exclude test2 tests/' </br>
+python -m robot_list.robot_list '-i test1 -e test2 tests/' </br>
+python -m robot_list.robot_list '--suite suite1 --test test1 tests/'  </br>
+python -m robot_list.robot_list '-s suite1 -t test1 tests/' </br>
+python -m robot_list.robot_list '--include test1 --exclude test2 --suite suite1 tests/' </br>
+python -m robot_list.robot_list '-i test1 -e test2 -s suite1 tests/' </br>
+ </br>
+or </br> </br>
+
+from robot_list import robot_list
+robot_list = robot_list.RobotList(command) </br>
+robot_list.list_robot_tests() </br>
