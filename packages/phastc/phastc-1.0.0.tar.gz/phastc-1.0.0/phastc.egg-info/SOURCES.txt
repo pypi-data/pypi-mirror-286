@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+phastc.egg-info/PKG-INFO
+phastc.egg-info/SOURCES.txt
+phastc.egg-info/dependency_links.txt
+phastc.egg-info/not-zip-safe
+phastc.egg-info/requires.txt
+phastc.egg-info/top_level.txt
+src/interface.cpp
+tests/test_phast.py
