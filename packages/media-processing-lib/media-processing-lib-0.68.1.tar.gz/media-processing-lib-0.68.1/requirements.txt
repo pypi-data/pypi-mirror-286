@@ -1,0 +1,16 @@
+imageio[ffmpeg]==2.34.2
+av==12.3.0
+scikit-image==0.24.0
+opencv-python==4.7.0.68
+pims==0.7.0
+librosa==0.9.2
+numba>=0.60.0
+ffmpeg-python==0.2.0
+tqdm>=4.64
+decord==0.6.0
+Pillow==9.4.0
+natsort==8.2.0
+numpy==1.26.4
+overrides>=7.7.0
+loggez==0.3
+gdown==4.6.0
