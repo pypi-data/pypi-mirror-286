@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: deepsurfer
+Version: 0.1.1a5
+Summary: Learning-Based Utilities for Neuroimage Analysis
+Keywords: neuroimaging,mri,brain,cortex,medical imaging,deeplearning,AI
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.7
+Provides-Extra: test
