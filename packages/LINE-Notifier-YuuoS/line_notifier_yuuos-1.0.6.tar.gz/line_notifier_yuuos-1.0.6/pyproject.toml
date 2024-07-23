@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LINE_Notifier_YuuoS"
+version = "1.0.6"
+authors = [
+  { name="Yuki Oshima", email="05.pistes.respect@icloud.com" },
+]
+description = "LINE notifier for our laser machines"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["notification", "UI", "tkinter"]
+dependencies = ["requests", "pyperclip"]
+
+[project.urls]
+Homepage = "https://github.com/YuuoS/YamalabLaserPackage/tree/main/notifier"
+Issues = "https://github.com/YuuoS/YamalabLaserPackage/tree/main/notifier/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

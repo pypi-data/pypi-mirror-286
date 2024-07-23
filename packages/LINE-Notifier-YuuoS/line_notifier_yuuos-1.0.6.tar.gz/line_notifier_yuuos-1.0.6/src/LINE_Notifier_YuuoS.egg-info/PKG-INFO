@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: LINE_Notifier_YuuoS
+Version: 1.0.6
+Summary: LINE notifier for our laser machines
+Home-page: https://github.com/YuuoS/YamalabLaserPackage/tree/main/notifier
+Author: Yuki Oshima
+Author-email: Yuki Oshima <05.pistes.respect@icloud.com>
+Project-URL: Homepage, https://github.com/YuuoS/YamalabLaserPackage/tree/main/notifier
+Project-URL: Issues, https://github.com/YuuoS/YamalabLaserPackage/tree/main/notifier/issues
+Keywords: notification,UI,tkinter
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pyperclip
+
+# Notifier
+
+Notifierは、UI通知を管理するためのPythonパッケージです。
+
+## インストール
+
+まず、必要な依存関係をインストールします。
+
+```bash
+pip install -r requirements.txt
+```
+
+次に、`setup.py`を使用してパッケージをインストールします。
+
+```bash
+pip install .
+```
+
+## 使い方
+
+### Notifierクラス
+
+`notifier.py`ファイルには、通知機能を実行するための`Notifier`クラスが含まれています。以下は使用例です。
+
+```python
+from notifier.line_notifier import Notifier
+
+notifier = Notifier()
+success = notifier.run_notifier("Laser Machine", "加工が終わったよ")
+
+if success:
+    print("通知が送信されました")
+else:
+    print("通知の送信に失敗しました")
+```
+
+### Appクラス
+
+`ui_manager.pyw`ファイルには、通知設定を管理するための`App`クラスが含まれています。以下は使用例です。
+
+```python
+import tkinter as tk
+from notifier.line_notifier.ui_manager import App
+
+root = tk.Tk()
+app = App(root)
+root.mainloop()
+```
+
+## テスト
+
+テストは`unittest`を使用して実行します。以下のコマンドでテストを実行できます。
+
+```bash
+python -m unittest discover -s src/test
+```
+
+## ファイル構成
+
+```
+notifier/
+├── notifier/
+│   ├── __init__.py
+│   ├── line_notifier/
+│   │   ├── __init__.py
+│   │   ├── notification_setting.txt
+│   │   ├── notifier.py
+│   │   ├── tokens.txt
+│   │   ├── ui_manager.pyw
+├── test/
+│   ├── __init__.py
+│   ├── test_ui_manager.py
+├── setup.py
+├── requirements.txt
+└── README.md
+```
+
+## ライセンス
+
+このプロジェクトはMITライセンスの下でライセンスされています。
