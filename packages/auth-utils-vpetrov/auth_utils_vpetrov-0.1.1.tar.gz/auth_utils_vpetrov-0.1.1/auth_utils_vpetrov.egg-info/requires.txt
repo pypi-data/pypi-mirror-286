@@ -1,0 +1,5 @@
+fastapi
+pydantic
+user_utils
+typing
+user_utils_vpetrov
