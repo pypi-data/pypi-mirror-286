@@ -1,0 +1,13 @@
+cymem/cymem.cpython-38-darwin.so,sha256=wFd1y3B4GXO0c40W7ZmIuSn26O0O_rk2qIuitVbG9Zo,114392
+cymem/__init__.pxd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cymem/__init__.py,sha256=SZPicygro0c1rh3QY-iN21ZormYrSBeim1R2DSeaOH4,21
+cymem/about.py,sha256=-2LWnTqOFY1phVaVPAzhJ391LzPDLSmUljFo3qpBI0E,234
+cymem/cymem.pyx,sha256=xc_ctQ39_6KEUxx0jjTWbaeI9R8375zyo3Azofn82Rs,5592
+cymem/cymem.pxd,sha256=3a6VyWkQ-d6GelUOGNtdTAAg2ksWKjW9mUMu5UzR2zc,779
+cymem/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cymem/tests/test_import.py,sha256=QP4VhFs618LeiJvBSEfZh3deETbWxuzir1mEfL-fOV0,263
+cymem-2.0.9a2.dist-info/RECORD,,
+cymem-2.0.9a2.dist-info/LICENSE,sha256=LPzGtGJ3yycbiQeF63C4D_7ruE9k6EUiQIn0_PkLr0Y,1111
+cymem-2.0.9a2.dist-info/WHEEL,sha256=-rn9k1iJh4qdiORPnwU2ww_lMzHCpAPYcacZg7XWFCI,108
+cymem-2.0.9a2.dist-info/top_level.txt,sha256=dCYwCFWTj_NE7Z9zFrrKqAcWuUCtg52zKRI4l_Wrr7Q,6
+cymem-2.0.9a2.dist-info/METADATA,sha256=0OEbCN0uR2L1HffQq70otRoAvqcZylwqHP19VVplZOs,8355
