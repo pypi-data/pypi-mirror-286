@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+InfIK/InfIK.py
+InfIK/__init__.py
+InfIK.egg-info/PKG-INFO
+InfIK.egg-info/SOURCES.txt
+InfIK.egg-info/dependency_links.txt
+InfIK.egg-info/requires.txt
+InfIK.egg-info/top_level.txt
