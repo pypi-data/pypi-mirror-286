@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling", "requests"]
+build-backend = "hatchling.build"
+
+[project]
+name = "friday-logger"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Guneet Aggarwal", email = "guneetaggarwal@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/kvqn/friday#readme"
+Issues = "https://github.com/kvqn/friday/issues"
+Source = "https://github.com/kvqn/friday"
+
+[tool.hatch.version]
+path = "src/friday_logger/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/friday_logger tests}"
+
+[tool.coverage.run]
+source_pkgs = ["friday_logger", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/friday_logger/__about__.py",
+]
+
+[tool.coverage.paths]
+friday_logger = ["src/friday_logger", "*/friday-logger/src/friday_logger"]
+tests = ["tests", "*/friday-logger/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[publish.index.repos.main]
+url = "https://upload.pypi.org/legacy/"
+
+[publish.index.repos.test]
+url = "https://test.pypi.org/legacy/"
+
+[publish.index]
+disable = true
