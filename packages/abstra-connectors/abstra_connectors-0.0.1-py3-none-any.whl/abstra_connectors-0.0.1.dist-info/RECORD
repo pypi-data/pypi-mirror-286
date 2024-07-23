@@ -1,0 +1,7 @@
+abstra_connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+abstra_connectors/monday.py,sha256=16QI0YkggEcdvG9SdNrPvv1T6fnPxbqf9cIbYpEIoIg,9139
+abstra_connectors/monday_test.py,sha256=eaMVGCLrSoFYB49xr-6wKDdojMI-vdaZB5vy8hauugE,4497
+abstra_connectors-0.0.1.dist-info/METADATA,sha256=tvrHjXY5oWHjaPQcLiLJSjv0f992521uijWcQPOo0hc,327
+abstra_connectors-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+abstra_connectors-0.0.1.dist-info/top_level.txt,sha256=Geg5IodaSy-CwwWwXGGl3eTQ5iEuefnxFkkP7W1PghI,18
+abstra_connectors-0.0.1.dist-info/RECORD,,
