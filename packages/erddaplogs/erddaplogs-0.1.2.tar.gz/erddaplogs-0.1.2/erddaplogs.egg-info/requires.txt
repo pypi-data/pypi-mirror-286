@@ -1,0 +1,16 @@
+numpy<2
+polars>=1.0.0
+requests
+pyarrow
+user_agents
+
+[plotting]
+iso3166
+cartopy
+matplotlib
+
+[test]
+iso3166
+cartopy
+matplotlib
+pytest

@@ -1,0 +1,11 @@
+cartopy
+matplotlib
+jupyterlab
+requests
+polars>=1.0.0
+numpy<2
+pyarrow
+user_agents
+pre-commit
+pytest
+iso3166

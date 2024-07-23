@@ -1,0 +1,17 @@
+name: erddaplogs
+channels:
+  - conda-forge
+dependencies:
+        - numpy
+        - cartopy
+        - matplotlib
+        - jupyterlab
+        - requests
+        - polars>1
+        - numpy<2
+        - pre-commit
+        - tqdm
+        - pip
+        - pip:
+            - pyarrow
+            - user_agents

@@ -1,0 +1,6 @@
+requests
+pandas
+polars>=1.0.0
+numpy<2
+pyarrow
+user_agents

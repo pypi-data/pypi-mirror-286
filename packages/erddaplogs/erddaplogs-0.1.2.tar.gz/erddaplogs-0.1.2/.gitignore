@@ -1,0 +1,10 @@
+.ipynb_checkpoints
+.idea
+__pycache__
+/figs_by_ip
+erddaplogs.egg-info
+erddaplogs/_version.py
+*aggregated_locations.csv
+*anonymized_requests.csv
+
+notebooks/figs_by_ip
