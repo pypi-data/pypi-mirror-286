@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+Geode_YOUWOL.egg-info/PKG-INFO
+Geode_YOUWOL.egg-info/SOURCES.txt
+Geode_YOUWOL.egg-info/dependency_links.txt
+Geode_YOUWOL.egg-info/requires.txt
+Geode_YOUWOL.egg-info/top_level.txt
+geode_youwol/__init__.py
+geode_youwol/youwol.py
+geode_youwol/lib64/geode_youwol_py_youwol.cpython-311-x86_64-linux-gnu.so
+geode_youwol/lib64/libGeode-YOUWOL_youwol.so
