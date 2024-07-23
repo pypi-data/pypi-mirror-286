@@ -1,0 +1,14 @@
+ks_futu_trade_api/./.gitignore,sha256=eOt_WIh4Q7_8meDFVlUvnlCPFCSKtIOdM3LTqhqkVrM,2173
+ks_futu_trade_api/./LICENSE.txt,sha256=4zOlefTQ3eDOhYSM_1aF7XuO4Eo6LqJACxQVEyxznvI,1104
+ks_futu_trade_api/./README.en.md,sha256=ScY_oHLT0QW7wTixWKs55F2r4GU6zRbGJCWHCctVQKE,991
+ks_futu_trade_api/./README.md,sha256=CzTXAySaC9jYQzHZFR5Mjmng66KtbgouLczC87vIp7o,978
+ks_futu_trade_api/./__about__.py,sha256=yxGkeKG-vAR-v1WADQmORtMZoUBecryvhGL4CIoxJ_s,129
+ks_futu_trade_api/./__init__.py,sha256=LPVZG8qls7P-zTc2bOdoWzFLCpPrmSlcw38Enszu58U,45
+ks_futu_trade_api/./ks_futu_trade_api.py,sha256=0Azw-YeOe5nZj4-5I0bgM3oXxr88BjjCYrCztGOnB5k,26394
+ks_futu_trade_api/./pyproject.toml,sha256=XdQQy1jSGDHrWOKE_FDtsutIbTxSDPBV-IWs5k34uuw,2202
+ks_futu_trade_api/./requirements.txt,sha256=QSVNQKGovp-uHHZ4MlBd36Oe8FqrRNOGz0E-yCLoh3w,204
+ks_futu_trade_api/./setup.py,sha256=YQ7t2PbcGICWPX79TCjzQ6yEi9pLGOxvFZGVaSpxKKQ,890
+ks_futu_trade_api-0.0.1.dist-info/METADATA,sha256=nuw0wFu8XERiyQ6k7V_XRvjM7AEcld-iCuDKFu3rtpQ,1940
+ks_futu_trade_api-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ks_futu_trade_api-0.0.1.dist-info/licenses/LICENSE.txt,sha256=4zOlefTQ3eDOhYSM_1aF7XuO4Eo6LqJACxQVEyxznvI,1104
+ks_futu_trade_api-0.0.1.dist-info/RECORD,,
