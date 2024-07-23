@@ -1,0 +1,2 @@
+[console_scripts]
+dicom_modality_predictor = dicom_modality_predictor.cli:main
