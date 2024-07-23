@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+shanku_id_generator/shanku_id_generator.egg-info/PKG-INFO
+shanku_id_generator/shanku_id_generator.egg-info/SOURCES.txt
+shanku_id_generator/shanku_id_generator.egg-info/dependency_links.txt
+shanku_id_generator/shanku_id_generator.egg-info/requires.txt
+shanku_id_generator/shanku_id_generator.egg-info/top_level.txt
+shanku_id_generator/src/__init__.py
+shanku_id_generator/src/idgenerator.py
+shanku_id_generator/src/utils.py
+shanku_id_generator/test/__init__.py
+shanku_id_generator/test/test_idgenerator.py
