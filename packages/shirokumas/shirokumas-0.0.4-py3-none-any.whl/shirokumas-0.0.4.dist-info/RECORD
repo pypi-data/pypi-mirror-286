@@ -1,0 +1,15 @@
+shirokumas/__init__.py,sha256=5_GvsubQ7OedIATbkMjgmGErFjqJOiKBc_xD_NuMbLE,625
+shirokumas/_agg.py,sha256=nxTEfU0I71ZxVf5RY98b1AztgmFTCAskozTKyGnSghE,3276
+shirokumas/_base.py,sha256=TeUSrAU-l3r0qNIQwpxNj1VQcQStXffQ-pysohvb9Pw,2260
+shirokumas/_binarize.py,sha256=p3Fe2xAi2fFx08ENb_LR74aR4fEthL5qnMV0gGrXco0,5983
+shirokumas/_count.py,sha256=510oQKwQsANZLQN-IlbzQ-iUaud6aEPFvKz5Vb_bVfY,2369
+shirokumas/_exceptions.py,sha256=QAkA6sgKESc5NCSLmx38D8OWjTtfcCNO8WBt6Ntf2CI,50
+shirokumas/_null.py,sha256=em1wlxemhfdmv-O30-E_wkKWhHv7RBrO_jhya9Pm3g0,1026
+shirokumas/_oof.py,sha256=jjFdwGpFF-4NTz3L34wjFi_beUIRiNTFYI691tXGIWA,3064
+shirokumas/_ordinal.py,sha256=pSPmuwn0V_MJsdtmsKJvroyU1P1N_IElKyRGPaIvHy8,2896
+shirokumas/_target.py,sha256=n1C-ilOQkMO-9kbOzqC40xMaEnePI_IR6CQY0pdywtA,10189
+shirokumas-0.0.4.dist-info/LICENSE,sha256=4W5ck0lcx6kI8zyYGxIX9FmPyPl5wrjWPDw7N7bqPOc,1066
+shirokumas-0.0.4.dist-info/METADATA,sha256=6kmq87XCi9yyj-hlz7QyiZ30MiyG93Oj9OWUyD8D2YA,3171
+shirokumas-0.0.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+shirokumas-0.0.4.dist-info/top_level.txt,sha256=fDsbugvthgxLfY7CvEVIQB8994okDhrgcprAzCBhdSA,11
+shirokumas-0.0.4.dist-info/RECORD,,
