@@ -1,0 +1,5 @@
+setup.py
+rtdpdf.egg-info/PKG-INFO
+rtdpdf.egg-info/SOURCES.txt
+rtdpdf.egg-info/dependency_links.txt
+rtdpdf.egg-info/top_level.txt
