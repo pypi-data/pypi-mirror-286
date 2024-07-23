@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+apache_bot_blocker/__init__.py
+apache_bot_blocker/__main__.py
+apache_bot_blocker/bad_bot_blocker.py
+apache_bot_blocker/bot_identifier.py
+apache_bot_blocker/file_reader.py
+apache_bot_blocker/ip_blacklist_manager.py
+apache_bot_blocker/visit_log_manager.py
+apache_bot_blocker.egg-info/PKG-INFO
+apache_bot_blocker.egg-info/SOURCES.txt
+apache_bot_blocker.egg-info/dependency_links.txt
+apache_bot_blocker.egg-info/entry_points.txt
+apache_bot_blocker.egg-info/top_level.txt
+tests/test_grep.py

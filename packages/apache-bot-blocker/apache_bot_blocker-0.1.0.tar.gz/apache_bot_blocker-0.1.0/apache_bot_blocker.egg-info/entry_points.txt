@@ -1,0 +1,2 @@
+[console_scripts]
+run_bot_blocker = apache_bot_blocker.__main__:main_function
