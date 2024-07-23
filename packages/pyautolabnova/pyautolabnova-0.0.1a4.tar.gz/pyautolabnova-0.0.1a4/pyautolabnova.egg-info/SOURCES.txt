@@ -1,0 +1,169 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyautolabnova/__init__.py
+pyautolabnova/autolab.py
+pyautolabnova/base.py
+pyautolabnova/directfunctions.py
+pyautolabnova/fixedCurrentExperiment.py
+pyautolabnova/generalfunctions-Enapa.py
+pyautolabnova/generalfunctions.py
+pyautolabnova/setup.py
+pyautolabnova/test1.py
+pyautolabnova/utilities.py
+pyautolabnova.egg-info/PKG-INFO
+pyautolabnova.egg-info/SOURCES.txt
+pyautolabnova.egg-info/dependency_links.txt
+pyautolabnova.egg-info/requires.txt
+pyautolabnova.egg-info/top_level.txt
+pyautolabnova/examples/__init__.py
+pyautolabnova/resource_files/ADC (A).vi
+pyautolabnova/resource_files/ADC (B).vi
+pyautolabnova/resource_files/ADC Example (A).vi
+pyautolabnova/resource_files/ADC Example (B).vi
+pyautolabnova/resource_files/Autolab Complete Example (A).vi
+pyautolabnova/resource_files/Autolab Complete Example (B).vi
+pyautolabnova/resource_files/Autolab.aliases
+pyautolabnova/resource_files/Autolab.llb
+pyautolabnova/resource_files/Autolab.lvlps
+pyautolabnova/resource_files/Autolab.lvproj
+pyautolabnova/resource_files/Avantes.dll
+pyautolabnova/resource_files/BlackList.xml
+pyautolabnova/resource_files/Connect.vi
+pyautolabnova/resource_files/DAC (A).vi
+pyautolabnova/resource_files/DAC (B).vi
+pyautolabnova/resource_files/DAC Example (A).vi
+pyautolabnova/resource_files/DAC Example (B).vi
+pyautolabnova/resource_files/DIO (A).vi
+pyautolabnova/resource_files/DIO (B).vi
+pyautolabnova/resource_files/DIO Example (A).vi
+pyautolabnova/resource_files/DIO Example (B).vi
+pyautolabnova/resource_files/EI (A).vi
+pyautolabnova/resource_files/EI (B).vi
+pyautolabnova/resource_files/EI Example (A).vi
+pyautolabnova/resource_files/EI Example (B).vi
+pyautolabnova/resource_files/EcoChemie.Autolab.Sdk.dll
+pyautolabnova/resource_files/EcoChemie.Autolab.Sdk.tlb
+pyautolabnova/resource_files/EcoChemie.Shared100.dll
+pyautolabnova/resource_files/EcoChemie100.dll
+pyautolabnova/resource_files/EcoChemie100.dll.config
+pyautolabnova/resource_files/FRA example (A).vi
+pyautolabnova/resource_files/FRA.vi
+pyautolabnova/resource_files/Infralution.Common.dll
+pyautolabnova/resource_files/Infralution.Controls.VirtualTree.dll
+pyautolabnova/resource_files/Infralution.Controls.dll
+pyautolabnova/resource_files/Infralution.RichText.dll
+pyautolabnova/resource_files/Load Procedure.vi
+pyautolabnova/resource_files/Measure Procedure.vi
+pyautolabnova/resource_files/Measured Data (A).vi
+pyautolabnova/resource_files/Measured Data (B).vi
+pyautolabnova/resource_files/Measured Data Example (A).vi
+pyautolabnova/resource_files/Measured Data Example (B).vi
+pyautolabnova/resource_files/Measuring Complete Example (A).vi
+pyautolabnova/resource_files/Measuring Complete Example (B).vi
+pyautolabnova/resource_files/Measuring Example (A).vi
+pyautolabnova/resource_files/Measuring Example (B).vi
+pyautolabnova/resource_files/Metrohm.Autolab.UI.Controls.dll
+pyautolabnova/resource_files/Metrohm.Autolab.UI.Styles.dll
+pyautolabnova/resource_files/MetrohmSamplerConfig.xsd
+pyautolabnova/resource_files/Path.vi
+pyautolabnova/resource_files/Procedure Parameters (A).vi
+pyautolabnova/resource_files/Procedure Parameters (B).vi
+pyautolabnova/resource_files/Procedure Parameters Example (A).vi
+pyautolabnova/resource_files/Procedure Parameters Example (B).vi
+pyautolabnova/resource_files/RHD.MicrocellHC.dll
+pyautolabnova/resource_files/RHD.SerialCommunication.dll
+pyautolabnova/resource_files/RHD.dll
+pyautolabnova/resource_files/Release.vi
+pyautolabnova/resource_files/SDK VB6 example (A).frm
+pyautolabnova/resource_files/SDK VB6 example (A).vbp
+pyautolabnova/resource_files/SDK VB6 example (A).vbw
+pyautolabnova/resource_files/SDK VB6 example (B).frm
+pyautolabnova/resource_files/SDK VB6 example (B).vbp
+pyautolabnova/resource_files/SDK VB6 example (B).vbw
+pyautolabnova/resource_files/Sampler Example.vi
+pyautolabnova/resource_files/Sampler Signals (A).vi
+pyautolabnova/resource_files/Sampler Signals (B).vi
+pyautolabnova/resource_files/Sampler.vi
+pyautolabnova/resource_files/WinUSBNet.dll
+pyautolabnova/resource_files/[TN#5] FRA example (A).vi
+pyautolabnova/resource_files/[TN#5] Measuring Complete Example(A).vi
+pyautolabnova/resource_files/Hardware Setup Files/Adk.IF041.bin
+pyautolabnova/resource_files/Hardware Setup Files/Adk.IF050.bin
+pyautolabnova/resource_files/Hardware Setup Files/Adk.bin
+pyautolabnova/resource_files/Hardware Setup Files/Adk.x
+pyautolabnova/resource_files/Hardware Setup Files/Readme.txt
+pyautolabnova/resource_files/Hardware Setup Files/AutolabIMP/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/M101/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT10/HardwareSetup.FRA2.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT100/HardwareSetup.FRA2.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT100/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT100N/HardwareSetup.FRA2.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT100N/HardwareSetup.FRA2V10.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT100N/HardwareSetup.FRA32M.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT100N/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT101/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT12/HardwareSetup.FRA2.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT12/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT128N/HardwareSetup.FRA2.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT128N/HardwareSetup.FRA2V10.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT128N/HardwareSetup.FRA32M.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT128N/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT20/HardwareSetup.FRA2.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT20/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT204/HardwareSetup.FRA32M.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT204/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT30/HardwareSetup.FRA2.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT30/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT302/HardwareSetup.FRA2.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT302/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT302F/HardwareSetup.FRA2V10.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT302F/HardwareSetup.FRA32M.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT302F/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT302N/HardwareSetup.FRA2.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT302N/HardwareSetup.FRA2V10.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT302N/HardwareSetup.FRA32M.xml
+pyautolabnova/resource_files/Hardware Setup Files/PGSTAT302N/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/uAutolabII/HardwareSetup.xml
+pyautolabnova/resource_files/Hardware Setup Files/uAutolabIII/HardwareSetup.xml
+pyautolabnova/resource_files/Manual/Autolab SDK manual.pdf
+pyautolabnova/resource_files/Metrohm/62041310.mtrf
+pyautolabnova/resource_files/Metrohm/62041320.mtrf
+pyautolabnova/resource_files/Metrohm/62041340.mtrf
+pyautolabnova/resource_files/Metrohm/62041350.mtrf
+pyautolabnova/resource_files/Metrohm/62041360.mtrf
+pyautolabnova/resource_files/Metrohm/62041370.mtrf
+pyautolabnova/resource_files/Metrohm/62041380.mtrf
+pyautolabnova/resource_files/Metrohm/62041390.mtrf
+pyautolabnova/resource_files/Metrohm/62041400.mtrf
+pyautolabnova/resource_files/Metrohm/62041410.mtrf
+pyautolabnova/resource_files/Metrohm/62041430.mtrf
+pyautolabnova/resource_files/Metrohm/62041440.mtrf
+pyautolabnova/resource_files/Metrohm/62041450.mtrf
+pyautolabnova/resource_files/Metrohm/62041460.mtrf
+pyautolabnova/resource_files/Metrohm/62041470.mtrf
+pyautolabnova/resource_files/Metrohm/62041710.mtrf
+pyautolabnova/resource_files/Metrohm/62041750.mtrf
+pyautolabnova/resource_files/Metrohm/62041760.mtrf
+pyautolabnova/resource_files/Metrohm/62041800.mtrf
+pyautolabnova/resource_files/Metrohm/62041810.mtrf
+pyautolabnova/resource_files/Metrohm/62041820.mtrf
+pyautolabnova/resource_files/Metrohm/62041830.mtrf
+pyautolabnova/resource_files/Metrohm/62041840.mtrf
+pyautolabnova/resource_files/Metrohm/62041900.mtrf
+pyautolabnova/resource_files/Standard Nova Procedures/Chrono amperometry fast.nox
+pyautolabnova/resource_files/Standard Nova Procedures/Chrono amperometry.nox
+pyautolabnova/resource_files/Standard Nova Procedures/Cyclic voltammetry with BA.nox
+pyautolabnova/resource_files/Standard Nova Procedures/Cyclic voltammetry with ECD.nox
+pyautolabnova/resource_files/Standard Nova Procedures/Cyclic voltammetry.nox
+pyautolabnova/resource_files/Standard Nova Procedures/FRA impedance potentiostatic.nox
+pyautolabnova/resource_files/x64/AS5216.dll
+pyautolabnova/resource_files/x64/MetrohmOEMInterface.dll
+pyautolabnova/resource_files/x64/QtCore4.dll
+pyautolabnova/resource_files/x86/AS5216.dll
+pyautolabnova/resource_files/x86/MetrohmOEMInterface.dll
+pyautolabnova/tests/__init__.py
+pyautolabnova/tests/test_directfunctions.py
+pyautolabnova/tests/test_generalfunctions.py
+pyautolabnova/tests/test_utilities.py
