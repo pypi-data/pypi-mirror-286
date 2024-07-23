@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: isaacsim-for-omnigibson
+Version: 1.0.2
+Home-page: https://github.com/StanfordVL/OmniGibson
+Author: Stanford University, Isaac Sim team
+Requires-Python: ==3.10.*
+Description-Content-Type: text/markdown
+
+This is a package of Isaacsim for Omnigibson, backward compatible with Linux x86_64 Ubuntu 20.04 (GLIBC 2.31) and Python 3.10. For more information on installing Isaac Sim using pip, please visit https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_python.html
