@@ -1,0 +1,16 @@
+emoji_data_python/__init__.py,sha256=UkKdmOzonNqWs6GeaxzIo2iu9tSSCeeCnTcO8WRBz1g,1327
+emoji_data_python/conversion.py,sha256=dwVNYSz3Re1Ln25j_8RTZ8gLco4pEzwVaPlDcxmp3nU,596
+emoji_data_python/emoji_char.py,sha256=w5PQrOPNktYZR894yrItr4TdbDY9wlSocGQr6pJVL1g,4708
+emoji_data_python/replacement.py,sha256=aCeWzzcJyrHdCw8La2pM4bSXj-WxmPR3ew4jbpY_NaQ,2123
+emoji_data_python/search.py,sha256=TvlTLJh732w39RcWXak2tclRs8OXqjqV683rIcdVUsE,1745
+emoji_data_python/data/emoji.json,sha256=sgWRkii7-4e0dHs_cBCopYWyG5oNpVQW9idb26XjLV0,1310145
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_conversion.py,sha256=6sPD1vOur-sQMseiVPfRodYmFmnmVgomNmjzZNdgY6Y,1452
+tests/test_emoji_char.py,sha256=XJVm_nx7WQluWb9NkbOy2zUAxa2Uxbg96DDJ5lPpjp0,3008
+tests/test_replacement.py,sha256=spDpXVwa2ZvSFb2Q8QW9PAFNti7Cgm9DuLGwDSg7odo,2418
+tests/test_search.py,sha256=YMr5ajmf-abaeNfwToDNuquZ43YSzb4XBOTRJLoLAs0,983
+emoji_data_python-1.6.0.dist-info/LICENSE,sha256=Rxmu6ZAGsdtTTBB3VB7cpWBQY_d8q4nq7KyBFeEx6To,1080
+emoji_data_python-1.6.0.dist-info/METADATA,sha256=al4KNff2r-NvbdmXHMzMCqkQdJamb4YWe2iLW_Gew3c,558
+emoji_data_python-1.6.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+emoji_data_python-1.6.0.dist-info/top_level.txt,sha256=TLcfJAeHVkQbsTmdekCW9eo2uuPX6GOAvEKeWSvyV24,24
+emoji_data_python-1.6.0.dist-info/RECORD,,
