@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pixelzyodi/__init__.py
+pixelzyodi/main.py
+pixelzyodi.egg-info/PKG-INFO
+pixelzyodi.egg-info/SOURCES.txt
+pixelzyodi.egg-info/dependency_links.txt
+pixelzyodi.egg-info/top_level.txt
