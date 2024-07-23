@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: optsys
+Version: 1.0.0
+Summary: optsys - Integrated toolkit for calculations of optical absorptions from MWAA or BLAnCA data
+Author-email: Tommaso Isolabella <tisolabella@ge.infn.it>
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: openpyxl
+Requires-Dist: xlrd
+Requires-Dist: enlighten
+

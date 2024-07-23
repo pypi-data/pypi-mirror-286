@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/absor/absor.egg-info/PKG-INFO
+src/absor/absor.egg-info/SOURCES.txt
+src/absor/absor.egg-info/dependency_links.txt
+src/absor/absor.egg-info/requires.txt
+src/absor/absor.egg-info/top_level.txt
