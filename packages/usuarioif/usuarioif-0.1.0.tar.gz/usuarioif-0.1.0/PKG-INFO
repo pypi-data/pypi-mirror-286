@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: usuarioif
+Version: 0.1.0
+Summary: 
+Author: Caique de Souza
+Author-email: Decaiquesouza@gmail.com>, Douglas Rocha <douglasedurocha@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (==4.1.4)
+Description-Content-Type: text/markdown
+
+# UsuarioIF
+
+# Todo comando deve ter `poetry run` no começo
+
+# Ex: poetry run python manage.py runserver
