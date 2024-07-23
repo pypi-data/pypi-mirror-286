@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: asyncro
+Version: 0.0.1
+Summary: Simple async module based on threading.
+Home-page: https://github.com/fladegh/asyncflow
+Author: justflade & nekit270
+Author-email: apbclub142@gmail.com
+License: UNKNOWN
+Project-URL: GitHub, https://github.com/fladegh/asyncflow
+Keywords: async thread threads
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Asyncro Library #
+
+## What is this? ##
+Simple async module based on threading
+
+## Quick Guide ##
+The module provides you an easy way to create an async function without using default methods:
+
+
+    @asyncro.asynchronous
+    def some_function(arr):
+        time.sleep(1)
+
+        for element in arr:
+            print(element)
+            time.sleep(0.1)
+
+    some_function(['hello', 'easy', 'async', 'module'])
+
+    >>>
+
+    hello
+    easy
+    async
+    module
+
+Just use the decorator.
+
+
+----------
+
+
+### Using ###
+
+
+Using the library is as simple and convenient as possible:
+
+Let's import it first:
+First, import everything from the library (use the `import asyncro` construct).
+
+The `wait` function is used to wait until an asynchronous function completes and returns its result.
+It will block the current thread, or, if it is in an asynchronous function, pause it, waiting for the result.
+
+
