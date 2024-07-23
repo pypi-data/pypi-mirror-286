@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: wordocx
+Version: 1.0.3
+Summary: A simple docx manipulation utility library
+Home-page: https://github.com/deigott/wordocx
+Author: Ashad Mohamed
+Author-email: deigott@proton.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-docx >=0.8.10
+Requires-Dist: docx2python >=1.27.0
+
+# wordocx
+
+A simple DOCX manipulation utility library.
+
+## Installation
+
+```sh
+pip install wordocx
+```
+
+## Usage
+
+```python
+from wordocx import getComments  # Replace 'your_function' with actual functions from your library
+
+# Example usage
+comments = getComments('example.docx')
+```
+
+**requirements.txt**
+```makefile
+python-docx>=0.8.10
+docx2python>=1.27.0
+jsonlib-python3>=1.6.1
+```
