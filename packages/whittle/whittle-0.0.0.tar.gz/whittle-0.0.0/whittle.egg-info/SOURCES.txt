@@ -1,0 +1,6 @@
+pyproject.toml
+whittle/__init__.py
+whittle.egg-info/PKG-INFO
+whittle.egg-info/SOURCES.txt
+whittle.egg-info/dependency_links.txt
+whittle.egg-info/top_level.txt

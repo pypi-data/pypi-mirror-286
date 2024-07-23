@@ -1,0 +1,6 @@
+[project]
+name = "whittle"
+authors = [
+    {name = "whittle team", email = "you@example.com"},
+]
+dynamic = ["version"]
