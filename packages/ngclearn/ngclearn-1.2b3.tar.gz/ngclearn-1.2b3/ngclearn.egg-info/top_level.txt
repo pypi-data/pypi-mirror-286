@@ -1,0 +1,8 @@
+6_7_2024_ngclearn
+DEV_DOCS_NOTES
+dist
+docs
+ngclearn
+test_code
+test_lava
+tests
