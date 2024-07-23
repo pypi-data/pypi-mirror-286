@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Milan</title>
+    <link rel="stylesheet" href="milan.css">
+  </head>
+  <body>
+    <template id="row">
+      <div class="row"></div>
+    </template>
+
+    <template id="column">
+      <div class="column"></div>
+    </template>
+
+    <template id="browser-window">
+      <div class="browser-window">
+        <div class="top-bar">
+          <div class="dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="tabs">
+            <div class="tab">
+              <div class="tab-icon">
+                <span class="material-icon">globe</span>
+                <img>
+              </div>
+              <div class="tab-title"></div>
+              <div class="tab-controls">
+                <span class="material-icon">close</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="toolbars">
+          <div class="toolbar">
+            <div class="controls">
+              <span class="material-icon back">arrow_back</span>
+              <span class="material-icon forward">arrow_forward</span>
+              <span class="material-icon reload">refresh</span>
+            </div>
+            <div class="address-bar">
+              <div class="address-bar-background"></div>
+              <input type="text" spellcheck="false">
+              <div class="url">
+                <span class="icon material-icon">lock</span>
+                <div class="protocol"></div>
+                <div class="separator"></div>
+                <div class="text"></div>
+              </div>
+            </div>
+            <div class="menu">
+              <span class="material-icon">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panes">
+          <div class="tab-pane">
+            <iframe></iframe>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <main>
+      <iframe id="background"></iframe>
+      <div class="grid"></div>
+      <div id="pixel"></div>
+    </main>
+
+    <script src="./cursor.js"></script>
+    <script src="./frontend.js" type="module"></script>
+  </body>
+</html>
