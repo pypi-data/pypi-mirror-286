@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gen-talking-head
+Version: 0.1.0
+Summary: Self-developed TalkingHead video synthesis algorithm
+Home-page: https://github.com/unipus-wuhan/Algo_GenTalkingHead_Inference.git
+Author: Chen Yu, Cheng ZhiZhao
+Author-email: chengyu2024@unipus.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: Pillow
+
+The algorithm consists of two parts: video synthesis and fine-tuning training.
