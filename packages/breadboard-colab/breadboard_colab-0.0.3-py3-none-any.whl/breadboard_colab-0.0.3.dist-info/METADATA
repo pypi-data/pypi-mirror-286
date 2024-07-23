@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: breadboard_colab
+Version: 0.0.3
+Summary: A Python library for running Breadboard on Colab
+Author-email: Kevin Xiao <xiaok10003@gmail.com>
+Keywords: breadboard,colab
+Requires-Python: >=3.8
+Requires-Dist: google
+Requires-Dist: google-api-core
+
