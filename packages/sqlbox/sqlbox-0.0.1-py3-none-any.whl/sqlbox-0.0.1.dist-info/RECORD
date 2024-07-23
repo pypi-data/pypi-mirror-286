@@ -1,0 +1,9 @@
+sqlbox/__init__.py,sha256=mxyPNtHVKzyDELPHX3FwWWTp_8kvuiFyK0B6ROtt-Xg,50
+sqlbox/creat_db.py,sha256=Kaou3kpyJtcMdkA9t52ba3RGDHuMD0baheTk7jxrqZY,1293
+sqlbox/exception_.py,sha256=QfZT3ht0nUHV2nBdmJvtLp6BnhelsEYh-Pm0efqqw-I,142
+sqlbox/sqlbox.py,sha256=Z_YrnYXp3RTiQcN-wcWIaRrakvICHkoh_1pDCswTCew,6474
+sqlbox/table.py,sha256=nuTW0ABpL3vzdqD8H0gq6TsrJy11uwlpEJVZnk7gaEI,6618
+sqlbox-0.0.1.dist-info/METADATA,sha256=OrWavRfnequQnd5oykj7fnPIcpz2go3aQ_VnqNZ3gi8,312
+sqlbox-0.0.1.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+sqlbox-0.0.1.dist-info/top_level.txt,sha256=NxJGDn9H63XcKVutMiRR_ePh6qQ1AyIQ1DsuXNqNshY,7
+sqlbox-0.0.1.dist-info/RECORD,,
