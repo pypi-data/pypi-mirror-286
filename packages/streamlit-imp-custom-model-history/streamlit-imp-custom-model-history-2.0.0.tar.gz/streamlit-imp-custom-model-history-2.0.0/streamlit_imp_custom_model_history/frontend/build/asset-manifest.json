@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./static/css/main.96934b68.css",
+    "main.js": "./static/js/main.06a25a9d.js",
+    "static/media/excel_file_icon.png": "./static/media/excel_file_icon.fc99a6556af7a636aa8d.png",
+    "static/media/output.png": "./static/media/output.55931810b4d5a9916a27.png",
+    "index.html": "./index.html",
+    "main.96934b68.css.map": "./static/css/main.96934b68.css.map",
+    "main.06a25a9d.js.map": "./static/js/main.06a25a9d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96934b68.css",
+    "static/js/main.06a25a9d.js"
+  ]
+}
