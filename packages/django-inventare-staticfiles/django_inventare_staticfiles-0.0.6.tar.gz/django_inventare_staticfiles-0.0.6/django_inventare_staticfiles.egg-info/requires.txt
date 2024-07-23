@@ -1,0 +1,15 @@
+django>=4.2
+
+[deploy]
+poethepoet
+
+[dev]
+black
+isort
+pre-commit
+poethepoet
+
+[test]
+toml
+coverage[toml]
+poethepoet

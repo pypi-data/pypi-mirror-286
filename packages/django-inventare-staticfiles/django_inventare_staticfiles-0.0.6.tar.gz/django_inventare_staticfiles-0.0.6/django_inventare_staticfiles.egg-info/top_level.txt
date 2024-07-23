@@ -1,0 +1,1 @@
+django_inventare_staticfiles

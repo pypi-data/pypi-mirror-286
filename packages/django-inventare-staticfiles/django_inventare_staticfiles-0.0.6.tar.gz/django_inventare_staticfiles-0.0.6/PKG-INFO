@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: django-inventare-staticfiles
+Version: 0.0.6
+Summary: Multiple ways to collect static files from vendor's and local build files
+Author-email: Eduardo Oliveira <eduardo_y05@outlook.com>
+Maintainer-email: Eduardo Oliveira <eduardo_y05@outlook.com>
+Project-URL: homepage, https://github.com/inventare/django-vendor
+Project-URL: documentation, https://github.com/inventare/django-vendor
+Keywords: django,vendor,static
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: django>=4.2
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: poethepoet; extra == "dev"
+Provides-Extra: test
+Requires-Dist: toml; extra == "test"
+Requires-Dist: coverage[toml]; extra == "test"
+Requires-Dist: poethepoet; extra == "test"
+Provides-Extra: deploy
+Requires-Dist: poethepoet; extra == "deploy"
+
+# django-vendor

@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+django_inventare_staticfiles.egg-info/PKG-INFO
+django_inventare_staticfiles.egg-info/SOURCES.txt
+django_inventare_staticfiles.egg-info/dependency_links.txt
+django_inventare_staticfiles.egg-info/not-zip-safe
+django_inventare_staticfiles.egg-info/requires.txt
+django_inventare_staticfiles.egg-info/top_level.txt
+django_inventare_staticfiles/templatetags/__init__.py
+django_inventare_staticfiles/templatetags/remote_url.py
+tests/tests_finder_remote_check.py
+tests/tests_finder_remote_find.py
+tests/tests_finder_remote_list.py
+tests/tests_tag_remote_url.py
