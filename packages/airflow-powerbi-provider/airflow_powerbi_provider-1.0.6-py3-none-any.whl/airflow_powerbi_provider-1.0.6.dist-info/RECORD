@@ -1,0 +1,13 @@
+PowerBI_Operator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PowerBI_Operator/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PowerBI_Operator/hooks/powerbi_hook.py,sha256=xVEobqYBavzfdRO0y2c13srcLzSW4RcL_nQKRs_Svdk,9208
+PowerBI_Operator/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PowerBI_Operator/models/powerbi_models.py,sha256=cHUrB38arsdmqBBK8p9bZaAe1zNRbafQMqXWs8nfUBI,350
+PowerBI_Operator/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PowerBI_Operator/operators/powerbi_refresh_dataset_operator.py,sha256=iTuiigMhps_iYcTtvOmCV78F8WGa5VgL7PNTwtUidy8,2647
+PowerBI_Operator/sensors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PowerBI_Operator/sensors/powerbi_refresh_dataset_sensor.py,sha256=EaEDw3WeG-rosXyxVu0Fr2FxSCfjuhdgqqh4s9EzAxk,1833
+airflow_powerbi_provider-1.0.6.dist-info/METADATA,sha256=aGvOUqSOV6reieqVA_SfvHnWbcuzOpnm6gSXYhk4ORw,943
+airflow_powerbi_provider-1.0.6.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+airflow_powerbi_provider-1.0.6.dist-info/licenses/LICENSE,sha256=wScutQv9C_Pu82bn0I-j0rzcjS_3UuBnLQzsadtOOJk,1192
+airflow_powerbi_provider-1.0.6.dist-info/RECORD,,
