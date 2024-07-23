@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tle-sat
+Version: 0.3.1
+Summary: TLE Sat Sim
+License: MIT
+Author: Christian Wygoda
+Author-email: christian.wygoda@satellitevu.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: platformdirs (>=4.2.2,<5.0.0)
+Requires-Dist: shapely (>=2.0.4,<3.0.0)
+Requires-Dist: skyfield (>=1.48,<2.0)
+Description-Content-Type: text/markdown
+
+# TLE Sat Sim
+
