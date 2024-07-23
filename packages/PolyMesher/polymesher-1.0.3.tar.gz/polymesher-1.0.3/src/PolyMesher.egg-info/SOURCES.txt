@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/PolyMesher.egg-info/PKG-INFO
+src/PolyMesher.egg-info/SOURCES.txt
+src/PolyMesher.egg-info/dependency_links.txt
+src/PolyMesher.egg-info/requires.txt
+src/PolyMesher.egg-info/top_level.txt
+src/pyPolyMesher/__init__.py
+src/pyPolyMesher/dFunctions.py
+src/pyPolyMesher/dxfImporter.py
+src/pyPolyMesher/exampleDomains.py
+src/pyPolyMesher/pyPolyMesher.py
