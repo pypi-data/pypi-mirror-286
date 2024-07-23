@@ -1,0 +1,2 @@
+[console_scripts]
+tamper02 = tamper02:hello
