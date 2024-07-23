@@ -1,0 +1,7 @@
+pandas==2.0.1
+numpy<2.0.0,>=1.24.1
+loggez==0.3
+pyarrow==11.0.0
+natsort==8.4.0
+lovely-tensors==0.1.15
+torch>=2.2.1
