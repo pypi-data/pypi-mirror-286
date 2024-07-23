@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tracely
+Version: 0.1.0
+Summary: Tracing tools
+License: Apache-2.0
+Author: Emeli Dral
+Author-email: emeli.dral@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: opentelemetry-api (>=1.25.0)
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc (>=1.25.0)
+Requires-Dist: opentelemetry-exporter-otlp-proto-http (>=1.25.0)
+Requires-Dist: opentelemetry-proto (>=1.25.0)
+Requires-Dist: opentelemetry-sdk (>=1.25.0)
+Requires-Dist: requests (>=2.32.0)
+Description-Content-Type: text/markdown
+
+# Tracely
+
+Tracing tool.
