@@ -1,0 +1,16 @@
+numpy
+scipy
+jax[cpu]
+flufl.lock
+addict
+pandas
+holoviews
+scityping
+
+[docs]
+jupyter-book
+jupytext
+matplotlib
+pint
+watermark
+ghp-import

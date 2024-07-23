@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/alcrene/publish-to-pypi
+	branch = main
+	commit = 397c1290cb5d81a4c3d383d86975817f166c9d00
+	parent = 99f8b44215b22f692f5623c7f715413a23b40f70
+	method = merge
+	cmdver = 0.4.6
