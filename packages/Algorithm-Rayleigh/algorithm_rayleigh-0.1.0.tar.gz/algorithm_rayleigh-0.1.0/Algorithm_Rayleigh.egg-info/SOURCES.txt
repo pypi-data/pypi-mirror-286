@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Algorithm_Rayleigh/__init__.py
+Algorithm_Rayleigh/algorithmRayleigh.c
+Algorithm_Rayleigh/dataPreProcessing.c
+Algorithm_Rayleigh/main.c
+Algorithm_Rayleigh.egg-info/PKG-INFO
+Algorithm_Rayleigh.egg-info/SOURCES.txt
+Algorithm_Rayleigh.egg-info/dependency_links.txt
+Algorithm_Rayleigh.egg-info/requires.txt
+Algorithm_Rayleigh.egg-info/top_level.txt
