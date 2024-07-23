@@ -1,0 +1,5 @@
+tests/.*
+requirements.txt
+src/encrypt-config/__pycache__/*
+rc/encrypt-config/tests/config/*
+dist/*

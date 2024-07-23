@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "enconfigs"
+version = "0.0.101"
+authors = [
+  { name="Sujay RS", email="sujayy1983@gmail.com" },
+]
+dependencies = [
+'PyYaml>=6.0',
+'cryptography>=42.0.5',
+'rich==13.3.4'
+]
+description = "Encrypt sensitive yaml/json data with user managed encryption key or a default package managed key."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/sujayy1983/Encrypted-Configs"
+Issues = "https://github.com/sujayy1983/Encrypted-Configs/issues"
