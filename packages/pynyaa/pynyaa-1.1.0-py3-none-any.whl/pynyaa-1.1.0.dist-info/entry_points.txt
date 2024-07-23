@@ -1,0 +1,3 @@
+[console_scripts]
+pynyaa=pynyaa.__main__:main
+
