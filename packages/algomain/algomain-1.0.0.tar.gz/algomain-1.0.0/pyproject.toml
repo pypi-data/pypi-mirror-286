@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "algomain"
+version = "1.0.0"
+description = "Library calling basic algorithms"
+authors = ["Sere221 <131906243+Sere221@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pendulum = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
