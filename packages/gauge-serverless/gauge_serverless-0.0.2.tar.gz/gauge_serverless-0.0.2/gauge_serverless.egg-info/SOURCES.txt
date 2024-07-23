@@ -1,0 +1,14 @@
+pyproject.toml
+cli/__init__.py
+cli/console.py
+cli/deploy.py
+cli/main.py
+gauge_serverless.egg-info/PKG-INFO
+gauge_serverless.egg-info/SOURCES.txt
+gauge_serverless.egg-info/dependency_links.txt
+gauge_serverless.egg-info/entry_points.txt
+gauge_serverless.egg-info/requires.txt
+gauge_serverless.egg-info/top_level.txt
+sdk/__init__.py
+sdk/config.py
+sdk/main.py
