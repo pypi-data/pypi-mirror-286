@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "telemify"
+version = "0.5.1"
+homepage = "https://github.com/portmind/telemify"
+repository = "https://github.com/portmind/telemify"
+description = "Seamless instrumentation of tracing, logging, and metrics in FastAPI and Starlette applications, using opentelemetry structlog, and prometheus-client."
+authors = ["Portmind's ML Engineering Team"]
+maintainers = [
+    "Sevak Harutyunyan <sevak.harutyunyan@portmind.com>",
+    "Tigran Vardanyan <tigran.vardanyan@portmind.com>",
+    "Armen Gabrielyan <armen.gabrielyan@portmind.com>",
+    "Vaghinak Vardanyan <vaghinak.vardanyan@portmind.com>"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+structlog = "^24.2.0"
+starlette = "^0.37.2"
+urllib3 = "^2.2.2"
+opentelemetry-distro = "^0.46b0"
+opentelemetry-exporter-otlp = "^1.25.0"
+opentelemetry-instrumentation-starlette = "^0.46b0"
+opentelemetry-instrumentation-httpx = "^0.46b0"
+opentelemetry-instrumentation-sqlalchemy = "^0.46b0"
+opentelemetry-instrumentation-celery = "^0.46b0"
+opentelemetry-instrumentation-botocore = "^0.46b0"
+opentelemetry-instrumentation-threading = "^0.46b0"
+opentelemetry-instrumentation-jinja2 = "^0.46b0"
+prometheus-client = "^0.20.0"
+msgpack = "^1.0.8"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+mypy = "^1.10.0"
+pre-commit = "^3.7.1"
+commitizen = "^3.27.0"
+ruff = "^0.4.10"
+
+
+[tool.ruff.lint]
+select = [
+    "I", # isort
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+    "F", # Pyflakes
+]
+
+
+[tool.ruff.format]
+quote-style = "double"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
