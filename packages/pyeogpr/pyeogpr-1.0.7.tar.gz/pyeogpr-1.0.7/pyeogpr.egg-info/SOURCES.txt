@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pyeogpr.egg-info/PKG-INFO
+pyeogpr.egg-info/SOURCES.txt
+pyeogpr.egg-info/dependency_links.txt
+pyeogpr.egg-info/requires.txt
+pyeogpr.egg-info/top_level.txt
+src/__init__.py
+src/pyeogpr/__init__.py
+src/pyeogpr/main.py
+src/pyeogpr/sensors.py
+src/pyeogpr/udfgpr.py
+src/pyeogpr/udfsgolay.py
