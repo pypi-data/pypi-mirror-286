@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+randonneur_data/__init__.py
+randonneur_data.egg-info/PKG-INFO
+randonneur_data.egg-info/SOURCES.txt
+randonneur_data.egg-info/dependency_links.txt
+randonneur_data.egg-info/requires.txt
+randonneur_data.egg-info/top_level.txt
+randonneur_data/data/registry.json
+randonneur_data/data/simapro-ecoinvent-3.10-cutoff.xz
+randonneur_data/data/simapro-ecoinvent-3.8-cutoff.xz
+randonneur_data/data/simapro-ecoinvent-3.9.1-cutoff.xz
