@@ -1,0 +1,16 @@
+class Asegurados:
+    nombre_asegurado1: str
+    nombre_asegurado2: str
+    nombre_asegurado3: str
+    nombre_asegurado4: str
+    nombre_asegurado5: str
+    fecha_nacimiento_asegurado1: str
+    fecha_nacimiento_asegurado2: str
+    fecha_nacimiento_asegurado3: str
+    fecha_nacimiento_asegurado4: str
+    fecha_nacimiento_asegurado5: str
+    parentesco_asegurado1: str
+    parentesco_asegurado2: str
+    parentesco_asegurado3: str
+    parentesco_asegurado4: str
+    parentesco_asegurado5: str

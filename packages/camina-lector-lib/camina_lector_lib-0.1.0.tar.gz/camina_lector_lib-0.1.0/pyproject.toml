@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "camina-lector-lib"
+version = "0.1.0"
+description = "Libreria para leer pdf"
+authors = ["marco_celestino <marco.celestino@enitma.com>"]
+readme = "README.md"
+packages = [{include = "camina-lector-lib"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pymupdf = "^1.24.0"
+python-dateutil = "^2.9.0.post0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
