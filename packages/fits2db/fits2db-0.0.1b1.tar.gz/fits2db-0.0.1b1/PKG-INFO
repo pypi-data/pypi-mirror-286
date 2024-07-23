@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: fits2db
+Version: 0.0.1b1
+Summary: A small example package
+Author-email: Cédric Renda <gosow9@hotmail.com>
+Project-URL: Homepage, https://github.com/pmodwrc/fits2db
+Project-URL: Issues, https://github.com/pmodwrc/fits2db/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Software Distribution
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.0
+Requires-Dist: pydantic>=2.8.0
+Requires-Dist: Jinja2>=2.5.0
+Requires-Dist: astropy>=6.0.0
+Requires-Dist: numpy<2.0,>=1.0.0
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/pmodwrc/fits2db/main/docs/layout/images/fits_logo.png" alt="fits2db" width="500"/>
+</p>
+
+-----------------
+
+# fits2db: A cli tool to ingest fits files into an sql db
+| | |
+| --- | --- |
+| Testing | [![CI - Test](https://img.shields.io/github/actions/workflow/status/pmodwrc/fits2db/unit_test.yml?branch=main)](https://github.com/pandas-dev/pandas/actions/workflows/unit-tests.yml) [![codecov](https://codecov.io/github/pmodwrc/fits2db/graph/badge.svg?token=92UPKXEOIH)](https://codecov.io/github/pmodwrc/fits2db) [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)|
+| Package | [![PyPI Latest Release](https://img.shields.io/pypi/v/fits2db.svg)](https://pypi.org/project/fits2db/) [![PyPI Downloads](https://img.shields.io/pypi/dm/fits2db.svg?label=PyPI%20downloads)](https://pypi.org/project/fits2db/) |
+
+
+This is a cli tool to extract table data from a fits file and write it down in a database.
+
+## Supported databases
+
+| Database   |      Supported      |
+|----------|:-------------:|
+| MySql|  Yes |
+

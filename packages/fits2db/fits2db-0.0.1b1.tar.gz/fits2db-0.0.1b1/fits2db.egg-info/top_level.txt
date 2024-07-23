@@ -1,0 +1,5 @@
+build
+dist
+docs
+fits2db
+tests
