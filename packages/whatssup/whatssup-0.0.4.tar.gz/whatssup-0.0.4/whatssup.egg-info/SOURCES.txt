@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+whatssup/__init__.py
+whatssup/timemon.py
+whatssup.egg-info/PKG-INFO
+whatssup.egg-info/SOURCES.txt
+whatssup.egg-info/dependency_links.txt
+whatssup.egg-info/entry_points.txt
+whatssup.egg-info/requires.txt
+whatssup.egg-info/top_level.txt
