@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ejabberd-extauth"
+version = "0.2.0"
+description = "Library for writing ejabberd external auth scripts in Python"
+authors = ["Dominik George <nik@naturalnet.de>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyyaml = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
