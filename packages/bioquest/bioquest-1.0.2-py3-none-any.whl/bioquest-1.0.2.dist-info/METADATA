@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bioquest
+Version: 1.0.2
+Summary: Bioinformatics data analysis and visualization toolkit
+Author: 生信探索 BioQuest
+Author-email: aubot@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bioinfokit (==2.*)
+Requires-Dist: joblib (>=1.2.0,<2.0.0)
+Requires-Dist: matplotlib (==3.*)
+Requires-Dist: matplotlib-venn (>=0.11,<0.12)
+Requires-Dist: numpy (>=1.19.5,<2.0.0)
+Requires-Dist: pandas (>1.5,<=2.2.2)
+Requires-Dist: scikit-learn (>=1.0,<2.0)
+Requires-Dist: scipy (>=1.6.0,<2.0.0)
+Requires-Dist: seaborn (==0.*)
+Requires-Dist: threadpoolctl (>=3.1.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+Python functions for Bioinformatics
+
