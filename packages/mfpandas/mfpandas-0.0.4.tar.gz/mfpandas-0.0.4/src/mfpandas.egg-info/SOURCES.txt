@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+offsets.json
+setup.py
+src/mfpandas/__init__.py
+src/mfpandas/dcollect.py
+src/mfpandas/irrdbu00-offsets.json
+src/mfpandas/irrdbu00.py
+src/mfpandas.egg-info/PKG-INFO
+src/mfpandas.egg-info/SOURCES.txt
+src/mfpandas.egg-info/dependency_links.txt
+src/mfpandas.egg-info/requires.txt
+src/mfpandas.egg-info/top_level.txt
+src/mfpandas/DCOLLECT/__init__.py
+src/mfpandas/IRRDBU00/__init__.py
+src/mfpandas/IRRDBU00/getOffsets.py
