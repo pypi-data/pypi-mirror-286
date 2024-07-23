@@ -1,0 +1,9 @@
+rignore-0.4.0.dist-info/METADATA,sha256=ZzQ6ko9GdNyLWw1I9LAH7la64GzFQLd7U6e9EnAPXPc,3768
+rignore-0.4.0.dist-info/WHEEL,sha256=rKYaBlT-YR1DWDV7fB3oqVXYYBpnHpJUqysyEmhIcU8,107
+rignore-0.4.0.dist-info/license_files/LICENSE,sha256=cVeSUfwn7g0UsWhiiGCIB-PKRr-Fut9GSN5NKDzYpTI,1072
+rignore.libs/libgcc_s-5b5488a6.so.1,sha256=HGKUsVmTeNAxEdSy7Ua5Vh_I9FN3RCbPWzvZ7H_TrwE,2749061
+rignore/__init__.py,sha256=w1wxNNym5aUET3jqoi3Wf_qpMXvrKA6-yO4ApthRWXg,111
+rignore/__init__.pyi,sha256=xcCGIXxxontDxn3cSgVldpLG1eAn5CaJ6IK2GR8Azjo,1761
+rignore/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rignore/rignore.cpython-312-arm-linux-musleabihf.so,sha256=Y5KAahbqB4RLCYcB1hOGds_jEAkS_1-J49zsTETM3rA,2157025
+rignore-0.4.0.dist-info/RECORD,,
