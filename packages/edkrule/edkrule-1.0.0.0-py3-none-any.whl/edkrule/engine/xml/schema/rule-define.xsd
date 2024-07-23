@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.edkrule.org/XMLSchema"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.edkrule.org/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:attributeGroup name="RuleDefineAttributeGroupDef">
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="class" type="xs:string" use="required"/>
+        <xs:attribute name="package" type="xs:string" use="optional"/>
+    </xs:attributeGroup>
+
+    <xs:element name="DataType">
+        <xs:complexType>
+            <xs:attributeGroup ref="RuleDefineAttributeGroupDef"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Identifier">
+        <xs:complexType>
+            <xs:attributeGroup ref="RuleDefineAttributeGroupDef"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Expression">
+        <xs:complexType>
+            <xs:attributeGroup ref="RuleDefineAttributeGroupDef"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Expressions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Expression" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="package" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Identifiers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Identifier" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="package" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="DataTypes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="DataType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="package" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Engine" >
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="DataTypes" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="Identifiers" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="Expressions" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="parent" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
