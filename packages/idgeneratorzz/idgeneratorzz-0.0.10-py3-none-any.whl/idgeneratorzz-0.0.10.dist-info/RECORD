@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/idgeneratorzz.py,sha256=nmhvU36AwZg8DqMdp1hYiFITSw745irLvGSEpPK3SKI,2066
+src/utils.py,sha256=a5CY1XEk0Maki5VXbQCMFJl46Q1CuegrRqzFpAEAY2A,408
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_idgeneratorzz.py,sha256=fdD2bv0CEkO2xit786QO6127lv3UZa6eoMAChEdo40Q,1768
+idgeneratorzz-0.0.10.dist-info/LICENSE,sha256=jjDrZcElFNuWLLVTSC3VgbFe9kaW5FayanPQdq_dlgc,1068
+idgeneratorzz-0.0.10.dist-info/METADATA,sha256=eVXGR5tjj2QcRQaRcxYSWLwd9HEVinPnx9AJSWID0eY,1258
+idgeneratorzz-0.0.10.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+idgeneratorzz-0.0.10.dist-info/top_level.txt,sha256=ko5Zp-GH1-aCqmTB-_pzAfcKWZ9D29cRgzo8EmAy2_k,9
+idgeneratorzz-0.0.10.dist-info/RECORD,,
