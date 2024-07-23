@@ -1,0 +1,2 @@
+[console_scripts]
+pydistman = pydistman.__main__:main
