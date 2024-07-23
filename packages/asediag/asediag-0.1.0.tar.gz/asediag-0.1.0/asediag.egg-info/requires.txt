@@ -1,0 +1,7 @@
+cartopy
+matplotlib
+numpy
+pandas
+setuptools
+xarray
+six
