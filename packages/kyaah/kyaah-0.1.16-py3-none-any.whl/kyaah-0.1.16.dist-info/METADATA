@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: kyaah
+Version: 0.1.16
+Summary: Kyaah abstract away cognitive over-head of sending SMTP mail, together with other mailing operations things like, mail with file, tokens etc.
+Home-page: https://kyaah.readthedocs.io
+Author: Usman Musa
+Author-email: usmanmusa1920@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/kyaah
+Project-URL: Documentation, https://kyaah.readthedocs.io
+Project-URL: Source, https://github.com/usmanmusa1920/kyaah
+Keywords: kyaah
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiosmtpd >=1.4.6
+Requires-Dist: geocoder >=1.38.1
+Requires-Dist: itsdangerous ==0.24
+Requires-Dist: rgbpy >=0.0.1
+
+# Kyaah
+
+Kyaah abstract away cognitive over-head of sending SMTP, POP3, and IMAP mail, together with other mailing operations things like, mail with file, tokens etc.
+
+[![Downloads Month Badge](https://static.pepy.tech/badge/kyaah/month)](https://pypi.org/project/kyaah)
+[![License Badge](https://img.shields.io/pypi/l/kyaah.svg)](https://pypi.org/project/kyaah)
+[![Supported Wheel Badge](https://img.shields.io/pypi/wheel/kyaah.svg)](https://pypi.org/project/kyaah)
+[![Supported Versions Badge](https://img.shields.io/pypi/pyversions/kyaah.svg)](https://pypi.org/project/kyaah)
+
+# Installation & Usage
+
+First, you are recommended to create a virtual environment `python -m venv venv` and then activate it `source venv/bin/activate`, next install the library using:
+
+```sh
+    pip install kyaah
+```
+
+Wait for the installation to finish, basically the library was uploaded using `sdist` (Source Distribution) and `bdist_wheel` (Built Distribution).
+
+After that, simply import the library and set payload, which include `sender`, `receiver`, `subject`, `body`, and `password` and lastly call the `send` method and pass the `payload` as a keyword just like the sample below:
+
+```python
+    import kyaah
+        
+    payload = dict(
+        sender = "myemail@gmail.com",
+        receiver = ["receiver@gmail.com"],
+        subject = "Hellow world!",
+        body = "Lorem ipsum dolor sit amet adipisicing elit, rerum voluptate ipsum volupt.",
+        password = "*********",
+    )
+
+    kyaah.send(credentials=payload)
+```
+
+## Useful links
+
+-   Documentations: https://kyaah.readthedocs.io
+-   Repository: https://github.com/usmanmusa1920/kyaah
+-   PYPI Release: https://pypi.org/project/kyaah
+
+
+Change Log
+==========
+
+## 0.1.16 (22/july/2024)
+
+- 0.1.16 Release
+
+    - Fixed api(s) for retrieving sender credentials from environment variable
+    - Include the `aiosmtpd` library as kyaah dependency for testing mail locally
+    - Revised local smtp server. Since `The asyncore module is deprecated and will be removed in Python 3.12. The recommended replacement is asyncio import asyncore` by implementing cli command for starting local SMTP server
+
+- 0.1.15 Release
+
+    - Update CHANGELOG version of release (mistake of previous release v0.1.14 i.e `(*/august/2024)` to `(21/july/2024)`)
+
+- 0.1.14 Release
+
+    - Changed naming convention of functions in `camelCase` to `snake_case`. Also making sure all other class are in `PascalCase`
+    - Implemented a single `send` function for all general sending mail operations (plain, file, image, & page), which replace previous ones:
+        - `local_mail`, `send_mail`, `send_images`, `send_files`, and `send_page`
+    - Implemented a single `fetch` function for fetching mail (POP & IMAP), which replace previous ones:
+        - `fetch_mail_POP`, and `fetch_mail_IMAP`
+    - Internal arrangement suggestion/guess of mail server
+    - Fixed mail with page, to ensure it send content of the page not the page itself
+
+- 0.1.13 Release
+
+    - Add character style print (text & logging style)
+    - Add POP and IMAP
+    - Improve files naming slices
+    - Include email link (with expiration age)
+    - Changed the a required module of 'pstyle' to 'rgbpy'
+
+- 0.1.12 Release
+
+Docs
+
+- 0.1.11 Release
+
+Docs
+
+- 0.1.10 Release
+
+OS compatibility
+
+- 0.1.9 Release
+
+- 0.1.8 Release
+
+This release mostly is for adding more documentations.
+
+
