@@ -1,0 +1,6 @@
+requests
+aiohttp
+
+[dev]
+pytest>=6.0
+flake8>=3.9.0
