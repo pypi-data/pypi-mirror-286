@@ -1,0 +1,12 @@
+pyf_login/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyf_login/jwt_token.py,sha256=XU0WFgoOn_0ggEqxAtCTQKINuqXI0R3hbKhPnqFD76k,2971
+pyf_login/models.py,sha256=j7KDf7jXEZLXjYQZtmTipddP3-6YM-hudaqWFroKBss,2625
+pyf_login/serializers.py,sha256=yja4VbmAY_18Fdsj3sFfRKoySksxJyN8J699DZXvNUk,1290
+pyf_login/urls.py,sha256=rlyinMBeft2U4EU1UBE0EAXdk_aTw-CgGBRNspObBgE,267
+pyf_login/utils.py,sha256=WmnLPSMk-Ig7VjP_yGF9580xvOrfTvnFnSn_WdrAyUU,531
+pyf_login/views.py,sha256=LS-yu0eBqnCgtmRCcme0j_S1mDruw__MqyyMHzOA9nY,1484
+pyf_login-0.10.dist-info/LICENSE,sha256=N6BAcdmjSHc_Z2lrU4id2hd9uwdjhYZstVpNqPQNSE0,40
+pyf_login-0.10.dist-info/METADATA,sha256=GFmDmfT8zSKhrJFYOt8CgSU8aEAQU1fWWxveyvfMKCk,859
+pyf_login-0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyf_login-0.10.dist-info/top_level.txt,sha256=y8naWUtbwfc44dhYhsaQ5cV-V435sLNubrVJZMLCnh8,10
+pyf_login-0.10.dist-info/RECORD,,
