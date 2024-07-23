@@ -1,0 +1,8 @@
+nest-asyncio>=1.2.0
+qiskit-terra>=0.16.0
+requests>=2.19
+websockets>=7
+pyjwt>=2.4.0
+keyring>=10.6.0
+pytket>=0.3.0
+pytket-quantinuum>=0.9.0
