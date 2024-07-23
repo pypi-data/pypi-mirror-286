@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: simplyprint-ws-client
+Version: 1.0.0rc24
+Summary: SimplyPrint Websocket Client
+Home-page: https://simplyprint.io
+License: AGPL-3.0-or-later
+Keywords: simplyprint,websocket,client
+Author: SimplyPrint
+Author-email: contact@simplyprint.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: uvloop
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: async-timeout ; python_version < "3.11"
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: netifaces (>=0.11.0,<0.12.0)
+Requires-Dist: platformdirs (>=4.1.0,<5.0.0)
+Requires-Dist: psutil (>=5.9.7,<6.0.0)
+Requires-Dist: sentry-sdk (>=1.39.0,<2.0.0)
+Requires-Dist: traitlets (>=5.14.0,<6.0.0)
+Requires-Dist: typing-extensions ; python_version < "3.11"
+Requires-Dist: yarl (>=1.9.4,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/SimplyPrint/printer-ws-client/issues
+Project-URL: Repository, https://github.com/SimplyPrint/printer-ws-client
+Description-Content-Type: text/markdown
+
+# SimplyPrint Websocket Client
+
+> A python package to simplify the use of the SimplyPrint websocket API to easily integrate with
+> the <https://simplyprint.io> platform.
+
+This package version v1.0.0 is under major development and is not yet ready for use. API is not stable and will change.
+
+## Usage
+
+TBD
+
+## TODO
+
+- [ ] Add usage documentation
+- [ ] Add examples
+- [ ] Add tests for event system and reactivity
+- [ ] Improve reactivity API and internals (move away from traitlets)
+- [ ] Unify event bus api with printer events.
