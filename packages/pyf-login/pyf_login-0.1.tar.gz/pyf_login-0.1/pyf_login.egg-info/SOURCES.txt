@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyf_login.egg-info/PKG-INFO
+pyf_login.egg-info/SOURCES.txt
+pyf_login.egg-info/dependency_links.txt
+pyf_login.egg-info/requires.txt
+pyf_login.egg-info/top_level.txt
