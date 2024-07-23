@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sourceline
+Version: 0.0.4
+Summary: Query source line from the symbol name
+Author: Jun Chen
+Author-email: junc76@gmail.com
+Requires-Python: >=3.7
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
