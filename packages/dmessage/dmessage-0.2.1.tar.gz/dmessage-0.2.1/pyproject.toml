@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dmessage"
+version = "0.2.1"
+description = "A simple message sender for Discord. It can send messages to a channel through a webhook."
+authors = ["ChengTze-Wu <yaoop3050777@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/ChengTze-Wu/DMessage"
+keywords = ["discord", "message", "sender", "webhook", "notification"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/ChengTze-Wu/DMessage/issues"

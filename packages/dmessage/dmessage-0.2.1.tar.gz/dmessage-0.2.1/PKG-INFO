@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dmessage
+Version: 0.2.1
+Summary: A simple message sender for Discord. It can send messages to a channel through a webhook.
+Home-page: https://github.com/ChengTze-Wu/DMessage
+Keywords: discord,message,sender,webhook,notification
+Author: ChengTze-Wu
+Author-email: yaoop3050777@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/ChengTze-Wu/DMessage/issues
+Project-URL: Repository, https://github.com/ChengTze-Wu/DMessage
+Description-Content-Type: text/markdown
+
+# DMessage
+
+DMessage 是一個簡單的 Python 套件，透過 webhook 發送訊息到 Discord 的 channel。
+
+## 安裝
+
+```bash
+pip install dmessage
+```
+
+## 使用
+
+```python
+import os
+from dmessage import DMessage
+
+os.environ["WEBHOOK_URL"] = "YOUR_WEBHOOK_URL"
+
+dm = DMessage()
+dm.send("Hello, World!")
+```
