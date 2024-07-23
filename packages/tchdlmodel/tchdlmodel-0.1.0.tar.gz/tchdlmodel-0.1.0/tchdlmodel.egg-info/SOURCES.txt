@@ -1,0 +1,7 @@
+README.md
+setup.py
+tchdlmodel.egg-info/PKG-INFO
+tchdlmodel.egg-info/SOURCES.txt
+tchdlmodel.egg-info/dependency_links.txt
+tchdlmodel.egg-info/requires.txt
+tchdlmodel.egg-info/top_level.txt
