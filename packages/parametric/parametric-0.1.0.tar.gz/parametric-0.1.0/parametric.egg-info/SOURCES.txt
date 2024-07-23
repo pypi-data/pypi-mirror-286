@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+parametric/__init__.py
+parametric/main.py
+parametric.egg-info/PKG-INFO
+parametric.egg-info/SOURCES.txt
+parametric.egg-info/dependency_links.txt
+parametric.egg-info/top_level.txt
+tests/test_main.py
