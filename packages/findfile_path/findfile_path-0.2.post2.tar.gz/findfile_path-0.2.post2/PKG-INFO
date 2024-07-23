@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: findfile_path
+Version: 0.2.post2
+Summary: Find file on path with optional extensions
+Home-page: https://github.com/clearclaw/findfile_path
+License: GPL-3.0-only
+Keywords: find_file,search_file
+Author: J C Lawrence
+Author-email: claw@kanga.nu
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: logtool (>=0.4.post1)
+Requires-Dist: path (>=16.14.0)
+Project-URL: Repository, https://github.com/clearclaw/findfile_path
+Description-Content-Type: text/x-rst
+
+findfile_path
+=============
+
+Find the first instance of a file on a path of directories, with
+possible file extensions.
+
+::
+
+  findfile_path (fname, path, exts = None)
+
+fname can be either a string or Path object, or an iterable of strings
+or Path objects.  The first matching file in the first directory on
+path (a list of string or Path objects) with the first extension (exts
+-- an optional list of strings) is returned, else None.
+

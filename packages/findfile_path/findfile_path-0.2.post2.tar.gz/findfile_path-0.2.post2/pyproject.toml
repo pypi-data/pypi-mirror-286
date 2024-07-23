@@ -1,0 +1,35 @@
+[tool.poetry]
+authors = ["J C Lawrence <claw@kanga.nu>"]
+description = "Find file on path with optional extensions"
+keywords = ["find_file", "search_file",]
+license = "GPL-3.0-only"
+name = "findfile_path"
+packages = [{include = "findfile_path"}]
+readme = "README.rst"
+repository = "https://github.com/clearclaw/findfile_path"
+version="0.2.post2"
+
+[tool.poetry.dependencies]
+logtool= ">=0.4.post1"
+path = ">=16.14.0"
+python = "^3.8"
+
+[tool.poetry-dynamic-versioning]
+dirty = true
+enable = false
+format-jinja = """
+    {%- if dirty != "dirty" -%}
+        {{ serialize_pep440(base, stage, revision, distance|string) }}
+    {%- else -%}
+        {{ serialize_pep440(base, stage, revision, dev=distance, metadata=[commit]) }}
+    {%- endif -%}
+"""
+metadata = true
+style = "pep440"
+tagged-metadata = true
+pattern = "default-unprefixed"
+vcs = "git"
+
+[build-system]
+build-backend = "poetry_dynamic_versioning.backend"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
