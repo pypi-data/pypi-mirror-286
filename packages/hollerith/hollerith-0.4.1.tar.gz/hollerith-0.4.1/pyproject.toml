@@ -1,0 +1,27 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "cython>=0.29",
+    "numpy==2.0.0", #oldest-supported-numpy is 1.x and hollerith supports only 2.0+
+    "setuptools>=70.3.0",
+    "wheel>=0.43.0",
+    "cibuildwheel==2.19.2",
+]
+
+[tool.pytest.ini_options]
+junit_family= "legacy"
+filterwarnings = [
+    "ignore::FutureWarning",
+    "ignore::PendingDeprecationWarning",
+    "ignore::DeprecationWarning",
+    # bogus numpy ABI warning (see numpy/#432)
+    "ignore:.*numpy.dtype size changed.*:RuntimeWarning",
+    "ignore:.*numpy.ufunc size changed.*:RuntimeWarning",
+    "ignore:.*Distutils was imported before Setuptools*",
+    "ignore:.*numpy.ndarray size changed*",
+]
+
+[tool.cibuildwheel.macos]
+# https://cibuildwheel.readthedocs.io/en/stable/faq/#apple-silicon
+archs = ["x86_64", "universal2"]
+test-skip = ["*_arm64", "*_universal2:arm64"]
