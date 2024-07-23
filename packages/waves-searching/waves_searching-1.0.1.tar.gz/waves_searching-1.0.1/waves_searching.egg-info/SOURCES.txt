@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+WavesSearching/WavesSearching.py
+WavesSearching/__init__.py
+WavesSearching/disc_waves.py
+WavesSearching/discrete_funcs.py
+WavesSearching/utils.py
+waves_searching.egg-info/PKG-INFO
+waves_searching.egg-info/SOURCES.txt
+waves_searching.egg-info/dependency_links.txt
+waves_searching.egg-info/requires.txt
+waves_searching.egg-info/top_level.txt
