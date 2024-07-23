@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "crop-yolo-v8"
+version = "1.0.6"
+description = "put yolov8m/n/x.pt in ~/.yolov8 and run"
+authors = ["tadeasf <taddy.fort@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ultralytics = "^8.2.61"
+typer = "^0.12.3"
+rich = "^13.7.1"
+opencv-python = "^4.10.0.84"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+crop-yolo-v8 = "crop_yolo_v8.main:main"
