@@ -1,0 +1,12 @@
+LICENSE.txt
+pyproject.toml
+setup.py
+src/woodAI/__init__.py
+src/woodAI/__init__.pyi
+src/woodAI/ai_chat.py
+src/woodAI.egg-info/PKG-INFO
+src/woodAI.egg-info/SOURCES.txt
+src/woodAI.egg-info/dependency_links.txt
+src/woodAI.egg-info/requires.txt
+src/woodAI.egg-info/top_level.txt
+test/test_chat.py
