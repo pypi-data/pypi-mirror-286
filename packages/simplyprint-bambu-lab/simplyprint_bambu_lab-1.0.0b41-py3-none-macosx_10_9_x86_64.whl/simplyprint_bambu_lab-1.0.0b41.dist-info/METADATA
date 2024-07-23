@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simplyprint-bambu-lab
+Version: 1.0.0b41
+Summary: SimplyPrint Bambu Lab integration
+Requires-Python: >=3.11
+Requires-Dist: simplyprint-ws-client ==1.0.0rc24
+Requires-Dist: paho-mqtt ==2.*
+Requires-Dist: hypercorn
+Requires-Dist: quart
+Requires-Dist: certifi
+Requires-Dist: pystray
+Requires-Dist: semver
+Requires-Dist: pydantic
+Requires-Dist: apscheduler
+Requires-Dist: setuptools[core]
+Requires-Dist: opencv-python-headless ; platform_machine != "armv7l"
+Requires-Dist: numpy <2 ; platform_machine != "armv7l"
+Requires-Dist: avideostream ; platform_machine == "armv7l"
+

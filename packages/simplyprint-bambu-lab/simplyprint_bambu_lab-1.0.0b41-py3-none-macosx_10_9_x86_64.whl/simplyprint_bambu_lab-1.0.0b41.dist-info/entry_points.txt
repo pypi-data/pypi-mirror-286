@@ -1,0 +1,2 @@
+[console_scripts]
+simplyprint-bambu = simplyprint_bambu.__main__:main
