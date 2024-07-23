@@ -1,0 +1,7 @@
+robotic_arm_package2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robotic_arm_package2/rm_ctypes_wrap.py,sha256=9Zku2Myk4san3NxOvBLjlRL_Pzg1YaI08Ya_duWcz-M,173305
+robotic_arm_package2/rm_robot_interface.py,sha256=6kFLwERU7iEiVibcpeQu2RVTex33X06JQUjD2CugXmg,232209
+robotic_arm_package2-0.2.9.dist-info/METADATA,sha256=8OQ1yc5xWPhzoXN3PBbRenuEhz1HekzoJlPHyVvj7LM,567
+robotic_arm_package2-0.2.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+robotic_arm_package2-0.2.9.dist-info/top_level.txt,sha256=4duoFbfYb0yqWkQr8siRW8rO_1Wtjy_tswdFFpoTCIg,21
+robotic_arm_package2-0.2.9.dist-info/RECORD,,
