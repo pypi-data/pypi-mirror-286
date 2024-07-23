@@ -1,0 +1,12 @@
+docker_shaper/__init__.py,sha256=qaHWnDXgHrlChYgmhDbDsbMoKPP7vJJrwzTR7zlQfo8,74
+docker_shaper/docker_state.py,sha256=nyhQg4Y2w_aS72NdavpTKAtiluAzdar9z87GxaIVMCY,48369
+docker_shaper/dynamic.py,sha256=RimRKNcAnlOFtTLuaTyhFeynHvYfMPHX9-HUNV-pe74,33592
+docker_shaper/headless_examples/docker_events.py,sha256=YyDmhraa4bitDk7NTvPHq6sItTFl8GXH30SKeP8eXoI,709
+docker_shaper/headless_examples/docker_prune.py,sha256=GdcyPKFFAaimYxCRYf8cqjNtzEAnBmT9xTuZBH5yvHo,6398
+docker_shaper/headless_examples/dockermon.py,sha256=PhnA4oKDAHmaOTTS2dt0SlHcxn_ZjGJSW4Kv9LyC2eU,12458
+docker_shaper/server.py,sha256=DFP2HAVPnnhtPsYyjYg5dDJaU67amiJwVIxXY7hdiWg,9652
+docker_shaper/utils.py,sha256=z2ZWKxrgAVRzBgXC-KfSjoqOASmcbdDqlmcbYSR3gAI,2424
+docker_shaper-2.0.3.dist-info/METADATA,sha256=TJIGuuKN_23ppek0BPftc96ekHX3kIshuxcA4myRNXs,5393
+docker_shaper-2.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+docker_shaper-2.0.3.dist-info/entry_points.txt,sha256=SWTsWiji10Sdy_4XVodAkoZZNKedLVxPZ2lbSQdaX_Y,116
+docker_shaper-2.0.3.dist-info/RECORD,,
