@@ -1,0 +1,27 @@
+name: test-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - appdirs
+  - fsspec
+  - numpy
+  - dask
+  - pandas
+  - erddapy
+  - panel
+  - intake
+  - pytest
+  - pytest-cov
+  - isort
+  - flake8
+  - pre-commit
+  - types-setuptools
+  - mypy
+  - codecov
+  - coverage[toml]
+  - xarray
+  - pip
+  - pip:
+    - git+https://github.com/intake/intake
+    - cf-pandas

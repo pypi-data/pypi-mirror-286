@@ -1,0 +1,17 @@
+name: intake-erddap
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - fsspec
+  - numpy
+  - dask
+  - pandas
+  - erddapy
+  # - panel
+  - appdirs
+  # - intake
+  - pip
+  - pip:
+    - git+https://github.com/intake/intake
+    - cf-pandas
