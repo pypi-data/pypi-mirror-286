@@ -1,0 +1,12 @@
+stages:
+  - build
+  - ci
+  - release
+default:
+  before_script:
+    - env | sort
+  image: ${CI_REGISTRY_IMAGE}/dev:py3.12
+  retry:
+    max: 2
+    when: runner_system_failure
+include: .gitlab/workflows/**.yml

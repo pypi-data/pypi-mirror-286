@@ -1,0 +1,104 @@
+[% from pathjoin("includes", "version_compare.jinja") import version_between -%]
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  cancel-in-progress: true
+  group: {{ '${{ github.workflow }}-${{ github.ref }}' }}
+
+jobs:
+  ci:
+    if: {{ '${{ !cancelled() && ! failure() }}' }}
+    runs-on: {{ '${{ matrix.os }}' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          fetch-depth: 0
+      - name: Set up PDM
+        uses: pdm-project/setup-pdm@568ddd69406b30de1774ec0044b73ae06e716aa4 # v4
+        with:
+          cache: true
+          python-version: {{ '${{ matrix.python-version }}' }}
+          version: 2.16.1
+      - run: env | sort
+      - run: make prerequisites
+      - run: make dev
+      - run: make lint test doc build
+    strategy:
+      matrix:
+        os:
+[%- if "macos" in platforms %]
+          # renovate: github-runner
+          - macos-14
+[%- endif %]
+[%- if "ubuntu" in platforms %]
+          # renovate: github-runner
+          - ubuntu-22.04
+[%- endif %]
+[%- if "windows" in platforms %]
+          # renovate: github-runner
+          - windows-2022
+[%- endif %]
+        python-version:
+[%- if version_between("3.8", min_py, max_py) %]
+          - '3.8'
+[%- endif %]
+[%- if version_between("3.9", min_py, max_py) %]
+          - '3.9'
+[%- endif %]
+[%- if version_between("3.10", min_py, max_py) %]
+          - '3.10'
+[%- endif %]
+[%- if version_between("3.11", min_py, max_py) %]
+          - '3.11'
+[%- endif %]
+[%- if version_between("3.12", min_py, max_py) %]
+          - '3.12'
+[%- endif %]
+[%- if "macos" in platforms and (version_between("3.8", min_py, max_py) or version_between("3.9", min_py, max_py)) %]
+        # Python 3.8 and 3.9 do not run on macos-14 which is using arm64 hardware.
+        exclude:
+[%- if version_between("3.8", min_py, max_py) %]
+          # renovate: github-runner
+          - os: macos-14
+            python-version: '3.8'
+[%- endif %]
+[%- if version_between("3.9", min_py, max_py) %]
+          # renovate: github-runner
+          - os: macos-14
+            python-version: '3.9'
+        include:
+[%- endif %]
+[%- if version_between("3.8", min_py, max_py) %]
+          - os: macos-13
+            python-version: '3.8'
+[%- endif %]
+[%- if version_between("3.9", min_py, max_py) %]
+          - os: macos-13
+            python-version: '3.9'
+[%- endif %]
+[%- endif %]
+[%- if project_name == "Serious Scaffold Python" %]
+  consistency:
+    if: {{ '${{ !cancelled() && ! failure() }}' }}
+    runs-on: ubuntu-22.04
+    steps:
+      - run: env | sort
+      - name: Checkout repository
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - name: Set up Git
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+      - run: pipx install copier==9.3.1
+      - run: make template-build
+      - run: git diff
+      - run: git status --porcelain
+      - run: test -z "$(git status --porcelain)"
+[%- endif %]

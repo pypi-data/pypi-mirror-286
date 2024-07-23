@@ -1,0 +1,137 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools==71.1.0",
+    "setuptools-scm==8.1.0",
+]
+
+[project]
+name = "ss-python"
+description = "An evolving Python project template that covers the full development lifecycle."
+readme = "README.md"
+keywords = [
+    "copier-template",
+    "full-development-lifecycle",
+    "project-template",
+    "serious-scaffold",
+]
+license = { text = "MIT" }
+authors = [
+    { email = "i@huxuan.org", name = "huxuan" },
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dynamic = [
+    "version",
+]
+dependencies = [
+    "pydantic-settings",
+    "typer[all]",
+]
+urls.documentation = "https://serious-scaffold.github.io/ss-python"
+urls.issue = "https://github.com/serious-scaffold/ss-python/issues"
+urls.repository = "https://github.com/serious-scaffold/ss-python"
+scripts.ss-python-cli = "ss_python.cli:app"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+doc = [
+    "Sphinx",
+    "autodoc-pydantic",
+    "coverage",
+    "furo",
+    "mypy[reports]",
+    "myst-parser",
+    "pytest",
+    "sphinx-click",
+    "sphinx-design",
+]
+lint = [
+    "mypy",
+]
+test = [
+    "coverage",
+    "pytest",
+]
+
+[tool.setuptools_scm]
+fallback_version = "0.0.0"
+
+[tool.ruff]
+src = [
+    "src",
+]
+extend-exclude = [
+    "template",
+]
+fix = true
+lint.select = [
+    "B",      # flake8-bugbear
+    "D",      # pydocstyle
+    "E",      # pycodestyle error
+    "F",      # Pyflakes
+    "I",      # isort
+    "RUF100", # Unused noqa directive
+    "S",      # flake8-bandit
+    "SIM",    # flake8-simplify
+    "UP",     # pyupgrade
+    "W",      # pycodestyle warning
+]
+lint.per-file-ignores."tests/*" = [
+    "S101",
+]
+lint.pydocstyle.convention = "google"
+
+[tool.codespell]
+write-changes = true
+check-filenames = true
+
+[tool.pyproject-fmt]
+indent = 4
+keep_full_version = true
+max_supported_python = "3.12"
+
+[tool.pytest.ini_options]
+addopts = "-l -s --durations=0"
+log_cli = true
+log_cli_level = "info"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+log_format = "%(asctime)s %(levelname)s %(message)s"
+minversion = "6.0"
+
+[tool.coverage.report]
+fail_under = 100
+
+[tool.coverage.run]
+source = [
+    "ss_python",
+]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_unimported = true
+disallow_untyped_defs = true
+enable_error_code = [
+    "ignore-without-code",
+]
+exclude = [
+    "build",
+    "doc",
+    "template",
+]
+no_implicit_optional = true
+show_error_codes = true
+warn_return_any = true
+warn_unused_ignores = true
