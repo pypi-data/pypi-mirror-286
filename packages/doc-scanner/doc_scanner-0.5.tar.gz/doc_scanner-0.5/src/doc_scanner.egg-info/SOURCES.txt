@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/doc_scanner.egg-info/PKG-INFO
+src/doc_scanner.egg-info/SOURCES.txt
+src/doc_scanner.egg-info/dependency_links.txt
+src/doc_scanner.egg-info/entry_points.txt
+src/doc_scanner.egg-info/requires.txt
+src/doc_scanner.egg-info/top_level.txt
+src/docscanner/__init__.py
+src/docscanner/docscanner.py
+src/docscanner/data/Style Guide Phrases.csv
