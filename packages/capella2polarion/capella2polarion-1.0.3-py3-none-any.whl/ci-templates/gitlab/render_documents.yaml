@@ -1,0 +1,22 @@
+# Copyright DB InfraGO AG and contributors
+# SPDX-License-Identifier: Apache-2.0
+
+variables:
+  CAPELLA2POLARION_DEBUG: "0"
+
+capella2polarion_synchronise_elements:
+  needs:
+    - job: update_capella_diagram_cache
+      artifacts: true
+    - job: capella2polarion_synchronise_elements
+
+  script:
+    - pip install capella2polarion
+    - >
+      python \
+        -m capella2polarion \
+        $([[ $CAPELLA2POLARION_DEBUG -eq 1 ]] && echo '--debug') \
+        --polarion-project-id=${CAPELLA2POLARION_PROJECT_ID:?} \
+        --capella-model="${CAPELLA2POLARION_MODEL_JSON:?}" \
+        render-documents \
+        --document-rendering-config="${CAPELLA2POLARION_DOCUMENT_CONFIG:?}"
