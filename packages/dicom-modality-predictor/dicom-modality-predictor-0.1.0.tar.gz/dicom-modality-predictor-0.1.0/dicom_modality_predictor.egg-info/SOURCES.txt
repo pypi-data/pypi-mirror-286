@@ -1,0 +1,8 @@
+README.md
+setup.py
+dicom_modality_predictor.egg-info/PKG-INFO
+dicom_modality_predictor.egg-info/SOURCES.txt
+dicom_modality_predictor.egg-info/dependency_links.txt
+dicom_modality_predictor.egg-info/entry_points.txt
+dicom_modality_predictor.egg-info/requires.txt
+dicom_modality_predictor.egg-info/top_level.txt
