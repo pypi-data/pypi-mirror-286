@@ -1,0 +1,7 @@
+PyJWT
+requests
+boto3
+tqdm
+
+[test]
+pytest
