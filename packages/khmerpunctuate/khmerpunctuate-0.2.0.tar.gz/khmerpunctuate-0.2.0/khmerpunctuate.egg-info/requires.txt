@@ -1,0 +1,6 @@
+tokenizers
+tqdm
+onnxruntime
+numpy
+requests
+appdirs
