@@ -1,0 +1,27 @@
+from machine_learning.src.LogisticRegression.LogisticRegressionModel import LogisticRegression
+from machine_learning.TitanicDatasetPreprocessing import get_data
+from machine_learning.scores.get_scores import (get_classification_accurancy, get_mcc, get_sensitivity,
+                                                get_specificity, get_precision, get_negative_predictive_value,
+                                                display_confusion_matrix, ROC_plot)
+
+
+def test_logistic_regression():
+    X_train, X_test, y_train, y_test = get_data()
+    model = LogisticRegression(0.5, 100)
+    model.fit(X_train, y_train)
+    preds = model.predict(X_test)
+    # Evaluation
+    accurancy = get_classification_accurancy(preds, y_test)
+    mcc = get_mcc(preds, y_test)
+    sensitivity = get_sensitivity(preds, y_test)
+    specificity = get_specificity(preds, y_test)
+    precision = get_precision(preds, y_test)
+    negative_predictive_value = get_negative_predictive_value(preds, y_test)
+    display_confusion_matrix(preds, y_test)
+    print(f"Sensitivity with Logistic Regression: {sensitivity}")
+    print(f"Specificity with Logistic Regression: {specificity}")
+    print(f"Precision with Logistic Regression: {precision}")
+    print(f"Negative prediction value with Logistic Regression: {negative_predictive_value}")
+    print(f"Mcc with Logistic Regression: {mcc}")
+    print(f"Accurancy with Logistic Regression: {accurancy}")
+    ROC_plot(model, "Logistic Regression", X_test, y_test)
