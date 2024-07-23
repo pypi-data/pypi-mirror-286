@@ -1,0 +1,12 @@
+pyloric_simulator/_version.py,sha256=PKIMyjdUACH4-ONvtunQCnYE2UhlMfp9su83e3HXl5E,411
+pyloric_simulator/jb_fixes.py,sha256=sudjAEqRuXWJ3fRVj-BZEJfap2XG_d7jZfnl9-77hEw,2452
+pyloric_simulator/prinz2004.py,sha256=s2USZWa9GVdUYht7ugRi7OA_OyOJSCly9mw2ypWYXSE,101183
+pyloric_simulator/config/__init__.py,sha256=Odfpl8h2LgFst-9Pw14iJbu6XXObOEFBxMBraYyIMJo,229
+pyloric_simulator/config/defaults.cfg,sha256=jo5KRbXq1ANcGcRfPrrNSIxnTNKqtc1jU2f5ok0PCME,453
+pyloric_simulator/jax_shim/__init__.py,sha256=vmHj1oUJoQSr4Mp3pUEHXBuHmBe23PT4j1p0KIyxmPs,472
+pyloric_simulator/jax_shim/numpy.py,sha256=bsSCNBwLpBL49CqKhraLEA-j0Re7oJqch5xvUbe0pFw,2904
+pyloric_network_simulator-0.1.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+pyloric_network_simulator-0.1.1.dist-info/METADATA,sha256=fMOB82t7uzFM4lf1X8Ho-SaOlelZJmDLo4iR1w-mgQ8,12828
+pyloric_network_simulator-0.1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pyloric_network_simulator-0.1.1.dist-info/top_level.txt,sha256=ZCKNyotqx2qs1fEmbtPxzDdVlUl8zT0z31yUjeII3RU,18
+pyloric_network_simulator-0.1.1.dist-info/RECORD,,
