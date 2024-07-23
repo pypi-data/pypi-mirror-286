@@ -1,0 +1,4 @@
+aiosmtpd>=1.4.6
+geocoder>=1.38.1
+itsdangerous==0.24
+rgbpy>=0.0.1

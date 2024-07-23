@@ -1,0 +1,3 @@
+[console_scripts]
+kyaah = kyaah.cli:kyaah_cli
+
