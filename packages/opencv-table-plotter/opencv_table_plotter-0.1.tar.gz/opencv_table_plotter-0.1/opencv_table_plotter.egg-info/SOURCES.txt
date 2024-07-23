@@ -1,0 +1,8 @@
+README.md
+setup.py
+opencv_table_plotter/__init__.py
+opencv_table_plotter/main.py
+opencv_table_plotter.egg-info/PKG-INFO
+opencv_table_plotter.egg-info/SOURCES.txt
+opencv_table_plotter.egg-info/dependency_links.txt
+opencv_table_plotter.egg-info/top_level.txt
