@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+CircuitKnitting.egg-info/PKG-INFO
+CircuitKnitting.egg-info/SOURCES.txt
+CircuitKnitting.egg-info/dependency_links.txt
+CircuitKnitting.egg-info/requires.txt
+CircuitKnitting.egg-info/top_level.txt
