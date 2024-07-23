@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lidar-cmn
+Version: 1.1.1
+Summary: Python package che consente il download dei dati LiDAR di Città Metropolitana di Napoli
+License: MIT
+Author: Massimiliano Moraca
+Author-email: info@massimilianomraca.it
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fsspec (>=2024.2.0,<2025.0.0)
+Requires-Dist: geopandas (>=1.0.1,<2.0.0)
+Requires-Dist: pyogrio (>=0.9.0,<0.10.0)
+Requires-Dist: tqdm (>=4.66.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# lidar_cmn
+Python package che consente il download dei dati LiDAR di Città Metropolitana di Napoli
+
