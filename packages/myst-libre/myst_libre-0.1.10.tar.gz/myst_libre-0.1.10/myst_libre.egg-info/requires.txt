@@ -1,0 +1,6 @@
+requests
+docker
+python-dotenv
+PyGithub
+termcolor
+mystmd
