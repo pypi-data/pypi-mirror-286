@@ -1,0 +1,47 @@
+[project]
+name = "rosreestr2coord"
+version = "4.4.0"
+description = "Get geometry from rosreestr"
+authors = [{ name = "Artemiy Doroshkov", email = "rendrom@gmail.com" }]
+dependencies = [
+    "numpy",
+    "Pillow",
+    "opencv-contrib-python",
+    "matplotlib",
+]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+]
+urls = { "Homepage" = "https://github.com/rendrom/rosreestr2coord" }
+readme = "README.md"
+
+[project.scripts]
+rosreestr2coord = "rosreestr2coord.console:console"
+
+[project.optional-dependencies]
+dev = ["black", "isort"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["rosreestr2coord"]
+include-package-data = true
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+
+
+# https://pypi.python.org/pypi/twine
+
+# pip install build twine
+# python -m build
+# twine upload dist/*
+# twine upload -u 'rendrom' --repository-url https://upload.pypi.org/legacy/ dist/*
+

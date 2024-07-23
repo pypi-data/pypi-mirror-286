@@ -1,0 +1,8 @@
+numpy
+Pillow
+opencv-contrib-python
+matplotlib
+
+[dev]
+black
+isort
