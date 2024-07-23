@@ -1,0 +1,11 @@
+aind_metadata_upgrader/__init__.py,sha256=Ezf5lNJDaEziPVoLQ72Nzi-iwmdhuUT3yTPAanDY3Ms,43
+aind_metadata_upgrader/base_upgrade.py,sha256=0z9mKEfkfcshocN0ZATT_pOiM-ztEMaFqVu4RbccuXQ,2030
+aind_metadata_upgrader/data_description_upgrade.py,sha256=FOGbx4XjKm23sA2LSwITf8o9GbZmxhXrnwLxUmEQy7A,11239
+aind_metadata_upgrader/procedures_upgrade.py,sha256=l-jel1WLp2dqveSBMyH8FxK32cSJ36N6i16wfq9CZ8I,22776
+aind_metadata_upgrader/processing_upgrade.py,sha256=qwOVSy88IvIuUqa-BmKBZYPI8MFhUyiQ7ytu9egD21w,4416
+aind_metadata_upgrader/utils.py,sha256=qftAwIafZ0luuXJfhjKbTyaEQDiuewvaJJuUVB8-5gY,1504
+aind_metadata_upgrader-0.0.10.dist-info/LICENSE,sha256=U0Y7B3gZJHXpjJVLgTQjM8e_c8w4JJpLgGhIdsoFR1Y,1092
+aind_metadata_upgrader-0.0.10.dist-info/METADATA,sha256=akvl-8l7Qpyv6K4CIq6vxfAlRAICVDRXSIrme_MXT4o,6532
+aind_metadata_upgrader-0.0.10.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+aind_metadata_upgrader-0.0.10.dist-info/top_level.txt,sha256=3IYgDnR736R44bn69ABVDh_KJ_JAt6DJoQ70WPNTqnQ,23
+aind_metadata_upgrader-0.0.10.dist-info/RECORD,,
