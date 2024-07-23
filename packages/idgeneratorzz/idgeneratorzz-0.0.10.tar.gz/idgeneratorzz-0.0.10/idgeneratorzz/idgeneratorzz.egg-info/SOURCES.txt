@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+idgeneratorzz/idgeneratorzz.egg-info/PKG-INFO
+idgeneratorzz/idgeneratorzz.egg-info/SOURCES.txt
+idgeneratorzz/idgeneratorzz.egg-info/dependency_links.txt
+idgeneratorzz/idgeneratorzz.egg-info/requires.txt
+idgeneratorzz/idgeneratorzz.egg-info/top_level.txt
+idgeneratorzz/src/__init__.py
+idgeneratorzz/src/idgeneratorzz.py
+idgeneratorzz/src/utils.py
+idgeneratorzz/test/__init__.py
+idgeneratorzz/test/test_idgeneratorzz.py
