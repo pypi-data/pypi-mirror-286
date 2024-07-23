@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ncCompare
+Version: 0.1.0
+Summary: netCDF Comparison Tool
+Author: Antonio Mariani
+Author-email: antonio.mariani@cmcc.it
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: xarray (>=2024.6.0,<2025.0.0)
+Description-Content-Type: text/markdown
+
+# netCDF Comparison Tool
+
