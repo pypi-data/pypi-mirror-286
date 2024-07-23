@@ -1,0 +1,12 @@
+git_vars/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_vars/cli.py,sha256=fxDHtRV4k1WEiEnXObKiWJc_1Jwupc9CozhUNWk0_Z0,2343
+git_vars/const.py,sha256=OvkI3PK0nkLMdC8omeJKbUxjo_MGhszofIPiNd5pElE,362
+git_vars/gitlab_api.py,sha256=HdYzIXZ8S0B5qOM1yeV2rJj8fDmhqCx6VP8jO0umSsI,7445
+git_vars/pull.py,sha256=pe1pkdZCJCk8d3x1oygP9Vsfla051t26qumot_tydt0,870
+git_vars/push.py,sha256=gsRUsq7uZVv4O3JDSRsORGTQRN9Kn9VcWoCW7lnetwI,2830
+git_vars/utils.py,sha256=uQhcif3FwDOBGO-6dWL_BStloCrB-177AD5Nd_F2y8E,1861
+git_vars-0.0.2.dist-info/LICENSE.txt,sha256=uvX9x2NTYh1XFR_PL7sr-NMvC_kBwhJCPC2rbKvUVZI,1068
+git_vars-0.0.2.dist-info/METADATA,sha256=RP9pLPYbS2bxhNO37pyy5l1AwGLSL4fRAs33ctHpGPs,3411
+git_vars-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+git_vars-0.0.2.dist-info/entry_points.txt,sha256=UULhGr1LdmxLgh9dYz6i_vMHEW7skotdYwTiRcLS3sI,46
+git_vars-0.0.2.dist-info/RECORD,,
