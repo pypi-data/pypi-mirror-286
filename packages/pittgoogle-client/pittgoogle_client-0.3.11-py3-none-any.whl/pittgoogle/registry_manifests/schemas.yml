@@ -1,0 +1,62 @@
+# Add an entry to this yaml file to register a new schema.
+# A template is given below for convenience.
+# See docs/source/for-developers/add-new-schema.md for more information.
+#
+# # TEMPLATE
+# - name: ''
+#   description: ''
+#   origin: 'https://...'
+#   helper: 'default_schema_helper'
+#   path: ''
+#   filter_map:
+#     1: ''
+#     2: ''
+#
+# DEFAULT
+- name: 'default_schema'
+  description: 'Default schema used when no other schema is specified.'
+  origin: '(null)'
+  helper: 'default_schema_helper'
+#
+# ELASTICC alerts
+- name: 'elasticc.v0_9_1.alert'
+  description: 'Avro schema of alerts published by ELAsTiCC.'
+  origin: 'https://github.com/LSSTDESC/elasticc/tree/main/alert_schema'
+  helper: 'elasticc_schema_helper'
+  path: 'schemas/elasticc/elasticc.v0_9_1.alert.avsc'
+#
+# ELASTICC classifications
+- name: 'elasticc.v0_9_1.brokerClassification'
+  description: 'Avro schema of alerts to be sent to DESC containing classifications of ELAsTiCC alerts.'
+  origin: 'https://github.com/LSSTDESC/elasticc/tree/main/alert_schema'
+  helper: 'elasticc_schema_helper'
+  path: 'schemas/elasticc/elasticc.v0_9_1.brokerClassification.avsc'
+#
+# LSST alerts
+# [FIXME] Hacking in v7.1 for now. Need to figure out install lsst-alert-packet to use lsst_auto_schema_helper
+# - name: 'lsst.v<MAJOR>_<MINOR>.alert'
+  # helper: 'lsst_auto_schema_helper'
+- name: 'lsst.v7_1.alert'
+  path: 'schemas/lsst/7/1/lsst.v7_1.alert.avsc'
+  description: 'Schema for LSST alerts.'
+  origin: 'https://github.com/lsst/alert_packet/tree/main/python/lsst/alert/packet/schema'
+  helper: 'lsst_schema_helper'
+  # [FIXME] filter_map is probably int -> {u, g, r, i, z, y}. Check for sure and fill in below
+  filter_map:
+    1: ''
+    2: ''
+    3: ''
+    4: ''
+    5: ''
+    6: ''
+#
+# ZTF alerts
+- name: 'ztf'
+  description: 'ZTF schema. The ZTF survey publishes alerts in Avro format with the schema attached in the header. Pitt-Google publishes ZTF alerts in json format. This schema covers both cases.'
+  origin: 'https://zwickytransientfacility.github.io/ztf-avro-alert/schema.html'
+  helper: 'default_schema_helper'
+  path: null
+  filter_map:
+    1: g
+    2: r
+    3: i
