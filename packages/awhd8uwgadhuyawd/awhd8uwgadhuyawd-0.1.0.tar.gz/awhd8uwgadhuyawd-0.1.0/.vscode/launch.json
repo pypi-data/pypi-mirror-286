@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Python Debugger: Module",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "templatepy",
+            "args": [
+                "10"
+            ]
+        }
+    ]
+}
