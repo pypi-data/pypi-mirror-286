@@ -1,0 +1,11 @@
+UKLawCaseScraper/CaseHeaderScraper.py,sha256=YRdB7rd3DkQDirxZe7IiLJMg2AqllHp1k5zIZmqMwxA,7625
+UKLawCaseScraper/CaseInfoScraper.py,sha256=PkypkiwgoAXB5x_8W7KqsElGFusoX7zw83cd0Cj8f2Q,4818
+UKLawCaseScraper/FullTextScraper.py,sha256=-pmbBDTmr2c74d6FpoVxwJeGD0Ll-NdwCYmUh6nOVRM,3626
+UKLawCaseScraper/Save_to_json.py,sha256=RI3g4VmZlgvyeYkh-KbcYlnGYkB9wRRcWHQVvbnI5ik,893
+UKLawCaseScraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+UKLawCaseScraper-0.4.1.dist-info/LICENSE,sha256=aFv4i-DTz2iTXhvVC5eKiErPzCtb6i7F9VnnYXSxzF4,20
+UKLawCaseScraper-0.4.1.dist-info/METADATA,sha256=IlAP6B95xGbXNw2vxYM1Y8ciJimxE2732XQOa3PxHls,1983
+UKLawCaseScraper-0.4.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+UKLawCaseScraper-0.4.1.dist-info/top_level.txt,sha256=VIWdsVzEoITht8CQIcEXoWRK32Rb3JqnNbChrrQdCM0,23
+UKLawCaseScraper-0.4.1.dist-info/RECORD,,
