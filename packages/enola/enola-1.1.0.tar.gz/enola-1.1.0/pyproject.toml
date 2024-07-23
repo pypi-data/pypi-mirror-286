@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "enola"
+version = "1.1.0"
+authors = [
+  { name="Sebastian Rodriguez Robotham", email="sebastian.rodriguez@huemulsolutions.com" },
+  { name="Developer Code", email="developer.code@huemulsolutions.com" },
+]
+description = "Enola-AI is a GenAI platform for validating and monitoring AI models in regulated industries like finance, healthcare, and education. It ensures compliance with strict standards via continuous user feedback, automated assessments, and expert reviews."
+keywords = ["AI", "Observability", "agent", "Intelligence"]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.build.targets.wheel]
+exclude = [
+  "*.pyc",
+  "__pycache__",
+  "*.log",
+  ".env",
+  "internal.md",
+  "*.pypirc",
+  "test_tracking.py"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/huemulsolutions/enola"
+"Bug Tracker" = "https://github.com/huemulsolutions/enola/issues"
