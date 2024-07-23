@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bits-aviso-python-sdk"
+version = "0.1.0"
+description = "Repository containing python wrappers to various services for bits-aviso."
+authors = ["Miranda Nguyen <mirandanguyen98@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+google-api-python-client = "^2.137.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
