@@ -1,0 +1,13 @@
+apache_bot_blocker/__init__.py,sha256=J1mCPGMVDt8aNkKqygtDZ-f9iI8RY5IQXGBlj3Bxvqw,386
+apache_bot_blocker/__main__.py,sha256=6aWB0bacu3vVF20IW3YUwY_Rpyb_OKcktsyybr-2kNc,2259
+apache_bot_blocker/bad_bot_blocker.py,sha256=BFvUjYJ_KsPybu7GaUhYrVY-tQSoE0RGyVFep6fWiKg,1789
+apache_bot_blocker/bot_identifier.py,sha256=Tu3DFIfjXqAG9P18lOfumHKJaLeLV1COwH9Ed2bPQvc,2967
+apache_bot_blocker/file_reader.py,sha256=zwNY4RwcPGCn2SxN1Hu2bHEnwd4dUAxOoWjEfnh87To,600
+apache_bot_blocker/ip_blacklist_manager.py,sha256=E921999txUpr2T-_9K1JCEw2L8HT97V6S_zNMvnjvSw,5861
+apache_bot_blocker/visit_log_manager.py,sha256=Ic4c8mALfJRPqUUQVYDxr8VRpp6jfbAr3pmxnF3vhoo,3398
+apache_bot_blocker-0.1.0.dist-info/LICENSE,sha256=gYZ1Gr8KbPvvprqgs0o4DwdXLJTE10qOOC8hk5O2BU8,1088
+apache_bot_blocker-0.1.0.dist-info/METADATA,sha256=oGPeogjjq4zc4xguM1ZwEQyjF_JDB9mua1dPe8Q_mRE,5068
+apache_bot_blocker-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+apache_bot_blocker-0.1.0.dist-info/entry_points.txt,sha256=ztuoEvZA3MEKacMGoIwMpFmAvsfTzX1pdQxE0AiL3Oc,78
+apache_bot_blocker-0.1.0.dist-info/top_level.txt,sha256=4Rm5cga4EFfESY5fH8XiLPMX0AzgIg4x6S8b81a1GeE,19
+apache_bot_blocker-0.1.0.dist-info/RECORD,,
