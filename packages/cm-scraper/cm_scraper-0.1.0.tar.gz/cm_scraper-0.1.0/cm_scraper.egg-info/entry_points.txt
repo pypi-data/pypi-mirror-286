@@ -1,0 +1,2 @@
+[console_scripts]
+cm-scraper = cm.scraper:main
