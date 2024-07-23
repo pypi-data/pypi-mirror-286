@@ -1,0 +1,151 @@
+# Opticonomy Prompt Driven Model Evaluation (PDME)
+
+ ## Overview
+
+The method uses a single text generation AI, referred to as eval model, to evaluate any other text generation AI on any topic, and the evaluation works like this:
+
+1. We write a text prompt for what questions the eval model should generate, and provide seeds that are randomly picked to generate a question.
+2. The question is sent to the AI model being tested, and it generates a response.
+3. Likewise, the eval model also generates an answer to the same question.
+4. The eval model then uses a text prompt we write, to compare the two answers and pick the winner. 
+
+This method allows us to evaluate models for any topic, such as: storytelling, programming, finance, and QnA.
+
+## Installation
+
+### Install Package
+  ```
+  pip install opticonomy-pdme
+  ```
+
+### Create and Activate the Virtual Environment
+- Set up a Python virtual environment and activate it (Linux):
+  ```
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
+
+- Set up a Python virtual environment and activate it (Windows/VS Code / Bash):
+  ```
+  python -m venv venv
+  source venv/Scripts/activate
+  ```
+  
+- Install dependencies from the `requirements.txt` file:
+  ```
+  pip install -r requirements.txt
+
+  ```
+### Docker build (local CPU)
+
+  ```
+docker build -f Dockerfile-vllm.cpu -t vllm-cpu-env --shm-size=4g .
+
+  ```
+### Docker run (local CPU)
+
+  ```
+docker run -it --shm-size=4g -p 8000:8000 \
+    -v /path/to/your/models:/models \
+    vllm-cpu-env serve --model /models/<modelname> --host 0.0.0.0 --port 8000
+
+  ```
+
+## How to call it
+### Define seeds
+  ```
+  seeds = {
+    "seed_1": ["a haunted house", "a time traveler", "a magical forest"],
+    "seed_2": ["redemption", "discovery", "loss"],
+    "seed_3": ["a talking animal", "an ancient artifact", "a secret society"],
+    "seed_4": ["a plot twist", "a moral dilemma", "an unexpected friendship"]
+}
+  ```
+### Load bootstrap templates
+  ```
+ # Load the detailed bootstrap prompt template from markdown file
+ template_file_path = "examples/storytelling_template.md"
+
+ # Function to load the markdown template
+  def load_template(file_path):
+    with open(file_path, 'r') as file:
+        return file.read()
+    
+  bootstrap_prompt_template = load_template(template_file_path)
+  ```
+## Running Sample Use Cases
+### Storytelling
+ - Run the following:
+  ```
+  python examples/storytelling_example.py
+  ```
+ - Sample output:
+  ```
+  INFO:opti_pdme.opticonomy_pdme:Generated text: Model 1's response is well-crafted and provides a fitting continuation to the original story. It successfully maintains the narrative's tone and theme, while also expanding on Amelia's journey and relationship with Faelan. Here's a summary of why Model 1's response stands out:
+
+  1. **Character Development**:
+    - The response deepens Amelia's character by showing her growth and her impact on the academic world.
+    - It continues to explore the bond between Amelia and Faelan, adding emotional depth to their friendship.
+
+  2. **Plot Progression**:
+    - The storyline progresses naturally, introducing a new layer of responsibility for Amelia as the guardian of the ChronoSphere.
+    - Faelan's reappearance provides a satisfying closure to their relationship, while also setting up a new chapter in Amelia's life.
+
+  3. **Themes and Motifs**:
+    - The response stays true to the original themes of time, knowledge, and interconnectedness.
+    - It introduces the idea of guardianship and the responsibility that comes with great knowledge.
+
+  4. **Imagery and Descriptive Language**:
+    - The use of descriptive language helps to create vivid imagery, making the scenes more immersive.
+    - The serene evening in Central Park and the timeless forest are particularly well-described, enhancing the reader's visual experience.
+
+  5. **Emotional Resonance**:
+    - The reunion between Amelia and Faelan is emotionally satisfying, reinforcing the bond they share.
+    - The ending leaves a lasting impression, highlighting the importance of friendship and wisdom across time.
+
+  Overall, Model 1 effectively builds on the original story, providing a rich and engaging continuation that honors the spirit of the narrative while adding new dimensions to it.
+  INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+  INFO:opti_pdme.opticonomy_pdme:Label:  1, LogProb: -0.00043698703, Logit: 7.735388541471373, Prob: 0.999563108434926
+  INFO:opti_pdme.opticonomy_pdme:Label:  2, LogProb: -1.1279553e-05, Logit: 11.392513300559003, Prob: 0.9999887205106139
+  INFO:opti_pdme.opticonomy_pdme:Final normalized probabilities: [0.49989357313235727, 0.5001064268676427]
+  INFO:opti_pdme.opticonomy_pdme:Probability for 'openai/gpt-4o': 0.49989357313235727
+  INFO:opti_pdme.opticonomy_pdme:Probability for 'openai-community/gpt2': 0.5001064268676427
+  INFO:opti_pdme.opticonomy_pdme:Result: 'openai-community/gpt2' is better
+  INFO:__main__:Evaluation result: 'openai-community/gpt2' is better
+  INFO:__main__:Probabilities: [0.49989357313235727, 0.5001064268676427]
+  ```
+
+### Coding
+ - Run the following:
+  ```
+  python examples/coding_example.py
+  ```
+ - Sample output:
+  ```
+  ...
+  ### Explanation
+
+  1. **`validate_tic_tac_toe(board)`**:
+    - This function checks each row, column, and diagonal for a winner.
+    - If there's a winner, it returns either `'X wins'` or `'O wins'`.
+    - If there are empty cells but no winner, it returns `'Ongoing'`.
+    - If the board is full and there's no winner, it returns `'Draw'`.
+
+  2. **`sort_game_states(game_states)`**:
+    - This function uses a custom sorting key that first checks the game state.
+    - It then sorts by the count of 'X's and 'O's.
+    - The sorting key is a tuple that prioritizes the game state, followed by the count of 'X's, and then the count of 'O's.
+
+  ### Conclusion
+
+  This solution efficiently validates and sorts Tic-Tac-Toe game states. It checks all necessary conditions for the game state and sorts the boards based on the predefined criteria. The code is modular, making it easy to understand and maintain.
+  INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+  INFO:opti_pdme.opticonomy_pdme:Label:  1, LogProb: -1.9361265e-07, Logit: 15.4574062265043, Prob: 0.9999998063873687
+  INFO:opti_pdme.opticonomy_pdme:Label:  2, LogProb: -1.8624639e-06, Logit: 13.193609338205482, Prob: 0.9999981375378344
+  INFO:opti_pdme.opticonomy_pdme:Final normalized probabilities: [0.5000004172128125, 0.4999995827871875]
+  INFO:opti_pdme.opticonomy_pdme:Probability for 'openai/gpt-4o': 0.5000004172128125
+  INFO:opti_pdme.opticonomy_pdme:Probability for 'openai-community/gpt2': 0.4999995827871875
+  INFO:opti_pdme.opticonomy_pdme:Result: 'openai/gpt-4o' is better
+  INFO:__main__:Evaluation result: 'openai/gpt-4o' is better
+  INFO:__main__:Probabilities: [0.5000004172128125, 0.4999995827871875]
+  ```

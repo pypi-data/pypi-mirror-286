@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+opticonomy_pdme.egg-info/PKG-INFO
+opticonomy_pdme.egg-info/SOURCES.txt
+opticonomy_pdme.egg-info/dependency_links.txt
+opticonomy_pdme.egg-info/entry_points.txt
+opticonomy_pdme.egg-info/top_level.txt
+pdme/__init__.py
+pdme/evaluate.py
+pdme/generate_bootstrap_prompts.py
+pdme/hti.py
