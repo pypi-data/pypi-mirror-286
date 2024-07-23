@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: shutdown_computer
+Version: 0.0.2
+Summary: A package shutdown computer
+Author-email: Min <minha05112003a@gmail.com>
+Project-URL: Homepage, https://github.com/min-awm/shutdown_computer
+Project-URL: Issues, https://github.com/min-awm/shutdown_computer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Shutdown computer
+
+A package shutdown computer
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install shutdown_computer.
+
+```bash
+pip install shutdown_computer
+```
+
+## Usage
+
+```python
+from shutdown_computer import shutdown
+
+shutdown()
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
