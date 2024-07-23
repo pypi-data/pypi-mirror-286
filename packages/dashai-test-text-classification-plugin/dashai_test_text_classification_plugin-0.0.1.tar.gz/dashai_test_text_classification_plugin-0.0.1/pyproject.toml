@@ -1,0 +1,29 @@
+[project]
+name = "dashai_test_text_classification_plugin"
+version = "0.0.1"
+dependencies = [
+    'dashai_test_tabular_classification_plugin',
+    'dashai_test_classification_metrics_plugin',
+]
+authors = [
+  { name="DashAI team" },
+  { email="dashaisoftware@gmail.com" },
+]
+keywords = [
+    "DashAI",
+		"Task",
+		"Model",
+		"Dataloader"
+]
+description = "Text Classification Plugin"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.entry-points.'dashai.plugins']
+textClassificationModel = 'dashai_test_text_classification_plugin.text_classification_model:TextClassificationModel'
+textClassificationTask = 'dashai_test_text_classification_plugin.text_classification_task:TextClassificationTask'
+bow = 'dashai_test_text_classification_plugin.bow_text_classification_model:BagOfWordsTextClassificationModel'
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
