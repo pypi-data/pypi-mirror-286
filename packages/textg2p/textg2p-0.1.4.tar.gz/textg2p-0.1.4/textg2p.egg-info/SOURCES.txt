@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+textg2p/__init__.py
+textg2p/transcriber.py
+textg2p.egg-info/PKG-INFO
+textg2p.egg-info/SOURCES.txt
+textg2p.egg-info/dependency_links.txt
+textg2p.egg-info/requires.txt
+textg2p.egg-info/top_level.txt
