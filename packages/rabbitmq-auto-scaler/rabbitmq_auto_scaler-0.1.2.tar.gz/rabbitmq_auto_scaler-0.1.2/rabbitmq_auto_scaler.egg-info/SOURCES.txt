@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rabbitmq_auto_scaler/__init__.py
+rabbitmq_auto_scaler/async_thread_worker.py
+rabbitmq_auto_scaler/autoscaler.py
+rabbitmq_auto_scaler/base_auto_scaler.py
+rabbitmq_auto_scaler/connection_pool.py
+rabbitmq_auto_scaler.egg-info/PKG-INFO
+rabbitmq_auto_scaler.egg-info/SOURCES.txt
+rabbitmq_auto_scaler.egg-info/dependency_links.txt
+rabbitmq_auto_scaler.egg-info/requires.txt
+rabbitmq_auto_scaler.egg-info/top_level.txt
+tests/test_autoscaler.py
