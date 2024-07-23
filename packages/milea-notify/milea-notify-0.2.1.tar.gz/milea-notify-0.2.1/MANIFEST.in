@@ -1,0 +1,5 @@
+recursive-include milea_notify/templatetags *
+recursive-include milea_notify/migrations *
+recursive-include milea_notify/locale *
+recursive-include milea_notify/static *
+recursive-include milea_notify/templates *
