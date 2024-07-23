@@ -1,0 +1,8 @@
+sophi_app_internal/__init__.py,sha256=iCOqfINxWHQJQd2NeVwj5-TuonswLOKrCIrlxH3pfWQ,82
+sophi_app_internal/cosmos_client.py,sha256=HW4SZ3ZOc0rsVVeUtqe1BJibNDhwJbdI1OqJim4QZR0,3208
+sophi_app_internal/main.py,sha256=HKE0mnn0LBZN51GK5YHFZJmoWGLC_EDH76UaOJQ6sRA,691
+sophi_app_internal/token_validation.py,sha256=AzhtK7JvPf_PxxaQORPbvWM9QDYavl-OHFdFu-xBaf8,1784
+sophi_app_internal-0.0.4.dist-info/METADATA,sha256=Kr7sIn_7SMt0lNxx99lD0ONzkrVJpp771qP0Q3p3pyY,1981
+sophi_app_internal-0.0.4.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+sophi_app_internal-0.0.4.dist-info/top_level.txt,sha256=-oRkbk5dIXuW7C6MzlO9sTgc-hLU2ljHQmP6aQ_cw9Y,19
+sophi_app_internal-0.0.4.dist-info/RECORD,,
