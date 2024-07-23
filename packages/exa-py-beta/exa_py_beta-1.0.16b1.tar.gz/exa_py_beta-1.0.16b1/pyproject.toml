@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "exa-py-beta"
+version = "1.0.14-beta.0"
+description = "[Beta] Exa API in Python"
+authors = ["Jeff Wang <jeff@exa.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.3"
+openai = "^1.37.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
