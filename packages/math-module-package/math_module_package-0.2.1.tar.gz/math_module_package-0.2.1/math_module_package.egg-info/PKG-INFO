@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: math_module_package
+Version: 0.2.1
+Summary: A custom math operations package
+Home-page: https://github.com/xing24xing/MyMathModule
+Author: Khushi Pandey
+Author-email: khushipandey260304.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mymath_module
+
+## Description
+
+`mymath_module` is a custom Python package for performing various mathematical operations, including finding the greatest common divisor (GCD), least common multiple (LCM), factorials, and primality testing.
+
+## Installation
+
+You can install the package from PyPI using pip:
+
+```bash
+pip install math-module-package==0.2.1
