@@ -1,0 +1,3 @@
+[console_scripts]
+tsutil = tsutil.main:main
+
