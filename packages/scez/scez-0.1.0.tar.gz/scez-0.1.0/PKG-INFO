@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: scez
+Version: 0.1.0
+Summary: Single Cell Analysis, Easy Mode!
+License: MIT
+Author: Abe Arab
+Author-email: abarbiology@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: adjustText (>=0.7.3,<0.8.0)
+Requires-Dist: adpbulk (>=0.1.4,<0.2.0)
+Requires-Dist: anndata (>=0.7.4,<0.8.0)
+Requires-Dist: blitzgsea (>=1.3.0,<2.0.0)
+Requires-Dist: matplotlib (>=3.7,<4.0)
+Requires-Dist: numpy (>=1.17.0,<2.0.0)
+Requires-Dist: pandas (>=0.21,<0.22)
+Requires-Dist: pydeseq2 (>=0.4.0,<0.5.0)
+Requires-Dist: pytdc (>=1.0.0,<2.0.0)
+Requires-Dist: seaborn (>=0.12.2,<0.13.0)
+Requires-Dist: tqdm
+Project-URL: Source, https://github.com/abearab/scez
+Description-Content-Type: text/markdown
+
+## scez – single cell, easy mode
+[![package](https://github.com/abearab/scez/actions/workflows/main.yml/badge.svg)](https://github.com/abearab/scez/actions/workflows/main.yml)
+
+### Installation
+Make sure you have mamba installed in your base environment. If not, install it with:
+```bash
+conda install mamba -n base -c conda-forge
+```
+Then, create a new conda environment with the provided `environment.yml` file and activate it. This will install all necessary dependencies for scez.
+```bash
+conda env create -f environment.yml
+
+conda activate scez
+```
+Finally, install scez with:
+
+```bash
+pip install scez
+```
+
+Or, if you want to install the latest version from the repository:
+```bash
+pip install git+https://github.com/abearab/scez.git
+```
+
