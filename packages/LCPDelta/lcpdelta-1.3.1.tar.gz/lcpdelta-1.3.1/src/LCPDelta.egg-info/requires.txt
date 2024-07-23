@@ -1,0 +1,13 @@
+numpy
+pandas
+requests
+signalrcore
+matplotlib
+httpx
+
+[dev]
+pre-commit
+ruff
+pytest
+pytest-asyncio
+python-dotenv
