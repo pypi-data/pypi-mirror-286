@@ -1,0 +1,12 @@
+rich
+ruff
+isort
+black[jupyter]
+pyright
+llama_index
+notebook
+sphinx-autobuild
+sentence-transformers
+fastembed
+graphene
+fuzzywuzzy
