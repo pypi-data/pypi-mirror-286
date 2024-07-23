@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bot_blocker/bot_blocker.egg-info/PKG-INFO
+bot_blocker/bot_blocker.egg-info/SOURCES.txt
+bot_blocker/bot_blocker.egg-info/dependency_links.txt
+bot_blocker/bot_blocker.egg-info/entry_points.txt
+bot_blocker/bot_blocker.egg-info/top_level.txt
+tests/test_grep.py
