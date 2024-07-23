@@ -1,0 +1,9 @@
+examplepkg/__init__.py,sha256=48lZEz6yMhA1nC0Uh1NwWxK1_t4heMzpuEDXRe71Kxo,25
+examplepkg/example.py,sha256=thh9V1tFIy81tGDEBOYAk-TIVxwIytQafmbk7GhrXsY,28
+examplepkg0512/__init__.py,sha256=48lZEz6yMhA1nC0Uh1NwWxK1_t4heMzpuEDXRe71Kxo,25
+examplepkg0512/example.py,sha256=thh9V1tFIy81tGDEBOYAk-TIVxwIytQafmbk7GhrXsY,28
+examplepkg0512-0.1.dist-info/LICENSE,sha256=3ChKpC5nepgrPdmlhmjaDkcjzewytnczzHFzjBGyB3c,505
+examplepkg0512-0.1.dist-info/METADATA,sha256=2zYQYLp9yH-eWVDmJ_GARzAz4aAFlyUESe_J01kw6Lw,428
+examplepkg0512-0.1.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+examplepkg0512-0.1.dist-info/top_level.txt,sha256=z-0NsNYIUklroFD4NZRXxV3D5IIQIQBRMnoHTfhXyZ8,15
+examplepkg0512-0.1.dist-info/RECORD,,
