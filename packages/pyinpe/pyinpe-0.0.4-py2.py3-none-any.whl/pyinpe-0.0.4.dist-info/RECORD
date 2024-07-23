@@ -1,0 +1,10 @@
+pyinpe/WFS.py,sha256=Wvh46Zo_O1_LQDWVpq9b_-HS7-0QnhUmrD-OVgTE7Js,2458
+pyinpe/__init__.py,sha256=fsLNIraZfXnv1L4YK7VLaYPJdzWq5UqXFys-Q75ABO4,127
+pyinpe/common.py,sha256=0GJ03Fp0aUdoUUNNbJkDVJ3-slb3Lgtp3UpJ3evFkto,89
+pyinpe/pyinpe.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+pyinpe-0.0.4.dist-info/LICENSE,sha256=DUEoWCfKPSIducym1lWAljmn1jhAmxjW1k4H3kJ7SMQ,1070
+pyinpe-0.0.4.dist-info/METADATA,sha256=YfrokfcKzSh3E0WSwwppvyzs7HROM8GzjTBXbAJe_OA,1324
+pyinpe-0.0.4.dist-info/WHEEL,sha256=ANi2y8tYx-p70pj7MSdqQMJNFJEUgAOyfPpHzqz0w84,109
+pyinpe-0.0.4.dist-info/entry_points.txt,sha256=tQ7w6KHd5SzN2GV0Y9KgkjWaPMw0qUZxChiQ4SxTQuk,43
+pyinpe-0.0.4.dist-info/top_level.txt,sha256=ifLNf3LC3nJZE-KYvMTXEV1MsvWyWLqkOgIS5BRWNas,7
+pyinpe-0.0.4.dist-info/RECORD,,
