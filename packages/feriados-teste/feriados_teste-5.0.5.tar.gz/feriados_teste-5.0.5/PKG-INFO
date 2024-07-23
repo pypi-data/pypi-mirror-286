@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: feriados_teste
+Version: 5.0.5
+Summary: Versão beta não oficial de testes
+Author: Luiz Fernando T. Rodrigues
+Author-email: euluizfernando2001@gmail.com
+License: MIT License
+Keywords: feriados br
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Feriados Brasileiros
+
+## v0.0.1:
+    -> Feriados nacionais do Brasil
+    -> Feriados municipais de Governador Valadares
