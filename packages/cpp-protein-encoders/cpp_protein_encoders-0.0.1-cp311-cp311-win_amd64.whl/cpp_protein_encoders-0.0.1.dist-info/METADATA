@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: cpp_protein_encoders
+Version: 0.0.1
+Summary: Fast Python-wrapped C++ basic encoders for protein sequences
+Keywords: tokenizer,protein tokenizer,fast protein tokenizer,protein encoder,fast protein encoder
+Author-Email: Jonathan Parkinson <jlparkinson1@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Jonathan Parkinson
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/jlparki/cpp_protein_tokenizers
+Project-URL: Documentation, https://github.com/jlparki/cpp_protein_tokenizers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# cpp_protein_encoders
+
+To use them as input to an ML model, protein sequences have to
+be encoded (e.g. one-hot encoding, etc.) It's *very* easy to write
+Python code to do this, but if you do this often enough, at some point
+you'll realize you have multiple redundant code blocks in different
+projects that all do the same thing. For this reason, it's convenient
+to have a single simple plugin tool to do basic protein encoding wherever
+you need it. `cpp_protein_encoders` provides a simple,
+fast and flexible tool for common encoding schemes (I'll add
+more over time if I find any others I am using frequently -- please
+feel free to suggest any that you would find useful.)
+
+Currently supported schemes include:
+
+- One-hot encoding with either a 2d or 3d array as output, using either the
+basic 20 amino acid alphabet, or the basic alphabet plus gaps, or an extended
+alphabet including unusual symbols (B, J, O, U, X, Z).
+- Integer encoding, using either the basic 20 amino acid alphabet, or the basic alphabet plus gaps, or an extended
+alphabet including unusual symbols (B, J, O, U, X, Z). Integer encoding is
+useful for LightGBM (gradient boosted trees) and some clustering schemes.
+- Substitution matrix encoding using a 21 letter alphabet (standard AAs plus
+gaps) with various percent homologies and two encoding schemes supported.
+
+`cpp_protein_encoders` encodes sequences as numpy arrays. Why not as
+PyTorch / Jax / Tensorflow? There are two reasons for this. First, numpy is
+much more universal. A numpy array is easily converted to e.g. a PyTorch
+(or other framework) array in-place with negligible overhead. Moreover,
+you may need to use encoded sequences as input to a library like LightGBM,
+XGBoost or xGPR that takes numpy arrays as input.
+
+Second, by using numpy we ensure this package has only a single
+dependency -- numpy -- which is *relatively* lightweight (the same cannot
+be said for PyTorch or Tensorflow).
+
+Since this package is (at this time) small and simple,
+documentation is relatively brief and is below.
+
+### Performance
+
+Sequence encoding is almost never the bottleneck in ML or statistical
+analysis (if it is, you're doing something unusual). Still, FWIW, this
+package gives roughly an order of magnitude speed improvement over a
+naive pure Python approach (more if you are processing numerous
+minibatches).
+
+### Installation
+```
+pip install cpp_protein_encoders
+```
+
+### Usage
+
+```python
+from cpp_protein_encoders import OneHotProteinEncoder, IntegerProteinEncoder
+from cpp_protein_encoders import SubstitutionMatrixEncoder
+
+# Note that all characters are expected to be uppercase.
+
+sequences = ['AAAGGGYYY', 'CCCTTTAAA', 'GGGTTTFF-']
+```
+
+When creating a OneHotProteinEncoder or an IntegerProteinEncoder, we
+can use either the 'standard' alphabet (basic 20 AAs), the 'gapped'
+alphabet (basic 20 AAs + gaps), or the 'expanded' alphabet (gaps +
+unusual AAs, see above). If we pass sequences that contain unexpected
+characters, an exception will be raised.
+
+```python
+encoder1 = OneHotProteinEncoder(alphabet = 'gapped')
+encoder2 = IntegerProteinEncoder(alphabet = 'gapped')
+```
+
+For substitution matrices, we can select a homology value to indicate
+which substitution matrix to use (90% homology, 85%, and so on).
+Current options are '95', '90', '85', '75', '62'.
+We can also set 'use_standardized_mat' to be True or False. If True,
+each AA is encoded using the corresponding row of a scaled Cholesky
+decomposition of a distance matrix built using the substitution matrix.
+This ensures that the Euclidean distance between any two representations
+is equal to the distance between them as determined using the substitution
+matrix. This can work well for kernel machines and some NNs. Alternatively,
+we can set 'use_standardized_mat' to be False, in which case the AAs are
+encoded as the corresponding row of the substitution matrix. This is
+unlikely to work well in kernel machines but may work well for some NNs.
+
+```python
+encoder3 = SubstitutionMatrixEncoder(homology = '90', use_standardized_mat = True)
+```
+
+When encoding, there are two important options:
+`max_length` and `flatten_output_array`. `max_length` can be None or
+an integer. If None, the maximum length is determined from the input
+sequence list and all sequences are if necessary zero-padded to be that
+length. If `max_length` is an int, all sequences are if necessary zero-
+padded to be `max_length`. (If you specify max length then pass a sequence
+that is *longer*, an exception will be raised).
+
+The output array is normally a 3d array of size N x M x A for N sequences,
+M amino acids and A alphabet size. If `flatten_output_array` is True,
+this is flattened to a 2d array of size N x (M * A). *IMPORTANT*: For
+integer encoding, the output array is always a 2d array anyway, so
+`flatten_output_array` is not in that case accepted as an option.
+
+```python
+first_set = encoder1.encode(sequences, flatten_output_array = False, max_length = None)
+second_set = encoder2.encode(sequences, max_length = None)
+third_set = encoder3.encode(sequences, flatten_output_array = False, max_length = None)
+```
