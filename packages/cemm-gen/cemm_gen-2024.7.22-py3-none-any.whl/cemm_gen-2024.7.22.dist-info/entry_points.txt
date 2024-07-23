@@ -1,0 +1,2 @@
+[console_scripts]
+cemm-gen = cemm_gen:main
