@@ -1,0 +1,66 @@
+Metadata-Version: 2.3
+Name: ai-assistant-manager
+Version: 0.0.3
+Summary: This is a repository to manage OpenAI Assistants.
+Author-email: Justin Beall <jus.beall@gmail.com>
+License: /*
+         * ----------------------------------------------------------------------------
+         * "THE BEER-WARE LICENSE" (Revision 42):
+         * <jus.beall@gmail.com> wrote this file.  As long as you retain this notice you
+         * can do whatever you want with this stuff. If we meet some day, and you think
+         * this stuff is worth it, you can buy me a beer in return.   Justin Lee Beall
+         * ----------------------------------------------------------------------------
+         */
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: loguru
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Description-Content-Type: text/markdown
+
+# OpenAI Assistant
+
+This is a repository to manage OpenAI Assistants.
+
+## Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/DEV3L/open-ai-assistant
+cd open-ai-assistant
+```
+
+2. Copy the env.local file to a new file named .env and replace `OPENAI_API_KEY` with your actual OpenAI API key:
+
+```bash
+cp env.local .env
+```
+
+3. Setup a virtual environment with dependencies and activate it:
+
+```bash
+brew install hatch
+hatch env create
+hatch shell
+```
+
+## Testing
+
+### End to End Test
+
+```bash
+hatch run end-to-end
+```
+
+### Unit Tests
+
+```bash
+hatch run test
+```
+
+Coverage Gutters:
+
+```bash
+Command + Shift + P => Coverage Gutters: Watch
+```
