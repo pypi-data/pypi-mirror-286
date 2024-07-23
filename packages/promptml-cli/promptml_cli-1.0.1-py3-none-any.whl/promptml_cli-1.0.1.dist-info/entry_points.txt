@@ -1,0 +1,2 @@
+[console_scripts]
+procli = promptml_cli.main:run

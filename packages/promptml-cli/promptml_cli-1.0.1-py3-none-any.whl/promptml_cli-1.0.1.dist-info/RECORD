@@ -1,0 +1,10 @@
+promptml_cli/__about__.py,sha256=T1_M8-26noxXp7DgWnayVXT37JxPQUZFO9EfI-NL2MQ,49
+promptml_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+promptml_cli/client.py,sha256=wjU9GrOT3Na1_L4tUOmNaADnqpTpVbpG_DdWy92ynxE,1298
+promptml_cli/generation.py,sha256=nbLMrFxh45zASHAalUmvNv4MsQbL0G1UUmQxZJucpbg,3338
+promptml_cli/main.py,sha256=0zGIheOGGSUdZzR8Gt5L1WmJPYtCPKuIieVGF3TnZrg,3570
+promptml_cli-1.0.1.dist-info/METADATA,sha256=XOSki-33PoaCbimyWACNkemyOb4AIyupgP1p01ag8A4,6443
+promptml_cli-1.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+promptml_cli-1.0.1.dist-info/entry_points.txt,sha256=KwxTtZK4VsQ0t3JM-jgt1yXTkzA5MSXyA1mNeMOw5nU,49
+promptml_cli-1.0.1.dist-info/licenses/LICENSE,sha256=_IQQzYn4apibAxVlK4UpDYEvZ_aIabOFgcvKfR-dIdo,1073
+promptml_cli-1.0.1.dist-info/RECORD,,
