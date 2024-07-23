@@ -1,0 +1,15 @@
+README.md
+setup.py
+Fiin.egg-info/PKG-INFO
+Fiin.egg-info/SOURCES.txt
+Fiin.egg-info/dependency_links.txt
+Fiin.egg-info/requires.txt
+Fiin.egg-info/top_level.txt
+FiinTest/FiinDataHistorical.py
+FiinTest/FiinIndicator.py
+FiinTest/FiinSession.py
+FiinTest/HistoricalReturnData.py
+FiinTest/RealTimeReturnData.py
+FiinTest/SubscribeForRealTime.py
+FiinTest/__init__.py
+FiinTest/pyarmor_runtime_000000/__init__.py
