@@ -1,0 +1,3 @@
+[console_scripts]
+ejabberd_extauth_oidc_password=ejabberd_extauth_oidc_password:main
+
