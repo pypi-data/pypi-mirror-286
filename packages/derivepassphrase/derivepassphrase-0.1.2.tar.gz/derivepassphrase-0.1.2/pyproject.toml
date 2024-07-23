@@ -1,0 +1,206 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "derivepassphrase"
+description = "An almost faithful Python reimplementation of James Coglan's vault."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Marco Ricci", email = "m@the13thletter.info" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "click>=8.1",
+  "typing_extensions",
+]
+version = "0.1.2"
+
+[project.optional-dependencies]
+dev = ["black", "coverage", "hatch>=1.10", "mkdocs", "mkdocs-material",
+       "mkdocstrings[python]", "pytest>=8.1", "towncrier>=23.11"]
+
+[project.urls]
+Documentation = "https://the13thletter.info/derivepassphrase/"
+Issues = "https://github.com/the-13th-letter/derivepassphrase/issues"
+Source = "https://github.com/the-13th-letter/derivepassphrase"
+
+[project.scripts]
+derivepassphrase = "derivepassphrase.cli:derivepassphrase"
+
+[tool.mypy]
+files = ['src/**/*.py']
+mypy_path = '$MYPY_CONFIG_FILE_DIR/src'
+explicit_package_bases = true
+implicit_reexport = false
+sqlite_cache = true
+
+[tool.pytest.ini_options]
+addopts = '--doctest-modules'
+pythonpath = ['src']
+testpaths = ['src', 'tests']
+xfail_strict = true
+
+[tool.hatch.version]
+path = "src/derivepassphrase/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    'towncrier.d/[0123456789+]*.md',
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ['src/derivepassphrase', 'src/sequin', 'src/ssh_agent_client']
+
+[tool.hatch.envs.hatch-test]
+default-args = ['src', 'tests']
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.10", "3.11", "3.12", "pypy3.10"]
+
+[tool.hatch.env]
+requires = [
+  "hatch-mkdocs",
+]
+
+[tool.hatch.env.collectors.mkdocs.docs]
+path = "mkdocs.yml"
+
+[tool.hatch.envs.docs]
+extra-dependencies = [
+  "black",
+  "mkdocs-material",
+]
+detached = false
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/derivepassphrase tests}"
+
+[tool.coverage.html]
+directory = "html/coverage"
+
+[tool.coverage.run]
+source_pkgs = ["derivepassphrase", "sequin", "ssh_agent_client", "tests"]
+branch = true
+parallel = true
+omit = [
+  "__main__.py",
+]
+
+[tool.coverage.paths]
+src = ["src"]
+tests = ["tests"]
+
+[tool.coverage.report]
+skip_covered = false
+skip_empty = true
+precision = 3
+partial_branches = [
+    'pragma: no branch',
+]
+exclude_also = [
+  "if __name__ == .__main__.:",
+  'if (?:typing\.)?TYPE_CHECKING:',
+  "raise AssertionError",
+  "raise NotImplementedError",
+  'assert False',
+]
+
+[tool.ruff]
+line-length = 79
+src = ["src"]
+extend = "ruff_defaults_v0.5.0.toml"
+
+[tool.ruff.format]
+quote-style = 'single'
+docstring-code-line-length = "dynamic"
+preview = true
+
+[tool.ruff.lint]
+preview = true
+extend-ignore = [
+    'S101',
+]
+extend-select = [
+    'E501',
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = 'google'
+
+[tool.ruff.lint.flake8-pytest-style]
+parametrize-names-type = 'list'
+
+[tool.ruff.lint.extend-per-file-ignores]
+"**/tests/**/*" = [
+  'SLF001',
+  'A002',
+  'FBT001',
+]
+
+[tool.hatch.envs.hatch-static-analysis]
+config-path = "ruff_defaults_v0.5.0.toml"
+dependencies = ["ruff==0.5.0"]
+
+[tool.hatch.envs.release]
+dependencies = ['towncrier>=23.11']
+
+[tool.hatch.envs.release.scripts]
+
+[tool.towncrier]
+package = 'derivepassphrase'
+package_dir = 'src'
+directory = 'towncrier.d'
+filename = 'docs/changelog.md'
+template = 'towncrier-template.md'
+#title_format = '[{version}](https://github.com/the-13th-letter/derivepassphrase/tree/{version}) – {project_date}'
+underlines = ['', '', '']
+issue_format = '[#{issue}]: https://github.com/the-13th-letter/derivepassphrase/{issue}'
+wrap = true
+
+[[tool.towncrier.type]]
+directory = "security"
+name = "Security"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "added"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "fixed"
+name = "Fixed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removed"
+name = "Removed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "deprecated"
+name = "Deprecated"
+showcontent = true

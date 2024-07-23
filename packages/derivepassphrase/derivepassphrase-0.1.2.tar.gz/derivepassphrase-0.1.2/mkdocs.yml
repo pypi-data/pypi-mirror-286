@@ -1,0 +1,105 @@
+site_name: derivepassphrase
+site_url: https://the13thletter.info/derivepassphrase/
+repo_url: https://github.com/the-13th-letter/derivepassphrase
+repo_name: the-13th-letter/derivepassphrase
+site_description: An almost faithful Python reimplementation of James Coglan's vault.
+site_author: Marco Ricci
+copyright: Copyright &copy; 2024 Marco Ricci (the-13th-letter)
+
+docs_dir: docs
+site_dir: html
+extra_css:
+  - mkdocstrings_recommended_styles.css
+
+theme:
+  name: "material"
+  #font: false
+  font:
+    text: Noto Sans
+    code: Noto Mono
+    #code: Inconsolata
+  #palette:
+  #  - media: "(prefers-color-scheme)"
+  #    toggle:
+  #      icon: material/brightness-auto
+  #      name: Switch to light mode
+  #  - media: "(prefers-color-scheme: light)"
+  #    scheme: default
+  #    toggle:
+  #      icon: material/brightness-7
+  #      name: Switch to dark mode
+  #  - media: "(prefers-color-scheme: dark)"
+  #    scheme: slate
+  #    toggle:
+  #      icon: material/brightness-4
+  #      name: Switch to system preference
+  icon:
+    logo: material/library
+  features:
+    - content.action.view
+    - content.code.annotate
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.prune
+    - navigation.footer
+    - toc.follow
+  custom_dir: docs-overrides
+
+plugins:
+  - offline:
+      enabled: false  # set to true for offline versions
+  #- privacy:
+  #    enabled: true
+  - mkdocstrings:
+      handlers:
+        python:
+          import:
+            - https://docs.python.org/3/objects.inv
+            - https://click.palletsprojects.com/en/8.1.x/objects.inv
+          options:
+            docstring_options:
+              ignore_init_summary: true
+              returns_multiple_items: false
+            merge_init_into_class: true
+            show_source: false
+            heading_level: 2
+            show_object_full_path: false
+            show_root_members_full_path: false
+            show_root_heading: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            parameters_heading: true
+            members_order: 'source'
+            show_signature_annotations: true
+            separate_signature: true
+            signature_crossrefs: false
+            unwrap_annotated: true
+          paths:
+            - src
+
+nav:
+  - Overview: index.md
+  #- Tutorials & Examples: tutorials.md
+  #- How-Tos: how-tos.md
+  - Reference:
+    - Reference overview: reference.md
+    - 'Man page: derivepassphrase': reference/derivepassphrase.1.md
+    - Module derivepassphrase: reference/derivepassphrase.md
+    - Module sequin: reference/sequin.md
+    - Module ssh_agent_client: reference/ssh_agent_client.md
+  #- Design & Background: explanation.md
+  - Changelog: changelog.md
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - admonition
+  - smarty
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
