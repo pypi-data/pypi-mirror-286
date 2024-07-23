@@ -1,0 +1,17 @@
+ks_trade_api/./.gitignore,sha256=eOt_WIh4Q7_8meDFVlUvnlCPFCSKtIOdM3LTqhqkVrM,2173
+ks_trade_api/./README.en.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ks_trade_api/./README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ks_trade_api/./__about__.py,sha256=BLXRGJHfnEu0fpvESaAw8qq-6Z9-v_2FQPkeqJfwItk,23
+ks_trade_api/./__init__.py,sha256=AbIE6jcoz9rXFFnWlWr4PDbzZDPgrgICmJpXrVW1NCU,69
+ks_trade_api/./base_market_api.py,sha256=xiEeZq1Dj8E5EDBsUKRzKQCdPFfhg_XYQl_DGretLAE,3747
+ks_trade_api/./base_trade_api.py,sha256=gxHF7ddZmtcoYJzW50yWNP8e8hDxxAlhbRd84q0MUAw,5762
+ks_trade_api/./constant.py,sha256=Oy0cCZlZlqGKhcTahEiGO4VKO3sPOekvzU53ZpJp_G8,7453
+ks_trade_api/./object.py,sha256=_w-RBCa7UIX5X2MaNnNVqjguDjRGLknxL_sDBo1hUvc,20876
+ks_trade_api/./pyproject.toml,sha256=lJlBy08I62Yx10Z2kJhd43tPtN1P-o3HFoKoxba--DE,2155
+ks_trade_api/./rate_limit_checker.py,sha256=i-VhihIlI_7vU7nSnoDPO8DPbPyUqkaMFHbUWIkCnlA,2186
+ks_trade_api/./requirements.txt,sha256=QSVNQKGovp-uHHZ4MlBd36Oe8FqrRNOGz0E-yCLoh3w,204
+ks_trade_api/./setup.py,sha256=YQ7t2PbcGICWPX79TCjzQ6yEi9pLGOxvFZGVaSpxKKQ,890
+ks_trade_api/./utility.py,sha256=ldv0xZMLyLU_R9xg9X6iMgj8pPniSFvGu4DXqfFzUkY,34290
+ks_trade_api-0.0.8.dist-info/METADATA,sha256=O8EuC0jSnJ_o-by1LJy3elpCbtCY_6MEauPSjYcEzb4,871
+ks_trade_api-0.0.8.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ks_trade_api-0.0.8.dist-info/RECORD,,
