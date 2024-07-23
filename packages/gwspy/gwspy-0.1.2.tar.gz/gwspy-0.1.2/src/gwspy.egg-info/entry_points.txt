@@ -1,0 +1,2 @@
+[console_scripts]
+gwspy = gwspy.__main__:main
