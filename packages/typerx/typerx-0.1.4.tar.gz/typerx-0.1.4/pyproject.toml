@@ -1,0 +1,55 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "typerx"
+description = "A Typer extension for building complex CLI applications, with dataclass support."
+authors = [
+    { name = "sagewe", email = "sagewe@fastmail.com" },
+]
+dynamic = []
+dependencies = [
+    "typer",
+    "pydantic",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+version = "0.1.4"
+
+[project.license]
+text = "MIT"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+includes = [
+    "src/",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "src/typerx/_version.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black",
+    "isort",
+    "transformers[torch]",
+    "pytest",
+]
+
+[tool.isort]
+profile = "black"
+skip_glob = []
+
+[tool.black]
+line-length = 119
+target-version = [
+    "py310",
+]
+include = "\\.pyi?$"
+extend-exclude = "(\n)\n"
