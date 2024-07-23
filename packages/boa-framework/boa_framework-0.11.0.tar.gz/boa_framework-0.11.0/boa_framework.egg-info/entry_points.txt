@@ -1,0 +1,3 @@
+[console_scripts]
+boa = boa.cli:main
+boa-plot = boa.plot:main
