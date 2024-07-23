@@ -1,0 +1,17 @@
+kalsievelib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kalsievelib/commands.py,sha256=6v6JEAJXO9eFdt-Fifnksig9jn2QyNAiaMJSE30nm1U,35089
+kalsievelib/digest_md5.py,sha256=J79JBFhEetOZz3y9UURdcaAhBfO7Dt1Ox8Bn-zWZOf8,2622
+kalsievelib/factory.py,sha256=AmicXgzyXRgUnIsgOd_yFo6sHbQeFGOgyWcDhi7sgCw,21920
+kalsievelib/managesieve.py,sha256=jMRyyZMayM2Oae0CyghAxZg1WUmz0_acsa4FcPEjSL8,24433
+kalsievelib/parser.py,sha256=vdR4f4b7lXMUWSai5IEBYlHJpwm6x1RK3CLoiFRfKSE,19412
+kalsievelib/tools.py,sha256=XAKtg6O6Y2T4J838Wj8fUxoH4HjQRMVHklbt1G6AcGU,309
+kalsievelib/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kalsievelib/tests/test_factory.py,sha256=jBRabQ_-6BDslBLLhgv7CZw_RgpJABzzG__bhnvIFqA,16268
+kalsievelib/tests/test_managesieve.py,sha256=NjpFDCGSshUp7uiAB1Rs6SH2q9xmkvueHGqbMvhC2rU,5653
+kalsievelib/tests/test_parser.py,sha256=vnQs-VuofK7wf1T8ibO2tKrlSG3lD6JD3uZbX0c_XyE,25153
+kalsievelib/tests/files/utf8_sieve.txt,sha256=bYOH9Jr5P3R_Q5ZTkoB_dtrVvu2aL1dLyor5ixFHvqI,182
+kalsievelib-1.4.1.dist-info/COPYING,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kalsievelib-1.4.1.dist-info/METADATA,sha256=iirSkdo7_JrtXsyscwVRse4TQB2fCE-CoO2sfF9f80M,778
+kalsievelib-1.4.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+kalsievelib-1.4.1.dist-info/top_level.txt,sha256=FrFUim8fvsJHUl48fNHLN4K6e5Gw-BEmRVz5kmKHscw,12
+kalsievelib-1.4.1.dist-info/RECORD,,
