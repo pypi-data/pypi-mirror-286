@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools >= 60", "setuptools_scm[toml] >= 8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sweights"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.20.1", "scipy>=1.5.1", "iminuit"]
+authors = [
+    { name = "Matthew Kenzie", email = "matthew.kenzie@cern.ch" },
+    { name = "Hans Dembinski", email = "hans.dembinski@gmail.com" },
+]
+description = "Tools for producing sweights using classic methods or custom orthogonal weight functions (COWs) and for correcting covariance matrices for weighted data fits."
+readme = "README.md"
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    'Programming Language :: Python :: 3 :: Only',
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Intended Audience :: Science/Research',
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov", "coverage[toml]", "matplotlib"]
+doc = [
+    "ipython",
+    "nbsphinx",
+    "sphinx_rtd_theme",
+    "boost-histogram",
+    "matplotlib",
+    "uproot",
+    "pandas",
+]
+
+[project.urls]
+repositoy = "https://github.com/sweights/sweights"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.ruff.lint]
+extend-select = ["E", "F", "W", "D"]
+ignore = ["D212", "D203"]
+unfixable = ["ERA"]
+
+[tool.ruff.lint.per-file-ignores]
+"test_*.py" = ["D", "E731"]
+"doc/**" = ["D", "E731"]
+
+[tool.mypy]
+plugins = "numpy.typing.mypy_plugin"
+strict = true
+exclude = "test_.*\\.py$"
+allow_redefinition = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["sweights.covariance", "sweights.sweight"]
+ignore_errors = true
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --strict-config --strict-markers -q -ra --ff"
+testpaths = ["src/sweights", "tests"]
+log_cli_level = "INFO"
+xfail_strict = true
+filterwarnings = ["error::DeprecationWarning", "ignore::FutureWarning"]

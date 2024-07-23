@@ -1,0 +1,13 @@
+__plots__
+dist/
+src/sweights.egg-info
+**__pycache__
+**.DS_Store
+**.swp
+**.swo
+build/
+doc/.ipynb_checkpoints/
+venv
+.vscode
+.*_cache
+outf.root
