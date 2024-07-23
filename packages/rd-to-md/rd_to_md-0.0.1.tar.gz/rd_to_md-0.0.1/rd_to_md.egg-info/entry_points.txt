@@ -1,0 +1,2 @@
+[console_scripts]
+rd2md = rd2md:main
