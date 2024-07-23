@@ -1,0 +1,38 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools"]
+
+[project]
+name = "selenium_google_signin"
+version = "0.1.4"
+authors = [
+  { name="ksks", email="nose2002kr@gmail.com" },
+]
+description = "Helps you sign in to Google and remember it automatically."
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "selenium==4.23.0",
+    "platformdirs==4.2.2"
+]
+
+[project.optional-dependencies]
+webdriver = [
+    "webdriver-manager"
+]
+logger = [
+    "loguru" 
+]
+config = [
+    "python-dotenv" 
+]
+
+
+[project.urls]
+Homepage = "https://github.com/nose2002kr/selenium-google-signin"
+Issues = "https://github.com/nose2002kr/selenium-google-signin"

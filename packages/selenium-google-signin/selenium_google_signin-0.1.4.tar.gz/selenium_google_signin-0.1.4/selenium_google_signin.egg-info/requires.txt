@@ -1,0 +1,11 @@
+selenium==4.23.0
+platformdirs==4.2.2
+
+[config]
+python-dotenv
+
+[logger]
+loguru
+
+[webdriver]
+webdriver-manager
