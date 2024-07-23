@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+pydataspace/__init__.py
+pydataspace/data/jsonLDObject.yaml
+pydataspace/jsonLDObject/__init__.py
+pydataspace/jsonLDObject/context.py
+pydataspace/jsonLDObject/jsonLDObject.py
+pydataspace_jsonLDObject.egg-info/PKG-INFO
+pydataspace_jsonLDObject.egg-info/SOURCES.txt
+pydataspace_jsonLDObject.egg-info/dependency_links.txt
+pydataspace_jsonLDObject.egg-info/top_level.txt
