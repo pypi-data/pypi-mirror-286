@@ -1,0 +1,13 @@
+inmanta_mitogen/__init__.py,sha256=w6hU0bJM2uUWmH3H4BzuStryZ99y4D9bYs74nAnxOuk,3948
+inmanta_mitogen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inmanta_plugins/mitogen/__init__.py,sha256=BIlnqPbiAzgvHAT_WseK_WSfA_yle5uOM-ro4iY-R9I,25025
+inmanta_plugins/mitogen/abc.py,sha256=P6zSYPc0lEnt5JvcBHi-9AiZqqVbVjWdLnYSwOL1nlg,4451
+inmanta_plugins/mitogen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inmanta_plugins/mitogen/setup.cfg,sha256=u3k3KPg_5KR-iTziZEjD01LZ42jMordCVCK-o7B9Wh0,2071
+inmanta_plugins/mitogen/files/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inmanta_plugins/mitogen/model/_init.cf,sha256=1LQJ1a4GtGM_NRURQ7vW7pL3rZmCBxwvWzWDFqZT31Q,8496
+inmanta_plugins/mitogen/templates/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inmanta_module_mitogen-0.0.1.dist-info/METADATA,sha256=SB9Ie5XfQ-dcoCs4aeOSwWRHHnrIdmjKv5xR8H7FGdA,188
+inmanta_module_mitogen-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+inmanta_module_mitogen-0.0.1.dist-info/top_level.txt,sha256=AH7u_h4bubEnf3uEpI1S6KFuCBecjyB2c09tkpRACSY,32
+inmanta_module_mitogen-0.0.1.dist-info/RECORD,,
