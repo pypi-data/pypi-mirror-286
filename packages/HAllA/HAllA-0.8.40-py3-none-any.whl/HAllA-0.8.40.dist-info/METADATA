@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: HAllA
+Version: 0.8.40
+Summary: HAllA: Hierarchical All-against All Association Testing
+Home-page: https://github.com/biobakery/halla
+Author: HAllA Development Team
+Author-email: halla-users@googlegroups.com
+License: MIT
+Keywords: halla,association testing
+Platform: Linux
+Platform: MacOS
+Classifier: Programming Language :: Python
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+License-File: LICENSE
+Requires-Dist: jenkspy >=0.1.5
+Requires-Dist: matplotlib >=3.5.3
+Requires-Dist: numpy >=1.19.0
+Requires-Dist: pandas >=1.0.5
+Requires-Dist: PyYAML >=5.4
+Requires-Dist: rpy2 >=3.3.5
+Requires-Dist: scikit-learn >=0.23.1
+Requires-Dist: scipy >=1.5.1
+Requires-Dist: seaborn >=0.10.1
+Requires-Dist: statsmodels >=0.11.1
+Requires-Dist: tqdm >=4.50.2
+
+Given two high-dimensional 'omics datasets X and Y (continuous and/or categorical features) from the same n biosamples, HAllA (Hierarchical All-against-All Association Testing) discovers densely-associated blocks of features in the X vs. Y association matrix where: 1) each block is defined as all associations between features in a subtree of X hierarchy and features in a subtree of Y hierarchy and 2) a block is densely associated if (1 - FNR)% of pairwise associations are FDR significant (FNR is the pre-defined expected false negative rate)
