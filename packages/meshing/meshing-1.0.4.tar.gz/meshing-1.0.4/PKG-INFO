@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: meshing
+Version: 1.0.4
+Summary: Simple Python client library for https://devnull.cn/meshing
+Home-page: https://devnull.cn
+Author: Xizhen Du
+Author-email: xizhendu@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: theid
+
+# meshing-sdk-python
+Python SDK to run a WireGuard mesh network.
+
+```bash
+echo 'y' | pip3 uninstall meshing
+pip3 install meshing --no-cache-dir
+
+python3 -c 'import meshing; meshing.checkin()'
+
+```
+
+```python
+import meshing
+meshing.checkin()
+
+```
+
