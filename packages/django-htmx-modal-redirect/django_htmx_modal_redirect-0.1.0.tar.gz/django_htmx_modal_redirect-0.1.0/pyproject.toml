@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django-htmx-modal-redirect"
+version = "0.1.0"
+description = "`django-htmx-modal-redirect` is a Django middleware that intercepts direct URL requests intended for HTMX modals, rendering a fallback view with injected HTMX code to automatically open the modal, such as opening a user profile modal when a user visits `/user/123/` directly, briefly showing the home page before the modal opens."
+authors = ["Christian Tanul <contact@tanulchristian.dev>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "htmx_modal_redirect" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
