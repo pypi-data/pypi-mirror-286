@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/idgenerator.py,sha256=nmhvU36AwZg8DqMdp1hYiFITSw745irLvGSEpPK3SKI,2066
+src/utils.py,sha256=a5CY1XEk0Maki5VXbQCMFJl46Q1CuegrRqzFpAEAY2A,408
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_idgenerator.py,sha256=_VJVCXYFi9GFRZJC-ebrJzmN9joaPDayLTVKagst9lY,1766
+shanku_id_generator-0.0.10.dist-info/LICENSE,sha256=KwF6q4vbd9feMPwRqsuaKHPgQMBhb7QzUfLDD9snKQ8,1067
+shanku_id_generator-0.0.10.dist-info/METADATA,sha256=n36pgx5prf_amyBUlNccM0lpPJFx2eaMhcbxr-HxeY8,1253
+shanku_id_generator-0.0.10.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+shanku_id_generator-0.0.10.dist-info/top_level.txt,sha256=ko5Zp-GH1-aCqmTB-_pzAfcKWZ9D29cRgzo8EmAy2_k,9
+shanku_id_generator-0.0.10.dist-info/RECORD,,
