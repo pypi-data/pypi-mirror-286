@@ -1,0 +1,13 @@
+text_lloom/__init__.py,sha256=ZvEQK0151r5z3DBbgthAppOWgHOgGjBcMwbFgesJTX0,2019
+text_lloom/concept.py,sha256=qdq5sOKFf2CaWX7Ztp2x5saDKnMxt4mvYvlkAvDN8Fw,805
+text_lloom/concept_induction.py,sha256=mw8wLfpskYpmjwCLli3xGxPI_meCAj706Mpfoa_cC2E,59799
+text_lloom/llm.py,sha256=jUrPTG5tfeSpELfuXB-kH1Y5sN-eQxiiWX3ox2tFw3U,8822
+text_lloom/prompts.py,sha256=8XUh5YDDWFL2kOcaCzhunUnwzBpGY7Gt1rZF3QaWsQs,8906
+text_lloom/static/index.css,sha256=K_Fj6Ku_JR0WK-iawZyGFsQDxznCxBlj71k3sSqPC38,1263
+text_lloom/static/index.js,sha256=x3O2suDs1iqtq8kNe8KgJEa3lMPeHXA7S7sghZLFNJ0,455935
+text_lloom/static/index_select.css,sha256=0knNFfzm04XuJ21wM0EKE0181iBswolpCheo2-R7SGY,707
+text_lloom/static/index_select.js,sha256=9YzGzt67RzBi8JFdXvz4wLy2jPtTHh8T1Emar2PwULE,11241
+text_lloom/workbench.py,sha256=ptsPhrQ7R7we7zpSQTxF7976yP2sWR_8HS4hYLjOYv8,33507
+text_lloom-0.7.5.dist-info/METADATA,sha256=03QCJr1m8kR2YM258X7uSj_6uZ8T8mri76_KixWD6DM,938
+text_lloom-0.7.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+text_lloom-0.7.5.dist-info/RECORD,,
