@@ -1,0 +1,10 @@
+spruceup/__init__.py,sha256=BsKmyg3lwLI8IlYtFzZM0g4FoiGCCDQ-qBBq0Pwxtd0,78
+spruceup/__main__.py,sha256=gdHtjZM3W2Dz3uXsRDBoiC5cWDktAxp7BTC3Xk9dN-4,6058
+spruceup/aln_parsing.py,sha256=wVp8PvQUGRXNHE3LVprenlxPTsWj-xXCAtc83z2kmBw,7099
+spruceup/aln_writing.py,sha256=XRsDM5PlXDVgsrgCT-V65FJ1nXI1YgpVu-bjwrQqHnE,5800
+spruceup/spruceup.py,sha256=67V442vfmjne9TbCmeyAeVenXuZKn3n-aRSIKnLOIXc,34866
+spruceup-2024.7.22.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+spruceup-2024.7.22.dist-info/METADATA,sha256=mm7tOw9F3_vOmgLgRPkWGcG9rUa8Y3D5WiT5IRCoU4U,19705
+spruceup-2024.7.22.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spruceup-2024.7.22.dist-info/top_level.txt,sha256=-4Vb5awiFmA3leVZ33x18_9Vu73pVLIgCx0Mq5DVRcI,9
+spruceup-2024.7.22.dist-info/RECORD,,
