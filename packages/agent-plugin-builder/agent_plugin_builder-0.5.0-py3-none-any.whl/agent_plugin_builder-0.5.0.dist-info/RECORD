@@ -1,0 +1,15 @@
+CHANGELOG.md,sha256=cOPhnC8TV6lLTpxSQCcAOKUWqR2GUjD2X8glntX6tXU,818
+README.md,sha256=_eGZ1XzxIqTeiU7NQzUTjq5Amlbpt3Dj5d-sB4yOSBo,2930
+agent_plugin_builder/__init__.py,sha256=IURpB5mgB3GQB_C5vz3kRQrx0ZW5UxaViFF4eE8xoxs,537
+agent_plugin_builder/__main__.py,sha256=2GVlNCrmny-rkXzxEQIG7SUifkzYC44Qz53HLk9Lr4Q,69
+agent_plugin_builder/agent_plugin_builder.py,sha256=jlfgUJv_KaZ9hMXALq0NeUI9VDeciVBPNPRGQpe3AV0,5317
+agent_plugin_builder/build_options.py,sha256=Yrv53_SQgnKTKrw_BX3KPbwhgbQPh15o-0YTs3077rQ,2861
+agent_plugin_builder/build_plugin.py,sha256=_Pa9gAaEJwNduva_jFA9PAradrUnVaVnuFXDhjE5BN8,11568
+agent_plugin_builder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agent_plugin_builder/setup_build_plugin_logging.py,sha256=D-YcxTQNEPCc6BfAIGEckXn1mEn_LUzQLCYETx4sBPg,2288
+agent_plugin_builder/vendor_dirs.py,sha256=2HavQWvmCSZHnnxPkXfu5HvYXpL8Rv5k63H58ofBRIU,8114
+agent_plugin_builder-0.5.0.dist-info/LICENSE,sha256=8vSVUSGQNLw3jNk-6LogMp9dkBcAS103yGyzS78mIjs,35255
+agent_plugin_builder-0.5.0.dist-info/METADATA,sha256=JhviUoyhlCPELknk5Y42oI5KkD6msf6Psfhl6CqVfz0,3751
+agent_plugin_builder-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+agent_plugin_builder-0.5.0.dist-info/entry_points.txt,sha256=bORiRz3bG49H2I1VoslytOMZjoPVUvLcxvLLSN2NuFI,85
+agent_plugin_builder-0.5.0.dist-info/RECORD,,
