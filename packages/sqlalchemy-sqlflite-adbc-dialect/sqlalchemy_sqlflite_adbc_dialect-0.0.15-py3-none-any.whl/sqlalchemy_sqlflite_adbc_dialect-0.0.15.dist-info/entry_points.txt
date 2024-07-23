@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+sqlflite = sqlalchemy_sqlflite_adbc_dialect:SQLFliteDialect
