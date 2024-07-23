@@ -1,0 +1,9 @@
+cubiomespi/__init__.py,sha256=u_Z8u1nvo_3uAhwzmzMiB_fwplP5CCFGrAJUUfZOTkE,23
+cubiomespi/cubiomes.py,sha256=oGh_SLfbqDm6e8xz5GKIJPSPEKmRi_eHyDFUKQt1rJo,18415
+cubiomespi/lib/compile.txt,sha256=D_QO_QWp7j2FCgD1EGUz6fBESGh0DFukTe_Y5xvYmb8,177
+cubiomespi/lib/lib.dll,sha256=laQs1z8krGFDhKkjuWvtoKCz4sllgojcq1YDxGJJDas,600580
+cubiomespi/lib/newlib.c,sha256=C5ZZR-0OWWfH-WzmTUFD25EW-iTS_909C6NRfEjWRfQ,4331
+cubiomespi-1.0.dist-info/METADATA,sha256=M2IG0vHB6UdHEwZJ1ab6MsUyaV1Ei8N4VtVnMzMc6A8,5817
+cubiomespi-1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+cubiomespi-1.0.dist-info/top_level.txt,sha256=iGTFLzS6t-01DX5lmEAyseic2EQZXWIL1206t9mgdqo,11
+cubiomespi-1.0.dist-info/RECORD,,
