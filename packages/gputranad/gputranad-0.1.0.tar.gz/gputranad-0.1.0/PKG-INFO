@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: gputranad
+Version: 0.1.0
+Summary: PyTorch Lightning wrapper library for TranAD: Deep Transformer Networks for Anomaly Detection in Multivariate Time Series.
+Author-Email: Taeyong Jeon <taeyongjeon24@gmail.com>
+License: MIT
+Requires-Python: >=3.12
+Requires-Dist: torch>=2.3.1
+Requires-Dist: lightning>=2.3.3
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: scikit-learn>=1.5.1
+Description-Content-Type: text/markdown
+
+# GPUTranAD
+PyTorch Lightning wrapper library for TranAD: Deep Transformer Networks for Anomaly Detection in Multivariate Time Series.
+
+GPU supported.
+
+# How to use
+```python
+from gputranad import setup, TranAD, TranADLitModel
+
+train_dataloader = setup("dataset/P-1_train.npy")
+
+batch_sample = next(iter(train_dataloader))[0]
+n_features = batch_sample.shape[-1]
+model = TranAD(n_feats=n_features).double()
+lit_model = TranADLitModel(model)
+
+trainer = L.Trainer(max_epochs=NUM_EPOCHS)
+trainer.fit(lit_model, train_dataloader)
+```
