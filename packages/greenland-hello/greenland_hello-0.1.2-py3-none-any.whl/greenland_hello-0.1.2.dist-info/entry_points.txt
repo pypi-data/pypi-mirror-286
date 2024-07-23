@@ -1,0 +1,2 @@
+[console_scripts]
+greenland-hello = greenland.hello.bin.greenland_hello:main
