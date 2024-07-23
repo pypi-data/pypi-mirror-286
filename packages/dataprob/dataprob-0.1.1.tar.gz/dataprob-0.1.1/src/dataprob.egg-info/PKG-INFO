@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: dataprob
+Version: 0.1.1
+Summary: Do likelihood based parameter estimation using maximum likeihood and bayesian methods
+Author-email: Mike Harms <harms@uoregon.edu>
+Maintainer-email: Mike Harms <harms@uoregon.edu>
+License: Copyright (c) 2020 Michael J. Harms.  
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Repository, https://github.com/harmslab/dataprob.git
+Project-URL: Bug Tracker, https://github.com/harmslab/dataprob/issues
+Keywords: likelihood,maximum likelihood,ML,Bayesian,MCMC,monte carlo,regression,estimator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: emcee
+Requires-Dist: corner
+Provides-Extra: test
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: genbadge; extra == "test"
+
+# dataprob
+
+Library for calculating the probability of data (the likelihood) to extract
+parameter estimates for models describing experimental data. Can do maximum
+likelihood, bootstrap, and Bayesian sampling using a consistent API.  
+
+Docs in progress.  See `examples/example-fit.ipynb` for basic demonstration
+of the API.

@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scipy
+emcee
+corner
+
+[test]
+coverage
+flake8
+pytest
+genbadge
