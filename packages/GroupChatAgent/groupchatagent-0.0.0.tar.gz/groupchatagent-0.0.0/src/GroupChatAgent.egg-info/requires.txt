@@ -1,0 +1,11 @@
+firebase_admin
+os
+sys
+importlib
+datetime
+langchain_openai
+langchain
+langchain_google_vertexai
+
+[:python_version < "3.10"]
+importlib-metadata
