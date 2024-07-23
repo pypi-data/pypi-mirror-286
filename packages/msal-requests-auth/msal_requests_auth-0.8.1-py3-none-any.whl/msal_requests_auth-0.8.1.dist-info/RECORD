@@ -1,0 +1,14 @@
+msal_requests_auth/__init__.py,sha256=KRkctffgjzxs2wCJgPq7fmMf9bobl0cW7SesMoPudqk,180
+msal_requests_auth/_version.py,sha256=Ocl79hbbH8_jdr5dGC90VR1cAvZc05Rc0tkZttUnMjo,22
+msal_requests_auth/cache.py,sha256=zq94SC_9LXX5pfMYfXZuSTmnubeGbC9EG9fEaLxFZo8,3430
+msal_requests_auth/exceptions.py,sha256=xSjKxp7FqDl0FiI2QpWIkbYaMslkKZaXqgxQaQyt6kk,168
+msal_requests_auth/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msal_requests_auth/auth/__init__.py,sha256=CNTJfyej11n1Um4hsPdoscF4Nb2Mbty5zHbcm2M2nso,120
+msal_requests_auth/auth/base_auth_client.py,sha256=w3u4mncXfzJijRkHmFvzoGdBohhchBvuRhgYD9NIcQs,2230
+msal_requests_auth/auth/client_credential.py,sha256=Q44_kqgybP0cBFzHFu0ZBM1ZijOmtrxwgJ5KHBJUf0Q,957
+msal_requests_auth/auth/device_code.py,sha256=lVlDWlEodjsuKd9M6tpm8IeG8OBZsPFqZgLnVsqmzF4,2942
+msal_requests_auth-0.8.1.dist-info/LICENSE,sha256=zY83wbwwyVaM6gnbFIkzrc9CKbUeFugbLHcHvL650HA,1527
+msal_requests_auth-0.8.1.dist-info/METADATA,sha256=aj6usNHqEAjc7sQgAnOuvrDRe8fmHlyAfnrwN5tTZKE,6732
+msal_requests_auth-0.8.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+msal_requests_auth-0.8.1.dist-info/top_level.txt,sha256=YVQI_JDCAI7iILG3wfd7Sb-_UNcjIb7KeN0kzBaSjpM,19
+msal_requests_auth-0.8.1.dist-info/RECORD,,
