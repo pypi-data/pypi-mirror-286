@@ -1,0 +1,3 @@
+[console_scripts]
+ndfetch = ndfetcher.download:download_cli
+ndfind = ndfetcher.find:find_cli
