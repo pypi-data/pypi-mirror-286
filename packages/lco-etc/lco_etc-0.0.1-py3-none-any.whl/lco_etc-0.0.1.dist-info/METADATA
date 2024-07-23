@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: lco_etc
+Version: 0.0.1
+Author-email: Braden Garretson <bgarrets@purdue.edu>
+License: MIT License
+        
+        Copyright (c) 2023 Braden Garretson
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Source Code, https://github.com/bradengarretson/lco_etc
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: asv ==0.6.3 ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+
+# lco_etc
+
+[![Template](https://img.shields.io/badge/Template-LINCC%20Frameworks%20Python%20Project%20Template-brightgreen)](https://lincc-ppt.readthedocs.io/en/latest/)
+[![PyPI](https://img.shields.io/pypi/v/lco_etc?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/lco-etc/)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bradengarretson/lco-etc/smoke-test.yml)](https://github.com/bradengarretson/lco-etc/actions/workflows/smoke-test.yml)
+[![Codecov](https://codecov.io/gh/bradengarretson/lco-etc/branch/main/graph/badge.svg)](https://codecov.io/gh/bradengarretson/lco-etc)
+[![Read The Docs](https://img.shields.io/readthedocs/lco-etc)](https://lco-etc.readthedocs.io/)
+[![Benchmarks](https://img.shields.io/github/actions/workflow/status/bradengarretson/lco-etc/asv-main.yml?label=benchmarks)](https://bradengarretson.github.io/lco-etc/)
+
+This project was automatically generated using the LINCC-Frameworks [python-project-template](https://github.com/lincc-frameworks/python-project-template).
+
+For more information about the project template see the [documentation](https://lincc-ppt.readthedocs.io/en/latest/).
+
+## Overview
+
+`lco_etc` is a Python package designed to calculate exposure times for the Las Cumbres Observatory Telescopes. The original exposure time calculator was implemented as a webpage at [LCO Exposure Time Calculator](https://exposure-time-calculator.lco.global/#) and adapted to Python by rewriting the embedded JavaScript code. This Python adaptation provides a programmatic interface for calculating exposure times, making it accessible for automation and integration into other Python-based workflows.
+
+## Installation
+
+### Using pip
+
+You can install the latest release of `lco_etc` from PyPI:
+
+```bash
+pip install lco_etc
+```
+
+## Usage
+
+To use the `lco_etc` package, you can import it into your Python scripts and call the provided functions. Below is a quick example:
+
+```python
+from lco_etc.etc import exposure_time_calc
+
+result = exposure_time_calc(10.0, 20, None, "sinistro", "V", "new", 1.2)
+print(result)
+```
+
+### Output
+
+``` python
+{'snr': 10.2, 'magnitude': 20.0, 'exposure_time': 29.0, 'saturated': False, 'mag_system': 'Vega'}
+```
