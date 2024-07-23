@@ -1,0 +1,8 @@
+trustedflow/attestation/generation/__init__.py,sha256=olnX_kXTVg1I_hqG5gqS21-jAh4LE4JomsyQTtvBnCU,581
+trustedflow/attestation/generation/generator.so,sha256=h1sQRB08NDujNHw-IsXbO-HjptbwXcU4NQupKn4uync,4084520
+trustedflow/attestation/verification/verifier.cpython-310-x86_64-linux-gnu.so,sha256=DqNSOUs6InOst-E16qZEwGRGC08vsBcDwaYQUZNv3XU,8525872
+trustedflow_tdx_generation-0.3.0.dev20240722.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+trustedflow_tdx_generation-0.3.0.dev20240722.dist-info/METADATA,sha256=BpzuoHlaHww8f4ps_UfiuxsjkLUE7eXgvO-g2pmT4cc,639
+trustedflow_tdx_generation-0.3.0.dev20240722.dist-info/WHEEL,sha256=XcXIRX2bPo-EGCFnthMC441x8LAB1n06gaqRMpx0fSU,113
+trustedflow_tdx_generation-0.3.0.dev20240722.dist-info/top_level.txt,sha256=WrzyYsQZnTtydHYt7avRZW_3Btrw99LwyEYH3j6QrEk,45
+trustedflow_tdx_generation-0.3.0.dev20240722.dist-info/RECORD,,
