@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: hack4u_ar
+Version: 0.10.0
+Summary: una biblioteca para consultar Hack4u.
+Home-page: https://hack4u.io
+Author: Aridany Suárez
+Description-Content-Type: text/markdown
+
+# Hack4U Academy Courses Library
+
+Una biblioteca Python para consultar cursos de la academia Hack4U.
+
+## Cursos Disponibles:
+
+- Introducción a Linux [15 horas]
+- Personalización de Linus[3 horas]
+- Introducción al Hacking [53 horas]
+
+## Instalación
+
+Instala el paquete usando `pip3`:
+
+```python3
+pip3 install Hack4U
+```
+
+## Uso básico
+
+### Listar todos los cursos
+
+```python
+from hack4u import list_courses
+
+for curso in list_courses():
+    print(curso)
+```
+### Obtener un curso por nombre
+
+```python
+from hack4u import get_course_by_name
+
+course = get_course_by_name("Introducción al Hacking")
+print(curso)
+```
+
+### Calcular duración total de los Cursos
+
+```python3
+from hack4u.utils import total_duration
+
+print(f"Duración total: {total_duration()} horas")
+```
