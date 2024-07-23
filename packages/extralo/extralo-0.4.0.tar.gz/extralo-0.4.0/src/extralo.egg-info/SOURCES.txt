@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/extralo/__init__.py
+src/extralo/destinations.py
+src/extralo/etl.py
+src/extralo/sources.py
+src/extralo/transformers.py
+src/extralo.egg-info/PKG-INFO
+src/extralo.egg-info/SOURCES.txt
+src/extralo.egg-info/dependency_links.txt
+src/extralo.egg-info/requires.txt
+src/extralo.egg-info/top_level.txt
+tests/test_works.py
