@@ -1,0 +1,34 @@
+a₂: 𐁀
+a₃: 𐁁
+au: 𐁂
+dwe: 𐁃
+dwo: 𐁄
+nwa: 𐁅
+pu₂: 𐁆
+pte: 𐁇
+ra₂: 𐁈
+ra₃: 𐁉
+ro₂: 𐁊
+ta₂: 𐁋
+twe: 𐁌
+two: 𐁍
+
+# SOUND VALUES UNKNOWN
+"*18": 𐁐
+"*19": 𐁑
+# *35 missing unicode sign?
+"*63": 𐁗
+"*83": 𐁛
+"*89": 𐁝
+
+# DOUBTFUL VALUES (NOT IN LiBER TEXTS)
+"*56": 𐁖 # potential sound value 'pa₃'
+"*64": 𐁘 # potential sound value 'swi'
+"*65": 𐀎 # potential sound value 'ju'
+"*79": 𐁙 # potential sound value 'zu'
+"*82": 𐁚 # potential sound value 'swa'
+
+# SPECIAL CHARACTERS FOR LiBER
+# "[" : "%"
+# "]" : "%"
+
