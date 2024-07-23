@@ -1,0 +1,16 @@
+mkdocs_asciinema_player/plugin.py,sha256=9MitBBjfJoLZWMkY0PoIVB0GYqo5qu3Tgfm0AtLMaro,8743
+mkdocs_asciinema_player/assets/asciinema-player.css,sha256=Tx4g7i_I0RbJ547w6a_DwFdn5z7iB-wCFFY7ptdSBqo,43570
+mkdocs_asciinema_player/assets/asciinema-player.min.js,sha256=lpqP0yk1-rWal1UC0pzsC_xuDvVv-Dqc9ffQf0YuQXk,178770
+mkdocs_asciinema_player/assets/terminal-player.css,sha256=rlSBsaSbeL7dPB88d7ZKsZKQxcPFUKdwUy_FJZ-V2fU,3467
+mkdocs_asciinema_player/assets/icons/close.svg,sha256=bIcmkL3uD19wFEEdvXsmU3G_jSn19P_LeJ-TNsvDeNw,270
+mkdocs_asciinema_player/assets/icons/maximize.svg,sha256=gNMtpNasNQ6uzFGpRxdcF_zWRv9ndYm1KEYFxe6Dz1c,203
+mkdocs_asciinema_player/assets/icons/minimize.svg,sha256=fdZu9vXj0aVWLxCl8J70MtJV1L8pqHVFGpAlkwEXGYY,141
+mkdocs_asciinema_player/templates/asciinema-player.html,sha256=zZSClIjC2F61c0dgVelF0grtg81WkeupeeNVhL2zyEU,1000
+mkdocs_asciinema_player/templates/themes/blue.html,sha256=q_3Hx7t2gJCoEhDHP9HzAz9GkMQNtuSLZZcdrHdzs9g,518
+mkdocs_asciinema_player/templates/themes/night.html,sha256=EFX9MCt_7tHaOuCEolOUdDU0ri1zx9SzDyPccWMKHU4,596
+mkdocs_asciinema_player-0.10.0.dist-info/LICENSE,sha256=w88kfUaEWOpmWEJL3LQznCBO4mCZNuNgIsv27QD_dbE,1084
+mkdocs_asciinema_player-0.10.0.dist-info/METADATA,sha256=RLdaDC1deCvWrqQ-YflsXu7BUvcN5ySl5JAEpw5C85U,5054
+mkdocs_asciinema_player-0.10.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+mkdocs_asciinema_player-0.10.0.dist-info/entry_points.txt,sha256=HYtnO5fzViWahxx3d3KmPwhdRZdVlivbh6ozKltMrWk,89
+mkdocs_asciinema_player-0.10.0.dist-info/top_level.txt,sha256=ZOAKLWALaWbKihxIyqpjczamIGYouKX6Y39lGoWHl20,24
+mkdocs_asciinema_player-0.10.0.dist-info/RECORD,,
