@@ -1,0 +1,9 @@
+README.txt
+license.txt
+setup.py
+mylogger3/__init__.py
+mylogger3/mylogger3.py
+mylogger3.egg-info/PKG-INFO
+mylogger3.egg-info/SOURCES.txt
+mylogger3.egg-info/dependency_links.txt
+mylogger3.egg-info/top_level.txt
