@@ -1,0 +1,10 @@
+sysframe-0.0.6.dist-info/METADATA,sha256=bs7jxuKsYO081v2cdgq7gAayCt4hhiZUJdzvbbXOLLI,1500
+sysframe-0.0.6.dist-info/LICENSE,sha256=31yjAttdR6OSInWiSqTcPX9vXGxcVBFJFfEl6hqWIhc,1062
+sysframe-0.0.6.dist-info/top_level.txt,sha256=zEAhkGF0gAS4whdDEaw5Wm7xeVOccrILp_VU0Qn-XKc,9
+sysframe-0.0.6.dist-info/WHEEL,sha256=pfr6kqe4LSDiWU45aYxTmhreWpBzY-Hd3VFWT7axDJ4,245
+sysframe-0.0.6.dist-info/RECORD,,
+sysframe/__init__.py,sha256=m5PdnRxbnP7JlHNjDJLeYl5Gqz0iXteN3bwWHwdgDQQ,47
+sysframe/membridge/__init__.py,sha256=PuOHNIwoh755WI55UTv8qf9PDkYmbf9Gn1scH-eoj8U,24
+sysframe/membridge/membridge.pypy37-pp73-x86_64-linux-gnu.so,sha256=hFZXcGsXbP2kXoL-NMEilyqzuQne886KNP9F9UclhHI,23472
+sysframe/pybytes/__init__.py,sha256=5AaG8kSwBxaBM0mVkcix9C7lTQwYkOlBKgSAU7HkVRs,22
+sysframe/pybytes/pybytes.pypy37-pp73-x86_64-linux-gnu.so,sha256=Lnq10Ob8eiXduz6S8F929l8zEtnSQ89kkQP_ij_gJe4,31960
