@@ -1,0 +1,12 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/console.py,sha256=aJ2ZFn3bIUM8hktlZ8qd9yRYbFuIIx3ZWdbxR6bFyxk,1100
+cli/deploy.py,sha256=6sfgmuWlaOrMFpAfyqsj7xoHhp2nMgOzP_7m-e0qmn8,3827
+cli/main.py,sha256=1idXhA42eS6NC5sjfKwmfWlMy-aaAX0ZXz8S-HvBnUc,1307
+sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk/config.py,sha256=rVwD4KvL5V_iQvP2EWPvE-6UZ6NiobSuEqtIEAapZ6o,220
+sdk/main.py,sha256=uHQt9p78Mn5Bm9pvbK9TdhdDPV8M63jfjGzTsTqQmG8,289
+gauge_serverless-0.0.2.dist-info/METADATA,sha256=8IHnwnJ7OnsoiYyVBXllF2pZVrtwmIsSy8siiBuNf_s,1453
+gauge_serverless-0.0.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+gauge_serverless-0.0.2.dist-info/entry_points.txt,sha256=x42-Anp4eQRzeu9anFN4GjpNA-BUGtczfadtRoZKkKA,40
+gauge_serverless-0.0.2.dist-info/top_level.txt,sha256=H4nF8JBYkjE62RWu0NyG1zFacrav4CGRa_Fw0iJp5Y0,8
+gauge_serverless-0.0.2.dist-info/RECORD,,
