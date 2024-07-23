@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: feriados-municipais
+Version: 0.1.3
+Summary: Versão beta da biblioteca de feriados municipais.
+Author: Luiz Fernando Teles Rodrigues
+Author-email: euluizfernando2001@gmail.com
+License: MIT License
+Keywords: feriados br municipais brasil
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Feriados Municipais Brasil
+Uma biblioteca Python para gerenciar feriados municipais nas cidades de Juiz de Fora, Coronel Fabriciano, Ipatinga e Governador Valadares. Esta biblioteca permite aos usuarios verificar, criar, excluir e manipular feriados, incluindo marcar feriados nao obrigatorios como obrigatorios e vice-versa.
+
+Funcionalidades
+Verificar feriados: Recuperar feriados para cidades especificas.
+Criar feriados: Adicionar novos feriados Ã  lista de feriados da cidade.
+Excluir feriados: Remover feriados da lista de feriados da cidade.
+Verificar feriados facultativos: Identificar quais feriados sao facultativos.
+Manipular feriados: Alterar o status dos feriados de nao obrigatorios para obrigatorios e vice-versa.
+
+## Instalacao
+Voce pode instalar a biblioteca usando pip:
+pip install feriados-municipais
+
+## Como usar
+Aqui estao alguns exemplos para voce comecar:
+
+Importando a Biblioteca
+from feriados_municipais import *
+
+## Inicializar Variaveis
+
+```
+from datetime import date
+
+hoje = date.today()
+
+feriados = FeriadosBrasil(data=hoje)
+feriados.Ipatinga().init()
+```
+
+## Adicionar um Novo Feriado a Lista para uma Cidade Especifica
+```FeriadosBrasil.Ipatinga.new_feriado_personalizado(dia=1, mes=2, nome="Feriado Exemplo", facultativo=False)```
+
+## Verificar se a Data e Feriado
+```FeriadosBrasil.Ipatinga.is_feriado()```
+
+## Definir um Feriado como Facultativo
+```FeriadosBrasil.Ipatinga.set_feriado_as_facultativo_by_date(20, 7)```
+
+## Obter Feriados Facultativos de um Municipio
+```FeriadosBrasil.Ipatinga.get_feriados_facultativos()```
+
+## Remover um Feriado
+```FeriadosBrasil.Ipatinga.del_feriado_by_date(20, 7)```
+
+## Contributions
+Nos aceitamos contribuicoes! Por favor, leia nossas diretrizes de contribuicao para mais informacoes.
+
+## Licence
+Este projeto esta licenciado sob a licenca MIT - veja o arquivo LICENSE para mais detalhes.
+
+Sinta-se Ã  vontade para modificar este template para melhor atender Ã s especificidades e estrutura da sua biblioteca.
