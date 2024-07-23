@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pypasscrypt
+Version: 1.0.0
+Summary: a module for testing new python features
+License: None
+Author: tejus3131
+Author-email: tejus3131@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: cryptography (>=42.0.8,<43.0.0)
+Requires-Dist: inquirerpy (>=0.3.4,<0.4.0)
+Requires-Dist: prompt-toolkit (>=3.0.47,<4.0.0)
+Requires-Dist: pyperclip (>=1.9.0,<2.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: urwid (>=2.6.15,<3.0.0)
+Description-Content-Type: text/markdown
+
+# PassCrypt
+
+PassCrypt is a comprehensive password management solution designed to securely store, manage, and access your passwords. Built with Python, it leverages advanced encryption techniques to ensure your data remains safe and private.
+
+## Features
+
+- **Secure Storage**: Utilizes Fernet symmetric encryption to securely store passwords.
+- **Password Generation**: Generates strong, context-aware passwords to enhance security.
+- **Import/Export Functionality**: Easily import or export your PassCrypt storage for backup or transfer.
+- **Master Password Protection**: Secures your password vault with a master password, ensuring only authorized access.
+- **Cross-Platform Compatibility**: Designed to run on multiple platforms, ensuring your passwords are accessible wherever you are.
+
+## Installation
+
+To get started with PassCrypt, clone this repository and install the required dependencies:
+
+> For PIP:
+
+```sh
+pip install pypasscrypt
+```
+
+> For POETRY:
+
+```sh
+poetry add pypasscrypt
+```
+
