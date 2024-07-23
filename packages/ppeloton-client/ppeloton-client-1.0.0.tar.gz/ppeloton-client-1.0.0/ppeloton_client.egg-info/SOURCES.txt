@@ -1,0 +1,5 @@
+setup.py
+ppeloton_client.egg-info/PKG-INFO
+ppeloton_client.egg-info/SOURCES.txt
+ppeloton_client.egg-info/dependency_links.txt
+ppeloton_client.egg-info/top_level.txt
