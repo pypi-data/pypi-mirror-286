@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+yodi/__init__.py
+yodi/yodi.py
+yodi_pys.egg-info/PKG-INFO
+yodi_pys.egg-info/SOURCES.txt
+yodi_pys.egg-info/dependency_links.txt
+yodi_pys.egg-info/top_level.txt
