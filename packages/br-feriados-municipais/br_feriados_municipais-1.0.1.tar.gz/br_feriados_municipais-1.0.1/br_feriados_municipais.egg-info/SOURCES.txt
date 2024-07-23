@@ -1,0 +1,11 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+br_feriados_municipais/__init__.py
+br_feriados_municipais/feriados_br.py
+br_feriados_municipais.egg-info/PKG-INFO
+br_feriados_municipais.egg-info/SOURCES.txt
+br_feriados_municipais.egg-info/dependency_links.txt
+br_feriados_municipais.egg-info/requires.txt
+br_feriados_municipais.egg-info/top_level.txt
