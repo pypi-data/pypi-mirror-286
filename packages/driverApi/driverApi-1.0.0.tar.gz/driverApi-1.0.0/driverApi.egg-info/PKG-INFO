@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: driverApi
+Version: 1.0.0
+Summary: 外设驱动接口
+Author: maoshiman
+Author-email: shiman.mao@gientech.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+外设驱动实现接口的基本定义
