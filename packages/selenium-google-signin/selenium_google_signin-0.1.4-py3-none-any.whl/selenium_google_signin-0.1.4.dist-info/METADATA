@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: selenium_google_signin
+Version: 0.1.4
+Summary: Helps you sign in to Google and remember it automatically.
+Author-email: ksks <nose2002kr@gmail.com>
+Project-URL: Homepage, https://github.com/nose2002kr/selenium-google-signin
+Project-URL: Issues, https://github.com/nose2002kr/selenium-google-signin
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium ==4.23.0
+Requires-Dist: platformdirs ==4.2.2
+Provides-Extra: config
+Requires-Dist: python-dotenv ; extra == 'config'
+Provides-Extra: logger
+Requires-Dist: loguru ; extra == 'logger'
+Provides-Extra: webdriver
+Requires-Dist: webdriver-manager ; extra == 'webdriver'
+
+**Selenium-google-signin** helps to automate google signin via selenium.  
+  
+Once logged in, it saves the logged in information in a cache directory, which can be  
+utilized the next time you need to log in to avoid typing.  
+Don't worry, it doesn't save the username and password used to log in.
+
+# Installation
+`pip install selenium-google-signin`
+
+# What it can do:
+### You can use it as follows
+```
+# ./main.py 
+
+from selenium_google_signin import launch_selenium
+from selenium_google_signin import login_to_google
+
+if __name__ == '__main__':
+    driver = launch_selenium('/path/where/chromedriver')
+    login_to_google(driver)
+    driver.quit()
+```
+
+### You can store the ID and password in the environment beforehand.
+```
+$export GOOGLE_ID='Your ID'
+$export GOOGLE_PWD='Your Password'
+
+python ./main.py
+```
+or
+```
+cat >> .env << EOF
+GOOGLE_ID='Your ID'
+GOOGLE_PWD='Your Password'
+EOF
+
+python ./main.py
+```

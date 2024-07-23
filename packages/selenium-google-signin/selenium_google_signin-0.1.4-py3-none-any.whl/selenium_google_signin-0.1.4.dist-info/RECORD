@@ -1,0 +1,9 @@
+selenium_google_signin/__init__.py,sha256=HMC29yXUh6GRqxRDTRa-yEM8faNzvhx0eaKykT8Vwlk,117
+selenium_google_signin/_config.py,sha256=o8JISuBoasJmUQSuOD_xdYuHsekSxsIRo_8wZP0OZ7M,1992
+selenium_google_signin/_google_login.py,sha256=JOFFJLnZgubxUzNc83Fu8ZLvSGazHyiVltxkHzAQ7TI,2950
+selenium_google_signin/_util.py,sha256=4A4kE9GS3RCvnonpwvL0NonVZaR-uFKoNkpqNXMAaYM,3755
+selenium_google_signin-0.1.4.dist-info/LICENSE,sha256=LQmVuod6Xw7mR-jM0-GFF5mUlU0A1JV67dZvdvbevYc,1075
+selenium_google_signin-0.1.4.dist-info/METADATA,sha256=cWea7FwyRBkpRnbMNm5Ep2KVhpncpIRS2wRJFT5ba2U,1820
+selenium_google_signin-0.1.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+selenium_google_signin-0.1.4.dist-info/top_level.txt,sha256=I2mfzxfl-O3XUSeO0ktjPlymbj243WTaU3kECnvgB7s,23
+selenium_google_signin-0.1.4.dist-info/RECORD,,
