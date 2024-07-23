@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/typerx/__init__.py
+src/typerx.egg-info/PKG-INFO
+src/typerx.egg-info/SOURCES.txt
+src/typerx.egg-info/dependency_links.txt
+src/typerx.egg-info/requires.txt
+src/typerx.egg-info/top_level.txt
+tests/test_base_dataclass.py
