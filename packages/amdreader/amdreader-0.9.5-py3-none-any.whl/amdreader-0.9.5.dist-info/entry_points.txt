@@ -1,0 +1,3 @@
+[console_scripts]
+amd=amd.app.app:run
+
