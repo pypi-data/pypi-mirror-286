@@ -1,0 +1,12 @@
+README.md
+setup.py
+random_quote/__init__.py
+random_quote/cli.py
+random_quote_cli.egg-info/PKG-INFO
+random_quote_cli.egg-info/SOURCES.txt
+random_quote_cli.egg-info/dependency_links.txt
+random_quote_cli.egg-info/entry_points.txt
+random_quote_cli.egg-info/requires.txt
+random_quote_cli.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py
