@@ -1,0 +1,10 @@
+pyeogpr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyeogpr/main.py,sha256=gZFDxzky_mRTAZK5Z_I9PURjKSL7ZTdhoCVXG1rq7Nw,6604
+pyeogpr/sensors.py,sha256=dACBQEWY49JxRNr2Y3vVc4xJ0gqlkfzCOMUuHqn_UaU,917
+pyeogpr/udfgpr.py,sha256=k2a3oF4_B3ww6XgRPtBLrD_InizKLVYLkHlvu4XjFzI,2008
+pyeogpr/udfsgolay.py,sha256=0iCLD6mUQokW0P1rMIIu1o0aHy-3MTH_BukiDgtLHiM,594
+pyeogpr-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyeogpr-1.1.0.dist-info/METADATA,sha256=Lsk8WavCqoufvLGDgEvj2QIhhshRTVIAQ4iWe9OY6Ck,2801
+pyeogpr-1.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pyeogpr-1.1.0.dist-info/top_level.txt,sha256=_mn3I5iQ9vnVKP3AJpwaKqjugvuCUr8bUM8p52MnnWc,8
+pyeogpr-1.1.0.dist-info/RECORD,,
