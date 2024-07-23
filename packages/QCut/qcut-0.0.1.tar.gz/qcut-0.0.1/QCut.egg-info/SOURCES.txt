@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+QCut.egg-info/PKG-INFO
+QCut.egg-info/SOURCES.txt
+QCut.egg-info/dependency_links.txt
+QCut.egg-info/requires.txt
+QCut.egg-info/top_level.txt
