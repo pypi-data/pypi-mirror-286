@@ -1,0 +1,3 @@
+[console_scripts]
+benchmark-timer = ataraxis_time:benchmark
+
