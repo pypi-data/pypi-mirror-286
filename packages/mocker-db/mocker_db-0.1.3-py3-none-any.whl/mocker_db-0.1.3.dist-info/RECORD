@@ -1,0 +1,10 @@
+mocker_db/__init__.py,sha256=vCpxfrBdMIyeWBaAFtz__0Hz1Bl54bTT5eKpzxit5YU,25
+mocker_db/cli.py,sha256=RNML1YpUft2cZ8ub6i0_vDGlZHpyUbHJgCA1ZHSLQlo,4175
+mocker_db/mocker_db.py,sha256=hj4UfrRIFLSXE3snNTlBaY8OJzhGCT2dFFl3KtQHggs,35919
+mocker_db/setup.py,sha256=TdiBnqzWSrY0vYPFAiX8497UPGRxIuOGuRQdSgK54jc,1548
+mocker_db-0.1.3.dist-info/LICENSE,sha256=cWOz095esmvweNeqFgIMdVGn-R92WpVVMJm4RTBzToo,1061
+mocker_db-0.1.3.dist-info/METADATA,sha256=Fj3ckfRvMqnXJBq2VwBFaZMFylo9PgQXieFOsv4Ugu0,10399
+mocker_db-0.1.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mocker_db-0.1.3.dist-info/entry_points.txt,sha256=0Y5cQbQ0kmS_ns4vRbiuB_ksbHluRVT2ABvGeWslubk,47
+mocker_db-0.1.3.dist-info/top_level.txt,sha256=Ax--L3h6F-nhKlcIUhBDuo2iq5x4rlMPUHfFuYrYmwU,10
+mocker_db-0.1.3.dist-info/RECORD,,
