@@ -1,0 +1,10 @@
+hollerith/__init__.py,sha256=9_Bc_RcsmjHy8KLpAuOrtO41bxmtalD6HxSG8j6-m4A,421
+hollerith/_version.py,sha256=kAMLv1Gb_aodNSwWfiUm3VQ0cQy4iJ8lHtr-V4etFtE,286
+hollerith/_writer.cp310-win_amd64.pyd,sha256=e_yLoJ1d1GmBB64vjXTBe5C1YHrgHBhYsp5KpTazzB0,88576
+hollerith/field.py,sha256=MK2s65MVuObSoP_dHn-7FregWWiGNGNAriQBSUwnwmA,461
+hollerith/table.py,sha256=Yb0hbMmBO_UjzH5JoZ-pQaYyHZUvVDWMhniLCTO6ro0,1890
+hollerith-0.4.1.dist-info/LICENSE,sha256=vqKxF5rf9aXxcZKXhMWpcdlvWRqj7XqgV8_Qmv0cyic,1112
+hollerith-0.4.1.dist-info/METADATA,sha256=494eJqh7ukEioDauUy5MJlINsK_qtkZWZJxWYA0mbfU,4719
+hollerith-0.4.1.dist-info/WHEEL,sha256=G3rUecCX3CsVBcQJyjwgL9XzLDe6Kd8bJdI39ws9ZcE,101
+hollerith-0.4.1.dist-info/top_level.txt,sha256=5fBz1HCImI8sTIIVwrXqQhfBOZC27KKfjfZgvaesbVo,10
+hollerith-0.4.1.dist-info/RECORD,,
