@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: adestis-netbox-plugin-account-management
+Version: 1.8.2
+Summary: ADESTIS Account Management
+Home-page: https://github.com/adestis/netbox-account-management
+Author: ADESTIS GmbH
+Author-email: pypi@adestis.de
+License: MIT License
+Keywords: netbox,netbox-plugin,plugin
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
