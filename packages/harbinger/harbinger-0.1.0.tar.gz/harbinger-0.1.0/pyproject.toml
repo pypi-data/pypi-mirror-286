@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "harbinger"
+version = "0.1.0"
+description = ""
+authors = ["Ravencentric <78981416+Ravencentric@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "harbinger", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+cyclopts = "^2.9.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
