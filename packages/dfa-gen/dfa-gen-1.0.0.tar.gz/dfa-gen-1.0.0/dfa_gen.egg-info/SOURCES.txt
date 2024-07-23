@@ -1,0 +1,16 @@
+README.md
+setup.py
+dfa_gen/__init__.py
+dfa_gen/dfa_class.py
+dfa_gen/dfa_to_graph.py
+dfa_gen/dfa_util.py
+dfa_gen/generate_dfa.py
+dfa_gen/generate_lattice.py
+dfa_gen.egg-info/PKG-INFO
+dfa_gen.egg-info/SOURCES.txt
+dfa_gen.egg-info/dependency_links.txt
+dfa_gen.egg-info/entry_points.txt
+dfa_gen.egg-info/requires.txt
+dfa_gen.egg-info/top_level.txt
+dfa_gen/data/coding_wheel.txt
+dfa_gen/data/codon_freq_table.tsv
