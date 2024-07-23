@@ -1,0 +1,8 @@
+loguru
+pillow
+requests
+python-dotenv
+openai
+zhipuai
+dashscope
+litellm
