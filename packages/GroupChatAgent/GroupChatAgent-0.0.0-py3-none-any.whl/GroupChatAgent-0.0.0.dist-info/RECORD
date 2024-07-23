@@ -1,0 +1,9 @@
+package_DEIDARA285231/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_DEIDARA285231/agent.py,sha256=Kgrc0VRzWGVyr41eR7b-iz1vVEQZEY6Iyysq5W4G0iU,4859
+package_DEIDARA285231/convert.py,sha256=alTIo20U92AF1q2MoyWoJHqsqMyWpBLh_LqTgElmt_E,1583
+package_DEIDARA285231/firestore_client_singleton.py,sha256=mZp74R4C8tz17LVaYM5ChkKdN2iCAindE_CCVfA8vwo,308
+GroupChatAgent-0.0.0.dist-info/LICENSE.md,sha256=AWTKfO5tN0qmXYFPjtVxu0DDFKDi4z4BxIzLY0mFAr0,1079
+GroupChatAgent-0.0.0.dist-info/METADATA,sha256=YT_BKQ0Z7GQSCGHmtsGHyVA3hvMI59DtRiGVP2MJf2M,723
+GroupChatAgent-0.0.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+GroupChatAgent-0.0.0.dist-info/top_level.txt,sha256=PuPM1i4gx_CfLXMvNdqd-figgFoL61oG62OYLSfP3pM,22
+GroupChatAgent-0.0.0.dist-info/RECORD,,

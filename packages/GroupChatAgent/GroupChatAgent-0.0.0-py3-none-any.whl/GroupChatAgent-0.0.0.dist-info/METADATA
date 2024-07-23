@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: GroupChatAgent
+Version: 0.0.0
+Summary: GroupChatAgent is a Python library designed to facilitate the creation of group chats among multiple agents.
+Author-email: Edoardo Schioccola <e.schioccola@bytecareitalia.com>
+License: BSD-3-Clause
+Keywords: one,two
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE.md
+Requires-Dist: firebase-admin
+Requires-Dist: os
+Requires-Dist: sys
+Requires-Dist: importlib
+Requires-Dist: datetime
+Requires-Dist: langchain-openai
+Requires-Dist: langchain
+Requires-Dist: langchain-google-vertexai
+Requires-Dist: importlib-metadata ; python_version < "3.10"
+
