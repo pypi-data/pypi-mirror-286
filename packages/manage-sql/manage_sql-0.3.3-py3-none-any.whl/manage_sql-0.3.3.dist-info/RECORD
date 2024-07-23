@@ -1,0 +1,8 @@
+manage_sql/SQLITE.py,sha256=FEpk1gUx5mzurKicYKrbYM_H07Le60L6Ge478T65pXo,17124
+manage_sql/__init__.py,sha256=kyMrX4tZGLHK5eDRFzIct6dHIJ08k9w7rkGEOR5xNUY,63
+manage_sql/test_SQLITE.py,sha256=flLTz7j2VZpQAHqzjt--PVgwH8aJo9Zc0IJMlA1PUPo,3860
+manage_sql-0.3.3.dist-info/LICENCE,sha256=Jrj79HT3Z-YHl370yCwRDTNJE2EjDOuspVtay-FVMWE,1090
+manage_sql-0.3.3.dist-info/METADATA,sha256=8xcVcEMel9AMH7HE9mK1yUd12uXxeWdGkakJff4ZAEE,5927
+manage_sql-0.3.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+manage_sql-0.3.3.dist-info/top_level.txt,sha256=Q-4U0UfXC7Qs41XpM-YMCGajKed55PYKglYmslcz3nI,11
+manage_sql-0.3.3.dist-info/RECORD,,
