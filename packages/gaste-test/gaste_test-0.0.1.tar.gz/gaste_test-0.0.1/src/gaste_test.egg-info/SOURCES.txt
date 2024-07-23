@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/gaste_test/__init__.py
+src/gaste_test/combined_pval.py
+src/gaste_test/stratified_table2x2.py
+src/gaste_test.egg-info/PKG-INFO
+src/gaste_test.egg-info/SOURCES.txt
+src/gaste_test.egg-info/dependency_links.txt
+src/gaste_test.egg-info/requires.txt
+src/gaste_test.egg-info/top_level.txt
+test/test_admission.py
