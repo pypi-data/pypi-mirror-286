@@ -1,0 +1,5 @@
+eng-to-ipa
+epitran
+jamo
+g2pk
+lingua-language-detector
