@@ -1,0 +1,12 @@
+requests
+packaging
+biopython
+configparser
+fuzzywuzzy
+python-Levenshtein
+
+[dev]
+pytest
+black
+setuptools
+twine
