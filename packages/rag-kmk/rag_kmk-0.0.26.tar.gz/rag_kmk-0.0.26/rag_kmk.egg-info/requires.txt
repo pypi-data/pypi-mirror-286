@@ -1,0 +1,14 @@
+chromadb==0.5.3
+numpy
+pyyaml
+PyMuPDF
+python-docx
+langchain
+sentence_transformers
+google.generativeai
+
+[all]
+rag-kmk[extra]
+
+[extra]
+pandas
