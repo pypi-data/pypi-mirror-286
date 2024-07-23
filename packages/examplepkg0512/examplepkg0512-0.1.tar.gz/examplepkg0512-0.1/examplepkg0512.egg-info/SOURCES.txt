@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+examplepkg0512/__init__.py
+examplepkg0512/example.py
+examplepkg0512.egg-info/PKG-INFO
+examplepkg0512.egg-info/SOURCES.txt
+examplepkg0512.egg-info/dependency_links.txt
+examplepkg0512.egg-info/top_level.txt
+tests/test_example.py
