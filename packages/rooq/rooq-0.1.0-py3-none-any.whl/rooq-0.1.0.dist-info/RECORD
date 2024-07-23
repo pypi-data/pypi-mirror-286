@@ -1,0 +1,11 @@
+rooq/__init__.py,sha256=xLy_PebVBFNU10uABE_RfBdd5MkaOIuVNBPfz48FSfg,52
+rooq/cli.py,sha256=vYsiTXq6o2KQc18kV6Q6s55cOkZsalOol_jTG8ne_mo,380
+rooq/config.py,sha256=HzCrnTi6Y33NEVRl91tqctIWpwOqNh-Ay0-MXCcqSb8,1494
+rooq/flake8_runner.py,sha256=6XnuxTSGWnDTXZwiqkS_H6Csnr_0IF8Ki7JTrnR4lfk,509
+rooq/gpt_fixer.py,sha256=an98_K5JoPpFm_6GNMH11FE7gHkBRGCGuGg1ej4Z3_8,2172
+rooq/main.py,sha256=qij3zTDmyqbXx2Tl96-XHTgCjUnzaPxox_7H_g5q410,2787
+rooq-0.1.0.dist-info/METADATA,sha256=M33UFUKAFnxaFT-ZTVY2BLo6nrjO77BFjDR000uGnHI,1470
+rooq-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rooq-0.1.0.dist-info/entry_points.txt,sha256=7wVWE16XZYp7Fm5Y1flVu16eF-fuPTxGL7B99Dl7ANI,40
+rooq-0.1.0.dist-info/top_level.txt,sha256=hXBEC_DTHfFNq2fgrLAFkqvtt0pjzvXZPOEMiheOIN0,5
+rooq-0.1.0.dist-info/RECORD,,
