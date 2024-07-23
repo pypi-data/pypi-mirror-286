@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: CDynamics
+Version: 3.0.2
+Summary: Plot Julia Sets Of Complex Valued Functions
+Author: Kanak Dhotre
+Author-email: dhotrekanak@gmail.com
+Keywords: python,complex dynamics,julia set,filled julia sets
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: sympy
+
+A package that allows users to visualize Julia sets of complex-valued holormorhphic self-maps on the Riemann sphere.
