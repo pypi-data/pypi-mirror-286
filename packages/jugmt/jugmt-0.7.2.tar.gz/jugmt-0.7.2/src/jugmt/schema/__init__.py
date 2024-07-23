@@ -1,0 +1,1 @@
+FILENAME = "figures.schema.json"
