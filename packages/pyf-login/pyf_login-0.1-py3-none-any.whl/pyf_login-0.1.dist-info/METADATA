@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyf-login
+Version: 0.1
+Summary: A reusable Django login package
+Home-page: 
+Author: ycx
+Author-email: ycx3030@126.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: djangorestframework
+Requires-Dist: PyJWT
+
+# Pyf Login
+
+This is a reusable Django login package that includes a JWT-based login view.
+
+## Installation
+
+```bash
+pip install pyf_login
+```
