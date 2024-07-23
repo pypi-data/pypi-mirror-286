@@ -1,0 +1,8 @@
+tqdm
+
+[dev]
+black
+flake8
+
+[magika]
+magika
