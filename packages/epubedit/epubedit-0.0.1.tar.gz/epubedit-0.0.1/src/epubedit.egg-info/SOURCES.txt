@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/epubedit/__init__.py
+src/epubedit/epubedit.py
+src/epubedit.egg-info/PKG-INFO
+src/epubedit.egg-info/SOURCES.txt
+src/epubedit.egg-info/dependency_links.txt
+src/epubedit.egg-info/top_level.txt
