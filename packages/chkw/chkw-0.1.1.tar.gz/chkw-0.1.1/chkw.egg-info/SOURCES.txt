@@ -1,0 +1,8 @@
+main.py
+setup.py
+chkw.egg-info/PKG-INFO
+chkw.egg-info/SOURCES.txt
+chkw.egg-info/dependency_links.txt
+chkw.egg-info/entry_points.txt
+chkw.egg-info/requires.txt
+chkw.egg-info/top_level.txt
