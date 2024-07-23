@@ -1,0 +1,107 @@
+---
+variables:
+  GITLAB_CI_IMAGE_ALPINE: "alpine:3.16.2"
+  GITLAB_CI_IMAGE_MAVEN: "maven:3-jdk-11"
+  GITLAB_CI_IMAGE_EPHEMERISTA: "registry.gitlab.com/librespacefoundation/ephemerista/docker-ephemerista"
+  MAVEN_OPTS: >-
+    -Dmaven.repo.local=.m2/repository
+
+stages:
+  - setup
+  - static
+  - test
+  - deploy
+
+default:
+  image: ${GITLAB_CI_IMAGE_EPHEMERISTA}
+
+.hatch:
+  cache:
+    key: hatch-cache-$CI_COMMIT_REF_SLUG
+    policy: pull
+    paths:
+      - .venv/
+
+maven-package: # Build JAR for Orekit validation
+  stage: setup
+  image: ${GITLAB_CI_IMAGE_MAVEN}
+  # Cache downloaded dependencies and plugins between builds.
+  # The key here separates one cache per branch/tag ($CI_COMMIT_REF_SLUG)
+  cache:
+    key: "maven-$CI_COMMIT_REF_SLUG"
+    paths:
+      - .m2/repository
+  script:
+    - cd java_additions/
+    - mvn package
+
+setup:
+  extends: .hatch
+  stage: setup
+  cache:
+    policy: push
+  script:
+    - hatch env create
+    - hatch env show
+
+sign_off:
+  stage: static
+  needs: []
+  image: ${GITLAB_CI_IMAGE_ALPINE}
+  before_script:
+    - apk add --no-cache git
+  script: >-
+    git log
+    --grep "^Signed-off-by: .\+<.\+\(@\| at \).\+\(\.\| dot \).\+>$"
+    --invert-grep
+    --format="Detected commit '%h' with missing or bad sign-off! Please read 'CONTRIBUTING.md'."
+    --exit-code
+
+lint:
+  stage: static
+  needs: []
+  script:
+    - hatch fmt --check
+
+test:
+  extends: .hatch
+  stage: test
+  needs:
+    - setup
+    - maven-package
+  script:
+    - hatch run test --junitxml=junit.xml
+  artifacts:
+    reports:
+      junit: junit.xml
+
+coverage:
+  extends: .hatch
+  stage: test
+  needs:
+    - setup
+    - maven-package
+  script:
+    - hatch run cov-ci
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+    paths:
+      - htmlcov
+
+pages:
+  extends: .hatch
+  stage: deploy
+  needs:
+    - coverage
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - hatch run docs:build-ci
+    - cp -r htmlcov public/coverage
+  artifacts:
+    paths:
+      - public
