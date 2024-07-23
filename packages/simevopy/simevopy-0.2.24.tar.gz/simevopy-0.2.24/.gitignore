@@ -1,0 +1,12 @@
+.DS_STORE
+.cache
+__pycache__
+build
+dist
+_skbuild
+simevopy.*
+
+# Exclude the docs folder
+dox-docs
+
+.pytest_cache
