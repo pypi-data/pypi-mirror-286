@@ -1,0 +1,2 @@
+[console_scripts]
+ashtree = ashtree.command:main

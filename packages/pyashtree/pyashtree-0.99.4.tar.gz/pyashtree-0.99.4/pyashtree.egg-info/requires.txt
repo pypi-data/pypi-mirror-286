@@ -1,0 +1,7 @@
+fastapi[all]
+pydantic
+starlette
+ipython
+uvicorn
+jinja2
+mongey
