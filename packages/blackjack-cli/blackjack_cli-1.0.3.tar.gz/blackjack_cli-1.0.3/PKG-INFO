@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: blackjack-cli
+Version: 1.0.3
+Summary: This is a cli-based blackjack game! Woo!
+Home-page: https://github.com/vlek/blackjack-cli
+License: GPLv3
+Author: Vlek
+Author-email: derek@mccammond.org
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: rich-click (>=1.6.1,<2.0.0)
+Project-URL: Repository, https://github.com/vlek/blackjack-cli
+Description-Content-Type: text/markdown
+
+# Blackjack-cli
+A Python-based Blackjack CLI game
+
+Play Blackjack in the terminal!
+
+[![asciicast](https://asciinema.org/a/667218.svg)](https://asciinema.org/a/667218)
+
