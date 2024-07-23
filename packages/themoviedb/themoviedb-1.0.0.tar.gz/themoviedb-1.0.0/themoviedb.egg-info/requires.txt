@@ -1,0 +1,11 @@
+dacite==1.8.0
+
+[async]
+aiohttp==3.8.4
+
+[full]
+aiohttp==3.8.4
+requests==2.31.0
+
+[sync]
+requests==2.31.0
