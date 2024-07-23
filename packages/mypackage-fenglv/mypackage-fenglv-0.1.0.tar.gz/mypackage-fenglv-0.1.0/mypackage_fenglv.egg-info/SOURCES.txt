@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+mypackage/__init__.py
+mypackage/module.py
+mypackage_fenglv.egg-info/PKG-INFO
+mypackage_fenglv.egg-info/SOURCES.txt
+mypackage_fenglv.egg-info/dependency_links.txt
+mypackage_fenglv.egg-info/requires.txt
+mypackage_fenglv.egg-info/top_level.txt
+tests/__init__.py
+tests/test_module.py
