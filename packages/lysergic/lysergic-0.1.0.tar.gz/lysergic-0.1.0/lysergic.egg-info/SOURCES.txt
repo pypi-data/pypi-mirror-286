@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+lysergic.egg-info/PKG-INFO
+lysergic.egg-info/SOURCES.txt
+lysergic.egg-info/dependency_links.txt
+lysergic.egg-info/entry_points.txt
+lysergic.egg-info/requires.txt
+lysergic.egg-info/top_level.txt
