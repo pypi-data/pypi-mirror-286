@@ -1,0 +1,15 @@
+textpy/__init__.py,sha256=WCihuOzuPphmsgVjrI1NRdghMb_0OFBVbhF7IsHz6a0,7570
+textpy/__version__.py,sha256=ooleqEfQeNwPL0f9JkMdSfjIMtma2QNodk3iknxfEl0,85
+textpy/abc.py,sha256=0_CrMpOcuc3wTXRdi4cnhnh7tA9OW2EOUsnqUo8ATJA,15971
+textpy/core.py,sha256=MeJxfhygN-pQ3Kw9cUuximRrhyUAwdubWpiQ7dKIX0M,2199
+textpy/doc.py,sha256=MekcNM_2-Wln1iXJS0cKGXgx4pBAC-RO72GVwiyARwQ,851
+textpy/interaction.py,sha256=kK2Jj9hwXMjsbbSsHgGXPI4RCm30B6yHi1VnMgvLA3Y,13409
+textpy/text.py,sha256=xGx260AzK7I9ucjzU0gSYcHcziN1Tk_ylZq9aZ_g0GI,6696
+textpy/utils/__init__.py,sha256=cf05AkovEzYmLQ--EEgN1lYWmuI91IyYB4Su4z7Wkao,55
+textpy/utils/re_extensions.py,sha256=8KenZiKYgVVuva9MDKJivq-Hf8rtQbN3A8jmdfkPLyM,8394
+textpy/utils/validator.py,sha256=L_rBMOIwN1QHlKXJhxmffL3krczn72prmxzDpd_SR7c,3181
+textpy-0.1.23.dist-info/LICENSE,sha256=rlOb8JrIQs-p03IkqjgLlXbFGIwdABeHAaRckd4b8N8,1495
+textpy-0.1.23.dist-info/METADATA,sha256=e8YENfZbHXVYlzRJyU_dyM_v_GpxlQBq8bEwKpV1Heg,9903
+textpy-0.1.23.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+textpy-0.1.23.dist-info/top_level.txt,sha256=oWHnPcR9GIzbwkj6ZR9wflWbnft6QtEx8r6MbNbSBR4,7
+textpy-0.1.23.dist-info/RECORD,,
