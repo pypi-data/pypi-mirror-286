@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: eiplgrader
+Version: 0.1.0
+Summary: A collection of autograders for the grading of Explain in Plain Language (EiPL) questions.
+Home-page: https://github.com/CoffeePoweredComputers/eiplgrader
+License: GPL-3.0
+Keywords: autograder,eipl,explain-in-plain-language,eipe,explain-in-plain-english
+Author: David H. Smith IV
+Author-email: dhsmith2@illinois.edu
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: importlib (>=1.0.4,<2.0.0)
+Requires-Dist: openai (>=1.37.0,<2.0.0)
+Project-URL: Repository, https://github.com/CoffeePoweredComputers/eiplgrader
+Description-Content-Type: text/markdown
+
+# eiplgrader
+
+A tool for testing responses to `Explain in Plain Language` prompts.
+
+## Installation
+
+```bash
+pip install eipecgbg
+
+
