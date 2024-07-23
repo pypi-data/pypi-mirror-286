@@ -1,0 +1,9 @@
+README.md
+setup.py
+pixelyodi/__init__.py
+pixelyodi/main.py
+pixelyodi.egg-info/PKG-INFO
+pixelyodi.egg-info/SOURCES.txt
+pixelyodi.egg-info/dependency_links.txt
+pixelyodi.egg-info/requires.txt
+pixelyodi.egg-info/top_level.txt
