@@ -1,0 +1,11 @@
+temporal/__init__.py,sha256=7udhfh4rhPV3GqGlBzk-UbMuuXygsbom205O9rOjZ-4,70
+temporal/main.py,sha256=mbbS2vLLZGsshkUcwHEPVwQ4PoPgjyTc_r-PNoVStlU,6032
+temporal/util.py,sha256=7UhX4tkp7VShQgoI88wJDqruGHwJqAJjxQ1an8Sta7w,901
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_limited_dict.py,sha256=te1P_gPyj9lYkZYvkN39qzxxQKIHc0Ct6nYVEtP6R00,517
+tests/test_temporal.py,sha256=JitPTVKRseInROy-UkFLiHSJ28xFxAyi-eTQF7Fzdqg,3713
+temporalobject-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+temporalobject-0.2.0.dist-info/METADATA,sha256=lpYxzhWdVAMRbWgoCAr78dr76qo6U2uO56-9T02lRmI,3621
+temporalobject-0.2.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+temporalobject-0.2.0.dist-info/top_level.txt,sha256=ze6yoAP8KcgPrCyhIIJx994q_F9lHAfuWEuHBf52bLk,15
+temporalobject-0.2.0.dist-info/RECORD,,
