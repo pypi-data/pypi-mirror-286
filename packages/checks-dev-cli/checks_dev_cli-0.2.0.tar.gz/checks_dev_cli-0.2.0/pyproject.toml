@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "checks-dev-cli"
+version = "0.2.0"
+description = ""
+authors = ["Ideatives Inc <info@ideatives.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.7.3"
+croniter = "^2.0.5"
+typer = "^0.12.3"
+
+
+pyyaml = "^6.0.1"
+synthetic-open-schema-model = "0.1.0"
+[tool.poetry.group.dev.dependencies]
+pytest-watch = "^4.2.0"
+pytest = "^8.2.2"
+ipython = "^8.25.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+checks = "checks_dev_cli.cli:cli"
