@@ -1,0 +1,31 @@
+{# 2FA step, hidden tfaKey field #}
+<form id="bblcloud-step-2" hx-post="{{ url_for('bblcloud.add_account_step2') }}" hx-target="#bblcloud_account_form"
+      hx-swap="innerHTML" class="col-md-8 col-sm-12">
+    <div class="mb-3 form-group">
+        <label for="tfa_code" class="form-label">2FA Code</label>
+        <input type="text" class="form-control" id="tfa_code" name="tfa_code" required
+               minlength="6" maxlength="6"
+               title="Please enter a valid 2fa code."
+               placeholder="000000" autocomplete="off">
+    </div>
+
+    <input type="hidden" id="tfa_key" name="tfa_key" value="{{ tfa_key }}">
+    <input type="hidden" id="region" name="region" value="{{ region }}">
+
+    {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+
+    <div class="form-group d-flex justify-content-between">
+        <button type="button"
+                hx-boost="false"
+                hx-get="{{ url_for('bblcloud.add_account_get_step1') }}"
+                hx-target="#bblcloud_account_form"
+                hx-swap="innerHTML" class="btn btn-secondary">
+            Previous
+        </button>
+
+
+        <button type="submit" class="btn btn-primary">Next</button>
+    </div>
+</form>
