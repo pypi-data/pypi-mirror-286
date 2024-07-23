@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Geode-YOUWOL
+Version: 1.0.1
+Summary: Open source framework for representing and manipulating geometric models
+Author-email: Geode-solutions <contact@geode-solutions.com>
+License: MIT
+Requires-Python: <3.13,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: opengeode-core ==15.1.0
+Requires-Dist: opengeode-inspector ==6.0.0
+
+<h1 align="center">Geode-YouWol<sup><i>by Geode-solutions</i></sup></h1>

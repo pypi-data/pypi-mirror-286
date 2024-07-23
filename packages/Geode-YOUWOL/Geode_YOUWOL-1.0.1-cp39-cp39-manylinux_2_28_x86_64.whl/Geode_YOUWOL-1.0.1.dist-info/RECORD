@@ -1,0 +1,8 @@
+geode_youwol/__init__.py,sha256=6oFteCtDXKmilLOnBrZ0h-2M9eCINjYOnYUFIf2jg6c,68
+geode_youwol/youwol.py,sha256=bb92wh2UMf_wV58irOltffDbnHWKj9K1wIVtcynCJAw,193
+geode_youwol/lib64/geode_youwol_py_youwol.cpython-39-x86_64-linux-gnu.so,sha256=RdoK7qJxRakkS0QDM8zwV-V4GscGrL1iSAbMIm4ou7E,171680
+geode_youwol/lib64/libGeode-YOUWOL_youwol.so,sha256=7teoXy04u4LKEksx8BWrdIroHw0xqz85F2wUbIABqcE,9986280
+Geode_YOUWOL-1.0.1.dist-info/METADATA,sha256=oa9drp3BnFFC6_FrIw2kDeR4bTshE4IG_tIXWu2MoL8,436
+Geode_YOUWOL-1.0.1.dist-info/WHEEL,sha256=CnayMm5MdKzxiCnghP_dZc5lXBPjR74HDYy6dJD9jHw,102
+Geode_YOUWOL-1.0.1.dist-info/top_level.txt,sha256=zhQ4YHKa26EJF3eOuoZzSiX3fxcvbQwkVcEoly0k1dQ,13
+Geode_YOUWOL-1.0.1.dist-info/RECORD,,
