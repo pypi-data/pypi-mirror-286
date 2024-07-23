@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_xontrib.py
+xontrib/clp.py
+xontrib_clp.egg-info/PKG-INFO
+xontrib_clp.egg-info/SOURCES.txt
+xontrib_clp.egg-info/dependency_links.txt
+xontrib_clp.egg-info/requires.txt
+xontrib_clp.egg-info/top_level.txt
