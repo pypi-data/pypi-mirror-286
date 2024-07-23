@@ -1,0 +1,9 @@
+marqtune/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+marqtune/_httprequests.py,sha256=fHkVyOS2aiIreYmxVN_C1dXDd8X-T-5haSyOo-q06Rk,3515
+marqtune/client.py,sha256=43i5ppS8HyNfD8m8Tx9UveboskXUEBZ4i3HlQYunO8E,21812
+marqtune/config.py,sha256=aPftRT83l9bOCTZd2QL8sY_zshWB8OEadJs7wnpOrbM,593
+marqtune/enums.py,sha256=9hwDIzkxZld2eyqokiooRLJQGmjzcD1-rPJNtiv5Ye8,607
+marqtune-0.0.3.dist-info/METADATA,sha256=4SWzXiZUjbd15AcICZ5XpWf5HCNwBgr2dv04YE0mFoQ,5783
+marqtune-0.0.3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+marqtune-0.0.3.dist-info/top_level.txt,sha256=vCfKWbwP8t36j_dNgQMm7MX_9-fktuiYLRKX1EDTXsA,9
+marqtune-0.0.3.dist-info/RECORD,,
