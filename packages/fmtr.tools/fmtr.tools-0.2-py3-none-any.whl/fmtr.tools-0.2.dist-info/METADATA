@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: fmtr.tools
+Version: 0.2
+Summary: Frontmatter tools for AI projects
+Home-page: https://github.com/fmtr/fmtr.tools
+Author: Frontmatter
+Author-email: innovative.fowler@mask.pro.fmtr.dev
+License: Copyright © 2024 Frontmatter. All rights reserved.
+Platform: UNKNOWN
+Provides-Extra: augmentation
+Requires-Dist: faker ; extra == 'augmentation'
+Requires-Dist: sre-yield ; extra == 'augmentation'
+Provides-Extra: docker.api
+Requires-Dist: docker ; extra == 'docker.api'
+Provides-Extra: logging
+Requires-Dist: loguru ; extra == 'logging'
+Provides-Extra: parallel
+Requires-Dist: bokeh ; extra == 'parallel'
+Requires-Dist: dask[bag] ; extra == 'parallel'
+Requires-Dist: distributed ; extra == 'parallel'
+Provides-Extra: profiling
+Requires-Dist: contexttimer ; extra == 'profiling'
+Provides-Extra: test
+Requires-Dist: bokeh ; extra == 'test'
+Requires-Dist: contexttimer ; extra == 'test'
+Requires-Dist: dask[bag] ; extra == 'test'
+Requires-Dist: distributed ; extra == 'test'
+Requires-Dist: docker ; extra == 'test'
+Requires-Dist: faker ; extra == 'test'
+Requires-Dist: loguru ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pyyaml ; extra == 'test'
+Requires-Dist: sre-yield ; extra == 'test'
+Requires-Dist: tokenizers ; extra == 'test'
+Provides-Extra: tokenization
+Requires-Dist: tokenizers ; extra == 'tokenization'
+Provides-Extra: yaml
+Requires-Dist: pyyaml ; extra == 'yaml'
+
+UNKNOWN
+
