@@ -1,0 +1,8 @@
+[console_scripts]
+integrate_kernels = NetAnalyzer.cli_manager:integrate_kernels
+net_explorer = NetAnalyzer.cli_manager:net_explorer
+netanalyzer = NetAnalyzer.cli_manager:netanalyzer
+randomize_clustering = NetAnalyzer.cli_manager:randomize_clustering
+randomize_network = NetAnalyzer.cli_manager:randomize_network
+ranker = NetAnalyzer.cli_manager:ranker
+text2binary_matrix = NetAnalyzer.cli_manager:text2binary_matrix

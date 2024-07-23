@@ -1,0 +1,37 @@
+Matrix - Dimensions	3x3
+Matrix - Elements	9
+Matrix - Elements Non Zero	6
+Matrix - Non Zero Density	0.6666666666666666
+Weigth - Max	0.7
+Weigth - Min	0.0
+Weigth - Average	0.25222222222222224
+Weigth - Variance	0.06626172839506171
+Weigth - Standard Deviation	0.2574135357650442
+Weigth - Q1	0.0
+Weigth - Median	0.2
+Weigth - Q3	0.3
+Weigth - Min Non Zero	0.1
+Weigth - Average Non Zero	0.37833333333333335
+Weigth - Variance Non Zero	0.051680555555555556
+Weigth - Standard Deviation Non Zero	0.2273335777124786
+Weigth - Q1 Non Zero	0.225
+Weigth - Median Non Zero	0.3
+Weigth - Q3 Non Zero	0.5775
+Node - Elements	3
+Node - Elements Non Zero	3
+Node - Non Zero Density	1.0
+Edges - Max	2
+Edges - Min	1
+Edges - Average	1.6666666666666667
+Edges - Variance	0.2222222222222222
+Edges - Standard Deviation	0.4714045207910317
+Edges - Q1	1.5
+Edges - Median	2.0
+Edges - Q3	2.0
+Edges - Min Non Zero	1
+Edges - Average Non Zero	1.6666666666666667
+Edges - Variance Non Zero	0.2222222222222222
+Edges - Standard Deviation Non Zero	0.4714045207910317
+Edges - Q1 Non Zero	1.5
+Edges - Median Non Zero	2.0
+Edges - Q3 Non Zero	2.0

@@ -1,0 +1,25 @@
+NetworkX
+numpy
+scipy==1.10.1
+statsmodels
+graphviz
+mako
+matplotlib
+cdlib
+scikit-learn
+py_semtools
+umap-learn
+py_report_html
+pecanpy
+typing_extensions
+py_cmdtabs
+py_exp_calc
+clusim
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
