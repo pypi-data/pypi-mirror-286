@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/example.py
+src/python_table_print/__init__.py
+src/python_table_print/cell.py
+src/python_table_print/column.py
+src/python_table_print/justification.py
+src/python_table_print/row.py
+src/python_table_print/table.py
+src/python_table_print.egg-info/PKG-INFO
+src/python_table_print.egg-info/SOURCES.txt
+src/python_table_print.egg-info/dependency_links.txt
+src/python_table_print.egg-info/top_level.txt
+tests/test_table.py
