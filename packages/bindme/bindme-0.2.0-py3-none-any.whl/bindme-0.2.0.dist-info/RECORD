@@ -1,0 +1,14 @@
+bindme/__init__.py,sha256=56crM7jQAfsPifm7woia-T-C5PX_X98NvBObwthrdbA,232
+bindme/lib/__init__.py,sha256=RKNqtgXd5hrrurU8KQUNbwqlLl_BIjLQLoUZ1aJTKcw,267
+bindme/lib/di_container.py,sha256=XCOKdOCI5mNBj3qwUDIoaDFlqkkTMayFVPU_kKLLPow,1218
+bindme/lib/di_injector.py,sha256=MdvcgSesNigsH4ZuWP0LUBQ_ZEYpQHZm7UsRx1gO0dA,679
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/fastapi_integration.py,sha256=_wMPN4LqEV4cGMd7PROCrg7SVawyiWJXw8Yd-vVeuz0,2346
+examples/flask_integration.py,sha256=4BwOdhWxiFlJt6p5ewB43XJuDJ2uQCDuy77p1qgK9yw,1390
+examples/pyramide_integration.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/sanic_integration.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bindme-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bindme-0.2.0.dist-info/METADATA,sha256=p-5T9y2W8hDogTDqw1faY3UHWYxBMdVQTppKte6sSCQ,3263
+bindme-0.2.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+bindme-0.2.0.dist-info/top_level.txt,sha256=K4oAXmExuFsYLDLU7r4fcSelyKISwznKOwXjDpLdWok,16
+bindme-0.2.0.dist-info/RECORD,,
