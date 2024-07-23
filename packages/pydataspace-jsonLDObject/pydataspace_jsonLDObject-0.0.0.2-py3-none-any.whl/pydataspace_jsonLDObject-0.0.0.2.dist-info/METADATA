@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pydataspace-jsonLDObject
+Version: 0.0.0.2
+Summary: Objet JsonLD de base pour pydataspace
+Home-page: https://gitlab.com/dataspace2/ontologies/jsonldobject
+Author: Olivier Tirat
+Author-email: olivier.tirat@free.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# jsonLDObject
+
+This project is the jsonLD base object ontology using LINKML to handle all kind of Object for Dataspaces
+It is usually used by application using pydataspace framework based on LINKML
+It is usually not invoked by the application itself but is the parent of most of the object to be stored in a JSONLD serialized way
+
+
+
+
+## Getting started
+
+To use this jsonLDObject module in python use:
+
+pip install pydataspace-jsonLDObject 
+
+
