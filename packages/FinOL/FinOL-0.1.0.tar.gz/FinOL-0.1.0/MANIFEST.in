@@ -1,0 +1,5 @@
+include finol/tutorials/*
+include finol/main/*
+include *.whl
+exclude logdir/*
+exclude requirements.txt
