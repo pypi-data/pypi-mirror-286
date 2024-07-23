@@ -1,0 +1,4 @@
+[intake.imports]
+erddap_cat = intake_erddap.erddap_cat:ERDDAPCatalogReader
+griddap = intake_erddap.erddap:GridDAPReader
+tabledap = intake_erddap.erddap:TableDAPReader
