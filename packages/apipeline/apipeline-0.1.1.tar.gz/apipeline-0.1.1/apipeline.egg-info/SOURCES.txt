@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+apipeline.egg-info/PKG-INFO
+apipeline.egg-info/SOURCES.txt
+apipeline.egg-info/dependency_links.txt
+apipeline.egg-info/requires.txt
+apipeline.egg-info/top_level.txt
+tests/test_mock.py
+tests/test_pipeline.py
