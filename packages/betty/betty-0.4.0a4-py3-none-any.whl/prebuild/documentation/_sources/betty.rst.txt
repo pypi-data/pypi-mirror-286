@@ -1,0 +1,75 @@
+betty package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 999
+
+   betty.app
+   betty.assertion
+   betty.cache
+   betty.cli
+   betty.config
+   betty.extension
+   betty.fetch
+   betty.gramps
+   betty.jinja2
+   betty.json
+   betty.locale
+   betty.model
+   betty.plugin
+   betty.project
+   betty.serde
+   betty.sphinx
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 999
+
+   betty.about
+   betty.assets
+   betty.asyncio
+   betty.classtools
+   betty.concurrent
+   betty.contextlib
+   betty.core
+   betty.deriver
+   betty.documentation
+   betty.error
+   betty.event_dispatcher
+   betty.fs
+   betty.functools
+   betty.generate
+   betty.hashid
+   betty.html
+   betty.image
+   betty.importlib
+   betty.job
+   betty.load
+   betty.logging
+   betty.media_type
+   betty.openapi
+   betty.os
+   betty.path
+   betty.privatizer
+   betty.render
+   betty.requirement
+   betty.serve
+   betty.string
+   betty.subprocess
+   betty.typing
+   betty.url
+   betty.warnings
+   betty.wikipedia
+
+Module contents
+---------------
+
+.. automodule:: betty
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+betty.locale.date module
+========================
+
+.. automodule:: betty.locale.date
+   :members:
+   :undoc-members:
+   :show-inheritance:

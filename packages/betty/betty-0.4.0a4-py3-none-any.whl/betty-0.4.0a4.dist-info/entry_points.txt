@@ -1,0 +1,74 @@
+[betty.command]
+clear-caches = betty.cli.commands.clear_caches:clear_caches
+config = betty.cli.commands.config:config
+demo = betty.cli.commands.demo:demo
+docs = betty.cli.commands.docs:docs
+generate = betty.cli.commands.generate:generate
+serve = betty.cli.commands.serve:serve
+serve-nginx-docker = betty.extension.nginx._cli:serve_nginx_docker
+
+[betty.dev.command]
+dev-init-translation = betty.cli.commands.dev_init_translation:dev_init_translation
+dev-update-translations = betty.cli.commands.dev_update_translations:dev_update_translations
+
+[betty.entity_type]
+citation = betty.model.ancestry:Citation
+enclosure = betty.model.ancestry:Enclosure
+event = betty.model.ancestry:Event
+file = betty.model.ancestry:File
+note = betty.model.ancestry:Note
+person = betty.model.ancestry:Person
+person-name = betty.model.ancestry:PersonName
+place = betty.model.ancestry:Place
+presence = betty.model.ancestry:Presence
+source = betty.model.ancestry:Source
+
+[betty.event_type]
+adoption = betty.model.event_type:Adoption
+baptism = betty.model.event_type:Baptism
+birth = betty.model.event_type:Birth
+burial = betty.model.event_type:Burial
+conference = betty.model.event_type:Conference
+confirmation = betty.model.event_type:Confirmation
+correspondence = betty.model.event_type:Correspondence
+cremation = betty.model.event_type:Cremation
+death = betty.model.event_type:Death
+divorce = betty.model.event_type:Divorce
+divorce-announcement = betty.model.event_type:DivorceAnnouncement
+emigration = betty.model.event_type:Emigration
+engagement = betty.model.event_type:Engagement
+funeral = betty.model.event_type:Funeral
+immigration = betty.model.event_type:Immigration
+marriage = betty.model.event_type:Marriage
+marriage-announcement = betty.model.event_type:MarriageAnnouncement
+missing = betty.model.event_type:Missing
+occupation = betty.model.event_type:Occupation
+residence = betty.model.event_type:Residence
+retirement = betty.model.event_type:Retirement
+unknown = betty.model.event_type:UnknownEventType
+will = betty.model.event_type:Will
+
+[betty.extension]
+cotton-candy = betty.extension.cotton_candy:CottonCandy
+demo = betty.extension.demo:Demo
+deriver = betty.extension.deriver:Deriver
+gramps = betty.extension.gramps:Gramps
+http-api-doc = betty.extension.http_api_doc:HttpApiDoc
+maps = betty.extension.maps:Maps
+nginx = betty.extension.nginx:Nginx
+privatizer = betty.extension.privatizer:Privatizer
+trees = betty.extension.trees:Trees
+webpack = betty.extension.webpack:Webpack
+wikipedia = betty.extension.wikipedia:Wikipedia
+
+[betty.presence_role]
+attendee = betty.model.presence_role.Attendee
+beneficiary = betty.model.presence_role.Beneficiary
+celebrant = betty.model.presence_role.Celebrant
+organizer = betty.model.presence_role.Organizer
+speaker = betty.model.presence_role.Speaker
+subject = betty.model.presence_role.Subject
+witness = betty.model.presence_role.Witness
+
+[console_scripts]
+betty = betty.cli:main

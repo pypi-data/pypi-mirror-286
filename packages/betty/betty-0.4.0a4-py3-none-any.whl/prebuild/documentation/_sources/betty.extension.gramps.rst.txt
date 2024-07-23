@@ -1,0 +1,18 @@
+betty.extension.gramps package
+==============================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 999
+
+   betty.extension.gramps.config
+
+Module contents
+---------------
+
+.. automodule:: betty.extension.gramps
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,18 @@
+betty.extension.wikipedia package
+=================================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 999
+
+   betty.extension.wikipedia.config
+
+Module contents
+---------------
+
+.. automodule:: betty.extension.wikipedia
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+betty.locale.localizable module
+===============================
+
+.. automodule:: betty.locale.localizable
+   :members:
+   :undoc-members:
+   :show-inheritance:

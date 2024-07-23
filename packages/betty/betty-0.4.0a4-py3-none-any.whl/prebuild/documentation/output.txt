@@ -1,0 +1,10 @@
+usage/extension/trees.rst:3: [redirected permanently] http://js.cytoscape.org/ to https://js.cytoscape.org/
+betty.jinja2.filter.rst:3: [redirected permanently] http://jinja.pocoo.org/docs/2.10/api/#custom-filters to https://jinja.palletsprojects.com/en/2.10.x/api/
+index.rst:31: [redirected temporarily] https://ancestry.bartfeenstra.com to https://ancestry.bartfeenstra.com/en/
+betty.jinja2.rst:1: [redirected with Found] https://jinja.palletsprojects.com to https://jinja.palletsprojects.com/en/3.1.x/
+about/license.rst:23: [redirected permanently] https://fsf.org/ to https://www.fsf.org/
+installation/pip.rst:8: [redirected temporarily] https://nodejs.org/ to https://nodejs.org/en
+about.rst:43: [redirected with Found] https://twitter.com/Betty_Project to https://x.com/Betty_Project
+betty.extension.wikipedia.rst:1: [redirected permanently] https://wikipedia.org to https://www.wikipedia.org/
+betty.project.rst:1: [redirected with Found] https://tools.ietf.org/html/bcp47 to https://www.rfc-editor.org/info/bcp47
+betty.sphinx.rst:1: [redirected with Found] https://www.sphinx-doc.org to https://www.sphinx-doc.org/en/master/

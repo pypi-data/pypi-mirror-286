@@ -1,0 +1,7 @@
+betty.extension.cotton\_candy.config module
+===========================================
+
+.. automodule:: betty.extension.cotton_candy.config
+   :members:
+   :undoc-members:
+   :show-inheritance:
