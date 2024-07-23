@@ -1,0 +1,2 @@
+[console_scripts]
+dockrich = dockrich.dockrich:main
