@@ -1,0 +1,15 @@
+magictables/__init__.py,sha256=RpJqrYSvZeXvpOvIg6Cyje1hZ9v5yPLzd7hS4sozSAk,62
+magictables/docs/api_reference.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magictables/docs/index.mt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magictables/docs/quickstart.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magictables/examples/ai_augmentation.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magictables/examples/api_caching.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magictables/hybrid_driver.py,sha256=d3_S_-iCgGw26IPLWz2ExMFZEn7es-v0aRxgo8w15M0,8326
+magictables/magictables.py,sha256=hvSokKA9Dex_pQuIQT4N5GCANPkIeSJiRnOODuKXRBA,42480
+magictables/tests/test_database.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magictables/tests/test_decorators.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magictables/utils.py,sha256=ex-k9emSW5xAatzF9Zvv7At_cSXtfjoTwP8SzDsovHk,4445
+magictables-1.0.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+magictables-1.0.0.dist-info/METADATA,sha256=NWG5LIhbK1b0ut_JBeVxs_HHQ0ZaSLGVHj96IRlrYfw,18083
+magictables-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+magictables-1.0.0.dist-info/RECORD,,
