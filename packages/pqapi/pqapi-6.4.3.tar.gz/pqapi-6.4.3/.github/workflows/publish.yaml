@@ -1,0 +1,20 @@
+name: publish
+
+on:
+  release:
+    types:
+      - created
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: eifinger/setup-rye@v4
+        with:
+          enable-cache: true
+      - run: rye sync --no-lock
+      - run: rye build --sdist --wheel
+      - run: rye publish --token ${{ secrets.PYPI_API_TOKEN }} --yes --quiet
