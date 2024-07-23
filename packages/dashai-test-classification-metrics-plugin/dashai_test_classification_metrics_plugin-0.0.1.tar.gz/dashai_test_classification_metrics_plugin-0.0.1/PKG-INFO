@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: dashai_test_classification_metrics_plugin
+Version: 0.0.1
+Summary: Classification Metrics Package for DashAI
+Project-URL: Homepage, https://github.com/DashAISoftware/DashAI
+Project-URL: Issues, https://github.com/DashAISoftware/DashAI/issues
+Author: DashAI team
+Author-email: dashaisoftware@gmail.com
+Keywords: DashAI,Model,Task
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# **Classification Metrics Plugin**
+
+## **Metrics**
+
+Elemental metrics for Classification Tasks
+
+- **Accuracy**
+- **F1**
+- **Precision**
+- **Recall**
