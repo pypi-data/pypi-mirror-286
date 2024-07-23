@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: srai-voiceassist
+Version: 0.1.0
+Summary: srai-library for voice assistance in any language.
+Home-page: https://github.com/southriverai/srai-voiceassist
+License: MIT
+Keywords: SRAI,TOOLS
+Author: Jaap Oosterbroek
+Author-email: jaap.oosterbroek@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: SpeechRecognition (>=3.10.0,<4.0.0)
+Requires-Dist: numpy (>=2.0.1,<3.0.0)
+Requires-Dist: openai (>=1.35.5,<2.0.0)
+Requires-Dist: pyaudio (>=0.2.13,<0.3.0)
+Requires-Dist: sounddevice (>=0.4.7,<0.5.0)
+Requires-Dist: soundfile (>=0.12.1,<0.13.0)
+Project-URL: Repository, https://github.com/southriverai/srai-voiceassist
+Description-Content-Type: text/markdown
+
+# srai-voiceassist
+srai-library for voice assistance in any language
+
