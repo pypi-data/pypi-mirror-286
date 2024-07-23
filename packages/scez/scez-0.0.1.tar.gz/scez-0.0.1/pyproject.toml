@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "scez"
+version = "0.0.1"
+authors = [
+	"Abe Arab <abarbiology@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+description = "Single Cell Analysis, Easy Mode!"
+classifiers = [
+	"License :: OSI Approved :: MIT License"
+]
+packages = [
+	{ include = "scez" },
+]
+
+[tool.poetry.urls]
+Source = "https://github.com/abearab/scez"
+
+# [tool.poetry.dependencies]
+# dependencies = [
+# 	"anndata>=0.7.4",
+# 	"numpy>=1.17.0",
+# 	"pandas>=0.21,<2.0",
+# 	"matplotlib<3.7",
+#  	"seaborn==0.12.2",
+# 	"scvi-tools",
+# 	"scar",
+# 	"scanpy",
+# 	"adjustText",
+#  	"adpbulk",
+# 	"pydeseq2",
+# 	"pytdc",
+# 	"blitzgsea",
+# 	"tqdm",
+# 	"pytest"
+# ]
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+tomli = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
