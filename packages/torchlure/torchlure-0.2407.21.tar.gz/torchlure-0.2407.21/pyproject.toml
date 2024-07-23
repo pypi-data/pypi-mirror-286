@@ -1,0 +1,79 @@
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0.0", "setuptools_scm", "wheel"]
+
+[project]
+authors = [
+  {name = "fuyutarow", email = "fuyutarow@gmail.com"},
+]
+dependencies = [
+  "torch>=2.1",
+  "numpy>=1.26.4",
+  "sophia-opt>=0.2.2",
+  "gymnasium>=0.29.1",
+  "jax>=0.4.28",
+  "gdown>=5.2.0",
+  "h5py>=3.11.0",
+  "einops>=0.8.0",
+  "torchtyping>=0.1.4",
+  "minari>=0.4.3",
+  "tensordict>=0.1.2",
+  "tqdm>=4.66.4",
+]
+description = ""
+dynamic = ["version"]
+keywords = ["pytorch"]
+name = "torchlure"
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.optional-dependencies]
+rl = [
+  # "minari @ git+https://github.com/Farama-Foundation/Minari@19565bd8cd33f2e4a3a9a8e4db372044b01ea8d3",
+]
+
+[project.urls]
+Homepage = "https://github.com/fuyutarow/torchlure"
+Repository = "https://github.com/fuyutarow/torchlure"
+
+[tool.rye]
+dev-dependencies = [
+  "setuptools>=69.5.1",
+  "setuptools_scm>=8.1.0",
+  "wheel>=0.43.0",
+]
+managed = true
+
+[tool.setuptools_scm]
+local_scheme = "dirty-tag"
+version_scheme = "post-release"
+write_to = "src/torchlure/_version.py"
+
+[tool.setuptools.packages.find]
+include = ["torchlure", "torchlure.*"]
+where = ["src"]
+
+[tool.ruff]
+ignore = [
+  "D", # Ignore docstring checks
+  "F401", # Ignore unused imports
+  "PLR0913", # Ignore Polars warning
+  "ANN002", # Ignore missing type annotations
+  "ANN003", # Ignore missing type annotations
+  "ANN101", # Ignore missing type annotations
+]
+line-length = 119
+select = ["ALL"]
+target-version = "py311"
+
+[tool.ruff.per-file-ignores]
+"tests/**/*.py" = [
+  "S101",
+  "ANN201",
+  "N802",
+  "ARG",
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"

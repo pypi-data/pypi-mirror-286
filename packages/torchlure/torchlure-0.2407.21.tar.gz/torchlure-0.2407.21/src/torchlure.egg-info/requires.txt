@@ -1,0 +1,14 @@
+torch>=2.1
+numpy>=1.26.4
+sophia-opt>=0.2.2
+gymnasium>=0.29.1
+jax>=0.4.28
+gdown>=5.2.0
+h5py>=3.11.0
+einops>=0.8.0
+torchtyping>=0.1.4
+minari>=0.4.3
+tensordict>=0.1.2
+tqdm>=4.66.4
+
+[rl]
