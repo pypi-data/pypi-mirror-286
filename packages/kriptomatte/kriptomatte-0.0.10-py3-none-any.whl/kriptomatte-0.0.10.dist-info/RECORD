@@ -1,0 +1,12 @@
+kriptomatte/__init__.py,sha256=tSFAxzq9ws7bjKllqwyjgxSx_4m0dxogZz_JwToWoN4,2988
+kriptomatte/kripto_color.py,sha256=WKA4zk8yga8m_aWy6_OhZZ9g73swsTQzr_OqIQPkqMo,1126
+kriptomatte/kripto_datatypes.py,sha256=MDxtKroHnSSx6ZrB0qy863FlKUwu0xIp8hW7PFCoeq8,354
+kriptomatte/kripto_decode.py,sha256=DGC2AVfQLPnS0umzq_sMi2Uouo0f_x0fq5SVLczVhS4,6778
+kriptomatte/kripto_logger.py,sha256=NzdVG-G6HG5xcwLsdWK84sjhYlk9hcUDB3Q_j_4jn7I,694
+kriptomatte/kripto_utils.py,sha256=TJI1r3yspD9peGoBAxOV88rjfarWFMJiE3Ju1mZv5y4,16078
+kriptomatte/pymmh3.py,sha256=_XwTJOwUPMmM4zAQby3kfSDaH8QoC5G9n3C-mg5eY4A,14153
+kriptomatte-0.0.10.dist-info/METADATA,sha256=UyXx2D45XpCbwHA-aPWeG2894i1Hb_qhA1I7et7vslA,4969
+kriptomatte-0.0.10.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+kriptomatte-0.0.10.dist-info/entry_points.txt,sha256=f9SX4H3ef65NHld5o95bGq0Cz4okSUx7C3e-cWo8KyU,62
+kriptomatte-0.0.10.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+kriptomatte-0.0.10.dist-info/RECORD,,
