@@ -1,0 +1,12 @@
+declareq/__about__.py,sha256=7WnnNVQUs8-dguQEZG9uxoeQvaQCFeabrkfvMsFDpmI,173
+declareq/annotations.py,sha256=zVJKEGT-ac8nuOwTwHk_jGC6YeVnNjKgloq0O2hKuJQ,2146
+declareq/arguments.py,sha256=5OW-GIuY0pnpn_br01TTz_KmKI3djOYZUc8j2EgHrek,2350
+declareq/builder.py,sha256=RGF1s7s6QLfmFMDyt2VA2bwm8RGBHdZ5zExbr7EAnrQ,2805
+declareq/commands.py,sha256=8MkO7vibT_LNsp97cu-BlwTZlGe8MjjRpb8t6sAomnY,8762
+declareq/interfaces.py,sha256=QIaesyidUvfUk6KPtKpnVKkNFYsqGfanzXvHNND52Vc,826
+declareq/utils.py,sha256=--DSKHMhOpRc7ucnjKEtkqng9Pug3DYiLErjnhv0GfY,1403
+declareq-0.1.5.dist-info/LICENSE,sha256=ph5vmLypn7PHPaqLwXG_3dhqelPUnKsosJdDKtyemcE,1071
+declareq-0.1.5.dist-info/METADATA,sha256=eJVRFOo6M2H_W5qE-B1XSXHo6AfdrVoPzMLqos7rMlc,1423
+declareq-0.1.5.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+declareq-0.1.5.dist-info/top_level.txt,sha256=h_FPV9EgwKEN2k7ne4vkJeXlKWAw1bn2J_1MKeF--d8,9
+declareq-0.1.5.dist-info/RECORD,,
