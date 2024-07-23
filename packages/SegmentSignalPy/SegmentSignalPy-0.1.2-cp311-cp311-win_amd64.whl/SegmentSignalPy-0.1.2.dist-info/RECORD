@@ -1,0 +1,11 @@
+SegmentSignalPy.cp311-win_amd64.pyd,sha256=B11ftedMSeKDHv5oawZgDTYVtO-4lAGteLj5PAnl-Lo,173056
+CPP Static Library/SegmentSignal.cpp,sha256=XGf7SdVFowKUA1XTUV3w3vPlVMmObtCqfpLlgtpqhRY,7486
+CPP Static Library/SegmentSignalFunctions.cpp,sha256=nvjUUJrsMl8Bm3EfHlmtepXPw8xHL_4gen54zmbndXE,20026
+CPP Static Library/SegmentationResults.cpp,sha256=TfETLOiGQgIQhEcCUqBjSvT4gejc0ls24hrX8OL8k1s,1812
+Python Extension/SegmentationResultsPy.cpp,sha256=KZXoTBjRYUfwmM_ObRcycDKB4hciLWxElIIJ5WJze4k,4112
+Python Extension/module.cpp,sha256=7vzVS5YOBfL2S21BOwMKiR6z8GDM1hT9wYWvCTJjPv0,6726
+SegmentSignalPy-0.1.2.dist-info/License.txt,sha256=P9Td1RUysGlkcCTbn7PzBHFee-iPtG0zuLzEuVOB_j8,1084
+SegmentSignalPy-0.1.2.dist-info/METADATA,sha256=jAHSBw0IVHV1mnq29CmYR3TkNyy9wA-4ysRn_hb7mgI,1810
+SegmentSignalPy-0.1.2.dist-info/WHEEL,sha256=SXv4eJlzP0RNHYKzGRJ91eDhAFO0Eo2_AdrKMJ52XEE,101
+SegmentSignalPy-0.1.2.dist-info/top_level.txt,sha256=Gg1JGAQCkw2ZivMSVOurzJ3yu03GWXQVKWOrCRc_oA0,135
+SegmentSignalPy-0.1.2.dist-info/RECORD,,
