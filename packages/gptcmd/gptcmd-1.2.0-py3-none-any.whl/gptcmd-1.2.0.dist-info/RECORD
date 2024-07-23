@@ -1,0 +1,9 @@
+gptcmd/__init__.py,sha256=vX1Se95Ao7Imb6ZbtJB3loce67qMqgBHGE0AkF7ypD0,186
+gptcmd/cli.py,sha256=H0VguiThbQABaLlGzEzo21s3_z7j_aPL8EwWGeltkSE,31472
+gptcmd/message.py,sha256=AgFRKhosqZ0typY63GeX_ckKTefd56q-vrSed3ocMXQ,15151
+gptcmd-1.2.0.dist-info/COPYING.txt,sha256=TWRdxsaB9yyJ10eakraTzKQhFX_felhEdponlLV8VOM,64009
+gptcmd-1.2.0.dist-info/METADATA,sha256=RIZpydZ-gP4io_EItwCUBcdvN3cQ5zHGsB-xE5T3zxE,32888
+gptcmd-1.2.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+gptcmd-1.2.0.dist-info/entry_points.txt,sha256=CDloM_MYqvRRX4UAvWJ6GfEtswuia2SAljZ3KxOFECs,43
+gptcmd-1.2.0.dist-info/top_level.txt,sha256=4MA_jx_CFd2VMkoCBNhr2QDF0PThi-fMhdCkawZbu1o,7
+gptcmd-1.2.0.dist-info/RECORD,,
