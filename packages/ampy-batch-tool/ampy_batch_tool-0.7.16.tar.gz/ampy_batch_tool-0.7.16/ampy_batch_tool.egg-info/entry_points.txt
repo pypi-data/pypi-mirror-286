@@ -1,0 +1,2 @@
+[console_scripts]
+ab = ab.__main__:main
