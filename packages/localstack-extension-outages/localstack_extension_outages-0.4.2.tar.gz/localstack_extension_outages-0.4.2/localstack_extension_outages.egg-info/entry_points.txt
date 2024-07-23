@@ -1,0 +1,2 @@
+[localstack.extensions]
+outages = outages.extension:OutagesExtension
