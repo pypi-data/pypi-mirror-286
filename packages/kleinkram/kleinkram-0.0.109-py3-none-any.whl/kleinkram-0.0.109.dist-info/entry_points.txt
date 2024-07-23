@@ -1,0 +1,2 @@
+[console_scripts]
+klein = kleinkram_CLI.main:app
