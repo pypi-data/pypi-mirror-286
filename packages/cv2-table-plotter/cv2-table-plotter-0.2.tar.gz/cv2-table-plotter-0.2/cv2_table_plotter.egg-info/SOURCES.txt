@@ -1,0 +1,6 @@
+README.md
+setup.py
+cv2_table_plotter.egg-info/PKG-INFO
+cv2_table_plotter.egg-info/SOURCES.txt
+cv2_table_plotter.egg-info/dependency_links.txt
+cv2_table_plotter.egg-info/top_level.txt
