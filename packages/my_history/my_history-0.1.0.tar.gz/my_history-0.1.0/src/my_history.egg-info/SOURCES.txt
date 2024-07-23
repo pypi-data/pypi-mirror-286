@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/my_history/__init__.py
+src/my_history/cli.py
+src/my_history.egg-info/PKG-INFO
+src/my_history.egg-info/SOURCES.txt
+src/my_history.egg-info/dependency_links.txt
+src/my_history.egg-info/entry_points.txt
+src/my_history.egg-info/top_level.txt

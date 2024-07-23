@@ -1,0 +1,21 @@
+[project]
+name = "my_history"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "EstherCho-7", email = "dkgkqm777@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+cnt='my_history.cli:cnt'
+
+[tool.pdm]
+distribution = true
+
+[project.urls]
+Homepage="https://github.com/EstherCho-7/my_history"
+Issues="https://github.com/EstherCho-7/my_history/issues"
