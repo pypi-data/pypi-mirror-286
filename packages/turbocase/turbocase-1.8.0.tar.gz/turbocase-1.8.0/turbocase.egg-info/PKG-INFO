@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: turbocase
+Version: 1.8.0
+Summary: Generate an OpenSCAD case template from a KiCAD PCB
+Home-page: https://turbocase.org
+Author: Martijn Braam
+Author-email: martijn@brixit.nl
+Project-URL: Source, https://git.sr.ht/~martijnbraam/turbocase
+Project-URL: Tracker, https://todo.sr.ht/~martijnbraam/turbocase
+License-File: LICENSE.txt
+Requires-Dist: sexpdata
