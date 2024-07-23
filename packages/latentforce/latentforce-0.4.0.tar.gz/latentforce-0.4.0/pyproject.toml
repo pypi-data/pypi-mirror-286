@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "latentforce"
+version = "0.4.0"
+dependencies = [
+  "requests",
+  "openai",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Aravind Jayendran", email = "aravind@latantforce.ai"},
+]
+maintainers = [
+  {name = "Aravind Jayendran", email = "aravind@latantforce.ai"}
+]
+description = "Python client for LatentForce.ai"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["LatentForce.ai", "Agents", "Models", "Python-Client"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+
+[project.urls]
+Homepage = "https://www.latentforce.ai"
+Documentation = "https://www.latentforce.ai"
+Repository = "https://www.latentforce.ai"
