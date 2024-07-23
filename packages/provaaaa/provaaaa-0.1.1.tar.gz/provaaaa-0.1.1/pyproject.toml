@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "provaaaa"
+version = "0.1.1"
+description = ""
+authors = ["ScipioneParmigiano <pcs.parmigiano@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[tool.poetry.group.dev.dependencies]
+pybind11 = "^2.13.1"
+setuptools = "^71.1.0"
+wheel = "^0.43.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
