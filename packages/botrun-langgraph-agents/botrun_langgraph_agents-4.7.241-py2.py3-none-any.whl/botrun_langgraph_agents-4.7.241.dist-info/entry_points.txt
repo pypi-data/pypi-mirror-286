@@ -1,0 +1,2 @@
+[console_scripts]
+botrun-langgraph-agents = botrun_langgraph_agents:main
