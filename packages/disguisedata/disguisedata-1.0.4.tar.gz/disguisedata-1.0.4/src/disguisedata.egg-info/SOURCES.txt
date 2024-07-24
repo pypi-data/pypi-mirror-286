@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/disguisedata/__init__.py
+src/disguisedata/disguisedata.py
+src/disguisedata.egg-info/PKG-INFO
+src/disguisedata.egg-info/SOURCES.txt
+src/disguisedata.egg-info/dependency_links.txt
+src/disguisedata.egg-info/top_level.txt
