@@ -1,0 +1,69 @@
+# emonk
+
+A journal app written in [Python]. Uses the [cryptography] package for security.
+
+## How to install it
+
+	pip3 install emonk
+
+## How to use it
+
+	emonk <words or tags to search for>
+
+### Command line options
+
+    -h --help               Show help.
+    -e --edit               Edit entries.
+    --from-date FROM_DATE   Get entries from this date.
+    -n N                    Get last N entries.
+    -t --tags               List tags.
+    --to-date TO_DATE       Get entries to this date.
+    -v --version            Show version number.
+
+### Write a journal entry
+
+    emonk
+
+### Logical AND search
+
+    emonk apples oranges
+
+### Logical OR search
+Enclose the OR with quotes.
+
+    emonk "apples|oranges"
+
+### Edit entries containing "apples"
+
+    emonk -e apples
+
+### Import journal entries from text file
+
+    emonk < lastweek.txt
+
+### Export journal entries to text file
+
+    emonk > exported.txt
+
+## Custom datetime format
+Emonk stores journal entries using the ISO 8601 datetime format: yyyy-mm-dd hh-mm. To use another [datetime format] add it to the .emonk config file in your home directory:
+
+    date_format: "%m/%d/%y %I:%M %p"
+
+## Links
+
+- [Project page](https://seagrape.us/emonk.html)
+- [Changelog](https://seagrape.us/emonk-history.html)
+
+## License
+
+[MIT license].
+
+## Contact me
+
+Send bug reports and patches to <craig@seagrape.us>.
+
+[Python]: https://www.python.org
+[cryptography]: https://github.com/pyca/cryptography
+[datetime format]: https://docs.python.org/3/library/datetime.html#format-codes
+[MIT license]: https://seagrape.us/MIT-license.html
