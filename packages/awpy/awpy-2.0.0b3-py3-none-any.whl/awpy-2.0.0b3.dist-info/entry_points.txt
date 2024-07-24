@@ -1,0 +1,3 @@
+[console_scripts]
+awpy=awpy.cli:awpy
+
