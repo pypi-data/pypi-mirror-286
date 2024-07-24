@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: florestdevinstruments
+Version: 0.0.1
+Summary: Личная библиотека Флореста, написанная на Python.
+Home-page: https://telegra.ph/Socseti-Floresta-06-28
+Author: florestdev4185
+Author-email: florestone4185@internet.ru
+Requires-Python: >=3.8.9
+Description-Content-Type: text/markdown
+Requires-Dist: discord
+Requires-Dist: g4f
+Requires-Dist: MukeshAPI
+Requires-Dist: pypresence
+Requires-Dist: curl-cffi
+Requires-Dist: pygame
+Requires-Dist: pygame-gui
+
+Волшебная библиотека Флореста, созданная и работающая на Python.
+В библиотеке очень много функций для взаимодействия с Discord, ИИ и много чего еще!
+Скачивай библиотеку с помощью `pip` и наслаждайся!
+Мои социальные сети: https://telegra.ph/Socseti-Floresta-06-28
