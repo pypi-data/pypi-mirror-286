@@ -1,0 +1,10 @@
+rfmix_reader/__init__.py,sha256=Nr3CKWIh_gXHlVGO5GaKdiqREjTQZrFqI9L2TQF0eTQ,551
+rfmix_reader/_chunk.py,sha256=OR0JtFV6TRIU5qXVG38rbdTb51wa3bYnkHqK30ewRlc,1124
+rfmix_reader/_fb_read.py,sha256=BkzGVVHJte2yuRAJOS4Ylrgzx_0OdwL-kBLbE2nd43c,3253
+rfmix_reader/_loci_bed.py,sha256=O_WV7XZjVq6Xwn6snPnyrCgvkLO4-XmpvdTI-qEuolM,21150
+rfmix_reader/_read_rfmix.py,sha256=9xHpw3Fg0RI6XHwc--tuAGQXGUbOd3gOhxOFtP-ZyK4,12808
+rfmix_reader/_utils.py,sha256=ZArDESlF3PIVgOCOFeq9vlccEIVMvgQ5ftvz9DXZEVM,15348
+rfmix_reader-0.1.17.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+rfmix_reader-0.1.17.dist-info/METADATA,sha256=gqVXZQYKLsNW7OvOdcXbyPcrGhp5vpK_u7br0CxI2HU,6646
+rfmix_reader-0.1.17.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+rfmix_reader-0.1.17.dist-info/RECORD,,
