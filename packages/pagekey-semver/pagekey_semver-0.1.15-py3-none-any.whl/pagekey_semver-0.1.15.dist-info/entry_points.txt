@@ -1,0 +1,3 @@
+[console_scripts]
+pagekey-semver=pagekey_semver.main:cli_entrypoint
+
