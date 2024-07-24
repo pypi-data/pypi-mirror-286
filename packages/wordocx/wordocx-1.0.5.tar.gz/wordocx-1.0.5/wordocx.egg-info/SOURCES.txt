@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+wordocx/__init__.py
+wordocx/addComment.py
+wordocx/getComments.py
+wordocx/parsedocx.py
+wordocx/parsejson.py
+wordocx/trackChanges.py
+wordocx.egg-info/PKG-INFO
+wordocx.egg-info/SOURCES.txt
+wordocx.egg-info/dependency_links.txt
+wordocx.egg-info/requires.txt
+wordocx.egg-info/top_level.txt

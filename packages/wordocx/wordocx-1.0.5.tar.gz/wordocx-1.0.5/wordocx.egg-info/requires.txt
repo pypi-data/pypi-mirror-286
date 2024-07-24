@@ -1,0 +1,2 @@
+python-docx>=0.8.10
+docx2python>=1.27.0
