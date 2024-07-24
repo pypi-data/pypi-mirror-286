@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Kompira_sendevt
+Version: 2.0.0b1
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: amqpstorm ~=2.10.6
+Requires-Dist: packaging ~=24.0
+
+Kompira sendevtパッケージ
