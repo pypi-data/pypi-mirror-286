@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: prk_scraping_bib
+Version: 0.1
+Requires-Dist: curl_cffi
+Requires-Dist: beautifulsoup4
+Requires-Dist: pandas
+Requires-Dist: selenium
+Requires-Dist: requests
