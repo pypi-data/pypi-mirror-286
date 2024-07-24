@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+SchoolManager/SchoolManager.py
+SchoolManager/__init__.py
+SchoolManager.egg-info/PKG-INFO
+SchoolManager.egg-info/SOURCES.txt
+SchoolManager.egg-info/dependency_links.txt
+SchoolManager.egg-info/top_level.txt

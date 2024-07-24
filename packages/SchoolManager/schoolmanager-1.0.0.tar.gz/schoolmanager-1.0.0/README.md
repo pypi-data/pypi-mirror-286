@@ -1,0 +1,62 @@
+## Project Title
+
+**Name Project : School Manager**
+
+You can be the manager of your school with this project and you can define students,  
+ teachers and classes in Excel file and manage them.
+
+---
+
+## Table of Contents
+
+*   [Installation](#installation)
+*   [Usage](#usage)
+*   [License](#license)
+
+---
+
+## Installation
+
+```python
+pip install SchoolManager
+```
+
+## Usage
+
+```python
+import os
+```
+
+then you need give the address the file you downloaded and import the `SchoolManager`.
+
+```python
+os.chdir(r"C:\Users\MY PC\.spyder-py3\autosave\Project\SchoolManager")
+import SchoolManager
+```
+
+After this You should Call the Menu with `SchoolManager` and Run the program
+
+```python
+SchoolManager.Menu()
+--------output--------
+    1 ) Register Student
+    2 ) Register Teacher
+    3 ) Register Book
+    4 ) Register Class
+    5 ) RSB (Relation Student Book)
+    6 ) RSC (Relation Student Class)
+    7 ) RTB (Relation Teacher Book)
+    8 ) RTC (Relation Teacher Class)
+    9 ) Show RSB
+   10 ) Show RSC
+   11 ) Show RTB
+   12 )Show RTC
+   13 ) Exit
+    Plaese Select Number 1 Until The 13 :
+```
+
+And your done.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
