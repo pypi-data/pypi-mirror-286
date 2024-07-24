@@ -1,0 +1,122 @@
+[project]
+name = "fourier-grx"
+version = "0.1.0-rc.7"
+description = "Robotics Control System for the General Robotics (GR)"
+authors = [
+    { name = "Fourier Intelligence Ltd.", email = "algorithm@fftai.com" },
+    { name = "Xin Chen", email = "xin.chen@fftai.com" },
+    { name = "Yuxiang Gao", email = "yuxiang.gao@fftai.com" },
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = [
+    "numpy<2.0.0",
+    "pyyaml>=6.0.1",
+    "msgpack>=1.0.8",
+    "msgpack-numpy>=0.4.8",
+    "eclipse-zenoh==0.11.0rc3",
+    "typer>=0.12.3",
+    "rich>=13.7.1",
+    "loguru>=0.7.2",
+    "omegaconf>=2.3.0",
+    "pin-pink>=2.1.0",
+    "meshcat-shapes>=0.3.0",
+    "ischedule>=1.2.7",
+    "inputs>=0.5",
+    "fourier-core==0.1.0rc2",
+]
+
+[project.scripts]
+grx = "fourier_grx.sdk.cli:app"
+
+
+[build-system]
+build-backend = "nuitka.distutils.Build"
+requires = ["nuitka", "setuptools", "toml", "versioningit", "wheel"]
+
+[tool.distutils.bdist_nuitka]
+plat-name = "manylinux_2_31_x86_64"
+
+[tool.nuitka]
+include-package-data = "fourier_grx"
+# report="compilation-report.xml"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+excludes = ["tests", "examples", "demo", "webots", "docs", "config"]
+
+[[tool.pdm.source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+name = "tuna"
+
+# [[tool.pdm.source]]
+# url = "https://mirror.sjtu.edu.cn/pypi/web/simple"
+# name = "sjtug"
+
+[[tool.pdm.source]]
+url = "https://download.pytorch.org/whl/torch_stable.html"
+name = "torch"
+type = "find_links"
+include_packages = ["torch", "torchvision", "torchaudio"]
+
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "-e file:///${PROJECT_ROOT}/fourier-core#egg=fourier_core",
+    "ruff>=0.4.4",
+    "nuitka>=2.2.3",
+    "pyright>=1.1.363",
+    "matplotlib>=3.9.0",
+    "ipykernel>=6.29.4",
+    "ipython>=8.25.0",
+    "pdoc>=14.5.1",
+]
+
+
+[tool.ruff]
+include = ["**/*.py", "**/*.pyi", "**/pyproject.toml"]
+exclude = [".venv", "build", "dist"]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "A",   # flake8-builtins
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "E",   # pycodestyle - Error
+    "W",   # pycodestyle - Warning
+    "F",   # Pyflakes
+    'PLC',
+    'PLE',
+    'PLW', # Pylint
+    "I",   # isort
+    "UP",  # pyupgrade
+    "NPY", # numpy
+]
+ignore = [
+    "E501", # line-too-long
+    "F401", # unused import
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+
+[tool.pyright]
+include = ["fourier_core"]
+pythonVersion = "3.11"
+pythonPlatform = "Linux"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pdm.scripts]
+lint = "ruff . --fix"
+fmt = "ruff format ."
+doc = "mkdocs serve"
+doc-deploy = "mkdocs gh-deploy"
+lock = "pdm lock -G:all"
+relock = "rm pdm.lock && pdm lock -G:all"
