@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: getsecure
+Version: 0.0.2
+Summary: Utility for securing expiring links
+Home-page: https://github.com/maratsh/getsecure
+Author: maratsh
+Author-email: ya@maratsh.ru
+License: MIT
+License-File: LICENSE
+
+Utility for securing expiring links
