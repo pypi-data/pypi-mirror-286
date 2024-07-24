@@ -1,0 +1,9 @@
+supercollect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supercollect/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supercollect/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supercollect/management/commands/collectstatic.py,sha256=2rgbv7KyTlA5bSPZWElIxxOmp8AfDgCYqUd3UVzI5zY,3812
+supercollect/utils.py,sha256=jjfMBwCPF4jMB46DXM0kst0x4DWiogwbv3wc4ygoQ8Q,312
+supercollect-1.0.5.dist-info/LICENSE,sha256=Ety7hNZ7n14oSDuJAOixDJQK0jjJZs7y4Fu7dgRtJXo,1069
+supercollect-1.0.5.dist-info/METADATA,sha256=JatSTdOnDDdb6b6erlwPFU1MMpH_HD3eIKtmaXCvqyI,1352
+supercollect-1.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+supercollect-1.0.5.dist-info/RECORD,,
