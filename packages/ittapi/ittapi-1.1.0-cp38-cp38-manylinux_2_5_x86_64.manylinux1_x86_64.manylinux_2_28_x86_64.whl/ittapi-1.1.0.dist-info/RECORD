@@ -1,0 +1,16 @@
+ittapi/collection_control.py,sha256=ESJ8umoDTtkXVzlq_ZXX5N7Tb6ElYgWXzsqshMOeRY4,6677
+ittapi/event.py,sha256=KMSrpnIE6k_zYPk5OT_-EKK5qx9vlj-T5P_RcYts1Es,1482
+ittapi/thread_naming.py,sha256=sXJ4re6yt1Um2NpTE9Tw0jzrgjE7kNaFJw-NxgyzusE,289
+ittapi/domain.py,sha256=CHwXkdaFfpMvWkc9Bz3da9mN_h7-td5n2uvkMfny-e0,388
+ittapi/native.cpython-38-x86_64-linux-gnu.so,sha256=NKQ4KhlSwBZmS4nQiVO2uIcHR6DYNitrse48UqS46_0,471752
+ittapi/string_handle.py,sha256=79L-6mgR2ikzO4uz9Dz2Kb7sXkXpea69Y49qp4cHzm4,321
+ittapi/region.py,sha256=f4bNvfhf5Z8idVFuiwLH__2ibzj9At0DNSDbAxTcGrM,8699
+ittapi/task.py,sha256=6JkHDp0yMrDwHe-awRINAgAyHKhNxxglvyf21nUNffk,5258
+ittapi/__init__.py,sha256=oKXwkIcwuCN5COE4NeveNa0zgSTk82PW0kFsNP68o_o,746
+ittapi/id.py,sha256=AL6CSyA9TOslHYoXDc3j4zzkLitcj8SMRtAsjfnB9Ls,295
+ittapi-1.1.0.dist-info/BSD-3-Clause.txt,sha256=z0jN2e2HwgMbaPsbn0z7VdANz4FbIaML-DBKoeXm92o,1485
+ittapi-1.1.0.dist-info/METADATA,sha256=CtESBZo0AbsmK2KQsj7Lcys-_UZ4a6cF4263mgQVMOg,4068
+ittapi-1.1.0.dist-info/GPL-2.0-only.txt,sha256=y-D5UFxcoC7jS_ykU98xqY4x5tVq_N-KsPh_TJTxGBs,17599
+ittapi-1.1.0.dist-info/WHEEL,sha256=hC3h84c9UqDwc_P5ERFoiBfwcwtKuydRSOj0gGzBoMo,180
+ittapi-1.1.0.dist-info/RECORD,,
+ittapi-1.1.0.dist-info/top_level.txt,sha256=KzC2YtClWvAaBjL42oiplqc0FdZ5YEjN6nNqQWD5KPs,7
