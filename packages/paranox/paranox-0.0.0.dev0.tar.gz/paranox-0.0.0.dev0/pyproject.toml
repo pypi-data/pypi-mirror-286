@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools >=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paranox"
+version = "0.0.0.dev0"
+description = "Simple parameterisations for equinox"
+authors = [
+  { name = "Rastko Ciric", email = "rastko@stanford.edu" },
+]
+maintainers = [
+  { name = "Rastko Ciric", email = "rastko@stanford.edu" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "jax >= 0.3.16",
+    "equinox >= 0.7.1",
+    "gramform",
+    "numpyro",
+    "numpy >= 1.22.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "coverage[toml]",
+    "ruff",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hypercoil/paranox"
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+precision = 2
+
+[tool.coverage.run]
+branch = true
+omit = [
+    '*test*',
+    '*__init__*',
+]
+
+[tool.ruff]
+lint.ignore = [
+    "E501", # line too long: add it back when this is resolved:
+    # https://github.com/astral-sh/ruff/issues/3711
+]
+line-length = 79
+lint.select = [
+    "E",
+    "F",
+    "W",
+    "I001",
+]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]

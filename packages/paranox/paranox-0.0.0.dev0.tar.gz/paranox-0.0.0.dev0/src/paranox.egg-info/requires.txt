@@ -1,0 +1,11 @@
+jax>=0.3.16
+equinox>=0.7.1
+gramform
+numpyro
+numpy>=1.22.4
+
+[dev]
+pytest
+pytest-cov
+coverage[toml]
+ruff
