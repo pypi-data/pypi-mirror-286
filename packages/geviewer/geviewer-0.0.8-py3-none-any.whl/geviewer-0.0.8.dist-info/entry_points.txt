@@ -1,0 +1,2 @@
+[console_scripts]
+geviewer = geviewer.main:main
