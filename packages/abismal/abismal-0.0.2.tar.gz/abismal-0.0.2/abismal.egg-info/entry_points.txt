@@ -1,0 +1,2 @@
+[console_scripts]
+abismal = abismal.command_line.abismal:main

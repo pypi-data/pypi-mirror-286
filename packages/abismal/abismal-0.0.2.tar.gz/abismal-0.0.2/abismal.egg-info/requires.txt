@@ -1,0 +1,6 @@
+reciprocalspaceship>=0.9.16
+tqdm
+tensorflow
+tf_keras
+tensorflow-probability
+rs-booster
