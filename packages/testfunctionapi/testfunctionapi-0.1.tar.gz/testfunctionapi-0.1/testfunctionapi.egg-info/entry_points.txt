@@ -1,0 +1,2 @@
+[console_scripts]
+functionname = testfunctionapi.function1:my_function

@@ -1,0 +1,8 @@
+setup.py
+testfunctionapi/__init__.py
+testfunctionapi/function1.py
+testfunctionapi.egg-info/PKG-INFO
+testfunctionapi.egg-info/SOURCES.txt
+testfunctionapi.egg-info/dependency_links.txt
+testfunctionapi.egg-info/entry_points.txt
+testfunctionapi.egg-info/top_level.txt
