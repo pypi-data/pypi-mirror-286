@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tldextract = "*"
+scikit-learn = "*"
+pandas = "*"
+skops = "*"
+
+[dev-packages]
+pre-commit = "*"
+sphinx = "*"
+sphinx-autobuild = "*"
+sphinx-click = "*"
+myst-parser = "*"
+pytest = "*"
+flake8 = "*"
+flake8-docstrings = "*"
+flake8-bugbear = "*"
+mypy = "*"
+twine = "*"
+setuptools-scm = "*"
+jupyterlab = "*"
+sphinx-palewire-theme = "*"
+
+[requires]
+python_version = "3.11"
