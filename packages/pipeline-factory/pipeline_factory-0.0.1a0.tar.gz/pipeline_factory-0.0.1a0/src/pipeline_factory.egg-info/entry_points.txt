@@ -1,0 +1,2 @@
+[console_scripts]
+plfcli = pipeline_factory.cli:main
