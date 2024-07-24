@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kblpbp
+Version: 2.0.0
+Summary: Web scraping and visualization tools for Korean Basketball League's play-by-play data
+Author: JeongJun Moon
+Author-email: jaymnetwork@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: beautifulsoup4
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: plotnine
+Requires-Dist: scikit-learn
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: plotly
+Requires-Dist: requests
+
