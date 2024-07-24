@@ -1,0 +1,12 @@
+pyneuphonic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyneuphonic/websocket/__init__.py,sha256=8MosV9wjnRb3c_NRx_em3TgurtmIxJBBtg6NMBvnvbw,149
+pyneuphonic/websocket/libs/__init__.py,sha256=1wsbRfOYCLuHpkkEypZxpy8D8ylv4cfvQhwVkb-ZUDc,233
+pyneuphonic/websocket/libs/byte_array.py,sha256=rv_C1I7VYgYX8UetOblZ4bf0DQVU6i3DnliUUxU8So8,1912
+pyneuphonic/websocket/libs/message_senders.py,sha256=6th3WJbHsy4CsyqbqntCHfFL0sqxtIRxFgVmfIUqP2w,835
+pyneuphonic/websocket/libs/pyaudio.py,sha256=vVdh0BfsVPY4uDmRhXpFUcHpqYubhQNnGtEkaWNFtvg,2325
+pyneuphonic/websocket/libs/utils.py,sha256=7EvgZhSxRuOqotr4EJzbdpU9Pq4GX-UF8Rd6gZ1Cgzs,1139
+pyneuphonic/websocket/neuphonic_websocket_client.py,sha256=36DwvLmm9FAPaBVhfjvUAraZWfIoRaSVTAlAptllT88,13793
+pyneuphonic-0.1.3.dist-info/LICENSE.txt,sha256=BvIxvdUQJXx39mRoxnH9sfNg-DO3EHheBO7QNBNxfto,1075
+pyneuphonic-0.1.3.dist-info/METADATA,sha256=7hq3HJOxeUxsDwQ3Ij_HdXh0klUK0cjM4zjGmZ2Eyh0,1265
+pyneuphonic-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyneuphonic-0.1.3.dist-info/RECORD,,
