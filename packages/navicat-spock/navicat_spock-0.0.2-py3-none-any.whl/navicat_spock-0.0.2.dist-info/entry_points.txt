@@ -1,0 +1,2 @@
+[console_scripts]
+navicat_spock = navicat_spock.spock:run_spock

@@ -1,0 +1,13 @@
+navicat_spock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navicat_spock/__main__.py,sha256=0VHO1bO7horSkIDHL9hnKogz0VllmqJWuQDATooStz8,108
+navicat_spock/exceptions.py,sha256=k24KadJenCZ8cnXRjSi6NAY3LS-cwTz-InX471fpkOk,382
+navicat_spock/helpers.py,sha256=OKCU-6mohvGI6AyV4Mkxh_yKfqvHPy1DuaVri1HNuRo,15963
+navicat_spock/piecewise_regression.py,sha256=hC_Oq_KcQ5eO32tpLynt7zsWkpAvuSqPksVxbJk2zSU,45759
+navicat_spock/plotting2d.py,sha256=A--8N1jAcT2UNOSob06f4JQ6fQeugc37kYkNwo0AVyM,5788
+navicat_spock/spock.py,sha256=AA9zNcd_xNd_qng2GsGntJxqmIe4zGGQyI0R5Dc1Jhk,11558
+navicat_spock-0.0.2.dist-info/LICENSE,sha256=YU4lHvjlnLcR_810wAY-D_-xptqeOH4KQZLlBnRqcBk,1104
+navicat_spock-0.0.2.dist-info/METADATA,sha256=_EBBHApeRbUz9CyXBHAMG2ox80-0kETt8hEuRgQJwTQ,6108
+navicat_spock-0.0.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+navicat_spock-0.0.2.dist-info/entry_points.txt,sha256=MPsOh6gVWvgeHTuex0mGX-eSlaqRcde_eK82dkiad3Q,64
+navicat_spock-0.0.2.dist-info/top_level.txt,sha256=KJPbRhqjzteWZzXALzCe3xjS_0uTkdJE16qajxI4NTI,14
+navicat_spock-0.0.2.dist-info/RECORD,,
