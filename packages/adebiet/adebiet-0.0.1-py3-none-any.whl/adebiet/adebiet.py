@@ -1,0 +1,2 @@
+def adebiet():
+    return "ädebiet"
