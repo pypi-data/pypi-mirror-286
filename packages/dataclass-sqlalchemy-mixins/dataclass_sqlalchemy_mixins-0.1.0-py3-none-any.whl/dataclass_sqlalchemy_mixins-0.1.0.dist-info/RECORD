@@ -1,0 +1,9 @@
+dataclass_sqlalchemy_mixins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataclass_sqlalchemy_mixins/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataclass_sqlalchemy_mixins/base/mixins.py,sha256=4LZL9abc1de849pQ-BITa3SVL_eImHBEW7HzyDTdYW8,7138
+dataclass_sqlalchemy_mixins/pydantic_mixins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataclass_sqlalchemy_mixins/pydantic_mixins/sqlalchemy_base_models.py,sha256=jWcqJAfmpSEbPtqYUqUihm5swwDwhl5DfdhIPGbykiw,4642
+dataclass_sqlalchemy_mixins-0.1.0.dist-info/LICENSE,sha256=PrdzZCHim2T2bMffoR02CArje-ZH3Fd5ABUdQgkr_d4,1077
+dataclass_sqlalchemy_mixins-0.1.0.dist-info/METADATA,sha256=86_SSK1ABHxJftMNDNE5QYEKmhvYzXkbwgMaaGeEB2k,6697
+dataclass_sqlalchemy_mixins-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dataclass_sqlalchemy_mixins-0.1.0.dist-info/RECORD,,
