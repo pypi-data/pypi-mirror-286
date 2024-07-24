@@ -1,0 +1,8 @@
+emb_model/__init__.py,sha256=ySJ_WwvEsSRPCzgxyt_gQOAZJlloZkFb6SQEJ0bF8kA,2077
+emb_model/customized_dataset.py,sha256=1QY4tuyqdMx9RmZzlxQAibzcHbJr0BPUPGCRbRfjUXE,33422
+emb_model/resources/embedding_env.yaml,sha256=eqYWMHPY6kCzHn_QadkUoFqAkrVCadurl1ZGV0daCS8,360
+emb_model-0.1.16.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+emb_model-0.1.16.dist-info/METADATA,sha256=SuE0QSbBNs-9Hn8hqpaMd1PSIcQtwxkth5DNTi4ezbU,704
+emb_model-0.1.16.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+emb_model-0.1.16.dist-info/top_level.txt,sha256=yiJc-3LkV0VZzbTyzLCxIGQmmtXbiKk4BcgLfFfk8Xo,10
+emb_model-0.1.16.dist-info/RECORD,,
