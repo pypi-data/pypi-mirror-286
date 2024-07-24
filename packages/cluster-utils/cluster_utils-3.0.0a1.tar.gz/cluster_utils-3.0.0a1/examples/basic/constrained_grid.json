@@ -1,0 +1,44 @@
+{
+  "optimization_procedure_name": "constrained_grid",
+  "results_dir": "/is/cluster/work/{$USER}/tmp",
+  "git_params": {
+    "branch": "master",
+    "commit": null
+  },
+  "generate_report": "every_iteration",
+  "script_relative_path": "examples/basic/main.py",
+  "load_existing_results": true,
+  "environment_setup": {
+  },
+  "cluster_requirements": {
+    "request_cpus": 1,
+    "request_gpus": 0,
+    "cuda_requirement": null,
+    "memory_in_mb": 16000,
+    "bid": 800,
+    "hostname_list": ["g018", "g025", "g026", "g027", "g028", "g029", "g030", "g031", "p001", "p002", "p003", "t001"]
+  },
+  "fixed_params": {
+    "fn_args.v": 20,
+    "fn_args.sharp_penalty": "{fn_args.u < 0.2}",
+    "fn_args.x": "{fn_args.y/3}",
+    "test_resume": false
+  },
+  "restarts": 1,
+  "samples": null,
+  "remove_jobs_dir": false,
+  "hyperparam_list": [
+    {
+      "param": "fn_args.u",
+      "values": [-0.5, 0.0, 0.5]
+    },
+    {
+      "param": "fn_args.w",
+      "values": "{list(range(1,4))}"
+    },
+    {
+      "param": "fn_args.y",
+      "values": [0.1, 1.0, 10.0]
+    }
+  ]
+}

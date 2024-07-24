@@ -1,0 +1,156 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cluster-utils"
+dynamic = ["version"]
+description = "Cluster utilities"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+authors = [
+    { name = "Michal Rolinek", email = "michalrolinek@gmail.com" },
+    { name = "Dominik Zietlow" },
+    { name = "Sebastian Blaes" },
+    { name = "Georg Martius" },
+    { name = "Marin Vlastelica" },
+    { name = "Maximilian Seitzer" },
+    { name = "Pierre Schuhmacher" },
+    { name = "Felix Kloss" },
+]
+maintainers = [
+    { email = "georg.martius@uni-tuebingen.de" },
+]
+dependencies = [
+    "colorama",
+    "gitpython>=3.0.5",
+    "numpy<2",
+    "pandas[output_formatting]>=2.0.3",
+    "scipy",
+    "al-smart-settings",
+    "tqdm",
+]
+
+[tool.setuptools_scm]
+# Can be empty if no extra settings are needed, presence enables setuptools_scm.
+# You can check which version it picked by running `python3 -m setuptools_scm` in the
+# package root.
+
+[project.urls]
+Documentation = "https://martius-lab.github.io/cluster_utils"
+Repository = "https://github.com/martius-lab/cluster_utils"
+Issues = "https://github.com/martius-lab/cluster_utils/issues"
+
+[project.optional-dependencies]
+all = [
+    "cluster_utils[nevergrad]",
+    "cluster_utils[report]",
+]
+all-dev = [
+    "cluster_utils[all]",
+    "cluster_utils[dev]",
+    "cluster_utils[docs]",
+    "cluster_utils[mypy]",
+]
+dev = [
+    "absolufy-imports",
+    "cluster_utils[lint]",
+    "cluster_utils[test]",
+    "nox>=2022.8.7",
+    "pre-commit",
+]
+docs = [
+    "myst-parser",
+    "sphinx",
+    "sphinx-immaterial",
+]
+lint = [
+    "black==24.4.2",
+    "ruff==0.5.0",
+]
+mypy = [
+    "mypy==1.10.1",
+    "pandas-stubs",
+    "tomli-w",
+    "types-colorama",
+    "types-tqdm",
+    "types-PyYaml",
+]
+test = [
+    "pytest==8.2.2",
+    "tomli-w",
+]
+nevergrad = [
+    "nevergrad",
+]
+report = [
+    "matplotlib",
+    "scikit-learn",
+    "seaborn>=0.11.0",
+]
+
+[project.scripts]
+cluster_utils_plot_timeline = "cluster_utils.scripts.plot_job_timeline:main"
+
+
+
+[tool.black]
+preview = true
+target-version = ['py38']
+
+[tool.ruff]
+target-version = "py38"
+src = ["src"]
+
+# for a complete list of available rules see https://docs.astral.sh/ruff/rules/
+# TODO commented-out rules below should be enabled but currently result in quite
+# a lot of warnings, which need to be fixed first.
+lint.select = [
+    "F", # pyflakes
+    "E", # pycodestyle
+    "W", # pycodestyle
+    "B", # bugbear
+    "I", # isort
+    "N", # naming
+    # "UP", # pyupgrade
+    "A", # builtins
+    "FA", # future-annotations
+    # "G", # logging-format
+    "PT", # pytest-style
+    "SIM", # simplify
+    # "ARG", # unused-arguments
+    # "PD", # pandas-vet
+    # "PL", # pylint
+    # "NPY", # numpy
+    "RUF100",  # unused 'noqa' directive
+]
+lint.ignore = [
+    "E501",  # line too long (mostly handled by black)
+    # E731: Do not use a lambda expression use a def (local def is often ugly)
+    "E731",
+    "PT011",  # pytest-raises-too-broad (use `match` parameter)
+    "SIM108",  # Use ternary operator instead of if-else-block
+    # SIM910: use dict.get("foo") instead of dict.get("foo", None)
+    # Disabled as it's sometimes nice to be explicit.
+    "SIM910",
+]
+
+[tool.mypy]
+exclude = ["build/", "examples/"]
+
+[[tool.mypy.overrides]]
+# list all modules for which no type hints are available
+module = [
+    "docutils.*",
+    "matplotlib.*",
+    "nevergrad.*",
+    "nox",
+    "pytest",
+    "scipy.*",
+    "seaborn",
+    "setuptools",
+    "sklearn.ensemble",
+    "smart_settings",  # TODO we can add hints there
+    "sphinx.*",
+]
+ignore_missing_imports = true

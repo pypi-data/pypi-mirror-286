@@ -1,0 +1,8 @@
+{
+  "iterations": 20,
+  "optimizer": "Adam",
+  "working_dir": "result",
+  "optimizer_params": {
+    "lr": 1e-2
+  }
+}
