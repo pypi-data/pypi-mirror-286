@@ -1,0 +1,15 @@
+smallscript/SObject.py,sha256=-gQbuuvItl0OtVQEg7g_inxrN1x4h374c8v0CFUo0uw,26011
+smallscript/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/TestBase.py,sha256=ETrgm0rlIsPY2hx-YPJj2a8KVXBd-7dwAtmIVmd30G8,919
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/internals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/internals/test01_sobject.py,sha256=SnZ5D-H891cOqEmKn_3R_7uiZ966lAgbhTJqyeaRsQg,3456
+tests/tdd_v0_0/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tdd_v0_0/test01_tdd.py,sha256=7kZm1QDmlwj8IxTKX2CrShPFN78TZ3TfMV-OGFIELTU,14781
+tests/testpkg/TestObj.py,sha256=igUnZiFjbjE7ysi8-Z1Hu0cbLLQ1hIQBPD7ZJBYekC0,34
+tests/testpkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smallscript-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+smallscript-0.0.1.dist-info/METADATA,sha256=s1vu3yQu80pPnTZSSBpo1lvtKGRPJF-YSVeNOnkA3IM,5242
+smallscript-0.0.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+smallscript-0.0.1.dist-info/top_level.txt,sha256=9QeV_lS2f8yf33w4gxzau2YIecC189mcdILKVl7sDxc,18
+smallscript-0.0.1.dist-info/RECORD,,
