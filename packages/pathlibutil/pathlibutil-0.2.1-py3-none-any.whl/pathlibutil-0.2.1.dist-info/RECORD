@@ -1,0 +1,10 @@
+LICENSE,sha256=q4WFFZ3iGyNlzjN5dPuaMjlo2nTJPpdHsta1EPbVyOc,1074
+pathlibutil/__init__.py,sha256=vgK9TDVG6epeABroWU3zjruSJLXWY8N3XsjiAIBm2bU,242
+pathlibutil/base.py,sha256=iN4I8IvoHbUllTWx6NPHesBQGflW0HXBcEFv229uoFY,413
+pathlibutil/json.py,sha256=ushO2dGAeS64MbrzSKXJmIxkO7ulYp09H0I8igLUfiA,1152
+pathlibutil/path.py,sha256=8ROSXqmDTeuChBWXpwOiwoqtraZU7QnsXp8Nx1GOLqE,22000
+pathlibutil/types.py,sha256=EQlmIbs8n8ye2HxHVXWioW402pTzMC9LhcRxkaKD9jw,9322
+pathlibutil-0.2.1.dist-info/LICENSE,sha256=q4WFFZ3iGyNlzjN5dPuaMjlo2nTJPpdHsta1EPbVyOc,1074
+pathlibutil-0.2.1.dist-info/METADATA,sha256=gcj0J18R4CxmOxi4twnpQ-w4cT0gwlT2YA6OvRqbS7A,11131
+pathlibutil-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pathlibutil-0.2.1.dist-info/RECORD,,
