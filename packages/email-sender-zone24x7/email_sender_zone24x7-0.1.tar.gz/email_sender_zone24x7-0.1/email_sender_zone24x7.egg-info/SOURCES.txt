@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+email_sender_zone24x7/EmailSender.py
+email_sender_zone24x7/__init__.py
+email_sender_zone24x7.egg-info/PKG-INFO
+email_sender_zone24x7.egg-info/SOURCES.txt
+email_sender_zone24x7.egg-info/dependency_links.txt
+email_sender_zone24x7.egg-info/requires.txt
+email_sender_zone24x7.egg-info/top_level.txt
