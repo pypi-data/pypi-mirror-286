@@ -1,0 +1,6 @@
+dist
+docs
+examples
+licenses
+mpl_animators
+test-sdist
