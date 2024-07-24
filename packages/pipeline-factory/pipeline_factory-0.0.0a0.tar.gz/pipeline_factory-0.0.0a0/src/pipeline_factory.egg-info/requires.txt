@@ -1,0 +1,9 @@
+fastapi
+sqlmodel
+croniter
+
+[dev]
+pyright
+ruff
+build
+twine
