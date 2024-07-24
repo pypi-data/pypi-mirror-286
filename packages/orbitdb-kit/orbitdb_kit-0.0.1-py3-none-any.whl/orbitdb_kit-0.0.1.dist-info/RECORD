@@ -1,0 +1,17 @@
+orbitdb_kit/__init__.py,sha256=jCkOLHbef5YJeTsJjA2uU4w3D_QS9FjKqAuWoytFYHU,151
+orbitdb_kit/orbitdb_kit.py,sha256=D7myDI5AfCgnid4TM_XbuP8O3vV60tIfpVJniMDyt2Y,17757
+orbitdb_kit/orbitdb_kit_lib.py,sha256=j6OklaPX8PFnAmut9767vpOSK3NhOPThjb1WBW0v_og,17413
+orbitdb_kit/orbitv3-slave-swarm.js,sha256=t8_eJuYWA1LdC3-02eIqVPJCb2Yxru3hbvwnRLc7kX0,20702
+orbitdb_kit/package.json,sha256=udoENNm-uJ_evbn2ty-jIO2jY8QJ2Y5psaMnWFPY4lU,1077
+orbitdb_kit/websocket_kit.py,sha256=08XTCivyi05UryEESHoFwf821kmBAkprfslNa7-XUjI,2254
+orbitdb_kit/websocket_kit_lib.py,sha256=zZYZ6LOeUmQctywIeuCTDR_dyAHx-dIjPH9PUtPj7Wg,2262
+orbitdb_kit/yarn.lock,sha256=OJoRFLOEbpG1fyI-MEYA0LJxygBrya_dSuTkoTbHCBY,266005
+orbitdb_kit/config/__init__.py,sha256=8k7aE32al0G9guz6of_rCUCOWOEBNItkwKKa9yKChHI,26
+orbitdb_kit/config/config.py,sha256=LCvxaA-7zLJnxErvrTKK3gkzaHCG39Cw1lF7GlZ4ZNU,4194
+orbitdb_kit/websocket_kit/__init__.py,sha256=kCuJeJoksIPGefsGct9iS4xPHlsWpFlP6FikDWgq8qQ,40
+orbitdb_kit/websocket_kit/websocket_kit.py,sha256=rMJ8OmMJO_ATSGlNiTk5jCLwgAEWdvCL4yNX5ZqIAFA,3683
+orbitdb_kit-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+orbitdb_kit-0.0.1.dist-info/METADATA,sha256=b0-cieQ8CsMdQuWvfqvoP9d5gAtLMjjzkB3UhVp7tKE,2007
+orbitdb_kit-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+orbitdb_kit-0.0.1.dist-info/top_level.txt,sha256=N1PFxKe4RT3WEqhJQt7WX4sLJ2TnmmFJKYrTElDqdHo,12
+orbitdb_kit-0.0.1.dist-info/RECORD,,
