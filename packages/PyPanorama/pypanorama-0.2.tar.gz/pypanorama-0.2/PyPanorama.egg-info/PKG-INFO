@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: PyPanorama
+Version: 0.2
+Summary: A versatile Python library offering a wide range of functionalities for various applications.
+Author: ZOOM
+Keywords: Python,versatile,utilities,social media,Instagram,Facebook,TikTok
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PyPanorama
+
+**PyPanorama** is a Python library designed to provide a wide range of functionalities for various platforms and applications, including Instagram, Facebook, TikTok, and more. 
+
+## Features
+
+- Generate random user agents using predefined templates (currently available).
+- Planned support for functionalities related to Instagram, Facebook, TikTok, and other platforms.
+- Future updates will introduce new features and tools to enhance versatility.
+
+## Installation
+
+You can install the PyPanorama library using pip:
+
+```bash
+pip install PyPanorama
