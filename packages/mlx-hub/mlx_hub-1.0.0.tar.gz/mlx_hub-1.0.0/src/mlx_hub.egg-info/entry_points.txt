@@ -1,0 +1,2 @@
+[console_scripts]
+mlx-hub-cli = mlx_hub.cli:main
