@@ -1,0 +1,2 @@
+[console_scripts]
+ioscmd = ioscmd.__main__:main
