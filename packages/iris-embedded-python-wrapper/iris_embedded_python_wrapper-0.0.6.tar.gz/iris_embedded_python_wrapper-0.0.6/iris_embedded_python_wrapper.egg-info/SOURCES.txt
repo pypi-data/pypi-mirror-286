@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+iris/__init__.py
+iris/__init__.pyi
+iris/_cli.py
+iris/iris_ipm.py
+iris/iris_ipm.pyi
+iris/iris_utils.py
+iris_embedded_python_wrapper.egg-info/PKG-INFO
+iris_embedded_python_wrapper.egg-info/SOURCES.txt
+iris_embedded_python_wrapper.egg-info/dependency_links.txt
+iris_embedded_python_wrapper.egg-info/entry_points.txt
+iris_embedded_python_wrapper.egg-info/top_level.txt
