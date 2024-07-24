@@ -1,0 +1,11 @@
+satdatagen/GroundLocation.py,sha256=Gc0WXN9AaOGR-zQawFadJsboOfRG1E3wqeDngnZt-mY,1896
+satdatagen/Satellite.py,sha256=AhrMdnQ9kkK3-2BJQCDyRqS13OOBcfcPrM_WtZHUAv0,3306
+satdatagen/TimeRange.py,sha256=zLq3YpEIo5cpQVbX18h_ZSSs2FIxI7m87jTM9JST_A8,2736
+satdatagen/__init__.py,sha256=IT4nPRCkaE-uUzL3v4Ybk-f3DCNpe9Q2aXhlgtZsz0c,24266
+satdatagen/helpers.py,sha256=vZq8OkQo6GCZz7Eh45F_26j2qSATTeWj-v6RXJNyrew,25595
+satdatagen/object_sizes.json,sha256=pRFRGRP2Kb2WGvfa3nwpdRF7ZzvWqDUPWlNEZtfeiDY,15522898
+satdatagen/sizes.py,sha256=-qCLVLacGnDo8Nc6VGRIFWmtPC4p8TBchHYRThiFTCE,15522841
+satdatagen-0.0.19.dist-info/METADATA,sha256=sEamvm2c0ytH7HBCwlvhc-VUF165C3s5bNm--ieWVJw,1427
+satdatagen-0.0.19.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+satdatagen-0.0.19.dist-info/licenses/LICENSE,sha256=IP0es981vGzyH2gXyzGmsKC8TLioVPJO7_8WxODM6QE,1065
+satdatagen-0.0.19.dist-info/RECORD,,
