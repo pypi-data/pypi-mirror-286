@@ -1,0 +1,16 @@
+opensfdi/__init__.py,sha256=LJKBw9gtrkLDfSI8ETO9WkU-y-Kqi5CT4wxREZCE2fU,2730
+opensfdi/calibration.py,sha256=JhcPKsobSYu09xakY8a2Q5qqR7e48Sm874Hyg1HvgvM,6893
+opensfdi/definitions.py,sha256=9fYFshLNTfw0pCtYsW00OjDyN4kAWhJqCScSqYf8daM,1526
+opensfdi/experiment.py,sha256=HtGLYT9IJvYK6pdMwMBGQwFO6IGjB4f5GI3V75EZ4GM,9118
+opensfdi/fringes.py,sha256=1eZTFNNWYpaUNEhM65v-p5s10Cc6AxE68TPk-W14bow,2043
+opensfdi/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opensfdi/io/repositories.py,sha256=Kt1aAbU6Ap5wmU34HR1UBsV_flD-4v_29PuIi0buvnM,4448
+opensfdi/io/std.py,sha256=6_iO8o03GLqhY1CWdj3fHb35B4_2LtQ_uRpLSzAm4zQ,818
+opensfdi/profilometry.py,sha256=Avo2J4e_iqiijBS72--h6FAvIIRfiM3nQ6sBKvqX-h8,5133
+opensfdi/services.py,sha256=K_zrUV7pLgA-2p8wKLO4BZJw8h1UCMZBdDyfuggZjVc,3630
+opensfdi/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opensfdi/utils/maths.py,sha256=8oKDTZBCNRpET0xPk34HpmIxAr1noRY8EIa1fkPzKNE,654
+opensfdi/video.py,sha256=bI1gomrcnInF0wgKc85Ix_FRIoh0tnz9aDcpfrgDPd8,3300
+opensfdi-0.1.0.dist-info/METADATA,sha256=OVF4wWMpeTjZ6WGOTvCwfEfCZb5jBEOiLQsVH7S5VP8,656
+opensfdi-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+opensfdi-0.1.0.dist-info/RECORD,,
