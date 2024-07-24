@@ -1,0 +1,15 @@
+pandas
+numpy
+psycopg2-binary
+hvac
+openpyxl
+requests-ntlm
+oauth2client
+gspread
+pymssql
+urllib3
+clickhouse-connect
+tzlocal
+mysql-connector-python
+xlsxwriter
+polars
