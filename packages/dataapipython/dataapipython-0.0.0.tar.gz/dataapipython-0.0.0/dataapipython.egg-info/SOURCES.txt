@@ -1,0 +1,6 @@
+setup.py
+dataapipython/__init__.py
+dataapipython.egg-info/PKG-INFO
+dataapipython.egg-info/SOURCES.txt
+dataapipython.egg-info/dependency_links.txt
+dataapipython.egg-info/top_level.txt
