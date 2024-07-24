@@ -1,0 +1,15 @@
+<!-- Deprecated: This corolla is deprecated and will be removed in the future. -->
+<corolla name="gpt">
+    <import path="_text.rml" element="chat"/>
+    <import path="_gpt.rml" element="image"/>
+</corolla>
+
+
+<corolla name="text">
+    <import path="_text.rml" element="chat"/>
+</corolla>
+
+<corolla name="image">
+    <import path="_sd.rml" element="sd-v1, sd-v2"/>
+    <import path="_gpt.rml" element="image.generate" as="dall-e"/>
+</corolla>
