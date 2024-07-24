@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+exceptionx/__init__.py
+exceptionx/i exceptionx.py
+exceptionx.egg-info/PKG-INFO
+exceptionx.egg-info/SOURCES.txt
+exceptionx.egg-info/dependency_links.txt
+exceptionx.egg-info/top_level.txt
