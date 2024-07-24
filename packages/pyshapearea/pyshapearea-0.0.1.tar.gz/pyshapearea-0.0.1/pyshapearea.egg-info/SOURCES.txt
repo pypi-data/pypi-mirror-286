@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+PyShapeArea1/__init__.py
+PyShapeArea1/core.py
+PyShapeArea1/tests.py
+pyshapearea.egg-info/PKG-INFO
+pyshapearea.egg-info/SOURCES.txt
+pyshapearea.egg-info/dependency_links.txt
+pyshapearea.egg-info/top_level.txt
