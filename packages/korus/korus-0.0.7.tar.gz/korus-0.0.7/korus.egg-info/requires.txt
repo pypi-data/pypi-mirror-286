@@ -1,0 +1,6 @@
+soundfile
+pandas
+numpy
+termcolor
+treelib
+tqdm
