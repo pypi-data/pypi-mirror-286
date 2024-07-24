@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyQuadraticSolver/__init__.py
+PyQuadraticSolver/equation.py
+PyQuadraticSolver.egg-info/PKG-INFO
+PyQuadraticSolver.egg-info/SOURCES.txt
+PyQuadraticSolver.egg-info/dependency_links.txt
+PyQuadraticSolver.egg-info/top_level.txt
