@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/textanalyzer/__init__.py
+src/textanalyzer.egg-info/PKG-INFO
+src/textanalyzer.egg-info/SOURCES.txt
+src/textanalyzer.egg-info/dependency_links.txt
+src/textanalyzer.egg-info/requires.txt
+src/textanalyzer.egg-info/top_level.txt
+src/textanalyzer/processors/__init__.py
+src/textanalyzer/processors/base.py
+src/textanalyzer/processors/dedup.py
+src/textanalyzer/processors/stats.py
+src/textanalyzer/utils/__init__.py

@@ -1,0 +1,14 @@
+omegaconf
+tqdm
+spacy
+datasets
+transformers
+tiktoken
+datasketch
+xxhash
+langchain
+langchain_community
+
+[ko]
+python-mecab-ko
+kss
