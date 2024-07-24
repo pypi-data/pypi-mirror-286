@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/TensorImgUtils.egg-info/PKG-INFO
+src/TensorImgUtils.egg-info/SOURCES.txt
+src/TensorImgUtils.egg-info/dependency_links.txt
+src/TensorImgUtils.egg-info/top_level.txt
+src/tensor_img_utils/__init__.py
