@@ -1,0 +1,2 @@
+[console_scripts]
+whois = jhwhois.cli:run
