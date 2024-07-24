@@ -1,0 +1,151 @@
+蚂蚁金服仪表盘 | 中国领先的第三方在线支付解决方案
+==================================================
+
+[![图片1：中国领先的第三方在线支付解决方案 - 支付宝](https://ac.alipay.com/storage/2024/3/26/d66c43c0-440d-4c97-9976-f2028a2c8c5e.svg)![图片2：中国领先的第三方在线支付解决方案 - 支付宝](https://ac.alipay.com/storage/2024/3/26/a48bd336-aea0-4f16-bf83-616eacbb4434.svg)](/docs/)
+
+[登录](https://global.alipay.com/ilogin/account_login.htm?goto=https%3A%2F%2Fglobal.alipay.com%2Fdocs%2Fdashboard_en)  
+[首页](/docs/)  
+[在线支付](/docs/onlinepayment)  
+[店内支付](/docs/instorepayment)  
+[解决方案](/docs/solutions)  
+[收益增强器](/docs/ac/revenuebooster_en/overview)  
+[组合支付](/docs/ac/combinedpay_en/overview)  
+[灵活结算](/docs/ac/flexiblesettlement_en/overview)  
+[集成指南](/docs/integration_guide_en)  
+[蚂蚁金服仪表盘](/docs/dashboard_en)  
+[SDKs](/docs/sdks)  
+[APIs](https://global.alipay.com/docs/ac/ams/api)  
+[对账](https://global.alipay.com/docs/ac/reconcile)  
+[数字签名](https://global.alipay.com/docs/ac/ams/digital_signature)  
+[沙箱环境](https://global.alipay.com/docs/ac/ref/sandbox)  
+[工具](https://global.alipay.com/docs/ac/ref/key_config_en)  
+[测试钱包](https://global.alipay.com/docs/ac/ref/testwallet)  
+[争议处理](https://global.alipay.com/docs/ac/dispute)  
+[商户服务](https://global.alipay.com/docs/ac/merchant_service)  
+[版本更新日志](/docs/releasenotes)  
+[支持](/docs/support)  
+[术语表](/docs/glossary)  
+[帮助中心](https://cshall.alipay.com/enterprise/global/klgList?sceneCode=un_login&routerId=d9aa1f608c4145d6b3c8030c17cf6f9a000&categoryId=50479)  
+[旧版文档](https://global.alipay.com/docs/ac/legacy/legacydoc)  
+蚂蚁金服仪表盘
+==================================================
+
+2024年5月15日 06:07
+开始接收在线支付的简单步骤
+----------------------------
+
+注册并登录
+-----------
+
+要注册Antom仪表板账户，您首先需要从Antom获取内部邀请链接。联系[Antom商务支持](https://global.alipay.com/docs/support#AVq3T)获取邀请链接并完成注册过程。
+
+注册后，登录到[Antom仪表板](https://dashboard.alipay.com/global-payments/home)。页面左上角将显示您的商户账户名称。
+
+![图片3: image.png](https://cdn.nlark.com/yuque/0/2024/png/12884741/1712460187565-b69dde23-6b90-49f0-8994-cde2cbfc08da.png)
+
+您可以通过点击**+ 创建商户账户**创建新的商户账户。创建账户后，可以通过点击右上角的**设置** ![图片4: image.png](https://yuque.antfin.com/images/lark/0/2023/png/119656509/1703062036421-1dea58a9-ac6d-4864-91fa-7a8bdce64ff7.png) > **商户账户信息**来修改账户信息。
+
+![图片5: image.png](https://cdn.nlark.com/yuque/0/2024/png/12884741/1712460292181-fa50eb9e-2723-41b9-8188-6aa3a2f5a029.png)
+
+在沙箱中测试
+------------
+
+在接收在线实时支付之前，建议通过以下步骤完成沙箱测试：
+
+1. 沙箱配置
+2. 沙箱集成
+3. 沙箱测试
+### 沙箱配置  
+在进行沙箱测试之前，您需要首先生成密钥并获取沙箱环境的相关集成资源。  
+
+#### 生成密钥  
+您可以使用以下任一方法生成密钥：  
+1. 转到 **开发者** > [**快速开始**](https://dashboard.alipay.com/global-payments/developers/quickStart)，找到 **集成资源与工具**，选择 **集成资源**，然后点击 **生成密钥**。
+2. 转到 **开发者** > [**密钥配置**](https://dashboard.alipay.com/global-payments/developers/iKeys)，点击 **生成密钥**。  
+有关生成密钥的更多详细信息，请访问 [API 密钥配置](https://global.alipay.com/docs/ac/ref/key_config_en)。  
+![图片 6: image.png](https://cdn.nlark.com/yuque/0/2024/png/12884741/1712476659413-59ad9033-5b9e-4b95-941d-2a439f884b7d.png)  
+> **注意**：如果您的私钥丢失，请点击 **替换密钥** 以生成新密钥。请务必妥善保管您的私钥以备后续使用。  
+
+#### 获取集成资源  
+Antom 为您的沙箱集成和测试提供了以下集成资源：  
+1. 网关 URL 和客户端 ID：您可以使用以下任一方法获取沙箱环境的网关 URL 和客户端 ID：  
+   - 转到 **开发者** > [**快速开始**](https://dashboard.alipay.com/global-payments/developers/quickStart)，找到 **集成资源与工具**，然后选择 **集成资源**。
+   - [**首页**](https://dashboard.alipay.com/global-payments/home) > **集成资源**。  
+2. 集成测试：在 **开发者** > **快速开始** > **集成资源与工具** > **集成测试** 中，可以访问针对各种支付方式的集成测试专用资源。
+*   测试钱包：Antom 提供了一个测试钱包应用，以支持在整个集成过程中的端到端测试。有关详细信息，请参阅 [测试资源](https://global.alipay.com/docs/ac/cashierpay/test) 中的 **测试应用下载** 部分。
+*   测试账户：使用特定的账户登录测试钱包应用。详情请参阅 [测试资源](https://global.alipay.com/docs/ac/cashierpay/test) 中的 **测试账户** 部分。
+### 沙箱集成  
+按照以下步骤和代码示例完成沙箱环境的集成和测试模式部署：  
+*   [即时到账支付](https://global.alipay.com/docs/ac/cashierpay/quickstart)
+*   [快捷支付](https://global.alipay.com/docs/ac/easypay_en/sdk)
+*   [自动扣款](https://global.alipay.com/docs/ac/autodebit_en/auth)
+*   [订阅支付](https://global.alipay.com/docs/ac/subscriptionpay_en/activation)
+### 沙盒测试
+为了进行有效的沙盒测试，建议使用以下工具：
+
+| **测试工具** | **描述** | **路径** |
+| --- | --- | --- |
+| [API 调用模拟](https://global.alipay.com/docs/ac/ref/api_call_sim_en) | 使用在线调试工具和 Postman 脚本测试您的 API。 | **开发者** > **API 调用模拟** |
+| [通知 URL](https://dashboard.alipay.com/global-payments/developers/iNotify) | 配置通知 URL，并使用开发者工具模拟接收和处理异步通知的过程。 | **开发者** > **通知 URL** |
+| [错误场景模拟](https://global.alipay.com/docs/ac/ref/error_scenario_sim_en) | 提供不同 API 结果的模拟，返回指定的响应以进行集成测试。 | **开发者** > **错误场景模拟** |
+| [测试用例](https://global.alipay.com/docs/ac/ref/test_case_en) | 验证您的集成，确保系统正常工作并具有高质量。 | **开发者** > **测试用例** |
+| [请求日志](https://dashboard.alipay.com/global-payments/developers/requestLog) | 搜索您的模拟请求记录。 | **开发者** > **请求日志** |
+| [通知日志](https://dashboard.alipay.com/global-payments/developers/notificationLog) | 搜索您收到的模拟通知记录。 | **开发者** > **通知日志** |
+
+### 上线
+在实际环境中进行集成测试之前，请确保您的商户账户已激活，并将 Antom 控制台模式切换到实时模式。通过以下步骤完成实时环境中的集成测试：
+
+1. 激活账户
+   访问 **首页**，点击 **立即激活**，按照页面提示输入信息，并联系 Antom 商业支持以激活您的支付方式并关联结算账户。
+# 商户账户激活与实时模式切换
+当您的商户账户被激活后，您可以通过Antom仪表板将模式切换到实时模式。
+
+## 生成密钥
+1. 进入**开发者** > **密钥配置**，点击**生成密钥**。
+
+   **注意**：如果丢失私钥，可以通过点击**替换密钥**来生成新的密钥。请务必保管好私钥，以便后续使用。
+
+## 获取网关URL和客户端ID
+2. 通过**开发者** > **快速开始** > **集成资源和工具** > **集成资源**，获取实时环境的网关URL和客户端ID。
+
+## 设置通知URL
+3. 为了接收Antom的通知，设置**开发者** > **快速开始** > **集成资源和工具** > **通知URL**。
+
+## 更新实时环境的代码
+4. 确保在实时环境中成功收到测试支付后，更新您的代码以开始接收在线支付。
+
+## 查看结算信息
+一旦开始接收在线支付，您可以在实时模式下的**财务**部分查看您的结算信息。
+### 余额信息  
+登录蚂蚁金服仪表盘，进入 **财务** > **结算概览** > **银行账户**，然后点击 **+ 添加新银行账户** 以关联您的银行账户。蚂蚁金服将在指定的结算周期内将资金结算到您的银行账户。您可以在 **财务** 下的 **余额** 中查看已结算的资金、未结算的资金以及结算历史记录。  
+![图片 9: image.png](https://cdn.nlark.com/yuque/0/2024/png/12884741/1712461095770-6642219b-3bc2-492f-8769-8e78c9d9fdba.png)
+### 结算货币  
+蚂蚁金服使用您注册地区默认的货币进行资金结算。您也可以通过以下步骤将美元设置为默认结算货币：  
+1.  进入 **财务** > **结算概览** > **结算货币**，点击 **设置**，然后点击 + **结算货币** 添加美元作为结算货币。  
+![图片 10: image.png](https://cdn.nlark.com/yuque/0/2024/png/12884741/1712475926023-d28b7f5a-c22a-4816-a2b7-82c3ceb01b4e.png)  
+> **注意**：要提取美元，您必须关联一个与该货币相关的银行账户。每个结算货币可以关联其对应的银行账户。  
+2.  再次点击 **设置** 进入 **结算货币管理** 页面，点击美元行的省略号图标 ![图片 11: image.png](https://yuque.antfin.com/images/lark/0/2024/png/119656509/1710837746654-4cd058eb-ebfe-47c9-ade1-3168464f8a01.png) 并选择 **添加银行账户** 以关联银行账户。
+3.  银行账户成功关联后，点击美元行的省略号图标 ![图片 12: image.png](https://yuque.antfin.com/images/lark/0/2024/png/119656509/1710837746654-4cd058eb-ebfe-47c9-ade1-3168464f8a01.png) 选择 **设置为默认结算货币**，将美元设置为默认结算货币。  
+![图片 13: image.png](https://cdn.nlark.com/yuque/0/2024/png/12884741/1712476154917-8a06c01c-0f06-41c5-8044-2802ac6400fc.png)  
+> **注意**：如果此处设置的结算货币与 **pay** API 中指定的不同，蚂蚁金服将默认使用 **pay** API 中指定的货币作为结算货币。
+### 结算协议
+您可以在**财务**下的**结算概览**中查看您的结算周期、关联的银行账户等信息。  
+![图片14](https://cdn.nlark.com/yuque/0/2024/png/12884741/1712476335776-93755db8-48eb-4a66-b97b-9e10daf5d110.png)  
+要查看文档的最新更新，请访问[版本说明](https://global.alipay.com/docs/releasenotes)。  
+![图片15](https://ac.alipay.com/storage/2021/5/20/19b2c126-9442-4f16-8f20-e539b1db482a.png) ![图片16](https://ac.alipay.com/storage/2021/5/20/e9f3f154-dbf0-455f-89f0-b3d4e0c14481.png)  
+@2024 支付宝 [法律信息](https://global.alipay.com/docs/ac/platform/membership)  
+
+#### 这个页面有帮助吗？
+#### 本页内容
+[注册与登录](#lfKaa "注册与登录")  
+[沙箱测试](#9cULp "沙箱测试")  
+[沙箱配置](#kZRFb "沙箱配置")  
+[生成密钥](#D584U "生成密钥")  
+[获取集成资源](#Ozw86 "获取集成资源")  
+[沙箱集成](#hnwDl "沙箱集成")  
+[沙箱测试](#3cKnh "沙箱测试")  
+[上线](#to4qC "上线")  
+[查看结算信息](#is5Ad "查看结算信息")  
+[余额信息](#zbBre "余额信息")  
+[结算币种](#T8mgj "结算币种")  
+[结算协议](#kJMxL "结算协议")

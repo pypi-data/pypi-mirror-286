@@ -1,0 +1,902 @@
+**APM 支付 | 结账支付 | 支付宝文档**
+==================================================
+
+[![](https://ac.alipay.com/storage/2024/3/26/d66c43c0-440d-4c97-9976-f2028a2c8c5e.svg) ![](https://ac.alipay.com/storage/2024/3/26/a48bd336-aea0-4f16-bf83-616eacbb4434.svg)](/docs/)
+
+[登录](https://global.alipay.com/ilogin/account_login.htm?goto=https%3A%2F%2Fglobal.alipay.com%2Fdocs%2Fac%2Fcashierpay%2Fapm_api)  
+[返回首页](../../)
+
+**结账支付**
+------------
+
+**概述**  
+[结账支付](/docs/ac/cashierpay/overview) 功能可以帮助您的网站或应用程序开始在线接收支付。本文档介绍了如何集成以支持桌面浏览器、移动浏览器或应用程序中的支付。集成后，您可以访问数字钱包、银行卡和银行转账等多种支付方式。
+
+**用户体验**
+--------------
+
+### Web
+
+对于在桌面网站上发起的支付，您需要将买家重定向到重定向URL或在新标签页中打开URL。
+
+![](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png)
+
+### WAP
+
+不同的支付方式在 **pay** API 的响应中可能会返回以下三个 URL 中的一个或全部：
+
+| 类型 | 应用已安装 | 应用未安装 |
+| --- | --- | --- |
+| applinkUrl | 应用自动弹出 | 应用未安装，显示H5页面 |
+| schemeUrl | 应用自动弹出 | 无法启动应用，停留在当前页面 |
+| normalUrl | 显示此支付方式的H5页面 |
+
+### App
+
+在应用程序场景中，**pay** API 的响应中可能会返回以下三个 URL 中的一个或全部：
+
+| 类型 | 应用已安装 | 应用未安装 |
+| --- | --- | --- |
+| applinkUrl | 应用自动弹出 | 应用未安装，显示H5页面 |
+| schemeUrl | 应用自动弹出 | 无法启动应用，停留在当前页面 |
+| normalUrl | 显示此支付方式的H5页面 |
+
+**支付流程**
+--------------
+
+每个支付方式的支付流程由以下步骤组成：
+
+![](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1713255362615-02d730c5-8f86-496e-a58d-983a86ac7ea4.png)
+
+1.  买家进入结账页面。
+2.  **发起 pay 请求**  
+    买家选择支付方式并提交订单后，调用 [**pay**](https://global.alipay.com/docs/ac/ams/payment_cashier) API 获取支付链接以完成支付。
+3.  **处理支付继续URL**  
+    将支付继续URL返回给客户端。需要将买家重定向到支付继续URL。根据支付方式的特性，支付继续URL会执行不同的操作，如收集信息、重定向用户、调起应用、显示二维码和进行验证。
+4.  **获取支付结果**  
+    通过以下两种方式之一获取支付结果：
+    *   异步通知：在 [**pay**](https://global.alipay.com/docs/ac/ams/payment_cashier) API 中设置 `_paymentNotifyUrl_` 以指定接收异步通知的地址。支付成功或过期时，Antom 会通过 [**notifyPayment**](https://global.alipay.com/docs/ac/cashierpay/overview) 发送异步通知。
+    *   同步查询：调用 [**inquiryPayment**](https://global.alipay.com/docs/ac/ams/paymentri_online) API 查询支付状态。
+
+**集成步骤**
+--------------
+
+按照以下步骤开始集成：
+
+1.  (可选) 添加支付方式列表（客户端）
+2.  调用 pay API 获取支付继续URL
+3.  获取支付结果
+
+### 步骤1：(可选) 添加支付方式列表（客户端）
+
+在支付页面上为买家添加要集成的支付方式的图标和名称。您可以通过以下两种方式之一获取图标和名称：
+
+*   联系支付宝技术支持获取。Alipay+ 支付方式的图标需要符合 Alipay+ 品牌规范，您可以根据需要自动生成。参考 [品牌资产](https://global.alipay.com/docs/ac/ref/brandasset) 获取更多信息。
+*   调用 **consult** API 根据交易货币、交易发起终端类型、买家所在地区和已签约支付方式获取当前交易支持的支付方式和图标URL。
+
+添加支付方式后的页面效果如下：
+
+Web  
+WAP  
+App
+### 网页效果  
+![图片15: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1713348005995-375d5402-fa2a-4233-92c5-d0e23db55f75.png)
+
+请注意，您提供的文档内容非常简洁，只包含了一个网页效果的图片。如果需要关于蚂蚁金服业务或技术文档的翻译，请提供更详细的内容。
+### WAP页面效果  
+![图片16: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1712827010224-ae4112ad-1de9-4cfc-bac2-26b8adaa3c8f.png)  
+支付方式  
+玩家450455  
+英文版  
+9.99美元  
+9.99美元  
+立即支付  
+确认订单  
+3+50  
+FPX  
+公司  
+:0.1美元  
+支付  
+KAKAOAY  
+FPX  
+999  
+总计：  
+代币  
+大小
+### 应用页面效果
+![图片17: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1713348044054-4dedaba1-8800-4fad-9f0d-025b2b77af2e.png)  
+步骤2：调用支付API获取支付继续URL（服务端与客户端）
+------------------------------------------------------------
+
+当买家选择使用蚂蚁金服提供的支付方式付款时，您需要收集关键信息，如支付请求ID、订单金额、支付方式、交易环境信息、订单描述、支付跳转页面URL以及支付结果通知URL。然后，调用**pay** API来获取支付继续URL，并将买家重定向到该URL指定的结账页面进行支付。
+### 服务器端发起支付请求  
+Antom 提供了多种语言的服务器端 API 库。以下以 Java 为例，需要安装 Java 6 或更高版本。  
+
+#### 安装 API 库  
+您可以在 [GitHub](https://github.com/alipay/global-open-sdk-java) 上找到最新版本。  
+
+```xml
+<dependency>
+  <groupId>com.alipay.global.sdk</groupId>
+  <artifactId>global-open-sdk-java</artifactId>
+  <version>2.0.21</version>
+</dependency>
+```
+
+#### 初始化请求实例  
+```java
+String merchantPrivateKey = "YOUR PRIVATE KEY";
+String alipayPublicKey = "ALIPAY PUBLIC KEY";
+AlipayClient defaultAlipayClient = new DefaultAlipayClient(EndPointConstants.SG, merchantPrivateKey, alipayPublicKey);
+```
+
+#### 创建支付请求  
+支付请求包含以下参数：  
+
+| 参数名 | 是否必须 | 描述 |
+| --- | --- | --- |
+| productCode | 是 | 本场景下固定为 `CASHIER_PAYMENT`。 |
+| paymentRequestId | 是 | 商户生成的唯一请求 ID。 |
+| paymentAmount | 是 | 以支付货币最小单位表示的支付金额。 |
+| paymentMethod | 是 | 支付方式枚举值。 |
+| paymentRedirectUrl | 是 | 商户端的支付结果页面，根据服务器返回结果展示。 |
+| paymentNotifyUrl | 否 | 支付结果通知地址，可通过 API 指定或在门户中设置固定值。 |
+| settlementStrategy | 否 | 如果签订了多种结算货币，需要在 API 中指定支付的结算货币。 |
+| order | 是 | 包含订单金额、订单 ID 和订单描述的订单信息。 |
+| env | 是 | 买家发起交易的环境。 |
+
+更多参数详情，请参考 [**pay**](https://global.alipay.com/docs/ac/ams/payment_cashier) API 文档。  
+
+以下代码示例用于发起支付请求：  
+
+```java
+AlipayPayRequest alipayPayRequest = new AlipayPayRequest();
+alipayPayRequest.setClientId(CLIENT_ID);
+alipayPayRequest.setPath("/ams/api/v1/payments/pay");
+alipayPayRequest.setProductCode(ProductCodeType.CASHIER_PAYMENT);  
+// 替换为您的 paymentRequestId
+alipayPayRequest.setPaymentRequestId("paymentRequestId01");  
+// 设置金额
+Amount amount = new Amount();
+amount.setCurrency("HKD");
+amount.setValue("100");
+alipayPayRequest.setPaymentAmount(amount);  
+// 设置支付方式
+PaymentMethod paymentMethod = new PaymentMethod();
+paymentMethod.setPaymentMethodType("ALIPAY_HK");
+alipayPayRequest.setPaymentMethod(paymentMethod);  
+// 设置订单信息
+Order order = new Order();
+order.setReferenceOrderId("referenceOrderId01");
+order.setOrderDescription("antom test order");
+order.setOrderAmount(amount);
+alipayPayRequest.setOrder(order);  
+// 设置环境信息
+Env env = new Env();
+env.setTerminalType(TerminalType.WAP);
+env.setClientIp("114.121.121.01");
+env.setOsType(OsType.ANDROID);
+alipayPayRequest.setEnv(env);  
+// 替换为您的通知地址
+alipayPayRequest.setPaymentNotifyUrl("http://www.yourNotifyUrl.com");  
+// 替换为您的重定向地址
+alipayPayRequest.setPaymentRedirectUrl("http://www.yourRedirectUrl.com");  
+// 执行支付
+AlipayPayResponse alipayPayResponse = null;
+try {
+    alipayPayResponse = defaultAlipayClient.execute(alipayPayRequest);
+} catch (AlipayApiException e) {
+    String errorMsg = e.getMessage();
+    // 处理错误情况
+}
+```
+
+以下是不同场景下的请求消息示例：
+
+- **Web 示例代码**
+```json
+{
+  "paymentNotifyUrl": "http://www.yourNotifyUrl.com",
+  "paymentRequestId": "paymentRequestId01",
+  "env": {
+    "terminalType": "WEB",
+    "clientIp": "114.121.121.01"
+  },
+  "paymentAmount": {
+    "currency": "HKD",
+    "value": "100"
+  },
+  "productCode": "CASHIER_PAYMENT",
+  "paymentRedirectUrl": "http://www.yourRedirectUrl.com",
+  "paymentMethod": {
+    "paymentMethodType": "ALIPAY_HK"
+  },
+  "order": {
+    "orderAmount": {
+      "currency": "HKD",
+      "value": "100"
+    },
+    "referenceOrderId": "referenceOrderId01",
+    "orderDescription": "antom test order"
+  }
+}
+```
+
+- **WAP 示例代码**
+```json
+{
+  "paymentNotifyUrl": "http://www.yourNotifyUrl.com",
+  "paymentRequestId": "paymentRequestId01",
+  "env": {
+    "terminalType": "WAP",
+    "clientIp": "114.121.121.01",
+    "osType": "ANDROID"
+  },
+  "paymentAmount": {
+    "currency": "HKD",
+    "value": "100"
+  },
+  "productCode": "CASHIER_PAYMENT",
+  "paymentRedirectUrl": "http://www.yourRedirectUrl.com",
+  "paymentMethod": {
+    "paymentMethodType": "ALIPAY_HK"
+  },
+  "order": {
+    "orderAmount": {
+      "currency": "HKD",
+      "value": "100"
+    },
+    "referenceOrderId": "referenceOrderId01",
+    "orderDescription": "antom test order"
+  }
+}
+```
+
+- **App 示例代码**
+```json
+{
+  "paymentNotifyUrl": "http://www.yourNotifyUrl.com",
+  "paymentRequestId": "paymentRequestId01",
+  "env": {
+    "terminalType": "APP",
+    "clientIp": "114.121.121.01",
+    "osType": "ANDROID"
+  },
+  "paymentAmount": {
+    "currency": "HKD",
+    "value": "100"
+  },
+  "productCode": "CASHIER_PAYMENT",
+  "paymentRedirectUrl": "http://www.yourRedirectUrl.com",
+  "paymentMethod": {
+    "paymentMethodType": "ALIPAY_HK"
+  },
+  "order": {
+    "orderAmount": {
+      "currency": "HKD",
+      "value": "100"
+    },
+    "referenceOrderId": "referenceOrderId01",
+    "orderDescription": "antom test order"
+  }
+}
+```
+
+#### 常见问题解答
+
+- **如何设置 terminalType 的值？**
+  * 如果买家在 PC 端发起交易，`terminalType` 应设置为 `WEB`。
+  * 如果买家在移动浏览器上发起交易，`terminalType` 应设置为 `WAP`，并添加 `osType` 参数，根据买家手机系统填写 `ANDROID` 或 `IOS`。
+  * 如果买家在 App 中发起交易，`terminalType` 应设置为 `APP`。
+
+- **请求中是否可以使用中文字符？**
+  为了避免与 QRIS 和 Mastercard 等支付方式的兼容性问题，请求字段中不要使用中文字符。
+
+- **如何设置支付结果通知地址？**
+  Antom 会通过 [**notifyPayment**](https://global.alipay.com/docs/ac/ams/paymentrn_online) 推送支付结果，您可以在 **pay** API 中通过 `paymentNotifyUrl` 参数指定。如果每个支付的地址相同，也可以在 Antom 控制台中配置。如果同时配置了地址并设置了 API 参数，Antom 将使用 API 中设置的地址。
+### 服务器端接收支付响应
+
+#### Web 示例代码
+```json
+{
+"normalUrl": "https://open-sea.alipayplus.com/api/open/v1/ac/cashier/self/codevalue/checkout.htm?codeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de",
+"orderCodeForm": {
+"codeDetails": [
+{
+"codeValue": "https://global.alipay.com/281002040090bbmmzTC4BzSex92tUglv31de",
+"displayType": "TEXT"
+},
+{
+"codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de&picSize=L",
+"displayType": "BIGIMAGE"
+},
+{
+"codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de&picSize=M",
+"displayType": "MIDDLEIMAGE"
+},
+{
+"codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de&picSize=S",
+"displayType": "SMALLIMAGE"
+}
+],
+"expireTime": "2024-01-15T01:34:45-08:00"
+},
+"paymentActionForm": "{\"method\":\"GET\",\"paymentActionFormType\":\"RedirectActionForm\",\"redirectUrl\":\"https://open-sea.alipayplus.com/api/open/v1/ac/cashier/self/codevalue/checkout.htm?codeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de\"}",
+"paymentAmount": {
+"currency": "HKD",
+"value": "100"
+},
+"paymentCreateTime": "2024-01-15T01:20:46-08:00",
+"paymentId": "20240115194010800100188640298283440",
+"paymentRequestId": "PAY_20240115172044263",
+"redirectActionForm": {
+"method": "GET",
+"redirectUrl": "https://open-sea.alipayplus.com/api/open/v1/ac/cashier/self/codevalue/checkout.htm?codeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de"
+},
+"result": {
+"resultCode": "PAYMENT_IN_PROCESS",
+"resultMessage": "payment in process",
+"resultStatus": "U"
+}
+}
+```
+
+#### WAP 示例代码
+```json
+{
+"appIdentifier": "hk.alipay.wallet",
+"applinkUrl": "https://render.alipay.hk/p/w/hk-ulink/?path=/mobile&scheme=alipayhk%3A%2F%2Fplatformapi%2FstartApp%3FappId%3D85200168%26fromSite%3Dapp%26CashierAction%3DtradePay%26orderCode%3Dhttps%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR%26paymentRedirectUrl%3Dhttps%3A%2F%2Fkademo.intlalipay.cn%2Fmelitigo%2FTest_114.html%26terminalType%3DWAP",
+"normalUrl": "https://render.alipay.hk/p/h5/hk-cashier-merchant/www/index.html/#/otp?scene=uefa&redirectUrl=https%3A%2F%2Frender.alipay.hk%2Fp%2Fh5%2Fhk-cashier-merchant%2Fwww%2Findex.html%23%2Fpreorder%3ForderCode%3Dhttps%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR",
+"orderCodeForm": {
+"codeDetails": [
+{
+"codeValue": "https://global.alipay.com/281002040092tDM89hJ66zUrMS9hbIRv3kWR",
+"displayType": "TEXT"
+},
+{
+"codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&picSize=L",
+"displayType": "BIGIMAGE"
+},
+{
+"codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&picSize=M",
+"displayType": "MIDDLEIMAGE"
+},
+{
+"codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&picSize=S",
+"displayType": "SMALLIMAGE"
+}
+],
+"expireTime": "2024-02-28T19:53:58-08:00"
+},
+"paymentActionForm": "{\"method\":\"GET\",\"paymentActionFormType\":\"RedirectActionForm\",\"redirectUrl\":\"https://render.alipay.com/p/w/ac-fe-adaptor/?ACCodeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&paymentMethodType=ALIPAY_HK&ACPaymentRedirectUrl=https%3A%2F%2Fkademo.intlalipay.cn%2Fmelitigo%2FTest_114.html&ACAppType=WAP\"}",
+"paymentAmount": {
+"currency": "HKD",
+"value": "100"
+},
+"paymentCreateTime": "2024-02-28T19:40:00-08:00",
+"paymentId": "20240229194010800100188940208068249",
+"paymentRequestId": "PAY_20240229113956783",
+"redirectActionForm": {
+"method": "GET",
+"redirectUrl": "https://render.alipay.com/p/w/ac-fe-adaptor/?ACCodeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&paymentMethodType=ALIPAY_HK&ACPaymentRedirectUrl=https%3A%2F%2Fkademo.intlalipay.cn%2Fmelitigo%2FTest_114.html&ACAppType=WAP"
+},
+"result": {
+"resultCode": "PAYMENT_IN_PROCESS",
+"resultMessage": "payment in process",
+"resultStatus": "U"
+}
+}
+```
+
+#### App 示例代码
+```json
+{
+"appIdentifier": "hk.alipay.wallet",
+"applinkUrl": "https://render.alipay.hk/p/w/hk-ulink/?path=/mobile&scheme=alipayhk%3A%2F%2Fplatformapi%2FstartApp%3FappId%3D85200168%26fromSite%3Dapp%26CashierAction%3DtradePay%26orderCode%3Dhttps%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB%26paymentRedirectUrl%3Dhttps%3A%2F%2Fkademo.intlalipay.cn%2Forder%2Fdetail%3Fid%3DALIPAY_HK_1709199158552F696Z%26wallet%3DALIPAY_HK%26terminalType%3DWAP",
+"normalUrl": "https://render.alipay.hk/p/h5/hk-cashier-merchant/www/index.html/#/otp?scene=uefa&redirectUrl=https%3A%2F%2Frender.alipay.hk%2Fp%2Fh5%2Fhk-cashier-merchant%2Fwww%2Findex.html%23%2Fpreorder%3ForderCode%3Dhttps%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB",
+"orderCodeForm": {
+"codeDetails": [
+{
+"codeValue": "https://global.alipay.com/281002040090cQa97QFkz1kHL8zTDW47PyqB",
+"displayType": "TEXT"
+},
+{
+"codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&picSize=L",
+"displayType": "BIGIMAGE"
+},
+{
+"codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&picSize=M",
+"displayType": "MIDDLEIMAGE"
+},
+{
+"codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&picSize=S",
+"displayType": "SMALLIMAGE"
+}
+],
+"expireTime": "*************************"
+},
+"paymentActionForm": "{\"method\":\"GET\",\"paymentActionFormType\":\"RedirectActionForm\",\"redirectUrl\":\"https://render.alipay.com/p/w/ac-fe-adaptor/?ACCodeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&paymentMethodType=ALIPAY_HK&ACPaymentRedirectUrl=https%3A%2F%2Fkademo.intlalipay.cn%2Forder%2Fdetail%3Fid%3DALIPAY_HK_1709199158552F696Z%26wallet%3DALIPAY_HK&ACAppType=WAP\"}",
+"paymentAmount": {
+"currency": "HKD",
+"value": "100"
+},
+"paymentCreateTime": "2024-02-29T01:32:41-08:00",
+"paymentId": "20240229194010800100188010209093907",
+"paymentRequestId": "ALIPAY_HK_1709199158552F696Z",
+"redirectActionForm": {
+"method": "GET",
+"redirectUrl": "https://render.alipay.com/p/w/ac-fe-adaptor/?ACCodeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&paymentMethodType=ALIPAY_HK&ACPaymentRedirectUrl=https%3A%2F%2Fkademo.intlalipay.cn%2Forder%2Fdetail%3Fid%3DALIPAY_HK_1709199158552F696Z%26wallet%3DALIPAY_HK&ACAppType=WAP"
+},
+"result": {
+"resultCode": "PAYMENT_IN_PROCESS",
+"resultMessage": "payment in process",
+"resultStatus": "U"
+}
+}
+```
+
+#### 常见问题解答
+
+**什么是 normalUrl？**
+对于网页交易，Antom 会返回 _normalUrl_，服务器端需要将此 URL 传递给客户端以进行重定向。如果为同一订单再次发起支付，需要获取新的 _normalUrl_ 进行重定向。
+
+**什么是 paymentId？**
+如果您需要存储相应的订单号以备后续退款和对账，可以使用 _paymentId_。
+### 客户端跳转至支付方式的结账页面  
+Web  
+WAP  
+App  
+#### Web的链接类型  
+商家服务器将_normalUrl_传递给客户端，客户端页面处理重定向到_normalUrl_的过程。  
+#### WAP的链接类型  
+服务器端将_normalUrl_传递给客户端侧，由客户端侧页面进行重定向。  
+#### App的链接类型  
+对于App交易，Antom在发起支付请求后，根据支付方式的能力返回一个或多个支付链接，包括_normalUrl_、_applinkUrl_和_schemeUrl_。  
+
+| **链接类型** | **特性** | **方法** |
+| --- | --- | --- |
+| applinkUrl | 如果买家已安装支付方式App，直接打开App结账页面。如果买家未安装支付方式App，打开移动浏览器。 | 重定向到商户App打开此链接。详情参考[最佳实践](https://global.alipay.com/docs/ac/autodebit_en/best_practice)。 |
+| normalUrl | 打开移动浏览器，部分支付方式会重定向到App结账页面，部分支付方式会直接进行H5支付。 |  |
+| schemeUrl | 如果买家已安装支付方式App，直接打开App结账页面。如果买家未安装支付方式App，返回错误。 |  |
+
+完成此步骤后的页面效果如下图所示：  
+![Image 18: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1712831790503-d4a64766-1c85-4e6d-8a07-948e5eb3c220.png)  
+RM0.33将从您的BOOST中扣除  
+0%纯棉预缩水  
+DCZ5SU65IANWKBO2CXMUIAL6  
+结账  
+RM0.33  
+支付方式  
+DCZ5SU65JANWKRG2CXWUJAL6  
+TEST.ACQ.O1  
+经典黑色棉T恤  
+XCWMDJKFZ2J7AB4T  
+确认付款  
+确认付款  
+余额：RM542  
+钱包账户  
+信用卡&借记卡  
+XCWMDJKFZ2J7AB4T  
+验证  
+O221OO5OVCHBMFXL3N  
+RM0.33  
+余额：RM542  
+忘记PIN码？  
+应付总额：  
+订单确认  
+额外柔软触感  
+RM0.33  
+TESTACO_O1  
+订单回顾  
+RM0.33  
+TESTACO_O1  
+配送  
+DBYALIPAY-  
+20221O05OVCHBMFXL3MGXT  
+RM0.33  
+小计：  
+RM0.33  
+15:01  
+15:01  
+O  
+15:01  
+支付  
+令  
+RM0.00  
+令  
+ALIPAY  
+BOOST  
+$二  
+DCZ5SU65IANWKRA2CXWUIA  
+应付总额：  
+O  
+一  
+X  
+RM0.33将从您的BOOST中扣除  
+0%纯棉预缩水  
+DCZ5SU65IANWKBO2CXMUIAL6  
+结账  
+RM0.33  
+支付方式  
+DCZ5SU65JANWKRG2CXWUJAL6  
+TEST.ACQ.O1  
+经典黑色棉T恤  
+XCWMDJKFZ2J7AB4T  
+确认付款  
+确认付款  
+余额：RM542  
+钱包账户  
+信用卡&借记卡  
+XCWMDJKFZ2J7AB4T  
+验证  
+O221OO5OVCHBMFXL3N  
+RM0.33  
+余额：RM542  
+忘记PIN码？  
+应付总额：  
+订单确认  
+额外柔软触感  
+RM0.33  
+TESTACO_O1  
+订单回顾  
+RM0.33  
+TESTACO_O1  
+配送  
+DBYALIPAY-  
+20221O05OVCHBMFXL3MGXT  
+RM0.33  
+小计：  
+RM0.33  
+15:01  
+15:01  
+O  
+15:01  
+支付  
+令  
+RM0.00  
+令  
+ALIPAY  
+BOOST  
+$二  
+DCZ5SU65IANWKRA2CXWUIA  
+应付总额：  
+O  
+一  
+X  
+
+#### 常见问题  
+##### 如何处理不同的支付体验？  
+您无需处理对应不同支付方式的不同体验。只需通过前端页面重定向到_normalUrl_。不同的支付体验由_normalUrl_负责完成渲染和支付流程。
+### 客户端展示支付结果页面  
+您需要提供一个HTTPS地址，并通过**pay** API 的 _paymentRedirectUrl_ 字段指定，用于在商家端展示支付结果。  
+![图片 19: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1712827877509-9d6a4347-c27a-41e3-aa2b-dfeb66715aeb.png)  
+#### 常见问题  
+##### 支付结果页面显示什么？  
+无论是支付成功还是失败，支付方式端都可以重定向到结果页面。  
+##### 重定向到结果页面是否意味着支付成功？  
+结果页面不能作为判断支付是否成功的依据：  
+*   买家成功支付后，可能因网络或其他原因未被重定向到结果页面。
+*   如果买家未完成支付，仍然存在可以重定向到结果页面的入口。
+*   Antom 不支持在 _paymentRedirectUrl_ 字段中指定代表支付结果的信息。  
+步骤3：获取支付结果（客户端）
+---------------------------------------------  
+当买家完成支付或支付超时，您可以通过Antom的异步通知或主动查询支付结果来获取相应的支付结果。
+### **接收异步通知**  
+当支付成功或失败时，蚂蚁金服会通过在`pay` API 中指定的`paymentNotifyUrl`参数向您的地址发送异步通知（[**notifyPayment**](https://global.alipay.com/docs/ac/ams/paymentrn_online)）。如果每个支付的地址相同，您也可以在蚂蚁金服控制台中配置该地址。  
+以下是通知请求的示例代码：  
+```json
+{
+"notifyType": "PAYMENT_RESULT",
+"result": {
+"resultCode": "SUCCESS",
+"resultStatus": "S",
+"resultMessage": "success"
+},
+"paymentRequestId": "paymentRequestId01",
+"paymentId": "2020010123456789XXXX",
+"paymentAmount": {
+"value": "100",
+"currency": "HKD"
+},
+"paymentCreateTime": "2020-01-01T12:01:00+08:30",
+"paymentTime": "2020-01-01T12:01:01+08:30"
+}
+```
+以下是验证并返回通知的示例代码：  
+```java
+@RequestMapping(path = "/payResult", method = RequestMethod.POST)
+public ResponseEntity<AlipayResponse> paymentNotifyProcessor(HttpServletRequest request,
+@RequestBody String body) {
+// 从请求头中获取所需参数。
+String requestTime = request.getHeader("request-time");
+String clientId = request.getHeader("client-id");
+String rawSignature = request.getHeader("signature");
+String signature = "";  
+// 从原始签名中获取有效部分
+if(rawSignature==null||rawSignature.isEmpty()){
+throw new RuntimeException("empty notify signature");
+}else {
+String[] parts = rawSignature.split("signature=");
+if (parts.length > 1) {
+signature = parts[1];
+}
+}  
+// 验证支付结果通知的签名
+boolean verifyResult = SignatureTool.verify(request.getMethod(), request.getRequestURI(),
+clientId, requestTime, body, signature,
+ALIPAY_PUBLIC_KEY);
+if (!verifyResult) {
+throw new RuntimeException("Invalid notify signature");
+}  
+// 根据通知结果更新记录状态
+// 响应服务器我们已接收通知
+Result result = new Result("SUCCESS", "success", ResultStatusType.S);
+AlipayResponse response = new AlipayResponse();
+response.setResult(result);
+return ResponseEntity.ok().body(response);
+}
+```
+以下是通知响应的示例代码：  
+```json
+{
+"result": {
+"resultCode": "SUCCESS",
+"resultStatus": "S",
+"resultMessage": "Success"
+}
+}
+```
+#### 常见问题  
+##### 何时发送通知？  
+支付完成后，蚂蚁金服会在3~5秒内向您发送异步通知。如果支付未完成，您需要等待蚂蚁金服关闭订单后才会发送异步通知。不同支付方式的订单关闭时间不同，通常默认为14分钟。  
+##### 通知会重新发送吗？  
+如果您收到蚂蚁金服的异步通知，您需要按照[示例代码](https://global.alipay.com/docs/ac/cashier_payment_cn/notification)的格式返回响应。如果您未按要求响应异步通知，或者由于网络原因通知未送达，通知将在24小时内自动重试，最多重试8次或直到收到正确响应为止。重试间隔为：0分钟，2分钟，10分钟，10分钟，1小时，2小时，6小时和15小时。  
+##### 是否需要对响应进行签名？  
+如果您收到蚂蚁金服的异步通知，您需要按照[示例代码](https://global.alipay.com/docs/ac/cashier_payment_cn/notification)的格式返回响应，但不需要对响应进行签名。  
+##### 如何理解以下关键字段的含义？  
+*   `_result_`: 表示订单的支付结果。
+*   `_paymentRequestId_`: 表示您为咨询、取消和对账生成的支付请求号。
+*   `_paymentId_`: 表示蚂蚁金服生成的支付订单号，用于退款和对账。
+*   `_paymentAmout_`: 表示支付金额。
+### 查询支付结果  
+发起查询请求涉及以下参数。  
+<table style="width:784px;outline:none;border-collapse:collapse;border:1px solid #D9EAF2" class="lake-table"><colgroup><col width="211" span="1"><col width="133" span="1"><col width="440" span="1"></colgroup><tbody><tr style="height:33px"><td style="background-color:#D9EAF2;width:211px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid #D9EAF2;padding:4px 8px;cursor:default"><p data-lake-id="ccea6d5077f83800589b65a7e08ec821" id="ud6d7e475" style="text-align:center;font-size:14px;color:#262626;line-height:1.74;letter-spacing:0.05em;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" style="color:#20304C;font-size:14px" data-mce-style="font-size: 11px">参数名称</span></strong></p></td><td style="background-color:#D9EAF2;width:211px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid #D9EAF2;padding:4px 8px;cursor:default"><p data-lake-id="6b510be27a1146960b3250e1c7f6876e" id="u3eb50d3a" style="text-align:center;font-size:14px;color:#262626;line-height:1.74;letter-spacing:0.05em;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" style="color:#20304C;font-size:14px" data-mce-style="font-size: 11px">是否必需</span></strong></p></td><td style="background-color:#D9EAF2;width:211px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid #D9EAF2;padding:4px 8px;cursor:default"><p data-lake-id="c2e126e4754c4d707300f3b8adcf61b9" id="u5631fd0f" style="text-align:center;font-size:14px;color:#262626;line-height:1.74;letter-spacing:0.05em;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" style="color:#20304C;font-size:14px" data-mce-style="font-size: 11px">描述</span></strong></p></td></tr><tr style="height:33px"><td style="width:211px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid #D9EAF2;padding:4px 8px;cursor:default"><p data-lake-id="a416b03395e4fc19136bdc6f6efb96a5" id="ub7a97d33" style="text-align:center;font-size:14px;color:#262626;line-height:1.74;letter-spacing:0.05em;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">paymentRequestId</p></td><td style="width:211px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid #D9EAF2;padding:4px 8px;cursor:default"><p data-lake-id="052265ed6da04f3593976d6bbc841a93" id="u67de8a69" style="text-align:center;font-size:14px;color:#262626;line-height:1.74;letter-spacing:0.05em;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span>否</span></p></td><td style="width:211px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid #D9EAF2;padding:4px 8px;cursor:default"><p data-lake-id="9e352856c032b89365f05092be09d70c" id="u97f6236b" style="font-size:14px;color:#262626;line-height:1.74;letter-spacing:0.05em;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">商家生成的支付请求号</p></td></tr></tbody></table>  
+以下是示例代码：  
+```java
+AlipayClient defaultAlipayClient = new DefaultAlipayClient(EndPointConstants.SG,
+    merchantPrivateKey, alipayPublicKey);
+AlipayPayQueryRequest alipayPayQueryRequest = new AlipayPayQueryRequest();
+alipayPayQueryRequest.setClientId(CLIENT_ID);
+alipayPayQueryRequest.setPath("/ams/sandbox/api/v1/payments/inquiryPayment");
+alipayPayQueryRequest.setPaymentRequestId("paymentRequestId01");  
+AlipayPayQueryResponse alipayPayQueryResponse;
+try {
+    alipayPayQueryResponse = defaultAlipayClient.execute(alipayPayQueryRequest);
+} catch (AlipayApiException e) {
+    String errorMsg = e.getMessage();
+    // 处理错误情况
+}
+```  
+**获取响应码**  
+```json
+{
+  "result": {
+    "resultCode": "SUCCESS",
+    "resultStatus": "S",
+    "resultMessage": "Success"
+  },
+  "paymentStatus": "SUCCESS",
+  "paymentRequestId": "paymentRequestId01",
+  "paymentId": "2019060811401080010018882020035XXXX",
+  "paymentAmount": {
+    "value": "100",
+    "currency": "HKD"
+  },
+  "paymentCreateTime": "2019-06-01T12:01:01+08:30",
+  "paymentTime": "2019-06-01T12:01:01+08:30",
+  "transactions": null
+}
+```  
+#### 常见问题  
+##### 如何理解以下关键字段的含义？  
+*   `result`: API调用的结果。它仅表示**inquiryPayment** API调用的结果。订单结果应根据`paymentStatus`来确定。`SUCCESS`和`FAIL`表示最终结果，而`PROCESSING`表示交易仍在进行中。
+*   `paymentAmount`: 金额验证。如果需要进行金额验证，可以使用此字段。  
+##### 应该多频繁发起查询？  
+建议每2秒轮询查询一次，直到获取到最终的支付结果或收到异步支付通知。  
+#### 最佳实践  
+遵循以下最佳实践以提高集成效率。  
+### 自定义支付超时  
+在结账支付场景中，蚂蚁侧的默认超时时间为14分钟，超时后买家无法继续支付。要定义超时时间，可以通过**pay** API 的`paymentExpireTime`参数来指定。超过指定时间后，买家将无法扫码或登录结账页面。  
+以下示例代码展示了如何在**pay** API 中指定`paymentExpireTime`参数：  
+Web  
+WAP  
+App
+### 网页示例代码
+```json
+{
+  "env": {
+    "terminalType": "WEB"
+  },
+  "order": {
+    "orderAmount": {
+      "currency": "CNY",
+      "value": "1314"
+    },
+    "orderDescription": "卡布奇诺（大杯）（Mika的咖啡店）",
+    "referenceOrderId": "ORDER_0517884936248XXXX"
+  },
+  "paymentAmount": {
+    "currency": "CNY",
+    "value": "1314"
+  },
+  "paymentMethod": {
+    "paymentMethodType": "ALIPAY_CN"
+  },
+  "paymentExpiryTime": "2024-01-20T08:51:06+08:00",
+  "paymentNotifyUrl": "https://www.gaga.com/notify",
+  "paymentRedirectUrl": "imeituan://",
+  "paymentRequestId": "iJ9lsVgTx8pX7qJpvW6rfqEE2Kdv9M3lgL8e1999ydfz52uMSqwvT3qXYw8IFBYt",
+  "productCode": "CASHIER_PAYMENT",
+  "settlementStrategy": {
+    "settlementCurrency": "USD"
+  }
+}
+```
+
+这是一个用于网页支付的示例JSON数据。其中包含以下信息：
+
+1. 环境设置：终端类型为WEB。
+2. 订单信息：订单金额为1314元人民币，订单描述为在Mika的咖啡店购买的大杯卡布奇诺，参考订单ID为ORDER_0517884936248XXXX。
+3. 支付金额：与订单金额相同，1314元人民币。
+4. 支付方式：使用支付宝中国（ALIPAY_CN）。
+5. 支付有效期：到2024年1月20日8点51分06秒（北京时间）。
+6. 支付通知URL：支付成功后，服务器会向`https://www.gaga.com/notify`发送通知。
+7. 支付重定向URL：这里填写的是"imeituan://"，可能用于在支付完成后跳转到美团应用。
+8. 支付请求ID：一个特定的请求标识符。
+9. 产品代码：标识为收银台支付（CASHIER_PAYMENT）。
+10. 结算策略：结算货币为美元（USD）。
+### WAP 示例代码
+```json
+{
+  "env": {
+    "osType": "ANDROID",
+    "terminalType": "WAP"
+  },
+  "order": {
+    "orderAmount": {
+      "currency": "CNY",
+      "value": "1314"
+    },
+    "orderDescription": "卡布奇诺（大杯）（Mika's咖啡店）",
+    "referenceOrderId": "ORDER_0517884936248XXXX"
+  },
+  "paymentAmount": {
+    "currency": "CNY",
+    "value": "1314"
+  },
+  "paymentMethod": {
+    "paymentMethodType": "ALIPAY_CN"
+  },
+  "paymentExpiryTime": "2024-01-20T08:51:06+08:00",
+  "paymentNotifyUrl": "https://www.gaga.com/notify",
+  "paymentRedirectUrl": "imeituan://",
+  "paymentRequestId": "iJ9lsVgTx8pX7qJpvW6rfqEE2Kdv9M3lgL8e1999ydfz52uMSqwvT3qXYw8IFBYt",
+  "productCode": "CASHIER_PAYMENT",
+  "settlementStrategy": {
+    "settlementCurrency": "USD"
+  }
+}
+```
+
+这是一个用于WAP支付的示例配置，适用于Android平台。订单金额和支付金额均为1314元人民币，支付方式为支付宝中国版（ALIPAY_CN）。支付有效期至2024年1月20日8点51分6秒（北京时间），支付成功后通知的URL为`https://www.gaga.com/notify`，支付完成后将重定向到`imeituan://`（可能是美团应用）。请求ID为`iJ9lsVgTx8pX7qJpvW6rfqEE2Kdv9M3lgL8e1999ydfz52uMSqwvT3qXYw8IFBYt`，产品代码表示的是收银台支付，结算策略中指定的结算货币为美元（USD）。
+### 应用示例代码
+```json
+{
+  "env": {
+    "osType": "ANDROID",
+    "terminalType": "APP"
+  },
+  "order": {
+    "orderAmount": {
+      "currency": "CNY",
+      "value": "1314"
+    },
+    "orderDescription": "Cappuccino #grande (Mika's coffee shop)",
+    "referenceOrderId": "ORDER_0517884936248XXXX"
+  },
+  "paymentAmount": {
+    "currency": "CNY",
+    "value": "1314"
+  },
+  "paymentMethod": {
+    "paymentMethodType": "ALIPAY_CN"
+  },
+  "paymentExpiryTime": "2024-01-20T08:51:06+08:00",
+  "paymentNotifyUrl": "https://www.gaga.com/notify",
+  "paymentRedirectUrl": "imeituan://",
+  "paymentRequestId": "iJ9lsVgTx8pX7qJpvW6rfqEE2Kdv9M3lgL8e1999ydfz52uMSqwvT3qXYw8IFBYt",
+  "productCode": "CASHIER_PAYMENT",
+  "settlementStrategy": {
+    "settlementCurrency": "USD"
+  }
+}
+```
+### 支付超时处理
+如果指定了`paymentExpireTime`，买家在该时间点后支付，会有以下两种体验：
+1. 买家无法完成支付。
+2. 买家支付后立即退款。
+
+### 获取支付继续URL
+部分支付方法接口响应时间较长，可能导致无法获取到响应，买家无法重定向到指定的URL，影响支付成功率和用户体验。建议将接口超时时间设置为10秒，以确保获取响应的成功率。如果出现超时，建议重新发起原始请求以获取支付继续URL。
+
+### 优化网页支付体验（仅限Web）
+某些支付方法支持买家在PC上通过扫码或密码支付，无需重定向。当买家选择此类支付方式时，API响应中的代码值直接在商户页面上渲染显示二维码或密码，减少页面重定向，提升体验。Antom返回的二维码不会自动刷新，显示二维码时，需添加API响应中的`expireTime`来显示过期时间。显示密码时，实现密码的复制功能，方便买家粘贴到支付应用中。
+
+### 重定向到商户结果页面
+1. **客户端重定向异常**  
+   如果买家支付成功，由于网络原因或支付方法本身限制，可能无法重定向到`paymentRedirectUrl`。注意：
+   - 不能以客户端重定向作为支付成功的依据。
+   - 如果支付方法页面的`paymentRedirectUrl`重定向失败，买家可能手动点击返回商户页面。因此，建议在原始商户订单页面上显示查询交易结果的弹窗，买家点击后显示订单结果，避免再次支付。
+
+2. **支付结果查询触发**  
+   为了确保稳定获取支付结果，避免买家支付完成但未获取到结果的情况，建议在以下阶段检查支付结果：
+   - 商户支付结果页面显示时。
+   - 发货给买家之前。
+   - 收到Antom对账文件时。
+
+### 打开支付方法URL（仅限App）
+| 支付方法特性 | 链接类型 | 解决方案 | 优缺点 |
+| --- | --- | --- | --- |
+| **仅支持App支付** | applinkUrl | 通过`openUrl`（iOS）或`startActivity`（Android）重定向到支付应用 | 优点：在支付应用中完成支付，无需处理未安装应用的异常。 |
+|  | normalUrl | 通过`openUrl`（iOS）或`startActivity`（Android）重定向到支付应用 | 优点：在支付应用中完成支付，无需处理未安装应用的异常。 缺点：支付过程中会先弹出浏览器再重定向。 |
+|  | schemeUrl | 通过`openUrl`（iOS）或`startActivity`（Android）重定向到支付应用 | 优点：在支付应用中完成支付。 缺点：需要处理未安装应用的异常。 |
+| **支持App和H5支付** | applinkUrl | 通过`openUrl`（iOS）或`startActivity`（Android）重定向到支付应用 | 优点：在支付应用中完成支付，无需处理未安装应用的异常。 缺点：未安装应用时降级为H5支付，支付过程在系统浏览器完成。 |
+|  | normalUrl | 在webview中打开支付URL | 优点：所有流程都在商户应用内完成。 缺点：无法使用App支付，支付体验较差。 |
+|  | schemeUrl | 通过`openUrl`（iOS）或`startActivity`（Android）重定向到支付应用 | 优点：在支付应用中完成支付。 缺点：需要处理未安装应用的异常，未安装应用时无法使用H5支付，交易无法恢复。 |
+
+请注意，Antom返回的二维码不会自动刷新，显示二维码时，需添加API响应中的`expireTime`来显示过期时间。显示密码时，实现密码的复制功能，方便买家粘贴到支付应用中。
+### 常见问题解答  
+#### 在Android中遇到歧义框怎么办？  
+请参考[Google文档](https://developer.android.com/training/package-visibility/use-cases?hl=zh-cn#avoid-a-disambiguation-dialog)获取更多信息。  
+#### 如何使用WebView加载订单页面？  
+为了提供良好的用户体验，您可以在客户端使用WebView加载订单页面。用户点击订单后，可以直接重定向到支持支付方式的移动应用来完成支付。您可以参考JavaScript代码与移动客户端代码的绑定来实现这种交互体验。  
+*   Android: [https://developer.android.com/develop/ui/views/layout/webapps/webview?hl=zh-cn#BindingJavaScript](https://developer.android.com/develop/ui/views/layout/webapps/webview?hl=zh-cn#BindingJavaScript)
+*   iOS: [https://developer.apple.com/documentation/javascriptcore/jsexport?language=objc](https://developer.apple.com/documentation/javascriptcore/jsexport?language=objc)  
+要查看文档的最新更新，请访问[版本说明](https://global.alipay.com/docs/releasenotes)。  
+![图片20](https://ac.alipay.com/storage/2021/5/20/19b2c126-9442-4f16-8f20-e539b1db482a.png) ![图片21](https://ac.alipay.com/storage/2021/5/20/e9f3f154-dbf0-455f-89f0-b3d4e0c14481.png)  
+@2024 支付宝 [法律信息](https://global.alipay.com/docs/ac/platform/membership)  
+#### 这个页面有帮助吗？  
+#### 在此页面上  
+[用户体验](#Ksw2W "用户体验")  
+[支付流程](#N7q25 "支付流程")  
+[集成步骤](#nbBeY "集成步骤")  
+[步骤1：（可选）添加支付方式列表](#VTOFD "步骤1：（可选）添加支付方式列表")  
+[步骤2：调用支付API并获取支付继续URL](#dUZwg "步骤2：调用支付API并获取支付继续URL")  
+[发起支付请求](#vPvsX "发起支付请求")  
+[安装API库](#6hGTH "安装API库")  
+[初始化请求实例](#ft0LA "初始化请求实例")  
+[创建支付请求](#BGvIj "创建支付请求")  
+[接收支付响应](#QhTNS "接收支付响应")  
+[常见问题解答](#v5Jyj "常见问题解答")  
+[重定向到支付方式的结账页面](#62lB0 "重定向到支付方式的结账页面")  
+[常见问题解答](#cXZYo "常见问题解答")  
+[显示支付结果页面](#x1EYF "显示支付结果页面")  
+[常见问题解答](#WblBX "常见问题解答")  
+[步骤3：获取支付结果](#7FBHl "步骤3：获取支付结果")  
+[接收异步通知](#PMBUH "接收异步通知")  
+[常见问题解答](#nmLpr "常见问题解答")  
+[查询支付结果](#O1jRy "查询支付结果")  
+[常见问题解答](#tkpZO "常见问题解答")  
+[最佳实践](#6620B "最佳实践")  
+[自定义支付超时](#f5gU1 "自定义支付超时")  
+[获取支付继续URL](#CRUkl "获取支付继续URL")  
+[优化支付体验](#luUxS "优化支付体验")  
+[重定向到商户结果页面](#qDjwR "重定向到商户结果页面")  
+[商户结果页面处理逻辑建议](#GdEle "商户结果页面处理逻辑建议")  
+[支付失败重试](#hAeaV "支付失败重试")  
+[获取支付结果](#o55cG "获取支付结果")  
+[打开支付方式URL](#jyh8F "打开支付方式URL")  
+[常见问题解答](#QamNx "常见问题解答")  
+[在Android中遇到歧义框怎么办？](#XTN3K "在Android中遇到歧义框怎么办？")  
+[如何使用WebView加载订单页面？](#2IeMu "如何使用WebView加载订单页面？")  
+反馈

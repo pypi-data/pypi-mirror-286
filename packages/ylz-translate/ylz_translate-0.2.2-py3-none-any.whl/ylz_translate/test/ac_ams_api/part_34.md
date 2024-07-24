@@ -1,0 +1,5 @@
+*   Added enumeration values to the field _paymentOptions.paymentMethodType_ in the response parameters of the [consult (Cashier Payment)](https://global.alipay.com/docs/ac/ams/consult_cashier) API.
+*   Added the _paymentOptions.paymentMethodCategory_ field in the response parameters of the [consult (Cashier Payment)](https://global.alipay.com/docs/ac/ams/consult_cashier) API.
+*   Added the fields _paymentFactor, paymentMethod.paymentMethodId_ in the request parameters of the [pay (Cashier Payment)](https://global.alipay.com/docs/ac/ams/payment_cashier) API.
+*   Added enumeration values to the field _paymentMethod.paymentMethodType_ in the request parameters of the [pay (Cashier Payment)](https://global.alipay.com/docs/ac/ams/payment_cashier) API.
+*   Added the field _card_ as a child parameter to the field _paymentMethodMetaData_ in the request parameters of [pay (Cashier Payment)](https://global.alipay.com/docs/ac/ams/payment_cashier) API.

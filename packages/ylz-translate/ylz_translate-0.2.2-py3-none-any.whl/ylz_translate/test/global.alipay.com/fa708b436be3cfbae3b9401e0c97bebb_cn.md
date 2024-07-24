@@ -1,0 +1,92 @@
+支持 | 中国领先的第三方在线支付解决方案 - 支付宝
+==================================================
+
+[![ 图片 1：中国领先的第三方在线支付解决方案 - 支付宝](https://ac.alipay.com/storage/2024/3/26/d66c43c0-440d-4c97-9976-f2028a2c8c5e.svg) ![ 图片 2：中国领先的第三方在线支付解决方案 - 支付宝](https://ac.alipay.com/storage/2024/3/26/a48bd336-aea0-4f16-bf83-616eacbb4434.svg)](/docs/)
+
+[ 登录 ](https://global.alipay.com/ilogin/account_login.htm?goto=https%3A%2F%2Fglobal.alipay.com%2Fdocs%2Fsupport)  
+[ 首页 ](/docs/)  
+[ 在线支付 ](/docs/onlinepayment)  
+[ 实体店支付 ](/docs/instorepayment)  
+[ 解决方案 ](/docs/solutions)  
+[ 收益增强器 ](/docs/ac/revenuebooster_en/overview)  
+[ 组合支付 ](/docs/ac/combinedpay_en/overview)  
+[ 灵活结算 ](/docs/ac/flexiblesettlement_en/overview)  
+[ 集成指南 ](/docs/integration_guide_en)  
+[ Antom 控制台 ](/docs/dashboard_en)  
+[ SDKs ](/docs/sdks)  
+[ APIs ](https://global.alipay.com/docs/ac/ams/api)  
+[ 对账 ](https://global.alipay.com/docs/ac/reconcile)  
+[ 数字签名 ](https://global.alipay.com/docs/ac/ams/digital_signature)  
+[ 沙箱环境 ](https://global.alipay.com/docs/ac/ref/sandbox)  
+[ 工具 ](https://global.alipay.com/docs/ac/ref/key_config_en)  
+[ 测试钱包 ](https://global.alipay.com/docs/ac/ref/testwallet)  
+[ 争议处理 ](https://global.alipay.com/docs/ac/dispute)  
+[ 商户服务 ](https://global.alipay.com/docs/ac/merchant_service)  
+[ 发布说明 ](/docs/releasenotes)  
+[ 支持 ](/docs/support)  
+[ 词汇表 ](/docs/glossary)  
+[ 帮助中心 ](https://cshall.alipay.com/enterprise/global/klgList?sceneCode=un_login&routerId=d9aa1f608c4145d6b3c8030c17cf6f9a000&categoryId=50479)  
+[ 旧版文档 ](https://global.alipay.com/docs/ac/legacy/legacydoc)  
+支持
+==================================================
+
+2023-07-10 06:10
+获取支持
+=================
+
+我们的技术支持团队随时准备帮助您解决与支付宝产品相关的任何技术或业务问题。您可以通过以下渠道联系我们：
+*   [电子邮件](#电子邮件支持)
+*   [聊天](#聊天支持)
+*   [服务请求](#服务请求支持)
+您也可以访问[帮助中心](https://cshall.alipay.com/enterprise/global/klgList?sceneCode=un_login&categoryId=49368)来查看常见问题的答案。
+> **注意：** 以下电子邮件地址为全球支付宝商家提供支持。如果您是支付宝/支付宝HK/速卖通的买家，请在[帮助中心](https://cshall.alipay.com/enterprise/global/knowledgeDetail?sceneCode=AC_DEV&routerId=384b5bb8ebfa4f6cbe2d4737eb83833d000&knowledgeId=201603312725)寻找适合的支持。
+### ![图片 3: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1590570894922-d207d86f-f621-4576-86cb-00407f5bdc7a.png) 电子邮件  
+根据您的需求联系相应的业务或技术支持团队，我们将在1个工作日内回复您：  
+#### 支付宝商户服务业务支持  
+*   联系邮箱：[global.service@alipay.com](mailto:global.service@alipay.com)
+*   工作时间：周一至周日，9:00-18:00，UTC+8时区  
+#### 支付宝商户服务技术支持  
+*   联系邮箱：[overseas_support@service.alibaba.com](mailto:overseas_support@service.alibaba.com)
+*   工作时间：周一至周日，24小时，UTC+8时区  
+#### 支付宝商户服务风险运营支持  
+*   联系邮箱：[global.risk.operation@service.alipay.com](mailto:global.risk.operation@service.alipay.com)
+*   工作时间：周一至周五，9:00-18:00，UTC+8时区
+### 聊天
+要使用在线聊天功能，请访问[帮助中心](https://cshall.alipay.com/enterprise/global/klgList?sceneCode=un_login&categoryId=49368)，然后点击右下角的聊天机器人图标。
+
+#### 支付宝商户服务业务支持
+*   工作时间：周一至周五，UTC+8时区的9:00-21:00
+
+#### 支付宝商户服务技术支持
+*   工作时间：周一至周五，UTC+8时区的9:00-21:00
+
+#### 阿里巴巴国际站商户业务支持
+*   工作时间：周一至周日，UTC+8时区的9:00-17:30
+
+#### 阿里巴巴国际站商户技术支持
+*   工作时间：周一至周五，UTC+8时区的9:00-18:00
+### 服务请求  
+服务请求仅适用于与支付宝签订合同的商家/商户账户持有者。  
+要发起服务请求，请访问[帮助中心](https://cshall.alipay.com/enterprise/global/klgList?sceneCode=un_login&categoryId=49368)，点击右下角的聊天机器人图标，然后点击**发起服务请求**。  
+#### 支付宝商家服务业务支持  
+*   工作时间：周一至周日，UTC+8时区的9:00-18:00  
+#### 支付宝商家服务技术支持  
+*   工作时间：周一至周日，UTC+8时区的9:00-18:00  
+要查看文档的最新更新，请访问[发行说明](https://global.alipay.com/docs/releasenotes)。  
+![图片6](https://ac.alipay.com/storage/2021/5/20/19b2c126-9442-4f16-8f20-e539b1db482a.png) ![图片7](https://ac.alipay.com/storage/2021/5/20/e9f3f154-dbf0-455f-89f0-b3d4e0c14481.png)  
+@2024 支付宝 [法律信息](https://global.alipay.com/docs/ac/platform/membership)  
+#### 这个页面是否有帮助？  
+#### 在此页面上  
+[获取支持](#VaorU "获取支持")  
+[电子邮件](#OygTQ "电子邮件")  
+[支付宝商家服务业务支持](#AVq3T "支付宝商家服务业务支持")  
+[支付宝商家服务技术支持](#rZ6u2 "支付宝商家服务技术支持")  
+[支付宝商家服务风险操作支持](#QULaN "支付宝商家服务风险操作支持")  
+[聊天](#zQWZN "聊天")  
+[支付宝商家服务业务支持](#85Ya1 "支付宝商家服务业务支持")  
+[支付宝商家服务技术支持](#QTMBk "支付宝商家服务技术支持")  
+[速卖通商家业务支持](#xhqLG "速卖通商家业务支持")  
+[速卖通商家技术支持](#KMJL9 "速卖通商家技术支持")  
+[服务请求](#TjrWY "服务请求")
+[支付宝商户服务业务支持](#qDUdK "支付宝商户服务业务支持")  
+[支付宝商户服务技术支持](#BkGdE "支付宝商户服务技术支持")

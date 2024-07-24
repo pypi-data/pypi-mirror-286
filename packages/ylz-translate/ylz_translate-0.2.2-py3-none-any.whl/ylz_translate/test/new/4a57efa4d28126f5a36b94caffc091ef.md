@@ -1,0 +1,1239 @@
+APM payments | Checkout Payment | Alipay Docs
+===============
+                        
+
+[![Image 1: Alipay, China's leading third-party online payment solution](https://ac.alipay.com/storage/2024/3/26/d66c43c0-440d-4c97-9976-f2028a2c8c5e.svg)![Image 2: Alipay, China's leading third-party online payment solution](https://ac.alipay.com/storage/2024/3/26/a48bd336-aea0-4f16-bf83-616eacbb4434.svg)](/docs/)
+
+[Log In](https://global.alipay.com/ilogin/account_login.htm?goto=https%3A%2F%2Fglobal.alipay.com%2Fdocs%2Fac%2Fcashierpay%2Fapm_api)
+
+[Go to Homepage](../../)
+
+Checkout Payment
+
+[Overview](/docs/ac/cashierpay/overview)
+
+Accept payments
+
+SDK integration
+
+API-only integration
+
+[APM paymentsAPM](/docs/ac/cashierpay/apm_api)
+
+Card paymentsCard
+
+After payments
+
+Payment methods
+
+Other resources
+
+Advanced features
+
+[Pre-front solutionAPI](/docs/ac/cashierpay/prefront)
+
+[Buy now pay laterAPI](/docs/ac/cashierpay/bnpl)
+
+[Card vaultingAPI](/docs/ac/cashierpay/cv)
+
+[Card vaultingSDK](/docs/ac/cashierpay/cvsdk)
+
+[Card payment featuresAPISDK](/docs/ac/cashierpay/mf?pageVersion=7)
+
+APM payments
+============
+
+2024-05-11 10:13
+
+Checkout payment can help your website or application start to accept payments online. This article introduces the integration solution to support accepting payment from the desktop browser, mobile browser or app. After integration, you can access various payment methods like digital wallets, bank cards, and bank transfers.
+
+User experience
+===============
+
+Web
+
+WAP
+
+App
+
+Web user experience
+-------------------
+
+For payments initiated on a desktop website, you need to redirect the buyer to the redirection URL or open the URL in a new tab.
+
+![Image 3: APM payments](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1713252779294-7dd83438-ba39-46bf-8f9d-b1ba359fe235.png)
+
+WAP user experience
+-------------------
+
+In the wap scenario, different payment methods may return some or all of the following three URLs in the response of the **pay** API:
+
+<table style="width:745px" class="lake-table"><colgroup><col width="245" span="1"><col width="250" span="1"><col width="250" span="1"></colgroup><tbody><tr style="height:33px"><td style="background-color:#D9EAFC"><p style="text-align:left" data-lake-id="58bd37e095ff2952d93d5a147faf8ee0"><strong><span class="lake-fontsize-11">Link type</span></strong></p></td><td colspan="2" style="background-color:#D9EAFC"><p data-lake-id="6baff98f6d5ebbb4820d7dfab9d49229"><strong><span>User experience</span></strong></p></td></tr><tr style="height:33px"><td><p data-lake-id="08311c3158c65601da002acb78d53c17"><span style="color:rgba(4, 15, 36, 0.85)">applinkUrl</span></p></td><td><p data-lake-id="7967d40ed4801207369081af6b1d32c4"><span>The payment method app is installed.</span><span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22display%22%3A%22inline%22%2C%22align%22%3A%22left%22%2C%22linkTarget%22%3A%22_blank%22%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22search%22%3A%22%22%2C%22margin%22%3A%7B%22top%22%3Afalse%2C%22bottom%22%3Afalse%7D%2C%22width%22%3A2448%2C%22height%22%3A1062%2C%22id%22%3A%22vxi5Z%22%7D" id="vxi5Z"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"> <span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="APM payments" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" style="width:227px;height:98px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p><p data-lake-id="abb9b95f29ca221ebab3bf55841102f5"><span>The payment method app is not installed.</span></p><p data-lake-id="470f0d689960bec290ad780505cf3381"><span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22display%22%3A%22inline%22%2C%22align%22%3A%22left%22%2C%22linkTarget%22%3A%22_blank%22%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22search%22%3A%22%22%2C%22margin%22%3A%7B%22top%22%3Afalse%2C%22bottom%22%3Afalse%7D%2C%22width%22%3A2448%2C%22height%22%3A1062%2C%22id%22%3A%22SB25d%22%7D" id="SB25d" style="display:block"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"><span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="APM payments" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" style="width:227px;height:98px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p></td><td><p data-lake-id="87ae4d4f42e25b1037553be960d5d757">If the buyer installs the corresponding payment method app, the app will be automatically pulled up, and the h5 page will be displayed if the app of the channel is not installed. The page capabilities of specific h5 will be provided differently depending on different payment methods.</p></td></tr><tr style="height:155px"><td><p data-lake-id="f8a8d202e93319790dafd1acda2120be"><span style="color:rgba(4, 15, 36, 0.85)">schemeUrl</span></p></td><td><p data-lake-id="9e17b6da6ae73b2f62818baca04bfcc3">The payment method app is installed.<span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22display%22%3A%22inline%22%2C%22align%22%3A%22left%22%2C%22linkTarget%22%3A%22_blank%22%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22search%22%3A%22%22%2C%22margin%22%3A%7B%22top%22%3Afalse%2C%22bottom%22%3Afalse%7D%2C%22width%22%3A2448%2C%22height%22%3A1062%2C%22id%22%3A%22FDgiN%22%7D" id="FDgiN"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"> <span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="APM payments" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" style="width:227px;height:98px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p><p data-lake-id="bbfa635e6fefead9dfefb356704e06b5">The payment method app is not installed.</p><p data-lake-id="42a44894605451c8ca0e433817594413"><span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709782552610-4a1f70e5-960c-4f48-9691-aee757c3d927.png%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22name%22%3A%22image.png%22%2C%22size%22%3A95671%2C%22display%22%3A%22inline%22%2C%22align%22%3A%22left%22%2C%22linkTarget%22%3A%22_blank%22%2C%22status%22%3A%22done%22%2C%22ocrLocations%22%3A%5B%7B%22text%22%3A%22%E8%B4%A5%2C%E6%97%A0%E6%B3%95%E6%8E%A8%E8%BF%9B%E6%94%AF%E4%BB%98%22%2C%22x%22%3A616%2C%22y%22%3A882%2C%22width%22%3A249%2C%22height%22%3A40%7D%2C%7B%22text%22%3A%22%E5%94%A4%E8%B5%B7%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8FAPP%E5%A4%B1%22%2C%22x%22%3A617%2C%22y%22%3A841%2C%22width%22%3A257%2C%22height%22%3A39%7D%2C%7B%22text%22%3A%22%E4%BB%98%E6%96%B9%E5%BC%8F%E9%80%89%E6%8B%A9%E9%A1%B5%22%2C%22x%22%3A130%2C%22y%22%3A842%2C%22width%22%3A209%2C%22height%22%3A37%7D%2C%7B%22text%22%3A%22%E6%89%8B%E6%9C%BA%E6%B5%8F%E8%A7%88%E5%99%A8%22%2C%22x%22%3A127%2C%22y%22%3A123%2C%22width%22%3A148%2C%22height%22%3A37%7D%2C%7B%22text%22%3A%22NTMETHODS%22%2C%22x%22%3A165%2C%22y%22%3A495%2C%22width%22%3A87%2C%22height%22%3A28%7D%5D%2C%22style%22%3A%22none%22%2C%22search%22%3A%22%E8%B4%A5%2C%E6%97%A0%E6%B3%95%E6%8E%A8%E8%BF%9B%E6%94%AF%E4%BB%98%20%E5%94%A4%E8%B5%B7%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8FAPP%E5%A4%B1%20%E4%BB%98%E6%96%B9%E5%BC%8F%E9%80%89%E6%8B%A9%E9%A1%B5%20%E6%89%8B%E6%9C%BA%E6%B5%8F%E8%A7%88%E5%99%A8%20NTMETHODS%22%2C%22margin%22%3A%7B%22top%22%3Afalse%2C%22bottom%22%3Afalse%7D%2C%22width%22%3A2448%2C%22height%22%3A1062%2C%22id%22%3A%22BZcLr%22%7D" id="BZcLr" style="display:block"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"><span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="image.png" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709782552610-4a1f70e5-960c-4f48-9691-aee757c3d927.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709782552610-4a1f70e5-960c-4f48-9691-aee757c3d927.png" title="image.png" style="width:227px;height:98px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709782552610-4a1f70e5-960c-4f48-9691-aee757c3d927.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p><div class="lake-image-mask"><p style="font-size:3.7091503267973858px;left:25.163398692810457%;top:83.05084745762711%" data-lake-id="41bcbb4fcc7452321d1162648ae619e1" class="lake-image-mask-point">败,无法推进支付</p><p style="font-size:3.6164215686274512px;left:25.204248366013072%;top:79.19020715630886%" data-lake-id="a881b6873feba0e8bea032afe0c6cb50" class="lake-image-mask-point">唤起支付方式APP失</p><p style="font-size:3.4309640522875817px;left:5.310457516339869%;top:79.28436911487758%" data-lake-id="fcc4b3f832b537d6885a146791e9c984" class="lake-image-mask-point">付方式选择页</p><p style="font-size:3.4309640522875817px;left:5.187908496732026%;top:11.581920903954803%" data-lake-id="b15476b20e9e4e3e3e853717d541eb28" class="lake-image-mask-point">手机浏览器</p><p style="font-size:2.59640522875817px;left:6.740196078431373%;top:46.61016949152542%" data-lake-id="18f225dfbd4297097e57c736c35eb9fc" class="lake-image-mask-point">NTMETHODS</p></div></td><td><p data-lake-id="cba5b752c168152842068ca69c2c1566">If the buyer installs the payment method app, it will automatically redirect to the app. If it is not installed, the app cannot be launched and will stay on the current page.</p></td></tr><tr style="height:33px"><td><p data-lake-id="6de99718efd80340b4e166776bdcf385"><span style="color:rgba(4, 15, 36, 0.85)">normalUrl</span></p></td><td><p data-lake-id="c8b81574fa172f83032790c9901ba1b0"><span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png%22%2C%22originalType%22%3A%22binary%22%2C%22linkTarget%22%3A%22_blank%22%2C%22from%22%3A%22url%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22id%22%3A%22Zt4Je%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D" id="Zt4Je" style="display:block"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"><span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="APM payments" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" style="width:0px;height:0px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p></td><td><p data-lake-id="3f7b99ffe57d730dfeb1622ed50438d6">Display the h5 page of this payment method.</p></td></tr></tbody></table>
+
+App user experience
+-------------------
+
+In the app scenario, different payment methods may return some or all of the following three URLs in the response of the **pay** API:
+
+<table style="width:745px" class="lake-table"><colgroup><col width="245" span="1"><col width="250" span="1"><col width="250" span="1"></colgroup><tbody><tr style="height:33px"><td style="background-color:#D9EAFC"><p style="text-align:left" data-lake-id="0e7dced5c05934a4c5670b1b296903ff"><strong><span class="lake-fontsize-11">Link type</span></strong></p></td><td colspan="2" style="background-color:#D9EAFC"><p data-lake-id="f43caab58ea33d2f4ff5f41cbb5265d0"><strong><span>User experience</span></strong></p></td></tr><tr style="height:33px"><td><p data-lake-id="806f3e03e79530388d7fb2d35835a950"><span style="color:rgba(4, 15, 36, 0.85)">applinkUrl</span></p></td><td><p data-lake-id="be19f26779a2adc36edd154c7e31ddf2"><span>The payment method app is installed.</span><span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png%22%2C%22originalType%22%3A%22binary%22%2C%22linkTarget%22%3A%22_blank%22%2C%22from%22%3A%22url%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22id%22%3A%22vxi5Z%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D" id="vxi5Z"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"> <span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="APM payments" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" style="width:227px;height:98px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p><p data-lake-id="936fd8a791d1ed77f1a8ea7ff61a9b8d"><span>The payment method app is not installed.</span></p><p data-lake-id="823ac7e76168d54b9765215bc8ac7a65"><span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png%22%2C%22originalType%22%3A%22binary%22%2C%22linkTarget%22%3A%22_blank%22%2C%22from%22%3A%22url%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22id%22%3A%22SB25d%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D" id="SB25d" style="display:block"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"><span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="APM payments" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" style="width:227px;height:98px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p></td><td><p data-lake-id="574f9fe6553a3865424dd8bce461de78">If the buyer installs the corresponding payment method app, the app will be automatically pulled up, and the h5 page will be displayed if the app of the channel is not installed. The page capabilities of specific h5 will be provided differently depending on different channels.</p></td></tr><tr style="height:155px"><td><p data-lake-id="a74224ee3379560e5e631b5532a4f6f3"><span style="color:rgba(4, 15, 36, 0.85)">schemeUrl</span></p></td><td><p data-lake-id="0e29fa80628f2210d4af4649a0d349dd"><span>The payment method app is installed.</span><span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png%22%2C%22originalType%22%3A%22binary%22%2C%22linkTarget%22%3A%22_blank%22%2C%22from%22%3A%22url%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22id%22%3A%22FDgiN%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D" id="FDgiN"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"> <span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="APM payments" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" style="width:227px;height:98px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571531-86f2c8b4-fe3d-48d4-a70d-7e46dee70a0f.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p><p data-lake-id="bc1fb55c443dcefd21a87617a0ea7a38"><span>The payment method app is not installed.</span></p><p data-lake-id="4d71f7187242711f758d941cbe869feb"><span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709782552610-4a1f70e5-960c-4f48-9691-aee757c3d927.png%22%2C%22taskId%22%3A%22u30e28f6b-ff93-4323-b988-abb6b39076c%22%2C%22clientId%22%3A%22u148f7314-dc7a-4%22%2C%22originalType%22%3A%22url%22%2C%22linkTarget%22%3A%22_blank%22%2C%22name%22%3A%22image.png%22%2C%22size%22%3A95671%2C%22from%22%3A%22paste%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22ocrLocations%22%3A%5B%7B%22text%22%3A%22%E8%B4%A5%2C%E6%97%A0%E6%B3%95%E6%8E%A8%E8%BF%9B%E6%94%AF%E4%BB%98%22%2C%22x%22%3A616%2C%22y%22%3A882%2C%22width%22%3A249%2C%22height%22%3A40%7D%2C%7B%22text%22%3A%22%E5%94%A4%E8%B5%B7%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8FAPP%E5%A4%B1%22%2C%22x%22%3A617%2C%22y%22%3A841%2C%22width%22%3A257%2C%22height%22%3A39%7D%2C%7B%22text%22%3A%22%E4%BB%98%E6%96%B9%E5%BC%8F%E9%80%89%E6%8B%A9%E9%A1%B5%22%2C%22x%22%3A130%2C%22y%22%3A842%2C%22width%22%3A209%2C%22height%22%3A37%7D%2C%7B%22text%22%3A%22%E6%89%8B%E6%9C%BA%E6%B5%8F%E8%A7%88%E5%99%A8%22%2C%22x%22%3A127%2C%22y%22%3A123%2C%22width%22%3A148%2C%22height%22%3A37%7D%2C%7B%22text%22%3A%22NTMETHODS%22%2C%22x%22%3A165%2C%22y%22%3A495%2C%22width%22%3A87%2C%22height%22%3A28%7D%5D%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22id%22%3A%22BZcLr%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D" id="BZcLr" style="display:block"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"><span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="image.png" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709782552610-4a1f70e5-960c-4f48-9691-aee757c3d927.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709782552610-4a1f70e5-960c-4f48-9691-aee757c3d927.png" title="image.png" style="width:227px;height:98px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709782552610-4a1f70e5-960c-4f48-9691-aee757c3d927.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p><div class="lake-image-mask"><p style="font-size:NaNpx;left:25.163398692810457%;top:83.05084745762711%" data-lake-id="e06c74d4d683b05d885225506396df67" class="lake-image-mask-point">败,无法推进支付</p><p style="font-size:NaNpx;left:25.204248366013072%;top:79.19020715630886%" data-lake-id="06d7f10f310e60215f48be7e07b6e4d9" class="lake-image-mask-point">唤起支付方式APP失</p><p style="font-size:NaNpx;left:5.310457516339869%;top:79.28436911487758%" data-lake-id="44b660be8fe4c93fa173eb7373beec78" class="lake-image-mask-point">付方式选择页</p><p style="font-size:NaNpx;left:5.187908496732026%;top:11.581920903954803%" data-lake-id="6b8b254c805fd739196e66eff138e1c8" class="lake-image-mask-point">手机浏览器</p><p style="font-size:NaNpx;left:6.740196078431373%;top:46.61016949152542%" data-lake-id="c225f64d6eeef4aeae1d0527d32ceb38" class="lake-image-mask-point">NTMETHODS</p></div></td><td><p data-lake-id="8a2e90ec6eae8739737ec078df24acbc">If the buyer installs the payment method app, it will automatically redirect to the app. If it is not installed, the app cannot be launched and will stay on the current page.</p></td></tr><tr style="height:33px"><td><p data-lake-id="bcb1e4289321bf7ec15b339ab274a247"><span style="color:rgba(4, 15, 36, 0.85)">normalUrl</span></p></td><td><p data-lake-id="5e42607924dc5fe97abdd05dc4f2e709"><span data-card-type="inline" data-lake-card="image" contenteditable="false" data-card-value="data:%7B%22src%22%3A%22https%3A%2F%2Fidocs-assets.marmot-cloud.com%2Fstorage%2Fidocs87c36dc8dac653c1%2F1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png%22%2C%22originalType%22%3A%22binary%22%2C%22linkTarget%22%3A%22_blank%22%2C%22from%22%3A%22url%22%2C%22originWidth%22%3A2448%2C%22originHeight%22%3A1062%2C%22ratio%22%3A1%2C%22status%22%3A%22done%22%2C%22style%22%3A%22none%22%2C%22showTitle%22%3Afalse%2C%22title%22%3A%22%22%2C%22rotation%22%3A0%2C%22crop%22%3A%5B0%2C0%2C1%2C1%5D%2C%22id%22%3A%22Zt4Je%22%2C%22margin%22%3A%7B%22top%22%3Atrue%2C%22bottom%22%3Atrue%7D%7D" id="Zt4Je" style="display:block"><span data-card-element="body"><span data-card-element="center"><span class="lake-image"><span class="lake-image-content lake-image-content-isvalid"><span data-role="detail" class="lake-image-detail"><span class="lake-image-meta"><span class="lake-image-warning" style="display:none"><i class="anticon anticon-exclamation-circle"><svg viewBox="64 64 896 896" class="" data-icon="exclamation-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"></path><path d="M464 688a48 48 0 1 0 96 0 48 48 0 1 0-96 0zM488 576h48c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8z"></path></svg></i></span><img alt="APM payments" data-role="image" src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" data-raw-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" style="width:227px;height:98px;visibility:visible" class="docs-image loaded showImg" data-src="https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1709186571364-cc2c216d-5416-473b-8b85-607d174e1b97.png" loading="lazy"><span data-role="maximize" class="lake-image-editor-maximize" style="display:none"><span class="lake-icon lake-icon-full-screen"></span></span></span></span></span></span></span></span></span></p></td><td><p data-lake-id="9a73cf5fd72dd0a7bcaa82128f47e448">Display the h5 page of this payment method.</p></td></tr></tbody></table>
+
+Payment flow
+============
+
+For each payment method, the payment flow composed of the following steps:
+
+![Image 14: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1713255362615-02d730c5-8f86-496e-a58d-983a86ac7ea4.png)
+
+1.  **The buyer enters the checkout page.**
+2.  **Create the** [**pay**](https://global.alipay.com/docs/ac/ams/payment_cashier) **request**  
+    After the buyer selects a payment method and submits the order, call the [**pay**](https://global.alipay.com/docs/ac/ams/payment_cashier) API to obtain the payment link to complete the payment.
+3.  **Handle the payment continuation URL**  
+    The payment continuation URL is to be returned to the client. You need to redirect the buyer to the payment continuation URL. The payment continuation URL proceeds the payment process with different operations based on the characteristics of payment methods, such as collecting information, redirecting users, invoking the app, displaying QR codes, and performing verifications.
+4.  **Get the payment result**  
+    Obtain the payment result using one of the following two methods:
+
+*   Asynchronous notification: Specify the _paymentNotifyUrl_ in the [**pay**](https://global.alipay.com/docs/ac/ams/payment_cashier) API to set the address for receiving asynchronous notifications. When the payment is successful or expires, Antom uses [**notifyPayment**](https://global.alipay.com/docs/ac/cashierpay/overview) to send asynchronous notifications to you.
+*   Synchronous inquiry: Call the [**inquiryPayment**](https://global.alipay.com/docs/ac/ams/paymentri_online) API to check the payment status.
+
+Integration steps
+=================
+
+Start your integration by taking the following steps:
+
+1.  (Optional) Add a list of payment methods
+2.  Invoke the pay API and get the payment continuation URL
+3.  Obtain the payment results
+
+Step 1: (Optional) Add a list of payment methods Client-side
+------------------------------------------------------------
+
+Add the logo and name of the payment methods to be integrated to the payment method list on the payment page for buyers to select. You can obtain the logo and name in one of the following two ways:
+
+*   Contact Antom Technical Support to obtain. The logo for Alipay+ payment methods needs to comply with the Alipay+ brand specifications, and can be self-generated according to the size and style you need. Refer to [Brand asset](https://global.alipay.com/docs/ac/ref/brandasset) for more information.
+*   Call the **consult** API to obtain the payment methods and logo URL supported by the current transactions based on the currency, transaction initiation terminal type, buyer region, and contracted payment methods.
+
+The following figures show the page effect after adding a payment method:
+
+Web
+
+WAP
+
+App
+
+### Web page effect
+
+![Image 15: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1713348005995-375d5402-fa2a-4233-92c5-d0e23db55f75.png)
+
+### WAP page effect
+
+![Image 16: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1712827010224-ae4112ad-1de9-4cfc-bac2-26b8adaa3c8f.png)
+
+PAYMENTMETHOD
+
+PLAYER450455
+
+PENGLISH
+
+9.99USD
+
+9.99USB
+
+PAYNOW
+
+CONFIRMORDER
+
+3+50
+
+FPX
+
+COM
+
+:0.1USD
+
+PAY
+
+KAKAOAY
+
+FPX
+
+999
+
+TOTAL:
+
+TOKENS
+
+大小
+
+### APP page effect
+
+![Image 17: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1713348044054-4dedaba1-8800-4fad-9f0d-025b2b77af2e.png)
+
+Step 2: Invoke the pay API and get the payment continuation URL Server-sideClient-side
+--------------------------------------------------------------------------------------
+
+When the buyer selects a payment method provided by Antom to make a payment, you need to collect key information such as the payment request ID, order amount, payment method, transaction environment information, order description, URL of the payment redirection page, and URL for receiving the payment result notification. Then, call the **pay** API to obtain the payment continuation URL, and redirect the buyer to the checkout page specified by the payment continuation URL for payment.
+
+### Initiate a payment request Server-side
+
+Antom provides server-side API libraries for multiple languages. The following code uses Java as an example. You need to install Java 6 or higher.
+
+#### Install an API library
+
+You can find the latest version on [GitHub](https://github.com/alipay/global-open-sdk-java).
+
+copy
+
+    <dependency>
+      <groupId>com.alipay.global.sdk</groupId>
+      <artifactId>global-open-sdk-java</artifactId>
+      <version>2.0.21</version>
+    </dependency>
+
+#### Initialize the request instance
+
+copy
+
+    String merchantPrivateKey = "YOUR PRIVATE KEY";
+    String alipayPublicKey = "ALIPAY PUBLIC KEY"
+    AlipayClient defaultAlipayClient = new DefaultAlipayClient(EndPointConstants.SG,
+                    merchantPrivateKey, alipayPublicKey);
+
+#### Create a payment request
+
+The following parameters are included in the payment request.
+
+<table style="width:748px;outline:none;border-collapse:collapse;border:1px solid rgb(217, 217, 217)" class="lake-table"><colgroup><col width="211" span="1"><col width="97" span="1"><col width="440" span="1"></colgroup><tbody><tr style="height:33px"><td style="background-color:rgb(217, 234, 252);min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="bab465482f03f5820eb43b176eaad516" id="ue38567b6" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" style="color:rgb(32, 48, 76);font-size:14px" data-mce-style="font-size: 11px">Parameter name</span></strong></p></td><td style="background-color:rgb(217, 234, 252);min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="a691a798e799d60570c392315164df44" id="uf08cd1d4" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" style="color:rgb(32, 48, 76);font-size:14px" data-mce-style="font-size: 11px">Is required</span></strong></p></td><td style="background-color:rgb(217, 234, 252);text-align:left;min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="2bbea59fcf806088e113724a8b092c95" id="u71019669" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" style="color:rgb(32, 48, 76);font-size:14px" data-mce-style="font-size: 11px">Description</span></strong></p></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="f12439cffa48f04465b05172e1531527" id="u13e60852" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">productCode</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="3a65cb7879d7f2d696932b4d6bc9cd17" id="ubad826e0" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Yes</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="22acd27629d1e6249384029891903a24" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">In this scenario, the field is fixed to <code style="font-family:monospace;font-size:inherit;background-color:rgba(0, 0, 0, 0.06);padding:0px 2px;border:1px solid rgba(0, 0, 0, 0.08);border-radius:2px;line-height:inherit;overflow-wrap:break-word;text-indent:0px">CASHIER_PAYMENT</code>.</p></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="6ad665277c38e24600259c1e18a371cb" id="u86726a03" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">paymentRequestId</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="dbcb24e4efe78635f6037ec8c7bece5d" id="u67aee9ca" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Yes</p></td><td style="text-align:left;min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="a3817b6c466babcd0f27a96c53db4144" id="u9438863d" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">A unique ID generated by the merchant.</p></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="68a30a3daae739a857ee8cfc2690eb1c" id="u0d7f7308" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">paymentAmount</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="7f8796285a3213272b3be84cad5ce3f4" id="u155ecdcb" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Yes</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="6c208e7d42c197a3f994f25838b5833a" id="u6282f318" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Payment amount, which is set to the smallest unit of the payment currency.</p></td></tr><tr style="height:37px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="1c269bf2a03b6bfa5374b009db763a05" id="u7e2ba66f" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">paymentMethod</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="10ddd01ff0498e85b7c0f21231cf8eb6" id="ucc6cf2fb" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Yes</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="9837d0f1ec4c9f638489374a9c0f3e27" id="u20e6ba0e" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Payment method enumeration value.</p></td></tr><tr style="height:63px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="10138efac4aaa2c7e838f1a40b627c49" id="u4e6ff591" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">paymentRedirectUrl</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="0664910a78e19f06e8173a812700df9d" id="u25a13a73" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Yes</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="2788a196b2b00ea211a0dff9d2eddcc7" id="u635539dd" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">The payment result page of the merchant side, which needs to be displayed according to the results of the server.</p></td></tr><tr style="height:37px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="d16cc2c5cc0c40d1a44548c44fb969a4" id="u05f75887" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">paymentNotifyUrl</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="1d8be9944c2fb42525613816ba754521" id="ud8aa27ef" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">No</p></td><td style="text-align:left;min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="40d349328527c5e6f92cbd62fc6b100f" id="ua2551782" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">The payment result notification address, which can be specified via the API or set a fixed value in the portal.</p></td></tr><tr style="height:37px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="a6f5b845ce5dcd1cc1842aa02859b1db" id="u6ca05071" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">settlementStrategy</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="78ded0563a270c3058fbe22f3241e87a" id="u6fded747" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">No</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="616dc367d4df622e6a33e3cd8b2da08a" id="uba99e917" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">The settlement currency of the payment. If you have signed multiple settlement currencies, you need to specify it in the API.</p></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="6e23e5500ab2815fc34a90c9673f7d31" id="u30da2c32" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">order</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="a901d4fb8962b53125b7cc04f32b38a7" id="uccf6b426" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Yes</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="891e3e348cfcda95001490f0a1ca0090" id="u26b88d4f" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Order information, including order amount, order ID, and order description.</p></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="85f5c0fe1b62bb07093da50d2d96edcf" id="u2c417148" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">env</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="025594c63b86093a43bee61d30dbd11d" id="u6c73a864" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Yes</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="6104d8c1b6340f23a3ba92b6660afcf2" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">The environment in which the buyer initiates a transaction.</p></td></tr></tbody></table>
+
+For more information about the whole parameters, refer to [**pay**](https://global.alipay.com/docs/ac/ams/payment_cashier) API.
+
+The following sample code is used for initiating a payment:
+
+copy
+
+    AlipayPayRequest alipayPayRequest = new AlipayPayRequest();
+    alipayPayRequest.setClientId(CLIENT_ID);
+    alipayPayRequest.setPath("/ams/api/v1/payments/pay");
+    alipayPayRequest.setProductCode(ProductCodeType.CASHIER_PAYMENT);
+    
+    // replace to your paymentRequestId
+    alipayPayRequest.setPaymentRequestId("paymentRequestId01");
+    
+    // set amount
+    Amount amount = new Amount();
+    amount.setCurrency("HKD");
+    amount.setValue("100");
+    alipayPayRequest.setPaymentAmount(amount);
+    
+    // set paymentMethod
+    PaymentMethod paymentMethod = new PaymentMethod();
+    paymentMethod.setPaymentMethodType("ALIPAY_HK");
+    alipayPayRequest.setPaymentMethod(paymentMethod);
+    
+    // set order Info
+    Order order = new Order();
+    order.setReferenceOrderId("referenceOrderId01");
+    order.setOrderDescription("antom test order");
+    order.setOrderAmount(amount);
+    alipayPayRequest.setOrder(order);
+    
+    //set env Info
+    Env env = new Env();
+    env.setTerminalType(TerminalType.WAP);
+    env.setClientIp("114.121.121.01");
+    env.setOsType(OsType.ANDROID);
+    alipayPayRequest.setEnv(env);
+    
+    // replace to your notify url
+    alipayPayRequest.setPaymentNotifyUrl("http://www.yourNotifyUrl.com");
+    
+    // replace to your redirect url
+    alipayPayRequest.setPaymentRedirectUrl("http://www.yourRedirectUrl.com");
+    
+    //do the Payment
+    AlipayPayResponse alipayPayResponse = null;
+    try {
+        alipayPayResponse = defaultAlipayClient.execute(alipayPayRequest);
+    } catch (AlipayApiException e) {
+        String errorMsg = e.getMessage();
+        // handle error condition
+    }
+
+The following code shows a sample of the request message:
+
+Web
+
+WAP
+
+App
+
+##### Web sample code
+
+copy
+
+    {
+        "paymentNotifyUrl": "http://www.yourNotifyUrl.com",
+        "paymentRequestId": "paymentRequestId01",
+        "env": {
+            "terminalType": "WEB",
+            "clientIp": "114.121.121.01"
+        },
+        "paymentAmount": {
+            "currency": "HKD",
+            "value": "100"
+        },
+        "productCode": "CASHIER_PAYMENT",
+        "paymentRedirectUrl": "http://www.yourRedirectUrl.com",
+        "paymentMethod": {
+            "paymentMethodType": "ALIPAY_HK"
+        },
+        "order": {
+            "orderAmount": {
+                "currency": "HKD",
+                "value": "100"
+            },
+            "referenceOrderId": "referenceOrderId01",
+            "orderDescription": "antom test order"
+        }
+    }
+
+##### WAP sample code
+
+copy
+
+    {
+        "paymentNotifyUrl": "http://www.yourNotifyUrl.com",
+        "paymentRequestId": "paymentRequestId01",
+        "env": {
+            "terminalType": "WAP",
+            "clientIp": "114.121.121.01",
+            "osType": "ANDROID"
+        },
+        "paymentAmount": {
+            "currency": "HKD",
+            "value": "100"
+        },
+        "productCode": "CASHIER_PAYMENT",
+        "paymentRedirectUrl": "http://www.yourRedirectUrl.com",
+        "paymentMethod": {
+            "paymentMethodType": "ALIPAY_HK"
+        },
+        "order": {
+            "orderAmount": {
+                "currency": "HKD",
+                "value": "100"
+            },
+            "referenceOrderId": "referenceOrderId01",
+            "orderDescription": "antom test order"
+        }
+    }
+
+##### App sample code
+
+copy
+
+    {
+        "paymentNotifyUrl": "http://www.yourNotifyUrl.com",
+        "paymentRequestId": "paymentRequestId01",
+        "env": {
+            "terminalType": "APP",
+            "clientIp": "114.121.121.01",
+            "osType": "ANDROID"
+        },
+        "paymentAmount": {
+            "currency": "HKD",
+            "value": "100"
+        },
+        "productCode": "CASHIER_PAYMENT",
+        "paymentRedirectUrl": "http://www.yourRedirectUrl.com",
+        "paymentMethod": {
+            "paymentMethodType": "ALIPAY_HK"
+        },
+        "order": {
+            "orderAmount": {
+                "currency": "HKD",
+                "value": "100"
+            },
+            "referenceOrderId": "referenceOrderId01",
+            "orderDescription": "antom test order"
+        }
+    }
+
+##### FAQs
+
+###### How to set the value of terminalType?
+
+*   If the buyer initiates a transaction from PC, the _terminalType_ needs to be specified as `WEB`.
+*   If the buyer initiates a transaction from the mobile browser, the _terminalType_ needs to be specified as `WAP`. Add the _osType_ parameter and fill in the corresponding system parameters `ANDROID` or `IOS` according to the buyer's mobile phone.
+*   If the buyer initiates a transaction from app, the _terminalType_ needs to be specified as `APP`.
+
+###### Can Chinese characters be used in the request?
+
+Do not use Chinese characters in the request field to avoid incompatible payment methods, such as QRIS and Mastercard.
+
+###### How to set the payment result notification address？
+
+Antom will send the payment result through the [**notifyPayment**](https://global.alipay.com/docs/ac/ams/paymentrn_online), which you can specify in the **pay** API via the _paymentNotifyUrl_ parameter. If the address of each payment is the same, you can also configure it in the Antom Dashboard. If you have configured the address and set the parameter in the API, Antom will use the address set in the API.
+
+### Receive a payment response Server-side
+
+The following code is the sample response:
+
+Web
+
+WAP
+
+App
+
+##### Web sample code
+
+copy
+
+    {
+        "normalUrl": "https://open-sea.alipayplus.com/api/open/v1/ac/cashier/self/codevalue/checkout.htm?codeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de",
+        "orderCodeForm": {
+            "codeDetails": [
+                {
+                    "codeValue": "https://global.alipay.com/281002040090bbmmzTC4BzSex92tUglv31de",
+                    "displayType": "TEXT"
+                },
+                {
+                    "codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de&picSize=L",
+                    "displayType": "BIGIMAGE"
+                },
+                {
+                    "codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de&picSize=M",
+                    "displayType": "MIDDLEIMAGE"
+                },
+                {
+                    "codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de&picSize=S",
+                    "displayType": "SMALLIMAGE"
+                }
+            ],
+            "expireTime": "2024-01-15T01:34:45-08:00"
+        },
+        "paymentActionForm": "{\"method\":\"GET\",\"paymentActionFormType\":\"RedirectActionForm\",\"redirectUrl\":\"https://open-sea.alipayplus.com/api/open/v1/ac/cashier/self/codevalue/checkout.htm?codeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de\"}",
+        "paymentAmount": {
+            "currency": "HKD",
+            "value": "100"
+        },
+        "paymentCreateTime": "2024-01-15T01:20:46-08:00",
+        "paymentId": "20240115194010800100188640298283440",
+        "paymentRequestId": "PAY_20240115172044263",
+        "redirectActionForm": {
+            "method": "GET",
+            "redirectUrl": "https://open-sea.alipayplus.com/api/open/v1/ac/cashier/self/codevalue/checkout.htm?codeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090bbmmzTC4BzSex92tUglv31de"
+        },
+        "result": {
+            "resultCode": "PAYMENT_IN_PROCESS",
+            "resultMessage": "payment in process",
+            "resultStatus": "U"
+        }
+    }
+
+##### WAP sample code
+
+copy
+
+    {
+        "appIdentifier": "hk.alipay.wallet",
+        "applinkUrl": "https://render.alipay.hk/p/w/hk-ulink/?path=/mobile&scheme=alipayhk%3A%2F%2Fplatformapi%2FstartApp%3FappId%3D85200168%26fromSite%3Dapp%26CashierAction%3DtradePay%26orderCode%3Dhttps%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR%26paymentRedirectUrl%3Dhttps%3A%2F%2Fkademo.intlalipay.cn%2Fmelitigo%2FTest_114.html%26terminalType%3DWAP",
+        "normalUrl": "https://render.alipay.hk/p/h5/hk-cashier-merchant/www/index.html/#/otp?scene=uefa&redirectUrl=https%3A%2F%2Frender.alipay.hk%2Fp%2Fh5%2Fhk-cashier-merchant%2Fwww%2Findex.html%23%2Fpreorder%3ForderCode%3Dhttps%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR",
+        "orderCodeForm": {
+            "codeDetails": [
+                {
+                    "codeValue": "https://global.alipay.com/281002040092tDM89hJ66zUrMS9hbIRv3kWR",
+                    "displayType": "TEXT"
+                },
+                {
+                    "codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&picSize=L",
+                    "displayType": "BIGIMAGE"
+                },
+                {
+                    "codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&picSize=M",
+                    "displayType": "MIDDLEIMAGE"
+                },
+                {
+                    "codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&picSize=S",
+                    "displayType": "SMALLIMAGE"
+                }
+            ],
+            "expireTime": "2024-02-28T19:53:58-08:00"
+        },
+        "paymentActionForm": "{\"method\":\"GET\",\"paymentActionFormType\":\"RedirectActionForm\",\"redirectUrl\":\"https://render.alipay.com/p/w/ac-fe-adaptor/?ACCodeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&paymentMethodType=ALIPAY_HK&ACPaymentRedirectUrl=https%3A%2F%2Fkademo.intlalipay.cn%2Fmelitigo%2FTest_114.html&ACAppType=WAP\"}",
+        "paymentAmount": {
+            "currency": "HKD",
+            "value": "100"
+        },
+        "paymentCreateTime": "2024-02-28T19:40:00-08:00",
+        "paymentId": "20240229194010800100188940208068249",
+        "paymentRequestId": "PAY_20240229113956783",
+        "redirectActionForm": {
+            "method": "GET",
+            "redirectUrl": "https://render.alipay.com/p/w/ac-fe-adaptor/?ACCodeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040092tDM89hJ66zUrMS9hbIRv3kWR&paymentMethodType=ALIPAY_HK&ACPaymentRedirectUrl=https%3A%2F%2Fkademo.intlalipay.cn%2Fmelitigo%2FTest_114.html&ACAppType=WAP"
+        },
+        "result": {
+            "resultCode": "PAYMENT_IN_PROCESS",
+            "resultMessage": "payment in process",
+            "resultStatus": "U"
+        }
+    }
+
+##### App sample code
+
+copy
+
+    {
+      "appIdentifier": "hk.alipay.wallet",
+      "applinkUrl": "https://render.alipay.hk/p/w/hk-ulink/?path=/mobile&scheme=alipayhk%3A%2F%2Fplatformapi%2FstartApp%3FappId%3D85200168%26fromSite%3Dapp%26CashierAction%3DtradePay%26orderCode%3Dhttps%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB%26paymentRedirectUrl%3Dhttps%3A%2F%2Fkademo.intlalipay.cn%2Forder%2Fdetail%3Fid%3DALIPAY_HK_1709199158552F696Z%26wallet%3DALIPAY_HK%26terminalType%3DWAP",
+      "normalUrl": "https://render.alipay.hk/p/h5/hk-cashier-merchant/www/index.html/#/otp?scene=uefa&redirectUrl=https%3A%2F%2Frender.alipay.hk%2Fp%2Fh5%2Fhk-cashier-merchant%2Fwww%2Findex.html%23%2Fpreorder%3ForderCode%3Dhttps%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB",
+      "orderCodeForm": {
+        "codeDetails": [
+          {
+            "codeValue": "https://global.alipay.com/281002040090cQa97QFkz1kHL8zTDW47PyqB",
+            "displayType": "TEXT"
+          },
+          {
+            "codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&picSize=L",
+            "displayType": "BIGIMAGE"
+          },
+          {
+            "codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&picSize=M",
+            "displayType": "MIDDLEIMAGE"
+          },
+          {
+            "codeValue": "https://global.alipay.com/merchant/order/showQrImage.htm?code=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&picSize=S",
+            "displayType": "SMALLIMAGE"
+          }
+        ],
+        "expireTime": "*************************"
+      },
+      "paymentActionForm": "{\"method\":\"GET\",\"paymentActionFormType\":\"RedirectActionForm\",\"redirectUrl\":\"https://render.alipay.com/p/w/ac-fe-adaptor/?ACCodeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&paymentMethodType=ALIPAY_HK&ACPaymentRedirectUrl=https%3A%2F%2Fkademo.intlalipay.cn%2Forder%2Fdetail%3Fid%3DALIPAY_HK_1709199158552F696Z%26wallet%3DALIPAY_HK&ACAppType=WAP\"}",
+      "paymentAmount": {
+        "currency": "HKD",
+        "value": "100"
+      },
+      "paymentCreateTime": "2024-02-29T01:32:41-08:00",
+      "paymentId": "20240229194010800100188010209093907",
+      "paymentRequestId": "ALIPAY_HK_1709199158552F696Z",
+      "redirectActionForm": {
+        "method": "GET",
+        "redirectUrl": "https://render.alipay.com/p/w/ac-fe-adaptor/?ACCodeValue=https%3A%2F%2Fglobal.alipay.com%2F281002040090cQa97QFkz1kHL8zTDW47PyqB&paymentMethodType=ALIPAY_HK&ACPaymentRedirectUrl=https%3A%2F%2Fkademo.intlalipay.cn%2Forder%2Fdetail%3Fid%3DALIPAY_HK_1709199158552F696Z%26wallet%3DALIPAY_HK&ACAppType=WAP"
+      },
+      "result": {
+        "resultCode": "PAYMENT_IN_PROCESS",
+        "resultMessage": "payment in process",
+        "resultStatus": "U"
+      }
+    }
+
+##### FAQs
+
+###### What is the normalUrl?
+
+For web transactions, Antom returns _normalUrl_, which the server-side needs to pass to the client-side for redirection. When you initiate payment for the same order again, you need to obtain a new _normalUrl_ for redirection.
+
+###### What is the paymentId?
+
+If you store the corresponding order number for subsequent refunds and reconciliations, you can specify the _paymentId_.
+
+### Redirect to the Checkout page of the payment method Client-side
+
+Web
+
+WAP
+
+App
+
+##### Link type of web
+
+The merchant server passes the _normalUrl_ to the client, and the client page handles the redirection process to _normalUrl_.
+
+##### Link type of WAP
+
+The server-side passes the _normalUrl_ to the client-side, which is redirected from the client-side page.
+
+##### Link type of app
+
+For app transactions, Antom will return one or more payment links of _normalUrl_, _applinkUrl_, and _schemeUrl_ according to the capabilities of the payment method after initiating a payment request.
+
+<table style="width:742px" class="lake-table"><colgroup><col width="151" span="1"><col width="341" span="1"><col width="250" span="1"></colgroup><tbody><tr style="height:38px"><td style="background-color:#D9EAFC"><p data-lake-id="ced65508f41bb01c6a09f322c994e0a3"><strong><span class="lake-fontsize-12">Link type</span></strong></p></td><td style="background-color:#D9EAFC"><p data-lake-id="c35de1ba15a1b66e91d05f6f6f790da1"><strong><span>Features</span></strong></p></td><td style="background-color:#D9EAFC"><p data-lake-id="4df238fcf17776cb34d1fa6f18a50072"><strong><span>Methods</span></strong></p></td></tr><tr style="height:33px"><td><p data-lake-id="b3d1ef22635a8de91d9006adfbeb8099"><span>applinkUrl</span></p></td><td><p data-lake-id="1ca872457e89bc31f5d64ba7fe6b204e"><span>If the </span>buyer<span> installs the payment method app, directly pull up the app checkout page. If the </span>buyer<span> does not have the payment method app installed, pull up the mobile browser.</span></p></td><td rowspan="3"><p data-lake-id="a3a373a976bf9374ccab2d04561076d1"><span>Redirect to the merchant app to open this link. Refer to </span><a href="https://global.alipay.com/docs/ac/autodebit_en/best_practice" target="_blank"><span>Best practices</span></a><span> for more details.</span></p></td></tr><tr style="height:33px"><td><p data-lake-id="2376d3e3e67d609c2a65b23284f4a8a3"><span>normalUrl</span></p></td><td><p data-lake-id="20e49507656a4bfee12515356eb7ae90"><span>Pull up the mobile browser, and some payment methods will redirect to the app checkout page, and some payment methods will directly make H5 payments.</span></p></td></tr><tr style="height:33px"><td><p data-lake-id="da5a815857bd7002ee1c6ceb3fd46cea"><span>schemeUrl</span></p></td><td><p data-lake-id="f3999cd24aaa47c18bf4b1b9728c55fc"><span>If the </span>buyer<span> installs the payment method app, directly pull up the app checkout page. If the </span>buyer<span> does not have the payment method app installed, return the error.</span></p></td></tr></tbody></table>
+
+The following figure shows the page effect after completing this step:
+
+![Image 18: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1712831790503-d4a64766-1c85-4e6d-8a07-948e5eb3c220.png)
+
+RMO.33WILLBEDEDUCTEDFROMYOURBOOST
+
+0%COMBEDCOTTONFORAPRER
+
+DCZ5SU65IANWKBO2CXMUIAL6
+
+CHECKOUT
+
+RM0.33
+
+AYMENTMETHODS
+
+DCZ5SU65JANWKRG2CXWUJAL6
+
+TEST.ACQ.O1
+
+CLASSICBLACKCOTTONT-SHIRT
+
+XCWMDJKFZ2J7AB4T
+
+CONFRMPDYMENT
+
+CONFRMPAYMENT
+
+白BALANCE:RM542
+
+WALLETACCOUNT
+
+CREDITCARD&DEBITCA
+
+XCWMDJKFZ2J7AB4T
+
+HAUTHENTICATE
+
+O221OO5OVCHBMFXL3N
+
+RM0.33
+
+BALANCE:RM542
+
+FORGOTPIN?
+
+OTALTOPAY:
+
+RDERCONFIRMATION
+
+EXTRA-SOFTFEEL
+
+RM0.33
+
+TESTACO\_O1
+
+RDERREVIEW
+
+RM0.33
+
+TESTACO\_O1
+
+SHIPPING
+
+DBYALIPAY-
+
+20221O05OVCHBMFXL3MGXT
+
+RM0.33
+
+UBTOTAL:
+
+RM0.33
+
+15:01
+
+15:01
+
+O
+
+15:01
+
+PAY
+
+L令
+
+RM0.00
+
+L令
+
+ALIPAY
+
+BOOST
+
+$二
+
+DCZ5SU65IANWKRA2CXWUIA
+
+FOR
+
+TOTAL:
+
+O
+
+一
+
+X
+
+RMO.33WILLBEDEDUCTEDFROMYOURBOOST
+
+0%COMBEDCOTTONFORAPRER
+
+DCZ5SU65IANWKBO2CXMUIAL6
+
+CHECKOUT
+
+RM0.33
+
+AYMENTMETHODS
+
+DCZ5SU65JANWKRG2CXWUJAL6
+
+TEST.ACQ.O1
+
+CLASSICBLACKCOTTONT-SHIRT
+
+XCWMDJKFZ2J7AB4T
+
+CONFRMPDYMENT
+
+CONFRMPAYMENT
+
+白BALANCE:RM542
+
+WALLETACCOUNT
+
+CREDITCARD&DEBITCA
+
+XCWMDJKFZ2J7AB4T
+
+HAUTHENTICATE
+
+O221OO5OVCHBMFXL3N
+
+RM0.33
+
+BALANCE:RM542
+
+FORGOTPIN?
+
+OTALTOPAY:
+
+RDERCONFIRMATION
+
+EXTRA-SOFTFEEL
+
+RM0.33
+
+TESTACO\_O1
+
+RDERREVIEW
+
+RM0.33
+
+TESTACO\_O1
+
+SHIPPING
+
+DBYALIPAY-
+
+20221O05OVCHBMFXL3MGXT
+
+RM0.33
+
+UBTOTAL:
+
+RM0.33
+
+15:01
+
+15:01
+
+O
+
+15:01
+
+PAY
+
+L令
+
+RM0.00
+
+L令
+
+ALIPAY
+
+BOOST
+
+$二
+
+DCZ5SU65IANWKRA2CXWUIA
+
+FOR
+
+TOTAL:
+
+O
+
+一
+
+X
+
+#### FAQs
+
+##### How to handle different payment experiences？
+
+You do not need to deal with the different experiences corresponding to different payment methods. It only needs to redirect to the _normalUrl_ through the front-end page. Different payment experiences are promoted by _normalUrl_ to complete the rendering and payment process.
+
+### Display the payment results page Client-side
+
+You need to provide an HTTPS address and specify it through the _paymentRedirectUrl_ field of the **pay** API, which is used to display the payment results on the merchant side.
+
+![Image 19: image.png](https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1712827877509-9d6a4347-c27a-41e3-aa2b-dfeb66715aeb.png)
+
+#### FAQs
+
+##### What does the payment results page show?
+
+In the case of successful payment or failed payment, it can redirect to the result page from the payment method side.
+
+##### Does redirecting to the results page mean the payment was successful?
+
+The result page cannot be used as the basis for judging whether the payment is successful:
+
+*   After the buyer makes a successful payment, the buyer may not be redirected to the result page due to network or other reasons.
+*   If the buyer has not completed the payment, it still has an entrance that can be redirected to the result page.
+*   Antom does not support specifying information that represents the payment result in the _paymentRedirectUrl_ field.
+
+Step 3: Obtain the payment resultsClient-side
+---------------------------------------------
+
+When the buyer completes the payment or the payment times out, you can get the corresponding payment result from the Antom asynchronous notification or by inquiring the payment result actively.
+
+### **Receive the asynchronous notification**
+
+When a payment is completed or fails, Antom sends an asynchronous notification ([**notifyPayment**](https://global.alipay.com/docs/ac/ams/paymentrn_online)) to the address that you specified in the **pay** API via the _paymentNotifyUrl_ parameter. If the address of each payment is the same, you can also configure the address in Antom Dashboard.
+
+The following is the notification request sample code:
+
+copy
+
+    {
+      "notifyType": "PAYMENT_RESULT",
+      "result": {
+        "resultCode": "SUCCESS",
+        "resultStatus": "S",
+        "resultMessage": "success"
+      },
+      "paymentRequestId": "paymentRequestId01",
+      "paymentId": "2020010123456789XXXX",
+      "paymentAmount": {
+        "value": "100",
+        "currency": "HKD"
+      },
+      "paymentCreateTime": "2020-01-01T12:01:00+08:30",
+      "paymentTime": "2020-01-01T12:01:01+08:30"
+    }
+
+The following is the code that verifies and returns the notification:
+
+copy
+
+    @RequestMapping(path = "/payResult", method = RequestMethod.POST)
+    public ResponseEntity<AlipayResponse> paymentNotifyProcessor(HttpServletRequest request,
+                                                                 @RequestBody String body) {
+    
+        // retrieve the required parameters from the request header.
+        String requestTime = request.getHeader("request-time");
+        String clientId = request.getHeader("client-id");
+        String rawSignature = request.getHeader("signature");
+        String signature = "";
+    
+        // get valid part from raw signature
+        if(rawSignature==null||rawSignature.isEmpty()){
+            throw new RuntimeException("empty notify signature");
+        }else {
+            String[] parts = rawSignature.split("signature=");
+            if (parts.length > 1) {
+                signature = parts[1];
+            }
+        }
+    
+        // verify payment result notify's signature
+        boolean verifyResult = SignatureTool.verify(request.getMethod(), request.getRequestURI(),
+                clientId, requestTime, body, signature,
+                ALIPAY_PUBLIC_KEY);
+        if (!verifyResult) {
+            throw new RuntimeException("Invalid notify signature");
+        }
+    
+        // update the record status with notify result
+    
+        // respond the server that we accept the notify
+        Result result = new Result("SUCCESS", "success", ResultStatusType.S);
+        AlipayResponse response = new AlipayResponse();
+        response.setResult(result);
+        return ResponseEntity.ok().body(response);
+    }
+
+The following is the notification response sample code:
+
+copy
+
+    {
+      "result": {
+        "resultCode": "SUCCESS",
+        "resultStatus": "S",
+        "resultMessage": "Success"
+      }
+    }
+
+#### FAQs
+
+##### When will the notification be sent?
+
+After the payment is completed, Antom will send the asynchronous notification to you in 3~5s. If the payment is not completed, you need to wait for Antom to close the order before sending the asynchronous notification. The time to close the order is different for different payment methods, generally the default is 14 minutes.
+
+##### Will the asynchronous notification be re-sent?
+
+If you receive an asynchronous notification from Antom, you are required to return the response in the [Sample code](https://global.alipay.com/docs/ac/cashier_payment_cn/notification) format. If you do not respond to the asynchronous notification as required, or the asynchronous notification is not delivered due to network reasons, the notification will be automatically resent within 24 hours. The notification can be resent up to 8 times or until a correct response is received to terminate delivery. The sending intervals are as follows: 0 minutes, 2 minutes, 10 minutes, 10 minutes, 1 hour, 2 hours, 6 hours, and 15 hours.
+
+##### Do I need to countersign the response?
+
+If you receive an asynchronous notification from Antom, you are required to return the response in the [Sample code](https://global.alipay.com/docs/ac/cashier_payment_cn/notification) format, but you do not need to countersign the response.
+
+##### How do I understand the meaning of the following key fields?
+
+*   _result_: Indicates the payment result of the order.
+*   _paymentRequestId_: Indicates the payment request number you generated for consult, cancel, and reconciliation.
+*   _paymentId_: Indicates the payment order number generated by Antom, used for refund and reconciliation.
+*   _paymentAmout_: Indicates the payment amount.
+
+### Inquire about the payment result
+
+Initiating a query request will involve the following parameters.
+
+<table style="width:784px;outline:none;border-collapse:collapse;border:1px solid rgb(217, 217, 217)" class="lake-table"><colgroup><col width="211" span="1"><col width="133" span="1"><col width="440" span="1"></colgroup><tbody><tr style="height:33px"><td style="background-color:rgb(217, 234, 252);min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="ccea6d5077f83800589b65a7e08ec821" id="ud6d7e475" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" style="color:rgb(32, 48, 76);font-size:14px" data-mce-style="font-size: 11px">Parameter name</span></strong></p></td><td style="background-color:rgb(217, 234, 252);min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="6b510be27a1146960b3250e1c7f6876e" id="u3eb50d3a" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" style="color:rgb(32, 48, 76);font-size:14px" data-mce-style="font-size: 11px">is required?</span></strong></p></td><td style="background-color:rgb(217, 234, 252);min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="c2e126e4754c4d707300f3b8adcf61b9" id="u5631fd0f" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" style="color:rgb(32, 48, 76);font-size:14px" data-mce-style="font-size: 11px">Description</span></strong></p></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="a416b03395e4fc19136bdc6f6efb96a5" id="ub7a97d33" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">paymentRequestId</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="052265ed6da04f3593976d6bbc841a93" id="u67de8a69" style="text-align:center;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span>No</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="9e352856c032b89365f05092be09d70c" id="u97f6236b" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">The payment request number generated by the merchant</p></td></tr></tbody></table>
+
+The following is the sample code:
+
+copy
+
+      AlipayClient defaultAlipayClient = new DefaultAlipayClient(EndPointConstants.SG,
+              merchantPrivateKey, alipayPublicKey);
+    
+      AlipayPayQueryRequest alipayPayQueryRequest = new AlipayPayQueryRequest();
+      alipayPayQueryRequest.setClientId(CLIENT_ID);
+      alipayPayQueryRequest.setPath("/ams/sandbox/api/v1/payments/inquiryPayment");
+      alipayPayQueryRequest.setPaymentRequestId("paymentRequestId01");
+    
+      AlipayPayQueryResponse alipayPayQueryResponse;
+      try {
+          alipayPayQueryResponse = defaultAlipayClient.execute(alipayPayQueryRequest);
+      } catch (AlipayApiException e) {
+          String errorMsg = e.getMessage();
+          // handle error condition
+      }
+
+**Obtain the response code**
+
+copy
+
+    {
+      "result": {
+        "resultCode": "SUCCESS",
+        "resultStatus": "S",
+        "resultMessage": "Success"
+      },
+      "paymentStatus": "SUCCESS",
+      "paymentRequestId": "paymentRequestId01",
+      "paymentId": "2019060811401080010018882020035XXXX",
+      "paymentAmount": {
+        "value": "100",
+        "currency": "HKD"
+      },
+      "paymentCreateTime": "2019-06-01T12:01:01+08:30",
+      "paymentTime": "2019-06-01T12:01:01+08:30",
+      "transactions": null
+    }
+
+#### FAQs
+
+##### How do I understand the meaning of the following key fields?
+
+*   _result_: the result of the API call. It only indicates the result of the **inquiryPayment** API call. The order result should be determined based on the _paymentStatus_. `SUCCESS` and `FAIL` indicate final results, while `PROCESSING` indicates that the transaction is still in progress.
+*   _paymentAmount_: amount verification. If there is a need for amount verification, this field can be used.
+
+##### How frequently should I initiate the query?
+
+It is recommended to initiate a round-robin query at an interval of 2 seconds until either the final payment result is retrieved or an asynchronous payment notification is received.
+
+Best practice
+=============
+
+Follow these best practices to improve integration efficiency.
+
+Customize the payment timeout
+-----------------------------
+
+In the checkout payment scenario, the default timeout on the Antom side is 14 mins, and after the payment timeout, the buyer can't continue to pay. To define the timeout time, you can specify through the _paymentExpireTime_ parameter of the **pay** API. After exceeding the specified time, the buyer can not scan the code or log in to the checkout page.
+
+The following sample code shows how to specify the _paymentExpireTime_ parameter in the **pay** API:
+
+Web
+
+WAP
+
+App
+
+### Web sample code
+
+copy
+
+    {
+      "env": {
+        "terminalType": "WEB"
+      },
+      "order": {
+        "orderAmount": {
+          "currency": "CNY",
+          "value": "1314"
+        },
+        "orderDescription": "Cappuccino #grande (Mika's coffee shop)",
+        "referenceOrderId": "ORDER_0517884936248XXXX"
+      },
+      "paymentAmount": {
+        "currency": "CNY",
+        "value": "1314"
+      },
+      "paymentMethod": {
+        "paymentMethodType": "ALIPAY_CN"
+      },
+      "paymentExpiryTime":"2024-01-20T08:51:06+08:00",
+      "paymentNotifyUrl": "https://www.gaga.com/notify",
+      "paymentRedirectUrl": "imeituan://",
+      "paymentRequestId": "iJ9lsVgTx8pX7qJpvW6rfqEE2Kdv9M3lgL8e1999ydfz52uMSqwvT3qXYw8IFBYt",
+      "productCode": "CASHIER_PAYMENT",
+      "settlementStrategy": {
+        "settlementCurrency": "USD"
+      }
+    }
+
+### WAP sample code
+
+copy
+
+    {
+      "env": {
+        "osType": "ANDROID",
+        "terminalType": "WAP"
+      },
+      "order": {
+        "orderAmount": {
+          "currency": "CNY",
+          "value": "1314"
+        },
+        "orderDescription": "Cappuccino #grande (Mika's coffee shop)",
+        "referenceOrderId": "ORDER_0517884936248XXXX"
+      },
+      "paymentAmount": {
+        "currency": "CNY",
+        "value": "1314"
+      },
+      "paymentMethod": {
+        "paymentMethodType": "ALIPAY_CN"
+      },
+      "paymentExpiryTime":"2024-01-20T08:51:06+08:00",
+      "paymentNotifyUrl": "https://www.gaga.com/notify",
+      "paymentRedirectUrl": "imeituan://",
+      "paymentRequestId": "iJ9lsVgTx8pX7qJpvW6rfqEE2Kdv9M3lgL8e1999ydfz52uMSqwvT3qXYw8IFBYt",
+      "productCode": "CASHIER_PAYMENT",
+      "settlementStrategy": {
+        "settlementCurrency": "USD"
+      }
+    }
+
+### App sample code
+
+copy
+
+    {
+      "env": {
+        "osType": "ANDROID",
+        "terminalType": "APP"
+      },
+      "order": {
+        "orderAmount": {
+          "currency": "CNY",
+          "value": "1314"
+        },
+        "orderDescription": "Cappuccino #grande (Mika's coffee shop)",
+        "referenceOrderId": "ORDER_0517884936248XXXX"
+      },
+      "paymentAmount": {
+        "currency": "CNY",
+        "value": "1314"
+      },
+      "paymentMethod": {
+        "paymentMethodType": "ALIPAY_CN"
+      },
+      "paymentExpiryTime":"2024-01-20T08:51:06+08:00",
+      "paymentNotifyUrl": "https://www.gaga.com/notify",
+      "paymentRedirectUrl": "imeituan://",
+      "paymentRequestId": "iJ9lsVgTx8pX7qJpvW6rfqEE2Kdv9M3lgL8e1999ydfz52uMSqwvT3qXYw8IFBYt",
+      "productCode": "CASHIER_PAYMENT",
+      "settlementStrategy": {
+        "settlementCurrency": "USD"
+      }
+    }
+
+If you specify _paymentExpireTime_, the valid time that the buyer can pay becomes the time in _paymentExpireTime_.
+
+If the buyer pays after this time, there are two types of experience:
+
+*   The buyer is unable to complete the payment
+*   The buyer receives a refund immediately after making the payment
+
+Obtain the payment continuation URL
+-----------------------------------
+
+Antom side is directly connected to many payment methods. There is a part of the payment method order interface time-consuming situation, which may lead to your failure to get the response. The buyer can not redirect to the payment continuation URL, affecting the success rate of payment and user experience.
+
+It is recommended to set the interface timeout to 10s to ensure the success rate of getting the response. For the case of calling pay timeout, it is recommended to launch the original request to retry and get the payment continuation URL again.
+
+Optimize the payment experience Only for Web
+--------------------------------------------
+
+Some payment methods support buyers to pay by scanning the code or password on PC, and you can target such payment methods without redirection. When the buyer selects this payment method, the code value in the API response will be rendered directly on the merchant's page for displaying the QR code or password, which reduces the page redirect and improves the experience.
+
+The QR code returned by Antom will not be refreshed automatically. When displaying the QR code, add _expireTime_ in the API response to display the timeout time. When displaying the passphrase, the copy function of the passphrase is realized, which makes it easy for buyers to paste the payment into the payment method app.
+
+Redirect to the merchant result page
+------------------------------------
+
+1.  Not all payment methods pull up the app can redirect to your specified address, some payment methods are not supported, such as Kakaopay (KakaoTalk).
+2.  If the buyer has installed more than one browser. Then when redirecting to the https result page address after payment completion, it will only redirect to the default browser, but the scheme address is not affected.
+
+Suggestions on processing logic for merchant results pages
+----------------------------------------------------------
+
+1.  **Client redirection abnormality**
+
+If the buyer pays successfully, the buyer may not be able to redirect to the _paymentRedirectUrl_ that you specified due to network reasons or the limitations of the payment method itself, and the following two points should be noted in this case:
+
+*   You cannot use the client redirection as the basis for determining the success of the payment.
+*   If the _paymentRedirectUrl_ of the payment method page fails to redirect to the merchant page, the buyer may manually click the original merchant page. Therefore, in order to avoid the original merchant page manually cutting back to the payment page, leading the buyer to initiate payment of the order again, it is recommended to add a pop-up window for querying the transaction results after redirecting on the original merchant's order page, when the buyer clicks on the pop-up window to display the result of the order, avoiding the payment of the order again.
+
+2.  **Trigger order result query after redirection**
+
+If the merchant side is pulled up after triggering a call to the **inquiryPayment** API, then the following different results are suggested:
+
+*   **Successful payment**: the page will display the content related to the shipment after successful payment;
+*   **Payment Failure**: the page displays the payment failure, and it is recommended to guide the re-payment;
+*   **Payment processing**: the page displays the landing effect, waits for 3-5s, and at the same time, queries the server-side payment results, if it still does not return successful or failed final results, it is recommended to display the "order processing" or "order management portal to view the final results"; it is not recommended to display the "network processing". If there is still no result, we suggest displaying "order processing" or going to "order management portal for final result".
+
+Payment failed retry
+--------------------
+
+For the same order on the merchant side, if the first payment is not completed and the buyer is supported to initiate the payment again, then it is recommended that you follow the integration steps below:
+
+1.  In the payment request, set the _referenceOrderId_ to the order ID and the _paymentRequestId_ to the payment order ID.
+2.  When the same order initiates payment again, the order status will be prioritized, and if the payment is successful, the buyer will be shown the "completed payment", and if the payment is not successful, the **pay** API will be called again to get a new _normalUrl_ to redirect. Note that since it is the same order, the _referenceOrderId_ can be kept unchanged, while the corresponding new payment order needs to update the _paymentRequestId_.
+3.  The merchant side needs to check that there is only one successful payment order for a merchant order, if there is more than one successful payment order, then it needs to call the **cancel** API to refund the buyer.
+4.  For payment methods that do not support refunds, it is recommended to cancel the first payment order before initiating a new payment.
+
+Obtain payment results
+----------------------
+
+In order to guarantee the stable acquisition of payment results and avoid the situation where the buyer's payment is completed but you do not get the payment result. It is recommended that you check the payment results at the following stages:
+
+1.  When the merchant payment result page is displayed.
+2.  Before shipping to the buyer.
+3.  When you receive the Antom reconciliation file.
+
+Open payment method URL Only for App
+------------------------------------
+
+<table style="width:765px;outline:none;border-collapse:collapse;border:1px solid rgb(217, 217, 217)" class="lake-table"><colgroup><col width="163" span="1"><col width="102" span="1"><col width="250" span="1"><col width="250" span="1"></colgroup><tbody><tr style="height:33px"><td style="background-color:rgb(217, 234, 252);min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="af75f412fb02592b53cb171db2c3e5d7" id="uef0944cd" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Payment method features</span></strong></p></td><td style="background-color:rgb(217, 234, 252);min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="cc0b105dd520799a7dcaf88fe3a3c32c" id="ua86767b3" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Link type</span></strong></p></td><td style="background-color:rgb(217, 234, 252);min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="1a8a599371fb0d91342b70ce931086e7" id="u69a4b63f" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Solution</span></strong></p></td><td style="background-color:rgb(217, 234, 252);min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="1e38211f2a32d0c5d253cb5397cb7c4c" id="u5f1937df" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><strong><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Advantages and disadvantages</span></strong></p></td></tr><tr style="height:127px"><td rowspan="3" style="vertical-align:middle;min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="4fb3f693673f435115a39a85682c11a4" id="u37944cb7" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Only the app checkout is supported</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="0171be08352a6b63e479fd3d637c586b" id="ua3bb1e0b" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">applinkUrl</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="03d04af0cb983fccd46d1780d86724f8" id="ue357c8d5" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Redirect to payment method app checkout:</span></p><p data-lake-id="72a4f8ac084b38822bc396fdf74383a6" id="u71b3e282" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">iOS calls the </span><em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">openUrl</span></em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px"> method, and Android calls the </span><em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">startActivity</span></em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px"> method.</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="8b20af09685e82517eb40aaea92083bb" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Advantages:</span></p><ol data-lake-id="9af7dc36054e4d88d03eed16f29b9a83" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="3a83a460ace17d0a09db8411009472f0"><span>Complete the payment in the payment methods app.</span></li><li data-lake-id="b2c64366472d370f5167d34478653232"><span>No need to deal with the exception that the </span>buyer<span> does not have the payment method app installed.</span></li></ol></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="48099d13046a8495d68ba9737b5c1888" id="u7140a3e0" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">normalUrl</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="41e0adb57885cc3568a9c67c1b8c9bc0" id="ufe2a4f8e" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Redirect to payment method app checkout:</span></p><p data-lake-id="51506539fc6c2d8b86731bcf51bfc358" id="udeb5e397" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">iOS calls the </span><em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">openUrl</span></em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px"> method, and Android calls the </span><em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">startActivity</span></em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px"> method.</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="5b5c5033b44a6c09f40403345cd0f467" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Advantages:</span></p><ol data-lake-id="85505e3b0e8b734ae6d91a53a71aafb6" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="425ef0cc5d0fbe498f640f3898488f66"><span>Complete the payment in the payment methods app.</span></li><li data-lake-id="c956b5647702234cafb3d1db5a5a9a70"><span>No need to deal with the exception that the </span>buyer<span> does not have the payment method app installed.</span></li></ol><p data-lake-id="9c0e4b45f8585ee9e199a0def6bf0916" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Disadvantage:</span></p><ol data-lake-id="2e8d3f7410cc717a7e48bab0f8c70186" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="3b43ab4aad48f510c9d2fdfe766c0822"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">During the payment process, the browser will be pulled up and then redirected to the payment method app.</span></li></ol></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="69db5b60df4c75a679491512e4107594" id="ufff31643" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">schemeUrl</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="4d2126b20118bec7b07a6cec4bf8643c" id="u705603b9" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Redirect to payment method app checkout:</span></p><p data-lake-id="85e2feb1a3533bc37e6e5761af0c9dac" id="ud56401dc" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">iOS calls the </span><em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">openUrl</span></em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px"> method, and Android calls the </span><em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">startActivity</span></em><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px"> method.</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="56d0342301a9fe12ad2712ccc3dc2a8a" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Advantage:</span></p><ol data-lake-id="591abc43b76231ac8fdc03bff1db4567" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="c226bd9874b9a0c27d7ecc366cb5d570"><span>Complete the payment in the payment methods app.</span></li></ol><p data-lake-id="e6b69aba9e7514fc6e3d6204c11390b4" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Disadvantage:</span></p><ol data-lake-id="dbec37698bf9d93e60ca00445c8e879f" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="bd0ee46ce38c2942485f0fe5cb4a31e4"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Handle the exception that the </span>buyer<span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px"> does not install the payment method app.</span></li></ol></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="ae97ad95b59aacd311df955ae50dd53a" id="udb34c41d" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Only the H5 checkout is supported</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="ee5d367a6d62a0731db1aa22a34ba425" id="u74cbc658" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span>normalUrl</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="61227afd37ee355335c53db3a8bce434" id="u302cbd75" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span>Open the checkout URL in webview.</span></p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="661b244832d080f8a60e421b513ea908" id="ueea69139" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px"><span class="lake-fontsize-11" data-mce-style="font-size: 11px" style="font-size:14px">Advantage:</span></p><ol data-lake-id="760fe14f8061dd7530cc0c3617b8c5a2" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="512c101ef325b5db698f5310f97bbab3"><span>The ordering, payment, and delivery processes are all completed within the merchant's app.</span></li></ol></td></tr><tr style="height:33px"><td rowspan="3" style="vertical-align:middle;min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="b6470d4939ba428f2a41f811fe3a4d1f" id="u5b033fae" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Support both app and H5 checkout</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="24e74ac866c67a819a91cbef90aac721" id="u68f87e0b" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">applinkUrl</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="b5cfa30115c63aa15ed11e07ccbe874e" id="u81409c8f" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">iOS calls the <em>openUrl</em> method, and Android calls the <em>startActivity</em> method.</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="97a7f45d3145669ed60400aaf1ca8a3e" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Advantages:</p><ol data-lake-id="120e481ac5f1a5055c24b654bce71fe9" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="644d7a5ff7436fb0f9f5781eca9106df"><span>Complete the payment in the payment methods app.</span></li><li data-lake-id="91e3afe2e821d49503b0a741439e44fe"><span>No need to deal with the exception that the </span>buyer<span> does not have the payment method app installed.</span></li></ol><p data-lake-id="1a53eb94f2ebea8b855584ac2f758065" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Disadvantage:</p><ol data-lake-id="cbb4ab36348486c50f85b6ed8232f1c4" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="7fe86b2c13e61a2ff7e4891fc88defe3">If the buyer does not install the payment method app, it will be downgraded to the H5 checkout, and the payment process will be completed in the system browser.</li></ol></td></tr><tr style="height:243px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="f834cc282fcc4631584a66a71b3e6e2b" id="ufbe9dd75" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">normalUrl</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="a14799b54174d944372264e0e76ed000" id="u30d89399" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Open the checkout URL in webview.</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="65bbe6a336fb96db407c151fdf5a9780" id="u3c971d11" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Advantage:</p><ol data-lake-id="55f367db4a1c2b3d15fa06f664587cf6" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="b43bbaae7843c7883bb8f03d0b2848be"><span>The ordering, payment, and delivery processes are all completed within the merchant's app.</span></li></ol><p data-lake-id="9d2443bf5710c4593474cc1cd0f97a8b" id="u49a64f24" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Disadvantage:</p><ol data-lake-id="3e39f9a3cc8042082f0d810140b3b1ac" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="806473ff29372fc444aac66efbf1f032">Unable to use app checkout, poor payment experience.</li></ol></td></tr><tr style="height:33px"><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="969215e2cf11f589c7553c8e8e5e3cf1" id="u4107fc96" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">schemeUrl</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="f7ed8f86b193e7ebb5d838cf3e898145" id="u1fe606c8" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">iOS calls the <em>openUrl</em> method, and Android calls the <em>startActivity</em> method.</p></td><td style="min-width:90px;font-size:14px;white-space:normal;overflow-wrap:break-word;border:1px solid rgb(217, 217, 217);padding:4px 8px;cursor:default"><p data-lake-id="886ab9a99d326d0a9169da6a01a33dc9" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Advantage:</p><ol data-lake-id="3281957c77ebbd6aba6f4bfa58e0a994" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="e6b33b0112c4ae1ac56121f48ffba825"><span>Complete the payment in the payment methods app.</span></li></ol><p data-lake-id="4e19bea6053520a50161391ca1d328dc" style="font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word;margin-top:0px;margin-bottom:0px">Disadvantages:</p><ol data-lake-id="ed71ec044ad8d987b4fa44077015f168" lake-indent="0" style="list-style-type:decimal;padding-left:23px;margin:0px;font-size:14px;color:rgb(38, 38, 38);line-height:1.74;letter-spacing:0.05em;outline-style:none;overflow-wrap:break-word"><li data-lake-id="1c6f7c07e592722ac1c3538a27e041ac">Handle the exception that the buyer does not install the payment method app.</li><li data-lake-id="b047ed3927f2ca3e853b66cd13fcdfe2">The H5 checkout cannot be used, and the transaction cannot be restored if the app is not installed.</li></ol></td></tr></tbody></table>
+
+### FAQs
+
+#### What to do when encountering a disambiguation box in Android?
+
+Refer to [Google documentation](https://developer.android.com/training/package-visibility/use-cases?hl=zh-cn#avoid-a-disambiguation-dialog) for more information.
+
+#### How to use WebView to load the order page?
+
+To provide an excellent user experience, you can use the WebView to load the order page in the client. After clicking the order, you can directly redirect to the mobile application that supports the payment method to complete the payment, you can refer to the JavaScript code binding to the mobile client code to realize this interactive experience.
+
+*   Android: [https://developer.android.com/develop/ui/views/layout/webapps/webview?hl=zh-cn#BindingJavaScript](https://developer.android.com/develop/ui/views/layout/webapps/webview?hl=zh-cn#BindingJavaScript)
+*   iOS: [https://developer.apple.com/documentation/javascriptcore/jsexport?language=objc](https://developer.apple.com/documentation/javascriptcore/jsexport?language=objc)
+
+To view the latest updates to the documentation, visit [Release notes](https://global.alipay.com/docs/releasenotes).
+
+![Image 20](https://ac.alipay.com/storage/2021/5/20/19b2c126-9442-4f16-8f20-e539b1db482a.png)![Image 21](https://ac.alipay.com/storage/2021/5/20/e9f3f154-dbf0-455f-89f0-b3d4e0c14481.png)
+
+@2024 Alipay [Legal Information](https://global.alipay.com/docs/ac/platform/membership)
+
+#### Is this page helpful?
+
+#### On this page
+
+[User experience](#Ksw2W "User experience")
+
+[Payment flow](#N7q25 "Payment flow")
+
+[Integration steps](#nbBeY "Integration steps")
+
+[Step 1: (Optional) Add a list of payment methods](#VTOFD "Step 1: (Optional) Add a list of payment methods")
+
+[Step 2: Invoke the pay API and get the payment continuation URL](#dUZwg "Step 2: Invoke the pay API and get the payment continuation URL")
+
+[Initiate a payment request](#vPvsX "Initiate a payment request")
+
+[Install an API library](#6hGTH "Install an API library")
+
+[Initialize the request instance](#ft0LA "Initialize the request instance")
+
+[Create a payment request](#BGvIj "Create a payment request")
+
+[Receive a payment response](#QhTNS "Receive a payment response")
+
+[FAQs](#v5Jyj "FAQs")
+
+[Redirect to the Checkout page of the payment method](#62lB0 "Redirect to the Checkout page of the payment method")
+
+[FAQs](#cXZYo "FAQs")
+
+[Display the payment results page](#x1EYF "Display the payment results page")
+
+[FAQs](#WblBX "FAQs")
+
+[Step 3: Obtain the payment results](#7FBHl "Step 3: Obtain the payment results")
+
+[Receive the asynchronous notification](#PMBUH "Receive the asynchronous notification")
+
+[FAQs](#nmLpr "FAQs")
+
+[Inquire about the payment result](#O1jRy "Inquire about the payment result")
+
+[FAQs](#tkpZO "FAQs")
+
+[Best practice](#6620B "Best practice")
+
+[Customize the payment timeout](#f5gU1 "Customize the payment timeout")
+
+[Obtain the payment continuation URL](#CRUkl "Obtain the payment continuation URL")
+
+[Optimize the payment experience](#luUxS "Optimize the payment experience")
+
+[Redirect to the merchant result page](#qDjwR "Redirect to the merchant result page")
+
+[Suggestions on processing logic for merchant results pages](#GdEle "Suggestions on processing logic for merchant results pages")
+
+[Payment failed retry](#hAeaV "Payment failed retry")
+
+[Obtain payment results](#o55cG "Obtain payment results")
+
+[Open payment method URL](#jyh8F "Open payment method URL")
+
+[FAQs](#QamNx "FAQs")
+
+[What to do when encountering a disambiguation box in Android?](#XTN3K "What to do when encountering a disambiguation box in Android?")
+
+[How to use WebView to load the order page?](#2IeMu "How to use WebView to load the order page?")
+
+      
+
+Feedback

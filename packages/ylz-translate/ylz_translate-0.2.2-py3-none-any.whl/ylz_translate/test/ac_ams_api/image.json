@@ -1,0 +1,1827 @@
+{
+    "02d703bfd5899cfbb047ffd481be7690": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "000",
+                "000"
+            ],
+            [
+                "$24.00",
+                "24.00 美元"
+            ]
+        ],
+        "url": "https://gw.alipayobjects.com/mdn/rms_0f16c4/afts/img/A*BI20Sp51C2EAAAAAAAAAAAAAARQnAQ"
+    },
+    "05d3c3fec41dca33bae43c9944f43e6a": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "RSA256",
+                "RSA256"
+            ],
+            [
+                "algorithm",
+                "算法"
+            ],
+            [
+                "ECC256",
+                "ECC256"
+            ],
+            [
+                "more...",
+                "很抱歉，您似乎没有提供需要翻译的具体英文内容。请您提供完整的文本，我将按照要求进行翻译。"
+            ],
+            [
+                "signature",
+                "签名"
+            ],
+            [
+                "keyVersion",
+                "密钥版本"
+            ],
+            [
+                "signature",
+                "签名"
+            ],
+            [
+                "HTTP header",
+                "HTTP头"
+            ],
+            [
+                "Content-Type",
+                "Content-Type"
+            ],
+            [
+                "application/json;charset=UFT-8",
+                "application/json;charset=UTF-8"
+            ],
+            [
+                "Need to be signed",
+                "需要签名"
+            ],
+            [
+                "client-id",
+                "客户端ID"
+            ],
+            [
+                "response-time",
+                "响应时间"
+            ],
+            [
+                "Need to be signed",
+                "需要签名"
+            ],
+            [
+                "Business request info",
+                "业务请求信息"
+            ],
+            [
+                "Response",
+                "请提供需要翻译的英文内容。"
+            ],
+            [
+                "HTTP body",
+                "HTTP正文"
+            ],
+            [
+                "code",
+                "代码"
+            ],
+            [
+                "JSON format",
+                "JSON 格式"
+            ],
+            [
+                "Result",
+                "抱歉，您没有提供需要翻译的英文内容。请您提供具体的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "message",
+                "消息"
+            ],
+            [
+                "status",
+                "状态"
+            ],
+            [
+                "HTTP response status",
+                "HTTP响应状态"
+            ]
+        ],
+        "url": "https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1675842622240-a4c513d4-908b-4384-b038-3f016f88612e.png"
+    },
+    "12e141094477726920270c1a3df4a570": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "ANT GROUP",
+                "蚂蚁集团"
+            ]
+        ],
+        "url": "https://ac.alipay.com/storage/2021/5/20/19b2c126-9442-4f16-8f20-e539b1db482a.png"
+    },
+    "13b999208ad6950724d987881f84af97": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "WOUO",
+                "很抱歉，您似乎输入了一条不完整的信息。如果您能提供需要翻译的具体英文内容，我将按照要求进行翻译。"
+            ],
+            [
+                "B",
+                "抱歉，您似乎没有提供需要翻译的英文内容。请您提供具体的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "?",
+                "请提供需要翻译的英文内容。"
+            ],
+            [
+                "8",
+                "8"
+            ],
+            [
+                "Test mode",
+                "测试模式"
+            ],
+            [
+                "</>",
+                "此标记表示HTML或XML的标签，通常用于在网页或文档中嵌入代码。在翻译中，直接保留原始内容：</>"
+            ],
+            [
+                "Home Page",
+                "首页"
+            ],
+            [
+                "A quick start to receiving payments",
+                "快速开始接收付款"
+            ],
+            [
+                " Transaction",
+                "交易"
+            ],
+            [
+                " In just a few steps, you can activate your account to receive payments.",
+                "只需几个简单步骤，您就可以激活账户接收付款。"
+            ],
+            [
+                " Finance",
+                "金融"
+            ],
+            [
+                "Activate now >",
+                "立即激活 >"
+            ],
+            [
+                " Data Insight",
+                "数据洞察"
+            ],
+            [
+                "Developer",
+                "开发者"
+            ],
+            [
+                "Customized checkout solutions",
+                "定制化的结账解决方案"
+            ],
+            [
+                "oublic static void pay() {",
+                "public static void pay() {"
+            ],
+            [
+                "Through API integration, you can customize the checkout experience and accept payments ",
+                "通过API集成，您可以定制结账体验并接收支付。"
+            ],
+            [
+                "alipayPayRequest.setClientId(CLIENT_ID):",
+                "alipayPayRequest.setClientId(CLIENT_ID):"
+            ],
+            [
+                "on your site.",
+                "在您的网站上。"
+            ],
+            [
+                "alipayPayRequest.setPath(\"/am",
+                "alipayPayRequest.setPath(\"/am\");"
+            ],
+            [
+                "Payment Methods",
+                "支付方式"
+            ],
+            [
+                " Tailor an experience consistent with your brand",
+                "根据您的品牌形象定制体验"
+            ],
+            [
+                "AlipayPayResp try",
+                "支付宝支付响应尝试"
+            ],
+            [
+                "Support most of the world's popular payment methods",
+                "支持全球大多数流行的支付方式"
+            ],
+            [
+                "alipayPayResp",
+                "支付宝支付响应"
+            ],
+            [
+                "defaultAlipayClient.execute(a",
+                "默认的AlipayClient执行(a)"
+            ],
+            [
+                " Standard pricing",
+                "标准定价"
+            ],
+            [
+                " catch (AlipayApiExcepti",
+                "捕获 (AlipayApiException e)"
+            ],
+            [
+                "String errorMsg = e.get",
+                "String errorMsg = e.getMessage()"
+            ],
+            [
+                "Learn more ",
+                "了解更多信息"
+            ]
+        ],
+        "url": "https://cdn.nlark.com/yuque/0/2024/png/12884741/1712460538696-4df686c0-e54e-4ab8-a246-00564a6c4d0c.png"
+    },
+    "2752d184fa1747cf6d11d11c630c0d47": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "ANT GROUP",
+                "蚂蚁集团"
+            ]
+        ],
+        "url": "https://ac.alipay.com/storage/2021/5/20/e9f3f154-dbf0-455f-89f0-b3d4e0c14481.png"
+    },
+    "296fc19337c51c75e1c3a4f43f9fdac9": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "APP",
+                "APP"
+            ]
+        ],
+        "url": "https://gw.alipayobjects.com/mdn/rms_b3f2c2/afts/img/A*sHjISq1PKn8AAAAAAAAAAAAAARQnAQ"
+    },
+    "48a3ae030e4a723987c29417dae49d81": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "000",
+                "000"
+            ],
+            [
+                "$24.00",
+                "24.00 美元"
+            ]
+        ],
+        "url": "https://gw.alipayobjects.com/mdn/rms_0f16c4/afts/img/A*z7S_RrVPCj8AAAAAAAAAAAAAARQnAQ"
+    },
+    "4fde38fc892f994401da66e3a1dfa73b": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "WOAUO",
+                "很抱歉，您提供的内容\"WOAUO\"无法直接翻译，因为它看起来像是一个缩写或无明确意义的短语。如果这是某个专有名词或代码，请在上下文中提供更多信息以便准确翻译。否则，若需翻译其他金融技术或互联网信息化相关的英文内容，请提供完整的句子或段落。"
+            ],
+            [
+                "Settlement currency management",
+                "结算货币管理"
+            ],
+            [
+                " Home Page",
+                "首页"
+            ],
+            [
+                "Please add your bankaccountw",
+                "请添加您的银行账户。"
+            ],
+            [
+                "The settlement will be done in SGD for you.",
+                "结算将使用SGD（新加坡元）进行。"
+            ],
+            [
+                " Transaction",
+                "交易"
+            ],
+            [
+                "Settlement currency",
+                "结算货币"
+            ],
+            [
+                " Settlement period ",
+                "结算周期"
+            ],
+            [
+                "Minimum settlement amount ",
+                "最小结算金额"
+            ],
+            [
+                " Bank account status",
+                "银行账户状态"
+            ],
+            [
+                "Set as default settlement currency",
+                "设置为默认结算货币"
+            ],
+            [
+                "Settlement overv",
+                "结算概述"
+            ],
+            [
+                "SGD",
+                "SGD: Stochastic Gradient Descent"
+            ],
+            [
+                "Default",
+                "默认"
+            ],
+            [
+                "T+10",
+                "T+10"
+            ],
+            [
+                "200.00 SGD",
+                "200.00 新加坡元"
+            ],
+            [
+                " Unlinked ",
+                "未链接"
+            ],
+            [
+                "Add a bank account",
+                "添加银行账户"
+            ],
+            [
+                "Finance",
+                "蚂蚁金服是一家中国领先的金融科技公司，它利用大数据、人工智能和云计算等先进技术，提供支付、贷款、保险、理财等多种金融服务。其主要业务包括支付宝（Alipay）、花呗（Huabei）、借呗（Jiebei）、余额宝（Yu'ebao）等。蚂蚁金服致力于通过技术创新，打造一个开放、共享的金融生态系统，服务全球用户。"
+            ],
+            [
+                "Settlement time zone: UTC+08:00",
+                "结算时区：UTC+08:00"
+            ],
+            [
+                "USD",
+                "美元"
+            ],
+            [
+                "T+10",
+                "T+10"
+            ],
+            [
+                "100.00 USD",
+                "100.00 美元"
+            ],
+            [
+                " Unlinked ",
+                "未链接"
+            ],
+            [
+                "Settlement overview",
+                "结算概述"
+            ],
+            [
+                "Settlement contrac'",
+                "结算合约"
+            ],
+            [
+                "Balance",
+                "余额"
+            ],
+            [
+                "Settlement country/region",
+                "结算国家/地区"
+            ],
+            [
+                "Reserve",
+                "储备"
+            ],
+            [
+                "Singapore",
+                "新加坡"
+            ],
+            [
+                " Min. settlement amount",
+                "最小结算金额"
+            ],
+            [
+                "Settled",
+                "已结算"
+            ],
+            [
+                "200.00 SGD",
+                "200.00 新加坡元"
+            ],
+            [
+                "Unsettled",
+                "未结算"
+            ],
+            [
+                "Settlement model Settlement by contract",
+                "结算模型：按合同结算"
+            ],
+            [
+                "Settlement report download",
+                "结算报告下载"
+            ],
+            [
+                "Settlement calendar",
+                "结算日历"
+            ],
+            [
+                "Invoices",
+                "发票"
+            ],
+            [
+                "SGD/SG/USD/CNH",
+                "SGD (新加坡元) / SG (可能是指新加坡) / USD (美元) / CNH (离岸人民币)"
+            ],
+            [
+                "Fees",
+                "费用"
+            ],
+            [
+                " Data Insight",
+                "数据洞察"
+            ],
+            [
+                "Bank account",
+                "银行账户"
+            ],
+            [
+                "Developer",
+                "开发者"
+            ]
+        ],
+        "url": "https://cdn.nlark.com/yuque/0/2024/png/12884741/1712476154917-8a06c01c-0f06-41c5-8044-2802ac6400fc.png"
+    },
+    "6324d8c0092f52787891bde81d20fa32": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "antom",
+                "蚂蚁金服"
+            ],
+            [
+                "α",
+                "α"
+            ],
+            [
+                "Test mode",
+                "测试模式"
+            ],
+            [
+                "<1>",
+                "<1>"
+            ]
+        ],
+        "url": "https://cdn.nlark.com/yuque/0/2024/png/12884741/1712460633181-cf3a8bac-736d-4927-991e-a6674f88fc45.png"
+    },
+    "6becfbe74e5ce04e86fdddf9dca992ce": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "ava",
+                "Java"
+            ]
+        ],
+        "url": "https://cdn.marmot-cloud.com/storage/2020/9/15/67a3f336-e0cd-469c-966c-49583de22243.png"
+    },
+    "6e89ae3775c084d77f2011cd095cb22d": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "signature: algorithm=RSA256, keyVersion=2,",
+                "签名: algorithm=RSA256, keyVersion=2,"
+            ],
+            [
+                "Request URL format",
+                "请求URL格式"
+            ],
+            [
+                " https://{domain name}/ams/api/{version}/{endpoint}",
+                "https://{域名}/ams/api/{版本}/{端点}"
+            ],
+            [
+                "RSA256",
+                "RSA256"
+            ],
+            [
+                "Method",
+                "方法"
+            ],
+            [
+                "POST",
+                "POST"
+            ],
+            [
+                "algorithm",
+                "算法"
+            ],
+            [
+                "ECC256",
+                "ECC256"
+            ],
+            [
+                "more...",
+                "很抱歉，您似乎没有提供需要翻译的具体英文内容。请您提供完整的文本，我将按照要求进行翻译。"
+            ],
+            [
+                "signature",
+                "签名"
+            ],
+            [
+                "keyVersion",
+                "密钥版本"
+            ],
+            [
+                "Request",
+                "请提供需要翻译的英文内容。"
+            ],
+            [
+                "signature",
+                "签名"
+            ],
+            [
+                "HTTP header",
+                "HTTP头"
+            ],
+            [
+                "Content-Type",
+                "Content-Type"
+            ],
+            [
+                "application/json;charset=UFT-8",
+                "application/json;charset=UTF-8"
+            ],
+            [
+                "Need to be signed",
+                "需要签名"
+            ],
+            [
+                "client-id",
+                "客户端ID"
+            ],
+            [
+                "request-time",
+                "请求时间"
+            ],
+            [
+                "agent-token",
+                "agent-token"
+            ],
+            [
+                "Need to be signed",
+                "需要签名"
+            ],
+            [
+                "HTTP body",
+                "HTTP正文"
+            ],
+            [
+                "I Business request info",
+                "I 业务请求信息"
+            ],
+            [
+                "JSON format",
+                "JSON 格式"
+            ]
+        ],
+        "url": "https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1698201692215-d6848f32-110a-4c25-a930-0deff8bed9cf.png"
+    },
+    "760033831b3cd97c01ea90f2e7a3060a": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "antom",
+                "蚂蚁金服"
+            ],
+            [
+                "四",
+                "四"
+            ],
+            [
+                "？",
+                "抱歉，您还未提供需要翻译的英文内容。请提供您希望翻译的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "Test mode",
+                "测试模式"
+            ],
+            [
+                "</>",
+                "此标记表示HTML或XML的标签，通常用于在网页或文档中嵌入代码。在翻译中，直接保留原始内容：</>"
+            ],
+            [
+                "Quick start",
+                "快速入门"
+            ],
+            [
+                " Home Page",
+                "首页"
+            ],
+            [
+                " Transaction",
+                "交易"
+            ],
+            [
+                "Start integration",
+                "开始集成"
+            ],
+            [
+                "Activate an account",
+                "激活账户"
+            ],
+            [
+                "Receive live payments",
+                "接收实时支付"
+            ],
+            [
+                "Complete",
+                "完成"
+            ],
+            [
+                " Finance",
+                "金融"
+            ],
+            [
+                " Data Insight",
+                "数据洞察"
+            ],
+            [
+                "Step 2 of 4 ",
+                "第二步（共四步）"
+            ],
+            [
+                "Developer",
+                "开发者"
+            ],
+            [
+                "Activate an account",
+                "激活账户"
+            ],
+            [
+                "Quick start",
+                "快速入门"
+            ],
+            [
+                "merchant account to obtain the API key of the live environment.",
+                "商家账户以获取生产环境的API密钥。"
+            ],
+            [
+                "Request Log",
+                "请求日志"
+            ],
+            [
+                "Activation Successful",
+                "激活成功"
+            ],
+            [
+                " Notification Log",
+                "通知日志"
+            ],
+            [
+                "Activate an account",
+                "激活账户"
+            ],
+            [
+                "自",
+                "己翻译：\n\n蚂蚁金服是一家专注于金融科技的公司，它提供了各种服务，包括支付、贷款、保险和财富管理。其核心产品支付宝是全球最大的移动和在线支付平台之一。蚂蚁金服利用大数据、人工智能和云计算等先进技术，为全球数亿用户提供安全、便捷的金融服务。\n\n在技术文档翻译方面，重要的是保持原始内容的准确性和专业性。遇到专有名词、代码、数字、URL、程序接口、程序方法名称以及缩写时，应直接照搬原文，不作解释。例如，一个API（应用程序编程接口）可能会被称为“蚂蚁金服OpenAPI”，一个方法名可能是“蚂蚁信贷评估”（AntCreditAssessment），URL可能是“https://antfin.com”。如果遇到不明确的术语，直接输出英文原文即可，同时保持原文的列表、编号和括号等格式不变。"
+            ],
+            [
+                " Key configuration",
+                "关键配置"
+            ],
+            [
+                "Notification URL",
+                "通知URL"
+            ],
+            [
+                "Test case",
+                "测试用例"
+            ],
+            [
+                "Integration resources and tools",
+                "集成资源和工具"
+            ],
+            [
+                "</> Test mode",
+                "测试模式"
+            ],
+            [
+                "The following resources and tools can help you complete integration and deployment more efficiently.",
+                "以下资源和工具可帮助您更高效地完成集成和部署："
+            ],
+            [
+                "API call simulation",
+                "API 调用模拟"
+            ],
+            [
+                "Error scenario simulation",
+                "错误场景模拟"
+            ],
+            [
+                "Domain",
+                "领域"
+            ],
+            [
+                "https://open-sea-global.alipay.com",
+                "https://open-sea-global.alipay.com"
+            ],
+            [
+                "Integration resources",
+                "集成资源"
+            ],
+            [
+                "Client ID",
+                "客户ID"
+            ],
+            [
+                "SANDBOX_5YBV7C2ZEMH306816",
+                "SANDBOX_5YBV7C2ZEMH306816"
+            ],
+            [
+                "Integration tools",
+                "集成工具"
+            ],
+            [
+                "Alipay+ public key",
+                "支付宝+公钥"
+            ],
+            [
+                "To be generated",
+                "待生成的内容未提供。请提供需要翻译的英文文本。"
+            ],
+            [
+                "Notification URL",
+                "通知URL"
+            ],
+            [
+                "Your public key",
+                "您的公钥"
+            ],
+            [
+                "To be generated",
+                "待生成的内容未提供。请提供需要翻译的英文文本。"
+            ],
+            [
+                "Integration testing",
+                "集成测试"
+            ],
+            [
+                " Ready to start the integration?",
+                "准备开始集成吗？"
+            ],
+            [
+                "Generate key",
+                "生成密钥"
+            ]
+        ],
+        "url": "https://cdn.nlark.com/yuque/0/2024/png/12884741/1712476659413-59ad9033-5b9e-4b95-941d-2a439f884b7d.png"
+    },
+    "77b37d3bbfd9dd22f1cdff5bf69eb05f": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [],
+        "url": "https://yuque.antfin.com/images/lark/0/2024/png/119656509/1710837746654-4cd058eb-ebfe-47c9-ade1-3168464f8a01.png"
+    },
+    "7c26d45999329f423e7f1abd11987e4b": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "antom",
+                "蚂蚁金服"
+            ],
+            [
+                "B",
+                "抱歉，您似乎没有提供需要翻译的英文内容。请您提供具体的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "？",
+                "抱歉，您还未提供需要翻译的英文内容。请提供您希望翻译的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "中",
+                "很抱歉，您似乎没有提供需要翻译的英文内容。请您提供英文原文，我将按照要求进行翻译。"
+            ],
+            [
+                "Test mode",
+                "测试模式"
+            ],
+            [
+                " Home Page",
+                "首页"
+            ],
+            [
+                "Quick start",
+                "快速入门"
+            ],
+            [
+                " Transaction",
+                "交易"
+            ],
+            [
+                " Finance ",
+                "金融"
+            ],
+            [
+                "3",
+                "3"
+            ],
+            [
+                "Start integration",
+                "开始集成"
+            ],
+            [
+                "Activate an account",
+                "激活账户"
+            ],
+            [
+                "Receivelivepayments",
+                "接收实时支付"
+            ],
+            [
+                "Complete",
+                "完成"
+            ],
+            [
+                " Data Insight ",
+                "数据洞察"
+            ],
+            [
+                "Developer",
+                "开发者"
+            ],
+            [
+                "Step 2 of 4",
+                "第二步（共四步）"
+            ],
+            [
+                "Quick start ",
+                "快速入门"
+            ],
+            [
+                "Activate an account",
+                "激活账户"
+            ],
+            [
+                "Request Log",
+                "请求日志"
+            ],
+            [
+                "After the integration solution is ready, contact your business personnel to activate the  merchant account to obtain the API key of the live environment.",
+                "集成方案准备就绪后，联系您的商务人员激活商家账户，以获取生产环境的API密钥。"
+            ],
+            [
+                "Notification Log",
+                "通知日志"
+            ],
+            [
+                "essful",
+                "成功的"
+            ],
+            [
+                "Key configuration",
+                "关键配置"
+            ],
+            [
+                "Activate an account",
+                "激活账户"
+            ],
+            [
+                "Notification URL",
+                "通知URL"
+            ],
+            [
+                "Test case",
+                "测试用例"
+            ],
+            [
+                "API call simulation",
+                "API 调用模拟"
+            ],
+            [
+                "Integration resources and tools",
+                "集成资源和工具"
+            ],
+            [
+                "</> Test mode",
+                "测试模式"
+            ],
+            [
+                "The following resources and tools can help you complete integration and deployment more efficiently.",
+                "以下资源和工具可帮助您更高效地完成集成和部署："
+            ],
+            [
+                "Errorscenariosimulation",
+                "错误场景模拟"
+            ]
+        ],
+        "url": "https://cdn.nlark.com/yuque/0/2024/png/12884741/1712460187565-b69dde23-6b90-49f0-8994-cde2cbfc08da.png"
+    },
+    "84263019f8c7334be6413604fcb0a8a7": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [],
+        "url": "https://gw.alipayobjects.com/mdn/rms_0f16c4/afts/img/A*SGtiRq4cTQcAAAAAAAAAAAAAARQnAQ"
+    },
+    "885ebdb89dad7d6f62308937cfa5e962": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [],
+        "url": "https://gw.alipayobjects.com/mdn/rms_0f16c4/afts/img/A*9up-Q6qVdEQAAAAAAAAAAAAAARQnAQ"
+    },
+    "9b4110dee9ca4236784a17911b06779d": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "Construct content to be signed",
+                "构建要签名的内容"
+            ],
+            [
+                "Sender's asymmetric private key",
+                "发送者的非对称私钥"
+            ],
+            [
+                "Generate signature (sha256withrsa)",
+                "生成签名（sha256withrsa）"
+            ],
+            [
+                "Encode signature (base64UrlEncode)",
+                "编码签名 (base64UrlEncode)"
+            ],
+            [
+                "Add signature to request header",
+                "将签名添加到请求头中"
+            ]
+        ],
+        "url": "https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1664440939174-81dee3b9-1fe5-426c-ae5f-1ef47e716c00.png"
+    },
+    "9eff3374d0eef4a284dd28b5a621fafe": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "支付宝",
+                "支付宝 (Alipay)"
+            ],
+            [
+                "支",
+                "付宝"
+            ],
+            [
+                "ALIPAY",
+                "支付宝"
+            ]
+        ],
+        "url": "https://gw.alipayobjects.com/mdn/rms_b3f2c2/afts/img/A*g-x4R5biJnsAAAAAAAAAAAAAARQnAQ"
+    },
+    "a52690f40beef33d7d37f1bda6f48c27": {
+        "imageType": "svg",
+        "mode": "mark",
+        "result": [],
+        "url": "https://ac.alipay.com/storage/2024/3/26/d66c43c0-440d-4c97-9976-f2028a2c8c5e.svg"
+    },
+    "a5433daa921803d15c61c7cd12bebff1": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [],
+        "url": "https://yuque.antfin.com/images/lark/0/2023/png/119656509/1703062036421-1dea58a9-ac6d-4864-91fa-7a8bdce64ff7.png"
+    },
+    "ad66720194d31dde06068252092bc533": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "antom",
+                "蚂蚁金服"
+            ],
+            [
+                "B",
+                "抱歉，您似乎没有提供需要翻译的英文内容。请您提供具体的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "？",
+                "抱歉，您还未提供需要翻译的英文内容。请提供您希望翻译的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "8",
+                "8"
+            ],
+            [
+                "Test mode",
+                "测试模式"
+            ],
+            [
+                "/>",
+                "很抱歉，您似乎没有提供需要翻译的英文内容。请您提供具体的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                " Home Page",
+                "首页"
+            ],
+            [
+                "Quickstart",
+                "快速入门"
+            ],
+            [
+                "Transaction",
+                "交易"
+            ],
+            [
+                "B",
+                "抱歉，您似乎没有提供需要翻译的英文内容。请您提供具体的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                " Finance",
+                "金融"
+            ],
+            [
+                "Start integration",
+                "开始集成"
+            ],
+            [
+                "Activate an account",
+                "激活账户"
+            ],
+            [
+                "Receive live payments",
+                "接收实时支付"
+            ],
+            [
+                "Complete",
+                "完成"
+            ],
+            [
+                " Data Insigh1",
+                "数据洞察1"
+            ],
+            [
+                "B",
+                "抱歉，您似乎没有提供需要翻译的英文内容。请您提供具体的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "Developer",
+                "开发者"
+            ],
+            [
+                "+Create a merchant account",
+                "创建商家账户"
+            ],
+            [
+                "Quick start",
+                "快速入门"
+            ],
+            [
+                ":ount",
+                ":ount"
+            ],
+            [
+                "After the integration solution is ready, contact your business personnel to activate the",
+                "集成解决方案准备就绪后，联系您的业务人员进行激活。"
+            ],
+            [
+                "Request Log",
+                "请求日志"
+            ],
+            [
+                " merchant account to obtain the API key of the live environment.",
+                "商家账户以获取生产环境的API密钥。"
+            ],
+            [
+                "Notification Log",
+                "通知日志"
+            ],
+            [
+                "Activation Successful",
+                "激活成功"
+            ],
+            [
+                "Key configuration",
+                "关键配置"
+            ],
+            [
+                "Activate an account",
+                "激活账户"
+            ],
+            [
+                "自",
+                "己翻译：\n\n蚂蚁金服是一家专注于金融科技的公司，它提供了各种服务，包括支付、贷款、保险和财富管理。其核心产品支付宝是全球最大的移动和在线支付平台之一。蚂蚁金服利用大数据、人工智能和云计算等先进技术，为全球数亿用户提供安全、便捷的金融服务。\n\n在技术文档翻译方面，重要的是保持原始内容的准确性和专业性。遇到专有名词、代码、数字、URL、程序接口、程序方法名称以及缩写时，应直接照搬原文，不作解释。例如，一个API（应用程序编程接口）可能会被称为“蚂蚁金服OpenAPI”，一个方法名可能是“蚂蚁信贷评估”（AntCreditAssessment），URL可能是“https://antfin.com”。如果遇到不明确的术语，直接输出英文原文即可，同时保持原文的列表、编号和括号等格式不变。"
+            ],
+            [
+                "Notification URL",
+                "通知URL"
+            ],
+            [
+                "Test case",
+                "测试用例"
+            ],
+            [
+                "API call simulation",
+                "API 调用模拟"
+            ],
+            [
+                "Integrationresources and tools",
+                "集成资源和工具"
+            ],
+            [
+                "</> Test mode",
+                "测试模式"
+            ],
+            [
+                "The following resources and tools can help you complete integration and deployment more efficiently",
+                "以下资源和工具可帮助您更高效地完成集成和部署：\n\n1. API Reference: Consult the comprehensive API documentation for detailed instructions on interacting with our systems.\n2. SDKs: Utilize Software Development Kits in various programming languages to simplify integration.\n3. Sample Code: Review and adapt provided code snippets for a smoother onboarding process.\n4. Developer Portal: Access a wealth of information, guides, and tutorials in the dedicated developer portal.\n5. Testing Environment: Leverage a sandbox environment to test your integration without impacting production.\n6. Issue Tracker: Report and track issues through our dedicated support platform.\n7. Release Notes: Stay up to date with the latest updates, bug fixes, and enhancements by reviewing release notes.\n8. Support Forums: Engage with the community and our support team for troubleshooting and best practices.\n9. Webhooks: Implement webhooks to receive real-time notifications about events in your application.\n10. Documentation: Thoroughly read and refer to our official documentation for in-depth knowledge.\n\n请根据具体情况进行翻译，如遇到专有名词、代码、数字、URL、程序接口、程序方法名称以及缩写，请直接保留原始内容。"
+            ],
+            [
+                " Error scenario simulation",
+                "错误场景模拟"
+            ]
+        ],
+        "url": "https://cdn.nlark.com/yuque/0/2024/png/12884741/1712460292181-fa50eb9e-2723-41b9-8188-6aa3a2f5a029.png"
+    },
+    "b40b168d152709efd7ea744d620e3e63": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "antom",
+                "蚂蚁金服"
+            ],
+            [
+                "B",
+                "抱歉，您似乎没有提供需要翻译的英文内容。请您提供具体的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "？",
+                "抱歉，您还未提供需要翻译的英文内容。请提供您希望翻译的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "Testmode",
+                "测试模式"
+            ],
+            [
+                "<1>",
+                "<1>"
+            ],
+            [
+                " Home Page",
+                "首页"
+            ],
+            [
+                "Balance",
+                "余额"
+            ],
+            [
+                "Settlementcurrency:SGD",
+                "结算货币：SGD"
+            ],
+            [
+                " Transaction",
+                "交易"
+            ],
+            [
+                "Settlementtimezone:UTC+08:0o",
+                "结算时区：UTC+08:00"
+            ],
+            [
+                "Finance",
+                "蚂蚁金服是一家中国领先的金融科技公司，它利用大数据、人工智能和云计算等先进技术，提供支付、贷款、保险、理财等多种金融服务。其主要业务包括支付宝（Alipay）、花呗（Huabei）、借呗（Jiebei）、余额宝（Yu'ebao）等。蚂蚁金服致力于通过技术创新，打造一个开放、共享的金融生态系统，服务全球用户。"
+            ],
+            [
+                "The information from external acquirers cannot be provided.If you have any questions, please contact global.service@alipay.com.",
+                "外部收购方的信息无法提供。如有疑问，请联系 global.service@alipay.com。"
+            ],
+            [
+                "Settlement overview",
+                "结算概述"
+            ],
+            [
+                "SGDcurrentbalance",
+                "SGD当前余额"
+            ],
+            [
+                "Balance",
+                "余额"
+            ],
+            [
+                "Reserve",
+                "储备"
+            ],
+            [
+                "Frozenfunds",
+                "冻结资金"
+            ],
+            [
+                "TI SGD",
+                "TI SGD 保持原样，不做翻译。这可能是首字母缩写，具体含义可能需要上下文来确定。"
+            ],
+            [
+                "Settled",
+                "已结算"
+            ],
+            [
+                "Unprocessed funds",
+                "未处理的资金"
+            ],
+            [
+                ".DSGD",
+                ".DSGD (原文输出，可能是Deep Stochastic Gradient Descent的缩写，一种深度学习中的优化算法)"
+            ],
+            [
+                "Unsettled",
+                "未结算"
+            ],
+            [
+                "Settlementreportdownload",
+                "结算报告下载"
+            ],
+            [
+                "Total",
+                "总金额"
+            ],
+            [
+                "SGD",
+                "SGD: Stochastic Gradient Descent"
+            ],
+            [
+                "Invoices",
+                "发票"
+            ],
+            [
+                "Fees",
+                "费用"
+            ],
+            [
+                "Outgoing settlement",
+                "出款结算"
+            ],
+            [
+                " Data Insight",
+                "数据洞察"
+            ],
+            [
+                "The transfer has been initiated and is in process",
+                "转账已启动并正在进行中"
+            ],
+            [
+                " SGD",
+                "SGD: Stochastic Gradient Descent"
+            ],
+            [
+                "Developer",
+                "开发者"
+            ],
+            [
+                "Total",
+                "总金额"
+            ],
+            [
+                "LLLGD",
+                "LLLGD"
+            ]
+        ],
+        "url": "https://cdn.nlark.com/yuque/0/2024/png/12884741/1712461095770-6642219b-3bc2-492f-8769-8e78c9d9fdba.png"
+    },
+    "ba4802500ddb8fe1362eb23d7a7efa41": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "Construct content to be verified",
+                "待验证的内容如下：\n\n1. The Ant Group, formerly known as Ant Financial, is a financial technology company that operates Alipay, a widely used digital payment platform in China.\n2. One of Ant Group's key products is Yu'ebao (余额宝), a money market fund that allows users to earn interest on their idle funds in their Alipay accounts.\n3. Ant Group also provides credit services through Sesame Credit, a credit scoring system based on users' online behavior and financial data.\n4. In the realm of online lending, Ant Group's Huabei (花呗) and Jiebei (借呗) offer consumer and short-term business loans respectively.\n5. The company's technology infrastructure, such as the AntChain blockchain platform, supports various financial services and ensures data security.\n6. Ant Financial Services Group was officially renamed Ant Group Co., Ltd. in 2020.\n7. The company's mission is to use technology to make financial services more inclusive, efficient, and secure for everyone.\n8. Ant Group's website is www.antgroup.com, and its headquarters are located in Hangzhou, Zhejiang, China.\n\n请注意，以上内容为虚构，用于示例翻译，实际翻译时请提供需翻译的英文原文。"
+            ],
+            [
+                "Get signature from response header",
+                "从响应头获取签名"
+            ],
+            [
+                "Calculate content (sha256withrsa)",
+                "计算内容（使用sha256withrsa）"
+            ],
+            [
+                "Decode signature (base64UrlDecode)",
+                "解码签名（base64UrlDecode）"
+            ],
+            [
+                "Alipaypublickey",
+                "支付宝公钥"
+            ],
+            [
+                "Verify signature",
+                "验证签名"
+            ]
+        ],
+        "url": "https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1664441017739-e31cc973-7ae2-4028-b819-d90c8df65bd8.png"
+    },
+    "d2b0ce0227fc1f3a8183d1032e7711f4": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "Client",
+                "客户端"
+            ],
+            [
+                "Sever",
+                "服务器"
+            ],
+            [
+                "1: Add signature to request message",
+                "1: 在请求消息中添加签名"
+            ],
+            [
+                "2: Send request message",
+                "2: 发送请求消息"
+            ],
+            [
+                "2.1: Verify signature of request message",
+                "2.1: 验证请求消息的签名"
+            ],
+            [
+                "2.2: Handle request message",
+                "2.2: 处理请求消息"
+            ],
+            [
+                "2.3: Add signature to response message",
+                "2.3: 在响应消息中添加签名"
+            ],
+            [
+                "2.4: Response message",
+                "2.4: 响应消息"
+            ],
+            [
+                "3: Verify signature of response message",
+                "3: 验证响应消息的签名"
+            ],
+            [
+                "4: Handle response message",
+                "4: 处理响应消息"
+            ]
+        ],
+        "url": "https://idocs-assets.marmot-cloud.com/storage/idocs87c36dc8dac653c1/1625112891563-6fb47fb0-262b-4bc8-9ba5-5aa376faac8a.png"
+    },
+    "d704bc7c2dc0dd55f7e989dc62037626": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "00",
+                "零零"
+            ]
+        ],
+        "url": "https://gw.alipayobjects.com/mdn/rms_0f16c4/afts/img/A*vr8PQIgOnKEAAAAAAAAAAAAAARQnAQ"
+    },
+    "d70d46fd32b98952674df01c03131d87": {
+        "imageType": "svg",
+        "mode": "mark",
+        "result": [],
+        "url": "https://ac.alipay.com/storage/2024/3/26/a48bd336-aea0-4f16-bf83-616eacbb4434.svg"
+    },
+    "dfb09abbeb140a1add3b2d0f2bf4e974": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "antom",
+                "蚂蚁金服"
+            ],
+            [
+                "8",
+                "8"
+            ],
+            [
+                "Test mode",
+                "测试模式"
+            ],
+            [
+                " Home Page",
+                "首页"
+            ],
+            [
+                " Please add your bank account with currency SGD to withdraw your SGD balance.",
+                "请添加币种为SGD的银行账户，以便提取您的SGD余额。"
+            ],
+            [
+                "Add a new bank account ",
+                "新增银行账户"
+            ],
+            [
+                " Transaction",
+                "交易"
+            ],
+            [
+                "New",
+                "新的"
+            ],
+            [
+                "Settlement overview",
+                "结算概述"
+            ],
+            [
+                "?",
+                "请提供需要翻译的英文内容。"
+            ],
+            [
+                "$",
+                "$"
+            ],
+            [
+                "Settlement currency: SGD",
+                "结算货币：SGD"
+            ],
+            [
+                "Finance",
+                "蚂蚁金服是一家中国领先的金融科技公司，它利用大数据、人工智能和云计算等先进技术，提供支付、贷款、保险、理财等多种金融服务。其主要业务包括支付宝（Alipay）、花呗（Huabei）、借呗（Jiebei）、余额宝（Yu'ebao）等。蚂蚁金服致力于通过技术创新，打造一个开放、共享的金融生态系统，服务全球用户。"
+            ],
+            [
+                "Settlement time zone: UTC+08:00",
+                "结算时区：UTC+08:00"
+            ],
+            [
+                "Set up",
+                "设置"
+            ],
+            [
+                "Settlement overview",
+                "结算概述"
+            ],
+            [
+                "SGD",
+                "SGD: Stochastic Gradient Descent"
+            ],
+            [
+                "Default",
+                "默认"
+            ],
+            [
+                "Settlement contract info",
+                "结算合约信息"
+            ],
+            [
+                "Balance",
+                "余额"
+            ],
+            [
+                "Settlement country/region",
+                "结算国家/地区"
+            ],
+            [
+                "Currency conversionmode ",
+                "货币转换模式"
+            ],
+            [
+                "Settlement mode",
+                "结算方式"
+            ],
+            [
+                "Reserve",
+                "储备"
+            ],
+            [
+                "Singapore",
+                "新加坡"
+            ],
+            [
+                "Not locked-in",
+                "未锁定"
+            ],
+            [
+                "Cross-border, Local",
+                "跨境，本地"
+            ],
+            [
+                "Min. settlement amount ",
+                "最小结算金额"
+            ],
+            [
+                "Settlement period",
+                "结算周期"
+            ],
+            [
+                "Acquiring product ",
+                "获取产品"
+            ],
+            [
+                "Settled",
+                "已结算"
+            ],
+            [
+                "200.00 SGD",
+                "200.00 新加坡元"
+            ],
+            [
+                "T+10",
+                "T+10"
+            ],
+            [
+                "Cashier payment, Auto debit ",
+                "收银台支付，自动扣款"
+            ],
+            [
+                "Unsettled",
+                "未结算"
+            ],
+            [
+                "Settlement model",
+                "结算模型"
+            ],
+            [
+                "Contract signing date",
+                "合同签署日期"
+            ],
+            [
+                "Payment tool",
+                "支付工具"
+            ],
+            [
+                "Settlement by contract ",
+                "合同结算"
+            ],
+            [
+                "2024-01-12",
+                "2024年1月12日"
+            ],
+            [
+                "Settlement report download",
+                "结算报告下载"
+            ],
+            [
+                "AlI",
+                "蚂蚁金服"
+            ],
+            [
+                "Settlement calendar",
+                "结算日历"
+            ],
+            [
+                "Invoices",
+                "发票"
+            ],
+            [
+                "SGD/SG/USD/CNH",
+                "SGD (新加坡元) / SG (可能是指新加坡) / USD (美元) / CNH (离岸人民币)"
+            ],
+            [
+                "Fees",
+                "费用"
+            ],
+            [
+                " Data Insight",
+                "数据洞察"
+            ],
+            [
+                "Bank account",
+                "银行账户"
+            ]
+        ],
+        "url": "https://cdn.nlark.com/yuque/0/2024/png/12884741/1712475926023-d28b7f5a-c22a-4816-a2b7-82c3ceb01b4e.png"
+    },
+    "eb9829d97c60850c71e7b84219e5451c": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [],
+        "url": "https://gw.alipayobjects.com/mdn/rms_0f16c4/afts/img/A*Ca17QKSEOkoAAAAAAAAAAAAAARQnAQ"
+    },
+    "f13cb93d12b79e18392e7dbad5837c0b": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [],
+        "url": "https://cdn.marmot-cloud.com/storage/2020/9/15/4eff1542-f812-4c34-b72c-b57389940a7f.png"
+    },
+    "f3d0673fe4a2255cf5f8f60ef7618e6f": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "antom",
+                "蚂蚁金服"
+            ],
+            [
+                "四smmm",
+                "四smmm (保持原始内容，因为无法确定其确切含义或翻译)"
+            ],
+            [
+                "？",
+                "抱歉，您还未提供需要翻译的英文内容。请提供您希望翻译的英文文本，我将按照要求进行翻译。"
+            ],
+            [
+                "8",
+                "8"
+            ],
+            [
+                "Test mode",
+                "测试模式"
+            ],
+            [
+                " Home Page",
+                "首页"
+            ],
+            [
+                "New",
+                "新的"
+            ],
+            [
+                "Settlement overview",
+                "结算概述"
+            ],
+            [
+                "?",
+                "请提供需要翻译的英文内容。"
+            ],
+            [
+                " Settlement currency: SGD",
+                "结算货币：SGD"
+            ],
+            [
+                " Transaction",
+                "交易"
+            ],
+            [
+                "Settlement time zone: UTC+08:00",
+                "结算时区：UTC+08:00"
+            ],
+            [
+                "Finance",
+                "蚂蚁金服是一家中国领先的金融科技公司，它利用大数据、人工智能和云计算等先进技术，提供支付、贷款、保险、理财等多种金融服务。其主要业务包括支付宝（Alipay）、花呗（Huabei）、借呗（Jiebei）、余额宝（Yu'ebao）等。蚂蚁金服致力于通过技术创新，打造一个开放、共享的金融生态系统，服务全球用户。"
+            ],
+            [
+                "Settlement contract info",
+                "结算合约信息"
+            ],
+            [
+                "Settlement overview",
+                "结算概述"
+            ],
+            [
+                "Settlement country/region",
+                "结算国家/地区"
+            ],
+            [
+                "Currency conversion mode ①",
+                "货币转换模式①"
+            ],
+            [
+                "Settlement mode",
+                "结算方式"
+            ],
+            [
+                "Singapore",
+                "新加坡"
+            ],
+            [
+                "Not locked-in ",
+                "未锁定"
+            ],
+            [
+                "Cross-border, Local",
+                "跨境，本地"
+            ],
+            [
+                "Balance",
+                "余额"
+            ],
+            [
+                "Min. settlement amount",
+                "最小结算金额"
+            ],
+            [
+                "Settlement period",
+                "结算周期"
+            ],
+            [
+                "Acquiring product",
+                "获取产品"
+            ],
+            [
+                "Reserve",
+                "储备"
+            ],
+            [
+                "200.00 SGD",
+                "200.00 新加坡元"
+            ],
+            [
+                "T+2",
+                "T+2"
+            ],
+            [
+                " Cashier payment, Auto debit ",
+                "收银台支付，自动扣款"
+            ],
+            [
+                "Settled",
+                "已结算"
+            ],
+            [
+                "Settlement model",
+                "结算模型"
+            ],
+            [
+                "Contract signing date",
+                "合同签署日期"
+            ],
+            [
+                "Payment tool",
+                "支付工具"
+            ],
+            [
+                "Settlement by contract ",
+                "合同结算"
+            ],
+            [
+                "2023-09-29",
+                "2023年9月29日"
+            ],
+            [
+                "All",
+                "很抱歉，您似乎没有提供需要翻译的具体英文内容。请您提供相关文本，我将按照要求进行翻译。"
+            ],
+            [
+                "Unsettled",
+                "未结算"
+            ],
+            [
+                "Settlement calendar",
+                "结算日历"
+            ],
+            [
+                "Settlement report download",
+                "结算报告下载"
+            ],
+            [
+                "SGD/SG/USD/CNH",
+                "SGD (新加坡元) / SG (可能是指新加坡) / USD (美元) / CNH (离岸人民币)"
+            ],
+            [
+                "Invoices",
+                "发票"
+            ],
+            [
+                "Bank account",
+                "银行账户"
+            ],
+            [
+                "Fees",
+                "费用"
+            ],
+            [
+                " Modify bank account",
+                "修改银行账户"
+            ],
+            [
+                " Data Insight ",
+                "数据洞察"
+            ],
+            [
+                "SWIFT",
+                "SWIFT"
+            ],
+            [
+                "Beneficiary Bank Account",
+                "受益银行账户"
+            ],
+            [
+                "Account holder name 1",
+                "账户持有人姓名 1"
+            ],
+            [
+                " Developer",
+                "开发者"
+            ],
+            [
+                "Beneficiary bank country/region  Singapore",
+                "受益银行国家/地区 新加坡"
+            ]
+        ],
+        "url": "https://cdn.nlark.com/yuque/0/2024/png/12884741/1712476335776-93755db8-48eb-4a66-b97b-9e10daf5d110.png"
+    },
+    "fad47312784db1f4f1da19589a0cda92": {
+        "imageType": "png",
+        "mode": "mark",
+        "result": [
+            [
+                "php",
+                "PHP (Hypertext Preprocessor) 是一种广泛使用的开源脚本语言，尤其适用于Web开发，可以嵌入到HTML中。"
+            ]
+        ],
+        "url": "https://cdn.marmot-cloud.com/storage/2020/9/15/1cf17429-1d85-4d73-b442-99db1e07a179.png"
+    }
+}

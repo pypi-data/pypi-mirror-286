@@ -1,0 +1,99 @@
+Integration mode | Development reference | Alipay Docs
+===============
+                        
+
+[![Image 1: Alipay, China's leading third-party online payment solution](https://ac.alipay.com/storage/2024/3/26/d66c43c0-440d-4c97-9976-f2028a2c8c5e.svg)![Image 2: Alipay, China's leading third-party online payment solution](https://ac.alipay.com/storage/2024/3/26/a48bd336-aea0-4f16-bf83-616eacbb4434.svg)](/docs/)
+
+[Log In](https://global.alipay.com/ilogin/account_login.htm?goto=https%3A%2F%2Fglobal.alipay.com%2Fdocs%2Fac%2Fref%2Foy9921)
+
+[Go to Homepage](../../)
+
+Development reference
+
+[Sandbox](/docs/ac/ref/sandbox)
+
+[Integration mode](/docs/ac/ref/oy9921)
+
+[Secure file transmission](/docs/ac/ref/xgcpey)
+
+FAQs
+
+Antom Dashboard
+
+Tools
+
+Other references
+
+[MCC codes](/docs/ac/ref/mcccodes)
+
+[Usage rules of the Amount object](/docs/ac/ref/cc)
+
+[Payment methods](/docs/ac/ref/payment_method)
+
+[Risk management methods](/docs/ac/ref/risk_methods)
+
+[Brand asset](/docs/ac/ref/brandasset)
+
+Integration mode
+================
+
+2022-03-03 08:49
+
+The integration implementation can be performed in three modes:
+
+*   Performed by merchants or acquirers (ACQs) if they have the development capability.
+*   Performed by authorized independent software vendors (ISVs) if merchants or acquirers authorize ISVs to make the implementation.
+*   Performed by system integrators if merchants or acquirers invite system integrators to work for them.
+
+Merchant/ACQ integration
+------------------------
+
+As a merchant or ACQ, if you are integrating for your own company, you are making integration directly with Alipay. You must have development capabilities for this integration mode.
+
+After signing the contract with Alipay, you implement the integration process and manage merchant accounts and keys by yourself. The implementation cost of this mode is greater than making integration by ISV or system integrator. The following graphic shows the relationship between Alipay and merchants/ACQs when adopting this integration mode:
+
+![Image 3: image.png](https://cdn.nlark.com/yuque/0/2020/png/561635/1589985252291-616bd2a2-b120-4f89-bb46-c2af9ef7e85c.png)
+
+Figure 1. Merchant/ACQ integration
+
+ISV integration
+---------------
+
+As a merchant or ACQ, you can authorize an ISV to implement integration for you by signing an authorized service contract with the ISV. Furthermore, you need to sign a merchant service contract with Alipay so that Alipay can provide services such as payment, refund, and settlement for you.
+
+As an authorized ISV, you also need to sign a contract with Alipay directly and then provide services for merchants/ACQs. The services you provide include, but are not limited to, merchant referral, marketing operation, and integration services.
+
+The following graphic shows the relationship between Alipay, merchant/ACQ, and ISV:
+
+![Image 4: image.png](https://cdn.nlark.com/yuque/0/2020/png/561635/1589985252530-80a41689-ab84-4650-ad85-efdb4eee27ff.png)
+
+Figure 2. ISV integration
+
+System integrator integration
+-----------------------------
+
+As a merchant or ACQ, if you have no development capabilities and you invite a system integrator to help you make integration with Alipay, you are making integration in the system integrator integration mode.
+
+After signing the contract with Alipay, you provide your merchant account to the system integrator and the system integrator uses your account to make integration with Alipay for you.
+
+The system integrator integration mode is a convenient and low-cost way to quickly realize payment collection. The following graphic shows the relationship between Alipay, merchant/ACQ, and system integrator:
+
+![Image 5: image.png](https://cdn.nlark.com/yuque/0/2020/png/561635/1589985252715-4563356a-4bd9-4fda-ac1b-9bad7ccbbe77.png)
+
+Figure 3. System integrator integration
+
+To view the latest updates to the documentation, visit [Release notes](https://global.alipay.com/docs/releasenotes).
+
+![Image 6](https://ac.alipay.com/storage/2021/5/20/19b2c126-9442-4f16-8f20-e539b1db482a.png)![Image 7](https://ac.alipay.com/storage/2021/5/20/e9f3f154-dbf0-455f-89f0-b3d4e0c14481.png)
+
+@2024 Alipay [Legal Information](https://global.alipay.com/docs/ac/platform/membership)
+
+#### Is this page helpful?
+
+#### On this page
+
+[Merchant/ACQ integration](#otgKB "Merchant/ACQ integration")
+
+[ISV integration](#raoYQ "ISV integration")
+
+[System integrator integration](#iN3X3 "System integrator integration")
