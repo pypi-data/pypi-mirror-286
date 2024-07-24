@@ -1,0 +1,2 @@
+[console_scripts]
+cluster_utils_plot_timeline = cluster_utils.scripts.plot_job_timeline:main
