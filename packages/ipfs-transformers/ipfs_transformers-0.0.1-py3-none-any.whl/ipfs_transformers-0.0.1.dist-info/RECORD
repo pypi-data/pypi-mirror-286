@@ -1,0 +1,15 @@
+ipfs_transformers/__init_.py,sha256=4W8VliAYUP1KY2gLJ_YDy2TmcXYVm-PY7XikQD_bFwA,2
+ipfs_transformers/__init__.py,sha256=VHHiiv3x9w5ya_wGwHrifV-ZpixE45V1ZtGMYuei2Z8,92335
+ipfs_transformers/ipfs_kit.py,sha256=kMxvA1QDYKux3MJ66wJpQzB8GzuLWPIwK7evm0ZhH7E,21374
+ipfs_transformers/ipfs_transformers.py,sha256=Ex-g1P9G6rOcy1Uw5Coq-7xhzrc_wWZW-H_UsdFXDYU,1192170
+ipfs_transformers/ipfs_transformers_generator.py,sha256=LIajx2RFlU_omOkOayMfXw-1-0KTzVjTao_xHSy84fg,2389
+ipfs_transformers/ipfs_transformers_template.py,sha256=irwlZNLuN8add_dzx5E-ArjEmF7wL8YsZyrN4CXjuME,3885
+ipfs_transformers/model_manager.py,sha256=c1GUaaxcTwTtU8z5NQCLGUYj951bepAZ-xUiIGGM5CQ,83479
+ipfs_transformers/orbit_kit.py,sha256=LaC6ZzdxM4a56Q-8NO97G2w5lYSaZIZaqduLaSdU5tA,784
+ipfs_transformers/s3_kit.py,sha256=8H29Nva8SpaPDHDr0XJE9F8rnY1b-b8imnrdi_Y4JHM,15472
+ipfs_transformers/test_fio.py,sha256=B-cGwo-rNUOW8TeGWUM7thwUaV4ITGBBpo8SKiF3Au0,4502
+ipfs_transformers-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ipfs_transformers-0.0.1.dist-info/METADATA,sha256=AAhKGXfxKPulZDPdTNwpyqxE9Rkd40S3MeO1oOvKwck,3122
+ipfs_transformers-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+ipfs_transformers-0.0.1.dist-info/top_level.txt,sha256=f8LDg3cZAUeQ_Nn5xG0ocUZaddeWXeEhKfJGErKusOM,18
+ipfs_transformers-0.0.1.dist-info/RECORD,,
