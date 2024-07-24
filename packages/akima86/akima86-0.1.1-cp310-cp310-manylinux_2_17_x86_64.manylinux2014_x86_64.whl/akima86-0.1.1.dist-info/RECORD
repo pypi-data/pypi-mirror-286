@@ -1,0 +1,11 @@
+uvipia_omp.cpython-310-x86_64-linux-gnu.so,sha256=Y9LjAkXyoC8tQfwloxFdb5pl8g4LYnXUI50IUuIG5uI,203217
+akima86.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+akima86.libs/libgfortran-040039e1.so.5.0.0,sha256=FK-zEpsai1C8QKOwggx_EVLqm8EBIaqxUpQ_cFdHKIY,2686065
+akima86.libs/libquadmath-96973f99.so.0.0.0,sha256=k0wi3tDn0WnE1GeIdslgUa3z2UVF2pYvYLQWWbB12js,247609
+akima86/__init__.py,sha256=0l1f88vooWH9TJdnSC_CuPI3tF2hEKbfyZ5wUh06u60,711
+akima86/akima86.py,sha256=LLS3PQqCqhnuU1qH2pBujxi-D6resWl_bGTzLpxlw6w,3991
+akima86-0.1.1.dist-info/LICENSE,sha256=EmLNyIs5sJV8ZOHVk6hmvQkaYUWH417d2Xt1T7lsGXg,1968
+akima86-0.1.1.dist-info/WHEEL,sha256=Dqx8jxXh1TxTWQQ073YWDkHOSMYFpBL59CLfyLoOIHM,151
+akima86-0.1.1.dist-info/top_level.txt,sha256=Rn4uZeew_4BcwzW9hGJX6TNDFQXixSHvUL3UxVUYZXo,19
+akima86-0.1.1.dist-info/RECORD,,
+akima86-0.1.1.dist-info/METADATA,sha256=8Vq-_7YdMUpC-kHQwOt4y02QOPIicNPAU2HyXVPXuIQ,4003
