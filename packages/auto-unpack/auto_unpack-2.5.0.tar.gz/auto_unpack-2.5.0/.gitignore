@@ -1,0 +1,11 @@
+__pycache__
+.venv
+.vscode
+.cache
+output
+info
+dist
+config/*.local.yaml
+site/
+
+*.log
