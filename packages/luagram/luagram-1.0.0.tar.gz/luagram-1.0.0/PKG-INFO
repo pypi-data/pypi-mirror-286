@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: luagram
+Version: 1.0.0
+Summary: lua telegram client
+Home-page: https://github.com/irmilad/luagram
+Author: Milad Heidary
+License: MIT
+Keywords: luagram,lua-mtproto,luagram-client,luagram-mtproto,telegram-client,telegram-mtproto
+Requires-Python: >=3.8
+Requires-Dist: lupa>=2.2
