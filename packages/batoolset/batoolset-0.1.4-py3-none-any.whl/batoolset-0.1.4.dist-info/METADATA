@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: batoolset
+Version: 0.1.4
+Summary: An aggregate of functions I find useful
+Home-page: https://github.com/baigouy/batoolset
+Author: Benoit Aigouy
+Author-email: benoit.aigouy@gmail.com
+License: BSD
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7, <3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: czifile
+Requires-Dist: Markdown
+Requires-Dist: matplotlib >=3.5.2
+Requires-Dist: numpy <1.26.4
+Requires-Dist: Pillow >=8.1.2
+Requires-Dist: PyQt6
+Requires-Dist: read-lif
+Requires-Dist: scikit-image >=0.19.3
+Requires-Dist: scipy >=1.7.3
+Requires-Dist: scikit-learn >=1.0.2
+Requires-Dist: tifffile >=2021.11.2
+Requires-Dist: tqdm
+Requires-Dist: natsort
+Requires-Dist: numexpr
+Requires-Dist: urllib3
+Requires-Dist: qtawesome
+Requires-Dist: pandas
+Requires-Dist: numba
+Requires-Dist: elasticdeform
+Requires-Dist: roifile
+Requires-Dist: prettytable
+Requires-Dist: pyperclip
+Requires-Dist: QtPy >=2.1.0
+Requires-Dist: Deprecated
+Requires-Dist: Requests
+Requires-Dist: pyautogui
+Requires-Dist: imagecodecs
+Provides-Extra: all
+Requires-Dist: python-javabridge ; extra == 'all'
+Requires-Dist: python-bioformats ; extra == 'all'
+
+# batoolset
+An aggregate of functions I find useful
