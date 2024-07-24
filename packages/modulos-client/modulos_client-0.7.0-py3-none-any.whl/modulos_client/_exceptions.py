@@ -1,0 +1,2 @@
+class ModulosError(Exception):
+    pass
