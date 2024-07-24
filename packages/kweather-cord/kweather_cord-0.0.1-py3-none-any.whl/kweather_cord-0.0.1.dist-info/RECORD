@@ -1,0 +1,12 @@
+kweathercord/__init__.py,sha256=P7mqlt8OY0FsU1Do0tbRqAGgs9-j6qsQrfxy9eTYe4o,145
+kweathercord/client.py,sha256=jIxuehL8wHnP8FjGxqGSTkisfGecvw0vcbfjRJOkxY8,19258
+kweathercord/enums.py,sha256=A9ozSHgT_1C1QpcjY5IgcZ2KSzWIJcks0f_cNfmTe7c,1452
+kweathercord/exception.py,sha256=DCDl9JHdxWfarx9Tgo4gGgpYWbCLXeIg1lurwE0p0wo,1452
+kweathercord/model.py,sha256=j4pZd0C8Cq-oNXo06Fqf6o2xcUD7Gw_Ad-YCDZ0AY6I,3091
+kweathercord/sun_riseset_time.py,sha256=o97ujgWOrP-ZBxcVHHqXgeF_T2-TjnrtOuqcO1o5cPs,2913
+kweathercord/view.py,sha256=_3XwtZ7kCnGV9c4NMBQgjzD9Uye-LDbJruPQPUioowQ,7469
+kweather_cord-0.0.1.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+kweather_cord-0.0.1.dist-info/METADATA,sha256=H8LSd3y3xadJvddEDhDs6RGAnzrIGETcaU6EskEn1hE,4625
+kweather_cord-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+kweather_cord-0.0.1.dist-info/top_level.txt,sha256=A0t-G9wd7Jex8Zv4phMGAab2TFmxtH-BuiU8icpHMU0,13
+kweather_cord-0.0.1.dist-info/RECORD,,
