@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: my_kfp_package
+Version: 0.1
+Summary: A package containing Kubeflow Pipelines components
+Home-page: https://github.com/githubuserohith/my_kfp_package
+Author: Rohith
+Author-email: your.email@example.com
+License: MIT
+Requires-Dist: kfp
+Requires-Dist: google-cloud-storage
+Requires-Dist: pandas
