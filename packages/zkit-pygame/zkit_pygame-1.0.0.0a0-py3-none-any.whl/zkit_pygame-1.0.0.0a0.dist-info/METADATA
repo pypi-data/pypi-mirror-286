@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: zkit-pygame
+Version: 1.0.0.0a0
+Summary: The zeekit backend for pygame
+Author-email: Cariel Becker <cariel.becker@gmx.de>
+Maintainer-email: Cariel Becker <cariel.becker@gmx.de>
+License: LGPL-2.1-or-later
+Project-URL: Home, https://pypi.org/project/zkit-pygame/
+Project-URL: Repository, https://github.com/adalfarus/zkit-pygame
+Project-URL: Documentation, https://github.com/adalfarus/zkit-pygame/wiki
+Project-URL: Issue tracker, https://github.com/adalfarus/zkit-pygame/issues
+Keywords: general,graphic,app,zeekit,zkit,zkit-pygame,pygame
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: all
+
+# zkit-pygame
+ The zeekit backend for pygame
