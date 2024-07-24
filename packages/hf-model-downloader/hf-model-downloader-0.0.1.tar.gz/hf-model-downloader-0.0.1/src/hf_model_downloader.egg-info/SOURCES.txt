@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/hf_downloader/__init__.py
+src/hf_downloader/cli.py
+src/hf_downloader/core_api.py
+src/hf_downloader/experimenting.py
+src/hf_downloader/utils.py
+src/hf_model_downloader.egg-info/PKG-INFO
+src/hf_model_downloader.egg-info/SOURCES.txt
+src/hf_model_downloader.egg-info/dependency_links.txt
+src/hf_model_downloader.egg-info/entry_points.txt
+src/hf_model_downloader.egg-info/requires.txt
+src/hf_model_downloader.egg-info/top_level.txt
