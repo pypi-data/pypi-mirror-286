@@ -1,0 +1,10 @@
+click<=8.1.7
+ansible-runner<=2.4.0
+prettytable<=3.10.2
+PyYAML<=6.0.1
+cryptography<=43.0.0
+GitPython<=3.1.43
+requests<=2.32.3
+
+[:python_version < "3.8"]
+importlib-metadata<=8.1.0
