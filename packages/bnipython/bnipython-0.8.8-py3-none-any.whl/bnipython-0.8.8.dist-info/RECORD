@@ -1,0 +1,17 @@
+bnipython/__init__.py,sha256=GhMBIEU5iPM1Tcl57IMDzZafhgLhqOQyl_0Es8LSw3E,559
+bnipython/lib/bniClient.py,sha256=zLAEu9UHk9a78MjxD4BQyf6pQrvKByU--GZ9zDA4dQs,1070
+bnipython/lib/api/bniMove.py,sha256=llSuc658fpmM02NVOKWkWNMtPvPwtEcD77_R3jK_9Qo,2455
+bnipython/lib/api/oneGatePayment.py,sha256=MCWpDouw44QrQXK24v_YmMuAWPjxIwaM8rA2nGiiHEg,9551
+bnipython/lib/api/rdf.py,sha256=PpAQVsfbAfM67sMwS6ILloPz2BUoRLUoQ5p7xPTcmm8,21611
+bnipython/lib/api/rdl.py,sha256=XSeT0iYLubz_5cBxFTdEaIaSJi4_w4IxfYmUXsmDzhM,22000
+bnipython/lib/api/rdn.py,sha256=I3SejNqJDTVWWfxU1YbrmspzrvtJpwvDnvwBR3w7KVM,25305
+bnipython/lib/api/snapBI.py,sha256=Ys3vE-QQxvgv2zpt3kx4hgYRLcsiV7vbCYiu2Y-CNiM,21967
+bnipython/lib/net/httpClient.py,sha256=yR9jduWQ_i5ept12NVmFQ1TLlZL4SR6ze2u3EKi8QkA,3436
+bnipython/lib/util/constants.py,sha256=teYBYWj5H2eiNaEK1bNsrWI9CoGVT1tN6OXDL6UeQUY,197
+bnipython/lib/util/response.py,sha256=xw41fcnVlyBxsaT7JEatmDA6UrzsrhlTyr-DtASmse4,4394
+bnipython/lib/util/utils.py,sha256=F1eeeHqqJyWfNz9uZON9Y-Qlo8tb6hLJs8ktMrOeXbk,2840
+bnipython-0.8.8.dist-info/LICENSE,sha256=2hfKRBsfIti8b4riUqRdYDGphruKpM1dFOUzBNDaMyU,1085
+bnipython-0.8.8.dist-info/METADATA,sha256=bNyKu3op6q47ByUmcUBdnDjko6emZWafWscDnCCiOSU,41606
+bnipython-0.8.8.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+bnipython-0.8.8.dist-info/top_level.txt,sha256=PfksN11w8n-wmDUz23RTqRIrLSpy05N0XwYhVVKa-fY,10
+bnipython-0.8.8.dist-info/RECORD,,
