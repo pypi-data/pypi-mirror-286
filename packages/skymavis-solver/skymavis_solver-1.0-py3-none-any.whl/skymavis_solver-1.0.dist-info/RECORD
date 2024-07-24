@@ -1,0 +1,7 @@
+skymavis_captcha_solver/__init__.py,sha256=smZHFBQQaOadBe3r6hIamLS250bmqPy6cEdNqeib3DI,51
+skymavis_captcha_solver/captcha.py,sha256=5avbYqLMInt-qhyONuZCwb_Prr5mh1i-m9MzYCenK8c,632
+skymavis_captcha_solver/vision.py,sha256=OSgVkPJIRuJoY5cs50QwxGS9wJFgNepyuXWHxqpcIWY,3883
+skymavis_solver-1.0.dist-info/METADATA,sha256=cUkNzI_s1D_XXra43TX3xA5cZa5BaYg0nwzn3zYVY8M,390
+skymavis_solver-1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+skymavis_solver-1.0.dist-info/top_level.txt,sha256=5BO4KJio2lENtuTxNiD69ROdHkmm2Drc91VLDwuuN9U,24
+skymavis_solver-1.0.dist-info/RECORD,,
