@@ -1,0 +1,2 @@
+tests
+word_activation_recognition

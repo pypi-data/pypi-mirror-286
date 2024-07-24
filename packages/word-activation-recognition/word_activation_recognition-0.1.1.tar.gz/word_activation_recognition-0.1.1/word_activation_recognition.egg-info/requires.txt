@@ -1,0 +1,8 @@
+librosa
+numpy<2.0.0
+pandas
+pyaudio
+sounddevice
+soundfile
+tflite-runtime
+tflite-support

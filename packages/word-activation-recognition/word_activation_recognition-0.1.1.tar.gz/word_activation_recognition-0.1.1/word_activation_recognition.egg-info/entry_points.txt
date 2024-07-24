@@ -1,0 +1,2 @@
+[console_scripts]
+word_activation_recognition = word_activation_recognition.classify_audio:main
