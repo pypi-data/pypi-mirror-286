@@ -1,0 +1,17 @@
+*.egg-info/
+*.pyc
+.pypirc
+/.cache/
+/.coverage
+/.env
+/.envrc
+/.pytest_cache/
+/book/
+/build/
+/bundle/
+/dist/
+/htmlcov/
+/tmp/
+/venv/
+debug.log
+export.json
