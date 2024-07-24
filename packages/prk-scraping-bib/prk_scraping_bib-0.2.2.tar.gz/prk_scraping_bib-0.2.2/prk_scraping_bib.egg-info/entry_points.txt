@@ -1,0 +1,2 @@
+[console_scripts]
+prk_scraping_bib = prk_scraping_bib:main
