@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+libcoffee.egg-info/PKG-INFO
+libcoffee.egg-info/SOURCES.txt
+libcoffee.egg-info/dependency_links.txt
+libcoffee.egg-info/requires.txt
+libcoffee.egg-info/top_level.txt
