@@ -1,0 +1,10 @@
+numpy
+numpy-financial
+pandas
+torch
+matplotlib
+tqdm
+IPython
+yfinance
+gym
+scipy
