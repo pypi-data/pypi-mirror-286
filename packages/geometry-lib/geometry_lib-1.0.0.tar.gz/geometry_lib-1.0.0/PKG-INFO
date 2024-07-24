@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: geometry_lib
+Version: 1.0.0
+Summary: This library can calculate the area of geometric figures such as circle and triangle
+Home-page: https://github.com/Vireynn/geometry_lib
+Author: Vireynn
+Author-email: mx.dvoretsky@gmail.com
