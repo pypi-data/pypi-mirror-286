@@ -1,0 +1,8 @@
+numpy
+matplotlib
+persim
+ripser
+Cython
+
+[test]
+pytest

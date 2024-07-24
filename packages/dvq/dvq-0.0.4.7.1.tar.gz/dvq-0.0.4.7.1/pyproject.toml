@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dvq"
+version = "0.0.4.7.1"
+description = "This is a library to validate and compare dna sequences"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "numpy", 
+    "matplotlib", 
+    "persim", 
+    "ripser", 
+    "Cython"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+test = ["pytest"]
