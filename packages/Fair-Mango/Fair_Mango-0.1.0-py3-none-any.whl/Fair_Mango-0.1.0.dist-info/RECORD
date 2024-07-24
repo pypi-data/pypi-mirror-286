@@ -1,0 +1,10 @@
+fair_mango/__init__.py,sha256=7ZnSZ-jx-kovWA-EJK_kJlKdM9cpykecOcH9QSmWCJs,24
+fair_mango/dataset/dataset.py,sha256=RK1q4xjQI5rQme9-apieu0gsdcUyqtlMFih6eEDE1vE,10322
+fair_mango/metrics/base.py,sha256=EQjFCbWDgAKOiJbQp42TqCbt8ENQ0N4WzwvSgMpmq3w,16469
+fair_mango/metrics/metrics.py,sha256=Sr0VZzpxS-_x9pQsMxHbDoDVahgcXYn868b4RbhPb1E,24668
+fair_mango/metrics/superset.py,sha256=iCP8pEw5NOXURC1DAC--eX4YEmGdnylbsC4nRRB-PVA,13336
+Fair_Mango-0.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+Fair_Mango-0.1.0.dist-info/METADATA,sha256=AQy6FyMMs08EhHDez0bf62cjYyCyy9sng1Mf6FXdtco,1846
+Fair_Mango-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+Fair_Mango-0.1.0.dist-info/top_level.txt,sha256=KNRhadpsWm3Ke81YHezMGIZmS7Mu0dIwz2Ip-V5DjSY,11
+Fair_Mango-0.1.0.dist-info/RECORD,,
