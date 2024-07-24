@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+pandas_shortcuts/__init__.py
+pandas_shortcuts/dataframe_api.py
+pandas_shortcuts/series_api.py
+pandas_shortcuts/top_level_api.py
+pandas_shortcuts.egg-info/PKG-INFO
+pandas_shortcuts.egg-info/SOURCES.txt
+pandas_shortcuts.egg-info/dependency_links.txt
+pandas_shortcuts.egg-info/requires.txt
+pandas_shortcuts.egg-info/top_level.txt
+pandas_shortcuts/methods/__init__.py
+pandas_shortcuts/methods/methods.py
