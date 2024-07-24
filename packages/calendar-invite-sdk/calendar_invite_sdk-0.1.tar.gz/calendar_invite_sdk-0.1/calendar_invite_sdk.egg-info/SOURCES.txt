@@ -1,0 +1,7 @@
+setup.py
+calendar_invite_sdk.egg-info/PKG-INFO
+calendar_invite_sdk.egg-info/SOURCES.txt
+calendar_invite_sdk.egg-info/dependency_links.txt
+calendar_invite_sdk.egg-info/entry_points.txt
+calendar_invite_sdk.egg-info/requires.txt
+calendar_invite_sdk.egg-info/top_level.txt
