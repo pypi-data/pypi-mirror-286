@@ -1,0 +1,12 @@
+README.md
+setup.py
+ai_tqa/__init__.py
+ai_tqa/model.py
+ai_tqa.egg-info/PKG-INFO
+ai_tqa.egg-info/SOURCES.txt
+ai_tqa.egg-info/dependency_links.txt
+ai_tqa.egg-info/entry_points.txt
+ai_tqa.egg-info/requires.txt
+ai_tqa.egg-info/top_level.txt
+ai_tqa/data/data.json
+ai_tqa/data/my_model.h5
