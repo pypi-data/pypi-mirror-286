@@ -1,0 +1,17 @@
+senfd/__init__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+senfd/cli.py,sha256=Gn9R01ysgLrEQBMRYOO2DsJKuQ0hjrda9GUoPAEAZ9s,2137
+senfd/documents.py,sha256=W7iz8Cibx5Vk9kLhrMgxjQbncKAn-DS2AQdQhWgFvW0,7985
+senfd/figures.py,sha256=J0X3QQIj2JAN47jUfbtL5pb4VFYODs9mM23a3RYP_Sw,5487
+senfd/tables.py,sha256=_F8GWfUl8DCNorh_7f_rKaJGhE8nqmsqcnHSIphXr2g,339
+senfd/utils.py,sha256=bi2vr9mruVbM--OPXPeHLtFEsZ4gXX7oCFoyylvFu4w,280
+senfd/schema/__init__.py,sha256=b5XkmeDkazpWvTqrsRm_9FyJMNwQnNTJ4_Ojfwufig4,42
+senfd/schema/checker.py,sha256=eAp2qd2LiZZ3y7UQLW9xyr8RHQsU0R5GuFmdyZ17OrE,435
+senfd/schema/enriched.figures.schema.json,sha256=bjekhK28SLZfoCp2DaJQ6EZESK4QsXIC8mZb5VYlNME,3330
+senfd/schema/figures.schema.json,sha256=P5i_RD2xkGNySRg9lZQ3uBjw3zZKIZHZubulFztQRVg,3558
+senfd/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+senfd-0.1.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+senfd-0.1.0.dist-info/METADATA,sha256=x5ByLHjxtZ3T_jmZf7UN1njYNMQPapDdr-8ng_mlF84,1253
+senfd-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+senfd-0.1.0.dist-info/entry_points.txt,sha256=ji_WYXxFlKA-qCV0u5HskHgzwql-Yusyc8rW6fbjnW8,41
+senfd-0.1.0.dist-info/top_level.txt,sha256=KmqHEZQXMIkw1Kx9VlqmecEVwqVIlVHMQmdyCnEXR50,6
+senfd-0.1.0.dist-info/RECORD,,
