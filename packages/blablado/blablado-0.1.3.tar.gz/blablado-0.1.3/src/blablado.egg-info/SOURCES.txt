@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/blablado/__init__.py
+src/blablado/_assistant.py
+src/blablado/_speak.py
+src/blablado/_speech_recognition.py
+src/blablado/_tools.py
+src/blablado.egg-info/PKG-INFO
+src/blablado.egg-info/SOURCES.txt
+src/blablado.egg-info/dependency_links.txt
+src/blablado.egg-info/requires.txt
+src/blablado.egg-info/top_level.txt
