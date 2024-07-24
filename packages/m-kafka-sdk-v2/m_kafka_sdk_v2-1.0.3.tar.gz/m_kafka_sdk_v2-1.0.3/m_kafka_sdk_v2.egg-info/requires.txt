@@ -1,0 +1,5 @@
+requests>=2.25.1
+confluent-kafka>=1.7.0
+redisbloom>=0.4.1
+m-singleton>=0.3
+sonyflake-py>=1.3.0
