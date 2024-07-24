@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: MPYdata
+Version: 2.0.0
+Summary: A Python Package for saving data in database.
+Home-page: https://github.com/MahendraYerramsetti/PYdata
+Author: Mahendra Sai Phaneeswar Yerramsetti
+Author-email: mahendrayerramsetti@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/MahendraYerramsetti/PYdata/issues
+Project-URL: Source Code, https://github.com/MahendraYerramsetti/PYdata
+Project-URL: Documentation, https://github.com/MahendraYerramsetti/PYdata
+Project-URL: Website, https://github.com/MahendraYerramsetti/PYdata
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
