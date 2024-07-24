@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: mantlebio
+Version: 1.0.6
+Summary: MantleBio Python SDK
+Author: MantleBio
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.26.0
+Requires-Dist: boto3 >=1.21.42
+Requires-Dist: python-dotenv >0.19.2
+Requires-Dist: protobuf >=5.00.0
+Requires-Dist: google-auth >=2.6.6
+Requires-Dist: python-dotenv
+Requires-Dist: pandas >=2.0.3
+Requires-Dist: numpy <1.29.0,>=1.22.4
+
+# Mantle SDK
+
+Python SDK for running pipelines and analysis within Mantle
+
+
+## Requirements
+- Python 3.6+
+- Mantle Account with username and password
+
+### Installation 
+
+to install using pip use the following command
+
+```bash
+pip install mantlebio
+```
+
+when including the package as a requirement in a requirements.txt file use the following
+
+```
+mantlebio
+```
+
+USAGE:
+
+```python
+import mantlebio
+
+mantle = MantleClient()
+
+```
