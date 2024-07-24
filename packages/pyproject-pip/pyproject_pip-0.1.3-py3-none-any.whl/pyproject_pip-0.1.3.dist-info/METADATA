@@ -1,0 +1,86 @@
+Metadata-Version: 2.3
+Name: pyproject-pip
+Version: 0.1.3
+Summary: Install and manage pyproject.toml with pip commands.
+Project-URL: Documentation, https://github.com/mbodiai/pyproject-pip#readme
+Project-URL: Issues, https://github.com/mbodiai/pyproject-pip/issues
+Project-URL: Source, https://github.com/mbodiai/pyproject-pip
+Author-email: Sebastian Peralta <sebastian@mbodi.ai>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: mkdocstrings[crystal,python]
+Requires-Dist: packaging
+Requires-Dist: requests
+Requires-Dist: toml==0.10.2
+Requires-Dist: tomlkit
+Description-Content-Type: text/markdown
+
+# pyproject-pip (WIP)
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pyproject-pip.svg)](https://pypi.org/project/pyproject-pip)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyproject-pip.svg)](https://pypi.org/project/pyproject-pip)
+
+-----
+
+Install and manage pyproject.toml with pip commands.
+
+See usage:
+
+```
+pypip --help
+```
+
+
+## Table of Contents
+
+- [pyproject-pip](#pyproject-pip)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+
+## Installation
+
+```console
+pip install pyproject-pip
+```
+
+## Usage
+
+```console
+pypip --help
+```
+
+```
+Usage: pypip [OPTIONS] COMMAND [ARGS]...
+
+  Main CLI entry point. If no subcommand is provided, it shows the
+  dependencies.
+
+  Args:     ctx (click.Context): Click context object.     hatch_env (str,
+  optional): The Hatch environment to use. Defaults to "default".
+
+Options:
+  -v, --hatch-env TEXT  Specify the Hatch environment to use
+  --help                Show this message and exit.
+
+Commands:
+  install    Install packages and update requirements.txt and...
+  show       Show the dependencies from the pyproject.toml file.
+  uninstall  Uninstall packages and update requirements.txt and...
+```
+
+## License
+
+`pyproject-pip` is distributed under the terms of the [apache-2.0](https://spdx.org/licenses/apache-2.0.html) license.
