@@ -1,0 +1,45 @@
+name: build
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    name: Build pip Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Init tools
+        uses: actions/checkout@v4.1.7
+      - uses: actions/setup-python@v5.1.1
+        with:
+          python-version: '3.11'
+      - name: Create Package
+        shell: bash
+        run: |
+          python3 -m build
+      - name: Output the result (debian)
+        uses: actions/upload-artifact@v4.3.4
+        with:
+          name: build
+          path: dist
+          if-no-files-found: error
+  test:
+    needs: build
+    name: Test pip Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Init tools
+        uses: actions/checkout@v4.1.7
+      - name: Download the result
+        uses: actions/download-artifact@v4.1.8
+      - name: Install Packages (debian)
+        shell: bash
+        run: |
+          cd $GITHUB_WORKSPACE
+          python3 -m pip install build/libpbskids_dl*-py3-none-any.whl
+      - name: Test Build (debian)
+        shell: bash
+        run: |
+          sudo chmod +x ./test.py
+          python3 ./test.py
