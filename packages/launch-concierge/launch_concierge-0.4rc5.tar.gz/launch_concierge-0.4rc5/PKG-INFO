@@ -1,0 +1,7 @@
+Metadata-Version: 2.3
+Name: launch-concierge
+Version: 0.4rc5
+Requires-Python: >=3.10
+Requires-Dist: isi-util
+Requires-Dist: packaging
+Requires-Dist: script-builder
