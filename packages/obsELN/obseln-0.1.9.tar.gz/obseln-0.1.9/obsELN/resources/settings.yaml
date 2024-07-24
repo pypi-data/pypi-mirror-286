@@ -1,0 +1,6 @@
+# default location of obsidian eln vaults
+vault parent folder: '/Users/gc9830/Documents/bwSync/Obsidian'
+# default obsidian vault directory for import 
+vault folder: '/Users/gc9830/Documents/bwSync/Obsidian/Obsidian_ELN_dev'
+# default data folder to open by analysis file dialog
+data folder: '/Users/gc9830/Documents/Programming/Python/Research Data'

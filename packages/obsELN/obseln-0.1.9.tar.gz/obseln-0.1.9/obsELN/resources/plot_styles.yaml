@@ -1,0 +1,96 @@
+line-chart:
+  chart:
+    title: false
+    background-color: '#ffffff'
+    xlabel:
+      visible: true
+      position: bottom
+    ylabel:
+      visible: true
+      position: left
+  lines:
+    colors:
+      apply: list
+      list:
+        - '#ff0000'
+        - '#00ff00'
+        - '#0000ff'
+      map:
+        style: hsv
+        n-color: 5
+    style:
+      - solid
+      - dashed
+      - dotted
+      - dash-dotted
+    width: 2
+    cycler: multiply
+  markers:
+    edge:
+      visible: true
+      colors:
+        apply: line
+        list:
+          - '#ff0000'
+          - '#00ff00'
+          - '#0000ff'
+        map:
+          style: hsv
+          n-color: 5
+      style:
+        - 'circle'
+        - 'square'
+        - 'triangle'
+        - 'star'
+      width: 2
+    face:
+      visible: true
+      style: solid
+      colors: same 
+  axes:
+    limits:
+      xmin: min + 10%
+      xmax: max + 10%
+      ymin: min + 10%
+      ymax: max + 10%
+    style:
+      bottom:
+        visible: true
+        color: '#aaaaaa'
+        line-width: 2
+      top:
+        visible: true
+        color: '#aaaaaa'
+        line-width: 2
+      left:
+        visible: true
+        color: '#aaaaaa'
+        line-width: 2
+      right:
+        visible: true
+        color: '#aaaaaa'
+        line-width: 2
+      ticks:
+        x-axes:
+          major:
+            visible: true
+            position: bottom
+            direction: inwards
+            length: 3
+          minor:
+            visible: false
+            position: bottom
+            direction: inwards
+        y-axes:
+          major:
+            visible: true
+            position: bottom
+            direction: inwards
+            length: 3
+          minor:
+            visible: false
+            position: bottom
+            direction: inwards
+
+
+    
