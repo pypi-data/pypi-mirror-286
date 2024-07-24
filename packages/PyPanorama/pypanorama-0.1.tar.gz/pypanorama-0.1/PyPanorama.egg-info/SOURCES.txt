@@ -1,0 +1,6 @@
+README.md
+setup.py
+PyPanorama.egg-info/PKG-INFO
+PyPanorama.egg-info/SOURCES.txt
+PyPanorama.egg-info/dependency_links.txt
+PyPanorama.egg-info/top_level.txt
