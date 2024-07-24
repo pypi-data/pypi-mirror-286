@@ -1,0 +1,11 @@
+Kekik_fastapi_cache/__init__.py,sha256=Bf8t_DVwlVPOtSID7RKVTrcGLa747S6Puz-nH6QXSEs,2487
+Kekik_fastapi_cache/coder.py,sha256=uWbhxwHZmVzjwiX-i6sUEQSQ1F9q1mIeOzlhKREjEB8,2085
+Kekik_fastapi_cache/decorator.py,sha256=WqBqAlLQ-nOWOM9xA2M2df1SpvGDg6HyXyAAocWx9qg,6782
+Kekik_fastapi_cache/key_builder.py,sha256=bCmCWUVlmx9xK9IOdOLKWLTRWpTgAOydcAPmbfK8cvM,675
+Kekik_fastapi_cache/backends/__init__.py,sha256=Mcv7tqjA535gK2OFhbY0QVnxM36fCsuB0dFc3fqNP4Q,602
+Kekik_fastapi_cache/backends/inmemory.py,sha256=w7L4qYZCueHIOc6iEWQ8I4cvYlZJLHqC6JD_gjMtl3E,1642
+Kekik_fastapi_cache/backends/memcached.py,sha256=cblug8HZ1boMku_uMjqFQy4KtVXKIKsFoyTsvaOWrw8,755
+Kekik_fastapi_cache-0.2.4.dist-info/METADATA,sha256=3BXOWSX8PQgK4AgvhQO2m6H2-4DKL6E2QNc63LoVzyg,711
+Kekik_fastapi_cache-0.2.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+Kekik_fastapi_cache-0.2.4.dist-info/top_level.txt,sha256=CCVcwBi4s_kNQtfc_YzbrHgT1UMaMmT-y9Y-QFGRP4M,20
+Kekik_fastapi_cache-0.2.4.dist-info/RECORD,,
