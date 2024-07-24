@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: GemSpaceLib
+Version: 1.0
+Summary: A library for interacting with Gem APIs.
+Home-page: https://github.com/Vermouth4/GemSpaceLib
+Author: Vermouth
+Author-email: ver7mouth4@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+Requires-Dist: requests
+Requires-Dist: rich
+
+    This library was programmed by Team AK:
+     - Vermouth 
+     - Maggie 
+     - SFAH 
+     - Kratos 
+     - Miso 
+     - Extra 
+     - Serat 
+     - Daisuke
+     - Fenello 
+     - Francis
+     - Pirate - 8r9 ...
+    

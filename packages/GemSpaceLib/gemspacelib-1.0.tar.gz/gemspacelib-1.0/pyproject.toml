@@ -1,0 +1,10 @@
+[tool.flit.metadata]
+module = "Gemspacelib"
+author = "Vermouth"
+author-email = "ver7mouth4@gmail.com"
+description = "A library for interacting with Gem APIs."
+license = "MIT"
+home-page = "https://github.com/Vermouth4/GemSpaceLib"
+#By Vermouth
+
+[tool.flit.sdist]

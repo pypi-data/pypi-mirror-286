@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+GemSpaceLib.egg-info/PKG-INFO
+GemSpaceLib.egg-info/SOURCES.txt
+GemSpaceLib.egg-info/dependency_links.txt
+GemSpaceLib.egg-info/requires.txt
+GemSpaceLib.egg-info/top_level.txt
