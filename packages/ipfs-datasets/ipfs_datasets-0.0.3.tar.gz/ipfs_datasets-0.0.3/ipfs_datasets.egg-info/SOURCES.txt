@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ipfs_datasets/__init__.py
+ipfs_datasets/ipfs_datasets.py
+ipfs_datasets/ipfs_knn_index.py
+ipfs_datasets/s3_kit.py
+ipfs_datasets/test_fio.py
+ipfs_datasets.egg-info/PKG-INFO
+ipfs_datasets.egg-info/SOURCES.txt
+ipfs_datasets.egg-info/dependency_links.txt
+ipfs_datasets.egg-info/top_level.txt
+test/test.py
