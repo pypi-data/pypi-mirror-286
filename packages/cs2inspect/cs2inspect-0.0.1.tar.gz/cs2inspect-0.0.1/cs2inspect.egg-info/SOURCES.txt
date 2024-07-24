@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cs2inspect/__init__.py
+cs2inspect/_general.py
+cs2inspect/_hex.py
+cs2inspect/_proto.py
+cs2inspect/_rarity.py
+cs2inspect/econ_pb2.py
+cs2inspect.egg-info/PKG-INFO
+cs2inspect.egg-info/SOURCES.txt
+cs2inspect.egg-info/dependency_links.txt
+cs2inspect.egg-info/top_level.txt
+tests/__init__.py
+tests/test_proto.py
