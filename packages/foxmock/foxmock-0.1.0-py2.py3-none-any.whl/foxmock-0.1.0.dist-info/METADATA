@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: foxmock
+Version: 0.1.0
+Summary: A simple and flixible mock library for python
+Home-page: https://github.com/wangxiaochuang/foxmock
+Author: wangxiaochuang
+Author-email: jackstrawxiaoxin@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# foxmock
+
+a mock library for python, It's simple and flixible
+
+```python
+from foxmock import Mock
+
+obj = Mock()
+obj.call("get").ret("12345")
+obj.index("age").ret(32)
+
+token = obj.get()
+assert token == "12345"
+assert obj["age"] == 32
+```
+
+or you can inherit from Mock
+
+```python
+from foxmock import Mock
+
+class DynamicToken(Mock):
+    def __init__(self):
+        self.call("get").ret("12345")
+        self.index("age").ret(32)
+
+
+token = obj.get()
+assert token == "12345"
+assert obj["age"] == 32
+```
+
+
