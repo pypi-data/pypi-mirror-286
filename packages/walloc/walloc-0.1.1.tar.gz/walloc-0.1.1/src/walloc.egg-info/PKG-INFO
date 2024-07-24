@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: walloc
+Version: 0.1.1
+Summary: Wavelet Learned Lossy Compression
+Author-email: Dan Jacobellis <danjacobellis@utexas.edu>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+
+# WaLLoC
+Wavelet Learned Lossy Compression
