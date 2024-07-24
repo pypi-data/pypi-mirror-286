@@ -1,0 +1,6 @@
+README.md
+setup.py
+pop_xnode.egg-info/PKG-INFO
+pop_xnode.egg-info/SOURCES.txt
+pop_xnode.egg-info/dependency_links.txt
+pop_xnode.egg-info/top_level.txt
