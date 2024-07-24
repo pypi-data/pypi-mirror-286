@@ -1,0 +1,15 @@
+MANIFEST.in
+pyproject.toml
+setup.py
+crx_snake.egg-info/PKG-INFO
+crx_snake.egg-info/SOURCES.txt
+crx_snake.egg-info/dependency_links.txt
+crx_snake.egg-info/requires.txt
+crx_snake.egg-info/top_level.txt
+crxsnake/Cogs.py
+crxsnake/Errors.py
+crxsnake/Misc.py
+crxsnake/Reader.py
+crxsnake/Tortoise.py
+crxsnake/__init__.py
+crxsnake/loguru.py
