@@ -1,0 +1,123 @@
+{
+    "$defs": {
+        "Cell": {
+            "properties": {
+                "text": {
+                    "title": "Text",
+                    "type": "string"
+                },
+                "tables": {
+                    "items": {
+                        "$ref": "#/$defs/Table"
+                    },
+                    "title": "Tables",
+                    "type": "array"
+                }
+            },
+            "title": "Cell",
+            "type": "object"
+        },
+        "DocumentMeta": {
+            "properties": {
+                "version": {
+                    "default": "0.1.1",
+                    "title": "Version",
+                    "type": "string"
+                },
+                "stem": {
+                    "title": "Stem",
+                    "type": "string"
+                }
+            },
+            "title": "DocumentMeta",
+            "type": "object"
+        },
+        "Figure": {
+            "description": "A figure as captioned in a table of figures in the NVMe Specification Documents.\n\nThis is a minimally enriched figure representation. The intent is that via regular\nexpressions, it should be possible to construct instances when feeding it with\nthe text from a table of figures or a table that conventionally contains a figure\ncaption in the first row.\n\nThe page number is only retrievable from table of figure captions and thus optional.\nThe table data is similarly represented in a form with minimal enrichment.",
+            "properties": {
+                "figure_nr": {
+                    "title": "Figure Nr",
+                    "type": "integer"
+                },
+                "caption": {
+                    "title": "Caption",
+                    "type": "string"
+                },
+                "description": {
+                    "title": "Description",
+                    "type": "string"
+                },
+                "page_nr": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "default": null,
+                    "title": "Page Nr"
+                },
+                "table": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Table"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "default": null
+                }
+            },
+            "required": [
+                "figure_nr",
+                "caption",
+                "description"
+            ],
+            "title": "Figure",
+            "type": "object"
+        },
+        "Row": {
+            "properties": {
+                "cells": {
+                    "items": {
+                        "$ref": "#/$defs/Cell"
+                    },
+                    "title": "Cells",
+                    "type": "array"
+                }
+            },
+            "title": "Row",
+            "type": "object"
+        },
+        "Table": {
+            "properties": {
+                "rows": {
+                    "items": {
+                        "$ref": "#/$defs/Row"
+                    },
+                    "title": "Rows",
+                    "type": "array"
+                }
+            },
+            "title": "Table",
+            "type": "object"
+        }
+    },
+    "properties": {
+        "meta": {
+            "$ref": "#/$defs/DocumentMeta"
+        },
+        "figures": {
+            "items": {
+                "$ref": "#/$defs/Figure"
+            },
+            "title": "Figures",
+            "type": "array"
+        }
+    },
+    "title": "FigureDocument",
+    "type": "object"
+}
