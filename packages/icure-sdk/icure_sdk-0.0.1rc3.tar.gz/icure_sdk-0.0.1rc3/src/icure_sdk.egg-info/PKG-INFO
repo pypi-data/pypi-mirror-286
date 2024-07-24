@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: icure-sdk
+Version: 0.0.1rc3
+Author: iCure
+License: MIT License
+Project-URL: Homepage, https://icure.com/en/
+Project-URL: Documentation, https://docs.icure.com/
+Keywords: iCure,medical data,encryption
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
