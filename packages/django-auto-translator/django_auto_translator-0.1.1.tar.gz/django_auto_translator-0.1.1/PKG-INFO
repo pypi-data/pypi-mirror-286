@@ -1,0 +1,79 @@
+Metadata-Version: 2.3
+Name: django_auto_translator
+Version: 0.1.1
+Summary: Automatically translate Django's pot Files
+Project-URL: Homepage, https://github.com/myridia/django_auto_translator
+Project-URL: Issues, https://github.com/myridia/django_auto_translator/issues
+Author-email: Myridia <django_auto_translator@myridia.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ![django-deep-translator](img/django-deep-translator.png ) django-auto-translator  
+
+Autotranslate django `.po` translation files package built on top of  [deep-translator](https://pypi.org/project/deep-translator/)
+
+
+
+## Installation
+
+```bash
+pip install django-auto-translator
+```
+
+Add `'django-auto-translator'` to your `INSTALLED_APPS` setting:
+
+```py
+INSTALLED_APPS = (
+        ...
+        'django-auto-translator',
+    )
+
+```
+
+## Quickstart
+
+```bash 
+python manage.py translate_messages
+```
+
+The command finds all the generated pot (.po) files under the locale paths (LOCALE_PATHS) specified in django project settings, and translates them automatically with default source language as **english**.
+
+## Options
+
+- ``-f, --set-fuzzy``: Set the 'fuzzy' flag on autotranslated entries
+- ``-l, --locale 'locale'``: Only translate the specified locales
+- ``-u, --untranslated``: Only translate the untranslated messages
+- ``-s, --source-language``: Override the default source language (en) used for translation
+- ``-S, --silent``: Don't show the verbose output
+- ``-t, --throttle``: Throttle the maximum of seconds for the next translate request(default=10 sec)
+         
+
+
+```bash
+    python manage.py translate_messages -l 'de' -l 'es'
+```
+
+## Settings
+
+In your settings, list the relative path to locale folders, example:
+
+```py
+LOCALE_PATHS = (
+    'locale',
+    'home/locale',
+    'products/locale',
+    'services/locale',
+)
+```
+
+---
+
+## Credits
+
+Forked from:  https://github.com/wmo-raf/django-deep-translator
+
+Artwork Logo from Eypros: https://openclipart.org/artist/Eypros 
