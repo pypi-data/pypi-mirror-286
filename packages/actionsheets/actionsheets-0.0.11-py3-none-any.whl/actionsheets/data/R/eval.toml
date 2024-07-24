@@ -1,0 +1,199 @@
+language = "R"
+parent = "r"
+name = "eval"
+title = "Dynamic evaluation"
+details = "This sheet is incomplete and not organized well"
+
+
+[variables]
+section = "Variables"
+
+[variables.generate.names]
+action = "Generate valid variable names from string(s)"
+code = "make.names('a@b')"
+
+[variables.generate.names.unique]
+action = "Generate unique variable names from string(s)"
+code = "make.unique(rep('a', 2))"
+
+[variables.test.exists]
+action = "Check if variable exists"
+code = "exists('var')"
+
+[variables.get.expr]
+action = "Get variable name from expression"
+code = "deparse(substitute(expr))"
+
+[variables.expr.substitute]
+action = "Fill in variable values (substitute) in expression"
+code = "substitute(expr, env)"
+details = "Useful when expression is called in another function"
+
+[variables.eval.force]
+action = "Force evaluation of variable"
+code = "force(arg)"
+
+
+[env]
+section = "Environments"
+
+[env.new]
+action = "Create new environment, inherit from global"
+code = "environment()"
+
+[env.new.empty]
+action = "Create new environment without parent"
+code = "new.env(parent = emptyenv())"
+details = "Technically has a parent, but inherits no variables"
+
+[env.test.var.exists]
+action = "Check if variable exists in environment"
+code = "exists('var', envir=env)"
+
+[env.get.current]
+action = "Get current environment"
+code = "sys.frame()"
+
+[env.get.parent]
+action = "Get parent environment"
+code = "parent.frame()"
+
+[env.get.pkg]
+action = "Get package environment"
+code = "getNamespace('package')"
+
+[env.find.var]
+action = "Find environment of variable"
+code = "pryr::where('var')"
+
+[env.var.get]
+action = "Get value of variable in environment"
+code = "get('var', envir=env)"
+
+[env.var.get.try]
+action = "Try get value of variable, with default return"
+code = "get0('var', envir=env, ifnotfound='default value')"
+
+
+[eval]
+section = "Dynamic evaluation"
+
+[eval.create.call]
+action = "Create call"
+code = "call = quote(A = 1)"
+
+[eval.create.expr]
+action = "Create expression"
+code = "expr = expression(A = 1)"
+
+[eval.create.expr.str]
+action = "Create expression from string"
+code = "expr = parse(text='A = 1')"
+
+[eval.call]
+action = "Evaluate call"
+code = "eval(call)"
+
+[eval.expr]
+action = "Evaluate expression"
+code = "eval(expr)"
+
+[eval.expr.terms]
+action = "Evaluate expression with specified values for (undefined) variables"
+code = """
+a = 1
+q = quote(a + b)
+eval(q, list(b=3))
+"""
+
+[eval.var.force]
+action = "Force evaluation of variable"
+code = "force(arg)"
+
+[eval.assign.lazy]
+action = "Lazy-evaluate a variable assignment through expression"
+code = "delayedAssign('x', 2 + 2)"
+
+[eval.fun.inline]
+action = "Call inline function"
+code = "{function(x) x + 1}(5)"
+
+[eval.fun.force]
+action = "Call function with some arguments forced"
+code = "forceAndCall(f)"
+
+[eval.fun.args]
+action = "Call function with arguments in list"
+code = "do.call(fun, list(5))"
+
+[eval.fun.args.opt]
+action = "Call function with arguments in list, ignoring unused"
+code = "R.utils::doCall(fun, n=100, args=env)"
+
+[eval.call.sub]
+action = "Substitute a call"
+code = "do.call(substitute, list(CALL, env=ENV))"
+details = "where CALL is stored in a variable"
+
+[eval.expr.str]
+action = "Get expression as string"
+code = "deparse(expr, width.cutoff=500)"
+
+
+[chain]
+section = "Chained function evaluation"
+description = "Also referred to as piping. Snippets use the magrittr package"
+
+[chain.funs]
+action = "Chain functions"
+code = "y = x %>% table %>% prop.table"
+
+[chain.funs.arg]
+action = "Chain function calls, using the former input as a later argument"
+code = "z = data.table(…) %>% .[, mean(x)]"
+details = "call must be placed in brackets for embedded function calls"
+
+[chain.funs.former]
+action = "Call consecutive function, but return the former value"
+code = "y = x %>% table %T>% print"
+
+[chain.assign]
+action = "Call functions and update the LHS"
+code = "x %<>% sort %>% abs"
+
+
+[fun]
+section = "Functions"
+
+[fun.allargs]
+action = "Get all arguments, including defaults"
+code = "mget(names(formals()),sys.frame(sys.nframe()))"
+
+[fun.args.dots]
+action = "Get all specified arguments, including ellipsis"
+code = "as.list(match.call()[-1])"
+
+[fun.pass.args]
+action = "Pass all specified arguments to a nested function"
+code = "match.call() %>% eval()"
+
+[fun.pass.args.2]
+code = """
+call = match.call()
+call$extra = 'test'
+eval(call)
+"""
+
+[fun.pass.args.3]
+code = """
+call = match.call()
+call[[1]] = as.symbol('newFunction')
+eval(call)
+"""
+
+[fun.parent._name]
+action = "Get name of the parent calling function"
+code = """
+parentCall = sys.calls()[[sys.nframe()-2]]
+as.character(parentCall[[1]])
+"""

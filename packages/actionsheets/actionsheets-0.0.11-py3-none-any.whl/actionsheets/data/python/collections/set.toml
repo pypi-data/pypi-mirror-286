@@ -1,0 +1,178 @@
+language = "python"
+parent = "python.collections"
+name = "set"
+title = "Set"
+description = """
+A collection of unique items, unordered and unindexed.
+"""
+details = "This sheet is incomplete."
+
+[create]
+section = "Create"
+description = "Define a set"
+
+[create.empty]
+action = "Empty"
+code = "set()"
+details = "`{}` defines a dictionary!"
+
+[create.define]
+action = "Define"
+code = "{'apple', 'banana', 'pear'}"
+
+[create.tuple]
+action = "From tuple"
+code = "set(x)"
+
+[create.list]
+action = "From list"
+code = "set(x)"
+
+[create.iter]
+action = "From iterable (consumes)"
+code = "set(x)"
+
+
+[test]
+section = "Test"
+
+[test.is]
+action = "Is set"
+code = "x is set"
+
+[test.inherits]
+action = "Is set or subclass"
+code = "isinstance(x, set)"
+
+[test.empty]
+action = "Empty"
+code = "not x"
+
+[test.nempty]
+action = "Not empty"
+code = "x"
+
+[test.contains.value]
+action = "Contains value _v_"
+code = "v in x"
+
+[test.contains.none]
+action = "Contains `None`"
+code = "None in x"
+
+[test.contains.values.all]
+action = "Contains all of the given values"
+code = "{v1, v2}.issubset(x)"
+
+[test.contains.values.all.list]
+code = "x.issuperset([v1, v2])"
+
+[test.contains.values.any]
+action = "Contains any of the given values"
+code = "not x.isdisjoint([v1, v2])"
+
+[test.contains.values.none]
+action = "Contains none of the given values"
+code = "x.isdisjoint([v1, v2])"
+
+
+[test.set]
+section = "Compare with another set"
+
+[test.set.disjoint]
+action = "Sets share no values"
+code = "x.isdisjoint(y)"
+
+[test.set.sub]
+action = "Set is a subset of the other: all values of x are in y"
+code = "x.issubset(y)"
+
+[test.set.super]
+action = "Set is a superset of the other: all values of y are in x"
+code = "x.issuperset(y)"
+
+[update]
+section = "Update"
+
+[update.map]
+section = "Map"
+
+
+[update.grow]
+section = "Grow"
+
+[update.grow.add]
+action = "Add value if needed"
+code = "x.add('strawberry')"
+
+[update.grow.add.list]
+action = "Add multiple values if needed"
+code = "x.update(['strawberry', 'kiwi'])"
+
+
+[update.shrink]
+section = "Shrink"
+
+[update.shrink.clear]
+action = "Remove all values (clear)"
+code = "x.clear()"
+
+[update.shrink.remove]
+action = "Remove value"
+code = "x.remove('strawberry')"
+details = "Throws error if value is missing"
+
+[update.shrink.remove.try]
+action = "Remove value if needed"
+code = "x.discard('strawberry')"
+
+
+[derive]
+section = "Derive"
+
+[derive.join]
+section = "Join"
+description = "Join with another set"
+
+[derive.join.union]
+action = "Union with another set"
+code = "x | y"
+
+[derive.join.union.fun]
+code = "x.union(y)"
+
+[derive.join.intersect]
+action = "Intersection with another set: get values which are present in both sets"
+code = "x & y"
+
+[derive.join.intersect.fun]
+code = "x.intersect(y)"
+
+[derive.join.diff]
+action = "Difference to another set: get values which are not present in the other set"
+code = "x - y"
+
+[derive.join.diff.fun]
+code = "x.difference(y)"
+
+[derive.join.symdiff]
+action = "Symmetric difference with another set: get values that are not present in both sets"
+code = "x ^ y"
+
+[derive.join.symdiff.fun]
+code = "x.symmetric_difference(y)"
+
+
+[convert]
+section = "Convert"
+description = "The order of the values in the output should not be relied on"
+
+[convert.tuple]
+action = "Tuple of values"
+code = "tuple(x)"
+
+[convert.list]
+action = "List of values"
+code = "list(x)"
+
+

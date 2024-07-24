@@ -1,0 +1,195 @@
+language = "python"
+parent = "python.filesystem"
+name = "path"
+title = "Path handling"
+description = "File system path handling"
+
+[create]
+section = "Create"
+description = "Create or generate path(s)"
+
+[create.wd]
+action = "Current working directory"
+code = "os.getcwd()"
+details = "Can be set using `os.chdir()`"
+
+[create.join]
+action = "From directory and given file name"
+code = "os.path.join(dir_path, filename)"
+
+[create.temp.file]
+action = "Temporary file path"
+code = "tempfile.mktemp()"
+
+[create.temp.file.at]
+action = "Temporary file path in directory"
+code = "tempfile.mktemp(dir=dir_path)"
+
+[create.temp.file.ext]
+action = "Temporary file path with extension (suffix)"
+code = "tempfile.mktemp('.txt')"
+
+[create.temp.dir]
+action = "Temporary directory path"
+code = "tempfile.mkdtemp()"
+
+[create.temp.dir.at]
+action = "Temporary directory path in directory"
+code = "tempfile.mkdtemp(dir=dir_path)"
+
+[create.dir.interactive]
+action = "Directory path obtained interactively from user via dialog"
+code = """
+import tkinter
+from tkinter import filedialog
+tkinter.Tk().withdraw()
+path = tkinter.filedialog.askdirectory()
+"""
+details = "`withdraw()` is needed to prevent an annoying empty window from opening"
+
+[create.file.interactive]
+action = "File path obtained interactively from user via dialog"
+code = """
+import tkinter
+from tkinter import filedialog
+tkinter.Tk().withdraw()
+path = tkinter.filedialog.askopenfile()
+"""
+details = "`withdraw()` is needed to prevent an annoying empty window from opening"
+
+
+[test]
+section = "Test"
+
+[test.exists]
+action = "File/dir exists"
+code = "os.path.exists(path)"
+
+[test.is.file]
+action = "File path"
+code = "os.path.isfile(path)"
+
+[test.is.dir]
+action = "Directory path"
+code = "os.path.isdir(path)"
+
+[test.is.abs]
+action = "Absolute path"
+code = "os.path.isabs(path)"
+
+[test.is.equal]
+action = "Paths refer to same file"
+code = "os.path.samefile(path1, path2)"
+
+[test.is.parent]
+action = "Is parent of path"
+code = "?"
+
+[test.is.child]
+action = "Is child of path"
+code = "?"
+
+
+[derive]
+section = "Derive"
+description = "Manipulate a path"
+
+[derive.file._name]
+action = "Filename"
+code = "os.path.basename(r'C:\\Files\\derp.csv')"
+details = "Returns derp.csv"
+
+[derive.file.'no-ext']
+action = "Filename without extension"
+code = "os.path.splitext(os.path.basename(r'C:\\Files\\derp.csv'))[0]"
+details = "Returns derp"
+
+[derive.file.ext]
+action = "File extension"
+code = "os.path.splitext(r'C:\\Files\\derp.csv')[1]"
+details = "Returns .csv"
+
+
+[derive.path.normalize]
+action = "Normalize path"
+code = "os.path.normpath(path)"
+
+[derive.path.abs]
+action = "Absolute path"
+code = "os.path.abspath(path)"
+details = "Paths are relative to the working directory"
+
+[derive.path.canonical]
+action = "Canonical path (resolving symlinks)"
+code = "os.path.realpath(path)"
+
+[derive.parent.path]
+action = "Parent path"
+code = "os.path.dirname(r'C:\\Files\\derp.csv')"
+details = "Returns C:\\Files"
+
+[derive.parent._name]
+action = "Parent directory name"
+code = "os.path.basename(os.path.dirname((r'C:\\Files\\derp.csv'))"
+details = "Returns Files"
+
+[derive.relativeto]
+action = "Relative path to directory"
+code = "os.path.relpath(path, start=dir_path)"
+
+[derive.join]
+action = "Join path with subdirectories and/or file"
+code = "os.path.join(path, ..., dirN, file)"
+
+[derive.remove.ext]
+action = "File path without extension"
+code = "os.path.splitext(path)[0]"
+
+[derive.parent.common]
+action = "Get common parent path between two or more paths"
+code = "os.path.commonpath(paths)"
+
+
+[extract]
+section = "Extract"
+description = "All snippets return a list of string paths"
+
+[extract.files._name]
+action = "File names"
+code = "os.listdir(dir_path)"
+
+[extract.files._name.filter.unix]
+action = "File names that match Unix filter"
+code = "fnmatch.filter(os.listdir(dir_path), '*.csv')"
+
+[extract.files._name.filter.regex]
+action = "File names that match regex pattern"
+code = "[f for f in os.listdir(dir_path) if re.match('\\.csv$', f)]"
+
+[extract.files.path]
+action = "File paths"
+code = "[os.path.join(dir_path, f) for f in os.listdir(dir_path)]"
+
+[extract.files.path.filter.unix]
+action = "File paths that match Unix filter"
+code = "glob.glob(os.path.join(path, '*.csv'))"
+
+[extract.files.path.filter.regex]
+action = "File paths that match regex pattern"
+code = """
+[os.path.join(dir_path, f)
+    for f in os.listdir(dir_path) if re.match(r'.+\\.csv$', f)]
+"""
+
+[extract.files.path.filter.unix.recursive]
+action = "File paths that match Unix filter, including nested entries (recursive)"
+code = "glob.glob(os.path.join(path, '**\\*.csv'), recursive = True)"
+details = "The **\\ is required for recursive search to do anything."
+
+[extract.'parent-basename']
+action = "Split path into parent path and basename"
+code = "parent_path, base_name = os.path.split(path)"
+
+[extract.'path-ext']
+action = "Split path into file path and extension"
+code = "file_path, ext = os.path.splitext(path)"
