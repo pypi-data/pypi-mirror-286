@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ai-tqa
+Version: 0.1
+Summary: A text evaluation module using AI-TQA Basic
+Home-page: https://github.com/krozen-dev/AI_TextScan
+Author: _KroZen_
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: nltk
+
+# Описание:
+
+TextEvaluator использует модель AI-TQA Basic для оценки текста и определения наличия в нем плохих слов или выражений.
+
+# Установка:
+
+`pip install ai-tqa`
+
+# Использование:
+
+```
+from ai-tqa import *
+
+evaluator = TextEvaluator()
+
+text = "Привет, даун!"
+
+result, bad_words = evaluator.evaluate_text(text)
+
+print(f"Результат: {result}, Плохие слова: {bad_words}")
+```
+
+# Контрибьюторы:
+
+- KroZen
