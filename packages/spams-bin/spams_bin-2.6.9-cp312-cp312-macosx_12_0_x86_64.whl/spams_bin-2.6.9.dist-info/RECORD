@@ -1,0 +1,15 @@
+spams/__init__.py,sha256=xHcMde31B_Zgi9MrSloYNaeuMyQBh9yrXGWijCauIo4,60
+spams/spams.py,sha256=Oz_7pO8yB-Ga-nPlIQM9zqntQgVmFbAuz3vaOomNUi0,28693
+spams/.dylibs/libgfortran.5.dylib,sha256=xAEsoXzmpWwEg0UeOJEFglY8UBgDQAvt3H5Pgjs7OnI,3550368
+spams/.dylibs/libopenblasp-r0.3.27.dylib,sha256=nN1lTUJ4g2n9euG-g_EEZFmlBkrov0ZJHwjQGLgC_n8,68199776
+spams/.dylibs/libquadmath.0.dylib,sha256=yXXgXwZhQbKxdXe5NZNTaokUIJ-inNKPHraw1_BT88c,367568
+spams/.dylibs/libgcc_s.1.1.dylib,sha256=1TL_-B04jwOKqZgGtlBn1sAFzJMImBnNeIbFuGO3sFQ,255584
+spams/.dylibs/libgomp.1.dylib,sha256=i5o8dgZn4bvaxO3rh24krD_21QDKMuswRZGcv3Ey_O0,477552
+spams_wrap/__init__.py,sha256=YIHCmH1R55dbX1L6wKGc-mLQwkKnCyWDT0zkxpRX3c0,65
+spams_wrap/spams_wrap.py,sha256=g10GC-FA7zgNQL5qQJJjPuhGWNTrheZIycA_RZOT-oE,627
+spams_wrap/_spams_wrap.cpython-312-darwin.so,sha256=78Kj5HSNppGKGabQwFkNRRnWDVEYpdCZNW2IFIeevFU,2327520
+spams_bin-2.6.9.dist-info/RECORD,,
+spams_bin-2.6.9.dist-info/LICENSE,sha256=EqxQR_KvBSLwZ5ixWJ_8RZm8KckflU14dOAyBjTnd8A,35122
+spams_bin-2.6.9.dist-info/WHEEL,sha256=z2vCQ8yWBs7R4OLG__d_l_Z8xuiHBxyulzUO1AkJ1u0,110
+spams_bin-2.6.9.dist-info/top_level.txt,sha256=3eyGfMfOg3p44Y3heb4Yn7k-YKwYThwTKPfbIfqS2Yc,17
+spams_bin-2.6.9.dist-info/METADATA,sha256=yIYNys0RRuwUFyMChd1lDZjRAfwDpGlwp8cOc2pfB_8,753
