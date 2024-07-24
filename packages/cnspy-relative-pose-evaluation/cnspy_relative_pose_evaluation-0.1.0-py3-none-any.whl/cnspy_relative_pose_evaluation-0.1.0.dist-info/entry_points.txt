@@ -1,0 +1,6 @@
+[console_scripts]
+ROSBag_Poses2RelPose = cnspy_relative_pose_evaluation.ROSBag_Poses2RelPose:main
+ROSBag_TrueRelPoses = cnspy_relative_pose_evaluation.ROSBag_TrueRelPoses:main
+RelPoseMeasEvaluation = cnspy_relative_pose_evaluation.RelPoseMeasEvaluation:main
+RelPoseMeasEvaluationTool = cnspy_relative_pose_evaluation.RelPoseMeasEvaluationTool:main
+RelPose_ROSBag2CSV = cnspy_relative_pose_evaluation.RelPose_ROSBag2CSV:main
