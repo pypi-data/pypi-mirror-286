@@ -1,0 +1,6 @@
+README.md
+setup.py
+pop_jetson.egg-info/PKG-INFO
+pop_jetson.egg-info/SOURCES.txt
+pop_jetson.egg-info/dependency_links.txt
+pop_jetson.egg-info/top_level.txt
