@@ -1,0 +1,16 @@
+h5py
+numpy
+scipy
+pandas
+matplotlib
+scikit-image
+pillow
+tabulate
+sfHMM
+bokeh
+pybaselines
+scipy
+seaborn
+fpdf
+tqdm
+reportlab
