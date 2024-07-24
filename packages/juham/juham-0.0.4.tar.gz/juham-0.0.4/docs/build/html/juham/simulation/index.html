@@ -1,0 +1,1056 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>juham.simulation &#8212; juham  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css?v=4468db6d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
+    <link rel="stylesheet" type="text/css" href="../../_static/juham.css?v=7a3aeb84" />
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="juham.ts" href="../ts/index.html" />
+    <link rel="prev" title="juham.shelly" href="../shelly/index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          juham</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">Welcome to Juham™ - Juha’s Ultimate Home Automation Masterpiece</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../LICENSE.html">LICENSE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../CONTRIBUTING.html">Contributing to Juham™ - Juha’s Ultimate Home Automation Masterpiece</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../TODO.html">TODOs for Juham™</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Project Overview</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">juham.simulation</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker"><code class="docutils literal notranslate"><span class="pre">RTracker</span></code></a><ul>
+<li><a class="reference internal" href="#juham.simulation.RTracker.app_name"><code class="docutils literal notranslate"><span class="pre">RTracker.app_name</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.classattrs_from_dict"><code class="docutils literal notranslate"><span class="pre">RTracker.classattrs_from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.classattrs_to_dict"><code class="docutils literal notranslate"><span class="pre">RTracker.classattrs_to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.config_folder"><code class="docutils literal notranslate"><span class="pre">RTracker.config_folder</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.copy"><code class="docutils literal notranslate"><span class="pre">RTracker.copy()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.database_class_id"><code class="docutils literal notranslate"><span class="pre">RTracker.database_class_id</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.database_client"><code class="docutils literal notranslate"><span class="pre">RTracker.database_client</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.debug"><code class="docutils literal notranslate"><span class="pre">RTracker.debug()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.deserialize_from_json"><code class="docutils literal notranslate"><span class="pre">RTracker.deserialize_from_json()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.disconnect"><code class="docutils literal notranslate"><span class="pre">RTracker.disconnect()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.epoc2utc"><code class="docutils literal notranslate"><span class="pre">RTracker.epoc2utc()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.error"><code class="docutils literal notranslate"><span class="pre">RTracker.error()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.event_topic"><code class="docutils literal notranslate"><span class="pre">RTracker.event_topic</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.find_class"><code class="docutils literal notranslate"><span class="pre">RTracker.find_class()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.from_dict"><code class="docutils literal notranslate"><span class="pre">RTracker.from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.get_class_id"><code class="docutils literal notranslate"><span class="pre">RTracker.get_class_id()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.get_json_file"><code class="docutils literal notranslate"><span class="pre">RTracker.get_json_file()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.info"><code class="docutils literal notranslate"><span class="pre">RTracker.info()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.init_database"><code class="docutils literal notranslate"><span class="pre">RTracker.init_database()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.init_mqtt"><code class="docutils literal notranslate"><span class="pre">RTracker.init_mqtt()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.initialize_class"><code class="docutils literal notranslate"><span class="pre">RTracker.initialize_class()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.instantiate"><code class="docutils literal notranslate"><span class="pre">RTracker.instantiate()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.instantiate_with_param"><code class="docutils literal notranslate"><span class="pre">RTracker.instantiate_with_param()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.is_abstract"><code class="docutils literal notranslate"><span class="pre">RTracker.is_abstract()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.is_time_between"><code class="docutils literal notranslate"><span class="pre">RTracker.is_time_between()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.lat"><code class="docutils literal notranslate"><span class="pre">RTracker.lat</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.load_from_json"><code class="docutils literal notranslate"><span class="pre">RTracker.load_from_json()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.log_message"><code class="docutils literal notranslate"><span class="pre">RTracker.log_message()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.lon"><code class="docutils literal notranslate"><span class="pre">RTracker.lon</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.mqtt_class_id"><code class="docutils literal notranslate"><span class="pre">RTracker.mqtt_class_id</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.mqtt_host"><code class="docutils literal notranslate"><span class="pre">RTracker.mqtt_host</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.mqtt_port"><code class="docutils literal notranslate"><span class="pre">RTracker.mqtt_port</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.mqtt_root_topic"><code class="docutils literal notranslate"><span class="pre">RTracker.mqtt_root_topic</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_connect"><code class="docutils literal notranslate"><span class="pre">RTracker.on_connect()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_disconnect"><code class="docutils literal notranslate"><span class="pre">RTracker.on_disconnect()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_event"><code class="docutils literal notranslate"><span class="pre">RTracker.on_event()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_message"><code class="docutils literal notranslate"><span class="pre">RTracker.on_message()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_sensor"><code class="docutils literal notranslate"><span class="pre">RTracker.on_sensor()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.parse_args"><code class="docutils literal notranslate"><span class="pre">RTracker.parse_args()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.publish"><code class="docutils literal notranslate"><span class="pre">RTracker.publish()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.pubsub_class_id"><code class="docutils literal notranslate"><span class="pre">RTracker.pubsub_class_id</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.rad"><code class="docutils literal notranslate"><span class="pre">RTracker.rad</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.read"><code class="docutils literal notranslate"><span class="pre">RTracker.read()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.register"><code class="docutils literal notranslate"><span class="pre">RTracker.register()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.register_class"><code class="docutils literal notranslate"><span class="pre">RTracker.register_class()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.register_topic"><code class="docutils literal notranslate"><span class="pre">RTracker.register_topic()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.run"><code class="docutils literal notranslate"><span class="pre">RTracker.run()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.run_forever"><code class="docutils literal notranslate"><span class="pre">RTracker.run_forever()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.save_to_json"><code class="docutils literal notranslate"><span class="pre">RTracker.save_to_json()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.serialize_to_json"><code class="docutils literal notranslate"><span class="pre">RTracker.serialize_to_json()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.set_log"><code class="docutils literal notranslate"><span class="pre">RTracker.set_log()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.shutdown"><code class="docutils literal notranslate"><span class="pre">RTracker.shutdown()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.subscribe"><code class="docutils literal notranslate"><span class="pre">RTracker.subscribe()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.timestamp"><code class="docutils literal notranslate"><span class="pre">RTracker.timestamp()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.timestampstr"><code class="docutils literal notranslate"><span class="pre">RTracker.timestampstr()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.to_dict"><code class="docutils literal notranslate"><span class="pre">RTracker.to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.topic"><code class="docutils literal notranslate"><span class="pre">RTracker.topic</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.update_interval"><code class="docutils literal notranslate"><span class="pre">RTracker.update_interval</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.valid_topic"><code class="docutils literal notranslate"><span class="pre">RTracker.valid_topic()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.warning"><code class="docutils literal notranslate"><span class="pre">RTracker.warning()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.workerThreadId"><code class="docutils literal notranslate"><span class="pre">RTracker.workerThreadId</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.write"><code class="docutils literal notranslate"><span class="pre">RTracker.write()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.write_attempts"><code class="docutils literal notranslate"><span class="pre">RTracker.write_attempts</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../shelly/index.html" title="Previous Chapter: juham.shelly"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; juham.shelly</span>
+    </a>
+  </li>
+  <li>
+    <a href="../ts/index.html" title="Next Chapter: juham.ts"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">juham.ts &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../../_sources/juham/simulation/index.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">juham.simulation</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker"><code class="docutils literal notranslate"><span class="pre">RTracker</span></code></a><ul>
+<li><a class="reference internal" href="#juham.simulation.RTracker.app_name"><code class="docutils literal notranslate"><span class="pre">RTracker.app_name</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.classattrs_from_dict"><code class="docutils literal notranslate"><span class="pre">RTracker.classattrs_from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.classattrs_to_dict"><code class="docutils literal notranslate"><span class="pre">RTracker.classattrs_to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.config_folder"><code class="docutils literal notranslate"><span class="pre">RTracker.config_folder</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.copy"><code class="docutils literal notranslate"><span class="pre">RTracker.copy()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.database_class_id"><code class="docutils literal notranslate"><span class="pre">RTracker.database_class_id</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.database_client"><code class="docutils literal notranslate"><span class="pre">RTracker.database_client</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.debug"><code class="docutils literal notranslate"><span class="pre">RTracker.debug()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.deserialize_from_json"><code class="docutils literal notranslate"><span class="pre">RTracker.deserialize_from_json()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.disconnect"><code class="docutils literal notranslate"><span class="pre">RTracker.disconnect()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.epoc2utc"><code class="docutils literal notranslate"><span class="pre">RTracker.epoc2utc()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.error"><code class="docutils literal notranslate"><span class="pre">RTracker.error()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.event_topic"><code class="docutils literal notranslate"><span class="pre">RTracker.event_topic</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.find_class"><code class="docutils literal notranslate"><span class="pre">RTracker.find_class()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.from_dict"><code class="docutils literal notranslate"><span class="pre">RTracker.from_dict()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.get_class_id"><code class="docutils literal notranslate"><span class="pre">RTracker.get_class_id()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.get_json_file"><code class="docutils literal notranslate"><span class="pre">RTracker.get_json_file()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.info"><code class="docutils literal notranslate"><span class="pre">RTracker.info()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.init_database"><code class="docutils literal notranslate"><span class="pre">RTracker.init_database()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.init_mqtt"><code class="docutils literal notranslate"><span class="pre">RTracker.init_mqtt()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.initialize_class"><code class="docutils literal notranslate"><span class="pre">RTracker.initialize_class()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.instantiate"><code class="docutils literal notranslate"><span class="pre">RTracker.instantiate()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.instantiate_with_param"><code class="docutils literal notranslate"><span class="pre">RTracker.instantiate_with_param()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.is_abstract"><code class="docutils literal notranslate"><span class="pre">RTracker.is_abstract()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.is_time_between"><code class="docutils literal notranslate"><span class="pre">RTracker.is_time_between()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.lat"><code class="docutils literal notranslate"><span class="pre">RTracker.lat</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.load_from_json"><code class="docutils literal notranslate"><span class="pre">RTracker.load_from_json()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.log_message"><code class="docutils literal notranslate"><span class="pre">RTracker.log_message()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.lon"><code class="docutils literal notranslate"><span class="pre">RTracker.lon</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.mqtt_class_id"><code class="docutils literal notranslate"><span class="pre">RTracker.mqtt_class_id</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.mqtt_host"><code class="docutils literal notranslate"><span class="pre">RTracker.mqtt_host</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.mqtt_port"><code class="docutils literal notranslate"><span class="pre">RTracker.mqtt_port</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.mqtt_root_topic"><code class="docutils literal notranslate"><span class="pre">RTracker.mqtt_root_topic</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_connect"><code class="docutils literal notranslate"><span class="pre">RTracker.on_connect()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_disconnect"><code class="docutils literal notranslate"><span class="pre">RTracker.on_disconnect()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_event"><code class="docutils literal notranslate"><span class="pre">RTracker.on_event()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_message"><code class="docutils literal notranslate"><span class="pre">RTracker.on_message()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.on_sensor"><code class="docutils literal notranslate"><span class="pre">RTracker.on_sensor()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.parse_args"><code class="docutils literal notranslate"><span class="pre">RTracker.parse_args()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.publish"><code class="docutils literal notranslate"><span class="pre">RTracker.publish()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.pubsub_class_id"><code class="docutils literal notranslate"><span class="pre">RTracker.pubsub_class_id</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.rad"><code class="docutils literal notranslate"><span class="pre">RTracker.rad</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.read"><code class="docutils literal notranslate"><span class="pre">RTracker.read()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.register"><code class="docutils literal notranslate"><span class="pre">RTracker.register()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.register_class"><code class="docutils literal notranslate"><span class="pre">RTracker.register_class()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.register_topic"><code class="docutils literal notranslate"><span class="pre">RTracker.register_topic()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.run"><code class="docutils literal notranslate"><span class="pre">RTracker.run()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.run_forever"><code class="docutils literal notranslate"><span class="pre">RTracker.run_forever()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.save_to_json"><code class="docutils literal notranslate"><span class="pre">RTracker.save_to_json()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.serialize_to_json"><code class="docutils literal notranslate"><span class="pre">RTracker.serialize_to_json()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.set_log"><code class="docutils literal notranslate"><span class="pre">RTracker.set_log()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.shutdown"><code class="docutils literal notranslate"><span class="pre">RTracker.shutdown()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.subscribe"><code class="docutils literal notranslate"><span class="pre">RTracker.subscribe()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.timestamp"><code class="docutils literal notranslate"><span class="pre">RTracker.timestamp()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.timestampstr"><code class="docutils literal notranslate"><span class="pre">RTracker.timestampstr()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.to_dict"><code class="docutils literal notranslate"><span class="pre">RTracker.to_dict()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.topic"><code class="docutils literal notranslate"><span class="pre">RTracker.topic</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.update_interval"><code class="docutils literal notranslate"><span class="pre">RTracker.update_interval</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.valid_topic"><code class="docutils literal notranslate"><span class="pre">RTracker.valid_topic()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.warning"><code class="docutils literal notranslate"><span class="pre">RTracker.warning()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.workerThreadId"><code class="docutils literal notranslate"><span class="pre">RTracker.workerThreadId</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.write"><code class="docutils literal notranslate"><span class="pre">RTracker.write()</span></code></a></li>
+<li><a class="reference internal" href="#juham.simulation.RTracker.write_attempts"><code class="docutils literal notranslate"><span class="pre">RTracker.write_attempts</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="../shelly/index.html" title="Previous Chapter: juham.shelly"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; juham.shelly</span>
+    </a>
+  </li>
+  <li>
+    <a href="../ts/index.html" title="Next Chapter: juham.ts"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">juham.ts &raquo;</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="../../_sources/juham/simulation/index.rst.txt"
+     rel="nofollow">Source</a>
+</div>
+<form action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+    <div class="body col-md-9 content" role="main">
+      
+  <section id="module-juham.simulation">
+<span id="juham-simulation"></span><h1>juham.simulation<a class="headerlink" href="#module-juham.simulation" title="Link to this heading">¶</a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading">¶</a></h2>
+<p>This package contains general purpose simulation classes for testing automation scenarios in an environments
+where actual sensor data cannot be accessed.</p>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="juham.simulation.RTracker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">juham.simulation.</span></span><span class="sig-name descname"><span class="pre">RTracker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'rtracker'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/juham/simulation/rtracker.html#RTracker"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#juham.simulation.RTracker" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../web/index.html#juham.web.RThread" title="juham.web.rthread.RThread"><code class="xref py py-class docutils literal notranslate"><span class="pre">RThread</span></code></a></p>
+<p>A tracker automation object. Spawns async thread to generate geographic
+coordinates at specific rate, and writes them to time series database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>RThread</strong> (<em>class</em>) – super class</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.app_name">
+<span class="sig-name descname"><span class="pre">app_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'juham'</span></em><a class="headerlink" href="#juham.simulation.RTracker.app_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.classattrs_from_dict">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">classattrs_from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.classattrs_from_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Set class attributes from a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.classattrs_to_dict">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">classattrs_to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.classattrs_to_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Convert class attributes to a dictionary.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.config_folder">
+<span class="sig-name descname"><span class="pre">config_folder</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'config'</span></em><a class="headerlink" href="#juham.simulation.RTracker.config_folder" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.copy" title="Link to this definition">¶</a></dt>
+<dd><p>Create and return a copy of the current object.</p>
+<p>This method serializes the current object to a dictionary using the <cite>to_dict</cite> method,
+creates a new instance of the object’s class, and populates it with the serialized data
+using the <cite>from_dict</cite> method.</p>
+<p>This method uses class identifier based instantiation (see factory method pattern) to create a new instance
+of the object, and ‘to_dict’ and ‘from_dict’  methods to initialize object’s state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new instance of the object’s class with the same state as the original object.</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">john</span> <span class="o">=</span> <span class="n">Human</span><span class="p">(</span><span class="s2">&quot;john&quot;</span><span class="p">)</span>
+<span class="n">john</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mf">1.8</span>
+<span class="n">john</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">62</span>
+<span class="n">clone_of_john</span> <span class="o">=</span> <span class="n">john</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.database_class_id">
+<span class="sig-name descname"><span class="pre">database_class_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#juham.simulation.RTracker.database_class_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.database_client">
+<span class="sig-name descname"><span class="pre">database_client</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">object</span></em><a class="headerlink" href="#juham.simulation.RTracker.database_client" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.debug">
+<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.debug" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given debug message to the database after logging it using
+the BaseClass’s info() method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The information message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.deserialize_from_json">
+<span class="sig-name descname"><span class="pre">deserialize_from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.deserialize_from_json" title="Link to this definition">¶</a></dt>
+<dd><p>Load  attributes from a JSON file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.disconnect">
+<span class="sig-name descname"><span class="pre">disconnect</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.disconnect" title="Link to this definition">¶</a></dt>
+<dd><p>Request the asynchronous acquisition thread to stop after it has finished its current job.
+This method does not wait for the thread to stop. See <cite>shutdown()</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.epoc2utc">
+<span class="sig-name descname"><span class="pre">epoc2utc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">epoch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.epoc2utc" title="Link to this definition">¶</a></dt>
+<dd><p>Converts the given epoch time to UTC time string. All time
+coordinates are represented in UTC time. This allows the time
+coordinate to be mapped to any local time representation without
+ambiguity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>epoch</strong> (<em>float</em>) – timestamp in UTC time</p></li>
+<li><p><strong>rc</strong> (<em>str</em>) – time string describing date, time and time zone e.g 2024-07-08T12:10:22Z</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>UTC time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.error">
+<span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.error" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given error message to the database after logging it using
+the BaseClass’s info() method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The information message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.event_topic">
+<span class="sig-name descname"><span class="pre">event_topic</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'juham/event'</span></em><a class="headerlink" href="#juham.simulation.RTracker.event_topic" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.find_class">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">find_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.find_class" title="Link to this definition">¶</a></dt>
+<dd><p>Given class identifier find the registered class. If no class with
+the give identifier exists return None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>class_id</strong> (<em>int</em>) – class identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>class or null if not registered</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj (obj)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.from_dict">
+<span class="sig-name descname"><span class="pre">from_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.from_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Update instance attributes from a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.get_class_id">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_class_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.get_class_id" title="Link to this definition">¶</a></dt>
+<dd><p>Return the class id of the class. Each class has an unique
+identifier that can be used for instantiating the class via
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">Object.instantiate()</span></code> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cls</strong> (<em>class</em>) – class</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>id (int) unique class identifier through which the class can be instantiated by factory method pattern.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.get_json_file">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_json_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.get_json_file" title="Link to this definition">¶</a></dt>
+<dd><p>Generate the JSON file name based on the class name.</p>
+<p>The file is created into users home folder.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.info">
+<span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.info" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given information message to the database after logging it
+using the BaseClass’s info() method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The information message to be logged.</p></li>
+<li><p><strong>details</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">obj</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Base</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">)</span>
+<span class="n">obj</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Message arrived&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.init_database">
+<span class="sig-name descname"><span class="pre">init_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.init_database" title="Link to this definition">¶</a></dt>
+<dd><p>Instantiates the configured time series database object.</p>
+<p>Issues a warning if the <a class="reference internal" href="#juham.simulation.RTracker.database_class_id" title="juham.simulation.RTracker.database_class_id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">database_class_id</span></code></a> has not
+been configured, in which case the object will not have the time series
+recording feature.</p>
+<p>This method is called internally and typically there is no need to call it
+from the application code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.init_mqtt">
+<span class="sig-name descname"><span class="pre">init_mqtt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.init_mqtt" title="Link to this definition">¶</a></dt>
+<dd><p>Instantiates the configured MQTT object for networking.</p>
+<p>This method is called internally and typically there is no need to call it
+from the application code.</p>
+<p>Issues a warning if the <a class="reference internal" href="#juham.simulation.RTracker.pubsub_class_id" title="juham.simulation.RTracker.pubsub_class_id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">pubsub_class_id</span></code></a> has not
+been configured, even though objects without a capability to communicate
+are rather crippled.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.initialize_class">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">initialize_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">load_class_attrs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.initialize_class" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize the class for instantiation, if not initialized already.
+This method initializes the class identifier and deserializes the
+public attributes from the specified configuration folder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>load_class_attrs</strong> (<em>bool</em><em>, </em><em>optional</em>) – If true then attempts to initialize class attributes</p></li>
+<li><p><strong>True.</strong> (<em>from the class specific configuration files. Defaults to</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>returns true if the class was initialized, false implies the class is already initialized
+in which case the method call has no effect.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.instantiate">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">instantiate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.instantiate" title="Link to this definition">¶</a></dt>
+<dd><p>Create an instance of the class corresponding to the given class identifier.
+This method implements the factory method pattern, which is essential for a plugin architecture.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>class_id</strong> (<em>int</em>) – Identifier of the class to instantiate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the class corresponding to the given class identifier.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.instantiate_with_param">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">instantiate_with_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.instantiate_with_param" title="Link to this definition">¶</a></dt>
+<dd><p>Given class identifier and one constructor argument create the
+corresponding object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>class_id</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – class identifier</p></li>
+<li><p><strong>param</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></span>) – class specific constructor parameter</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>instance of the given class.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.is_abstract">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_abstract</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.is_abstract" title="Link to this definition">¶</a></dt>
+<dd><p>Check whether the class is abstract or real. Override in the derived
+sub-classes. The default is False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True (bool) if abstract</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.is_time_between">
+<span class="sig-name descname"><span class="pre">is_time_between</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">begin_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.is_time_between" title="Link to this definition">¶</a></dt>
+<dd><p>Check if the given time is within the given time line. All
+timestamps must be in UTC time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>begin_time</strong> (<em>timestamp</em>) – beginning of the timeline</p></li>
+<li><p><strong>end_time</strong> (<em>timestamp</em>) – end of the timeline</p></li>
+<li><p><strong>check_time</strong> (<em>timestamp</em>) – time to be checked</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if within the timeline</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>rc (bool)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.lat">
+<span class="sig-name descname"><span class="pre">lat</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">60.968117</span></em><a class="headerlink" href="#juham.simulation.RTracker.lat" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.load_from_json">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">load_from_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.load_from_json" title="Link to this definition">¶</a></dt>
+<dd><p>Load class attributes from a JSON file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.log_message">
+<span class="sig-name descname"><span class="pre">log_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.log_message" title="Link to this definition">¶</a></dt>
+<dd><p>Publish the given log message to the MQTT ‘log’ topic.</p>
+<p>This method constructs a log message with a timestamp, class type, source name,
+message, and optional details. It then publishes this message to the ‘log’ topic
+using the MQTT protocol.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type</strong> – str
+The classification or type of the log message (e.g., ‘Error’, ‘Info’).</p></li>
+<li><p><strong>msg</strong> – str
+The main log message to be published.</p></li>
+<li><p><strong>details</strong> – str, optional
+Additional details about the log message (default is an empty string).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Exception</strong> – If there is an issue with the MQTT client while publishing the message.</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># publish info message to the Juham&#39;s &#39;log&#39; topic</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">log_message</span><span class="p">(</span><span class="s2">&quot;Info&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Some cool message </span><span class="si">{</span><span class="n">some_stuff</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="nb">dict</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.lon">
+<span class="sig-name descname"><span class="pre">lon</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">25.636786</span></em><a class="headerlink" href="#juham.simulation.RTracker.lon" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.mqtt_class_id">
+<span class="sig-name descname"><span class="pre">mqtt_class_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#juham.simulation.RTracker.mqtt_class_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.mqtt_host">
+<span class="sig-name descname"><span class="pre">mqtt_host</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'localhost'</span></em><a class="headerlink" href="#juham.simulation.RTracker.mqtt_host" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.mqtt_port">
+<span class="sig-name descname"><span class="pre">mqtt_port</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1883</span></em><a class="headerlink" href="#juham.simulation.RTracker.mqtt_port" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.mqtt_root_topic">
+<span class="sig-name descname"><span class="pre">mqtt_root_topic</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'juham'</span></em><a class="headerlink" href="#juham.simulation.RTracker.mqtt_root_topic" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.on_connect">
+<span class="sig-name descname"><span class="pre">on_connect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userdata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rc</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/juham/simulation/rtracker.html#RTracker.on_connect"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#juham.simulation.RTracker.on_connect" title="Link to this definition">¶</a></dt>
+<dd><p>Notification on connect.</p>
+<p>This method is called whenever the MQTT broker is connected.
+For more information on this method consult MQTT documentation available
+in many public sources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> (<em>obj</em>) – MQTT client</p></li>
+<li><p><strong>userdata</strong> (<em>Any</em>) – application specific data</p></li>
+<li><p><strong>flags</strong> (<em>int</em>) – Consult MQTT</p></li>
+<li><p><strong>rc</strong> (<em>int</em>) – See MQTT docs</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.on_disconnect">
+<span class="sig-name descname"><span class="pre">on_disconnect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userdata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.on_disconnect" title="Link to this definition">¶</a></dt>
+<dd><p>Notification on disconnect.</p>
+<p>This method is called whenever the MQTT broker is disconnected.
+For more information on this method consult MQTT documentation available
+in many public sources.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> (<em>obj</em>) – MQTT client</p></li>
+<li><p><strong>userdata</strong> (<em>Any</em>) – application specific data</p></li>
+<li><p><strong>rc</strong> (<em>int</em>) – See MQTT docs</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.on_event">
+<span class="sig-name descname"><span class="pre">on_event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">em</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.on_event" title="Link to this definition">¶</a></dt>
+<dd><p>Notification event callback e.g info or warning.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>em</strong> (<em>dictionary</em>) – dictionary describing the event</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.on_message">
+<span class="sig-name descname"><span class="pre">on_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userdata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/juham/simulation/rtracker.html#RTracker.on_message"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#juham.simulation.RTracker.on_message" title="Link to this definition">¶</a></dt>
+<dd><p>The standared MQTT callback for arriving messages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>client</strong> (<em>object</em>) – mqtt client</p></li>
+<li><p><strong>userdata</strong> (<em>Any</em>) – any user specific data</p></li>
+<li><p><strong>msg</strong> (<em>object</em>) – MQTT message</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.on_sensor">
+<span class="sig-name descname"><span class="pre">on_sensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/juham/simulation/rtracker.html#RTracker.on_sensor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#juham.simulation.RTracker.on_sensor" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.parse_args">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.parse_args" title="Link to this definition">¶</a></dt>
+<dd><p>Parse the startup arguments defined by this class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.publish">
+<span class="sig-name descname"><span class="pre">publish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">retain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.publish" title="Link to this definition">¶</a></dt>
+<dd><p>Publish the given message to the given MQTT topic.
+For more information consult MQTT.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>topic</strong> (<em>str</em>) – topic</p></li>
+<li><p><strong>msg</strong> (<em>str</em>) – message to be published</p></li>
+<li><p><strong>qos</strong> (<em>int</em><em>, </em><em>optional</em>) – quality of service. Defaults to 1.</p></li>
+<li><p><strong>retain</strong> (<em>bool</em><em>, </em><em>optional</em>) – retain. Defaults to True.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.pubsub_class_id">
+<span class="sig-name descname"><span class="pre">pubsub_class_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#juham.simulation.RTracker.pubsub_class_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.rad">
+<span class="sig-name descname"><span class="pre">rad</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#juham.simulation.RTracker.rad" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.read">
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.read" title="Link to this definition">¶</a></dt>
+<dd><p>Reads the given measurement from the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>point</strong> – point with initialized time stamp.</p>
+</dd>
+</dl>
+<p>… note: NOT IMPLEMENTED YET</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.register">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/juham/simulation/rtracker.html#RTracker.register"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#juham.simulation.RTracker.register" title="Link to this definition">¶</a></dt>
+<dd><p>Register the class to the class database.</p>
+<p>Once registered the class can be instantiated by its class
+identifier. Note that this method is called automatically by the
+system when the python loads the class. In this method sub
+classes should prepare themselves for instantiation by
+initializing their class attributes, for example.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.register_class">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">register_class</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ctor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.register_class" title="Link to this definition">¶</a></dt>
+<dd><p>Register the given class identifier for identifier based
+instantiation . This, factory method pattern, as it is called,
+decouples the actual implementation from the interface.  For more
+information see <a class="reference internal" href="#juham.simulation.RTracker.instantiate" title="juham.simulation.RTracker.instantiate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">instantiate()</span></code></a> method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>class_id</strong> (<em>str</em>) – class identifier</p></li>
+<li><p><strong>ctor</strong> (<em>function</em>) – constructor</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.register_topic">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">register_topic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.register_topic" title="Link to this definition">¶</a></dt>
+<dd><p>Register the given topic as known valid topic. Publishing and subscriptions are allowed only to registered
+topics. Each topic must have an owner, who is responsible for registering the topic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>topic</strong> (<em>str</em>) – valid topic</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/juham/simulation/rtracker.html#RTracker.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#juham.simulation.RTracker.run" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize and start the asynchronous acquisition thread.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.run_forever">
+<span class="sig-name descname"><span class="pre">run_forever</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.run_forever" title="Link to this definition">¶</a></dt>
+<dd><p>Starts the network loop and blocks the main thread, continuously
+running the loop to process MQTT messages.</p>
+<p>The loop will run indefinitely unless the connection is lost or
+the program is terminated.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.save_to_json">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">save_to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.save_to_json" title="Link to this definition">¶</a></dt>
+<dd><p>Create class configuration file, if the file does not exist yet.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.serialize_to_json">
+<span class="sig-name descname"><span class="pre">serialize_to_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.serialize_to_json" title="Link to this definition">¶</a></dt>
+<dd><p>Serialize.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.set_log">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">set_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.set_log" title="Link to this definition">¶</a></dt>
+<dd><p>Set logger.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>l</strong> (<em>logger</em>) – logger object</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.shutdown">
+<span class="sig-name descname"><span class="pre">shutdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.shutdown" title="Link to this definition">¶</a></dt>
+<dd><p>Request the acquisition thread to stop, and wait for the thread to stop, then return.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.subscribe">
+<span class="sig-name descname"><span class="pre">subscribe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.subscribe" title="Link to this definition">¶</a></dt>
+<dd><p>Subscribe to the given MQTT topic.</p>
+<p>This method sets up the subscription to the specified MQTT topic and registers
+the <a class="reference internal" href="#juham.simulation.RTracker.on_message" title="juham.simulation.RTracker.on_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">on_message()</span></code></a> method as the callback for incoming messages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>topic</strong> (<em>str</em>) – The MQTT topic to subscribe to.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># configure</span>
+<span class="n">obj</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="s1">&#39;foo/bar&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.timestamp">
+<span class="sig-name descname"><span class="pre">timestamp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.timestamp" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the current date-time in UTC.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>datetime in UTC.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>rc (datetime)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.timestampstr">
+<span class="sig-name descname"><span class="pre">timestampstr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.timestampstr" title="Link to this definition">¶</a></dt>
+<dd><p>Converts the given timestamp to human readable string of form ‘Y-m-d
+H:M:S’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ts</strong> (<em>timestamp</em>) – time stamp to be converted</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>human readable date-time string</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>rc (string)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.to_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Convert instance attributes to a dictionary.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.topic">
+<span class="sig-name descname"><span class="pre">topic</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'juham/tracks'</span></em><a class="headerlink" href="#juham.simulation.RTracker.topic" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.update_interval">
+<span class="sig-name descname"><span class="pre">update_interval</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">60</span></em><a class="headerlink" href="#juham.simulation.RTracker.update_interval" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.valid_topic">
+<span class="sig-name descname"><span class="pre">valid_topic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.valid_topic" title="Link to this definition">¶</a></dt>
+<dd><p>Check if the given topic has been registered as valid topic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>topic</strong> (<em>str</em>) – topic to be validated</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true if known topic.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.warning">
+<span class="sig-name descname"><span class="pre">warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.warning" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the given warning message to the database after logging it
+using the BaseClass’s info() method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The information message to be logged.</p></li>
+<li><p><strong>details</strong> (<em>str</em>) – Additional detailed information for the message to be logged</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.workerThreadId">
+<span class="sig-name descname"><span class="pre">workerThreadId</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'RTrackerThread'</span></em><a class="headerlink" href="#juham.simulation.RTracker.workerThreadId" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#juham.simulation.RTracker.write" title="Link to this definition">¶</a></dt>
+<dd><p>Writes the given measurement to the database. In case of an error,
+it tries again until the maximum number of attempts is reached.  If it
+is still unsuccessful, it gives up and passes the first encountered
+exception to the caller.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>point</strong> – a measurement describing a time stamp and related attributes for one measurement.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="juham.simulation.RTracker.write_attempts">
+<span class="sig-name descname"><span class="pre">write_attempts</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#juham.simulation.RTracker.write_attempts" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2024, juha meskanen.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

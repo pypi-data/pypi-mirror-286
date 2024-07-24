@@ -1,0 +1,34 @@
+Welcome to Juham™ documentation!
+================================
+
+.. image:: _static/juham.png
+    :alt: Juha's Ultimate Home Automation Masterpiece
+    :width: 400px
+    :height: 300px
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+   README
+   CHANGELOG
+   LICENSE
+   CONTRIBUTING
+   TODO
+   juham/index.rst
+
+Classes
+-------
+
+.. inheritance-diagram:: juham.base.Base juham.base.Object juham.base.Group juham.base.JDatabase juham.base.JLog juham.base.JMqtt juham.mqtt.JPaho2 juham.database.JInflux juham.database.JConsole juham.ts.ForecastRecord juham.ts.PowerRecord juham.ts.PowerPlanRecord juham.ts.LogRecord juham.web.RSpotHintaFi juham.web.RVisualCrossing juham.web.HomeWizardWaterMeter juham.shelly.ShellyPlus1 juham.shelly.ShellyPro3EM juham.shelly.ShellyMotion juham.automation.RPowerPlan juham.automation.RBoiler juham.automation.WaterCirculator juham.automation.EnergyCostCalculator juham.simulation.RTracker juham.shelly.ShellyPlus1Simulator juham.shelly.ShellyMotionSimulator
+   :parts: 1
+
+
+
+Index
+=====
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
