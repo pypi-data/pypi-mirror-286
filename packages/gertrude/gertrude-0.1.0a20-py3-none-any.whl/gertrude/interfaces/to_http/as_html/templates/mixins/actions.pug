@@ -1,0 +1,73 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023, 2024 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+mixin assign(task, csrf_token, project)
+  button.button.is-link.is-fullwidth(hx-get=url_for("tasks.assign_form", id=task.id))
+    span.icon: i.fas.fa-tasks(aria-hidden="true")
+    if project
+      span= _("pages-mixins-actions-reassign", current_project=project.short_name)
+    else
+      span= _("pages-mixins-actions-assign")
+
+mixin delegate(task, csrf_token)
+  if task.delegated_to
+    button.button.is-link.is-fullwidth(hx-post=url_for("tasks.reclaim", id=task.id))
+      span.icon: i.fas.fa-coffee(aria-hidden="true")
+      span= _("pages-mixins-actions-reclaim", current_person=task.delegated_to)
+  else
+    button.button.is-link.is-fullwidth(hx-get=url_for("tasks.delegate_form", id=task.id))
+      span.icon: i.fas.fa-coffee(aria-hidden="true")
+      span= _("pages-mixins-actions-delegate")
+
+mixin do(task)
+  button.button.is-success.is-fullwidth(
+    hx-post=url_for("tasks.do", id=task.id)
+  )
+    span.icon: i.fas.fa-thumbs-up(aria-hidden="true")
+    span= _("pages-mixins-actions-do")
+
+mixin eliminate(task)
+  button.button.is-danger.is-fullwidth(hx-post=url_for("tasks.eliminate", id=task.id))
+    span.icon: i.fas.fa-trash(aria-hidden="true")
+    span= _("pages-mixins-actions-eliminate")
+
+mixin file(task)
+  button.button.is-success.is-fullwidth(hx-post=url_for("tasks.file", id=task.id))
+    span.icon: i.fas.fa-folder-open(aria-hidden="true")
+    span= _("pages-mixins-actions-file")
+
+mixin incubate(task)
+  button.button.is-success.is-fullwidth(hx-post=url_for("tasks.incubate", id=task.id))
+    span.icon: i.fas.fa-umbrella(aria-hidden="true")
+    span= _("pages-mixins-actions-incubate")
+
+mixin projectify(task)
+  button.button.is-link.is-fullwidth(disabled)
+    span.icon: i.fas.fa-tasks(aria-hidden="true")
+    span= _("pages-mixins-actions-projectify")
+
+mixin postpone(task)
+  button.button.is-success.is-fullwidth(hx-post=url_for("tasks.postpone", id=task.id))
+    span.icon: i.fas.fa-chevron-circle-right(aria-hidden="true")
+    span= _("pages-mixins-actions-postpone")
+
+mixin schedule(task, csrf_token)
+  button.button.is-link.is-fullwidth(hx-get=url_for("tasks.schedule_form", id=task.id))
+    span.icon: i.fas.fa-calendar(aria-hidden="true")
+    if task.scheduled_on
+      span= _("pages-mixins-actions-reschedule", current_date=task.scheduled_on)
+    else
+      span= _("pages-mixins-actions-schedule")
