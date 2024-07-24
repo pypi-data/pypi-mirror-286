@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pandiag"
+version = "0.1.1"
+description = "CLI tool for converting between diagram formats"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+classifiers = [
+  "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+  "Topic :: Utilities",
+]
+keywords = ["document", "diagram", "converter"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/fwcd/pandiag"
+Repository = "https://github.com/fwcd/pandiag"
+
+[project.scripts]
+pandiag = "pandiag:main"
+
+[tool.setuptools.packages]
+find = {}
