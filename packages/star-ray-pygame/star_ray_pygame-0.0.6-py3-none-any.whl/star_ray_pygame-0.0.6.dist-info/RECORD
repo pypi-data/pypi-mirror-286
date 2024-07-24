@@ -1,0 +1,13 @@
+star_ray_pygame/__init__.py,sha256=F0fP66MY_F-WTcev4lW0iE33yyNhQVqif1_-EHYpcKM,2664
+star_ray_pygame/actuator.py,sha256=VKwPqmEVpkRH4_qkq67XuqYTi8j3_vwspLFOKoZdqzg,1027
+star_ray_pygame/ambient.py,sha256=V8Usae1lh9rQWZEj8hXE6f0I5jBeg8u2EvozJ4jct6g,9887
+star_ray_pygame/avatar.py,sha256=OMEA2FhmVJE-LivasQGTAJKIX-GC_M7_ztpuCDfmREI,6291
+star_ray_pygame/cairosurface.py,sha256=nI1ETtD0hWBxwlzANjZqAagdd5pKQROc97tP-KOPAsc,13805
+star_ray_pygame/event.py,sha256=MaEX19SGVtRQ8oWgxDGU1S5Xw4eKSr2Ur9JWCRlMr_0,2042
+star_ray_pygame/utils.py,sha256=y54plt4i_twE_6mqPVXmcTGRId0LZdLgNjaWgkTk5Hs,1625
+star_ray_pygame/view.py,sha256=en9754sBTGUztKyHbGoD8RSBgRTNWyjQiVzpodV28lw,18710
+star_ray_pygame-0.0.6.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+star_ray_pygame-0.0.6.dist-info/METADATA,sha256=iDG0x7T_MXpw5En5cUoZpg9MPZ2DtrPdTWw_d7iWvRs,43854
+star_ray_pygame-0.0.6.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+star_ray_pygame-0.0.6.dist-info/top_level.txt,sha256=EXgdf3vX7terZm_CkyvVMlGdyk1IMF7rI4Ljk9PkvW8,16
+star_ray_pygame-0.0.6.dist-info/RECORD,,
