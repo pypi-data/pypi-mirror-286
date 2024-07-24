@@ -1,0 +1,23 @@
+scipy
+matplotlib
+ephem
+
+[:python_version == "3.8"]
+numpy<2.0
+
+[:python_version > "3.8"]
+numpy
+
+[astropy]
+astropy
+
+[dev]
+black
+flake8
+Flake8-pyproject
+pre-commit
+wheel
+coverage
+pytest
+pytest-cov
+jupyter
