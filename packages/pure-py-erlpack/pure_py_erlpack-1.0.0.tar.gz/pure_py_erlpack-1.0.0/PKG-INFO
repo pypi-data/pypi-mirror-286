@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pure_py_erlpack
+Version: 1.0.0
+Summary: A erlang term encoder for Python.
+Home-page: http://github.com/discord/erlpack
+Author: Jake Heinz
+Author-email: jh@discordapp.com
+License: Apache 2.0
+License-File: LICENSE
+License-File: COPYING
+Requires-Dist: six~=1.15
