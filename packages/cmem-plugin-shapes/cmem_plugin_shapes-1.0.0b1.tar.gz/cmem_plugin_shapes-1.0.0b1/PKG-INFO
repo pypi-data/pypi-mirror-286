@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: cmem-plugin-shapes
+Version: 1.0.0b1
+Summary: Generate SHACL node and property shapes from a data graph
+License: Apache-2.0
+Keywords: eccenca Corporate Memory,plugin
+Author: eccenca GmbH
+Author-email: info@eccenca.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: cmem-plugin-base (>=4.5.0,<5.0.0)
+Requires-Dist: str2bool (>=1.1,<2.0)
+Requires-Dist: urllib3 (>=2.2.2,<3.0.0)
+Requires-Dist: validators (>=0.33.0,<0.34.0)
+Description-Content-Type: text/markdown
+
+# cmem-plugin-shapes
+
+Generate SHACL node and property shapes from a data graph.
+
+This is a plugin for [eccenca](https://eccenca.com) [Corporate Memory](https://documentation.eccenca.com).
+
+You can install it with the [cmemc](https://eccenca.com/go/cmemc) command line
+clients with:
+
+```
+cmemc admin workspace python install cmem-plugin-shapes
+```
+
