@@ -1,0 +1,15 @@
+#!/bin/sh
+COMMAND=$1
+shift
+
+PATH=./venv/bin:$PATH
+
+case $COMMAND in
+  build)
+    rm -rf dist \
+    && python3 -m build
+    ;;
+  *)
+    echo "Invalid command '$COMMAND'"
+    exit 1
+esac
