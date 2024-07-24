@@ -1,0 +1,77 @@
+[project]
+name = "pdm-pyfuture"
+dynamic = []
+description = ""
+authors = [
+    { name = "Zhan Rongrui", email = "2742392377@qq.com" },
+]
+dependencies = [
+    "pyfuture",
+    "loguru",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+version = "0.1.13"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/zrr1999/pdm-pyfuture.git"
+Repository = "https://github.com/zrr1999/pdm-pyfuture.git"
+
+[project.entry-points.pdm]
+multibuild = "pdm_pyfuture.__main__:plugin"
+
+[project.entry-points."pdm.build.hook"]
+pyfuture = "pdm_pyfuture.build:PyFutureBuildHook"
+
+[tool.ruff]
+line-length = 120
+src = [
+    "pdm_pyfuture",
+    "tests",
+]
+exclude = [
+    "tests/fixtures",
+]
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "I",
+    "B",
+    "C4",
+    "PGH",
+    "RUF",
+    "W",
+    "YTT",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = [
+    "F401",
+    "I002",
+]
+
+[tool.ruff.isort]
+known-first-party = [
+    "pdm_pyfuture",
+]
+required-imports = [
+    "from __future__ import annotations",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+includes = [
+    "pdm_pyfuture",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
