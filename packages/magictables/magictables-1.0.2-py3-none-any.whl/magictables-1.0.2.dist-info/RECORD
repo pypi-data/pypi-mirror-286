@@ -1,0 +1,11 @@
+magictables/__init__.py,sha256=RpJqrYSvZeXvpOvIg6Cyje1hZ9v5yPLzd7hS4sozSAk,62
+magictables/docs/api_reference.md,sha256=RX3EpSsLZoFoB1LWjm_pK-P3HRLYa9sjsiUevHb7pbk,3762
+magictables/docs/quickstart.md,sha256=keDGoNlLhFIWamKXmXFo-9IjM66a-tlDe_8gSPPUTpk,2241
+magictables/hybrid_driver.py,sha256=sf5bbGYYDvdKZFYdH2F_WXbWnGY0-40PQ2FJj_E1eyM,9403
+magictables/magictables.py,sha256=JTXHVsXwXVyi1QFM7wCpX6Bdy7ks2CpJSRsaoR4DzVA,42478
+magictables/plugin_manager.py,sha256=rnObchu7u4isdc3iPXMQvE9VSsWAhgOIFFrzAy2BdhI,1184
+magictables/utils.py,sha256=ex-k9emSW5xAatzF9Zvv7At_cSXtfjoTwP8SzDsovHk,4445
+magictables-1.0.2.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+magictables-1.0.2.dist-info/METADATA,sha256=SnItuJnTQiDmLzXmhbvl-opyGmzhw3ryXzDp3JX8zdA,18084
+magictables-1.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+magictables-1.0.2.dist-info/RECORD,,
