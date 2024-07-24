@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tests/test_testcase_loader.py
+tests/test_unittest_plugin.py
+vedro_unittest/__init__.py
+vedro_unittest/_test_case_loader.py
+vedro_unittest/_vedro_unittest.py
+vedro_unittest.egg-info/PKG-INFO
+vedro_unittest.egg-info/SOURCES.txt
+vedro_unittest.egg-info/dependency_links.txt
+vedro_unittest.egg-info/requires.txt
+vedro_unittest.egg-info/top_level.txt
