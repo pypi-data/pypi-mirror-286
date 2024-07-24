@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: concrete-operators
+Version: 0.1.3a0
+Summary: AI Agent Orchestration Platform
+Author: Abstract Operators
+Author-email: hello@abstractoperators.ai
+Requires-Python: ==3.11.9
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: openai (==1.35.14)
+Requires-Dist: python-dotenv (==1.0.1)
+Description-Content-Type: text/markdown
+
+# Concrete
+
+## Installation
+
