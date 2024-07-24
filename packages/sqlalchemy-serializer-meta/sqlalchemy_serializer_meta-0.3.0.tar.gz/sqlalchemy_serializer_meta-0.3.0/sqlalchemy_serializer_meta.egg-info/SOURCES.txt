@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sqlalchemy_serializer_meta/__init__.py
+sqlalchemy_serializer_meta/serializer.py
+sqlalchemy_serializer_meta/validator.py
+sqlalchemy_serializer_meta.egg-info/PKG-INFO
+sqlalchemy_serializer_meta.egg-info/SOURCES.txt
+sqlalchemy_serializer_meta.egg-info/dependency_links.txt
+sqlalchemy_serializer_meta.egg-info/requires.txt
+sqlalchemy_serializer_meta.egg-info/top_level.txt
