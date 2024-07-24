@@ -1,0 +1,8 @@
+litellm
+langchain
+langchain-openai
+langchain-community
+langgraph
+python-dotenv
+tavily-python
+botrun_google_docs_reader

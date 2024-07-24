@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "botrun_langgraph_agents"
+version = "4.7.241"
+dependencies = [
+    "litellm",
+    "langchain",
+    "langchain-openai",
+    "langchain-community",
+    "langgraph",
+    "python-dotenv",
+    "tavily-python",
+    "botrun_google_docs_reader"
+]
+readme = "README.md"
+scripts = { "botrun-langgraph-agents" = "botrun_langgraph_agents:main" }
