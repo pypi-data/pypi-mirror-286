@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+florestdevtools/__init__.py
+florestdevtools/discord_utilits.py
+florestdevtools/utilits.py
+florestdevtools.egg-info/PKG-INFO
+florestdevtools.egg-info/SOURCES.txt
+florestdevtools.egg-info/dependency_links.txt
+florestdevtools.egg-info/top_level.txt
