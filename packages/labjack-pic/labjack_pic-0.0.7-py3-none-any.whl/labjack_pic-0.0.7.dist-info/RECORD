@@ -1,0 +1,11 @@
+labjack_pic/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+labjack_pic/hacks.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labjack_pic/lj_pic.py,sha256=JQ8UuegB47s5QjFk8ylW-Ohhr7rWUwdHNWWj1sHJbeg,24543
+labjack_pic/u3_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labjack_pic/u3_manager/u3_manager.py,sha256=SEPG23WNQ2-RDi18M4F80Bg8WuXI9YQRL6n_-i71YEE,13637
+labjack_pic-0.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+labjack_pic-0.0.7.dist-info/METADATA,sha256=Jeqp7-sRrOQpQskanIl9Fs9121oHkeBuOGZwxOx35XU,3523
+labjack_pic-0.0.7.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+labjack_pic-0.0.7.dist-info/entry_points.txt,sha256=PAe_JyAsafkkKCHgZlIs0mE9kfP4a8PpW_vvbnQn-Qo,56
+labjack_pic-0.0.7.dist-info/top_level.txt,sha256=kXrURhbXzjaWSeDBPclCCv3cM7wCh2XVsAyo2OeFfXc,12
+labjack_pic-0.0.7.dist-info/RECORD,,
