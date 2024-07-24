@@ -1,0 +1,3 @@
+[console_scripts]
+brancher=gitbrancher:main
+
