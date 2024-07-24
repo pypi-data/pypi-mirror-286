@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: pyclad
+Version: 0.1.0a0
+Summary: Python Library for Continual Lifelong Anomaly Detection
+Author-email: Kamil Faber <kfaber@agh.edu.pl>, Roberto Corizzo <rcorizzo@american.edu>
+Maintainer-email: Kamil Faber <kfaber@agh.edu.pl>, Roberto Corizzo <rcorizzo@american.edu>
+License: MIT License
+Keywords: anomaly detection,continual anomaly detection,continual learning,lifelong learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: scikit-learn>=1.5.0
+Requires-Dist: seaborn>=0.13.2
+Provides-Extra: dev
+Requires-Dist: black>=24.4; extra == 'dev'
+Requires-Dist: flake8>=7.1.0; extra == 'dev'
+Requires-Dist: isort>=5.13.0; extra == 'dev'
+Requires-Dist: pytest>=8.2.2; extra == 'dev'
