@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: speech_metrics
+Version: 0.1.0
+Summary: Common metrics in speech processing
+Home-page: https://github.com/leo19941227/speech_metrics
+Author: Shu-wen Yang
+Author-email: leo19941227@gmail.com
+License-File: LICENSE
+Requires-Dist: editdistance
