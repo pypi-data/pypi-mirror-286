@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: tecton_utils
+Version: 0.0.3
+Summary: [private preview] Utils for Tecton
+Author: Tecton
+License: Apache License 2.0
+Requires-Python: >=3.7
+Requires-Dist: typing-extensions>=4.5
+Provides-Extra: realtime
+Requires-Dist: aws-secretsmanager-caching; extra == 'realtime'
+Provides-Extra: spark
+Requires-Dist: pyspark; extra == 'spark'
+Provides-Extra: tecton
+Requires-Dist: tecton; extra == 'tecton'
+Description-Content-Type: text/markdown
+
+# Tecton Utils
+
+This is in private preview.
+# tecton-utils

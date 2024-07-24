@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: file-contents-sorter
+        files: .github/CODEOWNERS
+      - id: check-added-large-files
+  - repo: local
+    hooks:
+      - id: ruff
+        name: "ruff"
+        language: system
+        entry: rye lint --fix --
+        types_or: [python]
+        stages: [push]
+      - id: ruff-format
+        name: "ruff-format"
+        language: system
+        entry: rye format --fix --
+        types_or: [python]
+        stages: [push]
+      - id: pylint
+        name: "pylint"
+        language: system
+        entry: rye run pylint --
+        types_or: [python]
+        stages: [push]
