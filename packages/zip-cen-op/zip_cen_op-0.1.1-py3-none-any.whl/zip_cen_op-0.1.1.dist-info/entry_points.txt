@@ -1,0 +1,2 @@
+[console_scripts]
+zipcenop = zip_cen_op.main:main
