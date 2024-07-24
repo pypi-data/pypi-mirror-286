@@ -1,0 +1,14 @@
+ittapi/__init__.py,sha256=xdEPiClQC63GfzWS81DXJf5DMOGZ9wtUTV-mDWuTqMo,762
+ittapi/collection_control.py,sha256=x6oWtG2GkbjoPjCT5TVjO0NymYvlBxU5DjtFuRO93PY,6846
+ittapi/domain.py,sha256=l_p1_tXMrkTD8H8708344I7sW383U89p_Z57dGShw8A,402
+ittapi/event.py,sha256=OMkPu8ZkaDO2HB-yhgQUNcs95k10YC9a3zXTWzBKt0E,1528
+ittapi/id.py,sha256=OIwThebT93QihZV_9AekztwT2Dc_mLns37rBOLQGt94,308
+ittapi/native.cp311-win_amd64.pyd,sha256=OdvXCIq3xvZfBPKPntQ6dS8jrH9qoeGn6dtpnG1U6tQ,73216
+ittapi/region.py,sha256=4IYV8oZFCeJpsLms7DDrlBrkBnEB8yz0KLFqeWnx2Fk,8939
+ittapi/string_handle.py,sha256=b7Gnmxsc6UxBhP0yX5BW1o0qOI3iqiEpwGlw3IBD2Kc,334
+ittapi/task.py,sha256=p1jsCHifdH5hdBaqGKdCF5M_ItMY5ZBXN6cAA-SYZno,5405
+ittapi/thread_naming.py,sha256=F7hCg5xt22Cs7akXziXWmLax4gSU0YBfRO-H2UMazZM,301
+ittapi-1.1.0.dist-info/METADATA,sha256=Bto6hc0bJvQVRD0RiKu4LNzncE6A227a3M2V1xC1o-s,4106
+ittapi-1.1.0.dist-info/WHEEL,sha256=nSybvzWlmdJnHiUQSY-d7V1ycwEVUTqXiTvr2eshg44,102
+ittapi-1.1.0.dist-info/top_level.txt,sha256=KzC2YtClWvAaBjL42oiplqc0FdZ5YEjN6nNqQWD5KPs,7
+ittapi-1.1.0.dist-info/RECORD,,
