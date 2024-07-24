@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+ft_package_iderighe/__init__.py
+ft_package_iderighe/count_lines.py
+ft_package_iderighe.egg-info/PKG-INFO
+ft_package_iderighe.egg-info/SOURCES.txt
+ft_package_iderighe.egg-info/dependency_links.txt
+ft_package_iderighe.egg-info/top_level.txt
