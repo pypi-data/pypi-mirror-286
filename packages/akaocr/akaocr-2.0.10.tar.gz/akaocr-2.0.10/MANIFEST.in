@@ -1,0 +1,5 @@
+recursive-include akaocr/detect/data *.onnx
+recursive-include akaocr/recog/data *.onnx
+recursive-include akaocr/recog/data *.txt
+include README.md
+include LICENSE
