@@ -1,0 +1,10 @@
+metatree/__init__.py,sha256=mZ2GmSbsTfIjiaCiB8lJkvqDDWpkCZ4w6L6_fN0kkZw,30
+metatree/io_handler.py,sha256=9RXufolgy47TrtnvuWoS_bNMfEHF6n4IahnRLAv20NY,2425
+metatree/metatree.py,sha256=onmuv8DGh1ChvEQvNHtIsT5gdPHtlHvx0OYzwq3WR-A,5683
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_metatree.py,sha256=aMIqwPu-C2xZxnW2V4ZLJ_2JzZIecUtpG-HHECGEUyw,1777
+metatreedb-0.1.1.dist-info/LICENSE,sha256=EwPwv8kFv4yhWczIQSot8XGbyKrTj1ER2bCHvgbBghk,1062
+metatreedb-0.1.1.dist-info/METADATA,sha256=R8hqCeK71AENcZn083CtSXEaCqZTDTAzv_oe3QL-c6E,681
+metatreedb-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+metatreedb-0.1.1.dist-info/top_level.txt,sha256=mQIEwobrU6RxYk22rIRajUUbxUNVBP9pYl98iZKj3dw,15
+metatreedb-0.1.1.dist-info/RECORD,,
