@@ -1,0 +1,12 @@
+matplotlib
+seaborn
+numpy
+tqdm
+h5py
+gitpython
+torch
+colorcet
+
+[pytorch]
+torch
+torch-cuda
