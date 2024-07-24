@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: d42
+Version: 1.8.0
+Summary: One package for district42 ecosystem
+Home-page: https://github.com/d42-schemas/d42
+Author: Nikita Tsvetkov
+Author-email: tsv1@fastmail.com
+License: Apache-2.0
+Project-URL: Docs, https://d42.sh
+Project-URL: GitHub, https://github.com/d42-schemas/d42
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: district42<1.9,>=1.8
+Requires-Dist: blahblah<1.9,>=1.8
+Requires-Dist: valera<1.9,>=1.8
+Requires-Dist: revolt<1.9,>=1.8
+Requires-Dist: niltype<2.0,>=0.3
+Requires-Dist: th<1.0,>=0.3
+
+# d42
+
+[![PyPI](https://img.shields.io/pypi/v/d42.svg?style=flat-square)](https://pypi.python.org/pypi/d42/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/d42?style=flat-square)](https://pypi.python.org/pypi/d42/)
+[![Python Version](https://img.shields.io/pypi/pyversions/d42.svg?style=flat-square)](https://pypi.python.org/pypi/d42/)
+
+The `d42` package is a comprehensive toolkit for data modeling, which includes functionalities for definition, generation, validation, and substitution of data models using a robust data description language.
+
+## Installation
+
+```shell
+$ pip3 install d42
+```
+
+## Usage Example
+
+```python
+from d42 import schema, fake, validate_or_fail
+
+# Define a schema for a string containing "banana"
+sch = schema.str("banana")
+
+# Generate a fake value based on the schema and validate it
+assert validate_or_fail(sch, fake(sch))
+```
+
+## Documentation
+
+For detailed documentation, visit the [official d42 documentation](https://d42.sh).
