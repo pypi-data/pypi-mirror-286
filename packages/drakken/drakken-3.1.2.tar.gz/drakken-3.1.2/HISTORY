@@ -1,0 +1,58 @@
+# Drakken changelog
+
+## 3.1.2 - 2024-07-23
+- Fix bad cookie error, part II.
+
+## 3.1.1 - 2024-07-02
+- Fix bad cookie error.
+
+## 3.1 - 2024-03-13
+- Add static paths.
+- Drop Requests library for testing.
+- Drop WebOb library.
+- template.read() returns json or text.
+
+## 3.0.2 - 2023-09-08
+- Handle static files.
+- Store rate limit data in database.
+
+## 3.0.1 - 2023-06-20
+- ${STATIC} variable can be a relative or absolute file path.
+
+## 3.0 - 2023-03-12
+- Add 301 redirect if URL is missing a trailing slash or added one.
+- Add email handler.
+- Add rate limiter to prevent email floods.
+- Add named URLs.
+- Add support for JSON and YAML config files.
+- Fix ${STATIC} variable.
+- drakken.config.read_file() -> drakken.config.load().
+- drakken.templates -> drakken.template.
+
+## 2.2.1 - 2022-06-20
+- Fix install requirements.
+
+## 2.2 - 2022-06-19
+- Fix routing LoginFail.
+- Fix circular import (initial load seems faster now).
+- @login_required can raise LoginFail or redirect to login URL.
+
+## 2.1 - 2022-02-10
+- Add user with username + email or just email.
+- user.active disables account if set to False.
+- create_user() returns User object.
+- hash() -> slow_hash().
+
+## 2.0 - 2021-11-10
+- Add JSON config file.
+
+## 1.2 - 2021-05-27
+- SESSION_COOOKIE_AGE = 0 closes session when browser is closed.
+
+## 1.1 - 2021-03-29
+- SESSION_COOKIE_SECURE blocks session cookie over HTTP.
+- get_session() filters for session age.
+
+## 1.0 - 2021-03-03
+- Initial release.
+

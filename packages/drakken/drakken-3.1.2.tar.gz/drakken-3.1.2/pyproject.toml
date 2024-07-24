@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["drakken"]
+
+[tool.setuptools.dynamic]
+version = {attr = "drakken.__version__"}
+dependencies = {file = ["requirements.txt"]}
+
+[project]
+name = "drakken"
+dynamic = ["version", "dependencies"]
+authors = [{name = "Craig Howard", email = "craig@seagrape.us"}]
+description = "Minimalist Python web framework"
+readme = {file = "README", content-type = "text/markdown"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://seagrape.us/drakken/index.html"
+Changelog = "https://seagrape.us/drakken/HISTORY.html"
