@@ -1,0 +1,12 @@
+amarillo_stops/stops.py,sha256=8qoxWdgoQBpiSqMUZ1OArJxRFEQyfiuOUU9SaERM3qk,5993
+amarillo_stops/stop_importer/__init__.py,sha256=uptxGkUa1KCJ1RGivj_1ifHanMvsbM2d9gz7mNJ-oK0,262
+amarillo_stops/stop_importer/base.py,sha256=7S6R49eaxnPNeIaiRpMlPBoPOxqLD3tJ2vLujsVAaQo,2988
+amarillo_stops/stop_importer/gtfs.py,sha256=sN35bNXM2la88F3-cc-KIzobHJwiVmV4f_O58DEdH8A,988
+amarillo_stops/stop_importer/overpass.py,sha256=vy6FY8_RG0UGDBG5iq64STVBaI2WKsHzReFWyY-L6wg,1393
+amarillo_stops/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amarillo_stops/tests/test_stops_store.py,sha256=ehXHnQ48kMTGOd17_KxG6ZNhhF1W4R95_1rL_WV4iDA,1080
+amarillo_stops-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+amarillo_stops-0.0.1.dist-info/METADATA,sha256=ykUXD9blt1NFLBXid424lzC5K23kerjpl3GyTWDmYr8,40081
+amarillo_stops-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+amarillo_stops-0.0.1.dist-info/top_level.txt,sha256=NNCRq0q0Sn2Y1XRRwfJM-5LH9F5rzutWJy3JcrV6pYc,15
+amarillo_stops-0.0.1.dist-info/RECORD,,
