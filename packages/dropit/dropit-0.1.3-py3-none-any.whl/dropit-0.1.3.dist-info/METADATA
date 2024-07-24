@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dropit
+Version: 0.1.3
+Summary: A Flask-based command line file sharing application.
+Home-page: https://github.com/1darshanpatil/dropit
+Author: Darshan P.
+Author-email: drshnp@outlook.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Flask
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask-BasicAuth ==0.2.0
+Requires-Dist: Flask ==3.0.3
+Requires-Dist: qrcode ==7.4.2
+
+# Dropit - Simple Cross-Platform File Sharing
+
+![image](https://github.com/user-attachments/assets/a360f9b0-dac3-45dc-9678-0960a658588c)
+
+
+## Introduction
+Dropit simplifies the process of sharing files across multiple devices, including laptops and mobile phones, regardless of their operating system. Whether you're a developer working with multiple OS environments, or simply need to transfer files between devices, Dropit offers a straightforward solution.
+
+## Key Features
+- **Cross-Platform Compatibility**: Share files seamlessly between any devices on the same network.
+- **Easy to Use**: Just a single command is needed to start sharing files.
+- **Optional Password Protection**: Enhance security with an optional password.
+
+## How to Use
+To share files with Dropit, simply run the following command in your terminal:
+
+```bash
+dropit [--password <password>] [--geturl] [--getqr]
+
