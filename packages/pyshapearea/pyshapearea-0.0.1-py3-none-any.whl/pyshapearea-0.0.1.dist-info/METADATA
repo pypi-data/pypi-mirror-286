@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyshapearea
+Version: 0.0.1
+Summary: Module for calculating the area of shapes
+Home-page: https://github.com/V1sl3t/PyShapeArea
+Author: V1sl3t
+Author-email: suppes214@gmail.com
+Project-URL: GitHub, https://github.com/V1sl3t
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PyShapeArea
+
+The module needs for calculating area of geometrical shapes
+
+## Using
+
+First, import library:
+
+```python
+import pyshapearea
+```
+
+Than you can use all functions of the library like this:
+
+Calculating circle area - `print(circle(1))`  
+Calculating triangle area - `print(triangle(3,4,5))`  
+Checking, if a triangle is right triangle - `print(right_triangle(3,4,5))`
+
+
+## Developer ##
+My [github](https://github.com/V1sl3t)
