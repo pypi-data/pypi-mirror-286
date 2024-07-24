@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ioscmd
+Version: 0.0.0
+Home-page: https://github.com/waldenana/ioscmd
+Author: waldenana
+Author-email: waldennna@outlook.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: click ==8.1.7
+Requires-Dist: tidevice ~=0.12.10
+Requires-Dist: paramiko ~=3.4.0
+
