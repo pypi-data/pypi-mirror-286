@@ -1,0 +1,16 @@
+ListView > ListItem {
+    background: transparent;
+}
+
+ListView:focus > ListItem.--highlight {
+    background: $primary;
+}
+
+TabPane {
+    padding: 0;
+}
+
+/* Utility classes  */
+
+.show { display: block; }
+.hide { display: none; }
