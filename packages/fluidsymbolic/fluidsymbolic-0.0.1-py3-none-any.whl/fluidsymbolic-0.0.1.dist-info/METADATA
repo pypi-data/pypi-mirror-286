@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: fluidsymbolic
+Version: 0.0.1
+Summary: A module dedicated to Symbolic Mathematics and Fluid Mechanics
+Home-page: https://github.com/AlexandreDela/fluidsymbolic
+Author: Alexandre Delaisement
+Author-email: 
+License: UNKNOWN
+Project-URL: Source, https://github.com/AlexandreDela/fluidsymbolic
+Keywords: symbolic fluid mechanics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: furo (>=2024.1.29)
+Requires-Dist: matplotlib (>=3.3.0)
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: pytest (>=8.1.1)
+Requires-Dist: scipy (>=1.10.0)
+Requires-Dist: sphinx (>=7.1.0)
+Requires-Dist: sympy (>=1.11.1)
+
+A module  dedicated to Symbolic Mathematics using Sympy and to Fluid Mechanics being plottable and animatable in matplotlib.
+
