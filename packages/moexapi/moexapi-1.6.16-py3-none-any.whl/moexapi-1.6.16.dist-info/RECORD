@@ -1,0 +1,16 @@
+moexapi/__init__.py,sha256=irbGESfIYWHuU-szqasDsk0-c4FEwLAokMZ38c0rKJ4,210
+moexapi/bonds.py,sha256=v3wbbLojXOfd2-2XyFPqfNTRKjp8sGVaOI_S-7FPg6c,3848
+moexapi/candles.py,sha256=wFdaQL38yDRj20b7grZpwbIgLVF1-DT2v8tyuDYLKkI,5479
+moexapi/changeover.py,sha256=7XEtkRRPb0wrLaZLiVzgzQ0iJZ-wMfAkUpg20es28_c,1667
+moexapi/dividends.py,sha256=eNglPyD9QRTIlHQlEG9T_1frNDREVYtIY79udCGSyuI,1291
+moexapi/exchange.py,sha256=J7c4b60zY2Ad-SFLNmVyMtWmdjU_hJsog4nFSUTQLpI,1250
+moexapi/history.py,sha256=-OcQP-vuYyA84yoBtFnwdchTUKakJusLPAWr3CAC_l0,5640
+moexapi/markets.py,sha256=L_5E1fHiUXuRnqnvA8ZjYeVTFkPN37WSPgwC4OQKatQ,3339
+moexapi/splits.py,sha256=gKtT3Z8xleQloPFKAJrN9FA_nCZnzLCUEWyCoQ0772U,683
+moexapi/tickers.py,sha256=xazvcxrv7JpeTpzAutvqiX61_FTmjf-Yb_gf8_pl3yA,7921
+moexapi/utils.py,sha256=0EtOOQ5N2PsTpQ8u8twXXhWUXGiZIm7xfRm9JlBjQ-A,1691
+moexapi-1.6.16.dist-info/LICENSE,sha256=0Vj0pAMu__QHTAdiTas67nPWIp_mWiaYca9vNlz1g20,1067
+moexapi-1.6.16.dist-info/METADATA,sha256=GpPtFmUSYQW2iD4d1rMTcV-F4VtcoshEf-tZzT0Y6LE,4384
+moexapi-1.6.16.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+moexapi-1.6.16.dist-info/top_level.txt,sha256=eCc1rF-iz4M5n7D44PlCRlSx1MTig09JbbFnRYYDU5Q,8
+moexapi-1.6.16.dist-info/RECORD,,
