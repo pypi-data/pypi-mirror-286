@@ -1,0 +1,32 @@
+[project]
+name = "pixelterm"
+version = "1.0.5"
+authors = [
+	{ name="crystaltine", email="msh379c@outlook.com" },
+]
+description = "Terminal Graphics Rendering Library"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+]
+dependencies=[
+    "numpy",
+    "scikit-image",
+    "pillow",
+]
+keywords=["terminal", "console", "rendering", "ascii", "graphics", "ansi"]
+
+[project.urls]
+Homepage = "https://github.com/crystaltine/pixelterm"
+Repository = "https://github.com/crystaltine/pixelterm"
+Issues = "https://github.com/crystaltine/pixelterm/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pixelterm"]
