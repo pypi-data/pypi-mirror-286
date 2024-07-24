@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/nitrix/__init__.py
+src/nitrix/docutil.py
+src/nitrix/resid.py
+src/nitrix/util.py
+src/nitrix.egg-info/PKG-INFO
+src/nitrix.egg-info/SOURCES.txt
+src/nitrix.egg-info/dependency_links.txt
+src/nitrix.egg-info/requires.txt
+src/nitrix.egg-info/top_level.txt
+tests/test_docutil.py
+tests/test_resid.py
+tests/test_util.py
