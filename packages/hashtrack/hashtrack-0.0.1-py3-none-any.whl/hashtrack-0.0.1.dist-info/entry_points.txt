@@ -1,0 +1,2 @@
+[console_scripts]
+hashtrack = hashtrack.__main__:main
