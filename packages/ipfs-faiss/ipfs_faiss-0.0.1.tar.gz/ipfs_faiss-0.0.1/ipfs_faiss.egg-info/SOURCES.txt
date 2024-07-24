@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ipfs_faiss/__init__.py
+ipfs_faiss/ipfs_faiss_dataset.py
+ipfs_faiss.egg-info/PKG-INFO
+ipfs_faiss.egg-info/SOURCES.txt
+ipfs_faiss.egg-info/dependency_links.txt
+ipfs_faiss.egg-info/top_level.txt
