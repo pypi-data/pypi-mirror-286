@@ -1,0 +1,128 @@
+{
+  "ipykernel": {
+    "releases": {
+      "6.9.2": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "bfcf0f23a0e14dd8ca4720a4d39102df",
+            "sha256": "3613e768c946098dbd03df89133986ea5cd05207253172037da261c565dfd8f9"
+          },
+          "downloads": -1,
+          "filename": "ipykernel-6.9.2-py3-none-any.whl",
+          "has_sig": false,
+          "md5_digest": "bfcf0f23a0e14dd8ca4720a4d39102df",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": ">=3.10",
+          "size": 2731,
+          "upload_time": "2024-07-23T12:47:35.825642Z",
+          "upload_time_iso_8601": "2024-07-23T12:47:35.825642Z",
+          "url": "./ipykernel-6.9.2-py3-none-any.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ]
+    }
+  },
+  "piplite": {
+    "releases": {
+      "0.4.0rc0": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "3c599c26efa4cc572ff31e040d85cc47",
+            "sha256": "381ba5af85562cf6ea8dda455e9a680057219d12f50dbde1157f24af53031e7e"
+          },
+          "downloads": -1,
+          "filename": "piplite-0.4.0rc0-py3-none-any.whl",
+          "has_sig": false,
+          "md5_digest": "3c599c26efa4cc572ff31e040d85cc47",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": "<3.12,>=3.11",
+          "size": 7197,
+          "upload_time": "2024-07-23T12:47:35.825642Z",
+          "upload_time_iso_8601": "2024-07-23T12:47:35.825642Z",
+          "url": "./piplite-0.4.0rc0-py3-none-any.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ]
+    }
+  },
+  "pyodide-kernel": {
+    "releases": {
+      "0.4.0rc0": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "faeb45da191213baf8500cf640bc5ee8",
+            "sha256": "9ddc114be90b8ab24f7557cfec0e894640a417aa9d5a1a23b2f3d9952e474234"
+          },
+          "downloads": -1,
+          "filename": "pyodide_kernel-0.4.0rc0-py3-none-any.whl",
+          "has_sig": false,
+          "md5_digest": "faeb45da191213baf8500cf640bc5ee8",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": "<3.12,>=3.11",
+          "size": 11038,
+          "upload_time": "2024-07-23T12:47:35.825642Z",
+          "upload_time_iso_8601": "2024-07-23T12:47:35.825642Z",
+          "url": "./pyodide_kernel-0.4.0rc0-py3-none-any.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ]
+    }
+  },
+  "widgetsnbextension": {
+    "releases": {
+      "3.6.6": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "9dfde1dae175b724fc32efed1deb475d",
+            "sha256": "eb560faf742c2fe3b48a14d356f78809e086185c6e8bf48674524219cbfc52f3"
+          },
+          "downloads": -1,
+          "filename": "widgetsnbextension-3.6.6-py3-none-any.whl",
+          "has_sig": false,
+          "md5_digest": "9dfde1dae175b724fc32efed1deb475d",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": "<3.12,>=3.11",
+          "size": 2347,
+          "upload_time": "2024-07-23T12:47:35.829642Z",
+          "upload_time_iso_8601": "2024-07-23T12:47:35.829642Z",
+          "url": "./widgetsnbextension-3.6.6-py3-none-any.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ],
+      "4.0.11": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "e75f3f8c90eaf5ab63c79b2b22236395",
+            "sha256": "dccb9e68b0790c40f8faff69fa697c8136043d379f2dce70aab7b594ffcf3d36"
+          },
+          "downloads": -1,
+          "filename": "widgetsnbextension-4.0.11-py3-none-any.whl",
+          "has_sig": false,
+          "md5_digest": "e75f3f8c90eaf5ab63c79b2b22236395",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": "<3.12,>=3.11",
+          "size": 2354,
+          "upload_time": "2024-07-23T12:47:35.829642Z",
+          "upload_time_iso_8601": "2024-07-23T12:47:35.829642Z",
+          "url": "./widgetsnbextension-4.0.11-py3-none-any.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ]
+    }
+  }
+}
