@@ -1,0 +1,2 @@
+[console_scripts]
+pySQLExport = pySQLExport.__main__:main
