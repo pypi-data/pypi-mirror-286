@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: TensorImgUtils
+Version: 0.1.2
+Summary: Reshaping image tensors with different types
+Author-email: Christian Byrne <cbyrne@arizona.edu>
+Project-URL: Homepage, https://github.com/christian-byrne/img-tensor-utils
+Project-URL: Issues, https://github.com/christian-byrne/img-tensor-utils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
