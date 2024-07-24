@@ -1,0 +1,102 @@
+//- Gertrude --- GTD done right
+//- Copyright © 2023, 2024 Tanguy Le Carrour <tanguy@bioneland.org>
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+extends layout
+
+block title
+  title= _("pages-tasks-display-title")
+
+block content
+  section.section
+    .container
+      #details.box
+        block details
+          .buttons.is-pulled-right
+            a.button.is-link(
+              title=_("pages-tasks-display-update-title")
+              hx-get=url_for("tasks.update_form", id=task.id)
+              hx-target="#details"
+            )
+              span.icon.is-small: i.fas.fa-pen(aria-hidden="true")
+              span= _("pages-tasks-display-update-label")
+
+          h1.title
+            span= task.title
+
+          if task.description
+            div.mt-2!= task.description
+
+      .box.mt-5
+        h2.title.is-5= _("pages-tasks-display-what-next")
+
+        block actions
+          include mixins/actions
+
+          #actions(hx-target="this")
+            - var csrf_token = generate_csrf_token()
+
+            each error in errors
+              article.message.is-danger
+                p.message-body #[code #{error}] #{errors[error]}
+
+            if task.state == "captured"
+              h3.title.is-6.has-text-centered= _("pages-tasks-display-is-actionable")
+              .columns
+                .column
+                  .message.is-success.has-text-centered: .message-body: p: strong= _("pages-tasks-display-yes")
+                  p.mt-3= _("pages-tasks-display-conditions-do")
+                  +do(task)
+                  p.mt-3= _("pages-tasks-display-conditions-delegate")
+                  +delegate(task, csrf_token)
+                  p.mt-3= _("pages-tasks-display-conditions-projectify")
+                  +projectify(task)
+                  p.mt-3= _("pages-tasks-display-conditions-postpone")
+                  +postpone(task)
+                .column
+                  .message.is-danger.has-text-centered: .message-body: p: strong= _("pages-tasks-display-no")
+                  p.mt-3= _("pages-tasks-display-conditions-assign")
+                  +assign(task, csrf_token, project)
+                  p.mt-3= _("pages-tasks-display-conditions-schedule")
+                  +schedule(task, csrf_token)
+                  p.mt-3= _("pages-tasks-display-conditions-incubate")
+                  +incubate(task)
+                  p.mt-3= _("pages-tasks-display-conditions-file")
+                  +file(task)
+                  p.mt-3= _("pages-tasks-display-conditions-eliminate")
+                  +eliminate(task)
+
+            elif next_states
+              .columns
+                if "DONE" in next_states
+                  .column: +do(task)
+                if "DELEGATED" in next_states or task.delegated_to
+                  .column: +delegate(task, csrf_token)
+                if "ACTIONABLE" in next_states
+                  .column: +postpone(task)
+              .columns
+                .column: +assign(task, csrf_token, project)
+                if "SCHEDULED" in next_states
+                  .column: +schedule(task, csrf_token)
+                if "FILED" in next_states
+                  .column: +file(task)
+                if "INCUBATED" in next_states
+                  .column: +incubate(task)
+                if "ELIMINATED" in next_states
+                  .column: +eliminate(task)
+
+            else
+              article.message.is-info
+                p.message-body= _("pages-tasks-display-no-action")
