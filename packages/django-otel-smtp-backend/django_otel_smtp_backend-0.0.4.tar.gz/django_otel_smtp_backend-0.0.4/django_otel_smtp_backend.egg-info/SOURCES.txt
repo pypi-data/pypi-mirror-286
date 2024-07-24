@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+django_otel_smtp_backend/__init__.py
+django_otel_smtp_backend/backend.py
+django_otel_smtp_backend.egg-info/PKG-INFO
+django_otel_smtp_backend.egg-info/SOURCES.txt
+django_otel_smtp_backend.egg-info/dependency_links.txt
+django_otel_smtp_backend.egg-info/not-zip-safe
+django_otel_smtp_backend.egg-info/requires.txt
+django_otel_smtp_backend.egg-info/top_level.txt

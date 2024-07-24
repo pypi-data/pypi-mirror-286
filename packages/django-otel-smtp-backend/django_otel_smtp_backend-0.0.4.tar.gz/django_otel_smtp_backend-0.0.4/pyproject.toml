@@ -1,0 +1,52 @@
+[project]
+requires-python = ">= 3.8"
+name = 'django-otel-smtp-backend'
+version = '0.0.4'
+description='Wraps the default Django SMTP Email Backend with trace instrumentation to the OpenTelemetry'
+dependencies = [
+  'django>=4.2',
+  'opentelemetry-api',
+]
+authors = [{name = "Eduardo Oliveira", email = "eduardo_y05@outlook.com"}]
+maintainers = [{name = "Eduardo Oliveira", email = "eduardo_y05@outlook.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["django", "email", "mail", "smtp", "open-telemetry", "telemetry", "otel"]
+classifiers = [
+  'Development Status :: 5 - Production/Stable',
+  'Environment :: Web Environment',
+  'Framework :: Django',
+  'Intended Audience :: Developers',
+  'License :: OSI Approved :: MIT License',
+  'Operating System :: OS Independent',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+]
+
+[project.optional-dependencies]
+dev = ["black", "isort", "pre-commit"]
+
+[project.urls]
+homepage = "https://github.com/inventare/django-otel-smtp-backend"
+documentation = "https://github.com/inventare/django-otel-smtp-backend"
+
+[build-system]
+requires = ["setuptools", "build"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = 'black'
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+packages = ["django_otel_smtp_backend"]

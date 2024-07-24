@@ -1,0 +1,7 @@
+django>=4.2
+opentelemetry-api
+
+[dev]
+black
+isort
+pre-commit
