@@ -1,0 +1,14 @@
+holtz-tools
+astropy
+astroscrappy
+gaiaxpy
+photutils
+astroplan
+pyyaml
+pyautogui
+pydl
+astroquery
+importlib_resources
+sphinx
+numpy
+scipy
