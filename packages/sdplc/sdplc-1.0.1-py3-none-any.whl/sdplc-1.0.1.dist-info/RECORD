@@ -1,0 +1,12 @@
+sdplc/__init__.py,sha256=fYQd1jqj-GWk44eDjZI31umnqBWm1Nxi7vKzg9NpDWQ,1802
+sdplc/modbus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdplc/modbus/server.py,sha256=D3PjsI8Lb2AM_wywTPRyJK_swhx7nuFMxoT_ZirzmbA,21996
+sdplc/opcua/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdplc/opcua/server.py,sha256=d3TvdFLb-4KfbOOzAUtP_pidY-YB4feOa1h-Qkib8yo,7906
+sdplc/router.py,sha256=oojD4LcJIVupYGj3X9gkOFnYrYrPWCuScbB5G5PtLP8,6773
+sdplc/schemas.py,sha256=GhgO-xLYdeaZO5n0U2v6aXSDKjXwFAkrEg3p_Ov9-aQ,3625
+sdplc/sdplc.py,sha256=TMCVpjPYU2H6sk8YlYTQHHqprJEMEpfXvyE60q5Dg5c,14174
+sdplc-1.0.1.dist-info/LICENSE,sha256=_0GiDqOxsdVVyMAoerkZutY1TCJZKBlV5VkG2iMhybc,17684
+sdplc-1.0.1.dist-info/METADATA,sha256=pvIZWX6LaNViAGPS0qdR9aR9NSxs4XBWnHTa6oNXpto,8223
+sdplc-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sdplc-1.0.1.dist-info/RECORD,,
