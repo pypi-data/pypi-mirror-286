@@ -1,0 +1,5 @@
+porto_test_package/__init__.py,sha256=slEm3au2HtWuTBhtfpI4hhzqzeIV3kh1XHcsi9FnDfk,31
+porto_test_package/hello.py,sha256=6qHL5rDH2y71h_EyF0KPBFZeAQOuqZmCdikrpk7crY4,44
+porto_test_package-0.0.28.dist-info/METADATA,sha256=20NaCz0Q2mZ8qPMKMPQb1z8y5korC76Kf_1vdiiys6s,346
+porto_test_package-0.0.28.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+porto_test_package-0.0.28.dist-info/RECORD,,
