@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hidapi"
+version = "0.1.0"
+description = ""
+authors = ["Pavol Rusnak <pavol@rusnak.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+cython = "^3.0.10"
+twine = "^5.1.1"
+setuptools = "^71.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
