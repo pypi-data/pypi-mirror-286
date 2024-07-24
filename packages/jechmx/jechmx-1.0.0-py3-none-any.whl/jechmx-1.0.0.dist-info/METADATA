@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jechmx
+Version: 1.0.0
+Author: Jose Emmanuel Chavez
+Author-email: jechmx1@gmail.com
+License-File: LICENSE
+
+## Notificaciones de Envio de Correo
+### permite el envio de correo por medio de Python
+
+- introduce el correo donde se desea enviar
