@@ -1,0 +1,65 @@
+###############################################################################
+# (c) Copyright 2022 CERN for the benefit of the LHCb Collaboration           #
+#                                                                             #
+# This software is distributed under the terms of the GNU General Public      #
+# Licence version 3 (GPL Version 3), copied verbatim in the file "COPYING".   #
+#                                                                             #
+# In applying this licence, CERN does not waive the privileges and immunities #
+# granted to it by virtue of its status as an Intergovernmental Organization  #
+# or submit itself to any jurisdiction.                                       #
+###############################################################################
+stages:
+  - test
+  - build
+  - deploy
+
+pre-commit:
+  stage: test
+  image: registry.cern.ch/docker.io/library/python:3.9
+  before_script:
+    - pip install pre-commit
+  script:
+    - pre-commit run --all-files
+  variables:
+    PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
+  cache:
+    paths:
+      - ${PRE_COMMIT_HOME}
+
+pytest:
+  stage: test
+  image: registry.cern.ch/docker.io/condaforge/mambaforge:latest
+  tags:
+    - cvmfs
+  script:
+    - python --version
+    - pip install --upgrade setuptools
+    - pip install '.[testing]'
+    - pytest -vvv
+
+package:
+  stage: build
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:python-3.9
+  script:
+    - python -m build
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 week
+  before_script:
+    - pip install build
+  after_script: []
+
+# Packaging step
+deploy-packages:
+  stage: deploy
+  image: gitlab-registry.cern.ch/lhcb-docker/python-deployment:python-3.9
+  only:
+    - tags
+  dependencies:
+    - package
+  script:
+    - if [ -z "$TWINE_PASSWORD" ] ; then echo "Set TWINE_PASSWORD in CI variables" ; exit 1 ; fi
+    - twine upload -u __token__ dist/*
+  before_script: []
+  after_script: []
