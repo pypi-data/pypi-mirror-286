@@ -1,0 +1,9 @@
+README.md
+setup.py
+ollama_api/__init__.py
+ollama_api/client.py
+ollama_api.egg-info/PKG-INFO
+ollama_api.egg-info/SOURCES.txt
+ollama_api.egg-info/dependency_links.txt
+ollama_api.egg-info/requires.txt
+ollama_api.egg-info/top_level.txt
