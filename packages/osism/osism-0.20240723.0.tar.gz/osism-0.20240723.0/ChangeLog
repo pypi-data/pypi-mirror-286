@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20240723.0
+-------------
+
+* Ignore all Python UserWarnings (#966)
