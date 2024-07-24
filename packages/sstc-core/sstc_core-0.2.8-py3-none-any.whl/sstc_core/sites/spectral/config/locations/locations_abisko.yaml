@@ -1,0 +1,12 @@
+# Ensure you do not use hyppens "-" better to use `double__underscore`
+
+BTH_FOR:
+  location_id: 'BTH_FOR'
+  description: 'ANS Building H Top. Observatorium and Meteorology building'
+  legacy_acronym: 'ANS-FOR'
+  is_active: True
+  mantainance_status: active
+  platforms: 
+    PhenoCams:
+      - 'P_BTH_1'
+    
