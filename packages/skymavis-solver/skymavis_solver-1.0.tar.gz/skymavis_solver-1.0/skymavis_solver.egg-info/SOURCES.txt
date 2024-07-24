@@ -1,0 +1,9 @@
+setup.py
+skymavis_captcha_solver/__init__.py
+skymavis_captcha_solver/captcha.py
+skymavis_captcha_solver/vision.py
+skymavis_solver.egg-info/PKG-INFO
+skymavis_solver.egg-info/SOURCES.txt
+skymavis_solver.egg-info/dependency_links.txt
+skymavis_solver.egg-info/requires.txt
+skymavis_solver.egg-info/top_level.txt
