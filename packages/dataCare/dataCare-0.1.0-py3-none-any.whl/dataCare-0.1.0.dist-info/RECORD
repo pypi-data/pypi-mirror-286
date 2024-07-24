@@ -1,0 +1,12 @@
+dclean/__init__.py,sha256=9bC33HqyoSB6i85U53HYcVmgFWVxv2Zi45rV3swhf4g,209
+dclean/cleaning.py,sha256=7G6DIa6Zq32JJInUWcfFz_A4uIuj1TNZDtTs59e1qd4,167
+dclean/labeling.py,sha256=82tlhwuHwM15B47IkM6Sn44-pgc3wlFjKcHKz2UM5Q0,230
+dclean/preprocessing.py,sha256=ZixmKZsOugy3BfUw3g5N4Dpvgv26WcMi979Py6mEC6I,624
+dclean/privacy.py,sha256=xND0R0LK0mARHYwttU-LcpZWlnwJQEbMyRIs1w0cRsE,639
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dclean.py,sha256=uJhe1Ke0cOqBM-VBCSFf5QWM99maj1x4PBbOWksrTH0,930
+dataCare-0.1.0.dist-info/LICENSE,sha256=H3o-GDSW65173Z1EOtekHblBSW43Kq62e4zavhopiWw,1092
+dataCare-0.1.0.dist-info/METADATA,sha256=uyy-QFcV9XG89l-ftcZerB1l9P4HfDeGzliQ-ZWgznc,311
+dataCare-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dataCare-0.1.0.dist-info/top_level.txt,sha256=sVWMzzXU9chxbjtxKtHQlgTky3bWnRwF-qBt6cafTFQ,13
+dataCare-0.1.0.dist-info/RECORD,,
