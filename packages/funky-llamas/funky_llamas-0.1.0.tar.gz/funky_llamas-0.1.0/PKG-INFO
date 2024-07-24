@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: funky-llamas
+Version: 0.1.0
+Summary: 
+Author: The Epic
+Author-email: theepic.dev.83@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Funky Llamas
+
+This package aims to simplify the tool calling process for large language models.
+
