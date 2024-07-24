@@ -1,0 +1,2 @@
+portalocker>=2.7
+dacite>=1.8.1
