@@ -1,0 +1,14 @@
+click>=8.1.0
+deeprobust
+gdown
+networkit
+networkx
+numpy
+ogb
+PyGSP
+scikit_learn
+scipy
+sortedcontainers>=2.4.0
+torch>=2.0.0
+torch_geometric
+tqdm>=4.0.0
