@@ -1,0 +1,6 @@
+README.md
+setup.py
+pop_mavin.egg-info/PKG-INFO
+pop_mavin.egg-info/SOURCES.txt
+pop_mavin.egg-info/dependency_links.txt
+pop_mavin.egg-info/top_level.txt
