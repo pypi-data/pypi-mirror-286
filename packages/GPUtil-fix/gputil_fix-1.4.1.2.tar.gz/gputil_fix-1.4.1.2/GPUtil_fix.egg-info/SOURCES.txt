@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+GPUtil/GPUtil.py
+GPUtil/__init__.py
+GPUtil/demo_GPUtil.py
+GPUtil_fix.egg-info/PKG-INFO
+GPUtil_fix.egg-info/SOURCES.txt
+GPUtil_fix.egg-info/dependency_links.txt
+GPUtil_fix.egg-info/top_level.txt
