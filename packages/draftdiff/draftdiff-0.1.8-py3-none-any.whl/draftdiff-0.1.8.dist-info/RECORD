@@ -1,0 +1,16 @@
+draftdiff/aggregation.py,sha256=_c5w1SjRBM8ZoCZV5FnetfLWI2GqHVAA1JHL2DfGhUE,8209
+draftdiff/aggregation2.py,sha256=KIgUmjDKOSSl5FNiNGkQ7HH7y8qtYQkMpf4VeL8sdbM,3556
+draftdiff/constants.py,sha256=D2ppjIumeSUvSh6gBg_YAFn6bzPY0lqA-P3dlEvqWr4,3067
+draftdiff/dotabuff.py,sha256=Nc4E0kZv7LIui-X_BJtUnCC3x54Swp-bJhahEIYHF2g,11667
+draftdiff/io.py,sha256=ocmgkJru-HufovzsOIRphTX02_IW53YAxAadntOrOYo,7764
+draftdiff/main.py,sha256=_ra7rz9jAC4er_5ET9IGzoUjDm9IUTKWmUgtAQwsgeA,4952
+draftdiff/main2.py,sha256=-8y6Nb0lLQDPhx-CmUDd0r-7WTHP0209ZQViYtE55Mw,2651
+draftdiff/sheets.py,sha256=_Mq3OM4e8rVQDzB3WEu4HbdPWwxLyyKHsVWmEuYkVS4,1145
+draftdiff/stratz.py,sha256=hKSk9T4EFa7YqL5SR5AeNi16xjw_3M2JzPtTvr5gD6I,5198
+draftdiff/util.py,sha256=2aiTQ0fchBLl_QkAcer5KNbO6d34G81JgWCtSi9V1nY,159
+draftdiff/writetos3.py,sha256=pSxshM38ivY_5oUH-EvzTp6IpmtDou7YMEFlLDr_C-s,1243
+draftdiff/writetosheets.py,sha256=rF59yFtnHZ7ujDenKfJ4U7XWmL6YBVMnRblXnTmtHtI,10756
+draftdiff-0.1.8.dist-info/LICENSE,sha256=VRw3bFx51ccBnm4j_NW4R4oHHhcnmetlY0Fbgpui1eA,1065
+draftdiff-0.1.8.dist-info/METADATA,sha256=MvxZCmAROCpb21LB0i5wbApUJtrzo40tnGwP3RzjZTc,3078
+draftdiff-0.1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+draftdiff-0.1.8.dist-info/RECORD,,
