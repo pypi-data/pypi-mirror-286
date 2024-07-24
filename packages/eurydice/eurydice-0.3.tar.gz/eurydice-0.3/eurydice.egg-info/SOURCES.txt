@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+eurydice/CV.py
+eurydice/__init__.py
+eurydice/kepler.py
+eurydice/plot.py
+eurydice.egg-info/PKG-INFO
+eurydice.egg-info/SOURCES.txt
+eurydice.egg-info/dependency_links.txt
+eurydice.egg-info/requires.txt
+eurydice.egg-info/top_level.txt
+tests/test_CrossValidation.py
+tests/test_kepler.py
