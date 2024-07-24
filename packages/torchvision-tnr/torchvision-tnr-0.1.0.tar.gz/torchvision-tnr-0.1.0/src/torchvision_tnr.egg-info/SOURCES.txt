@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/torchvision-tnr/__init__.py
+src/torchvision_tnr.egg-info/PKG-INFO
+src/torchvision_tnr.egg-info/SOURCES.txt
+src/torchvision_tnr.egg-info/dependency_links.txt
+src/torchvision_tnr.egg-info/top_level.txt
