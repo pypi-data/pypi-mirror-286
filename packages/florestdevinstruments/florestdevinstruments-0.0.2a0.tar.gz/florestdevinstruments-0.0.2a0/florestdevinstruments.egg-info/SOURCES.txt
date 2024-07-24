@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+florestdevinstruments/__init__.py
+florestdevinstruments/ready_games.py
+florestdevinstruments/utilits.py
+florestdevinstruments/vk.py
+florestdevinstruments.egg-info/PKG-INFO
+florestdevinstruments.egg-info/SOURCES.txt
+florestdevinstruments.egg-info/dependency_links.txt
+florestdevinstruments.egg-info/requires.txt
+florestdevinstruments.egg-info/top_level.txt
