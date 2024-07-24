@@ -1,0 +1,96 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - 'main'
+      - '*.*'
+      - '!*backport*'
+    tags:
+      - 'v*'
+      - '!*dev*'
+      - '!*pre*'
+      - '!*post*'
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    #        ┌───────── minute (0 - 59)
+    #        │ ┌───────── hour (0 - 23)
+    #        │ │ ┌───────── day of the month (1 - 31)
+    #        │ │ │ ┌───────── month (1 - 12 or JAN-DEC)
+    #        │ │ │ │ ┌───────── day of the week (0 - 6 or SUN-SAT)
+    - cron: '0 7 * * *'  # Every day at 07:00 UTC
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  core:
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@main
+    with:
+      submodules: false
+      coverage: codecov
+      toxdeps: "tox-pypi-filter"
+      posargs: -n auto
+      envs: |
+        - linux: py312
+
+  test:
+    needs: [core]
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@main
+    with:
+      submodules: false
+      coverage: codecov
+      toxdeps: "tox-pypi-filter"
+      posargs: -n auto
+      envs: |
+        - windows: py10
+        - macos: py311
+        - linux: py310-oldestdeps
+
+  docs:
+    needs: [core]
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@main
+    with:
+      submodules: false
+      pytest: false
+      default_python: '3.12'
+      toxdeps: "tox-pypi-filter"
+      libraries: |
+        apt:
+          - graphviz
+      envs: |
+        - linux: build_docs
+
+  online:
+    if: "!startsWith(github.event.ref, 'refs/tags/v')"
+    needs: [docs]
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/tox.yml@main
+    with:
+      submodules: false
+      coverage: codecov
+      toxdeps: "tox-pypi-filter"
+      posargs: -n 1 --dist loadgroup
+      envs: |
+        - linux: py312-online
+        - linux: py312-sunpy
+
+  publish:
+    # Build wheels when pushing to any branch
+    # publish_pure_python.yml will only publish if tagged ^v.*
+    if: |
+      (
+        github.event_name != 'pull_request'
+      ) || (
+        github.event_name == 'pull_request' &&
+        contains(github.event.pull_request.labels.*.name, 'Run publish')
+      )
+    needs: [test]
+    uses: OpenAstronomy/github-actions-workflows/.github/workflows/publish_pure_python.yml@main
+    with:
+      test_extras: 'dev'
+      test_command: 'pytest -p no:warnings --doctest-rst --pyargs drms'
+      submodules: false
+    secrets:
+      pypi_token: ${{ secrets.pypi_token }}
