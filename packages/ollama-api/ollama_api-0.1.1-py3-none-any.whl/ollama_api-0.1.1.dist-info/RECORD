@@ -1,0 +1,6 @@
+ollama_api/__init__.py,sha256=7NMTzcJVWwCzu6i6FkAiqtES6g1oXnv1vJPR9XxtCjY,60
+ollama_api/client.py,sha256=feLDdOiNRkM8aNjOLb3iCWFn8kKfycjZegMoAUYvSRo,3667
+ollama_api-0.1.1.dist-info/METADATA,sha256=bgK5iUlgCHl_oybx4NSmSOn5Y-GQFBSQwKQXGzKydIA,1416
+ollama_api-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ollama_api-0.1.1.dist-info/top_level.txt,sha256=ZfNBEca_sSAsTGckncETdFHiTpsQnYeMllpbwWPaUOE,11
+ollama_api-0.1.1.dist-info/RECORD,,
