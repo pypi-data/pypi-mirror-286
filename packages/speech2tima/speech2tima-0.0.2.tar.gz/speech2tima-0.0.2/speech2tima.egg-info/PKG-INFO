@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: speech2tima
+Version: 0.0.2
+Summary: A package for speech recognition using SpeechRecognition library. Main function is gettext
+Home-page: https://github.com/titas2003/speech2tima.git
+Author: Titas Majumder
+Author-email: titas20031996@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+voice to text
+
