@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: inserpa
+Version: 1.0.0
+Summary: Python Interpolation Library.
+Author: Schkimansky
+Author-email: <ahmadchawla1432@gmail.com>
+Keywords: python,data,animation,toolkit,values,interpolation
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+# Inserpa
+A libary for making interpolation between values, I first wrote the functions in trilent but moved it to a separate libary since i needed to use it in another framework

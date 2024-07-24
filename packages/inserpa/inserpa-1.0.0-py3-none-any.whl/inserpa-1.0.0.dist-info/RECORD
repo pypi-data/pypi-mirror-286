@@ -1,0 +1,13 @@
+inserpa/__init__.py,sha256=cKHN9jYdcsgjpw4WOMbtmDO1wJ_zgFXX4ObJAupd2GE,123
+inserpa/Interpolation/__init__.py,sha256=hTBtyyKHNwJkmckxdjE6b5_IIZj19IanYcEwWabitVc,155
+inserpa/Interpolation/color.py,sha256=2_OoQ-1LFIMi6LXE3U1wXyPXPw0e0_GGab670jn74F4,3975
+inserpa/Interpolation/number.py,sha256=_JNvf9YNuMS7XuIeaO5g9fX9edY6L1ZTDa8A7ZE4QzM,491
+inserpa/Interpolation/text.py,sha256=bbqocHxDWtzgjFLOCKZCvvlBfEeDIyfs9ton7hddaFY,1597
+inserpa/Utility/__init__.py,sha256=KfXzF3U5_zq4Kq0fE3yW9jRfyWPrf1vRZaPVzbiJH-8,113
+inserpa/Utility/color.py,sha256=8qYxOvY21JET-Sr5RczmOb-spS7ij0Y5IXghvVcOmpk,4472
+inserpa/Utility/ease.py,sha256=Qq0lCnCPBAat_S4ZF1D-2pFxGGgTy4fgJGSu5olEexs,632
+inserpa/Utility/easing_functions.py,sha256=NhOvpsiqs8_oYaAUXx5kjW2CrFOBmNvtZXThTFqsdS8,3049
+inserpa-1.0.0.dist-info/METADATA,sha256=pOMlEfMo89aShTkvPu6_YsUszAtTD2L4D0s-5IpcDZk,629
+inserpa-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+inserpa-1.0.0.dist-info/top_level.txt,sha256=OTE_SWw4gJAVj5lQE5RHCSkBlY3CYX7Yd4Mkf0hCzcg,8
+inserpa-1.0.0.dist-info/RECORD,,
