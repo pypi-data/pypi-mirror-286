@@ -1,0 +1,11 @@
+processpdfdocs/__init__.py,sha256=RF8ZmXyqTwBhP5ta2V0agXAKfvF2k_f179UmkV6oyKA,58
+processpdfdocs/download_models.py,sha256=aa7OCij-GDaVJ5HR0aZtnyhvc1-M8QHpEdFLNSlXADk,1515
+processpdfdocs/processor.py,sha256=cqZpW8hq-tYWbZ2DZYXL3XV6_6rZ61dmHzf6qbOw__g,1864
+processpdfdocs/utils.py,sha256=Bq7YdyGJkQ6K1iaOt5i991Blgn8iRVGzZHTDwGwKAfg,19802
+processpdfdocs/models/cell_detect_model.pt,sha256=_vDnTRlAc5_diMN__hvSDygoof90Wjw7N-qED4okN5M,6251993
+processpdfdocs/models/rotation_model.onnx,sha256=PoUgC5mqNBGNDInR0w-8x3y-rd2ZDScLU1JksdaCK2k,14571773
+processpdfdocs/models/table_detect_model.pt,sha256=bCJCPeTutAMySPtrkcDTrj5hbh8yEz0WzYohggSqrKI,6243481
+processpdfdocs-0.0.12.5.dist-info/METADATA,sha256=J2GymXXB8PP6Bj6HTLvbu32meLBHHeVmEnUfWytZ-I0,861
+processpdfdocs-0.0.12.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+processpdfdocs-0.0.12.5.dist-info/licenses/LICENSE,sha256=APtd1FvOfa7ZMxIZmhVmTYG8vLInOoyDA7V2Y5EBcJk,1076
+processpdfdocs-0.0.12.5.dist-info/RECORD,,
