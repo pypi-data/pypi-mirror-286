@@ -1,0 +1,7 @@
+README.md
+setup.py
+aws_s3_gl.egg-info/PKG-INFO
+aws_s3_gl.egg-info/SOURCES.txt
+aws_s3_gl.egg-info/dependency_links.txt
+aws_s3_gl.egg-info/requires.txt
+aws_s3_gl.egg-info/top_level.txt
