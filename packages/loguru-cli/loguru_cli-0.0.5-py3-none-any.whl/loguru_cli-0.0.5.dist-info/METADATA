@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: loguru-cli
+Version: 0.0.5
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Amith Koujalgi
+Author-email: koujalgi.amith@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: prettytable
+Requires-Dist: langchain-community ==0.2.7
+Requires-Dist: langchain-experimental ==0.0.62
+Requires-Dist: langchain-huggingface ==0.0.3
+Requires-Dist: sentence-transformers ==3.0.1
+Requires-Dist: faiss-cpu ==1.8.0.post1
+
+UNKNOWN
+
+
