@@ -1,0 +1,14 @@
+Bio
+joblib
+pandas
+Pint
+PyYAML
+rdkit
+rdkit_pypi
+scikit_learn
+scipy
+tqdm
+tensorboard
+jupyter
+pgmpy
+torchmetrics
