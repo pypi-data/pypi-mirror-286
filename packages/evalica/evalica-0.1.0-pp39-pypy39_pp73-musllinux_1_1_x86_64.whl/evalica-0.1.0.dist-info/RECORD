@@ -1,0 +1,13 @@
+evalica-0.1.0.dist-info/METADATA,sha256=L98etQXY24OC_RRx8tf01YjzqjTwvkvaCZGJjkMN8Lo,7231
+evalica-0.1.0.dist-info/WHEEL,sha256=WSe50bcCPBikZ2u7cuv0RndrSA2gdRREZ4pJDi63k7Y,112
+evalica-0.1.0.dist-info/entry_points.txt,sha256=sd4dTYJCTEK_sv3ZfA0_TXr-QptLhUhF46I6Bv4VQ2Y,48
+evalica-0.1.0.dist-info/license_files/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+evalica.libs/libgcc_s-1e52349c.so.1,sha256=Ani0u_W_tB8ESsFePO4D2mn2lrgWLhyFdw6RETxBTYM,437537
+evalica/test_evalica.py,sha256=0RyO9ZISEKZRrJ2AVlZ4hOrOZkn3wMpErX6eqHfhtew,16209
+evalica/py.typed,sha256=QE6PZoTns-xBPou7DD0hAAAHF-fTAYJ4NlJRRZRaFSw,7
+evalica/naive.py,sha256=ToDB_L8OlCgOjTK4xw9jxgsdJsB6GsBaIkVwD7FTOQ8,6490
+evalica/evalica.pyi,sha256=tBuPTGQJBt2OXT2T2j1giJ7kEHtDTkPBnVE6jKBcjIY,2303
+evalica/__main__.py,sha256=d9OEZsedw10rJDuuvGbWU8Fuy3jAYsjlZnmk45PIYEc,2371
+evalica/__init__.py,sha256=LPRXg3MFwnI-7tKzs2Jx69V9nm7qbiFnoYklNDOZsHo,21180
+evalica/evalica.pypy39-pp73-x86_64-linux-gnu.so,sha256=ePI7MsEI3D3YPhGdGZoryhx12Ecr6YX844nOBNtdgpA,830345
+evalica-0.1.0.dist-info/RECORD,,
