@@ -1,0 +1,9 @@
+bash_class_example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bash_class_example/module1.py,sha256=EZ6nqD5rvD-EENghRrLqU8ANIFK_59D4-D2dYugVQ9g,1941
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_module1.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bash_class_example-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bash_class_example-0.1.0.dist-info/METADATA,sha256=CEJBl7evin1P4JLefDFxYxznQEhgKWN86lGLwQpHGTg,502
+bash_class_example-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+bash_class_example-0.1.0.dist-info/top_level.txt,sha256=YIe7DOCn5TSFA14ikBUNoCfR6pEeSq2syb9B63oU18I,25
+bash_class_example-0.1.0.dist-info/RECORD,,
