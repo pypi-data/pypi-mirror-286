@@ -1,0 +1,15 @@
+README.md
+setup.py
+inserpa/__init__.py
+inserpa.egg-info/PKG-INFO
+inserpa.egg-info/SOURCES.txt
+inserpa.egg-info/dependency_links.txt
+inserpa.egg-info/top_level.txt
+inserpa/Interpolation/__init__.py
+inserpa/Interpolation/color.py
+inserpa/Interpolation/number.py
+inserpa/Interpolation/text.py
+inserpa/Utility/__init__.py
+inserpa/Utility/color.py
+inserpa/Utility/ease.py
+inserpa/Utility/easing_functions.py
