@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: spams-bin
+Version: 2.6.9
+Summary: Python interface for SPAMS - binary wheels with openblas (mac, linux, windows)
+Home-page: http://spams-devel.gforge.inria.fr/
+Author: Julien Mairal
+Author-email: spams.dev@inria.fr
+Requires-Python: >=3.9.0
+License-File: LICENSE
+Requires-Dist: numpy>=1.21.3
+Requires-Dist: scipy>=1.5
+Provides-Extra: test
+Requires-Dist: Pillow>=6.0; extra == "test"
+
+Python interface for SPArse Modeling Software (SPAMS),
+an optimization toolbox for solving various sparse estimation problems.
+This (unofficial) version includes pre-built wheels for python 3 on windows, mac (with openmp support) and linux.
+The source code for this fork is also available at https://github.com/samuelstjean/spams-python/

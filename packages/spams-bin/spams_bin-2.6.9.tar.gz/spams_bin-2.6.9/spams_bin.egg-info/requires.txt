@@ -1,0 +1,5 @@
+numpy>=1.21.3
+scipy>=1.5
+
+[test]
+Pillow>=6.0
