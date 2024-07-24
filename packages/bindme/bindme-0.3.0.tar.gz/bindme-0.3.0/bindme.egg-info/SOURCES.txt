@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bindme/__init__.py
+bindme.egg-info/PKG-INFO
+bindme.egg-info/SOURCES.txt
+bindme.egg-info/dependency_links.txt
+bindme.egg-info/top_level.txt
+bindme/__pycache__/__init__.cpython-312.pyc
+bindme/lib/__init__.py
+bindme/lib/di_container.py
+bindme/lib/di_injector.py
+bindme/lib/__pycache__/__init__.cpython-312.pyc
+bindme/lib/__pycache__/di_container.cpython-312.pyc
+bindme/lib/__pycache__/di_injector.cpython-312.pyc
