@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: obsELN
+Version: 0.1.9
+Summary: Tool to import and export analytical data into Obsidian ELN
+License: GPL-3.0-or-later
+Author: Frieder Scheiba
+Author-email: frieder.scheiba@kit.edu
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyQt5 (>=5.10)
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: matplotlib (>=3.8)
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: pandas (>=2.2)
+Requires-Dist: pillow (>=10.2.0)
+Requires-Dist: ruamel.yaml (>=0.18)
+Requires-Dist: tqdm (>=4.65)
+Description-Content-Type: text/markdown
+
+# Obsidian ELN Import
+
+Obsidian ELN Import is program written in Python to import metadata from analytical data files and stores them in the yaml frontmatter of a markdown file.
+
+The program is designed to work with Obsidian ELN which is an [Electronic Lab Notebook](https://en.wikipedia.org/wiki/Electronic_lab_notebook) (ELN) that is based on the [Obsidian](https://obsidian.md/) markdown editor. 
+
+Obsidian ELN and Obsidian ELN Import were developed to support researchers in the field of materials science and chemistry to collect and organize their research data. The aim is to automate the process of importing metadata from analytical data files as much as possible and to generate automated reports for supported data types. This will allow researchers to focus more on their research while benefiting from the advantages of a well structured, indexable, and electronically searchable ELN.
+
+In future versions it is also planned to provide support to export the data to public repositories to make the data available to other researchers and data scientists. 
+
+## Features
+
+- Import metadata from analytical data files and store them in the yaml frontmatter of a markdown file
+- Generate automated reports for supported data types
+- Currently supported data types: 
+  - SmartSEM TIF files (Zeiss)
+  - MPT files (BioLogic)
+  - more to come...
+
+
+ 

@@ -1,0 +1,6 @@
+# This file is used to translate a instrument identifier (e.g. serial number)
+# to the corresponding Obsidian ELN note title for the instrument
+Merlin-60-38:
+   name: ZEISS - Merlin
+   link: "[[ZEISS - Merlin]]"
+   type: SEM Microscope

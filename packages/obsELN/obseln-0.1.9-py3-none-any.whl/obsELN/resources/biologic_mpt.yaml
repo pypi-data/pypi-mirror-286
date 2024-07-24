@@ -1,0 +1,167 @@
+method identifier:
+  GCPL: 'Galvanostatic Cycling with Potential Limitation'
+  CV: 'Cyclic Voltammetry'
+  PEIS: 'Potentio Electrochemical Impedance Spectroscopy'
+export parameters:
+  GCPL:
+    parameters:
+      channel: 'Run on channel'
+      channel serial number: 'Channel serial number'
+      user: 'User'
+      electrode connection: 'Electrode connection'
+      potential control: 'Potential control'
+      Ewe control range: 'Ewe ctrl range'
+      safety limits: 'Safety Limits'
+      starting date: 'Aquisation started on'
+      settings file: 'Loaded Settings File'
+      saved on: 'Saved on'
+      device: 'Device'
+      ip address: 'Address'
+      software version: 'EC-Lab for windows version'
+      server version: 'Internet server version'
+      command interpreter version: 'Command interpreter version'
+      electrode material: 'Electrode material'
+      initial state: 'Initial state'
+      electrolyte: 'Electrolyte'
+      comment: 'Comments'
+      mass of active material: 'Mass of active material'
+      molecular weigth (x=0): 'Molecular weight of active material (at x = 0)'
+      mass of intercalated ion: 'Atomic weight of intercalated ion'
+      acquisition started at: 'Acquisition started at'
+      electrons per intercalated ion: 'Number of e- transfered per intercalated ion'
+      battery capacity: 'Battery capacity'
+      electrode surface area: 'Electrode surface area'
+      characteristic mass: 'Characteristic mass'
+      volume: 'Volume (V)'
+      record options: 'Record'
+      cycle Definition: 'Cycle Definition'
+      modifyed: 'Modify on'
+    settings:
+      sequence number:
+        name: 'Ns'
+        type: int
+      current defenition:
+        name: 'Set I/C'
+        type: str
+      current:
+        name: 'Is'
+        type: float
+      current unit:
+        name: 'unit Is'
+        type: str
+      counter electrode:
+        name: 'vs.'
+        type: str
+      current N-value:
+        name: 'N'
+        type: float
+      current sign:
+        name: 'I sign'
+        type: str
+      max time:
+        name: 't1 (h:m:s)'
+        type: str
+      current range:
+         name: 'I Range'
+         type: str
+      bandwidth:
+        name: 'Bandwidth'
+        type: int
+      record dE (mV):
+        name: 'dE1 (mV)'
+        type: float
+      record dt (s):
+        name: 'dt1 (s)'
+        type: float
+      voltage limit (V):
+        name: 'EM (V)'
+        type: float
+      time limit (h:m:s):
+        name: 'tM (h:m:s)'
+        type: str
+      CCV current limit:
+        name: 'Im'
+        type: float
+      CCV current limit unit:
+        name: 'unit Im'
+        type: str
+      CCV current gradient:
+        name: 'dI/dt'
+        type: float
+      CCV current gradient unit:
+        name: 'dunit dI/dt'
+        type: str
+  CV:
+    parameters:
+      comment: 'Comments'
+      electrode material: 'Electrode material'
+      initial state: 'Initial state'
+      electrolyte: 'Electrolyte'
+      mass of active material: 'Mass of active material'
+      molecular weigth (x=0): 'Molecular weight of active material (at x = 0)'
+      mass of intercalated ion: 'Atomic weight of intercalated ion'
+      acquisition started at: 'Acquisition started at'
+      electrons per intercalated ion: 'Number of e- transfered per intercalated ion'
+      battery capacity: 'Battery capacity'
+      electrode surface area: 'Electrode surface area'
+      characteristic mass: 'Characteristic mass'
+      volume: 'Volume (V)'
+      cycle Definition: 'Cycle Definition'
+    settings:
+      voltage start: 'Ei (V)'
+      voltage start reference: 'Ei (V) vs.'        
+      scan rate: 'dE/dt'
+      scan rate unit: 'dE/dt unit'
+      voltage limit 1: 'E1 (V)'
+      voltage limit 1 reference: 'E1 (V) vs.'
+      record step duration (%): 'Step percent'
+      averaged voltage steps: 'N'
+      voltage range min (V): 'E range min (V)'
+      voltage range max (V) : 'E range max (V)'
+      current range: 'I Range'
+      current range min: 'I Range min'
+      current range max: 'I Range max'
+      current auto range initial value: 'I Range init'
+      bandwidth: 'Bandwidth'
+      voltage limit 2: 'E2 (V)'
+      voltage limit 1 reference: 'E2 (V) vs.'
+      number of cycles: 'nc cycles'
+      reverse scan: 'Reverse Scan'
+      voltage end: 'Ef (V)'
+      voltage end reference: 'Ef (V) vs.'
+  EIS:
+    amplitude: 'amp'
+    frequencies:
+      min: 'min freq'
+      max: 'max freq'
+columns:                                                    
+  GCPL:
+    state: 'state'                                        # index colum for processing, values are "charge", "discharge", "relax", added during processing
+    mode: 'mode'
+    ox/red: 'ox/red'
+    control changes: 'control changes'
+    sequence number: 'Ns'
+    time: 'time/s'
+    cycle number: 'cycle number'
+    half cycle number: 'half cycle'
+    working electrode voltage: 'Ewe/V'
+    cell voltage: ['Ewe-Ece/V', 'Ecell/V']
+    control voltage: 'control/V/mA'                        # set point for the voltage in potential controlled mode
+    control current: 'control/V/mA'                        # set point for the current in galvanic mode
+    current: '<I>/mA'                                      # averaged current
+    signed capacity: 'Q charge/discharge/mA.h'             # signed capacity values (reset to zero after each step)
+    charge capacity: 'Q charge/mA.h'                       # unsigned capacity values for charge only (reset to zero after each step)
+    discharge capacity: 'Q discharge/mA.h'                 # unsigned capacity values for discharge only (reset to zero after each step)
+    capacity: 'Capacity/mA.h'                              # unsigned capacity values for charge and discharge (reset to zero after each step)
+    charge: '(Q-Qo)/mA.h'                                  # transferred charge, increases with charge and decreases with discharge
+    coulomb efficiency: 'Efficiency/%'                     # charge efficiency
+    charge energy: 'Energy charge/W.h'                     # energy for charge
+    discharge energy: 'Energy discharge/W.h'               # energy for discharge
+    charge capacitance: 'Capacitance charge/µF'            # capacitance for charge
+    discharge capacitance: 'Capacitance discharge/µF'      # capacitance for discharge
+    power: 'P/W'                                           # power charge and discharge
+    differential charge: 'dq/mA.h'                         # differential charge capacity
+    qQ_dV: 'dQ/dV'                                         # dQ/dV column, added during processing by interpolating Q values with fixed dV value (default 5 mV)
+    dQ_dV grad: 'dQ/dV grad'                               # as above but by calculating the inverse of the gradient of dV/dQ 
+    specific capacity: 'specific capacity'                 # capacity divided by characteristic mass, added during processing
+    intrinsic capacity: 'intrinsic capacity'               # capacity divided by active material mass, added during processing
