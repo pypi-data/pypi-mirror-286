@@ -1,0 +1,5 @@
+dateutils~=0.6.12
+pyhcl~=0.4.5
+
+[:python_version >= "3.8" and python_version < "4.0"]
+hvac~=2.3.0
