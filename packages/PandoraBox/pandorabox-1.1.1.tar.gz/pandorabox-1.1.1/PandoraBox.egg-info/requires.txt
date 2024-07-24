@@ -1,0 +1,13 @@
+requests
+anyio==3.*
+h11<0.13,>=0.11
+fastapi
+uvicorn
+pydantic
+jupyter-client
+ipython
+ipykernel
+pandas
+numpy
+matplotlib
+jsonlines
