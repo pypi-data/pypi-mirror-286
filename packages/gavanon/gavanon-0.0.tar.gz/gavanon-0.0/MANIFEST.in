@@ -1,0 +1,7 @@
+include LICENSE.txt CHANGES.txt
+recursive-include docs *
+recursive-include gavanon *.py
+recursive-include tests *
+global-exclude *.ipynb_checkpoints*
+global-exclude *.pyc
+global-exclude *.pyo

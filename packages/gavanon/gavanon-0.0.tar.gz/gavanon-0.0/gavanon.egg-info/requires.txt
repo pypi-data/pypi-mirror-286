@@ -1,0 +1,5 @@
+
+[full]
+control>=0.9
+matplotlib>=3.4
+numpy>=1.22
