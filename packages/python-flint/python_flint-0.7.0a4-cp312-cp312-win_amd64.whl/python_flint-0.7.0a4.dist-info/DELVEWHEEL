@@ -1,0 +1,2 @@
+Version: 1.7.1
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-ih_fks03\\cp312-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-ih_fks03\\cp312-win_amd64\\built_wheel\\python_flint-0.7.0a4-cp312-cp312-win_amd64.whl', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-ih_fks03\\cp312-win_amd64\\repaired_wheel', '--add-path', '.local/bin']
