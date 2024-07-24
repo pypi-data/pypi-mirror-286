@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/numberandchinese/__init__.py
+src/numberandchinese/numberandchinese.py
+src/numberandchinese.egg-info/PKG-INFO
+src/numberandchinese.egg-info/SOURCES.txt
+src/numberandchinese.egg-info/dependency_links.txt
+src/numberandchinese.egg-info/top_level.txt
