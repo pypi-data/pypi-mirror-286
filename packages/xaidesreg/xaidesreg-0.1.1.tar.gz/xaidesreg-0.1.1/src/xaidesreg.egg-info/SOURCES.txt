@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/xaidesreg/__init__.py
+src/xaidesreg/des.py
+src/xaidesreg.egg-info/PKG-INFO
+src/xaidesreg.egg-info/SOURCES.txt
+src/xaidesreg.egg-info/dependency_links.txt
+src/xaidesreg.egg-info/top_level.txt
