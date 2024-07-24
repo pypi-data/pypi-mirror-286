@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bash_class_example/__init__.py
+bash_class_example/module1.py
+bash_class_example.egg-info/PKG-INFO
+bash_class_example.egg-info/SOURCES.txt
+bash_class_example.egg-info/dependency_links.txt
+bash_class_example.egg-info/top_level.txt
+tests/__init__.py
+tests/test_module1.py
