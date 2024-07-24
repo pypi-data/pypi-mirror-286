@@ -1,0 +1,8 @@
+README.md
+setup.py
+huggingface_urls/__init__.py
+huggingface_urls/parse_hub.py
+huggingface_urls.egg-info/PKG-INFO
+huggingface_urls.egg-info/SOURCES.txt
+huggingface_urls.egg-info/dependency_links.txt
+huggingface_urls.egg-info/top_level.txt

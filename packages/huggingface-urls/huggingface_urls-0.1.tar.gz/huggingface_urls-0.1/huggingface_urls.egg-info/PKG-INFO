@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: huggingface_urls
+Version: 0.1
+Summary: get all download urls from a HugginfFace Repo
+Author: simon
+Author-email: simon.coding@gmail.com
+License: MIT
