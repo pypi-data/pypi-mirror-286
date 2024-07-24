@@ -1,0 +1,9 @@
+stellarmesh/__init__.py,sha256=4pZ4ybdn42D-Ydz3ZI8kGepkthRjWrOGiuaV4vIlbsQ,211
+stellarmesh/geometry.py,sha256=aNUpfcAOXqYhxAiyQebe7-NgDtYu_K8sFzPW72btbvw,6396
+stellarmesh/mesh.py,sha256=DdDJdS6lDEUkqgL5fg-IGOQq52BRMZuUIQQNV1_HKWE,11672
+stellarmesh/moab.py,sha256=LpSdiktWYeoAHHobqQLy7y9WWlC5N8W5XLLmRYSwoeE,19590
+stellarmesh-0.4.2.dist-info/LICENSE,sha256=Zk03DHrw2iE2aeLxRj0DxAhkh2lAWnx-B0W0T0PJ1q4,1068
+stellarmesh-0.4.2.dist-info/METADATA,sha256=XA1B_AfRKmV-sTBHvqvQfSsBOOMiEqK5_LcqFvhpb6w,5674
+stellarmesh-0.4.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+stellarmesh-0.4.2.dist-info/top_level.txt,sha256=Ki1Pka5FzFiSmpnEkkMgqPm_sZc8mfhCy4sIo7uwzJQ,12
+stellarmesh-0.4.2.dist-info/RECORD,,
