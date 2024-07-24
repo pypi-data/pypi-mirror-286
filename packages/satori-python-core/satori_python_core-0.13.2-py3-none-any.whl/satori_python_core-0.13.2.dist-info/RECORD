@@ -1,0 +1,13 @@
+.mina/core.toml,sha256=jDnelRuD9ZAiv8qTm8qeYBpqVhe9_1yN22w-DC6N0Nc,953
+satori/__init__.py,sha256=iX4JCLKRc-5_ZALEjUqCBKVpEHgnY7sBkYU0x_EZH0c,1780
+satori/config.py,sha256=y5yz3pcSx5-TtazHFRJvIxVTzCRhjJrL5jCpqo5znz0,1627
+satori/const.py,sha256=eHEbGCcxg7tmDmnFt3SNBChCksalPPQeG8atazyi830,2374
+satori/element.py,sha256=mKzA-bwyfqDgtC3yKZFW02N-hYjWSPtBFLNzM7Sq67w,16559
+satori/event.py,sha256=FS5aIVqWyKJEG4XyP2Cjefg5JHwEj0GyWA59T8qxGJ8,891
+satori/exception.py,sha256=uS4G9EnLk2oBwmdnmWSRve1lebGEDO9iNafvuN_yAmA,451
+satori/model.py,sha256=GFLrcJXY_CfMPmZbLtWXkAcb2DgegZfQ7borALL-gf4,10360
+satori/parser.py,sha256=6kgy3ENItmPatetdm-B9j7m9eGdH5W72NyRwXg2odZQ,13477
+satori_python_core-0.13.2.dist-info/METADATA,sha256=M-TT9GGpPcjzFyfLh1vfGYDSBBAiwLPGTOCrnvQPoE0,3775
+satori_python_core-0.13.2.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+satori_python_core-0.13.2.dist-info/licenses/LICENSE,sha256=2EDswKd1M1648judap8BEEwp3Jz6IpfFP2wYVdU0Y2o,1069
+satori_python_core-0.13.2.dist-info/RECORD,,
