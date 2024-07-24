@@ -1,0 +1,2 @@
+[console_scripts]
+fatwheel = fat_wheel.fat:main
