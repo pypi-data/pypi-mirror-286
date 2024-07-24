@@ -1,0 +1,2 @@
+[pytest11]
+auto_fixture = pytest_auto_fixture
