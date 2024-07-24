@@ -1,0 +1,1 @@
+# Cowgirl AI Utils
