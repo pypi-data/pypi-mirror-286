@@ -1,0 +1,6 @@
+README.md
+setup.py
+pop_smartfarm.egg-info/PKG-INFO
+pop_smartfarm.egg-info/SOURCES.txt
+pop_smartfarm.egg-info/dependency_links.txt
+pop_smartfarm.egg-info/top_level.txt
