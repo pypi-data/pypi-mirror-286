@@ -1,0 +1,11 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+trest_solar/__init__.py
+trest_solar/solar_profile.py
+trest_solar/trest_solar_service.py
+trest_solar.egg-info/PKG-INFO
+trest_solar.egg-info/SOURCES.txt
+trest_solar.egg-info/dependency_links.txt
+trest_solar.egg-info/top_level.txt

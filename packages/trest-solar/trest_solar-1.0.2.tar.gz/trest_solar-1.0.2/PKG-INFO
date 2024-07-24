@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: trest_solar
+Version: 1.0.2
+Summary: Package to integrate Trest Solar in your Python project.
+Author: LordMax2
+License-File: license.txt
