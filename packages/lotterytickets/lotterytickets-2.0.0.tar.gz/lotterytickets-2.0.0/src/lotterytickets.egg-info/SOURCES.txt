@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/lotterytickets/__init__.py
+src/lotterytickets/lotterytickets.py
+src/lotterytickets.egg-info/PKG-INFO
+src/lotterytickets.egg-info/SOURCES.txt
+src/lotterytickets.egg-info/dependency_links.txt
+src/lotterytickets.egg-info/top_level.txt
