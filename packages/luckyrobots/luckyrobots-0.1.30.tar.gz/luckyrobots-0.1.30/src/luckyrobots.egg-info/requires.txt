@@ -1,0 +1,9 @@
+watchdog
+fastapi
+uvicorn
+ultralytics
+requests
+tqdm
+beautifulsoup4
+psutil
+opencv-python
