@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jechmx/__init__.py
+jechmx/correo.py
+jechmx.egg-info/PKG-INFO
+jechmx.egg-info/SOURCES.txt
+jechmx.egg-info/dependency_links.txt
+jechmx.egg-info/top_level.txt
