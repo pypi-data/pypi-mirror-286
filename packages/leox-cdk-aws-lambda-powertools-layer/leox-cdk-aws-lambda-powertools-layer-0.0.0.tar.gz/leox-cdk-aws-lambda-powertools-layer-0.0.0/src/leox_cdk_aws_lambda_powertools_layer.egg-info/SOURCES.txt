@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/leox_cdk_aws_lambda_powertools_layer/__init__.py
+src/leox_cdk_aws_lambda_powertools_layer/py.typed
+src/leox_cdk_aws_lambda_powertools_layer.egg-info/PKG-INFO
+src/leox_cdk_aws_lambda_powertools_layer.egg-info/SOURCES.txt
+src/leox_cdk_aws_lambda_powertools_layer.egg-info/dependency_links.txt
+src/leox_cdk_aws_lambda_powertools_layer.egg-info/requires.txt
+src/leox_cdk_aws_lambda_powertools_layer.egg-info/top_level.txt
+src/leox_cdk_aws_lambda_powertools_layer/_jsii/__init__.py
+src/leox_cdk_aws_lambda_powertools_layer/_jsii/cdk-aws-lambda-powertools-layer@0.0.0.jsii.tgz
