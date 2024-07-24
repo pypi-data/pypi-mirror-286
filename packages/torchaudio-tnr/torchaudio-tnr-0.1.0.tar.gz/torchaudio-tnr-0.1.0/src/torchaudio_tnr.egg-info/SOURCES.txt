@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/torchaudio_tnr.egg-info/PKG-INFO
+src/torchaudio_tnr.egg-info/SOURCES.txt
+src/torchaudio_tnr.egg-info/dependency_links.txt
+src/torchaudio_tnr.egg-info/top_level.txt
+src/torchvision-tnr/__init__.py
