@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+PackagePatrol.egg-info/PKG-INFO
+PackagePatrol.egg-info/SOURCES.txt
+PackagePatrol.egg-info/dependency_links.txt
+PackagePatrol.egg-info/requires.txt
+PackagePatrol.egg-info/top_level.txt
