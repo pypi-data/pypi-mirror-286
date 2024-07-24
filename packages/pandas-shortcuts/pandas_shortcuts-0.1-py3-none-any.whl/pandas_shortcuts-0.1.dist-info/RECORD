@@ -1,0 +1,11 @@
+pandas_shortcuts/__init__.py,sha256=XRMHBSbhhXzzYQW551Hy1Q3un2GGPIWUJozH0HerfR4,174
+pandas_shortcuts/dataframe_api.py,sha256=JeZ-UjqCpsn2w2eyAgaUE8trUcSFMWrOk3zIkNu3TAw,876
+pandas_shortcuts/series_api.py,sha256=TWJCUh9DF4T4iEqWc9Ay9Rjfy3Z2r2SJyUUhQLmInKg,735
+pandas_shortcuts/top_level_api.py,sha256=Ip23uLjUymez2SDczIW7DDEOCOIwMP7mKc5kKlLypVw,337
+pandas_shortcuts/methods/__init__.py,sha256=05s-N1Y82XMushOK3Gkguwao8FWw_A_XIis6Qt9DJt4,23
+pandas_shortcuts/methods/methods.py,sha256=eHBqAa6wjM5CkIpL5oeipWfEJDaVtUmDNreen6pvSAo,1703
+pandas_shortcuts-0.1.dist-info/LICENSE,sha256=IofvMb8Ztcsajwn3Sk8zyHCOeJn9GesBHI63th0icAE,1094
+pandas_shortcuts-0.1.dist-info/METADATA,sha256=9NNS1JzG2FK2gByZ7j4j3iTMURlQxX-kW67m7pTboQE,7051
+pandas_shortcuts-0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pandas_shortcuts-0.1.dist-info/top_level.txt,sha256=45wFOgA3VAcbps_3nEt-vs8eO0pZNcZOVbxodtbGW-U,17
+pandas_shortcuts-0.1.dist-info/RECORD,,
