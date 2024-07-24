@@ -1,0 +1,12 @@
+dfpyre/__init__.py,sha256=apPsSxJ1Tztfl71MoORoSmDfX7LyKLYlLwOGeLQUitw,25
+dfpyre/actiondump.py,sha256=MVI1kVJBNpab882Tgqo-xtemiBN2W1_2OcopBcRupWQ,2587
+dfpyre/data/actiondump_min.json,sha256=OOSlKqWffFf9dJbY7Kj8uCRz3d6CZPMEWkSpX2-Avqs,1785020
+dfpyre/items.py,sha256=StQnkvGAZj3mb7qG3bMyuuiRaSIttyW1Azs139e5c_4,11374
+dfpyre/pyre.py,sha256=snx65yM0ysuBfV4Qe6zEKK9aw0jNmPsPgv7v8XIsSVw,18216
+dfpyre/scriptgen.py,sha256=fHjf7KVpz6iPr97Co-6BeacVVwcpVRfHd3g_ez3jnNM,5875
+dfpyre/style.py,sha256=mLW1CFvvi8_9fk8JaH10I5S4WI0YBdQIXHtI3G_4sR8,980
+dfpyre/util.py,sha256=gHIPPVD0dcLPAaN1M5EnNgxenarwlxfRKN4xno1YJHM,582
+dfpyre-0.7.2.dist-info/LICENSE,sha256=_vuDskB0ja2c-Fgm7Gt8Q8cO9NsLNpZAVyvmZwX7E6o,1060
+dfpyre-0.7.2.dist-info/METADATA,sha256=mmwlWG_tcoqYC9aWo_rqfT7vO5BIa1_MB5waCL9Z-HE,11754
+dfpyre-0.7.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dfpyre-0.7.2.dist-info/RECORD,,
