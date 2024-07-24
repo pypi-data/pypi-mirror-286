@@ -1,0 +1,9 @@
+README.md
+setup.py
+DataCentricKMeans/DataCentricKMeans.py
+DataCentricKMeans/DataCentricKMeans_universal.out
+DataCentricKMeans/__init__.py
+DataCentricKMeans.egg-info/PKG-INFO
+DataCentricKMeans.egg-info/SOURCES.txt
+DataCentricKMeans.egg-info/dependency_links.txt
+DataCentricKMeans.egg-info/top_level.txt
