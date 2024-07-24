@@ -1,0 +1,3 @@
+[console_scripts]
+llmonpy = llmonpy.llmonpy_cli:llmonpy_cli
+llmonpy_viewer = llmonpy.api.api:run_api
