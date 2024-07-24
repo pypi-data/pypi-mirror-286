@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: guolei-py3-hikvision
+Version: 0.0.1
+Summary: 海康威视 API
+Home-page: https://github.com/guolei19850528/guolei_py3_hikvision
+Author: guolei
+Author-email: 174000902@qq.com
+License: MIT
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: addict
+Requires-Dist: retrying
+Requires-Dist: pydantic
+Requires-Dist: guolei-py3-requests
+
+# guolei_py3_hikvision
+
+## introduce
+
+**guolei python3 hikvision library**
+
+## software architecture
+
+~python 3.*
+
+## installation tutorial
+
+```shell
+pip install guolei-py3-hikvision
+```
+
+## catalog description
+
+### ISC Api example
+
+```python
+
+```
