@@ -1,0 +1,3 @@
+[console_scripts]
+vtmon=vtmon.__main__:main
+
