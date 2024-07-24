@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: plexflow
+Version: 0.0.12
+Summary: A short description of the package.
+Home-page: https://www.example.com
+License: MIT
+Keywords: keyword1,keyword2,keyword3
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: ==3.12.4
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: apache-airflow (>=2.9.3,<3.0.0)
+Requires-Dist: apache-airflow-providers-cncf-kubernetes (>=8.3.3,<9.0.0)
+Requires-Dist: apache-airflow-providers-postgres (>=5.10.2,<6.0.0)
+Requires-Dist: apache-airflow-providers-redis (>=3.7.0,<4.0.0)
+Requires-Dist: arrow (>=1.3.0,<2.0.0)
+Requires-Dist: avro (>=1.11.3,<2.0.0)
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: bitmath (>=1.3.3.1,<2.0.0.0)
+Requires-Dist: brotli (>=1.1.0,<2.0.0)
+Requires-Dist: cloudscraper (>=1.2.71,<2.0.0)
+Requires-Dist: cohere (>=5.5.0,<6.0.0)
+Requires-Dist: confluent-kafka[avro] (>=2.4.0,<3.0.0)
+Requires-Dist: dataclasses-json (>=0.6.4,<0.7.0)
+Requires-Dist: fake-useragent (>=1.4.0,<2.0.0)
+Requires-Dist: google-api-python-client (>=2.129.0,<3.0.0)
+Requires-Dist: google-auth-oauthlib (>=1.2.0,<2.0.0)
+Requires-Dist: google-cloud-pubsub (>=2.21.1,<3.0.0)
+Requires-Dist: google-generativeai (>=0.6.0,<0.7.0)
+Requires-Dist: html5lib (>=1.1,<2.0)
+Requires-Dist: json-repair (>=0.19.1,<0.20.0)
+Requires-Dist: kafka (>=1.3.5,<2.0.0)
+Requires-Dist: langcodes (>=3.4.0,<4.0.0)
+Requires-Dist: lxml (>=5.1.0,<6.0.0)
+Requires-Dist: parse-torrent-title (>=2.8.1,<3.0.0)
+Requires-Dist: playwright (>=1.41.2,<2.0.0)
+Requires-Dist: playwright-stealth (>=1.0.6,<2.0.0)
+Requires-Dist: plexapi (==4.15.9)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Requires-Dist: pydantic (>=2.6.1,<3.0.0)
+Requires-Dist: pyngrok (>=7.1.6,<8.0.0)
+Requires-Dist: pysrt (>=1.1.2,<2.0.0)
+Requires-Dist: python-ffmpeg (>=2.0.10,<3.0.0)
+Requires-Dist: python-ulid (>=2.7.0,<3.0.0)
+Requires-Dist: redis (>=4.1.3,<5.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: retrying (>=1.3.4,<2.0.0)
+Requires-Dist: seleniumbase (>=4.28.4,<5.0.0)
+Requires-Dist: tmdbsimple (>=2.9.1,<3.0.0)
+Requires-Dist: tpblite (>=0.8.0,<0.9.0)
+Requires-Dist: tvdb-v4-official (>=1.1.0,<2.0.0)
+Requires-Dist: tvdbsimple (>=1.0.6,<2.0.0)
+Requires-Dist: uvicorn (>=0.29.0,<0.30.0)
+Requires-Dist: wget (>=3.2,<4.0)
+Project-URL: Documentation, https://www.example.com/docs
+Project-URL: Repository, https://github.com/username/my-package
