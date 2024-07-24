@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: libpbskids-dl
+Version: 3.2.0
+Summary: Library pbskids-dl
+Project-URL: Homepage, https://github.com/pbskids-dl/libpbskids-dl
+Project-URL: Issues, https://github.com/pbskids-dl/libpbskids-dl/issues
+Maintainer-email: NexusSfan <nexussfan@duck.com>, Kiavash At Home <kiavash-at-home@users.noreply.github.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# libpbskids-dl
+
+Library pbskids-dl
