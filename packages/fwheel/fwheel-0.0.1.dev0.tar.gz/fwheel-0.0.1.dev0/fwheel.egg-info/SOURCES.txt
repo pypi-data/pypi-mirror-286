@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cmd/__init__.py
+cmd/pip.py
+fwheel.egg-info/PKG-INFO
+fwheel.egg-info/SOURCES.txt
+fwheel.egg-info/dependency_links.txt
+fwheel.egg-info/entry_points.txt
+fwheel.egg-info/not-zip-safe
+fwheel.egg-info/requires.txt
+fwheel.egg-info/top_level.txt
+parse/__init__.py
+parse/config.py
+parse/py_file.py
+parse/yaml.py

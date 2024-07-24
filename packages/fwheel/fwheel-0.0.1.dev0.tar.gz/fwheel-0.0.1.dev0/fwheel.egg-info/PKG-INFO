@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: fwheel
+Version: 0.0.1.dev0
+Summary: generate fat wheel similar to fat jar in java
+Author: Ashish Patel
+Author-email: ashishpatel0720@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: argparse
