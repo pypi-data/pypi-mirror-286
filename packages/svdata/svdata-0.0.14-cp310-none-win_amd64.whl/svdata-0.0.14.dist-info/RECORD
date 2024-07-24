@@ -1,0 +1,8 @@
+svdata-0.0.14.dist-info/METADATA,sha256=p6-0k9i85YrG1qiIC-w5mz4K1qk7Q8Jb3yt3X-MNnzI,1444
+svdata-0.0.14.dist-info/WHEEL,sha256=WdQznVppN7z1Vmr3uommICdFQ8BTH-_snRK0jTnZY7g,95
+svdata-0.0.14.dist-info/license_files/LICENSE,sha256=MxGkmwR11uEjJJ8BFePs3Lnn5qrGSHWF1fUr6VUCQNk,1084
+svdata/__init__.py,sha256=pGCs6_PDCGk8Xp2EuyExbO-IzsF_t1XnVXZh6yHEWWI,107
+svdata/__init__.pyi,sha256=SXBXjKC8dkeQ_Jl-2qDKg4z4CusT1cEfUPE2U-4BRcA,2326
+svdata/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svdata/svdata.cp310-win_amd64.pyd,sha256=6Xv2PmgaQIMGO9_WaX0oLZ5C_dIMf31Ig8_vdG_eoBQ,59200000
+svdata-0.0.14.dist-info/RECORD,,
