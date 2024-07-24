@@ -1,0 +1,132 @@
+[build-system]
+requires = [
+  "setuptools",
+  "setuptools_scm[toml]",
+  "wheel",
+]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "aiapy"
+dynamic = ["version"]
+description = "Python library for AIA data analysis."
+readme = "README.rst"
+requires-python = ">=3.10"
+license = {file = "LICENSE.txt"}
+keywords = [
+  "solar physics",
+  "solar",
+  "science",
+  "NASA",
+  "SDO",
+  "AIA",
+  "solar dynamics observatory",
+  "atmospheric imaging assembly",
+]
+authors = [
+  {email = "freij@baeri.org"},
+  {name = "AIA Instrument Team @ LMSAL"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: BSD License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+  'sunpy[net,image,map]>=6.0',
+]
+
+[project.urls]
+homepage = "https://aia.lmsal.com/"
+documentation = "https://aiapy.readthedocs.io/en/stable/"
+repository = "https://github.com/LM-SAL/aiapy"
+changelog = "https://aiapy.readthedocs.io/en/stable/changelog.html"
+
+[project.optional-dependencies]
+all = ["aiapy"]
+cupy = [
+  "cupy",
+]
+tests = [
+  "aiapy[all]",
+  "hissw",
+  "pytest",
+  "pytest-astropy",
+  "pytest-cov",
+  "pytest-xdist",
+]
+docs = [
+  "aiapy[all]",
+  "sphinx",
+  "sphinx-automodapi",
+  "sphinx-changelog",
+  "sphinx-copybutton",
+  "sphinx-design",
+  "sphinx-gallery",
+  "sphinx-hoverxref",
+  "sphinxext-opengraph",
+  "sunpy-sphinx-theme",
+]
+dev = ["aiapy[tests,docs]"]
+
+[tool.setuptools]
+packages = ["aiapy"]
+
+[tool.setuptools_scm]
+write_to = "aiapy/_version.py"
+
+[tool.setuptools.exclude-package-data]
+aiapy = ["aiapy._dev"]
+
+[tool.codespell]
+ignore-words-list = "emiss"
+
+[tool.towncrier]
+  package = "aiapy"
+  filename = "CHANGELOG.rst"
+  directory = "changelog/"
+  issue_format = "`#{issue} <https://github.com/LM-SAL/aiapy/pull/{issue}>`__"
+  title_format = "{version} ({project_date})"
+
+  [[tool.towncrier.type]]
+    directory = "breaking"
+    name = "Breaking Changes"
+    showcontent = true
+
+  [[tool.towncrier.type]]
+    directory = "deprecation"
+    name = "Deprecations"
+    showcontent = true
+
+  [[tool.towncrier.type]]
+    directory = "removal"
+    name = "Removals"
+    showcontent = true
+
+  [[tool.towncrier.type]]
+    directory = "feature"
+    name = "New Features"
+    showcontent = true
+
+  [[tool.towncrier.type]]
+    directory = "bugfix"
+    name = "Bug Fixes"
+    showcontent = true
+
+  [[tool.towncrier.type]]
+    directory = "doc"
+    name = "Documentation"
+    showcontent = true
+
+  [[tool.towncrier.type]]
+    directory = "trivial"
+    name = "Internal Changes"
+    showcontent = true
