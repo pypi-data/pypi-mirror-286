@@ -1,0 +1,13 @@
+wxauto/__init__.py,sha256=0xojZ8-bUyJK7bf1zwH6JwP9T1UWtQcBj58gFaM0C6I,125
+wxauto/color.py,sha256=9OEFyCnqykfODxXErrmY89q-oJ0lLiRsIm4es31xf0E,8728
+wxauto/elements.py,sha256=TVTvqrc9qBM5lQBq48ZqADbs2DVUZ7iGn6eRaGpOk8M,40706
+wxauto/errors.py,sha256=FvChBuiJoTw1ryaRjdBn3nV1ikW0XNN9marfWDNbsVE,100
+wxauto/languages.py,sha256=xSn5GoNugULvafuW0n3CwmN0PrK_QxWLsKoDGvcpwX0,5976
+wxauto/uiautomation.py,sha256=MAKqg2Lg1jIwwxMZfU0yjsoLIzic5H5GAM5EtkaBAJ8,377471
+wxauto/utils.py,sha256=l-nsWMwKOPsCrJ2YE_uoK8f696UduTXiiuvpa_hTKe8,11118
+wxauto/wxauto.py,sha256=BmlXrrg6jEZzO04QvdFiIICkrmGY5mZNzn7akY9f9qU,35086
+wxauto-3.9.11.17.4.dist-info/LICENSE,sha256=R4dsijbzsutWOZJwmGkz1BCVzkMt8WaBOK-VE5qI6BU,1083
+wxauto-3.9.11.17.4.dist-info/METADATA,sha256=5D9cDUF4SXaieqaFI5j8zaeduLOHQAHE_cUhHFZZg78,3662
+wxauto-3.9.11.17.4.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+wxauto-3.9.11.17.4.dist-info/top_level.txt,sha256=gvzUUFeVZ43QovapBXaSEo4FYgJq_TxuvWNZ857Y3Zw,7
+wxauto-3.9.11.17.4.dist-info/RECORD,,
