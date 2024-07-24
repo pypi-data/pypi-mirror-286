@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: driverApi
+Version: 1.0.2
+Summary: 外设驱动接口
+Author: maoshiman
+Author-email: 28766392428@qq.com
+Description-Content-Type: text/markdown
+
+外设驱动实现接口的基本定义
