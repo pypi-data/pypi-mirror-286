@@ -1,0 +1,12 @@
+mlx_hub/__init__.py,sha256=K0-p6aB63h6Q6bVDdJr9uQNvOjFTwLIlgAV_VvGocQk,66
+mlx_hub/cli.py,sha256=jU2wuMI_0nWJM3zk6fmt9wWyLdJs2jaej3MAXzN8hGw,6106
+mlx_hub/core.py,sha256=VzheoYICFx185_vTdEwjS5qALplH_Fp_7xpPdp83ipU,2455
+mlx_hub/utils.py,sha256=CawfwPgzVgWEb833Z_QRHboAwoRI6bIwg5DbA-MAK5o,717
+mlx_hub/data/login_help.txt,sha256=YphMpLS-GYzC2s8v7fFJZGeoStNpuiGrkR34yqSpejM,415
+mlx_hub/data/suggested_models.txt,sha256=xV9zoKzKBi4aE3ozK_Od40skv28ZEy59XAFimT5SFuU,375
+mlx_hub-1.0.0.dist-info/LICENSE.txt,sha256=zPq3zLLqMG9xUxyMp3u1VQdgbNkHaLHjK4tSq1tIzwE,1066
+mlx_hub-1.0.0.dist-info/METADATA,sha256=FjdII6rp-4UnOOGGMU3nXgcqVM9JtPiR8XKquybBtp8,6548
+mlx_hub-1.0.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+mlx_hub-1.0.0.dist-info/entry_points.txt,sha256=Y1sAyEgGYAhrtorpp1GLqbRLWOxaQ4yp1ruOLoki2wE,49
+mlx_hub-1.0.0.dist-info/top_level.txt,sha256=nkoKK2A9erJGzVP_1wLew6FCP8gPgb5sek-bixEtopE,8
+mlx_hub-1.0.0.dist-info/RECORD,,

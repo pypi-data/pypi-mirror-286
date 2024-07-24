@@ -1,0 +1,13 @@
+Missing: Hugging Face - User Access Token
+
+MLX-Hub uses huggingface_hub to interact with MLX Models on Hugging Face.
+Please add your access token to huggingface_hub to continue.
+
+Hub documentation:
+> https://huggingface.co/docs/hub/security-tokens
+
+To create an access token, go to Hugging Face settings:
+> https://huggingface.co/settings/tokens
+
+To add the access token to huggingface_hub:
+> huggingface-cli login
