@@ -1,0 +1,3 @@
+[console_scripts]
+hello-baby=hello_baby.main:app
+
