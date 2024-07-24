@@ -1,0 +1,12 @@
+majordomo_ai/__init__.py,sha256=bRsuxJtW-r6CnRDZcBw_xGWkd8VFjdq3ikmUVupu9kk,150
+majordomo_ai/dataset.py,sha256=g0ttpmhLTWzKxAHJrW66c3TXsYPRNiyeMc2_00Qf-Ro,2628
+majordomo_ai/datasource.py,sha256=IQNVQ7lga78QP1rUO4lquerZhLVUN0EnW-tgoEQrU7k,753
+majordomo_ai/genai_query.py,sha256=AymgHGBCUONnhpmjLhNqLmae5pVfc07lFAbG9n0gzcg,1587
+majordomo_ai/models.py,sha256=Jwb9-CRlrbVzLMXWWhoA4ZL_QQPjLE-KM1xnzthhzpc,1308
+majordomo_ai/sql.py,sha256=1y7pvzSBD7JakeeK9E1M0IAdpbfZbMtXAcb9Mm4iHo0,2766
+majordomo_ai/unstructured_data.py,sha256=6aedd5DWIenukzVFHpvvoz-4uRM4dxtDwGl5qO6AOxI,3171
+majordomo_ai/utils.py,sha256=U_s08HBOlkUHg7z1Jg8afEiOcidQBZiGIdFJeE4Ds1o,349
+majordomo_ai-0.1.6.dist-info/METADATA,sha256=rVNLqD99OjlpZJlXNFKUkeCzZVmTxWgJOdYf6IV1-Tw,166
+majordomo_ai-0.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+majordomo_ai-0.1.6.dist-info/top_level.txt,sha256=ZL6w4-Fm981rvh9rSipxQwo62ZUYaUxMnWcps2ae7BU,13
+majordomo_ai-0.1.6.dist-info/RECORD,,
