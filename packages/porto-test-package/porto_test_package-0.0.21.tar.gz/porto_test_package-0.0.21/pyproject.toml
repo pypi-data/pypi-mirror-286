@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "porto-test-package"
+
+version = "0.0.21"
+requires-python = ">= 3.8"
+
+description = "Test 42 Porto package!"
+readme = "README.md"
+
+authors = [
+  {name = "Tisantos", email = "olbrien@42lisboa.com"},
+]
+maintainers = [
+   {name = "Tisantos", email = "olbrien@42lisboa.com"},
+]
+
+Repository = "https://github.com/olbrieno/pypi-test-project"
+Issues = "https://github.com/olbrieno/pypi-test-project/issues"

@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: porto-test-package
+Version: 0.0.21
+Summary: Test 42 Porto package!
+Author-email: Tisantos <olbrien@42lisboa.com>
+Maintainer-email: Tisantos <olbrien@42lisboa.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pypi-test-project
+
+`source venv/bin/activate`\
+`python3 -m build`\
+`twine upload dist/*`
