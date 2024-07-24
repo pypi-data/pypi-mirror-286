@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: susi-lib
+Version: 1.0.0
+Summary: Library for SuŠi organizers
+Home-page: https://github.com/olilag/susi-lib
+Author: Oliver Lago
+Author-email: oliver.oli.lago@gmail.com
+License: MIT
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# susi-lib
+
+Python library for [SuŠi](https://susi.trojsten.sk) organizers.
+
+## Overview
+
+Provides classes and functions to more easily convert between
+encodings used in puzzle hunting, to encapsulate regular expressions and to
+find words that pass given criteria.
