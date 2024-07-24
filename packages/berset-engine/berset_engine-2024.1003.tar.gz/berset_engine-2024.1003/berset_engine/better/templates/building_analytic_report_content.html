@@ -1,0 +1,378 @@
+
+
+<div class="w3-container w3-padding-large w3-white">
+  <h2 id="overview"><b>{{building.bldg_name}}</b></h2>
+  <hr class="w3-opacity">
+  <div class="w3-container w3-margin-bottom w3-padding-small">  
+    <table class="w3-table w3-bordered w3-border" style="width:95%; border: solid 1 px blue">
+      <tr>    
+        <td class="td_border" colspan="3"><b>Building Type</b></td>    
+        <td class="td_border" colspan="3">{{building.bldg_type}}</td>  
+      </tr>  
+      <tr>    
+        <td class="td_border" colspan="3"><b>Building Location</b></td>    
+        <td class="td_border" colspan="3">{{building.bldg_address}}</td>  
+      </tr>  
+      <tr>    
+        <td class="td_border" colspan="3"><b>Gross Floor Area (m<sup>2</sup>)</b></td>    
+        <td class="td_border" colspan="9">{{building.bldg_area}}</td>  
+      </tr>  
+      <tr>    
+        <td class="td_border" colspan="3"><b>Closest Weather Station</b></td>    
+        <td class="td_border" colspan="9">{{weather_instance.closest_weather_station_ID}}:{{weather_instance.closest_weather_station_name}}</td>  
+      </tr>  
+    </table>  
+    <br>    
+    <table class="w3-table w3-bordered w3-border" style="width:95%; border: solid 1 px blue">  
+      <tr>    
+        <td class="td_border" colspan="4"></td>    
+        <td class="td_border" colspan="4"><b>Electricity</b></td>    
+        <td class="td_border" colspan="4"><b>Fossil Fuel</b></td>  
+      </tr>  
+      <tr>    
+        <td class="td_border" colspan="4"><b>Annual Consumption (kWh)</b></td>
+        {% if building.recent_annual_electricity_kWh %}    
+          <td class="td_border" colspan="4">{{building.recent_annual_electricity_kWh}}</td>    
+        {% else %}
+          <td class="td_border" colspan="4">No electricity data</td>
+        {% endif %}
+
+        {% if building.recent_annual_fossil_fuel_kWh %}
+          <td class="td_border" colspan="4">{{building.recent_annual_fossil_fuel_kWh}}</td>
+        {% else %}
+          <td class="td_border"  colspan="4">No fossil fuel data</td>
+        {% endif %}
+      </tr>
+      <tr>    
+        <td class="td_border" colspan="4"><b>Annual Cost ({{currency_str}})</b></td>    
+        {% if building.recent_annual_electricity_cost %}
+        <td class="td_border"  colspan="4">{{building.recent_annual_electricity_cost}}</td>
+        {% else %}
+        <td class="td_border"  colspan="4">No electricity data</td>
+        {% endif %}
+        {% if building.recent_annual_fossil_fuel_cost %}
+        <td class="td_border"  colspan="4">{{building.recent_annual_fossil_fuel_cost}}</td>  
+        {% else %}
+        <td class="td_border"  colspan="4">No fossil fuel data</td>
+        {% endif %}
+      </tr>  
+      <tr>    
+        <td class="td_border" colspan="4"><b>Annual Site EUI (kWh/m<sup>2</sup>)</b></td>    
+        {% if building.recent_annual_electricity_EUI %}
+        <td class="td_border" colspan="4">{{building.recent_annual_electricity_EUI}}</td>
+        {% else %}
+        <td class="td_border"  colspan="4">No electricity data</td>
+        {% endif %}
+        {% if building.recent_annual_fossil_fuel_EUI %}
+        <td class="td_border" colspan="4">{{building.recent_annual_fossil_fuel_EUI}}</td>
+        {% else %}
+        <td class="td_border"  colspan="4">No fossil fuel data</td>
+        {% endif %}      
+      </tr>
+      <tr>
+        <td class="td_border" colspan="4"><b>Annual Energy Savings (kWh)</b></td>
+        {% if building.total_energy_savings_last_year_e %}
+        <td class="td_border" colspan="4">{{ building.total_energy_savings_last_year_e|round }}</td>
+        {% else %}
+        <td class="td_border"  colspan="4">No electricity data</td>
+        {% endif %}
+        {% if building.total_energy_savings_last_year_f %}
+        <td class="td_border" colspan="4">{{ building.total_energy_savings_last_year_f|round }}</td>
+        {% else %}
+        <td class="td_border"  colspan="4">No fossil fuel data</td>
+        {% endif %}
+      </tr>
+      <tr>
+        <td class="td_border" colspan="4"><b>Annual Energy Saving Percentage (%)</b></td>
+        {% if building.total_energy_savings_pct_last_year_e %}
+        <td class="td_border" colspan="4">{{building.total_energy_savings_pct_last_year_e}}</td>
+        {% else %}
+        <td class="td_border"  colspan="4">No electricity data</td>
+        {% endif %}
+        {% if building.total_energy_savings_pct_last_year_f %}
+        <td class="td_border" colspan="4">{{building.total_energy_savings_pct_last_year_f}}</td>
+        {% else %}
+        <td class="td_border"  colspan="4">No fossil fuel data</td>
+        {% endif %}
+      </tr>
+    </table>
+    <p style="margin:0px;">&nbsp;&nbsp;
+      <i>Note: The annual savings were calculated based on the latest 12 months data found in the database.</i>
+    </p>
+  </div>
+</div>
+
+<!-- Saving potentials division -->
+  <br>  
+<div class="w3-container w3-padding-large w3-white">    
+  <h2 id="about"><b>Saving Potentials</b></h2>    
+  <hr class="w3-opacity">
+  <div class="w3-container w3-margin-bottom w3-col m12 w3-padding-small">
+    <div class="w3-container ">
+      <div class="w3-cell-row">
+        <div class="w3-container w3-cell w3-hover-indigo w3-mobile">
+          <p class="w3-xlarge">    Target Selection: <b>{{building.saving_target_str}}</b></p>
+          <p class="w3-xlarge">    Potential Cost Savings: </p>
+          <p class="number">{{currency_str}} {{building.total_cost_savings}}</p>
+          <p class="w3-xlarge">    Potential Percent Savings: </p>
+          <p class = "number">{{building.total_energy_savings_pct}}%</p>
+        </div>
+        <div class="w3-container w3-hover-indigo w3-cell w3-mobile">
+          <h5><b>Energy Efficiency Recommendations</b></h5>
+          <ul>
+              {% for FIM in building.FIM_list %}
+              <li>{{FIM}}</li>
+              {% endfor %}
+          </ul>
+          <a href="#EE" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+          <i class="fa fa-th-large fa-info w3-margin-right"></i>Details
+          </a> 
+        </div>
+      </div>
+      <hr class="w3-opacity">
+
+      <!-- Savings plot row 2 -- stacked bar chart and pie chart -->
+      <div class="w3-row">
+        <div class="w3-half">
+          {{ saving_bar_chart|safe }}
+        </div>
+        <div  class="w3-half">
+          {{ saving_pie_chart|safe }}
+        </div>
+      </div>
+
+      <hr>
+      <div class="row pl-3 mb-5">
+        <a class="btn btn-primary"
+          data-bs-toggle="collapse"
+          href='#consumption_tends'
+          role="button" 
+          aria-expanded="false"
+          aria-controls="consumption_tends">
+          Energy consumption trends [click to display]
+        </a>
+      </div>
+
+      <div id="consumption_tends" class="collapse">
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-4">
+            {% if building.energy_savings_fig_e %}
+              {{building.energy_savings_fig_e}}
+            {% else %}
+            <div class="media text-muted pl-3">
+              <p style="margin:0;">No electricity data</p>
+            </div>
+            {% endif %}
+          </div>
+          <div class="col-12 col-lg-6 mb-4">
+            {% if building.energy_savings_fig_f %}
+              {{building.energy_savings_fig_f}}
+            {% else %}
+              <div class="media text-muted pl-3">
+                <p style="margin:0;">No fossil fuel data</p>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <!-- EE recommendations brief -->
+      <div class="w3-container w3-margin-bottom w3-padding-small"></div>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Weather Sensitivity and Benchmarks Card -->
+<div class="w3-container w3-padding-large w3-white" id="about">
+  <h2 id="benchmark"><b>Weather Sensitivity and Benchmarks</b></h2>
+  
+  <hr class="w3-opacity">
+
+  Daily electricity and fossil fuel  use per floor area is plotted below against monthly average outdoor air temperature. 
+  When energy use goes up at low temperatures on the left side of the graph, it represents heating energy. 
+  When energy use goes up at high temperatures on the right side of the graph, it represents cooling energy. 
+  The flat part of the graph shows the building's base load.
+  
+  <hr>
+  <!-- Electricity model and benchmarking -->
+  <div class="w3-row">
+    {% if building.im_electricity and building.im_electricity.model_description_html %}
+      {{building.im_electricity.model_description_html}}
+    {% endif %}
+  </div>
+
+  <div class="w3-half w3-container w3-margin-bottom w3-col m5 w3-padding-small">
+    <div class="w3-container">
+      {% if building.im_electricity and building.im_electricity.model_description_html %}
+        <p><b>Electricity Change-point Model (R<sup>2</sup>={{ '%0.2f' | format(building.im_electricity.r2|float) }})</b></p>
+        <br>
+        <div class="graph_container">
+          <canvas id="e_model" style="height:240px;"></canvas>
+        </div>
+        {{building.im_electricity.model_chart_html}}
+      {% else %}
+        <p class="text-danger">
+          <b>Electricity Model</b>: No reasonable change-point model could be found for this building's electricity consumption. Possible reasons are:
+          <ul>
+            <li>
+              Insufficient utility data: BERSET requires at least 12 consecutive months of utility data.
+            </li>
+            <li>
+              The energy consumption is not weather sensitive.
+            </li>
+            <li>
+              There are abrupt changes in the energy use intensity trend.
+            </li>
+          </ul>
+
+          <b>What should I do if BERSET cannot fit a change-point model for my building?</b> <br>
+          If a model can't be fit on the first try for a building, consider doing one of the following and re-running the analytics:
+          <ul>
+            <li>
+              Review the Building Information Tab: Utility Consumption Trends chart. Ensure 12 consecutive months of electricity and/or fossil energy consumption data is entered for the building.
+            </li>
+            <li>
+              Review the Building Information Tab: Utility Consumption Trends chart. Remove the consecutive months of data that have abnormal patterns (e.g., extremely low or high energy use intensity (EUI), sudden changes).
+            </li>
+            <li>
+              Reduce the number of years of data used to fit a model (generally one to two years is sufficient).
+            </li>
+          </ul>          
+        </p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="w3-half w3-container w3-margin-bottom w3-col m7 w3-padding-small">
+      <p><b>Electricity Consumption Benchmarking</b></p>
+      {{building.benchmarking_bar_base_e_html}}
+      {{building.benchmarking_bar_hsl_e_html}}
+      {{building.benchmarking_bar_hcp_e_html}}
+      {{building.benchmarking_bar_csl_e_html}}
+      {{building.benchmarking_bar_ccp_e_html}}
+      <br>
+      <p>
+        <i>
+          Note: % indicate the percentage of buildings your building is superior to.
+        </i>
+      </p>
+      <a href="#IMT" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+        <i class="fa fa-th-large fa-info w3-margin-right"></i>
+        Details
+      </a>
+  </div>
+
+  <!-- Electricity model and benchmarking end -->
+  <hr>
+  <div class="w3-row">
+    {% if building.im_fossil_fuel and building.im_fossil_fuel.model_description_html %}
+      {{building.im_fossil_fuel.model_description_html}}
+    {% endif %}
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-half w3-container w3-margin-bottom w3-col m5 w3-padding-small">
+      <div class="w3-container">
+        {% if building.im_fossil_fuel and building.im_fossil_fuel.model_description_html %}
+          <p><b>Fossil Fuel Change-point Model (R<sup>2</sup>={{ '%0.2f' | format(building.im_fossil_fuel.r2|float) }})</b></p>
+          <br>
+          <div class="graph_container">
+              <canvas id="f_model" style="height:240px;"></canvas>                    
+          </div>
+          {{building.im_fossil_fuel.model_chart_html}}
+        {% else %}
+          <p>
+              No fossil fuel consumption data is provided or no significant 
+              change-point model for fossil fuel was found.
+          </p>
+        {% endif %}
+      </div>
+    </div>
+    <div class="w3-half w3-container w3-margin-bottom w3-col m7 w3-padding-small">
+      <div class="w3-container">
+        <p><b>Fossil Fuel Consumption Benchmarking</b></p>
+        {{building.benchmarking_bar_base_f_html}}
+        {{building.benchmarking_bar_hsl_f_html}}
+        {{building.benchmarking_bar_hcp_f_html}}
+        {{building.benchmarking_bar_csl_f_html}}
+        {{building.benchmarking_bar_ccp_f_html}}
+        <br>
+        <p><i>Note: % indicate the percentage of buildings your building is superior to.</i></p>
+        <a href="#IMT" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-info w3-margin-right"></i>Details</a>
+      </div>
+    </div>
+  </div>
+    <!-- Fossil fuel model and benchmarking end -->
+</div>
+
+<div class="w3-container w3-padding-large w3-white">
+  <!-- Detail EE analysis -->
+  <h2 id="EE"><b>Energy Efficiency Measure Recommendations</b></h2>
+  <p>More details on each energy efficiency opportunity identified </p>
+  <hr class="w3-opacity">
+    {% for FIM in building.FIM_list %}
+      <h4>{{FIM}}</h4>
+      <p>{{FIM_dict[FIM]}}</p>
+      {% if FIM == "Reduce Lighting Load" %}
+      <a class="btn btn-primary" href="https://www.equans.be/nos-expertises/solutions-defficacite-energetique/relighting" role="button">
+        Equans Relighting Expertise
+      </a>
+      {% elif FIM == "Reduce Equipment Schedules" %}
+      <a class="btn btn-primary" href="https://www.equans.be/en/our-expertises/building-efficiency/building-management-systems" role="button">
+        Equans Building Management System Expertise
+      </a>
+      {% else %}
+      <a class="btn btn-primary" href="https://www.equans.be/en/our-expertises/building-efficiency/energy-management" role="button">
+        Equans Building Energy Management Expertise
+      </a>
+      {% endif %}
+    {% endfor %}
+    {% if not building.FIM_list %}
+    <p>No recommendation is available.</p>
+    {% endif %}
+    <hr class="w3-opacity">
+</div>
+
+<!-- Understand the model section -->
+<div class="w3-container w3-padding-large w3-white">
+  <h2 id="IMT"><b>Understand the Model</b></h2>
+
+  <h4>Baseload</h4>
+  <p>Energy consumption of all non-weather-related equipment like computers and lighting. The lower the baseload, the less the energy consumed in plugs and permanently plugged equipment.</p>
+
+  <h4>Cooling Sensitivity </h4>
+  <p>Cooling system energy consumption for each degree increase in outdoor temperature. Low cooling sensitivity results in less energy-consuming cooling system.</p>
+
+  <h4>Cooling change-point</h4>
+  <p>The temperature at which cooling system starts. Below the cooling change point, the cooling system is not operational.</p>
+
+  <h4>Heating Sensitivity</h4>
+  <p>Heating system consumption of energy for each degree decrease in outdoor temperature. Low heating sensitivity results in less energy-consuming heating system.</p>
+
+  <h4>Heating change-point</h4>
+  <p>The temperature at which heating system starts. Above the heating change point, the cooling system is not operational.</p>
+
+  <hr class="w3-opacity">
+</div>
+
+<div class="w3-container w3-padding-large w3-white">
+  <h2><b>Disclaimer</b></h2>
+  <p>
+    The data in this report is subject to error and may not be accurate enough for your application. 
+    You agree not to hold the developers, contributors, hosts of the BERSET web application, EQUANS, and BOUYGUES liable for any inaccuracies in the data, 
+    or consequences thereof, or for any claims brought by any third party regarding their data contributions.
+  </p>
+</div>
+<!-- Tool description section -->
+
+<!-- Footer  -->
+<footer class="w3-container w3-padding-32 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      {{equans_logo}}
+      <br>
+      <p>A Bouygues Group Company</p>
+    </div>
+  </div>
+
+</footer>

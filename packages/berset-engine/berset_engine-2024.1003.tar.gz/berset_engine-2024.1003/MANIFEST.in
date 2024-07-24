@@ -1,0 +1,5 @@
+include berset_engine/better/data/*.csv
+include berset_engine/better/data/*.txt
+include berset_engine/better/data/*.json
+include tests/data/portfolio.xlsx
+include berset_engine/better/templates/*.html
