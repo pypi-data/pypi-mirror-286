@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: logic-python2sympy
+Version: 0.1.0
+Summary: convert a logical expression written in `Python` syntax, into a `Sympy` expression
+Author: Telessia
+Author-email: dunty.telessia@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: astor (>=0.8.1,<0.9.0)
+Requires-Dist: sympy (>=1.13.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# logic_python2sympy
+
+`Sympy` has the advantage of using `Python` syntax in its own expressions, but with some exceptions :
+logical expressions in `Sympy` differ a bit from their `Python` counterparts (`a and b` is written `a & b` in `Sympy`).
+Thus, this module provides functions that can convert a logical expression written in `Python` syntax, into a `Sympy` expression.
+
+## Usage
+
+```python
+>>> import logic_python2sympy as p2s
+>>> code = "((0 < x <= 10) or not y"
+>>> print(p2s.convert(code))
+Or(And(0 < x, x <= 10), Not(y))
+>> print(p2s.get_expression(code))
+~y | ((0 < x) & (x <= 10))
+```
+
+### convert
+
+```python
+convert(expr: str) -> str
+```
+
+Transform a `Python` logical expression into `Sympy` syntax. \
+expr: valid logical expression, i.e. expr must be valid `Python` syntax, and must be a combintion of the following `ast` nodes: `BoolOp, BinOp, UnaryOp, Compare, Call, Constant, Name` \
+raises: `NotImplentedError`, when the expression contains operators that are not supported in `Sympy`
+
+### get_expression
+
+```python
+get_expression(expr: str) -> Any
+```
+
+Transform a `Python` logical expression into a `Sympy` expression.
+expr: valid logical expression, i.e. expr must be valid `Python` syntax,
+and must be a combintion of the following `ast` nodes:
+`BoolOp, BinOp, UnaryOp, Compare, Call, Constant, Name`
+raises: `NotImplentedError`, when the expression contains operators that are not supported in `Sympy`
+
