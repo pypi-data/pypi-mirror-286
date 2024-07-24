@@ -1,0 +1,18 @@
+[project]
+name = "tkShadow"
+version = "1.0.3.1"
+authors = [
+  { name="CodeCrafter-TL", email="1825456084@qq.com" },
+]
+description = "在您的 tkinter 项目上为控件或 Canvas 元素添加阴影"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+GitHub = "https://github.com/codecrafter-tl/tkshadow"
+PyPI = "https://pypi.org/project/tkshadow"
