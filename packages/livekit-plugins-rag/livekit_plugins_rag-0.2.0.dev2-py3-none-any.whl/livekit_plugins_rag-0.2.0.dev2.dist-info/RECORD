@@ -1,0 +1,9 @@
+livekit/plugins/rag/__init__.py,sha256=Sk0GgQ3F7XPy_NbXMCuOgKxyYAyEriywofzvOGB9Nlw,969
+livekit/plugins/rag/annoy.py,sha256=fone-3vUGuC9OSrnt0tZCrOS-BXPVodDSZJNOavvfAs,2842
+livekit/plugins/rag/chunking.py,sha256=YkSys74YDx1CIGIaGrBCQGkm9vce0eyUNu38KoG4jCc,2397
+livekit/plugins/rag/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/rag/version.py,sha256=j435tq2PUytJ_b4XnAN8SFy_5GzOk4LHUz-zUdDCYIE,606
+livekit_plugins_rag-0.2.0.dev2.dist-info/METADATA,sha256=pW_Plb6ykIgfHZ7aZqViRD6RRNndg24uH4XprZJYsCo,1268
+livekit_plugins_rag-0.2.0.dev2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+livekit_plugins_rag-0.2.0.dev2.dist-info/top_level.txt,sha256=OoDok3xUmXbZRvOrfvvXB-Juu4DX79dlq188E19YHoo,8
+livekit_plugins_rag-0.2.0.dev2.dist-info/RECORD,,
