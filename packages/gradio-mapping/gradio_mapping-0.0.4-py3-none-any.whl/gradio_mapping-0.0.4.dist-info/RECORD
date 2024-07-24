@@ -1,0 +1,10 @@
+gradio_mapping/__init__.py,sha256=No2_QRoVO1SIfyZexd7IzSLcNZMXMcgMfRKhu8QYVtY,53
+gradio_mapping/mapping.py,sha256=t3SQWeaYscb0D0BS4uAxcg4pZkNzY5ZAUGd-8he1-Lc,4519
+gradio_mapping/mapping.pyi,sha256=SD4P3S-7TWKP76AtGmqex2NmNgKIdmqtoRuylYftfW4,19889
+gradio_mapping/templates/component/index.js,sha256=SG3En7FVS1a7VEbpMb5BMZNb-sLkGx4xS8nFEMI7kcg,3549751
+gradio_mapping/templates/component/style.css,sha256=8bKJ0RPL8weVALkvScfcSf9iaCsxtLwaWFRiZRR49S4,14001
+gradio_mapping/templates/example/index.js,sha256=OS9nWHtrMBcPa-vuGta3RE8gDLSp0_43pHlFTZPPASA,2315
+gradio_mapping/templates/example/style.css,sha256=-DHk5asz3SWFNLQlCnYuMN4b4gTf_srMmlu5x_xU_Pw,147
+gradio_mapping-0.0.4.dist-info/METADATA,sha256=FnTiYJ1EGfvaOY-6iuXpssaQ3Qac-nj8P361VoEjZ7Y,27069
+gradio_mapping-0.0.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+gradio_mapping-0.0.4.dist-info/RECORD,,

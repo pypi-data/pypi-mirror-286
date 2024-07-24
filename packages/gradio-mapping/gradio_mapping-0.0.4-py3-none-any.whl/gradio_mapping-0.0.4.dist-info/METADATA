@@ -1,0 +1,320 @@
+Metadata-Version: 2.3
+Name: gradio_mapping
+Version: 0.0.4
+Summary: test1
+Author-email: YOUR NAME <YOUREMAIL@domain.com>
+License-Expression: MIT
+Keywords: gradio-custom-component
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8
+Requires-Dist: gradio<5.0,>=4.0
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Description-Content-Type: text/markdown
+
+---
+tags: [gradio-custom-component, SimpleTextbox]
+title: gradio_mycomponent
+short_description: test1
+colorFrom: blue
+colorTo: yellow
+sdk: gradio
+pinned: false
+app_file: space.py
+---
+
+# `gradio_mapping`
+<a href="https://pypi.org/project/gradio_mapping/" target="_blank"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/gradio_mapping"></a>  
+
+test1
+
+## Installation
+
+```bash
+pip install gradio_mapping
+```
+
+## Usage
+
+```python
+
+import gradio as gr
+from gradio_mapping import Mapping
+
+# example = MyComponent().example_value()
+# demo = gr.Interface(
+#     lambda value:value,
+#     MyComponent(value=value),  # interactive version of your component
+#     MyComponent(),  # static version of your component
+#     # examples=[[example]],  # uncomment this line to view the \"example version\" of your component
+# )
+
+example = '{"ligandA":"M6\\n     RDKit          3D\\n\\n 70 76  0  0  1  0  0  0  0  0999 V2000\\n   33.2725   14.3674   35.8912 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.3831   15.4417   34.8326 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.2159   15.2829   33.7125 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.0685   14.0365   33.5058 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.3091   12.8749   32.8410 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.9649   13.1537   31.4753 O   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.3518   12.3025   30.4568 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.8499   12.6078   29.2410 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.2371   11.8284   28.1903 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.1382   10.7278   28.3570 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.5400   10.0657   27.1656 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.1045   10.3804   25.9254 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.1969   11.3809   25.8032 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.7174   11.6479   24.4218 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.5142   12.4106   23.5668 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.1056   12.7426   22.2810 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.9393   13.5034   21.5031 O   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.8675   12.3226   21.8098 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.0147   11.5475   22.6372 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.4414   11.1953   23.9582 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.5750   10.3963   24.7581 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   30.3516    9.9584   24.2631 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   29.9449   10.3082   22.9832 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   30.7502   11.1050   22.1778 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.7342   12.1235   26.8935 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.8181   13.1041   26.7103 F   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.5507   10.4507   29.7035 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.2951    9.3388   30.1284 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.4842    8.0791   29.3744 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.5958    6.8117   30.2714 C   0  0  2  0  0  0  0  0  0  0  0  0\\n   35.4527    6.6720   31.2915 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.8846    7.5250   32.4963 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   37.2702    8.0935   32.1249 C   0  0  2  0  0  0  0  0  0  0  0  0\\n   37.2220    9.4003   31.2885 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   37.8071    7.0040   31.1949 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.1574   11.2489   30.7255 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.3231   16.2306   32.7472 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.5975   17.3672   32.8819 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.7542   17.6016   33.9672 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.6374   16.6195   34.9492 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.7415   13.5050   35.4981 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.7535   14.7197   36.7777 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.2630   14.0403   36.1965 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.4423   13.6985   34.4681 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.9856   14.2882   32.9811 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.3783   12.7053   33.3793 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.8926   11.9674   32.9900 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.2764    9.2811   27.1826 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.4754   12.7657   23.9113 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.7509   13.6200   20.5642 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.5524   12.5825   20.8112 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.8702   10.1147   25.7572 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   29.7116    9.3427   24.8784 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   28.9928    9.9586   22.6110 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   30.4212   11.3769   21.1848 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.6205    7.9138   28.7288 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   37.3611    8.1592   28.7288 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.7477    5.9072   29.6785 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.4927    6.9961   30.8849 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.3427    5.6303   31.5904 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.1708    8.3208   32.7213 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.9554    6.8959   33.3836 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   37.9476    8.1794   32.9798 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.9364   10.1951   31.9779 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   38.2187    9.6713   30.9378 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   38.0183    6.1723   31.7278 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.6998   18.0962   32.0917 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.1863   18.5177   34.0316 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.9680   16.7676   35.7820 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   38.6511    7.2861   30.7148 H   0  0  0  0  0  0  0  0  0  0  0  0\\n  1  2  1  0\\n  1 41  1  0\\n  1 42  1  0\\n  1 43  1  0\\n  2  3  2  0\\n  2 40  1  0\\n  3  4  1  0\\n  3 37  1  0\\n  4  5  1  0\\n  4 44  1  0\\n  4 45  1  0\\n  5  6  1  0\\n  5 46  1  0\\n  5 47  1  0\\n  6  7  1  0\\n  7  8  2  0\\n  7 36  1  0\\n  8  9  1  0\\n  9 25  2  0\\n  9 10  1  0\\n 10 27  1  0\\n 10 11  2  0\\n 11 48  1  0\\n 11 12  1  0\\n 12 13  2  0\\n 13 14  1  0\\n 13 25  1  0\\n 14 15  2  0\\n 14 20  1  0\\n 15 16  1  0\\n 15 49  1  0\\n 16 17  1  0\\n 16 18  2  0\\n 17 50  1  0\\n 18 19  1  0\\n 18 51  1  0\\n 19 20  2  0\\n 19 24  1  0\\n 20 21  1  0\\n 21 22  2  0\\n 21 52  1  0\\n 22 23  1  0\\n 22 53  1  0\\n 23 24  2  0\\n 23 54  1  0\\n 24 55  1  0\\n 25 26  1  0\\n 27 36  2  0\\n 27 28  1  0\\n 28 29  1  0\\n 28 34  1  0\\n 29 30  1  0\\n 29 56  1  0\\n 29 57  1  0\\n 30 31  1  0\\n 30 35  1  0\\n 30 58  1  6\\n 31 32  1  0\\n 31 59  1  0\\n 31 60  1  0\\n 32 33  1  0\\n 32 61  1  0\\n 32 62  1  0\\n 33 34  1  0\\n 33 35  1  0\\n 33 63  1  1\\n 34 64  1  0\\n 34 65  1  0\\n 35 66  1  0\\n 35 70  1  0\\n 37 38  2  0\\n 38 39  1  0\\n 38 67  1  0\\n 39 40  2  0\\n 39 68  1  0\\n 40 69  1  0\\nM  CHG  1  35   1\\nM  END\\n>  <s_m_entry_id>  (1) \\n957\\n\\n>  <s_m_entry_name>  (1) \\ncom.2\\n\\n>  <s_m_Source_Path>  (1) \\nC:\\\\Users\\\\86173\\\\Desktop\\\\fep_new\\\\glide-dock_SP_2_001\\n\\n>  <s_m_Source_File>  (1) \\n\\n\\n>  <2_pv.maegz>  (1) \\n\\n\\n>  <i_m_Source_File_Index>  (1) \\n395\\n\\n>  <chiral flag>  (1) \\n1\\n\\n>  <version>  (1) \\n0\\n\\n>  <s_i_glide_gridfile>  (1) \\nglide-grid_1\\n\\n>  <i_i_glide_lignum>  (1) \\n2\\n\\n>  <i_i_glide_rotatable_bonds>  (1) \\n7\\n\\n>  <r_i_docking_score>  (1) \\n-9.622953\\n\\n>  <r_i_glide_ligand_efficiency>  (1) \\n-0.240574\\n\\n>  <r_i_glide_ligand_efficiency_sa>  (1) \\n-0.822751\\n\\n>  <r_i_glide_ligand_efficiency_ln>  (1) \\n-2.052293\\n\\n>  <r_i_glide_gscore>  (1) \\n-9.794853\\n\\n>  <r_i_glide_lipo>  (1) \\n-4.785582\\n\\n>  <r_i_glide_hbond>  (1) \\n-0.426049\\n\\n>  <r_i_glide_metal>  (1) \\n0\\n\\n>  <r_i_glide_rewards>  (1) \\n-0.623196\\n\\n>  <r_i_glide_evdw>  (1) \\n-58.631512\\n\\n>  <r_i_glide_ecoul>  (1) \\n-9.461559\\n\\n>  <r_i_glide_erotb>  (1) \\n0.428844\\n\\n>  <r_i_glide_esite>  (1) \\n-0.038061\\n\\n>  <r_i_glide_emodel>  (1) \\n-115.127352\\n\\n>  <r_i_glide_energy>  (1) \\n-68.093071\\n\\n>  <r_i_glide_einternal>  (1) \\n5.698279\\n\\n>  <i_i_glide_confnum>  (1) \\n68\\n\\n>  <i_i_glide_posenum>  (1) \\n1001\\n\\n>  <r_i_glide_eff_state_penalty>  (1) \\n0.171900\\n\\n>  <i_lp_mmshare_version>  (1) \\n41011\\n\\n>  <i_f3d_flags>  (1) \\n0\\n\\n>  <s_epik_input>  (1) \\nW2NIXTFbY0hdW2NIXW5jKGMxW0NIM10pW0NIMl1bQ0gyXU9jKG4yKW5jKE4oW0NIMl1bQ0BIXTM0KVtDSDJdW0NASF0oW05IXTQpW0NIMl1bQ0gyXTMpYyhjMjUpW2NIXW5jKGM1RiktYyhbY0hdYyhbT0hdKVtjSF02KWMoYzY3KVtjSF1bY0hdW2NIXVtjSF03\\n\\n>  <s_epik_cmdline>  (1) \\nJ2VwaWtfcHl0aG9uJywgJy1waCcsICc3LjAnLCAnLXRuJywgJzgnLCAnLW1hJywgJzIwMCcsICctaW1hZScsICc8aW5maWxlLm1hZT4nLCAnLW9tYWUnLCAnPG91dGZpbGUubWFlPic=\\n\\n>  <r_epik_Ionization_Penalty>  (1) \\n0.067600\\n\\n>  <r_epik_Ionization_Penalty_Charging>  (1) \\n0.014100\\n\\n>  <r_epik_Ionization_Penalty_Neutral>  (1) \\n0.053500\\n\\n>  <r_epik_State_Penalty>  (1) \\n0.171900\\n\\n>  <r_epik_Charging_Adjusted_Penalty>  (1) \\n0.185996\\n\\n>  <i_epik_Tot_Q>  (1) \\n1\\n\\n>  <i_epik_Tot_abs_Q>  (1) \\n1\\n\\n>  <s_lp_Force_Field>  (1) \\nOPLS3\\n\\n>  <r_lp_Energy>  (1) \\n78.370238\\n\\n>  <b_lp_Chiralities_Consistent>  (1) \\n1\\n\\n>  <s_lp_Variant>  (1) \\nM6-1\\n\\n>  <r_lp_tautomer_probability>  (1) \\n1\\n\\n>  <s_m_subgroupid>  (1) \\n\\n\\n>  <2_pv>  (1) \\n\\n\\n>  <s_m_subgroup_title>  (1) \\n\\n\\n>  <b_m_subgroup_collapsed>  (1) \\n0\\n\\n>  <exp_dG>  (1) \\n-8.68\\n$$$$\\n\\n$$$$\\n","ligandB":"M60\\n     RDKit          3D\\n\\n 74 81  0  0  1  0  0  0  0  0999 V2000\\n   34.3533   16.1539   32.3628 O   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.6138   15.8049   33.4327 N   0  0  1  0  0  0  0  0  0  0  0  0\\n   32.1644   16.1600   33.1525 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.0162   17.2181   33.3699 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.9837   15.9456   32.0942 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.4240   15.1990   34.0609 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   30.3586   15.1349   33.8415 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.5345   15.5042   35.1033 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.1542   13.9015   33.8080 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.9521   13.1659   34.5792 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.7860   13.4667   32.8767 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.6581   14.2547   33.7007 C   0  0  1  0  0  0  0  0  0  0  0  0\\n   34.3871   13.3348   32.6756 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.3744   12.3141   33.0623 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.4340   13.6331   32.5821 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.7905   13.3597   31.3754 O   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.2405   12.4797   30.4072 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.7204   12.6953   29.1832 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.1643   11.9044   28.1665 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.1213   10.8617   28.3814 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.5518   10.1700   27.2161 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.3283    9.4281   27.2448 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.1204   10.4187   25.9616 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.1819   11.3808   25.7964 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.7318   11.5922   24.4015 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.5841   12.3312   23.5775 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.5421   12.6612   23.9576 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.2305   12.6878   22.2867 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.9204   13.2596   21.6806 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.9940   12.3258   21.7815 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.7364   12.6185   20.7758 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.0902   11.5613   22.5614 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.4548   11.1484   23.8879 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.5172   10.3022   24.5957 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   31.8188    9.5866   26.1439 Cl  0  0  0  0  0  0  0  0  0  0  0  0\\n   30.2949    9.9679   24.0166 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   29.6028    9.3384   24.5578 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   29.9522   10.4109   22.7512 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   29.0018   10.1299   22.3251 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   30.8328   11.1936   22.0221 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   30.5625   11.5209   21.0284 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.6828   12.1505   26.8517 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   32.7505   13.1044   26.6185 F   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.5521   10.6736   29.7424 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.3525    9.6202   30.2154 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.7032    8.4001   29.4548 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.8598    8.1262   28.8220 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   37.5536    8.6052   28.8037 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.9843    7.1385   30.3137 C   0  0  2  0  0  0  0  0  0  0  0  0\\n   37.2934    6.3037   29.6912 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.8403    6.8048   31.2802 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.8705    5.7485   31.5524 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.8591    7.0065   30.8455 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.1088    7.6774   32.5159 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.2407    7.0304   33.3817 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.2833    8.3566   32.7384 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   37.4136    8.4421   32.2099 C   0  0  2  0  0  0  0  0  0  0  0  0\\n   38.0477    8.5862   33.0879 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   37.2167    9.7588   31.4158 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.7880   10.4717   32.1248 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   38.1799   10.1852   31.1221 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   38.1255    7.4618   31.2817 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   38.4220    6.6485   31.8057 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.1220   11.5045   30.7283 N   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.3782   14.1866   35.0743 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.0051   13.3032   35.1894 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.6579   14.1576   35.8956 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.1894   15.4585   35.1690 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   36.0668   15.4133   34.5193 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   35.5363   15.6659   36.1814 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.2033   16.4987   34.6641 C   0  0  0  0  0  0  0  0  0  0  0  0\\n   33.3991   16.6849   35.3742 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   34.6555   17.4432   34.3532 H   0  0  0  0  0  0  0  0  0  0  0  0\\n   38.9447    7.8575   30.8390 H   0  0  0  0  0  0  0  0  0  0  0  0\\n  2  1  1  6\\n  2  3  1  0\\n  2 12  1  0\\n  2 71  1  0\\n  3  4  1  0\\n  3  5  1  0\\n  3  6  1  0\\n  6  7  1  0\\n  6  8  1  0\\n  6  9  1  0\\n  9 10  1  0\\n  9 11  1  0\\n  9 12  1  0\\n 12 13  1  6\\n 12 65  1  0\\n 13 14  1  0\\n 13 15  1  0\\n 13 16  1  0\\n 16 17  1  0\\n 17 18  2  0\\n 17 64  1  0\\n 18 19  1  0\\n 19 20  2  0\\n 19 42  1  0\\n 20 21  1  0\\n 20 44  1  0\\n 21 22  1  0\\n 21 23  2  0\\n 23 24  1  0\\n 24 25  1  0\\n 24 42  2  0\\n 25 26  2  0\\n 25 33  1  0\\n 26 27  1  0\\n 26 28  1  0\\n 28 29  1  0\\n 28 30  2  0\\n 30 31  1  0\\n 30 32  1  0\\n 32 33  2  0\\n 32 40  1  0\\n 33 34  1  0\\n 34 35  1  0\\n 34 36  2  0\\n 36 37  1  0\\n 36 38  1  0\\n 38 39  1  0\\n 38 40  2  0\\n 40 41  1  0\\n 42 43  1  0\\n 44 45  1  0\\n 44 64  2  0\\n 45 46  1  0\\n 45 59  1  0\\n 46 47  1  0\\n 46 48  1  0\\n 46 49  1  0\\n 49 50  1  6\\n 49 51  1  0\\n 49 62  1  0\\n 51 52  1  0\\n 51 53  1  0\\n 51 54  1  0\\n 54 55  1  0\\n 54 56  1  0\\n 54 57  1  0\\n 57 58  1  1\\n 57 59  1  0\\n 57 62  1  0\\n 59 60  1  0\\n 59 61  1  0\\n 62 63  1  0\\n 62 74  1  0\\n 65 66  1  0\\n 65 67  1  0\\n 65 68  1  0\\n 68 69  1  0\\n 68 70  1  0\\n 68 71  1  0\\n 71 72  1  0\\n 71 73  1  0\\nM  CHG  3   1  -1   2   1  62   1\\nM  END\\n>  <s_m_entry_id>  (1) \\n866\\n\\n>  <s_m_entry_name>  (1) \\ncom.4\\n\\n>  <s_m_Source_Path>  (1) \\nC:\\\\Users\\\\86173\\\\Desktop\\\\fep_new\\\\glide-dock_SP_2_001\\n\\n>  <s_m_Source_File>  (1) \\n\\n\\n>  <2_pv.maegz>  (1) \\n\\n\\n>  <i_m_Source_File_Index>  (1) \\n304\\n\\n>  <chiral flag>  (1) \\n1\\n\\n>  <version>  (1) \\n0\\n\\n>  <s_i_glide_gridfile>  (1) \\nglide-grid_1\\n\\n>  <i_i_glide_lignum>  (1) \\n4\\n\\n>  <i_i_glide_rotatable_bonds>  (1) \\n5\\n\\n>  <r_i_docking_score>  (1) \\n-9.950394\\n\\n>  <r_i_glide_ligand_efficiency>  (1) \\n-0.242693\\n\\n>  <r_i_glide_ligand_efficiency_sa>  (1) \\n-0.836857\\n\\n>  <r_i_glide_ligand_efficiency_ln>  (1) \\n-2.111009\\n\\n>  <r_i_glide_gscore>  (1) \\n-9.981594\\n\\n>  <r_i_glide_lipo>  (1) \\n-5.129840\\n\\n>  <r_i_glide_hbond>  (1) \\n-0.374228\\n\\n>  <r_i_glide_metal>  (1) \\n0\\n\\n>  <r_i_glide_rewards>  (1) \\n-0.537652\\n\\n>  <r_i_glide_evdw>  (1) \\n-58.846661\\n\\n>  <r_i_glide_ecoul>  (1) \\n-7.698180\\n\\n>  <r_i_glide_erotb>  (1) \\n0.218801\\n\\n>  <r_i_glide_esite>  (1) \\n-0.061616\\n\\n>  <r_i_glide_emodel>  (1) \\n-113.907531\\n\\n>  <r_i_glide_energy>  (1) \\n-66.544840\\n\\n>  <r_i_glide_einternal>  (1) \\n3.260465\\n\\n>  <i_i_glide_confnum>  (1) \\n53\\n\\n>  <i_i_glide_posenum>  (1) \\n96\\n\\n>  <r_i_glide_eff_state_penalty>  (1) \\n0.031200\\n\\n>  <i_lp_mmshare_version>  (1) \\n41011\\n\\n>  <i_f3d_flags>  (1) \\n0\\n\\n>  <s_epik_input>  (1) \\nW0NIMl0xW0NIMl1bQ0gyXUMoW04rXTEyW08tXSkoW0NIMl1bQ0gyXVtDSDJdMilbQ0gyXU9jKG4zKW5jKE4oW0NIMl1bQ0BIXTQ1KVtDSDJdW0NASF0oW05IXTUpW0NIMl1bQ0gyXTQpYyhjMzYpW2NIXW5jKGM2RiktYyhbY0hdW2NIXVtjSF03KWMoYzc4KWMoQ2wpW2NIXVtjSF1bY0hdOA==\\n\\n>  <s_epik_cmdline>  (1) \\nJ2VwaWtfcHl0aG9uJywgJy1waCcsICc3LjAnLCAnLXRuJywgJzgnLCAnLW1hJywgJzIwMCcsICctaW1hZScsICc8aW5maWxlLm1hZT4nLCAnLW9tYWUnLCAnPG91dGZpbGUubWFlPic=\\n\\n>  <r_epik_Ionization_Penalty>  (1) \\n0.030900\\n\\n>  <r_epik_Ionization_Penalty_Charging>  (1) \\n0.030900\\n\\n>  <r_epik_Ionization_Penalty_Neutral>  (1) \\n0.000100\\n\\n>  <r_epik_State_Penalty>  (1) \\n0.031200\\n\\n>  <r_epik_Charging_Adjusted_Penalty>  (1) \\n0.062023\\n\\n>  <i_epik_Tot_Q>  (1) \\n1\\n\\n>  <i_epik_Tot_abs_Q>  (1) \\n3\\n\\n>  <s_lp_Force_Field>  (1) \\nOPLS3\\n\\n>  <r_lp_Energy>  (1) \\n104.652495\\n\\n>  <b_lp_Chiralities_Consistent>  (1) \\n1\\n\\n>  <s_lp_Variant>  (1) \\nM60-1\\n\\n>  <r_lp_tautomer_probability>  (1) \\n1\\n\\n>  <s_m_subgroupid>  (1) \\n\\n\\n>  <2_pv>  (1) \\n\\n\\n>  <s_m_subgroup_title>  (1) \\n\\n\\n>  <b_m_subgroup_collapsed>  (1) \\n0\\n\\n>  <exp_dG>  (1) \\n-7.88\\n$$$$\\n\\n$$$$\\n","mapping":"100 100\\n34 61\\n33 58\\n32 56\\n31 53\\n30 50\\n29 48\\n28 45\\n4 12\\n27 44\\n26 43\\n24 41\\n23 39\\n22 37\\n21 35\\n20 33\\n19 32\\n18 31\\n17 29\\n15 27\\n14 25\\n13 24\\n12 23\\n10 20\\n9 19\\n8 18\\n6 16\\n35 63\\n11 22\\n7 17\\n5 15\\n69 73\\n65 62\\n64 60\\n63 59\\n62 57\\n61 54\\n60 55\\n59 51\\n58 52\\n57 49\\n56 47\\n55 46\\n54 40\\n53 38\\n52 36\\n50 30\\n48 26\\n47 21\\n46 14\\n45 13\\n25 42"}'
+
+with gr.Blocks() as demo:
+    with gr.Row():
+        showbox_button = gr.Button("Remapping")
+    with gr.Row():
+        a = Mapping(placeholder=example, height=720, visible=True)
+    def my_print_function():
+        return Mapping(placeholder="{\"ligandA\":\"\", \"ligandB\":\"\", \"mapping\":\"\"}", visible=True)
+    showbox_button.click(
+        my_print_function,
+        outputs=a
+    )
+if __name__ == "__main__":
+    demo.launch()
+
+```
+
+## `Mapping`
+
+### Initialization
+
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left" style="width: 25%;">type</th>
+<th align="left">default</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+str | Callable | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">default text to provide in textbox. If callable, the function will be called whenever the app loads to set the initial value of the component.</td>
+</tr>
+
+<tr>
+<td align="left"><code>placeholder</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">placeholder hint to provide behind textbox.</td>
+</tr>
+
+<tr>
+<td align="left"><code>label</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">component name in interface.</td>
+</tr>
+
+<tr>
+<td align="left"><code>every</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+float | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">If `value` is a callable, run the function 'every' number of seconds while the client connection is open. Has no effect otherwise. The event can be accessed (e.g. to cancel it) via this component's .load_event attribute.</td>
+</tr>
+
+<tr>
+<td align="left"><code>show_label</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">if True, will display label.</td>
+</tr>
+
+<tr>
+<td align="left"><code>scale</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+int | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">relative size compared to adjacent Components. For example if Components A and B are in a Row, and A has scale=2, and B has scale=1, A will be twice as wide as B. Should be an integer. scale applies in Rows, and to top-level Components in Blocks where fill_height=True.</td>
+</tr>
+
+<tr>
+<td align="left"><code>min_width</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+int
+```
+
+</td>
+<td align="left"><code>160</code></td>
+<td align="left">minimum pixel width, will wrap if not sufficient screen space to satisfy this value. If a certain scale value results in this Component being narrower than min_width, the min_width parameter will be respected first.</td>
+</tr>
+
+<tr>
+<td align="left"><code>interactive</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">if True, will be rendered as an editable textbox; if False, editing will be disabled. If not provided, this is inferred based on whether the component is used as an input or output.</td>
+</tr>
+
+<tr>
+<td align="left"><code>visible</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool
+```
+
+</td>
+<td align="left"><code>True</code></td>
+<td align="left">If False, component will be hidden.</td>
+</tr>
+
+<tr>
+<td align="left"><code>rtl</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool
+```
+
+</td>
+<td align="left"><code>False</code></td>
+<td align="left">If True and `type` is "text", sets the direction of the text to right-to-left (cursor appears on the left of the text). Default is False, which renders cursor on the right.</td>
+</tr>
+
+<tr>
+<td align="left"><code>elem_id</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">An optional string that is assigned as the id of this component in the HTML DOM. Can be used for targeting CSS styles.</td>
+</tr>
+
+<tr>
+<td align="left"><code>elem_classes</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+list[str] | str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.</td>
+</tr>
+
+<tr>
+<td align="left"><code>render</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool
+```
+
+</td>
+<td align="left"><code>True</code></td>
+<td align="left">If False, component will not render be rendered in the Blocks context. Should be used if the intention is to assign event listeners now but render the component later.</td>
+</tr>
+
+<tr>
+<td align="left"><code>key</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+int | str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">if assigned, will be used to assume identity across a re-render. Components that have the same key across a re-render will have their value preserved.</td>
+</tr>
+
+<tr>
+<td align="left"><code>height</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+int
+```
+
+</td>
+<td align="left"><code>160</code></td>
+<td align="left">None</td>
+</tr>
+</tbody></table>
+
+
+### Events
+
+| name | description |
+|:-----|:------------|
+| `change` | Triggered when the value of the Mapping changes either because of user input (e.g. a user types in a textbox) OR because of a function update (e.g. an image receives a value from the output of an event trigger). See `.input()` for a listener that is only triggered by user input. |
+| `input` | This listener is triggered when the user changes the value of the Mapping. |
+| `submit` | This listener is triggered when the user presses the Enter key while the Mapping is focused. |
+
+
+
+### User function
+
+The impact on the users predict function varies depending on whether the component is used as an input or output for an event (or both).
+
+- When used as an Input, the component only impacts the input signature of the user function.
+- When used as an output, the component only impacts the return signature of the user function.
+
+The code snippet below is accurate in cases where the component is used as both an input and an output.
+
+- **As output:** Is passed, passes text value as a {str} into the function.
+- **As input:** Should return, expects a {str} returned from function and sets textarea value to it.
+
+ ```python
+ def predict(
+     value: str | None
+ ) -> str | None:
+     return value
+ ```
+ 
