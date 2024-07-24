@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: skymavis_solver
+Version: 1.1
+Summary: Module Bypass Sky Mavis Security Verification
+Author: Phuc Vo
+Author-email: phuc.vo@skymavis.com
+Description-Content-Type: text/markdown
+Requires-Dist: numpy ==2.0.1
+Requires-Dist: opencv-python ==4.10.0.84
+Requires-Dist: opencv-python-headless ==4.10.0.84
+Requires-Dist: Pillow ==10.4.0
+Requires-Dist: setuptools ==71.1.0
+
+
+**`skymavis_solver`** is a Python package designed to bypass CAPTCHA security verification used by Sky Mavis. This tool processes CAPTCHA images to determine if the challenge has been successfully bypassed.
+
+### Features:
+
+- **Specific to Sky Mavis CAPTCHA**: Works exclusively with Sky Mavis security verifications.
+- **Image Zooming Required**: Ensure CAPTCHA images are properly zoomed in before processing for best results.
+
+### Usage:
+
+```python
+from skymavis_solver import bypass_captcha
+
+# Provide a properly zoomed CAPTCHA image
+image_path = 'path/to/captcha_image.png'
+
+# Process the CAPTCHA
+result = bypass_captcha(image_path)
+
+# Check the result
+if result:
+    print("CAPTCHA bypassed successfully!")
+else:
+    print("CAPTCHA not bypassed.")
