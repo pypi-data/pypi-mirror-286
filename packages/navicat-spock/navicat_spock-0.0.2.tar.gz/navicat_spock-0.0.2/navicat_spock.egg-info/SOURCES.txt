@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+navicat_spock/__init__.py
+navicat_spock/__main__.py
+navicat_spock/exceptions.py
+navicat_spock/helpers.py
+navicat_spock/piecewise_regression.py
+navicat_spock/plotting2d.py
+navicat_spock/spock.py
+navicat_spock.egg-info/PKG-INFO
+navicat_spock.egg-info/SOURCES.txt
+navicat_spock.egg-info/dependency_links.txt
+navicat_spock.egg-info/entry_points.txt
+navicat_spock.egg-info/requires.txt
+navicat_spock.egg-info/top_level.txt
