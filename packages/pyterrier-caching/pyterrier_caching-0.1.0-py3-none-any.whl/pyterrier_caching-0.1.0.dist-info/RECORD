@@ -1,0 +1,12 @@
+pyterrier_caching/__init__.py,sha256=w-nCJvfAz6XLgVtgi3TfZ5jkWEevPiyGiBOX39n4bc4,397
+pyterrier_caching/builder.py,sha256=6Dk1bu48VPmClisDD1BoIsQJrL8msg7Uza2cES8QAF8,1777
+pyterrier_caching/indexer_cache.py,sha256=PwsFqYhChHd5Fo01uf0e_S_KDNSR6IyJ6-uzcu-alEA,5261
+pyterrier_caching/retriever_cache.py,sha256=bZZ7KYrEyKLHFKabzhW04TSrcy_67PEeXKyjhViv2Xc,3666
+pyterrier_caching/scorer_cache.py,sha256=f-PW45IteouLy7jukzdC2C4vaXYtLH3JrGNaWuwUgB8,6629
+pyterrier_caching/util.py,sha256=ecNRIm6ISbtJ_1a3KqlQS6MXQTayMKwTPMXDtmkvG_U,1619
+pyterrier_caching-0.1.0.dist-info/LICENSE,sha256=i3-VdotkIz_bRQpmGuqdKoRzPiudc32-LNd3ZvFKkbI,1071
+pyterrier_caching-0.1.0.dist-info/METADATA,sha256=cIXdL9q0pWoQYAF23IgG4QXAQVfn-5Oq_uboqnrPOiU,9177
+pyterrier_caching-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pyterrier_caching-0.1.0.dist-info/entry_points.txt,sha256=BkHCoV6WbOVRmpnl_d1rI_c9MSOc4rplWAIk5fVD0A0,204
+pyterrier_caching-0.1.0.dist-info/top_level.txt,sha256=3l_x5b2hHZdK6T1EijS7gzTkmTxiJY5VN-WcxnegeLs,18
+pyterrier_caching-0.1.0.dist-info/RECORD,,
