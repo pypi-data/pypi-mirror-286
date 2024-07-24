@@ -1,0 +1,6 @@
+httpx
+llm
+llama-cpp-python
+
+[test]
+pytest
