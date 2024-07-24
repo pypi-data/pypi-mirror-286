@@ -1,0 +1,11 @@
+hf_downloader/__init__.py,sha256=iHznX36loKx_ve74kYf4OGhUCo0pjiS8vRGqiJqv7Rc,26
+hf_downloader/cli.py,sha256=pdoGqbwsoWnhuhSd_t0Me18xbptZchdqa8VGtvW_Do0,1129
+hf_downloader/core_api.py,sha256=LOwX6mylBzMA3rErs7ogH07jEz4XO6gOBwc_2STLhFs,1931
+hf_downloader/experimenting.py,sha256=HFZnL2jXSyqYiz4ZDocWKK5vC5FEBD_i9TWDBjsV5rw,612
+hf_downloader/utils.py,sha256=muHQtHIZrljc3tM1GDD66CS2kfuaFOfP2AC0IAGDCnU,9436
+hf_model_downloader-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hf_model_downloader-0.0.1.dist-info/METADATA,sha256=4ok3VeT4JVi_OnXwpfQrQcwS73rpuvdHqcWzAvK7bWY,2351
+hf_model_downloader-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hf_model_downloader-0.0.1.dist-info/entry_points.txt,sha256=O-dtjqP0PQEGZhlIt7PMANT-CD7zaf1RYegY3x-_Q6Y,58
+hf_model_downloader-0.0.1.dist-info/top_level.txt,sha256=dc5WQkuNXlVK5M2UUgy54m3W3r4s878Krk_vDVZRdTs,14
+hf_model_downloader-0.0.1.dist-info/RECORD,,
