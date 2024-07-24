@@ -1,0 +1,93 @@
+
+# AILungMeasure
+
+AILungMeasure is a Python package designed for automated lung size measurements using deep learning and computer vision on portable chest radiographs. This package aims to improve accuracy, reduce variability, and streamline the lung transplantation size matching process.
+
+![Model_Framework](https://github.com/MostafaI/AILungMeasure/blob/main/Images/framework.png?raw=true)
+
+## Features
+
+- Automated lung mask extraction from chest radiographs
+- Feature points detection to generate lung height and width measurements
+- Validation against measurements reported by radiologists
+- Robust performance even with technically challenging radiographs
+
+## Installation
+
+You can install AILungMeasure via pip:
+
+```bash
+pip install AILungMeasure
+```
+
+## Usage
+
+### Loading the Model
+
+AILungMeasure includes a pre-trained model for lung size measurements. When importing the package, the model will be automalically downloaded and loaded. 
+```python
+import AILungMeasure
+```
+
+### Segmenting Lung Images
+
+To get the lung mask, use the `get_mask` function:
+
+```python
+input_image = '/path/to/your/image' # can be dicom, jpg, png, etc.. 
+mask = AILungMeasure.get_mask(input_image)
+```
+To visualize the mask, use the `show_mask` function:
+
+```python
+mask = AILungMeasure.show_mask(input_image)
+ 
+# or plot it 
+matplotlib.pyplot.imshow(mask)
+```
+
+### Get Measurements
+
+To plot the lung measurements, use the `show_measurments` function:
+
+```python
+AILungMeasure.show_measurments(input_image , dpi=200) # dpi controls the image resolution
+```
+
+To get the measurments, use the `get_measurments` function:
+```python
+measurments = AILungMeasure.get_measurments(input_image)
+```
+Note that this will work if the input_image is dicom, which already includes the pixel size in its meta data. The reported measurments will be in mm.  
+If you are using jpg, png, etc.. then the returned measurments will be in pixels. 
+
+
+### Example Script
+```python
+import AILungMeasure
+
+input_image = '/media/Mostafa12TB/CXRs/dicom-3_15_2024/DICOMS Only/EE0C0DF7'
+AILungMeasure.show_measurments(input_image)
+```
+![Model_Framework](https://github.com/MostafaI/AILungMeasure/blob/main/Images/example.png?raw=true)
+```
+AILungMeasure.get_measurments(input_image)
+# Measurments in mm if input image is dicom
+{'R-ACPA': 209.51056325555803,
+ 'R-AMD': 155.81790884489396,
+ 'L-ACPA': 235.95200821775532,
+ 'L-AMD': 204.3306113771206,
+ 'width-at-hilum': 258.89750000000004,
+ 'width-at-base': 287.53000000000003}
+```
+
+
+
+
+## License
+
+This project is licensed under the Creative Commons ATTRIBUTION-NONCOMMERCIAL-SHAREALIKE 4.0 INTERNATIONAL.
+
+## Contact
+
+For questions or issues, please contact Mostafa Ismail at mostafa.ismail.k@gmail.com.
