@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: affinidi_tdk_iam_client
+Version: 1.0.0
+Summary: Iam
+Home-page: 
+Author: nucleus
+Author-email: nucleus.team@affinidi.com
+Keywords: OpenAPI,OpenAPI-Generator,Iam
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3 <2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic <2,>=1.10.5
+Requires-Dist: aenum
+
+    Affinidi IAM
+    
