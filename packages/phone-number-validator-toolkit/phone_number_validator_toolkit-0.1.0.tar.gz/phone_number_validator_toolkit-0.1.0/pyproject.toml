@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "phone-number-validator-toolkit"
+version = "0.1.0"
+description = "A tool for validating phone numbers using NumLookupAPI"
+authors = ["Kirstie <39728053+epixieme@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3"
+requests-mock = "^1.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
