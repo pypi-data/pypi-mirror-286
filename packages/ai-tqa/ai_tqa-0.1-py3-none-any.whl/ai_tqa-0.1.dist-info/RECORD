@@ -1,0 +1,9 @@
+ai-tqa/__init__.py,sha256=0dB8S3Sgp5VszSpRSRG72FJHnVSEmCN_A1K4lIZR5rc,32
+ai-tqa/model.py,sha256=DSiwRY1-JQ8--_omO5bnZ_CEnpJISmwDOGUBKhySu_Y,1801
+ai-tqa/data/data.json,sha256=16fIUr1qVQ0u5wGsqhZCsRX7XToWMIsSiG7_aWt_dwE,454312
+ai-tqa/data/my_model.h5,sha256=LHxWcv6WOJxL1PsBTa2eR1OFpq_-hs4Cxnjgy5yveEo,5852328
+ai_tqa-0.1.dist-info/METADATA,sha256=CI0EFk9657ciUV17nkI5bgAnpE0Ju442aursYTPyHVE,1058
+ai_tqa-0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+ai_tqa-0.1.dist-info/entry_points.txt,sha256=-gFz1HVc3l56XLuuJ8i0rOER8VI4PPZ4xkJJzxG7dK4,39
+ai_tqa-0.1.dist-info/top_level.txt,sha256=SSi0mTSoPhL6wxGpKQRCsAtn5zoGfduSr_sEC2mNPWE,7
+ai_tqa-0.1.dist-info/RECORD,,
