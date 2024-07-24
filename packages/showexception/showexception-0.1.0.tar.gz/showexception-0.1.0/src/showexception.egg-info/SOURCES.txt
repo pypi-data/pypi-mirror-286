@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/showexception/__init__.py
+src/showexception/showexception.py
+src/showexception/showexception_cli.py
+src/showexception.egg-info/PKG-INFO
+src/showexception.egg-info/SOURCES.txt
+src/showexception.egg-info/dependency_links.txt
+src/showexception.egg-info/entry_points.txt
+src/showexception.egg-info/requires.txt
+src/showexception.egg-info/top_level.txt
