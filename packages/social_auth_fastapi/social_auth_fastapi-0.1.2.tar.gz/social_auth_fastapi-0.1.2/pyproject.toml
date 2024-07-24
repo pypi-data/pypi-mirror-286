@@ -1,0 +1,72 @@
+[project]
+name = "social_auth_fastapi"
+version = "0.1.2"
+description = "Default template for PDM package"
+authors = [
+    { name = "congpc", email = "congpc1305@gmail.com" },
+]
+dependencies = [
+    "fastapi[all]==0.111.0",
+    "gunicorn>=22.0.0",
+    "httpx>=0.27.0",
+    "msgspec>=0.18.6",
+    "passlib==1.7.4",
+    "path>=16.14.0",
+    "python-jose>=3.3.0",
+    "uvicorn[standard]==0.29.0",
+    "starlette-context>=0.3.6",
+    "asgiref>=3.8.1",
+    "asyncpg>=0.29.0",
+    "python-dateutil>=2.9.0.post0",
+    "loguru>=0.7.2",
+    "sqlmodel>=0.0.18",
+    "babel>=2.15.0",
+    "requests>=2.32.3",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.pdm]
+includes = [
+    "auth_user",
+]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+lint = [
+    "ruff>=0.4.3",
+    "mypy>=1.10.0",
+    "black>=24.4.2",
+    "isort>=5.13.2",
+    "autoflake>=2.3.1",
+    "flake8>=7.0.0",
+    "pre-commit>=3.7.0",
+    "pyupgrade>=3.15.2",
+]
+
+[tool.pdm.scripts]
+lint = "pre-commit run --all-files"
+format = "ruff format ."
+safety = "pdm export -o requirements.txt --without-hashes --quiet"
+clean = "rm -rf .venv .pdm-build .pdm-python .ruff_cache dist .pytest_cache"
+start = "fastapi run"
+dev = "fastapi dev main.py"
+
+[tool.pdm.scripts.locale]
+shell = "python3 babel.py init -l vi_VN &&\npython3 babel.py init -l en_US &&\npython3 babel.py extract -d . &&\npython3 babel.py compile -l vi_VN &&\npython3 babel.py compile -l en_US\n"
+
+[tool.pdm.scripts.locale-update]
+shell = "python3 babel.py update -d locale"
+
+[tool.pdm.scripts.locale-compile]
+shell = "python3 babel.py compile -l vi_VN &&\npython3 babel.py compile -l en_US\n"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
