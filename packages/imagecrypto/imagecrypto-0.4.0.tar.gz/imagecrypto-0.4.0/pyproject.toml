@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "imagecrypto"
+version = "0.4.0"
+description = "ImageCrypto is a Python package for secure image encryption using various symmetric ciphers with asymmetric Elliptic Curve Cryptography (ECC) for key generation."
+authors = ["Nidhi Bhatt <itsnibhatt@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "imagecrypto", from ="src"}]
+repository = "https://github.com/nidhi-bhatt/imagecrypto"
+keywords = ["cryptography", "image encryption", "ECC", "AES", "ChaCha20", "Salsa20"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+opencv-python = "^4.5.0"
+cryptography = "^43.0.0"
+pycryptodome = "^3.10.0"
+numpy = "^2.0.1"
+matplotlib = "^3.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
