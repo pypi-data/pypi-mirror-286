@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: n3pm.progress
+Version: 0.0.1
+Summary: A small example package
+Author-email: Stanislav Baltrunas <stanislav@baltrunas.ru>
+Project-URL: Homepage, https://github.com/baltrunas/sampleproject
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# N3PM Progress
