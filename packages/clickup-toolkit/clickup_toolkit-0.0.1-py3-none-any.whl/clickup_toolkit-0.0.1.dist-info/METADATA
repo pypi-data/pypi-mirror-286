@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: clickup-toolkit
+Version: 0.0.1
+Summary: 
+Author: Bharat Kalluri
+Author-email: bharatkalluri@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Clickup Toolkit
+
+An elementary library to interface seamlessly with clickup API.
+
+Developed since I needed a simple way to interact with Clickup API for scripting and I didn't find any maintained library.
+
