@@ -1,0 +1,9 @@
+huggify_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+huggify_data/bot_modules.py,sha256=FJN1K3ipfFJ0L0ulVjiG6opMGxx9xtP3uQXU8VNJtsg,9852
+huggify_data/generate_md_modules.py,sha256=gIkJ2Ur_6MN-0SZsiWsJYnreCx09P_Tl_mtNCGC7JhM,2904
+huggify_data/push_modules.py,sha256=N3xzo59FdyJilBikqOCDOdoezqgEIQBPM9EYczd18Iw,2812
+huggify_data/scrape_modules.py,sha256=0zGQ5BXAauj8gzFm3EFad6SNDcP6GXRAZ0XiBJKOjjY,4771
+huggify_data/train_modules.py,sha256=PNJ9A7VR6FoOgZc0Kkb_xedU0dYJYEclo0A9uQ69A94,11918
+huggify_data-0.4.4.dist-info/METADATA,sha256=_pVUTdyWGEevyS5oWfJa5ELktIuVkKflDERUhnYzpnQ,7534
+huggify_data-0.4.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+huggify_data-0.4.4.dist-info/RECORD,,
