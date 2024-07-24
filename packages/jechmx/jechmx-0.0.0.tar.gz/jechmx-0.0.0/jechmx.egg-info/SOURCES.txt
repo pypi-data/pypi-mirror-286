@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+jechmx.egg-info/PKG-INFO
+jechmx.egg-info/SOURCES.txt
+jechmx.egg-info/dependency_links.txt
+jechmx.egg-info/top_level.txt
