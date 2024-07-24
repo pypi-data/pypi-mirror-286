@@ -1,0 +1,5 @@
+thrift>=0.10
+future
+
+[:sys_platform == "win32"]
+pywin32
