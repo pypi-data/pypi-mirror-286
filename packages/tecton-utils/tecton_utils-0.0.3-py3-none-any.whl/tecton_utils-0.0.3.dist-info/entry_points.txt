@@ -1,0 +1,2 @@
+[pytest11]
+tecton-tests = tecton_utils.testing.fixtures
