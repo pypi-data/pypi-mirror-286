@@ -1,0 +1,6 @@
+requests>=2.25.1
+pydantic>=1.8
+
+[test]
+pytest>=6.2
+pytest-mock>=3.6
