@@ -1,0 +1,12 @@
+README.md
+setup.py
+modelhub_autonomize/__init__.py
+modelhub_autonomize/client.py
+modelhub_autonomize/decorators.py
+modelhub_autonomize/pipeline.py
+modelhub_autonomize.egg-info/PKG-INFO
+modelhub_autonomize.egg-info/SOURCES.txt
+modelhub_autonomize.egg-info/dependency_links.txt
+modelhub_autonomize.egg-info/requires.txt
+modelhub_autonomize.egg-info/top_level.txt
+tests/__init__.py
