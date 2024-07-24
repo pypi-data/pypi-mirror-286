@@ -1,0 +1,2 @@
+include summarizer/**/*.txt
+include extractor/**/*.txt
