@@ -1,0 +1,2 @@
+[console_scripts]
+senfd = senfd.cli:main
