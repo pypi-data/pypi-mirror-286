@@ -1,0 +1,3 @@
+[console_scripts]
+kwhmeter = kwhmeter.scripts.cli:get_data
+kwhmeter_set_credenciales = kwhmeter.scripts.cli:set_credenciales
