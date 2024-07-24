@@ -1,0 +1,3 @@
+[console_scripts]
+aita_lab=aita_lab.cli:main
+
