@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "metarank"
+version = "0.1.0"
+description = "A Python client for metarank"
+authors = ["Hannes Moser <box@hannesmoser.at>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["Recommender Systems", "Metarank", "ML"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed"
+]
+
+[tool.poetry.dependencies]
+pydantic = "^2.8.2"
+python = "^3.12"
+requests = "^2.32.3"
+structlog = "^24.4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.1"
+responses = "^0.25.3"
+ruff = "^0.5.4"
+
+[tool.ruff]
+line-length = 80
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
