@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: gavanon
+Version: 0.0
+Summary: Python package for the Ghent University Gavanon course (Geavanceerd Analoog Ontwerp, English: Advanced Analog Design ).
+Author: Senne Vanden Berghe
+Author-email: sennevandenberghe2002@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/S3nn3k3/gavanon
+Project-URL: Source Code, https://github.com/S3nn3k3/gavanon
+Keywords: Advanced Analog Design,Geavanceerd Analoog Ontwerp,Ghent University,Universiteit Gent
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: full
+Requires-Dist: control >=0.9 ; extra == 'full'
+Requires-Dist: matplotlib >=3.4 ; extra == 'full'
+Requires-Dist: numpy >=1.22 ; extra == 'full'
+
+# gavanon
+Python package for the Ghent University Gavanon course (Geavanceerd Analoog Ontwerp, English: Advanced Analog Design ).
+
+This package let you define transistors and voltage/current sources so you can basically make an operational amplifier.
+The data of the transistors and sources is translated to a skill file which can be inported in Cadence.
+
+Small example:
+```python
+from gavanon import (Transistor, DoubleTransistor, NMOS, PMOS,
+                     VoltageSource, CurrentSource,
+                     CadenceCell, CadenceLib)
+
+Mdiff = DoubleTransistor("nmos")
+Mdiff.ID = 5e-3  # Choose current
+Mdiff.gmoverid = 10 # Choose gm over ID
+Mdiff.gm = Mdiff.gmoverid*Mdiff.ID
+W_over_L = Mdiff.gm**2/2/Mdiff.ID/NMOS.KP_n  # Piecewise linear model
+Mdiff.W = W_over_L*Mdiff.L
+Mdiff.ng = 10  # Set number of gates
+
+ota_cell = CadenceCell("Simple_OTA")
+ota_cell += Mdiff 
+
+lib = CadenceLib("CadenceLib")
+lib += ota_cell
+lib.export_sizing("simple_ota_sizing.il")
+```
+
+For more information see the simple_ota jupyter notebook in tests.
