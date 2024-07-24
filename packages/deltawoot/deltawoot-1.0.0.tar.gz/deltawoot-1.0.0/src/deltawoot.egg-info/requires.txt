@@ -1,0 +1,9 @@
+deltachat-rpc-client
+deltachat-rpc-server
+ConfigArgParse
+requests
+flask
+
+[dev]
+pytest
+pytest-timeout
