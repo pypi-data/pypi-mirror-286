@@ -1,0 +1,11 @@
+birdnet/__init__.py,sha256=3YXkyHuyPVoRCoBfUOUSDLmo5_LLzRG2X1qpStntMxA,186
+birdnet/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+birdnet/types.py,sha256=Wg5cI2VchlhgHHcokeHKOzXRgHT6xZJHC2eaCL0GYTw,259
+birdnet/utils.py,sha256=yQziroZlDtA9XT-jsTsl26PInPnCbGdcX6DXBr2Sd-0,6421
+birdnet/models/__init__.py,sha256=tTu14O2UHVEO4h_0XBEpYK_dwIg5FnxNmYiQndofHZM,48
+birdnet/models/model_v2m4.py,sha256=U822KBFiI8nNNMLQ9Px-_oO-qSRpMAMc8tf76ZfT5ns,15732
+birdnet-0.1.0.dist-info/LICENSE.md,sha256=yJm8mlhWvPnsScQfogio_2ZrG1fo0f5VSrcogMW8Gz4,1071
+birdnet-0.1.0.dist-info/METADATA,sha256=dTN5hc0xQw1_z1NpCJwCZSqOlLCO8UmNfW7UKcD5dVg,5673
+birdnet-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+birdnet-0.1.0.dist-info/top_level.txt,sha256=l7thIbFlljqhV_NxLcwgoD59nkI3NrJSuY_tcsbmEik,8
+birdnet-0.1.0.dist-info/RECORD,,
