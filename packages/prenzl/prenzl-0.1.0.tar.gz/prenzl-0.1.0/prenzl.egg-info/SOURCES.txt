@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+prenzl/__init__.py
+prenzl/core.py
+prenzl.egg-info/PKG-INFO
+prenzl.egg-info/SOURCES.txt
+prenzl.egg-info/dependency_links.txt
+prenzl.egg-info/top_level.txt
