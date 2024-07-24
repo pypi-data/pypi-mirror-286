@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: inmanta-module-kubernetes
+Version: 0.0.2
+License: ASL 2.0
+Requires-Dist: inmanta-module-std
+Requires-Dist: kubernetes
+

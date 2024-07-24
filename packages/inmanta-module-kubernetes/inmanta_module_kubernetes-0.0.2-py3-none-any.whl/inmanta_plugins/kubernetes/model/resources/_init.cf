@@ -1,0 +1,240 @@
+"""
+    Copyright 2022 Inmanta
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    Contact: code@inmanta.com
+"""
+import kubernetes::infra as infra
+
+### Cluster scope resources ###
+entity ClusterResource extends std::PurgeableResource:
+    """
+    A cluster based resource
+    """
+    string name
+    dict labels = {}
+    bool send_event = true
+end
+ClusterResource.cluster [1] -- infra::Cluster
+implement ClusterResource using clusterResource
+implementation clusterResource for ClusterResource:
+    self.requires += self.cluster
+    self.cluster.provides += self
+end
+
+entity Rule:
+    """
+    A rule that can be used in a role
+    https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+    """
+    string[] api_groups = []
+    string[] non_resource_urls = []
+    string[] resources = []
+    string[] resource_names = []
+    string[] verbs = []
+end
+implement Rule using std::none
+
+entity Role:
+    """
+    A role entity, this can be cluster or namespace scoped
+    https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+    """
+    string _kind
+    string _api_group = "rbac.authorization.k8s.io"
+end
+Role.rules [0:] -- Rule
+
+entity ClusterRole extends ClusterResource, Role:
+    """
+    A cluster role
+    https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+    """
+end
+index ClusterRole(cluster, name)
+implement ClusterRole using clusterResource
+implement ClusterRole using clusterRole
+implementation clusterRole for ClusterRole:
+    self._kind = "ClusterRole"
+end
+
+entity Subject:
+    """
+    A subject that can be used in a role binding
+    https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+    """
+    string ?api_group = null
+    string kind
+    string name
+    string ?namespace = null
+end
+implement Subject using std::none
+
+entity ClusterRoleBinding extends ClusterResource:
+    """
+    A cluster role binding
+    https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+    """
+end
+ClusterRoleBinding.subjects [0:] -- Subject
+ClusterRoleBinding.role_ref [1] -- ClusterRole
+index ClusterRoleBinding(cluster, name)
+implement ClusterRoleBinding using clusterResource
+implement ClusterRoleBinding using clusterRoleBinding
+implementation clusterRoleBinding for ClusterRoleBinding:
+    # A binding should be deployed to the same cluster as the role it is referencing
+    assert_common_cluster(self, self.role_ref)
+
+    self.requires += self.role_ref
+    self.role_ref.provides += self
+end
+
+entity Namespace extends ClusterResource:
+    """
+    A kubernetes namespace
+    https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+    """
+end
+index Namespace(cluster, name)
+implement Namespace using clusterResource
+
+### Namespace scoped resources ###
+entity NamespacedResource extends ClusterResource:
+    """
+    A namespace based resource
+    """
+end
+NamespacedResource.namespace [1] -- Namespace
+implement NamespacedResource using clusterResource
+implement NamespacedResource using namespacedResource
+implementation namespacedResource for NamespacedResource:
+    # A namespaced resource should be deployed to the same cluster as the namespace it is a member of
+    assert_common_cluster(self, self.namespace)
+
+    self.requires += self.namespace
+    self.namespace.provides += self
+end
+
+entity Pod extends NamespacedResource:
+    """
+    A kubernetes pod
+    https://kubernetes.io/docs/concepts/workloads/pods/
+    """
+    dict spec
+end
+index Pod(namespace, name)
+implement Pod using clusterResource
+implement Pod using namespacedResource
+
+entity ConfigMap extends NamespacedResource:
+    """
+    A kubernetes config map
+    https://kubernetes.io/docs/concepts/configuration/configmap/
+    """
+    dict data
+end
+index ConfigMap(namespace, name)
+implement ConfigMap using clusterResource
+implement ConfigMap using namespacedResource
+
+entity NamespacedRole extends NamespacedResource, Role:
+    """
+    A namespace role
+    https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+    """
+end
+index NamespacedRole(namespace, name)
+implement NamespacedRole using clusterResource
+implement NamespacedRole using namespacedResource
+implement NamespacedRole using namespacedRole
+implementation namespacedRole for NamespacedRole:
+    self._kind = "Role"
+end
+
+entity NamespacedRoleBinding extends NamespacedResource:
+    """
+    A namespace role binding
+    https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+    """
+end
+NamespacedRoleBinding.subjects [0:] -- Subject
+NamespacedRoleBinding.role_ref [1] -- Role
+index NamespacedRoleBinding(cluster, name)
+implement NamespacedRoleBinding using clusterResource
+implement NamespacedRoleBinding using namespacedResource
+implement NamespacedRoleBinding using namespacedRoleBinding
+implementation namespacedRoleBinding for NamespacedRoleBinding:
+    # A binding should be deployed to the same cluster as the role it is referencing
+    assert_common_cluster(self, self.role_ref)
+
+    self.requires += self.role_ref
+    self.role_ref.provides += self
+end
+
+entity Secret extends NamespacedResource:
+    """
+    A namespace secret
+    https://kubernetes.io/docs/concepts/configuration/secret/
+    """
+    string type
+    dict data
+end
+index Secret(namespace, name)
+implement Secret using clusterResource
+implement Secret using namespacedResource
+
+entity Service extends NamespacedResource:
+    """
+    A service
+    https://kubernetes.io/docs/concepts/services-networking/service/
+    """
+    dict spec
+end
+index Service(namespace, name)
+implement Service using clusterResource
+implement Service using namespacedResource
+
+entity ServiceAccount extends NamespacedResource:
+    """
+    A service account
+    https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
+    """
+    dict ?secrets = null
+    dict ?image_pull_secrets = null
+end
+index ServiceAccount(namespace, name)
+implement ServiceAccount using clusterResource
+implement ServiceAccount using namespacedResource
+
+entity StatefulSet extends NamespacedResource:
+    """
+    A statfulset
+    https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
+    """
+    dict spec
+end
+index StatefulSet(namespace, name)
+implement StatefulSet using clusterResource
+implement StatefulSet using namespacedResource
+
+entity Deployment extends NamespacedResource:
+    """
+    A deployment
+    https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+    """
+    dict spec
+end
+index Deployment(namespace, name)
+implement Deployment using clusterResource
+implement Deployment using namespacedResource

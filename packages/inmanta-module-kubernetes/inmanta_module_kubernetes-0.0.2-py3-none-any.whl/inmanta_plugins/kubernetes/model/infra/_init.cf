@@ -1,0 +1,73 @@
+"""
+    Copyright 2022 Inmanta
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+    Contact: code@inmanta.com
+"""
+typedef config_kind as string matching self in ["kube", "token"]
+
+entity ClusterConfig:
+    config_kind kind
+end
+
+entity KubeConfig extends ClusterConfig:
+    """
+    :attr config: Content of a kubectl config file
+    :attr context: Context present in the kubectl config file to select
+    """
+    string config
+    string context
+end
+implement KubeConfig using kube_config
+implementation kube_config for KubeConfig:
+    self.kind = "kube"
+end
+
+entity TokenConfig extends ClusterConfig:
+    """
+    :attr host: The address we can reach the cluster at
+    :attr token: A token that can be used to contact the cluster
+    :attr verify_ssl: Whether communication with the cluster should be encrypted or not
+    :attr certificate: If verify_ssl is set to true, a certificate to use for the communication
+    """
+    string host
+    string token
+    bool ?verify_ssl = false
+    string ?certificate = null
+end
+implement TokenConfig using token_config
+implementation token_config for TokenConfig:
+    self.kind = "token"
+end
+
+entity Cluster:
+    """
+    A deployed Kubernetes cluster
+    """
+    string name
+end
+Cluster.config [1] -- ClusterConfig
+index Cluster(name)
+
+implement Cluster using agentConfig
+
+implementation agentConfig for Cluster:
+    std::AgentConfig(
+        autostart=true, 
+        agentname=name, 
+        uri="local:",
+        requires=self.requires,
+        provides=self.provides,
+    )
+end
