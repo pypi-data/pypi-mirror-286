@@ -1,0 +1,2 @@
+[console_scripts]
+gridtk = gridtk.cli:cli
