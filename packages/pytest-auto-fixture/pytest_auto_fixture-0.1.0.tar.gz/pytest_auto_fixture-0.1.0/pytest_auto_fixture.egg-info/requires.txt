@@ -1,0 +1,4 @@
+pytest>=8
+
+[test]
+isort>=5.13
