@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: rclpy-intellisense
+Version: 1.0.0
+Summary: Get intellisense for rclpy
+Author-email: offish <overutilization@gmail.com>
+Project-URL: Homepage, https://github.com/offish/rclpy-intellisense
+Project-URL: Bug Tracker, https://github.com/offish/rclpy-intellisense/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rclpy-intellisense
+ROS Client Library for the Python language.
+This is a dummy fork of humble only intended to be used for intellisense purposes.
+Useful if developing on another system than where ROS 2 is available (Docker for example).
+Code within this package is NOT intended to be ran.
+
+
+## Install
+```bash
+pip install rclpy-intellisense
+```
+
+## Usage
+
+```python
+import rclpy
+
+# now pylance should not underline and autocomplete works
+```
