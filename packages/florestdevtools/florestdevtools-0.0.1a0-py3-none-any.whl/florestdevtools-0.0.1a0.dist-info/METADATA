@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: florestdevtools
+Version: 0.0.1a0
+Summary: Личная библиотека Флореста, написанная на Python.
+Author: florestdev4185
+Author-email: florestone4185@internet.ru
+Requires: discord
+Requires: g4f
+Requires: MukeshAPI
+Requires: pypresence
+Requires: curl_cffi
+Description-Content-Type: text/markdown
+
