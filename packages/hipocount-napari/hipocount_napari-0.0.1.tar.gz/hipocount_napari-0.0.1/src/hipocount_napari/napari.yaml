@@ -1,0 +1,34 @@
+name: hipocount-napari
+contributions: 
+  commands:
+    - id: hipocount-napari.stack_process_widget
+      title: Preprocessing
+      python_name: hipocount_napari._widget:stack_process
+    - id: hipocount-napari.pyramid_masking_widget
+      title: Pyramid layer masking
+      python_name: hipocount_napari._widget:pyramid_masking
+    - id: hipocount-napari.astrocytes_masking_widget
+      title: Astrocytes masking
+      python_name: hipocount_napari._widget:astrocytes_masking
+    - id: hipocount-napari.otsu_dots_masking_widget
+      title: GLT dots masking
+      python_name: hipocount_napari._widget:otsu_dots_masking
+    - id: hipocount-napari.pyramid_glt_count_widget
+      title: GLT conunt in pyramid layer
+      python_name: hipocount_napari._widget:pyramid_glt_count
+    - id: hipocount-napari.astro_glt_count_widget
+      title: GLT conunt in astrocytes
+      python_name: hipocount_napari._widget:astro_glt_count
+  widgets:
+    - command: hipocount-napari.stack_process_widget
+      display_name: Preprocessing
+    - command: hipocount-napari.pyramid_masking_widget
+      display_name: Pyramid layer masking
+    - command: hipocount-napari.astrocytes_masking_widget
+      display_name: Astrocytes masking
+    - command: hipocount-napari.otsu_dots_masking_widget
+      display_name: GLT dots masking
+    - command: hipocount-napari.pyramid_glt_count_widget
+      display_name: GLT conut in pyramid
+    - command: hipocount-napari.astro_glt_count_widget
+      display_name: GLT conut in astrocytes
