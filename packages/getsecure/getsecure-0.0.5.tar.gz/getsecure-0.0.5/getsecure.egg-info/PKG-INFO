@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: getsecure
+Version: 0.0.5
+Summary: Utility for securing expiring links
+Home-page: https://github.com/maratsh/getsecure
+Author: maratsh
+Author-email: ya@maratsh.ru
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# getsecure
+
+Utility for securing expiring links
+
+## Usage
+
+### Add to nginx vhost secure location section like this
+
+```nginx
+    location /secret_page.html {
+     secure_link $arg_md5,$arg_expires;
+     secure_link_md5 "$secure_link_expires$uri <put here secret string>";
+
+     if ($secure_link = "") {
+         return 403;
+     }
+
+     if ($secure_link = "0") {
+         return 410;
+     }
+    }
+```
+
+### Get secure link
+
+```bash
+python secure.py http://example.com/secret_page.html <put here secret string> --period=30
+http://example.com/secret_page.html?md5=IQ6H6OQYGeUnlLEDgHfYNw&expires=1488221041
+```
+
+or
+
+```bash
+python secure.py /secret_page.html <put here secret string> --period=30
+/secret_page.html?md5=IQ6H6OQYGeUnlLEDgHfYNw&expires=1488221041
+```
+
+where period is days from now to future when link should work

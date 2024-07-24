@@ -1,0 +1,8 @@
+LICENSE
+README.md
+secure.py
+setup.py
+getsecure.egg-info/PKG-INFO
+getsecure.egg-info/SOURCES.txt
+getsecure.egg-info/dependency_links.txt
+getsecure.egg-info/top_level.txt
