@@ -1,0 +1,16 @@
+lzhfile/__init__.py,sha256=_6_32RKq8Npd471sk0qYQXZq3IVgsn8Kg0PAHYfToQM,233
+lzhfile/core.py,sha256=-hYIMpogv4Bjqj4EOm6ExDSLzjJAbv2stZXYIQ_ofP8,5363
+lzhfile/filebase.py,sha256=8eaAXxZiVHqDu94cBQQ4SK1c09Ilm7U2G277yk1kLhk,2581
+lzhfile/types/excel.py,sha256=7WygOfviLuFBzl2YezdcxaCIXuLuVSab9A1SvEKaf4I,1388
+lzhfile/types/ini.py,sha256=Rou7aqZkVYzHHyJ4QEAknfzAaEykfqxw9iAD68S7r9Y,435
+lzhfile/types/json.py,sha256=CoGbI1Hsl6IEYgFplEhUhyutDyVnaKBOcFFdpq2v3yU,461
+lzhfile/types/math.py,sha256=iZ249Fwe5gvGPiNBs-bFw7FnmaazN3re42uk-jDiios,417
+lzhfile/types/nfo.py,sha256=Pz3A6nxey2-_sSMZ68uYQ3tKP5gngP3xFK3XUZ9INAc,725
+lzhfile/types/pdf.py,sha256=8RisctmBQmm4224NE-BwRuLPufSqMR-zfdhebiTpSsI,1530
+lzhfile/types/pkl.py,sha256=JUgmIjtlUT39oINXHgkvbR75IowHpjtp0rfGgpTz8ls,439
+lzhfile/types/suffix.py,sha256=ovDSd-SBsAWFN7UUi9EQCD0PpMnLlIgMwQ9UGsKL7iM,325
+lzhfile/types/txt.py,sha256=px_kRcWvSobgRT6aXT4REcCzd6f3BibNuXo2AbWkB78,1338
+lzhfile-1.0.0.dist-info/METADATA,sha256=RSUdeWExir_16YD_IDz8nW1mWEZKi024N_-XVYlVxQ8,250
+lzhfile-1.0.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+lzhfile-1.0.0.dist-info/top_level.txt,sha256=dd9i5Qyihlhor7ovxbbWyrwrDH19RaOoBg25tIm7Dus,8
+lzhfile-1.0.0.dist-info/RECORD,,
