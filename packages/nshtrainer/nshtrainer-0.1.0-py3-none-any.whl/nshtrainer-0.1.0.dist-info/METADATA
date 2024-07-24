@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nshtrainer
+Version: 0.1.0
+Summary: 
+Author: Nima Shoghi
+Author-email: nimashoghi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: nshconfig (>=0.2.0,<0.3.0)
+Requires-Dist: nshrunner (>=0.1.0,<0.2.0)
+Requires-Dist: torch
+Requires-Dist: typing-extensions
+Description-Content-Type: text/markdown
+
+
