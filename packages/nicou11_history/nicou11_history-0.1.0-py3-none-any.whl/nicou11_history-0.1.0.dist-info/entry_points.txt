@@ -1,0 +1,2 @@
+[console_scripts]
+search = my_history.cli:cnt
