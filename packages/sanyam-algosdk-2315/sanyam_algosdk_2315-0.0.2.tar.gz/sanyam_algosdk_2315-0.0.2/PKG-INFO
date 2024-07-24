@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sanyam_algosdk_2315
+Version: 0.0.2
+Summary: A package for sending and receiving data via bus and filtering responses.(Fixed import error in filter_response function.)
+Author-email: Sanyam Karnavat <sanyam.karnavat5@gmail.com>
+Project-URL: Homepage, https://github.com/yourusername/sanyam_algosdk_2315
+Project-URL: Issues, https://github.com/yourusername/sanyam_algosdk_2315/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sanyam_algosdk_2315
+
+A package for sending and receiving data via bus and filtering responses.
