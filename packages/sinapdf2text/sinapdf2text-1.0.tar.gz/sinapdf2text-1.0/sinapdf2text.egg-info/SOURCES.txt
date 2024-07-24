@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sinapdf2text/__init__.py
+sinapdf2text/pdf2image.py
+sinapdf2text/pdf2text.py
+sinapdf2text.egg-info/PKG-INFO
+sinapdf2text.egg-info/SOURCES.txt
+sinapdf2text.egg-info/dependency_links.txt
+sinapdf2text.egg-info/top_level.txt
