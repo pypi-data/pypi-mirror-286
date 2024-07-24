@@ -1,0 +1,68 @@
+import io
+import multiprocessing
+import sys
+from typing import Optional
+
+import chardet
+import pandas as pd
+from datasets import Dataset, DatasetDict
+from datasets import load_dataset
+
+
+def convert_to_utf8_in_memory(file_path: str) -> str:
+    with open(file_path, 'rb') as f:
+        raw_data = f.read()
+        detected_encoding = chardet.detect(raw_data)['encoding']
+
+    if detected_encoding.lower() != 'utf-8':
+        data = raw_data.decode(detected_encoding)
+    else:
+        data = raw_data.decode('utf-8')
+
+    return data
+
+
+def load_csv(file_path: str) -> Optional[DatasetDict]:
+    try:
+        utf8_data = convert_to_utf8_in_memory(file_path)
+        utf8_buffer = io.StringIO(utf8_data)
+        df = pd.read_csv(utf8_buffer)
+        dataset = Dataset.from_pandas(df)
+        return DatasetDict({file_path: dataset})
+    except Exception as e:
+        print(f"Error loading CSV dataset from {file_path}: {e}", file=sys.stderr)
+        return None
+
+
+def load_json(file_path: str) -> Optional[DatasetDict]:
+    try:
+        return DatasetDict({file_path: load_dataset(
+            "json",
+            data_files=file_path,
+            split="train",
+            num_proc=multiprocessing.cpu_count(),
+        )})
+    except Exception as e:
+        print(f"Error loading JSON dataset from {file_path}: {e}", file=sys.stderr)
+        return None
+
+
+def load_excel(file_path: str) -> Optional[DatasetDict]:
+    try:
+        all_sheets = pd.read_excel(file_path, sheet_name=None)
+        datasets = {}
+
+        for sheet_name, df in all_sheets.items():
+            df = df.ffill().astype(str)
+            datasets[f"{file_path}->{sheet_name}"] = Dataset.from_pandas(df)
+
+        return DatasetDict(datasets)
+    except Exception as e:
+        print(f"Error loading Excel dataset from {file_path}: {e}", file=sys.stderr)
+        return None
+
+
+if __name__ == '__main__':
+    print(load_excel("../testdata/person_info.xlsx"))
+    print(load_csv("../testdata/person_info_gbk.csv"))
+    print(load_csv("../testdata/person_info_utf8.csv"))
