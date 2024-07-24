@@ -1,0 +1,6 @@
+numpy>=1.7
+scipy>=0.13.2
+qdldl
+
+[dev]
+scipy!=1.12.0
