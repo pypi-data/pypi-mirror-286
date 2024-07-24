@@ -1,0 +1,3 @@
+[console_scripts]
+matridge=matridge.__main__:main
+
