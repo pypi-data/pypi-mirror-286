@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: breath_detector
+Version: 0.1
+Summary: breath detector in Lingjing Env
+Author: jasine
+Author-email: jasinechen@gmail.com
+Requires-Dist: scipy
