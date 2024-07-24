@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+foxmock/__init__.py
+foxmock.egg-info/PKG-INFO
+foxmock.egg-info/SOURCES.txt
+foxmock.egg-info/dependency_links.txt
+foxmock.egg-info/top_level.txt
