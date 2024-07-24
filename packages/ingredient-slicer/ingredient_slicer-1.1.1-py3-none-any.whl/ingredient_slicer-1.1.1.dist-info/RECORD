@@ -1,0 +1,10 @@
+ingredient_slicer/__init__.py,sha256=Aq3SAAcY4gudewqmCKQikRF4LH6WCYmRZjGQeekEHS0,1725
+ingredient_slicer/_constants.py,sha256=wVk6k9X5cWi0LES_UmxSgoNpmLIN8C0bUC-nBGsWgDg,130404
+ingredient_slicer/_ingredient_slicer.py,sha256=9IeUakW0xAm4NIMnFaWxKwTS2NNdYhWOdzNObKota6U,98253
+ingredient_slicer/_regex_patterns.py,sha256=kZbYubt_xpt17kJrL1KV8-GTUURtaOo92tAcP_wUzbs,51633
+ingredient_slicer/_utils.py,sha256=O7f-IpLqtCh4orfAB5Os0lPnn06aazlh8hypF_ZU6-U,130209
+ingredient_slicer-1.1.1.dist-info/LICENSE,sha256=NiDLMsluMSFKXdxE8XMFmuAtJlrF9NFlZb_Ugwa75BI,1075
+ingredient_slicer-1.1.1.dist-info/METADATA,sha256=eI7DDU346szL7s-RVBLlvGVUVC5T2Hh1V6uNLUfL2ic,3365
+ingredient_slicer-1.1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+ingredient_slicer-1.1.1.dist-info/top_level.txt,sha256=TRvBaWzxg7ctSV75sP2sdXX-PLJM42WKB270Dpl_QHI,18
+ingredient_slicer-1.1.1.dist-info/RECORD,,
