@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pypz-rmq-io
+Version: 0.9.3b0
+Summary: Provides an AMQP implementation for RabbitMQ of the ChannelInput/OutputPort in pypz.
+Author-email: Laszlo Anka <laszlo.anka@gmail.com>
+License: Apache-2.0
+Project-URL: Documentation, https://pypz.dev
+Project-URL: Repository, https://github.com/lazlowa/pypz-python
+Keywords: pypz,plugin,amqp
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pypz-core
+Requires-Dist: amqp==5.2.0
+Provides-Extra: static
+Requires-Dist: flake8~=7.0.0; extra == "static"
+Requires-Dist: flake8-html~=0.4.3; extra == "static"
+Requires-Dist: mypy~=1.8.0; extra == "static"
+Requires-Dist: coverage~=7.4.1; extra == "static"
+
+# Test
+
+## Start RabbitMQ server locally
+
+docker run -d --rm --name rabbitmq --hostname test -p 15672:15672 -p 5672:5672 rabbitmq:3-management
