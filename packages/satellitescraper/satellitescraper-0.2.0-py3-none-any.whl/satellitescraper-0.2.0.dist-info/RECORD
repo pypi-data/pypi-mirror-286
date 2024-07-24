@@ -1,0 +1,11 @@
+satellitescraper/__init__.py,sha256=PbTyWeKl5GgrPg9kYI_A2vllnLsYno_QVosOSYQapsU,345
+satellitescraper/file_size.py,sha256=_4eIxTBFT_TSbtJqFPFeCBcCh7g41kCzjriQiUBjQk4,1928
+satellitescraper/map_fetch.py,sha256=TRyCOj9wJg0Pu1xg8RSDge79Q9r9c_ZylGiOD-46Se4,2202
+satellitescraper/sanity_checker.py,sha256=TJWjTSmDDALEaZl2qAjVIE6u7ji1ax-qNOdeAaZ4O-A,9307
+satellitescraper/satellitescraper.py,sha256=h-w51DyaIAGW2mdTjbtXgxRiBdbnj9QGW2AHRtZfAtc,15952
+satellitescraper/tiles_sticher.py,sha256=17MbLcKBn0kgJzAiKSWH_rV3LAmDumJtWhzgRk21TaE,6906
+satellitescraper-0.2.0.dist-info/LICENSE,sha256=Ly9B0Jj1LIwwKCu7C2I6cSbUu031I3vx2xyx461MCbY,35161
+satellitescraper-0.2.0.dist-info/METADATA,sha256=lSNPym1uqY2j_H800aM0lv4cPeqyA6j-x1GkqIBKWdM,2454
+satellitescraper-0.2.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+satellitescraper-0.2.0.dist-info/top_level.txt,sha256=Y9o6quP2O_TdHBIG9kegfBKqspOJ3YfsIw5Gf0GyrGo,17
+satellitescraper-0.2.0.dist-info/RECORD,,
