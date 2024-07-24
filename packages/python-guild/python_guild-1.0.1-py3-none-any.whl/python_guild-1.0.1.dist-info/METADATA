@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: python_guild
+Version: 1.0.1
+Summary: Guilds in Python 3
+Author: strig5185
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+Guilds in Python 3
