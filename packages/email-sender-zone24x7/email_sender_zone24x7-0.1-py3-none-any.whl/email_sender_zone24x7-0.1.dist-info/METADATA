@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: email-sender-zone24x7
+Version: 0.1
+Summary: A simple email sending package.
+Home-page: https://github.com/prasanrzone/email_sender
+Author: zone24x7
+Author-email: developer@zone24x7.com
+License-File: LICENCE
+Requires-Dist: secure-smtplib
+
