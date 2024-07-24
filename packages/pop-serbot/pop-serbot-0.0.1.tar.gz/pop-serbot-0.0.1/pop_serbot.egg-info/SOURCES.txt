@@ -1,0 +1,6 @@
+README.md
+setup.py
+pop_serbot.egg-info/PKG-INFO
+pop_serbot.egg-info/SOURCES.txt
+pop_serbot.egg-info/dependency_links.txt
+pop_serbot.egg-info/top_level.txt
