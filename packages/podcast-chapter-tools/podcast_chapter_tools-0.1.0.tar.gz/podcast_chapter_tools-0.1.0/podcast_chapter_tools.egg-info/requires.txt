@@ -1,0 +1,7 @@
+podcast-transcript-convert
+
+[lint]
+black
+ruff
+pyroma
+pytype

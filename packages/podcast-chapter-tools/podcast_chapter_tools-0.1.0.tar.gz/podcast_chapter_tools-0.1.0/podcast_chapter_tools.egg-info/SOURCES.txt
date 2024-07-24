@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+podcast_chapter_tools/__init__.py
+podcast_chapter_tools/entities.py
+podcast_chapter_tools/extractors.py
+podcast_chapter_tools/py.typed
+podcast_chapter_tools.egg-info/PKG-INFO
+podcast_chapter_tools.egg-info/SOURCES.txt
+podcast_chapter_tools.egg-info/dependency_links.txt
+podcast_chapter_tools.egg-info/requires.txt
+podcast_chapter_tools.egg-info/top_level.txt
