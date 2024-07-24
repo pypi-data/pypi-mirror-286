@@ -1,0 +1,8 @@
+PySide6
+qt-material
+yapf
+frontengine
+pycodestyle
+jedi
+qtconsole
+re-edge-gpt[gui]
