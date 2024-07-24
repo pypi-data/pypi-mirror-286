@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gondrol
+Version: 0.1.0
+Summary: My Personal Python Packages
+Author: Andri Ariyanto
+Author-email: ariyant.andri@gmail.com
+Keywords: python,gondrol
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# Gondrol
+
+My Personal Python Packages
+
+## Installation
+
+Use the package manager pip to install gondrol.
+
+```bash
+pip install gondrol
+```
+
+## Usage
+
+```python
+import gondrol
+
+# returns string
+gondrol.hello()
+
+gondrol.author()
+
+```

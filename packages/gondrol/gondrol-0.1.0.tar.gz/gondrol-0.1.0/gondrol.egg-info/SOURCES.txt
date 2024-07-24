@@ -1,0 +1,8 @@
+README.md
+setup.py
+gondrol/__init__.py
+gondrol/introduction.py
+gondrol.egg-info/PKG-INFO
+gondrol.egg-info/SOURCES.txt
+gondrol.egg-info/dependency_links.txt
+gondrol.egg-info/top_level.txt
