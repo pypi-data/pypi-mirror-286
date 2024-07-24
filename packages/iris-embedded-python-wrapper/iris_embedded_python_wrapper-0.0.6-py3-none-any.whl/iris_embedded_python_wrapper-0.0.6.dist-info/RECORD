@@ -1,0 +1,12 @@
+iris/__init__.py,sha256=xSvXQ79dl_jKEmuO6UPbosFK-ZjO--UqMXul5Wrm1Hg,1835
+iris/__init__.pyi,sha256=HPv6Lot6yZt8XXj3Rb0CrVO9ChDbKVpE3ID1SIqAlwU,9766
+iris/_cli.py,sha256=kxjGqRqQJFdNy0f6YMHEX-xacmXauSt3HAGVm-CbNhk,1061
+iris/iris_ipm.py,sha256=Q0jcNItjywlqOPZr0hgdTFSeLPNEmB-tcICOI_cXnaY,790
+iris/iris_ipm.pyi,sha256=j7CNUZcjeDu5sgeWUZJO_Qi4vQmHh6aD-jPWv8OdoUs,374
+iris/iris_utils.py,sha256=kg80O3yRpHIutM-mCyr4xCeTvKWPE-Kai-b6Dxw4vQ4,9882
+iris_embedded_python_wrapper-0.0.6.dist-info/LICENSE,sha256=K1eHxnX2KOKp7Z5ZGspu-arMIOjZ1hwu2xUNtfyw4V8,1074
+iris_embedded_python_wrapper-0.0.6.dist-info/METADATA,sha256=4fcwQrAQxM3VMe1doCEL6b3QYJvXFE-V8gMB7fl6rYs,2944
+iris_embedded_python_wrapper-0.0.6.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+iris_embedded_python_wrapper-0.0.6.dist-info/entry_points.txt,sha256=BEyBGcBwDtrK4B11XdpDjxOVNfvxZv9xDSbAuKVHDt0,66
+iris_embedded_python_wrapper-0.0.6.dist-info/top_level.txt,sha256=v3iL68K7jvu0_EcJMk9MMahcEbXtfFjHEzSsOSM5yJQ,5
+iris_embedded_python_wrapper-0.0.6.dist-info/RECORD,,
