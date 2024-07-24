@@ -1,0 +1,6 @@
+README.md
+setup.py
+pop_pycbasic.egg-info/PKG-INFO
+pop_pycbasic.egg-info/SOURCES.txt
+pop_pycbasic.egg-info/dependency_links.txt
+pop_pycbasic.egg-info/top_level.txt
