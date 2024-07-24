@@ -1,0 +1,238 @@
+Metadata-Version: 2.1
+Name: fourier-core
+Version: 0.1.0rc2
+Summary: Robotics Control System for the All Robotics
+Author-email: "Fourier Intelligence Ltd." <rcs@fftai.com>, Xin Chen <xin.chen@fftai.com>, Yuxiang Gao <yuxiang.gao@fftai.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: ==3.11.*
+Description-Content-Type: text/markdown
+Requires-Dist: numpy <2.0.0,>=1.26.4
+Requires-Dist: pyserial ==3.5
+Requires-Dist: pyyaml >=6.0.1
+Requires-Dist: rich >=13.7.1
+Requires-Dist: typer >=0.12.3
+Requires-Dist: msgpack >=1.0.8
+Requires-Dist: msgpack-numpy >=0.4.8
+Requires-Dist: eclipse-zenoh ==0.11.0rc3
+Requires-Dist: loguru >=0.7.2
+Requires-Dist: inputs >=0.5
+Requires-Dist: torch >=2.3.0
+Provides-Extra: all
+Requires-Dist: fourier-core[rl] ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: mkdocs >=1.6.0 ; extra == 'docs'
+Requires-Dist: mkdocs-material >=9.5.24 ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] >=0.25.1 ; extra == 'docs'
+Requires-Dist: mkdocs-gen-files >=0.5.0 ; extra == 'docs'
+Requires-Dist: mkdocs-literate-nav >=0.6.1 ; extra == 'docs'
+Requires-Dist: mkdocs-section-index >=0.3.9 ; extra == 'docs'
+Provides-Extra: rl
+Requires-Dist: torch >=2.3.0 ; extra == 'rl'
+
+# fourier-core
+
+## Introduction
+
+Fourier Core is a framework for controlling robots.
+It is designed to be modular and extensible.
+The framework provides a set of common modules that are used in robot control systems.
+The framework is designed to be easy to use and flexible,
+allowing developers to quickly build and deploy robot control systems.
+
+## Conda
+
+1. Install Miniconda:
+    - https://docs.anaconda.com/free/miniconda/index.html
+    - Download Miniconda installer, install Miniconda development environment.
+
+2. Create development environment:
+    - Develop a virtual environment and install python 3.11.
+   ```
+   conda create -n fourier-grx python=3.11
+   ```
+
+> **Notice**:
+> For better performance, we upgraded the python runtime environment from 3.8 to 3.11,
+> and not compatible with the 3.8 version after the upgrade.
+
+3. Activate the venv:
+   ```
+   conda activate fourier-grx
+   ```
+
+## PDM
+
+### Installation
+
+#### Outside Mainland China
+
+```
+sudo apt install curl
+curl -sSL https://pdm-project.org/install-pdm.py | python3 -
+```
+
+#### Inside Mainland China
+
+```
+pip install pdm
+
+# open .bashrc and add $PATH environment variable
+export PATH=$PATH:~/.local/bin
+
+# source .bashrc
+source ~/.bashrc
+```
+
+### Test Installation
+
+```
+pdm --version
+```
+
+### Configuration
+
+It is recommended to use `pdm` to create a venv in the local `.venv` folder.
+
+```
+# Create virtualenv with conda
+pdm venv create --with conda 3.11
+
+# OR with python virtualenv
+pdm venv create 3.11 
+```
+
+### Activate the venv
+
+```
+# list all venvs
+pdm list
+
+# If prompt error: [ProjectError]: The pyproject.toml has not been initialized yet. You can do this by running `pdm 
+init`. You can run:
+pdm use  # to list all venvs
+
+# Activate the venv, suggest using conda create venv
+pdm use (venv_name)
+```
+
+### Development
+
+### Manage dependencies
+
+Add runtime dependencies
+
+```
+pdm add package_name 
+```
+
+Add dev dependencies
+
+```
+pdm add -dG dev package_name  
+```
+
+### Install and Compile
+
+Local editable installment
+
+```
+pdm install -G:all  # install all dev and optional dependencies
+pdm list # check what packages are installed
+```
+
+Install dev dependencies
+
+```
+pdm install -d
+```
+
+Lock the dependencies:
+
+```
+pdm lock -G:all
+```
+
+Build using nuitka:
+
+```
+pdm build -vv
+```
+
+After build，`whl` file will be generated in the `dist` folder:
+
+![build result](assets/build.png)
+
+Check the content of the `whl` file, including .so files and .pyi files:
+
+![whl content](assets/whl.png)
+
+`whl` file can be installed directly using `pip`:
+
+```
+python -m pip install -U /path/to/fourier_core-0.3.0rc10-cp311-cp311-macosx_11_0_arm64.whl
+```
+
+### Linting and formatting
+
+Lint and format using ruff
+
+```
+pdm run lint
+pdm run fmt
+```
+
+## Documentation
+
+```
+mkdocs serve
+```
+
+Then open `http://127.0.0.1:8000`
+
+![](./assets/doc-site.png)
+
+Support generating API reference from docstring:
+
+![](./assets/doc-ref.png)
+
+Document layout and hierarchy can be configured in `mkdocs.yml`:
+
+```yaml
+
+nav:
+  - Home: README.md
+  - 架构设计: 架构设计.md
+  - Legacy:
+      - 查看温度: 查看温度.md
+      - 配置打包与开发环境: 配置打包与开发环境.md
+  - Code Reference: reference/
+  - Changelog: CHANGELOG.md
+```
+
+---
+
+## Package and Release
+
+```
+python setup.py sdist bdist_wheel
+```
+
+#### Package to .so
+
+```
+python -m nuitka --module fourier_core --include-package=fourier_core --output-dir=./build/
+```
+
+---
+
+## TODO
+
+- Rename the current `tests` folder as it is the standard folder for `pytest`.
+- Setup `pytest` to do unittest on modules. This would help during refactoring
+- Add type hints to most of user facing functions.
+- Group config files in a single directory.
+- If `pyinstaller` is no longer used, we should get rid of the scripts.
+- Flatten the file structure. For example, most of the files in `predefined` only contain 1 class. It would make the file structure less complicated if we merge some of them into one file. But this
+  could potentially change the interface.
