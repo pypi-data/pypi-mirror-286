@@ -1,0 +1,4 @@
+vertexai
+prompt-toolkit
+keyring
+groq
