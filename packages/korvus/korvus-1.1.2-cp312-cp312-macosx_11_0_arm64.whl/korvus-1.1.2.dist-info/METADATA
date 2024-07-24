@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: korvus
+Version: 1.1.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python SDK is designed to facilitate the development of scalable vector search applications on PostgreSQL databases.
+Keywords: postgres,machine learning,vector databases,embeddings
+Home-Page: https://postgresml.org/
+Author: PosgresML <team@postgresml.org>
+Author-email: PostgresML <team@postgresml.org>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://postgresml.org
+Project-URL: Repository, https://github.com/postgresml/korvus
+Project-URL: Documentation, https://postgresml.org/docs/api/client-sdk/
+
+# Open Source Alternative for Building End-to-End Vector Search Applications without OpenAI & Pinecone
+
