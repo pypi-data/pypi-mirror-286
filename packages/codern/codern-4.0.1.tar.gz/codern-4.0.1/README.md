@@ -1,0 +1,198 @@
+# مستندات کتابخانه api-free.ir
+این کتابخانه برای تعامل با API های موجود در سایت api-free.ir طراحی شده است. این کتابخانه شامل توابعی برای ارسال ایمیل، آپلود فایل، جستجوی موسیقی، ایجاد صدا، ایجاد تصویر، دانلود پست و استوری از روبیکا، جستجوی صفحات روبینو و اینستاگرام، دریافت اطلاعات IP و جستجوی ویکی‌پدیا می‌باشد.
+
+**نصب**
+برای استفاده از این کتابخانه، ابتدا باید آن را نصب کنید:
+
+bash
+Copy code
+pip install requests
+pip install urllib3
+pip install random
+pip install search
+pip install json
+
+کلاس Email
+ارسال ایمیل
+ورودی‌ها
+**To**: آدرس ایمیل گیرنده
+**text**: متن ایمیل
+**Title**: عنوان ایمیل
+**Token**: توکن احراز هویت
+**Input**: نوع ایمیل (مقادیر مجاز: 'info', 'app', 'Login', 'support')
+خروجی
+در صورت موفقیت: {'state': 'ok', 'code': 200}
+در صورت خطا: False
+نمونه کد استفاده
+
+```python
+Copy code
+from codern import Email
+
+email = Email(
+    To="example@example.com",
+    text="سلام، این یک تست است.",
+    Title="Test Email",
+    Token="your_token"
+)
+result = email.Send()
+print(result)```
+
+
+# کلاس client
+این کلاس برای مدیریت ارتباط با سرویس‌های مختلف استفاده می‌شود. برای استفاده از این کلاس، باید یک توکن احراز هویت به آن بدهید.
+
+آپلود فایل
+ورودی‌ها
+**Path**: مسیر فایل
+خروجی
+نتیجه آپلود فایل
+نمونه کد استفاده
+
+
+```python
+Copy code
+from codern import client
+
+client_instance = client(token="your_token")
+upload_result = client_instance.Upload_file("path/to/your/file.txt")
+print(upload_result)```
+# کلاس api
+این کلاس شامل متدهای مختلفی برای تعامل با API های سایت api-free.ir می‌باشد.
+
+# جستجوی موسیقی
+ورودی‌ها
+**text**: متن جستجو
+**result_count**: تعداد نتایج (پیش‌فرض: 5)
+خروجی
+لیستی از لینک‌های موسیقی و عنوان‌ها
+نمونه کد استفاده
+
+```python
+Copy code
+from codern import api
+
+music_results = api.search_music(text="نام موسیقی")
+print(music_results)```
+
+
+# ایجاد صدا
+ورودی‌ها
+**text**: متن مورد نظر برای تبدیل به صدا
+**mod**: مدل صدای مورد نظر (مقادیر مجاز: 'FaridNeural', 'DilaraNeural')
+خروجی
+لینک فایل صوتی ایجاد شده
+نمونه کد استفاده
+```python
+Copy code
+from codern import api
+
+voice_result = api.create_voice(text="متن مورد نظر برای تبدیل به صدا")
+print(voice_result)```
+
+
+# ایجاد تصویر
+ورودی‌ها
+**text**: توضیحات تصویر
+**version**: نسخه مدل تولید تصویر (مقادیر مجاز: '3.5', '2.5', '1.5', '4')
+خروجی
+لینک یا لیست لینک‌های تصاویر ایجاد شده
+نمونه کد استفاده
+```python
+Copy code
+from codern import api
+
+image_result = api.create_image(text="توضیحات تصویر")
+print(image_result)```
+
+# دانلود پست روبیکا
+ورودی‌ها
+**share_url**: لینک پست روبیکا
+خروجی
+لینک یا لیست لینک‌های دانلود پست
+نمونه کد استفاده
+```python
+Copy code
+from codern import api
+
+post_result = api.download_post_rubika(share_url="لینک پست روبیکا")
+print(post_result)```
+
+
+
+# دانلود استوری روبیکا
+ورودی‌ها
+**username**: نام کاربری
+خروجی
+لینک یا لیست لینک‌های دانلود استوری
+نمونه کد استفاده
+```python
+Copy code
+from codern import api
+
+story_result = api.download_story_rubika(username="نام کاربری")
+print(story_result)```
+
+
+# جستجوی صفحه روبینو
+ورودی‌ها
+**text**: نام کاربری یا متن جستجو
+خروجی
+اطلاعات صفحه
+نمونه کد استفاده
+```python
+Copy code
+from codern import api
+
+page_result = api.search_page_rubino(text="نام کاربری یا متن جستجو")
+print(page_result)```
+دریافت IP خود
+**ورودی‌ها**
+ندارد
+خروجی
+آدرس IP شما
+نمونه کد استفاده
+```python
+Copy code
+from codern import api
+
+ip_result = api.get_ip_me()
+print(ip_result)```
+دریافت اطلاعات IP
+ورودی‌ها
+**ip**: آدرس IP
+خروجی
+اطلاعات مربوط به IP
+نمونه کد استفاده
+```python
+Copy code
+from codern import api
+
+ip_info_result = api.get_info_ip(ip="آدرس IP")
+print(ip_info_result)```
+دریافت اطلاعات صفحه اینستاگرام
+ورودی‌ها
+**username**: نام کاربری اینستاگرام
+خروجی
+اطلاعات صفحه اینستاگرام
+نمونه کد استفاده
+```python
+Copy code
+from codern import api
+
+instagram_page_result = api.get_page_instagram(username="نام کاربری اینستاگرام")
+print(instagram_page_result)```
+
+#جستجوی ویکی‌پدیا
+ورودی‌ها
+text: متن جستجو
+lang: زبان (پیش‌فرض: "fa")
+خروجی
+نتایج جستجو در ویکی‌پدیا
+نمونه کد استفاده
+```python
+Copy code
+from codern import api
+
+wikipedia_result = api.search_wikipedia(text="متن جستجو", lang="fa")
+print(wikipedia_result)```
