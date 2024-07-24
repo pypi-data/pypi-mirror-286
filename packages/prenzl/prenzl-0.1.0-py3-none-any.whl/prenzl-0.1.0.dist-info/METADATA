@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: prenzl
+Version: 0.1.0
+Summary: Agent and advanced RAG observability tool in python
+Home-page: https://github.com/OptimaLLM/python-sdk
+Author: OptimaLLM
+Author-email: charlotte.cronjaeger@googlemail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Prenzl AI agent observbility tool for agents and advanced RAG
+This is the python sdk of Prenzl AI - an agent and advanced RAG observability tool.
+
+
+### Installation
+```
+pip install prenzl
+```
+
+### Using Prenzl AI Observability
+```
+from prenzl import prenzl_observe
+
+result = prenzl_observe()
+```
