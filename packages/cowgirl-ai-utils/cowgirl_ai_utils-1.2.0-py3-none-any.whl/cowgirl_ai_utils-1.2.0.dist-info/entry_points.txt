@@ -1,0 +1,2 @@
+[console_scripts]
+cowgirl-ai-utils = cli.cli:run
