@@ -1,0 +1,15 @@
+pyarrow
+pandas
+numpy
+torch
+requests
+pymupdf
+pymupdf4llm
+sentence_transformers
+spacy
+transformers
+accelerate
+bitsandbytes
+wheel
+tqdm
+markdown
