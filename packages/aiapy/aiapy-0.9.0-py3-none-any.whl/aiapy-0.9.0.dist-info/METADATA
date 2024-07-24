@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: aiapy
+Version: 0.9.0
+Summary: Python library for AIA data analysis.
+Author: AIA Instrument Team @ LMSAL
+Author-email: freij@baeri.org
+Project-URL: homepage, https://aia.lmsal.com/
+Project-URL: documentation, https://aiapy.readthedocs.io/en/stable/
+Project-URL: repository, https://github.com/LM-SAL/aiapy
+Project-URL: changelog, https://aiapy.readthedocs.io/en/stable/changelog.html
+Keywords: solar physics,solar,science,NASA,SDO,AIA,solar dynamics observatory,atmospheric imaging assembly
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE.rst
+Requires-Dist: sunpy[image,map,net] >=6.0
+Provides-Extra: all
+Requires-Dist: aiapy ; extra == 'all'
+Provides-Extra: cupy
+Requires-Dist: cupy ; extra == 'cupy'
+Provides-Extra: dev
+Requires-Dist: aiapy[docs,tests] ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: aiapy[all] ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-automodapi ; extra == 'docs'
+Requires-Dist: sphinx-changelog ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinx-design ; extra == 'docs'
+Requires-Dist: sphinx-gallery ; extra == 'docs'
+Requires-Dist: sphinx-hoverxref ; extra == 'docs'
+Requires-Dist: sphinxext-opengraph ; extra == 'docs'
+Requires-Dist: sunpy-sphinx-theme ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: aiapy[all] ; extra == 'tests'
+Requires-Dist: hissw ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-astropy ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-xdist ; extra == 'tests'
+
+=========
+``aiapy``
+=========
+
+.. image:: https://github.com/LM-SAL/aiapy/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/LM-SAL/aiapy/actions/workflows/ci.yml
+    :alt: aiapy CI status
+
+.. image:: https://readthedocs.org/projects/aiapy/badge/?version=stable
+    :target: https://aiapy.readthedocs.io/en/stable/?badge=stable
+    :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/v/aiapy.svg
+    :target: https://pypi.org/project/aiapy/
+    :alt: PyPI Project
+
+.. image:: http://img.shields.io/badge/powered%20by-SunPy-orange.svg?style=flat
+    :target: https://sunpy.org
+    :alt: SunPy Powered
+
+.. image:: https://codecov.io/gh/LM-SAL/aiapy/branch/main/graph/badge.svg
+    :target: https://codecov.io/gh/LM-SAL/aiapy
+    :alt: Codecov coverage
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.10064346.svg
+    :target: https://doi.org/10.5281/zenodo.10064346
+    :alt: Zenodo DOI
+
+.. image:: https://joss.theoj.org/papers/9bfcd1677e43046a5136766863419a04/status.svg
+    :target: https://joss.theoj.org/papers/9bfcd1677e43046a5136766863419a04
+    :alt: JOSS
+
+
+``aiapy`` is a Python package for analyzing data from the Atmospheric Imaging Assembly (AIA) instrument onboard NASA's Solar Dynamics Observatory (SDO) spacecraft.
+For more information, see the `aiapy documentation <https://aiapy.readthedocs.io/en/latest/>`__.
+For some examples of using aiapy, see `our gallery <https://aiapy.readthedocs.io/en/latest/generated/gallery/index.html>`__.
+
+Citing
+------
+
+If you use ``aiapy`` in your scientific work, we would appreciate you citing it in your publications.
+The latest citation information can be found in the `documentation <https://aiapy.readthedocs.io/en/latest/citation.html>`__, or obtained with ``aiapy.__citation__``.
+
+Contributing
+------------
+
+``aiapy`` is open source software, built on top of other open source software, and we'd love to have you contribute
+
+Please checkout the `contributing guide <https://aiapy.readthedocs.io/en/latest/develop.html>`__ for more information on how to contribute to aiapy.
