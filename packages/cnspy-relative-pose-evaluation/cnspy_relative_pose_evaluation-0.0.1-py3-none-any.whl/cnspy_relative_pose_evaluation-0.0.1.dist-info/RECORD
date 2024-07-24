@@ -1,0 +1,15 @@
+cnspy_relative_pose_evaluation/AssociateRelPoses.py,sha256=BqCnub4MShgGF1n6iJ2NSrifrMSoxhcFsVRLpHplP3c,22597
+cnspy_relative_pose_evaluation/ROSBag_Poses2RelPoses.py,sha256=CIg8jjhSc-DjEXjZTIFCLHtclyZrgHjOu8y98SLzV4k,16019
+cnspy_relative_pose_evaluation/ROSBag_TrueRelPoses.py,sha256=U6zA-_BFOsELkMx7VgaxOwrOy7_0-hOs29-z6Mf11fo,17298
+cnspy_relative_pose_evaluation/RelPoseMeasEvaluation.py,sha256=cXlEcIscU-NLKsT-cLOguSCNiSyYFq0zoBRJoSgClKM,19990
+cnspy_relative_pose_evaluation/RelPoseMeasEvaluationTool.py,sha256=0o7-NwFCWyriTzjLxEfifRQMeiBzAHAr-JLFzXuzVXg,8565
+cnspy_relative_pose_evaluation/RelPose_ROSBag2CSV.py,sha256=yITahaz0jJ_Mx6U8xU8B_vqoMUOrk5AjcgrUvqSBCpA,15969
+cnspy_relative_pose_evaluation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/example.py,sha256=XLs2Iqc4lAJfTbe1oMmGMz6Bc9qyr9aPJq5JhMzXETk,4003
+cnspy_relative_pose_evaluation-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cnspy_relative_pose_evaluation-0.0.1.dist-info/METADATA,sha256=1STiIObhpE6ueDgtXB6lF-u0ondQNvgFd0nD5dvTwQs,3324
+cnspy_relative_pose_evaluation-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+cnspy_relative_pose_evaluation-0.0.1.dist-info/entry_points.txt,sha256=KrCvbhLsaOGfKE_EWmadZ2CcNCn8LOeNR4fDPBt5XXo,424
+cnspy_relative_pose_evaluation-0.0.1.dist-info/top_level.txt,sha256=zeay63tN2q_2KunhgXy2MI4kpwzFGI-7vZ7uybtGHJw,36
+cnspy_relative_pose_evaluation-0.0.1.dist-info/RECORD,,

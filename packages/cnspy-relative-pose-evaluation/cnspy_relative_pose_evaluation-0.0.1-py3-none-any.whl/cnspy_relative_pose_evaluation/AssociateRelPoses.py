@@ -1,0 +1,485 @@
+#!/usr/bin/env python
+# Software License Agreement (GNU GPLv3  License)
+#
+# Copyright (c) 2020, Roland Jung (roland.jung@aau.at) , AAU, KPK, NAV
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+# Requirements:
+# numpy, matplotlib
+########################################################################################################################
+import os
+import math
+import time
+from sys import version_info
+from matplotlib import pyplot as plt
+import numpy as np
+import pandas as pandas
+from spatialmath import UnitQuaternion
+
+from cnspy_numpy_utils.numpy_statistics import *
+from cnspy_timestamp_association.TimestampAssociation import TimestampAssociation
+from cnspy_trajectory.PlotLineStyle import PlotLineStyle
+from cnspy_ranging_evaluation.AssociateRanges import AssociateRanges, AssociateRangesCfg
+
+from cnspy_trajectory.Trajectory import Trajectory
+from cnspy_trajectory.TrajectoryEstimated import TrajectoryEstimated
+from cnspy_trajectory.TrajectoryError import TrajectoryError
+from cnspy_trajectory.TrajectoryPlotConfig import TrajectoryPlotConfig
+from cnspy_trajectory.TrajectoryErrorType import TrajectoryErrorType
+
+from cnspy_trajectory_evaluation.EstimationTrajectoryError import EstimationTrajectoryError
+from cnspy_trajectory_evaluation.AbsoluteTrajectoryError import AbsoluteTrajectoryError
+from cnspy_spatial_csv_formats.EstimationErrorType import EstimationErrorType
+from cnspy_spatial_csv_formats.ErrorRepresentationType import ErrorRepresentationType
+from cnspy_spatial_csv_formats.CSVSpatialFormatType import CSVSpatialFormatType
+from cnspy_spatial_csv_formats.CSVSpatialFormat import  CSVSpatialFormat
+
+
+class AssociateRelPoseCfg(AssociateRangesCfg):
+    label_angle = 'angle'
+    max_angle = np.pi*2
+    angle_error_val = 0
+
+    def __init__(self, ID1=None, ID2=None, relative_timestamps=False,
+                 max_difference=0.02, subsample=0, verbose=False, remove_outliers=False,
+                 max_range=30, range_error_val=0, label_timestamp='t',
+                 label_ID1='ID1',
+                 label_ID2='ID2',
+                 label_range = 'range',
+                 label_angle = 'angle'):
+        self.label_timestame = label_timestamp
+        self.label_ID1 = label_ID1
+        self.label_ID2 = label_ID2
+        self.label_range = label_range
+        self.label_angle = label_angle
+        self.ID1 = ID1
+        self.ID2 = ID2
+        self.relative_timestamps = relative_timestamps
+        self.max_difference = max_difference
+        self.subsample = subsample
+        self.verbose = verbose
+        self.remove_outliers = remove_outliers
+        self.max_range = max_range
+        self.range_error_val = range_error_val
+
+
+class AssociateRelPoses(AssociateRanges):
+    csv_df_gt = None
+    csv_df_est = None
+
+    data_frame_gt_matched = None
+    data_frame_est_matched = None
+
+    matches_est_gt = None  # list of tuples containing [(idx_est, idx_gt), ...]
+
+    cfg = AssociateRelPoseCfg()
+    data_loaded = False
+
+    traj_err = None # TrajectoryEstimationError()
+    traj_est = None
+
+    def __init__(self, fn_gt, fn_est, cfg):
+        #AssociateRanges.__init__(self)
+        cfg = cfg
+        self.load(fn_gt, fn_est, cfg)
+        self.compute_error()
+
+    def load(self, fn_gt, fn_est, cfg):
+        assert(isinstance(cfg, AssociateRelPoseCfg))
+        assert (os.path.exists(fn_gt)), str("Path to fn_gt does not exist!:" + str(fn_gt))
+        assert (os.path.exists((fn_est))), str("Path to fn_est does not exist!:" + str(fn_est))
+
+        self.csv_df_gt = pandas.read_csv(fn_gt, sep='\s+|\,', comment='#', engine='python')
+        self.csv_df_est = pandas.read_csv(fn_est, sep='\s+|\,', comment='#', engine='python')
+
+        if cfg.ID1 is not None:
+            self.csv_df_gt = (self.csv_df_gt.loc[self.csv_df_gt[cfg.label_ID1] == cfg.ID1])
+            self.csv_df_est = (self.csv_df_est.loc[self.csv_df_est[cfg.label_ID1] == cfg.ID1])
+
+            if len(self.csv_df_gt) == 0 or len(self.csv_df_est) == 0:
+                print("ID1=" + str(cfg.ID1) + " not found")
+                return
+
+        if cfg.ID2 is not None:
+            self.csv_df_gt = (self.csv_df_gt.loc[self.csv_df_gt[cfg.label_ID2] == cfg.ID2])
+            self.csv_df_est = (self.csv_df_est.loc[self.csv_df_est[cfg.label_ID2] == cfg.ID2])
+            if len(self.csv_df_gt) == 0 or len(self.csv_df_est) == 0:
+                print("ID2=" + str(cfg.ID2) + " not found")
+                return
+
+        # compute range
+        if 'range' not in self.csv_df_est:
+            range_est = np.linalg.norm(self.csv_df_est[['tx', 'ty', 'tz']].to_numpy(), axis=1)
+            self.csv_df_est[cfg.label_range] = range_est
+        if 'range' not in self.csv_df_gt:
+            range_gt = np.linalg.norm(self.csv_df_gt[['tx', 'ty', 'tz']].to_numpy(), axis=1)
+            self.csv_df_gt[cfg.label_range] = range_gt
+        # compute angle
+        if 'angle' not in self.csv_df_est:
+            self.csv_df_est[cfg.label_angle] = AssociateRelPoses.quat2ang_arr(self.csv_df_est[['qw','qx', 'qy', 'qz']].to_numpy())
+        if 'angle' not in self.csv_df_gt:
+            self.csv_df_gt[cfg.label_angle] = AssociateRelPoses.quat2ang_arr(self.csv_df_gt[['qw','qx', 'qy', 'qz']].to_numpy())
+
+        if cfg.remove_outliers:
+            self.csv_df_est[cfg.label_range] = self.csv_df_est[cfg.label_range].where(
+                abs(self.csv_df_est[cfg.label_range]) < 0, other=cfg.range_error_val)
+            self.csv_df_est[cfg.label_range] = self.csv_df_est[cfg.label_range].where(
+                self.csv_df_est[cfg.label_range] > cfg.max_range, other=cfg.range_error_val)
+
+        else:
+            indices = ((self.csv_df_est[cfg.label_range]) < 0)
+            self.csv_df_est.loc[indices, cfg.label_range] = cfg.range_error_val
+            indices = (self.csv_df_est[cfg.label_range] > cfg.max_range)
+            self.csv_df_est.loc[indices, cfg.label_range] = cfg.range_error_val
+
+        if cfg.subsample > 1:
+            subsample = round(cfg.subsample, 0)
+            self.csv_df_gt = AssociateRanges.subsample_DataFrame(df=self.csv_df_gt, step=subsample, verbose=cfg.verbose)
+            self.csv_df_est = AssociateRanges.subsample_DataFrame(df=self.csv_df_est, step=subsample,
+                                                                  verbose=cfg.verbose)
+
+        if version_info[0] < 3:
+            t_vec_gt = self.csv_df_gt.as_matrix([cfg.label_timestamp])
+            t_vec_est = self.csv_df_est.as_matrix([cfg.label_timestamp])
+            t_zero = min(t_vec_gt[0], t_vec_est[0])
+
+            if len(t_vec_gt) == 0 or len(t_vec_est) == 0:
+                print("empty")
+                return
+
+            if cfg.relative_timestamps:
+                self.csv_df_gt[[cfg.label_timestamp]] = self.csv_df_gt[[cfg.label_timestamp]] - t_zero
+                self.csv_df_est[[cfg.label_timestamp]] = self.csv_df_est[[cfg.label_timestamp]] - t_zero
+        else:
+            # FIX(scm): for newer versions as_matrix is deprecated, using to_numpy instead
+            # from https://stackoverflow.com/questions/60164560/attributeerror-series-object-has-no-attribute-as-matrix-why-is-it-error
+            t_vec_gt = self.csv_df_gt[[cfg.label_timestamp]].to_numpy()
+            t_vec_est = self.csv_df_est[[cfg.label_timestamp]].to_numpy()
+            if len(t_vec_gt) == 0 or len(t_vec_est) == 0:
+                print("empty")
+                return
+
+            t_zero = min(t_vec_gt[0], t_vec_est[0])
+            if cfg.relative_timestamps:
+                self.csv_df_gt[[cfg.label_timestamp]] = self.csv_df_gt[[cfg.label_timestamp]] - t_zero
+                self.csv_df_est[[cfg.label_timestamp]] = self.csv_df_est[[cfg.label_timestamp]] - t_zero
+
+        if cfg.relative_timestamps:
+            # only relative time stamps:
+            t_vec_gt = t_vec_gt - t_zero
+            t_vec_est = t_vec_est - t_zero
+
+        idx_est, idx_gt, t_est_matched, t_gt_matched = TimestampAssociation.associate_timestamps(
+            t_vec_est,
+            t_vec_gt,
+            max_difference=cfg.max_difference,
+            round_decimals=6,
+            unique_timestamps=True)
+
+        self.data_frame_est_matched = self.csv_df_est.iloc[idx_est, :]
+        self.data_frame_gt_matched = self.csv_df_gt.iloc[idx_gt, :]
+        self.matches_est_gt = zip(idx_est, idx_gt)
+
+        if cfg.verbose:
+            print("AssociateRelPoses(): {} timestamps associated.".format(len(idx_est)))
+
+        self.data_loaded = True
+        # using zip() and * operator to
+        # perform Unzipping
+        # res = list(zip(*test_list))
+
+
+    def compute_error(self):
+        if not self.data_loaded:
+            return None
+        assert version_info[0] >= 3, "Unsupported dataframe version..."
+
+        # Note: Trajectory uses the weired HTMQ quaternion conventions, with real part last...
+        self.traj_est = TrajectoryEstimated(t_vec = self.data_frame_est_matched['t'].to_numpy(),
+                                       p_vec=self.data_frame_est_matched[['tx', 'ty', 'tz']].to_numpy(),
+                                       q_vec=self.data_frame_est_matched[[ 'qx', 'qy', 'qz', 'qw']].to_numpy())
+        est_fmt = CSVSpatialFormat(fmt_type=CSVSpatialFormatType.PoseStamped,
+                                   est_err_type=EstimationErrorType.type1,
+                                   err_rep_type=ErrorRepresentationType.rpy_rad)
+        self.traj_est.set_format(est_fmt)
+        traj_gt = Trajectory(t_vec = self.data_frame_gt_matched['t'].to_numpy(),
+                                       p_vec=self.data_frame_gt_matched[['tx', 'ty', 'tz']].to_numpy(),
+                                       q_vec=self.data_frame_gt_matched[['qx', 'qy', 'qz', 'qw']].to_numpy())
+
+
+        self.traj_err = AbsoluteTrajectoryError.compute_trajectory_error(traj_est=self.traj_est,traj_gt=traj_gt, traj_err_type=TrajectoryErrorType(EstimationErrorType.type1))
+
+    def plot_traj_err(self, cfg=TrajectoryPlotConfig(), fig=None):
+        if not self.data_loaded:
+            return
+
+        fig, ax1, ax2, ax3, ax4 = TrajectoryError.plot_pose_err(traj_est=self.traj_est, traj_err=self.traj_err,
+                                                                cfg=cfg, fig=fig,
+                                                                angles=True, plot_rpy=True)
+
+        return fig, ax1, ax2, ax3, ax4
+
+    @staticmethod
+    def quat2ang_arr(q_arr):
+        def myfunction(x):
+            q = UnitQuaternion(x)
+            [angle, vec] = q.angvec()
+            return angle
+
+        [rows, cols] = q_arr.shape
+        assert(cols == 4);
+        return np.apply_along_axis(myfunction, axis=1, arr=q_arr)
+
+    @staticmethod
+    def quats2ang_arr(q_arr1, q_arr2):
+        def myfunction(x,y):
+            q1 = UnitQuaternion(x).unit()
+            q2 = UnitQuaternion(y).unit()
+            # local error of x
+            q = q1.inv() * q2
+            [angle, vec] = q.angvec()
+            return angle
+
+        [rows1, cols1] = q_arr1.shape
+        [rows2, cols2] = q_arr2.shape
+        assert(cols1 == 4 and cols2 ==4)
+        assert(rows1 == rows2)
+
+        ang_arr = np.zeros([rows1])
+        for idx in range(0, rows1):
+            ang_arr[idx] = myfunction(q_arr1[idx, :], q_arr2[idx, :])
+        return ang_arr
+
+    def plot_angles(self, cfg_dpi=200, cfg_title="angles", sorted=False, fig=None, ax=None,
+                    colors=['r', 'g'], labels=['gt', 'est'],
+                    ls_vec=[PlotLineStyle(linestyle='-'), PlotLineStyle(linestyle='-.')],
+                    save_fn="", result_dir="."):
+        if not self.data_loaded:
+            return
+        if fig is None:
+            fig = plt.figure(figsize=(20, 15), dpi=int(cfg_dpi))
+        if ax is None:
+            ax = fig.add_subplot(111)
+        if cfg_title:
+            ax.set_title(cfg_title)
+
+        if version_info[0] < 3:
+            t_vec_gt = self.data_frame_gt_matched.as_matrix([self.cfg.label_timestamp])
+            t_vec_est = self.data_frame_est_matched.as_matrix([self.cfg.label_timestamp])
+        else:
+            t_vec_gt = self.data_frame_gt_matched[[self.cfg.label_timestamp]].to_numpy()
+            t_vec_est = self.data_frame_est_matched[[self.cfg.label_timestamp]].to_numpy()
+
+        if version_info[0] < 3:
+            r_vec_gt = self.data_frame_gt_matched.as_matrix([self.cfg.label_angle])
+            r_vec_est = self.data_frame_est_matched.as_matrix([self.cfg.label_angle])
+        else:
+            r_vec_gt = self.data_frame_gt_matched[[self.cfg.label_angle]].to_numpy()
+            r_vec_est = self.data_frame_est_matched[[self.cfg.label_angle]].to_numpy()
+
+        if not sorted:
+            # x_arr = range(len(t_vec_gt))
+            AssociateRanges.ax_plot_n_dim(ax, t_vec_gt, r_vec_gt, colors=[colors[0]], labels=[labels[0]], ls=ls_vec[0])
+            # x_arr = range(len(t_vec_est))
+            AssociateRanges.ax_plot_n_dim(ax, t_vec_est, r_vec_est, colors=[colors[1]], labels=[labels[1]], ls=ls_vec[1])
+
+            ax.grid()
+            ax.set_ylabel('angle')
+            ax.set_xlabel('time [s]')
+            AssociateRanges.show_save_figure(fig=fig, result_dir=result_dir, save_fn=save_fn, show=False)
+
+        else:
+            gt_indices_sorted = np.argsort(r_vec_gt, axis=0)
+            x_arr = range(len(r_vec_gt))
+            AssociateRanges.ax_plot_n_dim(ax, x_arr, np.take_along_axis(r_vec_gt, gt_indices_sorted, axis=0), colors=[colors[0]], labels=[labels[0]], ls=ls_vec[0])
+            AssociateRanges.ax_plot_n_dim(ax, x_arr, np.take_along_axis(r_vec_est, gt_indices_sorted, axis=0), colors=[colors[1]], labels=[labels[1]], ls=ls_vec[1])
+            ax.grid()
+            ax.set_ylabel('angle')
+            ax.set_xlabel('angle sorted index')
+            AssociateRanges.show_save_figure(fig=fig, result_dir=result_dir, save_fn=save_fn, show=False)
+
+        ax.legend()
+        return fig, ax
+
+
+    def compute_angle_error(self, sort=False, remove_outlier=True, max_error=None):
+        if not self.data_loaded:
+            return
+        if version_info[0] < 3:
+            t_vec_gt = self.data_frame_gt_matched.as_matrix([self.cfg.label_timestamp])
+            t_vec_est = self.data_frame_est_matched.as_matrix([self.cfg.label_timestamp])
+        else:
+            t_vec_gt = self.data_frame_gt_matched[[self.cfg.label_timestamp]].to_numpy()
+            t_vec_est = self.data_frame_est_matched[[self.cfg.label_timestamp]].to_numpy()
+
+        if version_info[0] < 3:
+            r_vec_gt = self.data_frame_gt_matched.as_matrix([['qw','qx', 'qy', 'qz']])
+            r_vec_est = self.data_frame_est_matched.as_matrix([['qw','qx', 'qy', 'qz']])
+        else:
+            r_vec_gt = self.data_frame_gt_matched[['qw','qx', 'qy', 'qz']].to_numpy()
+            r_vec_est = self.data_frame_est_matched[['qw','qx', 'qy', 'qz']].to_numpy()
+
+        if not sort:
+            # if r_est = r_true + r_err, then  r_err is an offset or the constant bias (gamma).
+            r_vec_err = AssociateRelPoses.quats2ang_arr(r_vec_est, r_vec_gt)
+            t_vec = t_vec_gt
+            if remove_outlier:
+                if not self.cfg.remove_outliers:
+                    indices = np.nonzero((r_vec_est == self.cfg.angle_error_val))
+                else:
+                    indices = np.nonzero((abs(r_vec_est) > self.cfg.max_angle))
+
+                t_vec = np.delete(t_vec, indices, axis=0, )
+                r_vec_err = np.delete(r_vec_err, indices, axis=0)
+
+                if max_error:
+                    indices = np.nonzero((abs(r_vec_err) > max_error))
+                    t_vec = np.delete(t_vec, indices, axis=0, )
+                    r_vec_err = np.delete(r_vec_err, indices, axis=0)
+
+                return [t_vec, r_vec_err]
+        else:
+            # if r_est = r_true + r_err, then  r_err is an offset or the constant bias (gamma).
+            r_vec_err = AssociateRelPoses.quats2ang_arr(r_vec_est, r_vec_gt)
+            x_arr = self.data_frame_gt_matched[self.cfg.label_angle].to_numpy()
+            angle_est_arr = self.data_frame_est_matched[self.cfg.label_angle].to_numpy()
+            if remove_outlier:
+                if not self.cfg.remove_outliers and not max_error:
+                    indices = np.nonzero((angle_est_arr == self.cfg.angle_error_val))
+                else:
+                    indices = np.nonzero((abs(angle_est_arr) > self.cfg.max_angle))
+
+                x_arr = np.delete(x_arr, indices, axis=0, )
+                r_vec_err = np.delete(r_vec_err, indices, axis=0)
+
+                if max_error:
+                    indices = np.nonzero((abs(r_vec_err) > max_error))
+                    x_arr = np.delete(x_arr, indices, axis=0, )
+                    r_vec_err = np.delete(r_vec_err, indices, axis=0)
+
+
+
+            gt_indices_sorted = np.argsort(x_arr, axis=0)
+            #x_arr = range(len(r_vec_gt))
+            t_vec = np.take_along_axis(x_arr, gt_indices_sorted, axis=0)
+            r_vec = np.take_along_axis(r_vec_err, gt_indices_sorted, axis=0)
+            return [t_vec, r_vec]
+
+    def plot_angle_error(self, cfg_dpi=200, cfg_title="angle", sorted=False, remove_outlier=True, fig=None, ax=None,
+                    colors=['r'], labels=['error'],
+                    ls_vec=[PlotLineStyle(linestyle='-'), PlotLineStyle(linestyle='-.')],
+                    save_fn="", result_dir="."):
+        if not self.data_loaded:
+            return
+        if fig is None:
+            fig = plt.figure(figsize=(20, 15), dpi=int(cfg_dpi))
+        if ax is None:
+            ax = fig.add_subplot(111)
+        if cfg_title:
+            ax.set_title(cfg_title)
+
+        [t_vec, r_vec_err] = self.compute_angle_error(sort=sorted, remove_outlier=remove_outlier)
+        if not sorted:
+            AssociateRanges.ax_plot_n_dim(ax, t_vec, r_vec_err, colors=[colors[0]], labels=[labels[0]], ls=ls_vec[0])
+            ax.grid()
+            ax.set_ylabel('angle error (gt-est)')
+            ax.set_xlabel('time [s]')
+            AssociateRanges.show_save_figure(fig=fig, result_dir=result_dir, save_fn=save_fn, show=False)
+
+        else:
+            AssociateRanges.ax_plot_n_dim(ax, t_vec, r_vec_err,
+                                          colors=[colors[0]], labels=[labels[0]], ls=ls_vec[0])
+
+            ax.grid()
+            ax.set_ylabel('angle error (gt-est)')
+            ax.set_xlabel('angle sorted index')
+            AssociateRanges.show_save_figure(fig=fig, result_dir=result_dir, save_fn=save_fn, show=False)
+
+        ax.legend()
+        stat = numpy_statistics(vNumpy=np.squeeze(np.asarray(r_vec_err)))
+        return fig, ax, stat, r_vec_err
+
+
+
+    def plot_angle_error_histogram(self, cfg_dpi=200, fig=None, ax=None,
+                                   save_fn="", result_dir=".", max_error=None, filter_histogramm=False, perc_inliers = 0.3,
+                                   ID1=None, ID2=None):
+        if not self.data_loaded:
+            return fig, ax, None, None
+
+        if fig is None:
+            fig = plt.figure(figsize=(20, 15), dpi=int(cfg_dpi))
+        if ax is None:
+            ax = fig.add_subplot(111)
+
+        [t_vec, r_vec_err] = self.compute_angle_error(sort=True, remove_outlier=True, max_error=max_error)
+        num_bins = 50
+        n, bins, patches = ax.hist(r_vec_err, num_bins, density=True, color='red', alpha=0.75, label='Histogram')
+
+        if len(t_vec) == 0 or len(r_vec_err) == 0:
+            return fig, ax, None, None
+
+        if not filter_histogramm:
+            # add a 'best fit' line
+            stat = numpy_statistics(vNumpy=np.squeeze(np.asarray(r_vec_err)))
+            sigma = stat['std']
+            mu = stat['mean']
+            y = ((1 / (np.sqrt(2 * np.pi) * sigma)) *
+                 np.exp(-0.5 * (1 / sigma * (bins - mu)) ** 2))
+
+            scaling = len(r_vec_err)/num_bins
+            ax.plot(bins, y*scaling, '--', color='blue', alpha=0.75, label='PDF')
+            ax.set_ylabel('num. samples normalized')
+            ax.set_xlabel('error [rad]')
+            ax.set_title(r'Angle Error Histogram ID' + str(ID1) + '-ID' + str(ID2) + ': $\mu$=' + str(round(mu, 3)) + ', $\sigma$=' + str(round(sigma, 3)))
+            ax.legend()
+            return fig, ax, stat, r_vec_err
+        else:
+            idx_n_sorted = np.argsort(n)
+
+            # assuming a certain percentage as inliers:
+            num_best_bins = int(num_bins*(0.5*perc_inliers))
+
+            # compute the mean about the most frequent values:
+            idx_best_bins = idx_n_sorted[-num_best_bins:]
+            best_error_vals = bins[idx_best_bins]
+            mean_best_errors = np.mean(best_error_vals, axis=0)
+
+            # compute a boundary to remove outliers:
+            min_offset_errors = mean_best_errors - np.min(best_error_vals, axis=0)
+            max_offset_errors = np.max(best_error_vals, axis=0) - mean_best_errors
+            print('mean_best_errors %f' % mean_best_errors)
+
+            # remove outliers
+            r_filtered_err = r_vec_err[(r_vec_err > (mean_best_errors - min_offset_errors*2.0)) &
+                                       (r_vec_err < (mean_best_errors + 2.0*max_offset_errors))]
+
+            # add a 'best fit' line
+            stat = numpy_statistics(vNumpy=np.squeeze(np.asarray(r_filtered_err)))
+            num_plot_bins = int(num_bins*(perc_inliers))
+            n_, bins_, patches_ = ax.hist(r_filtered_err, num_plot_bins, density=True, color='blue', alpha=0.75, label='Histogram (filtered)')
+            sigma = stat['std']
+            mu = stat['mean']
+            scaling = 1.0; #len(r_filtered_err)/num_plot_bins
+            y = ((1 / (np.sqrt(2 * np.pi) * sigma)) *
+                 np.exp(-0.5 * (1 / sigma * (bins_ - mu)) ** 2))
+            ax.plot(bins_, y*scaling, '--', color='green', label='PDF (filtered)')
+            ax.set_ylabel('num. samples normalized')
+            ax.set_xlabel('error [rad]')
+            ax.set_title(r'Angle Error Histogram (filtered) ID' + str(ID1) + '-ID' + str(ID2) + ': $\mu$=' + str(round(mu, 3)) + ', $\sigma$=' + str(round(sigma, 3)))
+            ax.legend()
+            return fig, ax, stat, r_filtered_err
+        pass
+
