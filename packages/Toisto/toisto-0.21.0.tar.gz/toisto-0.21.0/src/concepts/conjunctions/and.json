@@ -1,0 +1,11 @@
+{
+    "and": {
+        "example": "and you",
+        "en": "and",
+        "fi": [
+            "entä",
+            "ja"
+        ],
+        "nl": "en"
+    }
+}
