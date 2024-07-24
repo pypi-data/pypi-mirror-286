@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: pygetimportables
+Version: 0.3.0
+Summary: Python functions to get top-level importable names
+Author-Email: =?utf-8?q?Juan_Luis_Cano_Rodr=C3=ADguez?= <hello@juanlu.space>
+License: Copyright (c) 2023 by Juan Luis Cano Rodríguez <hello@juanlu.space>
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are
+        met:
+        
+        * Redistributions of source code must retain the above copyright
+          notice, this list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright
+          notice, this list of conditions and the following disclaimer in the
+          documentation and/or other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+        "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+        LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+        A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+        OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+        SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+        LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+        DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+        THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Source, https://github.com/astrojuanlu/pygetimportables
+Project-URL: Tracker, https://github.com/astrojuanlu/pygetimportables/issues
+Project-URL: Documentation, https://pygetimportables.readthedocs.io
+Requires-Python: >=3.9
+Requires-Dist: build[uv]>=1.2.0
+Requires-Dist: installer
+Requires-Dist: pyproject_hooks
+Requires-Dist: tomli; python_version < "3.11"
+Requires-Dist: validate-pyproject
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: hypothesis; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: furo; extra == "doc"
+Requires-Dist: myst-parser; extra == "doc"
+Requires-Dist: sphinx>=5; extra == "doc"
+Requires-Dist: sphinx-copybutton; extra == "doc"
+Provides-Extra: test
+Provides-Extra: doc
+Description-Content-Type: text/markdown
+
+# pygetimportables
+
+[![Documentation Status](https://readthedocs.org/projects/pygetimportables/badge/?version=latest)](https://pygetimportables.readthedocs.io/en/latest/?badge=latest)
+[![Code style: ruff-format](https://img.shields.io/badge/code%20style-ruff_format-6340ac.svg)](https://github.com/astral-sh/ruff)
+[![PyPI](https://img.shields.io/pypi/v/pygetimportables)](https://pypi.org/project/pygetimportables)
+
+Python functions to get top-level importable names from a source tree or an already built wheel.
+
+See https://discuss.python.org/t/script-to-get-top-level-packages-from-source-tree/40232?u=astrojuanlu
+
+## Installation
+
+To install, run
+
+```
+(.venv) $ pip install pygetimportables
+```
+
+## Usage
+
+To get the top-level importable names directly from a source tree:
+
+```
+>>> from pygetimportables import get_top_importables
+>>> get_top_importables(".")  # Wait a few seconds, requires working `uv pip install`
+{'pygetimportables'}
+```
+
+To get the top-level importable names from an already built wheel:
+
+```
+(.venv) $ python -m build --installer uv
+...
+(.venv) $ python -q
+>>> from pygetimportables import get_top_importables_from_wheel
+>>> get_top_importables_from_wheel("dist/pygetimportables-0.1.0+d20231204-py3-none-any.whl")  # Fast
+{'pygetimportables'}
+```
+
+## Development
+
+To run style checks:
+
+```
+(.venv) $ pip install pre-commit
+(.venv) $ pre-commit -a
+```
