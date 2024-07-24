@@ -1,0 +1,5 @@
+[console_scripts]
+ed-bridge=expedite.client.bridge.main:main
+ed-prompt=expedite.client.prompt.main:main
+ed-server=expedite.server.main:main
+
