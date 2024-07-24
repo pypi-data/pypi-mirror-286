@@ -1,0 +1,11 @@
+twitterer/__init__.py,sha256=pbLgffLxH4Nca7C7C5Si1XDaur8zNSepuVRF5rgZPCs,37
+twitterer/authenticator.py,sha256=6wFsuB9xkDdKfdZHZzorRxQWj4RiVaTw6SPCsLqE3LU,2522
+twitterer/collector.py,sha256=gO8kbDdnU4dEUjX2OwUqyQcLlUEljUAuKqqVyndRY98,2340
+twitterer/const.py,sha256=ZhaCd0edX8-P2RCGUXfwMSjAwcx5Inv6fZDtpOaj-gY,2539
+twitterer/tweet.py,sha256=gXhwXIC0ka4esu3QmI2EN6zmFs0y97jTTCXQkdG2fR8,5385
+twitterer/twitterer.py,sha256=R7TbMO70ZOp-iuhtZoGZNjJe6taNmAP8hU8NgGI_bjo,1859
+twitterer-0.0.2.dist-info/LICENSE,sha256=HurkZUyiC9Cb9YZPCBoyXnVky3H-PwD1XS-O5AaL3TI,1088
+twitterer-0.0.2.dist-info/METADATA,sha256=ZRXhLL-KTwlv6czHhZsJ_hlTZKOHaHbBjwR3TdNGg4E,2825
+twitterer-0.0.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+twitterer-0.0.2.dist-info/top_level.txt,sha256=UDIMWCe1OHJ5ScdWwD5YoV-45MakeB5ndmFuJC6P-OY,10
+twitterer-0.0.2.dist-info/RECORD,,
