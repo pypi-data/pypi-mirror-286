@@ -1,0 +1,16 @@
+odoo/addons/invader_payment_paypal/README.rst,sha256=wzcx5jocSpmbYHfEneFBDqqJSVgKCLb4vBHql-65Qxk,2237
+odoo/addons/invader_payment_paypal/__init__.py,sha256=kYJNnKRGQ0n5bRWJIoEPgRN_IzlcYzepihpGRteXVuI,44
+odoo/addons/invader_payment_paypal/__manifest__.py,sha256=NJ5C20auOLAm82stZXEE54_1KgGrVMaCFUPMY5tsMr8,702
+odoo/addons/invader_payment_paypal/i18n/invader_payment_paypal.pot,sha256=NldDRIKnH0gDpTJhdWnTKN3mdNoH92u6VDnGQ0qpTy0,1500
+odoo/addons/invader_payment_paypal/models/__init__.py,sha256=7_-2DEszpxZlJqh30KUhXhMtPxSA7HM8dkjd1FQ9NEQ,31
+odoo/addons/invader_payment_paypal/models/payment_acquirer.py,sha256=WB6toQZKBIeF-BjYGMdFX_vFSd6WKGpzcO7QQ7XhRKM,350
+odoo/addons/invader_payment_paypal/readme/CONTRIBUTORS.rst,sha256=RV-LC9ApBui251MgTBjNiPUWW8oPUsQiblNB4GSKtLg,90
+odoo/addons/invader_payment_paypal/readme/DESCRIPTION.rst,sha256=RyfcewI_QYmgOO7M-SF4PJQz6UrnP1lRL9MO6nof0YI,68
+odoo/addons/invader_payment_paypal/services/__init__.py,sha256=l2L2JmiOnSKNVAOGdakK6dojm9bSqAfIbeJozv739hM,29
+odoo/addons/invader_payment_paypal/services/payment_paypal.py,sha256=J_-eXxudj1owFuO4FsEsCnHc-UDSoXF75XOBiM6MvJU,8480
+odoo/addons/invader_payment_paypal/static/description/index.html,sha256=CG1LYDcmljPP-v86k_4o0u660COolywMHDkoUtq7bhA,11448
+odoo/addons/invader_payment_paypal/views/payment_acquirer_view.xml,sha256=H3UYZI6C2W4FLid5BSLyFede1OKABvoaR-GoMaL1JfM,460
+odoo13_addon_invader_payment_paypal-13.0.1.0.2.dev1.dist-info/METADATA,sha256=KtrCS7r2fOfpCMrVGJnKASEmfb-dkuXH7d3Tm9GKzJM,2866
+odoo13_addon_invader_payment_paypal-13.0.1.0.2.dev1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo13_addon_invader_payment_paypal-13.0.1.0.2.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_invader_payment_paypal-13.0.1.0.2.dev1.dist-info/RECORD,,
