@@ -1,0 +1,5 @@
+[console_scripts]
+tis = tweetinstone.main:main_cli
+
+[gui_scripts]
+tis-gui = tweetinstone.main:main_gui
