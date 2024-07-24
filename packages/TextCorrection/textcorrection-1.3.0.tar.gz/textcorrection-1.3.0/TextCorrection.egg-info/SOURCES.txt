@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+TextCorrection/__init__.py
+TextCorrection/config.py
+TextCorrection/dat.py
+TextCorrection/utils.py
+TextCorrection.egg-info/PKG-INFO
+TextCorrection.egg-info/SOURCES.txt
+TextCorrection.egg-info/dependency_links.txt
+TextCorrection.egg-info/requires.txt
+TextCorrection.egg-info/top_level.txt
