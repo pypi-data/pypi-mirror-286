@@ -1,0 +1,11 @@
+[orange.canvas.help]
+html-index = orangecontrib.flow.widgets:WIDGET_HELP_PATH
+
+[orange.widgets]
+Flow = orangecontrib.flow.widgets
+
+[orange.widgets.tutorials]
+flow_tutorials = orangecontrib.flow.tutorials
+
+[orange3.addon]
+flow = orangecontrib.flow

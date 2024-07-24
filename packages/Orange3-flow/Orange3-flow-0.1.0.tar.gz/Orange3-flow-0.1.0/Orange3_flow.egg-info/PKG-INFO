@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Orange3-flow
+Version: 0.1.0
+Summary: Add-on to help simplify pipelines
+License: GPLv3+
+Keywords: orange3 add-on,flow
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Orange3 Flow
+===============
+
+Flow control Orange add-on.
+
+Features
+--------
+#### List of key features
+* Control the flow of incoming data
