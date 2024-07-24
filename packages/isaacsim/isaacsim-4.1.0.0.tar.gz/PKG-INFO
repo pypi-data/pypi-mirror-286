@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: isaacsim
+Version: 4.1.0.0
+Summary: A metapackage that installs the complete version of Isaac Sim
+Author: Isaac Sim team
+License: NVIDIA Proprietary Software
+Project-URL: Home page, https://developer.nvidia.com/isaac-sim
+Project-URL: Documentation, https://docs.omniverse.nvidia.com/isaacsim/latest/index.html
+Project-URL: Forum, https://forums.developer.nvidia.com/c/omniverse/simulation/69
+Keywords: nvidia,omniverse,isaacsim
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Requires-Python: ==3.10.*
+Requires-Dist: isaacsim-app ==4.1.0.0
+Requires-Dist: isaacsim-asset ==4.1.0.0
+Requires-Dist: isaacsim-benchmark ==4.1.0.0
+Requires-Dist: isaacsim-code-editor ==4.1.0.0
+Requires-Dist: isaacsim-core ==4.1.0.0
+Requires-Dist: isaacsim-cortex ==4.1.0.0
+Requires-Dist: isaacsim-example ==4.1.0.0
+Requires-Dist: isaacsim-gui ==4.1.0.0
+Requires-Dist: isaacsim-replicator ==4.1.0.0
+Requires-Dist: isaacsim-rl ==4.1.0.0
+Requires-Dist: isaacsim-robot ==4.1.0.0
+Requires-Dist: isaacsim-robot-motion ==4.1.0.0
+Requires-Dist: isaacsim-robot-setup ==4.1.0.0
+Requires-Dist: isaacsim-ros1 ==4.1.0.0
+Requires-Dist: isaacsim-ros2 ==4.1.0.0
+Requires-Dist: isaacsim-sensor ==4.1.0.0
+Requires-Dist: isaacsim-storage ==4.1.0.0
+Requires-Dist: isaacsim-template ==4.1.0.0
+Requires-Dist: isaacsim-test ==4.1.0.0
+Requires-Dist: isaacsim-utils ==4.1.0.0
+
