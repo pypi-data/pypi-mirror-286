@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# virtualenv
+.venv
+
+/dist
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+.virtual_documents/
+*.ipynb
+
+# rye lockfiles
+/requirements*.lock
+
+/.pytest_cache
+/.ruff_cache
