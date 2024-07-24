@@ -1,0 +1,2 @@
+mpdscrobble
+tests
