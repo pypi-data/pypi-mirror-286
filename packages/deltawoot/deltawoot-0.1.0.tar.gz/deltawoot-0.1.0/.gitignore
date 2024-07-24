@@ -1,0 +1,6 @@
+venv/
+**.egg-info/
+accounts/
+**__pycache__/
+build/
+green-check-chain.png
