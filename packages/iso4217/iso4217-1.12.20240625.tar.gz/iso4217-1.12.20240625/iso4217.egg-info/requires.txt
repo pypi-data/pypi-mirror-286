@@ -1,0 +1,6 @@
+
+[:python_version == "3.5"]
+importlib-resources<3.3
+
+[:python_version > "3.5" and python_version < "3.9"]
+importlib-resources
