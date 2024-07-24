@@ -1,0 +1,2 @@
+-e ../..[psycopg2-binary]
+django-environ==0.8.1
