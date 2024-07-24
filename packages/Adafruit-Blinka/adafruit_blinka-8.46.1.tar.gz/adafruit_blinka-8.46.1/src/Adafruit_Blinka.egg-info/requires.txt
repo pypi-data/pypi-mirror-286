@@ -1,0 +1,8 @@
+Adafruit-PlatformDetect>=3.70.1
+Adafruit-PureIO>=1.1.7
+binho-host-adapter>=0.1.6
+pyftdi>=0.40.0
+adafruit-circuitpython-typing
+
+[:sys_platform == "linux" and platform_machine != "mips"]
+sysv_ipc>=1.1.0
