@@ -1,0 +1,12 @@
+erlpack/__init__.py,sha256=YF5mFMq7K5yOyPaLsA_PJgEtifCAsp8fQTDDT167kQY,347
+erlpack/_packer.py,sha256=0nsrjR_gcefVck6vIknB7i9cY28OXqLDxA3aY68sJfs,8197
+erlpack/_unpacker.py,sha256=uQzhxbwlDaXcDJ04jPASr7iH1prEBg1iNerB1SU2uto,11592
+erlpack/constants.py,sha256=8HboVitTqRoPsBz9sFHWXTQI-XhmqLiCroD9zbkLM2Q,1783
+erlpack/encoder.py,sha256=CvbXsCFnu6n7ZlMRW5zaVQ-BqE1-usfqsujZoUGKjv8,4954
+erlpack/types.py,sha256=fcJrpAUiIoiUvPTW0bYflrR8VqGE_U1j_v8IK1iVLTs,2966
+pure_py_erlpack-1.0.0.dist-info/COPYING,sha256=U8H25Xyg66gd8JT-Mj89qBV-lq1cV6IV3-3W9swhF7A,3972
+pure_py_erlpack-1.0.0.dist-info/LICENSE,sha256=hTULiL_CJGACEjbvSSmXB4hO3S7A94kxI6USwS2706c,1083
+pure_py_erlpack-1.0.0.dist-info/METADATA,sha256=RMt5-3-UdcjADrrvNbS2nhIefgYn8TpzfHlW5esWfEM,301
+pure_py_erlpack-1.0.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pure_py_erlpack-1.0.0.dist-info/top_level.txt,sha256=qLc3oeLn8xA-vgLhBpMN31enNAX7fXh3oDyr6Pn0XGg,8
+pure_py_erlpack-1.0.0.dist-info/RECORD,,
