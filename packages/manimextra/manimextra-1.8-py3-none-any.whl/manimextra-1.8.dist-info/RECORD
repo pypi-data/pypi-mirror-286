@@ -1,0 +1,15 @@
+ManimExtra/__init__.py,sha256=h4suXNNPnKt134M4vexLZm8PXlZTTtp_B2o1RoGtLmc,75
+ManimExtra/animations/__init__.py,sha256=_l1JPzlv4o7C9aOvTQiBlZaiUiGx7e1FRefq6ZlgCH4,26
+ManimExtra/animations/fancy_label.py,sha256=O1aeQzKpSYnXRy45g2agKgy8Pzej2KRdVUHBQ0_nShI,542
+ManimExtra/diagrams/__init__.py,sha256=ERLStYP7fmNAfwF7kNRCjlaXvM0KoHp2R_mVsAXguK4,18
+ManimExtra/diagrams/pie.py,sha256=ZkBvhuQQIchiF_L3xMv7UrK9V4OrW0oYhbFtaWu-bHI,2869
+ManimExtra/geometry/__init__.py,sha256=tKIt1ceQjcPGqQZaxA0GNgMgSnZJ4XlcBWyjx7XTVKM,153
+ManimExtra/geometry/cevians_and_perpendiculars.py,sha256=mEacb--CxiOTGDE_9Ut-Kd5pCgooEjNl0d_st-T4zl8,4508
+ManimExtra/geometry/circles.py,sha256=gLRENX8ZtVAnN5DKIKp4KDU4m5j2xTONvrawx_rA-Go,1501
+ManimExtra/geometry/default.py,sha256=D4PyQ4Upaxv0HT5VCHN5iEcCY37I9k_E22XN_NsYCeg,5518
+ManimExtra/geometry/intersection.py,sha256=PuM6bweg4ET3RfXRxlXBjWgJwWinPoCoGjlDYUOg9VI,2052
+ManimExtra/geometry/triangle_centers.py,sha256=eUajMdTZQab_cc0rJHanmwqbGiviiu58PH5WPeaC2Po,5858
+ManimExtra/useful_in_development.py,sha256=9dTIPcp3HFymbCTz0A7vsBTBcaQgQP2SKOMYOmtkCc4,842
+manimextra-1.8.dist-info/METADATA,sha256=RRZ8-CbWiWrAOwQrOSmEZETABhPMp60fmm0pybRmuOQ,424
+manimextra-1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+manimextra-1.8.dist-info/RECORD,,
