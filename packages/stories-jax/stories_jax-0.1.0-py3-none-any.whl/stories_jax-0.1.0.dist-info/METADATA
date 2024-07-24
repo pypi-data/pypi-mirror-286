@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: stories-jax
+Version: 0.1.0
+Summary: Learn spatially informed Waddington-like potentials for single-cell gene expression
+Author: Geert-Jan Huizing
+Author-email: gjhuizing@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: anndata (>=0.10.7,<0.11.0)
+Requires-Dist: cellrank (>=2.0.4,<3.0.0)
+Requires-Dist: flax (>=0.8.2,<0.9.0)
+Requires-Dist: jax (>=0.4.25,<0.5.0)
+Requires-Dist: jaxlib (>=0.4.25,<0.5.0)
+Requires-Dist: jaxopt (>=0.8.3,<0.9.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: optax (>=0.2.2,<0.3.0)
+Requires-Dist: orbax-checkpoint (>=0.5.20,<0.6.0)
+Requires-Dist: ott-jax (>=0.4.5,<0.5.0)
+Requires-Dist: scikit-learn (>=1.5.1,<2.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: tqdm (>=4.66.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Learning cell fate landscapes from spatial transcriptomics using Fused Gromov-Wasserstein
+
+[![codecov](https://codecov.io/gh/gjhuizing/stories/graph/badge.svg?token=5DWDYPAUYI)](https://codecov.io/gh/gjhuizing/stories)
+[![Tests](https://github.com/cantinilab/stories/actions/workflows/main.yml/badge.svg)](https://github.com/cantinilab/stories/actions/workflows/main.yml)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+STORIES is a novel trajectory inference method for spatial transcriptomics data profiled at several time points, relying on Wasserstein gradient flow learning and Fused Gromov-Wasserstein. [Read the preprint here](https://www.biorxiv.org/content/xxxxx) and [the documentation here](https://stories.rtfd.io)!
+
+![introductory figure](docs/_static/fig1.png)
+
+## Install the package
+
+STORIES is implemented as a Python package seamlessly integrated within the scverse ecosystem. It relies on JAX for fast GPU computations and JIT compilation, and OTT for Optimal Transport computations.
+
+### via PyPI (recommended)
+
+```bash
+pip install stories-jax
+```
+
+### via GitHub (development version)
+
+```bash
+git clone git@github.com:cantinilab/stories.git
+pip install ./stories/
+```
+
+## Getting started
+
+STORIES takes as an input an AnnData object, where omics information and spatial coordinates are stored in `obsm`, and `obs` contains time information, and optionally a proliferation weight. Visit the **Getting started** and **API** sections for tutorials and documentation.
+
