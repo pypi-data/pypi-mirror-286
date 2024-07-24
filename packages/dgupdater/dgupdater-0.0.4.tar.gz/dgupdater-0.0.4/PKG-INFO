@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dgupdater
+Version: 0.0.4
+Summary: A CLI based auto updation assistant tool for python applications
+Author: DarkGlance
+Author-email: darkglance.developer@gmail.com
+Project-URL: Github, https://github.com/Ashif4354/dgupdater
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click>=7.0
+
+You need to have a mongodb database preferrably on cloud. You can use mongodb atlas for the same, MongoDB have a serverless db cluster which is very cheap (0.1$ / 1M reads). they also have a good free tier. After configuring, get the connection url and save it.
+
