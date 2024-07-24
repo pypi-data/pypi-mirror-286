@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: aravis-python
+Version: 0.8.31
+Summary: Python Binding for aravis
+License: GNU General Public License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: COPYING.txt
+
+# Aravis python Binding
+
+
+## Requirement
+
+- pygobject
+### Ubuntu
+1. Execute `sudo apt install libgirepository1.0-dev gcc libcairo2-dev pkg-config python3-dev` to install the build dependencies
+2. Execute `pip install pycairo to build and install Pycairo`
+3. Execute `pip install PyGObject to build and install PyGObject`
+
+### Windows
+
+
+
+## Usage
+Execute `pip install -i https://test.pypi.org/simple/ aravis-python`
+### Minimum test case
+```
+import aravis
+from aravis import Aravis
+Aravis.update_device_list()
+connected_num_device = Aravis.get_n_devices()
+print("Device number: {} ".format(connected_num_device))
+```
