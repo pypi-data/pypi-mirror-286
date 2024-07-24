@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: autovid
+Version: 0.0.1
+Summary: Generate Reddit Text-to-Speech videos
+Home-page: UNKNOWN
+Author: Ajinkya Talekar
+Author-email: ajinkyat@buffalo.edu
+License: UNKNOWN
+Keywords: python,reddit,tts,video generator,automation
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: selenium
+Requires-Dist: moviepy
+Requires-Dist: gtts
+Requires-Dist: praw
+
+UNKNOWN
+
