@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+GrammarEnhancer/__init__.py
+GrammarEnhancer/dat.py
+GrammarEnhancer.egg-info/PKG-INFO
+GrammarEnhancer.egg-info/SOURCES.txt
+GrammarEnhancer.egg-info/dependency_links.txt
+GrammarEnhancer.egg-info/requires.txt
+GrammarEnhancer.egg-info/top_level.txt
