@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+xml_augmenter/__init__.py
+xml_augmenter/visualizer.py
+xml_augmenter.egg-info/PKG-INFO
+xml_augmenter.egg-info/SOURCES.txt
+xml_augmenter.egg-info/dependency_links.txt
+xml_augmenter.egg-info/requires.txt
+xml_augmenter.egg-info/top_level.txt
