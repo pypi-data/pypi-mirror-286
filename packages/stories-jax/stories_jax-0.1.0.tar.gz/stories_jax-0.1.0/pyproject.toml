@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "stories-jax"
+packages = [
+    { include="stories", from="." },
+]
+version = "0.1.0"
+description = "Learn spatially informed Waddington-like potentials for single-cell gene expression"
+authors = ["Geert-Jan Huizing <gjhuizing@gmail.com>", "Gabriel Peyré", "Laura Cantini"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+anndata = "^0.10.7"
+jaxlib = "^0.4.25"
+jax = "^0.4.25"
+optax = "^0.2.2"
+flax = "^0.8.2"
+jaxopt = "^0.8.3"
+numpy = "^1.26.4"
+tqdm = "^4.66.2"
+ott-jax = "^0.4.5"
+orbax-checkpoint = "^0.5.20"
+scikit-learn = "^1.5.1"
+seaborn = "^0.13.2"
+cellrank = "^2.0.4"
+
+[tool.coverage.report]
+exclude_also = [
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "@(abc\\.)?abstractmethod",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
