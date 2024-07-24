@@ -1,0 +1,12 @@
+async_pyserial/async_pyserial_core.pyi,sha256=RQYnrZ10kAdE4oAi7Ov-gEn4rmScU3zWsBWYs2Wi-dM,591
+async_pyserial/__init__.py,sha256=6uGbKlYnC6XyZb7M0ZBY4tWssnymu7pf8Cy1cDRLIGc,1798
+async_pyserial/common.py,sha256=C2auxjTyrBUSvMdRuXKGD11GSUCmaQMjDAAp81x1zxc,1779
+async_pyserial/async_pyserial_core.cpython-311-x86_64-linux-musl.so,sha256=7-QUg-hijl8Lfg7TZJNnhJcyZM4-wLPgJQNnhr2Sc1Q,3959769
+async_pyserial/native_serialport.py,sha256=GxQNkPZ0Y-jRKzxe5jppxMihnoJ4v-uiVdfDKpOagoI,761
+async_pyserial-0.1.2.dist-info/LICENSE,sha256=c7NmZZK7Eu8JF7Wj4Ooc5KnBWBZM7Km-JoqTFtKorGE,1084
+async_pyserial-0.1.2.dist-info/WHEEL,sha256=etMAwP858lPuhu6IphTKLIZiBklkmZ7Y71lEFr8KGPU,112
+async_pyserial-0.1.2.dist-info/top_level.txt,sha256=ZYJ--QOjI99KGE_T-Dh8B1D01DKcnf6F2okN7SU1A78,15
+async_pyserial-0.1.2.dist-info/RECORD,,
+async_pyserial-0.1.2.dist-info/METADATA,sha256=eQMOhaGEXB1974lxfrQXH4Bz13Nv_K4QEHpQNBI0arQ,4271
+async_pyserial.libs/libgcc_s-a3a07607.so.1,sha256=5ptIUeAzZweNZrFehN0_Bb5B0FcJgux7NbAFoU8vwwo,148041
+async_pyserial.libs/libstdc++-496613c0.so.6.0.32,sha256=AwZhL5WFT99I2Q6vIxXOhW7qddfuOZ1xecxiP9QTVY4,3494361
