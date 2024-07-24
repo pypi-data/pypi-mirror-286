@@ -1,0 +1,14 @@
+faiss-cpu
+flask
+googledrivedownloader
+numpy
+ollama
+pandas
+scikit-learn
+scipy
+sentencepiece
+torch
+tqdm
+transformers
+huggingface_hub
+hqq
