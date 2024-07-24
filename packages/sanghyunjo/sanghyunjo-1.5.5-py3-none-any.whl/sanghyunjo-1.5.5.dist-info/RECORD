@@ -1,0 +1,14 @@
+sanghyunjo/__init__.py,sha256=btrn0zMKTBFxtyM_9CAcg2Q1QIHlsYhhSoLFNCAIKtk,245
+sanghyunjo/ai_utils.py,sha256=p5aB-4o36bQhM7qhPg8q3i_yUr5CjJs0HHUYPOQkBrw,707
+sanghyunjo/cv.py,sha256=X70GMKuTJh2fMrSd-L5t-JRtlolNgZ6xyZuRlQ5okuA,8916
+sanghyunjo/cv_utils.py,sha256=ws_NhkFpaJe-jqZ7MIZ7BDlZaG2cckXBDxzjiV_5jp8,19682
+sanghyunjo/json_utils.py,sha256=_0Buqy9MUwL6s6FXYxejJZ0v66bc_59JJmV-gdUg95s,358
+sanghyunjo/misc.py,sha256=rRCapDb7grdbM8SZmJusw4jbrsajtKAsMwpV237lPfM,3289
+sanghyunjo/xml_utils.py,sha256=3KuFIBEwFOdCvG81FSqmTnJptXi2zdHKIrZBh2tjXYU,2897
+sanghyunjo/fonts/Times New Roman MT Std.otf,sha256=-YvvSENOXZxyWmqvCnrsfj2FN0o1HSKgs8jN0GJj7Ww,34888
+sanghyunjo-1.5.5.data/data/fonts/Times New Roman MT Std.otf,sha256=-YvvSENOXZxyWmqvCnrsfj2FN0o1HSKgs8jN0GJj7Ww,34888
+sanghyunjo-1.5.5.dist-info/LICENSE,sha256=fTVLSVmlCwpIOHsZLFDBMkS3_sXD9k2k9C_Xb5cQgk8,1087
+sanghyunjo-1.5.5.dist-info/METADATA,sha256=U4z_xFY1mHnM7_QMEx3wqNWh4pDPHYdnCE_Rw1gKhh4,367
+sanghyunjo-1.5.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sanghyunjo-1.5.5.dist-info/top_level.txt,sha256=XaX_ncGwncKbd0DQRAvPC2h18MFSPk3TzV1U07ALW90,11
+sanghyunjo-1.5.5.dist-info/RECORD,,
