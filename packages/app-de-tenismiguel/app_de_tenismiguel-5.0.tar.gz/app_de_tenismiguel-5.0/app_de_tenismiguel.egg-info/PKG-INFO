@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: app_de_tenismiguel
+Version: 5.0
+Summary: Esta es mi primera prueba para pypi
+Home-page: https://google.com
+Author: Miguel Zamit
+Author-email: tenis@gmail.com
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mensaje
+
+Un video mas mi gente para peldel el tiempo

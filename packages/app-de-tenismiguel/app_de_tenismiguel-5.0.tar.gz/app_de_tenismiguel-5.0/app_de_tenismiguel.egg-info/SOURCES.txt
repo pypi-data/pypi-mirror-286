@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+app_de_tenismiguel.egg-info/PKG-INFO
+app_de_tenismiguel.egg-info/SOURCES.txt
+app_de_tenismiguel.egg-info/dependency_links.txt
+app_de_tenismiguel.egg-info/top_level.txt
