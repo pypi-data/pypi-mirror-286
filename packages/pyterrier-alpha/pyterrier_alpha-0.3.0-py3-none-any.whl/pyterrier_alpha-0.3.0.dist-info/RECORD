@@ -1,0 +1,10 @@
+pyterrier_alpha/__init__.py,sha256=lvdcLm1kFZ7SURNa-XDewZPm1grEK7IJbAgJHFtgups,278
+pyterrier_alpha/artifact.py,sha256=l--TvqJ2HWzYttssLl_KPOXGtQ6oUJcT5gt4IDKpan8,14118
+pyterrier_alpha/dataframe_builder.py,sha256=KEGyEwXLMx5tNBC_PdxtUBnOLngqCCcBbKP0LNFttu4,1712
+pyterrier_alpha/io.py,sha256=9wlzmqpOJZUss5CS_7dzQxet2Rk4diX4SGN6PIAJkqs,11283
+pyterrier_alpha/rbo.py,sha256=lZa4eUYDdoPIRotEQkFh6vJtkKaVw_EzArOsWZz9JQk,1670
+pyterrier_alpha/validate.py,sha256=48_vuFGkkrN_FOWymCa15T1GlGgqmo2zgTW9wQlE9v8,4918
+pyterrier_alpha-0.3.0.dist-info/METADATA,sha256=o1RjrE2SevBZac2wfHvzM7yvQRvQaBvg9NKR4gUtIvY,9069
+pyterrier_alpha-0.3.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pyterrier_alpha-0.3.0.dist-info/top_level.txt,sha256=s2wL2FWhjrkC6CDuI2Fgpl7lEK3sHj9rc7-MJ9zHl-A,16
+pyterrier_alpha-0.3.0.dist-info/RECORD,,
