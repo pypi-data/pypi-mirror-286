@@ -1,0 +1,2 @@
+[console_scripts]
+pdfa3extractor = pdfa3extractor.extractor:main
