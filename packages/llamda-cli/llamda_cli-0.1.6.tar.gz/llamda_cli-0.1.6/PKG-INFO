@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: llamda-cli
+Version: 0.1.6
+Summary: Collects docs from a doc folder into a single xml file for use by claude
+License: MIT
+Author: lumpenspace
+Author-email: 125578322+lumpenspace@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: console (>=0.9907,<0.9908)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: rich-click (>=1.8.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# llamda-cli
+
+A set of command line tools for working with LLMs.
+
+## Installation
+
+To install the CLI, run:
+
+```bash
+pip install llamda-cli
+```
+
+## Usage
+
+```bash
+lld [OPTIONS] COMMAND [ARGS]...
+```
+
+### `lld docs`
+
+Useful in case you use [Anthropic's Claude](https://console.anthropic.com/).
+
+Collects all markdown files from a directory (recursively) and writes them to an xml file.
+
+```bash
+ Usage: lld docs [OPTIONS] PATH                                                                
+                                                                                               
+ Collect docs from a path and write them to an xml file ready for Anthropic's Claude.          
+                                                                                               
+╭─ Options ───────────────────────────────────────────────────────────────────────────────────╮
+│ --outfile  -o  PATH  The output file path. Defaults to: /{current_dir}/{source_dirname}.xml │
+│ --verbose  -v        Verbose output.                                                        │
+│ --yes      -y        Automatically confirm all prompts.                                     │
+│ --help               Show this message and exit.                                            │
+╰─────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+
+Output file format:
+
+```xml
+<collection>
+<title>Title</title>
+<document><path>path/to/file</path>
+<content>
+# Document Title
+
+Document content
+</content>
+</document>
+...
+</collection>
+```
+
