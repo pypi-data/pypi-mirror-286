@@ -1,0 +1,37 @@
+Metadata-Version: 2.3
+Name: TravelInsLib
+Version: 0.0.1
+Summary: A small example package
+Project-URL: Homepage, https://github.com/Abdu-AJ/myLibrary.git
+Project-URL: Bug Tracker, https://github.com/Abdu-AJ/myLibrary.git
+Author-email: AbdulJalil <x22241388@student.ncirl.ie>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: requests>=2.25.1
+Description-Content-Type: text/markdown
+
+# Travel Insurance Premium Calculator
+
+## Overview
+
+TravelInsLib is a Python library designed to calculate travel insurance premiums based on various risk factors. This utility assists in determining the insurance premium rates by evaluating the age, health status, and the travel advisory risk score of the destination country.
+
+## Features
+
+- **Country Risk Assessment**: Integrates with travel advisory services to fetch real-time risk scores for specified countries.
+- **Health Condition Consideration**: Adjusts rates based on common health conditions like heart disease and diabetes.
+- **Age Sensitivity**: calculations consider the age of the insured, adjusting rates accordingly.
+
+## Installation
+
+Install the Travel Insurance Premium Calculator library using pip:
+
+## Dependencies
+- requests
+
+```bash
+pip install -i https://test.pypi.org/simple/ TravelInsLib==0.0.2

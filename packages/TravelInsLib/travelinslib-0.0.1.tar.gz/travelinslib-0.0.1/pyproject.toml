@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "TravelInsLib" 
+version = "0.0.1"
+authors = [
+    { name = "AbdulJalil", email = "x22241388@student.ncirl.ie" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+
+dependencies = [
+    "requests>=2.25.1"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Abdu-AJ/myLibrary.git"
+"Bug Tracker" = "https://github.com/Abdu-AJ/myLibrary.git"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/TravelSuLib"]
