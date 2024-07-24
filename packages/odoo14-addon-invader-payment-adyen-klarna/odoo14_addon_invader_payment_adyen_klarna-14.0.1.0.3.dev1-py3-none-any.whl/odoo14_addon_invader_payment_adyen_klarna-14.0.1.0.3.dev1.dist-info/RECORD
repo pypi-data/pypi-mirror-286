@@ -1,0 +1,16 @@
+odoo/addons/invader_payment_adyen_klarna/README.rst,sha256=WyzfWi0JWSRotPn9gsx2I3KczXhZAq9JrJO_o2ay7nA,2290
+odoo/addons/invader_payment_adyen_klarna/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/invader_payment_adyen_klarna/__manifest__.py,sha256=6w8eY-zSg6RlkHYmLXsEy-0PTcg12-LdFL2s1j4Olo4,455
+odoo/addons/invader_payment_adyen_klarna/i18n/invader_payment_adyen_klarna.pot,sha256=uZZi2ed9YuZ6KM9adBa4t6zw76mmWYX9agBOWXZUkSI,1740
+odoo/addons/invader_payment_adyen_klarna/models/__init__.py,sha256=lGAwKEWOMmHH31W4JlreXwsuIc4ekCdROsIRKiGzSB0,64
+odoo/addons/invader_payment_adyen_klarna/models/invader_payable.py,sha256=Fa_ifNLoiS6SB31WZx3WnE6nlScxurtRfdNchJIrULg,2927
+odoo/addons/invader_payment_adyen_klarna/models/payment_transaction.py,sha256=iQuNFmH6xVHRbYDn9X9WmYzsRB_FLbxlBXoe1K2Z5rU,893
+odoo/addons/invader_payment_adyen_klarna/readme/CONFIGURE.rst,sha256=9_btzv7IrRPmG8iPJxNQkOw4p7WKs9wI3FodcwUoo-8,40
+odoo/addons/invader_payment_adyen_klarna/readme/CONTRIBUTORS.rst,sha256=SHWfDXUa7QYt85exbW4Epv9e3f29NdjvRM6VVfyaN4U,48
+odoo/addons/invader_payment_adyen_klarna/readme/DESCRIPTION.rst,sha256=s3Dgw7WttgYvETgEXqdAbC-_ENDvfgbyfx7Zyfb2ygw,89
+odoo/addons/invader_payment_adyen_klarna/readme/HISTORY.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/invader_payment_adyen_klarna/static/description/index.html,sha256=7B7SSpDIXCG0wj0ngrSy2ZLwMQg5zBlWNo-JDvxVf_M,11582
+odoo14_addon_invader_payment_adyen_klarna-14.0.1.0.3.dev1.dist-info/METADATA,sha256=lHCbTT6McrOO_wac0qaf0t8x6Ir5dSj4DiveGJg8dp8,2905
+odoo14_addon_invader_payment_adyen_klarna-14.0.1.0.3.dev1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo14_addon_invader_payment_adyen_klarna-14.0.1.0.3.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_invader_payment_adyen_klarna-14.0.1.0.3.dev1.dist-info/RECORD,,
