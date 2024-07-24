@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: graphslim
+Version: 1.0.2
+Summary: Slimming the graph data for graph learning
+Author: Rockcor
+Author-email: jshmhsb@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Requires-Dist: click >=8.1.0
+Requires-Dist: deeprobust
+Requires-Dist: gdown
+Requires-Dist: matplotlib >=3.8.4
+Requires-Dist: networkit >=11.0
+Requires-Dist: networkx >=3.1
+Requires-Dist: numpy >=2.0.0
+Requires-Dist: ogb >=1.3.0
+Requires-Dist: PyGSP >=0.5.1
+Requires-Dist: scikit-learn >=1.4.0
+Requires-Dist: scipy >=1.14.0
+Requires-Dist: sortedcontainers >=2.4.0
+Requires-Dist: torch >=2.0.0
+Requires-Dist: torch-geometric >=2.4.0
+Requires-Dist: tqdm >=4.0.0
+
