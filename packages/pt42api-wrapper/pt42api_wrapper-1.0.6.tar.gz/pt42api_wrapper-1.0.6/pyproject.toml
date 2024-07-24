@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pt42api_wrapper"
+version = "1.0.6"
+authors = [
+  { name="42 Portugal", email="root@42porto.com" },
+]
+description = "A python package that simplifies the process of making API requests to 42 Portugal's API."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.31.0,<2.32.0",
+    "sentry-sdk>=2.5.0,<2.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/42-Portugal/pt-api-wrapper"
+Issues = "https://github.com/42-Portugal/pt-api-wrapper/issues"
