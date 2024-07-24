@@ -1,0 +1,14 @@
+tencentcloud/__init__.py,sha256=QmXOJ9pIMQ2JrgIxi5k_B3zUXp_w66REYL9AppLYtgg,631
+tencentcloud/mongodb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/mongodb/v20180408/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/mongodb/v20180408/errorcodes.py,sha256=iPVNpLs3OobRIbW2WUHguGSPDSZfR1BJZOqiW9F9n28,3903
+tencentcloud/mongodb/v20180408/models.py,sha256=J-4PKHcnuJueHQ6YfrAHugV3ImK_jrgnUXtupgT7puw,79240
+tencentcloud/mongodb/v20180408/mongodb_client.py,sha256=LPLvUOeg8pyXAn1k5RdZaqWrnYSQ0aXJ-ioTuE92R3Q,13654
+tencentcloud/mongodb/v20190725/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/mongodb/v20190725/errorcodes.py,sha256=gVLZqB0hb5mcc2Bc0RDZd0xlLuZymXVHOYCuAsciIfE,8238
+tencentcloud/mongodb/v20190725/models.py,sha256=Oas__r2S1gtW9kn-IopjqCv5_pg-P2s-_dSGzWNPx_o,304168
+tencentcloud/mongodb/v20190725/mongodb_client.py,sha256=hBcToEHcEFVz3ha-gELWnb3_SHx8cvvLg7cvWd_oQd0,49221
+tencentcloud_sdk_python_mongodb-3.0.1196.dist-info/METADATA,sha256=qHoW8MLy4P-D_v0YrOyn4c3JEHGcGehB2n3GPtzaNuA,1512
+tencentcloud_sdk_python_mongodb-3.0.1196.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tencentcloud_sdk_python_mongodb-3.0.1196.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_mongodb-3.0.1196.dist-info/RECORD,,
