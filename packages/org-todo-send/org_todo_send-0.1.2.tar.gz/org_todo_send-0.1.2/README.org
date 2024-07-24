@@ -1,0 +1,19 @@
+#+TITLE: org-todo-send
+I made this little utility to facilitate keeping track of tasks. I take meeting notes in an org file, and action items get a TODO headline tagged with the person it's assigned to. This script reads an org file and sends each person all of their TODOs in a neatly formatted message via Signal.
+
+This package is subject to change as my needs shift and is provided as is.
+
+* Installation
+This package is available on [[https://pypi.org/project/org-todo-send/][pypi]].
+
+* Usage
+- See [[file:usage.md][usage.md]]
+- The expected TOML file is simply a list of names with the number associated. [[file:tests/recipients_test.toml][See the test toml for an example.]]
+- This package relies on the [[https://github.com/bbernhard/signal-cli-rest-api][Signal REST API]].
+* Contributing
+My development environment for this project relies on using a nix flake and poetry, facilitated by devenv. To get set up, you'll need nix package manager, and direnv with nix-direnv installed. Once you have those, entering the project directory should automatically activate the flake and install everything, giving you a local environment with all of the dependencies provided.
+* Features to add
+- [ ] message styling
+- [ ] tests
+- [ ] automated testing and deployment with actions
+- [ ] deadlines and timestamps in message
