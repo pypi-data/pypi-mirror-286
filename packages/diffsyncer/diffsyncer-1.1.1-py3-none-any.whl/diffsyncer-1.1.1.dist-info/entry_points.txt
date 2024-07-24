@@ -1,0 +1,4 @@
+[console_scripts]
+diffsyncer = diffsyncer.cli:cli
+ds = diffsyncer.cli:cli
+
