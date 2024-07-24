@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jobsimi-apm-python
+Version: 0.0.1
+Summary: Agent Package Manager things
+Home-page: https://github.com/jobsimi/apm
+Author: jobsimi
+Author-email: jobsimi@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.16.0
