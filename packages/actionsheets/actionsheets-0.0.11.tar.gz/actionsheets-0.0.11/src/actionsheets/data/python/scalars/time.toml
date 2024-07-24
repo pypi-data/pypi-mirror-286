@@ -1,0 +1,102 @@
+language = "python"
+parent = "python.scalars"
+name = "time"
+title = "Time"
+description = "Time representation"
+code = "from datetime import time"
+
+[create]
+section = "Create"
+
+[create.time]
+action = "From hms"
+code = "time(hour, minute, second)"
+
+[create.current]
+action = "Current time"
+code = "datetime.now().time()"
+
+[create.time.max]
+action = "Latest representable time"
+code = "time.max"
+
+[create.str.time]
+action = "Time from any valid [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) time string"
+code = "time.fromisoformat(time_str)"
+details = "e.g. `23:59:01`"
+
+[create.seconds.start]
+action = "From total seconds since start of day"
+code = "(datetime.min + timedelta(seconds=7321.5)).time()"
+
+
+[test]
+section = "Test"
+
+[test.equal]
+action = "Same moment in time"
+code = "x == y"
+details = "Up to `x.resolution` precision (usually 1μs)"
+
+[test.before]
+action = "Happens before _y_"
+code = "x < y"
+
+[test.after]
+action = "Happens after _y_"
+code = "x > y"
+
+[extract]
+section = "Extract"
+
+[extract.hour]
+action = "Hour"
+code = "x.hour"
+
+[extract.minute]
+action = "Minute"
+code = "x.minute"
+
+[extract.second]
+action = "Second"
+code = "x.second"
+
+[extract.microsecond]
+action = "Microsecond"
+code = "x.microsecond"
+
+[extract.eps]
+action = "Smallest representable time difference"
+code = "time.resolution"
+
+
+[convert]
+section = "Convert"
+
+[convert.float]
+action = "Total seconds"
+code = "?"
+
+[convert.str]
+action = "Format time as [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)"
+code = "x.isoformat()"
+details = "e.g., `23:59:00`"
+
+[convert.str.hm]
+action = "Format datetime as HH:mm"
+code = "x.strftime('%H:%M')"
+details = "e.g., `23:59`"
+
+[convert.str.hms]
+action = "Format datetime as HH:mm:ss"
+code = "x.strftime('%H:%M:%S')"
+details = "e.g., `23:59:00`"
+
+[convert.str.long]
+action = "Format readable datetime of consistent length"
+code = "x.ctime()"
+details = "e.g., `Sun Jan  1 23:59:00 2023`"
+
+[convert.tuple]
+action = "Named tuple"
+code = "x.timetuple()"

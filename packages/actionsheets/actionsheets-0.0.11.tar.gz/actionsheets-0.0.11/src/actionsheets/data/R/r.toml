@@ -1,0 +1,135 @@
+language = "R"
+parent = ""
+name = "r"
+title = "R"
+
+
+[source]
+section = "Sourcing"
+description = "Running an R script"
+
+[source.file]
+action = "Run R script file"
+code = "source('file.R')"
+
+[source.file.path]
+action = "Get sourced file from within script"
+code = "as.character(sys.call(1))[2]"
+details = "Does not work during start-up!"
+
+[source.file.dir]
+action = "Get sourced directory from within script"
+code = "dirname(as.character(sys.call(1))[2])"
+
+
+[options]
+section = "Options"
+
+[options.error.debug]
+action = "Enable debug (browse) on error"
+code = "options(error=recover)"
+
+[options.warn.error]
+action = "Treat warnings as errors"
+code = "options(warn=2)"
+
+[options.traceback]
+action = "More concise (readable) traceback"
+code = "options(error=function() traceback(max.lines=3))"
+
+[options.scipen]
+action = "Disable scientific notation"
+code = "options(scipen=999)"
+
+
+[version]
+section = "Version checks"
+
+[version.gte]
+action = "Run code conditional on R version being later or equal than the given version number"
+code = "if (compareVersion(paste(version$major, version$minor, sep='.'), '3.6.0') >= 0)"
+
+
+[rng]
+section = "Random number generation"
+
+[rng.legacy]
+action = "Use legacy RNG (R<3.6) for newer R versions"
+code = """
+if (compareVersion(
+    paste(version$major, version$minor, sep='.'),
+    '3.6.0') >= 0
+) {
+    RNGkind(sample.kind='Rounding')
+}
+"""
+details = "A fix to reproduce RNG of R 3.5.0, for reproducing old results"
+
+
+[output]
+section = "Output"
+
+[output.cat]
+action = "Output object"
+code = "cat(x)"
+
+[output.cat.str]
+action = "Output string"
+code = "cat('hello')"
+
+[output.print]
+action = "Print object"
+code = "print(x)"
+
+[output.print.string]
+action = "Print string"
+code = "print('hello')"
+
+[output.msg]
+action = "Show message"
+code = "message('msg')"
+
+[output.warning]
+action = "Show warning"
+code = "warning('warning')"
+
+[output.warning.now]
+action = "Show warning right now"
+code = "warning('warning', .immediate=TRUE)"
+
+[output.error]
+action = "Trigger and show error"
+code = "stop('this is serious')"
+
+[output.redirect.file]
+action = "Redirect output to file"
+code = "sink('log.txt')"
+details = "Use sink() to restore"
+
+[output.capture.str]
+action = "Capture any output as string"
+code = "txt = capture.output({...})"
+
+[output.suppress.object]
+action = "Suppress automatic printing of object in interactive mode"
+code = "invisible(x)"
+
+[output.suppress]
+action = "Suppress all output"
+code = "capture.output({...})"
+
+[output.suppress.sink]
+code = "sink('nul:')"
+details = "'/dev/null' on linux?"
+
+[output.suppress.msg]
+action = "Suppress messages"
+code = "suppressMessages({...})"
+
+[output.suppress.msg.onload]
+action = "Suppress package messages on load"
+code = "suppressPackageStartupMessages({...})"
+
+[output.suppress.warnings]
+action = "Suppress warnings"
+code = "suppressWarnings({...})"

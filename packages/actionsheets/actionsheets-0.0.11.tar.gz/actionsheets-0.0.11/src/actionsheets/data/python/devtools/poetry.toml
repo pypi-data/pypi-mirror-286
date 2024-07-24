@@ -1,0 +1,129 @@
+language = "shell"
+parent = "python.devtools"
+name = "poetry"
+title = "poetry"
+description = """
+Package management tool. Manages dependencies, package setup and building using the standardized pyproject.toml file.
+This replaces the need for setup.py, requirements.txt, MANIFEST.in and Pipfile.*.
+Poetry isolates the virtualenv from the project.
+"""
+
+[new]
+section = "New"
+
+[new.project]
+action = "Start a new Python project"
+code = "poetry new --src $pkg"
+
+[new.env]
+action = "Initialize poetry for pre-existing project"
+code = "poetry init"
+
+
+[info]
+section = "Info"
+
+[info.pkg.list]
+action = "List available packages"
+code = "poetry show"
+
+
+[add]
+section = "Add packages"
+
+[add.pkg]
+action = "Add specific package(s)"
+code = "poetry add $pkg1 $pkg2"
+
+[add.pkg.latest]
+action = "Add package(s), force install latest"
+code = "poetry add $pkg1@latest"
+
+[add.pkg.version]
+action = "Add a package for a specific version"
+code = "poetry add $pkg==1.0.1"
+
+[add.dev.pkg]
+action = "Add a dev package"
+code = "poetry add -D $pkg"
+
+[add.pkg.git]
+action = "Add git dependency"
+code = "poetry add git+https://github.com/niekdt/actionsheets.git"
+
+[add.pkg.git.release]
+action = "Add git dependency with version"
+code = "poetry add git+https://github.com/niekdt/actionsheets.git#0.1.0"
+
+[add.pkg.git.branch]
+action = "Add git dependency on branch"
+code = "poetry add git+https://github.com/niekdt/actionsheets.git#main"
+
+[add.pkg.local]
+action = "Add local dependency"
+code = "poetry add ./my-package/"
+
+[add.pkg.local.archive]
+action = "Add local dependency archive"
+code = "poetry add ../my-package/dist/my-package-0.1.0.tar.gz"
+
+
+[update]
+section = "Update packages"
+
+[update.poetry]
+action = "Update poetry"
+code = "poetry self update"
+
+[update.pkg.all]
+action = "Update all packages"
+code = "poetry update"
+
+[update.pkg.all.ssh]
+action = "Update all packages, including packages from (private) Git-SSH repositories with passphrase"
+code = "poetry update -vv"
+details = "Without the `-vv` option, poetry runs forever if a password is required for the SSH key"
+
+[update.pkg]
+action = "Update specific package(s)"
+code = "poetry update $pkg1 $pkg2"
+
+
+[remove]
+section = "Remove packages"
+
+[remove.pkg]
+action = "Remove package(s)"
+code = "poetry remove $pkg1 $pkg2"
+
+[remove.lock]
+action = "Remove dependencies not specified in lock file"
+code = "poetry install --sync"
+
+
+[save]
+section = "Save state"
+
+[save.lock]
+action = "Generate lock file"
+code = "poetry lock"
+
+[save.reqs]
+action = "Export environment as *requirements.txt*"
+code = "poetry export -f requirements.txt --output requirements.txt"
+
+
+[restore]
+section = "Restore state"
+
+[restore.project]
+action = "Install all dependencies defined in the lock or project file"
+code = "poetry install"
+
+[restore.project.sync]
+action = "Install all required dependencies, and remove unused dependencies (sync)"
+code = "poetry install --sync"
+
+[restore.project.group]
+action = "Install all dependencies, including optional dep group(s)"
+code = "poetry install --with docs,tests"

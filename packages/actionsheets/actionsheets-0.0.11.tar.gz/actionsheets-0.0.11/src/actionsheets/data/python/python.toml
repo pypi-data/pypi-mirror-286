@@ -1,0 +1,19 @@
+language = "python"
+parent = ""
+name = "python"
+title = "Python"
+
+
+[run]
+section = "Run"
+
+[run.script]
+section = "Script"
+
+[run.script.wait]
+action = "Start Python script, wait for completion"
+code = "os.system('python script.py')"
+
+[run.script.args]
+action = "Start Python script with arguments, wait for completion"
+code = "os.system('python script.py -file 'hello.csv'')"

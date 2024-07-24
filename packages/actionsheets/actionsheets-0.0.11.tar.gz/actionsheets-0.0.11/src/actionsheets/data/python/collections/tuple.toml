@@ -1,0 +1,196 @@
+language = "python"
+parent = "python.collections"
+name = "tuple"
+keywords = ["vector"]
+title = "Tuple"
+description = "An ordered immutable collection of data elements"
+
+[create]
+section = "Create"
+
+[create.empty]
+action = "Empty"
+code = "()"
+
+[create.scalar]
+action = "Single element"
+code = "(1,)"
+details = "Comma is important"
+
+[create.multiple]
+action = "Multiple elements"
+code = "(1, 2, 3)"
+
+[create.assign]
+action = "Via multiple assignment"
+code = "x = 1, 2, 3"
+
+[create.concat]
+action = "From multiple tuples"
+code = "a + b + c"
+
+[create.iter]
+action = "From iterator"
+code = "tuple(a)"
+
+[create.iter.unpack]
+action = "From iterator by unpacking"
+code = "(*a,)"
+
+[create.comprehension]
+action = "From comprehension"
+code = "tuple(v * 2 for v in a)"
+
+
+[test]
+section = "Test"
+
+[test.empty]
+action = "Empty"
+code = "if not x:"
+
+[test.nempty]
+action = "Not empty"
+code = "if x:"
+
+[test.contains.value]
+action = "Contains value _v_"
+code = "v in x"
+
+[test.ncontains.value]
+action = "Does not contain value _v_"
+code = "v not in x"
+
+[test.contains.duplicate]
+action = "Contains duplicate values"
+code = "len(v) != len(set(v))"
+
+[test.true.all]
+action = "All elements are `True`"
+code = "all(x)"
+
+[test.true.any]
+action = "Any element is `True`"
+code = "any(x)"
+
+[test.true.none]
+action = "No elements are `True`"
+code = "not any(x)"
+
+
+[get]
+section = "Get"
+
+[get.length]
+action = "Length"
+code = "len(x)"
+
+[get.value.index]
+action = "Value at index _i_ (_i_th value)"
+code = "x[i]"
+
+[get.value.endindex]
+action = "Value from end index _j_" 
+code = "x[-j]"
+
+[get.value.count]
+action = "Count occurrences of value _v_"
+code = "x.count(v)"
+
+[get.index.value.first]
+action = "First index of value _v_"
+code = "x.index(v)"
+details = "Error if missing"
+
+[get.index.value.inrange.first]
+action = "First index of value _v_ between index range [ _n_, _m_ ]"
+code = "x.index(v, n, m)"
+details = "Error if missing in range"
+
+[get.sum]
+action = "Sum elements"
+code = "sum(x)"
+
+[get.min]
+action = "Min of elements"
+code = "min(x)"
+
+[get.max]
+action = "Max of elements"
+code = "max(x)"
+
+
+[derive]
+section = "Derive"
+details = "Creates a new immutable copy"
+
+[derive.slice]
+action = "Slice between [ _n_, _m_ ] (subset)"
+code = "x[n:m]"
+
+[derive.head]
+action = "First _n_ elements"
+code = "x[:n]"
+
+[derive.tail]
+action = "Last _n_ elements"
+code = "x[-n:]"
+
+[derive.append.value]
+action = "Append element"
+code = "x += (1,)"
+
+[derive.append.tuple]
+action = "Append tuple"
+code = "x += y"
+
+[derive.reverse]
+action = "Reverse"
+code = "x[::-1]"
+
+[derive.reverse.reversed]
+code = "tuple(reversed(x))"
+details = "Much slower in all cases"
+
+[derive.sort]
+action = "Sort"
+code = "tuple(sorted(x))"
+
+[derive.shuffle]
+action = "Shuffle"
+code = "tuple(random.sample(x, k=len(x)))"
+
+[derive.repeat]
+action = "Replicate elements _n_ times"
+code = "x * n"
+
+
+[convert]
+section = "Convert"
+
+[convert.assign]
+action = "Multiple assignment"
+code = "a, b = x"
+details = "Number of variables must match tuple length"
+
+[convert.hash]
+action = "Hash"
+code = "hash(x)"
+
+[convert.string]
+action = "Comma-separated string"
+code = "str(x)"
+
+[convert.list]
+action = "List"
+code = "list(x)"
+
+[convert.list.unpack]
+code = "[*x]"
+
+[convert.set]
+action = "Set"
+code = "set(x)"
+
+[convert.set.unpack]
+code = "{*x}"

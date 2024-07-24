@@ -1,0 +1,366 @@
+language = "python"
+parent = "python.pandas"
+name = "dataframe"
+title = "Pandas DataFrame"
+description = """
+`pandas.DataFrame` seems to be the MS Excel of the Python data processing universe: Slow, write-once, inconsistent API, and many ways to achieve the same thing (the true pythonic way), but very handy for quick & dirty data manipulation and popular for that reason.
+
+Words of caution:
+
+* Index columns are not usable as data. Don't bother with index columns unless you want to polute your code with many `reset_index()` calls.
+* MultiIndex versus multiple indices. Just don't. If you cared about speed you would not be using pandas anyway.
+* Complex queries will be a series of data variable updates, which is hard to read, and guaranteed to lead to bugs at a later stage during refactoring.
+"""
+
+
+[create]
+section = "Create"
+
+[create.empty]
+action = "Empty"
+code = "?"
+
+[create.list]
+action = "Single column from list"
+code = "DataFrame([1, 2, 3])"
+
+[create.dict]
+action = "Column per dictionary entry"
+code = """
+dict = {'Name': ['John', 'Sue'], 'Age': [40, 35]}
+DataFrame(dict)
+"""
+
+[create.numpy]
+action = "Numpy 2D array"
+code = """
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+DataFrame(arr, columns = ['a', 'b', 'c'])
+"""
+
+[prop]
+section = "Properties"
+
+[prop.col.names]
+action = "Column names"
+code = "list(data)"
+
+[prop.row.names]
+action = "Row names"
+code = "data.index"
+
+[prop.col.count]
+action = "Number of columns"
+code = "len(data.columns)"
+
+[prop.col.count.shape]
+code = "data.shape[1]"
+
+[prop.row.count]
+action = "Number of rows"
+code = "len(data)"
+
+[prop.row.count.shape]
+code = "data.shape[0]"
+
+[prop.cell.count]
+action = "Number of cells"
+code = "data.size"
+
+[prop.dim]
+action = "Dimensions (as tuple)"
+code = "data.shape"
+
+
+[test]
+section = "Test"
+
+[test.empty]
+action = "Empty"
+code = "data.empty"
+
+[test.col.exists]
+action = "Has column _col_"
+code = "col in data"
+
+[test.col.exists.all]
+action = "Has columns _cols_"
+code = "data.columns.isin(cols).all()"
+
+[test.col.exists.all.set]
+code = "set(cols).issubset(data)"
+
+[test.col.exists.only]
+action = "Only contains columns _cols_"
+code = "set(data) == set(cols)"
+
+[test.col.exists.any]
+action = "Has any of these columns _cols_"
+code = "data.columns.isin(cols).any()"
+
+[test.col.exists.any.set]
+code = "set(data).issuperset(cols)"
+
+[test.col.exists.none]
+action = "Does not have these columns _cols_"
+code = "set(cols).isdisjoint(data)"
+
+[test.col.bool]
+action = "Column _col_ is boolean type"
+code = "pandas.api.types.is_bool_dtype(data[col])"
+
+[test.col.str]
+action = "Column _col_ is string type"
+code = "pandas.api.types.is_string_dtype(data[col])"
+
+[test.col.numeric]
+action = "Column _col_ is numeric type"
+code = "pandas.api.types.is_numeric_dtype(data[col])"
+
+[test.col.int]
+action = "Column _col_ is integer type"
+code = "pandas.api.types.is_integer_dtype(data[col])"
+
+[test.col.datetime]
+action = "Column _col_ is datetime type"
+code = "pandas.api.types.is_datetime64_dtype(data[col])"
+
+[test.col.datetime.ns]
+action = "Column _col_ is datetime(nanosecond) type"
+code = "data.dtypes[col] == numpy.dtype('datetime64[ns]'))"
+
+[test.col.value.missing.any]
+action = "Column _col_ contains missing value"
+code = "data[col].isna().values.any()"
+
+[test.col.value.missing.none]
+action = "Column _col_ contains no missing values"
+code = "data[col].notnull().values.all()"
+
+[test.col.multi.value.missing.none]
+action = "Multiple columns _cols_ contain no missing values"
+code = "data[['col1', 'col2']].notnull().all().all()"
+
+
+[query]
+section = "Query"
+
+[query.col]
+action = "Select column"
+code = "data[['Name']]"
+
+[query.col.multi]
+action = "Select columns"
+code = "data[['Name', 'Age']]"
+
+[query.cell.at]
+action = "Cell at row _i_, col _j_"
+code = "data.at[i, j]"
+
+[query.row.first]
+action = "First row (Series)"
+code = "data.iloc[0]"
+
+[query.row.head]
+action = "First _n_ rows"
+code = "data.head(n)"
+
+[query.row.tail]
+action = "Last _n_ rows"
+code = "data.tail(n)"
+
+[query.row.at]
+action = "Row by row number _i_"
+code = "data.iloc[i]"
+
+[query.row.index]
+action = "Row by index _i_"
+code = "data.loc[i]"
+
+[query.str]
+action = "String query"
+code = "data.query(...)"
+
+
+[update]
+section = "Update"
+description = "All operations are in-place."
+
+[update.col.rename]
+action = "Rename column"
+code = "data.rename(columns={'old': 'new'}, inplace=True)"
+
+[update.col.rename.multi]
+action = "Rename multiple columns"
+code = "data.rename(columns={'old1': 'new1', 'old2': 'new2'}, inplace=True)"
+
+[update.col.rename.dyn]
+action = "Rename columns dynamically"
+code = "data.rename(columns=dict(zip(oldNames, newNames)), inplace=True)"
+
+[update.col.rename.lower.all]
+action = "All columns to lowercase"
+code = "data.rename(str.lower, axis='columns', inplace=True)"
+
+[update.cell.at]
+action = "Set cell at row _i_, col _j_ to value _v_"
+code = "data.at[i, j] = v"
+
+[update.cell.missing.fill]
+action = "Replace missing values for _v_"
+code = "data.fillna(v)"
+
+[update.cell.missing.cond]
+action = "Replace specific values"
+code = "data.replace(?)"
+
+
+[derive]
+section = "Derive"
+description = "All operations create a new instance."
+
+[derive.col.rename]
+action = "Rename column"
+code = "data.rename(columns={'old': 'new'})"
+
+[derive.col.rename.multi]
+action = "Rename multiple columns"
+code = "data.rename(columns={'old1': 'new1', 'old2': 'new2'})"
+
+[derive.col.rename.dyn]
+action = "Rename columns dynamically"
+code = "data.rename(columns=dict(zip(oldNames, newNames)))"
+
+[derive.col.rename.lower.all]
+action = "All columns to lowercase"
+code = "data.rename(str.lower, axis='columns')"
+
+[derive.col.datetime]
+action = "Set datetime column to standard unit (ns)"
+code = "data['Date'] = data['Date'].apply(pd.to_datetime)"
+details = "Needed for example to avoid data corruption when saving to HDF5 store"
+
+[derive.mask.na]
+action = "Mask for NAs"
+code = "data.isna()"
+
+[derive.mask.na.null]
+code = "data.isnull()"
+details = "?"
+
+[derive.mask.notna]
+action = "Mask for non-missing values"
+code = "data.notna()"
+
+[derive.mask.notna.null]
+code = "data.notnull()"
+details = "?"
+
+[derive.mask.duplicate]
+action = "Mask for duplicates"
+code = "data.duplicated()"
+
+
+[shrink]
+section = "Shrink"
+
+[shrink.row.pop]
+action = "Pop row"
+code = "data.pop()"
+
+[shrink.row.remove.list]
+action = "Remove rows list _rows_"
+code = "data.drop(rows)"
+
+[shrink.row.remove.duplicate]
+action = "Remove duplicated rows"
+code = "data.drop_duplicates()"
+
+[shrink.col.remove.duplicate]
+action = "Drop duplicated columns"
+code = "?"
+
+[shrink.col.remove]
+action = "Remove column _col_"
+code = "data.drop(columns=col)"
+
+[shrink.col.remove.multi]
+action = "Remove columns list _cols_"
+code = "data.drop(columns=cols)"
+
+[shrink.row.remove.missing.cols]
+action = "Remove rows with a missing value in any column"
+code = "df.dropna()"
+
+[shrink.row.remove.missing.cols.subset]
+action = "Drop rows with a missing value in the given columns list _cols_"
+code = "df.dropna(subset=cols)"
+
+[shrink.row.remove.missing.cols.n]
+action = "Remove rows with at least _n_ non-missing values across columns"
+code = "df.dropna(thresh=n)"
+
+[shrink.row.remove.missing.col.all]
+action = "Drop rows with missing values in every column"
+code = "df.dropna(how='all')"
+
+[shrink.col.missing.row.any]
+action = "Drop columns with a missing value in any row"
+code = "data.dropna(axis='columns')"
+
+
+[grow]
+section = "Grow"
+
+[grow.col.append]
+action = "Append column"
+code = "?"
+
+[grow.col.append.multi]
+action = "Append columns"
+code = "?"
+
+[grow.col.insert]
+action = "Insert column"
+code = "data.insert(x)"
+
+
+[reshape]
+section = "Reshape"
+
+[reshape.melt]
+action = "Melt"
+code = "data.melt(?)"
+
+[reshape.dcast]
+action = "Dcast"
+code = "data.explode(?)"
+
+[reshape.transpose]
+action = "Transpose"
+code = "data.T"
+
+
+[iter]
+section = "Iterate"
+
+[iter.row.tuple]
+action = "Over rows (as tuples)"
+code = "for row in data.itertuples():"
+
+[iter.row.enum]
+action = "Over rows (index, series)"
+code = "for i, row in data.iterrows():"
+
+[iter.col]
+action = "Over columns (lists)"
+code = "for col in data.columns:"
+
+
+[convert]
+section = "Convert"
+
+[convert.numpy]
+action = "Numpy 2D array"
+code = "data.values"
+details = "Uses numpy package"
