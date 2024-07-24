@@ -1,0 +1,7 @@
+awss3gonla/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awss3gonla/aws3.py,sha256=_sfQLo_wtXsufl_SImeKgtry-GuCRs1D93dBP8sB5B8,4635
+awss3gonla/storage.py,sha256=41_onKk0sFGR3ZPjkEvtkMA5MziXjg-fQFoAaUXTlYo,433
+awss3gonla-0.3.dist-info/METADATA,sha256=_CesJ24WaRJc0nFhfBS62HRmNAw64M2RmN5SUy8l4sQ,5627
+awss3gonla-0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+awss3gonla-0.3.dist-info/top_level.txt,sha256=iaXGfFkAgxq0wiNnqJlRaYl_FOykSSxYmt3ijlTBxKM,11
+awss3gonla-0.3.dist-info/RECORD,,
