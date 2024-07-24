@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+GrammarEnhancer/__init__.py
+GrammarEnhancer/config.py
+GrammarEnhancer/dat.py
+GrammarEnhancer/utils.py
+TextCorrection.egg-info/PKG-INFO
+TextCorrection.egg-info/SOURCES.txt
+TextCorrection.egg-info/dependency_links.txt
+TextCorrection.egg-info/requires.txt
+TextCorrection.egg-info/top_level.txt
