@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mu_teg_sim
+Version: 1.0.0
+Summary: An app to simulate the device physics of micro Thermoelectric Generators
+Home-page: https://github.com/BerriesLab/mu-teg-sim
+Author: Davide Beretta
+Author-email: mail.davide.beretta+github@gmail.com
+Keywords: python,thermoelectric,physics
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+An app to simulate the device physics of micro Thermoelectric Generators (μTEGs). It calculates the power generated, the efficiency of conversion, the device resistance, the open circuit voltage, and the short circuit current per unit area as a function of the thermocouple length. This app is designed for scientists, researchers, and engineers who want to simulate the device physics of μTEGs, to analyze performance metrics and optimize designs for various applications.
