@@ -1,0 +1,327 @@
+---
+tags: [gradio-custom-component, DateTime]
+title: gradio_datetimerange
+short_description: Component to create time ranges.
+colorFrom: blue
+colorTo: yellow
+sdk: gradio
+pinned: false
+app_file: space.py
+---
+
+# `gradio_datetimerange`
+<img alt="Static Badge" src="https://img.shields.io/badge/version%20-%200.0.1%20-%20orange">  
+
+Component to create time ranges.
+
+## Installation
+
+```bash
+pip install gradio_datetimerange
+```
+
+## Usage
+
+```python
+
+import gradio as gr
+from gradio_datetimerange import DateTimeRange
+import pandas as pd
+from random import randint
+
+temp_sensor_data = pd.DataFrame(
+    {
+        "time": pd.date_range("2021-01-01", end="2021-01-05", periods=200),
+        "temperature": [randint(50 + 10 * (i % 2), 65 + 15 * (i % 2)) for i in range(200)],
+        "humidity": [randint(50 + 10 * (i % 2), 65 + 15 * (i % 2)) for i in range(200)],
+        "location": ["indoor", "outdoor"] * 100,
+    }
+)
+
+with gr.Blocks() as demo:
+    date = DateTimeRange(["2021-01-01 00:00:00", "2021-01-07 00:00:00"])
+    merged_temp_plot = gr.LinePlot(
+        temp_sensor_data,
+        x="time",
+        y="temperature",
+    )
+    split_temp_plot = gr.LinePlot(
+        temp_sensor_data,
+        x="time",
+        y="temperature",
+        color="location",
+    )
+    with gr.Row():
+        humidity_bar_plot = gr.BarPlot(
+            temp_sensor_data,
+            x="time",
+            y="humidity",
+            color="location",
+            x_bin="1h",
+        )
+        humidity_scatter_plot = gr.ScatterPlot(
+            temp_sensor_data,
+            x="time",
+            y="humidity",
+            color="location",
+        )
+    
+    date.bind([merged_temp_plot, split_temp_plot, humidity_bar_plot, humidity_scatter_plot])
+
+
+if __name__ == "__main__":
+    demo.launch()
+
+```
+
+## `DateTimeRange`
+
+### Initialization
+
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left" style="width: 25%;">type</th>
+<th align="left">default</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>value</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+tuple[float | str | datetime, float | str | datetime] | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">default value for datetime.</td>
+</tr>
+
+<tr>
+<td align="left"><code>include_time</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool
+```
+
+</td>
+<td align="left"><code>True</code></td>
+<td align="left">If True, the component will include time selection. If False, only date selection will be available.</td>
+</tr>
+
+<tr>
+<td align="left"><code>type</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+Literal["timestamp", "datetime", "string"]
+```
+
+</td>
+<td align="left"><code>"timestamp"</code></td>
+<td align="left">The type of the value. Can be "timestamp", "datetime", or "string". If "timestamp", the value will be a number representing the start and end date in seconds since epoch. If "datetime", the value will be a datetime object. If "string", the value will be the date entered by the user.</td>
+</tr>
+
+<tr>
+<td align="left"><code>timezone</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">The timezone to use for timestamps, such as "US/Pacific" or "Europe/Paris". If None, the timezone will be the local timezone.</td>
+</tr>
+
+<tr>
+<td align="left"><code>quick_ranges</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+list[str] | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">List of strings representing quick ranges to display, such as ["30s", "1h", "24h", "7d"]. Set to [] to clear.</td>
+</tr>
+
+<tr>
+<td align="left"><code>label</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">The label for this component. Appears above the component and is also used as the header if there are a table of examples for this component. If None and used in a `gr.Interface`, the label will be the name of the parameter this component is assigned to.</td>
+</tr>
+
+<tr>
+<td align="left"><code>show_label</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">if True, will display label.</td>
+</tr>
+
+<tr>
+<td align="left"><code>info</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">additional component description.</td>
+</tr>
+
+<tr>
+<td align="left"><code>every</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+float | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">If `value` is a callable, run the function 'every' number of seconds while the client connection is open. Has no effect otherwise. The event can be accessed (e.g. to cancel it) via this component's .load_event attribute.</td>
+</tr>
+
+<tr>
+<td align="left"><code>scale</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+int | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">relative size compared to adjacent Components. For example if Components A and B are in a Row, and A has scale=2, and B has scale=1, A will be twice as wide as B. Should be an integer. scale applies in Rows, and to top-level Components in Blocks where fill_height=True.</td>
+</tr>
+
+<tr>
+<td align="left"><code>min_width</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+int
+```
+
+</td>
+<td align="left"><code>160</code></td>
+<td align="left">minimum pixel width, will wrap if not sufficient screen space to satisfy this value. If a certain scale value results in this Component being narrower than min_width, the min_width parameter will be respected first.</td>
+</tr>
+
+<tr>
+<td align="left"><code>visible</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool
+```
+
+</td>
+<td align="left"><code>True</code></td>
+<td align="left">If False, component will be hidden.</td>
+</tr>
+
+<tr>
+<td align="left"><code>elem_id</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">None</td>
+</tr>
+
+<tr>
+<td align="left"><code>elem_classes</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+list[str] | str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.</td>
+</tr>
+
+<tr>
+<td align="left"><code>render</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+bool
+```
+
+</td>
+<td align="left"><code>True</code></td>
+<td align="left">If False, component will not render be rendered in the Blocks context. Should be used if the intention is to assign event listeners now but render the component later.</td>
+</tr>
+
+<tr>
+<td align="left"><code>key</code></td>
+<td align="left" style="width: 25%;">
+
+```python
+int | str | None
+```
+
+</td>
+<td align="left"><code>None</code></td>
+<td align="left">if assigned, will be used to assume identity across a re-render. Components that have the same key across a re-render will have their value preserved.</td>
+</tr>
+</tbody></table>
+
+
+### Events
+
+| name | description |
+|:-----|:------------|
+| `change` | Triggered when the value of the DateTimeRange changes either because of user input (e.g. a user types in a textbox) OR because of a function update (e.g. an image receives a value from the output of an event trigger). See `.input()` for a listener that is only triggered by user input. |
+
+
+
+### User function
+
+The impact on the users predict function varies depending on whether the component is used as an input or output for an event (or both).
+
+- When used as an Input, the component only impacts the input signature of the user function.
+- When used as an output, the component only impacts the return signature of the user function.
+
+The code snippet below is accurate in cases where the component is used as both an input and an output.
+
+- **As output:** Is passed, passes text value as a {str} into the function.
+- **As input:** Should return, expects a tuple pair of datetimes.
+
+ ```python
+ def predict(
+     value: tuple[str | float | datetime, str | float | datetime] | None
+ ) -> tuple[float | datetime | str, float | datetime | str] | None:
+     return value
+ ```
+ 
