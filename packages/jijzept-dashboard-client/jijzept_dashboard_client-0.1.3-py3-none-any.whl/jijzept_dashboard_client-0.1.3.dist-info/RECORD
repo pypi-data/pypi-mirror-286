@@ -1,0 +1,9 @@
+jijzept_dashboard_client/__init__.py,sha256=IlBFSynnizB7cHKYjzuue9jPDJzVXSED9ya7eXb5t8Q,169
+jijzept_dashboard_client/client.py,sha256=iQdB4_SlYQOBqfBjsY-mhG2OkSmnppqE-G2Gsl53j6E,7539
+jijzept_dashboard_client/exception.py,sha256=814G6VlQ5DIfsIdu3WX3XBZNa7a0_JXj8jGeSraOO0M,55
+jijzept_dashboard_client/problem.py,sha256=71XuF8mLtgg3x6Z0MANzb8oURjU7v5XQNYTVl5YsEyE,4643
+jijzept_dashboard_client/schema.py,sha256=ubDCnqly6IzWfUk_w8dRxE2t4jW-ewaPOIno5dyXyvA,7636
+jijzept_dashboard_client-0.1.3.dist-info/LICENSE.txt,sha256=T5HdEbP5NWG8fZbvF9pofeteW3HrS30V3_LvtPUHFYM,3400
+jijzept_dashboard_client-0.1.3.dist-info/METADATA,sha256=FXpQIDnC2n1RKcD5yW1Ncq-EKRiwy984ixGeYW-Ifqo,3620
+jijzept_dashboard_client-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+jijzept_dashboard_client-0.1.3.dist-info/RECORD,,
