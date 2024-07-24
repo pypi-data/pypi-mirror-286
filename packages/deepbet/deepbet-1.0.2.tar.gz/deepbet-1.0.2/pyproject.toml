@@ -1,0 +1,35 @@
+[tool.poetry]
+name = 'deepbet'
+version = '1.0.2'
+description = 'Fast brain extraction using neural networks'
+authors = ['codingfisch <l_fisc17@wwu.de>']
+license = 'MIT'
+readme = 'README.md'
+repository = 'https://github.com/wwu-mmll/deepbet'
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Operating System :: OS Independent',
+    'Intended Audience :: Science/Research'
+]
+include = ['data/models/*', 'data/icon.png']
+
+
+[tool.poetry.dependencies]
+python = '^3.8'
+connected-components-3d = '*'
+fill_voids = '*'
+nibabel = '*'
+pandas = '*'
+torch = '>=1.11.0'
+tqdm = '*'
+customtkinter = '*'
+
+
+[tool.poetry.scripts]
+deepbet-cli = 'deepbet.ui.cli:run_cli'
+deepbet-gui = 'deepbet.ui.gui:run_gui'
+
+
+[build-system]
+requires = ['poetry-core']
+build-backend = 'poetry.core.masonry.api'
