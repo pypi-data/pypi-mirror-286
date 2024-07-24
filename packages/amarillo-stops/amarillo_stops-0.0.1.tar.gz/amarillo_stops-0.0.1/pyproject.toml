@@ -1,0 +1,10 @@
+[project]
+name = "amarillo-stops"
+version = "0.0.1"
+description = "Stops service for Amarillo"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+dependencies = [
+    "amarillo"
+]
