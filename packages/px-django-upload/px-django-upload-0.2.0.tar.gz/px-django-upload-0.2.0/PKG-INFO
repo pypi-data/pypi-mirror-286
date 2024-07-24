@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: px-django-upload
+Version: 0.2.0
+Summary: Simple but effective file uploading handler.
+Author: Alex Tkachenko
+Author-email: preusx.dev@gmail.com
+License: MIT License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: px-settings<0.2.0,>=0.1.2
+Requires-Dist: requests<3.0.0,>=2.0.0
+Requires-Dist: python-slugify==8.0.4
+Requires-Dist: hurry.filesize==0.9
+Provides-Extra: dev
+Requires-Dist: pytest<7.0,>=6.0; extra == "dev"
+Requires-Dist: pytest-mock<4.0.0,>=3.10.0; extra == "dev"
+Requires-Dist: pytest-watch<5.0,>=4.2; extra == "dev"
+Requires-Dist: pytest-django<5.0,>=4.3; extra == "dev"
+Requires-Dist: django-environ==0.11.2; extra == "dev"
+Requires-Dist: django-stubs; extra == "dev"
+Requires-Dist: django<6,>=2.2; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# Upload API
+
+Simple file uploading handler.
+
+## Installation
+
+```sh
+pip install px-django-upload
+```
+
+In `settings.py`:
+
+```python
+INSTALLED_APPS += [
+  'pxd_upload',
+]
+```
