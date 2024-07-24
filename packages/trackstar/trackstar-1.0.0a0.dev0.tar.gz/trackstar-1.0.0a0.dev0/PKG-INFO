@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: trackstar
+Version: 1.0.0a0.dev0
+Summary: Bayesian likelihood estimates for curves in data space
+Author-email: "James W. Johnson" <giganano9@gmail.com>
+Maintainer-email: "James W. Johnson" <giganano9@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 James W. Johnson
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/giganano/TrackStar
+Project-URL: Issues, https://github.com/giganano/TrackStar/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: numpy>=1.21.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=6.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=2.0; extra == "docs"
+Requires-Dist: nbsphinx>=0.8; extra == "docs"
+Requires-Dist: matplotlib>=3.0; extra == "docs"
+
+
+# TrackStar
+
+<div align="center">
+	<a href="https://github.com/giganano/TrackStar/actions/workflows/ci.yml"
+		target="_blank">
+		<img src="https://github.com/giganano/TrackStar/workflows/GitHub%20CI/badge.svg">
+	</a><a
+		href="https://github.com/giganano/TrackStar/issues" target="_blank">
+		<img src="https://img.shields.io/github/issues/giganano/TrackStar.svg">
+	</a>
+</div>
+
+<div align="center">
+	<a href="https://github.com/giganano/TrackStar/blob/main/LICENSE"
+		target="_blank">
+		<img src="https://img.shields.io/badge/License-MIT-blue.svg">
+	</a>
+</div>
+
+TrackStar is a highly optimized, user-friendly library designed to compute
+Bayesian likelihood estimates for arbitrary lines and curves when the data have
+errors in every direction.
+When combined with your favorite optimization routine (e.g. Markov chain Monte
+Carlo, maximum a posteriori esimation), TrackStar provides blazing fast
+best-fit parameters!
+
+TrackStar users enjoy the following features:
+
+<ul>
+	<li>
+		Support for samples in which some quantities are not available for
+		every data vector.
+		For example, if &theta;<sub>1</sub> and &theta;<sub>2</sub> are
+		available for the whole sample, but only half of the data have
+		measurements of &theta;<sub>3</sub>, TrackStar will automatically use
+		&theta;<sub>3</sub> where it is available.
+	</li>
+	<li>
+		Multi-threading with the
+		<a href="https://openmp.org/" target="_blank">OpenMP</a> library.
+		If these features are enabled when TrackStar is installed, simply
+		tell it how many threads you'd like it to use, and hit run!
+	</li>
+	<li>
+		Full control over the expected N-dimensional distribution of the data,
+		both due to selection effects and arising from model predictions.
+	</li>
+</ul>
+
+### Developers: To-Do Items
+
+<ul>
+	<li>
+		Finish implementing unit tests
+	</li>
+	<li>
+		Ensure the likelihood estimates is properly normalized when the data
+		vectors do not have the same dimensionality (i.e. when not all
+		quantities are measured for each datum).
+	</li>
+	<li>
+		Finish writing documentation: API reference, science documentation,
+		installation instructions, developers documentation, Changelog
+	</li>
+	<li>
+		Write example codes
+	</li>
+</ul>
+
