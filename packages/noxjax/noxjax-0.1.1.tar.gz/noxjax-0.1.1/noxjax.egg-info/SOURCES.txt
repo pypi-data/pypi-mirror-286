@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+noxjax/__init__.py
+noxjax/_frozen.py
+noxjax/_module.py
+noxjax/_mtypes.py
+noxjax/_serial.py
+noxjax/_trees.py
+noxjax/_typecheck.py
+noxjax/_utils.py
+noxjax.egg-info/PKG-INFO
+noxjax.egg-info/SOURCES.txt
+noxjax.egg-info/dependency_links.txt
+noxjax.egg-info/requires.txt
+noxjax.egg-info/top_level.txt
