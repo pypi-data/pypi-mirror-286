@@ -1,0 +1,27 @@
+#[build-system]
+#requires = ["flit_core >=3.2,<4"]
+#build-backend = "flit_core.buildapi"
+#
+#[project]
+#name = "lottokit"
+#authors = [{name = "nickdecodes", email = "nickdecodes@163.com"}]
+#dynamic = ["version", "description"]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lottokit"
+authors = [{name = "nickdecodes", email = "nickdecodes@163.com"}]
+dynamic = [
+    "urls",
+    "version",
+    "description",
+    "dependencies",
+    "readme",
+    "keywords",
+    "requires-python",
+]
+license = {file = "LICENSE"}
+
