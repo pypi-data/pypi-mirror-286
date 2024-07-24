@@ -1,0 +1,31 @@
+{
+  "template": "https://github.com/sunpy/package-template",
+  "commit": "112d7d4adf0fa168bbb9ddb1886ad4f1e595b8be",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "package_name": "mpl_animators",
+      "module_name": "mpl_animators",
+      "short_description": "An interactive animation framework for matplotlib.",
+      "author_name": "The SunPy Developers",
+      "author_email": "sunpy@googlegroups.com",
+      "project_url": "https://docs.sunpy.org/projects/mpl-animators",
+      "license": "BSD 3-Clause",
+      "minimum_python_version": "3.10",
+      "use_compiled_extensions": "n",
+      "enable_dynamic_dev_versions": "y",
+      "include_example_code": "n",
+      "include_cruft_update_github_workflow": "y",
+      "_sphinx_theme": "alabaster",
+      "_parent_project": "",
+      "_install_requires": "",
+      "_copy_without_render": [
+        "docs/_templates",
+        "docs/_static",
+        ".github/workflows/sub_package_update.yml"
+      ],
+      "_template": "https://github.com/sunpy/package-template"
+    }
+  },
+  "directory": null
+}
