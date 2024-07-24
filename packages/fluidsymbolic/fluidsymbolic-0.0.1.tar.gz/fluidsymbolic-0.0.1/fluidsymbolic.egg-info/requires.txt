@@ -1,0 +1,7 @@
+furo>=2024.1.29
+matplotlib>=3.3.0
+numpy>=1.21.0
+pytest>=8.1.1
+scipy>=1.10.0
+sphinx>=7.1.0
+sympy>=1.11.1

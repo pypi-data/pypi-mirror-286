@@ -1,0 +1,10 @@
+README.md
+setup.py
+fluidsymbolic.egg-info/PKG-INFO
+fluidsymbolic.egg-info/SOURCES.txt
+fluidsymbolic.egg-info/dependency_links.txt
+fluidsymbolic.egg-info/requires.txt
+fluidsymbolic.egg-info/top_level.txt
+src/fluidsymbolic/__init__.py
+src/fluidsymbolic/stream.py
+src/fluidsymbolic/sympyfication.py
