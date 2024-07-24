@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: OlPack
+Version: 0.1.3
+Summary: A collection of tools to simplify your Python experience!
+Home-page: https://github.com/Ollieq1977336/PyPack
+Author: Ollie Quayle
+Author-email: Olliequayle08@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
+# OlPack
+
+A collection of tools to simplify your python experience!
+
+## Requirements
+
+- Python 3.6 or higher
+- Tkinter (usually included with Python)
+
+## Installation
+
+To install this package, you can use pip:
+
+```bash
+pip install .
+```
+Or...
+```
+pip install OlPack
+```
+
+## License
+
+This project is licensed under a Custom License. You are free to use, modify, and fork the code. Redistribution under the same name as the original software is not permitted. Any distribution or use must provide proper attribution to the original author. See the [LICENSE](LICENSE) file for details.
