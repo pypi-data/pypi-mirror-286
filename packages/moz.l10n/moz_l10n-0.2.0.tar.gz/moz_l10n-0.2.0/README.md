@@ -1,0 +1,149 @@
+# moz.l10n
+
+This is a library of Python tools and utilities for working with localization files,
+primarily built for internal use at Mozilla.
+
+The core idea here is to establish [Message](./moz/l10n/message.py) and [Resource](./moz/l10n/resource.py)
+as format-independent representations of localizable and localized messages and resources,
+so that operations like linting and transforms can be applied to them.
+
+Parsers and serializers are provided for a number of formats,
+using common and well-established libraries to take care of the details.
+A unified API for these is provided,
+such that `FORMAT_parse(text)` will always accept `str` input,
+and `FORMAT_serialize(resource)` will always provide a `str` iterator.
+All the serializers accept a `trim_comments` argument
+which leaves out comments from the serialized result,
+but additional input types and options vary by format.
+
+The Message and Resource representations are drawn from work done for the
+Unicode [MessageFormat 2 specification](https://github.com/unicode-org/message-format-wg/tree/main/spec)
+and the [Message resource specification](https://github.com/eemeli/message-resource-wg/).
+
+## moz.l10n.paths
+
+### L10nConfigPaths
+
+Wrapper for localization config files.
+
+Supports a subset of the format specified at:
+https://moz-l10n-config.readthedocs.io/en/latest/fileformat.html
+
+Differences:
+- `[build]` is ignored
+- `[[excludes]]` are not supported
+- `[[filters]]` are ignored
+- `[[paths]]` must always include both `reference` and `l10n`
+
+Does not consider `.l10n-ignore` files.
+
+### L10nDiscoverPaths
+
+Automagical localization resource discovery.
+
+Given a root directory, finds the likeliest reference and target directories.
+
+The reference directory has a name like `templates`, `en-US`, or `en`,
+and contains files with extensions that appear localizable.
+
+The localization target root is a directory with subdirectories named as
+BCP 47 locale identifiers, i.e. like `aa`, `aa-AA`, `aa-Aaaa`, or `aa-Aaaa-AA`.
+
+An underscore may also be used as a separator, as in `en_US`.
+
+## moz.l10n.resources
+
+### add_entries
+
+```python
+def add_entries(target: Resource, source: Resource) -> int
+```
+
+Modifies `target` by adding entries from `source` that are not already present in `target`.
+Standalone comments are not added.
+
+Entries are not copied, so further changes will be reflected in both resources.
+
+Returns a count of added entries.
+
+### detect_format
+
+```python
+def detect_format(name: str | None, source: bytes | str) -> Format | None
+```
+
+Detect the format of the input based on its file extension
+and/or contents.
+
+Returns a `Format` enum value, or `None` if the input is not recognized.
+
+### iter_resources
+
+```python
+def iter_resources(
+    root: str,
+    dirs: list[str] | None = None,
+    ignorepath: str = ".l10n-ignore"
+) -> Iterator[tuple[str, Resource[Message, str] | None]]
+```
+
+Iterate through localizable resources under the `root` directory.
+Use `dirs` to limit the search to only some subdirectories under `root`.
+
+Yields `(str, Resource | None)` tuples,
+with the file path and the corresponding `Resource`,
+or `None` for files that could not be parsed as localization resources.
+
+To ignore files, include a `.l10n-ignore` file in `root`,
+or some other location passed in as `ignorepath`.
+This file uses a git-ignore syntax,
+and is always based in the `root` directory.
+
+### l10n_equal
+
+```python
+def l10n_equal(a: Resource, b: Resource) -> bool
+```
+
+Compares the localization-relevant content
+(id, comment, metadata, message values) of two resources.
+
+Sections with no message entries are ignored,
+and the order of sections, entries, and metadata is ignored.
+
+### parse_resource
+
+```python
+def parse_resource(
+    input: Format | str | None,
+    source: str | bytes | None = None
+) -> Resource[Message, str]
+```
+
+Parse a Resource from its string representation.
+
+The first argument may be an explicit Format,
+the file path as a string, or None.
+For the latter two types,
+an attempt is made to detect the appropriate format.
+
+If the first argument is a string path,
+the `source` argument is optional,
+as the file will be opened and read.
+
+### serialize_resource
+
+```python
+def serialize_resource(
+    resource: Resource[str, str] | Resource[Message, str],
+    format: Format | None = None,
+    trim_comments: bool = False
+) -> Iterator[str]
+```
+
+Serialize a Resource as its string representation.
+
+If `format` is set, it overrides the `resource.format` value.
+
+With `trim_comments`,
+all standalone and attached comments are left out of the serialization.
