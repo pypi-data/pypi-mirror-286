@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+WinFuncs.egg-info/PKG-INFO
+WinFuncs.egg-info/SOURCES.txt
+WinFuncs.egg-info/dependency_links.txt
+WinFuncs.egg-info/requires.txt
+WinFuncs.egg-info/top_level.txt
+winfuncs/KeyboardHookProc.dll
+winfuncs/WinFuncs.dll
+winfuncs/__init__.py
+winfuncs/_winfuncs.py
+winfuncs.egg-info/PKG-INFO
+winfuncs.egg-info/SOURCES.txt
+winfuncs.egg-info/dependency_links.txt
+winfuncs.egg-info/requires.txt
+winfuncs.egg-info/top_level.txt
