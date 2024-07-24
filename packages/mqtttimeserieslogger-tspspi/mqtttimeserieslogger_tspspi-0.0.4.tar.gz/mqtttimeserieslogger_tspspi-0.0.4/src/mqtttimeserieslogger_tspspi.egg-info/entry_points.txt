@@ -1,0 +1,2 @@
+[console_scripts]
+mqtttimeserieslogger = timeserieslogger.mqtttimeserieslogger:main

@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/mqtttimeserieslogger_tspspi.egg-info/PKG-INFO
+src/mqtttimeserieslogger_tspspi.egg-info/SOURCES.txt
+src/mqtttimeserieslogger_tspspi.egg-info/dependency_links.txt
+src/mqtttimeserieslogger_tspspi.egg-info/entry_points.txt
+src/mqtttimeserieslogger_tspspi.egg-info/requires.txt
+src/mqtttimeserieslogger_tspspi.egg-info/top_level.txt
+src/timeserieslogger/__init__.py
+src/timeserieslogger/mqtttimeserieslogger.py
