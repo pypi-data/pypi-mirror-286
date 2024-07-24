@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: hashtrack
+Version: 0.0.1
+Summary: A cli tool to track file changes via checksums
+Project-URL: Github, https://github.com/fkcptlst/hashtrack
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: pyyaml
+Requires-Dist: addict
+Requires-Dist: loguru
+Provides-Extra: dev
+Requires-Dist: pytest~=7.4.3; extra == "dev"
+Requires-Dist: pytest-cov~=4.1.0; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# hashtrack
+
+A simple tool to track the hash of files in case you need to verify them later.
+
+## Installation
+
+```bash
+git clone https://github.com/fkcptlst/hashtrack.git
+cd hashtrack
+pip install -e .
+```
+
+## Usage
+
+```bash
+hashtrack --help
+```
+
+## Example
+
+```bash
+hashtrack init  # Initialize the cache
+hashtrack update  # Update the cache
+# do some work or modify files
+hashtrack check  # Check the checksum of the files in the cache
+```
+
+## Configuration
+
+Under `.hashtrack` directory, there is a `config.yml` file that you can modify to suit your needs.
+
+```yaml
+extensions:  # ".ext"
+  - ".ckpt"
+  - ".pth"
+  - ".pt"
+  - ".h5"
+  - ".onnx"
+  - ".safetensors"
+  - ".pkl"
+  - ".npy"
+
+search_dirs:  # list[str]
+  - "."
+```
