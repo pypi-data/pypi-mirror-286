@@ -1,0 +1,278 @@
+interactions:
+- request:
+    body: null
+    headers:
+      accept:
+      - application/json
+      content-type:
+      - application/json
+      user-agent:
+      - elasticsearch-py/7.14.0 (Python 3.8.10)
+      x-elastic-client-meta:
+      - es=7.14.0,py=3.8.10,t=7.14.0,rq=2.19.1
+    method: GET
+    uri: http://elastic:9200/
+  response:
+    body:
+      string: "{\n  \"name\" : \"38027ae09c39\",\n  \"cluster_name\" : \"docker-cluster\"\
+        ,\n  \"cluster_uuid\" : \"H7DXRU0gReSqODLeZzZeYg\",\n  \"version\" : {\n \
+        \   \"number\" : \"7.0.0\",\n    \"build_flavor\" : \"default\",\n    \"build_type\"\
+        \ : \"docker\",\n    \"build_hash\" : \"b7e28a7\",\n    \"build_date\" : \"\
+        2019-04-05T22:55:32.697037Z\",\n    \"build_snapshot\" : false,\n    \"lucene_version\"\
+        \ : \"8.0.0\",\n    \"minimum_wire_compatibility_version\" : \"6.7.0\",\n\
+        \    \"minimum_index_compatibility_version\" : \"6.0.0-beta1\"\n  },\n  \"\
+        tagline\" : \"You Know, for Search\"\n}\n"
+    headers:
+      content-length:
+      - '508'
+      content-type:
+      - application/json; charset=UTF-8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      content-type:
+      - application/json
+      user-agent:
+      - elasticsearch-py/7.14.0 (Python 3.8.10)
+      x-elastic-client-meta:
+      - es=7.14.0,py=3.8.10,t=7.14.0,rq=2.19.1
+    method: HEAD
+    uri: http://elastic:9200/
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '508'
+      content-type:
+      - application/json; charset=UTF-8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      content-type:
+      - application/json
+      user-agent:
+      - elasticsearch-py/7.14.0 (Python 3.8.10)
+      x-elastic-client-meta:
+      - es=7.14.0,py=3.8.10,t=7.14.0,rq=2.19.1
+    method: HEAD
+    uri: http://elastic:9200/demo_elasticsearch_backend_shopinvader_category_en_us
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '647'
+      content-type:
+      - application/json; charset=UTF-8
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{"settings":{"index":{"sort.field":["id"],"sort.order":["asc"]}},"mappings":{"properties":{"url_key":{"type":"keyword"},"redirect_url_key":{"type":"keyword"},"id":{"type":"integer"}}}}'
+    headers:
+      Content-Length:
+      - '184'
+      content-type:
+      - application/json
+      user-agent:
+      - elasticsearch-py/7.14.0 (Python 3.8.10)
+      x-elastic-client-meta:
+      - es=7.14.0,py=3.8.10,t=7.14.0,rq=2.19.1
+    method: PUT
+    uri: http://elastic:9200/demo_elasticsearch_backend_shopinvader_category_en_us
+  response:
+    body:
+      string: '{"acknowledged":true,"shards_acknowledged":true,"index":"demo_elasticsearch_backend_shopinvader_category_en_us"}'
+    headers:
+      content-length:
+      - '112'
+      content-type:
+      - application/json; charset=UTF-8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "{\"index\":{\"_id\":1,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":1,\"name\":\"All\",\"url_key\":\"all\",\"redirect_url_key\"\
+      :[],\"subtitle\":null,\"seo_title\":\"All\",\"sequence\":0,\"meta_keywords\"\
+      :null,\"meta_description\":null,\"description\":null,\"short_description\":null,\"\
+      level\":0,\"parent\":null,\"filters\":[],\"childs\":[],\"id\":599}\n{\"index\"\
+      :{\"_id\":9,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":9,\"name\":\"Consumable\",\"url_key\":\"all/consumable\",\"\
+      redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"All / Consumable\",\"\
+      sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"description\"\
+      :null,\"short_description\":null,\"level\":1,\"parent\":{\"id\":1,\"name\":\"\
+      All\",\"url_key\":\"all\",\"parent\":null},\"filters\":[],\"childs\":[],\"id\"\
+      :600}\n{\"index\":{\"_id\":10,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":10,\"name\":\"Electronique et informatique\",\"url_key\":\"\
+      all/electronique-et-informatique\",\"redirect_url_key\":[],\"subtitle\":null,\"\
+      seo_title\":\"All / Electronique et informatique\",\"sequence\":0,\"meta_keywords\"\
+      :null,\"meta_description\":null,\"description\":null,\"short_description\":null,\"\
+      level\":1,\"parent\":{\"id\":1,\"name\":\"All\",\"url_key\":\"all\",\"parent\"\
+      :null},\"filters\":[],\"childs\":[],\"id\":601}\n{\"index\":{\"_id\":11,\"_index\"\
+      :\"demo_elasticsearch_backend_shopinvader_category_en_us\"}}\n{\"objectID\"\
+      :11,\"name\":\"Ordinateur, Tablettes & Accessoires\",\"url_key\":\"all/electronique-et-informatique/ordinateur-tablettes-accessoires\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"All / Electronique\
+      \ et informatique / Ordinateur, Tablettes & Accessoires\",\"sequence\":0,\"\
+      meta_keywords\":null,\"meta_description\":null,\"description\":null,\"short_description\"\
+      :null,\"level\":2,\"parent\":{\"id\":10,\"name\":\"Electronique et informatique\"\
+      ,\"url_key\":\"all/electronique-et-informatique\",\"parent\":{\"id\":1,\"name\"\
+      :\"All\",\"url_key\":\"all\",\"parent\":null}},\"filters\":[],\"childs\":[],\"\
+      id\":602}\n{\"index\":{\"_id\":12,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":12,\"name\":\"PC Portable\",\"url_key\":\"all/electronique-et-informatique/ordinateur-tablettes-accessoires/pc-portable\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"All / Electronique\
+      \ et informatique / Ordinateur, Tablettes & Accessoires / PC Portable\",\"sequence\"\
+      :0,\"meta_keywords\":null,\"meta_description\":null,\"description\":null,\"\
+      short_description\":null,\"level\":3,\"parent\":{\"id\":11,\"name\":\"Ordinateur,\
+      \ Tablettes & Accessoires\",\"url_key\":\"all/electronique-et-informatique/ordinateur-tablettes-accessoires\"\
+      ,\"parent\":{\"id\":10,\"name\":\"Electronique et informatique\",\"url_key\"\
+      :\"all/electronique-et-informatique\",\"parent\":{\"id\":1,\"name\":\"All\"\
+      ,\"url_key\":\"all\"}}},\"filters\":[],\"childs\":[],\"id\":603}\n{\"index\"\
+      :{\"_id\":3,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":3,\"name\":\"Expenses\",\"url_key\":\"all/expenses\",\"redirect_url_key\"\
+      :[],\"subtitle\":null,\"seo_title\":\"All / Expenses\",\"sequence\":0,\"meta_keywords\"\
+      :null,\"meta_description\":null,\"description\":null,\"short_description\":null,\"\
+      level\":1,\"parent\":{\"id\":1,\"name\":\"All\",\"url_key\":\"all\",\"parent\"\
+      :null},\"filters\":[],\"childs\":[],\"id\":604}\n{\"index\":{\"_id\":4,\"_index\"\
+      :\"demo_elasticsearch_backend_shopinvader_category_en_us\"}}\n{\"objectID\"\
+      :4,\"name\":\"Internal\",\"url_key\":\"all/internal\",\"redirect_url_key\":[],\"\
+      subtitle\":null,\"seo_title\":\"All / Internal\",\"sequence\":0,\"meta_keywords\"\
+      :null,\"meta_description\":null,\"description\":null,\"short_description\":null,\"\
+      level\":1,\"parent\":{\"id\":1,\"name\":\"All\",\"url_key\":\"all\",\"parent\"\
+      :null},\"filters\":[],\"childs\":[],\"id\":605}\n{\"index\":{\"_id\":2,\"_index\"\
+      :\"demo_elasticsearch_backend_shopinvader_category_en_us\"}}\n{\"objectID\"\
+      :2,\"name\":\"Saleable\",\"url_key\":\"all/saleable\",\"redirect_url_key\":[],\"\
+      subtitle\":null,\"seo_title\":\"All / Saleable\",\"sequence\":0,\"meta_keywords\"\
+      :null,\"meta_description\":null,\"description\":null,\"short_description\":null,\"\
+      level\":1,\"parent\":{\"id\":1,\"name\":\"All\",\"url_key\":\"all\",\"parent\"\
+      :null},\"filters\":[],\"childs\":[],\"id\":606}\n{\"index\":{\"_id\":8,\"_index\"\
+      :\"demo_elasticsearch_backend_shopinvader_category_en_us\"}}\n{\"objectID\"\
+      :8,\"name\":\"Office Furniture\",\"url_key\":\"all/saleable/office-furniture\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"All / Saleable /\
+      \ Office Furniture\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\"\
+      :null,\"description\":null,\"short_description\":null,\"level\":2,\"parent\"\
+      :{\"id\":2,\"name\":\"Saleable\",\"url_key\":\"all/saleable\",\"parent\":{\"\
+      id\":1,\"name\":\"All\",\"url_key\":\"all\",\"parent\":null}},\"filters\":[],\"\
+      childs\":[],\"id\":607}\n{\"index\":{\"_id\":5,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":5,\"name\":\"Services\",\"url_key\":\"all/saleable/services\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"All / Saleable /\
+      \ Services\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"\
+      description\":null,\"short_description\":null,\"level\":2,\"parent\":{\"id\"\
+      :2,\"name\":\"Saleable\",\"url_key\":\"all/saleable\",\"parent\":{\"id\":1,\"\
+      name\":\"All\",\"url_key\":\"all\",\"parent\":null}},\"filters\":[],\"childs\"\
+      :[],\"id\":608}\n{\"index\":{\"_id\":6,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":6,\"name\":\"Saleable\",\"url_key\":\"all/saleable/services/saleable\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"All / Saleable /\
+      \ Services / Saleable\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\"\
+      :null,\"description\":null,\"short_description\":null,\"level\":3,\"parent\"\
+      :{\"id\":5,\"name\":\"Services\",\"url_key\":\"all/saleable/services\",\"parent\"\
+      :{\"id\":2,\"name\":\"Saleable\",\"url_key\":\"all/saleable\",\"parent\":{\"\
+      id\":1,\"name\":\"All\",\"url_key\":\"all\"}}},\"filters\":[],\"childs\":[],\"\
+      id\":609}\n{\"index\":{\"_id\":7,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":7,\"name\":\"Software\",\"url_key\":\"all/saleable/software\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"All / Saleable /\
+      \ Software\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"\
+      description\":null,\"short_description\":null,\"level\":2,\"parent\":{\"id\"\
+      :2,\"name\":\"Saleable\",\"url_key\":\"all/saleable\",\"parent\":{\"id\":1,\"\
+      name\":\"All\",\"url_key\":\"all\",\"parent\":null}},\"filters\":[],\"childs\"\
+      :[],\"id\":610}\n{\"index\":{\"_id\":13,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":13,\"name\":\"Meuble\",\"url_key\":\"meuble\",\"redirect_url_key\"\
+      :[],\"subtitle\":null,\"seo_title\":\"Meuble\",\"sequence\":0,\"meta_keywords\"\
+      :null,\"meta_description\":null,\"description\":null,\"short_description\":null,\"\
+      level\":0,\"parent\":null,\"filters\":[],\"childs\":[],\"id\":611}\n{\"index\"\
+      :{\"_id\":15,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":15,\"name\":\"Chambre\",\"url_key\":\"meuble/chambre\",\"\
+      redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"Meuble / Chambre\",\"\
+      sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"description\"\
+      :null,\"short_description\":null,\"level\":1,\"parent\":{\"id\":13,\"name\"\
+      :\"Meuble\",\"url_key\":\"meuble\",\"parent\":null},\"filters\":[],\"childs\"\
+      :[],\"id\":612}\n{\"index\":{\"_id\":17,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":17,\"name\":\"Cuisine\",\"url_key\":\"meuble/cuisine\",\"\
+      redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"Meuble / Cuisine\",\"\
+      sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"description\"\
+      :null,\"short_description\":null,\"level\":1,\"parent\":{\"id\":13,\"name\"\
+      :\"Meuble\",\"url_key\":\"meuble\",\"parent\":null},\"filters\":[],\"childs\"\
+      :[],\"id\":613}\n{\"index\":{\"_id\":18,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":18,\"name\":\"Appliances\",\"url_key\":\"meuble/cuisine/appliances\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"Meuble / Cuisine\
+      \ / Appliances\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\"\
+      :null,\"description\":null,\"short_description\":null,\"level\":2,\"parent\"\
+      :{\"id\":17,\"name\":\"Cuisine\",\"url_key\":\"meuble/cuisine\",\"parent\":{\"\
+      id\":13,\"name\":\"Meuble\",\"url_key\":\"meuble\",\"parent\":null}},\"filters\"\
+      :[],\"childs\":[],\"id\":614}\n{\"index\":{\"_id\":14,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":14,\"name\":\"Salle de bain\",\"url_key\":\"meuble/salle-de-bain\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"Meuble / Salle de\
+      \ bain\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"\
+      description\":null,\"short_description\":null,\"level\":1,\"parent\":{\"id\"\
+      :13,\"name\":\"Meuble\",\"url_key\":\"meuble\",\"parent\":null},\"filters\"\
+      :[],\"childs\":[],\"id\":615}\n{\"index\":{\"_id\":16,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":16,\"name\":\"Salle \xE0 manger\",\"url_key\":\"meuble/salle-a-manger\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"Meuble / Salle \xE0\
+      \ manger\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"\
+      description\":null,\"short_description\":null,\"level\":1,\"parent\":{\"id\"\
+      :13,\"name\":\"Meuble\",\"url_key\":\"meuble\",\"parent\":null},\"filters\"\
+      :[],\"childs\":[],\"id\":616}\n{\"index\":{\"_id\":19,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":19,\"name\":\"Salon\",\"url_key\":\"meuble/salon\",\"redirect_url_key\"\
+      :[],\"subtitle\":null,\"seo_title\":\"Meuble / Salon\",\"sequence\":0,\"meta_keywords\"\
+      :null,\"meta_description\":null,\"description\":null,\"short_description\":null,\"\
+      level\":1,\"parent\":{\"id\":13,\"name\":\"Meuble\",\"url_key\":\"meuble\",\"\
+      parent\":null},\"filters\":[],\"childs\":[],\"id\":617}\n{\"index\":{\"_id\"\
+      :20,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"}}\n\
+      {\"objectID\":20,\"name\":\"Chaise\",\"url_key\":\"meuble/salon/chaise\",\"\
+      redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"Meuble / Salon / Chaise\"\
+      ,\"sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"description\"\
+      :null,\"short_description\":null,\"level\":2,\"parent\":{\"id\":19,\"name\"\
+      :\"Salon\",\"url_key\":\"meuble/salon\",\"parent\":{\"id\":13,\"name\":\"Meuble\"\
+      ,\"url_key\":\"meuble\",\"parent\":null}},\"filters\":[],\"childs\":[],\"id\"\
+      :618}\n{\"index\":{\"_id\":23,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":23,\"name\":\"Meuble TV\",\"url_key\":\"meuble/salon/meuble-tv\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"Meuble / Salon /\
+      \ Meuble TV\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"\
+      description\":null,\"short_description\":null,\"level\":2,\"parent\":{\"id\"\
+      :19,\"name\":\"Salon\",\"url_key\":\"meuble/salon\",\"parent\":{\"id\":13,\"\
+      name\":\"Meuble\",\"url_key\":\"meuble\",\"parent\":null}},\"filters\":[],\"\
+      childs\":[],\"id\":619}\n{\"index\":{\"_id\":21,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":21,\"name\":\"Rangement\",\"url_key\":\"meuble/salon/rangement\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"Meuble / Salon /\
+      \ Rangement\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"\
+      description\":null,\"short_description\":null,\"level\":2,\"parent\":{\"id\"\
+      :19,\"name\":\"Salon\",\"url_key\":\"meuble/salon\",\"parent\":{\"id\":13,\"\
+      name\":\"Meuble\",\"url_key\":\"meuble\",\"parent\":null}},\"filters\":[],\"\
+      childs\":[],\"id\":620}\n{\"index\":{\"_id\":22,\"_index\":\"demo_elasticsearch_backend_shopinvader_category_en_us\"\
+      }}\n{\"objectID\":22,\"name\":\"Tables\",\"url_key\":\"meuble/salon/tables\"\
+      ,\"redirect_url_key\":[],\"subtitle\":null,\"seo_title\":\"Meuble / Salon /\
+      \ Tables\",\"sequence\":0,\"meta_keywords\":null,\"meta_description\":null,\"\
+      description\":null,\"short_description\":null,\"level\":2,\"parent\":{\"id\"\
+      :19,\"name\":\"Salon\",\"url_key\":\"meuble/salon\",\"parent\":{\"id\":13,\"\
+      name\":\"Meuble\",\"url_key\":\"meuble\",\"parent\":null}},\"filters\":[],\"\
+      childs\":[],\"id\":621}\n"
+    headers:
+      Content-Length:
+      - '11107'
+      content-type:
+      - application/json
+      user-agent:
+      - elasticsearch-py/7.14.0 (Python 3.8.10)
+      x-elastic-client-meta:
+      - es=7.14.0,py=3.8.10,t=7.14.0,rq=2.19.1,h=bp
+    method: POST
+    uri: http://elastic:9200/_bulk
+  response:
+    body:
+      string: '{"took":271,"errors":false,"items":[{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":0,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":1,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"10","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":2,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"11","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":3,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"12","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":4,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"3","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":5,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":6,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":7,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"8","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":8,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"5","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":9,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":10,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"7","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":11,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"13","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":12,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"15","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":13,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"17","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":14,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"18","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":15,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"14","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":16,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"16","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":17,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":18,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"20","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":19,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"23","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":20,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"21","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":21,"_primary_term":1,"status":201}},{"index":{"_index":"demo_elasticsearch_backend_shopinvader_category_en_us","_type":"_doc","_id":"22","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"_seq_no":22,"_primary_term":1,"status":201}}]}'
+    headers:
+      content-length:
+      - '5239'
+      content-type:
+      - application/json; charset=UTF-8
+    status:
+      code: 200
+      message: OK
+version: 1
