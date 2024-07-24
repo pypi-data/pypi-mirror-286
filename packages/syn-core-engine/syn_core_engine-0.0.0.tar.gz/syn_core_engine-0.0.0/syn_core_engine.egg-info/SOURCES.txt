@@ -1,0 +1,7 @@
+README.md
+setup.py
+syn-core-engine/__init__.py
+syn_core_engine.egg-info/PKG-INFO
+syn_core_engine.egg-info/SOURCES.txt
+syn_core_engine.egg-info/dependency_links.txt
+syn_core_engine.egg-info/top_level.txt
