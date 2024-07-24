@@ -1,0 +1,11 @@
+exact_kmeans/__init__.py,sha256=D0sAFjrN859MqqpIRAkOVu5ArPo7Wyq1Pnf7b4uzb6I,68
+exact_kmeans/__main__.py,sha256=nUHVKLuOM97SgW5i0eE_70SEU6_DFgPBGy8hhtl7yjA,3606
+exact_kmeans/callbacks.py,sha256=xXO6U3U62tfoS_dcg-aVbtMzJl9Pb9K9lu2FfVJPGqM,2299
+exact_kmeans/dynamic_program/__init__.py,sha256=F4z8N0B-IJwHW9i03Mqx9kDjZ5wjZNWETj2sZHCjQZQ,95
+exact_kmeans/dynamic_program/dp_plain.py,sha256=Z45h3Fbrek6ztEj4PB2859cYUtd75purUo1cV4LGYLc,3121
+exact_kmeans/ilp.py,sha256=eWTEnOcow5eY2_WOtDYoPDsEzRYAP-fjL9eadj_yD5c,39624
+exact_kmeans/util.py,sha256=IBBfxGTZjbUzGSlhsrnPuakJpRG0VyaRwFLAf9Ryr7Y,3965
+exact_kmeans-0.1.0.dist-info/LICENSE,sha256=Bf3NhE4juYZJ6hONA3f5A2a1mgpGiZHV-49fcF-22mc,1138
+exact_kmeans-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+exact_kmeans-0.1.0.dist-info/METADATA,sha256=6vL3HMNK3rPW6jimoV_acC7FW-4rtXsmNf9FPckk7gI,10058
+exact_kmeans-0.1.0.dist-info/RECORD,,
