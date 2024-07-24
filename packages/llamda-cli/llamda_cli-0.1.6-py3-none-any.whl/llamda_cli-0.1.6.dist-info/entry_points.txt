@@ -1,0 +1,3 @@
+[console_scripts]
+lld=llamda_cli:cli
+
