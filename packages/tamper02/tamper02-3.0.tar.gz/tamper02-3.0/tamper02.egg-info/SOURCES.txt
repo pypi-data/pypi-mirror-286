@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tamper02/__init__.py
+tamper02/main.py
+tamper02.egg-info/PKG-INFO
+tamper02.egg-info/SOURCES.txt
+tamper02.egg-info/dependency_links.txt
+tamper02.egg-info/entry_points.txt
+tamper02.egg-info/top_level.txt
