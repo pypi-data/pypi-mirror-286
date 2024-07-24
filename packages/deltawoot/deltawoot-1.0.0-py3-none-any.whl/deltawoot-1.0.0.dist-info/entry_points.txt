@@ -1,0 +1,2 @@
+[console_scripts]
+deltawoot = deltawoot.recv:main
