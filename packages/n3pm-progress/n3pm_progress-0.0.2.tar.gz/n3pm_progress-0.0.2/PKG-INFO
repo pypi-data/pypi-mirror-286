@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: n3pm-progress
+Version: 0.0.2
+Summary: App that allows save progress of model fields by date
+Author-email: Stanislav Baltrunas <s.baltrunas@netrika.ru>
+Project-URL: Homepage, https://gitlab.develop.netrika.ru/web/projectmanage/libs/n3pm-progress
+Project-URL: Issues, https://gitlab.develop.netrika.ru/web/projectmanage/libs/n3pm-progress/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# N3PM Progress
