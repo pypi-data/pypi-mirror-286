@@ -1,0 +1,5 @@
+appdirs==1.4.4
+globmatch==2.0.0
+psutil==6.0.0
+refuse==0.0.4
+str2type==0.4.1

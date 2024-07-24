@@ -1,0 +1,12 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+passthrough_support_excludeglob_fs/__init__.py
+passthrough_support_excludeglob_fs/main.py
+passthrough_support_excludeglob_fs.egg-info/PKG-INFO
+passthrough_support_excludeglob_fs.egg-info/SOURCES.txt
+passthrough_support_excludeglob_fs.egg-info/dependency_links.txt
+passthrough_support_excludeglob_fs.egg-info/entry_points.txt
+passthrough_support_excludeglob_fs.egg-info/requires.txt
+passthrough_support_excludeglob_fs.egg-info/top_level.txt
