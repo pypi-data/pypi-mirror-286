@@ -1,0 +1,8 @@
+requests>=2.31.0
+pydantic>=2.7.1
+pydantic[email]>=2.7.1
+ping3>=4.0.8
+
+[test]
+pytest>=6.2
+pytest-mock>=3.6
