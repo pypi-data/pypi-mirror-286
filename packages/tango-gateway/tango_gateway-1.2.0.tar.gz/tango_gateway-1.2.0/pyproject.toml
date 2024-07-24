@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "tangogateway/_version.py"
+
+
+[project]
+name = "tango-gateway"
+description = "A Tango gateway server"
+dynamic = ["version"]
+authors = [
+    { name = "Vincent Michel", email = "vincent.michel@maxlab.lu.se" },
+    { name = "KITS Software", email = "kits-sw@maxiv.lu.se" },
+]
+requires-python = ">=3.9"
+keywords = ["Tango"]
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+dependencies = ["aiozmq"]
+
+[tool.setuptools]
+packages = ["tangogateway"]
+
+[project.urls]
+Homepage = "http://www.maxiv.lu.se"
+Repository = "https://gitlab.com/MaxIV/tango-gateway"
+
+[project.scripts]
+tango-gateway = "tangogateway:main"
