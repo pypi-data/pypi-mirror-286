@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: modulos_client
+Version: 0.7.0
+Summary: Package to interact with the Modulos Platform
+Author-email: Modulos AG <contact@modulos.ai>
+Project-URL: Homepage, https://github.com/Modulos/modulos_client
+Project-URL: Bug Reports, https://github.com/Modulos/modulos_client/issues
+Project-URL: Source, https://github.com/Modulos/modulos_client
+Keywords: modulos_client
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click<=8.1.7,>=8.1.7
+Requires-Dist: pandas<=2.2.2,>=1.5.3
+Requires-Dist: pydantic<=2.7.3,>=2.4.2
+Requires-Dist: pyYAML<=6.0.1,>=6.0.1
+Requires-Dist: requests<=2.32.3,>=2.0.0
+Requires-Dist: tabulate<=0.9.0,>=0.9.0
+Provides-Extra: dev
+Requires-Dist: coverage<=7.5.3,>=7.2.7; extra == "dev"
+Requires-Dist: pytest<=8.2.2,>=7.3.1; extra == "dev"
+Requires-Dist: tox<=4.15.1,>=4.11.4; extra == "dev"
+
+## Modulos Client Tool
+
+This tool provides a Programmatic interface to interact with the Modulos platform.
