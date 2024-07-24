@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: MultiScaleOT
+Version: 0.3.8
+Summary: A package with coarse-to-fine solvers for optimal transport problems.
+Home-page: https://github.com/bernhard-schmitzer/MultiScaleOT
+Author: Bernhard Schmitzer
+Author-email: schmitzer@cs.uni-goettingen.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+The project is currently in early testing stages.
+More details and documentation will follow soon.
