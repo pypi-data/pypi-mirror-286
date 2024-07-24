@@ -1,0 +1,2 @@
+PyBluez@ https://github.com/AcrossTheCloud/pybluez/archive/master.zip#egg=PyBluez-0.30
+gattlib-dbus@ https://github.com/oscaracena/pygattlib/archive/dbus.zip#egg=gattlib-dbus-24.1.8
