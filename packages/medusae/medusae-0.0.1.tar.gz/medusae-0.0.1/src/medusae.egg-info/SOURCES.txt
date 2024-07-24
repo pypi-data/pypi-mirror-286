@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/README.md
+src/medusae/VERSION
+src/medusae/__init__.py
+src/medusae.egg-info/PKG-INFO
+src/medusae.egg-info/SOURCES.txt
+src/medusae.egg-info/dependency_links.txt
+src/medusae.egg-info/requires.txt
+src/medusae.egg-info/top_level.txt

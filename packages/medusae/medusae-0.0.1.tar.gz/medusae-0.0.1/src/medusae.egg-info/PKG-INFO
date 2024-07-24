@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: medusae
+Version: 0.0.1
+Summary: Multi-physic Evolutionary platform Driven by Unified Safety Analysis nEeds
+Home-page: https://github.com/code-coupling/medusae
+Author: R. Lenain
+Author-email: roland.lenain@cea.fr
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/code-coupling/medusae/issues
+Project-URL: Doc, https://medusae.readthedocs.io/en/latest/index.html
+Project-URL: Source, https://github.com/code-coupling/medusae
+Keywords: icoco,salome-c3po,multi-physics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE
+
+# Multi-physic Evolutionary platform Driven by Unified Safety Analysis nEeds
+
+In developpement ...
+
+
