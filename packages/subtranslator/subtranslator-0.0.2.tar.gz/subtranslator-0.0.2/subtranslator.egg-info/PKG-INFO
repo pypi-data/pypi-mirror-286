@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: subtranslator
+Version: 0.0.2
+Description-Content-Type: text/markdown
+
+# Subtitle Translator
+
+This Python package provides functionality to translate subtitle files from one language to another using the `pysrt` and `translate` modules. It includes functions to handle the translation of subtitle texts and save the results to a new file.
+
+## Installation
+
+You can install the package using pip. To install the latest version, use:
+
+```sh
+pip install subtitle-translator
+```
+# Requirements
+
+Python 3.x
+pysrt
+translate
+
+# Usage
+
+## Import the Package
+First, import the subtrans function from the subtitle_translator package:
+
+```sh
+from subtitle_translator import subtrans
+```
+
+# Translate Subtitles
+Call the subtrans function to translate a subtitle file. Provide the necessary parameters:
+```sh
+subtrans(file_name, from_lang, to_lang, output_name)
+
+```
+
+# Parameters:
+
+file_name (str): Path to the input subtitle file (e.g., input.srt).
+from_lang (str): Language code of the original subtitles (e.g., en for English).
+to_lang (str): Language code of the target language (e.g., es for Spanish).
+output_name (str): Path where the translated subtitle file will be saved (e.g., output.srt).
+
+# Example
+Hereâ€™s an example of how to use the subtrans function:
+
+```sh
+	from subtitle_translator import subtrans
+
+	# Translate subtitles from English to Spanish
+	subtrans('input.srt', 'en', 'es', 'output.srt')
+
+```
+In this example, the subtitles in input.srt are translated from English to Spanish and saved as output.srt.
+
+# License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+# Contributing
+Contributions are welcome! If you have suggestions, bug reports, or improvements, please open an issue or submit a pull request.
+
+# Contact
+
+WhatsApp - https://whatsapp.com/channel/interniq
+LinkedIn - https://www.linkedin.com/interniq
+Telegram - https://telegram.me/interniq 
