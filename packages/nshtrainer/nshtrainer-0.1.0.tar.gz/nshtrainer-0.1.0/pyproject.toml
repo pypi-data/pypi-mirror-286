@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "nshtrainer"
+version = "0.1.0"
+description = ""
+authors = ["Nima Shoghi <nimashoghi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nshconfig = "^0.2.0"
+nshrunner = "^0.1.0"
+torch = "*"
+typing-extensions = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
