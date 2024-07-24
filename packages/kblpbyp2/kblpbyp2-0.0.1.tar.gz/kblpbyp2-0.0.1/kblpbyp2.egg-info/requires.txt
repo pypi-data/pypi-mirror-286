@@ -1,0 +1,11 @@
+selenium
+beautifulsoup4
+pandas
+numpy
+plotnine
+scikit-learn
+networkx
+matplotlib
+seaborn
+plotly
+requests
