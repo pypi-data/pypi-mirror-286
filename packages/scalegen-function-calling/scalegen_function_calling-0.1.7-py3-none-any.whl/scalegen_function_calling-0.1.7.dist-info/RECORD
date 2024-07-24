@@ -1,0 +1,9 @@
+scalegen_function_calling/__init__.py,sha256=WtATpxY2rBp9BLESAJRXisIhAWhet0LJmqJ_Mh_EYHo,87
+scalegen_function_calling/client.py,sha256=YWccrhKo0jrwNBwb-PDUGUOEpxLVL5GwGHQNiFBObQ0,29742
+scalegen_function_calling/mistral_client.py,sha256=GyDWSfgsHs1MxPt_BNo0kCqLWAprsgbzbM-ogTA-rL8,16308
+scalegen_function_calling/vector_store.py,sha256=WIbxLGzoJwqkKPkEX7Xq52Tqw7SUB5WcOqKZSEhvNSc,2764
+scalegen_function_calling-0.1.7.dist-info/LICENSE,sha256=Nx8de0WbGyB7CqRaz5B5nJ7JY0YvCcxlSpldLz6oyno,1067
+scalegen_function_calling-0.1.7.dist-info/METADATA,sha256=aKrk0W9U9U_EHb7ZAD5WhJM3bMn7FwHPUpHoz3mLHTM,2937
+scalegen_function_calling-0.1.7.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+scalegen_function_calling-0.1.7.dist-info/top_level.txt,sha256=yhT4f5-f1qke-6vD_iAD0UPpazXcZZwYycvVnBI8WQ8,26
+scalegen_function_calling-0.1.7.dist-info/RECORD,,
