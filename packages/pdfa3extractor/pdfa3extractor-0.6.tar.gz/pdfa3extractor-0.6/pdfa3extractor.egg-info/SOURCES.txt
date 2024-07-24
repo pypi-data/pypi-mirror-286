@@ -1,0 +1,10 @@
+README.md
+setup.py
+pdfa3extractor/__init__.py
+pdfa3extractor/extractor.py
+pdfa3extractor.egg-info/PKG-INFO
+pdfa3extractor.egg-info/SOURCES.txt
+pdfa3extractor.egg-info/dependency_links.txt
+pdfa3extractor.egg-info/entry_points.txt
+pdfa3extractor.egg-info/requires.txt
+pdfa3extractor.egg-info/top_level.txt
