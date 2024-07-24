@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: vault_search
+Version: 0.2.11
+Summary: Utility that searching inside vault
+Home-page: https://gitlab.com/maksmikhalov/vault_search.git
+Author: Maks Mikhalov
+Author-email: dn2tx.com@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorlog ~=6.8.2
+Requires-Dist: requests ~=2.31.0
+
+# Search in Hashicorp Vault KV
+
+Searching in Vault first argument. Regular expressions are supported.
+
+### Required environment variables:
+* VAULT_ADDR - Format is PROTOCOL+FQDN of vault instance;
+* VAULT_NS - Vault namespace;
+* VAULT_KV_PATH - name of KV where search will start from.
+
+## Optional environment variables:
+* VAULT_INIT_KV_WEB - starting point in kv for search (example: inno/kv/creds)
+* VAULT_EXCLUDE - exclude path from search (example: deploy-tags)
+* VAULT_OUTPUT - output format: url, cli, path (default: cli)
+
+### Usage
+```
+vs [-h] [-i] [-e EXCLUDE] [-o OUTPUT] [-t MAX_THREADS] TEXT
+
+positional arguments:
+  TEXT            regexp for search
+
+optional arguments:
+  -h, --help      show this help message and exit
+  -i              for case insensitive search
+  -e EXCLUDE      exclude path (VAULT_EXCLUDE env)
+  -o OUTPUT       url, cli, path (VAULT_OUTPUT env)
+  -t MAX_THREADS  max threads (default: 100)
+```

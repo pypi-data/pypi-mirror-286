@@ -1,0 +1,2 @@
+[console_scripts]
+vs = vault_search.__init__:vs
