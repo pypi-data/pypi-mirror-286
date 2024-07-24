@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: subtranslator
+Version: 0.0.1
+Requires-Dist: pysrt
+Requires-Dist: translate
+
