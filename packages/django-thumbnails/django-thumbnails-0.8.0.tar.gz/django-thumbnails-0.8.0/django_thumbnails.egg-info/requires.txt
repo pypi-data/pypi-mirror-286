@@ -1,0 +1,7 @@
+django>=2.0
+da-vinci
+shortuuid
+pillow
+
+[redis]
+redis
