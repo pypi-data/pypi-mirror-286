@@ -1,0 +1,9 @@
+cmem_plugin_shapes/__init__.py,sha256=qre3kv0GraTnIOfWRPMwBXtP03v1k8JviAbAGUJykeg,28
+cmem_plugin_shapes/parameter_types.py,sha256=bDJf36TsZTzr8rVQutCd89U6WqUKDppFXDAfE6FGPqk,3633
+cmem_plugin_shapes/plugin_shapes.py,sha256=fnMIE4MTWlf9sAwwdHipRkVcyC9Ho4AWUBzewWhKI-c,11529
+cmem_plugin_shapes/prefix.cc.json,sha256=asEUcn-3B2A5CEOS-NYzxKgUHTZmdCb0VBJOhI3CE7U,169106
+cmem_plugin_shapes/shacl.jpg,sha256=j687sAG9jRZ-Irql9X1eNJgG7izZFNU7ncQWfg017y0,3850
+cmem_plugin_shapes-1.0.0b1.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_shapes-1.0.0b1.dist-info/METADATA,sha256=ZitBLTxpWaGwIo6gm9wYWH6FKlCOoBZfILhA8WSYgX4,1199
+cmem_plugin_shapes-1.0.0b1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cmem_plugin_shapes-1.0.0b1.dist-info/RECORD,,
