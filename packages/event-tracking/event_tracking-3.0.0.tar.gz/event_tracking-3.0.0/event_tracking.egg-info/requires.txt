@@ -1,0 +1,8 @@
+pytz
+django
+pymongo<4.4.1,>=4.0.0
+celery
+edx-django-utils
+edx-toggles
+openedx-events>=9.5.1
+six
