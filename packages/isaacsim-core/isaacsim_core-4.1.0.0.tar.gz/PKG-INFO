@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: isaacsim-core
+Version: 4.1.0.0
+Summary: Isaac Sim core extensions and APIs
+Author: Isaac Sim team
+License: NVIDIA Proprietary Software
+Project-URL: Home page, https://developer.nvidia.com/isaac-sim
+Project-URL: Documentation, https://docs.omniverse.nvidia.com/isaacsim/latest/index.html
+Project-URL: Forum, https://forums.developer.nvidia.com/c/omniverse/simulation/69
+Keywords: nvidia,omniverse,isaacsim,core
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Requires-Python: ==3.10.*
+Requires-Dist: isaacsim-kernel ==4.1.0.0
+Requires-Dist: numpy <2.0.0
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: torch >=2.2.0
+Requires-Dist: opencv-python
+Requires-Dist: psutil
+Requires-Dist: boto3
+Requires-Dist: pyyaml
+
