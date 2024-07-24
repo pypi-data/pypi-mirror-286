@@ -1,0 +1,195 @@
+// Operator terminals.
+UND.10: "undef"
+NEG.10: "not"
+ADD: "+"
+SUB: "-"
+DIV: "/"
+MOD: "\\"
+MUL: "*"
+NEQ: "!="
+EQQ: "=" | "=="
+LES: "<"
+GRT: ">"
+LEQ: "<="
+GEQ: ">="
+
+// Operators.
+OP: ADD
+  | SUB
+  | DIV
+  | MOD
+  | MUL
+  | EQQ
+  | NEQ
+  | LES
+  | GRT
+  | LEQ
+  | GEQ
+
+// Comparison operators.
+CMP_OP: EQQ
+      | NEQ
+      | LES
+      | GRT
+      | LEQ
+      | GEQ
+
+frac: REAL "/" REAL
+prob: frac | REAL
+
+// Constants.
+WORD: /[a-z]\w*/
+// Variables.
+VAR: /[A-Z]\w*/
+
+// Boolean type.
+BOOL: (/true/i | /false/i)
+// Null type.
+NULL: (/null/i | /none/i)
+
+// URL.
+URL: /(?:https?:\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)/
+// Local data path.
+LOCAL_DATA: /(?:\/?[a-zA-Z\d\.\-_]+|(?:\\ ))+/
+// Python function identifier.
+PY_FUNC: /[a-zA-Z_][a-zA-Z0-9_]*/
+// Local network path.
+LOCAL_NET: /(?:[\w\d.\-_\/]+|(?:\\ ))+/
+// Github repo network path.
+GITHUB: /[A-Za-z\d](?:[A-Za-z\d]|-(?=[A-Za-z\d])){0,38}\/[a-zA-Z0-9\-_.]{1,100}/
+// Path.
+path.10: "\"" (LOCAL_DATA | URL) "\""
+
+SHARED: "*"
+LEARN:  "?"
+CONST:  "!"
+
+// Set.
+set: "{" (((ID | WORD) ("," (ID | WORD))+) | interval) "}"
+
+// Atom.
+_atom: WORD
+// Interval.
+interval: (ID | WORD) ".." (ID | WORD)
+// Predicate.
+_ground: (_atom | grpred)
+_nground: (_atom | pred)
+grpred: WORD "(" (_ground | ID | interval) ("," (_ground | ID | interval))* ")"
+query_pred: WORD "(" (VAR | _nground | ID | interval) ((";" | ",") (VAR | _nground | ID | interval))* ")"
+pred: WORD "(" (_nground | ID | interval | VAR) ("," (_nground | ID | interval | VAR))* ")"
+// Literal.
+lit: NEG* _nground
+grlit: NEG* _ground
+
+// Aggregate constraints.
+!aggr: (/[0-9]+/ CMP_OP)? ("#" ("sum" | "count" | "sum+" | "min" | "max"))? "{" /[^\}]+/ "}" (CMP_OP /[0-9]+/)?
+!raggr: (aggr | _ground | _nground)? ":-" (_ground | _nground | aggr) ("," (_ground | _nground | aggr))* "."
+!caggr: aggr "."
+_aggr: aggr | raggr | caggr
+
+// Fact.
+fact: _ground "."
+// Probabilistic fact.
+pfact: prob "::" _ground "."
+lpfact: prob? "?" "::" _ground "."
+// Credal fact.
+cfact: "[" prob "," prob "]" "::" _ground "."
+_fact: fact | pfact | lpfact | cfact
+
+// Head of a rule.
+head: _nground (("," | ";") _nground)*
+ohead: _nground
+// Body of a rule.
+body: (lit | bop) ("," (lit | bop))*
+// Rule.
+rule: head ":-" body "."
+// Probabilistic rule.
+prule: prob? (SHARED? LEARN? | LEARN? SHARED?) "::" ohead ":-" body "."
+_rule: prule | rule
+
+// Annotated disjunction head.
+ad_head{arg}: prob "::" arg (";" prob "::" arg)+
+// Learnable annotated disjunction head.
+lad_head{arg}: prob? "?" "::" arg (";" prob? "?" "::" arg)+
+// Annotated disjunctions.
+ad: (ad_head{_ground} | lad_head{_ground}) "."
+adr: (ad_head{_nground} | lad_head{_nground}) ":-" body "."
+_ad: ad | adr
+
+// Python function call with arguments.
+py_func_args: WORD | REAL | ID
+py_func_kwargs: WORD "=" (WORD | REAL | ID)
+py_func_call: PY_FUNC ("(" (py_func_args | py_func_kwargs) ("," (py_func_args | py_func_kwargs))* ")")?
+
+// Data special rule.
+test: "test" "(" (path | ("@" py_func_call)) ")"
+train: "train" "(" (path | ("@" py_func_call)) ")"
+data: WORD "(" (WORD | ID) ")" "~" test ("," train)? "."
+// Torch block.
+python: "#python" /(?:.|\n)+?(?=\#end\.)/ "#end."
+// PyTorch hub.
+hub: "@" PY_FUNC ("on" (("\"" LOCAL_NET "\"" ("at" "\"local\"")?) | ("\"" GITHUB "\"" "at" "\"github\"")))?
+// Optimizer parameters.
+_param: WORD "=" (REAL | BOOL | NULL | ("\"" /\w+/ "\""))
+// Sequence of parameters.
+params: _param ("," _param)*
+// Neural fact.
+nrule: (LEARN | CONST) "::" WORD "(" VAR (";" set)? ")" "as" hub ("with" params)? ":-" lit ("," lit)* "."
+// Neural annotated disjunction.
+nad: (LEARN | CONST) "::" WORD "(" VAR "," set (";" set)? ")" "as" hub ("with" params)? ":-" lit ("," lit)* "."
+_neural: nrule | nad
+
+// Learning options and directive.
+_learn_opt_lr: /lr/ "=" REAL
+_learn_opt_alg: /alg/ "=" "\"" (/lagrange/ | /neurasp/ | /fixpoint/) "\""
+_learn_opt_batch: /batch/ "=" ID
+_learn_opt_niters: /niters/ "=" ID
+_learn_opt_momentum: /momentum/ "=" REAL
+_learn_opt_smoothing: /smoothing/ "=" REAL
+_learn_opt_display: /display/ "=" "\"" (/none/ | /progress/ | /loglikelihood/) "\""
+_learn_opt: (_learn_opt_lr | _learn_opt_alg | _learn_opt_batch | _learn_opt_niters
+           | _learn_opt_display | _learn_opt_smoothing | _learn_opt_momentum)
+_learn_exp: (("@" PY_FUNC) | path) ("," _learn_opt)*
+learn: "#learn" (("(" _learn_exp ")") | (_learn_exp)) "."
+
+// Semantics options and directive.
+SEMANTICS_OPT_LOGIC: "stable" | "lstable" | "partial" | "smproblog"
+SEMANTICS_OPT_PROB:  "maxent" | "credal"
+_semantics_exp: ((SEMANTICS_OPT_LOGIC ("," SEMANTICS_OPT_PROB)?) | (SEMANTICS_OPT_PROB ("," SEMANTICS_OPT_LOGIC)?))
+semantics: "#semantics" (("(" _semantics_exp ")") | (_semantics_exp)) "."
+
+// Include directive.
+include: "#include" "\"" LOCAL_DATA "\"" ("," "\"" LOCAL_DATA "\"")* "."
+
+// Inference directive.
+exact_inf: "exact"
+aseo_inf: "aseo" "," "nmodels" "=" ID
+inference: "#inference" (exact_inf | aseo_inf) "."
+
+// Constraint.
+constraint: ":-" body "."
+
+// Binary operation.
+bop: ((ID | VAR | bop | WORD) OP (ID | VAR | bop | WORD)) | (VAR EQQ interval)
+
+// Query.
+qelement: (NEG | UND)? (WORD | query_pred)
+interp: qelement ("," qelement)*
+_interp_exp: interp ("|" interp)?
+query: "#query" (("(" _interp_exp ")") | ( _interp_exp )) "."?
+
+// Constant definition.
+constdef: "#const" WORD "=" ID "."
+
+plp: (constdef | _fact | _rule | _ad | _neural | data | python | constraint | query | learn | semantics | _aggr | inference | include)*
+
+COMMENT: "%" /[^\n]*/ NEWLINE
+
+%import common.WORD -> NAME
+%import common.INT -> ID
+%import common.NUMBER -> REAL
+%import common.NEWLINE -> NEWLINE
+%import common.WS
+
+%ignore WS
+%ignore COMMENT
