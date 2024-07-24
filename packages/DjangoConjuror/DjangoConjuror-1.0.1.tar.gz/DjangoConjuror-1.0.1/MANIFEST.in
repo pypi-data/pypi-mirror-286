@@ -1,0 +1,8 @@
+recursive-include conjuror/Auth/djangoauth/email_templates *
+recursive-include conjuror/Auth/static/assets/css/ *
+recursive-include conjuror/Auth/static/assets/js/ *
+recursive-include conjuror/Auth/static/assets/images/ *
+recursive-include conjuror/Auth/static/assets/fonts/ *
+recursive-include conjuror/Auth/templates/auth/ *
+
+
