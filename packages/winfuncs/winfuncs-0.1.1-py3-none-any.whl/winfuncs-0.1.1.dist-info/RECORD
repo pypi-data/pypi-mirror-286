@@ -1,0 +1,9 @@
+winfuncs/KeyboardHookProc.dll,sha256=qao5jTqwifg9aFzmgt2I9g3fMuhLfdX6PlkDL0PAnek,14848
+winfuncs/WinFuncs.dll,sha256=UG0vTMJUpyOkhO6GKH9_Sd_Yvxbqe3-5YrTJ4R7OgkM,19456
+winfuncs/__init__.py,sha256=jSmt7Zuq9rtMQGoUqhFeYOBJSPvz2PUnuaZTdepsPlk,830
+winfuncs/_winfuncs.py,sha256=sHBeh8efWry0RI2eWmRXhwq97na7AMUNLbT8uwG5IaM,1667
+winfuncs-0.1.1.dist-info/LICENSE,sha256=HCdRZQtGu2NWrCEsm9GfIghJZEnq5ET7Pc6O9K3sYVE,1084
+winfuncs-0.1.1.dist-info/METADATA,sha256=yoFQG4rRgsndUE0RqMT8o9iOI84eW4V7ETdtewmG5JU,2281
+winfuncs-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+winfuncs-0.1.1.dist-info/top_level.txt,sha256=uZdNnl52lNNNu2tfBla3DZ2u_Sw9XAjeCSLKyIK8W4w,9
+winfuncs-0.1.1.dist-info/RECORD,,
