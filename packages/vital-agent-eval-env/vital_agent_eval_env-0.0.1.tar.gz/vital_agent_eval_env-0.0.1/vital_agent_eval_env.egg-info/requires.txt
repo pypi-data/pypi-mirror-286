@@ -1,0 +1,6 @@
+vital-ai-vitalsigns>=0.1.19
+vital-ai-aimp>=0.1.6
+
+[dev]
+twine
+setuptools
