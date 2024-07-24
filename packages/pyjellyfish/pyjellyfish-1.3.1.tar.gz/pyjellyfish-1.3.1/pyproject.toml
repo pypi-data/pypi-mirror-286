@@ -1,0 +1,53 @@
+[build-system]
+requires = ["pip", "setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyjellyfish"
+requires-python = ">= 3.8"
+authors = [
+  { name="Albert Feghaly", email="albert.feghaly@umontreal.ca" },
+]
+description = "Python interface to the Jellfish DNA k-mer counter"
+license = { text="BSD-3-Clause" }
+keywords = ["k-mer", "DNA", "RNA"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Healthcare Industry",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Topic :: Software Development :: Build Tools",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "License :: OSI Approved :: BSD License",
+  "Natural Language :: English",
+]
+dynamic = ["version", "readme"]
+
+[project.urls]
+Repository = "https://github.com/iric-soft/pyJellyfish"
+
+[tool.setuptools]
+packages = ["pyjellyfish"]
+py-modules = ["dna_jellyfish"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+pyjellyfish = [".*libs/*"]
+
+[tool.setuptools.exclude-package-data]
+# https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+# https://stackoverflow.com/a/58050701
+# https://stackoverflow.com/a/54953494
+jf = ["pkgs/*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pyjellyfish.__version__"}
+readme = {file = ["README.md"], content-type = "text/markdown"}

@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+jf/pkgs/jellyfish-2.2.10.tar.gz
+jf/pkgs/jellyfish-2.3.0.tar.gz
+jf/pkgs/links.txt
+pyjellyfish/Jellyfish.py
+pyjellyfish/__init__.py
+pyjellyfish.egg-info/PKG-INFO
+pyjellyfish.egg-info/SOURCES.txt
+pyjellyfish.egg-info/dependency_links.txt
+pyjellyfish.egg-info/top_level.txt
+pyjellyfish/.libs/libjellyfish-2.0.so.2
