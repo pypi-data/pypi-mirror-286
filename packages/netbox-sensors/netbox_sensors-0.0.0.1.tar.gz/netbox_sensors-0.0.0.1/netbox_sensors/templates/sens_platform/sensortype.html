@@ -1,0 +1,52 @@
+{% extends 'generic/object.html' %}
+{% load render_table from django_tables2 %}
+
+{% block content %}
+  <div class="row mb-3">
+    <div class="col col-md-6">
+      <div class="card">
+        <h5 class="card-header">Sensor Type</h5>
+        <div class="card-body">
+          <table class="table table-hover attr-table">
+            <tr>
+              <th scope="row">Name</th>
+              <td>{{ object.name }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Icon</th>
+              <td>{{ object.icon }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Nb. sensors</th>
+              <td>{{ object.nb_sensors }}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      {% include 'inc/panels/tags.html' %}
+      {% include 'inc/panels/comments.html' %}
+      {% include 'inc/panels/custom_fields.html' %}
+    </div>
+
+  <div class="row">
+    <div class="col col-md-12">
+      <div class="card">
+        <h5 class="card-header">Sensors</h5>
+        <div class="card-body table-responsive">
+          {% render_table sensors_table %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col col-md-12">
+      <div class="card">
+        <h5 class="card-header">Transducer type</h5>
+        <div class="card-body table-responsive">
+          {% render_table transducer_type_table %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

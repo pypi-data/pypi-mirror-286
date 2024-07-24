@@ -1,0 +1,101 @@
+{% extends 'generic/object.html' %}
+
+{% block content %}
+  <div class="row mb-3">
+    <div class="col col-md-6">
+      <div class="card">
+        <h5 class="card-header">Transducer</h5>
+        <div class="card-body">
+          <table class="table table-hover attr-table">
+            <tr>
+                <th scope="row">Name</th>
+                <td>{{ object.name }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Alias</th>
+                <td>{{ object.alias }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Transducer type</th>
+              <td>
+                <a href="{{ object.type.get_absolute_url }}">{{ object.type }}</a>
+              </td>
+            </tr>
+            <tr>
+<!--              <th scope="row">Sensor</th>-->
+<!--                <td>-->
+<!--                  <a href="{{ object.device.get_absolute_url }}">{{ object.sensor }}</a>-->
+<!--                </td>-->
+<!--              </tr>-->
+              <th scope="row">Unit</th>
+                <td>
+                  {{ object.unit|placeholder }}</a>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+      {% include 'inc/panels/custom_fields.html' %}
+      {% include 'inc/panels/tags.html' %}
+      {% include 'inc/panels/comments.html' %}
+    </div>
+    <div class="col col-md-6">
+      <div class="card">
+        <h5 class="card-header">Details</h5>
+        <div class="card-body">
+          <table class="table table-hover attr-table">
+            <tr>
+              <th scope="row">Icon</th>
+              <td>{{ object.icon|placeholder }}
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Customer ID</th>
+              <td>{{ object.customer_id|placeholder }}
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Elevation</th>
+              <td>{{ object.elevation|placeholder }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Longitud</th>
+              <td>{{ object.longitud|placeholder }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Latitud</th>
+              <td>{{ object.latitud|placeholder }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Min. warning</th>
+              <td>{{ object.min_warning|placeholder }}
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Max. warning</th>
+              <td>{{ object.max_warning|placeholder }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Min. critical</th>
+              <td>{{ object.min_critical|placeholder }}
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Max. critical</th>
+              <td>{{ object.max_critical|placeholder }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Min. custom</th>
+              <td>{{ object.min_custom|placeholder }}
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Max. custom</th>
+              <td>{{ object.max_custom|placeholder }}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

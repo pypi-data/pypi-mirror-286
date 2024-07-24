@@ -1,0 +1,55 @@
+{% extends 'dcim/device/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{{ object }} - {% trans "Sens" %}{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col">
+          <div class="card">
+            <h5 class="card-header">{% trans "Sensors" %}</h5>
+            <div class="card-body">
+            {% if sensors %}
+                <table class="table table-hover">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Serial nb.</th>
+                        <th>Transducers</th>
+                    </tr>
+                    {% for sensor in sensors %}
+                    <tr>
+                        <td><a href="{% url 'plugins:sens_platform:sensor' pk=sensor.pk %}">{{ sensor.name }}</a></td>
+                        <td>
+                            {% if sensor.type.all %}
+                                {% for type in sensor.type.all %}
+                                    {{ type }}
+                                {% endfor %}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
+                        <td>{{ sensor.serial }}</td>
+                        <td>
+                            {% if sensor.transducers %}
+                                {% for transducer in sensor.transducers %}
+                                    {{ transducer.name }}{% if not forloop.last %}, {% endif %}
+                                {% endfor %}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            {% else %}
+                <div class="text-muted">
+                    None
+                </div>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+  </div>
+{% endblock %}
