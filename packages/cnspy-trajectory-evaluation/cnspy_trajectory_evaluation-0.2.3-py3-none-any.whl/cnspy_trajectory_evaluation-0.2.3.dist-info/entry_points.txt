@@ -1,0 +1,2 @@
+[console_scripts]
+TrajectoryEvaluation = cnspy_trajectory_evaluation.TrajectoryEvaluation:main
