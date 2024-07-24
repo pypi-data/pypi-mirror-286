@@ -1,0 +1,8 @@
+pypz-core
+amqp==5.2.0
+
+[static]
+flake8~=7.0.0
+flake8-html~=0.4.3
+mypy~=1.8.0
+coverage~=7.4.1
