@@ -1,0 +1,8 @@
+README.md
+setup.py
+kStatistics/__init__.py
+kStatistics/main.py
+kStatistics.egg-info/PKG-INFO
+kStatistics.egg-info/SOURCES.txt
+kStatistics.egg-info/dependency_links.txt
+kStatistics.egg-info/top_level.txt
