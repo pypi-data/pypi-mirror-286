@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rna-moccasin
+Version: 0.0.1
+Summary: dummy package for rna_moccasin
+Home-page: https://majiq.biociphers.org/
+Author: BioCiphers
+Author-email: admin@biociphers.org
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# rna_majiq and rna_voila
+
+This is a placeholder package to reserve the pypi name and prevent confusion when installing the "majiq" and "voila" packages created by the
+Biociphers Lab for quantification and visualization of RNA splicing from RNA-seq data. You most likely didn't mean to install this package 
+from pypi. Please see https://majiq.biociphers.org/ for the full download and installation instructions of "majiq" and "voila"
+
+
