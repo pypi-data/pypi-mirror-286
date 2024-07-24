@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/geviewer/__init__.py
+src/geviewer/geviewer.py
+src/geviewer/main.py
+src/geviewer/parser.py
+src/geviewer/utils.py
+src/geviewer.egg-info/PKG-INFO
+src/geviewer.egg-info/SOURCES.txt
+src/geviewer.egg-info/dependency_links.txt
+src/geviewer.egg-info/entry_points.txt
+src/geviewer.egg-info/requires.txt
+src/geviewer.egg-info/top_level.txt
+tests/test_geviewer.py
+tests/test_safe_mode.py
