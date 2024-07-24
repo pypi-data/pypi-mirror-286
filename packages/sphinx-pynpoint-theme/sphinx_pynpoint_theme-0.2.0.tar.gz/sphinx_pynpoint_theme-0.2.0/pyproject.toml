@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "sphinx-pynpoint-theme"
+version = "0.2.0"
+description = "ETH cosmology theme for Sphinx"
+readme = "README.rst"
+authors = [
+  {name = "Uwe Schmitt", email = "uwe.schmitt@id.ethz.ch"}
+]
+
+license = {text = "MIT License"}
+
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'License :: OSI Approved :: MIT License',
+    'Intended Audience :: Developers',
+    'Programming Language :: Python :: 3',
+    'Operating System :: OS Independent',
+    'Topic :: Documentation',
+    'Topic :: Software Development :: Documentation',
+]
+
+
+dependencies = [
+  "sphinx"
+]
+
+[project.urls]
+Source = "https://cosmo-gitlab.phys.ethz.ch/uweschmitt/sphinx-pynpoint-theme"
+
+[project.optional-dependencies]
+dev = ["twine", "build", "hatchling", "wheel", "pre-commit", "ruff", "black", "tox"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["sphinx_pynpoint_theme"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["sphinx_pynpoint_theme"]
