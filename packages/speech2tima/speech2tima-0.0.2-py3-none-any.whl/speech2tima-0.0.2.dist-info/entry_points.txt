@@ -1,0 +1,3 @@
+[console_scripts]
+speech2tima = speech2tima.recognizer:main
+
