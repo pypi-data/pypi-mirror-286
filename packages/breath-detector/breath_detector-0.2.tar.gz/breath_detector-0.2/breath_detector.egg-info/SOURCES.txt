@@ -1,0 +1,8 @@
+setup.py
+breath_detector/__init__.py
+breath_detector/detector.py
+breath_detector.egg-info/PKG-INFO
+breath_detector.egg-info/SOURCES.txt
+breath_detector.egg-info/dependency_links.txt
+breath_detector.egg-info/requires.txt
+breath_detector.egg-info/top_level.txt
