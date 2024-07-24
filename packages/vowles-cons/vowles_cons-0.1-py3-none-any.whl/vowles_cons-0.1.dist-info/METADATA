@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: vowles_cons
+Version: 0.1
+Summary: This packages will help you on to count the vowels and consonants in a given string
+Author: Saral Kumar Kaviti
+Author-email: saralkumar.kapilit@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+
