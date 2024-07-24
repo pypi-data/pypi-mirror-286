@@ -1,0 +1,8 @@
+migoapiclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+migoapiclient/api_client.py,sha256=n8zU2DR8YS5yQhHhQ3q0D16JC4OUt53NxNLHrSowC0M,15372
+migoapiclient/file_manager.py,sha256=0q-KEW3h4Pv4kFK5Dxh8BIAoavgfIUS8nUM7RHyr3rc,986
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+migoapiclient-1.2.4.dist-info/METADATA,sha256=hCbs8XqlAWlq8l2NH8PHJ0zx0zAwhmwExj80O3sTm0k,3900
+migoapiclient-1.2.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+migoapiclient-1.2.4.dist-info/top_level.txt,sha256=4vq5zUG1yGR_o49dh4IM2pIMGiCCHF_caX4l-3QKtsI,18
+migoapiclient-1.2.4.dist-info/RECORD,,
