@@ -1,0 +1,12 @@
+noxjax/__init__.py,sha256=qLIaSXkTFKMU8dPzPgQ4ZXqknlg4G4-FWPU0VhXCLd4,549
+noxjax/_frozen.py,sha256=9D5ETBUC2xYlcKK9NsVWtU_Kd_BoNaXo9XvKVm161RY,6198
+noxjax/_module.py,sha256=uMYnQsRZRvJMUtG1lf_V71OjAdQLU-r4tzwm9zReZ-Y,10931
+noxjax/_mtypes.py,sha256=Zdvc3qMit84GqFeYGf8vAyY06Si9wiUb74DxO4tTggw,3269
+noxjax/_serial.py,sha256=t59ocT377-8Lbjwcpz18tc545JbokhwJwrKwFPjdBnE,5110
+noxjax/_trees.py,sha256=EqPp4yWbI2t9pp6K2nFqsd6T_izKpGcfBfjJAPxEJVk,1435
+noxjax/_typecheck.py,sha256=4t3IHv1bAGh0sp3k3u0rUU00rhrnyzQ1P45O7rW-Wwc,350
+noxjax/_utils.py,sha256=4hJIE7zQAwbGhdG9SEbvBn7iJlXs8cU98PmAdGf9Ty0,2558
+noxjax-0.1.1.dist-info/METADATA,sha256=JTsS3Z0WdsJqOHC6HlsGI2ubZEaXMZi-pRqkdpale3A,2949
+noxjax-0.1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+noxjax-0.1.1.dist-info/top_level.txt,sha256=eTu2JUx0GkgMthHVhHfVGKvaLfQstgYi-vuCmESEeIQ,7
+noxjax-0.1.1.dist-info/RECORD,,
