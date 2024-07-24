@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "satdatagen"
+version = "0.0.19"
+authors = [
+  { name="Adina Golden", email="adinag@alum.mit.edu" },
+]
+dependencies = ["numpy", "requests", "astropy",  "openmeteo_requests", "datetime", "sgp4"]
+description = "A Python package to generate datasets for satellite tasking schedulers."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ahgolden/satdatagen"
+Issues = "https://github.com/ahgolden/satdatagen/issues"

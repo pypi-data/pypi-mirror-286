@@ -1,0 +1,40 @@
+
+class Satellite:
+
+	def __init__(self, tle_json):
+		self.tle_json = tle_json
+
+
+		if isinstance(tle_json, list):
+			self.tle_line1 = [i['TLE_LINE1'] for i in tle_json]
+			self.tle_line2 = [i['TLE_LINE2'] for i in tle_json]
+			self.name = [i['OBJECT_NAME'] for i in tle_json]
+			self.satno = [i['NORAD_CAT_ID'] for i in tle_json]
+		else:
+			self.tle_line1 = [tle_json['TLE_LINE1']]
+			self.tle_line2 = [tle_json['TLE_LINE2']]
+			self.name = [tle_json['OBJECT_NAME']]
+			self.satno = [tle_json['NORAD_CAT_ID']]
+
+
+	def propagate(self, time_range):
+		sat_arr = [Satrec.twoline2rv(self.tle_line1[i], self.tle_line2[i]) for i in range(len(self.tle_line1))]
+		
+		sat_obj_arr = SatrecArray(sat_arr)
+		e,r,v = sat_obj_arr.sgp4(time_range.jd1, time_range.jd2)
+		return e,r,v
+
+
+
+# if __name__ == '__main__':
+# 	tle = [{"CCSDS_OMM_VERS":"3.0","COMMENT":"GENERATED VIA SPACE-TRACK.ORG API","CREATION_DATE":"2024-06-13T14:56:17","ORIGINATOR":"18 SPCS","OBJECT_NAME":"IRIDIUM 105","OBJECT_ID":"2017-003E","CENTER_NAME":"EARTH","REF_FRAME":"TEME","TIME_SYSTEM":"UTC","MEAN_ELEMENT_THEORY":"SGP4","EPOCH":"2024-06-13T11:34:07.609728","MEAN_MOTION":"14.34218516","ECCENTRICITY":"0.00020010","INCLINATION":"86.3980","RA_OF_ASC_NODE":"3.4639","ARG_OF_PERICENTER":"88.7112","MEAN_ANOMALY":"271.4312","EPHEMERIS_TYPE":"0","CLASSIFICATION_TYPE":"U","NORAD_CAT_ID":"41921","ELEMENT_SET_NO":"999","REV_AT_EPOCH":"38997","BSTAR":"0.00014696000000","MEAN_MOTION_DOT":"0.00000431","MEAN_MOTION_DDOT":"0.0000000000000","SEMIMAJOR_AXIS":"7155.802","PERIOD":"100.403","APOAPSIS":"779.098","PERIAPSIS":"776.235","OBJECT_TYPE":"PAYLOAD","RCS_SIZE":"LARGE","COUNTRY_CODE":"US","LAUNCH_DATE":"2017-01-14","SITE":"AFWTR","DECAY_DATE":'null',"FILE":"4344088","GP_ID":"259459662","TLE_LINE0":"0 IRIDIUM 105","TLE_LINE1":"1 41921U 17003E   24165.48203252  .00000431  00000-0  14696-3 0  9999","TLE_LINE2":"2 41921  86.3980   3.4639 0002001  88.7112 271.4312 14.34218516389979"},{"CCSDS_OMM_VERS":"3.0","COMMENT":"GENERATED VIA SPACE-TRACK.ORG API","CREATION_DATE":"2024-06-13T14:36:18","ORIGINATOR":"18 SPCS","OBJECT_NAME":"PSLV R/B","OBJECT_ID":"2019-028B","CENTER_NAME":"EARTH","REF_FRAME":"TEME","TIME_SYSTEM":"UTC","MEAN_ELEMENT_THEORY":"SGP4","EPOCH":"2024-06-13T08:07:38.011296","MEAN_MOTION":"15.32477427","ECCENTRICITY":"0.00414230","INCLINATION":"37.0225","RA_OF_ASC_NODE":"37.7692","ARG_OF_PERICENTER":"320.5635","MEAN_ANOMALY":"39.2106","EPHEMERIS_TYPE":"0","CLASSIFICATION_TYPE":"U","NORAD_CAT_ID":"44234","ELEMENT_SET_NO":"999","REV_AT_EPOCH":"28140","BSTAR":"0.00039523000000","MEAN_MOTION_DOT":"0.00012963","MEAN_MOTION_DDOT":"0.0000000000000","SEMIMAJOR_AXIS":"6846.561","PERIOD":"93.965","APOAPSIS":"496.786","PERIAPSIS":"440.065","OBJECT_TYPE":"ROCKET BODY","RCS_SIZE":"LARGE","COUNTRY_CODE":"IND","LAUNCH_DATE":"2019-05-22","SITE":"SRI","DECAY_DATE":'null',"FILE":"4343926","GP_ID":"259455681","TLE_LINE0":"0 PSLV R/B","TLE_LINE1":"1 44234U 19028B   24165.33863439  .00012963  00000-0  39523-3 0  9990","TLE_LINE2":"2 44234  37.0225  37.7692 0041423 320.5635  39.2106 15.32477427281408"}]
+
+# 	sample_sat = Satellite(tle)
+# 	start = datetime(2024, 6, 13, hour=18, minute = 20)
+# 	time_range = TimeRange(start, periods=5, delta = 2)
+
+# 	e, r, v = sample_sat.propagate(time_range)
+
+# 	print(e)
+# 	print('******\n\n\n')
+# 	print(r)
