@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+linearpartitionmodule.cc
+setup.cfg
+setup.py
+linearpartition_unofficial.egg-info/PKG-INFO
+linearpartition_unofficial.egg-info/SOURCES.txt
+linearpartition_unofficial.egg-info/dependency_links.txt
+linearpartition_unofficial.egg-info/requires.txt
+linearpartition_unofficial.egg-info/top_level.txt
+tests/test_linearpartition.py
