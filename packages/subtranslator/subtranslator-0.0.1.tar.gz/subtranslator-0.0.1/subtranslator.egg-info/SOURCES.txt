@@ -1,0 +1,8 @@
+setup.py
+programmingwithkumaresan/__init__.py
+programmingwithkumaresan/main.py
+subtranslator.egg-info/PKG-INFO
+subtranslator.egg-info/SOURCES.txt
+subtranslator.egg-info/dependency_links.txt
+subtranslator.egg-info/requires.txt
+subtranslator.egg-info/top_level.txt
