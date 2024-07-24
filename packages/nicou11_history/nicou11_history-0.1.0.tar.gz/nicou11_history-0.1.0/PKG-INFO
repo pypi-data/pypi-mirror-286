@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nicou11_history
+Version: 0.1.0
+Summary: Default template for PDM package
+Author-email: Nicou11 <lyoungin1204@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# my_history
+
+## Usage
+```
+$ search <검색할 단어>
+```
+
+## Result
+![image](https://github.com/user-attachments/assets/de719535-7228-4380-8ecf-b937d51d57a2)
