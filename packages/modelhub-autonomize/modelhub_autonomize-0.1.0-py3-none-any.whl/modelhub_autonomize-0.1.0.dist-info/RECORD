@@ -1,0 +1,9 @@
+modelhub_autonomize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelhub_autonomize/client.py,sha256=4vvkM73VAlc8DL5oP43VS4mkH9DUENy_yumW72SxaYI,2359
+modelhub_autonomize/decorators.py,sha256=L-JdtOA5pWOkntkZ6li_RlUIi3J0ugZ3Te3cC0qeJJY,105
+modelhub_autonomize/pipeline.py,sha256=6Y80EfFfvyZ4H7DDTc6QvNLiid4G0y8i3A1HhfF-jSA,2311
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelhub_autonomize-0.1.0.dist-info/METADATA,sha256=EGlXgfC3YVhFtuhRoqE1_Zu_jiPPdG7zCmh4qsPC-VY,560
+modelhub_autonomize-0.1.0.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+modelhub_autonomize-0.1.0.dist-info/top_level.txt,sha256=KxjK2D2p8wZyIxP8pe3LzO-ojg35hcXoyOYF5HKolNw,26
+modelhub_autonomize-0.1.0.dist-info/RECORD,,
