@@ -1,0 +1,3 @@
+[console_scripts]
+shyft=labelsmith.shyft.main:main
+
