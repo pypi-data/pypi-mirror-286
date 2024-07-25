@@ -1,0 +1,5 @@
+setup.py
+src/nlgmal.egg-info/PKG-INFO
+src/nlgmal.egg-info/SOURCES.txt
+src/nlgmal.egg-info/dependency_links.txt
+src/nlgmal.egg-info/top_level.txt
