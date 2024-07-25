@@ -1,0 +1,113 @@
+[project]
+name = "pare"
+version = "0.0.6"
+authors = [
+  { name="Caelean Barnes", email="caeleanb@gmail.com" },
+  { name="Evan Doyle", email="evanmdoyle@gmail.com" },
+]
+description = "Effortless serverless, in your own cloud"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+    "rich~=13.0",
+    "pydantic~=2.0",
+    "stdlib-list>=0.10.0; python_version < '3.10'",
+    "eval-type-backport>=0.2.0; python_version < '3.10'",
+    "boto3~=1.34.145",
+    "requests~=2.32.3",
+
+]
+keywords = ['python', 'lambda', 'aws', 'serverless', 'fastapi']
+[project.optional-dependencies]
+dev = [
+    # Core deps (pinned)
+    "pyyaml==6.0.1",
+    "pydantic==2.8.2; python_version > '3.7'",
+    "rich==13.7.1",
+    "fastapi==0.111.1",
+    "boto3-stubs-lite==1.34.145",
+    "boto3-stubs==1.34.145",
+    "tach==0.8.1",
+    # Setup
+    "pip==24.0",
+    # Code Quality
+    "pyright==1.1.372",
+    "ruff==0.5.2",
+    # Build/Release
+    "setuptools==69.5.1; python_version > '3.7'",
+    "twine==5.1.1; python_version > '3.7'",
+    "build==1.2.1; python_version > '3.7'",
+    # Tests
+    "pytest==8.2.2; python_version > '3.7'",
+    "pytest-mock==3.14.0; python_version > '3.7'",
+    "coverage==7.6.0; python_version > '3.7'",
+    # python version 3.7 pinned dependencies
+    "botocore==1.33.13; python_version == '3.7'",
+    "boto3-stubs-lite==1.33.13; python_version == '3.7'",
+    "boto3-stubs==1.33.13; python_version == '3.7'",
+    "pydantic==2.5.3; python_version == '3.7'",
+    "setuptools==47.1.0; python_version == '3.7'",
+    "twine==4.0.2; python_version == '3.7'",
+    "build==1.1.1; python_version == '3.7'",
+    "pytest==7.4.4; python_version == '3.7'",
+    "pytest-mock==3.11.1; python_version == '3.7'",
+    "coverage==7.2.7; python_version == '3.7'",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/gauge-sh/gauge-serverless"
+Issues = "https://github.com/gauge-sh/tach/gauge-serverless"
+
+[tool.ruff]
+target-version = "py38"
+exclude = ["**/__pycache__", ".venv", "api/src/transform/template.py"]
+lint.extend-select = ["I", "TCH", "UP"]
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.lint.flake8-type-checking]
+runtime-evaluated-base-classes = [
+    "pydantic.BaseModel",
+    "pydantic.RootModel",
+]
+runtime-evaluated-decorators = [
+    "pydantic.dataclasses.dataclass",
+    "dataclasses.dataclass",
+]
+exempt-modules = ["typing", "typing_extensions"]
+
+[tool.pyright]
+exclude = ["**/__pycache__", ".venv", "api/src/transform/template.py"]
+strict = ["."]
+pythonVersion = "3.8"
+
+[project.scripts]
+gauge = "gauge.cli.main:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gauge*"]
