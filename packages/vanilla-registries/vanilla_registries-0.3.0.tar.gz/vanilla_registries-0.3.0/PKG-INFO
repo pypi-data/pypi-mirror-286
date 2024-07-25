@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vanilla-registries
+Version: 0.3.0
+Summary: 
+License: MIT
+Author: edayot
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beet (>=0.108.1)
+Requires-Dist: requests (>=2.31.0,<3.0.0)

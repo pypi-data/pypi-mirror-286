@@ -1,0 +1,7 @@
+
+
+output: dist
+
+
+pipeline:
+  - demo
