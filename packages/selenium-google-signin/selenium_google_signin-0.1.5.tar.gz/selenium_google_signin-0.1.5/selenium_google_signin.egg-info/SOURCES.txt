@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+selenium_google_signin/__init__.py
+selenium_google_signin/_config.py
+selenium_google_signin/_google_login.py
+selenium_google_signin/_util.py
+selenium_google_signin.egg-info/PKG-INFO
+selenium_google_signin.egg-info/SOURCES.txt
+selenium_google_signin.egg-info/dependency_links.txt
+selenium_google_signin.egg-info/requires.txt
+selenium_google_signin.egg-info/top_level.txt
