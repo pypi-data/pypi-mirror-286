@@ -1,0 +1,8 @@
+aindex2-1.0.2.dist-info/WHEEL,sha256=jGKGDXVebap-ZTbLIJw-mKdICPJlrY32jyjgeVdYhZU,151
+aindex2-1.0.2.dist-info/top_level.txt,sha256=wopBHd-BnUc_hGv5JGKZzslJ4Qx9DO4ec17GMH1U-rA,7
+aindex2-1.0.2.dist-info/RECORD,,
+aindex2-1.0.2.dist-info/METADATA,sha256=81Q1hWWhn82pibTs0Eb4zEd6vrIwlPIxl5L5WI0zoe0,5462
+aindex/__init__.py,sha256=sFVWy2zXBiBZ_c1qzNBw4HPIdy_qjDUoC_46_wf8jDc,41
+aindex/core/python_wrapper.cpython-311-x86_64-linux-gnu.so,sha256=poU61VcXSY3CtktZK-73Rz5d6DPYv3n42uIvd3Q1xHI,1420112
+aindex/core/aindex.py,sha256=oLApCzGC47Hlrcm0Aat8M1yem4tv0NUuM-X-XZBG5fo,23992
+aindex/core/__init__.py,sha256=fmz1mURZZPdYCzGJ5SVrAj6XwlUAoD2WlAQgriaPBuE,47
