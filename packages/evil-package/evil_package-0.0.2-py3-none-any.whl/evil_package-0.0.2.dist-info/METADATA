@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: evil-package
+Version: 0.0.2
+Summary: Python package for testing the detection and response
+Home-page: https://github.com/petermat/evil-package
+Author: Peter Matkovski
+Author-email: p.matkovski@gmail.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
