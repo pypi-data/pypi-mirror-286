@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vame-py
+Version: 0.4.0
+Summary: Variational Animal Motion Embedding.
+Author: K. Luxem & , P. Bauer
+Project-URL: homepage, https://github.com/EthoML/VAME/
+Project-URL: repository, https://github.com/EthoML/VAME/
+Keywords: vame,auto-encoder
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: PyYAML >=6.0.0
+Requires-Dist: ruamel.yaml >=0.18.0
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: pandas >=2.2.0
+Requires-Dist: scipy >=1.13.0
+Requires-Dist: matplotlib >=3.9.0
+Requires-Dist: torch ==2.2.2
+Requires-Dist: tqdm >=4.66.0
+Requires-Dist: hmmlearn >=0.3.0
+Requires-Dist: opencv-python-headless >=4.9.0.0
+Requires-Dist: umap-learn >=0.5.0
+Requires-Dist: h5py >=3.11.0
+Requires-Dist: pydantic ==2.7.4
+Requires-Dist: imageio ==2.34.1
+Requires-Dist: imageio-ffmpeg ==0.5.1
+
