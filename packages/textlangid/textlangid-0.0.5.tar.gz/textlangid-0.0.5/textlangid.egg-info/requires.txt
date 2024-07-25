@@ -1,0 +1,3 @@
+fasttext-wheel
+huggingface_hub
+processors

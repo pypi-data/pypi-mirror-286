@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: textlangid
+Version: 0.0.5
+Summary: Detects the language of text
+Home-page: https://github.com/tools4eu/text-language-identifier
+Author: tools4eu
+Author-email: openeuro@proton.me
+Project-URL: Bug Tracker, https://github.com/tools4eu/text-language-identifier/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fasttext-wheel
+Requires-Dist: huggingface_hub
+Requires-Dist: processors
+
+# Text language identifier
+
+This package serves as a wrapper for the most performant text language identifier.
+
+Currently it wraps fasttext (NLLB version).
+
+Before detecting the language, it preprocesses the text to improve results.
