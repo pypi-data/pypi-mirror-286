@@ -1,0 +1,12 @@
+dexsnake/__init__.py,sha256=YGD6zqD983lMwgTUJeFdT_px0xpl4xvx1bxt7WulefA,25
+dexsnake/uniswap_v2/__init__.py,sha256=Exc7VJpWIZKVEPq0E3l8euYiFp1mXDsYlK0Bg30xseQ,106
+dexsnake/uniswap_v2/config.py,sha256=1R8FPyXTcbtW_kXN_pD6Pjy4gXCu36bosigG15dr5DI,1387
+dexsnake/uniswap_v2/factory.py,sha256=ukYto8IdEdHu20JL5QtS8jfaaszUjhE2i885WmTZWbo,1483
+dexsnake/uniswap_v2/pair.py,sha256=WQrUXct9_DAmA3njKo2nS5mBdN4cKj0JVMcrWFkp4iI,2000
+dexsnake/uniswap_v2/router.py,sha256=DWODPet7mW8byKPmLX6B5WuwEzCXuiW322FvQdlCrZc,6489
+dexsnake/uniswap_v2/abi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Dexsnake-0.0.1.dist-info/LICENSE,sha256=4r94PIMyrSX0tIWPkBhm6t0ctp9EJztbPDOoXDwGglY,1070
+Dexsnake-0.0.1.dist-info/METADATA,sha256=vMtP59A33HBt0yGy8JPMXQOWbAeKXnDNmhe81qg-9JQ,1593
+Dexsnake-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+Dexsnake-0.0.1.dist-info/top_level.txt,sha256=HuNGgXrb8H4Q6Vj1oD_G1e8P4eH02pBX8bC08laKA1A,9
+Dexsnake-0.0.1.dist-info/RECORD,,
