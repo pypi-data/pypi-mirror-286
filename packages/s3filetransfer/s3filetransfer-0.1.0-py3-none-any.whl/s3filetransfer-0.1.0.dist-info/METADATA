@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: s3filetransfer
+Version: 0.1.0
+Summary: A package to transfer files between S3 buckets with a progress bar
+Home-page: https://github.com/yourusername/s3filetransfer
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: tqdm
+
+# S3FileTransfer
+
+A package to transfer files between S3 buckets with a progress bar.
+
+## Installation
+
+```bash
+pip install s3filetransfer
+
+

@@ -1,0 +1,7 @@
+transfer/__init__.py,sha256=cYnyUCBNCaBg_tK3sUkO7XkXDFpLh9YD0wywdAk6F_s,36
+transfer/transfer.py,sha256=xiJYnXIhP8h4ZWIVD8dMn6EFyWH3DXtGFFJ0EZMvkCc,1954
+s3filetransfer-0.1.0.dist-info/LICENSE,sha256=1l-C1l5pRx-avAiN_kL-WCATXTqSW-nwoqzi_BvlbJc,125
+s3filetransfer-0.1.0.dist-info/METADATA,sha256=27bbg6ORCHqrf2S2mbuFbyx-1p3mvXOMqYVOf4moWag,692
+s3filetransfer-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+s3filetransfer-0.1.0.dist-info/top_level.txt,sha256=cEy_ai6LXWAkD6XCnJIYZxFTxXZtx3nhtA52OhlAWqI,9
+s3filetransfer-0.1.0.dist-info/RECORD,,
