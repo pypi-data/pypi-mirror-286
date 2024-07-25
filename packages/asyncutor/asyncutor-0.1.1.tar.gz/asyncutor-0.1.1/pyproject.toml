@@ -1,0 +1,33 @@
+[build-system]
+requires = [ 'setuptools>=61.0', 'wheel' ]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'asyncutor'
+version = '0.1.1'
+authors = [
+    { name = 'nggit', email = 'contact@anggit.com' },
+]
+description = 'Makes your blocking functions awaitable. This package has been renamed to: awaiter.'
+requires-python = '>=3.7'
+dependencies = [
+    'awaiter',
+]
+license = { text = 'MIT License' }
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Topic :: Software Development :: Libraries',
+    'Framework :: AsyncIO',
+]
+dynamic = [ 'readme', ]
+
+[project.urls]
+Homepage = 'https://github.com/nggit/awaiter'
+Source = 'https://github.com/nggit/awaiter'
+Funding = 'https://github.com/sponsors/nggit'
+
+[tool.setuptools.dynamic]
+readme = { file = 'README.md', content-type = 'text/markdown' }
