@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fmd
+Version: 0.1.0
+Summary: Provide users with an easy-to-use interface to access data from the FMD API.
+Author: Yu Chen, Yang
+Author-email: ycy.tai@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# fmd
+
+Provide users with an easy-to-use interface to access data from the FMD API.
