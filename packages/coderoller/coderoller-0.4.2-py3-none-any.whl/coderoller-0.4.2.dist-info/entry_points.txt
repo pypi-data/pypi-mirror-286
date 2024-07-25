@@ -1,0 +1,3 @@
+[console_scripts]
+coderoller-flatten-repo = coderoller.flatten_repo:main
+
