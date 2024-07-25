@@ -1,0 +1,6 @@
+wayback-machine-scraper
+requests
+beautifulsoup4
+
+[dev]
+pytest
