@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: psqlpy-piccolo
+Version: 0.1.6
+Summary: PSQLPy-based engine for Piccolo-orm
+Keywords: python,postgresql,psqlpy,piccolo,async-engine,psqlpy-engine
+Author: chandr-andr (Kiselev Aleksandr)
+Author-email: chandr@chandr.net
+Maintainer: Kiselev Aleksandr
+Maintainer-email: chandr@chandr.net
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Rust
+Classifier: Topic :: Database
+Classifier: Typing :: Typed
+Requires-Dist: piccolo[postgres] (>=1.14.0,<2.0.0)
+Requires-Dist: psqlpy (>=0.7.4,<0.8.0)
+Requires-Dist: typing-extensions (>=4.12.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/psqlpy-piccolo?style=for-the-badge)](https://pypi.org/project/psqlpy-piccolo/)
+
+# psqlpy-piccolo
+
+This is a third-party Rust engine for [Piccolo ORM](https://github.com/piccolo-orm/piccolo).  
+Under the hood, this engine uses [PSQLPy](https://github.com/qaspen-python/psqlpy), which is Rust-based and blazingly fast 🔥.
+
+## Installation
+
+You can install package with `pip` or `poetry`.
+
+poetry:
+
+```bash
+$ poetry add psqlpy-piccolo
+```
+
+pip:
+
+```bash
+$ pip install psqlpy-piccolo
+```
+
+## Usage
+
+Usage is as easy as possible.  
+PSQLPy based engine has the same interface as other engines from piccolo.
+
+```python
+from psqlpy_piccolo import PSQLPyEngine
+
+
+DB = PSQLPyEngine(
+    config={
+        "host": "127.0.0.1",
+        "port": 5432,
+        "user": "postgres",
+        "password": "postgres",
+        "database": "psqlpy-piccolo",
+    },
+)
+```
+
