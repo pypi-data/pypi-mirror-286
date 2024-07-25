@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/basic_math_package_tsommer.egg-info/PKG-INFO
+src/basic_math_package_tsommer.egg-info/SOURCES.txt
+src/basic_math_package_tsommer.egg-info/dependency_links.txt
+src/basic_math_package_tsommer.egg-info/top_level.txt
+src/math_package_tamar/__init__.py
+src/math_package_tamar/basic_math.py
+tests/test_math.py
