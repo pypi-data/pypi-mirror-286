@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+histpal/__init__.py
+histpal/egypal.py
+histpal.egg-info/PKG-INFO
+histpal.egg-info/SOURCES.txt
+histpal.egg-info/dependency_links.txt
+histpal.egg-info/top_level.txt
