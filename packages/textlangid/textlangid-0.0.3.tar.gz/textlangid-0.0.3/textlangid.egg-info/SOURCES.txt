@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+./textlangid/__init__.py
+./textlangid/textlangid.py
+tests/test_textlangid.py
+textlangid.egg-info/PKG-INFO
+textlangid.egg-info/SOURCES.txt
+textlangid.egg-info/dependency_links.txt
+textlangid.egg-info/requires.txt
+textlangid.egg-info/top_level.txt
