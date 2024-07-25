@@ -1,0 +1,10 @@
+kleinkram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kleinkram/auth.py,sha256=0pu0RQQrtTFoW07Rgni7FAMJS3e0BZ9Pz9QrFPsbfxg,5343
+kleinkram/consts.py,sha256=8kCOeSdMqEyB89hT55w5yd1fksUwbj52a2nYkZTZI_0,88
+kleinkram/helper.py,sha256=mP6AohHWU8kckAi1Oevgs0gfGPH1Qzkp0f7jiQF9u5I,2198
+kleinkram/main.py,sha256=dS0gOy_KRqrzbX5xynROi6cnbDb_9Aww2ER4U4bpfU4,15106
+kleinkram-0.0.116.dist-info/METADATA,sha256=ANiDjnZ0f-h4P6d6pUmUaeBDOroCDfojKMpDL_3d5Yk,733
+kleinkram-0.0.116.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+kleinkram-0.0.116.dist-info/entry_points.txt,sha256=RHXtRzcreVHImatgjhQwZQ6GdJThElYjHEWcR1BPXUI,45
+kleinkram-0.0.116.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+kleinkram-0.0.116.dist-info/RECORD,,
