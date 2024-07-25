@@ -1,0 +1,33 @@
+"""
+Handling output.
+"""
+
+import py
+
+
+class Suppressor:
+    """
+    A class to suppress printing output.
+
+    Examples
+    --------
+
+        >>> with Suppressor(): print("something")
+    """
+
+    def __init__(self, *, suppress_output: bool = True):
+        self.suppress_output = suppress_output
+
+    def __enter__(self):
+        if self.suppress_output:
+            # The only method I have found which can
+            # suppress all output from Python and C
+            # extensions is to have the a C extension
+            # do all the redirection of stdout/stderr.
+            #
+            # It is the C extensions which case all the problems!
+            self.capture = py.io.StdCaptureFD()  # Captures everything from Python
+
+    def __exit__(self, *args):
+        if self.suppress_output:
+            self.capture.reset()
