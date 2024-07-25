@@ -1,0 +1,10 @@
+click
+pandas
+tabulate
+jsonschema
+rich
+streamlit<=1.35.0
+streamlit-aggrid
+numpy
+requests
+colorlog
