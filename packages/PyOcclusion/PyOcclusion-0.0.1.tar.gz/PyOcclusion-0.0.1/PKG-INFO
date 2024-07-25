@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PyOcclusion
+Version: 0.0.1
+Summary: A package for video editing with occlusion noise
+Home-page: https://github.com/BohdanSynytskyi/PyOcclusion
+Author: Bohdan Synytskyi
+Author-email: bodiasynytskiy@gmail.com
+License: UNKNOWN
+Description: # PyOcclusion
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown

@@ -1,0 +1,12 @@
+README.md
+setup.py
+PyOcclusion/__init__.py
+PyOcclusion/driver.py
+PyOcclusion/noise.py
+PyOcclusion/occlusion.py
+PyOcclusion/shapes.py
+PyOcclusion.egg-info/PKG-INFO
+PyOcclusion.egg-info/SOURCES.txt
+PyOcclusion.egg-info/dependency_links.txt
+PyOcclusion.egg-info/requires.txt
+PyOcclusion.egg-info/top_level.txt
