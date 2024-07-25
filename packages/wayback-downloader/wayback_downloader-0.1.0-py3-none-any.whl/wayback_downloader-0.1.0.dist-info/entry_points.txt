@@ -1,0 +1,2 @@
+[console_scripts]
+wayback-downloader = wayback_downloader.downloader:main
