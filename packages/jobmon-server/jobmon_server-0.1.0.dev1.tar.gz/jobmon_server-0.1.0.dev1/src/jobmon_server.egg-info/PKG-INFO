@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: jobmon_server
+Version: 0.1.0.dev1
+Summary: Web Service and Model for Jobmon
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: ../LICENSE
+Requires-Dist: jobmon_core
+Requires-Dist: flask
+Requires-Dist: flask_cors
+Requires-Dist: pymysql
+Requires-Dist: sqlalchemy
+Requires-Dist: sqlalchemy_utils
+Requires-Dist: structlog
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: nltk
+Requires-Dist: scikit-learn
+Requires-Dist: alembic
+Requires-Dist: importlib_resources; python_version <= "3.12"
+Provides-Extra: otlp
+Requires-Dist: jobmon_core[otlp]; extra == "otlp"
+Requires-Dist: opentelemetry-instrumentation-flask; extra == "otlp"
+Requires-Dist: opentelemetry-instrumentation-sqlalchemy; extra == "otlp"
+
+# JobMon Server
+
+## Introduction
+
+JobMon is a Python package developed by IHME's Scientific Computing team,
+designed to simplify and standardize the process of job monitoring and
+workflow management in computational projects.
+It facilitates the tracking of job statuses, manages dependencies,
+and streamlines the execution of complex workflows across various computing environments.
+
+This package contains the code that executes as a central server, typically containerized. 
+
+See also the main documentation at [readthedocs](https://jobmon.readthedocs.io/en/latest/#).

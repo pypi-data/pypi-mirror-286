@@ -1,0 +1,20 @@
+jobmon_core
+flask
+flask_cors
+pymysql
+sqlalchemy
+sqlalchemy_utils
+structlog
+scipy
+pandas
+nltk
+scikit-learn
+alembic
+
+[:python_version <= "3.12"]
+importlib_resources
+
+[otlp]
+jobmon_core[otlp]
+opentelemetry-instrumentation-flask
+opentelemetry-instrumentation-sqlalchemy
