@@ -1,0 +1,10 @@
+PyOcclusion/__init__.py,sha256=mLY1f95-z2Xt4CgbE5K8DRILKcYBHGxn4Pq9bxxr42E,93
+PyOcclusion/driver.py,sha256=ee3XWb0gIjdQjy_TOKi7cbb8MxE981_h4ydk2CKTfic,184
+PyOcclusion/noise.py,sha256=_ScMvCF8x2eGSPdl9df2_PUZOGHuN2G0JA5WDw1IRg4,1874
+PyOcclusion/occlusion.py,sha256=OTtKOwo3CpaLdfDe8ZXXzU6Ki1AWNI96e5ujsAz_Iho,5497
+PyOcclusion/shapes.py,sha256=sYBI8Ghyx5LuDX82Ol987zTuZfK3LEy5m2O5Qx0sxTc,5048
+PyOcclusion-0.0.1.dist-info/LICENSE,sha256=BbI5oYlqBK31eCBkwMIWkWB03BeNU0MLEDSCJK9kVj0,1073
+PyOcclusion-0.0.1.dist-info/METADATA,sha256=WDdM5YULFyr7fHG7TNapoHd9r3YT7vqhJbCoe-Oocqs,586
+PyOcclusion-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PyOcclusion-0.0.1.dist-info/top_level.txt,sha256=xsYAX9yaymfO950V_mtUWeFDCkET26DbvC9m3F3T6TI,12
+PyOcclusion-0.0.1.dist-info/RECORD,,
