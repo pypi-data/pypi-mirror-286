@@ -1,0 +1,10 @@
+little_timmy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+little_timmy/__main__.py,sha256=hLdSQqDpmswhFdiyClCVvbtNDOXc3mSXTd42NBp80bE,1628
+little_timmy/config_loader.py,sha256=dwF5XT7LAGO3WTIQsWWRU9O-ba0tgn6Rih_1yHVpoz4,1541
+little_timmy/var_finder.py,sha256=juxB5BhX1iT_eY-sGQTA6ZRRdMHEXrZ-4XfKmftNeZE,8708
+little_timmy-0.6.1.dist-info/LICENSE,sha256=UcPjJPA4FUCvkQf6wukpp46yaoSW2fhlzJdOZqlt0Xw,1060
+little_timmy-0.6.1.dist-info/METADATA,sha256=0fETJbSdMuOXAfZ4YdZRVpmVLTCx16ME38Cv7OUKGqU,2818
+little_timmy-0.6.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+little_timmy-0.6.1.dist-info/entry_points.txt,sha256=mp01M3BzSQIpsVAx0VlWLlJ7faVY8NsPMXC7bncSMX0,60
+little_timmy-0.6.1.dist-info/top_level.txt,sha256=2lib01CGmASI6T2QtInuqrgoNZo7D0E4YAK12jaXyvg,13
+little_timmy-0.6.1.dist-info/RECORD,,
