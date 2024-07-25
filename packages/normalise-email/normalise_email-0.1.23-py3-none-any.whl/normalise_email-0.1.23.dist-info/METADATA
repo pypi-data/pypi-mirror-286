@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: normalise-email
+Version: 0.1.23
+Summary: Python port of normalizeEmail.js.
+License: MIT
+Author: PsypherPunk
+Author-email: psypherpunk@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# `py-normalise-email`
+
+Python port of the
+[`normalizeEmail.js`](https://github.com/validatorjs/validator.js/blob/master/src/lib/normalizeEmail.js)
+component of [`validator.js`](https://github.com/validatorjs/validator.js).
+

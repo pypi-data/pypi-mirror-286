@@ -1,0 +1,7 @@
+normalise/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+normalise/domains.py,sha256=YXDMA9Q0GdmdC1qys9uPz-h1Oo5ked4TvqrZbddUI5I,2475
+normalise/email.py,sha256=PqDDoizyW1lYBs-Bh3OgMD3Z57Efz8u9BQT_iZ7E5kk,3838
+normalise_email-0.1.23.dist-info/LICENSE,sha256=mA0-vfG2w3VQMJDiBjLze8RoD7Dz4yHRd8TAeUWC5GA,1095
+normalise_email-0.1.23.dist-info/METADATA,sha256=-5a3axvo-kY-Y7ljby-hoA9Gj8tysD8o6YPH1uDNJn0,719
+normalise_email-0.1.23.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+normalise_email-0.1.23.dist-info/RECORD,,
