@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/pixviz/__init__.py
+src/pixviz/__main__.py
+src/pixviz/main_gui.py
+src/pixviz/proc.py
+src/pixviz/roi.py
+src/pixviz/ui_components.py
+src/pixviz/ui_logging.py
+src/pixviz.egg-info/PKG-INFO
+src/pixviz.egg-info/SOURCES.txt
+src/pixviz.egg-info/dependency_links.txt
+src/pixviz.egg-info/requires.txt
+src/pixviz.egg-info/top_level.txt

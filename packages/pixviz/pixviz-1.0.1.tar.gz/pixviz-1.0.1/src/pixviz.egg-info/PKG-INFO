@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: pixviz
+Version: 1.0.1
+Summary: GUI for image sequences pixel analysis
+Author-email: Yu-Ting Wei <ytsimon2004@gmail.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, Yu-Ting Wei
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/ytsimon2004/pixelviz
+Project-URL: Repository, https://github.com/ytsimon2004/pixelviz
+Project-URL: Issues, https://github.com/ytsimon2004/pixelviz/issues
+Keywords: computer vision,image processing
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions
+Requires-Dist: PyQt6
+Requires-Dist: qimage2ndarray
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+Requires-Dist: tqdm
+
+# pixviz
+![PyPI - Version](https://img.shields.io/pypi/v/pixviz)
+
+## Pixel intensity analysis and visualization for image sequences
+
+# Installation
+
+- create conda env `conda create -n pixviz python~=3.10.0 -y`
+- install dependencies `pip install pixviz`
+- launch GUI `python -m pixviz`
+
+
+# Simple Demo
+![pixel_demo.gif](doc%2Fpixviz_demo.gif)
+
+
+# GUI Usage
+
+1. Load your video by clicking `Load Video`
+2. Drag your ROI(s) by first click `Drag a Rect ROI` button then drag area in video view. Press `play` see preview in plot view (delete by first click the roi in table, then click ``Delete ROI``), ``clear`` button is used for delete realtime plot display
+3. Click `Process` the evaluate all, output will be saved as json meta and npy array in the same directory of video source
+4. The data (.npy) can be reload using `load result` (the meta json need to be in the same directory)
+
+
+# API doc
+
+- See [API Doc](https://pixelviz.readthedocs.io/en/latest/)

@@ -1,0 +1,7 @@
+typing-extensions
+PyQt6
+qimage2ndarray
+numpy
+matplotlib
+opencv-python
+tqdm
