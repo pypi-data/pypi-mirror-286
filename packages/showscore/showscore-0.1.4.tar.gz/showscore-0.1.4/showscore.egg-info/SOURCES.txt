@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+showscore/__init__.py
+showscore/html_renderer.py
+showscore/music21_converter.py
+showscore/opensheetmusicdisplay.min.js
+showscore/show.py
+showscore/showscore.js
+showscore/utils.py
+showscore.egg-info/PKG-INFO
+showscore.egg-info/SOURCES.txt
+showscore.egg-info/dependency_links.txt
+showscore.egg-info/requires.txt
+showscore.egg-info/top_level.txt
