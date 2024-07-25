@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pyweed
+Version: 1.0.8
+Summary: A GUI application for discovering and downloading seismic data
+Author-email: Adam Clark <adam.clark@earthscope.org>
+Keywords: FDSN,EarthScope,miniSEED,earthquake,seismic data
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: basemap
+Requires-Dist: matplotlib
+Requires-Dist: obspy <1.4
+Requires-Dist: pillow
+Requires-Dist: pyqt5
+Requires-Dist: pyproj
+
+# PyWEED
+
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyweed/badges/version.svg)](https://anaconda.org/conda-forge/pyweed)
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyweed/badges/latest_release_date.svg)](https://anaconda.org/conda-forge/pyweed)
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyweed/badges/platforms.svg)](https://anaconda.org/conda-forge/pyweed)
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyweed/badges/license.svg)](https://anaconda.org/conda-forge/pyweed)
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyweed/badges/installer/conda.svg)](https://conda.anaconda.org/conda-forge)
+
+PyWEED is an application for retrieving event-based seismic data.
+
+PyWEED works on Windows, Mac, and Linux (64-bit). It is built on [ObsPy](https://obspy.org/) and
+[PyQt](https://pypi.python.org/pypi/PyQt4).
+
+For documentation, see the [GitHub Pages](https://iris-edu.github.io/pyweed/).
