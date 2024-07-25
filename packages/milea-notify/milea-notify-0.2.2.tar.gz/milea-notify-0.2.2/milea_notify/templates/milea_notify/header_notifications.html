@@ -1,0 +1,77 @@
+{% load i18n %}
+<div class="nav-item dropdown d-none d-md-flex me-3">
+    <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" data-bs-auto-close="false" tabindex="-1" aria-label="Show notifications">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+            <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+        </svg>
+        {% if has_important %}
+            <span class="badge bg-red badge-blink"></span>
+        {% elif unread_notifications %}
+            <span class="badge bg-azure"></span>
+        {% endif %}
+    </a>
+    <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+        <div class="card" id="notification_wrapper" data-csrf-token="{{ csrf_token }}">
+            {% if unread_notifications %}
+                <div class="list-group list-group-flush list-group-hoverable">
+                    {% for notification in unread_notifications %}
+                        <div id="notification_{{ notification.pk }}"
+                             class="list-group-item notification-item"
+                             data-notification-action-url="{% url 'milea_base:milea_notify:mark_as_read' notification.pk %}"
+                             data-notification-id="{{ notification.pk }}">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    {% if notification.is_important %}
+                                        <span class="status-dot status-dot-animated bg-red d-block"></span>
+                                    {% else %}
+                                        <span class="status-dot bg-azure d-block"></span>
+                                    {% endif %}
+                                </div>
+                                <div class="col text-truncate">
+                                    {% if notification.url %}
+                                        <a href="{{ notification.url }}" class="text-body d-block notification-link">{{ notification.title }}</a>
+                                    {% else %}
+                                        <span class="text-body d-block">{{ notification.title }}</span>
+                                    {% endif %}
+                                    <div class="d-block text-secondary text-truncate mt-n1">{{ notification.content }}</div>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="#" class="notification-read list-group-item-actions show">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             class="icon icon-tabler icon-tabler-eye-check"
+                                             width="24"
+                                             height="24"
+                                             viewBox="0 0 24 24"
+                                             stroke-width="2"
+                                             stroke="currentColor"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                            <path d="M11.102 17.957c-3.204 -.307 -5.904 -2.294 -8.102 -5.957c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6a19.5 19.5 0 0 1 -.663 1.032" />
+                                            <path d="M15 19l2 2l4 -4" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="list-group list-group-flush list-group-hoverable">
+                    <div class="list-group-item">
+                        <div class="row align-items-center">
+                            <div class="col text-truncate">
+                                <div class="d-block text-secondary text-truncate mt-n1">{% trans "No new notifications" %}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
