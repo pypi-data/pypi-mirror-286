@@ -1,0 +1,6 @@
+setup.py
+bigdata/__init__.py
+bridgtl_bgd_dp_python.egg-info/PKG-INFO
+bridgtl_bgd_dp_python.egg-info/SOURCES.txt
+bridgtl_bgd_dp_python.egg-info/dependency_links.txt
+bridgtl_bgd_dp_python.egg-info/top_level.txt
