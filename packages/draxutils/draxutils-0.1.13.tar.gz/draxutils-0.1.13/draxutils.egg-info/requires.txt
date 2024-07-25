@@ -1,0 +1,7 @@
+pandas
+pillow
+datasets
+IPython
+wandb
+tqdm
+numpy
