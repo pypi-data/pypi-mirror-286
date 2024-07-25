@@ -1,0 +1,10 @@
+README.md
+setup.py
+mkdoc/__init__.py
+mkdoc/mkdoc.py
+mkdoc.egg-info/PKG-INFO
+mkdoc.egg-info/SOURCES.txt
+mkdoc.egg-info/dependency_links.txt
+mkdoc.egg-info/entry_points.txt
+mkdoc.egg-info/requires.txt
+mkdoc.egg-info/top_level.txt
