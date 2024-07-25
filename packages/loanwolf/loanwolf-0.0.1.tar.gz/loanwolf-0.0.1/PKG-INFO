@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: loanwolf
+Version: 0.0.1
+Summary: 
+Home-page: https://gitlab.com/finexpert/core/python-loanwolf
+License: Commercial
+Author: Anton Shestakov
+Author-email: anton@flovver.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://gitlab.com/finexpert/core/python-loanwolf
+Description-Content-Type: text/markdown
+
+# loanwolf
+

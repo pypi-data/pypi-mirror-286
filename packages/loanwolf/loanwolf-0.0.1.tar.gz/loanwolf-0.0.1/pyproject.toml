@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "loanwolf"
+version = "0.0.1"
+description = ""
+repository = "https://gitlab.com/finexpert/core/python-loanwolf"
+authors = ["Anton Shestakov <anton@flovver.com>"]
+license = "Commercial"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
