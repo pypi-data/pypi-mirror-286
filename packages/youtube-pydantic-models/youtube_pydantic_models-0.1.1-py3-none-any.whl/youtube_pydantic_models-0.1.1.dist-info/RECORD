@@ -1,0 +1,14 @@
+youtube_pydantic_models/__init__.py,sha256=LkM5pNS_sMdTRdFJgUDTx4lWnBEfQnT0zR2yedeuMcc,511
+youtube_pydantic_models/base_model_config.py,sha256=DzEKcksMW3aZR9nfdsGdV9vBlZGoNyGf00GEjwuCXxE,265
+youtube_pydantic_models/base_resource.py,sha256=X4jj7hgEN3GsYUlmli-GnIFvyYbE7jklUxwVGppny8g,312
+youtube_pydantic_models/channel_resource.py,sha256=KAEwsaByFD-JjJaoh7SfW1vSWlnnWZIKWcOWgWqC_bM,1695
+youtube_pydantic_models/list_response.py,sha256=YIij_ExYiNksfmXcxQyORXV_Ltiy66sGaLAJaTWeum8,591
+youtube_pydantic_models/playlist_resource.py,sha256=0CeU5RRDTBk3WsVlLbEvxlIWnuwFWYTpmfho7YCCxXA,1038
+youtube_pydantic_models/search_resource.py,sha256=O9okYrVw91BPen5Qis0K8twB0nWbengSzN7_Dsje-yw,543
+youtube_pydantic_models/video_resource.py,sha256=s0xJN651Q-qjxmk1-cStFoDkIGfPB3JkHsYnCzooSnA,2111
+youtube_pydantic_models/youtube_client.py,sha256=zssMKh3iYLo77shEr3jRlf1y3L8Ho2ooMkbth5Jux-M,738
+youtube_pydantic_models-0.1.1.dist-info/LICENSE,sha256=g6BHGs8B4t42OiyTMCMIDSQShQw3GkTA8P-4SlgBC3I,1071
+youtube_pydantic_models-0.1.1.dist-info/METADATA,sha256=SLs5pQ33XQQbTZzRWkyvoeKCoW2XheFqrI4DngusaaM,5133
+youtube_pydantic_models-0.1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+youtube_pydantic_models-0.1.1.dist-info/top_level.txt,sha256=OmU4_JTFy4GnJ8PigBfQGgO8JrFxI1jadoFNtxfpmlg,24
+youtube_pydantic_models-0.1.1.dist-info/RECORD,,
