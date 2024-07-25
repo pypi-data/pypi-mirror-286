@@ -1,0 +1,14 @@
+nemli-0.1.0.dist-info/METADATA,sha256=2qXRpt0LjaBkDGH4hdU_sCPECB9bYBB7xKGypL7M7Zg,1640
+nemli-0.1.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+nemli-0.1.0.dist-info/entry_points.txt,sha256=BAkjX8HR9yos365MFs-2mJjOxSNKQW3Wjkry06LMB30,42
+nemli/__init__.py,sha256=E2Ko-xbKjI2Rbin0b8iTUBw03Bgq57rJ0IboPaP5CcM,375
+nemli/commands/utility/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nemli/commands/utility/help.py,sha256=EGX18tf0ifDYVkMcDJMG4UsS4O1N3ukLtHrQhnX4310,658
+nemli/commands/utility/ping.py,sha256=Fh3oapAs-SW-X4KNSNjITDZtsNKbW_4jiow5ktGThxM,539
+nemli/commands/utility/summarize.py,sha256=2_xHbGH4sQuzorEiXlhOOLY-31H5UX3m3Fzo-5yJ_gc,4925
+nemli/config.py,sha256=HSBsuQT5tFkgYyZnMyoHYszkfNzLO4NUzgqqwbmmh94,801
+nemli/main.py,sha256=6pYF4JQY0J6AKG7ttDFWuadUuD1bepY9s1K-0Su3zus,1636
+nemli/nlp/messages.py,sha256=sBqZcMbBW7RyYMFm1b0FMOpO_HGcbNWwxd6xilkbk94,506
+nemli/schemas/messages.py,sha256=v3AvH-WJeUH6lICcVMcTmdTHkCE2K4-sqKn_9jgfbvY,391
+nemli/services/messages.py,sha256=V6u6B0B3bDQnuQs82g_gzwQvzmZMadj8b223Vgsua2A,1329
+nemli-0.1.0.dist-info/RECORD,,
