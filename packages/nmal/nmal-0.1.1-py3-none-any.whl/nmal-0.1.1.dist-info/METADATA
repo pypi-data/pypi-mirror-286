@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: nmal
+Version: 0.1.1
+Summary: A custom cryptographic package using the NLGdecimal number system.
+Author: NLG SAKIB
+Author-email: nlgarts@outlook.com
+License: MIT
+
