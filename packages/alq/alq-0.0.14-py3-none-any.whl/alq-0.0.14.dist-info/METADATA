@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: alq
+Version: 0.0.14
+Summary: internal tools
+License: LICENSE.md
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fire (>=0.6.0)
+Requires-Dist: pyocclient (>=0.6)
+Requires-Dist: webdavclient3 (>=3.14.6)
+
