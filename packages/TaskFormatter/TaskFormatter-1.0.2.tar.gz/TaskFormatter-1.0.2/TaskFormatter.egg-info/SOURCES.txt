@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+TaskFormatter/TaskFormatter.py
+TaskFormatter/__init__.py
+TaskFormatter.egg-info/PKG-INFO
+TaskFormatter.egg-info/SOURCES.txt
+TaskFormatter.egg-info/dependency_links.txt
+TaskFormatter.egg-info/top_level.txt
