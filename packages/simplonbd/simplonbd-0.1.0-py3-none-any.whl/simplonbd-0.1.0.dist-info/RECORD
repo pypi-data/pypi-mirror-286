@@ -1,0 +1,9 @@
+API/app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+API/app/main.py,sha256=Ypr9jT1oIb6dP6f9v1xXtZ9WCYWm7uk8EGQaklp4pBA,611
+simplonbd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplonbd/crud_dai.py,sha256=JnCh_KLysiLZ3C83N5VGKRM1V6beQrU8vAGGbWe79TQ,19997
+simplonbd/models.py,sha256=6znWrieeAFxd29lFmC-2QRowXl1IFBBZU5A55zkxmJc,13463
+simplonbd-0.1.0.dist-info/METADATA,sha256=bcQtd1oqUXW6M9I1eGNrkZzns2hpF38hDpgBQul21Ek,4295
+simplonbd-0.1.0.dist-info/WHEEL,sha256=FZ75kcLy9M91ncbIgG8dnpCncbiKXSRGJ_PFILs6SFg,91
+simplonbd-0.1.0.dist-info/top_level.txt,sha256=r72wdTycEhMSZzh-aQmxM5Xj9JP4F2EoNqZE9zLpgCg,14
+simplonbd-0.1.0.dist-info/RECORD,,
