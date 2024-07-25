@@ -1,0 +1,10 @@
+i2c_can/__init__.py,sha256=RQTVGsl5dQyWwmlzRI24WiWeb0M9Ii5RCT4i10el-4Y,277
+i2c_can/i2c_can.py,sha256=rQPa2AhunzQfZmC17dDP0spjBxZp6onASLoPFJ-Ws-I,2845
+tests/__init__.py,sha256=CdrOy_re96COTr3scQRRVhLGMLaPWv1Oxr5lwbjOQd0,46
+tests/test_i2c_can.py,sha256=IPVA365LLIogEqzjNORE4L0C6SRbTG4kxTiYwQiSfV4,531
+i2c_can-0.0.1.dist-info/LICENSE,sha256=4A-eP9OHWckxF0Y1QG8f46i37qU1J2fDK15pXnBtdhA,1060
+i2c_can-0.0.1.dist-info/METADATA,sha256=d-fqt2koBh8ac7dQnO6QHQAIguB-eve4qwKdRQygugU,3104
+i2c_can-0.0.1.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+i2c_can-0.0.1.dist-info/entry_points.txt,sha256=_s33z1hF_dokdGcF3TzI0WGuvFO3cG66_oM3_45_p0o,78
+i2c_can-0.0.1.dist-info/top_level.txt,sha256=PLSfdPcwfGLp47en_5CiMPoISFu-pmOTL7HtUNcP2zs,14
+i2c_can-0.0.1.dist-info/RECORD,,
