@@ -1,0 +1,10 @@
+klabmodels/__init__.py,sha256=JnUTnXamFnH7g_3PB9oIR-7uzgy5q03VR245Uhxpq20,521
+klabmodels/api.py,sha256=gvvQ1uU6mMvmuflkyX1zsohWpdnEn-t5gG14bzwxSaE,14984
+klabmodels/models.py,sha256=oxKMPW8lQ_4oTYppXvU7zQghimtjVFsd0ns_P8k5McI,4297
+klabmodels/kiwi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klabmodels/kiwi/api.py,sha256=KQ4Kvh8Y2P_Yrh-VQtKfLZRORTzUOhbmcgd_w5GpJxc,3567
+klabmodels/kiwi/models.py,sha256=7h4St5Hxo8L3CIuNAwgKu_vcEIYsKvLofvar_Oopo5M,7315
+klabmodels-0.0.62.dist-info/METADATA,sha256=mzB_spcGcPUlkzKdzL9aDjogDc-w2CIIBT8cuZNDzfw,1283
+klabmodels-0.0.62.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+klabmodels-0.0.62.dist-info/top_level.txt,sha256=jPMLLCfHHRPCbZkM0QxWQ2mLT3wZg7vGtnh4EEAO-qI,11
+klabmodels-0.0.62.dist-info/RECORD,,
