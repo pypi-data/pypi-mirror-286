@@ -1,0 +1,5 @@
+dbbpy/__init__.py,sha256=g5T-MgGBmcQb7Zhqp7V9RbmJkXgIjV3ngIbsQEVluiQ,24
+dbbpy/bindings.cpython-311-x86_64-linux-gnu.so,sha256=dM1fJXHqL460KgQA8Y5LphDboWaI7mKMkGLhIWhnVB8,6473712
+dbbpy-0.1.2.dist-info/METADATA,sha256=YoX4e_lp7mfS-yG7LNVUDBkzpdPlG6-3O96JgFlgoMA,496
+dbbpy-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dbbpy-0.1.2.dist-info/RECORD,,
