@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: easy-gravity
+Version: 0.2
+Summary: Stupid lib to extract gravity from pycolmap reconstructions (or just numpy arrays)
+Author-email: Johan Edstedt <johan.edstedt@liu.se>
+Requires-Python: >=3.8
+Requires-Dist: numpy<2
+Requires-Dist: pycolmap==0.6.1
+Description-Content-Type: text/markdown
+
+# easy-gravity
+
+A naive way to extract gravity from poses
+
+See [here](https://twitter.com/Parskatt/status/1815262368345256319) for some alternative methods
+
+
+## Method
+Assume cameras are not in plane rotated. This means that gravity must lie on the "pointing/up" plane for each camera.
+For any vector $x$ we can easily compute the squared distance to this plane as $x \cdot \hat{n}$. The normals of the plane is simply the x-direction of the camera. Differentiate this sum and solve for 0 you get an eigenvalue eq. Solve for smallest eigenvalue.
