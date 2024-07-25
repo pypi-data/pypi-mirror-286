@@ -1,0 +1,5 @@
+xlsxwriter
+openpyxl
+pandas
+python-dotenv
+mysql-connector-python
