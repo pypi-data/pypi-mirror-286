@@ -1,0 +1,9 @@
+README.md
+setup.py
+cfaf/__init__.py
+cfaf/create_folder_and_files.py
+cfaf.egg-info/PKG-INFO
+cfaf.egg-info/SOURCES.txt
+cfaf.egg-info/dependency_links.txt
+cfaf.egg-info/entry_points.txt
+cfaf.egg-info/top_level.txt

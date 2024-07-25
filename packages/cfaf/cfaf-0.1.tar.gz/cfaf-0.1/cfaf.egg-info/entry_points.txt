@@ -1,0 +1,2 @@
+[console_scripts]
+cfaf = cfaf.create_folder_and_files:main
