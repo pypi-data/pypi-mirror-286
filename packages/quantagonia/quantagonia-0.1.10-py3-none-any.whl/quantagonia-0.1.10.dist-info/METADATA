@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: quantagonia
+Version: 0.1.10
+Summary: This package contains the CLI and API to access Quantagonia's HybridSolver.
+Home-page: https://www.quantagonia.com
+Author: Quantagonia GmbH
+Author-email: apis@quantagonia.com
+Keywords: Optimization,Linear Programming,Operations Research
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.8,<3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: urllib3 >=1.26
+Requires-Dist: pyqubo
+Requires-Dist: pulp
+Requires-Dist: yaspin
+Requires-Dist: qiskit
+Requires-Dist: qiskit-optimization
+Requires-Dist: dwave-ocean-sdk
+Requires-Dist: concurrencytest
+Requires-Dist: parameterized
+Requires-Dist: typer[all]
+Requires-Dist: dimod
+Requires-Dist: rich
+Requires-Dist: numpy
+Requires-Dist: singledispatchmethod ; python_version <= "3.7"
+
+# Quantagonia API Client
+
+This package contains the CLI and API to access Quantagonia's HybridSolver.
+
+## Installation
+
+Python >= 3.8 is required. Then, do
+```
+python -m pip install quantagonia
+```
+In order to use Quantagonia's cloud-based HybridSolver, you need to sign up for an API key at https://platform.quantagonia.com and set it system-wide by
+```
+export QUANTAGONIA_API_KEY=<your API key here>
+```
+
+## Quick start:
+Please see the [Documentation](https://docs.quantagonia.com) for a Quick Start Guide, Examples, and References on how to use the CLI and API.
