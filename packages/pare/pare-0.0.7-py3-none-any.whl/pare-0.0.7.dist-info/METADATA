@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pare
+Version: 0.0.7
+Summary: Effortless serverless, in your own cloud
+Author-email: Caelean Barnes <caeleanb@gmail.com>, Evan Doyle <evanmdoyle@gmail.com>
+Project-URL: Homepage, https://github.com/gauge-sh/pare
+Project-URL: Issues, https://github.com/gauge-sh/tach/pare
+Keywords: python,lambda,aws,serverless,fastapi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: rich ~=13.0
+Requires-Dist: pydantic ~=2.0
+Requires-Dist: requests ~=2.32.3
+Requires-Dist: environs ~=11.0
+Requires-Dist: stdlib-list >=0.10.0 ; python_version < "3.10"
+Requires-Dist: eval-type-backport >=0.2.0 ; python_version < "3.10"
+Provides-Extra: dev
+Requires-Dist: pyyaml ==6.0.1 ; extra == 'dev'
+Requires-Dist: pydantic ==2.8.2 ; extra == 'dev'
+Requires-Dist: rich ==13.7.1 ; extra == 'dev'
+Requires-Dist: fastapi ==0.111.1 ; extra == 'dev'
+Requires-Dist: tach ==0.8.2 ; extra == 'dev'
+Requires-Dist: boto3-stubs-lite ==1.34.145 ; extra == 'dev'
+Requires-Dist: boto3-stubs ==1.34.145 ; extra == 'dev'
+Requires-Dist: pip ==24.0 ; extra == 'dev'
+Requires-Dist: pyright ==1.1.373 ; extra == 'dev'
+Requires-Dist: ruff ==0.5.2 ; extra == 'dev'
+Requires-Dist: setuptools ==69.5.1 ; extra == 'dev'
+Requires-Dist: twine ==5.1.1 ; extra == 'dev'
+Requires-Dist: build ==1.2.1 ; extra == 'dev'
+Requires-Dist: pytest ==8.2.2 ; extra == 'dev'
+Requires-Dist: pytest-mock ==3.14.0 ; extra == 'dev'
+Requires-Dist: coverage ==7.6.0 ; extra == 'dev'
+
