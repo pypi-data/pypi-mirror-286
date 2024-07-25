@@ -1,0 +1,7 @@
+PcbDrawToPdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PcbDrawToPdf/isolate_masks.py,sha256=v0tNJXV450TP-qBLmAfAAEMKgMH4-uz8y73qJOUQbcU,10163
+PcbDrawToPdf/ui.py,sha256=To2uj04eM8gpTKVb6hBCsnZj5y4eHj1aX5cuJB6qNUc,1312
+pcbdrawtopdf-0.0.4.dist-info/entry_points.txt,sha256=KeLfLPZnsDnLLrE-7JGw1kbKL9rQ-cTzKfJycnjcND0,52
+pcbdrawtopdf-0.0.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pcbdrawtopdf-0.0.4.dist-info/METADATA,sha256=D_WLpjCLSMS9rAcGU-JHgKO0SXc7DLXE2uLBl-hJ_ts,3118
+pcbdrawtopdf-0.0.4.dist-info/RECORD,,
