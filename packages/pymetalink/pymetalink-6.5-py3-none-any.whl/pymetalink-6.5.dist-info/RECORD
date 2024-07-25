@@ -1,0 +1,12 @@
+metalink/GPG.py,sha256=-Z2rJpRnR-lbnzoVThAUf4C9TMYtQvMqLSVL2hEAhVA,24140
+metalink/__init__.py,sha256=RNNL6gJzsH-ixDMQKUiaEmFuK81WnvsZ_esOVGQFV_k,1426
+metalink/console.py,sha256=nyW_karjGYQhsdTPUvbh3JAjCP6KIFEWRP6QZgY-jN8,4595
+metalink/download.py,sha256=Z8ZHDoDIAK27FHAQWkl639tFrl-X5qssPJcjL9vxc-4,74629
+metalink/metalink.py,sha256=rDGX4rbT7j6aHtwTGSWissLqA45nHv3ZyPuFbmhKreU,69242
+metalink/proxy.py,sha256=VWIV2NRO6AAslH9bP0xkQPzUrSYB5KWdvoIGxDXtXwM,18815
+pymetalink-6.5.dist-info/AUTHORS.txt,sha256=FKXXNavCIw5vbtUNiEUpFHCbzhmrCQvFLXDP75p2j8Y,126
+pymetalink-6.5.dist-info/LICENSE.txt,sha256=2gsRLEMaYZCrEOaGPK0UG82JzZ2CLAv4yv5t9U-Wf_I,1101
+pymetalink-6.5.dist-info/METADATA,sha256=wf3tgaWr-qGkOSbbzytlQCVT-VUy7dPhH25bXg05JkQ,6073
+pymetalink-6.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pymetalink-6.5.dist-info/entry_points.txt,sha256=EiLR8Kfs9dPPeraRXVdfMjC9lz78QIkowIwmJFchtak,52
+pymetalink-6.5.dist-info/RECORD,,
