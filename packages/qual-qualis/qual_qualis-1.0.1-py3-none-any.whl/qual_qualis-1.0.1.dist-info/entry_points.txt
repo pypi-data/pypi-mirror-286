@@ -1,0 +1,2 @@
+[console_scripts]
+qual-qualis = qual_qualis.cli:main

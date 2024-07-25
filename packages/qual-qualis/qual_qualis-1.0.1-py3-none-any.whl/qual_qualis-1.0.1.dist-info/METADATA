@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: qual-qualis
+Version: 1.0.1
+Summary: Busca automatizada de classificação Qualis de conferências e periódicos
+Author-email: Henrique Santana <henriquessantana314@gmail.com>
+Project-URL: Repository, https://github.com/piface314/qual-qualis
+Project-URL: Issues, https://github.com/piface314/qual-qualis/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bibtexparser ~=2.0.0b
+Requires-Dist: levenshtein
+Requires-Dist: pandas
+Requires-Dist: pybktree
+Requires-Dist: pydantic
+Requires-Dist: typer
+
+# qual-qualis
+
+Busca automatizada de classificação Qualis de conferências e periódicos.
+
+> Atualmente suporta apenas busca por Qualis da Ciência da Computação, com 
+> base no trabalho do [PPGCC da PUCRS](https://ppgcc.github.io/discentesPPGCC/pt-BR/qualis/).
