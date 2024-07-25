@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Algorithm_Rayleigh
+Version: 0.1.1
+Summary: Rayleigh algorithm processing for lidar data
+Author: ZimuZhang
+Author-email: zhang0418zimu@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: cython
+
+# Algorithm_Railey
+
+Algorithm_Railey is a Python package for performing Rayleigh scattering fitting and other related calculations for lidar signals.
+
+## Installation
+
+You can install Algorithm_Railey via pip:
+
+```sh
+pip install Algorithm_Railey
+```
