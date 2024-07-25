@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+transfer/__init__.py
+transfer/transfer.py
+xgh.egg-info/PKG-INFO
+xgh.egg-info/SOURCES.txt
+xgh.egg-info/dependency_links.txt
+xgh.egg-info/requires.txt
+xgh.egg-info/top_level.txt
