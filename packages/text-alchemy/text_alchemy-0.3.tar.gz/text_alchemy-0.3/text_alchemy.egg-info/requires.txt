@@ -1,0 +1,10 @@
+openai
+google-cloud-vision
+python-dotenv
+google-generativeai
+python-magic
+pandas
+requests
+pdf2image
+Pillow
+pymupdf
