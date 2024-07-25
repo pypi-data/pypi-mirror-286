@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: jollyjack
+Version: 0.1.0
+Summary: Read parquet data directly into numpy array
+Project-URL: Homepage, https://github.com/marcin-krystianc/jollyjack
+Project-URL: Issues, https://github.com/marcin-krystianc/jollyjack/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyarrow ~=16.0
+
+# JollyJack
+
+## Features
+
+- Reading parquet data from parquet file directly into numpy array
+
+## Required:
+
+- pyarrow  ~= 16.0
+ 
+JollyJack operates on top of pyarrow, making it an essential requirement for both building and using PalletJack. While our source package is compatible with recent versions of pyarrow, the binary distribution package specifically requires the latest major version of pyarrow.
+
+##  Installation
+
+```
+pip install jollyjack
+```
+
+## How to use:
+
+### TODO:
+```
+
+```
