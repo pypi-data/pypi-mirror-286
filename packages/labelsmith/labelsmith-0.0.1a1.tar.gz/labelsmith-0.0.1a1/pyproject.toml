@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "labelsmith"
+version = "0.0.1a1"
+description = "A productivity suite for data annotators"
+authors = ["K. LeBryce <k.lebryce@pm.me>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "labelsmith", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.2"
+appdirs = "^1.4.4"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.8.3"
+black = "^24.4.2"
+
+[tool.poetry.scripts]
+shyft = "labelsmith.shyft.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
