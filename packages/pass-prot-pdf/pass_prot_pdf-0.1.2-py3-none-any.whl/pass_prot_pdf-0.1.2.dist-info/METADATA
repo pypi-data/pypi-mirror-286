@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pass_prot_pdf
+Version: 0.1.2
+Summary: A Streamlit app for processing and password-protecting your PDFs
+Author: Srikanth Saney
+Author-email: saneysrikanth.2024@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pycryptodome (>=3.20.0,<4.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: pypdf2 (>=3.0.1,<4.0.0)
+Requires-Dist: streamlit (>=1.36.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install pass_prot_pdf
+```
+
+## To run service
+
+```bash
+  python install my-project
+  cd my-project
+```
+
+
