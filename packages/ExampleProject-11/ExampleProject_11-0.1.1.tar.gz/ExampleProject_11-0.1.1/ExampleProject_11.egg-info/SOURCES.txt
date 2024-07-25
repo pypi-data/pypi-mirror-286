@@ -1,0 +1,8 @@
+README.md
+setup.py
+ExampleProject_11.egg-info/PKG-INFO
+ExampleProject_11.egg-info/SOURCES.txt
+ExampleProject_11.egg-info/dependency_links.txt
+ExampleProject_11.egg-info/top_level.txt
+src/__init__.py
+src/my_module.py
