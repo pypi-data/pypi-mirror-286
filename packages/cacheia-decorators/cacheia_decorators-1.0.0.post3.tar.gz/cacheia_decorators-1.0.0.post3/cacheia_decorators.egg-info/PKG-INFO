@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: cacheia_decorators
+Version: 1.0.0.post3
+Summary: Decorates for Cacheia library that allows invalidation and other shenanigans
+Author-email: TeiaLabs <contato@teialabs.com>
+Keywords: cache,decorator,method
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black<25,>=24; extra == "dev"
+Requires-Dist: isort<6,>=5; extra == "dev"
+Requires-Dist: pytest<9,>=8; extra == "dev"
+Provides-Extra: local
+Requires-Dist: cacheia==1.0.0; extra == "local"
+Provides-Extra: remote
+Requires-Dist: cacheia_client==1.0.0; extra == "remote"
+Provides-Extra: schemas
+Requires-Dist: cacheia_schemas==1.0.0; extra == "schemas"
+
+# Cacheia Decorators
+
+Exposes decorators that can be used along FastAPI and plain functions to cache responses using cacheia machinery.
+
+## Installation
+
+Install decorators with "schemas" optional and "local" and "remote" cache support:
+
+```bash
+pip install -e ./decorators[schemas,local,remote]
+```
+
+## Code
+
+There are these decorators avaialble:
+
+-   `local.cache`: which can be used on plain functions to cache values using a local cache or cacheia_client.
+-   `remote.cache`: which can be used to cache values on a remote instance of cacheia (i.e. cacheia_api service).
+
+## Usage
+
+```python
+from cacheia_decorators.local import cache as local_cache
+from cacheia_decorators.remote import cache as remote_cache
+
+
+@local_cache(key_builder=lambda i: str(i == 0), settings={})
+def function_a():
+    return "Hello World"
+
+@remote_cache(key_builder=lambda i: str(i == 0), url="http://localhost:5000/")
+def function_b():
+    return "Hello World"
+```

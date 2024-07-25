@@ -1,0 +1,14 @@
+
+[dev]
+black<25,>=24
+isort<6,>=5
+pytest<9,>=8
+
+[local]
+cacheia==1.0.0
+
+[remote]
+cacheia_client==1.0.0
+
+[schemas]
+cacheia_schemas==1.0.0
