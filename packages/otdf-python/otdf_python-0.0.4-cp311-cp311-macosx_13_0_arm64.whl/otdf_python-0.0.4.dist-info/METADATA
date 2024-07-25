@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: otdf_python
+Version: 0.0.4
+Summary: Unofficial OpenTDF SDK for Python.
+Home-page: https://github.com/b-long/opentdf-python-sdk
+Author: b-long
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# opentdf-python-sdk
+
+Unofficial OpenTDF SDK for Python
+
+## Installation
+
+Install from PyPI.org:
+
+```bash
+pip install otdf_python
+```
+
+## Usage
+
+See `validate_otdf_python.py` for usage examples.
