@@ -1,0 +1,15 @@
+sync_camera_disk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sync_camera_disk/config.py,sha256=cLPmyLOMFRYtKFo08emhuzERGPsWjd_Tqa2XHA_S-8Y,1203
+sync_camera_disk/destination.py,sha256=zp4_IKV5T1VPjAQKUhJftF4npxfr2EH3fIGkq0CLOUo,1851
+sync_camera_disk/disks.py,sha256=olZBBcNl_J03hhasY63P0JCWL8a0Umz5rwmV1bQcQhc,1965
+sync_camera_disk/file.py,sha256=a3yIdSnUCN4TLQ-rnW5kkPfWjUIhjf_KW45c5JVNGbo,529
+sync_camera_disk/filter_disks.py,sha256=LrRUNGalwcfWG_OB6iuE0_aVqkLRnNxl-4vFrvcuZiI,2161
+sync_camera_disk/macos.py,sha256=MMsZO_Qt4PdEDFWhyKYwP9iDCulVD_LYvF878qy3a4E,1012
+sync_camera_disk/main.py,sha256=mAdP53NIJ3qvUC7KUfteQtWk7TQE8Y21uYeNfQfUTRM,7405
+sync_camera_disk/operation.py,sha256=owIgk-rHhMoucPepP87N_AjOaEIdj8uADHHmoDngTk8,1671
+sync_camera_disk/source.py,sha256=AGdcV34HoGklqLo5TjUzpyd_4a533ZcBKI824jGGqGQ,10335
+sync_camera_disk-0.6.0.dist-info/LICENSE,sha256=78BsOaUBURATYE-CFOIayVG8JqXDibmqNzzgt8AAfZk,1071
+sync_camera_disk-0.6.0.dist-info/METADATA,sha256=xlA4nQcgJLdxRglDHuMhcsgK4e6gatGCDfGSqFJrCak,1531
+sync_camera_disk-0.6.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sync_camera_disk-0.6.0.dist-info/entry_points.txt,sha256=Akbrg-CjB9dAcHKer9lf5N8ZcB3hr2-6xwkA6ZyOId4,62
+sync_camera_disk-0.6.0.dist-info/RECORD,,
