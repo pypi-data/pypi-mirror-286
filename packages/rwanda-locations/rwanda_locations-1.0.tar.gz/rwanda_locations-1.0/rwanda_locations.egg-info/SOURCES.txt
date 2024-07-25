@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+rwanda_locations/__init__.py
+rwanda_locations/data.py
+rwanda_locations/lookup.py
+rwanda_locations.egg-info/PKG-INFO
+rwanda_locations.egg-info/SOURCES.txt
+rwanda_locations.egg-info/dependency_links.txt
+rwanda_locations.egg-info/top_level.txt
+tests/__init__.py
+tests/test_data.py
+tests/test_lookup.py
