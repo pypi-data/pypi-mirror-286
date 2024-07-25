@@ -1,0 +1,2 @@
+[console_scripts]
+plz = seele_app.entrypoint:main
