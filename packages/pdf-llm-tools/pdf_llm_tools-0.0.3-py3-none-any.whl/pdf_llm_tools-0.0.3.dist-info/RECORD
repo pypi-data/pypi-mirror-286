@@ -1,0 +1,10 @@
+pdf_llm_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_llm_tools/base.py,sha256=bIIVslTYjEk6Fo7AVEJMh6ZWyCkF1G3TURG2YTAkXk4,734
+pdf_llm_tools/llm.py,sha256=CjoCPN5KGBnAy3suQXl8QsEmHgpykUIu81VgJaHOl7U,640
+pdf_llm_tools/titler.py,sha256=FVB9ToBxrpIUk2nrXnYSh3WPjDGxdlgQcLiif5N1xmE,3037
+pdf_llm_tools/utils.py,sha256=BHTGZQ9dfDTKQv8A8iaJ8gZFHpGGl2H2KllsW-YuCqk,576
+pdf_llm_tools-0.0.3.dist-info/METADATA,sha256=ZY1I0SJh-fS6GuHrKUd6QKBBqNnukzrW840CaQOz9cQ,1638
+pdf_llm_tools-0.0.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pdf_llm_tools-0.0.3.dist-info/entry_points.txt,sha256=TeBF5PI0TMqn-rLSUsNWaPMFD_PIkvYTESCEx9dVq6E,102
+pdf_llm_tools-0.0.3.dist-info/licenses/LICENSE,sha256=x03Jr_LfhAP9HN46IQNt56ZSIL3lIRD0ZvGvMoadcIQ,1058
+pdf_llm_tools-0.0.3.dist-info/RECORD,,
