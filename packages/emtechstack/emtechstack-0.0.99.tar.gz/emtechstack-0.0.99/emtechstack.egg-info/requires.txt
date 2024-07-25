@@ -1,0 +1,6 @@
+click
+black
+PyYAML
+requests
+tabulate
+termcolor
