@@ -1,0 +1,5 @@
+[pygcloud.events]
+after_deploy = pygcloud.events:dummy
+before_deploy = pygcloud.events:dummy
+end_deploy = pygcloud.events:dummy
+start_deploy = pygcloud.events:dummy
