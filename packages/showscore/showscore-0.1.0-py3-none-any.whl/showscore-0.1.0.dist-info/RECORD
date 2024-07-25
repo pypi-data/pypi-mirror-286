@@ -1,0 +1,9 @@
+showscore/__init__.py,sha256=OLSijCi-OAmBJxcgUizMGMITbX7pH9zckMeVNxYoopY,325
+showscore/html_renderer.py,sha256=UFI3RKglP2Z2bCrL5KkvlqaRgxF1NFhvTp_GoPtsGcM,2973
+showscore/music21_converter.py,sha256=xsYkKC9ONJ0vNfTwFujTpz28Ca7hdyh6u4KEpIeDITA,847
+showscore/show.py,sha256=I6-UMNgMW_0VbNE6Ww9LapLEIdGkQgyQeVzNX0tR1Pg,637
+showscore/utils.py,sha256=2wRRpHiI5wMDHm9pnf3mMlZ6Gma55HFLjBPqKJjKQoE,751
+showscore-0.1.0.dist-info/METADATA,sha256=UpqCpDD-Ywj3baYvuMo5zdnCA1dvS3i4AQRcwxwGymk,2510
+showscore-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+showscore-0.1.0.dist-info/top_level.txt,sha256=JXHgPWZOH9gdA47yOPoYELRTMpQU-A_WF1DvROAIbJM,10
+showscore-0.1.0.dist-info/RECORD,,
