@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+API/app/__init__.py
+API/app/main.py
+simplonbd/__init__.py
+simplonbd/crud_dai.py
+simplonbd/models.py
+simplonbd.egg-info/PKG-INFO
+simplonbd.egg-info/SOURCES.txt
+simplonbd.egg-info/dependency_links.txt
+simplonbd.egg-info/top_level.txt
