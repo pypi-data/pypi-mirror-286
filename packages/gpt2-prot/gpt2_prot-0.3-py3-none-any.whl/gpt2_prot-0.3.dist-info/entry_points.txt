@@ -1,0 +1,2 @@
+[console_scripts]
+gpt2-prot = gpt2_prot.scripts.cli:main
