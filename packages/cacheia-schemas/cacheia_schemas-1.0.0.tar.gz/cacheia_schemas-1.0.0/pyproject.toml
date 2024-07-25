@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=60", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
+root = "../"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[project]
+name = "cacheia_schemas"
+authors = [{ name = "TeiaLabs", email = "contato@teialabs.com" }]
+description = "Schemas for cacheia library"
+readme = "README.md"
+requires-python = ">=3.12"
+keywords = ["cache", "schemas", "lib"]
+dynamic = ["version"]
+dependencies = ["pydantic>=2,<3", "pydantic_settings>=2,<3"]
