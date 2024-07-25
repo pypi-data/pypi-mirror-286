@@ -1,0 +1,96 @@
+# -*- coding: utf-8 -*-
+"""
+File name: test1.py
+Author: Bowen
+Date created: 18/7/2024
+Description: This Python file provides an example of mathematical operations.
+
+Copyright information: © 2024 QDX
+"""
+
+
+
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+from langchain_community.vectorstores import Chroma
+from langchain_core.output_parsers import StrOutputParser
+# Few Shot Examples
+from langchain_core.prompts import ChatPromptTemplate, FewShotChatMessagePromptTemplate
+from langchain_core.runnables import RunnableLambda
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+
+embedding_function = OpenAIEmbeddings()
+
+keyword = "auto3d"
+
+vectorstore = Chroma(persist_directory="./demo/paper_db/chroma_db",
+                     embedding_function=embedding_function, collection_name=keyword)
+
+retriever = vectorstore.as_retriever()
+
+examples = [
+    {
+        "input": "Could the members of The Police perform lawful arrests?",
+        "output": "what can the members of The Police do?",
+    },
+    {
+        "input": "Jan Sindel’s was born in what country?",
+        "output": "what is Jan Sindel’s personal history?",
+    },
+]
+
+example_prompt = ChatPromptTemplate.from_messages(
+    [
+        ("human", "{input}"),
+        ("ai", "{output}"),
+    ]
+)
+few_shot_prompt = FewShotChatMessagePromptTemplate(
+    example_prompt=example_prompt,
+    examples=examples,
+    input_variables=["question"]
+)
+prompt = ChatPromptTemplate.from_messages(
+    [
+        (
+            "system",
+            """You are an expert at world knowledge. Your task is to step back and paraphrase a question to a more generic step-back question, which is easier to answer. Here are a few examples:""",
+        ),
+        # Few shot examples
+        few_shot_prompt,
+        # New question
+        ("user", "{question}"),
+    ]
+)
+
+generate_queries_step_back = prompt | ChatOpenAI(temperature=0, model="gpt-4-turbo") | StrOutputParser()
+question = "How to use auto3d?"
+generate_queries_step_back.invoke({"question": question})
+
+# Response prompt
+response_prompt_template = """You are an expert of world knowledge. I am going to ask you a question. Your response should be comprehensive and not contradicted with the following context if they are relevant. Otherwise, ignore them if they are not relevant.
+
+# {normal_context}
+# {step_back_context}
+
+# Original Question: {question}
+# Answer:"""
+response_prompt = ChatPromptTemplate.from_template(response_prompt_template)
+
+chain = (
+    {
+        # Retrieve context using the normal question
+        "normal_context": RunnableLambda(lambda x: x["question"]) | retriever,
+        # Retrieve context using the step-back question
+        "step_back_context": generate_queries_step_back | retriever,
+        # Pass on the question
+        "question": lambda x: x["question"],
+    }
+    | response_prompt
+    | ChatOpenAI(temperature=0, model="gpt-4-turbo")
+    | StrOutputParser()
+)
+
+ans = chain.invoke({"question": question})
+
+print(ans)
