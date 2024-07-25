@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nshtrainer
+Version: 0.5.2
+Summary: 
+Author: Nima Shoghi
+Author-email: nimashoghi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: lightning
+Requires-Dist: lovely-numpy (>=0.2.13,<0.3.0)
+Requires-Dist: lovely-tensors (>=0.1.16,<0.2.0)
+Requires-Dist: nshconfig (>=0.2.0,<0.3.0)
+Requires-Dist: nshrunner (>=0.6.1,<0.7.0)
+Requires-Dist: nshutils (>=0.3.0,<0.4.0)
+Requires-Dist: numpy
+Requires-Dist: pytorch-lightning
+Requires-Dist: rich
+Requires-Dist: torch
+Requires-Dist: torchmetrics
+Requires-Dist: typing-extensions
+Requires-Dist: wrapt
+Description-Content-Type: text/markdown
+
+
