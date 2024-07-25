@@ -1,0 +1,11 @@
+astrago/__init__.py,sha256=mju3uH2wSdmqEaPRn-Tb17IAkArAGFiqE-ZHSzsk3kA,384
+astrago/dataSender.py,sha256=M4Xduzbs2fgqTV2LHlyD9BO1rlobwcuIZq2Eh3arpeE,573
+astrago/tracking.py,sha256=jd-qMa1MQE7j2WBUJa-B-i56bR4JrFIsvDQ1db1PvLI,1609
+astrago/val.py,sha256=MIIUa6_jnwqBYcnQZbxLMZgZLujeGpfajVJKpbDbUns,230
+astrago/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astrago/integration/keras.py,sha256=jvbmB3ncP-q-b2w9hPhxAQYTNFIj6SU0QiBWRQPUPkM,2084
+astrago/integration/pytorchLightning.py,sha256=Oq6uysMlCc39thVp49taLsy2cxv01LGbXEcng-5rdus,2477
+astrago-0.0.1.dist-info/METADATA,sha256=tnPKhijrdYxTSVzwuBy5zPNruXih73jXpY33efBTPmg,377
+astrago-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+astrago-0.0.1.dist-info/top_level.txt,sha256=_IYtVtH8Hbvn3BSvBc7I_Tkxh-l6YlE4j2UYDw8rYNQ,8
+astrago-0.0.1.dist-info/RECORD,,
