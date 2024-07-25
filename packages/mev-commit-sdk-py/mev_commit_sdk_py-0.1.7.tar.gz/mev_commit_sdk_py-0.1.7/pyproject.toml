@@ -1,0 +1,36 @@
+[project]
+name = "mev-commit-sdk-py"
+version = "0.1.7"
+description = "mev-commit python sdk for on-chain data retrieval for mev-commit chain"
+authors = [{ name = "Evan K", email = "evan@primev.xyz" }]
+dependencies = [
+    "polars>=1.0.0",
+    "hvplot>=0.9.2",
+    "pyarrow>=16.0.0",
+    # "cryo @ https://github.com/primev/cryo/raw/main/wheels/cryo-0.3.2-cp310-cp310-manylinux_2_34_x86_64.whl",
+    "cryo>=0.3.2",
+    "python-dotenv>=1.0.1",
+    "hypersync>=0.7.11",
+    "git-changelog>=2.5.2",
+    "bump2version>=1.0.1",
+    "web3>=6.20.1",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mev_commit_sdk_py"]
+
+[tool.rye.scripts]
+changelog = "git-changelog --style=angular --output CHANGELOG.md"
