@@ -1,0 +1,2 @@
+[console_scripts]
+cowgirl-ai-auto-code = cli.main:main
