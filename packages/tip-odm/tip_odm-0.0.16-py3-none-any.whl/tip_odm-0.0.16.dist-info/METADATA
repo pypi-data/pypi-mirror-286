@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tip_odm
+Version: 0.0.16
+Author-email: Stefan Heim <stefan.heim@tip.co.at>
+Requires-Python: >3.12
+Requires-Dist: polars ~=1.1.0
+Requires-Dist: fastapi ~=0.111.0
+Requires-Dist: pydantic ~=2.8.2
+Requires-Dist: uvicorn ~=0.30.1
+Requires-Dist: arrow-odbc ~=7.0.4
+Requires-Dist: oracledb ~=2.2.1
+Requires-Dist: python-dotenv ~=1.0.1
+Requires-Dist: schedule ~=1.2.1
+Requires-Dist: PyYAML ~=6.0.1
+
