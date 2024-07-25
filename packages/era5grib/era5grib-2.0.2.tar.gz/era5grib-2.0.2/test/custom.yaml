@@ -1,0 +1,9 @@
+includes: um_era5land
+custom_fields:
+  skt: /g/data/v45/cc6171/3JuneERA5_SKT_with_box_and_buffer.nc
+custom_field_flags:
+  skt: global
+catalogues:
+  - era5_land
+  - custom_fields
+  - era5

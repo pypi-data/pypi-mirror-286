@@ -1,0 +1,10 @@
+xarray
+pandas
+intake
+intake_esm
+xesmf
+numpy
+mule
+f90nml
+cdo
+distributed
