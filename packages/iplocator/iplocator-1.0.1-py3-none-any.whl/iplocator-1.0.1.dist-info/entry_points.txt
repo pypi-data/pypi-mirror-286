@@ -1,0 +1,2 @@
+[console_scripts]
+iplocate = iplocate.iplocate:main
