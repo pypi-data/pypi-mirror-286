@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: warnet
+Version: 0.9.9
+Summary: Monitor and analyze the emergent behaviours of bitcoin networks
+License: MIT
+Project-URL: Homepage, https://warnet.dev
+Project-URL: GitHub, https://github.com/bitcoindevproject/warnet
+Keywords: bitcoin,warnet
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs ==23.2.0
+Requires-Dist: blinker ==1.7.0
+Requires-Dist: cachetools ==5.3.2
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: docker ==7.0.0
+Requires-Dist: flask ==3.0.0
+Requires-Dist: flask-jsonrpc ==1.1.0
+Requires-Dist: google-auth ==2.25.2
+Requires-Dist: idna ==3.6
+Requires-Dist: itsdangerous ==2.1.2
+Requires-Dist: jinja2 ==3.1.2
+Requires-Dist: jsonrpcclient ==4.0.3
+Requires-Dist: jsonrpcserver ==5.0.9
+Requires-Dist: jsonschema ==4.20.0
+Requires-Dist: jsonschema-specifications ==2023.12.1
+Requires-Dist: kubernetes ==28.1.0
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: markupsafe ==2.1.3
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: networkx ==3.2.1
+Requires-Dist: numpy ==1.26.2
+Requires-Dist: oauthlib ==3.2.2
+Requires-Dist: oslash ==0.6.3
+Requires-Dist: packaging ==23.2
+Requires-Dist: pyasn1 ==0.5.1
+Requires-Dist: pyasn1-modules ==0.3.0
+Requires-Dist: pygments ==2.17.2
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: pyyaml ==6.0.1
+Requires-Dist: referencing ==0.32.0
+Requires-Dist: requests ==2.29.0
+Requires-Dist: requests-oauthlib ==1.3.1
+Requires-Dist: rich ==13.7.0
+Requires-Dist: rpds-py ==0.16.2
+Requires-Dist: rsa ==4.9
+Requires-Dist: six ==1.16.0
+Requires-Dist: tabulate ==0.9.0
+Requires-Dist: typeguard ==2.13.3
+Requires-Dist: typing-extensions ==4.9.0
+Requires-Dist: urllib3 ==1.26.18
+Requires-Dist: websocket-client ==1.7.0
+Requires-Dist: werkzeug ==3.0.1
+Provides-Extra: build
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: build ; extra == 'build'
+
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https://raw.githubusercontent.com/bitcoin-dev-project/warnet/main/pyproject.toml)
+# Warnet
+
+Monitor and analyze the emergent behaviors of Bitcoin networks.
+
+## Major Features
+
+* Launch a bitcoin network with a specified number of nodes connected to each other according to a network topology from a graphml file.
+* Scenarios can be run across the network which can be programmed using the Bitcoin Core functional [test_framework language](https://github.com/bitcoin/bitcoin/tree/master/test/functional).
+* Nodes can have traffic shaping parameters assigned to them via the graph using [tc-netem](https://manpages.ubuntu.com/manpages/trusty/man8/tc-netem.8.html) tool.
+* Data from nodes can be collected and searched including log files and p2p messages.
+* Performance data from containers can be monitored and visualized.
+* Lightning Network nodes can be deployed and operated.
+* Networks can be deployed using Kubernetes, e.g. via MiniKube (small network graphs) or a managed cluster for larger network graphs.
+
+## Documentation
+
+- [Installation](https://github.com/bitcoin-dev-project/warnet/blob/main/docs/install.md)
+- [Quick Run](https://github.com/bitcoin-dev-project/warnet/blob/main/docs/quickrun.md)
+- [Running Warnet](https://github.com/bitcoin-dev-project/warnet/blob/main/docs/running.md)
+- [Network Topology](https://github.com/bitcoin-dev-project/warnet/blob/main/docs/graph.md)
+- [CLI Commands](https://github.com/bitcoin-dev-project/warnet/blob/main/docs/warcli.md)
+- [Scenarios](https://github.com/bitcoin-dev-project/warnet/blob/main/docs/scenarios.md)
+- [Data Collection](https://github.com/bitcoin-dev-project/warnet/blob/main/docs/data.md)
+- [Monitoring](https://github.com/bitcoin-dev-project/warnet/blob/main/docs/monitoring.md)
+- [Lightning Network](https://github.com/bitcoin-dev-project/warnet/blob/main/docs/lightning.md)
+
+![warnet-art](https://raw.githubusercontent.com/bitcoin-dev-project/warnet/main/docs/machines.webp)
