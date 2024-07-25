@@ -1,0 +1,9 @@
+README.md
+setup.py
+python_selenium_google_form/__init__.py
+python_selenium_google_form/main.py
+python_selenium_google_form.egg-info/PKG-INFO
+python_selenium_google_form.egg-info/SOURCES.txt
+python_selenium_google_form.egg-info/dependency_links.txt
+python_selenium_google_form.egg-info/requires.txt
+python_selenium_google_form.egg-info/top_level.txt
