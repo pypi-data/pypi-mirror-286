@@ -1,0 +1,10 @@
+plus_slurm/__init__.py,sha256=sC0GgwalhSVtNpFNZBMoVY8sLR-K6RP0IbJGQSKahM8,949
+plus_slurm/__version__.py,sha256=bd8hlxKMc0Fh_2w5GWfqBtuwa8uTepTMjT8w7F-EKvY,22
+plus_slurm/job.py,sha256=p2Fi8YHc8TCHjZL474mXbUKOI-ZubfiFiPMCo4Is808,8261
+plus_slurm/jobcluster.py,sha256=daw4aKiM2B1ZpttttLW6dGRkxb7u99Whc3n419kSWIA,18232
+plus_slurm/jinja2_templates/runner.py,sha256=x7AIiITrpS8CuH7YE_L-FbemN6UZdnAMaMMqe11Q9BY,3050
+plus_slurm/jinja2_templates/submit.sh,sha256=Hv0KPelOs1pnbbiO36bmG_soOYVkI9pXsppRO7cTsrs,551
+plus_slurm-0.2.9.dist-info/METADATA,sha256=_yOFGPfkBjaKuJNiqPF7llhv_ZbpJu89IxtEf7dH918,1142
+plus_slurm-0.2.9.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+plus_slurm-0.2.9.dist-info/licenses/LICENSE,sha256=CCyXTMWxAxmQxnFLcinf7OeNGygO6eXok5l8RLro6Sc,35078
+plus_slurm-0.2.9.dist-info/RECORD,,
