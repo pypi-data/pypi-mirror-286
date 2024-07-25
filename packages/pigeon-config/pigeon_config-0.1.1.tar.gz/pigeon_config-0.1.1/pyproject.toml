@@ -1,0 +1,29 @@
+[project]
+name = "pigeon-config"
+version = "0.1.1"
+dependencies = [
+    "himl",
+    "PyYAML",
+]
+requires-python = ">=3.8,<3.12"
+authors = [
+    {name="Cameron Devine", email="cameron.devine@alleninstitute.org"}
+]
+readme = "README.md"
+license = {text = "BSD 3 Clause"}
+description = "A tool for managing multiple configuration files. Based off of Adobe's HIML."
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: BSD License",
+]
+
+[project.scripts]
+pigeon-config = "pigeon_config.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/AllenInstitute/pigeon-config"
+Repository = "https://github.com/AllenInstitute/pigeon-config"
+Issues = "https://github.com/AllenInstitute/pigeon-config/issues"
