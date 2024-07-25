@@ -1,0 +1,9 @@
+opentelemetry/instrumentation/tornado/__init__.py,sha256=287JyPXWJfuF7Rdeq_yUypcKXLAJIRnStOflX4jLNng,23139
+opentelemetry/instrumentation/tornado/client.py,sha256=xWNwdEjukG19jNTrfi4Rw8lS6rcRW3_RqOVTbXlTL2E,4586
+opentelemetry/instrumentation/tornado/package.py,sha256=mv-OUOrDF54kFoP_Epb3Pv8aufliZTMOwLWL5oAV_hY,649
+opentelemetry/instrumentation/tornado/version.py,sha256=6FmWdr2KRW0MGpqEO5NBzLrm6URCtz_6ixXi_ALh6JA,608
+opentelemetry_instrumentation_tornado-0.47b0.dist-info/METADATA,sha256=W0BjBwrIAGrIzt9bKsYScrmsJWU1YqjeK9M70Gw962g,1983
+opentelemetry_instrumentation_tornado-0.47b0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+opentelemetry_instrumentation_tornado-0.47b0.dist-info/entry_points.txt,sha256=oDTErilMYHHuN6bv9XNAU1Avoy8f_nfCx91bASSkpgg,97
+opentelemetry_instrumentation_tornado-0.47b0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opentelemetry_instrumentation_tornado-0.47b0.dist-info/RECORD,,
