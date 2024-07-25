@@ -1,0 +1,6 @@
+click
+requests
+beautifulsoup4
+rich
+pyyaml
+cryptography
