@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+redis_management/__init__.py
+redis_management/exceptions.py
+redis_management/redis_manager.py
+redis_management/settings.py
+redis_management/test_redis_manager.py
+redis_management.egg-info/PKG-INFO
+redis_management.egg-info/SOURCES.txt
+redis_management.egg-info/dependency_links.txt
+redis_management.egg-info/requires.txt
+redis_management.egg-info/top_level.txt
