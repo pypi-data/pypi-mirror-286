@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: delta_method
+Version: 0.1
+Summary: A Python module that performs delta method calculations.
+Home-page: https://github.com/letsgoexploring/delta-method
+Download-URL: https://github.com/letsgoexploring/delta-method/raw/master/dist/delta_method-0.1.tar.gz
+Author: Brian C. Jenkins
+Author-email: bcjenkin@uci.edu
+Keywords: economics,statistics,delta method
+License-File: LICENSE
+
