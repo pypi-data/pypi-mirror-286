@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: processpdfdocs
+Version: 0.0.12.8
+Summary: Extract text and information from pdf files
+Author-email: Chien Luong Minh <chien.lm15@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy==1.26.4
+Requires-Dist: onnxruntime
+Requires-Dist: openai==1.12.0
+Requires-Dist: opencv-contrib-python==4.6.0.66
+Requires-Dist: paddleocr==2.7.0.3
+Requires-Dist: paddlepaddle==2.5.2
+Requires-Dist: pdf2image==1.17.0
+Requires-Dist: pdfminer-six==20221105
+Requires-Dist: pdfplumber==0.10.2
+Requires-Dist: pillow==10.2.0
+Requires-Dist: pymupdf==1.20.2
+Requires-Dist: pypdf2==3.0.1
+Requires-Dist: pytesseract==0.3.10
+Requires-Dist: ultralytics==8.0.239
+Requires-Dist: vietocr==0.3.13
+Description-Content-Type: text/markdown
+
+# Package contains logic to process PDF documents for RAG pipeline
