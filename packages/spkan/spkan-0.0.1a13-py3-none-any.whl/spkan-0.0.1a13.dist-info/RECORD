@@ -1,0 +1,10 @@
+spkan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spkan/conv.py,sha256=yJTmAvHfhsrerXbnCX9YemL-D6OHv_CWnFE5SFkc1dY,17668
+spkan/cuda_tools.py,sha256=3zjRcu3ilVtPO_yymhKSjJenHYxxV4ihiDJNRjQaHeg,2740
+spkan/tests.py,sha256=bvSIrJW-wm5Jl3R0kcQ3MiRxSDxkIU6nhGN4DX62kh4,6479
+spkan/modules/second_neck.py,sha256=ZxXPKaOx9hTcn1SJsnpzu9zDZWyh37bNNKgXSbfrGyQ,12322
+spkan-0.0.1a13.dist-info/LICENSE,sha256=qMvypLXQDndkHDFrQafAdzDqp_pnbykIvZ3WvOVBH1M,1069
+spkan-0.0.1a13.dist-info/METADATA,sha256=gfRbSRZFjbibK8lBBDCVJ0ucD1Kq9anBjKwWBtt4gGA,1856
+spkan-0.0.1a13.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+spkan-0.0.1a13.dist-info/top_level.txt,sha256=RhtH7BUq8DDLYGNh_AcCEPnvQwfPVePEV4V57jWXBEI,6
+spkan-0.0.1a13.dist-info/RECORD,,
