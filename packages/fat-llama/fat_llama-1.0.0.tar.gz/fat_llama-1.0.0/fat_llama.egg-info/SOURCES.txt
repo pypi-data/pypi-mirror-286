@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+fat_llama/__init__.py
+fat_llama.egg-info/PKG-INFO
+fat_llama.egg-info/SOURCES.txt
+fat_llama.egg-info/dependency_links.txt
+fat_llama.egg-info/entry_points.txt
+fat_llama.egg-info/requires.txt
+fat_llama.egg-info/top_level.txt
+fat_llama/audio_fattener/__init__.py
+fat_llama/audio_fattener/feed.py
+fat_llama/tests/__init__.py
+fat_llama/tests/test_feed.py
