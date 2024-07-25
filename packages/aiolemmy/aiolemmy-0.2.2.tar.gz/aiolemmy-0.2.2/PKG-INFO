@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aiolemmy
+Version: 0.2.2
+Summary: Async Lemmy API client
+Author-Email: Richard Schwab <pythonaiolemmy-fw4mjeny5w@richardschwab.de>
+License: AGPL-3.0-only
+Project-URL: Ci: github, https://github.com/Nothing4You/aiolemmy/actions
+Project-URL: Github: repo, https://github.com/Nothing4You/aiolemmy
+Project-URL: Github: issues, https://github.com/Nothing4You/aiolemmy/issues
+Requires-Python: >=3.8
+Requires-Dist: aiohttp>=3.9.3
+Description-Content-Type: text/markdown
+
+# aiolemmy
+
+Async Python [Lemmy](https://github.com/LemmyNet/lemmy) API client.
+
+Unstable and very early API, not recommended to be used.
