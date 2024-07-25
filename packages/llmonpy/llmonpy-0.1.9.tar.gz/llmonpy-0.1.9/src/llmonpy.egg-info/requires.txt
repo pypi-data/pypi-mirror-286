@@ -1,0 +1,10 @@
+google-generativeai
+openai
+mistralai
+anthropic
+fireworks-ai
+nothingpy
+jinja2
+flask
+flask_cors
+together
