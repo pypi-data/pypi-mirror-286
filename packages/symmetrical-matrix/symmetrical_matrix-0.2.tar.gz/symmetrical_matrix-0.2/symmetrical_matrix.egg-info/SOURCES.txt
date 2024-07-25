@@ -1,0 +1,8 @@
+setup.py
+Bain_Crosspen/__init__.py
+Bain_Crosspen/symmetrical_matrix.py
+symmetrical_matrix.egg-info/PKG-INFO
+symmetrical_matrix.egg-info/SOURCES.txt
+symmetrical_matrix.egg-info/dependency_links.txt
+symmetrical_matrix.egg-info/requires.txt
+symmetrical_matrix.egg-info/top_level.txt
