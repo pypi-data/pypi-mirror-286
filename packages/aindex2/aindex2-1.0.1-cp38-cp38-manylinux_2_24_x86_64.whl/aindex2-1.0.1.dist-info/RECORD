@@ -1,0 +1,8 @@
+aindex/__init__.py,sha256=sFVWy2zXBiBZ_c1qzNBw4HPIdy_qjDUoC_46_wf8jDc,41
+aindex/core/python_wrapper.cpython-38-x86_64-linux-gnu.so,sha256=rKS2Pz-2QtOOWqpwBNNZq8itEq5dnjhrFm0yebxcLM8,105328
+aindex/core/__init__.py,sha256=fmz1mURZZPdYCzGJ5SVrAj6XwlUAoD2WlAQgriaPBuE,47
+aindex/core/aindex.py,sha256=oLApCzGC47Hlrcm0Aat8M1yem4tv0NUuM-X-XZBG5fo,23992
+aindex2-1.0.1.dist-info/top_level.txt,sha256=wopBHd-BnUc_hGv5JGKZzslJ4Qx9DO4ec17GMH1U-rA,7
+aindex2-1.0.1.dist-info/RECORD,,
+aindex2-1.0.1.dist-info/WHEEL,sha256=NA1GYPuE2sXZHMlSHvxQza_C2puWQO6dIQ7YbwMbNxA,112
+aindex2-1.0.1.dist-info/METADATA,sha256=5oyeZr3w5po0nNxz8nxrDuXz4WyeyUrSNXCEaElZt3c,5641
