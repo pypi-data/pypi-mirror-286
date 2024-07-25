@@ -1,0 +1,25 @@
+[package]
+name = "puzzle-lib"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["inintencunter <2911583893@qq.com>"]
+include = [
+    "readme.md",
+    "src",
+    "Cargo.toml",
+]
+description = "数字华容道 核心库"
+homepage = "https://github.com/initialencounter/puzzle"
+readme = "readme.md"
+keywords = [
+    "puzzle",
+    "game",
+    "puzzle-game",
+]
+license = "AGPL-3.0"
+repository = "https://github.com/initialencounter/puzzle"
+
+[dependencies]
+rand = "0.8.5"
+phf = { version = "0.11.2", features = ["macros"] }

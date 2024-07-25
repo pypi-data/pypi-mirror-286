@@ -1,0 +1,17 @@
+[package]
+name = "puzzle-rs"
+description = "数字华容道 核心库"
+version = "0.1.2"
+edition = "2021"
+authors = ["inintencunter <2911583893@qq.com>"]
+homepage = "https://github.com/initialencounter/puzzle"
+repository = "https://github.com/initialencounter/puzzle"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "puzzle_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.22.0"
+puzzle-lib = { path = "../../puzzle-lib", version = "0.1.0" }
