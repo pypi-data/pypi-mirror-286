@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: outposttools
+Version: 1.4
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: tk
+Requires-Dist: pillow
+
