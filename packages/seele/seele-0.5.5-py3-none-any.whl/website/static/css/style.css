@@ -1,0 +1,215 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.navbar {
+    background-color: #2C3E50; /* Dark Blue */
+}
+.navbar .nav-link {
+    color: #ECF0F1; /* Light Grey */
+}
+.navbar .nav-link:hover {
+    background-color: #34495E; /* Slightly lighter Dark Blue */
+}
+.jumbotron {
+    background-color: #ECF0F1; /* Light Grey */
+    text-align: center;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.jumbotron h1 {
+    font-size: 3em;
+    color: #2C3E50; /* Dark Blue */
+}
+.jumbotron h2 {
+    font-size: 2em;
+    color: #2C3E50; /* Dark Blue */
+}
+.card-custom {
+    height: 350px;
+    background-color: #FFFFFF; /* White background for cards */
+    border: 1px solid #BDC3C7; /* Light Grey Border */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-custom .card-body {
+    text-align: center;
+}
+.card-custom h3 {
+    color: #E74C3C; /* Soft Red */
+}
+.small-image {
+    width: 175px; /* Adjust the size as needed */
+}
+.btn-primary {
+    background-color: #E74C3C; /* Soft Red */
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #C0392B; /* Darker Red */
+}
+
+.guide {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.guide-desc {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    color: #000000;
+    flex: 33.33%
+}
+
+.guide:hover .guide-desc{
+    visibility: visible;
+    opacity: 1;
+}
+#view-profile-btn:hover,
+#start-btn:hover {
+    transform: scale(1.2);
+    position: relative;
+}
+
+#view-profile-btn:hover:after,
+#start-btn:hover:after {
+    content: url(../images/seal_happy.png);
+    left: 250em;
+    bottom: 1ex;
+    display: block;
+    position: absolute;
+    zoom: 3%;
+}
+
+#uf-x-kyodai {
+    width: 290px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#who-we-are:hover #uf-x-kyodai {
+    opacity: 1;
+}
+
+#pwd-info {
+    margin-bottom: -20px;
+    align-items: center;
+}
+
+#pwd-img {
+    width: 150px;
+}
+
+.login-greeting {
+    align-items: flex-start;
+}
+#login-boy {
+    width: 80px;
+    margin-left: 20px;
+}
+
+.login-greeting:hover .login-msg{
+    visibility: visible;
+    opacity: 1;
+}
+.login-msg {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    color: #000000;
+}
+#login-msg-p1 {
+    bottom: -30px;
+}
+
+.disa-prep-img-wrapper {
+    position: relative;
+    align-items: center;
+    margin-left: auto;
+    flex: auto;
+    margin-right: auto;
+}
+
+#disa-prep-img {
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.disa-prep-img-wrapper:hover .disa-prep-msg {
+    opacity: 1;
+    visibility: visible;
+}
+
+.disa-prep-msg {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    color: #000000;
+}
+
+.delete-acct {
+    text-align: center;
+}
+
+#delete-btn {
+    background-color: #BDC3C7;
+    margin-bottom: 20px;
+    border: 1px solid #BDC3C7;
+}
+
+#delete-btn:hover {
+    background-color: #BAC0C0;
+
+    transform: scale(0.9);
+
+}
+#delete-acct-btns {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 50%;
+    position: relative;
+}
+
+.profile-info-label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.sad-guides {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.safety-guides {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#safety-girl,
+#safety-boy {
+    width: 150px;
+}
+
+#safety-msg-1 {
+    text-align: left;
+}
+#safety-msg-2 {
+    text-align: right;
+}
