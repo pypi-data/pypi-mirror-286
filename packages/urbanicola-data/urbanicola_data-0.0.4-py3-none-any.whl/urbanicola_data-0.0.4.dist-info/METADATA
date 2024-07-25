@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: urbanicola_data
+Version: 0.0.4
+Summary: A module with type of data base
+Home-page: https://github.com/nepito/urbanicola_data
+Author: NIES
+Author-email: nepo@nies.futbol
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: pydantic
+
+<a href="https://www.nies.futbol/"><img
+src="https://github.com/nepito/world_cup_semis/blob/develop/img/logo.jpeg" align="right" width="256"
+/></a>
+
+# Urbanícola data
+
+## Step to use
+
