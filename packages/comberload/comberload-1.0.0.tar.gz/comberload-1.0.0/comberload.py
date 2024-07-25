@@ -1,0 +1,197 @@
+import sys
+from types import ModuleType
+from typing import Callable
+from functools import wraps
+from importlib import import_module
+from threading import Thread
+
+
+class ComberloadModule(ModuleType):
+    """
+    A python module to register fallbacks till packages finish loading
+
+    ```python
+    import comberload
+
+    @comberload("prompt_toolkit")
+    def get_input():
+        import prompt_toolkit
+
+        return prompt_toolkit.prompt()
+
+    @get_input.fallback
+    def fallback_get_input():
+        return input()
+
+    get_input()  # immediately uses fallback
+
+    get_input()  # abit later, uses prompt_toolkit
+    ```
+
+    """
+
+    __version__ = "1.0.0"
+    worker_running = False
+    should_work = True
+    backlog = []
+    done = []
+    comberloaders = []
+    _callbacks: list[Callable] = []
+
+    class ComberLoader:
+        """
+        wraps over a comberloaded function running it only when the
+        requirements match
+        """
+
+        _fallback = None
+
+        def __init__(self, modules: list[str], func: Callable):
+            """
+            Creates a comberloaded which wraps you  function till it's
+            packages finish loading
+            """
+            self.__func__ = func
+            self.modules = modules
+            ComberloadModule.comberloaders.append(self)
+            self.comberloaded = (
+                len(set(modules) - set(ComberloadModule.done)) == 0
+            )
+            if self.comberloaded:
+                self.call = func
+            wraps(func)(self)
+
+        def call(self, *args, **kw):
+            """
+            The default call for comberloaded instance, calla the
+            fallback if given, else returns None
+            """
+            if self._fallback is None:
+                return None
+            return self._fallback(*args, **kw)
+
+        def fallback(self, func: Callable):
+            """
+            decorator registers function as fallback to use when loading
+            incomplete
+            """
+            self._fallback = func
+            return func
+
+        def __call__(self, *args, **kw):
+            """
+            calls callback or function depending on if loading complete
+            """
+            if hasattr(self, "__self__"):
+                return self.call(self.__self__, *args, **kw)
+            else:
+                return self.call(*args, **kw)
+
+        def __get__(self, instance, *__, **_):
+            """
+            sets the __self__
+            """
+            self.__self__ = instance
+            return self
+
+    def __init__(self):
+        """
+        Creates the module
+        """
+        super().__init__(__name__)
+
+    def __call__(self, *modules):
+        """
+        THis registers modules for comberloading
+        :param modules: The list of modules to load
+
+        :returns: A registerer to conditionally call a function
+        """
+        self.backlog.extend(
+            [mod for mod in modules if mod not in self.backlog]
+        )
+        self.start_worker()
+
+        def register_func(func: Callable):
+            """
+            wraps the function in a comberloader providing fallback() to
+            use before loading completes
+            """
+            return ComberloadModule.ComberLoader(modules, func)
+
+        def register_callback(func: Callable):
+            """
+            registers func as callback
+            :param func: The function
+
+            :returns: func
+            """
+            ComberloadModule._callbacks.append((modules, func))
+            return func
+
+        register_func.callback = register_callback
+
+        return register_func
+
+    def install(self):
+        sys.modules[__name__] = self
+
+    def start_worker(self) -> bool:
+        """
+        starts comberload's importing worker
+
+        :returns: If it actually started, will not if worker already running
+        """
+        if not self.worker_running:
+            self._worker_thread = Thread(target=self._worker)
+            self._worker_thread.start()
+            return True
+        else:
+            return False
+
+    def should_exit(self, val: bool = True):
+        """
+        Tells the worker to close after current import completion and not to
+        start again
+
+        :param val: If should or should not stop
+        """
+        self.should_work = not val
+
+    def _worker(self):
+        self.worker_running = True
+        print(self.backlog)
+        while len(self.backlog) > 0 and self.should_work:
+            modules = self.backlog.pop()
+            self.importing = True
+            modules = modules.split(".")
+            for depth in range(len(modules)):
+                module = ".".join(modules[: depth + 1])
+                if module in self.done:
+                    continue
+                import_module(module)
+                if module in self.backlog:
+                    self.backlog.remove(module)
+                self.done.append(module)
+                for loader in self.comberloaders:
+                    if loader.comberloaded:
+                        continue
+                    if (
+                        len(
+                            set(self.backlog) & set(loader.modules)
+                        )
+                        == 0
+                    ):
+                        loader.comberloaded = True
+                        loader.call = loader.__func__
+                for idx, (mods, func) in reversed(
+                    tuple(enumerate(self._callbacks[:]))
+                ):
+                    if len(set(self.backlog) & set(mods)) == 0:
+                        self._callbacks.pop(idx)
+                        func()
+            self.importing = False
+        self.worker_running = False
+
+
+ComberloadModule().install()
