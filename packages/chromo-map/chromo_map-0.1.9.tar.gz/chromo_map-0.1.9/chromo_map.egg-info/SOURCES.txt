@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+chromo_map/__init__.py
+chromo_map/color.py
+chromo_map.egg-info/PKG-INFO
+chromo_map.egg-info/SOURCES.txt
+chromo_map.egg-info/dependency_links.txt
+chromo_map.egg-info/requires.txt
+chromo_map.egg-info/top_level.txt
+chromo_map/data/__init__.py
+chromo_map/data/mpl_cat_names.json
