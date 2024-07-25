@@ -1,0 +1,46 @@
+# esther_args_history
+- Search information of parquet file based on CLI
+### Usage
+
+```
+$ my-history -s ls
+ls: used 1234
+
+$ my-history -t 10 -d 2024-07-17
+  cmd  cnt
+pyenv 4256
+   cd 3472
+  git 3396
+mkdir 1932
+  pip 1592
+  cat 1368
+   vi 1356
+ sudo 1320
+  pdm 1220
+   rm 1104
+```
+### deploy
+```
+# v0.2.0
+$ pip install https://github.com/EstherCho-7/esther_args_history.git@0.2.0/args
+
+# main
+$ pip install https://github.com/EstherCho-7/esther_args_history.git
+
+
+### Dev env setting
+```
+$ git clone <URL>
+$ cd <Project_Name>
+$ pdm install
+$ [pdm test | pytest] 
+
+# option
+$ pdm add -dG test pytest pytest-cov
+```
+
+### ref
+
+- https://pdm-project.org/en/latest/usage/dependency/#add-development-only-dependencies
+
+
