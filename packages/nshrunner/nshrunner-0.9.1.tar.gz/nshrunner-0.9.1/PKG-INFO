@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nshrunner
+Version: 0.9.1
+Summary: 
+Author: Nima Shoghi
+Author-email: nimashoghi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cloudpickle
+Requires-Dist: deepmerge
+Requires-Dist: nshconfig
+Requires-Dist: nshutils
+Requires-Dist: tqdm
+Requires-Dist: typing-extensions
+Description-Content-Type: text/markdown
+
+
