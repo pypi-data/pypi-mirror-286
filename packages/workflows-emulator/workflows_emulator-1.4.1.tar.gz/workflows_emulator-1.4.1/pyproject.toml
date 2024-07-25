@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "workflows-emulator"
+version = "1.4.1"
+readme = "README.md"
+description = "Google Workflows Emulator and testing utilities"
+authors = ["Daniel Iñigo <daniel.inigo@datatonic.com>"]
+packages = [{ include = "workflows_emulator" }]
+
+[tool.poetry.scripts]
+workflows-emulator = "workflows_emulator.cli:cli"
+get-discovery-documents = "workflows_emulator.utils:get_discovery_documents"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyyaml = "^6.0.1"
+jsonschema = "^4.23.0"
+jinja2 = "^3.1.4"
+requests = "^2.32.3"
+google-re2 = "^1.1.20240702"
+typeguard = "^4.3.0"
+python-dotenv = "^1.0.1"
+coloredlogs = "^15.0.1"
+addict = "^2.4.0"
+fastapi = "^0.111.1"
+google-auth = "^2.32.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+coverage = "^7.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Uncomment the following lines to enable logging in pytest
+[tool.pytest.ini_options]
+pythonpath = ["."]
+#log_cli = true
+#log_cli_level = "INFO"
+#log_format = "[%(asctime)s] %(name)s [%(levelname)s] %(message)s"
+#log_date_format = "%I:%M:%S"
+
+[project.scripts]
+workflows-emulator = "workflows_emulator.cli:cli"
