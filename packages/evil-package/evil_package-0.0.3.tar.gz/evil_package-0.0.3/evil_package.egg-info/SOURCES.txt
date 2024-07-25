@@ -1,0 +1,13 @@
+LICENSE
+setup.py
+evil_package.egg-info/PKG-INFO
+evil_package.egg-info/SOURCES.txt
+evil_package.egg-info/dependency_links.txt
+evil_package.egg-info/top_level.txt
+tests/__init__.py
+tests/collection.py
+tests/discovery.py
+tests/evasion.py
+tests/execution.py
+tests/exfiltration.py
+tests/persistense.py
