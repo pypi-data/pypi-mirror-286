@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: acad_iot
+Version: 0.1.0
+Summary: Adaptive Clustering and Anomaly Detection for IoT Network Security
+Home-page: https://github.com/xquad/acad_iot/acad_iot
+Author: Tuase Shola Emmanuel
+Author-email: quadxome@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: License.txt
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+# ACADIoT
+
+ACADIoT (Adaptive Clustering and Anomaly Detection for IoT Network Security) is a Python library that combines Adaptive Isolation Forest construction, K-means clustering, and PCA for data dimensionality reduction to detect anomalies and outliers in IoT networks.
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+python setup.py install
+n
