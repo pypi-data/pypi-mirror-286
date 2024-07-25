@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mst-package"
+version = "0.1.1"
+description = ""
+authors = ["Stelmacheris <stelmokas00@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
