@@ -1,0 +1,17 @@
+[logging]
+level = "debug"
+
+[session]
+ttl = "90d"
+cookie = "_{{ project_name }}_session_id"
+
+[database]
+uri = "mongodb://localhost:27017/{{ project_name }}"
+timeout = 1.1 # 1.1 seconds
+
+[cache]
+level1 = "request_local"
+level2 = "simple"
+
+# [memcached]
+# backends = ["127.0.0.1:11211"]
