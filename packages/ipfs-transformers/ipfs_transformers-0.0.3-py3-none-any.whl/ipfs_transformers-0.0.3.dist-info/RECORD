@@ -1,0 +1,10 @@
+ipfs_transformers/__init__.py,sha256=je79MZMsZLtzYsz1mNDUASppxXD5o9XZPkoZBdQvwps,92245
+ipfs_transformers/ipfs_kit.py,sha256=1Lnh7KQcG-vgfLiukD2QwR774p3BmR_Y5GGViNDkLgs,21370
+ipfs_transformers/ipfs_transformers.py,sha256=rFk1XTA0qa0oNN0DlZh-VUfsCJd37GxeHDMa2hYuqJo,1192295
+ipfs_transformers/ipfs_transformers_generator.py,sha256=LIajx2RFlU_omOkOayMfXw-1-0KTzVjTao_xHSy84fg,2389
+ipfs_transformers/ipfs_transformers_template.py,sha256=IOCEHR-J8pBLPm0DQsqDOExN87IGaDGrBYW8n8o7dec,3907
+ipfs_transformers-0.0.3.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ipfs_transformers-0.0.3.dist-info/METADATA,sha256=b7bnc4nsI4HoK_d4UAiptZxdX9MMAAAbPPD9tpA2WnU,2917
+ipfs_transformers-0.0.3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+ipfs_transformers-0.0.3.dist-info/top_level.txt,sha256=f8LDg3cZAUeQ_Nn5xG0ocUZaddeWXeEhKfJGErKusOM,18
+ipfs_transformers-0.0.3.dist-info/RECORD,,
