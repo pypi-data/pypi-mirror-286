@@ -1,0 +1,9 @@
+warc2summary/fast_warc.py,sha256=zW5Yg0nQYDLvX9rStVvCUtyK9l0ey8Ai5ZqZ3aQ0tt0,7121
+warc2summary/heuristics.py,sha256=991K-pFGuEHPjKZOFYIR02CAXZno2FvAQrl8ycUO4Mw,10372
+warc2summary/pipeline.py,sha256=gS5Iy752SZ-XBuhDWuxjp5FALkj3f8SupMyHOgEm5sk,6247
+warc2summary/warc_processor.py,sha256=MV509kyYBWJXfxbcz0k6nkXnZC7-04udwlNbIhtKp4o,9193
+warc2summary-0.0.4.dist-info/entry_points.txt,sha256=xajLCpzq-jYJCmbm9YnRYZddqoohjW_2ECuDyEqGkCc,59
+warc2summary-0.0.4.dist-info/LICENSE,sha256=fT0mFjI5fEXKGlhfkIXbmU0VtizVMPhgiIwX7zL4jkw,1069
+warc2summary-0.0.4.dist-info/METADATA,sha256=DTejrI2aDQW3Vs5f8pHGPMWEXkgBk5Kc85YKgtt3Zyg,5225
+warc2summary-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+warc2summary-0.0.4.dist-info/RECORD,,
