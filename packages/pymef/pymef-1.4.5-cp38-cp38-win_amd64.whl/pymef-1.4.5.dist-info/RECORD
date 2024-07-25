@@ -1,0 +1,13 @@
+pymef/__init__.py,sha256=IuRhuaOwc9vLYq-yx_wVkIWPazzrm7p00wMO8_J8OqA,79
+pymef/mef_constants.py,sha256=lwecPdOx5sGP_9ueW5KDKT0lX0ds0FKhhpTxfZgmrTg,11416
+pymef/mef_session.py,sha256=nTRfxBfnLlSuRE6LtvCeUYfcALt-jIWPh4BzpLC7r1g,68972
+pymef/version.py,sha256=oNeD_RreFiLrNeLiH931brBp7WNf0DomlX9tVUtxtyI,23
+pymef/mef_file/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymef/mef_file/pymef3_file.c,sha256=ujdiLqBWdItkGUppsFCv-Sz0fncOQdX12nj0oMKDUvA,210058
+pymef/mef_file/pymef3_file.cp38-win_amd64.pyd,sha256=c6q1Op3EgBfdrnL4-_GhFbzWdBS0WDgAoFya6g9B95M,196608
+pymef/mef_file/pymef3_file.h,sha256=9CFLgXAu85oioqbMwi_Pxsdu9Hd2VKoEQYZLmmBDfNg,18307
+pymef-1.4.5.dist-info/LICENSE.txt,sha256=MNaQiBd4P07-eYH_tzjMXycxKMeVO5u6i7Af6rjwYlk,1094
+pymef-1.4.5.dist-info/METADATA,sha256=2T-O5QeAv_muNs6M-Oy5sJy5qUEwqe0ygyzJi29C32E,3280
+pymef-1.4.5.dist-info/WHEEL,sha256=r_wel6bJlPaG_qUjVhzXlm7lKIoqZ0dLP3gu9plJjH4,99
+pymef-1.4.5.dist-info/top_level.txt,sha256=tdTwUbmCnT-Ua1bHfuMrg0l_wJ76REhL5ffyVx04gHg,6
+pymef-1.4.5.dist-info/RECORD,,
