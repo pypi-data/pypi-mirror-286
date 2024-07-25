@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+evil_package.egg-info/PKG-INFO
+evil_package.egg-info/SOURCES.txt
+evil_package.egg-info/dependency_links.txt
+evil_package.egg-info/top_level.txt
