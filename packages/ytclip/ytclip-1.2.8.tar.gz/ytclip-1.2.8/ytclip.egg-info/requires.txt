@@ -1,0 +1,6 @@
+static_ffmpeg
+yt-dlp>=2024.7.25
+ytdlp-brighteon>=2023.10.3
+
+[test]
+pytest
