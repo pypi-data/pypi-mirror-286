@@ -1,0 +1,3 @@
+[console_scripts]
+cat-dj=cat_dj.cli:main
+
