@@ -1,0 +1,12 @@
+nice_gui_utils/__init__.py,sha256=MAhBiiwP58h7fspZjKsJDcthuQdgbkW2iW292f4sOQM,119
+nice_gui_utils/keycloak_js/__init__.py,sha256=vVXRHS0-Wx12omycmy6LK0_9Wxdd25FILK0jTxx9EJk,108
+nice_gui_utils/keycloak_js/keycloak.js,sha256=7S-Ui1L3RXwjG5hpPYBNmBenWS6Y5Eo-fioThPeSy3w,1116
+nice_gui_utils/keycloak_js/keycloak.py,sha256=mdZgFYwxzX7k1eccHkLvbUWsNTfGoT3TziBY4iI2FNo,2946
+nice_gui_utils/router/__init__.py,sha256=jU6mVlYdnLReimlSs1TXyaysCu1PipFK2vQFmamRmoA,83
+nice_gui_utils/router/router.py,sha256=OvcOelNmVhrh6FDI9FULx47lhd68ts9TwffQsaLXmDY,2361
+nice_gui_utils/router/router_frame.js,sha256=Dh_kwp79oZiPZBLf7XKtZAj8US8bo2qsZwmoAhPsYaw,784
+nice_gui_utils-0.4.0.dev0.dist-info/LICENSE,sha256=4ujWGyOYQVrU3zLmJtRa1zVKaieLxsTDiyoCjS6KWgo,1075
+nice_gui_utils-0.4.0.dev0.dist-info/METADATA,sha256=aVrK8UPLI7HpbRf-iojsUl6TEw0jx5wLsWUDOyJyTpk,906
+nice_gui_utils-0.4.0.dev0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+nice_gui_utils-0.4.0.dev0.dist-info/top_level.txt,sha256=ZKNt-TKLlp2BbMeJGGkE49Y_lVaUg22u7SomRmRyyFI,15
+nice_gui_utils-0.4.0.dev0.dist-info/RECORD,,
