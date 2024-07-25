@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: py21cmEMU
+Version: 2.0.0
+Summary: Emulator of 21cmFAST summaries.
+Home-page: https://github.com/21cmFAST/21cmEMU
+License: MIT
+Keywords: Epoch of Reionization,Cosmology
+Author: Daniela Breitman
+Author-email: daniela.breitman@sns.it
+Requires-Python: >=3.8,<3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: GitPython (>=3.1.31,<4.0.0)
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: click (>=8.0.1)
+Requires-Dist: numpy (>=1.22.0,<2.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Requires-Dist: tensorflow (>=2.4.0,<=2.14.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: torch (>=1.9.0)
+Project-URL: Changelog, https://github.com/21cmFAST/21cmEMU/releases
+Project-URL: Documentation, https://21cmEMU.readthedocs.io
+Project-URL: Repository, https://github.com/21cmFAST/21cmEMU
+Description-Content-Type: text/x-rst
+
+=======
+21cmEMU
+=======
+
+
+|PyPI| |Status| |Python| |License| |RTD| |Tests| |Codecov| |pre-commit| |Black|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/py21cmemu.svg
+   :target: https://pypi.org/project/py21cmemu/
+.. |Status| image:: https://img.shields.io/pypi/status/py21cmemu.svg
+   :target: https://pypi.org/project/py21cmemu/
+.. |Python| image:: https://img.shields.io/pypi/pyversions/py21cmemu.svg
+
+.. |License| image:: https://img.shields.io/pypi/l/py21cmemu.svg
+    :target: https://github.com/21cmfast/21cmEMU/blob/main/LICENSE
+.. |Tests| image:: https://github.com/21cmfast/21cmEMU/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/21cmfast/21cmEMU/actions/workflows/tests.yml
+.. |Codecov| image:: https://codecov.io/gh/21cmfast/21cmEMU/branch/main/graph/badge.svg?token=yUOqyTlZ3z
+    :target: https://codecov.io/gh/21cmfast/21cmEMU
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/ambv/black
+.. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+.. |RTD| image:: https://readthedocs.org/projects/21cmemu/badge/?version=latest
+    :target: https://21cmemu.readthedocs.io/en/latest/
+    :alt: Documentation Status
+
+An emulator of 21cmFAST summaries.
+
+Emulate the following summary statistics:
+    * 21-cm power spectrum
+    * 21-cm global brightness temperature
+    * IGM spin temperature
+    * Neutral fraction
+    * Thomson scattering optical depth
+    * UV luminosity functions
+
+
+
+Documentation
+=============
+
+See `the documentation <https://21cmemu.readthedocs.io/en/latest/>`_ for tutorials and API.
+
+Issues
+======
+
+If you encounter any problems, please `file an issue <https://github.com/21cmFAST/21cmEMU/issues>`_ along with a detailed description.
+
+Contributing
+============
+
+Contributions are very welcome.
+To learn more, see the `Contributor Guide <https://github.com/21cmFAST/21cmEMU/blob/main/CONTRIBUTING.md>`_.
+
+Citation
+========
+
+If you use ``21cmEMU`` in your research, please cite `Breitman+23 <https://arxiv.org/abs/2309.05697>`_.
+
+License
+=======
+Distributed under the terms of the `MIT license <https://github.com/21cmFAST/21cmEMU/blob/main/LICENSE>`_, ``21cmEMU`` is free and open source software.
+
+
+Credits
+-------
+This project was generated from `@cjolowicz <https://github.com/cjolowicz>`_'s `Hypermodern Python Cookiecutter <https://github.com/cjolowicz/cookiecutter-hypermodern-python>`_ template.
+
