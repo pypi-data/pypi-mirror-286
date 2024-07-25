@@ -1,0 +1,56 @@
+[project]
+name = "pybinding-dev"
+version = "1.0.4.post1"
+authors = [
+    {name="Dean Moldovan", email="dean0x7d@gmail.com"},
+]
+maintainers = [
+    {name="Bert Jorissen", email="info@bertjorissen.be"}
+]
+description = "Package for tight-binding calculations, Documentation: http://pybinding.site/ (c) 2015-2023"
+readme = "README.md"
+dependencies = [
+    "numpy>=1.12",
+    "scipy>=0.19",
+    "matplotlib==3.9.0",
+    "pytest>=5.0"
+]
+requires-python = ">=3.9"
+license = {file = "license.md"}
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Physics',
+    'License :: OSI Approved :: BSD License',
+    'Programming Language :: C++',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: Implementation :: CPython',
+]
+keywords = [
+    "pybinding",
+    "tight-binding",
+    "solid-state physics",
+    "physics",
+    "cmt",
+    "quantum",
+    "graphene",
+    "TMD",
+    "KPM",
+    "CPGF"
+]
+[project.urls]
+"repository" = "https://github.com/dean0x7d/pybinding"
+"documentation" = "http://pybinding.site/"
+"changelog" = "https://github.com/dean0x7d/pybinding/blob/master/changelog.md"
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "cmake>=3.5.0"
+]
+build-backend = "setuptools.build_meta"
