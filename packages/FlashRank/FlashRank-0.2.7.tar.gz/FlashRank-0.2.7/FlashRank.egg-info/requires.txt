@@ -1,0 +1,10 @@
+tokenizers
+onnxruntime
+numpy
+requests
+tqdm
+
+[listwise]
+llama-cpp-python==0.2.76
+
+[pairwise]
