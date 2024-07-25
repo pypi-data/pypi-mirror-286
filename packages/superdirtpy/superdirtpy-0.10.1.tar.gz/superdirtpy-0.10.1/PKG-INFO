@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: superdirtpy
+Version: 0.10.1
+Summary: superdirtpy is a client library for Super Dirt written in python.
+Home-page: https://github.com/inaba1115
+Author: inaba1115
+Author-email: inaba1115@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-osc (>=1.8.3,<2.0.0)
+Project-URL: Repository, https://github.com/inaba1115/superdirtpy
+Description-Content-Type: text/markdown
+
+# superdirtpy
+superdirtpy is a client library for Super Dirt written in python.
+
+## features
+- timing control
+- no framework or DSL
+- can be used for algorithmic composition, live coding, integration with python libraries such as numpy and scipy and developing tools for your own use.
+
+## prerequisite
+Install Tidal Cycles. Especially Super Dirt.  
+https://tidalcycles.org/
+
+## examples
+- [examples](./examples/)
+- https://github.com/inaba1115/algorithmic-composition-playground
+
