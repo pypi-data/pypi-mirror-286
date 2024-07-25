@@ -1,0 +1,8 @@
+list/__init__.py,sha256=nv8qvIK4Zpydu1sujIKD0hvGN96mRNuLJ7PjN_jAAQY,60
+list/for_each.py,sha256=4fzVdKr2Oc6n80tsLIymDkJJQ93S0rrgqrSKA-1svig,132
+list/read.py,sha256=BDoLPnELEx9eDNutK4r1H9cT2mTCjva9m3oaDYs0Wuo,186
+list/write.py,sha256=Qdk2d1pNc065lx0fARzydM0N5MW2qXeMyO93rNsqk50,177
+devkit_list-2024.1.1.dist-info/METADATA,sha256=P6jo1uKkCWotuRfxj-Q4l54_MQMKWdY-BmyVLbRTr2E,237
+devkit_list-2024.1.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+devkit_list-2024.1.1.dist-info/top_level.txt,sha256=f9CTVfeQHA26Oq7HrglQ9x7TUGjRVOCo9c9OjLnee9Q,5
+devkit_list-2024.1.1.dist-info/RECORD,,
