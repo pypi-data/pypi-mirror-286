@@ -1,0 +1,70 @@
+#========================================================================================================================================
+# CyborgAI CC BY-NC-ND 4.0 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 Internation    https://github.com/cyborg-ai-git | 
+#========================================================================================================================================
+
+# TYPE:
+#   STRING [DEFAULT_VALUE]
+#   LANGUAGE [DEFAULT_VALUE]
+#   INT [DEFAULT_VALUE]
+#   LONG [DEFAULT_VALUE]
+#   FLOAT [DEFAULT_VALUE]
+#   DOUBLE [DEFAULT_VALUE]
+#   BYTE
+#   BYTES
+#   BOOL [DEFAULT_VALUE]
+#   EOBJECT EOBJECT_CLASS
+#   MAP EOBJECT_CLASS
+#   ENUM ENUM_CLASS .ENUM_DEFAULT
+#   EAPIADMIN
+#   EAPIFILE
+#   EAPITEXT
+
+package: evo_package_assistant
+
+enum:
+  EnumAssistantRole:
+    SYSTEM
+    ASSISTANT
+    USER
+
+entity:
+  EAssistant:
+    _DOC_: "EAssistant DESCRIPTION"
+    name: STRING
+    systemID: STRING
+    mapEAssistantMessage: MAP EAssistantMessage
+    mapEAssistantTool: MAP EAssistantTool
+
+  EAssistantMap:
+    _DOC_: "EAssistant DESCRIPTION"
+    mapEAssistant: MAP EAssistant
+
+  EAssistantQuery:
+    _DOC_: "EAssistant DESCRIPTION"
+    query: STRING
+
+  EAssistantAdmin:
+    _DOC_: "EAssistantAdmin DESCRIPTION"
+    eApiAdmin: EAPIADMIN
+    eAssistantQuery: EOBJECT EAssistantQuery
+
+  EAssistantMessage:
+    _DOC_: "EAssistantChat DESCRIPTION"
+    enumAssistantRole: ENUM EnumAssistantRole .USER
+    message: STRING
+    eApiFile: EAPIFILE
+
+  EAssistantUser:
+    _DOC_: "EAssistant DESCRIPTION"
+    eAssistanID: STRING
+    mapEAssistantMessage: MAP EAssistantMessage
+
+  EAssistantTool:
+    _DOC_: "EAssistantTool DESCRIPTION"
+    description: STRING
+    mapEAssistantToolParam: MAP EAssistantToolParam
+
+  EAssistantToolParam:
+    _DOC_: "EAssistantToolParam DESCRIPTION"
+    type: STRING
+    isRequired: BOOL True
