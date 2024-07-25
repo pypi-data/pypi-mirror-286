@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: supertree
+Version: 0.0.1
+Summary: Visualize decision tree in Python
+Home-page: https://github.com/mljar/supertree
+Author: MLJAR Sp. z o.o.
+Author-email: contact@mljar.com
+License: LICENSE.txt
+Keywords: visualization,decision-tree,machine-learning,data-analysis,data-mining,classification,regression,mljar
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7.1
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# supertrees
+Visualize decision trees in Python
