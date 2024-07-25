@@ -1,0 +1,15 @@
+requests
+connect-markdown-renderer
+pygame
+gpt4all
+languagemodels
+nPerlinNoise
+scikit-image
+matplotlib
+g4f
+bs4
+googlesearch-python
+html2text
+dill
+nest_asyncio
+pyperclip
