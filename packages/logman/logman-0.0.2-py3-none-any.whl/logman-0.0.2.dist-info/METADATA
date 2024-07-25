@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: logman
+Version: 0.0.2
+Summary: A Python logging library that provides a simple and easy-to-use interface for logging.
+Home-page: https://github.com/WIM-Corporation/logman
+Author: hbjs
+Author-email: hbjs <hbjs97@naver.com>
+License: MIT
+Project-URL: Documentation, https://logman.wimcorp.dev/
+Project-URL: Homepage, https://github.com/WIM-Corporation/logman
+Keywords: logman,logging,logger,log
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: <4.0,>=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: mypy ==v0.910 ; (python_version < "3.6") and extra == 'dev'
+Requires-Dist: tox ==3.27.1 ; (python_version < "3.8") and extra == 'dev'
+Requires-Dist: pytest ==6.1.2 ; (python_version < "3.8") and extra == 'dev'
+Requires-Dist: pytest-cov ==2.12.1 ; (python_version < "3.8") and extra == 'dev'
+Requires-Dist: freezegun ==1.1.0 ; (python_version < "3.8") and extra == 'dev'
+Requires-Dist: mypy ==v0.971 ; (python_version >= "3.6" and python_version < "3.7") and extra == 'dev'
+Requires-Dist: pytest-mypy-plugins ==1.9.3 ; (python_version >= "3.6" and python_version < "3.8") and extra == 'dev'
+Requires-Dist: exceptiongroup ==1.1.3 ; (python_version >= "3.7" and python_version < "3.11") and extra == 'dev'
+Requires-Dist: mypy ==v1.4.1 ; (python_version >= "3.7" and python_version < "3.8") and extra == 'dev'
+Requires-Dist: tox ==4.15.0 ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: pytest ==8.2.1 ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: pytest-cov ==5.0.0 ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: pytest-mypy-plugins ==3.1.0 ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: freezegun ==1.5.0 ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: mypy ==v1.10.0 ; (python_version >= "3.8") and extra == 'dev'
+Requires-Dist: Sphinx ==7.3.7 ; (python_version >= "3.9") and extra == 'dev'
+Requires-Dist: sphinx-autobuild ==2024.4.16 ; (python_version >= "3.9") and extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ==2.0.0 ; (python_version >= "3.9") and extra == 'dev'
+
+# logman
+
+**logman** is inspired by the SLF4J LoggerFactory from the Spring ecosystem. It aims to provide a similar experience for Python developers, featuring JSON logging and log rotation capabilities.
+
+visit <https://logman.wimcorp.dev>
+
+## Quickstart
+
+1. Install logman
+
+```bash
+$ pip install logman
+```
+
+2. Import and use the logger
+
+```python
+from logman import LoggerFactory
+
+class MyClass:
+  def **init**(self):
+    self.logger = LoggerFactory.getLogger(self.__class__.__name__)
+
+  def my_method(self):
+      self.logger.info('Hello, World!')
+
+myClass = MyClass()
+myClass.my_method()
+```
+
+```bash
+$ python my_script.py
+{"context": "MyClass", "level": "INFO", "timestamp": "2024-07-24 16:25:10.016", "message": "Hello, World!", "thread": "MainThread"}
+```
+
+## Run Tests
+
+### pytest
+
+```bash
+pip install pytest
+python -m unittest discover -s tests -p 'test_*.py'
+```
+
+### tox
+
+```bash
+pip install tox pytest
+tox
+```
+
+## Build Docs
+
+### Sphinx
+
+```bash
+pip install Sphinx sphinx-autobuild sphinx-rtd-theme myst_parser
+cd docs
+make html
+```

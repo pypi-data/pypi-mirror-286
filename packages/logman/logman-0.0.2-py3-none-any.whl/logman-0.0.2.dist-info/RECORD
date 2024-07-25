@@ -1,0 +1,13 @@
+logman/__init__.py,sha256=dx744qhR1P4hZbY2odUKdYLg1q-PTEunhPvqrR6W9HE,364
+logman/custom_logger.py,sha256=mj5SFolZfF_UZssiTbFEByAMP_j6hHiFHUEVieM9qRA,2346
+logman/logger_factory.py,sha256=nBUE_vzWvjchk6FBKth4G4ru3An3QZvULCEEhOi5B8E,5693
+logman/formatter/__init__.py,sha256=DIo8g65u29yXmH-4AUTfGAGBYkRCn7bdqYefO06m41o,133
+logman/formatter/json_formatter.py,sha256=SXbvUPmvf0U0k71u5BS3frx4fMtnmPZf6DVyxFcybHk,1908
+logman/formatter/plain_formatter.py,sha256=BMNCG8LkpsX6HG911S51hHV8-3te0qjD1urGnLpWcR0,1611
+logman/handler/__init__.py,sha256=64JuC1n6YMGkSpUa7LDeC-2GX4SNTat6MF2u5s4Ygiw,190
+logman/handler/console_logging_handler.py,sha256=VEsXM_63RA1O-w6uLz_CDSXgwMgIrcmT6FvJiU0wAPY,929
+logman/handler/file_rotate_logging_handler.py,sha256=5Z6mDLB0WXlvbInASO2SuNZDx5wVAGd46sYdUPbB2Aw,1628
+logman-0.0.2.dist-info/METADATA,sha256=qTDAScsQl4Q2L_XW-rUGnmOCHgQ39-OW-4XechhiQ30,3515
+logman-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+logman-0.0.2.dist-info/top_level.txt,sha256=NFpqRiPnqa7dmYjMr4n_FwtjxsKXTLd4gdQj5GAQ_YE,7
+logman-0.0.2.dist-info/RECORD,,
