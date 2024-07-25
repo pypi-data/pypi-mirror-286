@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: kitvector
+Version: 0.0.2
+Summary: This package has basic Vector operations (not suitable for machine learning)
+Home-page: https://github.com/Cjenf/sqlbox
+Author: Cheng
+Author-email: cjenf844747@gmail.com
+Requires-Python: >=3.11.4
+
