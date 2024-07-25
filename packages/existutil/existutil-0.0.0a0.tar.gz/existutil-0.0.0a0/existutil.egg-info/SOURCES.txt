@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+existutil/__init__.py
+existutil.egg-info/PKG-INFO
+existutil.egg-info/SOURCES.txt
+existutil.egg-info/dependency_links.txt
+existutil.egg-info/requires.txt
+existutil.egg-info/top_level.txt
