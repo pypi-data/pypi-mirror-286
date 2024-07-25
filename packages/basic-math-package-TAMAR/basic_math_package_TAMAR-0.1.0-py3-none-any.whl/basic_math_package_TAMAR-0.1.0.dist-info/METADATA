@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: basic_math_package_TAMAR
+Version: 0.1.0
+Summary: A basic math package
+Author: TAMAR
+Author-email: tzirw@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This is a basic math package.
+containing two functions:
+add(a, b) - returns the sum of a + b
+substruct(a, b) - returns the sum of a - b (can return negetive values)
+
