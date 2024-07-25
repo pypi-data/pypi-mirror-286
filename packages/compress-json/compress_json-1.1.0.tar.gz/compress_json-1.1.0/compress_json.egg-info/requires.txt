@@ -1,0 +1,8 @@
+
+[test]
+pytest
+pytest-cov
+pytest-readme
+validate_version_code
+random_dict
+dict_hash
