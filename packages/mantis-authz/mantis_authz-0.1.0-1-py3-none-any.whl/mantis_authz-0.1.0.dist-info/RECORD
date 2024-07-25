@@ -1,0 +1,7 @@
+mantis_authz/__init__.py,sha256=poWpi8rCdgolT7MpbcwvV0QsoNtt6FWKvqwTKipy-CE,81
+mantis_authz/config.py,sha256=uy0zoc_jqBGqwOcNYP4c7eoyS_02K2XdU7SmIkWkKk0,1396
+mantis_authz/models.py,sha256=uNbR0etjdeRLrUaMT__-xb8jb4vfq9EZq0OpBp7Bm8A,281
+mantis_authz/util.py,sha256=xnGB3kzs1G2rJxtXQoCkwspj7MmkR6o85MWj0ooEniA,6236
+mantis_authz-0.1.0.dist-info/METADATA,sha256=79gTKJu0-mQwm1Lg-14LiIwxNWSmda2hlPSTclJ-BD0,759
+mantis_authz-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mantis_authz-0.1.0.dist-info/RECORD,,
