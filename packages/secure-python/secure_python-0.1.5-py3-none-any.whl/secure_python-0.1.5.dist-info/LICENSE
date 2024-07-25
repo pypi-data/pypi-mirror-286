@@ -1,0 +1,5 @@
+
+### 5. Build and Deploy the Package
+1. **Build the package**:
+   ```bash
+   python setup.py sdist bdist_wheel
