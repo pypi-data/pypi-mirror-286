@@ -1,0 +1,19 @@
+def fix_number(number):
+    try:
+        return round(float(number), 2)
+    except Exception:
+        pass
+
+    return 0
+
+
+def format_number(number):
+    try:
+        # Convert to float and round to 2 decimal places
+        fixed_number = round(float(number), 2)
+    except (ValueError, TypeError):
+        # Handle invalid inputs by setting fixed_number to 0.00
+        fixed_number = 0.00
+
+    # Return the fixed number formatted to 2 decimal places
+    return "{:.2f}".format(fixed_number)
