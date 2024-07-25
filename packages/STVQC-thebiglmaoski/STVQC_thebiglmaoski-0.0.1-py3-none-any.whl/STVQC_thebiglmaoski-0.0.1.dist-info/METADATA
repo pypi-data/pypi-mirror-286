@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: STVQC_thebiglmaoski
+Version: 0.0.1
+Summary: Implementation of the ST-VQC in TorchQuantum
+Author: Noah Khan, Hanad Elmi
+Author-email: Noah Khan <noahkhan022@gmail.com>, Hanad Elmi <slaychomc@gmail.com>
+Project-URL: Homepage, https://github.com/jinyang001/ST-VQC/tree/main
+Project-URL: Issues, https://github.com/jinyang001/ST-VQC/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest >=6.0 ; extra == 'dev'
+
+# ST-VQC
+Code implementation for ST-VQC
