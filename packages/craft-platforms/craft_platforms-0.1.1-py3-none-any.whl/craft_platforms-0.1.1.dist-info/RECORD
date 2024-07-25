@@ -1,0 +1,14 @@
+craft_platforms/__init__.py,sha256=3Xon8qqAtR3Z9UXFthHDRQ5GVLyZ3Rl56ucdKRhfh8U,1391
+craft_platforms/_architectures.py,sha256=FUNiZQzsBB-rzDFFZ4cPvalDtdHQYmpaTRSX14E8Nx0,2477
+craft_platforms/_buildinfo.py,sha256=AV7T59dLmqk5gruo6HIJl4flpaCbY8dSpXIx9qrSlT8,1117
+craft_platforms/_distro.py,sha256=DMmbGyt7P1IIYourLe9EJCmXTQ6k3vEVcfqtoHv8kf8,6010
+craft_platforms/_platforms.py,sha256=J15dXeOpI9ZTKdo8GXpvpQwLgGvF5IKDWvDV_i5p_KY,1127
+craft_platforms/_version.py,sha256=PKIMyjdUACH4-ONvtunQCnYE2UhlMfp9su83e3HXl5E,411
+craft_platforms/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+craft_platforms/charm/__init__.py,sha256=5G9yqqvnDEfnNlt2_ZW2LYGGZkfK5HhECY_teHNDeAA,910
+craft_platforms/charm/_build.py,sha256=i3Lug0bAMXd_c6PBztCX_HQ-w9ZLZ2axZT4uk2ZlKWY,3321
+craft_platforms-0.1.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+craft_platforms-0.1.1.dist-info/METADATA,sha256=Lml4B6fjx23DqpIrJ_erctw0VMlO5k3-IaKy86mLdKA,1489
+craft_platforms-0.1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+craft_platforms-0.1.1.dist-info/top_level.txt,sha256=li9dnX06a42x4oZ6eDFyfRisjIGJjam8l6BIzm-HPG8,16
+craft_platforms-0.1.1.dist-info/RECORD,,
