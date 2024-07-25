@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: scim2-tester
+Version: 0.1.3
+Summary:  Check SCIM RFCs server compliance
+License: MIT
+Keywords: scim,scim2,provisioning,rfc7643,rfc7644
+Author: Yaal Coop
+Author-email: contact@yaal.coop
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: scim2-client (>=0.1.9,<0.2.0)
+Description-Content-Type: text/markdown
+
+# scim2-tester
+
+Python methods based on [scim2-models](https://scim2-models.readthedocs.io) and [scim2-client](https://scim2-client.readthedocs.io/en), to check if SCIM servers respect the [RFC7643](https://datatracker.ietf.org/doc/html/rfc7643.html) and [RFC7644](https://datatracker.ietf.org/doc/html/rfc7644.html) specifications.
+
+It aims to be used in unit test and Continuous Integration suites and in healthcheck tools.
+If you are seeking a CLI integration of scim2-tester, take a look at [scim2-cli](https://scim2-cli.readthedocs.io).
+
+## What's SCIM anyway?
+
+SCIM stands for System for Cross-domain Identity Management, and it is a provisioning protocol.
+Provisioning is the action of managing a set of resources across different services, usually users and groups.
+SCIM is often used between Identity Providers and applications in completion of standards like OAuth2 and OpenID Connect.
+It allows users and groups creations, modifications and deletions to be synchronized between applications.
+
+## Installation
+
+```shell
+pip install scim2-tester
+```
+scim2-tester belongs in a collection of SCIM tools developed by [Yaal Coop](https://yaal.coop),
+with [scim2-models](https://github.com/yaal-coop/scim2-models),
+[scim2-client](https://github.com/yaal-coop/scim2-client) and
+[scim2-cli](https://github.com/yaal-coop/scim2-cli)
+
