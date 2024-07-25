@@ -1,0 +1,15 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bregman/__init__.py,sha256=q0DD68T7KcAbxTIOXzKyV1aTPDp7J7iILCcE0tHz6Ng,588
+bregman/densities.py,sha256=VdOh4zOFTFmWbvJn53CWBLu9SyBfaRdIRpdiIlKAv-A,2408
+bregman/latent_pod.py,sha256=M1_6B5CSnd3mBXX5fjifwINTYMm_CY_zrIReQs490gk,2284
+bregman/models.py,sha256=CD-4tVWULXikvQhBK1eldtBHNMJvEiErjdRy0rxvdsU,7572
+bregman/optimizers.py,sha256=I--qSVzkyo6SGYXoKizhxA9FkeH-pvp74Kz5sp-sXP4,6201
+bregman/regularizers.py,sha256=Ddqki9tPCZIL4-iGTZMF7sqQdsw2p5AC1VrL875yOLE,5163
+bregman/simplify.py,sha256=7RkjmTCpETN5_deqZeIe5zfc5_wN1iyoQYRs9LO7Bfs,1865
+bregman/sparsify.py,sha256=EKx10bgsjFYRWa_D_Cwd3bb_IAD4LKPGN-w7fYrguG4,1544
+bregman_learning-0.0.0.dist-info/AUTHORS.rst,sha256=jUmqgH5AIhCPtByvZypRjW2KJRjCk9WF_IDLsDAGrUg,173
+bregman_learning-0.0.0.dist-info/LICENSE,sha256=dkIzOciKJwtys7OkoLigYoXTcpPnS1-dOf42ps-Zv-w,1523
+bregman_learning-0.0.0.dist-info/METADATA,sha256=q_0IVMXybfsIKwQOxf8Mj_PpYllkjuqbh63jA6_DG58,3091
+bregman_learning-0.0.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+bregman_learning-0.0.0.dist-info/top_level.txt,sha256=t2esdCcFMJC2HNTZVPgO8JIuwqhs-2Hhk-cwN-AdUMo,17
+bregman_learning-0.0.0.dist-info/RECORD,,
