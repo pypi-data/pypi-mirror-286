@@ -1,0 +1,5 @@
+setup.py
+NLGDECIMAL.egg-info/PKG-INFO
+NLGDECIMAL.egg-info/SOURCES.txt
+NLGDECIMAL.egg-info/dependency_links.txt
+NLGDECIMAL.egg-info/top_level.txt
