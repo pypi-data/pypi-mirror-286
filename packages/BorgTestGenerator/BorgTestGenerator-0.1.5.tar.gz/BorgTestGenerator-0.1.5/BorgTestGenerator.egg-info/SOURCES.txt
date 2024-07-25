@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+BorgTestGenerator/__init__.py
+BorgTestGenerator/assistant.py
+BorgTestGenerator/unittestwriter.py
+BorgTestGenerator.egg-info/PKG-INFO
+BorgTestGenerator.egg-info/SOURCES.txt
+BorgTestGenerator.egg-info/dependency_links.txt
+BorgTestGenerator.egg-info/requires.txt
+BorgTestGenerator.egg-info/top_level.txt
+BorgTestGenerator/agents/__init__.py
+BorgTestGenerator/agents/agent.py
+BorgTestGenerator/agents/py3_unit_tests_writer.py
+BorgTestGenerator/parsers/__init__.py
+BorgTestGenerator/parsers/code_blocks_parsing.py
+tests/__init__.py
