@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+porcupine_pca.egg-info/PKG-INFO
+porcupine_pca.egg-info/SOURCES.txt
+porcupine_pca.egg-info/dependency_links.txt
+porcupine_pca.egg-info/not-zip-safe
+porcupine_pca.egg-info/requires.txt
+porcupine_pca.egg-info/top_level.txt
+tests/test_filter_pathways.py
+tests/test_pca.py
+tests/test_pca_scores.py
+tests/test_porcupine.py
