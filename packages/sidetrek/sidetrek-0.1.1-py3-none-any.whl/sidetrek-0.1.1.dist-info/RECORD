@@ -1,0 +1,10 @@
+sidetrek/README.md,sha256=4yKU9ryuIT_HoN_GRjsPqWBPaFWHDJDPsJkCU_mC5Pw,229
+sidetrek/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sidetrek/ipython/magics.py,sha256=kKW6QuA0GFDU3JNSnp-8bVoaYKFzkHMgDIE4EJrFfq8,1450
+sidetrek/nbdev/directives.py,sha256=xJVEsjsuMPgUQqySfrEGD0wig5S1wkEh6gR80c34lFw,1611
+sidetrek/nbdev/export.py,sha256=eJYdFpu2hJ8Pu3KvJU3k9DRcKMM_CGbHPcLWM7AhZ4E,718
+sidetrek/trino.py,sha256=16cHJMY7fdDYVswXuYwd5lg_dkPb_1bi7srAa8AXGyg,448
+sidetrek-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sidetrek-0.1.1.dist-info/METADATA,sha256=DHs9jE9-axNz7IQf7ANbKFF4Ay-KpUN1pZSeeNJjl68,540
+sidetrek-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sidetrek-0.1.1.dist-info/RECORD,,
