@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+cacheia_schemas/__init__.py
+cacheia_schemas/exceptions.py
+cacheia_schemas/interfaces.py
+cacheia_schemas/values.py
+cacheia_schemas.egg-info/PKG-INFO
+cacheia_schemas.egg-info/SOURCES.txt
+cacheia_schemas.egg-info/dependency_links.txt
+cacheia_schemas.egg-info/requires.txt
+cacheia_schemas.egg-info/top_level.txt
