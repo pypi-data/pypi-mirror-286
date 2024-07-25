@@ -1,0 +1,15 @@
+preprod/__init__.py,sha256=T6V6SzRZ3lDHoKjmt9qUAJPuY4PjBXFN6VB5pq58uXI,143
+preprod/commons.py,sha256=rMvzFTiq6-7aqWjVtIVvGTqqX0hbXPHIW0qvyIIbJY0,18392
+preprod/core.py,sha256=OIDax2ciHcYuSqBXIqoUDs9KpaVuhuqXlV56HfSDWrQ,5492
+preprod/locale/en/LC_MESSAGES/preprod.mo,sha256=-5Hgff2pmCFFbfqMcHAYXFXkXlPdLpoT0F_kuCmmPwM,424
+preprod/locale/en.po,sha256=iQd3zNctpjlvAm1LA1MxAq2imsN7GQKqcEPdk9gdXpY,738
+preprod/locale/es/LC_MESSAGES/preprod.mo,sha256=irX6Y6xmisuSwb4V1doRClOf8aADxClyYVnXu8oufas,4247
+preprod/locale/es.po,sha256=Lhx7dso6ksu4xBJeQT2olbfsT9HjZ3NWKMH6vPktBv4,5184
+preprod/locale/preprod.pot,sha256=lneN4qORYPtAVbRK0sGbjInIGHH6Y4crXP8GT84n8fI,3464
+preprod/poethepoet.py,sha256=USW7gLsB6LVtgX5wQMVBodPYGKFgquNPJ4npXWY-62Q,2047
+preprod/tests/test_commons.py,sha256=OGH8l3JkwDuWC27FZzjZoxQvDtIzfgAAlRfgX5HmklU,7584
+preprod-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+preprod-1.2.0.dist-info/METADATA,sha256=bAU75ZFYaaUsB9SLwEaP6YTjljJpI32Eq6QE-U4YeQE,4554
+preprod-1.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+preprod-1.2.0.dist-info/entry_points.txt,sha256=Lwt9-5Ldg2J2iXD-hhjT2n3rpz8glkFdB8KeVMU3ZJc,91
+preprod-1.2.0.dist-info/RECORD,,
