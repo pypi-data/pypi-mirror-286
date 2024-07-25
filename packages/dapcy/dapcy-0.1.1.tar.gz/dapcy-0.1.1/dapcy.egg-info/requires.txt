@@ -1,0 +1,10 @@
+bed_reader
+joblib
+matplotlib
+numpy
+pandas
+scikit-learn
+scipy
+seaborn
+sgkit
+sgkit[vcf]
