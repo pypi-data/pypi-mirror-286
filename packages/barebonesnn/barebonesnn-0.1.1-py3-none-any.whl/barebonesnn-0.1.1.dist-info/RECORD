@@ -1,0 +1,15 @@
+barebonesnn/__init__.py,sha256=cZhJ98jiTVsKmOIb2QnfEzp7MWT_cq9qx0RvD6ckbJI,174
+barebonesnn/layer.py,sha256=0VSv66yT2Vw923Gb1l9ou36ASTGrJi4K89hCinS95hw,1184
+barebonesnn/mlp.py,sha256=xTmPOWppu1ECvEXIxBE5ssHn3CV9m2a39PshPLAr_Ug,1293
+barebonesnn/neuron.py,sha256=8MRD_6RpC7h6B2UhiYIldtA4LNqjXc5Rgbep5IafuG0,1147
+barebonesnn/value.py,sha256=E462O3IpRXpRelj9LNiRbTuK6I1QPLGwJitFAXZinXQ,5993
+test/__init__.py,sha256=xkCEwu0uD1bVZR_rAksSV1bfykzA6_uIZmj99dYAZe8,102
+test/test_layer.py,sha256=SasvHSAjo1xFUBMNU6jXXM0jCmYffmXEqJbCj0fM9k0,560
+test/test_mlp.py,sha256=MKGwI_6rYfHeWymJ82vTlKZo6VtBqxQOqnm-_TLQzxw,615
+test/test_neuron.py,sha256=GsxhxXWNdTTOtn0fhKQb74Z0fk5C9EcaSw66p1a5hJg,506
+test/test_value.py,sha256=sMEI4PFv3PQwE_nnjnJO6Tn9D_m_y7S8W1Bx2m04IAM,786
+barebonesnn-0.1.1.dist-info/LICENSE,sha256=fPg7WAEqxIjgAbOzX5nJAVieUOyQf74ipeLwXeGx2kg,1101
+barebonesnn-0.1.1.dist-info/METADATA,sha256=xHJlVIwidCEJ0lK5EFd8tl8DE7etsP0AW_Ycen6uIiw,1485
+barebonesnn-0.1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+barebonesnn-0.1.1.dist-info/top_level.txt,sha256=tChUZJPneJoWWmbfyKw5OnSJupUJja6j0E-xWeP0EVk,17
+barebonesnn-0.1.1.dist-info/RECORD,,
