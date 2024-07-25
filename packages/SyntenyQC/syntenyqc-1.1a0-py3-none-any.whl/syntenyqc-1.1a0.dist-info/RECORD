@@ -1,0 +1,15 @@
+SyntenyQC/__init__.py,sha256=XNjd2zoXcaSbs3MmfPictd8flvG1e1sagXS9Bos5xZU,95
+SyntenyQC/app.py,sha256=QiFDIXa3Hv4JCKKH8IEMNS2ffNhW-wzPafw_a6pUHXI,19941
+SyntenyQC/blast_functions.py,sha256=x9cawUbFjzs5tqD_uWIvQ-KmWB0oSJeL2tA_uB40P7A,18287
+SyntenyQC/collect.py,sha256=CNYhRyISYml5WaksaSkSEGh7GQUeFLeBJuq2nF7ZEV8,3526
+SyntenyQC/helpers.py,sha256=dpUNjAyYAOTtnglZlt_Nh_nit8aGgxlIWbOdyTbG4lE,3989
+SyntenyQC/neighbourhood.py,sha256=p2Oguc9RgGd6s5xg3zjm3QLaFqyKrmmb9k27ihGqxHw,15135
+SyntenyQC/networks.py,sha256=0n6DqfXvotIsy8wWvvg7JPutgxc6f2uF4vOR3_7fynM,11972
+SyntenyQC/pipelines.py,sha256=gWbMXPxjnr1knvBVYM9cLaa5s2XWEnhsGec5OnncIK4,14179
+SyntenyQC/sieve.py,sha256=mmMuf2DnaxXH3bhu6yRQHPeaYv_NePAxxj_t8lUd7i4,2833
+SyntenyQC/visualisations.py,sha256=5sl2E4xRkbbB7P16SgaWfr1WoO4t06Y_nPFX0rJ5rfY,7959
+syntenyqc-1.1a0.dist-info/METADATA,sha256=rA1iovZAdTM-gyU1-GHigyDQGG3n733si6_0XgpPskw,14549
+syntenyqc-1.1a0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+syntenyqc-1.1a0.dist-info/entry_points.txt,sha256=0ufXkHyG3o76obDlD5QnYJNwTLKowGa3F5_yFTxt2JE,53
+syntenyqc-1.1a0.dist-info/licenses/LICENSE,sha256=s8zHGoVwKONYSzNYgal9lu9hiv4XF2kQ4yEca4OVExg,1103
+syntenyqc-1.1a0.dist-info/RECORD,,
