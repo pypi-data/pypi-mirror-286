@@ -1,0 +1,5 @@
+instant_distance-0.3.6.dist-info/METADATA,sha256=3Q5xkWBeZcKjBotOmdrSg5YMEMqfc58389tGV87aI8k,2544
+instant_distance-0.3.6.dist-info/WHEEL,sha256=10ieVvLnLlWttGKLpoXwN1IqoQff6SLvxazRm7Djn5Y,108
+instant_distance/__init__.py,sha256=6MeMYQsOk3pVLul0tLZRXglYhUsK6xPk5-LOdrsg2Eo,147
+instant_distance/instant_distance.cpython-311-darwin.so,sha256=dE6tJmkZdWHxkSPXrsWZbout3P0gKlGkoM7e0Sa2q8M,891904
+instant_distance-0.3.6.dist-info/RECORD,,
