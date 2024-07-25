@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/PySerialNumberGenerator.egg-info/PKG-INFO
+src/PySerialNumberGenerator.egg-info/SOURCES.txt
+src/PySerialNumberGenerator.egg-info/dependency_links.txt
+src/PySerialNumberGenerator.egg-info/top_level.txt
