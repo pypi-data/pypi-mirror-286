@@ -1,0 +1,5 @@
+[console_scripts]
+timestep=timestep.main:typer_app
+timestep_serve=timestep.server:main
+timestep_train=timestep.worker:main
+

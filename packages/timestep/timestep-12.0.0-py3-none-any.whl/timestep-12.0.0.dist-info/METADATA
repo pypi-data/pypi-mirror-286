@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: timestep
+Version: 12.0.0
+Summary: 
+License: MIT
+Author: Michael James Schock
+Author-email: m@mjschock.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: connexion[swagger-ui,uvicorn] (>=3.1.0,<4.0.0)
+Requires-Dist: controlflow (>=0.8.2,<0.9.0)
+Requires-Dist: fastapi (>=0.111.1,<0.112.0)
+Requires-Dist: huggingface-hub (>=0.23.5,<0.24.0)
+Requires-Dist: langchain-community (>=0.2.7,<0.3.0)
+Requires-Dist: llama-cpp-python (>=0.2.82,<0.3.0)
+Requires-Dist: marvin (>=2.3.6,<3.0.0)
+Requires-Dist: prefect-shell (>=0.3.0rc1,<0.4.0)
+Requires-Dist: prefect-sqlalchemy (>=0.5.0rc2,<0.6.0)
+Requires-Dist: sqlmodel (>=0.0.21,<0.0.22)
+Requires-Dist: sse-starlette (>=2.1.2,<3.0.0)
+Requires-Dist: starlette-context (>=0.3.6,<0.4.0)
+Requires-Dist: transformers (>=4.42.4,<5.0.0)
+Requires-Dist: typer[all] (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Timestep AI
+
+Timestep AI CLI - free, local-first, open-source AI
+
+**Setup**:
+
+```console
+$ prefect server start
+$ prefect worker start --pool "default" --work-queue "default"
+$ timestep serve
+```
+
+**Usage**:
+
+```console
+$ timestep [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--install-completion`: Install completion for the current shell.
+* `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `evals`: Run evaluations.
+* `serve`: Run serving.
+* `train`: Run training.
+
+## `timestep evals`
+
+Run evaluations.
+
+**Usage**:
+
+```console
+$ timestep evals [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+## `timestep serve`
+
+Run serving.
+
+**Usage**:
+
+```console
+$ timestep serve [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+## `timestep train`
+
+Run training.
+
+**Usage**:
+
+```console
+$ timestep train [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
