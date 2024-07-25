@@ -1,0 +1,2 @@
+[console_scripts]
+iDeployMaster = iDeployMaster.main:initialize_ui
