@@ -1,0 +1,7 @@
+setup.py
+player/__init__.py
+player/player.py
+playerjechmx.egg-info/PKG-INFO
+playerjechmx.egg-info/SOURCES.txt
+playerjechmx.egg-info/dependency_links.txt
+playerjechmx.egg-info/top_level.txt
