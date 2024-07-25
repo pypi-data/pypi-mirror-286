@@ -1,0 +1,11 @@
+clearlib/config.py,sha256=JQICCpVPaE9w1BQQS5_2DXyYMdwnQq8eTEZ3mSZLuOo,1331
+clearlib/lexicon/LexiconEntry.py,sha256=usQd8DbnxShytiT4kOqbqYfZ7Z7GQRinhoDhk7PlSlY,3908
+clearlib/lexicon/__init__.py,sha256=KAaLGuMaj3ep7J2Ng_Jy7YLbhXs0Y79xx44vfRV40nI,590
+clearlib/lexicon/ubsdgnt.py,sha256=Rdt5-J4F-TDRrkbQ8_66qtL18KTcP_tWW8Mp3FkOQXE,10334
+clearlib/load_license.py,sha256=H17oWid05O-ui7DM4UDx2sr9xPE7tgVYY8afRQCFqcM,679
+clearlib/util/__init__.py,sha256=NZROfZbsB7PMgixrdJlbJrzVDlpYsjEzUE4dt0I4RK4,220
+clearlib/util/listalign.py,sha256=ma7L3gI6cZA6p-6epAUk1LtTqU7Bt26ynH_vb5y3G-0,2651
+clearlib-0.1.5.dist-info/LICENSE,sha256=8ybNmNrvLGeEmIgRd1etirfwwQCqyi3zvgY4Ja8j10Y,1068
+clearlib-0.1.5.dist-info/METADATA,sha256=C48fl4GXzeyfSYSwQyPcR0coscQfhZRP_M1TWtFcZIQ,865
+clearlib-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+clearlib-0.1.5.dist-info/RECORD,,
