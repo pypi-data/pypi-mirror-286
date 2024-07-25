@@ -1,0 +1,1 @@
+# pinned dependencies to reproduce a working development environment
