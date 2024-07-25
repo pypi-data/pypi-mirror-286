@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: standwithcrypto
+Version: 0.0.1
+Summary: Pull US politician data from standwithcrypto.org
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests

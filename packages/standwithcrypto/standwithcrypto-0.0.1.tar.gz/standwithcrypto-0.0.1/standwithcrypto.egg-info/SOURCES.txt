@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+standwithcrypto/__init__.py
+standwithcrypto/client.py
+standwithcrypto/config.py
+standwithcrypto/helpers.py
+standwithcrypto.egg-info/PKG-INFO
+standwithcrypto.egg-info/SOURCES.txt
+standwithcrypto.egg-info/dependency_links.txt
+standwithcrypto.egg-info/requires.txt
+standwithcrypto.egg-info/top_level.txt
+tests/test_client.py
