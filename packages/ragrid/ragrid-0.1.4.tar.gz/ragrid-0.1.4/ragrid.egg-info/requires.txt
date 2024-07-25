@@ -1,0 +1,9 @@
+langchain>=0.1.13
+langchain-openai>=0.1.1
+trulens-eval>=0.27.0
+chromadb>=0.4.24
+sentence-transformers>=2.6.1
+unstructured[pdf]>=0.13.0
+deepeval>=0.21.71
+faiss-cpu>=1.8.0.post1
+langchainhub>=0.1.20
