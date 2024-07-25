@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: api_gerenciador
+Version: 0.4.0
+Summary: Biblioteca que executa ações de uma API
+Author: Rafael Gomes de Oliveira
+Author-email: rafaelprotest4@gmail.com
+Requires-Dist: mysql-connector-python
+Requires-Dist: python-dotenv
+Requires-Dist: banco-dados ==0.1.0
+
