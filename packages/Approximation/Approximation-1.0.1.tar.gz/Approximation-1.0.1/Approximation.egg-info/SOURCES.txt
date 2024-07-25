@@ -1,0 +1,12 @@
+README.md
+setup.py
+Approximation/__init__.py
+Approximation/lognormalAproximations.py
+Approximation/normalSummation.py
+Approximation/validation.py
+Approximation.egg-info/PKG-INFO
+Approximation.egg-info/SOURCES.txt
+Approximation.egg-info/dependency_links.txt
+Approximation.egg-info/not-zip-safe
+Approximation.egg-info/requires.txt
+Approximation.egg-info/top_level.txt
