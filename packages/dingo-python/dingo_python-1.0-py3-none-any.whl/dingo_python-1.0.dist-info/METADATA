@@ -1,0 +1,221 @@
+Metadata-Version: 2.1
+Name: dingo-python
+Version: 1.0
+Summary: Language quality evaluation tool.
+Home-page: https://github.com/APX103/Dingo/tree/main
+Author: SH AI Lab
+Author-email: shailab@pjlab.org.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: hanziconv
+Requires-Dist: jieba
+Requires-Dist: jsonlines
+Requires-Dist: langid
+Requires-Dist: numpy
+Requires-Dist: textstat
+Requires-Dist: zhon
+Requires-Dist: transformers
+Requires-Dist: toml
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: Pillow ==9.4.0
+Requires-Dist: opencv-python
+Requires-Dist: nltk
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+
+English | [简体中文](README_ZH.md)
+
+# Introduction
+
+Dingo is a data quality assessment tool that helps you automatically detect data quality issues in your datasets. Dingo provides a variety of built-in detection rules and model methods, and also supports custom detection methods. It supports commonly used NLP datasets and multimodal datasets, including pre-training datasets, fine-tuning datasets, and evaluation datasets. In addition, Dingo supports various interface usage methods, including local CLI, SDK, and RESTFul API, making it easy to integrate into various environments. The large model evaluation platform of [OpenCompass](https://github.com/open-compass/opencompass) has integrated Dingo for subjective evaluation of language model generated content.
+
+## Architecture of Dingo
+
+![Architecture of dingo](./docs/assets/architeture.png)
+
+# QuickStart
+
+Install `dingo`.
+```shell
+pip install dingo
+```
+
+Try the following demo code.
+```python
+from dingo.model import Model
+from dingo.io import RawInputModel
+from dingo.exec import Executor
+
+input_data = {
+    "eval_models": ["default"],
+    "input_path": "data/inputs/test_data1.json", # replace with your data path here
+    "data_type": "json",
+    "column_content": ["prediction"],
+}
+
+raw_input = RawInputModel(**input_data)
+Model.apply_config(raw_input.custom_config_path)
+executor = Executor.exec_map["local"](raw_input)
+result = executor.evaluate()
+print(result)
+```
+
+# Tutorials
+
+## Config
+
+`Dingo` enables users to personalize their data quality inspection methods, which can include the use of heuristic rules, 
+third-party quality inspection tools or services, and large models. These can be implemented through configuration. 
+Specifically, users can pass a parameter named `custom_config_path` which points to a configuration file. 
+Below is a template for this configuration file: [template.json](data/inputs/config/template.json)
+
+### Rules
+
+Heuristic rules are a common method for data processing and quality inspection. `Dingo` has implemented a series of 
+heuristic rules and grouped them into rule groups, such as `zh-all`, and `en-all`, which represent the heuristic quality 
+inspection rule sets for Chinese and English respectively. In the template of the configuration file, the two configuration 
+items related to heuristic rule configuration are `custom_rule_list` and `rule_config`, which represent the rule set 
+and the configuration parameters for a specific rule, respectively. Below is a configuration example:
+``` json
+{
+  "custom_rule_list": [],
+  "rule_config": {}
+}
+```
+### Large Models
+
+`Dingo` supports data quality inspection using large models. Before use, users need to configure `llm_config`. 
+For `OpenAI` models:
+``` json
+{
+  "key": "YOUR_API_KEY"
+}
+```
+For HuggingFace models(currently support the downloaded models):
+``` json
+{
+  "path": "your local model path",
+}
+```
+
+## Execute
+
+`Dingo` can be run locally or on a Spark cluster.
+
+### Local Mode
+
+In addition to the aforementioned SDK calls, you can also run data evaluation locally with `CLI`:
+
+```shell
+python -m dingo.run.cli
+```
+
+The CLI parameters are as follows.
+
+| parameter name          | description                                                       |
+|-------------------------|-------------------------------------------------------------------|
+| `-i` or `--input_path`  | The path of data. It can be a file or a directory.                |
+| `-e` or `--eval_models` | The model used to evaluate data quality.                          |
+| `--dataset_id`          | The id of data input.                                             |
+| `--data_type`           | The type of data. It can be JSON, jsonl, plaintext and list json. |
+| `--output_path`         | The path of result data.                                          |
+| `--column_id`           | The column name of id in data.                                    |
+| `--column_prompt`       | The column name of prompt in data.                                |
+| `--column_content`      | The column name of content in data.                               |
+| `custom_config_path`    | The path of custom config file.                                   |
+
+More information can be obtained by running the following command: `python -m dingo.run.cli --help`.
+
+### Spark Mode
+
+If the scale of data is very large you can use Spark to run the project. 
+
+Firstly, create an object from `SparkExecutor`, and set the actual instances of SparkSession and DataFrame.
+
+```python
+from dingo.exec.spark import SparkExecutor
+
+spark_exec = SparkExecutor()
+spark_exec.set_spark(spark_session)
+spark_exec.set_input_df(spark_data_frame)
+```
+
+Then, convert the data and execute the rule list.
+
+```python
+spark_exec.convert_data(column_id=['data_id'], column_prompt=['prompt'], column_content=['content'])
+spark_exec.execute(["CommonSpecialCharacter", "CommonColonEnd"])
+
+```
+
+Finally, summarize and get the result data.
+
+```python
+spark_exec.summarize()
+output_df = spark_exec.get_output_df()
+summary = spark_exec.get_summary()
+```
+
+
+## Evaluation Results
+
+### Summary
+
+The `summary.json` file is overall information about evaluation results. Here is an example: 
+
+```
+{
+    "dataset_id": "20240618",
+    "input_model": "default",
+    "input_path": "data/inputs/test_data1.json",
+    "output_path": "data/outputs/20240625_134409",
+    "score": 90.0,
+    "num_good": 90,
+    "num_bad": 10,
+    "total": 100,
+    "error_ratio": {...}
+}
+```
+
+The `error_ratio` field shows data quality signals in seven different aspects: 
+`EFFECTIVENESS`, `COMPLETENESS`, `UNDERSTANDABILITY`, `SIMILARITY`, `FLUENCY`, `RELEVANCE` and `SECURITY`.
+
+### Detailed Results
+
+For more detailed issues found in data items, `Dingo` created files in a directory named with the quality signals mentioned above.
+Give an example. `CommonColonEnd.json` in the `QUALITY_SIGNAL_COMPLETENESS` directory is as follows:
+
+```
+{
+    "name": "CommonColonEnd", # rule name
+    "count": 1,
+    "ratio": 0.5,
+    "detail": [
+        {
+            "data_id": "0",
+            "prompt": "",
+            "content": "I am 8 years old. ^I love apple because:",
+            "error_reason": "Ends with a colon."
+        }
+    ]
+}
+```
+
+We evaluated the quality of these three datasets based on `Dingo`.
+
+| Dataset         | Dataset Type | EFFECTIVENESS | COMPLETENESS | UNDERSTANDABILITY | SIMILARITY | FLUENCY | RELEVANCE | SECURITY |
+|-----------------|--------------|---------------|--------------|-------------------|------------|---------|-----------|----------|
+| SlimPajama-627B | Pretrain     | 0             | 0.001797     | 0.011547          | 0.003563   | 0       | 0         | 0        |
+| Stanford_alpaca | SFT          | 0.0008        | 0.0004       | 0.0013            | 0.0002     | 0       | 0         | 0        |
+| MMLU            | Benchmark    | 0.0064        | 0.0005       | 0.0113            | 0          | 0       | 0         | 0        |
+
+# Contributing
+We appreciate all contributions to `Dingo`. Please refer to [CONTRIBUTING.md](docs/en/CONTRIBUTING.md) for the contributing guideline.
+
+# License
+This project is released under the [Apache 2.0 license](LICENSE).
+
