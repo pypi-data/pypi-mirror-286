@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "obstechutils"
+description = "Utilities for obstech"
+readme = "README.md"
+authors = [
+  { name="Régis Lachaume", email="regis.lachaume@gmail.com" },
+]
+requires-python = ">=3.9"
+dynamic=["dependencies", "classifiers", "version"]
+
+[project.scripts]
+list_roofs = "obstechutils.roof:list_roofs"
+mqtt_console = "obstechutils.mqtt:console_script"
+report_device_status = "obstechutils.device_status:main_script"
+report_pc_status = "obstechutils.device_status:list_computers"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+classifiers = {file = ["classifiers.txt"]}
+version = {attr = "obstechutils.__version__"}
