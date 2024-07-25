@@ -1,0 +1,3 @@
+class OrToken:
+    @staticmethod
+    def accept(lexer, char: str): ...

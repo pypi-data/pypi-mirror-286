@@ -1,0 +1,3 @@
+class AndToken:
+    @staticmethod
+    def accept(lexer, char: str): ...

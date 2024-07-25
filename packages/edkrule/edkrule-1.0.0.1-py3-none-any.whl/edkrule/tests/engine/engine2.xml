@@ -1,0 +1,5 @@
+<Engine parent="D:\aws\eclinical40_auto_testing\edkrule\src\edkrule\tests\engine\engine1.xml">
+    <Expressions package="edkrule.tests.engine.runners.expression">
+        <Expression name="autoincrease" class="auto_increase.AutoIncrease" />
+    </Expressions>
+</Engine>

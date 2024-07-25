@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: edkrule
+Version: 1.0.0.1
+Summary: e5 规则引擎
+Home-page: http://www.xxx.com
+Author: thcpc
+Author-email: redcpc@163.com
+License: UNKNOWN
+Project-URL: Bug Tracker, http://www.xxx.com
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: pytest
+
+支持解析e5的规则表达式
+# Release 1.0.0.0
+1. 初发布
+# Release 1.0.0.1
+1. 集成了一些功能函数方便使用
+2. 新增 Result 方便 查看执行结果和跟踪执行结果
+
+
