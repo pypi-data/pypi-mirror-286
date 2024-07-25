@@ -1,0 +1,38 @@
+#========================================================================================================================================
+# CyborgAI CC BY-NC-ND 4.0 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 Internation    https://github.com/cyborg-ai-git | 
+#========================================================================================================================================
+
+# TYPE:
+#   STRING [DEFAULT_VALUE]
+#   LANGUAGE [DEFAULT_VALUE]
+#   INT [DEFAULT_VALUE]
+#   LONG [DEFAULT_VALUE]
+#   FLOAT [DEFAULT_VALUE]
+#   DOUBLE [DEFAULT_VALUE]
+#   BYTE
+#   BYTES
+#   BOOL [DEFAULT_VALUE]
+#   EOBJECT EOBJECT_CLASS
+#   MAP EOBJECT_CLASS
+#   ENUM ENUM_CLASS .ENUM_DEFAULT
+#   EAPIADMIN
+#   EAPIFILE [file, image, video, audio, pdf]
+#   EAPITEXT
+#   EAPIQUERY
+package: evo_bridge_webrtc
+
+entity:
+  ERtc:
+    _DOC_: "ERtc _DOC_"
+    offerID: STRING
+    answerID: STRING
+    sdpOffer: STRING
+    sdpAnswer: STRING
+
+  ERtcPeer:
+    _DOC_: "ERtcPeer _DOC_"
+    eRtc: EObject ERtc
+
+  ERtcTask:
+    _DOC_: "ERtcTask _DOC_"
+    eRtc: EObject ERtc
