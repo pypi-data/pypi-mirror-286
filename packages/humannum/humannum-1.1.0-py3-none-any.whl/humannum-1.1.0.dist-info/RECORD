@@ -1,0 +1,10 @@
+humannum-1.1.0.dist-info/METADATA,sha256=2uqxXm4E4_3CqZx2MIvtBFuBtGFHADRNul0kj5-mjOU,1483
+humannum-1.1.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+humannum-1.1.0.dist-info/licenses/LICENSE,sha256=gzisdlYHthh7S6J07tQ1dQCuoHKKvf9VUMOH3AmTSvo,1067
+humannum/__init__.py,sha256=4j0-hCuYsLD5A71X1pt9QpPIvgm5Kl9317aFTyWvlE4,5459
+humannum/baseint.py,sha256=iGRzRrk8mX14GcVOMpPj_90_8amayKqiNK2G4SBSSv0,2959
+humannum/binary.py,sha256=WieyJVNJjbpOsadSd40kqoXMffIo28Zm9UURrUpGt8E,3985
+humannum/bytesize.py,sha256=ayBABc4PgOicLH6leTS3d7FelJHmmIgu6jWRZd0edGY,4611
+humannum/converter.py,sha256=iMeBQUTxvII01BZ9x5aOTgXsEl9ycXPTgd-Q_N9b-Y8,3019
+humannum/hex.py,sha256=ka6u_0M8xPvKCNbgiWawEA6oAbS6egaYRrndOBz58So,3964
+humannum-1.1.0.dist-info/RECORD,,
