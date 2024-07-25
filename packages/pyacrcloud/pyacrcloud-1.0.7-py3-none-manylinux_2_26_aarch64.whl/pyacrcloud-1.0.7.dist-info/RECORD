@@ -1,0 +1,7 @@
+acrcloud/__init__.py,sha256=xvHs68OOrl3WjYc5IneaJ8zD_scNqyCn-kiJa_6WzE4,140
+acrcloud/acrcloud_extr_tool.so,sha256=wT_k_YPpQhqun6VO5LnDkcn7y2AR11fU3OgUC9TqSRY,16859808
+acrcloud/recognizer.py,sha256=1E2vqFCDLFEix7IQ53T_faMOkKeZQedvYaYh4MEwv10,15689
+pyacrcloud-1.0.7.dist-info/METADATA,sha256=P4AqvJ2BSpWZNnsHKf3QuZXGy_v-fZOMrOesz3STm78,316
+pyacrcloud-1.0.7.dist-info/WHEEL,sha256=dWbyVwc83Izt1Urc9-ya4qOtEPVZlcKnlo75LdGLAc0,111
+pyacrcloud-1.0.7.dist-info/top_level.txt,sha256=HeEh4sXSGw1istXAjd7DyCEe4FIuDbqlFNRy3eCs5uM,9
+pyacrcloud-1.0.7.dist-info/RECORD,,
