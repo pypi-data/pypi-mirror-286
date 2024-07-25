@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: osustats
+Version: 0.0.2
+Summary: Statistics for osu! tournaments
+Author: Le Duc Minh (ldminh4354)
+Author-email: ducminh0401@gmail.com
+Keywords: python,osu!,stats,statistics
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: requests
+
+A package to calculate a wide range of statistics for osu! tournaments, both qualifiers and stage matches
