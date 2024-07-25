@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+s3filetransfer.egg-info/PKG-INFO
+s3filetransfer.egg-info/SOURCES.txt
+s3filetransfer.egg-info/dependency_links.txt
+s3filetransfer.egg-info/requires.txt
+s3filetransfer.egg-info/top_level.txt
+transfer/__init__.py
+transfer/transfer.py
