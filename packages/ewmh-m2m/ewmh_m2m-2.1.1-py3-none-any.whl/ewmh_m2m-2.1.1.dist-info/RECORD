@@ -1,0 +1,13 @@
+ewmh_m2m/__init__.py,sha256=DKaGAZ_Uqfgv20a0Sb6IzriP42r55TjvX3Wo51wym7M,101
+ewmh_m2m/__main__.py,sha256=ELNfXHRDJlKdvgFjl9z-hEg0fcWWXJGswmIJfgnyXe4,2407
+ewmh_m2m/_version.py,sha256=O82e8yUjRHAyzpOxLpXpGJZbuf3VENU0viCiiMxqvgI,411
+ewmh_m2m/geometry.py,sha256=eXOS-2f5Pas_wsfhh9Q_Bzh4_96sLR5-5O8Zz_xFc1s,2176
+ewmh_m2m/ordinal.py,sha256=kXpQp92RMFdiGMuwNBqX5hPfMH5KN70W4UbYsrURCzM,877
+ewmh_m2m/screen.py,sha256=BxeuK_UvjU5Bcpy8qoDbuDykyyvbAG0BlskKrnZqKC8,1726
+ewmh_m2m/window.py,sha256=_GWLO6nMnRpjxzMGlIadBpaTWcLoMGl8wgCo0OivrTg,3362
+ewmh_m2m-2.1.1.dist-info/METADATA,sha256=16K2pXjnfZuSaL80u5CXw28eu0Y4bl9Ca2LPUkANj_o,4146
+ewmh_m2m-2.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ewmh_m2m-2.1.1.dist-info/entry_points.txt,sha256=72GClzikEyI3KdLdFzLkiKIN6sODBRE_OkF2iCdWYBU,59
+ewmh_m2m-2.1.1.dist-info/licenses/AUTHORS.rst,sha256=CU_HsZbaU-eEht1aiL9NAXW7Qta4TtcNiZ8rqnYS2Lk,82
+ewmh_m2m-2.1.1.dist-info/licenses/LICENSE.txt,sha256=SmCflrufllLBdYQRELPkcA2ZbajZ3P_V4pQgogIPV-c,1080
+ewmh_m2m-2.1.1.dist-info/RECORD,,
