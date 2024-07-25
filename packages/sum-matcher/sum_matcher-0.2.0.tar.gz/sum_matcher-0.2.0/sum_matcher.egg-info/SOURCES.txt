@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sum_matcher/__init__.py
+sum_matcher/sum_matcher.c
+sum_matcher.egg-info/PKG-INFO
+sum_matcher.egg-info/SOURCES.txt
+sum_matcher.egg-info/dependency_links.txt
+sum_matcher.egg-info/top_level.txt
