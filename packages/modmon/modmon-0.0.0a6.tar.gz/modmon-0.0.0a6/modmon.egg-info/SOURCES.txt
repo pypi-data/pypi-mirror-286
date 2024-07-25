@@ -1,0 +1,9 @@
+.gitignore
+README.md
+main.py
+pyproject.toml
+.github/workflows/python-publish.yml
+modmon.egg-info/PKG-INFO
+modmon.egg-info/SOURCES.txt
+modmon.egg-info/dependency_links.txt
+modmon.egg-info/top_level.txt
