@@ -1,0 +1,8 @@
+test_fastuuid-0.9.1.dist-info/METADATA,sha256=_beakhOQ4nyBBJwaDdwWQ384mEQigCS0bssrxOkdOAU,7783
+test_fastuuid-0.9.1.dist-info/WHEEL,sha256=kuy7TJuGXgGu7Onl7FMSKH7fNi--MGM3taoaWz55xDw,104
+test_fastuuid-0.9.1.dist-info/license_files/LICENSE,sha256=AHNshSOGrBWhIoPABne0bvSzA75TqwodBfSKkpE1X6Q,1534
+fastuuid/__init__.py,sha256=DttcCzqwuWmdg2_9O6ZKe5WWv5cpwAPzO3aT-xZx9zk,115
+fastuuid/__init__.pyi,sha256=14NwXEfd7RYulpXzKsV-KvuIbDQEcstrM_yePWsqntQ,2016
+fastuuid/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastuuid/fastuuid.cpython-310-darwin.so,sha256=lbGDrWTaHL04NrJrFva_Ug3a38IU4Zy4XAQrh_6Mccs,533296
+test_fastuuid-0.9.1.dist-info/RECORD,,
