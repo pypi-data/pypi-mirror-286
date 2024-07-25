@@ -1,0 +1,7 @@
+numpy
+
+[all]
+convert2ppt[extra]
+
+[extra]
+pandas
