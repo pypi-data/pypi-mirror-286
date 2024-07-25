@@ -1,0 +1,2 @@
+
+This structure provides a comprehensive framework for your ACADIoT library. You can further extend the functionality and add more features as needed.
