@@ -1,0 +1,11 @@
+DEBUG    ucdp  <tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>: builder: _build_dep iteration 1
+DEBUG    ucdp  <tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>: builder: _build_final iteration 1
+DEBUG    ucdp  <tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>: builder: _build_final iteration 2
+DEBUG    ucdp  <tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>: builder: _build_dep iteration 1
+DEBUG    ucdp  <tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>: builder: _build_final iteration 1
+DEBUG    ucdp  <tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>: builder: _build_final iteration 2
+DEBUG    ucdp_addr.addrspaces  join_addrspaces: SlaveAddrspace(name='one', size=Bytesize('2 KB'), is_sub=False, slave=AddrSlave(name='one', ref=<tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>))+Addrspace(name='one', size=Bytesize('256 bytes'))=Addrspace(name='one', size=Bytesize('256 bytes'), is_sub=False)
+DEBUG    ucdp_addr.addrspaces  join_addrspaces: SlaveAddrspace(name='other', baseaddr=Hex('0x1000'), size=Bytesize('4 KB'), is_sub=False, slave=AddrSlave(name='other', ref=<tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>))+Addrspace(name='other', size=Bytesize('256 bytes'))=Addrspace(name='other', baseaddr=Hex('0x1000'), size=Bytesize('256 bytes'), is_sub=False)
+WARNING  ucdp_addr.addrdecoder  AddrDecoder(): SlaveAddrspace(name='empty', baseaddr=Hex('0x2000'), size=Bytesize('1 KB'), is_sub=False, slave=AddrSlave(name='empty')) does not reference anything
+DEBUG    ucdp_addr.addrspaces  join_addrspaces: SlaveAddrspace(name='one', baseaddr=Hex('0x2800'), size=Bytesize('2 KB'), is_sub=False, slave=AddrSlave(name='one', ref=<tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>))+Addrspace(name='one', size=Bytesize('256 bytes'))=Addrspace(name='one', baseaddr=Hex('0x2800'), size=Bytesize('256 bytes'), is_sub=False)
+DEBUG    ucdp_addr.addrspaces  join_addrspaces: SlaveAddrspace(name='other', baseaddr=Hex('0x4000'), size=Bytesize('4 KB'), is_sub=False, slave=AddrSlave(name='other', ref=<tests.test_addrdecoder.Mod(inst='', libname='tests', modname='')>))+Addrspace(name='other', size=Bytesize('256 bytes'))=Addrspace(name='other', baseaddr=Hex('0x4000'), size=Bytesize('256 bytes'), is_sub=False)
