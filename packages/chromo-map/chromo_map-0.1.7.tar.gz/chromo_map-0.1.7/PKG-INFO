@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: chromo_map
+Version: 0.1.7
+Summary: A Python package for manipulating color maps.
+Home-page: https://github.com/pirsquared/chromo-map
+Author: Sean Smith
+Author-email: Sean Smith <pirsquared.pirr@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/pirsquared/Str2D
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: matplotlib
+Requires-Dist: pirrtools>=0.2.10
+Requires-Dist: palettable
+Requires-Dist: svgwrite
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx-rtd-theme; extra == "dev"
+Requires-Dist: sphinx-copybutton; extra == "dev"
+Requires-Dist: sphinx-autobuild; extra == "dev"
+Requires-Dist: sphinx-autodoc-typehints; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+
+# chromo-map
+Extend Functionality to Color Map Objects
+
+[![PyPI version](https://badge.fury.io/py/chromo-map.svg)](https://badge.fury.io/py/chromo-map)
+
+[![Build Status](https://github.com/pirsquared/chromo-map/actions/workflows/publish-pypi-pages.yml/badge.svg)](https://github.com/pirsquared/chromo-map/actions)
+
+## Overview
+
+`chromo-map` is a Python package that extends the functionality of color map objects. It provides a simple interface to create custom color maps, and to manipulate existing color maps. The package is built on top of the `matplotlib` library, and is designed to be easy to use and flexible.
+
+## Documentation
+
+Full documentation is available at [chromo-map](https://pirsquared.github.io/chromo-map/).
+
+## Installation
+
+`pip install chromo-map`
