@@ -1,0 +1,3 @@
+wayback-machine-scraper
+requests
+beautifulsoup4
