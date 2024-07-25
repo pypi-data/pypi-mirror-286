@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/pyeff/__init__.py
+src/pyeff/fs.py
+src/pyeff/indent.py
+src/pyeff/json.py
+src/pyeff/lines.py
+src/pyeff/logger.py
+src/pyeff/shell.py
+src/pyeff/yaml.py
+src/pyeff.egg-info/PKG-INFO
+src/pyeff.egg-info/SOURCES.txt
+src/pyeff.egg-info/dependency_links.txt
+src/pyeff.egg-info/top_level.txt
+src/tests/test.py
