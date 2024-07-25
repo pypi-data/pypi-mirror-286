@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+degapm/__init__.py
+degapm/degapm.py
+degapm.egg-info/PKG-INFO
+degapm.egg-info/SOURCES.txt
+degapm.egg-info/dependency_links.txt
+degapm.egg-info/top_level.txt
