@@ -1,0 +1,12 @@
+AUTHORS
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fea/__init__.py
+fea/version.py
+fea.egg-info/PKG-INFO
+fea.egg-info/SOURCES.txt
+fea.egg-info/dependency_links.txt
+fea.egg-info/top_level.txt
+tests/test_dummy.py
