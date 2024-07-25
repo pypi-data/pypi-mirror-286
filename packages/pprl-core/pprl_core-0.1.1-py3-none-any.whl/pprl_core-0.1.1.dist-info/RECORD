@@ -1,0 +1,11 @@
+pprl_core/__init__.py,sha256=LrcAIyu24hJxJNDLN8BA-lmMYedEl_zjnN-Ef75mgtE,252
+pprl_core/bits.py,sha256=DoHnhOJo-60fwYJkgcSSEMwyrvnWU4HBzdYeJ8Y04pE,4559
+pprl_core/common.py,sha256=6JxzjFwVSbKYAcLkQ1GJmN74sckbMyJfgQ1pFKO0LKg,1091
+pprl_core/harden.py,sha256=V540OiKxP2Fs57WyyeeZITsPFFTt_8zTe4J8xJtbSxk,5019
+pprl_core/phonetics_extra.py,sha256=FRfMmfJGxS7MUmg8DT2XCz6X_EXen0bVgL1U9AtbUPk,2956
+pprl_core/similarity.py,sha256=yhDDgDPTHKaFQDp81QEpNoRJiOIn_yKHiePN8cAL-98,1676
+pprl_core/transform.py,sha256=Ob5VrSt6IcTk1yCDRp1i1Op4R33rNaGBwdDzi5EmPfY,4528
+pprl_core-0.1.1.dist-info/LICENSE,sha256=G3dDEadp8IcWPJMEDuG2n2-hMTjclEAitN4QrxGZRXs,1118
+pprl_core-0.1.1.dist-info/METADATA,sha256=DmM-J3ucywhnKyvn7pgZqcD4188URjrV92lGU4oAZFA,11289
+pprl_core-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pprl_core-0.1.1.dist-info/RECORD,,
