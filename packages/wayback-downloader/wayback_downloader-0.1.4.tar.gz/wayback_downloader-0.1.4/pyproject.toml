@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "wayback_downloader"
+version = "0.1.4"
+description = "A powerful CLI tool to download and archive historical versions of websites from the Wayback Machine."
+authors = ["Cary Greenwood <carygreenwood@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/carygeo/wayback_downloader"
+repository = "https://github.com/carygeo/wayback_downloader"
+keywords = ["wayback", "archive", "downloader", "web", "history", "internet archive"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: System :: Archiving",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+wayback-machine-scraper = "*"
+requests = "*"
+beautifulsoup4 = "*"
+urllib3 = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[tool.poetry.scripts]
+wayback-downloader = "wayback_downloader.downloader:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
