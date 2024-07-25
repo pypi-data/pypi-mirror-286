@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: scim2-cli
+Version: 0.1.3
+Summary: SCIM application development CLI
+License: MIT
+Keywords: scim,scim2,provisioning
+Author: Yaal Coop
+Author-email: contact@yaal.coop
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: scim2-client (>=0.1.6,<0.2.0)
+Requires-Dist: scim2-tester (>=0.1.3,<0.2.0)
+Requires-Dist: sphinx-click-rst-to-ansi-formatter (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+# scim2-cli
+
+An utility command line to help you perform requests against a SCIM server, while validating input and response payloads. It also uses [scim2-tester](https://scim2-tester.readthedocs.io) to perform a [SCIM server compliance test](https://scim2-cli.readthedocs.io/en/latest/reference.html#scim-url-test).
+
+## What's SCIM anyway?
+
+SCIM stands for System for Cross-domain Identity Management, and it is a provisioning protocol.
+Provisioning is the action of managing a set of resources across different services, usually users and groups.
+SCIM is often used between Identity Providers and applications in completion of standards like OAuth2 and OpenID Connect.
+It allows users and groups creations, modifications and deletions to be synchronized between applications.
+
+## Installation
+
+```shell
+pip install scim2-cli
+```
+
+## Usage
+
+Check the [reference](https://scim2-cli.readthedocs.io/en/latest/reference.html) for more details.
+
+Here is an example of resource creation:
+
+```shell
+$ scim2 https://auth.example --headers "Authorization: Bearer 12345" create user << EOL
+{
+    "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User"],
+    "userName": "bjensen@example.com"
+}
+EOL
+{
+    "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User"],
+    "id": "2819c223-7f76-453a-919d-413861904646",
+    "userName": "bjensen@example.com",
+    "meta": {
+        "resourceType": "User",
+        "created": "2010-01-23T04:56:22Z",
+        "lastModified": "2011-05-13T04:42:34Z",
+        "version": 'W\\/"3694e05e9dff590"',
+        "location": "https://example.com/v2/Users/2819c223-7f76-453a-919d-413861904646",
+    },
+}
+```
+
+Here is an example of resource query:
+
+```shell
+$ scim2 https://auth.example --header "Authorization: Bearer 12345" query user 2819c223-7f76-453a-919d-413861904646
+{
+    "schemas": ["urn:ietf:params:scim:schemas:core:2.0:User"],
+    "id": "2819c223-7f76-453a-919d-413861904646",
+    "userName": "bjensen@example.com",
+    "meta": {
+        "resourceType": "User",
+        "created": "2010-01-23T04:56:22Z",
+        "lastModified": "2011-05-13T04:42:34Z",
+        "version": 'W\\/"3694e05e9dff590"',
+        "location": "https://example.com/v2/Users/2819c223-7f76-453a-919d-413861904646",
+   }
+}
+```
+
+scim2-cli belongs in a collection of SCIM tools developed by [Yaal Coop](https://yaal.coop),
+with [scim2-models](https://github.com/yaal-coop/scim2-models),
+[scim2-client](https://github.com/yaal-coop/scim2-client) and
+[scim2-tester](https://github.com/yaal-coop/scim2-tester)
+
