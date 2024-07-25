@@ -1,0 +1,45 @@
+= uProtocol URI (UUri)
+:toc:
+:sectnums:
+
+
+== Overview
+
+The following folder contains the data model for UUri (factory, serializer, validator, etc...) as per the https://github.com/eclipse-uprotocol/up-spec/blob/main/basics/uri.adoc[uProtocol URI Specifications].
+The data model is defined in https://github.com/eclipse-uprotocol/up-spec/blob/main/up-core-api/uprotocol/v1/uri.proto[uri.proto] and included as a dependency for this project.
+
+
+
+== Create uri from proto
+[,python]
+----
+from uprotocol.v1.uri_pb2 import UUri
+from uprotocol.uri.factory.uri_factory import UriFactory
+from uprotocol.core.usubscription.v3 import usubscription_pb2
+
+service_descriptor = usubscription_pb2.DESCRIPTOR.services_by_name["uSubscription"]
+uri = UriFactory.from_proto(service_descriptor, 0)
+----
+== Serialize and Deserialize uri
+[,python]
+----
+from uprotocol.v1.uri_pb2 import UUri
+uri: UUri = UUri(
+                authority_name = "MyDevice",
+                ue_id = "0x1234",
+                ue_version_major = "1",
+                resource_id = "0x5010"
+            )
+serialized_uri : str = UriSerializer.serialize(uri);
+deserialized_uri : UUri = UriSerializer.deserialize(serialized_uri);
+self.assertEqual(uri, deserialized_uri)
+
+----
+== Validating a UUri
+[,python]
+----
+from uprotocol.uri.validator.urivalidator import UriValidator
+uri = UUri(resource_id=0x7FFF)
+status: bool = UriValidator.is_rpc_method(uri)
+assertTrue(status)
+----
