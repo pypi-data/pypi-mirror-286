@@ -1,0 +1,4 @@
+[console_scripts]
+compute_aindex_py = scripts.compute_aindex:main
+compute_index_py = scripts.compute_index:main
+reads_to_fasta = scripts.reads_to_fasta:main
