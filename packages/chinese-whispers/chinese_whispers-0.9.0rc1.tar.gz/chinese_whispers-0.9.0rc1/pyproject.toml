@@ -1,0 +1,106 @@
+[build-system]
+requires = ["setuptools"]
+
+[project]
+name = "chinese_whispers"
+authors = [{ name = "Dmitry Ustalov" }]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Typing :: Typed",
+]
+license = { text = "MIT" }
+description = "An implementation of the Chinese Whispers clustering algorithm."
+keywords = [
+    "graph clustering",
+    "unsupervised learning",
+    "chinese whispers",
+    "cluster analysis",
+]
+requires-python = "~=3.8"
+dependencies = ["networkx >= 2.1,< 4.0"]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "matplotlib",
+    "mypy",
+    "nbqa",
+    "notebook",
+    "ruff",
+    "twine",
+    "types-networkx",
+]
+docs = ["mkdocs-material", "mkdocstrings-python"]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/nlpub/chinese-whispers"
+Documentation = "https://chinese-whispers.readthedocs.io"
+Download = "https://pypi.org/project/chinese-whispers/#files"
+Repository = "https://github.com/nlpub/chinese-whispers"
+
+[project.scripts]
+chinese-whispers = "chinese_whispers.__main__:main"
+
+[tool.setuptools]
+zip-safe = true
+
+[tool.setuptools.packages.find]
+include = ["chinese_whispers*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "chinese_whispers.__version__" }
+
+[tool.mypy]
+ignore_missing_imports = true
+strict = true
+
+[tool.nbqa.addopts]
+mypy = ["--disable-error-code=attr-defined"]
+ruff = [
+    "--ignore=D",    # pydocstyle
+    "--ignore=E402", # module-import-not-at-top-of-file
+    "--ignore=T201", # print
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D203",    # one-blank-line-before-class
+    "D212",    # multi-line-summary-first-line
+    "D406",    # new-line-after-section-name
+    "D407",    # dashed-underline-after-section
+    "N803",    # invalid-argument-name
+    "N806",    # non-lowercase-variable-in-function
+    "PLR0913", # too-many-arguments
+    "S311",    # suspicious-non-cryptographic-random-usage
+]
+
+[tool.ruff.lint.per-file-ignores]
+"test_*.py" = [
+    "D",       # pydocstyle
+    "PLR2004", # magic-value-comparison
+    "S101",    # assert
+]

@@ -1,0 +1,15 @@
+networkx<4.0,>=2.1
+
+[dev]
+build
+matplotlib
+mypy
+nbqa
+notebook
+ruff
+twine
+types-networkx
+
+[docs]
+mkdocs-material
+mkdocstrings-python
