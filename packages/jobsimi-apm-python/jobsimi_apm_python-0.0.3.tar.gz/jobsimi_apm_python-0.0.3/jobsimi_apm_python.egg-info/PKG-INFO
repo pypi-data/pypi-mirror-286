@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: jobsimi-apm-python
+Version: 0.0.3
+Summary: Agent Package Manager things
+Home-page: https://github.com/jobsimi/apm
+Author: jobsimi
+Author-email: jobsimi@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.16.0
+
+## Usage
+
+```python
+from apm.APMAgent import APMAgent
+
+class Agent:
+    def __init__(self):
+        self.apmAgent = APMAgent()
+        pass
+
+    def run(self, params, saveconfig):
+        output = {
+            "text": "text"
+        }
+        status = {
+            "done": True
+        }
+
+        self.apmAgent.save_output(saveconfig=saveconfig, status=status, output=output) # save output
+
+        return output
+```
+
+## Dev
+
+https://developer.aliyun.com/article/1337727
+
+1. change code in `apm` directory
+2. change version in `setup.py`
+3. build `dist`
+   ```sh
+   python3.10 -m setup.py sdist
+   ```
+4. publish to pypi
+   ```sh
+   python3.10 -m twine upload dist/\*
+   ```
