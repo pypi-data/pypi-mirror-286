@@ -1,0 +1,300 @@
+Metadata-Version: 2.1
+Name: boxbeam
+Version: 1.3.0.post1
+Summary: Calculation of effective cross-sectional properties of composite beams
+Home-page: https://gitlab.com/dlr-sy/boxbeam
+License: MIT
+Keywords: analysis,beam,composite
+Author: Heinecke, Falk
+Author-email: falk.heinecke@volkswagen.de
+Maintainer: Garbade, Marc
+Maintainer-email: marc.garbade@dlr.de
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Classifier: Development Status :: 7 - Inactive
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: devel
+Requires-Dist: PyQt5-Qt5 (==5.15.2) ; (python_version >= "3.7" and python_version < "4.0") and (extra == "devel")
+Requires-Dist: PyQt5-sip (>=12.12,<12.13) ; (python_version >= "3.7" and python_version < "3.8") and (extra == "devel")
+Requires-Dist: PyQt5-sip (>=12.13) ; (python_version >= "3.8" and python_version < "4.0") and (extra == "devel")
+Requires-Dist: fa-pyutils ; (python_version >= "3.7" and python_version < "4.0") and (extra == "devel")
+Requires-Dist: numpy (>=1.16,<2.0) ; python_version >= "2.7" and python_version < "2.8" or python_version >= "3.5" and python_version < "3.6"
+Requires-Dist: numpy (>=1.18,<2.0) ; python_version >= "3.6" and python_version < "3.7"
+Requires-Dist: numpy (>=1.21,<2.0) ; python_version >= "3.7" and python_version < "3.8"
+Requires-Dist: numpy (>=1.22,<1.24) ; python_version >= "3.8" and python_version < "4.0"
+Requires-Dist: vampire (>=0.2.6) ; (python_version >= "3.7" and python_version < "4.0") and (extra == "devel")
+Project-URL: Changelog, https://gitlab.com/dlr-sy/boxbeam/-/blob/master/CHANGELOG.md
+Project-URL: Documentation, https://gitlab.com/dlr-sy/boxbeam/-/blob/master/README.md
+Project-URL: Repository, https://gitlab.com/dlr-sy/boxbeam
+Description-Content-Type: text/markdown
+
+[![PyPi](https://img.shields.io/static/v1?label=PyPi&message=1.3.0&color=informational&logo=pypi)](https://pypi.org/project/boxbeam/)
+[![doi](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.12795533-red.svg)](https://zenodo.org/records/12795533)
+[![pipeline status](https://gitlab.com/dlr-sy/boxbeam/badges/master/pipeline.svg)]()
+
+# BoxBeam
+BoxBeam is a legacy Fortran-based beam calculation tool. It is compiled for Python using [f2py](https://numpy.org/doc/stable/f2py).
+> Installation from source requires an active Fortran compiler (ifort, gfortran). 
+## Downloading
+Use GIT to get the latest code base. From the command line, use
+```
+git clone https://gitlab.dlr.de/fa_sw/boxbeam boxbeam
+```
+If you check out the repository for the first time, you have to initialize all submodule dependencies first. Execute the following from within the repository. 
+```
+git submodule update --init --recursive
+```
+To update all refererenced submodules to the latest production level, use
+```
+git submodule foreach --recursive 'git pull origin $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo master)'
+```
+## Installation
+BoxBeam can be installed from source using [poetry](https://python-poetry.org). If you don't have [poetry](https://python-poetry.org) installed, run
+```
+pip install poetry --pre --upgrade
+```
+to install the latest version of [poetry](https://python-poetry.org) within your python environment. Use
+```
+poetry update
+```
+to update all dependencies in the lock file or directly execute
+```
+poetry install
+```
+to install all dependencies from the lock file. Last, you should be able to import BoxBeam as a python package.
+```python
+import boxbeam
+```
+## Example
+Copy and paste the following text into a new python script to verify the local installation
+```python
+import os, sys
+import boxbeam as bbeam
+ 
+from itertools import count, zip_longest
+from operator import itemgetter
+from collections import OrderedDict
+import numpy as np
+
+def toolInitiate(directory):
+    #---INITIATE BOXBEAM VARIABLES
+    bbeam.boxbeam.initialize()
+
+    extendedLogFile = False
+    newPath = directory#+'\\TestProfile.out'
+
+    #setting control parameters for BOXBEAM
+    bbeam.steuer.druck = extendedLogFile # extended log file
+    bbeam.steuer.nurqer = False
+    bbeam.steuer.klog = 11
+    bbeam.steuer.kraeft = False # calculate nodal forces (utilization for FE applications)
+
+    #---CHANGE THE NAME OF THE OUTPUT FILE TO THE ACTUAL CROSS SECTION NAME
+    if extendedLogFile:
+        for ffile, bbeamPathVar in zip(["boxbeam_results.out", 
+                                        "boxbeam_test.out"], 
+                                        ["csinfopath", 
+                                         "vbinfopath"]):
+
+            fullPathFfile = os.path.abspath(os.path.join(newPath, ffile))
+
+            # 240 is the length of the character variable reserved
+            # within FORTRAN to store the directory name
+            if len(fullPathFfile) > 240:
+                raise Exception("Path length of file %s to long!" % fullPathFfile)
+
+            pathList = [""] * 240
+            pathList[: len(fullPathFfile)] = list(fullPathFfile)
+
+            if bbeamPathVar == "csinfopath":
+                self.bbeam.path.csinfopath = np.array(pathList,dtype="object")
+            else:
+                self.bbeam.path.vbinfopath = np.array(pathList,dtype="object")
+
+def toolCalculate(capCount, webCount, cellCount, yi, zi, yk0, zk0, yklk, zklk, ig1, ig2, iak, ia, 
+                    webExtensionalStiffness, webShearStiffness, webRefPlaneDist, webThickness,webDensity):
+    #---ASSIGN GURT DATA
+    bbeam.gurt.ig = capCount
+    
+    #---ASSIGN GURT COORDINATES
+    variableList = np.zeros(bbeam.restr.maxgu-bbeam.gurt.ig).tolist()
+    bbeam.gurt.yi = yi + variableList
+    bbeam.gurt.zi = zi + variableList
+    
+    #---ASSIGN GURT MATERIAL INFORMATION WITHIN BOXBEAM
+    bbeam.gurt.bi = np.zeros(bbeam.restr.maxgu)
+    bbeam.gurt.myi = np.zeros(bbeam.restr.maxgu)
+
+    #---ASSIGN BOXBEAM WAND DATA
+    bbeam.wand.kw = webCount
+    
+    #---ASSIGN WAND COORDINATES
+    variableList = np.zeros(bbeam.restr.maxwa-len(yk0)).tolist()
+    bbeam.wand.yk0 = yk0 + variableList
+    bbeam.wand.yklk = yklk + variableList
+    bbeam.wand.zk0 = zk0 + variableList
+    bbeam.wand.zklk = zklk + variableList
+    
+    #---ASSIGN WAND MATERIAL INFORMATION WITHIN BOXBEAM
+    variableList = np.zeros(bbeam.restr.maxwa-bbeam.wand.kw).tolist()
+    bbeam.wand.it = (5*np.ones(bbeam.wand.kw)).tolist()+variableList
+    bbeam.wand.bk = webExtensionalStiffness+variableList
+    bbeam.wand.gk = webShearStiffness+variableList
+    bbeam.wand.rhok = webDensity+variableList
+    bbeam.wand.e = webRefPlaneDist+variableList
+    
+    #---ASSIGN WAND TOPOLOGY WITHIN BOXBEAM
+    bbeam.wand.th = webThickness+variableList
+    bbeam.wand.ig1 = ig1+variableList
+    bbeam.wand.ig2 = ig2+variableList
+
+    #---ASSIGN BOXBEAM ZELLE DATA
+    bbeam.zelle.az = cellCount
+    variableList = np.zeros(bbeam.restr.maxze-bbeam.zelle.az).tolist()
+    bbeam.zelle.iak = iak+variableList
+    
+    iaArrayTransposed = np.zeros((bbeam.restr.maxze, bbeam.restr.maxgu))
+    for cellNumber in range(int(bbeam.restr.maxze)):
+        if cellNumber < cellCount:
+            iaArrayTransposed[cellNumber, :len(ia[cellNumber])] += ia[cellNumber]
+    bbeam.zelle.ia = iaArrayTransposed.T
+
+    #---ASSIGN BOXBEAM UNIFY LOADS
+    for attrName, load in zip_longest(["qqx","qqy","qqz","qmx","qmy","qmz"], reactionForces):
+        setattr(bbeam.spanug, attrName, load)
+
+    #---EXECUTE BOXBEAM FOR CALCULATING THE CROSS SECTION PARAMETERS
+    bbeam.boxbeam.getequivalentxsection()
+
+    crossSectionParamNames = ['YS','ZS','YT','ZT','YMST','ZMST','YMSTAC','ZMSTAC','BX',
+                                'ALPHA','DYYSTE','DZZSTE','DYY','DZZ','DZY','DT','M','IYYS','IZZS','IZYS','ITT']
+
+    crossSectionParameters = {}
+    for param in crossSectionParamNames:
+        crossSectionParameters[param] = float(getattr(bbeam.quer, param.lower()))
+
+    effectiveProps = OrderedDict([
+                        ('EA',crossSectionParameters['BX']    ),
+                        ('EIxx',crossSectionParameters['DYY'] ),
+                        ('EIyy',crossSectionParameters['DZZ'] ),
+                        ('GJ',crossSectionParameters['DT']    ),
+                        ('YS',crossSectionParameters['YS']    ),
+                        ('ZS',crossSectionParameters['ZS']    ),
+                        ])
+
+
+if __name__ == '__main__':
+
+    #Specify folder where output files are to be stored
+    runDir = os.path.join(os.getcwd(),"boxbeam")
+    try:
+        os.makedirs(runDir)
+    except WindowsError: 
+        pass
+
+    #Tool specific limitations
+    #maxCaps = 22 #variable specifying the maximum number of caps within a BoxBeam cross section - defined in bbeam.pyd
+    #maxWebs = 31 #variable specifying the maximum number of walls within a BoxBeam cross section - defined in bbeam.pyd
+    #maxCells = 10 #variable specifying the maximum number of cells within a BoxBeam cross section - defined in bbeam.pyd
+
+#------------------------------------------------------------------------------------------------------------------------
+# Initiation of boxbeam
+#------------------------------------------------------------------------------------------------------------------------
+
+    toolInitiate(runDir)
+
+#------------------------------------------------------------------------------------------------------------------------
+# Input for profile
+#------------------------------------------------------------------------------------------------------------------------
+
+    calcGeometry = False # If true the material data is set in a fashion, that the geometric properties (e.g. area moments of inertia) can be calculated.
+    
+    thickness1 = 1.25
+    thickness2 = .375
+    if calcGeometry:
+        extensionalStiffness1 = 1.*thickness1
+        extensionalStiffness2 = 1.*thickness2
+        shearStiffness1 = 1.*thickness1
+        shearStiffness2 = 1.*thickness2
+        density1 = 1.*thickness1
+        density2 = 1.*thickness2
+        bbeam.steuer.nurqer = True
+
+        #"qqx","qqy","qqz","qmx","qmy","qmz"
+        reactionForces = [0., 0., 0., 0., 0., 0.]     
+        
+    else:
+        extensionalStiffness1 = 7.3335e4*thickness1
+        extensionalStiffness2 = 3.2232e4*thickness2
+        shearStiffness1 = 1.7327e4*thickness1
+        shearStiffness2 = 2.5012e4*thickness2
+        density1 = 0.00158*thickness1
+        density2 = 0.00158*thickness2
+
+        #"qqx","qqy","qqz","qmx","qmy","qmz"
+        reactionForces = [0., 0., 500., 0., -62500., 0.]        
+
+    #---RETRIEVING POINT LOCATIONS AND TOPOLOGY
+    yi,zi,yk0,zk0 = [],[],[],[]
+    yklk, zklk, ig1, ig2 = [],[],[],[]
+    iak = []
+    ia = []
+    
+    webExtensionalStiffness = []
+    webShearStiffness, webRefPlaneDist = [], []
+    webThickness, webDensity = [],[]
+    
+    capExtensionalStiffness = []
+    capMass = []
+
+    #definition of simple profile
+    capCount = 8 
+    webCount = 9
+    cellCount = 2
+    
+    yi = [55., 55., -225., 13., 13., 75., -75., 75.]
+    zi = [12., -12., 0., 18., -18., 0., 16., 16.]
+    yk0 = [55., 75., 55., 13., -75., -225., -75., 13., 13., 13.]
+    zk0 = [12., 0., -12., -18., -16., 0., 16., 18., 18., 18.]
+    yklk = [75., 55., 13., -75., -225., -75., 13., 55., 13., 13.] 
+    zklk = [0., -12., -18., -16., 0., 16., 18., 12., -18., -18.]
+
+    ig1 = [1, 6, 2, 5, 8, 3, 7, 4, 4]
+    ig2 = [6, 2, 5, 8, 3, 7, 4, 1, 5]
+    iak = [5, 5]
+    ia = [[1, 6, 2, 5, 4], [5, 8, 3, 7, 4]]
+
+    webExtensionalStiffness = [extensionalStiffness1]*(webCount-1)+[extensionalStiffness2]
+    webShearStiffness = [shearStiffness1]*(webCount-1)+[shearStiffness2]
+    webRefPlaneDist = [thickness1/2.]*(webCount-1)+[thickness2/2.]
+    webThickness = [thickness1]*(webCount-1)+[thickness2]
+    webDensity = [density1]*(webCount-1)+[density2]
+
+#------------------------------------------------------------------------------------------------------------------------
+# Assigning variables of boxbeam
+# Executing boxbeam
+# Retrieving results from boxbeam
+#------------------------------------------------------------------------------------------------------------------------
+
+    toolCalculate(
+        capCount, webCount, cellCount, yi, zi, yk0, zk0, yklk, zklk, ig1, ig2, iak, ia, 
+        webExtensionalStiffness, webShearStiffness, webRefPlaneDist, webThickness,webDensity
+    )
+```
+## Contact
+* [Marc Garbade](mailto:marc.garbade@dlr.de)
+## Support
+* [List of Contributors](CONTRIBUTING.md)
+
