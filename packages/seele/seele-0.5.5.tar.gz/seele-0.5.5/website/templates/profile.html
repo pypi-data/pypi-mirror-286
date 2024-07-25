@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+
+{% block title %}{% trans "S.E.E.L.E - Profile" %}{% endblock %}
+{% block content %}
+
+<div class="container" style="margin-top: 20px;">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>{% blocktrans %}Welcome {{ name }}!{% endblocktrans %}</h2>
+            <a href="{% url 'delete_account' %}" class="btn btn-danger">{% trans "Delete Account" %}</a>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">{% trans "Edit Account Information" %}</h5>
+                </div>
+
+                <div class="card-body">
+                    {% if messages %}
+                    <div class="messages">
+                        {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <form id="profile-form" action="{% url 'profile' %}" method="POST">
+                        {% csrf_token %}
+                        <ul class="list-group">
+                            <label class="profile-info-label">{% trans "Personal Information:" %}</label>
+                            <li class="list-group-item">
+                                <label for="Name">{% trans "Username:" %}</label>
+                                <input type="text" id="Name" name="name" value="{{ name }}">
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Email">{% trans "Email Address:" %}</label>
+                                <input type="text" id="Email" name="email" value="{{ email }}">
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Password">{% trans "Password:" %}</label>
+                                <input type="password" id="Password" name="password" value="{{ password }}">
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Latitude">{% trans "Location:" %}</label>
+                                <input type="text" id="Latitude" name="latitude" value="{{ latitude }}">
+                                <label for="Longitude">{% trans "," %}</label>
+                                <input type="text" id="Longitude" name="longitude" value="{{ longitude }}">
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Size">{% trans "Family Size:" %}</label>
+                                <input type="number" id="Size" name="size" value="{{ size }}">
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Dose">{% trans "Medicine: Need" %}</label>
+                                <input type="number" id="Dose" name="dose" {% if medical_issue %} value="{{ amount }}" {% else %} value="0" {% endif %}>
+                                <label for="Medicine">{% trans "dose(s) for" %}</label>
+                                <input type="text" id="Medicine" name="medicine" {% if medical_issue %} value="{{ medical_issue }}" {% else %} value="{% trans '(None)' %}" {% endif %}>
+                                <label>{% trans "per day" %}</label>
+                            </li>
+                            <label class="profile-info-label">{% trans "Family household:" %}</label>
+                            <li class="list-group-item">
+                                <label for="Women">{% trans "Women in the family:" %}</label>
+                                <input type="checkbox" id="Women" name="women" {% if women %} checked {% endif %}>
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Child">{% trans "Children in the family:" %}</label>
+                                <input type="checkbox" id="Child" name="child" {% if child %} checked {% endif %}>
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Baby">{% trans "Babies in the family:" %}</label>
+                                <input type="checkbox" id="Baby" name="baby" {% if baby %} checked {% endif %}>
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Pet">{% trans "Pets in the family:" %}</label>
+                                <input type="checkbox" id="Pet" name="pet" {% if pet %} checked {% endif %}>
+                            </li>
+                            <label class="profile-info-label">{% trans "Applicable disabilities/conditions:" %}</label>
+                            <li class="list-group-item">
+                                <label for="Blind">{% trans "Blind or poor vision:" %}</label>
+                                <input type="checkbox" id="Blind" name="blind" {% if blind %} checked {% endif %}>
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Deaf">{% trans "Deaf or hard of hearing:" %}</label>
+                                <input type="checkbox" id="Deaf" name="deaf" {% if deaf %} checked {% endif %}>
+                            </li>
+                            <li class="list-group-item">
+                                <label for="Wheelchair">{% trans "Mobility impairment:" %}</label>
+                                <input type="checkbox" id="Wheelchair" name="wheelchair" {% if wheelchair %} checked {% endif %}>
+                            </li>
+                        </ul>
+                        <div style="margin-top: 10px;"></div>
+                        <button type="submit" class="btn btn-info" style="float: right;">{% trans "Update" %}</button>
+                    </form>
+                    <form id="clear medication" action="{% url 'delete_medical' %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger" style="float: right; margin-right: 5px">{% trans "Clear Medication" %}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
