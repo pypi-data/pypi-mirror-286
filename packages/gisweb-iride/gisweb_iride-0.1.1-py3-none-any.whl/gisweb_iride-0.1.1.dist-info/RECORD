@@ -1,0 +1,9 @@
+gisweb_iride/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gisweb_iride/iride.py,sha256=jrTYQza2ciEB_lM016iZg4iJiv4q5u3nqqSvIlCXsUw,5692
+gisweb_iride/schema.py,sha256=s9-yXyLqhnwSSpmvM2aPVvetVGAoBYk8Wl3Vsm879w4,2021
+gisweb_iride/templates/protoIn.xml,sha256=1Nyk_fZMKN_h5l1xv4jEUWHASOogPmNuMe_BLLu1kxg,1957
+gisweb_iride/templates/serviceCall.xml,sha256=I-QYKfTQ_6ubehV--rqFEzM_B_nh8Vk8L3dEoD6QJeo,515
+gisweb_iride-0.1.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+gisweb_iride-0.1.1.dist-info/METADATA,sha256=N6xVvcdpAM6mVktVjaQ3Zd1xCzpOFbPOepLUWvpusik,868
+gisweb_iride-0.1.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+gisweb_iride-0.1.1.dist-info/RECORD,,
