@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mantis_models
+Version: 0.1.7
+Summary: Data models for M&NTIS Platform
+License: MIT
+Author: AMOSSYS
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=1.10.2,<1.11.0)
+Requires-Dist: pydantic-to-typescript (>=1.0.10,<2.0.0)
+Requires-Dist: ruamel.yaml (>=0.16.10,<0.17.0)
