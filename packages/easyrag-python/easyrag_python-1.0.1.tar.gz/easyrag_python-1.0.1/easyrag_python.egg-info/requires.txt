@@ -1,0 +1,12 @@
+langchain
+langchain-community
+langchain_google_genai
+pypdf
+torch
+transformers
+faiss-cpu
+sentence-transformers
+bitsandbytes
+accelerate
+youtube-transcript-api
+pytube
