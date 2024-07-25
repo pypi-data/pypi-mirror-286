@@ -1,0 +1,2 @@
+[console_scripts]
+can_chatbot = can_01_chatbot.can01:main

@@ -1,0 +1,11 @@
+can_01_chatbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+can_01_chatbot/can01.py,sha256=8QWeMpV7dZeBnFsLi8Wo7HakhYlaXo8KoCB4icEdlDE,5905
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_can01.py,sha256=F09zYjX7sl6ky9fyXV2Kd-fbk9LyivdUD2SMtQ8Kdok,510
+tests/test_imports.py,sha256=CukPIq9v1stKh8D1L6vy-NwOPg2I_xqiaTzsX-_utZ0,76
+can_01_chatbot-0.1.0.dist-info/LICENSE,sha256=Sh9-EyyTGd1sXdBdFxocnSzbBTLn6K5gRO3pwfHRCjI,1067
+can_01_chatbot-0.1.0.dist-info/METADATA,sha256=Tnhxex0TTFLI1BtyobwxsB2LE_MzSb6m4f3VpjJ5M14,2987
+can_01_chatbot-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+can_01_chatbot-0.1.0.dist-info/entry_points.txt,sha256=8mgzQO3VD8fghAHyhWntyuGzTsljv5kNPGJBDEcuoiw,58
+can_01_chatbot-0.1.0.dist-info/top_level.txt,sha256=mSkgaCRzJEeRNFQolmL91jpC3WXuGDEEk5mdq56BH5g,21
+can_01_chatbot-0.1.0.dist-info/RECORD,,
