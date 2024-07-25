@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+catclass/__init__.py
+catclass/generator.py
+catclass.egg-info/PKG-INFO
+catclass.egg-info/SOURCES.txt
+catclass.egg-info/dependency_links.txt
+catclass.egg-info/requires.txt
+catclass.egg-info/top_level.txt
