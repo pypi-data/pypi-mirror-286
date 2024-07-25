@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: su-cs144-projectlibs
+Version: 0.0.1
+Summary: Stellenbosch University Python 3 code for 2024 CS144 semester project.
+Author: Marcel Dunaiski
+Author-email: marceldunaiski@sun.ac.za
+License: GNU General Public License v3 (GPLv3)
+Platform: any
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: coveralls; extra == "dev"
+
+# SU project libs for Python 3 for CS144
+
+`su-cs144-projectlibs` is a support library for 2024 CS114 semester project conducted in computer science department at Stellenbosch University.
+
+## Installation
+
+This library requires a functioning Python 3 environment.
+
+### With pip
+For Python versions 3.8 - 3.10, due to compatability infeasibilities, the current safest option is to install most requirements manually before installing this package.
+
+```bash
+python3 -m pip --upgrade pip
+python3 -m pip --upgrade wheel
+python3 -m pip --upgrade setuptools
+```
+
+After the above commands execute sucessfully, install `su-cs144-projectlibs` simply with
+```bash
+python3 -m pip install --upgrade su-cs144-projectlibs
+```
+
+To test that you have installed the library correctly, run this command:
+```bash
+python3 -c 'from compass import Compass; c = Compass(2, 2, 4); print(c.get_next_trajectory())'
+```
+This should print a tuple where the first element is a float and the second an integer.
+
+## Contributors
+
+- Dylan Callaghan
+- Marcel Dunaiski
+
+## License
+
+This project is licensed. See the [LICENSE](LICENSE) file for details.
