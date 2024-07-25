@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: wil-cliff
+Version: 0.1.0
+Summary: A package to perform Wilcoxon test and Cliff's Delta analysis
+Author: fm2309471970
+Author-email: 2309471970@qq.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cliffs-delta (>=0.1.1,<0.2.0)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Wil-Cliff Package
+
+A simple Python package to perform Wilcoxon test and Cliff's Delta analysis.
+
+## Installation
+
+```bash
+pip install wil_cliff
+
+
