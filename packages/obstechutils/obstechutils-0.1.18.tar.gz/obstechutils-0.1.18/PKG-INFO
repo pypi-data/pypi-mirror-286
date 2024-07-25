@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: obstechutils
+Version: 0.1.18
+Summary: Utilities for obstech
+Author-email: Régis Lachaume <regis.lachaume@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: eval_type_backport; python_version < "3.10"
+Requires-Dist: pydantic[email]
+Requires-Dist: mysql-connector-python
+Requires-Dist: pyYAML
+Requires-Dist: paho-mqtt
+Requires-Dist: astropy
+Requires-Dist: google_spreadsheet
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: html2text
+Requires-Dist: pyserial
+
+## Obstech python utilities
+
+Utilities for El Sauce observatory to make life easier dealing with MySQL, MQTT, Google sheets, mailing, Telegram, command line options and configuration files, socket/serial connections, etc.
+
+## Installation
+
+* From local sources, within a virtual environment, `pip install -e .`
+* From python repository, within a virtual environment, `pip install obstechutils`.
+
+## Utilities
+* `db`: connect to MySQL
+* `google`: down from google services like sheets
+* `roof`: list roof info
+* `mqtt`: MQTT client
+* `inventory`: read inventory from the main Google Sheets database
+* `credentials`: deal with logging into servers
+* `email`: basic email sender
+* `telegram`: basic Telegram client
+* `connection`: unified interface to serial port/socket connections
+* `configparse`: argparse extended to use configuration files and env. variables
+* `meteo`: basic meteo functions
+* `coordinates`: coordinates utilities (e.g. GeoidLocation)
+* `array`: array utilities such as masked array interpolation/binning
+* `dataclasses`: dataclass improvements with pydantic
+* `rinex`: some basic utils for RINEX GPS format
+
+## Scripts
+* `mqtt_console`: display MQTT messages on the weather workstation
+* `report_device_status`: check whether PCs and devices are turned on
+* `list_roofs`: list roof parameters
+
+## Credentials file
+The credentials file should be in `~/.config/obstechutils` with the following
+format
+
+```
+mail:
+    device_status:
+        username:     xxxxxxx@yyyy.zzz
+        password:     xxxx xxxx xxxx xxxx
+        server:       smtp.xxxx.yyy
+        port:         465
+mqtt:
+    generic_obstech:
+        username:     obstech
+        password:     xxxxxxxxxx
+        server:       yyy.yyy.yyy
+        port:         1883
+        qos:          2
+        timeout:      60
+mysql:
+    generic_obstech:
+        username:     obstech
+        password:     xxxxxxxxxx
+        server:       yyy.yyy.yyy.yyy
+        port:         3306
+googleapi:
+    generic_obstech:
+        username:     googleuser@gmail.com
+        token:        googleapi/token-generic_obstech.json
+        credentials:  googleapi/credentials-generic_obstech.json
+        scopes:
+        - https://www.googleapis.com/auth/spreadsheets.readonly
+
+``` 

@@ -1,0 +1,10 @@
+eval_type_backport;python_version < "3.10"
+pydantic[email]
+mysql-connector-python
+pyYAML
+paho-mqtt
+astropy
+google_spreadsheet
+google-auth-oauthlib
+html2text
+pyserial
