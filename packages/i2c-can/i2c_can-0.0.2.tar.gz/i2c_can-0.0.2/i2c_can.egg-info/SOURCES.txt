@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+i2c_can/__init__.py
+i2c_can/i2c_can.py
+i2c_can.egg-info/PKG-INFO
+i2c_can.egg-info/SOURCES.txt
+i2c_can.egg-info/dependency_links.txt
+i2c_can.egg-info/entry_points.txt
+i2c_can.egg-info/requires.txt
+i2c_can.egg-info/top_level.txt
+tests/__init__.py
+tests/test_i2c_can.py
