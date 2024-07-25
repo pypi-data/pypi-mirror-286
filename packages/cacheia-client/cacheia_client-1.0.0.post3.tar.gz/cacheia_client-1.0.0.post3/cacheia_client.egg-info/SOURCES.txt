@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+cacheia_client/__init__.py
+cacheia_client/client.py
+cacheia_client/exceptions.py
+cacheia_client.egg-info/PKG-INFO
+cacheia_client.egg-info/SOURCES.txt
+cacheia_client.egg-info/dependency_links.txt
+cacheia_client.egg-info/requires.txt
+cacheia_client.egg-info/top_level.txt
