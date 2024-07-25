@@ -1,0 +1,9 @@
+tela_client/__init__.py,sha256=BQbr3HxgZIgUO96aEIb-R3anwmsBrJI84Lt47OriJss,380
+tela_client/__version__.py,sha256=DjQPBi1HMi-fHZkQ9cj7_NROCsTK2snDA_UVo3wl88s,97
+tela_client/client.py,sha256=QzqreIkt6bd2mk7i_b7Sy13d7KQSWpJ5vzFnp842Yqk,5619
+tela_client/folder_watcher.py,sha256=FHzITWzZxL-WDoGiP4zk6FH5qdbv6G5vAE1i7JAI-Ro,6482
+tela_client/utils.py,sha256=i9Dt0KvcKH0kS6DnUcwS61k5AEXEkaSgLikM7-JSEco,1202
+tela_client-0.0.10.dist-info/METADATA,sha256=iLgJ--6Fl3ZfE-Amz2VAxxELnfKCEVkgIGDqO_-TPRU,1350
+tela_client-0.0.10.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+tela_client-0.0.10.dist-info/top_level.txt,sha256=Fu4vumHAa0iTfgF41aIS9TPJnx0mNHVRCLf2FSkHTT0,12
+tela_client-0.0.10.dist-info/RECORD,,
