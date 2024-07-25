@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pipbuilder/__init__.py
+pipbuilder/__main__.py
+pipbuilder/pipbuilder.py
+pipbuilder.egg-info/PKG-INFO
+pipbuilder.egg-info/SOURCES.txt
+pipbuilder.egg-info/dependency_links.txt
+pipbuilder.egg-info/top_level.txt
