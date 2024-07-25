@@ -1,0 +1,14 @@
+setup.py
+majordomo_ai/__init__.py
+majordomo_ai/dataset.py
+majordomo_ai/datasource.py
+majordomo_ai/genai_query.py
+majordomo_ai/models.py
+majordomo_ai/sql.py
+majordomo_ai/unstructured_data.py
+majordomo_ai/utils.py
+majordomo_ai.egg-info/PKG-INFO
+majordomo_ai.egg-info/SOURCES.txt
+majordomo_ai.egg-info/dependency_links.txt
+majordomo_ai.egg-info/requires.txt
+majordomo_ai.egg-info/top_level.txt
