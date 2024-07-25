@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "normalise-email"
+packages = [
+    { include = "normalise" },
+]
+version = "0.1.23"
+description = "Python port of normalizeEmail.js."
+authors = ["PsypherPunk <psypherpunk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+commitizen = "^3.28.0"
+pre-commit = "^3.7.1"
+pytest = "^8.3.1"
+pytest-cov = "^5.0.0"
+pytest-mypy = "^0.10.3"
+
+[tool.commitizen]
+version = "0.1.23"
+bump_message = "bump: version $current_version → $new_version [skip ci]"
+version_files = [
+    "pyproject.toml:^version",
+]
+
+[tool.commitizen.customize]
+bump_pattern = '^(BREAKING CHANGE|build|chore|docs|feat|fix|refactor|test)(\(.+\))?(!)?'
+bump_map = {"!" = "MAJOR", build = "PATCH", chore = "PATCH", docs = "PATCH", feat = "MINOR", fix = "PATCH", refactor = "PATCH", test = "PATCH" }
+
+[tool.coverage.report]
+show_missing = true
+omit = ["tests/*"]
+sort = "cover"
+fail_under = 100
+skip_empty = true
+
+[tool.isort]
+profile = "black"
+
+[tool.markdownlint.MD013]
+line_length = 100
+code_blocks = false
+tables = false
+
+[tool.pytest.ini_options]
+pythonpath = "."
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
