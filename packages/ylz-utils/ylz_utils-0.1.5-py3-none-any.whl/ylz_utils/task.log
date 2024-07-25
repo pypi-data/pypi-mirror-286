@@ -1,0 +1,12 @@
+2024-07-24 23:11:11,430 root [pid:28476] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:11:11,431 root [pid:28476] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='serve',  *
+2024-07-24 23:11:11,431 root [pid:28476] [MainThread] [INFO] * host='0.0.0.0', port=4321, path='/test')                                     *
+2024-07-24 23:11:11,431 root [pid:28476] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:12:29,471 root [pid:29891] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:12:29,471 root [pid:29891] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='serve',  *
+2024-07-24 23:12:29,471 root [pid:29891] [MainThread] [INFO] * host='0.0.0.0', port=4321, path='/test')                                     *
+2024-07-24 23:12:29,471 root [pid:29891] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:13:06,457 openai._base_client [pid:29891] [MainThread] [INFO] Retrying request to /chat/completions in 0.761152 seconds
+2024-07-24 23:13:07,371 openai._base_client [pid:29891] [MainThread] [INFO] Retrying request to /chat/completions in 1.530777 seconds
+2024-07-24 23:14:21,684 httpx [pid:29891] [MainThread] [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2024-07-24 23:15:55,629 openai._base_client [pid:29891] [MainThread] [INFO] Retrying request to /chat/completions in 0.931621 seconds
