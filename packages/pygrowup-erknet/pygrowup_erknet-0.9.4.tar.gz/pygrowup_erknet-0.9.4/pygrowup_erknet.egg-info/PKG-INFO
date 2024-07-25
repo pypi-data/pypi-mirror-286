@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: pygrowup_erknet
+Version: 0.9.4
+Summary: Calculate z-scores of anthropometric measurements based on WHO and CDC child growth standards
+Home-page: https://github.com/eyal-erknet/pygrowup
+Download-URL: https://pypi.org/project/pygrowup-erknet/0.9.4
+Author: Evan Wheeler
+Author-email: evanmwheeler@gmail.com
+Maintainer: Eyal Rahmani
+Maintainer-email: eyal.rahmani@med.uni-heidelberg.de
+License: BSD
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: openpyxl
+Requires-Dist: requests
+
+pygrowup-erknet
+===============
+
+modified version of: http://github.com/ewheeler/pygrowup
+
+pygrowup calculates z-scores for the following anthropometric indicators:
+
+* weight-for-age
+
+* length/height-for-age
+
+* weight-for-length/height
+
+* head-circumference-for-age
+
+* body-mass-index-for-age
+
+based on the WHO Child Growth Standards:
+* http://www.who.int/childgrowth/standards/en/
+* http://www.who.int/entity/childgrowth/standards/technical_report/en/index.html
+
+and can optionally use CDC growth standards:
+* http://www.cdc.gov/growthcharts
+
+REQUIREMENTS
+============
+
+* Python 3.8 or later
+
+
+INSTALLATION
+============
+`pip install pygrowup-erknet`
+
+
+EXAMPLE USAGE
+=============
+
+Typical usage might look like this::
+
+    from pygrowup_erknet import Calculator
+    # Height adjustments are part of the WHO specification (see section 5.1)
+    # to correct for recumbent vs standing measurements,
+    # but none of the existing software seems to implement this.
+    # default is false so values are closer to those produced
+    # by igrowup software
+    #
+    # WHO specs include adjustments (see Chapter 7) to z-scores of weight-based
+    # indicators that are greater than +/- 3 SDs. These adjustments
+    # correct for right skewness and avoid making assumptions about
+    # the distribution of data beyond the limits of the observed values.
+    #
+    # However, when calculating z-scores in a live data collection
+    # situation, z-scores greater than +/- 3 SDs are likely to indicate
+    # data entry or anthropometric measurement errors and should not
+    # be adjusted. Instead, these large z-scores should be used to
+    # identify poor data quality and/or entry errors.
+    # These z-score adjustments are appropriate only when there
+    # is confidence in data quality.
+    #
+    # In this example, Calculator is initialized with its default values
+    # (i.e., ``calculator = Calculator()`` would do the same thing).
+    # The ``include_cdc`` option will enable CDC measurements for children >5 years.
+    # The ``override_tables`` option allows to provide a custom list of ``GrowthTable``. Can be used with ``CDC_TABLES`` to override the Who tables altogether.
+    calculator = Calculator(adjust_height_data=False,
+                           include_cdc=False,
+                           override_tables=None)
+
+    # The age in the calculator is always in months. To covert days to months, divide the age by 30.4375.
+
+    calculator.zscore_for_measurement(indicator='wfa' # allowed values are: bmifa, hcfa, lfa, hfa, wfa, wfh, wfl
+                                        measurement=10.4, # weight in kg, height/lengt/head circumference in cm, bmi in kg/m2
+                                        sex='M, # 'M' or 'F'
+                                        index_value=22.45, #age in months or length/height in cm (depends on the indicator)
+                                        is_recumbent_height=False) # ignored if adjust_height_data is set to False.
+    
+    # The above method can be simplified using the following methods:
+
+    calculator.lhfa(measurement=10.4, age_in_months=22.45, sex='M', is_recumbent_height=False)
+
+    calculator.wfl(measurement=10.4, sex='M', length=84.8, is_recumbent_height=False)
+
+    calculator.wfh(measurement=10.4, sex='M', height=84.8, is_recumbent_height=False)
+
+    calculator.wfa(measurement=10.4, age_in_months=22.45, sex='M')
+
+    calculator.bmifa(measurement=14.46, age_in_months=22.45, sex='M')
+
+    calculator.hcfa(measurement=48.5, age_in_months=22.45, sex='M')
+    
+
+EXCEPTIONS
+==========
+
+caller should watch for:
+
+as well as more specific errors (all subclasses of `RuntimeError` and `PyGrowUpError`):
+
+* `DataNotFound` raised when no data is not found for the requested observation.
+
+* `InvalidMeasurement` raised when measurement (height/length, bmi, weight, head circumference) is invalid for a requested indicator.
+
+* `InvalidTableNameError` raised when an invalid indicator (table) was requested (allowed values are: bmifa, hcfa, lfa, hfa, wfa, wfh, wfl).
+
+* `InvalidIndexError`raised when an invalid index value was given for a requested indicator (usually age or length/height).
+
+* `InvalidAge` (subclass of `InvalidIndexError`) raised when the age is invalid for a requested indicator.
+
+* `InvalidLengthError` (subclass of `InvalidIndexError`) raised when the length/height is invalid for a requested indicator.
+
+* `InvalidSexError` raised when the sex could not be inferred, allowed values are 'M' or 'F'. 
+
+TESTING
+=======
+to run the tests:
+`$ python -m pygrowup_erknet.tests`
+
+
+BUILDING
+========
+`$ python setup.py sdist bdist_wheel`
+
+`$ twine upload dist/*`
