@@ -1,0 +1,8 @@
+vanilla_registries/__init__.py,sha256=M52_5eEPhoTBZ8T450IsgpCP1t-K69STvD4ZdtL7u00,38
+vanilla_registries/examples/pack/beet.yaml,sha256=R9zB5t8o_fgnMm3EVWNVEJJ14k7oni4BKGJkHjgIpj8,35
+vanilla_registries/examples/pack/demo.py,sha256=8QTTnsQxHiYIciT9x38-374WAqaUqVPJl87FrqC3xTY,166
+vanilla_registries/main.py,sha256=pNtbemnyVVHn5FOAtTWgdL1H6lZcf8CAfdu28K-UJJU,5806
+vanilla_registries-0.3.0.dist-info/LICENSE,sha256=98DjlCmFxq1ChF8eO6sDQpDgdcM0YaVLHKJoIPc4TuY,1067
+vanilla_registries-0.3.0.dist-info/METADATA,sha256=LGCM38gzbgUfXf6FVVltCrWi2sByzpeUMgafu6dSb50,404
+vanilla_registries-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+vanilla_registries-0.3.0.dist-info/RECORD,,
