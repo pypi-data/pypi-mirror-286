@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sssms.egg-info/PKG-INFO
+sssms.egg-info/SOURCES.txt
+sssms.egg-info/dependency_links.txt
+sssms.egg-info/entry_points.txt
+sssms.egg-info/requires.txt
+sssms.egg-info/top_level.txt
