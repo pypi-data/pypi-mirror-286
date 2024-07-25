@@ -1,0 +1,16 @@
+filelock>=3.15.4
+msgspec>=0.18.6
+
+[dataclass]
+msgspec>=0.18.6
+
+[msgspec]
+msgspec>=0.18.6
+
+[pydantic]
+pydantic>=2.0
+
+[test]
+pytest>=8.22
+msgspec>=0.18.6
+pydantic>=2.0
