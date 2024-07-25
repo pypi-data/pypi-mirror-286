@@ -1,0 +1,3 @@
+[console_scripts]
+easytgbot=easytgbot.cli:cli
+
