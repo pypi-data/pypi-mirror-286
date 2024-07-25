@@ -1,0 +1,6 @@
+README.md
+setup.py
+shancxWTX.egg-info/PKG-INFO
+shancxWTX.egg-info/SOURCES.txt
+shancxWTX.egg-info/dependency_links.txt
+shancxWTX.egg-info/top_level.txt
