@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: convert2ppt
+Version: 0.0.1
+Summary: Convert your documents to PPT presentation with AI
+Author-email: Murat Karakaya <kmkarakaya@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/kmkarakaya/convert2ppt
+Keywords: convert2ppt
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: convert2ppt[extra] ; extra == 'all'
+Provides-Extra: extra
+Requires-Dist: pandas ; extra == 'extra'
+
+# convert2ppt
+
+
+[![image](https://img.shields.io/pypi/v/convert2ppt.svg)](https://pypi.python.org/pypi/convert2ppt)
+[![image](https://img.shields.io/conda/vn/conda-forge/convert2ppt.svg)](https://anaconda.org/conda-forge/convert2ppt)
+
+
+**Convert your documents to PPT presentation with AI**
+
+
+-   Free software: MIT License
+-   Documentation: https://kmkarakaya.github.io/convert2ppt
+    
+
+## Features
+
+-   TODO
