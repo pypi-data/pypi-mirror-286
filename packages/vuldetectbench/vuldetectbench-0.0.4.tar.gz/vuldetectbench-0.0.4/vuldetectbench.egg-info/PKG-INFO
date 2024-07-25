@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vuldetectbench
+Version: 0.0.4
+Summary: VulDetectBench
+Home-page: https://github.com/Sweetaroo/VulDetectBench
+Author: Lang Gao
+Author-email: vuldetectbench@gmail.com
+Requires-Dist: transformers
+Requires-Dist: huggingface_hub
+Requires-Dist: datasets
+Requires-Dist: openai>=1.0.0
+Requires-Dist: tqdm
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: python-liquid
+Requires-Dist: requests

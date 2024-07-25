@@ -1,0 +1,11 @@
+transformers
+huggingface_hub
+datasets
+openai>=1.0.0
+tqdm
+nltk
+numpy
+pandas
+scipy
+python-liquid
+requests
