@@ -1,0 +1,6 @@
+prune __pycache__/
+prune .venv/
+prune test/
+prune library_test
+exclude .gitignore
+exclude client_info.txt
