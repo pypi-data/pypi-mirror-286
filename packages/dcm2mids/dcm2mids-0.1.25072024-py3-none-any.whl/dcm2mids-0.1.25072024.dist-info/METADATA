@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dcm2mids
+Version: 0.1.25072024
+Summary: Tool for converting DICOM images to the BIDS/MIDS structure
+Home-page: https://github.com/pyscaffold/pyscaffold/
+Author: jomasator2
+Author-email: Jose Manuel Saborit Torres <josemanuel.saborit@fisabio.es>, Alejandro Mora Rubio <alejandro.mora@fisabio.es>
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://github.com/BIMCV-CSUSP/dcm2mids
+Project-URL: Issues, https://github.com/BIMCV-CSUSP/dcm2mids/issues
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
