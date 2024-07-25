@@ -1,0 +1,13 @@
+jupyterlab_forum/__init__.py,sha256=0I-t_3gT5ZxM690kKU9I0TsEenC1WoEP38nF8Bv5MSY,590
+jupyterlab_forum/_version.py,sha256=cUtXKbM1R2GaRpb4q_aOJ_IDbbKXcOZYSGLz8T_E0Ck,171
+jupyterlab_forum-0.1.8.data/data/share/jupyter/labextensions/jupyterlab_forum/package.json,sha256=TBQRVG--Ewyl9xzfCkG1k3Q14nTLAfTDa9QmoiLT-Og,5824
+jupyterlab_forum-0.1.8.data/data/share/jupyter/labextensions/jupyterlab_forum/static/728.c1ccbd9a14e3b178599d.js,sha256=wcy9mhTjsXhZnVa1mnLxu8nEELMuksyriQyQ4zxLiA8,11619
+jupyterlab_forum-0.1.8.data/data/share/jupyter/labextensions/jupyterlab_forum/static/929.643936664aae0b899f94.js,sha256=ZDk2ZkquC4mflBCgtexgxO1lmAtzsDM6UbcOZoXLN5E,9534
+jupyterlab_forum-0.1.8.data/data/share/jupyter/labextensions/jupyterlab_forum/static/remoteEntry.654de0edae5015670219.js,sha256=ZU3g7a5QFWcCGZI5J3CxFSx5MGdzClvuyvVlDeQUdfs,6677
+jupyterlab_forum-0.1.8.data/data/share/jupyter/labextensions/jupyterlab_forum/static/style.js,sha256=Y1lIfRVd5eZc0vtl87PbQViqNMCB9USTNz2vrx5CwIE,159
+jupyterlab_forum-0.1.8.data/data/share/jupyter/labextensions/jupyterlab_forum/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+jupyterlab_forum-0.1.8.data/data/share/jupyter/labextensions/jupyterlab_forum/install.json,sha256=UxUb3iOLA9xFG5Ce5Fvu5bDyJtKvS86erj4WKFz6Ll4,193
+jupyterlab_forum-0.1.8.dist-info/METADATA,sha256=Gaq2yMhDZmOhU61qfcdf9qba9XW2zOB97xpTQFPlolM,6058
+jupyterlab_forum-0.1.8.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+jupyterlab_forum-0.1.8.dist-info/licenses/LICENSE,sha256=kQg4wJG56De2J2AZyvxmdAonpQFDp5z5ubcm0zpw21k,1518
+jupyterlab_forum-0.1.8.dist-info/RECORD,,
