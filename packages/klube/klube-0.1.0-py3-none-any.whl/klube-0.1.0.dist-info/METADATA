@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: klube
+Version: 0.1.0
+Summary: 
+Author: evgenii.basmov
+Author-email: coykto@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Klube CLI Tool
+
+Klube is a command-line interface (CLI) tool designed to simplify interactions with Kubernetes clusters. It provides a set of convenient commands that wrap around `kubectl`, making it easier to perform common operations like viewing logs, executing commands in pods, and copying files to and from pods.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Key Features](#key-features)
+- [Commands](#commands)
+- [Configuration](#configuration)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+You can easily install Klube using pip:
+
+```
+pip install klube
+```
+
+During the installation process, Klube will automatically create an initial configuration file at `~/.klube/config.json`. This file will contain default settings, including the default Kubernetes namespace.
+
+After installation, you'll see a message confirming the creation of the configuration file and instructions on how to modify it.
+
+## Usage
+
+After installation, you can use the `klube` command from anywhere in your terminal. The basic syntax is:
+
+```
+klube <command> [arguments]
+```
+
+If Klube doesn't recognize the command, it will pass it through to `kubectl` along with any arguments.
+
+## Key Features
+
+### Flexible Pod Identification
+
+One of Klube's standout features is its flexible pod identification system. Unlike traditional kubectl commands that require exact pod names, Klube allows you to use as many or as few identifiers as you need to uniquely identify a pod. This can significantly speed up your workflow, especially in environments with many similarly named pods.
+
+For example, if you have a pod named `backend-service-5f7d9c7b5-2nlzx`, you could use any of the following to identify it:
+
+```
+klube logs backend
+klube logs backend service
+klube logs backend-service-5f7d9c7b5-2nlzx
+```
+
+Klube will find the first pod that matches all provided identifiers. This feature works across all Klube commands, making it a powerful tool for quick Kubernetes operations.
+
+### Flexible Namespace Selection
+
+Klube provides multiple ways to specify the Kubernetes namespace you want to work with, offering flexibility and ease of use:
+
+1. Command-line argument: `klube --namespace mynamespace <command>`
+2. Environment variable: `export LUBE_NAMESPACE=mynamespace`
+3. User configuration file: Set using `klube config NAMESPACE mynamespace`
+4. Default: If not specified, Klube uses the "default" namespace
+
+The order of precedence is:
+Command-line argument > Environment variable > User configuration file > Default
+
+This allows you to easily switch between namespaces for different projects or environments without modifying your scripts or commands.
+
+## Commands
+
+Klube currently supports the following commands:
+
+- `logs`: View logs from a pod
+- `exec`: Execute a command in a pod
+- `cp`: Copy files to or from a pod
+- `config`: View or set configuration options
+
+### Examples
+
+[Examples remain the same as in the previous version]
+
+## Configuration
+
+Klube uses a user-specific configuration file located at `~/.klube/config.json`. This file is created automatically during the installation process, and it can be viewed or modified using the `klube config` command.
+
+The initial configuration file includes:
+
+- `NAMESPACE`: The default Kubernetes namespace to use (default: "default")
+
+You can add other configuration options as needed. Remember that the namespace specified in the config file can be overridden by an environment variable or command-line argument.
+
+To view your current configuration:
+
+```
+klube config
+```
+
+To modify a configuration option:
+
+```
+klube config KEY VALUE
+```
+
+For example, to change the default namespace:
+
+```
+klube config NAMESPACE my-namespace
+```
+
+## Project Structure
+
+```
+klube/
+├── setup.py
+├── post_install.py
+├── README.md
+├── main.py
+└── commands/
+    ├── base.py
+    ├── logs/
+    │   └── handler.py
+    ├── exec/
+    │   └── handler.py
+    └── cp/
+        └── handler.py
+```
+
+- `setup.py`: Package configuration for installation
+- `post_install.py`: Script to set up initial configuration during installation
+- `main.py`: Entry point for the CLI tool, handles configuration and command routing
+- `commands/`: Directory containing command handlers
+  - `base.py`: Base class for command handlers
+  - `logs/`, `exec/`, `cp/`: Specific command implementations
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
