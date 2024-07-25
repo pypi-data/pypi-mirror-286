@@ -1,0 +1,9 @@
+psycopg2
+pandas
+numpy
+msal
+requests
+selenium
+webdriver-manager
+validators
+pygetwindow
