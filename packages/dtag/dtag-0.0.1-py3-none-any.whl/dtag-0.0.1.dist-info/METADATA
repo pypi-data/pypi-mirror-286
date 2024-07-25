@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dtag
+Version: 0.0.1
+Summary: A flexible Python data tagging framework for pre-training of AI models.
+Author-email: Brennen Ho <dtag@brennen.dev>
+Project-URL: Homepage, https://github.com/brennenho/dtag
+Project-URL: Issues, https://github.com/brennenho/dtag/issues
+Description-Content-Type: text/markdown
+
+# DTAG
+
+A flexible Python data tagging framework for pre-training of AI models.
