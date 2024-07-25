@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: IntelliMaint
+Version: 0.14
+Summary: A prognostics package by IntelliPredikt Technologies
+Author: IPTLP0032
+Author-email: iptgithub@intellipredikt.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: GPy
+Requires-Dist: minisom
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: numpy>=1.16.1
+Requires-Dist: mplcursors
+Requires-Dist: fpdf2
+Requires-Dist: tensorflow<2.12,>=2.10
+Requires-Dist: keras<2.12,>=2.10
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: imbalanced-learn
+
+# IntelliMaint Python Library Package
+
+The IntelliMaint Python library is designed for comprehensive data preparation, signal processing, feature extraction, anomaly detection, diagnostics, and prognostics modeling. It supports deployment and application development for predictive diagnostics and performance optimization. This package facilitates the development of predictive digital twins for mechanical and electrical systems/components.
+
+## Key Features:
+
+- **Data Preparation**: Tools for handling and preprocessing raw data.
+- **Signal Processing**: Advanced techniques for analyzing vibration and other sensor signals.
+- **Feature Extraction**: Extracts meaningful features from raw data to be used in machine learning models.
+- **Anomaly Detection**: Identifies deviations from normal operating conditions to detect potential faults early.
+- **Diagnostics and Prognostics Models**: Provides models for diagnosing faults and predicting the Remaining Useful Life (RUL) of components.
+- **Deployment**: Supports integration and deployment in real-world applications for continuous monitoring and maintenance.
+
+The IntelliMaint package is available on PyPi and is open source, welcoming contributions from the community. We are looking for development contributors and application developers interested in enhancing and making this package more useful for Science and Engineering Applications.
+
+## License
+
+IntelliMaint python library Â© 2024 by IntelliPredikt Technologies is licensed under Creative Commons Attribution 4.0 International. 
+
+To view a copy of this license, visit [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
