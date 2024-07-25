@@ -1,0 +1,11 @@
+taskflowai/__init__.py,sha256=hoDDplyFe3iR0Wa50BkdzfZppPgp3lIMB7nisha88_w,835
+taskflowai/agent.py,sha256=v0NjL7uL1ibFXO5h0zM8bO1E3atRptpwAK4ABl1r0mY,653
+taskflowai/llm.py,sha256=QO7kC9Y6T3BZ2fehzy1AuCTPndTMgFGFvKZTiXvr07A,41260
+taskflowai/task.py,sha256=PrZH8zXmMSIfIjOStXk_cuEUe2TPxoZ-usECrlNzK-w,13886
+taskflowai/tools.py,sha256=SnyND00uUID1rdoN5lUJo_-ml5vMgnK09m3VDo1JvoM,99407
+taskflowai/utils.py,sha256=yIq3KG7TJ9tli-4tPko-pek2ddNPDG-aV8IyOBs7w7Q,1995
+taskflowai-0.1.3.dist-info/LICENSE,sha256=Jyl432-_PZDbUVzrhqMOXi7bqiOv3TIOOD3R_jh7LhI,1070
+taskflowai-0.1.3.dist-info/METADATA,sha256=REzvO7FX6NsdJ2nZhmzY82a3uvqOU8fXVpef_W5WIRo,24618
+taskflowai-0.1.3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+taskflowai-0.1.3.dist-info/top_level.txt,sha256=f1WklYheo4FJC2yD5IxPb4EEqG7Nkc8djZpdCW56Bus,11
+taskflowai-0.1.3.dist-info/RECORD,,
