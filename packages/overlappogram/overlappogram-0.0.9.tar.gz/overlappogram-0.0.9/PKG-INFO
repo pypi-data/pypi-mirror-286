@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: overlappogram
+Version: 0.0.9
+Summary: Overlappogram unfolding and analysis software
+Author-email: "J. Marcus Hughes" <hughes.jmb@gmail.com>, Dyana Beabout <dyana.l.beabout@nasa.gov>
+Maintainer-email: "J. Marcus Hughes" <hughes.jmb@gmail.com>
+License: ## Public Domain
+        
+        This project constitutes a work of the United States Government and is not subject to domestic copyright protection under 17 USC § 105. Additionally, we waive copyright and related rights in the work worldwide through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+        
+        Contributions to this project will be released under the CC0 dedication unless otherwise indicated. Material that is not under public domain or available under a CC0 license is marked with the license for that material.
+        
+        By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.  Any material that cannot be shared as CC0 should be noted in the pull request along with the license of that material.
+        
+        ## Other Information
+        
+        In no way are the patent or trademark rights of any person affected by CC0, nor are the rights that other persons may have in the work or in how the work is used, such as publicity or privacy rights.
+        
+        Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law. When using or citing the work, you should not imply endorsement by the author or the affirmer.
+        
+Project-URL: Homepage, https://github.com/ECCCO-mission/overlappogram
+Project-URL: Documentation, https://eccco-mission.github.io/overlappogram/
+Project-URL: Repository, https://github.com/eccco-mission/overlappogram.git
+Project-URL: Bug Tracker, https://github.com/eccco-mission/overlappogram/issues
+Project-URL: Changelog, https://github.com/eccco-mission/overlappogram/blob/main/CHANGELOG.md
+Keywords: overlappogram,solar,physics,analysis
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy<2.0.0
+Requires-Dist: astropy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: matplotlib
+Requires-Dist: photutils
+Requires-Dist: scipy
+Requires-Dist: ndcube
+Requires-Dist: toml
+Requires-Dist: click
+Requires-Dist: tqdm
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-doctestplus; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: ruff; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-autoapi; extra == "docs"
+Requires-Dist: sphinx-automodapi; extra == "docs"
+Requires-Dist: pydata-sphinx-theme; extra == "docs"
+
+# overlappogram
+
+[![CI](https://github.com/eccco-mission/overlappogram/actions/workflows/CI.yml/badge.svg)](https://github.com/eccco-mission/overlappogram/actions/workflows/CI.yml)
+[![codecov](https://codecov.io/gh/eccco-mission/overlappogram/graph/badge.svg?token=u1qQvzybz4)](https://codecov.io/gh/eccco-mission/overlappogram)
+[![DOI](https://zenodo.org/badge/759222503.svg)](https://zenodo.org/doi/10.5281/zenodo.10869534)
+
+![overlappogram example](https://raw.githubusercontent.com/ECCCO-mission/overlappogram/main/overlappogram.png)
+
+Overlappogram is a Python package for inverting overlappogram observations of the Sun,
+for examples MaGIXS, CubIXSS, or ECCCO observations.
+
+For background on the theory of this technique, see [this paper](https://arxiv.org/abs/2407.10436v1).
+
+
+## Install
+
+`pip install overlappogram` or clone the repository and install manually.
+
+## How to Use
+
+`overlappogram` comes with an executable main that you can run:
+
+`unfold ./path/to/config.toml`
+
+The `config.toml` file should be structured similar to the [example_config.toml](example_config.toml).
+We provide more description of the config file [in the documentation](https://eccco-mission.github.io/overlappogram/configuration.html).
+
+## Getting Help
+
+Please [open an issue](https://github.com/ECCCO-mission/overlappogram/issues/new/choose)
+or [create a discussion](https://github.com/eccco-mission/overlappogram/discussions/new/choose).
+We prefer this over email so that other users can benefit from your questions.
+
+## Cite
+
+[Please cite using the Zenodo DOI.](https://zenodo.org/records/10869577)
+
+## Contributors
+
+The initial version of `overlappogram` was written by Dyana Beabout.
+This version is written by [J. Marcus Hughes](https://github.com/jmbhughes).

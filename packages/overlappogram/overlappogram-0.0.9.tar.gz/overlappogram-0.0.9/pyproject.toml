@@ -1,0 +1,94 @@
+[build-system]
+
+requires = ["setuptools",
+            "wheel"]
+
+[project]
+name = "overlappogram"
+version = "0.0.9"
+dependencies = ["numpy<2.0.0",
+    "astropy",
+    "scikit-learn",
+    "pandas",
+    "pillow",
+    "matplotlib",
+    "photutils",
+    "scipy",
+    "ndcube",
+    "toml",
+    "click",
+    "tqdm"
+]
+requires-python = ">=3.9"
+authors = [
+    {name = "J. Marcus Hughes", email = "hughes.jmb@gmail.com"},
+    {name = "Dyana Beabout", email = "dyana.l.beabout@nasa.gov"},
+]
+maintainers = [
+  {name = "J. Marcus Hughes", email = "hughes.jmb@gmail.com"}
+]
+description = "Overlappogram unfolding and analysis software"
+readme = "README.md"
+license = {file = "LICENSE.md"}
+keywords = ["overlappogram", "solar", "physics", "analysis"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-doctestplus", "pytest-cov", "ruff", "coverage"]
+docs = ["sphinx", "sphinx-autoapi", "sphinx-automodapi", "pydata-sphinx-theme"]
+
+[project.scripts]
+unfold = "overlappogram.cli:unfold"
+
+[project.urls]
+Homepage = "https://github.com/ECCCO-mission/overlappogram"
+Documentation = "https://eccco-mission.github.io/overlappogram/"
+Repository = "https://github.com/eccco-mission/overlappogram.git"
+"Bug Tracker" = "https://github.com/eccco-mission/overlappogram/issues"
+Changelog = "https://github.com/eccco-mission/overlappogram/blob/main/CHANGELOG.md"
+
+[tool.setuptools]
+packages = ["overlappogram"]
+
+[tool.codespell]
+skip = "*.fts,*.fits,venv,*.pro,*.asdf,*.ipynb"
+
+[tool.ruff]
+target-version = "py39"
+line-length = 120
+exclude=[
+    ".git,",
+    "__pycache__",
+    "build",
+    "overlappogram/version.py",
+]
+show-fixes = true
+
+lint.select = [
+       "E",
+       "F",
+       "W",
+       "UP",
+       "PT",
+       "RET",
+       "TID",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Part of configuration, not a package.
+"setup.py" = ["INP001"]
+"conftest.py" = ["INP001"]
+# implicit-namespace-package. The examples are not a package.
+"docs/*.py" = ["INP001"]
+# Module level imports do not need to be at the top of a file here
+"docs/conf.py" = ["E402"]
+
+"__init__.py" = ["E402", "F401", "F403"]
+"test_*.py" = ["B011", "D", "E402", "PGH001", "S101"]
+
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
