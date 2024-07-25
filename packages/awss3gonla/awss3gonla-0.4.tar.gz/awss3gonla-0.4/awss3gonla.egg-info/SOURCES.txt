@@ -1,0 +1,10 @@
+README.md
+setup.py
+awss3gonla/__init__.py
+awss3gonla/client.py
+awss3gonla/storage.py
+awss3gonla.egg-info/PKG-INFO
+awss3gonla.egg-info/SOURCES.txt
+awss3gonla.egg-info/dependency_links.txt
+awss3gonla.egg-info/requires.txt
+awss3gonla.egg-info/top_level.txt
