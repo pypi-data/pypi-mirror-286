@@ -1,0 +1,23 @@
+sphinx>=6
+tabulate>=0.8.10
+
+[:python_version < "3.11"]
+tomli>=1.1.0
+
+[developer]
+pre-commit>=3.3
+
+[developer:python_version < "3.11"]
+tomli
+
+[doc]
+numpy>=1.22
+matplotlib>=3.5
+pydata-sphinx-theme>=0.13.3
+sphinx>=7
+intersphinx_registry
+
+[test]
+pytest
+pytest-cov
+matplotlib
