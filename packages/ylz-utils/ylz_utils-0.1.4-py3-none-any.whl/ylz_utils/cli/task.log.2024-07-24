@@ -1,0 +1,69 @@
+2024-07-24 23:22:18,984 root [pid:4966] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:22:18,984 root [pid:4966] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='serve',  *
+2024-07-24 23:22:18,984 root [pid:4966] [MainThread] [INFO] * host='0.0.0.0', port=4321, path='/test', llm='LLM.DEEPSEEK')                 *
+2024-07-24 23:22:18,984 root [pid:4966] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:24:00,033 root [pid:5671] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:24:00,034 root [pid:5671] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='serve',  *
+2024-07-24 23:24:00,034 root [pid:5671] [MainThread] [INFO] * host='0.0.0.0', port=4321, path='/test', llm='LLM.DEEPSEEK')                 *
+2024-07-24 23:24:00,034 root [pid:5671] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:24:00,038 root [pid:5671] [MainThread] [INFO] 增加BaseChatModel.invoke的插件!!
+2024-07-24 23:24:00,038 root [pid:5671] [MainThread] [INFO] 增加BaseChatModel.ainvoke的插件!!
+2024-07-24 23:24:00,038 root [pid:5671] [MainThread] [INFO] 增加BaseChatModel.stream的插件!!
+2024-07-24 23:24:00,038 root [pid:5671] [MainThread] [INFO] 增加BaseChatModel.astream的插件!!
+2024-07-24 23:24:00,038 root [pid:5671] [MainThread] [INFO] 增加BaseTool.invoke的插件!!
+2024-07-24 23:24:26,987 httpx [pid:5671] [MainThread] [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-24 23:25:56,867 root [pid:7441] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:25:56,867 root [pid:7441] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='serve',  *
+2024-07-24 23:25:56,867 root [pid:7441] [MainThread] [INFO] * host='0.0.0.0', port=4321, path='/test', llm='LLM.GROQ')                     *
+2024-07-24 23:25:56,867 root [pid:7441] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:25:56,878 root [pid:7441] [MainThread] [INFO] 增加BaseChatModel.invoke的插件!!
+2024-07-24 23:25:56,878 root [pid:7441] [MainThread] [INFO] 增加BaseChatModel.ainvoke的插件!!
+2024-07-24 23:25:56,878 root [pid:7441] [MainThread] [INFO] 增加BaseChatModel.stream的插件!!
+2024-07-24 23:25:56,878 root [pid:7441] [MainThread] [INFO] 增加BaseChatModel.astream的插件!!
+2024-07-24 23:25:56,878 root [pid:7441] [MainThread] [INFO] 增加BaseTool.invoke的插件!!
+2024-07-24 23:26:14,118 httpx [pid:7441] [MainThread] [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2024-07-24 23:28:10,863 root [pid:8416] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:28:10,864 root [pid:8416] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-24 23:28:10,864 root [pid:8416] [MainThread] [INFO] * mode='llm', llm='LLM.GROQ')                                                  *
+2024-07-24 23:28:10,864 root [pid:8416] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:28:10,876 root [pid:8416] [MainThread] [INFO] ====================
+2024-07-24 23:28:10,876 root [pid:8416] [MainThread] [INFO] = [33m 测试llm [0m =
+2024-07-24 23:28:10,876 root [pid:8416] [MainThread] [INFO] ====================
+2024-07-24 23:28:33,242 httpx [pid:8416] [MainThread] [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2024-07-24 23:37:41,728 root [pid:14772] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:37:41,729 root [pid:14772] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-24 23:37:41,729 root [pid:14772] [MainThread] [INFO] * mode='llm', llm='LLM.GROQ')                                                  *
+2024-07-24 23:37:41,729 root [pid:14772] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:37:41,740 root [pid:14772] [MainThread] [INFO] ====================
+2024-07-24 23:37:41,741 root [pid:14772] [MainThread] [INFO] = [33m 测试llm [0m =
+2024-07-24 23:37:41,741 root [pid:14772] [MainThread] [INFO] ====================
+2024-07-24 23:37:59,944 httpx [pid:14772] [MainThread] [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-24 23:38:03,256 httpx [pid:14772] [MainThread] [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-24 23:38:28,027 httpx [pid:14772] [MainThread] [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-24 23:41:35,181 root [pid:17555] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:41:35,182 root [pid:17555] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-24 23:41:35,182 root [pid:17555] [MainThread] [INFO] * mode='llm', llm='LLM.GROQ')                                                  *
+2024-07-24 23:41:35,182 root [pid:17555] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:41:35,188 root [pid:17555] [MainThread] [INFO] ====================
+2024-07-24 23:41:35,188 root [pid:17555] [MainThread] [INFO] = [33m 测试llm [0m =
+2024-07-24 23:41:35,188 root [pid:17555] [MainThread] [INFO] ====================
+2024-07-24 23:41:56,075 openai._base_client [pid:17555] [MainThread] [INFO] Retrying request to /chat/completions in 0.879930 seconds
+2024-07-24 23:42:18,724 openai._base_client [pid:17555] [MainThread] [INFO] Retrying request to /chat/completions in 1.505891 seconds
+2024-07-24 23:43:31,961 root [pid:17906] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:43:31,961 root [pid:17906] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-24 23:43:31,961 root [pid:17906] [MainThread] [INFO] * mode='llm', llm='LLM.GROQ')                                                  *
+2024-07-24 23:43:31,961 root [pid:17906] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:43:31,972 root [pid:17906] [MainThread] [INFO] ====================
+2024-07-24 23:43:31,973 root [pid:17906] [MainThread] [INFO] = [33m 测试llm [0m =
+2024-07-24 23:43:31,973 root [pid:17906] [MainThread] [INFO] ====================
+2024-07-24 23:43:33,458 openai._base_client [pid:17906] [MainThread] [INFO] Retrying request to /chat/completions in 0.759252 seconds
+2024-07-24 23:43:38,916 httpx [pid:17906] [MainThread] [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-24 23:43:44,129 httpx [pid:17906] [MainThread] [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-24 23:44:54,507 httpx [pid:17906] [MainThread] [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-07-24 23:45:55,770 root [pid:18438] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:45:55,771 root [pid:18438] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-24 23:45:55,771 root [pid:18438] [MainThread] [INFO] * mode='graph', llm='LLM.GROQ')                                                *
+2024-07-24 23:45:55,771 root [pid:18438] [MainThread] [INFO] ********************************************************************************
+2024-07-24 23:45:55,778 root [pid:18438] [MainThread] [INFO] ======================
+2024-07-24 23:45:55,778 root [pid:18438] [MainThread] [INFO] = [33m 测试graph [0m =
+2024-07-24 23:45:55,778 root [pid:18438] [MainThread] [INFO] ======================
