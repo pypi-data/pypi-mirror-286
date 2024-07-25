@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bjx-meit1
+Version: 0.1.1
+Summary: A toolkit for medical image analysis, including preprocessing, models, and metrics.
+Home-page: https://github.com/EmekaIwuagwu/bjx_meit1
+Author: Emeka Iwuagwu
+Author-email: e.iwuagwu@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# MEIT Toolkit
+
+MEIT (Medical Image Analysis Toolkit) is a Python library for preprocessing medical images, building machine learning models, and evaluating their performance. The toolkit provides easy-to-use functions for common medical imaging tasks.
+
+## Features
+
+- **Image Preprocessing**: Functions for resizing, normalization, and augmentation.
+- **Model Building**: Predefined models for classification tasks.
+- **Metrics**: Tools for evaluating model performance.
+
+## Installation
+
+```bash
+pip install bjx-meit1
