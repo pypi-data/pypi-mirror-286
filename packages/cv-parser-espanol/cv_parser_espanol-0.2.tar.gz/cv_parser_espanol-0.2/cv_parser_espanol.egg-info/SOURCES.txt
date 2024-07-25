@@ -1,0 +1,6 @@
+setup.py
+cv_parser_espanol.egg-info/PKG-INFO
+cv_parser_espanol.egg-info/SOURCES.txt
+cv_parser_espanol.egg-info/dependency_links.txt
+cv_parser_espanol.egg-info/requires.txt
+cv_parser_espanol.egg-info/top_level.txt
