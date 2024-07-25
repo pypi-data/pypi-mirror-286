@@ -1,0 +1,9 @@
+text_extractor/__init__.py,sha256=t6kTpa0jZ_YbkQEX0D_9mFpgAc59RrHoVtZalfKd_9I,63
+text_extractor/extractor.py,sha256=jj175vYD5npZw4IrW7qRqZj_hxhO_6qiduYbxFNe5bg,1575
+text_extractor/openai.py,sha256=a1YjE54FnloXSogtcLgNNDkXykmoOtpfgXlosJNA9tU,8365
+text_extractor/pdf_utility.py,sha256=iMldTWm2MxhKrJNslakjkFVaTmHoWlCBTZYlGL4nhXM,6387
+text_extractor/vision.py,sha256=vPpmXLepMGy8WmNv0wtaB2c8HaJantvMFB-UsIa5nCw,2525
+text_alchemy-0.4.dist-info/METADATA,sha256=aMUdorfV0bnnReXL1YqlhOfoQ4zd3PWbFseTYfmPNVQ,856
+text_alchemy-0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+text_alchemy-0.4.dist-info/top_level.txt,sha256=x65D0hFmAzla5Jaxwv88fSawfkGoLuKJLY7No6H-nN8,15
+text_alchemy-0.4.dist-info/RECORD,,
