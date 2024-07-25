@@ -1,0 +1,15 @@
+README.md
+setup.py
+astrago/__init__.py
+astrago/dataSender.py
+astrago/tracking.py
+astrago/val.py
+astrago.egg-info/PKG-INFO
+astrago.egg-info/SOURCES.txt
+astrago.egg-info/dependency_links.txt
+astrago.egg-info/not-zip-safe
+astrago.egg-info/requires.txt
+astrago.egg-info/top_level.txt
+astrago/integration/__init__.py
+astrago/integration/keras.py
+astrago/integration/pytorchLightning.py
