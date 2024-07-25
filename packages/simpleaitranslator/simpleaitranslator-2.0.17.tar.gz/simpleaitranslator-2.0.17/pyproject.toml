@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "simpleaitranslator"
+version = "2.0.17"
+description = "A Python library for language detection and translation using OpenAI's GPT-4."
+authors = ["Adam Pawelek <adam.pwk@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.urls]
+documentation = "https://github.com/adam-pawelek/SimpleAITranslator"
+source = "https://github.com/adam-pawelek/SimpleAITranslator"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^1.35.11"
+pytest = "^8.2.2"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
