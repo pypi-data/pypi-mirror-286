@@ -1,0 +1,2 @@
+[console_scripts]
+auto-bot = cli.cli:main
