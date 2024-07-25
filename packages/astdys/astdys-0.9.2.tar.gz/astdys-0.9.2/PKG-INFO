@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: astdys
+Version: 0.9.2
+Summary: AstDyS wrapper in python
+License: MIT
+Author: Evgeny Smirnov
+Author-email: smirik@gmail.com
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=2.0.1,<3.0.0)
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Requires-Dist: pyarrow (>=17.0.0,<18.0.0)
+Description-Content-Type: text/markdown
+
+This is a small wrapper to [AstDyS catalogue](https://newton.spacedys.com/astdys2/index.php?pc=0) of the asteroids in the Solar system.
+
+## How to use it
+
+### Installation
+
+```bash
+pip install astdys
+```
+
+### Usage
+
+```python
+import astdys
+
+elements = astdys.search(1)
+print(elements)
+```
+
+`elements` contains a dictionary of Keplerian elements of an asteroid.
+
+Also, you can get a list of objects by the semi-major axis:
+
+```python
+import astdys
+
+objects = astdys.search_by_axis(2.70, sigma=0.2)
+print(objects)
+```
+
+The method will return a dataframe containing all records found. `sigma` is optional and represent the variation (from `axis-sigma` to `axis+sigma`). The default value of `sigma=0.1`.
+
+## License
+
+MIT
+
