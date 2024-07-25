@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dragonfly-logging-config
+Version: 1.0.0
+Summary: Shared logging configuration for Dragonfly codebases
+Author-email: Vipyr Security <support@vipyrsec.com>
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: structlog>=24.1.0
+Requires-Dist: fastapi>=0.110.0
+Requires-Dist: asgi-correlation-id>=4.3.1
+
+# dragonfly-logging-config
+
+Shared logging configuration for dragonfly
