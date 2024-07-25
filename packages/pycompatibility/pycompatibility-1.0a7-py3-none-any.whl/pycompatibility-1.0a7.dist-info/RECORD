@@ -1,0 +1,10 @@
+pycompatibility/__init__.py,sha256=75De_R8ppsh4ht1Nmj43-HCGrvpisiqaett3fDoUk1U,227
+pycompatibility/__main__.py,sha256=V260XfkGCjS-zg2EE5NvK13idqfaUBq_tEEPUsE4FyU,11873
+pycompatibility/cli.py,sha256=kGEkG8WfbH-6ytS57_wV7y1zuzBvBsi9yC5ALUdYnE4,403
+pycompatibility/version.py,sha256=FpmcNTE2Bf2w2kBwQQkLp5w29fBZqtCWnAgSTB5ydDA,73
+pycompatibility-1.0a7.dist-info/LICENSE,sha256=zLegExvrwvQoB6QEi2GALHR996QmusoCCxiCSKJZ8mI,1068
+pycompatibility-1.0a7.dist-info/METADATA,sha256=UvCl7CvuUDNaEF6YNU9uq5Vn5eKtaetofcivCPMG4s4,6497
+pycompatibility-1.0a7.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pycompatibility-1.0a7.dist-info/entry_points.txt,sha256=TNuA0a51pKo28mSiX7QEVUD3rjf_vVedlTI0vhi-9BA,61
+pycompatibility-1.0a7.dist-info/top_level.txt,sha256=icwQeCpK4YKZU-L0EAaEuoOSGmW8Ln4tKr45VoLG4A0,16
+pycompatibility-1.0a7.dist-info/RECORD,,
