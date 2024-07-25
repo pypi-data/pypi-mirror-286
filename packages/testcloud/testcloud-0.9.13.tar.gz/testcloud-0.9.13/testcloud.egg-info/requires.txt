@@ -1,0 +1,7 @@
+Jinja2
+libvirt-python
+requests
+packaging
+
+[image_resolve_caching]
+requests_cache>=1.2
