@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: bregman-learning
+Version: 0.0.0
+Summary: A pytorch extension providing the Bregman optimizers
+Home-page: https://github.com/TJHeeringa/bregman-learning
+Author: Tjeerd Jan Heeringa
+Author-email: t.j.heeringa@utwente.nl
+License: BSD-3-Clause
+Project-URL: Documentation, https://bregman-learning.readthedocs.io/
+Project-URL: Changelog, https://bregman-learning.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/TJHeeringa/bregman-learning/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: torch>=1.12.0
+Requires-Dist: numpy==1.26; platform_system == "Windows"
+Requires-Dist: numpy>=1.22.4
+Requires-Dist: igraph
+Requires-Dist: torch-simplify
+
+========
+Overview
+========
+
+
+
+A pytorch extension providing Bregman-based optimizers
+
+* Free software: BSD 3-Clause License
+
+Installation
+============
+
+The package can be install from PyPI using::
+
+    pip install bregman-learning
+
+
+Usage
+============
+
+The library provides 2 Bregman-based optimizers, several regularizers for these optimizers, and functions for pre- and postprocessing the networks.
+
+The Bregman-based optimizers provides are LinBreg and AdaBreg. Their usage is similar to the usage of Adam and SGD, their non-Bregman counterparts. Instead of::
+
+    from torch.optim import Adam
+
+    ...
+
+    optimizer = Adam(model.parameters(), lr=learning_rate)
+
+the optimizers are created using::
+
+    from bregman import AdaBreg, L1
+
+    ...
+
+    optimizer = AdaBreg(
+        model.parameters(),
+        reg=L1(rc=regularization_constant),
+        lr=learning_rate
+    )
+
+where the L1 regularizer can be interchanged with any regularizer in the library.
+
+For the best results when using sparsity-promoting regularizers, the networks have to pre- and postprocessed accordingly. For the L12 regularizer, this can be done using::
+
+    from bregman import sparsify
+
+    ...
+
+    sparsify(model, density_level=0.2)
+
+and::
+
+   from bregman import simplify
+
+   ...
+
+   pruned_model = simplify(model)
+
+
+Citing
+============
+If you use this code, please use the citation information in the CITATION.cff file or click the `cite this repository` button in the sitebar.
+
+
+Changelog
+=========
+
+0.0.0 (2022-06-17)
+------------------
+
+* First release on PyPI.
