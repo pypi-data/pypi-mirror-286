@@ -1,0 +1,2 @@
+[console_scripts]
+knorket-tunnel = knorket_tunnel.main:main
