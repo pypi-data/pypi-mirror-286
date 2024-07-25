@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: spasm-by-sporniket
+Version: 0.0.1
+Summary: Sporniket's toolbox for assembly language
+Author-Email: David SPORN <sporniket.studio@gmail.com>
+License: GPL-3.0-or-later
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# spasm -- SPorniket's tools for ASseMbly
