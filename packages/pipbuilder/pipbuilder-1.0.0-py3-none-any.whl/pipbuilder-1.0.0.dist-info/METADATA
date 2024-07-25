@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pipbuilder
+Version: 1.0.0
+Summary: Python PIP Package Builder
+Home-page: https://github.com/YELANDAOKONG/pipbuilder
+Author: YELANDAOKONG
+Author-email: YELANDAOKONG@yldk.xyz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PipBuilder
+
+Fast Pip Package Structure Generator
+
+---
+
+## About
+
+本项目是一个Python Pip包结构生成器，可以快速生成一个Python Pip包结构以便开发。
+
+

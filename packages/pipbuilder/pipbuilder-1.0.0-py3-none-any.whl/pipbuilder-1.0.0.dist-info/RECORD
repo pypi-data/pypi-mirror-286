@@ -1,0 +1,8 @@
+pipbuilder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipbuilder/__main__.py,sha256=na0PGmwqlqH6Hvy5C5f53-3I0GGSr3R-LdJmefdrmWA,2023
+pipbuilder/pipbuilder.py,sha256=RSy6LsBuxTLaJTe9itgCUUWoUSLtGSkoxUT02ylC0fs,2025
+pipbuilder-1.0.0.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+pipbuilder-1.0.0.dist-info/METADATA,sha256=woGm9Y92Ou_SPbNCqm8UQdHghYObLEgG-mHwP-1myG0,635
+pipbuilder-1.0.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pipbuilder-1.0.0.dist-info/top_level.txt,sha256=3MJgLPbFE9xy_0aya1fl9aUZZKYRz6CvXPeyPaxqdDU,11
+pipbuilder-1.0.0.dist-info/RECORD,,
