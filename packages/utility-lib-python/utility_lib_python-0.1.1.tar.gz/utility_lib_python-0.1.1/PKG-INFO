@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: utility-lib-python
+Version: 0.1.1
+Summary: A collection of utility scripts for working with files, Excel, logging, and database connections.
+Home-page: https://github.com/hirushiharan/python-utility-functions.git
+Author: Hirushiharan
+Author-email: hirushiharant@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xlsxwriter
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: python-dotenv
+Requires-Dist: mysql-connector-python
+
+Welcome to the Python Utils repository! This project contains a collection of utility scripts written in Python for various purposes. Each script focuses on specific functionalities that can be reused across different projects.
+    Check GitHub for more details.
