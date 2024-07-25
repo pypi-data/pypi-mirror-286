@@ -1,0 +1,129 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "ds_validator"
+version = "0.1.0"
+description = "Pydantic compatible validators for data science objects."
+authors = ["Daniel Schelkoph"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/dschelkoph/ds_validator"
+keywords = ["pydantic", "torch", "numpy", "pandas", "validation", "types"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Framework :: Pydantic",
+]
+
+[[tool.poetry.source]]
+name = "torch_x86_64_cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.13"
+pydantic = "^2.5.2"
+
+[tool.poetry.group.dev.dependencies]
+rich = "^13.7.0"
+pandas = "^2.1.4"
+pyarrow = "^17.0.0"
+pytest = "*"
+pytest-cov = "*"
+pytest-randomly = "*"
+pytest-xdist = "*"
+# don't need the gpu version for testing validation
+torch = [
+    { version = "^2.3.1", source = "torch_x86_64_cpu", markers = "platform_machine == 'x86_64'" },
+    { version = "^2.3.1", source = "pypi", markers = "platform_machine != 'x86_64'" },
+]
+
+[tool.coverage.run]
+branch = true
+data_file = "coverage/.coverage"
+# must comment `dynamic_context` when using xdist
+dynamic_context = "test_function"
+
+[tool.coverage.report]
+skip_covered = true
+skip_empty = true
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "pass($|\\s)",
+    "\\.{3}$",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
+
+[tool.coverage.html]
+show_contexts = true
+directory = "coverage/htmlcov"
+
+[tool.coverage.xml]
+output = "coverage/coverage.xml"
+
+[tool.pytest.ini_options]
+testpaths = ["tests/**"]
+required_plugins = ["pytest-randomly", "pytest-cov"]
+# add `-n auto` to use xdist; must remove `dynamic_context` from coverage
+addopts = "--cov=src --cov-report=term --cov-report=html"
+
+[tool.pyright]
+typeCheckingMode = "basic"
+
+[tool.ruff]
+src = ["src", "tests"]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "F",   # Pyflakes
+    "E",   # pycodestyle
+    "C",   # mccabe
+    "I",   # isort
+    "N",   # pep8-naming
+    "D",   # pydocstyle
+    "UP",  # pyupgrade
+    "S",   # flake8-bandit
+    "B",   # flake8-bugbear
+    "A",   # flake8-builtins
+    "C4",  # flake8-comprehensions
+    "G",   # flake8-logging-format
+    "PL",  # pylint
+    "PT",  # flake8-pytest-style
+    "RET", # flake8-return
+    "SIM", # flake8-simplify
+    "ARG", # flake8-unused-arguments
+    "TRY", # tryceratops
+    "RUF", # ruff
+]
+
+# ignore due to formatter conflicts: https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
+ignore = [
+    "W191",
+    "E111",
+    "E114",
+    "E117",
+    "D206",
+    "D300",
+    "Q000",
+    "Q001",
+    "Q003",
+    "COM812",
+    "COM819",
+    "ISC001",
+    "ISC002",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "D103"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+docstring-code-format = true
