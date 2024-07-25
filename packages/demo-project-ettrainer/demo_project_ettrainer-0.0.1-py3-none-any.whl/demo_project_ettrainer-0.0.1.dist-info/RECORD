@@ -1,0 +1,9 @@
+demo_project_ettrainer/__init__.py,sha256=ITuXuOtoHcE-LfkJwseEAY5UqtxojyJ25i_r43_ay1M,95
+demo_project_ettrainer/modul1.py,sha256=9NiLaxH_QdPjA5BFYnYvc6jk_ig2NUIyOQQNXcp4by0,119
+demo_project_ettrainer/modul2.py,sha256=-evlBJGv3wbXaRbJRVt_hxVGpDz8i2J8kKjW5WkGVQY,91
+demo_project_ettrainer/unterpackage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demo_project_ettrainer/unterpackage/modul3.py,sha256=0iYcbpI9ULFQjJ2Gl2t-BxaTuF4oimimdTTAlYQjl2Y,56
+demo_project_ettrainer-0.0.1.dist-info/METADATA,sha256=T95Gf5Bj3_7oG6sSA3gS8CgFufaOLk8bCnboehizaAQ,681
+demo_project_ettrainer-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+demo_project_ettrainer-0.0.1.dist-info/top_level.txt,sha256=ghgfFjzYnwV6m9SVldDZ6SSPE4X7ZwTPkbMjVtjx-Ag,23
+demo_project_ettrainer-0.0.1.dist-info/RECORD,,
