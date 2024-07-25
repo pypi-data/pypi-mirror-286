@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+vatspy_data/__init__.py
+vatspy_data/types.py
+vatspy_data.egg-info/PKG-INFO
+vatspy_data.egg-info/SOURCES.txt
+vatspy_data.egg-info/dependency_links.txt
+vatspy_data.egg-info/requires.txt
+vatspy_data.egg-info/top_level.txt
