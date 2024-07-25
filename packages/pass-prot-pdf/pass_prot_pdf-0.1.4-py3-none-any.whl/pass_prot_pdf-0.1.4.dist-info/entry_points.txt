@@ -1,0 +1,3 @@
+[console_scripts]
+run_pass_prot_pdf=pass_prot_pdf.start:main
+
