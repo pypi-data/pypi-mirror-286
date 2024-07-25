@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: spider_cloud_cos
+Version: 5.1.9.30
+Summary: 文件云存储连接
+Home-page: https://gitlab.zhuanspirit.com/xiefengcheng/spider_cloud_cos
+Author: xfc
+Requires-Python: >=3.7

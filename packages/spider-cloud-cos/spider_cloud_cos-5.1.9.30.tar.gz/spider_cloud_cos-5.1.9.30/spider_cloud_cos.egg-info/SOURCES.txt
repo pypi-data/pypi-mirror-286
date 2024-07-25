@@ -1,0 +1,7 @@
+README.md
+setup.py
+spider_cloud_cos.egg-info/PKG-INFO
+spider_cloud_cos.egg-info/SOURCES.txt
+spider_cloud_cos.egg-info/dependency_links.txt
+spider_cloud_cos.egg-info/requires.txt
+spider_cloud_cos.egg-info/top_level.txt
