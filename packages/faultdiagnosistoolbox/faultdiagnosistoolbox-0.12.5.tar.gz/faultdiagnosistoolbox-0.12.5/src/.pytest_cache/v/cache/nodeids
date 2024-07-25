@@ -1,0 +1,22 @@
+[
+  "tests/basic_test.py::test_isolabilityanalysis",
+  "tests/basic_test.py::test_isolabilityanalysis_new_sensors",
+  "tests/basic_test.py::test_mso_on_empty",
+  "tests/basic_test.py::test_pantelides_algorithm",
+  "tests/basic_test.py::test_sensorplacement",
+  "tests/electric_motor_test.py::test_derivative",
+  "tests/electric_motor_test.py::test_integral",
+  "tests/electric_motor_test.py::test_mixed",
+  "tests/electric_motor_test.py::test_msos",
+  "tests/electric_motor_test.py::test_psos",
+  "tests/sensplace_test.py::test_model_lumping",
+  "tests/sensplace_test.py::test_sensplace",
+  "tests/sensplace_test.py::test_sensplace_faults",
+  "tests/test_basic.py::test_import",
+  "tests/test_basic.py::test_model",
+  "tests/watertank_test.py::test_codegen",
+  "tests/watertank_test.py::test_define_model",
+  "tests/watertank_test.py::test_fsm",
+  "tests/watertank_test.py::test_isolability_analysis",
+  "tests/watertank_test.py::test_mso"
+]

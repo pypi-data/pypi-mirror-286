@@ -1,0 +1,29 @@
+[build-system]
+requires = ["scikit-build-core", "nanobind", "numpy"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "faultdiagnosistoolbox"
+version = "0.12.5"
+authors = [
+  { name="Erik Frisk", email="erik.frisk@liu.se" },
+]
+dependencies=['sympy', 'numpy', 'scipy', 'matplotlib', 'scikit-learn']
+description = "A toolbox for Model Based Fault Diagnosis of dynamic systems based on structural analysis"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering"
+]
+
+[tool.scikit-build]
+cmake.build-type = "Release"
+
+[project.urls]
+Homepage = "https://faultdiagnosistoolbox.github.io"
+Documentation = "https://faultdiagnosistoolbox.readthedocs.io/"
+Issues = "https://github.com/faultdiagnosistoolbox/pyfaultdiagnosistoolbox/issues"
