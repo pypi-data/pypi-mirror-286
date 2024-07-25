@@ -1,0 +1,4 @@
+opentelemetry-api~=1.26
+opentelemetry-exporter-otlp~=1.26
+opentelemetry-instrumentation~=0.47b0
+opentelemetry-sdk~=1.26
