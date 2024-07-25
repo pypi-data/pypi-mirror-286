@@ -1,0 +1,10 @@
+cacheia_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cacheia_api/__main__.py,sha256=WB8a-_JBeKcYtG7CrI1AU1W6ZtCditnwBhZ9we-T8EM,678
+cacheia_api/settings.py,sha256=dPxHR2uATzpVMt9W0hTMCO4Yr6qNY14emN1E9drMgvk,663
+cacheia_api/app/__init__.py,sha256=w0EffYiOsS0spO_BXyRBA9c1If3o27cF5STmXifMODI,259
+cacheia_api/app/routes.py,sha256=yZCV8TSdp-Z2mH_gThypK7ZDusfxqC9fghUpDTy2nQA,3234
+cacheia_api/app/schemas.py,sha256=QFXmmiqZrYBtle_N1idaP0SZ9DJv7VCN9i2zB_Ftc5g,71
+cacheia_api-1.0.0.post3.dist-info/METADATA,sha256=TwDPXmPWKOnTyYAl9VbbAeS17m5kbEof6Hd1-OplBz4,2457
+cacheia_api-1.0.0.post3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+cacheia_api-1.0.0.post3.dist-info/top_level.txt,sha256=0nrqzgIxsjuSlRn9XGLgWo26lih_Gysur9wk5H-eKHQ,12
+cacheia_api-1.0.0.post3.dist-info/RECORD,,
