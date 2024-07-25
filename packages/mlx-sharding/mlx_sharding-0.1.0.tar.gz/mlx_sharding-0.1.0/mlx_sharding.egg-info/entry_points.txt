@@ -1,0 +1,3 @@
+[console_scripts]
+mlx-sharding-api = shard.openai_api:main
+mlx-sharding-server = shard.main:main
