@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: text_function_by_example
+Version: 0.2.0
+Summary: Simple python script to generate text-transformation code from input/output examples (using an LLM).
+Author-email: Jacob Williams <jacob@brokensandals.net>
+License-File: LICENSE
+Requires-Dist: anthropic
+Requires-Dist: dataclasses-json
+Requires-Dist: Jinja2
+
