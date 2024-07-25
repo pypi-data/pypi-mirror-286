@@ -1,0 +1,2 @@
+[console_scripts]
+save_remote_nginx_logs = nginx_logs_parser_and_process.cli:process_remote_nginx_logs
