@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/qdcrumbs/__init__.py
+src/qdcrumbs/breadcrumb.py
+src/qdcrumbs/qdcrumb.py
+src/qdcrumbs.egg-info/PKG-INFO
+src/qdcrumbs.egg-info/SOURCES.txt
+src/qdcrumbs.egg-info/dependency_links.txt
+src/qdcrumbs.egg-info/requires.txt
+src/qdcrumbs.egg-info/top_level.txt
