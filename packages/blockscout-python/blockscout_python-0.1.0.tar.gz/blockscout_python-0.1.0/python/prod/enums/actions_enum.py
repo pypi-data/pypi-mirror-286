@@ -1,0 +1,31 @@
+from dataclasses import dataclass
+
+
+@dataclass(frozen=True)
+class ActionsEnum:
+    BALANCE_MULTI: str = "balancemulti"
+    BALANCE: str = "balance"
+    PENDING_TX_LIST: str = "pendingtxlist"
+    TX_LIST: str = "txlist"
+    TOKEN_TX: str = "tokentx"
+    TOKEN_NFT_TX: str = "tokennfttx"
+    TOKEN_BALANCE: str = "tokenbalance"
+    TOKEN_LIST: str = "tokenlist"   
+    LIST_ACCOUNTS: str = "listaccounts" 
+    ETH_BLOCK_NUMBER: str = "eth_block_number"
+    TOKEN_SUPPLY: str = "tokensupply"
+    ETH_SUPPLY: str = "ethsupply"
+    COIN_SUPPLY: str = "coinsupply" 
+    ETH_PRICE: str = "ethprice"   
+    COIN_PRICE: str = "coinprice" 
+    GET_TOKEN: str = "gettoken"
+    GET_TOKEN_HOLDERS: str = "gettokenholders"
+    GET_TX_INFO: str = "gettxinfo"   
+    GET_TX_RECEIPT_STATUS: str = "gettxreceiptstatus"
+    GET_STATUS: str = "getstatus"
+    LIST_CONTRACTS: str = "listcontracts"
+    GET_SOURCE_CODE: str = "getsourcecode"
+    GET_CONTRACT_CREATION: str = "getcontractcreation"
+    GET_BLOCK_REWARD: str = "getblockreward"
+    GET_BLOCK_COUNTDOWN: str = "getblockcountdown"
+    GET_ABI: str = "getabi"
