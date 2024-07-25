@@ -1,0 +1,7 @@
+setup.py
+Vector/__init__.py
+Vector/vector.py
+kitvector.egg-info/PKG-INFO
+kitvector.egg-info/SOURCES.txt
+kitvector.egg-info/dependency_links.txt
+kitvector.egg-info/top_level.txt
