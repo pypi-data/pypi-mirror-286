@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: test_build_pypi
+Version: 0.0.1
+Summary: 测试 build pypi
+Home-page: https://github.com/hiyoung123
+Author: hiyoung
+Author-email: hiyoungliu@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+hiyoung
