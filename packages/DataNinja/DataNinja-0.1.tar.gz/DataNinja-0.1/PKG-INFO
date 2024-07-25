@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: DataNinja
+Version: 0.1
+Summary: A comprehensive data analysis and visualization toolkit.
+Home-page: https://github.com/ShelbyTO/DataNinja
+Author: Nicolas Prieur
+Author-email: pu-zle@live.fr
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: missingno
+Requires-Dist: ydata-profiling
