@@ -1,0 +1,160 @@
+@font-face {
+  font-family: PrimeIcons;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/vendor/primeicons/primeicons.eot');
+  src: url('../fonts/vendor/primeicons/primeicons.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/vendor/primeicons/primeicons.woff2') format('woff2'),
+       url('../fonts/vendor/primeicons/primeicons.woff') format('woff'),
+       url('../fonts/vendor/primeicons/primeicons.ttf') format('truetype'),
+       url('../fonts/vendor/primeicons/primeicons.svg#primeicons') format('svg');
+}
+      
+/* fix icons not showing */
+.p-link svg:not(:root){
+    overflow: visible;
+}
+
+.p-tree {
+  background: var(--w-color-surface-page);
+}
+
+.p-treenode-label {
+  color: var(--w-color-text-context);
+}
+
+.p-contextmenu, .p-submenu-list {
+  background: var(--w-color-surface-menus);
+  padding: 0;
+}
+
+.p-contextmenu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.p-contextmenu ul li a {
+  color: var(--w-color-text-context)
+}
+
+.p-contextmenu ul li:first-child a {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.p-contextmenu ul li:last-child a {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.p-dialog .p-dialog-header, .p-dialog .p-dialog-content, .p-dialog .p-dialog-footer {
+  background: var(--w-color-surface-page);
+  color: var(--w-color-text-context);
+}
+
+.p-menuitem-link svg {
+  scale: 1.5;
+  color: var(--w-color-text-label-menus-default);
+}
+
+.p-menuitem-text, .pi {
+  color: var(--w-color-text-label-menus-default);
+}
+
+.p-contextmenu .p-menuitem.p-menuitem-active > .p-menuitem-link {
+  background-color: var(--w-color-surface-menu-item-active);
+}
+
+.p-dialog .p-dialog-content {
+  padding-bottom: .5rem;
+}
+
+.p-dialog-content form {
+  padding: .5rem 0;
+}
+
+.p-dialog-content form label {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.p-dialog-content form > div {
+  display: flex;
+  align-items: center;
+}
+
+.p-dialog-content form .p-buttonset {
+  margin-top: .8rem;
+  align-self: flex-start !important;
+}
+
+.p-dialog-content form .p-inputtext {
+  flex-grow: 1;
+  background-color: var(--w-color-surface-field);
+  border: 1px solid var(--w-color-border-field-default);
+  color: var(--w-color-text-context);
+}
+
+.p-dialog-content form .p-inputtext.p-autocomplete-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.p-button[type="submit"] {
+  padding: .6rem 1rem;
+  margin-top: 1.5rem;
+}
+
+.p-dialog-content form .p-autocomplete .p-autocomplete-dropdown svg {
+  scale: 2.5;
+}
+
+.p-button, .p-selectbutton .p-button.p-highlight {
+  background-color: var(--w-color-surface-button-default);
+  color: var(--w-color-text-button);
+}
+
+.p-selectbutton .p-button {
+  background: var(--w-color-surface-menus);
+}
+
+.p-autocomplete-panel {
+  background: var(--w-color-surface-menus);
+  }
+
+.p-autocomplete-panel .p-autocomplete-items {
+  padding: 0;
+  margin: 0;
+}
+
+.p-autocomplete-panel .p-autocomplete-items li {
+  color: var(--w-color-text-label-menus-default);
+}
+
+.p-autocomplete-panel .p-autocomplete-items li:hover {
+  background-color: var(--w-color-surface-menu-item-active);
+}
+
+.p-confirm-dialog .p-confirm-dialog-icon {
+  display: none;
+  }
+
+.p-confirm-dialog .p-confirm-dialog-message {
+  margin-left: 0;
+}
+
+.p-confirm-dialog .p-button {
+  padding: .6rem 1rem;
+  margin-top: .8rem;
+}
+
+.p-confirm-dialog .p-button:first-of-type {
+  margin-right: .5rem;
+}
+
+textarea {
+  margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: .8rem;
+}

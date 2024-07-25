@@ -1,0 +1,5 @@
+{% load egowagtailmenus_tags %}
+<li>
+    {{ item.title }}
+    {% render_item_children item %}
+</li>

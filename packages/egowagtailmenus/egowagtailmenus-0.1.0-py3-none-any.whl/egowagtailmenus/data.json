@@ -1,0 +1,208 @@
+[
+    {
+        "model": "egowagtailmenus.menu",
+        "pk": 1,
+        "fields": {
+            "translation_key": "afa67344-8799-4562-9e76-7f14feddb7d8",
+            "locale": 1,
+            "name": "Menú Principal",
+            "slug": "menu_principal",
+            "root": 3
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 3,
+        "fields": {
+            "path": "0001",
+            "depth": 1,
+            "numchild": 2,
+            "item_type": "root",
+            "title": null,
+            "slug": "-2",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 4,
+        "fields": {
+            "path": "00010001",
+            "depth": 2,
+            "numchild": 2,
+            "item_type": "section",
+            "title": "Left",
+            "slug": "left",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 5,
+        "fields": {
+            "path": "00010002",
+            "depth": 2,
+            "numchild": 3,
+            "item_type": "section",
+            "title": "Right",
+            "slug": "right",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 7,
+        "fields": {
+            "path": "000100010002",
+            "depth": 3,
+            "numchild": 2,
+            "item_type": "text",
+            "title": "Personas",
+            "slug": "personas",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 8,
+        "fields": {
+            "path": "0001000100020001",
+            "depth": 4,
+            "numchild": 0,
+            "item_type": "internal_link",
+            "title": "Digital",
+            "slug": "digital",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 9,
+        "fields": {
+            "path": "0001000100020002",
+            "depth": 4,
+            "numchild": 0,
+            "item_type": "internal_link",
+            "title": "Exclusivo",
+            "slug": "exclusivo",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 10,
+        "fields": {
+            "path": "000100020001",
+            "depth": 3,
+            "numchild": 4,
+            "item_type": "text",
+            "title": "Nosotros",
+            "slug": "nosotros",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 11,
+        "fields": {
+            "path": "000100020002",
+            "depth": 3,
+            "numchild": 0,
+            "item_type": "text",
+            "title": "Mercado",
+            "slug": "mercado",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 12,
+        "fields": {
+            "path": "000100020003",
+            "depth": 3,
+            "numchild": 0,
+            "item_type": "external_link",
+            "title": "Login",
+            "slug": "login",
+            "page": null,
+            "url": "https://max.capital/login",
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 13,
+        "fields": {
+            "path": "0001000200010001",
+            "depth": 4,
+            "numchild": 0,
+            "item_type": "internal_link",
+            "title": "Acerca de",
+            "slug": "acerca_de",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 14,
+        "fields": {
+            "path": "0001000200010002",
+            "depth": 4,
+            "numchild": 0,
+            "item_type": "internal_link",
+            "title": "Cultura",
+            "slug": "cultura",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 15,
+        "fields": {
+            "path": "0001000200010003",
+            "depth": 4,
+            "numchild": 0,
+            "item_type": "internal_link",
+            "title": "Trabajá con nosotros",
+            "slug": "trabaja_con_nosotros",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    },
+    {
+        "model": "egowagtailmenus.menuitem",
+        "pk": 16,
+        "fields": {
+            "path": "0001000200010004",
+            "depth": 4,
+            "numchild": 0,
+            "item_type": "internal_link",
+            "title": "Novedades",
+            "slug": "novedades",
+            "page": null,
+            "url": null,
+            "target": "_self"
+        }
+    }
+]
