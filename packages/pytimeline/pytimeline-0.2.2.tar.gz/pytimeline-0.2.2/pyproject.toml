@@ -1,0 +1,95 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "pytimeline/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pytimeline"]
+
+[project]
+name = "pytimeline"
+readme = "README.md"
+description = "A library for creating clean SVG timelines from JSON."
+authors = [{name = "Felix Soubelet", email = "felix.soubelet@cern.ch"},]
+license = "MIT"
+dynamic = ["version"]
+requires-python = ">=3.9"
+keywords = ["Timeline", "SVG", "Generator"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "svgwrite >= 1.4",
+    "pendulum >= 2.1",
+    "loguru >= 0.5.3",
+    "click >= 8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "isort >= 5.10",
+    "black >= 24.0",
+    "ruff >= 0.5",
+]
+
+[project.urls]
+homepage = "https://github.com/fsoubelet/Timeline"
+repository = "https://github.com/fsoubelet/Timeline"
+
+# ----- Dev Tools Configuration ----- #
+
+[tool.isort]
+atomic = true
+ensure_newline_before_comments = true
+filter_files = true
+force_grid_wrap = 0
+force_single_line = false
+include_trailing_comma = true
+known_first_party = "pyhdtoolkit"
+known_third_party = "pytest"
+line_length = 110
+lines_between_types = 1
+multi_line_output = 3
+use_parentheses = true
+profile = "black"
+
+[tool.black]
+line-length = 110
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/.*/setup.py
+  | acc-models-lhc
+)/
+'''
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+ignore = ["E501"]
