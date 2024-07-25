@@ -1,0 +1,14 @@
+claude_here/__coconut__.py,sha256=Zo7G6XO5TCiwZsE3p1ead5fUNKyi8NA24K-Gqk3HT4A,132335
+claude_here/__init__.py,sha256=OrEYhCw8ZKrAkx1TA6zvbI-E0stCA_QMhmuOAG1qafA,6814
+claude_here/debugger.py,sha256=6qHYlfWDR6TEi3cCQDj7LphOZUeFK2hd1MI28m1dVpc,15062
+claude_here/launcher.py,sha256=NM68McWEug-CQ4aOVHUA_8KjxfeqpKhJTZPUrajXA4c,7795
+claude_here/main.py,sha256=K6TeF02TPdpreTAXIgfabFEijzyIiEvW_cgnYCv4gcE,7345
+claude_here/prompter.py,sha256=aqSwdNe0cbCxSMHoRqHmuSMSwytQM5_VimMPigTPijg,64314
+claude_here/tests.py,sha256=PnoSqv-NUapbLrPxJ5nkoh7Pvir0w9NG3oi97xSUS2s,6972
+claude_here/util.py,sha256=zyqR7d33dDYJh18ckEXL-HCN8k32MmdS5GaQJAOgueg,10238
+claude_here/test_files/fib_test.py,sha256=cKONZ-2nXpJovPz-O4G0D9kuhqepgSaHcmDdZ5Aq8XI,223
+claude_here-0.2.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+claude_here-0.2.0.dist-info/METADATA,sha256=sccc8q5WmWLBh7dQZwQtQwA9k7WTL51FKH5IxcJ5bZU,2712
+claude_here-0.2.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+claude_here-0.2.0.dist-info/top_level.txt,sha256=hZjrnxs__fOIwou5iIxOc1tjh4vqOqYYb5Tb1Am1XaI,12
+claude_here-0.2.0.dist-info/RECORD,,
