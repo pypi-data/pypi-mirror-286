@@ -1,0 +1,9 @@
+art
+chardet<4.0,>=3.0.2
+click
+halo
+jmespath
+pkginfo<1.11
+python-dotenv
+requests
+urllib3<2.0,>=1.25.8
