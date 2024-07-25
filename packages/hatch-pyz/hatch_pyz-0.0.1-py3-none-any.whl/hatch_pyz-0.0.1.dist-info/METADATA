@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: hatch-pyz
+Version: 0.0.1
+Summary: Hatch plugin for building python zip applications
+Project-URL: Homepage, https://github.com/djcopley/hatch-pyz
+Project-URL: Repository, https://github.com/djcopley/hatch-pyz.git
+Project-URL: Issues, https://github.com/djcopley/hatch-pyz/issues
+Author-email: Daniel Copley <djcopley@proton.me>
+License-File: LICENSE
+Keywords: hatch,plugin,pyz
+Classifier: Framework :: Hatch
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: hatchling
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'

@@ -1,0 +1,10 @@
+hatch_pyz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hatch_pyz/config.py,sha256=pBmNjVXBFuTquPgUEuSfoRLs9cJV7Sm1PEyKGVbqlfc,2967
+hatch_pyz/hooks.py,sha256=Rz3lQ17IVAAUtaRmbmqf1PdWiTRCMMSoE5Pq9ZD0gVE,152
+hatch_pyz/plugin.py,sha256=r4hsaOrHoi5npFZFT1c-wxopIq5tpBGhZZ2Fcnt0Y5M,4685
+hatch_pyz/utils.py,sha256=gMsrL5MF-IRJMck7_R3A1Sgg4rptveXQC5G1iOCb9Ys,543
+hatch_pyz-0.0.1.dist-info/METADATA,sha256=xfEennvWzBhhiOqPu9fwv8D4N9yETVsrePULqmklR1A,837
+hatch_pyz-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+hatch_pyz-0.0.1.dist-info/entry_points.txt,sha256=m9aNoTdWghz0oBeKZctN4Jfl0Kzrr0iMYpnInkQlNiw,30
+hatch_pyz-0.0.1.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+hatch_pyz-0.0.1.dist-info/RECORD,,
