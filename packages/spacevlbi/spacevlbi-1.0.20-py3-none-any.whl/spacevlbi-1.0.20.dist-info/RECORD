@@ -1,0 +1,13 @@
+spacevlbi/Attitude.py,sha256=l-zrqvOiPO2RlfWU764rSTqq_KIRU16dGIMWvUpyC58,9027
+spacevlbi/Constraints.py,sha256=d3Lpz24ImxybEBU7Kt8NXal5edajQmxyEhW7L4Bg08Q,20094
+spacevlbi/Figures.py,sha256=97CXEf6GgxfoIda2nFLmLXvEIQpXSmiTAWlcVHJrWFo,32276
+spacevlbi/Observation.py,sha256=ZI20UkaJXzregO9lVRunjbxV4L8mJA-QxNniBlk-olU,17915
+spacevlbi/Optimisation.py,sha256=ZJxReKzqRLMpd00LErN7jiEDKRzPLreMfOrhSYc8mLE,7388
+spacevlbi/Orbit.py,sha256=POLNBPoc5JT1NI5FKJi0-mhZkra-UIY1XnSpmOmHiNQ,8388
+spacevlbi/Station.py,sha256=2Y4waoVTIpZDbornuQTWrRRhNry49awAQbHqCxw0Q3o,19308
+spacevlbi/TimeLoop.py,sha256=9ah_yb1-Q1SXI9cNP1nGSigmqPqanc_qsILPm7n6gPI,5960
+spacevlbi/__init__.py,sha256=u9FTm6-unskmyIPqna4tcfRSfu1t7sHxSpgsu9d484w,357
+spacevlbi-1.0.20.dist-info/METADATA,sha256=woIDxu8WIVI1di-q6SJCl-CW9czDTnttJ-CL9G0ob0I,43334
+spacevlbi-1.0.20.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+spacevlbi-1.0.20.dist-info/licenses/LICENSE,sha256=LoV48WtuomVBIWbotLHaBF_MEfKNsD1mSQhBASSi8B4,35801
+spacevlbi-1.0.20.dist-info/RECORD,,
