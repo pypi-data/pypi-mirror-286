@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+OutlineMapper/__init__.py
+OutlineMapper/process_image.py
+OutlineMapper.egg-info/PKG-INFO
+OutlineMapper.egg-info/SOURCES.txt
+OutlineMapper.egg-info/dependency_links.txt
+OutlineMapper.egg-info/requires.txt
+OutlineMapper.egg-info/top_level.txt
