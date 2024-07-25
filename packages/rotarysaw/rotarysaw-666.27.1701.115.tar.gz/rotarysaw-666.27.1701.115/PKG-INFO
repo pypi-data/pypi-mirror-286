@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: rotarysaw
+Version: 666.27.1701.115
+Summary: Rotary Saw
+Author: Kuu Tirronen
+Author-email: <kuu@uraanikaivos.fi>
+Keywords: python,turrican,rotary saw,tirronen,rotarysaw
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tabulate
+Requires-Dist: pytest
+
+# Turrican Rotary Saw
+
+![](https://turrican.uraanikaivos.com/rotarysawturrican.png)
+
+Turrican turns into a impervious silver rotary saw in combat. Rotary Saw is my personal hack and quick scripts collection 
+for whatever I try next.
