@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fttb
+Version: 1.0.0
+Summary: CLI for jetbrains tools
+Author-email: Benoit Roux <42benoit.roux@gmail.com>
+Project-URL: Homepage, https://github.com/BenoitRoux0/fttb
+Project-URL: Issues, https://github.com/BenoitRoux0/fttb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Requires-Dist: requests
+
