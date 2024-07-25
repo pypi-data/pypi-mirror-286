@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=71"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "container_health_exporter"
+version = "0.0.3"
+authors = [
+  { name="Ilya Vassyutovich", email="me@iv.link" },
+]
+description = "Package, package, package"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux"
+]
+dependencies = [
+  "docker >= 7.1.0, < 8",
+  "prometheus_client >= 0.20, < 0.21"
+]
+
+[project.urls]
+Homepage = "https://github.com/TBD"
+Issues = "https://github.com/TBD"
