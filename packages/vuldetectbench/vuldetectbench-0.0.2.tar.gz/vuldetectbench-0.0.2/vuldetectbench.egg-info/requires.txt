@@ -1,0 +1,12 @@
+transformers
+huggingface_hub
+datasets
+openai>=1.0.0
+tqdm
+nltk
+numpy
+pandas
+scipy
+torch>=1.13.1
+liquid
+requests
