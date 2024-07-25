@@ -1,0 +1,2 @@
+[console_scripts]
+j2o = micro_file_server.__main__:main
