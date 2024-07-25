@@ -1,0 +1,85 @@
+version: 2.1
+
+jobs:
+  build-and-test:
+    parameters:
+      runtime:
+        description: Python runtime version
+        type: string
+        default: "3.11"
+    docker:
+      - image: cimg/python:<<parameters.runtime>>
+    steps:
+      - checkout
+      - run:
+          name: Activate virtualenv
+          command: virtualenv ~/venv
+
+      - restore_cache:
+          keys:
+            - << parameters.runtime >>-v1-dependencies-{{ checksum "setup.py" }}
+            - << parameters.runtime >>-v1-dependencies
+
+      - run:
+          name: Install dependencies
+          command: ~/venv/bin/pip install .[test]
+
+      - save_cache:
+          key: << parameters.runtime >>-v1-dependencies-{{ checksum "setup.py" }}
+          paths:
+            - ~/venv
+
+      - run:
+          name: Run Tests
+          command: ~/venv/bin/python -m pytest tests
+
+
+  pypi_release:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+
+      - run:
+          name: Install Twine
+          command: pip install twine
+      - run:
+          name: Package Project
+          command: python setup.py sdist bdist_wheel
+      - run:
+          name: Upload to Pypi
+          command: twine upload --skip-existing --non-interactive -u __token__ -p $PYPI_API_TOKEN dist/*
+
+
+workflows:
+  version: 2.1
+
+  build-and-release:
+    jobs:
+      - build-and-test:
+          name: py311
+          runtime: "3.11"
+          filters:
+            tags:
+              only: /[0-9]+(\.[0-9]+)*/
+      - pypi_release:
+          requires:
+            - py311
+          filters:
+            tags:
+              only: /[0-9]+(\.[0-9]+)*/
+            branches:
+              ignore: /.*/
+
+  daily:
+    triggers:
+      - schedule:
+          cron: "0 10 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build-and-test:
+          name: py311
+          runtime: "3.11"
