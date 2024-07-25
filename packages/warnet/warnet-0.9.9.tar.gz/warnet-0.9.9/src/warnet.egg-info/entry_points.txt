@@ -1,0 +1,3 @@
+[console_scripts]
+warcli = warnet.cli.main:cli
+warnet = warnet.server:run_server
