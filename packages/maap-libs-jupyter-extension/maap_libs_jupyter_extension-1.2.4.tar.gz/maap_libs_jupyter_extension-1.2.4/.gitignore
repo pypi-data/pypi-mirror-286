@@ -1,0 +1,40 @@
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+maap_libs_jupyter_extension/labextension
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+.installed.cfg
+*.egg
+*.egg-info/
+*.tsbuildinfo
+.yarn/
+node_modules/
+maap_libs_jupyter_extension/_version.py
+
+# IDE
+.vscode/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
