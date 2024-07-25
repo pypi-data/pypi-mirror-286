@@ -1,0 +1,7 @@
+uplc>=1.0.0
+uplc<1.1.0
+ordered-set>=4.1.0
+ordered-set<5.0.0
+
+[:python_version < "3.9"]
+graphlib-backport>=1.0.0
