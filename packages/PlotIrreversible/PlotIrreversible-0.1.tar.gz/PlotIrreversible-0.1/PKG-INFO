@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: PlotIrreversible
+Version: 0.1
+Summary: Set matplotlib style to conform with Irreversible's brand policies
+Author: Kyle Mills
+Author-email: kyle.mills@irreversible.tech
+License-File: LICENSE
