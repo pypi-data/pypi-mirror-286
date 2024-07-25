@@ -1,0 +1,15 @@
+cavalry/__init__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+cavalry/db_common.py,sha256=k-BChk4dPR3_CUHAoVYDdhf1mZ_-2s23sWkAa-Xd6DM,827
+cavalry/db_django2.py,sha256=9ivxg6L0dY_L4sG_6mQMP5FtvJy2r0Dfun0wyeVgyqY,1931
+cavalry/db_django3.py,sha256=XVyCyAwyv_FDMxqboFwPeJkdXIoD00Y-MUE0uniyEVQ,768
+cavalry/locals.py,sha256=d22jmnTaGI1hbQHkdSkx5idpBeJIYO8Sfi-xHGBRIxg,278
+cavalry/middleware.py,sha256=QI_dZYDUEsvZUAq_G9LLnmFhWnrQHx6QGLC7E2Q57g8,2125
+cavalry/policy.py,sha256=67FfKJwPu8KKKhNyg8FAOTIftwsYAHVNKFcakMFfCFk,1693
+cavalry/poster.py,sha256=GSDLrE4rpEciG0tjP78SZRm7Y_58X3pZ-teesi-VXIc,3061
+cavalry/reporter.py,sha256=W62q7qO38o3aDyH545sWEzcb4S-Q7aLRqPMVqd5DhwE,3555
+cavalry/stack.py,sha256=Si_KJVs_RemA5O2hI69NSZmDe6J-JqnNxA-uaZTfZeY,867
+cavalry/timing.py,sha256=-hb5Vjl4Kt_MX9FMNFrDHKzTLe93vN9vcP65I8n38zo,152
+django_cavalry-0.4.1.dist-info/METADATA,sha256=HPCOrHxYJ4432Mp1l2y5kUGCnuUlPWb_EsYY6bBImBQ,3122
+django_cavalry-0.4.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+django_cavalry-0.4.1.dist-info/licenses/LICENSE,sha256=xqaCpeK4TzDYJZfrLBeakGkj5bNg92kNP_vDLgidRbg,1064
+django_cavalry-0.4.1.dist-info/RECORD,,
