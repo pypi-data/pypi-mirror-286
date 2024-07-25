@@ -1,0 +1,5 @@
+django_htmx_partial_redirect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_htmx_partial_redirect/middleware.py,sha256=NxSVUyqr5FRF8fF2Mnnw-r4RwKHvCmZYMTBCY8V40k4,2541
+django_htmx_partial_redirect-0.1.1.dist-info/METADATA,sha256=j6j1pwbK2I-dItjTCIxTwe6TCUiyTldYEuU0XSTxLQA,2351
+django_htmx_partial_redirect-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_htmx_partial_redirect-0.1.1.dist-info/RECORD,,
