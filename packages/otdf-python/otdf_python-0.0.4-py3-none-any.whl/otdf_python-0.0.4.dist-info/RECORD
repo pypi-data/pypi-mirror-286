@@ -1,0 +1,10 @@
+otdf_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+otdf_python/_gotdf_python.cpython-311-darwin.so,sha256=skpt12w1l5WxI8FgcBSK950r-whK73Ne0k5bV6Sv4CY,14621432
+otdf_python/build.py,sha256=n992UQdwhJukysD1zgty1LrOnNTPEGAAG9MOWGlaJqs,16756
+otdf_python/go.py,sha256=7kz0kwEbEJZp9ZJIvdcUryZmhahLRb5RrkhGBN2BDBY,49317
+otdf_python/gotdf_python.py,sha256=1-Agpw4XFW01MudVbpiuf59ZRKSzvARXv-ojOlbeKsE,13880
+otdf_python-0.0.4.dist-info/LICENSE,sha256=51wzGxR-Rns8XaiGmDLq2OqPN3qWMpoQKV-fERpVzyM,1063
+otdf_python-0.0.4.dist-info/METADATA,sha256=51VS1FDVGOGRTSkA6OB3OusYjOdnJj57VmMKiURAQvQ,369
+otdf_python-0.0.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+otdf_python-0.0.4.dist-info/top_level.txt,sha256=A2vK95iTIxdu4pm8kDZlvHorBKCvSN5dvlMdFbIVXrA,12
+otdf_python-0.0.4.dist-info/RECORD,,
