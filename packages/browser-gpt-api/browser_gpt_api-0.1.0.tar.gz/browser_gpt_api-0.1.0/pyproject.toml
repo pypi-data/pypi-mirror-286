@@ -1,0 +1,35 @@
+[project]
+name = "browser-gpt-api"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "AK3847", email = "abdulkadir.co21d2@scet.ac.in" }
+]
+dependencies = [
+    "selenium>=4.22.0",
+    "requests>=2.32.3",
+    "tiktoken>=0.7.0",
+    "fastapi>=0.111.0",
+    "uvicorn>=0.30.1",
+    "pydantic>=2.7.4",
+    "pydantic-settings>=2.3.4",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.4.8",
+    "pre-commit>=3.7.1",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/browser_gpt_api"]

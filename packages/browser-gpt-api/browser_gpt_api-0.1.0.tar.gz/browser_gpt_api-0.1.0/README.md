@@ -1,0 +1,62 @@
+# Browser-gpt-api
+Interact with ChatGPT via an API running on a local server using Selenium under the hood.
+
+## What is it?
+
+A python tool to help you send prompts to ChatGPT webpage and get response via API calls. With Browser-GPT you can get _infinite_ amount of API calls without worrying about any credits. This works by automating the process of sending a prompt to ChatGPT and getting the response back using Selenium.
+
+## How to Install & run:
+This project uses [Rye Package manager](https://github.com/astral-sh/rye)
+
+1. Clone the repository:
+    ```terminal
+    git clone https://github.com/vertexcover-io/browser-gpt-api.git
+    cd src/browser_gpt_api
+    ```
+2. Install project dependencies using Rye:
+    ```terminal
+    rye sync
+    ```
+3. Create a copy of the environment variable template file and edit it according to your configuration:
+    ```terminal
+    cp .env.template .env
+    ```
+4. Download [Chrome Driver](https://developer.chrome.com/docs/chromedriver/downloads) based on your chrome version and OS.
+
+5. Add the location of `chromedriver.exe` file as a `System variable` in Environmental variables.
+
+6. In the main directory run `setup.py`:
+    ```terminal
+    python setup.py
+    ```
+
+7. To setup your local-server run `server.py`:
+    ```terminal
+    python server.py
+    ```
+
+8. Now you can access ChatGPT via the API endpoint : `http://127.0.0.1:8000/chat/completion`
+
+## Stack
+- **Rye**
+- **Selenium**
+- **FastAPI**
+- **uvicorn**
+
+## Pre-Commit
+Set up pre-commit hooks to automatically check your code for linting and formatting issues before the commit. Run following command to install pre-commit hooks:
+```terminal
+rye run pre-commit install
+```
+
+## Format and Lint
+This project uses [Ruff](https://github.com/astral-sh/ruff) for code formatting and linting. Use following commands to format and lint your code:
+- Check for issues:
+```terminal
+ruff check 
+```
+- Format your code:
+```terminal
+ruff format
+```
+For more information refer to the [Ruff Documentation.](https://docs.astral.sh/ruff/)
