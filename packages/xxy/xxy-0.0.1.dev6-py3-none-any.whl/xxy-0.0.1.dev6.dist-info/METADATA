@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: xxy
+Version: 0.0.1.dev6
+Project-URL: homepage, https://github.com/iaalm/xxy
+Project-URL: repository, https://github.com/iaalm/xxy
+Project-URL: documentation, https://github.com/iaalm/xxy
+Author-email: iaalm <iaalmsimon@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.11
+Requires-Dist: langchain
+Requires-Dist: langchain-openai
+Requires-Dist: loguru
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: q; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# xxy
