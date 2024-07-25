@@ -1,0 +1,15 @@
+haystack_integrations/components/embedders/nvidia/__init__.py,sha256=Q7U2VNMqSpCSKDQ7Diw1vfoBiN0mDqTr2hz7RJD8YaE,229
+haystack_integrations/components/embedders/nvidia/_nim_backend.py,sha256=vUU18E3ekFF3o8RMynSk3W0i1UtL59zflqRUBqqcsYs,1481
+haystack_integrations/components/embedders/nvidia/backend.py,sha256=Q9PMH8YpZZuRt9ZgK23LgvATzyfm3oc_sgZmidMQWlQ,853
+haystack_integrations/components/embedders/nvidia/document_embedder.py,sha256=4nfhdJ19-ZhSmfvK-9VDWa6jEDpovYqY5RP3y66UHSU,7640
+haystack_integrations/components/embedders/nvidia/text_embedder.py,sha256=NP5jPU9UPnfR3kIT0cgKXxECBcr-7eZgfGxnVUpoPOI,4958
+haystack_integrations/components/embedders/nvidia/truncate.py,sha256=JXiS3cXchB1bhZKysDoIxs5GGpIUOQts-LXFk_tRgDo,891
+haystack_integrations/components/generators/nvidia/__init__.py,sha256=tEVS_cUlRc7AOqhgkl22-pKJt2HIdF-Ijm4eGtiQFfM,180
+haystack_integrations/components/generators/nvidia/_nim_backend.py,sha256=koqfPxLVA3TtSQVz1L9AHAYsjZZ3M9NAG9PF35-9GwE,2671
+haystack_integrations/components/generators/nvidia/backend.py,sha256=SMGoo0wai7b08J3xnPl7mWOEUKey84llSzzE-MiEN5U,857
+haystack_integrations/components/generators/nvidia/generator.py,sha256=IGMw-9IFtBRW-YMWW9pVLLT05mdNU87WqSOPFGFs5_w,4309
+haystack_integrations/components/generators/nvidia/chat/__init__.py,sha256=uswCpcU6rlsblqw_werrVIqd5vw1r3yeCAYqjJ4ngjI,110
+nvidia_haystack-0.0.4.dist-info/METADATA,sha256=KJVJNsdaDqKBGn6NuYHmJCqBOw5xkECzd7Oo3Jo1s_A,2218
+nvidia_haystack-0.0.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+nvidia_haystack-0.0.4.dist-info/licenses/LICENSE.txt,sha256=OrAtTu4aPmrTjKDSTzkSPgo_ji6NOMWO2N9JOTFyAzM,11350
+nvidia_haystack-0.0.4.dist-info/RECORD,,
