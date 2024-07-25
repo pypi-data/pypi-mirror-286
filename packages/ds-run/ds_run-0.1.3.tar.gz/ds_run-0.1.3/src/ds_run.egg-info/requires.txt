@@ -1,0 +1,18 @@
+
+[:python_version < "3.11"]
+tomli==2.0.1
+
+[:python_version < "3.9"]
+graphlib_backport==1.1.0
+
+[dev]
+build
+cogapp
+coverage
+mypy
+pdoc3
+pip
+pyright
+pytest-cov
+pytest
+ruff

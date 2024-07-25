@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/ds/__init__.py
+src/ds_run.egg-info/PKG-INFO
+src/ds_run.egg-info/SOURCES.txt
+src/ds_run.egg-info/dependency_links.txt
+src/ds_run.egg-info/entry_points.txt
+src/ds_run.egg-info/requires.txt
+src/ds_run.egg-info/top_level.txt
+test/test_find.py
+test/test_main.py
+test/test_parse.py
+test/test_task.py

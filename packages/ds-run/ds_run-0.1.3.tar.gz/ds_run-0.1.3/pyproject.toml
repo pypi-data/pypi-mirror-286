@@ -1,0 +1,134 @@
+[build-system]
+requires = ["setuptools >= 40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ds = ["py.typed"]
+
+[project.scripts]
+ds = "ds:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "ds.__version__" }
+
+[project.urls]
+Homepage = "https://github.com/metaist/ds"
+Documentation = "https://metaist.github.io/ds/"
+Repository = "https://github.com/metaist/ds.git"
+Changelog = "https://github.com/metaist/ds/blob/main/CHANGELOG.md"
+
+[project]
+name = "ds-run"
+description = "run dev scripts"
+keywords = ["dev", "scripts"]
+
+dynamic = ["version"]
+requires-python = ">=3.8"
+dependencies = [
+  # app => version pinned exactly
+
+  # TODO 2024-10-31 [3.8 EOL]: remove
+  "graphlib_backport==1.1.0; python_version < '3.9'",
+
+  # TODO 2026-10-04 [3.10 EOL]: remove
+  "tomli==2.0.1; python_version < '3.11'",
+]
+optional-dependencies = { dev = [
+  # dev => version latest
+  "build",
+  "cogapp",
+  "coverage",
+  "mypy",
+  "pdoc3",
+  "pip",
+  "pyright",
+  "pytest-cov",
+  "pytest",
+  "ruff",
+] }
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Metaist LLC", email = "metaist@metaist.com" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Build Tools",
+  "Typing :: Typed",
+]
+
+[tool.ds.scripts] # dev scripts <https://github.com/metaist/ds>
+"ruff:format" = "ruff format ."
+"ruff:check" = "ruff check ."
+ruff = ["ruff:format", "ruff:check --fix"]
+cspell = "cspell --gitignore '**/*.{py,txt,md,markdown}'"
+pyright = "pyright src test"
+
+mypy = """\
+  mypy \
+    --strict \
+    --install-types \
+    --non-interactive \
+    src test
+"""
+
+test = """\
+  PYTHONPATH=src \
+  coverage run --branch --source=src -m \
+    pytest \
+      --doctest-modules \
+      --doctest-ignore-import-errors \
+      $@ src test; \
+  coverage report --omit=src/cog_helpers.py -m
+"""
+
+cog = "cog -r README.md"
+
+docs = """\
+  rm -rf docs; \
+  mkdir -p docs; \
+  pdoc \
+    --html \
+    --output-dir docs \
+    --config sort_identifiers=False \
+    --config show_inherited_members=True \
+    --force src/$(basename $(pwd)); \
+  mv docs/**/* docs/; \
+  touch docs/.nojekyll
+"""
+
+lint = ["ruff", "-cspell", "pyright", "mypy"]
+dev = ["lint", "test"]
+all = ["lint", "test", "cog", "docs"]
+
+build = ["pip install -e .", "python -m build"]
+clean = """\
+  rm -rf .mypy_cache;\
+  rm -rf .pytest_cache;\
+  rm -rf .ruff_cache;\
+  rm -rf dist;\
+  rm -rf .coverage;
+"""
+
+release = """\
+  git commit -am "release: $1";\
+  git tag $1;\
+  git push;\
+  git push --tags;\
+  git checkout main;\
+  git merge --no-ff --no-edit prod;\
+  git push
+"""
