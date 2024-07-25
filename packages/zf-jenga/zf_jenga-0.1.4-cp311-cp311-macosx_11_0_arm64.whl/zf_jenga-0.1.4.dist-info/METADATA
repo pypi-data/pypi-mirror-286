@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: zf-jenga
+Version: 0.1.4
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Rust
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Summary: A Rust-based JSON5 parser for Python
+Keywords: json5,parser,python,rust
+Author: Zeff Muks <zeffmuks@gmail.com>
+Author-email: Zeff Muks <zeffmuks@gmail.com>
+License: MIT OR Apache-2.0
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Jenga
+
+Jenga is a super fast Rust-based Python library for handling JSON5 files. Jenga resembles the API of the built-in `json` module, but it has the ability to handle JSON5 files.
+
+Jenga is the fastest JSON5 library for Python, and it is 3.5x faster than the next fastest json5 libraries.
+
+![Performance](https://zf-static.s3.us-west-1.amazonaws.com/jenga.png)
+
+## Installation
+
+```bash
+pip install zf-jenga
+```
+
+## Usage
+
+```python
+import jenga
+
+# Load a JSON5 file
+data = jenga.load("data.json5")
+
+# Dump a JSON5 file
+jenga.dump(data, "data.json5")
+
+# Load a JSON5 string
+data = jenga.loads('{key: 'value'}')
+
+# Dump a JSON5 string
+jenga.dumps(data)
+```
+
+## License
+
+[MIT License](LICENSE)
