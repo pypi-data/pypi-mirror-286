@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+pycompatibility/__init__.py
+pycompatibility/__main__.py
+pycompatibility/cli.py
+pycompatibility/version.py
+pycompatibility.egg-info/PKG-INFO
+pycompatibility.egg-info/SOURCES.txt
+pycompatibility.egg-info/dependency_links.txt
+pycompatibility.egg-info/entry_points.txt
+pycompatibility.egg-info/top_level.txt
+tests/test_checker.py
