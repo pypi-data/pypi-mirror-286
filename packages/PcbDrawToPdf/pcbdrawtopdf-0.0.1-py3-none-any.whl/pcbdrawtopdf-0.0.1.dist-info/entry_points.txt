@@ -1,0 +1,3 @@
+[console_scripts]
+pcbdrawtopdf=pcbdrawtopdf.ui:run
+
