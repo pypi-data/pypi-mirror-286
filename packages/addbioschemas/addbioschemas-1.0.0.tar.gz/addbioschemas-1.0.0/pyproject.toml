@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "addbioschemas"
+version = "1.0.0"
+readme = "README.md"
+authors = [
+  { name="Geert van Geest", email="geert.vangeest@sib.swiss" },
+]
+description = "A markdown extension to add bioschemas markup to rendered html"
+dependencies = [
+    "markdown",
+    "pyyaml",
+    "ushlex"
+]
+
+[project.urls]
+Homepage = "https://github.com/GeertvanGeest/addbioschemas/"
+Issues = "https://github.com/GeertvanGeest/addbioschemas/issues"

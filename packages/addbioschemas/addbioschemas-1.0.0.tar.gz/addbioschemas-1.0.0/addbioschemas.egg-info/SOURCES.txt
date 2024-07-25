@@ -1,0 +1,11 @@
+README.md
+addbioschemas.py
+pyproject.toml
+addbioschemas.egg-info/PKG-INFO
+addbioschemas.egg-info/SOURCES.txt
+addbioschemas.egg-info/dependency_links.txt
+addbioschemas.egg-info/requires.txt
+addbioschemas.egg-info/top_level.txt
+tests/test_config.py
+tests/test_json.py
+tests/test_multiple.py
