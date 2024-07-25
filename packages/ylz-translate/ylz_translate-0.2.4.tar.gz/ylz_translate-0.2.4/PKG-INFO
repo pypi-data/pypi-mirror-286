@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: ylz-translate
+Version: 0.2.4
+Summary: 渐进式文档翻译系统-v1
+Author: toney88
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: firecrawl-py (>=0.0.16,<0.0.17)
+Requires-Dist: markdownify (>=0.12.1,<0.13.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: tqdm (>=4.66.4,<5.0.0)
+Requires-Dist: ylz-utils (>=0.1.6,<0.2.0)
+Description-Content-Type: text/markdown
+
+# setup
+## step1 执行init_config,系统自动将config.yaml文件拷贝到～/.ylz_translate目录下
+## step2 根据情况有关环境变量的设置:
+### step2.1 LLM
+#### export TOGETHER_API_KEYS=<用逗号分隔的together api token>
+#### export TOGETHER_LLM_MODEL=<together llm model>  默认为 Qwen/Qwen1.5-72B-Chat
+
+#### export SILICONFLOW_API_KEYS=<用逗号分隔的siliconflow api token>
+#### export SILICONFLOW_LLM_MODEL=<siliconflow llm model> 默认为 alibaba/Qwen1.5-110B-Chat
+
+#### export GROQ_API_KEYS=<用逗号分隔的groq api token>
+#### export GROQ_LLM_MODEL=<groq llm model> 默认为 llama3-70b-8192
+
+#### export DEEPSEEK_API_KEYS=<用逗号分隔的deepseek api token>
+#### export DEEPSEEK_LLM_MODEL=<deepseek llm model>  默认为 deepseek-chat
+
+#### export QIANFAN_API_KEYS=<用逗号分隔的qianfan api token>
+#### export QIANFAN_SEC_KEYS=<用逗号分隔的qianfan sec token> 要与QIANFAN_API_KEYS对应
+#### export QIANFAN_LLM_MODEL=<qianfan llm model>  默认为 Yi-34B-Chat
+
+### step2.2 EMBEDDING
+#### export TOGETHER_EMBEDDING_MODEL=<together embedding model>  默认为 BAAI/bge-large-en-v1.5
+
+### step2.3 SEARCH_TOOL
+#### export TAVILY_API_KEYS=<逗号分隔的tavily search api token>  
+
+# run
+## ylz_translate -h
+
