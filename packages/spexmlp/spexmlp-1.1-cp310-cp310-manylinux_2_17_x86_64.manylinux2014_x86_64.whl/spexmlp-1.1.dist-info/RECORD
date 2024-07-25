@@ -1,0 +1,11 @@
+spexmlp_swiglu_cuda.so,sha256=suYbTfAvOvTxibIOxC7EE380fcQj8pr1wAnsk6o0jjo,36459768
+spexmlp/eswiglu.py,sha256=iY305HfveU7-9c2cPpNjFgjCadY4bYTD5shCyQigwHc,3538
+spexmlp/_autocast_utils.py,sha256=aErJc0n0i0aa9FVtrRLURhSvbruk-9g31karwFYYqNE,664
+spexmlp/spexmlp.py,sha256=K3E69V6dZthYMwByhrppRAKAQtsRZXDs2B2DSG9LWAw,3463
+spexmlp/__init__.py,sha256=OUrTM8q5IVkq-Vo4og_EL-qPMvQusGG_6eEwQzBxVqE,324
+spexmlp/rollcat.py,sha256=BmVCYwaPG7wOF54-Wxtc31e7A56yK3yFDnzwNpZOxcA,785
+spexmlp-1.1.dist-info/WHEEL,sha256=6135TpWjYJ7w0T-gtunF5heTz75R_Bi7NC1f3E_Mxpg,151
+spexmlp-1.1.dist-info/METADATA,sha256=VJZwuf-fadynq9DkyrKYjmk7zfhJOEkiSMpd05ZjLGM,754
+spexmlp-1.1.dist-info/RECORD,,
+spexmlp-1.1.dist-info/top_level.txt,sha256=-o2vBCGPJscN4m1_DYhRVDrdyI3IFWwDWRjcBw0tu44,28
+spexmlp-1.1.dist-info/LICENSE,sha256=iCfP3zpgJ8FCvnf3ysuQwaSVG9LZSMgZeEznqZOGkK8,1449
