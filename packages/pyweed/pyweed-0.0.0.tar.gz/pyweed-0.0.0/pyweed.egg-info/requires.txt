@@ -1,0 +1,7 @@
+numpy
+basemap
+matplotlib
+obspy<1.4
+pillow
+pyqt5
+pyproj
