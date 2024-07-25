@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: pureml-evaluate
+Version: 0.1.8
+Project-URL: Homepage, https://pureml.com/
+Project-URL: Repository, https://github.com/engageml-github/Pure
+Project-URL: Documentation, https://docs.pureml.com
+Author-email: vamsidhar muthireddy <vamsi.muthireddy@gmail.com>, Thrinadhreddy Manubothu <m.thrinadhreddy@gmail.com>
+License-Expression: Apache-2.0
+Keywords: machine-learning,model-evaluation,model-metrics,pureml,python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <3.13,>=3.9
+Requires-Dist: daisy>=1.1.1
+Requires-Dist: fairlearn>=0.10.0
+Requires-Dist: joblib>=1.4.2
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: plotly>=5.23.0
+Requires-Dist: pydantic>=2.8.2
+Requires-Dist: pypdf2>=3.0.1
+Requires-Dist: reportlab>=4.2.2
+Requires-Dist: scikit-learn>=1.5.1
+Requires-Dist: scipy>=1.13.1; python_version >= '3.10' and python_version < '3.12'
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: structlog>=24.4.0
+Provides-Extra: dev
+Requires-Dist: catboost>=1.2.5; extra == 'dev'
+Requires-Dist: fastparquet>=2024.5.0; extra == 'dev'
+Requires-Dist: ipykernel>=6.29.5; extra == 'dev'
+Requires-Dist: ipywidgets>=8.1.3; extra == 'dev'
+Requires-Dist: lightgbm>=4.4.0; extra == 'dev'
+Requires-Dist: nltk<4.0,>=3.8; extra == 'dev'
+Requires-Dist: notebook>=7.2.1; extra == 'dev'
+Requires-Dist: opencv-python>=4.10.0.84; extra == 'dev'
+Requires-Dist: pytest>=8.3.1; extra == 'dev'
+Requires-Dist: pytorch-tabnet>=4.1.0; extra == 'dev'
+Requires-Dist: scikit-image>=0.24.0; extra == 'dev'
+Requires-Dist: scikit-learn>=1.5.1; extra == 'dev'
+Requires-Dist: scipy<1.14.0,>=1.13.1; (python_version >= '3.10' and python_version < '3.12') and extra == 'dev'
+Requires-Dist: tensorflow>=2.17.0; (python_version >= '3.9' and python_version < '3.11') and extra == 'dev'
+Requires-Dist: xgboost>=2.1.0; extra == 'dev'
+Requires-Dist: ydata-profiling>=4.9.0; (python_version >= '3.9' and python_version < '3.11') and extra == 'dev'
