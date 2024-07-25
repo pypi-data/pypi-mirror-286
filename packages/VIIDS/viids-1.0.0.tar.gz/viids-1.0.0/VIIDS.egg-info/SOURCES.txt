@@ -1,0 +1,12 @@
+README.md
+setup.py
+VIIDS/GridSearchCV_&_K-FoldCV.py
+VIIDS/__init__.py
+VIIDS/graphing.py
+VIIDS/random_forest.py
+VIIDS/regression.py
+VIIDS/setup.py
+VIIDS.egg-info/PKG-INFO
+VIIDS.egg-info/SOURCES.txt
+VIIDS.egg-info/dependency_links.txt
+VIIDS.egg-info/top_level.txt
