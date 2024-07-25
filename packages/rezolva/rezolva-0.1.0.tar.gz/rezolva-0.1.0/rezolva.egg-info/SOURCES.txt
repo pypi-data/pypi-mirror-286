@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+rezolva/__init__.py
+rezolva.egg-info/PKG-INFO
+rezolva.egg-info/SOURCES.txt
+rezolva.egg-info/dependency_links.txt
+rezolva.egg-info/top_level.txt
