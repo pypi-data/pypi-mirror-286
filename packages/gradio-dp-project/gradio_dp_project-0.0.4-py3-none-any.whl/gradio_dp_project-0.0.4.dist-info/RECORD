@@ -1,0 +1,10 @@
+gradio_dp_project/__init__.py,sha256=5FUImkempIPNCONcHqHhPQYas0Xd3CM3cqo9EBtdvko,62
+gradio_dp_project/dp_project.py,sha256=hgpjwMfTKJLP28kMnzXU_G6pZPM_0FZ-v557vclMV1k,5383
+gradio_dp_project/dp_project.pyi,sha256=yQcCsJu5WAv0I6atyJ2uKryBkW6Dn9xlXyYZIxiS3t4,20788
+gradio_dp_project/templates/component/index.js,sha256=PqoHy1N4PMlzoDe5FWuTDuIOSREvk-JXT01_YqB5EQs,66743
+gradio_dp_project/templates/component/style.css,sha256=CNIYfvc1DB-SBch0u2w3cjDqJtvOxLdyoMNzxxBRM7E,13587
+gradio_dp_project/templates/example/index.js,sha256=Pic4wySeKOeaWNF03ykMdDJ5jMUucugDg_Qp9sOInI8,1641
+gradio_dp_project/templates/example/style.css,sha256=Aj4k-S41TV83pot-J9j9Fi2UonrXHFC1Jl4Zb1xaYo4,61
+gradio_dp_project-0.0.4.dist-info/METADATA,sha256=ElpkK4oS537YA4xdk37h7B0qGs1M0inZaIvUU6XjkZo,8364
+gradio_dp_project-0.0.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+gradio_dp_project-0.0.4.dist-info/RECORD,,
