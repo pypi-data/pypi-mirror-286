@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nshconfig
+Version: 0.3.0
+Summary: Fully typed configuration management, powered by Pydantic
+Author: Nima Shoghi
+Author-email: nimashoghi@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+
