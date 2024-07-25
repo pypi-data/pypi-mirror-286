@@ -1,0 +1,4 @@
+setuptools
+
+[doc]
+pdoc3>=0.7
