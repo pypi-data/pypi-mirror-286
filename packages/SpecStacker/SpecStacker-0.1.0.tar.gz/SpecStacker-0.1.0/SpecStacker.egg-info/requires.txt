@@ -1,0 +1,8 @@
+astropy
+extinction
+lmfit
+matplotlib
+numpy
+scipy
+sfdmap
+spectres

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+SpecStacker.egg-info/PKG-INFO
+SpecStacker.egg-info/SOURCES.txt
+SpecStacker.egg-info/dependency_links.txt
+SpecStacker.egg-info/requires.txt
+SpecStacker.egg-info/top_level.txt
