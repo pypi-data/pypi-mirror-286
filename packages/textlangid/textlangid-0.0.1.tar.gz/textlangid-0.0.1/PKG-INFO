@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: textlangid
+Version: 0.0.1
+Summary: Detects the language of text
+Home-page: https://github.com/tools4eu/text-language-identifier
+Author: tools4eu
+Author-email: openeuro@proton.me
+Project-URL: Bug Tracker, https://github.com/tools4eu/text-language-identifier/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fasttext-wheel
+Requires-Dist: huggingface_hub
+
+# Text language identifier
