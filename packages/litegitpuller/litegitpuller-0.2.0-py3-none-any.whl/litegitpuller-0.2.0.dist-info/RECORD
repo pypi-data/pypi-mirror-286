@@ -1,0 +1,13 @@
+litegitpuller/__init__.py,sha256=301x247rLckbAKNH82wmpKMXtTr7VgDn96Oyb3ckxaM,597
+litegitpuller/_version.py,sha256=73xmj_rtt0boRuIZ0h5wqHItFsCNZHTC-Wa0tSeAxyY,171
+litegitpuller-0.2.0.data/data/share/jupyter/labextensions/@jupyterlite/litegitpuller/package.json,sha256=oxxRRqCTBNlPXJuEI0fT5dVY8O7K2L8CEGnu8eumeK4,5891
+litegitpuller-0.2.0.data/data/share/jupyter/labextensions/@jupyterlite/litegitpuller/static/389.0633501771fe4aa9a8f7.js,sha256=BjNQF3H-Sqmo98ozkM75q7c_bQ5GXLUtLNMCaxdAP0o,4194
+litegitpuller-0.2.0.data/data/share/jupyter/labextensions/@jupyterlite/litegitpuller/static/747.be821cd0b51de1516504.js,sha256=voIc0LUd4VFlBNf9Cc8BS515CclwO6o_WrldS36BtVQ,4032
+litegitpuller-0.2.0.data/data/share/jupyter/labextensions/@jupyterlite/litegitpuller/static/remoteEntry.84e6289e48305c225dba.js,sha256=hOYonkgwXCJdut_Xv6pludKM8RLLxyDP0rYxPAtkHUU,6565
+litegitpuller-0.2.0.data/data/share/jupyter/labextensions/@jupyterlite/litegitpuller/static/style.js,sha256=3KKOpqHEeSZGoyaPfzjKa-dHjEN3L3cDowam4GvsMi8,169
+litegitpuller-0.2.0.data/data/share/jupyter/labextensions/@jupyterlite/litegitpuller/static/third-party-licenses.json,sha256=5z5gY0sStbT_P2WqbrAlmEtTHDPn0-v6dtp4O8CCBTs,2452
+litegitpuller-0.2.0.data/data/share/jupyter/labextensions/@jupyterlite/litegitpuller/install.json,sha256=bgQIu3I8R9iczmb4jZtbaSijTKsnG0zRyejldv6-YKk,187
+litegitpuller-0.2.0.dist-info/METADATA,sha256=szZv0vLkk08YBIiNPbhQ1EgVPd1LhuUhcMbbZgPF3Vg,6598
+litegitpuller-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+litegitpuller-0.2.0.dist-info/licenses/LICENSE,sha256=rdpisMgsjljwJoYlo80bAh13IdxregyXJ8JzTYctEYs,1532
+litegitpuller-0.2.0.dist-info/RECORD,,
