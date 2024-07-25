@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-timestamper = napari_timestamper:napari.yaml
