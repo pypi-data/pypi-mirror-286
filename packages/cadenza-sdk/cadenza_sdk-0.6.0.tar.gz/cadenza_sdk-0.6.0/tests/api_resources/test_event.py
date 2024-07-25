@@ -1,0 +1,578 @@
+# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+from __future__ import annotations
+
+import os
+from typing import Any, cast
+
+import pytest
+
+from cadenza_sdk import Cadenza, AsyncCadenza
+from tests.utils import assert_matches_type
+from cadenza_sdk.types import (
+    DropCopyOrder,
+    DropCopyQuote,
+    MarketDataKline,
+    DropCopyPortfolio,
+    MarketDataOrderBook,
+)
+
+base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
+
+
+class TestEvent:
+    parametrize = pytest.mark.parametrize("client", [False, True], indirect=True, ids=["loose", "strict"])
+
+    @parametrize
+    def test_method_drop_copy_order(self, client: Cadenza) -> None:
+        event = client.event.drop_copy_order(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(DropCopyOrder, event, path=["response"])
+
+    @parametrize
+    def test_method_drop_copy_order_with_all_params(self, client: Cadenza) -> None:
+        event = client.event.drop_copy_order(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(DropCopyOrder, event, path=["response"])
+
+    @parametrize
+    def test_raw_response_drop_copy_order(self, client: Cadenza) -> None:
+        response = client.event.with_raw_response.drop_copy_order(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = response.parse()
+        assert_matches_type(DropCopyOrder, event, path=["response"])
+
+    @parametrize
+    def test_streaming_response_drop_copy_order(self, client: Cadenza) -> None:
+        with client.event.with_streaming_response.drop_copy_order(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = response.parse()
+            assert_matches_type(DropCopyOrder, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    def test_method_drop_copy_portfolio(self, client: Cadenza) -> None:
+        event = client.event.drop_copy_portfolio(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(DropCopyPortfolio, event, path=["response"])
+
+    @parametrize
+    def test_method_drop_copy_portfolio_with_all_params(self, client: Cadenza) -> None:
+        event = client.event.drop_copy_portfolio(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(DropCopyPortfolio, event, path=["response"])
+
+    @parametrize
+    def test_raw_response_drop_copy_portfolio(self, client: Cadenza) -> None:
+        response = client.event.with_raw_response.drop_copy_portfolio(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = response.parse()
+        assert_matches_type(DropCopyPortfolio, event, path=["response"])
+
+    @parametrize
+    def test_streaming_response_drop_copy_portfolio(self, client: Cadenza) -> None:
+        with client.event.with_streaming_response.drop_copy_portfolio(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = response.parse()
+            assert_matches_type(DropCopyPortfolio, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    def test_method_drop_copy_quote(self, client: Cadenza) -> None:
+        event = client.event.drop_copy_quote(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(DropCopyQuote, event, path=["response"])
+
+    @parametrize
+    def test_method_drop_copy_quote_with_all_params(self, client: Cadenza) -> None:
+        event = client.event.drop_copy_quote(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(DropCopyQuote, event, path=["response"])
+
+    @parametrize
+    def test_raw_response_drop_copy_quote(self, client: Cadenza) -> None:
+        response = client.event.with_raw_response.drop_copy_quote(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = response.parse()
+        assert_matches_type(DropCopyQuote, event, path=["response"])
+
+    @parametrize
+    def test_streaming_response_drop_copy_quote(self, client: Cadenza) -> None:
+        with client.event.with_streaming_response.drop_copy_quote(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = response.parse()
+            assert_matches_type(DropCopyQuote, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    def test_method_market_data_kline(self, client: Cadenza) -> None:
+        event = client.event.market_data_kline(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(MarketDataKline, event, path=["response"])
+
+    @parametrize
+    def test_method_market_data_kline_with_all_params(self, client: Cadenza) -> None:
+        event = client.event.market_data_kline(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(MarketDataKline, event, path=["response"])
+
+    @parametrize
+    def test_raw_response_market_data_kline(self, client: Cadenza) -> None:
+        response = client.event.with_raw_response.market_data_kline(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = response.parse()
+        assert_matches_type(MarketDataKline, event, path=["response"])
+
+    @parametrize
+    def test_streaming_response_market_data_kline(self, client: Cadenza) -> None:
+        with client.event.with_streaming_response.market_data_kline(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = response.parse()
+            assert_matches_type(MarketDataKline, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    def test_method_market_data_order_book(self, client: Cadenza) -> None:
+        event = client.event.market_data_order_book(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(MarketDataOrderBook, event, path=["response"])
+
+    @parametrize
+    def test_method_market_data_order_book_with_all_params(self, client: Cadenza) -> None:
+        event = client.event.market_data_order_book(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(MarketDataOrderBook, event, path=["response"])
+
+    @parametrize
+    def test_raw_response_market_data_order_book(self, client: Cadenza) -> None:
+        response = client.event.with_raw_response.market_data_order_book(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = response.parse()
+        assert_matches_type(MarketDataOrderBook, event, path=["response"])
+
+    @parametrize
+    def test_streaming_response_market_data_order_book(self, client: Cadenza) -> None:
+        with client.event.with_streaming_response.market_data_order_book(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = response.parse()
+            assert_matches_type(MarketDataOrderBook, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+
+class TestAsyncEvent:
+    parametrize = pytest.mark.parametrize("async_client", [False, True], indirect=True, ids=["loose", "strict"])
+
+    @parametrize
+    async def test_method_drop_copy_order(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.drop_copy_order(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(DropCopyOrder, event, path=["response"])
+
+    @parametrize
+    async def test_method_drop_copy_order_with_all_params(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.drop_copy_order(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(DropCopyOrder, event, path=["response"])
+
+    @parametrize
+    async def test_raw_response_drop_copy_order(self, async_client: AsyncCadenza) -> None:
+        response = await async_client.event.with_raw_response.drop_copy_order(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = await response.parse()
+        assert_matches_type(DropCopyOrder, event, path=["response"])
+
+    @parametrize
+    async def test_streaming_response_drop_copy_order(self, async_client: AsyncCadenza) -> None:
+        async with async_client.event.with_streaming_response.drop_copy_order(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = await response.parse()
+            assert_matches_type(DropCopyOrder, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    async def test_method_drop_copy_portfolio(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.drop_copy_portfolio(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(DropCopyPortfolio, event, path=["response"])
+
+    @parametrize
+    async def test_method_drop_copy_portfolio_with_all_params(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.drop_copy_portfolio(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(DropCopyPortfolio, event, path=["response"])
+
+    @parametrize
+    async def test_raw_response_drop_copy_portfolio(self, async_client: AsyncCadenza) -> None:
+        response = await async_client.event.with_raw_response.drop_copy_portfolio(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = await response.parse()
+        assert_matches_type(DropCopyPortfolio, event, path=["response"])
+
+    @parametrize
+    async def test_streaming_response_drop_copy_portfolio(self, async_client: AsyncCadenza) -> None:
+        async with async_client.event.with_streaming_response.drop_copy_portfolio(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = await response.parse()
+            assert_matches_type(DropCopyPortfolio, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    async def test_method_drop_copy_quote(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.drop_copy_quote(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(DropCopyQuote, event, path=["response"])
+
+    @parametrize
+    async def test_method_drop_copy_quote_with_all_params(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.drop_copy_quote(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(DropCopyQuote, event, path=["response"])
+
+    @parametrize
+    async def test_raw_response_drop_copy_quote(self, async_client: AsyncCadenza) -> None:
+        response = await async_client.event.with_raw_response.drop_copy_quote(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = await response.parse()
+        assert_matches_type(DropCopyQuote, event, path=["response"])
+
+    @parametrize
+    async def test_streaming_response_drop_copy_quote(self, async_client: AsyncCadenza) -> None:
+        async with async_client.event.with_streaming_response.drop_copy_quote(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = await response.parse()
+            assert_matches_type(DropCopyQuote, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    async def test_method_market_data_kline(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.market_data_kline(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(MarketDataKline, event, path=["response"])
+
+    @parametrize
+    async def test_method_market_data_kline_with_all_params(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.market_data_kline(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(MarketDataKline, event, path=["response"])
+
+    @parametrize
+    async def test_raw_response_market_data_kline(self, async_client: AsyncCadenza) -> None:
+        response = await async_client.event.with_raw_response.market_data_kline(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = await response.parse()
+        assert_matches_type(MarketDataKline, event, path=["response"])
+
+    @parametrize
+    async def test_streaming_response_market_data_kline(self, async_client: AsyncCadenza) -> None:
+        async with async_client.event.with_streaming_response.market_data_kline(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = await response.parse()
+            assert_matches_type(MarketDataKline, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @parametrize
+    async def test_method_market_data_order_book(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.market_data_order_book(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+        assert_matches_type(MarketDataOrderBook, event, path=["response"])
+
+    @parametrize
+    async def test_method_market_data_order_book_with_all_params(self, async_client: AsyncCadenza) -> None:
+        event = await async_client.event.market_data_order_book(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+            payload={
+                "base_currency": "baseCurrency",
+                "quote_currency": "quoteCurrency",
+                "order_side": "orderSide",
+                "quantity": 0,
+                "quote_quantity": 0,
+                "exchange_account_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
+            },
+            source="source",
+        )
+        assert_matches_type(MarketDataOrderBook, event, path=["response"])
+
+    @parametrize
+    async def test_raw_response_market_data_order_book(self, async_client: AsyncCadenza) -> None:
+        response = await async_client.event.with_raw_response.market_data_order_book(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        event = await response.parse()
+        assert_matches_type(MarketDataOrderBook, event, path=["response"])
+
+    @parametrize
+    async def test_streaming_response_market_data_order_book(self, async_client: AsyncCadenza) -> None:
+        async with async_client.event.with_streaming_response.market_data_order_book(
+            event_id="eventId",
+            event_type="cadenza.task.placeOrderRequestAck",
+            timestamp=1632933600000,
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            event = await response.parse()
+            assert_matches_type(MarketDataOrderBook, event, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
