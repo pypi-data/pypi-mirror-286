@@ -1,0 +1,6 @@
+setup.py
+amphibian.egg-info/PKG-INFO
+amphibian.egg-info/SOURCES.txt
+amphibian.egg-info/dependency_links.txt
+amphibian.egg-info/not-zip-safe
+amphibian.egg-info/top_level.txt
