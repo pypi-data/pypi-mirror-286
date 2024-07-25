@@ -1,0 +1,2 @@
+[console_scripts]
+pv_speaker_demo = pvspeakerdemo.pv_speaker_demo:main

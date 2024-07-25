@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+pvspeakerdemo/LICENSE
+pvspeakerdemo/pv_speaker_demo.py
+pvspeakerdemo.egg-info/PKG-INFO
+pvspeakerdemo.egg-info/SOURCES.txt
+pvspeakerdemo.egg-info/dependency_links.txt
+pvspeakerdemo.egg-info/entry_points.txt
+pvspeakerdemo.egg-info/requires.txt
+pvspeakerdemo.egg-info/top_level.txt
