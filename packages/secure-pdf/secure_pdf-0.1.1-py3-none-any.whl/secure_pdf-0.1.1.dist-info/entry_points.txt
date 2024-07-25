@@ -1,0 +1,3 @@
+[console_scripts]
+run_secure_pdf=secure_pdf.start:main
+
