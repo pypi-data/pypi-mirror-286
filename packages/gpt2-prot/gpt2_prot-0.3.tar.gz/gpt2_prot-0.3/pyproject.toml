@@ -1,0 +1,50 @@
+[build-system]
+requires = [ "setuptools>=61",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpt2_prot"
+version = "0.3"
+description = "Single NT/AA resoultion biological GPT2 language modelling"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "biopython",
+    "jsonargparse[signatures]>=4.27.7",
+    "lightning",
+    "numpy<2.0",
+    "requests",
+    "tensorboard",
+    "torch",
+    "torcheval",
+    "tqdm",
+]
+dynamic = []
+
+[project.urls]
+Homepage = "https://github.com/JBwdn/gpt2-prot"
+
+[project.scripts]
+gpt2-prot = "gpt2_prot.scripts.cli:main"
+
+[project.optional-dependencies]
+dev = [ "black", "ipython", "isort", "pre-commit", "pylint", "pyright", "pytest",]
+test = [ "pytest",]
+
+[tool.pylint]
+max-line-length = 100
+disable = "import-error"
+
+[tool.pyright]
+reportMissingImports = false
+pythonVersion = "3.12"
+
+[tool.black]
+target-version = [ "py312",]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+filter_files = true
+
+[tool.setuptools.packages.find]
