@@ -1,0 +1,10 @@
+{% extends "wafer/base_form.html" %}
+{% load crispy_forms_tags %}
+{% block title %}{{ WAFER_CONFERENCE_NAME }} - Day Trip Insurance{% endblock %}
+{% block content %}
+<h1>Day Trip Insurance</h1>
+<div>
+  {% crispy form %}
+</div>
+{% endblock %}
+
