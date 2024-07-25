@@ -1,0 +1,2 @@
+[console_scripts]
+sssms = sssms.main:cli
