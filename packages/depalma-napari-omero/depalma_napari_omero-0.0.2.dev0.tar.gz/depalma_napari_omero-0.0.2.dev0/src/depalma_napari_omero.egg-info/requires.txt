@@ -1,0 +1,12 @@
+napari[all]>=0.4.16
+qtpy
+magicgui
+napari-label-focus>=0.0.9
+napari-remove-objects
+mousetumornet
+ezomero==1.1.1
+numpy
+pandas
+trackpy
+imagecodecs[all]
+tifffile
