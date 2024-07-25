@@ -1,0 +1,3 @@
+[console_scripts]
+Component_Reuse = Component_Reuse:hello
+

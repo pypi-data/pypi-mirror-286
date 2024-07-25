@@ -1,0 +1,1 @@
+from Component_reuse.main import hello
