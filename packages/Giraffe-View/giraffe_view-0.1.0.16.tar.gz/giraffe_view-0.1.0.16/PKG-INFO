@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Giraffe_View
+Version: 0.1.0.16
+Summary: Giraffe_View is specially designed to provide a comprehensive assessment of the accuracy of long-read sequencing datasets obtained from both the PacBio and Nanopore platforms.
+Home-page: https://github.com/lxd98/Giraffe_View
+Author: Xudong Liu
+Author-email: xudongliu98@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pysam>=0.17.0
+Requires-Dist: numpy>=1.7.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: termcolor>=2.0.0
+Requires-Dist: Bio>=1.6.2
+
+**Beta version for code testing!!!**
