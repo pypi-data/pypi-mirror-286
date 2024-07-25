@@ -1,0 +1,3 @@
+[console_scripts]
+start=pass_prot_pdf.app:start
+
