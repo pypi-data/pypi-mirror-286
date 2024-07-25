@@ -1,0 +1,8 @@
+sentinelsat>=1.1.0
+eodag>=2.3.0b1
+python-dateutil
+
+[dev]
+pre-commit
+tox
+pytest
