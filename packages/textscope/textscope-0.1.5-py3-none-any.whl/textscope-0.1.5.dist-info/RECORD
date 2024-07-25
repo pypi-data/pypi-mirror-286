@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_relevance_analyzer.py,sha256=mWqy0dCX_15r99aUxEGuo1J1CB1FzTHmx9ADyHnQwwI,792
+tests/test_subtheme_analyzer.py,sha256=lTYSz5kXK_Js87Zrr1EAraxfe4ur5qxaT5MdS5KTJsE,1581
+textscope/__init__.py,sha256=cPBd6IlkZIx42H835p_5PmTo7MlwZsG-K9IgfUpZQwc,99
+textscope/config.py,sha256=lpSKeA3nrJmdz-f_zkMJthCR2q3jUtPj1OeybX6V7dA,127
+textscope/config_loader.py,sha256=oMrCghePe4aZDwNepJ9TndFgpwYbxdEs7kcNjiTFKfs,609
+textscope/relevance_analyzer.py,sha256=df2DUiEF6SloGItWfSnrUqnQy6tIBIjOKJzk4-DsooI,2237
+textscope/subtheme_analyzer.py,sha256=usmLo-2dCwuu1OzVKxkuIxtkDTzxEnbOcerI_X16_Cg,3392
+textscope/data/config.yaml,sha256=DB4qR-TOzkJXoPSuPITMxD98IIUNW3gBXuaS2VsvOg0,2508
+textscope-0.1.5.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+textscope-0.1.5.dist-info/METADATA,sha256=RiCipyns4vQX6-Jaf5G-MHaFsgvGVVEhrnJNBMAt5XM,5367
+textscope-0.1.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+textscope-0.1.5.dist-info/top_level.txt,sha256=2YM2Oe9VZlNAj-HSMtntFwEP8Oy00Ljcj6lEpPqw17g,16
+textscope-0.1.5.dist-info/RECORD,,
