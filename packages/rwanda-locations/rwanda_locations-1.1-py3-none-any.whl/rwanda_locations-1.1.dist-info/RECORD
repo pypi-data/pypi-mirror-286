@@ -1,0 +1,9 @@
+rwanda_locations/__init__.py,sha256=UzKS2tILNIcXizND95PDy_XDFzllsrK7OxXv5tzQFm8,637
+rwanda_locations/data.py,sha256=h1bCTi_QqABzoBewrYvhotvHuERC7NNtuYs_pU4Lul8,2032
+rwanda_locations/lookup.py,sha256=DJ_IRn2qy_8lb9Q4V62ocQrd-GAlIyscwAdstO6kppE,610
+rwanda_locations/data/locations.json,sha256=oM4lhQSF3mzmqNoiOHpx_WutSEQcSOm8DZUXE-WSu-w,379152
+rwanda_locations-1.1.dist-info/LICENSE,sha256=aHrpiH6kiOpFRc2az4_oCxnGDK4l3h8ztOYyWzteqL8,1095
+rwanda_locations-1.1.dist-info/METADATA,sha256=TP-Z5nPu7PpMEmYBWDQlKWevMNR_Rsoz2IsIWH8m2zI,3254
+rwanda_locations-1.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+rwanda_locations-1.1.dist-info/top_level.txt,sha256=9XtKjJ-33bEcje4IwKFC3AAVD0tX4-2JnBRFIgoHaD0,17
+rwanda_locations-1.1.dist-info/RECORD,,
