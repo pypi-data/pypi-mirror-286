@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hos-utility
+Version: 0.0.1
+Summary: A simple utility for managing hostnames
+Home-page: https://github.com/YourUsername/hos-utility
+Author: nesnit
+Author-email: nesnit@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: urwid
+
+# hos-utility
+
+A simple utility for managing hostnames.
+
+## Installation
+
+```bash
+pip install hos-utility
