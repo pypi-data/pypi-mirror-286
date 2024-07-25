@@ -1,0 +1,10 @@
+intake_coops/__init__.py,sha256=zHA1g0azJH9vee5qlzT1Vo3u9lg7ipujkV1w9uhh0G4,159
+intake_coops/_version.py,sha256=1NSg4yHgqJJKYBklxFwmel_5eSNX51umiqsyFgx4770,21
+intake_coops/coops.py,sha256=b_HjB7vmJJyiqTSMxjdSdJnzU5OSGWaB_pOvtNePlHw,9200
+intake_coops/coops_cat.py,sha256=yMUxN0N7ed-a2PFajWOtBG5fDClBT9A5RbS4DAM6BlU,3146
+intake_coops-0.4.0.dist-info/LICENSE.txt,sha256=Om3ewl6anMXFYf12p1zwRUYKjH0u0ZuSw1UgcQwgrXI,1086
+intake_coops-0.4.0.dist-info/METADATA,sha256=Cn8yZ5lXmnW4QmYc1Q7HBSPWquanAe9fSSgECQgMnPM,4166
+intake_coops-0.4.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+intake_coops-0.4.0.dist-info/entry_points.txt,sha256=1inrusoL7u8ymS_QepaOPV5GnvbR43cBF-FAfMf5uwM,181
+intake_coops-0.4.0.dist-info/top_level.txt,sha256=eSmfEn9hflg9F2j85RlLpMrv-DFO_EA194r_ZNGJNQk,13
+intake_coops-0.4.0.dist-info/RECORD,,
