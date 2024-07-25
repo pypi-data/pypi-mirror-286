@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+./erp3_py_commons.egg-info/PKG-INFO
+./erp3_py_commons.egg-info/SOURCES.txt
+./erp3_py_commons.egg-info/dependency_links.txt
+./erp3_py_commons.egg-info/requires.txt
+./erp3_py_commons.egg-info/top_level.txt
+erp3_py_commons.egg-info/PKG-INFO
+erp3_py_commons.egg-info/SOURCES.txt
+erp3_py_commons.egg-info/dependency_links.txt
+erp3_py_commons.egg-info/requires.txt
+erp3_py_commons.egg-info/top_level.txt
