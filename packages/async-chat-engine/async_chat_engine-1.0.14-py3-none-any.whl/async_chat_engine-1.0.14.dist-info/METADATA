@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: async_chat_engine
+Version: 1.0.14
+Summary: An asynchronous chat engine using vLLM with a async producer-consumer pattern.
+Author: Oscar
+Author-email: om@holograph.digital
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: vllm
+Requires-Dist: websockets
+Requires-Dist: PyJWT
+
