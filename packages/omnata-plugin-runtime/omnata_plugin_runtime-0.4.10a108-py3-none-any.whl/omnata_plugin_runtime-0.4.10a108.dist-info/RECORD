@@ -1,0 +1,12 @@
+omnata_plugin_runtime/__init__.py,sha256=MS9d1whnfT_B3-ThqZ7l63QeC_8OEKTuaYV5wTwRpBA,1576
+omnata_plugin_runtime/api.py,sha256=W79CsAcl127Dzy-XVS9CzvzsbS3IigVH4QAhFFDkaXg,6270
+omnata_plugin_runtime/configuration.py,sha256=7cMekoY8CeZAJHpASU6tCMidF55Hzfr7CD74jtebqIY,35742
+omnata_plugin_runtime/forms.py,sha256=pw_aKVsXSz47EP8PFBI3VDwdSN5IjvZxp8JTjO1V130,18421
+omnata_plugin_runtime/logging.py,sha256=bn7eKoNWvtuyTk7RTwBS9UARMtqkiICtgMtzq3KA2V0,3272
+omnata_plugin_runtime/omnata_plugin.py,sha256=Q2qdIz370MeIp5J6nekWHe2DzdtqMm6nchJoKbHH6aA,110658
+omnata_plugin_runtime/plugin_entrypoints.py,sha256=JAGEdVcy9QEXv7TO5zt7co64LTP8nqGusOc0sJG9GtU,29149
+omnata_plugin_runtime/rate_limiting.py,sha256=BOxyjERDG46iPY7coYu79jdZ9JqHMYPG-BNyXYOIJmk,24678
+omnata_plugin_runtime-0.4.10a108.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+omnata_plugin_runtime-0.4.10a108.dist-info/METADATA,sha256=Xg7EC05hzVIS5UqkIrYGqcJpRiGpcFqmOg2X-zDh4SA,1643
+omnata_plugin_runtime-0.4.10a108.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+omnata_plugin_runtime-0.4.10a108.dist-info/RECORD,,
