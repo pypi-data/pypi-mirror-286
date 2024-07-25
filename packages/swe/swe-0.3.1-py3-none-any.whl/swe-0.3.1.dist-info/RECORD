@@ -1,0 +1,14 @@
+swe/__init__.py,sha256=YfH8DfBJjDAT444gbUBE_TRFG4Nw0wg8iFfx5aBGi4Y,1833
+swe/__main__.py,sha256=3QUwh0ajp7m-glDNTnlarZGeW5pwIxNo2YffkE0-6pc,44
+swe/_autocomplete.py,sha256=hFwPPRKxm-yq_2noUnZh6Uk4BoGz6MqCVDO3C90x5Yk,19069
+swe/cli.py,sha256=bkbOtlWNgqIjp9fkP1HKVGQ_wWQwMs6XetBCbKaSBdg,3722
+swe/common.py,sha256=8D_PGzmvY0qK0s3Dn6Rae2dFpgm2y_tMyIkUeA9sJSw,1287
+swe/interactive.py,sha256=GHFyyCZeKjsPXq1CvhmqYmrlQdVcev7zxkHub0ebDKw,6988
+swe/sounds.py,sha256=3Dinp6UtlWfYGlZv_bAZhza41EJEreS1SWs1QHo_LvA,1503
+swe/style.tcss,sha256=yP7SX-Z_G25S0QgqN5M4i9IKfEeQ5UhG0HgoygObqg0,174
+swe/swe2.py,sha256=c6xE7MFarVCmBjB3-tls0AFRszHEC58ioTknYdB5U4A,13500
+swe-0.3.1.dist-info/METADATA,sha256=VhBoygmDHF0-2WCbezD83wkd8StwSY8JH3vs_PUG4LY,1630
+swe-0.3.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+swe-0.3.1.dist-info/entry_points.txt,sha256=a8ID5OuKVsKEdly78ZyckxLysQAIA5F4iMZzb5EEllM,33
+swe-0.3.1.dist-info/licenses/LICENSE,sha256=ieGdUlOL_uoHM1WpsT_Ll9EbVbQXyD5LhugQfDjVbgM,1068
+swe-0.3.1.dist-info/RECORD,,
