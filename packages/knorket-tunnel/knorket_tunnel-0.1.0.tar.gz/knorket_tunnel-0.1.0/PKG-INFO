@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: knorket_tunnel
+Version: 0.1.0
+Summary: Knorket tunnel allows access to internal private services via zero-trust
+Home-page: 
+Author: ockhamlabs
+Author-email: hello@ockhamlabs.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+```sh
+knorket_tunnel client.jwt
+```
