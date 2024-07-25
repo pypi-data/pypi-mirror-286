@@ -1,0 +1,11 @@
+egeometry/__init__.py,sha256=UKRKUEI4G5L0KBNe5LuSCI3o0oCfQmNXYe90DMIB7bc,883
+egeometry/_dcircle.py,sha256=gsC7teXMgytpobq2brF4baYPYawBEnsD9Ljm7ZTFHYs,2772
+egeometry/_drectangle.py,sha256=Khd_di0BSk_zcatFMAI4qrjs-L_bkCVotniO3RpeCJU,2589
+egeometry/_fcircle.py,sha256=KEBPXTrOKaowc4Wvhm303B0i1qT2towYtt55k74NU7c,2800
+egeometry/_frectangle.py,sha256=y2A_xvvAV5e8Kkuzrfvhj4jj9K9TZvdn07YPXC9zGlQ,2589
+egeometry/_icircle.py,sha256=JZi9m-Ybnjj_0ep9E3RCaLVA9pMW4qFq7oxc7MR3wco,2796
+egeometry/_irectangle.py,sha256=FSiSd8cEspvC16FkxxQIeteAyqXqnsR7dvBqgT5QPp8,2589
+egeometry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+egeometry-0.4.0.dist-info/METADATA,sha256=o4Xbg-Wy01s912HULkN9PfLTpEJLQutpV_q2e0VEtK8,310
+egeometry-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+egeometry-0.4.0.dist-info/RECORD,,
