@@ -1,0 +1,15 @@
+maap_libs_jupyter_extension/__init__.py,sha256=0BsbgutS4L-dJXpnf0zhuosH1oOAeOH6X65qsvee_bI,321
+maap_libs_jupyter_extension/_version.py,sha256=XTH3wC_6qgRcJQU0WB53fbAUk7pdrLziRkCWAxN224w,171
+maap_libs_jupyter_extension-1.2.4.data/data/share/jupyter/labextensions/maap-libs-jupyter-extension/build_log.json,sha256=At4WcGM3mntwcqPttT1h3YsbtI-zxESWh3NFQ1DAilg,22888
+maap_libs_jupyter_extension-1.2.4.data/data/share/jupyter/labextensions/maap-libs-jupyter-extension/package.json,sha256=lp4W-D67APlmfcPE8peDccjWT4Kmr_PrPn0J0zPAltg,2852
+maap_libs_jupyter_extension-1.2.4.data/data/share/jupyter/labextensions/maap-libs-jupyter-extension/static/lib_index_js.0948c920d44a04d98b05.js,sha256=m0FtREDDfje78PdfQsYAu6xyyPA-GKkPiIkIzfwpsZQ,25691
+maap_libs_jupyter_extension-1.2.4.data/data/share/jupyter/labextensions/maap-libs-jupyter-extension/static/lib_index_js.0948c920d44a04d98b05.js.map,sha256=pSLaUxwmihu4venxG3maxRM8_2nINBy_p3JcXkrnvTg,19148
+maap_libs_jupyter_extension-1.2.4.data/data/share/jupyter/labextensions/maap-libs-jupyter-extension/static/remoteEntry.8338d83d21763d7ca7e7.js,sha256=RMShGOe64aGwFCSv1qyDMvgHV_dAGnce5oZcbxWrfyk,28381
+maap_libs_jupyter_extension-1.2.4.data/data/share/jupyter/labextensions/maap-libs-jupyter-extension/static/remoteEntry.8338d83d21763d7ca7e7.js.map,sha256=_CP5xKS30v6bVBJkndTHYZrIfxvu6U0vDUGJhSEK-0s,27282
+maap_libs_jupyter_extension-1.2.4.data/data/share/jupyter/labextensions/maap-libs-jupyter-extension/static/style.js,sha256=5vGaw6PpxSZgrm9zYMu84V7YIuTMhls9FMRVy6g3s9k,170
+maap_libs_jupyter_extension-1.2.4.data/data/share/jupyter/labextensions/maap-libs-jupyter-extension/static/style_index_js.eefdd9eb371a6a4c41fb.js,sha256=V85QRyCsRN6oYOnRZzq5kIU5kBOwQAQ0SQ2kJNc0C_k,281
+maap_libs_jupyter_extension-1.2.4.data/data/share/jupyter/labextensions/maap-libs-jupyter-extension/install.json,sha256=jKxF07E01xcw1PdY4ut9DOL8fwg4OPSrEvTeSdNfans,215
+maap_libs_jupyter_extension-1.2.4.dist-info/METADATA,sha256=61Ed_u2557iHMS20AFHiteodizv8WTxJrAw-XimExOU,16794
+maap_libs_jupyter_extension-1.2.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+maap_libs_jupyter_extension-1.2.4.dist-info/licenses/LICENSE,sha256=uiovyVjDm0hEd3k_5PK8XUBAMDwQmH9LegS0YDm-y4w,10988
+maap_libs_jupyter_extension-1.2.4.dist-info/RECORD,,
