@@ -1,0 +1,11 @@
+qpmr/__init__.py,sha256=DiJfRNZxMgbOd-eEIPB-E8Ne0rGKJFDpNYKOnlHHFxk,221
+qpmr/argument_principle.py,sha256=389oEnWcj63c81yJYA6DTSokJ3mIiFz9GhrvbzBA1fo,2499
+qpmr/distribution.py,sha256=8kiJf2ZjX9Jex9e1oQZ7vBIHJjA9TimgGxopM6l-7oc,2660
+qpmr/numerical_methods.py,sha256=PCsVL6dgRP7P2rbjEK4QoYqsdPGaQ4KS4dEFULmYzfk,3168
+qpmr/qpmr_v2.py,sha256=hhGtGJJq6DD01DbAusgE_YfU0WwNBdtHI6SiYc6ZCq4,11946
+qpmr/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qpmr-0.0.1b1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+qpmr-0.0.1b1.dist-info/METADATA,sha256=jd_HerQXC8ws99nz2efsU7-PrkeDtoegHc6wmv08urA,48525
+qpmr-0.0.1b1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+qpmr-0.0.1b1.dist-info/top_level.txt,sha256=v2O1BoJt-k1NA1GpqxxBtpR_qhr8Vz1q7lRbiFrQw2o,5
+qpmr-0.0.1b1.dist-info/RECORD,,
