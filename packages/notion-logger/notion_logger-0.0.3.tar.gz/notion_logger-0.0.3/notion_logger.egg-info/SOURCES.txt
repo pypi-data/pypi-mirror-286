@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+notion_logger.egg-info/PKG-INFO
+notion_logger.egg-info/SOURCES.txt
+notion_logger.egg-info/dependency_links.txt
+notion_logger.egg-info/requires.txt
+notion_logger.egg-info/top_level.txt
