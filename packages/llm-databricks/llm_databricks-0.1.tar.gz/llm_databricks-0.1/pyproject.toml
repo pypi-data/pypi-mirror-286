@@ -1,0 +1,31 @@
+[project]
+name = "llm-databricks"
+version = "0.1"
+description = "LLM access to Databricks model serving"
+readme = "README.md"
+authors = [{name = "Ben Congdon"}]
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "llm",
+]
+
+[tool.pytest.ini_options]
+addopts = "-v"
+testpaths = [
+    "tests",
+]
+
+[project.urls]
+Homepage = "https://github.com/bcongdon/llm-databricks"
+Changelog = "https://github.com/bcongdon/llm-databricks/releases"
+Issues = "https://github.com/bcongdon/llm-databricks/issues"
+CI = "https://github.com/bcongdon/llm-databricks/actions"
+
+[project.entry-points.llm]
+databricks = "llm_databricks"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-httpx"]

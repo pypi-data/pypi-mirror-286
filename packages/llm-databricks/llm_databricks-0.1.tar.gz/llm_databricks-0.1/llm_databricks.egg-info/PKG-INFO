@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: llm-databricks
+Version: 0.1
+Summary: LLM access to Databricks model serving
+Author: Ben Congdon
+License: MIT
+Project-URL: Homepage, https://github.com/bcongdon/llm-databricks
+Project-URL: Changelog, https://github.com/bcongdon/llm-databricks/releases
+Project-URL: Issues, https://github.com/bcongdon/llm-databricks/issues
+Project-URL: CI, https://github.com/bcongdon/llm-databricks/actions
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: llm
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-httpx; extra == "test"
+
+# llm-databricks
+LLM plugin for Databricks Model Serving
+
+## Disclaimer
+
+I am a Databricks employee; however, this is solely a personal project and is not affiliated with or endorsed by Databricks in any way.
