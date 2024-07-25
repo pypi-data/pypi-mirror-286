@@ -1,0 +1,11 @@
+roboto_ingestion_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roboto_ingestion_utils/csv.py,sha256=yIh8JFl2ItfdgwYJqla7ox8v7BU1XIfbDJnOuErOMjI,15397
+roboto_ingestion_utils/image_dir.py,sha256=s1kuzbJ1F2ez6PqUs07Jtgep6Od1K7yn2ylBuPFfgy0,5246
+roboto_ingestion_utils/ingestion_utils.py,sha256=2RGlCehnO5Hgui94dqk2lmwswtQPa-ONMsbQyTHW2rs,6482
+roboto_ingestion_utils/metrics.py,sha256=Oudo4reyHDceoV_D1GbGE8u-7j8718hMew3p8rHhIyQ,1648
+roboto_ingestion_utils/timed.py,sha256=DbFRGmS5fVFKIsZTp2sF4x2WIW0Ps7fMCl5ctGIzCq4,985
+roboto_ingestion_utils-0.22.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+roboto_ingestion_utils-0.22.8.dist-info/METADATA,sha256=TvJ470yIPYn4hH1GLB_NZD_FXGqZHRmTmY9KpuHGr6o,836
+roboto_ingestion_utils-0.22.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+roboto_ingestion_utils-0.22.8.dist-info/top_level.txt,sha256=cC9c6m0wV3yyJ6_35CuXe6r-3XgG_8uzv-cyo1bKS2w,23
+roboto_ingestion_utils-0.22.8.dist-info/RECORD,,
