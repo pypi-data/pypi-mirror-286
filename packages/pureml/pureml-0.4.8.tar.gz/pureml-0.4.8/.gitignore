@@ -1,0 +1,13 @@
+dist/
+.venv/
+.pureml
+.test
+poetry.lock
+catboost_info/
+experiments/
+
+__pycache__/
+*.pyc
+puremlconfig.yaml
+requirements-dev.lock
+requirements.lock

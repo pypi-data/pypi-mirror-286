@@ -1,0 +1,89 @@
+[project]
+name = "pureml"
+version = "0.4.8"
+description = ""
+license = "Apache-2.0"
+authors = [
+    {name = "vamsidhar muthireddy", email = "vamsi.muthireddy@gmail.com"},
+    {name = "Thrinadhreddy Manubothu", email = "m.thrinadhreddy@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = ["pureml", "model-store", "machine-learning", "python", "model-registry", "collabortion"]
+
+dependencies = [
+    "PyYAML>=6.0.1",
+    "pydantic>=2.8.2",
+    "numpy>=1.26.4",
+    "typer[all]>=0.12.3",
+    "PyJWT>=2.8.0",
+    "requests>=2.32.3",
+    "python-dotenv>=1.0.1",
+    "Pillow>=10.4.0",
+    "pyarrow>=17.0.0",
+    "pandas>=2.2.2",
+    "matplotlib>=3.9.1",
+    "joblib>=1.4.2",
+    "fastapi>=0.111.1",
+    "uvicorn>=0.30.3",
+    "docker>=7.1.0",
+    "python-multipart>=0.0.9",
+    "nest-asyncio>=1.6.0",
+    "pyngrok>=7.2.0",
+    "ipapi>=1.0.4",
+    "scikit-learn>=1.5.1",
+    "boto3>=1.34.147",
+    "plotly>=5.23.0",
+    "httpx>=0.27.0",
+    "structlog>=24.4.0",
+    "pytest>=8.3.1",
+]
+
+[project.urls]
+Homepage = "https://pureml.com/"
+Repository = "https://github.com/engageml-github/Pure"
+Documentation = "https://docs.pureml.com"
+
+[project.scripts]
+pureml = "pureml.cli.main:app"
+
+[project.optional-dependencies]
+dev = [
+    "scikit-learn>=1.5.1",
+    "ipykernel>=6.29.5",
+    "lightgbm>=4.4.0",
+    "xgboost>=2.1.0",
+    "catboost>=1.2.5",
+    "fastparquet>=2024.5.0",
+    "pytest>=8.3.1",
+    "scipy>=1.13.1,<1.14.0; python_version >= '3.10' and python_version < '3.12'",
+    "ydata-profiling>=4.9.0; python_version >= '3.9' and python_version < '3.11'",
+    "ipywidgets>=8.1.3",
+    "tensorflow>=2.17.0; python_version >= '3.9' and python_version < '3.11'",
+    "notebook>=7.2.1",
+    "scikit-image>=0.24.0",
+    "opencv-python>=4.10.0.84",
+    "nltk>=8.1",
+    "pytorch-tabnet>=4.1.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+    "tests/models",
+    "tests/components"
+]
+
+[tool.black]
+line-length = 80
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
