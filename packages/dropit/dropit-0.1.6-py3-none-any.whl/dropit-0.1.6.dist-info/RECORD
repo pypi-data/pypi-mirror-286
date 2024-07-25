@@ -1,0 +1,11 @@
+dropit/__init__.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+dropit/main.py,sha256=8CVbukk8hKiaq5xI8r_xHfVUn8McDUILzI3JS3pJB4g,5348
+dropit/static/scripts.js,sha256=ElxIKLGanct1Z63mWP1Z7imvUweg1CMf1_Sd8BgdQgc,2599
+dropit/static/styles.css,sha256=pMoFVfKShRw1YFZys9wAPS46fzJx1v0-ZTn3xyyJNxA,2407
+dropit/templates/index.html,sha256=c5ZEZXid3ZMQ_Zt0rcv2Ff3LOSmZTAE-t-n3sWYkzKM,1685
+dropit-0.1.6.dist-info/LICENSE,sha256=JBEMj2N9TJjoOs-g6A7aCbd-s7tx-AbwMfnrGYZ63As,1067
+dropit-0.1.6.dist-info/METADATA,sha256=0vGwrqF8b4_dwEFL2n19aSfkT30wjbEImhmx8IK8dWE,3331
+dropit-0.1.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dropit-0.1.6.dist-info/entry_points.txt,sha256=mXq320_88IkyVAattZZ3djajKxOkCLtaZZORjIiK3-M,47
+dropit-0.1.6.dist-info/top_level.txt,sha256=RC7wN3i-xKmLSSS4pLo0uj8-rTKnbtxAM78aNkKXW3k,7
+dropit-0.1.6.dist-info/RECORD,,
