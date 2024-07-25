@@ -1,0 +1,9 @@
+spasm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spasm/pp/__init__.py,sha256=GlJySfWoR7hmCRiYwyHjuIbQEihKZsv22h7wVwWaUSk,770
+spasm/pp/__main__.py,sha256=sgbvPoG96U2hQZkebVcizvCc07ia6CEqZlpZJiBnz7Y,842
+spasm/pp/cli.py,sha256=1wZxpAr4rXj8vNc05EHt6eynHbtT3zib1FstMdw8iDA,1587
+spasm/pp/processor.py,sha256=5TCfmZi3Eh5aOlimqtdBznAgleVYI290bpWnkZBkn8U,16493
+spasm_by_sporniket-0.0.1.dist-info/METADATA,sha256=I3uldmufg0vuXMoKmbKQDZ5Xx5IBwOoOYT8tM0cwlQc,301
+spasm_by_sporniket-0.0.1.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+spasm_by_sporniket-0.0.1.dist-info/entry_points.txt,sha256=QfgE4gVQAy-0ggmy2-eQVEnwXUgYtB6g-3TEwtV41l0,53
+spasm_by_sporniket-0.0.1.dist-info/RECORD,,
