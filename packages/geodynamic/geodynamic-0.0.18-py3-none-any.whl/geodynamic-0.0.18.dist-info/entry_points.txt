@@ -1,0 +1,2 @@
+[console_scripts]
+geodynamic = geodynamic.command_line:test
