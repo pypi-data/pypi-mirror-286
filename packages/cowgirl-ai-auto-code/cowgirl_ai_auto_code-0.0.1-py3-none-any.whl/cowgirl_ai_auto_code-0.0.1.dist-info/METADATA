@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cowgirl-ai-auto-code
+Version: 0.0.1
+Summary: Cowgirl AI - Auto Load
+Home-page: https://github.com/Cowgirl-AI/auto-code
+Author: Tera Earlywine
+Author-email: dev@teraearlywine.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Auto Code
