@@ -1,0 +1,7 @@
+sum_matcher/__init__.py,sha256=f9TlkLJrANacXTE7mtDdUGVys7Dv53Rfj4G7KLVEFYg,70
+sum_matcher/matcher.cp310-win_amd64.pyd,sha256=33EA9F5gW34KE70T5U1WSAP-6sX1WM7-4dX6rLwZxIM,51200
+sum_matcher-0.2.0.dist-info/LICENSE,sha256=sJqAfFfbbMrpHXiuY8vYYIQD8Z5mg_DhZUm9RdpLcYM,1099
+sum_matcher-0.2.0.dist-info/METADATA,sha256=t2lAcri8FEIQPCLVnCLZI6qPArrRhB0LCF2boHntVVI,611
+sum_matcher-0.2.0.dist-info/WHEEL,sha256=G3rUecCX3CsVBcQJyjwgL9XzLDe6Kd8bJdI39ws9ZcE,101
+sum_matcher-0.2.0.dist-info/top_level.txt,sha256=YySSrFshOt1brDz40wObC6UUxQg_eRKgCM3QXy7CdOc,12
+sum_matcher-0.2.0.dist-info/RECORD,,
