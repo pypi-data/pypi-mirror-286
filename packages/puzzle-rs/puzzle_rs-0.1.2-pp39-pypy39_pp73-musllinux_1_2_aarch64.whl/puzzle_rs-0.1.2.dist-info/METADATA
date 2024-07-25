@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: puzzle-rs
+Version: 0.1.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: 数字华容道 核心库
+Home-Page: https://github.com/initialencounter/puzzle
+Author: inintencunter <2911583893@qq.com>
+Author-email: initialencounter <2911583893@qq.com>
+Requires-Python: >=3.8
+Project-URL: Homepage, https://github.com/initialencounter/puzzle
+Project-URL: Repository, https://github.com/initialencounter/puzzle
