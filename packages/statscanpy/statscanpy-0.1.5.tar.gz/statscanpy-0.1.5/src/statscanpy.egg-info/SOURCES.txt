@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/statscanpy/StatsCanPy.py
+src/statscanpy/__init__.py
+src/statscanpy.egg-info/PKG-INFO
+src/statscanpy.egg-info/SOURCES.txt
+src/statscanpy.egg-info/dependency_links.txt
+src/statscanpy.egg-info/requires.txt
+src/statscanpy.egg-info/top_level.txt
+tests/test_module.py
