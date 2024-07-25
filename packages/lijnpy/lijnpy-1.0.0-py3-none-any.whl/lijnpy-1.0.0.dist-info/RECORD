@@ -1,0 +1,8 @@
+lijnpy/__init__.py,sha256=0ds1l220Pol74Qml5mBSYtov6AbuiYiHPanZjzB2GlE,121
+lijnpy/_rest_adapter.py,sha256=2JcX42x4rDFgRtJLbWxdF6e1LJwd1F4iwOz_MmmBNVY,5998
+lijnpy/enums.py,sha256=EMz5TNtqw6-6GH8TkavPJkXfo7jg-aeweG-A5eF5qaw,570
+lijnpy/kods_client_v1.py,sha256=cWQdG5n7ErvnvLt_Fris3W1t80WM3c9eno9jBj6GHxM,12142
+lijnpy/models.py,sha256=DY2qf9rW7R9xQtUN55qE86u9VMMtuALRjnM3JH8c-Ao,14279
+lijnpy-1.0.0.dist-info/METADATA,sha256=3Az6hhY1DS4Q3wsQo5TK6Jia8vqQhzfjG_S1NJ2Utdc,1837
+lijnpy-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lijnpy-1.0.0.dist-info/RECORD,,
