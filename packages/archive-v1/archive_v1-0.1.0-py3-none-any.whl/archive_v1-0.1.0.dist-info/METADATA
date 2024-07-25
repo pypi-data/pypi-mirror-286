@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: archive-v1
+Version: 0.1.0
+Summary: keep clean your file tree during development
+License: MIT
+Author: kagemeka
+Author-email: kagemeka1@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: toml (==0.10.2)
+Description-Content-Type: text/markdown
+
+# archiver
+
+## system requirements
+
+- Python >= 3.8
+
+## installation
+
+```sh
+pip install archiver-v1
+```
+
+## Usage
+
