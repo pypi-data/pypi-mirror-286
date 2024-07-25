@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "ds-cc-toolkit"
+version = "0.1.2"
+description = "A collection of resources to be used by the Data Science Services"
+authors = ["lukasbenicCC <lukas@cloudcycle.com>"]
+readme = "README.md"
+packages = [{ include = "ds_toolkit" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^3.7.1"
+moto = "^5.0.11"
+watchtower = "^3.2.0"
+pylint = "^3.2.5"
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.poetry.scripts]
+test-unit = "tests.unit.test_suite:main"
+test-functional = "tests.functional.test_suite:main"
