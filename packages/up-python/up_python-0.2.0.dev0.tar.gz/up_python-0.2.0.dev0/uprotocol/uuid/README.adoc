@@ -1,0 +1,28 @@
+= uProtocol UUID
+:toc:
+:sectnums:
+
+== Overview
+
+Implementation of https://github.com/eclipse-uprotocol/up-spec/blob/main/basics/uuid.adoc[uProtocol UUID specifications].
+
+== Examples
+
+[source,python]
+----
+    uuid = Factories.UPROTOCOL.create()
+    version = UUIDUtils.get_version(uuid)
+    time = UUIDUtils.get_time(uuid)
+    str_uuid = UuidSerializer.serialize(uuid)
+
+    assertTrue(UUIDUtils.is_uprotocol(uuid))
+    assertTrue(UUIDUtils.is_uuid(uuid))
+    assertFalse(UUIDUtils.is_uuidv6(uuid))
+    assertTrue(version)
+    assertTrue(time)
+    assertFalse(str_uuid.isspace())
+
+    uuid1 = UuidSerializer.deserialize(uuid_string)
+    assertNotEqual(uuid1, UUID())
+    assertEqual(uuid, uuid1)
+----

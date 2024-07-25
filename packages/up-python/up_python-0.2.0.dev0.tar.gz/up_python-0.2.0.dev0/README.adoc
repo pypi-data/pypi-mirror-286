@@ -1,0 +1,119 @@
+= Eclipse uProtocol Python Library
+:toc:
+
+== Overview
+
+This library implements the https://github.com/eclipse-uprotocol/uprotocol-spec/blob/main/languages.adoc[uProtocol Language Specific Library Requirements] for Python defined in https://github.com/eclipse-uprotocol/uprotocol-spec/tree/main[uProtocol Specifications]. The library is organized into packages that are described in <<sdk-packages>> below and organized by the layers of the protocol.
+
+Each package contains a README.adoc file that describes the purpose of the package and how to use it.
+
+The module contains the factory methods, serializers, and validators for all data types defined in the specifications, and any data models that either haven't or couldn't be defined in uprotocol-core-api yet (ex. UPayload) This library fits into the big picture of the uProtocol SDK as seen in the diagram below.
+
+.uProtocol SDK
+image:https://raw.githubusercontent.com/eclipse-uprotocol/up-spec/main/up_libraries.drawio.svg[#uprotocol-sdk,width=100%,align="center"]
+
+
+== Getting Started
+
+=== Prerequisites
+Before proceeding with the setup of this project, ensure that the following prerequisites are met:
+
+* Maven is installed and configured in your environment. You can verify this by running the following command in your terminal:
+[,bash]
+----
+mvn -version
+----
+If Maven is properly installed, you should see information about the Maven version and configuration. +
+
+NOTE: Ensure you are using Java 17 with your Maven installation before continuing with the next steps. Other versions of Java may not be supported.
+
+=== Importing the Library
+
+To set up SDK, follow the steps below:
+
+. Clone the code from the GitHub repository:
++
+[source]
+----
+git clone https://github.com/eclipse-uprotocol/up-python.git
+----
+
+. Execute the `pull_and_compile_protos.py` script using the following commands:
++
+[source]
+----
+cd scripts
+python pull_and_compile_protos.py
+----
+This script automates the following tasks:
+
+1. **Cloning and Compilation of Protos:**
+   Clones the `up-core-api` protos from the `up-spec` repository, compiles them, and generates Python protofiles in the protos folder.
+
+. Install up-python
++
+[source]
+----
+python -m pip install ../
+----
+
+*This will install up-python, making its classes and modules available for import in your python code.*
+
+=== Using the Library
+
+The Library is broken up into different packages that are described in <<sdk-packages>> below. Each package contains a README.adoc file that describes the purpose of the package and how to use it. Packages are organized into the following directories:
+
+
+.SDK Packages
+[#sdk-packages,width=100%,cols="1,2,5",options="header"]
+|===
+
+| Package | Protocol Layer | Purpose
+
+| link:uprotocol/client/README.adoc[`*client*`]
+| https://github.com/eclipse-uprotocol/up-spec/tree/main/up-l3[Application Layer (uP-L3)]
+| Top level client-facing interfaces to communication with USubscription, UDiscovery, and UTwin services.
+
+| link:uprotocol/communication/README.adoc[`*communication*`]
+| https://github.com/eclipse-uprotocol/up-spec/tree/main/up-l2[communication layer (uP-L2)]
+| Common implementation of communication messaging patterns (publisher, subscriber, Rpcclient, RpcServer, etc..) that is build on top of the L1 transport interface (see below)
+
+| link:uprotocol/transport/README.adoc[`*transport*`]
+| https://github.com/eclipse-uprotocol/uprotocol-spec/blob/main/up-l1/README.adoc[Transport Layer (uP-L1)]
+| Interface and data model for how to send() and receive() messages in a common way across various transport technologies (ex. zenoh, mqtt, http, etc...). the interface is implemented by transports (ex. up-transport-zenoh-python), and the interface is then used to build the uProtocol layer 2 communication layer implementation.
+
+| link:uprotocol/uri/README.adoc[`*uri*`]
+|
+| Uniform Resource Identifier (RFC3986), how uProtocol addresses things (devices, software, methods, topics, etc...) on the network.
+
+| link:uprotocol/uuid/README.adoc[`*uuid*`]
+|
+| Identifier used to uniquely identify (and timestamp) messages that are sent.
+
+|===
+
+NOTE: Please visit the READMEs in <<sdk-packages>> for examples of how to use the different data types and their factories, validators, and serializers.
+
+
+=== Cleaning Up
+
+Clean up by running the command:
+`python clean_project.py`
+
+=== Running the Tests
+
+- Execute below command from up-python directory
+
+[source]
+----
+python -m coverage run --source uprotocol/ -m pytest
+----
+=== Generate coverage report
+
+[source]
+----
+python -m coverage report
+python -m coverage html
+----
+This generates the HTML report to htmlcov\index.html
+
