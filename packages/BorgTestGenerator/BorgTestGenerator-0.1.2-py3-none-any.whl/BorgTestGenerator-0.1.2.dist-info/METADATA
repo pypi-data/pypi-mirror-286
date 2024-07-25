@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: BorgTestGenerator
+Version: 0.1.2
+Summary: Librairie pour générer des tests unitaires à partir de scripts Python en utilisant OpenAI.
+Home-page: https://github.com/smartestmanuniverse/BorgTestGenerator
+Author: 0x07cb
+Author-email: 83157348+0x07CB@users.noreply.github.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+
+# BorgTestGenerator
+> OpenAI assitants automations to generate python3 unittest files 
+
+BorgTestGenerator est une librairie Python qui génère des fichiers de tests unitaires à partir de scripts Python en utilisant l'API OpenAI.
+
+## Installation
+
+```bash
+pip install BorgTestGenerator
+```
