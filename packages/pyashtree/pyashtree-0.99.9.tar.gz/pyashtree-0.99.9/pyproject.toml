@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyashtree"
+version = "0.99.9"
+authors = [{name = "Pavel Vorobyev", email = "aquavitale@yandex.ru"}]
+description = "a micro webframework based on fastapi and motor"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[all]",
+    "pydantic",
+    "starlette",
+    "ipython",
+    "uvicorn",
+    "jinja2",
+    "mongey",
+    "bcrypt"
+]
+keywords = [
+    "fastapi",
+    "pymongo",
+    "mongodb",
+    "motor",
+    "asyncio"
+]
+license = {text = "MIT"}
+readme = "README.md"
+
+[tool.setuptools.package-data]
+ashtree = [
+    "**/*.py",
+    "**/*.tmpl",
+    "templates/.shellrc.py"
+]
+
+[project.urls]
+Source = "https://github.com/viert/ashtree"
+
+[project.scripts]
+ashtree = "ashtree.command:main"
