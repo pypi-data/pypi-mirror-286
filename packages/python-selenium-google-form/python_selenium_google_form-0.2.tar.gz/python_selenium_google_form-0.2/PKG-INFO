@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: python_selenium_google_form
+Version: 0.2
+Requires-Dist: undetected_chromedriver==3.5.5
+Requires-Dist: selenium==4.22.0
