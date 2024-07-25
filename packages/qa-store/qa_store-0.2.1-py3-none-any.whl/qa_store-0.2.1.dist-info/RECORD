@@ -1,0 +1,9 @@
+qa_store/__init__.py,sha256=ZThyLgjUJek0CnW7sNWVKTq5FJZFnAP0xuZw0dyxb98,213
+qa_store/helpers.py,sha256=IN6s1HTsYDTMwUD7d6n2Q7N4d6qnvaf7-QerhBP7CF8,1300
+qa_store/qa_kb.py,sha256=9rEBOdsuz6qYFhEzCW4x5SToCwfSWIvT-4Qfm2HLp5w,16414
+qa_store/qa_system.py,sha256=nFzsjCIhqZ-wCKcyc_n_AfR0eVAXMYJ5TtnwuPlB2kw,3888
+qa_store/qa_tree.py,sha256=gZngOk5y4dnIO3p1zWXeVZ7gKexd5Q79Az1vOZDkuGU,10916
+qa_store-0.2.1.dist-info/METADATA,sha256=tHsfe9Ku_oV0PlwUhbAMCIZQhN1quFO8GTceBVJsB4s,5785
+qa_store-0.2.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+qa_store-0.2.1.dist-info/licenses/LICENSE,sha256=5-7mFoyiCnpiWBREqLWyZ3TFD5NzD-9kkl-qjuqxvxE,1072
+qa_store-0.2.1.dist-info/RECORD,,
