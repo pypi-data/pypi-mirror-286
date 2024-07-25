@@ -1,0 +1,14 @@
+pyhelayerslite-1.5.4.0.dist-info/RECORD,,
+pyhelayerslite-1.5.4.0.dist-info/LICENSE,sha256=mSFrFBc-lB3OK5ydfCy2r7uvpdfRoKCQfi6tmDeOoWE,9734
+pyhelayerslite-1.5.4.0.dist-info/WHEEL,sha256=Nef0SLSNTNx7sfUsEzU38AT9y2mXWDRNLuhigjWxdIY,107
+pyhelayerslite-1.5.4.0.dist-info/top_level.txt,sha256=A7j0qjG02uYbIx-P_pEPKoQ5dT-jsHxL4GoHp6dBK0k,15
+pyhelayerslite-1.5.4.0.dist-info/METADATA,sha256=IEnEygI84vi7OA5AcxgwL07IAnYo8DBVFJxheAhYTzI,1499
+pyhelayerslite/__init__.py,sha256=jpRpbjg_GOmOiYHgEwjN_Y7iFwCy3RH25gLlE_EBkLE,1500
+pyhelayerslite/_pyhelayerslite_cppwrappers.cpython-38-darwin.so,sha256=7ddzi-Y2JBasbuePN6ISRNS4_I4WfIF1J1BL1xTuV9M,4593760
+pyhelayerslite/resources/optimizer/lattigo.json,sha256=Iu6vcHU2fdB03XsCTdrlr4aWXJq-dxVnD8BVF2pQNtQ,168919
+pyhelayerslite/resources/optimizer/seal.json,sha256=KcNyjgFiNlQ8aSlLa5nHkUKYrITMTLJKKGY-JO4YJZ4,175641
+pyhelayerslite/resources/optimizer/openfhe-ckks.json,sha256=zLbSipUYy4-imbkJ2d2mfSBgk9c22GKan1hRYWhJlXk,149452
+pyhelayerslite/resources/optimizer/palisade.json,sha256=NoygeIy0cLRl1O7iygvzEkv7mEeT3GYttWqRLy9qVHI,61670
+pyhelayerslite/resources/er/nick_to_name.csv,sha256=j5QmpatJMomvWb80msSBtrCVxrqs3aUA0oG_ZWfPwqE,5157
+pyhelayerslite/resources/er/README.md,sha256=daAL5u8i7vxlp39ig3eJwCbx70Cw-PnejoaKkXVS9_I,618
+pyhelayerslite/libs/_dummy.cpython-38-darwin.so,sha256=3oajSJmrt07GPoMaGWB0tEmb5xpt1k8Whnu5Z6F0ztI,16888
