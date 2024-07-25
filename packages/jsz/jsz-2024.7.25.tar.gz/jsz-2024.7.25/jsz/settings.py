@@ -1,0 +1,91 @@
+"""
+配置
+"""
+
+__all__ = ["headers"]
+
+headers = {
+    "connection": "close",
+    "user-agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/104.0.0.0 Safari/537.36"
+    ),
+}
+
+NON_BREAKING_ELEMENTS = [
+    "a",
+    "abbr",
+    "acronym",
+    "audio",
+    "b",
+    "bdi",
+    "bdo",
+    "big",
+    "button",
+    "canvas",
+    "cite",
+    "code",
+    "data",
+    "datalist",
+    "del",
+    "dfn",
+    "em",
+    "embed",
+    "font",
+    "i",
+    "iframe",
+    "img",
+    "input",
+    "ins",
+    "kbd",
+    "label",
+    "map",
+    "mark",
+    "meter",
+    "noscript",
+    "object",
+    "output",
+    "picture",
+    "progress",
+    "q",
+    "ruby",
+    "s",
+    "samp",
+    "script",
+    "select",
+    "slot",
+    "small",
+    "span",
+    "strong",
+    "sub",
+    "sup",
+    "svg",
+    "template",
+    "textarea",
+    "time",
+    "u",
+    "tt",
+    "var",
+    "video",
+    "wbr",
+]
+BLOCK_TAGS = [
+    "p",
+    "div",
+    "h1",
+    "h2",
+    "h3",
+    "h4",
+    "h5",
+    "h6",
+    "ul",
+    "ol",
+    "li",
+    "table",
+    "tr",
+    "thead",
+    "tbody",
+    "tfoot",
+    "form",
+]
