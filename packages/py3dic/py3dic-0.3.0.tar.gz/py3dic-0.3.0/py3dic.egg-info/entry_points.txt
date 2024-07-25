@@ -1,0 +1,3 @@
+[console_scripts]
+tk_dic_analysis = py3dic.guis.tk_dic_analysis.tk_dic_analysis_launcher:tk_analysis_app_launcher
+tk_dic_viewer = py3dic.guis.viewer_app.viewer_launcher:tk_viewer_app_launcher
