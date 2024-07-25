@@ -1,0 +1,7 @@
+processors/__init__.py,sha256=K-YONOF1RKFwIkN71dvLwUVLldV8k75lV0LudiTE8vc,41
+processors/text_processor.py,sha256=yRGYalm9i27lGLnNmVWaEtenHJOyn5hFJiENigH8WLM,6675
+processors-0.0.10.dist-info/LICENSE,sha256=BmgfaPhjK_RibNbpfmlNF_eaYsuFyjNdudyRPvqsRCI,1065
+processors-0.0.10.dist-info/METADATA,sha256=LBhOWmq9-ynLho_6z8Vg3lNAd5LkulihKkbk41C255g,1038
+processors-0.0.10.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+processors-0.0.10.dist-info/top_level.txt,sha256=SYUZK5Mrs52jKQCFqrCtwXJHzLjzYcAiP0hoDV9h9v8,11
+processors-0.0.10.dist-info/RECORD,,
