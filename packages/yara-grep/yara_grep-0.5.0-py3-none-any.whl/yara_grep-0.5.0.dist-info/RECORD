@@ -1,0 +1,6 @@
+yara_grep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yara_grep/cli.py,sha256=SOP2O-61up7Y_8EGWUaRAAsj_uqqQ1H-neP9hV167Fk,3136
+yara_grep-0.5.0.dist-info/entry_points.txt,sha256=vG-_THpKmqxz4_nhdVRC17kUGc9BAMNEAA9Qjpv2r-I,44
+yara_grep-0.5.0.dist-info/METADATA,sha256=gKZJV7ap3SJ_YPb_RBdxqdnJNkgP3-qH0IwxKfeLlVU,3614
+yara_grep-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+yara_grep-0.5.0.dist-info/RECORD,,
