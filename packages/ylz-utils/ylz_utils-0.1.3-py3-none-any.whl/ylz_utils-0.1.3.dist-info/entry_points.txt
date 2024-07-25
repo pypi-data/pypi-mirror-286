@@ -1,0 +1,3 @@
+[console_scripts]
+ylz_translate=ylz_translate.cli.main:run
+
