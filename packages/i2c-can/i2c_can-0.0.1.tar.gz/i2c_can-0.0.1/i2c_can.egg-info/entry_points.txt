@@ -1,0 +1,2 @@
+[console_scripts]
+example_multiple_pids = examples.example_multiple_pids:main
