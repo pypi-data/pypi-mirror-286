@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+dtag/__init__.py
+dtag/documents.py
+dtag/files.py
+dtag.egg-info/PKG-INFO
+dtag.egg-info/SOURCES.txt
+dtag.egg-info/dependency_links.txt
+dtag.egg-info/top_level.txt
+tests/test_documents.py
+tests/test_files.py
