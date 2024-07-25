@@ -1,0 +1,29 @@
+[project]
+name = "netzoo_porcupine"
+version = "1.0.1"
+description = "A package implementing a Principal Components Analysis (PCA)-based approach to identify biological pathways driving inter-tumour heterogeneity in gene regulatory networks."
+readme = "README.md"  
+authors = [
+    { name = "Rosalie Coulon", email = "rosalie.coulon@hotmail.fr" }
+]
+maintainers = [
+    { name = "Ladislav Hovan", email = "ladislav.hovan@ncmm.uio.no" }
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pyreadr",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "scipy",
+    "yellowbrick",
+    "seaborn",
+    "matplotlib"
+]
+[project.urls]
+homepage = "https://github.com/rosalie49/PORCUPINE"

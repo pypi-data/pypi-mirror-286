@@ -1,0 +1,8 @@
+pyreadr
+pandas
+numpy
+scikit-learn
+scipy
+yellowbrick
+seaborn
+matplotlib
