@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: fmd
+Version: 0.1.2
+Summary: Provide users with an easy-to-use interface to access data from the FMD API.
+Author: Yu Chen, Yang
+Author-email: ycy.tai@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# fmd
+
+Provides users with an easy-to-use interface to access data from the *Financial Market Data (FMD)* API, specializing in Taiwan's financial markets.
+
+## Installation
+
+Install via `pip`
+```
+pip install fmd
+```
+
+## Quick Start
+
+Retrieve data through `FmdApi` with various predefined methods.
+```python
+from fmd import FmdApi
+
+fmd_api = FmdApi()
+data = fmd_api.get_stock_price(
+    symbol='2330', 
+    start_date='2024-07-01', 
+    end_date='2024-07-15'
+)
+```
+
