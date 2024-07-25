@@ -1,0 +1,101 @@
+{
+  "cells": {
+    "allIds": [
+      "0ad6ad50-d1b3-4409-8c2d-1bc5c6f869ee"
+    ],
+    "byId": {
+      "0ad6ad50-d1b3-4409-8c2d-1bc5c6f869ee": {
+        "type": "code-cell",
+        "studentSolutionIds": [
+          "8d0c2073-267f-4fbc-ba97-dc64fe1014cb",
+          "06bd7561-faf8-4461-971e-0707fcc135c9"
+        ],
+        "metadata": {
+          "showSolution": false,
+          "testingMode": "tests",
+          "visible": true
+        },
+        "descriptionId": "995ec4e6-d509-4a1d-8784-9ab772b16c69",
+        "id": "0ad6ad50-d1b3-4409-8c2d-1bc5c6f869ee",
+        "startingCodeId": "fa7c5fa4-9582-4ba5-91ba-4667b1f18e8d",
+        "solutionCodeId": "f9d84b10-96f5-4ce6-945b-101184ea6736",
+        "documentId": "30268076-1285-4fbe-add3-7132a2ab617f",
+        "testingCodeIds": [
+          "286b7c71-aa5a-47df-8325-d6291678a862",
+          "25ff673e-1508-4a89-b56e-a90a0a34ba31"
+        ]
+      }
+    }
+  },
+  "fields": {
+    "allIds": [
+      "995ec4e6-d509-4a1d-8784-9ab772b16c69",
+      "fa7c5fa4-9582-4ba5-91ba-4667b1f18e8d",
+      "f9d84b10-96f5-4ce6-945b-101184ea6736",
+      "8d0c2073-267f-4fbc-ba97-dc64fe1014cb",
+      "286b7c71-aa5a-47df-8325-d6291678a862",
+      "06bd7561-faf8-4461-971e-0707fcc135c9",
+      "25ff673e-1508-4a89-b56e-a90a0a34ba31"
+    ],
+    "byId": {
+      "f9d84b10-96f5-4ce6-945b-101184ea6736": {
+        "src": "# Solution code here (without the starting code)",
+        "id": "f9d84b10-96f5-4ce6-945b-101184ea6736",
+        "language": "python",
+        "createdBy": "e25264935e8b4fe6ae2c1f659dc1d0cd",
+        "type": "code"
+      },
+      "06bd7561-faf8-4461-971e-0707fcc135c9": {
+        "language": "python",
+        "type": "code-solution",
+        "createdBy": "a3c9b61ee7624c74aa436af5267dca42",
+        "id": "06bd7561-faf8-4461-971e-0707fcc135c9",
+        "grade": -1.0,
+        "comment": "",
+        "src": "# Add your solution here, beware of the starting code and indented blocks",
+        "submitted": false
+      },
+      "8d0c2073-267f-4fbc-ba97-dc64fe1014cb": {
+        "comment": "",
+        "grade": -1.0,
+        "id": "8d0c2073-267f-4fbc-ba97-dc64fe1014cb",
+        "src": "# Add your solution here, beware of the starting code and indented blocks",
+        "type": "code-solution",
+        "submitted": false,
+        "language": "python",
+        "createdBy": "e25264935e8b4fe6ae2c1f659dc1d0cd"
+      },
+      "995ec4e6-d509-4a1d-8784-9ab772b16c69": {
+        "src": "#### Description here \n (supports **markdown**)",
+        "createdBy": "e25264935e8b4fe6ae2c1f659dc1d0cd",
+        "id": "995ec4e6-d509-4a1d-8784-9ab772b16c69",
+        "type": "markdown"
+      },
+      "25ff673e-1508-4a89-b56e-a90a0a34ba31": {
+        "id": "25ff673e-1508-4a89-b56e-a90a0a34ba31",
+        "language": "python",
+        "name": "",
+        "verified": false,
+        "createdBy": "a3c9b61ee7624c74aa436af5267dca42",
+        "src": "assert ",
+        "type": "test-code"
+      },
+      "fa7c5fa4-9582-4ba5-91ba-4667b1f18e8d": {
+        "createdBy": "e25264935e8b4fe6ae2c1f659dc1d0cd",
+        "id": "fa7c5fa4-9582-4ba5-91ba-4667b1f18e8d",
+        "type": "code",
+        "language": "python",
+        "src": "# Starting code here"
+      },
+      "286b7c71-aa5a-47df-8325-d6291678a862": {
+        "src": "assert ",
+        "id": "286b7c71-aa5a-47df-8325-d6291678a862",
+        "createdBy": "e25264935e8b4fe6ae2c1f659dc1d0cd",
+        "type": "test-code",
+        "language": "python",
+        "verified": false,
+        "name": ""
+      }
+    }
+  }
+}

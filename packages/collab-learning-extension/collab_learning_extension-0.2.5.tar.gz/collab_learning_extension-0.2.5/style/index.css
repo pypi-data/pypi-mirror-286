@@ -1,0 +1,45 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.jp-puzzle-panel{
+    overflow-y: scroll;
+}
+h1{
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+.radio:disabled {
+  opacity: 0.8;
+}
+.checkbox:disabled {
+  opacity: 0.8;
+}
+.btn:disabled {
+  opacity: 0.5;
+}
+.diffViewport{
+    display: none;
+  }
+ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  list-style-type: disc;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+a{
+  @apply underline text-blue-400
+}
