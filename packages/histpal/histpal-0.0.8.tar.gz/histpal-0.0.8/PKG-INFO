@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: histpal
+Version: 0.0.8
+Summary: A Python library that empowers you to explore and utilize color palettes from various historical civilizations 
+Home-page: https://github.com/A7med-7elmy/histpal
+Author: Ahmed Helmy
+Author-email: Ahmed Helmy <a7med.7assaan@gmail.com>
+Project-URL: Homepage, https://github.com/A7med-7elmy/histpal
+Project-URL: Issues, https://github.com/A7med-7elmy/histpal/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Historical Palettes
+
+HistoricalPalettes is a Python library that empowers you to explore and utilize color palettes from various historical periods. With this library, you can:
+
+*Access historical color data:
+     Discover predefined color palettes from different eras, including RGB values and descriptive names.
+
+*Generate variations:
+     Create custom color schemes based on historical palettes by adjusting hues, saturation, or brightness.
+
+*Visualize color palettes:
+    Easily visualize historical color combinations using plotting libraries like Matplotlib or Seaborn.
+    Integrate with design workflows: Integrate historical color palettes seamlessly into your design projects using standard Python libraries.
+
+
+Get started with HistoricalPalettes and bring the rich history of color to your projects!
