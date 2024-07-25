@@ -1,0 +1,10 @@
+boxbeam.py,sha256=gJpkczLlx7dc4bkamP8ChA5pxJR4MxUL6eA6bBOfssw,998
+bbeam.cpython-38-x86_64-linux-gnu.so,sha256=xt_n9zW7PUWtVo7e3y_FFbGYZFwP9_KOZ8LD1fAFEwE,447105
+boxbeam.libs/libgfortran-93980b03.so.5.0.0,sha256=VRPmUjgQd_BY9MZtJxiNd9ToNjdBD8kmV1-G0G2SSKU,2714697
+boxbeam.libs/libquadmath-776d53b6.so.0.0.0,sha256=3FY9LfNiF_4qtQ_ZZncl3g5v7__d2mmyG-o2kSRS-8Q,272193
+boxbeam.libs/libblas-fe34f726.so.3.8.0,sha256=sJXNNUzVH9mVoISXXKEF4wrZZT3NqbblRhjLtvEi6G8,415169
+boxbeam.libs/liblapack-31d7d384.so.3.8.0,sha256=OeuiFdTB2Qz7zwNxNKbOUzbB3ZEirvCIfFvGwQ-qYzE,7808185
+boxbeam-1.3.0.dist-info/METADATA,sha256=sRctMZbCHhepBhkV0zijCaMHKV9pyPnZbTY9KDDTUCQ,12918
+boxbeam-1.3.0.dist-info/WHEEL,sha256=B7auA-3c7fM9hGyWqEksWDKp4gMp3YVkCemP4gx7UZo,108
+boxbeam-1.3.0.dist-info/LICENSE,sha256=IHxaJtEwBgT1z4uWh856nmrqiOAhqLjX5A1Cr0cAc-k,272
+boxbeam-1.3.0.dist-info/RECORD,,
