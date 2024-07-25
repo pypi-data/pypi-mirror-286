@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: existutil
+Version: 0.0.0a0
+Summary: exist utils for data loading, reading, and exploratory data analysis
+Home-page: https://github.com/devinaconley/exist-util
+Author: Devin A. Conley
+Author-email: devinaconley@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv
+Requires-Dist: requests <3,>=2
+
+# exist-util
+exist utils for data loading, reading, and eda
