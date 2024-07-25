@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+iplocate/__init__.py
+iplocate/iplocate.py
+iplocator.egg-info/PKG-INFO
+iplocator.egg-info/SOURCES.txt
+iplocator.egg-info/dependency_links.txt
+iplocator.egg-info/entry_points.txt
+iplocator.egg-info/requires.txt
+iplocator.egg-info/top_level.txt
