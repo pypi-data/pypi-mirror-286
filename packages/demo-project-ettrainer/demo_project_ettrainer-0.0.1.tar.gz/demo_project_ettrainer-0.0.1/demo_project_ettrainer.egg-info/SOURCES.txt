@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+demo_project_ettrainer/__init__.py
+demo_project_ettrainer/modul1.py
+demo_project_ettrainer/modul2.py
+demo_project_ettrainer.egg-info/PKG-INFO
+demo_project_ettrainer.egg-info/SOURCES.txt
+demo_project_ettrainer.egg-info/dependency_links.txt
+demo_project_ettrainer.egg-info/requires.txt
+demo_project_ettrainer.egg-info/top_level.txt
+demo_project_ettrainer/unterpackage/__init__.py
+demo_project_ettrainer/unterpackage/modul3.py

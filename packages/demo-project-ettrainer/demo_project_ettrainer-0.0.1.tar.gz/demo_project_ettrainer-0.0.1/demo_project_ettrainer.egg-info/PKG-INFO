@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: demo_project_ettrainer
+Version: 0.0.1
+Summary: Demonstration PyPI Upload
+Author-email: Thomas Benkenstein <thomas.benkenstein@experteach.de>, Benedikt Wiegert <benedikt.wiegert@experteach.de>
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: pandas; os_name == "nt"
+
+# Test Projekt
+
+Das ist eine Demonstration für den Upload auf den PyPI (Python Package Index)
