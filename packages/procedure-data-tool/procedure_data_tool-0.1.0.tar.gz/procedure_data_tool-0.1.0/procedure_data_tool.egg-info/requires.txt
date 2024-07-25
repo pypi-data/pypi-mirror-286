@@ -1,0 +1,7 @@
+openpyxl
+python-docx
+networkx
+matplotlib
+indexed
+scipy
+ttkthemes
