@@ -1,0 +1,25 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "mininterface"
+version = "0.4.2"
+description = "A minimal access to GUI, TUI, CLI and config"
+authors = ["Edvard Rejthar <edvard.rejthar@nic.cz>"]
+license = "GPL-3.0-or-later"
+homepage = "https://github.com/CZ-NIC/mininterface"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tyro = "*"
+pyyaml = "*"
+envelope = "*"
+requests = "*"
+textual = "*"
+tkinter-tooltip = "*"
+tkinter_form = "*"
+
+[tool.poetry.scripts]
+mininterface = "mininterface.__main__:main"
