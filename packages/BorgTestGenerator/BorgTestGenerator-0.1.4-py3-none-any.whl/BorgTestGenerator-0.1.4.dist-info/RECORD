@@ -1,0 +1,13 @@
+BorgTestGenerator/__init__.py,sha256=ac-iqM0RU7yeDfsZ-26AwgRjLGXwe66rcWkLcdTF-og,33
+BorgTestGenerator/assistant.py,sha256=wTVAGdSVPhgAamvvuNjZbPaxT6ipqPR_-yhNUeddaGo,10659
+BorgTestGenerator/unittestwriter.py,sha256=SQgLt9LyBYrg1I4NPIR4C1ia92jvruM3G8cn6CLNMKI,2604
+BorgTestGenerator/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BorgTestGenerator/agents/py3_unit_tests_writer.py,sha256=qjD_pgMN0o1KUu45M1jeODETt1BjTB6xtY1qpguz-g4,7828
+BorgTestGenerator/parsers/__init__.py,sha256=hO-V69IynTn1EfkbDKi44h6Akw75BrZ9BqN3zn7jM40,15
+BorgTestGenerator/parsers/code_blocks_parsing.py,sha256=WG-a72-asvNMrooSzvw2NiEFjLhK93O5WFP4bqXOTss,2661
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BorgTestGenerator-0.1.4.dist-info/LICENSE,sha256=HLkdZ_M-5aPh0xqC8R6_sBaFeDo61dHUk2jYH1vRtaw,1076
+BorgTestGenerator-0.1.4.dist-info/METADATA,sha256=QkjG4YbjMmXhT0d9DZ919R-HM9VY0HNLJZgKT8icE20,876
+BorgTestGenerator-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+BorgTestGenerator-0.1.4.dist-info/top_level.txt,sha256=6RZj25lV9tQlgIHU-yuH9QeApnE81x4m32S4uZqVJwI,24
+BorgTestGenerator-0.1.4.dist-info/RECORD,,
