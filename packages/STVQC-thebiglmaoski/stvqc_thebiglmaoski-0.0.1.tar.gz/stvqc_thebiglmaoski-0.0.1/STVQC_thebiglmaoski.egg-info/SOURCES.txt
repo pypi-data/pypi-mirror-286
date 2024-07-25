@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+STVQC_thebiglmaoski.egg-info/PKG-INFO
+STVQC_thebiglmaoski.egg-info/SOURCES.txt
+STVQC_thebiglmaoski.egg-info/dependency_links.txt
+STVQC_thebiglmaoski.egg-info/requires.txt
+STVQC_thebiglmaoski.egg-info/top_level.txt
+tests/test_encoder.py
