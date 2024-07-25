@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: base-assistant-extension
+Version: 0.1.2
+Summary: 
+Author: Samuel
+Author-email: samuelint@gmail.com
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: langchain
+Requires-Dist: langchain (>=0.2.6,<0.3.0) ; extra == "langchain"
+Description-Content-Type: text/markdown
+
+# Assistant Base Extension
+
+Use this library to add extension to https://github.com/samuelint/ai-assistant.
+
