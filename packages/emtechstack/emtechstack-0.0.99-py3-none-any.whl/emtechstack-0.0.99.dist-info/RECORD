@@ -1,0 +1,9 @@
+emtechstack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emtechstack/cli.py,sha256=Zxp-3G897kZNJ9yuVLMTmhgXyjedriXy-xpb78SDQJo,3294
+emtechstack/commands.py,sha256=Zn3pdm8lHg2MN1YvEa3LFvxR8QWEYoiTukNfLyi5X2E,15278
+emtechstack/post_install.py,sha256=Qi9g-7KSMsgJGNaOWGWLiDhf_z_yeSbH98Mr_kc_hv0,746
+emtechstack-0.0.99.dist-info/METADATA,sha256=mc7H4zHG-e7BQdMea79EtZhIRUtLeJtFaj3hClcm-9M,616
+emtechstack-0.0.99.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+emtechstack-0.0.99.dist-info/entry_points.txt,sha256=ts5YjRUKRZYwA_HQwTzKIJv8nSPdWBuBkdWLpOO4zKc,78
+emtechstack-0.0.99.dist-info/top_level.txt,sha256=W0pwMDn4jZjftkfzl3fYB2O-Mq-H6vF111eirGoo5Xg,12
+emtechstack-0.0.99.dist-info/RECORD,,
