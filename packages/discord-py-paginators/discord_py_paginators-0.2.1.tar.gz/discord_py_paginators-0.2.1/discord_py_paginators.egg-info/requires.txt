@@ -1,0 +1,16 @@
+discord.py<3.0.0,>=2.2.0
+
+[dev]
+black
+ruff
+typing_extensions
+pyright
+
+[docs]
+sphinx<8.0.0,>=7.0.0
+furo<2024.0.0,>=2023.9.10
+sphinx-autodoc-typehints<2.0.0,>=1.25.0
+sphinx-toolbox<4.0,>=3.5
+
+[modalpaginator]
+discord-ext-modal-paginator

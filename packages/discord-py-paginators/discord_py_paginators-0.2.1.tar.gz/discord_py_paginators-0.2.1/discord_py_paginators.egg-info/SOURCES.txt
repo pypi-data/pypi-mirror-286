@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+discord/ext/paginators/__init__.py
+discord/ext/paginators/_types.py
+discord/ext/paginators/base_paginator.py
+discord/ext/paginators/button_paginator.py
+discord/ext/paginators/modal_paginator.py
+discord/ext/paginators/select_paginator.py
+discord/ext/paginators/utils.py
+discord_py_paginators.egg-info/PKG-INFO
+discord_py_paginators.egg-info/SOURCES.txt
+discord_py_paginators.egg-info/dependency_links.txt
+discord_py_paginators.egg-info/requires.txt
+discord_py_paginators.egg-info/top_level.txt
