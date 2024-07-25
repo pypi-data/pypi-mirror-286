@@ -1,0 +1,15 @@
+python_active_versions/__init__.py,sha256=7ia2UhZ8vBJJXVhu3xjc9nvh0SZsHci74ZWSTmx8hjE,681
+python_active_versions/bundle.py,sha256=iqo9xvf_LgVjLs0cSVGrSLnMop4d3AGgTUhdpAn--xc,768
+python_active_versions/cli_tools/__init__.py,sha256=ngAU0SknoeZEYGsxyRjuSAf8_BS05U-I5vG4ua2wBG4,151
+python_active_versions/cli_tools/cli.py,sha256=NLMlylQh5D9bNE8jk4_OKYm7dNpTXPkjgy_pegTilVo,3634
+python_active_versions/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+python_active_versions/py.typed.license,sha256=rj8fTOKAkka9FF309ONNxJ5ezQeLIzjWp5bzgBhNR1E,84
+python_active_versions/python_active_versions.py,sha256=xzZXn3POaiee9Ge_w_3yH1Pde_rVZcLiIj-96rGUfVw,3670
+python_active_versions/utility.py,sha256=0J-oKTERkWqu3ATVUtyOU9f2LbT_RyIYLcnHnv6H7z8,792
+python_active_versions-1.19.0.dist-info/AUTHORS.rst,sha256=lGCcMz8WLUbeaEkL32bhXwrR3KcBUa0nP5oFczaqePQ,170
+python_active_versions-1.19.0.dist-info/AUTHORS.rst.license,sha256=rj8fTOKAkka9FF309ONNxJ5ezQeLIzjWp5bzgBhNR1E,84
+python_active_versions-1.19.0.dist-info/LICENSES/MIT.txt,sha256=H6RsjaaWMxLe1Kqc_a_OCUQeODPHvZSKvTDIclGl-vU,1081
+python_active_versions-1.19.0.dist-info/METADATA,sha256=hYVRTvx_-KckBlz7hb796A0LupvlmlRznjuwRXCJrFU,3760
+python_active_versions-1.19.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+python_active_versions-1.19.0.dist-info/entry_points.txt,sha256=MVMHmXquWGZLSlWcUgzQFbLy4lHhqnoOxjYjIYNN9Ww,99
+python_active_versions-1.19.0.dist-info/RECORD,,
