@@ -1,0 +1,2 @@
+openobd-protocol==1.11.11
+openobd-utils==1.11.11
