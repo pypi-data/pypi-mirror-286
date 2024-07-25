@@ -1,0 +1,13 @@
+pmi_clang_format.libs/libncursesw-7e84cbce.so.6.4,sha256=AZqw3lFPifiNVt7mmv1BvOB6dfi8ZfupzLXUYIXa6UE,353717
+pmi_clang_format.libs/libstdc++-d2a021ba.so.6.0.32,sha256=1zr_iwGwEBe95gyKdgiw7C4Y1RR9ijV40j66rk4elzg,3537349
+pmi_clang_format.libs/libgcc_s-f3fb5a36.so.1,sha256=SrjjCCuY7RHj-T9JLrY9XFMgCCpYD9Qmezr4uoJGVEQ,168321
+clang_format/clang_format_diff.py,sha256=w7FQD9zL_jGojGtblGHf0TPq60_xOsOoPFPAJSXH09I,6270
+clang_format/__init__.py,sha256=lSW2jTsDSFBmGA6pSNtiJ2_L6CO9MYjAi9wsV7Ue5Kg,1420
+clang_format/git_clang_format.py,sha256=gJfZPMQCF2hSGlkdgQfhHJxZPyJrWAplMj6hfL7WvOQ,25338
+clang_format/data/bin/clang-format,sha256=j9IZXbAK3GwYpmj0yYrjXZRXruGNUCjHe6ppyCY52CM,4022005
+pmi_clang_format-18.1.8.1.dist-info/WHEEL,sha256=UecN_fKdHGLGBILooBEIs26sOG4wMsTUI-ml5KGLVK0,144
+pmi_clang_format-18.1.8.1.dist-info/entry_points.txt,sha256=b3OvK5yUcTEZU59u1LFoKutGhA9sISVZPFAnj_KJRco,173
+pmi_clang_format-18.1.8.1.dist-info/RECORD,,
+pmi_clang_format-18.1.8.1.dist-info/METADATA,sha256=a-xA5pufP-tRd1nviPRt2XVqzbxFJHzJi2-XqLAyP9k,4709
+pmi_clang_format-18.1.8.1.dist-info/licenses/COPYING.md,sha256=Jy_yLuE-IOgsFrDSwDvO-8AIAOPwmuA7zlLio2fd-qE,899
+pmi_clang_format-18.1.8.1.dist-info/licenses/LICENSE.md,sha256=c7p036pSC0mkAbXSFFmoUjoUbzt1GKgz7qXvqFEwv2g,10273
