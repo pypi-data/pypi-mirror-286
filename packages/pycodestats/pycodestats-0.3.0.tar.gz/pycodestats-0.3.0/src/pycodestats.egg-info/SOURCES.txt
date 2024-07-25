@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/pycodestats/__init__.py
+src/pycodestats/main.py
+src/pycodestats.egg-info/PKG-INFO
+src/pycodestats.egg-info/SOURCES.txt
+src/pycodestats.egg-info/dependency_links.txt
+src/pycodestats.egg-info/entry_points.txt
+src/pycodestats.egg-info/requires.txt
+src/pycodestats.egg-info/top_level.txt
