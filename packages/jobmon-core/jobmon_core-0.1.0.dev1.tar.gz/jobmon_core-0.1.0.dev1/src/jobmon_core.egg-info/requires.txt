@@ -1,0 +1,16 @@
+aiohttp
+pyyaml
+psutil
+requests
+tenacity>=8.1
+docstring-parser
+
+[:python_version < "3.9"]
+typing_extensions
+
+[otlp]
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation
+opentelemetry-instrumentation-requests
+opentelemetry-exporter-otlp
