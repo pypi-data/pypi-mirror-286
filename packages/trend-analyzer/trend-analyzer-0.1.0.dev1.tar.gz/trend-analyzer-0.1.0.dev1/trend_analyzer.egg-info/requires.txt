@@ -1,0 +1,10 @@
+fastapi
+google-ads-api-report-fetcher==1.14.3
+jq
+langchain
+langchain-chroma
+langchain-community
+langchain-core
+langchain-google-genai
+langchain-google-vertexai
+smart_open

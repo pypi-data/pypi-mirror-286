@@ -1,0 +1,15 @@
+README.md
+setup.py
+entrypoints/__init__.py
+entrypoints/cli.py
+entrypoints/server.py
+trend_analyzer/__init__.py
+trend_analyzer/analyzer.py
+trend_analyzer/llms.py
+trend_analyzer/tools.py
+trend_analyzer/vectorstore.py
+trend_analyzer.egg-info/PKG-INFO
+trend_analyzer.egg-info/SOURCES.txt
+trend_analyzer.egg-info/dependency_links.txt
+trend_analyzer.egg-info/requires.txt
+trend_analyzer.egg-info/top_level.txt
