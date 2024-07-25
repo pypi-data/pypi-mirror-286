@@ -1,0 +1,25 @@
+<Engine>
+    <DataTypes package="edkrule.engine.sys.runner.data_type">
+        <DataType name="RealNumber" class="real_numer.RealNumber"/>
+        <DataType name="True" class="boolean.Boolean"/>
+        <DataType name="False" class="boolean.Boolean"/>
+        <DataType name="Variable" class="variable.Variable" />
+    </DataTypes>
+    <Identifiers package="edkrule.engine.sys.runner.identifier">
+        <Identifier name="Identifier_JDefault_0063" class="string.String"/>
+    </Identifiers>
+    <Expressions package="edkrule.engine.sys.runner.expression">
+        <Expression name="+" class="plus.Plus"/>
+        <Expression name="-" class="minus.Minus"/>
+        <Expression name="*" class="multiply.Multiply"/>
+        <Expression name="/" class="divide.Divide"/>
+        <Expression name="==" class="equal.Equal"/>
+        <Expression name=">=" class="greate_than.GreateThen"/>
+        <Expression name="&lt;=" class="less_than.LessThan"/>
+        <Expression name="!=" class="not_equal.NotEqual"/>
+        <Expression name="&amp;&amp;" class="and.And"/>
+        <Expression name="||" class="or.Or"/>
+        <Expression name="toDate" class="todate.ToDate"/>
+        <Expression name="autoincrease" class="auto_increase.AutoIncrease" />
+    </Expressions>
+</Engine>

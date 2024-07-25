@@ -1,0 +1,20 @@
+<Engine xmlns="http://www.edkrule.org/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.edkrule.org/XMLSchema"
+        parent="D:\aws\eclinical40_auto_testing\edkrule\src\edkrule\tests\engine\engine.xml">
+    <DataTypes package="cdp1">
+        <DataType name="realNumber" class="cdc1"/>
+        <DataType name="VarIable" class="dc2" package="dp2"/>
+    </DataTypes>
+    <Identifiers package="csp1">
+        <Identifier name="xx" class="sc1" />
+        <Identifier name="yyy" class="sc2" package="sp2"/>
+    </Identifiers>
+    <Expressions package="ep1">
+        <Expression name="+" class="ec1" />
+        <Expression name="-" class="ec2" package="ep2" />
+        <Expression name="||" class="ec3" package="cep3" />
+        <Expression name="&amp;&amp;" class="ec4" package="ep" />
+
+    </Expressions>
+</Engine>
