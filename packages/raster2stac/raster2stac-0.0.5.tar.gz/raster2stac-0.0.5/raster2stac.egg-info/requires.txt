@@ -1,0 +1,14 @@
+kerchunk
+openeo-pg-parser-networkx==2024.4.0
+openeo-processes-dask[implementations]
+rio-stac
+boto3
+netcdf4==1.6.5
+h5netcdf
+h5py
+ujson
+openeo
+
+[dev]
+isort
+ruff
