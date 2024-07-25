@@ -1,0 +1,17 @@
+peridio_evk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peridio_evk/cli.py,sha256=z-yYeK2l5oQNMZTMTIXCkVE41wQ1bG-Q7b-4t1L9Y5k,366
+peridio_evk/crypto.py,sha256=dd5Gb6YpLLlzefZfYDqvXHb-2b4NTr5UJlYoGzGCKYc,9839
+peridio_evk/log.py,sha256=DyCb29swamIajlfgezXXEYps_xlZDIrffhrbij2fWSA,775
+peridio_evk/product.py,sha256=LLWTFbJp8OFE46Ea_-klM_LwDP0ximlDzB2Y4HggE0I,9544
+peridio_evk/releases.py,sha256=pL9VLYHeyQtsONBanfk1lLFb2p9diu21LS_OKqm4Pxk,9383
+peridio_evk/uboot_env.py,sha256=jsW0YVG3xlalH82Z-nWp-909uhPgElsmyjZnxCOCl40,1099
+peridio_evk/utils.py,sha256=YEm3ihecjyAjriGX5_eur7LLLJsLqd8xHYKX3U94myQ,7463
+peridio_evk/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peridio_evk/commands/devices.py,sha256=4JM9tv67IRPcXhtnoCWGBtN767OurDFom4jFsDXTjXI,12214
+peridio_evk/commands/initialize.py,sha256=8PrfZEV0sz32x1sdgwR35V1eVJm4LboRGIly2JlsoPU,5110
+peridio_evk-0.1.2.dist-info/LICENSE.txt,sha256=8t-Ac6fAkF2OgwrJZTLHH3PTlytCDB-PxtWgW3sQ78s,11341
+peridio_evk-0.1.2.dist-info/METADATA,sha256=qhg0j9LabN8n30_fi4YeJC9hPRHdbD4_4Iaelz3ysD0,822
+peridio_evk-0.1.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+peridio_evk-0.1.2.dist-info/entry_points.txt,sha256=TJjzlAehfQncjOT_N5KdgIP3JgoqqahcWQ3W_juca_c,52
+peridio_evk-0.1.2.dist-info/top_level.txt,sha256=0Jsg653-DjU8KkwiMYf93Q1xJDKPRHsor2pFvtb05AU,12
+peridio_evk-0.1.2.dist-info/RECORD,,
