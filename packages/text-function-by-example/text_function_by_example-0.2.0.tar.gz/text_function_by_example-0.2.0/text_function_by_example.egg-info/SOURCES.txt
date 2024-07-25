@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_codegen.py
+text_function_by_example/__init__.py
+text_function_by_example/__main__.py
+text_function_by_example/codegen.py
+text_function_by_example.egg-info/PKG-INFO
+text_function_by_example.egg-info/SOURCES.txt
+text_function_by_example.egg-info/dependency_links.txt
+text_function_by_example.egg-info/requires.txt
+text_function_by_example.egg-info/top_level.txt
+text_function_by_example/templates/__init__.py
+text_function_by_example/templates/failure_prompt.txt
+text_function_by_example/templates/prompt.txt
+text_function_by_example/templates/wrapper_script.py
