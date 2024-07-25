@@ -1,0 +1,4 @@
+[console_scripts]
+test-functional=tests.functional.test_suite:main
+test-unit=tests.unit.test_suite:main
+
