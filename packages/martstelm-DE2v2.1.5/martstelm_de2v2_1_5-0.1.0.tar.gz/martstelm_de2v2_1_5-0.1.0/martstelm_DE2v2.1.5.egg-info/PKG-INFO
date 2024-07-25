@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: martstelm-DE2v2.1.5
+Version: 0.1.0
+Summary: A package containing utility functions for matrix operations including transpose, 1D windowing, and 2D convolution.
+Home-page: https://github.com/TuringCollegeSubmissions/martstelm-DE2v2.1.5
+Author: Martynas Stelmokas
+Author-email: stelmokas00@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
