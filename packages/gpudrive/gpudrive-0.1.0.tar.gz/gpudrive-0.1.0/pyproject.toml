@@ -1,0 +1,36 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "madrona-py-build"
+backend-path = ["external/madrona/py"]
+
+[project]
+name = "gpudrive"
+version = "0.0.1"
+
+[tool.madrona.packages.gpudrive]
+ext-only = true
+ext-out-dir = "build"
+
+# This module includes the PPO implementation for the training demo
+[tool.madrona.packages.gpudrive_learn]
+path = "train_src/gpudrive_learn"
+
+[tool.poetry.build]
+script = "build.py"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.2.1"
+numpy = "^1.26.4"
+pytest = "^8.2.1"
+
+[tool.poetry]
+name = "gpudrive"
+version = "0.1.0"
+description = ""
+authors = ["Saman Kazemkhani, Aarav Pandya, Daphne Cornelisse, Eugene Vinitsky"]
+readme = "README.md"
+packages = [
+    {include = "gpudrive.cpython-311-x86_64-linux-gnu.so", from = "build", to = "gpudrive"},
+    {include = "pygpudrive"}
+]
