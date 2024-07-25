@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: vlsift
+Version: 0.1.1
+Summary: Cython wrapper of the VLFeat toolkit
+Home-page: https://cars.readthedocs.io/
+Author: CNES
+Author-email: cars@cnes.fr
+License: ibug
+Project-URL: Source, https://github.com/CNES/cars
+Project-URL: Documentation, https://cars.readthedocs.io/en/latest/
+Keywords: vlsift,sift,vlfeat,cars
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+vlsift
+========
+A Python (cython) wrapper and library of sift from the VLfeat library https://github.com/vlfeat/vlfeat.
+
+The project is based from the cyvlfeat wrapper https://github.com/menpo/cyvlfeat.
+
+We respect the original BSD 2-clause license and thus release this wrapper under the same license.
+
+We thank the authors of VLFeat for their contribution to the computer vision community.
