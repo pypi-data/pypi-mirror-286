@@ -1,0 +1,63 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pymetalink"
+version = "0"
+description = "A metalink library for Python"
+authors = ["Neil McNab <nabber00@gmail.com>", "Bram Neijt <bram@neijt.nl>"]
+license = "MIT"
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries"
+]
+readme = "README.md"
+packages = [{include = "metalink"}]
+repository = "https://github.com/metalink-dev/pymetalink"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+poetry-version-plugin = "^0.2.0"
+pytest = "^8.2.2"
+pre-commit = "^3.5.0"
+ruff = "^0.4.0"
+twine = "^5.1.1"
+
+[tool.poetry.scripts]
+pymetalink = 'metalink.console:main'
+
+[tool.poetry-version-plugin]
+source = "git-tag"
+
+[tool.ruff]
+exclude = [".eggs", ".git", ".pyenv", ".ruff_cache", "build", "dist", "venv"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+# The following ignores should be removed when the following issues are fixed:
+ignore = [
+  "E402", # Module level import not at top of file
+  "E722", # Do not use bare 'except'
+  "E741", # Ambiguous variable name 'l'
+  "F403", # 'from module import *' used; unable to detect undefined names
+  "F821" # Undefined name
+]
+fixable = ["ALL"]
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
