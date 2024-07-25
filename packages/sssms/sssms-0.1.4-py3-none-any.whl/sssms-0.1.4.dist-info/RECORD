@@ -1,0 +1,12 @@
+sssms/__init__.py,sha256=0ZiqhmE8SSLzocXQOLrwP0-aLSeKlwj1roeSN3zREMM,189
+sssms/config.py,sha256=LpQLObXQiu_zZ3lGE8xsns3iOJZF-4RuxRswXs1TzjQ,3277
+sssms/lookup.py,sha256=HEEb1AInMpT9TIVPHieKflrWa-N2EZ5z7H-Z6jPD4Dw,3494
+sssms/main.py,sha256=RpIxDO0_s2M0rLNBPJ_peXAz8zvK1uZxHeCC2bX1MJo,3395
+sssms/prx.py,sha256=VkX9lF6klhHpV1vJin13rJaQGwaVXjREJv7TMjV5Xvk,558
+sssms/sssmtp.py,sha256=8l264Z0tG6ALk60Snw9Sh9pl4ac2YrjdCxBGn8DYNQM,725
+sssms-0.1.4.dist-info/LICENSE,sha256=ECy0jbtuThxCCjR9ycpAF7GltylbZmuWGsOWA3QhJaI,1068
+sssms-0.1.4.dist-info/METADATA,sha256=yAAwBpr9bPMl3-PZu3imrW6EXHrZnlbztLVuiMEmVEw,1738
+sssms-0.1.4.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+sssms-0.1.4.dist-info/entry_points.txt,sha256=6L_xcu8xLgbW_AMI-AESAgIntGEHUOglOZKgdfRg8cA,41
+sssms-0.1.4.dist-info/top_level.txt,sha256=qAID3Y5-Aomtf6g0-h-GmEL0urdh0bXdZH3Z0WEsdLI,6
+sssms-0.1.4.dist-info/RECORD,,
