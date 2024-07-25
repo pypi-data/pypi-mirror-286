@@ -1,0 +1,10 @@
+browser_gpt_api/.env.template,sha256=Br_1JwUk84KZ0bOnN1IjFkYVr2A-dJ6uvyuDtYgZp_0,48
+browser_gpt_api/__init__.py,sha256=LKAVW8qeW7zSclqEEoray1alfU0joL215CJUp_-d-Rk,63
+browser_gpt_api/gpt_automator.py,sha256=D8oLf-Pcbav7XD1hcEAJmz4fnskvfn6y15Xr63PxzIU,12504
+browser_gpt_api/server.py,sha256=J35-IIz1xL7a4zOHScGdj70FoFyYeKa_2iP_vYH8Pyw,7918
+browser_gpt_api/settings.py,sha256=GubjHMwUZjMqC8eEZEaMwdbjXCZnrFzpkCoip7QADHo,429
+browser_gpt_api/setup.py,sha256=GVTAyhS-mNOCHol_ez-JW2RQbUqhWImMvNccxRua92I,363
+browser_gpt_api/utils.py,sha256=7rTufO2_sbpyf3XaBeaFnpgBnZNyq6DJxjklziLyFNs,627
+browser_gpt_api-0.1.0.dist-info/METADATA,sha256=ze-36CAcsBCyjbocWmD2T4hbpQaPjJsu_aZ4hfVISFM,2467
+browser_gpt_api-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+browser_gpt_api-0.1.0.dist-info/RECORD,,
