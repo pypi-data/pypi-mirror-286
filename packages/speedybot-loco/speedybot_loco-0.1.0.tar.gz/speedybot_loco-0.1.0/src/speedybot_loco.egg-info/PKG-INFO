@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: speedybot-loco
+Version: 0.1.0
+Summary: Use googles-- highly experimental conversation design infra
+Home-page: https://github.com/valgaze/speedybot-loco
+Author: Victor Algaze
+Author-email: valgaze@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: webexteamssdk==1.7
+Requires-Dist: python-dotenv==1.0.1
+
+## SpeedyBot-loco
+
+Use googles-- highly experimental conversation design infra
+
+```sh
+pip install speedybot-loco
+```
+
+**Repo/package** details:
+
+```sh
+python setup.py sdist bdist_wheel
+pip install twine
+twine upload dist/*
+```

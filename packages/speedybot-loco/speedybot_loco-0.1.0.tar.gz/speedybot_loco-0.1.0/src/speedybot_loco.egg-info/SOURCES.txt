@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/speedybot/__init__.py
+src/speedybot/cards.py
+src/speedybot/cli.py
+src/speedybot/speedybot.py
+src/speedybot_loco.egg-info/PKG-INFO
+src/speedybot_loco.egg-info/SOURCES.txt
+src/speedybot_loco.egg-info/dependency_links.txt
+src/speedybot_loco.egg-info/requires.txt
+src/speedybot_loco.egg-info/top_level.txt
