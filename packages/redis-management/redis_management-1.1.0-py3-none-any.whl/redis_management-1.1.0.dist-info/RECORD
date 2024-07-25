@@ -1,0 +1,10 @@
+redis_management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redis_management/exceptions.py,sha256=Gsg33snTcuvbjKTQM6IOlKKD516M73tYT6_CYpD-XJM,615
+redis_management/redis_manager.py,sha256=09lkDE0Xt2Bt0sONFUzbrZKClSKgCfQXQ8Deq0aHxbw,6911
+redis_management/settings.py,sha256=fqDLcMQdF07k_Az-bfbB61Sk1p1T_6DUbpr9U2MuDuc,347
+redis_management/test_redis_manager.py,sha256=1y7DydftOJB6-Ql0zi0LzL__jaxeZU-DSKh5dvwqIeE,3506
+redis_management-1.1.0.dist-info/LICENSE.txt,sha256=O483wBerWQm8hGvYbUVqtDNfv_Lbr0Spn1ChhgM1EMs,1072
+redis_management-1.1.0.dist-info/METADATA,sha256=O0MqVE6pB250RJf7eo628xVMqyTtUPNEKQf43t5e4X0,4724
+redis_management-1.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+redis_management-1.1.0.dist-info/top_level.txt,sha256=rqR9Yjv_cOHFnLj1E06S6WJi_GRstZJq3d-aPyUQ1Gw,17
+redis_management-1.1.0.dist-info/RECORD,,
