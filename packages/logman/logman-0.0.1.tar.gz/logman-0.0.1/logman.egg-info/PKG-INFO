@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: logman
+Version: 0.0.1
+Summary: Python logging made (stupidly) simple
+Home-page: https://github.com/WIM-Corporation/logman
+Author: hbjs
+Author-email: hbjs <hbjs97@naver.com>
+License: MIT
+Project-URL: Documentation, https://logman-docs.wimcorp.dev/en/stable/index.html
+Project-URL: Homepage, https://github.com/WIM-Corporation/logman
+Keywords: logman,logging,logger,log
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: <4.0,>=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# logman
+
+## Run Tests
+
+### pytest
+
+```bash
+pip install pytest
+python -m unittest discover -s tests -p 'test_*.py'
+```
+
+### tox
+
+```bash
+pip install tox pytest
+tox
+```
+
+## Documentation
+
+### Sphinx
+
+```bash
+pip install Sphinx sphinx-autobuild sphinx-rtd-theme myst_parser
+cd docs
+make html
+```
