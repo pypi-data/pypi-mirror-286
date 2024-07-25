@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: secure-python
+Version: 0.1.5
+Summary: A package for securing Python code .
+Home-page: 
+Author: Om Prakash
+Author-email: omprakash.das@involead.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chardet
+Requires-Dist: pyarmor
+
+# My Encryption Package
+
+This package allows you to encrypt Python code. It's designed to help protect your Python source code from unauthorized access.
+
+## Installation
+
+To install the package, use pip:
+
+```bash
+
+pip install secure-python
+
+```
+
+
+### Usage
+
+Run this command
+
+``` bash
+
+encrypt_code <src_folder> <dist_folder> <requirement>
+
+python -m secure_python.encryptor <src_folder> <dist_folder> <requirement>
+
+
+```
+
+<src_folder>: The path to the source code folder that you want to encrypt.
+<dist_folder>: The path to the destination folder where the encrypted code will be stored (should be a blank folder).
+<requirement>: The path to the requirements.txt file containing the dependencies.
+
+#### Example 
+ ```bash
+
+encrypt_code /path/to/src /path/to/dist /path/to/requirements.txt
+
+```
