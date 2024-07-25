@@ -1,0 +1,11 @@
+auto_code/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_code/auto_code.py,sha256=dF2P0B-uOaxddigyNvATg9WIrDYoRGaIMQayw0hQyPI,4686
+auto_code/config.py,sha256=aEBrHohKKyd6Ah1D8RorhvVaDLK-70Ws60eOA5RhWhE,1290
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/main.py,sha256=xZO0SPbPe3SnEHGmfOLbkIKvG3LBSyU7JBXq7wd9K_0,1004
+cowgirl_ai_auto_code-1.1.4.dist-info/LICENSE,sha256=m0qBgCW5OTBIEaCrLeP3bPwuV4FyUBkbXp-KWZxNX2E,1070
+cowgirl_ai_auto_code-1.1.4.dist-info/METADATA,sha256=mC6FxU9mjtPTh9m06sV9A0SGwJ1na9LhbUKibr3pNd0,516
+cowgirl_ai_auto_code-1.1.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+cowgirl_ai_auto_code-1.1.4.dist-info/entry_points.txt,sha256=SkRnmJEKmPDLXIjZzGKRv44Q8FK3HNwxQPKCw-pAjWE,55
+cowgirl_ai_auto_code-1.1.4.dist-info/top_level.txt,sha256=ZRia53kPCTMNUVpu0YysjWN9ino3qKfM2gJMjQeQ0jg,14
+cowgirl_ai_auto_code-1.1.4.dist-info/RECORD,,
