@@ -1,0 +1,12 @@
+hyperSel/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+hyperSel/hyperSel.py,sha256=zIcllFwLpe9KevU0PmcF4Kyvgn7a2DfLqt_6i2SEjEY,10547
+hyperSel/main.py,sha256=BGhZQAcHtWSi5yUjPhQgI1V4tMR9HXK1e__T2oYo984,35
+hyperSel/request_utilities.py,sha256=EnfJ9yXBizGP7gmoTOoWtPeha7roAzZJeh5CJklbij4,838
+hyperSel/selenium_utilities.py,sha256=-5vcoSsiCu-DeBbHch_AycngU4vUJyEobNhRMyJwDFA,9367
+util/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+util/request_utilities.py,sha256=EnfJ9yXBizGP7gmoTOoWtPeha7roAzZJeh5CJklbij4,838
+util/selenium_utilities.py,sha256=-5vcoSsiCu-DeBbHch_AycngU4vUJyEobNhRMyJwDFA,9367
+hyperSel-2.15.dist-info/METADATA,sha256=oUeBDIk_UblPMPcIpZm0zgRp_WP_6xtE9MB_Z4u_rT0,232
+hyperSel-2.15.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+hyperSel-2.15.dist-info/top_level.txt,sha256=jswPZi03UYX0m-Bk_cJmUmvefA97NCJO0RFeXJG_d5o,5
+hyperSel-2.15.dist-info/RECORD,,
