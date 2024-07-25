@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: odeta
+Version: 0.1.0
+Summary: A simple NoSQL-like interface for SQLite
+Home-page: https://github.com/malwaremanu/odeta
+Author: Manupal Choudhary
+Author-email: tech.manujpr@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# OdetA
+
+A simple NoSQL-like interface for SQLite.
+
+## Installation
+
+```bash
+pip install odeta
+'''
+
+## Usages
+
+'''
+from odeta import NoSqlite
+
+db = NoSqlite("my_database.db")
+users = db.table("users")
+
+print(users.fetch())
+print(users.fetch({"name" : "Bob Johnson"}))
+'''
+
