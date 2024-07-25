@@ -1,0 +1,14 @@
+aims/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aims/cli.py,sha256=P5trfts2OGk8FUmrKT7fW590wEd2GfGi7otyBwOC4oc,879
+aims/data_structures.py,sha256=qSTAhgfTqoFLoi7Z88GUQ-shb_xLGn5pAnexUu0bW3c,688
+aims/gui.py,sha256=n_B9BD2mfLEPBPs8u0xzoAo5pwLxYOWXn89dZ0zBiv8,14881
+aims/logbook_report.py,sha256=fhjhyhszE4SPRMo1HEM54Zn_RiDqmwlw81G3zPa3jyM,1893
+aims/output.py,sha256=TGHEPNprSwqJdE4Tc4WtpKnfUPtzCjV7pNV6mkrOepY,8603
+aims/parse.py,sha256=J7qE__iMQkMpGVkOah5snkGn8q45noBLztqoVNLKJ-k,823
+aims/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aims/roster.py,sha256=evR8xr1Llr1KD7nCKLSgZM5fqcvBUc_THzF9omfQztI,8927
+aims_convert-2.1.dist-info/METADATA,sha256=WP7jVWkLMX8LVYtYoy_Sn2xWoDrgQs5YfCwbkR3Oms4,2188
+aims_convert-2.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+aims_convert-2.1.dist-info/entry_points.txt,sha256=GzUbDsN1KuO4eFGTMt_yGnqiM58jiAn6B66ae_Hyq1c,78
+aims_convert-2.1.dist-info/top_level.txt,sha256=BsjspwvOrE5O77Yws21IYQ9NmR2QEnwr-7RnOOakq4Q,5
+aims_convert-2.1.dist-info/RECORD,,
