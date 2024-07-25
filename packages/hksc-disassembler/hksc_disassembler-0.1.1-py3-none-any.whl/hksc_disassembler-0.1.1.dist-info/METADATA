@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hksc_disassembler
+Version: 0.1.1
+Summary: A HavokScript 5.1 Disassembler
+Author: Surasia
+Project-URL: Repository, https://github.com/Surasia/hksc-disassembler
+Project-URL: Issues, https://github.com/Surasia/hksc-disassembler/issues
+Project-URL: Changelog, https://github.com/Surasia/hksc-disassembler/blob/main/CHANGELOG.md
+Keywords: HavokScript,hksc,lua,lua script,scripting,disassembler
+Classifier: Typing :: Typed
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.11.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: click ~=8.1.7
+
+# hksc_disassembler
+
+[![latest](https://img.shields.io/pypi/v/hksc-disassembler.svg)](https://pypi.python.org/pypi/hksc-disassembler/)
+
+`hksc_disassembler` is a HavokScript 5.1 disassembler written in python. It includes a file parser for lua bytecode, as well as a CLI to interact with library functions.
+
+## Installation
+
+`hksc_disassembler` is available on pypi.
+
+`pip install hksc-disassembler`
+
+## CLI Usage
+
+`hksc_disassembler disassamble <path_to_havokscript>`
+
+## Credits
+- Soupstream for the amazing [havok-script-tools](https://github.com/soupstream/havok-script-tools), most of which this project is based off of.
+- Jake-NotTheMuss for their very insightful [hksc](https://github.com/Jake-NotTheMuss/hksc)
