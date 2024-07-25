@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./processors/__init__.py
+./processors/text_processor.py
+processors.egg-info/PKG-INFO
+processors.egg-info/SOURCES.txt
+processors.egg-info/dependency_links.txt
+processors.egg-info/requires.txt
+processors.egg-info/top_level.txt
+tests/test_text_processor.py
