@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/collection.py,sha256=1apSnYl9rwRYQoaJFsWaivDEzgToCQ5AsWCgLdBAIcM,4411
+tests/discovery.py,sha256=gKkJjh-fODp8doUlzDZ19M04UYWUbB4aX2fDBE8SVRc,1927
+tests/evasion.py,sha256=Qldo2pqwMTKPAY-CFPeTTKAj2ypAAQsF56bTL-8pY30,2922
+tests/execution.py,sha256=4CC8vTD2phuRaU1DUzvfdbqrNNLIRADl4ChSI68Uu74,2980
+tests/exfiltration.py,sha256=B5Ydk37ESe9U_0cTVbWE5QnOya3QH0G8ZKfpCbSbFZc,777
+tests/persistense.py,sha256=dZLsLjFS9YfCtwPLiHIp-5QSdAsZbUNGWjvq1JOT0f4,3090
+evil_package-0.0.3.dist-info/LICENSE,sha256=W0Q-d72SsRT2W93U2O2rW5mTCvm8I_283Da_LJEX_Ms,1072
+evil_package-0.0.3.dist-info/METADATA,sha256=XX4ylJUtNHp_4GGYasW-Tsx2CCn_rjVWZXV78NICokI,624
+evil_package-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+evil_package-0.0.3.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+evil_package-0.0.3.dist-info/RECORD,,
