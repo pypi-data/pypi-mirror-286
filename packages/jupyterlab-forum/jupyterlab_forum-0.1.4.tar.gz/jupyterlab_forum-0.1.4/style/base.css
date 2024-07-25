@@ -1,0 +1,333 @@
+/*
+    See the JupyterLab Developer Guide for useful CSS Patterns:
+
+    https://jupyterlab.readthedocs.io/en/stable/developer/css.html
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+a {
+  color: #FF0042;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+}
+
+.subforum {
+  margin-top: 20px;
+}
+
+.subforum-title {
+  background-color: #5b81ba;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 4px;
+}
+
+.subforum-row {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.subforum-column {
+  padding: 10px;
+  margin: 4px;
+  border-radius: 5px;
+  background-color: #b3cad5;
+}
+
+.subforum-description * {
+  margin-block: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subforum-devider {
+  display: none;
+}
+
+/* For the smartphones */
+@media screen and (max-width: 460px) {
+  .container {
+      margin: 10px;
+      padding: 10px;
+  }
+
+  .subforum-row {
+      grid-template-columns: 25% 75%;
+  }
+
+  .subforum-devider {
+      display: block;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
+  }
+}
+
+/* For the tablets */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+  .container {
+      margin: 15px;
+      padding: 15px;
+  }
+
+  .subforum-row {
+      grid-template-columns: 80% 20%;
+  }
+
+  html {
+      font-size: 14px;
+  }
+
+  h1 {
+      font-size: 16px;
+  }
+}
+.navbar {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Horizontally center items */
+}
+
+.forum-title {
+  font-size: 36px; /* Adjust size as needed */
+  font-weight: bold;
+  padding: 10px 20px; /* Add some padding for visual comfort */
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+body {
+  line-height: 1.6; /* Improve readability with better line spacing */
+  background-color: #f4f4f4; /* Subtle background color */
+}
+
+.subforum-title h1 { /* Style the h1 within the subforum title */
+  color: white;
+  margin: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial', sans-serif; /* Consistent heading font */
+}
+
+p, li, a {
+  font-family: 'Helvetica Neue', sans-serif; /* Consistent body font */
+}
+
+/* Subforum Row Enhancements */
+.subforum-row {
+  border: 1px solid #ddd; /* Subtle border */
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+.subforum-row:hover {
+  background-color: #e8e8e8; /* Highlight on hover */
+}
+
+/* Subforum Column Enhancements */
+.subforum-description, .subforum-info {
+  background-color: #fff; /* White background for content */
+}
+
+/* Last Post Link */
+.subforum-info a {
+  color: #333; /* Darker link color */
+  text-decoration: none;
+}
+
+.subforum-info a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
+/* Topic Detail Styling */
+.topic-widget {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.topic-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.topic-meta {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.topic-replies h3 {
+  margin-top: 20px;
+}
+
+.reply {
+  border-bottom: 1px dotted #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.reply-header {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.reply-date {
+  margin-left: 5px;
+}
+
+.btn-primary {
+  background-color: #5b81ba;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #4a6592;
+}
+
+.topic {
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.topic-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333; /* Darker title color */
+}
+
+.topic-meta {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.topic-body {
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 20px;           /* Add some padding around the content */
+    margin-bottom: 20px;     /* Space between topics */
+    border-radius: 5px;       /* Slightly rounded corners */
+}
+
+.topic-content {
+    font-size: 16px;
+    line-height: 1.6;  /* Improve readability with line spacing */
+    margin-bottom: 15px; /* Space between content and stats */
+}
+
+.topic-stats {
+  margin-top: 10px; /* Add space between content and stats */
+  font-size: 0.85rem;
+  color: #888; /* Lighter gray for stats */
+}
+
+.topic-replies {
+  margin-top: 15px;
+}
+
+.reply-content {
+  font-size: 1rem;           /* Adjust font size as needed */
+  line-height: 1.5;           /* Comfortable line spacing for readability */
+  color: #333;                /* Dark gray text color */
+  margin-top: 10px;          /* Add some space between header and content */
+  padding: 10px;             /* Add padding for better visual separation */
+  background-color: #fff;     /* White background */
+  border-radius: 5px;         /* Rounded corners */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  white-space: pre-wrap;     /* Preserve line breaks and wrap long lines */
+}
+
+.topic-replies h3 {
+  border-top: 1px solid #e2e2e2; /* Add a separator line */
+  padding-top: 15px;
+  margin-top: 20px;
+}
+
+/* Replies Container */
+.replies-container {
+  display: grid; /* Use grid layout for better control */
+  grid-gap: 15px; /* Add spacing between replies */
+}
+
+
+/* Topic Detail Styling */
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tab.active { /* Style the active tab differently */
+  background-color: #5b81ba;
+  color: white;
+}
