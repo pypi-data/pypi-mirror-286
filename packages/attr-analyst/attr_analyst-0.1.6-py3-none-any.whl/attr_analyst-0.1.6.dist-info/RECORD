@@ -1,0 +1,7 @@
+attr_analyst-0.1.6.dist-info/METADATA,sha256=NvYCB2Owx1AZRJfCBzjpbZ3BjRcE6eoMHRuMM53WdAI,4868
+attr_analyst-0.1.6.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+attr_analyst/__init__.py,sha256=LTMfiiDZeDqQWROMU9aoSH7jmj23CaJ2xiDCX7JELHY,320
+attr_analyst/core/attr_calculator.py,sha256=abuwrb6JXxnApEsNYlp4oVIenLvkLnAl2vcddgrDyv0,8110
+attr_analyst/io/__init__.py,sha256=KhI9ubcALN_dUGHkSYD0NKfpUz4t7j3rSdg4yPOmaMc,162
+attr_analyst/io/_relation.py,sha256=0YOZ_xGk69q4OZBd4khU_qvLVIBPX-ahJGNseL53kyo,1658
+attr_analyst-0.1.6.dist-info/RECORD,,
