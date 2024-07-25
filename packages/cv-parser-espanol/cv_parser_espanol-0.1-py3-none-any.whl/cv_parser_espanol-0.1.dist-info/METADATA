@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: cv-parser-espanol
+Version: 0.1
+Requires-Dist: spacy
+Requires-Dist: PyMuPDF
+
