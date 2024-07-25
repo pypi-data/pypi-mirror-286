@@ -1,0 +1,5 @@
+[console_scripts]
+fttb = fttb:fttb.main
+
+[fttb.fttb]
+fttb = main
