@@ -1,0 +1,7 @@
+setup.py
+kfinance_assistant/__init__.py
+kfinance_assistant/assistant.py
+kfinance_assistant.egg-info/PKG-INFO
+kfinance_assistant.egg-info/SOURCES.txt
+kfinance_assistant.egg-info/dependency_links.txt
+kfinance_assistant.egg-info/top_level.txt
