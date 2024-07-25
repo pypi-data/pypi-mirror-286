@@ -1,0 +1,7 @@
+setup.py
+Component_Reuse/__init__.py
+Component_Reuse/main.py
+component_reuse.egg-info/PKG-INFO
+component_reuse.egg-info/SOURCES.txt
+component_reuse.egg-info/dependency_links.txt
+component_reuse.egg-info/top_level.txt
