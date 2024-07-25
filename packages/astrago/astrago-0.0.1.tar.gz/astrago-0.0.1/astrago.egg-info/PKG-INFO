@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: astrago
+Version: 0.0.1
+Summary: The Astrago package helps track model training data, allowing you to efficiently collect and manage various metrics and log data generated during the training process.
+Home-page: https://github.com/xiilab/astrago
+Author: hc.park
+Author-email: hc.park@xiilab.com
+Keywords: astrago,xiilab,uyuni
+Requires-Python: >=3.6
