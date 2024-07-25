@@ -1,0 +1,14 @@
+ItchClaim/DiskManager.py,sha256=vUdrR_lXbCp4Ck3WH8AA2lHo0qCSIFRvnnYG67Mf61w,8488
+ItchClaim/ItchGame.py,sha256=LYHFX2P5FHmYYZHuCP537mMjIGrK0NaZ26lkMggik5k,12545
+ItchClaim/ItchSale.py,sha256=dCN8-ek8BsL3ZOAOcqkF6F5aeUgzd4tISXaCwSORCuk,3428
+ItchClaim/ItchUser.py,sha256=bJxCF6xHIjKrKLSUtIWZpxfdV4efCyD0-g_0tgGxwNY,8835
+ItchClaim/__init__.py,sha256=BqOI5y46o1G1RWC9bF1DPL-YM68lGYPmZt1pn6FZFZs,22
+ItchClaim/__main__.py,sha256=vmEUAO745iZS17U8zAnmXEcf9cby6fP_hbEb5Y7fJQ4,7521
+ItchClaim/index.template.html,sha256=aSJQTlJrZLFP3BbIt-wSuALNvBJEV4g9C_FMapd2Ylg,3585
+ItchClaim/web.py,sha256=qiYwxvvLGQ_kv8xmbjl-snQovdk6ly5L-Scl6DNoxy4,4608
+ItchClaim-1.4.1.dist-info/LICENSE.txt,sha256=sNAFL_Ablqrhec8l2q67qOf1wE1iltouPz6NRxGYAlQ,1085
+ItchClaim-1.4.1.dist-info/METADATA,sha256=DUe50AnE5ZBoB-rW8L16RLLZyPdhOOXdSvxZ2tSnGts,6131
+ItchClaim-1.4.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+ItchClaim-1.4.1.dist-info/entry_points.txt,sha256=y83VNFI24VP9PEJ3Usq2ii-2HOnfiU819Ch4OFk_l6I,54
+ItchClaim-1.4.1.dist-info/top_level.txt,sha256=GrvNNyr4bRTjKuGtEhP-QO9KtcanQsjmHezJhOVOrh8,10
+ItchClaim-1.4.1.dist-info/RECORD,,
