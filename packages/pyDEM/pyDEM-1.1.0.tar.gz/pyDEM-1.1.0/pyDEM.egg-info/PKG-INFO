@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyDEM
+Version: 1.1.0
+Summary: Software for calculating Topographic Wetness Index (TWI)
+Home-page: https://github.com/creare-com/pydem
+Author: MPU, RXC, JXM
+License: APACHE 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+License-File: LICENSE.txt
