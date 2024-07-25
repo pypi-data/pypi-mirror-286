@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: speedybot-loco
+Version: 0.1.1
+Summary: Use googles-- highly experimental conversation design infra
+Home-page: https://github.com/valgaze/speedybot-loco
+Author: Victor Algaze
+Author-email: valgaze@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: webexteamssdk ==1.7
+Requires-Dist: python-dotenv ==1.0.1
+
+## SpeedyBot-loco
+
+SpeedyBot Loco is a Python library for handling Webex bots and adaptive cards, with an included CLI for easy setup and management.
+
+Warning: Use googles-- highly experimental conversation design infra
+
+```sh
+pip install speedybot-loco
+```
+
+### Library
+
+\```python
+from speedybot import Bot, Cards
+
+bot = Bot(token="your_token")
+cards = Cards()
+\```
+
+## CLI Flags
+
+| Command   | Flag            | Description                    |
+| --------- | --------------- | ------------------------------ |
+| `token`   | `-t`, `--token` | Set the bot token              |
+| `webhook` | `-t`, `--token` | Set the bot token              |
+|           | `-p`, `--port`  | Port to listen on              |
+|           | `--path`        | Path to send POST requests     |
+| `run`     | `-t`, `--token` | Set the bot token              |
+|           | `-f`, `--file`  | Path to the Python file to run |
+
+## Sample CLI Commands
+
+### Set Bot Token
+
+\```bash
+speedybot-loco token -t abc123
+\```
+
+### Run Webhook Server
+
+\```bash
+speedybot-loco webhook -t abc123 -p 8080 --path /webhook
+\```
+
+### Run a Python File
+
+\```bash
+speedybot-loco run -t abc123 -f examples/example1/my_bot.py
+\```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Building and Publishing
+
+### Build the distribution
+
+\```bash
+python setup.py sdist bdist_wheel
+\```
+
+### Upload to PyPI
+
+\```bash
+pip install twine
+twine upload dist/\*
+\```
+
+## Trouble shooting
+
+```sh
+pip uninstall speedybot-loco
+
+pip show speedybot-loco
+pip list | grep speedybot-loco
+which speedybot-loco
+```
