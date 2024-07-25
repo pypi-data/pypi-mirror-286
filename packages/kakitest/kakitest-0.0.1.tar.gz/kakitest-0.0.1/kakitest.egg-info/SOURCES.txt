@@ -1,0 +1,8 @@
+README.md
+setup.py
+kakitest/__init__.py
+kakitest/test.py
+kakitest.egg-info/PKG-INFO
+kakitest.egg-info/SOURCES.txt
+kakitest.egg-info/dependency_links.txt
+kakitest.egg-info/top_level.txt
