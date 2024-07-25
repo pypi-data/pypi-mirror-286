@@ -1,0 +1,9 @@
+raster2stac/__init__.py,sha256=KR-gpJQbV4zu6cZQiykc5EUgGckOlJTcRX-fTiAHTns,299
+raster2stac/_version.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+raster2stac/raster2stac.py,sha256=Jv5c19XKwlfLy2qgSZDpBttLJAWlePQvS9UBuDFNkqo,42498
+raster2stac/rioxarray_stac.py,sha256=ayf447o88BOULguqvgN-VcumnhXQRGV6gsgJvlcmN3U,15010
+raster2stac-0.0.5.dist-info/LICENSE,sha256=CDnBflQZICFtbTyw_CJQyYMqKmKTtBdGkRmUFiwbLng,1105
+raster2stac-0.0.5.dist-info/METADATA,sha256=agq6YBfzgHft7caZfUGSzSn1qCauiLCofPAPTL4Pni0,9447
+raster2stac-0.0.5.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+raster2stac-0.0.5.dist-info/top_level.txt,sha256=zLmWthbqTy70IArgf7g2YEOb_EoK1srG1fZDic0jbH4,12
+raster2stac-0.0.5.dist-info/RECORD,,
