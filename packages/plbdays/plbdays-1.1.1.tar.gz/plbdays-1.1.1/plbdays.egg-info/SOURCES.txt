@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+plbdays/__init__.py
+plbdays.egg-info/PKG-INFO
+plbdays.egg-info/SOURCES.txt
+plbdays.egg-info/dependency_links.txt
+plbdays.egg-info/top_level.txt
