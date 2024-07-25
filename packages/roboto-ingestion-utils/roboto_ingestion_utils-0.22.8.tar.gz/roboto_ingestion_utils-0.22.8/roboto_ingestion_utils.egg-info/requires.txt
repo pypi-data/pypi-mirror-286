@@ -1,0 +1,9 @@
+roboto==0.4.0
+pytest
+mcap
+genson
+pandas
+Pillow
+mcap
+mcap-protobuf-support
+foxglove_schemas_protobuf
