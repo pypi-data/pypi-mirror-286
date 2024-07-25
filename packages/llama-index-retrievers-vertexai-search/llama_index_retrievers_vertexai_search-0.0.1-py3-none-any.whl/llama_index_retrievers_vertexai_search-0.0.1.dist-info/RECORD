@@ -1,0 +1,7 @@
+llama_index/retrievers/vertexai_search/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/retrievers/vertexai_search/__init__.py,sha256=-GJaChHOXdNmS4zG98eHSd2WOOuBljlDqGY1dO49AlM,119
+llama_index/retrievers/vertexai_search/_utils.py,sha256=bbjF-NAzPoVu_D-jPXKQLx9kWNCBrSObt910K26jOt8,1258
+llama_index/retrievers/vertexai_search/base.py,sha256=4zMKiMtSWmvBUIsd2x8aSunMhUeo_nGpworJV0V076M,15219
+llama_index_retrievers_vertexai_search-0.0.1.dist-info/METADATA,sha256=1tIyOP5wOucxtmbNgYXn6p3VGK7RlUErlEKkqa0K43U,2463
+llama_index_retrievers_vertexai_search-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_retrievers_vertexai_search-0.0.1.dist-info/RECORD,,
