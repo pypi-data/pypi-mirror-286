@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pgflow
+Version: 0.3.1
+Summary: Artificial potential field based guidance algorithm for multi agent systems
+Author: adriandelser
+Author-email: adrian.delser@gmail.com
+Requires-Python: >=3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: pyclipper (>=1.3.0.post4,<2.0.0)
+Requires-Dist: rtree (>=1.1.0,<2.0.0)
+Requires-Dist: scipy (>=1.10.1,<2.0.0)
+Requires-Dist: shapely (>=2.0.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# PGFlow
+
+Multi-agent plath planning algorithm with which agents can avoid other agents and obstacles. 
+
+To run simple example, see `examples/` directory.
+
+To run with more complex visualisers and with a pybullet drone simulator, see [FLightHouse](https://github.com/enac-drones/flighthouse).
+
+
+<p align="center">
+  <img src="./assets/vis2d.png" alt="Image 1" width="200"/>
+  <img src="./assets/guidance_vector_field.png" alt="Image 2" width="214"/>
+  <img src="./assets/pgflow.gif" alt="Image 3" width="209"/>
+</p>
+
