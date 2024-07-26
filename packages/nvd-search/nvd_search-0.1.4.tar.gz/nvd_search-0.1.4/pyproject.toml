@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "nvd-search"
+version = "0.1.4"
+description = "A CLI Tool made with Python to install the NVD database locally and maintain it using MongoDB."
+authors = ["khalil bouzoffara <khalil.bouzoffara@ensi-uma.tn>"]
+readme = "README.md"
+packages =  [{include = "nvd_search"}]
+
+[tool.poetry.scripts]
+nvd-search = "nvd_search.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.12"
+requests = "^2.32.3"
+pymongo = {extras = ["srv"], version = "^4.7.3"}
+typing-extensions = "^4.12.2"
+
+[project.urls]
+Repository = "https://github.com/khalilbouzoffara/nvd-search"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
