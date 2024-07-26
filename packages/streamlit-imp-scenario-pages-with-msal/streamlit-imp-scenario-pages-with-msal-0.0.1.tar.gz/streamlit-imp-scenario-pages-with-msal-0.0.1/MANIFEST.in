@@ -1,0 +1,1 @@
+recursive-include streamlit_imp_scenario_pages_with_msal/frontend/build *
