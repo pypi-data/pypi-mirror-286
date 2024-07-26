@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: visier.sdk.api.data-handling
+Version: 0.0.4
+Summary: Visier Data and Job Handling APIs
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: Apache License, Version 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Visier Data and Job Handling APIs
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+    Visier APIs for data and job handling
+    
+
