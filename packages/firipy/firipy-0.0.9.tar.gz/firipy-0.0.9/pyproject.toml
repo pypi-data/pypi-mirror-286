@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "firipy"
+version = "0.0.9"
+authors = [
+  { name="Ove Aursland", email="jeircul@outlook.com" },
+]
+description = "Firipy is a Python wrapper for the Firi API. It provides a simple and intuitive way to interact with the Firi cryptocurrency exchange, allowing users to retrieve market data, manage orders, and more. With Firipy, you can easily integrate Firi's features into your Python applications."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jeircul/firipy"
+"Bug Tracker" = "https://github.com/jeircul/firipy/issues"
