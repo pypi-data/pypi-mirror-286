@@ -1,0 +1,17 @@
+ks_trade_api/./.gitignore,sha256=eOt_WIh4Q7_8meDFVlUvnlCPFCSKtIOdM3LTqhqkVrM,2173
+ks_trade_api/./README.en.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ks_trade_api/./README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ks_trade_api/./__about__.py,sha256=soArIwlmsuU3e77jJQjfIdSNtiwlbleVj6qWj3mwYq4,24
+ks_trade_api/./__init__.py,sha256=AbIE6jcoz9rXFFnWlWr4PDbzZDPgrgICmJpXrVW1NCU,69
+ks_trade_api/./base_market_api.py,sha256=CVRKg_NwrTyKycIN42Z4HaOGQzGHEzch8U_74wVjYXE,3739
+ks_trade_api/./base_trade_api.py,sha256=HUs_TZ7IY1UDoLnwfzqhFo3IBSXeno2VGA3X2NYEV7A,5804
+ks_trade_api/./constant.py,sha256=ctpCddQNRD6ThUno6Cz97JPBPKSG7LZGCX3rgrSz9Cs,7515
+ks_trade_api/./object.py,sha256=-vFLCSi1rxZZinmJ81Ff8rDJUtsPzYqpUisLcIDUKZc,20526
+ks_trade_api/./pyproject.toml,sha256=a-eKUcOHo1_9KNqAEUgrwxkwsxTvCQ6kzqZOQoj6mmY,2155
+ks_trade_api/./rate_limit_checker.py,sha256=dGGuVh9pAjBFbkcksZx-GCWoqe8NWbsCbMJy4QhrXvA,2263
+ks_trade_api/./requirements.txt,sha256=QSVNQKGovp-uHHZ4MlBd36Oe8FqrRNOGz0E-yCLoh3w,204
+ks_trade_api/./setup.py,sha256=YQ7t2PbcGICWPX79TCjzQ6yEi9pLGOxvFZGVaSpxKKQ,890
+ks_trade_api/./utility.py,sha256=ldv0xZMLyLU_R9xg9X6iMgj8pPniSFvGu4DXqfFzUkY,34290
+ks_trade_api-0.0.10.dist-info/METADATA,sha256=12QRT0wTGMgNGu0lMt25KVcRBBXi5xKR04nOoptDz2Q,872
+ks_trade_api-0.0.10.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ks_trade_api-0.0.10.dist-info/RECORD,,
