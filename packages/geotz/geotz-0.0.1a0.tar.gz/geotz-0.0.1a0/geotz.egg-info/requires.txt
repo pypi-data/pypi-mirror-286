@@ -1,0 +1,7 @@
+tzfpy~=0.15
+
+[docs]
+sphinx-rtd-theme>=1.2.0
+
+[pytz]
+tzfpy[pytz]~=0.15

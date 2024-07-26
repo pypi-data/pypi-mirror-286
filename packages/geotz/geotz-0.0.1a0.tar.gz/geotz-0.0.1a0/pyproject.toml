@@ -1,0 +1,62 @@
+[project]
+name = "geotz"
+version = "0.0.1-alpha"
+
+description = "Simple library for offline lookup of the timezone for a location."
+
+requires-python = ">= 3.9"
+readme = "README.rst"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+keywords = ["geo", "timezones", "tz"]
+dependencies = ["tzfpy ~= 0.15"]
+
+[project.optional-dependencies]
+pytz = ["tzfpy[pytz] ~= 0.15"]
+docs = ["sphinx-rtd-theme >= 1.2.0"]
+
+[project.urls]
+Source = "https://github.com/dmayo3/geotz"
+Docs = "http://geotz.readthedocs.io/"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"geotz.data" = ["*.tsv"]
+
+[tool.bumpver]
+current_version = "0.0.1-alpha"
+version_pattern = "MAJOR.MINOR.PATCH[-TAG]"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"geotz/__init__.py" = ["{version}"]
+"README.rst" = ["{version}"]
