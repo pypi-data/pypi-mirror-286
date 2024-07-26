@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: stucknet
+Version: 0.0.10
+Author-email: Yehuda Elyasaf <30yehuda26@gmail.com>, Azhdar Aria Heydari <azhdar@stucknet.gov.ir>
+Maintainer-email: Yehuda Elyasaf <30yehuda26@gmail.com>, Azhdar Aria Heydari <azhdar@stucknet.gov.ir>
+Project-URL: Homepage, https://github.com/YehudaElyasaf/stucknet
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+TODO: write a README
