@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: whale-client
+Version: 0.1.2
+Summary: The open source library that allows users to create applications on the Whale platform.
+Home-page: https://github.com/jinyang628/whale-client
+Author: jinyang628
+Author-email: chenjinyang4192@gmail.com
+Requires-Python: ==3.12.1
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pydantic (>=2.7.4,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Documentation, https://jinyang628.github.io/whale-client/
+Project-URL: Repository, https://github.com/jinyang628/whale-client
+Description-Content-Type: text/markdown
+
+# whale-client
+The SDK for Whale
+
+## Install Poetry
+
+We use [Poetry](https://python-poetry.org/) for dependency management.
+
+```bash
+# Install Poetry
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Or follow installation instructions from [Poetry website](https://python-poetry.org/docs/#installation).
+
+## Setup Virtual Environment
+
+It is recommended to use Python virtual environment, so you don't pollute your system Python environment.
+
+```bash
+# Install dependencies
+poetry install
+```
+
+```bash
+# Update/upgrade dependencies
+poetry update
+```
+
+```bash
+# Activate Python virtual environment
+poetry shell
+```
+
+## Environment Variables
+Copy an existing environment template file and fill in all the necessary values:
+```bash
+# Create .env file (by copying from .env.example)
+cp .env.example .env
+```
+
+### Check style
+
+Run the following command at the root of the repository
+`black .`
+
