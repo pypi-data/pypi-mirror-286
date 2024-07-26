@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: drf_yasg_serializer_converter
+Version: 1.0.0
+Summary: Converts django serializer to drf_yasg openapi schema.
+Home-page: https://github.com/Greewil/drf-yasg-serializer-converter
+Author: Greewil (Shishkin Sergey)
+Author-email: shishkin.sergey.d@gmail.com
+License: MIT
+Keywords: python,openapi schema generation,django serializer convertor
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django
+Requires-Dist: drf-yasg
+
+
+# drf-yasg-serializer-converter
+Converts django serializer to drf-yasg openapi schema.
