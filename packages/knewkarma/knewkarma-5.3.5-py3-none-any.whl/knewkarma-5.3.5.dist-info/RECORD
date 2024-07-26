@@ -1,0 +1,16 @@
+knewkarma/__init__.py,sha256=fvcPhnXIcu--Y6yDjQa0eoSE73AxfnT0hP4jW1HTYu0,161
+knewkarma/_cli.py,sha256=W95o5GJPqjHeqhK_fHV4IE3ed3P2_zj0wjTavBSzxHQ,22542
+knewkarma/_core.py,sha256=6ItVrNLCuKTouKOzDb8TLybfHqBPVpO3iLfiFfU2W40,57912
+knewkarma/api.py,sha256=Aq5BLPyQk2f4CWhQysNXrI329GsWbVm65LFX6Hfc3xQ,17695
+knewkarma/help.py,sha256=OEWwh3ZRwPJamuNM1MxkjVJo4kg7x-04aF0oFjVCNPk,4867
+knewkarma/tools/__init__.py,sha256=q34NgGI0gEpWQNyJ3R5AJWomuAsFy8LcI-o56p4jWT8,73
+knewkarma/tools/data_utils.py,sha256=I4MdeeYLhlFHVHq3zVK49CN9VxqHSd70721t_bjHeoc,3632
+knewkarma/tools/general_utils.py,sha256=RO6L5Kj7u0nkE8-I0MsK76VHOeD-w4Tnm171npUq-zc,3482
+knewkarma/tools/parsing_utils.py,sha256=2i7xfGVcVyKh6CqoiE0G9B1aD8GBx3Ct4iSTcadIjFw,20431
+knewkarma/tools/time_utils.py,sha256=Lf0BtT6cTdQnZOtPwwF8o8ac8Xfhf421aCL3PmZnN8E,5242
+knewkarma/version.py,sha256=-toelDYO2so4nOaDQ7GGzwmr5JOCT7Q_jjSujhYO2UA,907
+knewkarma-5.3.5.dist-info/LICENSE,sha256=FpfRM-RZ6KgFxCoiGE3NDOWuPTotpwwCi23WzX51Mw8,1096
+knewkarma-5.3.5.dist-info/METADATA,sha256=RMHPGHNW98hN9edwovc3T5-fFuo7gADpd7pTo0UWcSM,4054
+knewkarma-5.3.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+knewkarma-5.3.5.dist-info/entry_points.txt,sha256=O4Ey1wdYMeHVuG-zIzxrBqVX2enZkbxk2bihDNMEenQ,50
+knewkarma-5.3.5.dist-info/RECORD,,
