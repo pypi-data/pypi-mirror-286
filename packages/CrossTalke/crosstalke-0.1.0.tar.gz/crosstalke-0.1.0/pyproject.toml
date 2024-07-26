@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "CrossTalke"
+version = "0.1.0"
+description = ""
+authors = ["CostaLab"]
+readme = "README.md"
+packages = [{include = "Python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+numpy = "^2.0.1"
+scikit-learn = "^1.5.1"
+networkx = "^3.3"
+matplotlib = "^3.9.1"
+seaborn = "^0.13.2"
+plotnine = "^0.13.6"
+adjustText = "^1.2.0"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pandas = "^2.2.2"
+numpy = "^2.0.1"
+scikit-learn = "^1.5.1"
+matplotlib = "^3.9.1"
+seaborn = "^0.13.2"
+networkx = "^3.3"
+plotnine = "^0.13.6"
+adjustText = "^1.2.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
