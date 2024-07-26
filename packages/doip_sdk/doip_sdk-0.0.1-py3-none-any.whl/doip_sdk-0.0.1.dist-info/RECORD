@@ -1,0 +1,11 @@
+doip_sdk/__init__.py,sha256=v0audeCZ8XsdLW6Ffz1QRIMxVvI6nlWsTRSEPjed7E0,679
+doip_sdk/base.py,sha256=vO7MANb0fAAITBxnibV8obX1rjh1iTgVTECFhwtp708,3068
+doip_sdk/base_server.py,sha256=tZpqBhGCwaia02hIj9Gl1nE5XrUZ007PG43xlSZpenU,1888
+doip_sdk/constant.py,sha256=XU4kqbWonTJlMV6s6WmDCfSf9XXaHldmxYdoy6OPEuQ,715
+doip_sdk/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doip_sdk/model/response.py,sha256=dDhNDLb3gAYp9Y2TkraphQ6fG36nFRTb5WaoIJQkHPw,252
+doip_sdk/selfsigned.py,sha256=IvQXJNoRnhezcNIsIvMatONVRqe2jyPDN6r0xErTWss,3679
+doip_sdk/utils.py,sha256=lRnbQ-ADWjdqaACgEAY8NWp9skXnF3WK6eqjeZ_BIS0,4305
+doip_sdk-0.0.1.dist-info/METADATA,sha256=WpY83HsMTHQZ2pQfl9Sy2v0CzB-JGyJOjYY79TCniYs,6760
+doip_sdk-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+doip_sdk-0.0.1.dist-info/RECORD,,
