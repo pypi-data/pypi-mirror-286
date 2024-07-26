@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: covidslimiter
+Version: 0.43
+Summary: A simple IP rate limiter for Flask apps.
+Author: Covid Gtag
+Keywords: flask ip rate limiter
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python
+Classifier: Framework :: Flask
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Flask >=2.0.0
+Provides-Extra: dev
+Requires-Dist: pytest >=6.0 ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+
