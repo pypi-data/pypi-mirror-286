@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "streaming-statistics"
+version = "1.0.0"
+description = "A streaming statistics library"
+authors = ["Will Fitzgerald <willf@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+ddsketch = "^3.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+flake8 = "^7.1.0"
+pytest = "^8.3.2"
+isort = "^5.13.2"
+numpy = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
