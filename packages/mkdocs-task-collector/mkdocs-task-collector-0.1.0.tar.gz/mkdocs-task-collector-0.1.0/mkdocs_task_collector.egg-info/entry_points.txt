@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+task_collector = mkdocs_task_collector.plugin:TaskCollectorPlugin
