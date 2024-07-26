@@ -1,0 +1,11 @@
+README.md
+setup.py
+GInvDist.egg-info/PKG-INFO
+GInvDist.egg-info/SOURCES.txt
+GInvDist.egg-info/dependency_links.txt
+GInvDist.egg-info/requires.txt
+GInvDist.egg-info/top_level.txt
+ginv/__init__.py
+ginv/gb.py
+ginv/monom.py
+ginv/poly.py
