@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+telegram_webapps_authentication/__init__.py
+telegram_webapps_authentication/authentication.py
+telegram_webapps_authentication.egg-info/PKG-INFO
+telegram_webapps_authentication.egg-info/SOURCES.txt
+telegram_webapps_authentication.egg-info/dependency_links.txt
+telegram_webapps_authentication.egg-info/requires.txt
+telegram_webapps_authentication.egg-info/top_level.txt
