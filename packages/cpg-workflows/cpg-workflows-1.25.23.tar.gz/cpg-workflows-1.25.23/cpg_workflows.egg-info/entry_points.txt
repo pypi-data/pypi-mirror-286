@@ -1,0 +1,3 @@
+[console_scripts]
+modify_sniffles = cpg_workflows.scripts.long_read_sniffles_vcf_modifier:cli_main
+mt_to_es = cpg_workflows.scripts.mt_to_es_without_dataproc:main
