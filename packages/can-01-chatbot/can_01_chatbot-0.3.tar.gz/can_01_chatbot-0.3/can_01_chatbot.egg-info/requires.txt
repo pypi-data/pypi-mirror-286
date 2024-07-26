@@ -1,0 +1,7 @@
+openai
+pyaudio
+pydub
+google-cloud-speech
+google-cloud-texttospeech
+six
+python-dotenv
