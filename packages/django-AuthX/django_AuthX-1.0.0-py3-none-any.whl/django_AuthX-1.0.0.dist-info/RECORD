@@ -1,0 +1,16 @@
+authx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+authx/apps.py,sha256=DWD9a-Ek6ELx4uMTEtyoku6Ps-ZpCwOaFweBo4cARZw,192
+authx/authX_admin.py,sha256=6-j19wrx7yp6aGtSJe2WNsERKlmtCZXwKx8Tz1AMEkk,1981
+authx/authX_constants.py,sha256=deNBOzWrRNLSx7jGsgN_6gj0sW2fbUCXLZgnBMnl1YA,241
+authx/authX_decorators.py,sha256=_86bXz8-jvtv2sA-DJCmAN8WbHkZEEsMXNsajJC2QIc,385
+authx/authX_forms.py,sha256=QqEzQ4jIegxszYeJoXKu0LUOv6aYAib1tpEqcutBclE,1483
+authx/authX_mixins.py,sha256=XOtz1FxvjCy2fEcdv1sM_B2jLPcRwbY96HtWoCg11ks,742
+authx/authX_models.py,sha256=EOzbEXFI1F9oMcg_UwyDimxT9gD-Qdu9gHqPP-RF80w,3006
+authx/authX_settings.py,sha256=DZTBMNGqcYEMsufZxp0yDNIPxKxxMBb7cjb3QmWfUu4,664
+authx/authX_urls.py,sha256=8smIfCAjyQkD48C0RFcKhtYumUFnGT3o3g9A7aEk3CU,462
+authx/authX_views.py,sha256=1gw8UCszY3kq4lOZZnymF4u8xGgC12ce6twpqpnDImc,1668
+django_AuthX-1.0.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+django_AuthX-1.0.0.dist-info/METADATA,sha256=pqtE07OzFJCjfkITDUS1JxvOwbQ-RtT7dyO25f3hO9U,2584
+django_AuthX-1.0.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+django_AuthX-1.0.0.dist-info/top_level.txt,sha256=WtkUmhrCcBIg_bdd-L_DLpAMZKwP9NAxdSecf7xXjCw,6
+django_AuthX-1.0.0.dist-info/RECORD,,
