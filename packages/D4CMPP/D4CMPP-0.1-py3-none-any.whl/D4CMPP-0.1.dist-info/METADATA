@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: D4CMPP
+Version: 0.1
+Summary: Molecular property prediction based on Graph Convolution Network published by Deep4Chem
+Home-page: https://github.com/phillip1998/D4C_MPP
+Author: Park Jinyong
+Author-email: phillip1998@korea.ac.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytorch
+Requires-Dist: dgl
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pyyaml
+Requires-Dist: rdkit
+Requires-Dist: scikit-learn
+
+# D4C molecular property prediction
+![License](https://img.shields.io/badge/license-D4C-red.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
+
+This project is a deep learning application designed to predict molecular properties. The models implemented in this project feature interpretable and hierarchical architectures, including conventional graph convolutional models.
+
+## How to start
+1. Place the CSV file for training in the "_Data" folder.
+    - The SMILES strings of molecules should be in the "compound" column.
+    - There needs to be at least one molecular property for each corresponding molecule.
+2. Check and choose the ID of the deep learning model in "network_refer.yaml".
+3. Run the "main.py" file as
+
+```sh
+python main.py -n [network_id] -d [data_file_name] -t [property_column]
+```
+For example,
+```sh
+python main.py -n GCN -d Aqsoldb -t Solubility
+```
+The graph cache file will be saved in "_Graph" folder.
+The trained result will be saved in "_Model" folder.
+
+## Code Attribution and Licensing Information
+This project includes code from the GC-GNN by Adem Rosenkvist Nielsen Aouichaoui (arnaou@kt.dtu.dk), licensed under the MIT License. 
+https://github.com/gsi-lab/GC-GNN/tree/main 
