@@ -1,0 +1,2 @@
+[console_scripts]
+kedro-inspect = kedro_inspect.cli:app

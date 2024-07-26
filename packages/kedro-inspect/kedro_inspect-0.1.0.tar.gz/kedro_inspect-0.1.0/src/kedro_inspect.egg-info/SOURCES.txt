@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/kedro_inspect/__init__.py
+src/kedro_inspect/cli.py
+src/kedro_inspect/core.py
+src/kedro_inspect/hooks.py
+src/kedro_inspect/runner.py
+src/kedro_inspect.egg-info/PKG-INFO
+src/kedro_inspect.egg-info/SOURCES.txt
+src/kedro_inspect.egg-info/dependency_links.txt
+src/kedro_inspect.egg-info/entry_points.txt
+src/kedro_inspect.egg-info/requires.txt
+src/kedro_inspect.egg-info/top_level.txt

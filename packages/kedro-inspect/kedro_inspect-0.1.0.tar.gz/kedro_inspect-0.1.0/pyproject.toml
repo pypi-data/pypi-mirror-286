@@ -1,0 +1,58 @@
+[project]
+name = "kedro-inspect"
+version = "0.1.0"
+description = "The only inspect tool you need for Kedro project"
+authors = [
+    {name = "Nok Lam Chan", email = "mediumnok@gmail.com"},
+]
+dependencies = [
+    "rich>=13.7.0",
+    "typer>=0.9.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mkdocs>=1.5.3",
+    "pymdown-extensions>=10.7",
+    "mkdocs-material>=9.5.7",
+]
+[project.scripts]
+kedro-inspect = "kedro_inspect.cli:app"
+
+
+
+# [project.entry-points."kedro.hooks"]
+# kedro-inspect = "kedro_inspect.hooks:trace_hook"
+
+# [project.entry-points."kedro.cli_hooks"]
+# kedro-inspect = "kedro_inspect.hooks:trace_hook"
+
+
+[tool.ruff]
+line-length = 88
+show-fixes = true
+select = [
+    "F",   # Pyflakes
+    "W",   # pycodestyle
+    "E",   # pycodestyle
+    "I",   # isort
+    "UP",  # pyupgrade
+    "PL",  # Pylint
+    "T201", # Print Statement
+    "S", # flake8-bandit
+]
+ignore = ["E501"]
+
+[tool.ruff.isort]
+known-first-party = ["kedro"]
