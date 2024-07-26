@@ -1,0 +1,2 @@
+[psychopy.iohub.devices.eyetracker]
+eyelink = psychopy_eyetracker_sr_research.sr_research.eyelink
