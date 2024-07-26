@@ -1,0 +1,17 @@
+
+[:python_version < "3.11"]
+typing_extensions
+
+[develop]
+mypy==1.11.*
+pre-commit==3.6.*
+coverage==7.4.*
+pytest==7.4.*
+pytest-cov==4.1.*
+ruff==0.5.*
+commonmark==0.9.*
+sphinx==7.*
+
+[docs]
+commonmark==0.9.*
+sphinx==7.*
