@@ -1,0 +1,15 @@
+vorlagellm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vorlagellm/agreements.py,sha256=-c921qe6O9duDSg6Tk3-yG4ZtZOGLItvqMq_K6MUXNg,1881
+vorlagellm/chains.py,sha256=LTkEbZHi6hN-skWknXdupLpv8k2XEW_FZfTceCt-nCw,1538
+vorlagellm/ensemble.py,sha256=EFDQ57L3JTF-dCHe_qc1LEDwxkQppDk3kc6KigUHSAE,1731
+vorlagellm/languages.py,sha256=tzDFju4oXCUTCroFXexEh6rTzC80XjK41lDUFY0Dqdo,15286
+vorlagellm/llms.py,sha256=B-HRrFcZQAzSk2HSlmZLYJbNgmOo8voyDglO5B04grA,6772
+vorlagellm/main.py,sha256=5oS1HnvM4suJmDHXPff4W6O28wvJ1nKneOyixom9gbQ,12431
+vorlagellm/prompts.py,sha256=fNWU_EZ7oklbMgrBS9dLk0dMrf3zGrcoRb58Dscv5bE,10254
+vorlagellm/rag.py,sha256=FP4FktwsjtaCA4x0zOlqmdVYaZHWgP-GBdImdKtX-vI,3384
+vorlagellm/tei.py,sha256=3bauoEkO1djD0YD9WYnMGKzNWYPsEmkAXIs-XF3hiCI,14877
+vorlagellm-0.1.0.dist-info/LICENSE,sha256=7t2yUAoAg-l6hBYoWjcgScGWF2U-k160yqEiXiGUUW8,10761
+vorlagellm-0.1.0.dist-info/METADATA,sha256=D_TKMQTtfPX96DFC0udIjF265P3fIl6R32NC2n5IFSI,2907
+vorlagellm-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+vorlagellm-0.1.0.dist-info/entry_points.txt,sha256=ilV2VUn1NwmcfMvaQQGJlUzRhx3aUtzBucapkGRF2HQ,50
+vorlagellm-0.1.0.dist-info/RECORD,,

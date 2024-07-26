@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: VorlageLLM
+Version: 0.1.0
+Summary: Uses an LLM to determine which were plausible readings in the Vorlage of a translation of a text.
+Home-page: https://github.com/rbturnbull/vorlagellm/
+License: Apache-2.0
+Keywords: llm
+Author: Robert Turnbull
+Author-email: robert.turnbull@unimelb.edu.au
+Requires-Python: >=3.10,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: chromadb (>=0.5.0,<0.6.0)
+Requires-Dist: docutils (!=0.21.post1)
+Requires-Dist: langchain (>=0.1.17)
+Requires-Dist: langchain-anthropic (>=0.1.15,<0.2.0)
+Requires-Dist: langchain-community (>=0.0.36)
+Requires-Dist: langchain-openai (>=0.1.6)
+Requires-Dist: lxml (>=5.2.1,<6.0.0)
+Requires-Dist: openai (>=1.25.1,<2.0.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: transformers (>=4.43.2,<5.0.0)
+Project-URL: Documentation, https://rbturnbull.github.io/vorlagellm
+Project-URL: Repository, https://github.com/rbturnbull/vorlagellm/
+Description-Content-Type: text/x-rst
+
+================================================================
+VorlageLLM
+================================================================
+
+.. start-badges
+
+|testing badge| |coverage badge| |docs badge| |black badge|
+
+.. |testing badge| image:: https://github.com/rbturnbull/vorlagellm/actions/workflows/testing.yml/badge.svg
+    :target: https://github.com/rbturnbull/vorlagellm/actions
+
+.. |docs badge| image:: https://github.com/rbturnbull/vorlagellm/actions/workflows/docs.yml/badge.svg
+    :target: https://rbturnbull.github.io/vorlagellm
+    
+.. |black badge| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+    
+.. |coverage badge| image:: https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/rbturnbull/132c627e616e59fa78f663e4a4ff6f0f/raw/coverage-badge.json
+    :target: https://rbturnbull.github.io/vorlagellm/coverage/
+    
+.. end-badges
+
+.. start-quickstart
+
+Uses an LLM to determine which were plausible readings in the Vorlage of a translation of a text.
+
+Installation
+==================================
+
+Install using pip:
+
+.. code-block:: bash
+
+    pip install git+https://github.com/rbturnbull/vorlagellm.git
+
+
+Usage
+==================================
+
+See the options with the command:
+
+.. code-block:: bash
+
+    vorlagellm --help
+
+.. end-quickstart
+
+
+Credits
+==================================
+
+.. start-credits
+
+Robert Turnbull
+For more information contact: <robert.turnbull@unimelb.edu.au>
+
+.. end-credits
+
+
