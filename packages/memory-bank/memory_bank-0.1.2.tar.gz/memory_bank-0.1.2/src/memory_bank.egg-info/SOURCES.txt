@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/memory_bank/__init__.py
+src/memory_bank/memory_bank.py
+src/memory_bank.egg-info/PKG-INFO
+src/memory_bank.egg-info/SOURCES.txt
+src/memory_bank.egg-info/dependency_links.txt
+src/memory_bank.egg-info/requires.txt
+src/memory_bank.egg-info/top_level.txt
