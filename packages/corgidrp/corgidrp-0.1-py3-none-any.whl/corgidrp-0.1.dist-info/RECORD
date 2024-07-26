@@ -1,0 +1,15 @@
+corgidrp/__init__.py,sha256=Nx1XzimoOc0P1VOSAOCyIzeJWAtkZ6GnKG8F0tM3AhI,2482
+corgidrp/caldb.py,sha256=tKZqFR0_GFNZgx6T_dJdQYtv-nC6Pt8gTm1zZg-4VAc,11034
+corgidrp/data.py,sha256=H8pPPG-1gFzhGL3r7v29ujm6-eFmQzZWweNj3t1A27U,47234
+corgidrp/detector.py,sha256=lyclK1patS7iRgv5df40G7cRcFJaFdjgYssR5NaS8kY,17058
+corgidrp/l1_to_l2a.py,sha256=_6IsbQU8qH5UpowudLP1MYp4TvT8rGkrBZa5y8rQWqw,13181
+corgidrp/l2a_to_l2b.py,sha256=EgMFIZs-fe8NZJiHYIMDdQUvqiqZ0sAsBRSBaStrQ-M,12922
+corgidrp/l2b_to_l3.py,sha256=3ZgP6teIoGGEWGGayQ8SRv8W8vDZkVMlE52XDzwjg3o,871
+corgidrp/l3_to_l4.py,sha256=wWrIWf9gY0PMDmUZW3gSu4-VUMbQsd6OYE_4uyizEOc,1477
+corgidrp/mocks.py,sha256=Ioe7j_yOC1dyF7Q6qvku58YNzNKAZgy-zHPX3PW3Rjc,12601
+corgidrp/walker.py,sha256=hhEpjbgtyCK4HLp4sCoD1EP7cxEIQUteJBocUtKG9fY,5552
+corgidrp-0.1.dist-info/LICENSE,sha256=08Im82a4Zu0Qd4JEAMejWEZ1xHoxwj1lY9WLBo2zObM,1490
+corgidrp-0.1.dist-info/METADATA,sha256=71_e3_95JpX-UYdGau0tgzOjgYost0p50xYwjPMbw2E,575
+corgidrp-0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+corgidrp-0.1.dist-info/top_level.txt,sha256=Ere0lFLg2Jx75DIG8vA0Gz-Go0JssNGFhETqezhpGpQ,9
+corgidrp-0.1.dist-info/RECORD,,
