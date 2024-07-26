@@ -1,0 +1,11 @@
+reasoner_transpiler/attribute_types.json,sha256=Cnirm2OlqKvCuJdHBs1gFt5LbVm_boWcExT0EYuWb50,41
+reasoner_transpiler/cypher.py,sha256=xcbAeJdv3sATh0U8TqZg8sE24OXtgPhMgi_RjwidK_w,16952
+reasoner_transpiler/cypher_expression.py,sha256=Sovd26ET1upL5tKwZEnMEAr6OJg1H16w_Axr79m5t_Q,979
+reasoner_transpiler/exceptions.py,sha256=UEMH2NZ__TXn88BgJKjZmengvB44CtexftTi25Hng4w,503
+reasoner_transpiler/matching.py,sha256=-2RcdVMhKY2RCcRrEdKFEgrKZi1hzgRFJ8D2Sv5fq7M,20566
+reasoner_transpiler/nesting.py,sha256=U4e1Hov3f8b0byrH7xrsm_a-NRKTlseY3OH0x7F0MFE,8780
+reasoner_transpiler/util.py,sha256=URFro8-OxeszF9Dk8_QNKZTy-uE-SssnXgKzLXwfrSk,2440
+reasoner_transpiler-2.1.0.dist-info/METADATA,sha256=qc7Xn3R90JmrIJ8C_etpvyCkQe8OIrQbzvMkJdLIEkY,368
+reasoner_transpiler-2.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+reasoner_transpiler-2.1.0.dist-info/top_level.txt,sha256=fWqaK6YuyrW5IyAp3zA1R-2dmlmD0gRpaAreQy0Qm7w,20
+reasoner_transpiler-2.1.0.dist-info/RECORD,,
