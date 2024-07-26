@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: valvebsp
+Version: 1.3.14
+Summary: A library to parse .BSP files (level files for the Source engine).
+Home-page: https://pysourcesdk.github.io/ValveBSP/
+Author: Maxime Dupuis
+Author-email: mdupuis@hotmail.ca
+License: gpl-3.0
+Project-URL: Documentation, https://pysourcesdk.github.io/ValveBSP/
+Project-URL: Github, https://github.com/pySourceSDK/ValveBSP
+Keywords: bsp,source,sourcesdk,hammer,valve
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: construct
+Requires-Dist: pyparsing
+Requires-Dist: future
+
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/pySourceSDK/ValveBSP/blob/master/LICENSE.txt)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/valvebsp.svg)](https://pypi.python.org/pypi/valvebsp/)
+[![Platforms](https://img.shields.io/badge/platform-Linux,_MacOS,_Windows-blue)]()
+[![PyPI version fury.io](https://badge.fury.io/py/valvebsp.svg)](https://pypi.python.org/pypi/valvebsp/)
+[![GitHub Workflow Status (with event)](https://github.com/pySourceSDK/ValveBSP/actions/workflows/CI.yml/badge.svg)]()
+[![Test coverage](https://github.com/pySourceSDK/ValveBSP/blob/master/docs/source/coverage.svg "coverage")]()
+
+# ValveBSP
+
+ValveBSP is a Python library designed to parse and edit .BSP files, which are utilized for game level representation within Valve's Source engine. It provides provides access to lump data in map files.
+
+Full documentation: https://pysourcesdk.github.io/ValveBSP/
+
+## Installation
+
+### PyPI
+
+ValveBSP is available on the Python Package Index. This makes installing it with pip as easy as:
+
+```bash
+pip3 install valvebsp
+```
+
+### Git
+
+If you want the latest code or even feel like contributing, the code is available on GitHub.
+
+You can easily clone the code with git:
+
+```bash
+git clone git@github.com:pySourceSDK/ValveBSP.git
+```
+
+and install it with:
+
+```bash
+python3 setup.py install
+```
