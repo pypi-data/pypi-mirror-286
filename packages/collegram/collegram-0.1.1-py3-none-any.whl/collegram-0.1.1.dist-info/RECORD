@@ -1,0 +1,14 @@
+collegram-0.1.1.dist-info/METADATA,sha256=OSDTbFCXl3iHHrVDq5NeYU4appIldaPP68AHjT_EdHY,2862
+collegram-0.1.1.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+collegram-0.1.1.dist-info/licenses/LICENSE,sha256=GrBpLInRv8fan0UUtQkrPEoDiQeP-v7gr4i_2TqdGTw,1080
+collegram/__init__.py,sha256=s46Af_APwIVWMypg94h0qaMQpp9iYryWVVFLRIaczyI,537
+collegram/channels.py,sha256=ft5J6zbLCRcLK3COeknN_wPh8cOb61wduaD1muDbx8E,24160
+collegram/client.py,sha256=hq3uCnAPrCH8t3GfIDV1qcagQqUbwDtvVuRG6XV-T_k,552
+collegram/json.py,sha256=Wk65qCp202hjrSZrNm8ehw2856IApL213QC2JDtQVvE,9811
+collegram/media.py,sha256=0TU3EyGEgU1eUErmMkR10_xiNZ_Poy1ojfKOu6OPNxU,3392
+collegram/messages.py,sha256=sh87dO_HMdQVulo2w-fzguwAzT14Mz2cj1j1bAuBHKY,11743
+collegram/paths.py,sha256=wNbvc0FurwncbTDbZaRBa3utOWCvovpfYjg65-vT75Q,3494
+collegram/text.py,sha256=oO4byir4sFK--felz1wL8TfaypwD-04HpzSSEroinMg,1169
+collegram/users.py,sha256=vvjUvjfgvcIwxdUAkMbkhphoNC8qNm8uw0yfAt7x0Vk,1778
+collegram/utils.py,sha256=vlQSxdxcjsi96YseJQlKkrBp3NfsbFTXK3bM-qv096g,7598
+collegram-0.1.1.dist-info/RECORD,,

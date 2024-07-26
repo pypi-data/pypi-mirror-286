@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: collegram
+Version: 0.1.1
+Summary: A small example package
+Author-Email: Thomas Louf <tlouf+pro@pm.me>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/TLouf/collegram
+Project-URL: Issues, https://github.com/TLouf/collegram/issues
+Requires-Python: >=3.9
+Requires-Dist: telethon>=1.34.0
+Requires-Dist: msgspec>=0.18.6
+Requires-Dist: polars>=0.20.10
+Requires-Dist: fsspec>=2023.12.2
+Requires-Dist: bidict>=0.23.1
+Requires-Dist: cryptg; extra == "media"
+Requires-Dist: python-dotenv>=0.5.1; extra == "scripts"
+Requires-Dist: tqdm>=4.66.2; extra == "scripts"
+Requires-Dist: lingua-language-detector>=2.0.2; extra == "scripts"
+Provides-Extra: media
+Provides-Extra: scripts
+Description-Content-Type: text/markdown
+
+# collegram
+
+A Python package and associated scripts to collect, anonymise and preprocess Telegram
+data.
+
+
+## Collection flow
+
+In very brief:
+- get a first seed of channels by running `scripts/chan_keyword_search.py`
+- perform a snowballing exploration of channels using the similar channels recommended
+  by Telegram and the ones forwarded in already found ones, by running
+  `scripts/channel_expansion.py`.
+
+See diagrams in `reports/` for more info.
+
+
+## Project Organization
+
+    ├── LICENSE
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modelling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── scripts            <- Scripts to send to a cluster e.g.
+    │
+    ├── notebooks          <- Jupyter notebooks.
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── environment.yml    <- The conda environment file for reproducing the analysis environment, e.g.
+    │                         generated with `conda env export -f environment.yml`
+    |
+    ├── collegram          <- Source code for use in this project.
+    |
+    └── setup.py           <- makes project pip installable (pip install -e .) so collegram can be imported
+
+
+
+
+--------
+
+<p><small>Project based on <a target="_blank" href="https://github.com/drivendata/cookiecutter-data-science">a fork of the cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
