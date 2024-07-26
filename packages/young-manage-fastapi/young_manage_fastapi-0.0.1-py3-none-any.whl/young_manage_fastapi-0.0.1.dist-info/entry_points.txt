@@ -1,0 +1,2 @@
+[console_scripts]
+fastapi = young_manage_fastapi.main:app
