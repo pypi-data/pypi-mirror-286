@@ -1,0 +1,2 @@
+[console_scripts]
+cryptonit-bot = your_package.cryptonit:main
