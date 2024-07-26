@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django_sage_tools
+Version: 0.1.0
+Summary: Reusable, generic mixins for Django
+Home-page: https://github.com/sageteamorg/django-sage-tools
+Author: Sepehr Akbarzadeh
+Author-email: info@sageteam.org
+Project-URL: Documentation, https://django-sage-tools.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/sageteamorg/django-sage-tools
+Project-URL: Issues, https://github.com/sageteamorg/django-sage-tools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# django-sage-tools
+
+django-sage-tools provides a range of helpful Mixins for Django's class-based views. These mixins often replicate the functionality of Django's function-based view decorators and also tackle common issues encountered with class-based views. For further details, consult the documentation.
