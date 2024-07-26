@@ -1,0 +1,12 @@
+dotfiles/__init__.py,sha256=wm79XPhT7PRxg2PNlpfK05NjtP2X4Qz3D-OFGdgbb7w,445
+dotfiles/cli.py,sha256=I3atyO31-mslveHywNCai3w_3nSKv3sw5UhsTx2iPvQ,8158
+dotfiles/compat.py,sha256=CN3XxWy2wIOEYNT5Y1rixZRhaap0bcR0y-wQFAjmb8s,8104
+dotfiles/core.py,sha256=XYwiLfdOdVWAGGbTjhXd_pK2y2n_oKOu6YmEdCdmPuY,8924
+dotfiles/utils.py,sha256=28QVrTVBvVuPv_pOxHeou7plGXXkAkg_rwGY_liWNeY,477
+dotfiles-0.6.5.dist-info/AUTHORS.rst,sha256=Sxu8eLipSt-aCrVNmugWqdAna-9xRF0K07oiwmeJWfQ,299
+dotfiles-0.6.5.dist-info/LICENSE.rst,sha256=cTP3U9t9Uc7-BWEVbEhvdv8CTQYYyAdGI0tC2CV9MjE,836
+dotfiles-0.6.5.dist-info/METADATA,sha256=PkU9Bxm7A0i4AWXf_12uWB9sxSD8n_H0ImKkdfoQZU0,8779
+dotfiles-0.6.5.dist-info/WHEEL,sha256=ANi2y8tYx-p70pj7MSdqQMJNFJEUgAOyfPpHzqz0w84,109
+dotfiles-0.6.5.dist-info/entry_points.txt,sha256=BKYi4UbOWNd8UueaBbbq3_v0-PgmI0ZEMwEApiDTRlc,47
+dotfiles-0.6.5.dist-info/top_level.txt,sha256=jIpO3kJwgEG8IdNyEamwDavhV48x6GiTBxpQQK9c1qg,9
+dotfiles-0.6.5.dist-info/RECORD,,
