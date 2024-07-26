@@ -1,0 +1,12 @@
+simplifine_alpha/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplifine_alpha/annotation.py,sha256=ploUHeGIm9jxp6YQ3mHktK5VCjkjWsdY4q4fPY-wegw,29124
+simplifine_alpha/eval.py,sha256=DWvn2C-U1a1ePB7rO_B7jUrxyCbmBDAypkc9d3VwH3I,48514
+simplifine_alpha/logger.py,sha256=NNeauHA7lARQgq7vocfXhaFlc3tgcgiTCerM6-n-Y8Q,8427
+simplifine_alpha/train_engine.py,sha256=eibg44XB4P8YI1DXIjJzoE-RiVzfwiWTfQsCPEG6dLc,59504
+simplifine_alpha/train_engine_client.py,sha256=J7dMFrKVtopjKw1DkcGd1VPNS6UBt_8G1MuBmbiPY8o,5328
+simplifine_alpha/train_utils.py,sha256=cgc_QImAmSjJ1q4L8BvT4cwjQOC60QSTSwyhBkYbIuc,8486
+simplifine_alpha/utils.py,sha256=6bQl_u5M3NixlQdykCAMnRbh1dfWtcEaoic_oQfZ8xk,4595
+simplifine_alpha-0.0.71.dist-info/METADATA,sha256=kuEGTxGcVXhOkKNkn8XmAl9ReKPE2GahXhgQFYcvQpQ,3497
+simplifine_alpha-0.0.71.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+simplifine_alpha-0.0.71.dist-info/licenses/LICENSE,sha256=UiCnq3ALVoE2_2UYK0HpZY8amAxQ-6NkJfDt6GrGhlI,32472
+simplifine_alpha-0.0.71.dist-info/RECORD,,
