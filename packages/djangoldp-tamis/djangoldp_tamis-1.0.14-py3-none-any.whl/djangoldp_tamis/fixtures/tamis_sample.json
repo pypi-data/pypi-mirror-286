@@ -1,0 +1,364 @@
+[
+  {
+    "model": "djangoldp_tamis.agent",
+    "pk": 1,
+    "fields": {
+      "name": "International Standard Audiovisual Number",
+      "short_name": "ISAN",
+      "dbpedia": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.agent",
+    "pk": 2,
+    "fields": {
+      "name": "TITRA",
+      "short_name": "TITRA",
+      "dbpedia": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.editorialworktag",
+    "pk": 1,
+    "fields": {
+      "name": "Captionning"
+    }
+  },
+  {
+    "model": "djangoldp_tamis.editorialworktag",
+    "pk": 2,
+    "fields": {
+      "name": "Subtitles"
+    }
+  },
+  {
+    "model": "djangoldp_tamis.editorialworktag",
+    "pk": 3,
+    "fields": {
+      "name": "Quicktime"
+    }
+  },
+  {
+    "model": "djangoldp_tamis.serie",
+    "pk": 1,
+    "fields": {
+      "identifier": null,
+      "issuer": null,
+      "title": null,
+      "alternate_title": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.serie",
+    "pk": 2,
+    "fields": {
+      "identifier": "0000-0005-0868",
+      "issuer": 1,
+      "title": "HPI - Haut Potentiel Intellectuel",
+      "alternate_title": "HPI"
+    }
+  },
+  {
+    "model": "djangoldp_tamis.season",
+    "pk": 1,
+    "fields": {
+      "identifier": null,
+      "issuer": null,
+      "title": null,
+      "alternate_title": null,
+      "number": 0,
+      "serie": 1
+    }
+  },
+  {
+    "model": "djangoldp_tamis.season",
+    "pk": 2,
+    "fields": {
+      "identifier": "0000-0005-0868-F001-U-0000-0000-L",
+      "issuer": 1,
+      "title": null,
+      "alternate_title": null,
+      "number": 1,
+      "serie": 2
+    }
+  },
+  {
+    "model": "djangoldp_tamis.programme",
+    "pk": 1,
+    "fields": {
+      "identifier": "ISAN 0000-0000-3A8D-0000-Z-0000-0000-6",
+      "issuer": 1,
+      "title": "Gone With The Wind",
+      "alternate_title": null,
+      "number": 0,
+      "season": 1
+    }
+  },
+  {
+    "model": "djangoldp_tamis.programme",
+    "pk": 2,
+    "fields": {
+      "identifier": "0000-0005-0868-0002-9-0000-0000-A",
+      "issuer": 1,
+      "title": "Vent D'ouest",
+      "alternate_title": null,
+      "number": 1,
+      "season": 2
+    }
+  },
+  {
+    "model": "djangoldp_tamis.editorialwork",
+    "pk": 1,
+    "fields": {
+      "name": "SRT",
+      "programme": 1,
+      "tags": [1]
+    }
+  },
+  {
+    "model": "djangoldp_tamis.editorialwork",
+    "pk": 2,
+    "fields": {
+      "name": "Original 2D",
+      "programme": 2,
+      "tags": []
+    }
+  },
+  {
+    "model": "djangoldp_tamis.editorialwork",
+    "pk": 3,
+    "fields": {
+      "name": "VE 2D",
+      "programme": 2,
+      "tags": []
+    }
+  },
+  {
+    "model": "djangoldp_tamis.prestation",
+    "pk": 1,
+    "fields": {
+      "devis_id": "54321",
+      "expected_delivery": "2024-07-31",
+      "editorial_work": 1
+    }
+  },
+  {
+    "model": "djangoldp_tamis.prestation",
+    "pk": 2,
+    "fields": {
+      "devis_id": "123456",
+      "expected_delivery": "2024-08-31",
+      "editorial_work": 2
+    }
+  },
+  {
+    "model": "djangoldp_tamis.asset",
+    "pk": 1,
+    "fields": {
+      "identifier": null,
+      "issuer": null,
+      "prestation": 1,
+      "name": "FR Captionning",
+      "description": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.asset",
+    "pk": 2,
+    "fields": {
+      "identifier": "STL",
+      "issuer": 2,
+      "prestation": 2,
+      "name": "Sous-titre",
+      "description": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.asset",
+    "pk": 3,
+    "fields": {
+      "identifier": "Quicktime",
+      "issuer": 2,
+      "prestation": 2,
+      "name": "Vidéo",
+      "description": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.audiotrack",
+    "pk": 1,
+    "fields": {
+      "identifier": null,
+      "issuer": null,
+      "audio_channel_number": "2",
+      "bit_depth": "24",
+      "sample_rate": "48000"
+    }
+  },
+  {
+    "model": "djangoldp_tamis.format",
+    "pk": 2,
+    "fields": {
+      "identifier": "STL",
+      "issuer": 2
+    }
+  },
+  {
+    "model": "djangoldp_tamis.format",
+    "pk": 3,
+    "fields": {
+      "identifier": "Quicktime",
+      "issuer": 2
+    }
+  },
+  {
+    "model": "djangoldp_tamis.mediaresource",
+    "pk": 1,
+    "fields": {
+      "identifier": null,
+      "issuer": null,
+      "asset": 1,
+      "file_name": "gone.fr.srt",
+      "file_size": 126,
+      "format": 2
+    }
+  },
+  {
+    "model": "djangoldp_tamis.mediaresource",
+    "pk": 2,
+    "fields": {
+      "identifier": null,
+      "issuer": null,
+      "asset": 2,
+      "file_name": "HPI_S1_E1_VO_2D.stl",
+      "file_size": 64123,
+      "format": 2
+    }
+  },
+  {
+    "model": "djangoldp_tamis.mediaresource",
+    "pk": 3,
+    "fields": {
+      "identifier": null,
+      "issuer": null,
+      "asset": 3,
+      "file_name": "HPI_S1_E1_VO_2D.mov",
+      "file_size": 347892,
+      "format": 3
+    }
+  },
+  {
+    "model": "djangoldp_tamis.prestationstep",
+    "pk": 1,
+    "fields": {
+      "is_template": false,
+      "prestation": 1
+    }
+  },
+  {
+    "model": "djangoldp_tamis.prestationstep",
+    "pk": 2,
+    "fields": {
+      "is_template": false,
+      "prestation": 2
+    }
+  },
+  {
+    "model": "djangoldp_tamis.step",
+    "pk": 1,
+    "fields": {
+      "name": "Mastering"
+    }
+  },
+  {
+    "model": "djangoldp_tamis.step",
+    "pk": 2,
+    "fields": {
+      "name": "Retake"
+    }
+  },
+  {
+    "model": "djangoldp_tamis.step",
+    "pk": 3,
+    "fields": {
+      "name": "Proxy"
+    }
+  },
+  {
+    "model": "djangoldp_tamis.steptotemplate",
+    "pk": 4,
+    "fields": {
+      "template": 1,
+      "step": 1,
+      "order": 1,
+      "validated": true,
+      "validation_date": "2024-07-23"
+    }
+  },
+  {
+    "model": "djangoldp_tamis.steptotemplate",
+    "pk": 5,
+    "fields": {
+      "template": 1,
+      "step": 2,
+      "order": 2,
+      "validated": false,
+      "validation_date": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.steptotemplate",
+    "pk": 6,
+    "fields": {
+      "template": 1,
+      "step": 3,
+      "order": 3,
+      "validated": false,
+      "validation_date": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.steptotemplate",
+    "pk": 7,
+    "fields": {
+      "template": 2,
+      "step": 2,
+      "order": 1,
+      "validated": true,
+      "validation_date": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.steptotemplate",
+    "pk": 8,
+    "fields": {
+      "template": 2,
+      "step": 1,
+      "order": 2,
+      "validated": false,
+      "validation_date": null
+    }
+  },
+  {
+    "model": "djangoldp_tamis.videotrack",
+    "pk": 1,
+    "fields": {
+      "identifier": null,
+      "issuer": null,
+      "frame_height": 1080,
+      "frame_rate": 25,
+      "frame_width": 1920
+    }
+  },
+  {
+    "model": "djangoldp_tamis.track",
+    "pk": 1,
+    "fields": {
+      "identifier": null,
+      "issuer": null,
+      "media_resource": 3,
+      "audio_track": 1,
+      "video_track": 1
+    }
+  }
+]
