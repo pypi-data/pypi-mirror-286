@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+license
+manifest.in
+pyproject.toml
+readme.md
+grpcTest/__init__.py
+grpcTest/helloworld_grpc_client.py
+grpcTest/helloworld_grpc_server.py
+grpcTest/helloworld_pb2.py
+grpcTest/helloworld_pb2_grpc.py
+grpcTest/test.py
+grpcTest.egg-info/PKG-INFO
+grpcTest.egg-info/SOURCES.txt
+grpcTest.egg-info/dependency_links.txt
+grpcTest.egg-info/top_level.txt
