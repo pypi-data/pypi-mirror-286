@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: visier.sdk.api.model-query
+Version: 0.0.3
+Summary: Visier Public Platform APIs
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: Apache License, Version 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Visier Public Platform APIs
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+    Visier APIs for querying data and model metadata
+    
+
