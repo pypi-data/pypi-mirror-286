@@ -1,0 +1,30 @@
+[project]
+name = "kg2"
+version = "1.0.0"
+authors = [
+    { name = "José C. Oliveira", email = "josecarlosdeoliveirajr@gmail.com" },
+    { name = "Sophia Knight", email = "sophia.knight@gmail.com" },
+]
+maintainers = [
+    { name = "José C. Oliveira", email = "josecarlosdeoliveirajr@gmail.com" },
+]
+description = "A tool for models and formulas in Paraconsistent Gödel Modal Logic."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/joseoliveirajr/pgml"
+"Bug Tracker" = "https://github.com/joseoliveirajr/pgml/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
