@@ -1,0 +1,16 @@
+pyDICOS.so,sha256=lfh9G5p0HZ7HR9BhZ1jizSRsQTYr71JXZnuFNUtkumI,14597848
+pydicos/version.py,sha256=99t5bdd6edBTRWNvS6xnk1bm-j_2IRDOwv7dM8lf-pY,19
+pydicos/_dicosio.py,sha256=3e2bw2r82x92aErw64Vb-4jEbQhEj6cHhLZYskd5GPU,1024
+pydicos/__init__.py,sha256=53C34vmrgKMUViaHlIkOxANnTV2YZMs1RBK5Wjh8ODg,362
+pydicos/utils/time.py,sha256=yL4113huY2t7Ye5RN1_l4a7BKBHKhDwwLfvz-XfMsjQ,2737
+pydicos/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydicos/_loaders/DX.py,sha256=I0K4_uKNPZ0qhl6EFvQGV60fL0yqhVsCKSbMfdLAU1Y,3273
+pydicos/_loaders/TDR.py,sha256=uomfYCYmFsb8uHmC58vOATN0cc9nw07w5QYP24M9nmc,19550
+pydicos/_loaders/CT.py,sha256=X-RrNGzVprX2DfUo1BPw9MtSbk_m5FnY60EWqW9KAwk,7685
+pydicos/_loaders/ATR.py,sha256=59O4uoWkJHXoFUTYFjzlYSOLxu7hAx0OdYBq_gTjIUk,2052
+pydicos/_loaders/__init__.py,sha256=QO0qwzoUd5yEr7nHX1Y2XKI2j1ybQC2fN5vkXQcP4BY,124
+pydicos-1.2.0.dist-info/WHEEL,sha256=UWhY4EQ0-pRfsBm1ufq4-E18HCjdwOjne7UrBLTmSuY,148
+pydicos-1.2.0.dist-info/LICENSE.txt,sha256=DA4XNZGlVG6YHTKWgoX9v5EzbLQpie3BwmG0EsvITy4,1075
+pydicos-1.2.0.dist-info/top_level.txt,sha256=SSu-uwz0EvLDawBrjCRbd2mKmJKTL6dQ_VKmeB_0tc0,16
+pydicos-1.2.0.dist-info/RECORD,,
+pydicos-1.2.0.dist-info/METADATA,sha256=I_IWqq9b7HOTJUs9i-9muyLhHVhUj_l-HwTORjORThY,9768
