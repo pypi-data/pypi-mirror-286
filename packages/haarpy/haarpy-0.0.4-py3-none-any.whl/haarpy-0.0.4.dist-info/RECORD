@@ -1,0 +1,11 @@
+haarpy/__init__.py,sha256=GFdmCf-itTKyZ75LjU__bEiYAaClCoRor8qVR0EX2qc,2985
+haarpy/_version.py,sha256=5OjBkB5lfHE9IpsyGwOpZx-LtB0_vBIw3EuMUezuOrM,670
+haarpy/unitary.py,sha256=vM6hHNg2PyXq9iSXRN47QCN_kS01Trb2Xmdz0D1wCIE,12577
+haarpy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+haarpy/tests/test_about.py,sha256=0vdNC63sQYllYFd1yy5P-5jLXfj_Uqc2ufIgAct7vkk,1083
+haarpy/tests/test_unitary.py,sha256=xmHNAxIPNpokDU716ow7-1XUwQ3LeWejocm8R2qb778,13656
+haarpy-0.0.4.dist-info/LICENSE,sha256=BkqziBCaqEnMibDOKToJkoS0Xb8FpC07dfrX1cahWH4,11343
+haarpy-0.0.4.dist-info/METADATA,sha256=Tdjl0aE_PzPSiUFNui3ALllOkVhOPiJpeWh-nvHIOMw,7066
+haarpy-0.0.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+haarpy-0.0.4.dist-info/top_level.txt,sha256=U3aQMiYx8-DLCctn-7uO-qWCpqu_dQ1UC6nD-DwcUMA,7
+haarpy-0.0.4.dist-info/RECORD,,
