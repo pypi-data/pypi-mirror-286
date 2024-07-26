@@ -1,0 +1,16 @@
+instructor
+cohere
+litellm
+huggingface_hub
+langchain-core
+langchain-openai
+langchain-anthropic
+mem0ai
+langgraph
+sqlmodel
+qdrant-client
+fastapi
+loguru
+rich
+tqdm
+uvicorn
