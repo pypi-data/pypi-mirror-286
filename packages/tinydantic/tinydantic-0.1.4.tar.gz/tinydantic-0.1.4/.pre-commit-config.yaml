@@ -1,0 +1,60 @@
+# SPDX-FileCopyrightText: Chris Wilson <christopher.david.wilson@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-ast
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-xml
+      # TODO(cdwilson): breaks with `could not determine a constructor for the
+      # tag 'tag:yaml.org,2002:python/name:materialx.emoji.twemoji'`
+      # - id: check-yaml
+      #   args: [--allow-multiple-documents]
+      - id: debug-statements
+      - id: destroyed-symlinks
+      - id: detect-aws-credentials
+        args: [--allow-missing-credentials]
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: name-tests-test
+        args: [--pytest-test-first]
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v4.0.3
+    hooks:
+      - id: reuse
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.5.4
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+  # Experimental taplo support
+  # https://github.com/ComPWA/mirrors-taplo/issues/13#issuecomment-1930749688
+  - repo: https://github.com/redeboer/taplo-pre-commit
+    rev: 0.9.1rc1
+    hooks:
+      - id: taplo
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.28.0
+    hooks:
+      - id: commitizen
+  - repo: https://github.com/econchick/interrogate
+    rev: 1.7.0
+    hooks:
+      - id: interrogate
+        pass_filenames: false
