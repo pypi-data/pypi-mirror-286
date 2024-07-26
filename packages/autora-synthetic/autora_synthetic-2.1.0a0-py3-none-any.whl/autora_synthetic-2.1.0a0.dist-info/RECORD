@@ -1,0 +1,16 @@
+autora/experiment_runner/synthetic/utilities.py,sha256=SQ0csLwSNOvPZAftpLU-KlOUjXqBXwjFxMhpOIhEa0Q,7294
+autora/experiment_runner/synthetic/abstract/lmm.py,sha256=am8bCnzRhvQTdSUJajwTTyFyIFpiJ_iKe0EgSvkGzgo,14273
+autora/experiment_runner/synthetic/abstract/template_experiment.py,sha256=LXJH4UVQFjF1idXnMTBc_x8T-cRd84GGBn7jlu7N4Pw,4012
+autora/experiment_runner/synthetic/economics/expected_value_theory.py,sha256=SvOGVlAVnjG1pj9a7cKBWu5Oe1ipPlQHo-o7TVSP_5s,5856
+autora/experiment_runner/synthetic/economics/prospect_theory.py,sha256=pdnsU92ednC2iJOCZIj6_bL57hle8ybLrPrpJF5s_jA,7225
+autora/experiment_runner/synthetic/neuroscience/task_switching.py,sha256=s4B9TzIent2esO5IfW6iba6U5McncN6TqEUOJJjBcpA,8705
+autora/experiment_runner/synthetic/psychology/exp_learning.py,sha256=FS0NKxlpyjYG85poCUqqTO7HHA39OloKl-nQP5NAXZY,5249
+autora/experiment_runner/synthetic/psychology/luce_choice_ratio.py,sha256=ZFHcnJqo5J2TU3PcOHQ5e0Kz15V0V7Q9HazESe9Kg7o,8290
+autora/experiment_runner/synthetic/psychology/q_learning.py,sha256=UHaFW-DnnPgJ3mTWSrVOBb4U6R8ynYnBr1Mkocg7v78,9008
+autora/experiment_runner/synthetic/psychophysics/stevens_power_law.py,sha256=TGWPRMM6NQ5u5HQKWozmAzDVt3FHVUXIVNIte1D21pY,3992
+autora/experiment_runner/synthetic/psychophysics/weber_fechner_law.py,sha256=80VzJVDCL-buIzfMva0Cdy-UPC29Ep_MHJKk_9UIjS8,5082
+autora_synthetic-2.1.0a0.dist-info/LICENSE,sha256=_H5Yhjh9gNvKjrdh1FlEmgDBdI_2ZBINnM-3c4ZSRg0,1097
+autora_synthetic-2.1.0a0.dist-info/METADATA,sha256=5BBGwTRqlYON9ilEhE4e3f89aLRIi4WtsHdp3uQoiVs,2780
+autora_synthetic-2.1.0a0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+autora_synthetic-2.1.0a0.dist-info/top_level.txt,sha256=DgyJw5DFSvqCdMtEL5Zz0NDVldu1NgUVqP_wDPc2Jmk,7
+autora_synthetic-2.1.0a0.dist-info/RECORD,,
