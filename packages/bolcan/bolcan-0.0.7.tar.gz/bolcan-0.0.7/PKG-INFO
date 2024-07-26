@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bolcan
+Version: 0.0.7
+Summary: A Python package offering essential tools for petroleum and other engineering calculations
+Home-page: https://github.com/Jnyame21/bolcan
+Author: Justice Nyame
+Author-email: nyamejustice2000@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+
+# bolcan
+
+'**Bolcan** is a versatile Python package designed to empower engineers by providing a comprehensive suite of functions for various engineering calculations. With a focus on petroleum engineering, it streamlines workflows and facilitates efficient problem-solving.'
+
+## Installation
+
+pip install bolcan
+
+
+
