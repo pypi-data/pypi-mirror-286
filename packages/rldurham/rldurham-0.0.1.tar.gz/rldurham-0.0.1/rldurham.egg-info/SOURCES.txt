@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+rldurham/__init__.py
+rldurham/myclass.py
+rldurham.egg-info/PKG-INFO
+rldurham.egg-info/SOURCES.txt
+rldurham.egg-info/dependency_links.txt
+rldurham.egg-info/requires.txt
+rldurham.egg-info/top_level.txt
+tests/test_examples.py
+tests/test_template.py
