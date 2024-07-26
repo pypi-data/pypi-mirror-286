@@ -1,0 +1,33 @@
+2024-07-25 08:06:54,777 root [pid:28303] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:06:54,781 root [pid:28303] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-25 08:06:54,781 root [pid:28303] [MainThread] [INFO] * mode='other', llm=None, input='hello')                                       *
+2024-07-25 08:06:54,782 root [pid:28303] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:08:32,256 root [pid:29144] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:08:32,257 root [pid:29144] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-25 08:08:32,257 root [pid:29144] [MainThread] [INFO] * mode='other', llm=None, input='hello')                                       *
+2024-07-25 08:08:32,257 root [pid:29144] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:11:08,186 root [pid:29894] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:11:08,186 root [pid:29894] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-25 08:11:08,186 root [pid:29894] [MainThread] [INFO] * mode='other', llm=None, input='hello')                                       *
+2024-07-25 08:11:08,186 root [pid:29894] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:13:42,404 root [pid:30659] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:13:42,405 root [pid:30659] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-25 08:13:42,405 root [pid:30659] [MainThread] [INFO] * mode='other', llm=None, input='hello')                                       *
+2024-07-25 08:13:42,405 root [pid:30659] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:17:08,517 root [pid:31884] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:17:08,517 root [pid:31884] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-25 08:17:08,517 root [pid:31884] [MainThread] [INFO] * mode='other', llm=None, input='hello')                                       *
+2024-07-25 08:17:08,517 root [pid:31884] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:20:11,612 root [pid:591] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:20:11,613 root [pid:591] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-25 08:20:11,613 root [pid:591] [MainThread] [INFO] * mode='other', llm=None, input='hello')                                       *
+2024-07-25 08:20:11,613 root [pid:591] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:20:59,238 root [pid:932] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:20:59,239 root [pid:932] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-25 08:20:59,239 root [pid:932] [MainThread] [INFO] * mode='other', llm=None, input='hello')                                       *
+2024-07-25 08:20:59,239 root [pid:932] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:25:21,796 root [pid:4602] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:25:21,796 root [pid:4602] [MainThread] [INFO] * Namespace(log_level='INFO', log='task.log', env_file=None, command='start',  *
+2024-07-25 08:25:21,796 root [pid:4602] [MainThread] [INFO] * mode='other', llm=None, input='hello')                                       *
+2024-07-25 08:25:21,797 root [pid:4602] [MainThread] [INFO] ********************************************************************************
+2024-07-25 08:25:27,509 httpx [pid:4602] [MainThread] [INFO] HTTP Request: POST https://api.deepseek.com/v1/chat/completions "HTTP/1.1 200 OK"
