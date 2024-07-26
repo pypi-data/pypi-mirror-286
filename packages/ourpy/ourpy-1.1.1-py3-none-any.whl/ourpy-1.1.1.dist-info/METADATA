@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: ourpy
+Version: 1.1.1
+Summary: OurPy the beginner friendly Python module
+Author: harimtim
+License: MIT
+Project-URL: GitHub, https://github.com/harimtim/OurPy
+Keywords: ourpy,beginner,easy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: photrack
+Requires-Dist: netifaces
+Requires-Dist: pythonping
+Requires-Dist: colorama
+Requires-Dist: art
+
+# OurPy
+
+The best module when you like to keep your code simple and clean!
+OurPy ist ein Python-Modul, das verschiedene Dienstprogramme für Konfigurationsmanagement, Threading, Systeminformationen, JSON-Dateiverarbeitung und Netzwerkoperationen bereitstellt.
+
+## Funktionen
+
+- **Konfigurationsmanagement:** Einfacher Zugriff auf Modulversion, Autor und Dokumentations-URL.
+- **Threading:** Ausführen von Jobs in separaten Threads.
+- **Systemoperationen:** Konsole löschen, Verzögerungen verwalten und aktuelle Zeit abrufen.
+- **JSON-Verarbeitung:** Laden und Speichern von JSON-Daten.
+- **Systeminformationen:** Abrufen von Betriebssystem-, Versions- und Architekturdetails.
+- **Timing:** Starten und Abrufen von Timern für Leistungsbewertungen.
+- **Netzwerkoperationen:** Entdecken von Online-Geräten im lokalen Netzwerk und Auflösen von Hostnamen.
+
+## Installation
+
+Install the PyPi module locally on your PC:
+
+```py
+pip install ourpy
+```
