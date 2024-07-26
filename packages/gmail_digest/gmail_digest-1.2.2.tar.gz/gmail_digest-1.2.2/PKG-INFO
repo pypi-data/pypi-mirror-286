@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: gmail_digest
+Version: 1.2.2
+Summary: A tool to generate a daily digest of your Gmail inbox. Helpful if you have agents working on your behalf.
+Home-page: https://github.com/iloveitaly/gmail-digest
+License: MIT
+Keywords: gmail,email,gmail-api,llm,ai,digest
+Author: Michael Bianco
+Author-email: mike@mikebian.co
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: apscheduler (>=3.10.4,<4.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: funcy-pipe (>=0.11.0,<0.12.0)
+Requires-Dist: google-api-python-client (>=2.137.0,<3.0.0)
+Requires-Dist: google-auth-httplib2 (>=0.2.0,<0.3.0)
+Requires-Dist: google-auth-oauthlib (>=1.2.1,<2.0.0)
+Requires-Dist: markdown (>=3.6,<4.0)
+Requires-Dist: openai (>=1.37.0,<2.0.0)
+Requires-Dist: python-decouple (>=3.8,<4.0)
+Requires-Dist: structlog (>=24.4.0,<25.0.0)
+Description-Content-Type: text/markdown
+
+# Gmail Digest
+
+## Installation
+
+```shell
+pip install -U gmail-digest
+```
+
+## Usage
+
+```shell
+Usage: gmail-digest [OPTIONS]
+
+Options:
+  --dry-run  Run script without creating sending
+  --help     Show this message and exit.
+```
+
+## Setup
+
+You need to create a "OAuth 2.0 Client IDs" which has to be done with a Google Workspace (gsuite). This will not work on a personal gmail account (unless you create a app on a workspace and add your personal account as a test account).
+
+### Generating a Gmail API Token
+
+1. Navigate to the Google Cloud Console. https://console.developers.google.com/
+2. Create a new project or select an existing one.
+3. Go to "APIs & Services" -> "Library" and enable the Gmail API.
+4. Navigate to "APIs & Services" -> "Credentials".
+5. Click "Create Credentials" -> "OAuth client ID".
+6. Select "Desktop app" as the application type, then click "Create".
+7. Download the JSON file, rename it to `credentials.json`, and place it in the root of this project.
+8. Run the script and oauth into your account
+
+If you want to edit scopes on an existing application, you can:
+
+1. OAuth Consent Screen
+2. Edit
+3. Continue to step 2
+4. Add or remove scopes
+5. Add scopes and save
+
+#### Credential Scopes Needed
+
+Two main scopes are required for this:
+
+* `https://www.googleapis.com/auth/gmail.compose`
+* `https://www.googleapis.com/auth/gmail.readonly`
+
+Some other scopes I'd add so you can reuse the credentials in other projects, [like gmailctl](https://github.com/mbrt/gmailctl) or calendar scripts:
+
+* `https://www.googleapis.com/auth/calendar.readonly`
+* `https://www.googleapis.com/auth/calendar.event`
+* `https://www.googleapis.com/auth/gmail.labels`
+* `https://www.googleapis.com/auth/gmail.settings.basic`
+
