@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "doip_sdk"
+version = "0.0.1"
+description = "The SDK for the development of DOIP"
+authors = ["Triet Doan"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.8.2"
+cryptography = "^43.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.4.7"
+sphinx-rtd-theme = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
