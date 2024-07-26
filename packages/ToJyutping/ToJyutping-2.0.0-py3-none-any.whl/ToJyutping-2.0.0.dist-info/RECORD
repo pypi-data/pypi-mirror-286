@@ -1,0 +1,12 @@
+ToJyutping/Jyutping.py,sha256=DqnSq1i9vbueOY-f-M27LK7tokiLR295_L-IHqw9aVU,5586
+ToJyutping/ToJyutping.py,sha256=ZvNTI-kcW9Qk6OVcvkkW2B0Zs0fg6oOpOUDL2kjZOuA,1962
+ToJyutping/Trie.py,sha256=eiRxFqYELU8munIRjUej7vVE_pbCZ1qugZkOtK6Ga3U,2879
+ToJyutping/__init__.py,sha256=QCrbwpbES2e8stx8tmhQqh9cmzoacBZg04WpaF5q0_E,84
+ToJyutping/trie.txt,sha256=LT8mM8MY6SrWw1EMRlT5GaL275a6nukZs0f8OqIl4HY,382480
+ToJyutping/utils.py,sha256=0vAlwdtRd2tybtdgSS12IFdJkE24BNNkoICIYpjHmhI,5016
+ToJyutping/version.py,sha256=hwOJuFUEKtsgiOt4l6op9s-hviovM6TK1uCdtRNWY4E,22
+ToJyutping-2.0.0.dist-info/LICENSE,sha256=HTZJo2fI5ALAWRQsQe9_APwc_Z47HAbs8Oi_8kZHaEs,1381
+ToJyutping-2.0.0.dist-info/METADATA,sha256=SmVp4YG-VevAaHqmu35wh-5knibkUgCYcD4Spw5CkVs,9737
+ToJyutping-2.0.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+ToJyutping-2.0.0.dist-info/top_level.txt,sha256=dqfFco3Bo-U4lzfMLIw2d1L5jSBUDWUbTMybwiS_Kkg,11
+ToJyutping-2.0.0.dist-info/RECORD,,
