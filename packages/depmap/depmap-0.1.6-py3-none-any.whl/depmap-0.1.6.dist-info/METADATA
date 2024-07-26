@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: depmap
+Version: 0.1.6
+Summary: Dependency Mapper CLI for managing and analyzing software dependencies across repositories.
+Home-page: https://github.com/trilogy-group/central-product-tpm/tree/master/POC/cc/repo/depmap/cli
+Author: David Schwartz
+Author-email: david.schwartz@devfactory.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: boto3
+Requires-Dist: requests
+Requires-Dist: pygments
+Requires-Dist: python-dotenv
+
+# Dependency Mapper CLI
+
+DepMap CLI is a command-line interface tool for managing and analyzing software dependencies across repositories. It provides functionality for cloning repositories and running analyses.
+
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Configuration](#configuration)
+4. [Usage](#usage)
+   - [Clone Commands](#clone-commands)
+   - [Analysis Commands](#analysis-commands)
+5. [Error Handling](#error-handling)
+6. [Troubleshooting](#troubleshooting)
+
+## Installation
+
+1. Ensure you have Python 3.9+ installed on your system.
+2. Install the DepMap CLI package:
+   ```
+   pip install depmap
+   ```
+
+## Configuration
+
+Export your API authentication token as an environment variable:
+   ```
+   export AUTH_TOKEN=<token>
+   ```
+
+## Usage
+
+The general syntax for using the DepMap CLI is:
+
+```
+depmap <command> <subcommand> [options]
+```
+
+### Clone Commands
+
+Before running an analysis, you must first clone the target repository:
+
+- Clone and upload a single repository:
+  ```
+  depmap clone -l <label> -u <url>
+  ```
+
+- Clone and upload multiple repositories under a single label:
+  ```
+  depmap clone -l <label> -f <file>
+  ```
+  
+  The file should contain one repository URL per line, for example:
+  ```
+  https://github.com/trilogy-group/influitive-advocatehub-Influitive-Advocate
+  https://github.com/trilogy-group/influitive-advocatehub-influitive
+  ...
+  ```
+
+  The CLI will clone all repositories listed in the file and upload them together.
+
+Examples:
+1. Clone a single repo:
+   ```
+   depmap clone -l worksmart -u https://github.com/trilogy-group/worksmart-ts
+   ```
+2. Clone multiple repos at once:
+   ```
+   depmap clone -l influitive -f influitive.txt
+   ```
+   This will clone both repositories and group them under the 'influitive' label.
+
+After cloning, you can analyze all the repositories under this label together using the analysis commands.
+
+### Analysis Commands
+
+#### start
+Starts a new analysis for the specified label using the given model.
+- `-l, --label`: Required. Label for the analysis.
+- `-m, --model`: Model to use for analysis (default: "haiku").
+- `-p, --poll`: Optional. Poll until the analysis is complete.
+
+#### status
+Retrieves the status of an ongoing or completed analysis.
+- `-l, --label`: Required. Label of the analysis to check.
+
+#### get
+Retrieves the results of a completed analysis.
+- `-l, --label`: Required. Label of the analysis.
+- `-d, --details`: Optional. Include detailed results.
+- `-c, --combine`: Optional. Combine all dependencies into a single list.
+- `-f, --file`: Optional. Specific file to retrieve results for.
+
+#### delete
+Deletes the results of an analysis.
+- `-l, --label`: Required. Label of the analysis to delete.
+
+## Error Handling
+
+The CLI provides detailed error messages for various scenarios:
+- HTTP errors (e.g., 401 Unauthorized)
+- Network connectivity issues
+- Invalid input parameters
+- File I/O errors
+
+If you encounter an error, the CLI will display a message describing the issue.
+
+## Troubleshooting
+
+1. **Authentication Issues**: Ensure your `AUTH_TOKEN` is correctly exported and up to date.
+2. **Network Problems**: Check your internet connection and verify that you can reach the API endpoint.
+3. **Invalid Commands**: Double-check the command syntax and required parameters.
+4. **File Permissions**: Ensure you have the necessary permissions to read/write files in the working directory.
