@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mirapolis-virtualroom
+Version: 0.0.1
+Summary: Python API Client for Mirapolis VirtualRoom. Based on original documentation. Uses Pydantic and aiohttp.
+License: GPL
+Author: gulyaeve
+Author-email: gulyaeve@icloud.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.3,<4.0.0)
+Requires-Dist: pydantic (>=2.6.4,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Python-клиент для Mirapolis Virtualroom
+
+## Клиент находится в разработке!
+
+### Особенности
+
+Клиент полностью асинхронный с поддержкой валидации Pydantic. Требуется Python 3.11 или выше. Основан на `aiohttp` и `pydantic`.
+> Сделан на основе документации: https://support.mirapolis.ru/mira-support/#&step=1&name=%5B01004%5D%5BИнструкция%5D%5BОписание+API%5D%5BUSER%5D%5BF%5D%5B2_44%5D&doaction=Go&s=IZ8RV4AEFDzTTMKY9PgS&id=69&type=mediapreview
+
+### Установка
+
+```console
+$ pip install mirapolis_virtualroom
+```
+

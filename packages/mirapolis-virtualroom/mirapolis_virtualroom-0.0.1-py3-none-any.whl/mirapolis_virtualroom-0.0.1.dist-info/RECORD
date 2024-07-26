@@ -1,0 +1,7 @@
+mirapolis_virtualroom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mirapolis_virtualroom/base_api.py,sha256=sbUKSsq209H_NAJRsbgQrUDoqfHPqxakf6mpXhwAcfs,6963
+mirapolis_virtualroom/models.py,sha256=urMbSio7mETsKg18UoIVKUZ5Wn2yrglC_idRhusHYNQ,853
+mirapolis_virtualroom/virtualroom_api.py,sha256=YaUlSb5mQbwnVWB2rYOMtDYRd9jFVfckXlHSqM5y82Y,2900
+mirapolis_virtualroom-0.0.1.dist-info/METADATA,sha256=fjTFuoEqYtjOwmy7v2km2d6gNeqTs0fSW8rvdWIVii0,1226
+mirapolis_virtualroom-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mirapolis_virtualroom-0.0.1.dist-info/RECORD,,
