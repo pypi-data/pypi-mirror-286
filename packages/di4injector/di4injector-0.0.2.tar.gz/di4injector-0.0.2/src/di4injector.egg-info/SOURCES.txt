@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/di/__init__.py
+src/di/di.py
+src/di/di_container.py
+src/di4injector.egg-info/PKG-INFO
+src/di4injector.egg-info/SOURCES.txt
+src/di4injector.egg-info/dependency_links.txt
+src/di4injector.egg-info/requires.txt
+src/di4injector.egg-info/top_level.txt
+tests/test_di.py
