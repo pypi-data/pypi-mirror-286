@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "homegrowndhe"
+version = "0.2.1"
+description = ""
+authors = ["DJ Stomp <noreply@85457381+djstompzone@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pycryptodomex = "^3.20.0"
+poetry2conda = "^0.3.0"
+twine = "^5.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+verbosity_test_cases = "1"
+log_cli = "true"
+console_output_style = "progress"
+
+[tool.poetry2conda]
+name = "homegrowndhe"
