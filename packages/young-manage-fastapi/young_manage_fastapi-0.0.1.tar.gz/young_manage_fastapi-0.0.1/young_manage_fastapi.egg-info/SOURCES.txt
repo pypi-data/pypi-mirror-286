@@ -1,0 +1,8 @@
+README.md
+setup.py
+young_manage_fastapi.egg-info/PKG-INFO
+young_manage_fastapi.egg-info/SOURCES.txt
+young_manage_fastapi.egg-info/dependency_links.txt
+young_manage_fastapi.egg-info/entry_points.txt
+young_manage_fastapi.egg-info/requires.txt
+young_manage_fastapi.egg-info/top_level.txt
