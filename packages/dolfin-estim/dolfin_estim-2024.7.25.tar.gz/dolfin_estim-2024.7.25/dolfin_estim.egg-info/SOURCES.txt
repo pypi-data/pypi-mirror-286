@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+dolfin_estim/FEMU.py
+dolfin_estim/__init__.py
+dolfin_estim/equilibrium_gap.py
+dolfin_estim/get_measured_disp.py
+dolfin_estim/starting_estimation.py
+dolfin_estim/virtual_fields_method.py
+dolfin_estim/virtual_fields_method_plane_wave.py
+dolfin_estim.egg-info/PKG-INFO
+dolfin_estim.egg-info/SOURCES.txt
+dolfin_estim.egg-info/dependency_links.txt
+dolfin_estim.egg-info/requires.txt
+dolfin_estim.egg-info/top_level.txt
