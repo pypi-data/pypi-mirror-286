@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+altbc_analyzer/__init__.py
+altbc_analyzer/altbc_analyzer.py
+altbc_analyzer/neighbor_list.py
+altbc_analyzer.egg-info/PKG-INFO
+altbc_analyzer.egg-info/SOURCES.txt
+altbc_analyzer.egg-info/dependency_links.txt
+altbc_analyzer.egg-info/requires.txt
+altbc_analyzer.egg-info/top_level.txt
