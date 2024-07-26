@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pysauron
+Version: 0.0.3
+Summary: A collection of datasets for video anomaly detection
+Home-page: https://github.com/KyloRen1/PySauron
+Author: Bogdan Ivanyuk-Skulskyi
+Author-email: Bogdan Ivanyuk-Skulskyi <ivanyuk.bogdan1999@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Bogdan Ivanyuk-Skulskiy
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: repository, https://github.com/KyloRen1/PySauron
+Keywords: anomaly-detection
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy ==1.11.4
+Requires-Dist: Pillow ==10.1.0
+Requires-Dist: torch ==2.1.0
+Requires-Dist: torchvision ==0.16.0
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: av ==10.0.0
+
+<p align="center">
+  <img src="assets/logo.png">
+</p>
+<h1 align='center'>PySauron</h1>
+
+
+PySauron is a torch library for anomaly detection offering:
+- torchvision-like API for datasets, transforms 
+- curated library of anomaly detection datasets
+
+
+
+### Running test
+
+```python
+pytest --verbose --disable-warnings
+```
+
+### TODO
+- [x] Datasets: UCF-Crime, Avenue, XD-Violence, ShanghaiTech
+- [x] Augmentation: RandomInject, FrameDrop, ChangeDirection
+- [x] Test transforms

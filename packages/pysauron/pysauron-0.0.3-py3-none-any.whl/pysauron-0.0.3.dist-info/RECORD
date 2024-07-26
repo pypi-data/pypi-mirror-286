@@ -1,0 +1,13 @@
+pysauron/__init__.py,sha256=tedcHdEayJigFUu225Vl-sP6Wq2tvWt77rbOEpQEaSU,23
+pysauron/datasets/__init__.py,sha256=lE6P6V_DoYwp6gkgbXAZxtVc1cLpI2Clf79wy48cy8g,134
+pysauron/datasets/avenue.py,sha256=FolvKpUnDW9mtSCoaMMW-Y4ec2Sz5X0sj9Fq4vWkxCs,3854
+pysauron/datasets/shanghaitech.py,sha256=yv-pf6FFYxtYF5rQXHFd6OQ9Gr1TbTuhENFWxzCLUtw,4637
+pysauron/datasets/ucf_crime.py,sha256=qks11EEt09RyMh4CzgXUS4BPAmU76ONcodkTJYgCaYE,4418
+pysauron/datasets/xd_violence.py,sha256=45mLnnsVrReXhBy7Qo3OTkJyvCkNb7g7cb7fBv66cFA,4619
+pysauron/transforms/__init__.py,sha256=giCc6p1xRyYoS6yS65_99cjIq3nFRNaLJIbmoybXSzo,72
+pysauron/transforms/transforms.py,sha256=MPHmVEqMIonUiFw7AEj73KL3UDAFy80xdxN09XJ8Xvc,4242
+pysauron-0.0.3.dist-info/LICENSE,sha256=E23rZ0ivSTBy4cpmR5e5x5EBGBgUueu0IOZN8RM313I,1079
+pysauron-0.0.3.dist-info/METADATA,sha256=iE2f0IhGNlZn1WcKbOs9CNv-UBNjsPAB-KtZtiu6RZc,2630
+pysauron-0.0.3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pysauron-0.0.3.dist-info/top_level.txt,sha256=LI2OO00AAQFWyJ-e9OXRCRitEOUawgRvykyJL4lVJp0,9
+pysauron-0.0.3.dist-info/RECORD,,
