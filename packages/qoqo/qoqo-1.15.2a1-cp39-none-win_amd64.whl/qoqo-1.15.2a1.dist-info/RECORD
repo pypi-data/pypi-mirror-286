@@ -1,0 +1,14 @@
+qoqo-1.15.2a1.dist-info/METADATA,sha256=tt5JZCXSBuWkAHI7J0rCgphRfzAXUScpM1gwUbxgsjo,4574
+qoqo-1.15.2a1.dist-info/WHEEL,sha256=iLyJQhiiBYwo5FdZQS-97uaKimQdR9d5M5S1bVJlIxM,94
+qoqo-1.15.2a1.dist-info/license_files/LICENSE,sha256=2v7ABawzEvGa0opGmZ8aR-OMbXcRK8Skk32IjXYdh78,11564
+qoqo/DEPENDENCIES,sha256=lNL7izGeLokneae0h1lQaGH42ENfgngEZdncH6I_DLE,2313788
+qoqo/devices.pyi,sha256=l7ahaMpjmn3tInxAD315gmV_L8BPX5Gh8lsAf1M71bU,43420
+qoqo/LICENSE_FOR_BINARY_DISTRIBUTION,sha256=gJ9xiquZRyrFE8eDLfF7cLuUHXM5p5OYW27kzOJBYbE,12091
+qoqo/measurements.pyi,sha256=6bHKLsEpWxFQgFT-Xb8WjYbfUjDV4va0K1b3C1VBkKQ,35213
+qoqo/noise_models.pyi,sha256=rBcfOf1NQUMYxobeIlfgCgRuVTod0ZlM_QBLV7RRf84,34246
+qoqo/operations.pyi,sha256=tid9QKBaJ_KmxdMitPIUEnb_UOpromJtEbuDccyv9ps,399956
+qoqo/PYTHON_LICENSE,sha256=iw_0gMlJOzWfsscsxpaTtsSwjZCW5pNKDrbKFYHmG88,2444
+qoqo/qoqo.pyi,sha256=ggdB1mKUxy_G5LwqiZ4Oa0aaps91oHVpNRcza-ic-Vc,22650
+qoqo/__init__.py,sha256=5ilKU7ZQgcyQpOiDIy8r7n_KxAxXbEzGyAE0cITykZI,1258
+qoqo/qoqo.cp39-win_amd64.pyd,sha256=z3EoR8C7Z3Ot55z90E7zi5GVUM-3SBbHtkVUsdudSLs,12679168
+qoqo-1.15.2a1.dist-info/RECORD,,
