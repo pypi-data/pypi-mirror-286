@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: ally-ai-llamaindex
+Version: 0.0.1
+Summary: llamaindex azure openai package for ally
+Author-email: Tugbay Atilla <tugbayatilla@gmail.com>
+Project-URL: Homepage, https://github.com/users/tugbayatilla/projects/3/
+Project-URL: Issues, https://github.com/users/tugbayatilla/projects/3/views/8
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: llama-index-llms-azure-openai
+Requires-Dist: llama_index.embeddings.azure_openai
+Requires-Dist: ally-ai-core
+
+# Ally AI
+
+## How to use
+
+### Config File
+
+```yaml
+llm:
+  api_key: '<private-key>'
+  api_version: "<api-version>"
+  endpoint: "<endpoint>"
+  model: "<model-name>"
+  deployment_name: '<deployment-name>'
+  temperature: 0.7
+  streaming: true
+
+embeddings:
+  api_key: '<private-key>'
+  api_version: "<api-version>"
+  endpoint: "<endpoint>"
+  model: "<model-name>"
+  deployment_name: '<deployment-name>'
+```
+
+### Create LLM
+
+#### Use Default Settings in LLM
+
+```python
+from ally_ai.llamaindex import LLM
+
+llm = LLM()
+response = llm.invoke('What is an ally?')
+print(response)
+```
+
+#### Use Custom Settings in LLM
+
+```yaml
+my_llm:
+  api_key: '<private-key>'
+  api_version: "<api-version>"
+```
+
+```python
+from ally_ai.llamaindex import LLM, Settings
+
+settings = Settings(section='my_llm')
+llm = LLM(settings=settings)
+print(llm.settings.path)
+print(llm.settings.section)
+```
+
+#### Override Settings in LLM
+
+```python
+from ally_ai.llamaindex import LLM, Settings
+
+settings = Settings(section='my_llm', api_key='<new-api-key>')
+llm = LLM(settings=settings)
+response = llm.invoke('What is an ally?')
+print(response)
+```
+
+
+### How to Create Embeddings
+
+```python
+from ally_ai.llamaindex import Embeddings
+
+embeddings = Embeddings()
+response = embeddings.embed_query('What is an ally?')
+print(response)
+```
+
