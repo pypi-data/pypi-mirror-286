@@ -1,0 +1,2 @@
+[console_scripts]
+escpi-ioc = emmi_escpi.main:main

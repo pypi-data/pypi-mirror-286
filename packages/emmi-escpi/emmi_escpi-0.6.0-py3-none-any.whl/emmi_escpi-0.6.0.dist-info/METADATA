@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: emmi-escpi
+Version: 0.6.0
+Summary: EPICS-SCPI Integration Tool
+Author-email: Florin Boariu <florin.pt@rootshell.ro>, Matthias Rössle <matthias.roessle@helmholtz-berlin.de>
+Project-URL: Homepage, https://emmi.rootshell.ro/escpi
+Project-URL: Source Code, https://gitlab.com/codedump2/escpi/
+Project-URL: Bug Tracker, https://gitlab.com/codedump2/escpi/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: emmi[scpi,softioc] >=0.6.0
+Requires-Dist: pyvisa-py
+Requires-Dist: pyvisa-sim
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+
+ESCPI -- Generic EPICS IOC for SCPI-Enabled Equipment
+=====================================================
+
+ESCPI (**E**PICS-**SCPI**) is a generic application for exporting 
+[EPICS](https://epics-controls.org/) access to scientific equipment with an
+[SCPI](https://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments )
+interface.
+
+Quick'n Dirty
+-------------
+
+Assuming you have a Keith 3390 available at `10.0.0.18`, try this:
+
+```
+$ MAGICSPCI_ADDRESS=TCPIP::10.0.0.18::INSTR ESPCI_DEVICE_PREFIX=KMC3XPP_KEITH ./src/espci/application.py
+```
+
+Then access one of the variables:
+```
+$ caget KMC3SPP_KEITH:FREQ_RBV
+```
