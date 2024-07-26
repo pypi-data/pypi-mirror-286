@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: ferris-cli
+Version: 2.9.5
+Summary: Utilities for working with the FX Platform
+Home-page: https://github.com/stream-zero/ferris-cli
+Author: Balaji Bal, Nikola Gajin
+Author-email: bal@ballab.com
+License: Apache2.0
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: requests==2.26.0
+Requires-Dist: jinja2==2.11.3
+Requires-Dist: urllib3==1.26.6
+Requires-Dist: httplib2==0.19.1
+Requires-Dist: kafka-python<1.5,>=1.4.6
+Requires-Dist: python-consul==1.1.0
+Requires-Dist: graphyte==1.6.0
+Requires-Dist: cloudevents==1.2.0
+Requires-Dist: jsonformatter==0.3.1
+Requires-Dist: python-keycloak==0.26.1
+Requires-Dist: minio==7.0.2
+Requires-Dist: elasticsearch==7.12.0
+Requires-Dist: psycopg2-binary==2.9.1
+Requires-Dist: SQLAlchemy==1.3.23
+Requires-Dist: logstash_formatter==0.5.17
+
+Utilities for working with the FX Platform
