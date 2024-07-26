@@ -1,0 +1,9 @@
+setup.py
+PEXE/__init__.py
+PEXE/PaleEXE/__init__.py
+PEXE/PaleEXE/pale_exe.py
+Pale_exe.egg-info/PKG-INFO
+Pale_exe.egg-info/SOURCES.txt
+Pale_exe.egg-info/dependency_links.txt
+Pale_exe.egg-info/requires.txt
+Pale_exe.egg-info/top_level.txt
