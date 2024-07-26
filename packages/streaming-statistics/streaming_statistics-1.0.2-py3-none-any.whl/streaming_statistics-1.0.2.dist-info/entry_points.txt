@@ -1,0 +1,3 @@
+[console_scripts]
+stats=streaming_statistics.cli:main
+
