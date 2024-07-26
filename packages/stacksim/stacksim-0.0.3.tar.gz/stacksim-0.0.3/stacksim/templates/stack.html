@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #000000;
+        }
+
+        .null-frame {
+            border: none;
+            margin: 10px;
+            border-radius: 4px;
+            position: relative;
+            display: flex;
+            flex-direction: column; /* Align items vertically */
+            align-items: flex-start;
+            margin-bottom: 10px;
+            padding-top: 0px; /* Adjust padding to create space for the function header */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
+        }
+
+        .green {
+            border-color: green !important;
+            color: green !important;
+        }
+
+        .blue {
+            border-color: #143aa1 !important;
+            color: #143aa1 !important;
+        }
+        .function-frame {
+            border: 2px solid #143aa1;
+            margin: 10px;
+            border-radius: 4px;
+            position: relative;
+            display: flex;
+            flex-direction: column; /* Align items vertically */
+            align-items: flex-start;
+            margin-bottom: 10px;
+            padding-top: 20px; /* Adjust padding to create space for the function header */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .function-header {
+            position: absolute;
+            top: -12px; /* Adjust this value to position the label on the border */
+            left: 15%;
+            transform: translateX(-50%);
+            padding: 0px;
+            margin: 0px;
+            border-radius: 4px;
+            white-space: nowrap;
+            background-color: black;
+
+        }
+
+        .stack-cell {
+            border-top: 2px solid #666;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            color: #666
+        }
+
+        .null-frame .stack-cell{
+            border: 2px solid #666
+        }
+        .cell-label {
+            position: absolute;
+            top: -12px; /* Adjust this value to position the label on the border */
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 2px 10px;
+            border-radius: 4px;
+            white-space: nowrap;
+            background-color: black;
+            color: #666;
+            padding: 0px;
+            margin: 0px;
+        }
+        .cell-note {
+            font-style: italic;
+            color: red;
+            position: absolute;
+            right: -150px; /* Adjust this value based on your layout */
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+        }
+        .cell-note::before {
+            content: '←';
+            margin-right: 5px;
+            color: red;
+        }
+        .address {
+            font-size: 0.9em;
+            color: #555;
+            position: absolute;
+            left: -120px; /* Adjust this value based on your layout */
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+        }
+        .stack {
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stack Visualization</h1>
+    <div class="stack">
+        {% for frame in stack.frames %}
+        <div class="{% if frame.function %}function-frame{% else %}null-frame{% endif %} {% if frame.color %}  {{frame.color}} {% endif %}" style="border-color: {{ frame.color | default('#333') }};">
+            {% if frame.function %}
+            <div class="function-header">{{ frame.function }}</div>
+            {% endif %}
+            {% for cell in frame.cells %}
+            <div class="stack-cell {% if frame.color %}  {{frame.color}} {% endif %}" style="border-color: {{ cell.color | default('#666') }};">
+                {% if showAddress %}
+                &nbsp;
+                <div class="address">{{ '0x{:08X}'.format(cell.address) if cell.address else '0x????' }}</div>
+                {% endif %}
+                <div>
+                    <div class="cell-label">{{ cell.label | default('???') }}</div>
+                    <div class="cell-words">{{ cell.words | join(', ') }}</div>
+                </div>
+                {% if cell.note %}
+                <div class="cell-note">{{ cell.note }}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

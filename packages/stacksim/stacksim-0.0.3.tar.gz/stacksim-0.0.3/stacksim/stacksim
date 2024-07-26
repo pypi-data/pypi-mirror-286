@@ -1,0 +1,293 @@
+#!/bin/env python3
+from prompt_toolkit.application import Application
+from prompt_toolkit.key_binding import KeyBindings
+from prompt_toolkit.completion import WordCompleter
+from prompt_toolkit.layout.containers import HSplit, VSplit, Window, ScrollOffsets, FloatContainer,Float
+from prompt_toolkit.layout.layout import Layout
+from prompt_toolkit.layout import ScrollablePane
+from prompt_toolkit.layout.controls import FormattedTextControl, BufferControl
+from prompt_toolkit.mouse_events import MouseButton, MouseEvent, MouseEventType
+from prompt_toolkit.widgets import TextArea, Frame, Label
+from prompt_toolkit.history import FileHistory
+from prompt_toolkit.buffer import Buffer
+from prompt_toolkit.widgets import HorizontalLine
+from prompt_toolkit.data_structures import Point
+from prompt_toolkit.document import Document
+from prompt_toolkit.layout.menus import CompletionsMenu
+from prompt_toolkit import print_formatted_text, ANSI
+from prompt_toolkit.completion import NestedCompleter
+
+
+import asyncio
+
+
+import numpy as np
+import os
+import argparse
+import typing
+import importlib.metadata
+
+
+
+from contextlib import contextmanager
+
+
+from stacksim.StackSession import StackSession
+
+
+args = None
+parser = None
+session = StackSession()
+simtime = np.float128(0.0)
+
+version = importlib.metadata.version("stacksim")
+
+completer = NestedCompleter.from_nested_dict(
+    {
+        "pop": None,
+        "push" : {"--size": None, "--label": None, "--note": None}
+    }
+)
+
+completion_lists = {
+    "pop" : [],
+    "ret" : [],
+    "push" : ["--size ", "--label ", "--note ", "--address "],
+    "frame" : ['--color '],
+    "call": [],
+}
+
+
+
+command_completer = WordCompleter( list(completion_lists.keys()),ignore_case=True)
+args_completer = WordCompleter( [],ignore_case=True)
+
+banner_text =f"Stacksim v{version}"
+def onInputChange(buff):
+
+
+    line = buff.text
+
+    commands = line.split(";")
+
+    curr = commands[-1]
+
+    buff.completer = command_completer
+
+    if " " in curr:
+        currSplit = curr.split(" ")
+        cmd = currSplit[0]
+        if cmd == 'call':
+            
+            args_completer.words = list(session.functions.keys())
+            buff.completer = args_completer
+
+        elif cmd in completion_lists:
+            args_completer.words = completion_lists[currSplit[0]]
+            buff.completer = args_completer
+
+        
+    
+
+    pass
+
+
+def accept(buff):
+    global command_completer
+
+    line = buff.text
+
+    commands = line.split(';')
+
+    for cmd in commands:
+            
+        if cmd != "":
+            session.parseCommand(cmd)
+            refreshOutput()
+
+# Define key bindings
+kb = KeyBindings()
+
+# Exit application
+@kb.add('c-c')
+def exit_app(event):
+    
+    event.app.exit(0)
+
+
+def print_info(event):
+    util_info.text = str(input_field.completer.words)
+    pass
+
+
+# Banner content
+
+banner_left = Label(banner_text, style="bg:ansiblack fg:ansigreen")
+
+sim_info = Label("", style="bg:ansiblack fg:ansired")
+util_info = Label("", style="bg:ansiblack fg:ansiblue")
+
+banner_right = HSplit([sim_info, util_info])
+
+#banner_right = Label("SimTime: 000000\nrepli-4h23\nconnected to .sdf.sdf", style="bg:ansiblack fg:ansired")
+
+banner_content = VSplit([banner_left, banner_right])
+# Divider line
+divider = HorizontalLine()
+divider.window.style = "fg:ansigreen"
+
+# Main content area - initially empty, will be updated dynamically
+_line_count =0
+outputField = TextArea(multiline=True, style="bg:ansiblack fg:ansigreen")
+
+def getCursPos():
+    global _line_count
+    return Point(x=0, y=_line_count)
+
+
+output_control = FormattedTextControl( text=[('ansigreen', '')], get_cursor_position=getCursPos, focusable=True)
+output_window = Window( content=output_control, style="class:main-content", wrap_lines= True, allow_scroll_beyond_bottom= False, scroll_offsets=ScrollOffsets(top = -100000, bottom=-100000)  )
+
+
+# Input area
+home_path = os.path.expanduser('~')
+cmdHistory = FileHistory(home_path+'/.stacksim-history')
+
+input_field = Buffer(on_text_changed=onInputChange, multiline=False, complete_while_typing=True,history=cmdHistory, completer=completer)
+input_window = Window(BufferControl(buffer=input_field), height=2, style='class:input-win')
+prompt_window = Window(FormattedTextControl(text="$>"), height=1, style='fg:ansigreen', width=3)
+
+input_field.accept_handler = accept
+
+
+
+
+# Layout definition
+layout = FloatContainer(
+       content= HSplit([
+        banner_content,  # Banner at the top
+        divider,         # Divider line
+        output_window,    # Main content area
+        divider,         # Divider line
+        # input_window,     # Input area at the bottom
+        VSplit([prompt_window, input_window]) # Input area at the bottom
+    ]),
+    floats=[
+        Float(xcursor=True,
+              ycursor=True,
+              content=CompletionsMenu(max_height=16, scroll_offset=1))
+    ]
+)
+# layout = HSplit([
+#             banner_content,  # Banner at the top
+#             divider,         # Divider line
+#             output_window,    # Main content area
+#             divider,         # Divider line
+#             # input_window,     # Input area at the bottom
+#             VSplit([prompt_window, input_window]) # Input area at the bottom
+#         ])
+
+
+
+# Initialize the argument parser
+def init_args():
+    global parser
+    parser = argparse.ArgumentParser("Tool to interact with replicant message broker")
+    parser.add_argument('-b', '--base-address', type=int, help='Stack Base Address', default=0x07effff)
+    parser.add_argument('-f', '--file', type=str, help='Stack File to load', default="")
+
+
+
+
+# Application
+application = Application(layout=Layout(layout, focused_element=input_field), key_bindings=kb, full_screen=True ,mouse_support=True)
+
+
+def refreshOutput():
+    text = session.stack.toAscii(showAddress=True, leftMargin=10)
+    ansi = ANSI(text)
+    output_control.text = ansi
+
+
+
+
+def printToConsole( text : typing.Union[str, list, tuple], color = 'ansigreen', mewline = True):
+    
+    
+    global _line_count
+
+
+
+    current_content = output_control.text
+
+    if type(text) is str: 
+       
+       if(mewline): #Plain text
+            text += "\n"
+       _line_count += text.count("\n")
+       output_control.text += [(color, text )]
+
+    elif type(text) is list: #List of color,string tuples
+        for tup in text:
+            _line_count += tup[1].count("\n")
+        
+        if(mewline):
+            text.append(('',"\n"))
+            _line_count+=1
+
+        output_control.text += text
+    elif type(text) is tuple:   #Single color,string tuple
+        _line_count += text[1].count("\n")
+
+        if(mewline):
+            text = [text, ('',"\n")]
+            _line_count+=1
+        output_control.text += text
+
+    
+    output_window.vertical_scroll = _line_count
+    application.invalidate()
+       
+       
+    pass
+
+def clearConsole():
+    global _line_count
+    _line_count = 0
+    output_control.text = [('ansigreen', '')]
+    application.invalidate()
+
+    pass
+
+
+async def run():
+    global parser
+    global args
+    global input_field
+    global command_completer
+    global session 
+
+    init_args()
+    args= parser.parse_args()
+
+    #session.loadYaml("test/test1.stack.yml")
+
+    session.stack.baseAddress = args.base_address
+    input
+
+    #get list of subparsers from session parser 
+
+
+
+    if args.file != "":
+        session.loadYaml(args.file)
+    
+    refreshOutput()
+
+
+    result = await application.run_async()
+
+
+
+if __name__ == '__main__':
+   asyncio.run( run())
