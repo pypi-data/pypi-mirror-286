@@ -1,0 +1,2672 @@
+Metadata-Version: 2.1
+Name: AstroToolkit
+Version: 1.5.3
+Summary: A package for the gathering and plotting of astronomical data.
+Author-email: Ethan Moorfield <ethan.moorfield@hotmail.co.uk>
+Project-URL: Homepage, https://github.com/WD-planets/AstroToolkit
+Project-URL: Issues, https://github.com/WD-planets/AstroToolkit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy ==6.0.1
+Requires-Dist: astroquery ==0.4.7
+Requires-Dist: bokeh ==3.4.1
+Requires-Dist: cmasher ==1.8.0
+Requires-Dist: matplotlib ==3.8.4
+Requires-Dist: importlib-resources ==6.4.0
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: pandas ==2.2.2
+Requires-Dist: Requests ==2.31.0
+Requires-Dist: beautifulsoup4 ==4.12.3
+Requires-Dist: scipy ==1.13.0
+Requires-Dist: selenium ==4.21.0
+Requires-Dist: lightkurve ==2.4.2
+Requires-Dist: PyQt5 ==5.15.10
+Requires-Dist: numba ==0.60.0
+
+# AstroToolkit
+
+AstroToolkit (ATK) is a set of tools for fetching, plotting, and analysing astronomical data.
+
+## Features
+- Proper motion correction through Gaia, utilised across the entire package
+- Light curve, spectral energy distribution, spectrum and image queries from a wide range of surveys
+- Gaia HRD queries for any Gaia sources
+- In-built interactive plotting support for all of the above as shareable .html pages that retain all interactivity
+- Data queries from any [Vizier](https://vizier.cds.unistra.fr/) survey, with many commonly used surveys built-in
+- Reddening queries from [Stilism](https://stilism.obspm.fr/) and [GDRE](https://irsa.ipac.caltech.edu/applications/DUST/)
+- Data analysis tools such as:
+    - Timeseries analysis using a variety of methods (Lomb-Scargle, AOVMHW, ...)
+    - Light curve binning, phase folding and sigma-clipping
+    - Image detection and tracer overlays
+    - Spectral band highlighting
+    - SED-spectrum overlays
+    - Data quality filtering (optional)
+- Lossless saving and reading of any ATK data structures to / from local files
+- 'Datapage' creation, allowing the combination of any of the above into a single page, with additional elements specifically designed for this purpose
+- No hard coded parameters - built-in configuration support allows the user to personalise the Toolkit to their specific needs.
+- Other quality-of-life tools, such as coordinate conversions, .fits file reading and [Vizier](https://simbad.u-strasbg.fr/simbad/) / [SIMBAD](https://simbad.u-strasbg.fr/simbad/) searches
+
+Examples of much of the above can be found [here](#examples).
+
+
+
+
+
+
+
+
+
+
+## Table of Contents
+
+[**Installation**](#installation)
+
+[**Introduction**](#introduction)
+
+[**Modules**](#modules)
+
+
+
+
+
+
+
+
+
+
+## Acknowledgements<a id='acknowledgements'></a>
+
+I would like to give special thanks to Dr. Keith Inight for his guidance at various stages of the package's development, and particularly for his help in integrating the PyAOV time series analysis routines.
+
+
+
+
+
+
+
+
+
+
+## Installation<a id="installation"></a>
+
+The package can be installed like any other package, e.g. using pip:
+
+```
+pip install AstroToolkit
+```
+
+<br>
+
+This package also includes the PyAOV time series analysis routines by [A. Schwarzenberg-Czerny](https://users.camk.edu.pl/alex/#software), which may require additional dependencies. Details are outlined [below](#setup).
+
+
+
+
+
+
+
+
+
+
+## Introduction<a id="introduction"></a>
+
+ATK uses Bokeh as its primary plotting library. The official documentation can be found at [https://bokeh.org/](https://bokeh.org/). A key property of Bokeh plots is that they can be saved as static .html files, which can then be shared/accessed while retaining all interactivity.
+
+Across ATK, there are two possible ways to target your system of interest:
+1. pos = [right ascension,declination] in degrees
+2. source = Gaia Source ID
+
+Where possible, it is usually best to use a Gaia source as input, as this enables a key feature of ATK: **Proper Motion Correction**.
+
+A good example of this is in imaging queries. If a 'pos' is used as input, the result will simply be the image data returned by the chosen imaging survey at those exact coordinates. However, this may not be ideal in the case of an object with a large proper motion. If a source is used instead, the data returned will have accounted for this, resulting in the image being centered on the target system. This concept is used throughout ATK when matching data from different surveys to a given system.
+
+![](https://github.com/WD-planets/AstroToolkit/raw/latest/README_Images/source_vs_pos.png?raw=true)
+
+
+
+
+
+
+
+
+
+
+# Modules<a id="modules"></a>
+
+There are currently six modules in ATK:
+
+[AstroToolkit.Tools](#tools) - the main set  of available tools 
+- [Query](#query)
+- [Proper Motion Correction](#correctpm)
+- [Local File Reading](#readdata)
+- [SIMBAD/Vizier Searches](#search)
+- [Fits Reading](#readfits)
+- [Degrees to HMS](#deg2hms)
+- [HMS to Degrees](#hms2deg)
+- [PyAOV Time Series Analysis](#tsanalysis)
+
+[AstroToolkit.Config](#config) - configuring ATK
+- [Open Config File](#openconfig)
+- [Edit Config File](#editconfig)
+- [Output Config File](#outputconfig)
+- [Reset Config File](#resetconfig)
+
+[AstroToolkit.Datapages](#datapages) - creating datapages
+- [Grid Setup](#gridsetup)
+- [SIMBAD/Vizier Buttons](#buttons)
+- [Datatables](#datatable)
+
+[AstroToolkit.Models](#models) - using ATK features on custom data
+
+[AstroToolkit.Setup](#setup) - setting up the PyAOV timeseries analysis tools
+- [PyAOV Installation](#tsguide)
+- [PyAOV Compilation](#tsbuild)
+
+[AstroToolkit.Examples](#examples) - ATK code examples
+- [Data Examples](#queryexamples)
+- [Lightcurve Example](#lightcurveexample)
+- [Timeseries Example](#timeseriesexample)
+- [Image Example](#imageexample)
+- [Spectrum Example](#spectrumexample)
+- [SED Example](#sedexample)
+- [HRD Example](#hrdexample)
+- [Local File Example](#localfileexample)
+- [Datapage Example](#datapageexample)
+- [PyAOV Example](#pyaovexample)
+
+<br>
+
+
+
+
+
+
+
+
+
+
+## AstroToolkit.Tools<a id="tools"></a>
+
+**Note:** In all functions, parameters with a ! proceeding them will be taken from the [config](#config) if not provided. Legends are hideable in all plots by double-clicking, and individual elements can be hidden by clicking them in the legend.
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 1. query<a id="query"></a>
+
+**Shortcuts:**
+- [Data Query](#dataquery)
+- [Photometry Query](#photquery)
+- [Bulk Photometry Query](#bulkphotquery)
+- [Light Curve Query](#lightcurvequery)
+- [Image Query](#imagequery)
+- [Spectrum Query](#spectrumquery)
+- [SED Query](#sedquery)
+- [HRD Query](#hrdquery)
+- [Reddening Query](#reddeningquery)
+
+**Usage:**
+
+```
+query(kind, *)
+```
+
+**Where:**
+
+
+```
+kind: str = kind of query to perform
+            Can be one of:
+             - 'data': return raw data from any Vizier catalogue
+             - 'phot': return only photometry from any supported survey
+             - 'bulkphot': return all available photometry from all supported surveys
+             - 'lightcurve': return light curve data from any supported survey
+             - 'image': return image data from any supported survey
+             - 'spectrum': return spectrum data from any supported survey
+             - 'sed': return spectral energy distribution data from all supported surveys
+             - 'hrd': return Gaia Hertzsprung Russell Diagram data for a set of Gaia sources
+             - 'reddening': return reddening data from any supported survey
+```
+
+**Note:**
+
+**Each kind of query accepts/requires various other parameters.**
+
+**If no data is returned in any kind of query, the *data* attribute will be set to None. In the specific case of light curve queries, which can return data for multiple bands, all parameters for any band that returns no data will be set to None.**
+
+**The data returned by any kind of query can be saved to local files using the method *savedata()* on the returned class. Any data structure can also be printed in a readable format via the method *showdata()*.**
+
+**The data returned by lightcurve, image, spectrum, sed and hrd queries can be plotted using the method *plot()* on the returned class. The resulting plot can then be shown using the method *showplot()* (which will also save the data locally) or just saved locally using the method *saveplot()*.**
+
+**When saving data via the savedata(), saveplot() or showplot() methods, the default file name takes the form:**
+
+**IDENTIFIER_SOURCE_SURVEY_ATKSUFFIX.EXTENSION**
+
+**where:**
+
+```
+IDENTIFIER = JHHMMSS.SS±DDMMSS.SS coordinates of system
+```
+
+```
+SOURCE = Gaia DR3 source_id
+```
+
+```
+SURVEY = Survey from which data originates, where applicable (e.g. in SED queries, this is absent)
+```
+
+```
+ATKSUFFIX = A suffix added to tell ATK what the data file holds. E.g. for lightcurves, ATKSUFFIX = ATKlightcurve
+```
+
+```
+EXTENSION = File extension, e.g. .csv, .fits, etc.
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 1.1. data query<a id="dataquery"></a>
+
+**Additional Parameters:**
+
+```
+survey: str = target survey
+              Can be one of:
+               - 'gaia'
+               - 'panstarrs'
+               - 'skymapper'
+               - 'galex'
+               - 'sdss'
+               - 'wise'
+               - 'twomass'
+               - 'rosat'
+               - 'erosita'
+               - any other Vizier catalogue ID. E.g. for Gaia DR3, the catalogue ID would be 'I/355/gaiadr3'
+```
+
+```
+!radius: int = search radius in arcseconds
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)], target position
+```
+
+```
+source: int = Gaia DR3 source_id.
+              Target Gaia DR3 source
+```
+
+**Returns:**
+
+```
+DataStruct: class = ATK Data Structure
+```
+
+*Attributes:*
+
+```
+kind: str = 'data'
+```
+
+```
+subkind: str = 'data' 
+```
+
+```
+survey: str = target survey of query
+```
+
+```
+catalogue: str = target Vizier catalogue
+```
+
+```
+source: int = target Gaia DR3 source
+```
+
+```
+pos: list = target position 
+```
+
+```
+identifier: str = positional identifier of target in format JHHMMSS.SS±DDMMSS.SS
+```
+
+```
+data: dict = returned data, where:
+             keys: str = column headers as given in Vizier (except for Gaia queries where they are the original column names)
+             values: list = returned rows
+```
+
+```
+fname: str = the default file name that this data structure will be saved to using the savedata() and saveplot() methods (no extension)
+```
+
+*Methods:*
+
+```
+savedata() - saves the data structure to local files
+
+Arguments:
+- name = file name to save to (without extension). The ATKSUFFIX '_ATKdata' will be appended to this name.
+
+Returns:
+- file name
+```
+
+```
+showdata() - prints data structure to std out in a readable format
+
+Arguments:
+- raw: bool = if True, prints data in its raw form (may not be readable)
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 1.2. phot query<a id="photquery"></a>
+
+**Additional Parameters:**
+
+```
+survey: str = target survey
+              Can be one of:
+               - 'gaia'
+               - 'panstarrs'
+               - 'skymapper'
+               - 'galex'
+               - 'sdss'
+               - 'wise'
+               - 'twomass'
+```
+
+```
+!radius: int = search radius in arcseconds
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)], target position
+```
+
+```
+source: int = Gaia DR3 source_id.
+              Target Gaia DR3 source
+```
+
+**Returns:**
+
+```
+DataStruct: class = ATK Data Structure
+```
+
+*Attributes:*
+
+```
+kind: str = 'data'
+```
+
+```
+subkind: str = 'phot' 
+```
+
+```
+survey: str = target survey of query
+```
+
+```
+catalogue: str = target Vizier catalogue
+```
+
+```
+source: int = target Gaia DR3 source
+```
+
+```
+pos: list = target position
+```
+
+```
+identifier: str = positional identifier of target in format JHHMMSS.SS±DDMMSS.SS
+```
+
+```
+data: dict = returned data, where:
+             keys: str = column headers as given in Vizier (except for Gaia queries where they are the original column names)
+             values: list = returned rows
+```
+
+```
+fname: str = the default file name that this data structure will be saved to using the savedata() and saveplot() methods (no extension)
+```
+
+*Methods:*
+
+```
+savedata() - saves the data structure to local files
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKphot'
+
+Returns:
+- file name
+```
+
+```
+showdata() - prints data structure to std out in a readable format
+
+Arguments:
+- raw: bool = if True, prints data in its raw form (may not be readable)
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 1.3. bulkphot query<a id="bulkphotquery"></a>
+
+Retrieves photometry from all surveys supported by phot query.
+
+**Additional Parameters:**
+
+
+```
+!radius: int = search radius in arcseconds
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)], target position
+```
+
+```
+source: int = Gaia DR3 source_id.
+              Target Gaia DR3 source
+```
+
+**Returns:**
+
+```
+DataStruct: class = ATK Data Structure
+```
+
+*Attributes:*
+
+```
+kind: str = 'data'
+```
+
+```
+subkind: str = 'bulkphot'
+```
+
+```
+survey: str = target survey of query
+```
+
+```
+catalogue: str = target Vizier catalogue
+```
+
+```
+source: int = target Gaia DR3 source
+```
+
+```
+pos: list = target position
+```
+
+```
+identifier: str = positional identifier of target in format JHHMMSS.SS±DDMMSS.SS
+```
+
+```
+data: dict = returned data, where:
+             keys: str = survey supported by phot query
+             values: dict where:
+                keys: str = column headers as given in Vizier (except for Gaia queries where they are the original column names)
+                values: list = returned rows
+```
+
+```
+fname: str = the default file name that this data structure will be saved to using the savedata() and saveplot() methods (no extension)
+```
+
+*Methods:*
+
+```
+savedata() - saves the data structure to local files
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKbulkphot'
+
+Returns:
+- file name
+```
+
+```
+showdata() - prints data structure to std out in a readable format
+
+Arguments:
+- raw: bool = if True, prints data in its raw form (may not be readable)
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 1.4. lightcurve query<a id="lightcurvequery"></a>
+
+**Additional Parameters:**
+
+```
+survey: str = target survey
+              Can be one of:
+               - 'ztf'
+               - 'atlas'
+               - 'crts'
+               - 'asassn'
+               - 'gaia'
+               - 'tess'
+```
+
+```
+!radius: int = search radius in arcseconds
+```
+
+```
+!username: str = ATLAS username for use in ATLAS queries
+```
+
+```
+!password: str = ATLAS password for use in ATLAS queries
+```
+
+```
+raw: bool = if True, returns the raw (unfiltered) data. Note, some plotting tools require some basic filtering to work. Default: False.
+```
+
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)]
+            Position around which to search
+```
+
+```
+source: int = Gaia DR3 source_id.
+              Target Gaia DR3 source
+```
+
+**Returns:**
+
+```
+LightcurveStruct: class = ATK Lightcurve Structure
+```
+
+*Attributes:*
+
+```
+kind: str = 'lightcurve'
+```
+
+```
+survey: str = target survey of query
+```
+
+```
+source: int = target Gaia DR3 source
+```
+
+```
+pos: list = target position
+```
+
+```
+identifier: str = positional identifier of target in format JHHMMSS.SS±DDMMSS.SS
+```
+
+```
+data: list = list of returned data in each band, with each entry taking the form:
+             {
+              'band': str = light curve band
+              'ra': list of floats = right ascension (deg)
+              'dec': list of float = declination (deg)
+              'hjd'/'mjd': list of floats = HJD/MJD given by survey, with minimum subtracted (starts at zero)
+              'hjd_ori'/'mjd_ori': list of floats = original HJD/MJD as given by survey
+              'mag': list of floats = magnitude
+              'mag_err': list of floats = magnitude error
+             }
+
+             Here, supported surveys have the bands:
+              - ztf: g,r,i
+              - atlas: o,c,i
+              - gaia: g,bp,rp
+              - asassn: g,v
+              - crts: v
+              - tess: i
+```
+
+```
+fname: str = the default file name that this data structure will be saved to using the savedata() and saveplot() methods (no extension)
+```
+
+*Methods:*
+
+```
+plot() - plots lightcurve data.
+
+Arguments:
+ - kind: str = kind of plot to produce
+            Can be one of:
+             - 'lightcurve' - light curve (default)
+             - 'powspec' - Lomb-Scargle power spectrum
+             - 'phase' - phase folded light curve using Lomb-Scargle
+
+Additional Arguments:
+   For lightcurve plots:
+    - colours: list = colour to plot each band that returned data. Defaults to black for all bands.
+                      supported colours: green, red, blue, black, orange, purple
+    - bands: list = bands to include. Includes all by default.
+    - timeformat: str = 'reduced' (default) or 'original', plot subtracted or original time values.
+
+   For power spectrum plots:
+    - method = method to use when generating power spectrum. Default = 'ls' (Lomb-Scargle), which does not require PyAOV.
+               Supported PyAOV Methods: amhw, pspw, atrw, aovw, f_mw, lomw. See PyAOV README for more information.
+
+   For phase fold plots:
+   - freq: float = frequency on which to fold the lightcurve data. If none is given, it will be folded on the peak Lomb-Scargle frequency.
+   - bins: int = number of equally sized bins in time to bin phase folded data into
+
+   Returns the original data class with additional attributes:
+    - figure: bokeh figure = the actual plot object
+
+
+Note: If plotting a power spectrum, an additional attribute will be added to the light curve data structure:
+         fpeak: float = the peak frequency calculated in the power spectrum.
+
+```
+
+```
+sigmaclip() - sigma clips lightcurve data
+
+Arguments:
+- sigma: int = number of standard deviations beyond which data is clipped. Default is 3.
+```
+
+```
+bin() - bin light curve data
+
+Arguments:
+- bins: int  = number of equally sized bins in time to split the light curve data into
+
+OR
+
+- binsize: str = size in time units of each bin, e.g. '10m', '10h', '10d' for 10 hours/minutes/days
+```
+
+```
+savedata() - saves the data structure to local files
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKlightcurve'
+
+Returns:
+- file name
+```
+
+```
+showdata() - prints data structure to std out in a readable format
+
+Arguments:
+- raw: bool = if True, prints data in its raw form (may not be readable)
+```
+
+```
+showplot() - shows the plot created by the plot() method (and also saves it locally)
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKlightcurve'
+
+Returns:
+- file name
+```
+
+```
+saveplot() - saves the plot created by the plot() method to local storage.
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKlightcurve'
+
+Returns:
+- file name
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 1.5. image query<a id="imagequery"></a>
+
+**Additional Parameters:**
+
+```
+survey: str = target survey
+              Can be one of:
+               - 'panstarrs'
+               - 'skymapper'
+               - 'dss'
+               - 'any', performs a hierarchical query: panstarrs > skymapper > dss until an image is found
+```
+
+```
+!size: int = size of image in arcseconds
+```
+
+```
+!band: str = bands to use in image. Default is g.
+            Supported bands:
+             - panstarrs: g,r,i,z,y
+             - skymapper: g,r,i,z,u,v
+             - dss: g
+
+            e.g. for all panstarrs bands, use band='grizy'
+```
+
+```
+!overlays: list/dict = surveys to generate detection overlays for.
+                      
+                      If list, can be one of:
+                       - any survey supported by data query
+                       - any survey supported by lightcurve query
+                      and uses only the magnitude specified in the config for that survey
+
+                      If dict:
+                      keys are the survey to include, can be one of:
+                       - any survey supported by phot query
+                      values are the names of the magnitudes to use from that survey
+                      
+                      E.g. to use all Gaia magnitudes: overlays={'gaia':['phot_g_mean_mag','phot_bp_mean_mag','phot_rp_mean_mag']}
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)]
+            Position around which to search
+```
+
+```
+source: int = Gaia DR3 source_id.
+              Target Gaia DR3 source
+```
+
+**Returns:**
+
+```
+ImageStruct: class = ATK Image Structure
+```
+
+*Attributes:*
+
+```
+kind: str = 'image'
+```
+
+```
+survey: str = target survey of query
+```
+
+```
+source: int = target Gaia DR3 source
+```
+
+```
+pos: target position
+```
+
+```
+identifier: str = positional identifier of target in format JHHMMSS.SS±DDMMSS.SS
+```
+
+```
+data: dict = returned data in the form:
+             {
+              'image_data': arr = raw image data
+              'image_header': astropy image header
+              'size': int = input image size
+              'image_time': list = [year,month], time at which image was taken
+              'wcs': astropy wcs object
+              'image_focus': list = [right ascension (deg),declination (deg)], image center coordinates
+              'overlay': list or None = list of detection information to overlay in image plotting
+             }
+```
+
+```
+fname: str = the default file name that this data structure will be saved to using the savedata() and saveplot() methods (no extension)
+```
+
+*Methods:*
+
+```
+plot() - plots image data.
+
+Returns the original data class with additional attributes:
+ - figure: bokeh figure = the actual plot object
+```
+
+```
+savedata() - saves the data structure to local files
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKimage'
+
+Returns:
+- file name
+```
+
+```
+showdata() - prints data structure to std out in a readable format
+
+Arguments:
+- raw: bool = if True, prints data in its raw form (may not be readable)
+```
+
+```
+showplot() - shows the plot created by the plot() method (and also saves it locally)
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKimage'
+
+Returns:
+- file name
+```
+
+```
+saveplot() - saves the plot created by the plot() method to local storage.
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKimage'
+
+Returns:
+- file name
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 1.6. spectrum query<a id="spectrumquery"></a>
+
+**Additional Parameters:**
+
+```
+survey: str = target survey
+              Can be one of:
+               - 'ztf'
+               - 'atlas'
+               - 'crts'
+               - 'asassn'
+               - 'gaia'
+```
+
+```
+!radius: int = search radius in arcseconds
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)]
+            Position around which to search
+```
+
+```
+source: int = Gaia DR3 source_id.
+              Target Gaia DR3 source
+```
+
+**Returns:**
+
+```
+SpectrumStruct: class = ATK Spectrum Structure
+```
+
+*Attributes:*
+
+```
+kind: str = 'spectrum'
+```
+
+```
+survey: str = target survey of query
+```
+
+```
+source: int = target Gaia DR3 source
+```
+
+```
+pos: list = target position
+```
+
+```
+identifier: str = positional identifier of target in format JHHMMSS.SS±DDMMSS.SS
+```
+
+```
+data: dict = returned data in the form:
+             {
+              'wavelength': list = wavelengths (Angstroms)
+              'flux': list = flux values (erg / cm^2 s AA^-1)
+             }
+```
+
+```
+fname: str = the default file name that this data structure will be saved to using the savedata() and saveplot() methods (no extension)
+```
+
+*Methods:*
+
+```
+plot() - plots spectrum data.
+         
+Returns the original data class with additional attributes:
+ - figure: bokeh figure = the actual plot object
+```
+
+```
+savedata() - saves the data structure to local files
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKspectrum'
+
+Returns:
+- file name
+```
+
+```
+showdata() - prints data structure to std out in a readable format
+
+Arguments:
+- raw: bool = if True, prints data in its raw form (may not be readable)
+```
+
+```
+showplot() - shows the plot created by the plot() method (and also saves it locally)
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKspectrum'
+
+Returns:
+- file name
+```
+
+```
+saveplot() - saves the plot created by the plot() method to local storage.
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKspectrum'
+
+Returns:
+- file name
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 1.7. sed query<a id="sedquery"></a>
+
+**Additional Parameters:**
+
+```
+!radius: int = search radius in arcseconds
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)]
+            Position around which to search
+```
+
+```
+source: int = Gaia DR3 source_id.
+              Target Gaia DR3 source
+```
+
+**Returns:**
+
+```
+SedStruct: class = ATK SED Structure
+```
+
+*Attributes:*
+
+```
+kind: str = 'sed'
+```
+
+```
+source: int = target Gaia DR3 source
+```
+
+```
+pos: list = target position
+```
+
+```
+identifier: str = positional identifier of target in format JHHMMSS.SS±DDMMSS.SS
+```
+
+```
+data: list = list of returned data for each survey with each entry in the form:
+             {
+              'survey': str = survey of data points
+              'wavelength': list = central filter wavelengths (Angstroms)
+              'flux': list = flux (mJy)
+              'flux_err': list = relative error on the flux (as calculated from magnitudes) (mJy)
+             }
+```
+
+```
+fname: str = the default file name that this data structure will be saved to using the savedata() and saveplot() methods (no extension)
+```
+
+*Methods:*
+
+```
+plot() - plots SED data.
+         
+Returns the original data class with additional attributes:
+ - figure: bokeh figure = the actual plot object
+
+Additional Arguments:
+ - spectrum_overlay: Bool = overlays a spectrum where available
+ - survey: str = survey to retrieve the spectrum from
+
+```
+
+```
+savedata() - saves the data structure to local files
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKsed'
+
+Returns:
+- file name
+```
+
+```
+showdata() - prints data structure to std out in a readable format
+
+Arguments:
+- raw: bool = if True, prints data in its raw form (may not be readable)
+```
+
+```
+showplot() - shows the plot created by the plot() method (and also saves it locally)
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKsed'
+
+Returns:
+- file name
+```
+
+```
+saveplot() - saves the plot created by the plot() method to local storage.
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKsed'
+
+Returns:
+- file name
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 1.8. hrd query<a id="hrdquery"></a>
+
+**Additional Parameters:**
+
+```
+sources: int/list = Gaia DR3 source or list of Gaia DR3 sources to overlay.
+```
+
+**Returns:**
+
+```
+HrdStruct: class = ATK HRD Structure
+```
+
+*Attributes:*
+
+```
+kind: str = 'hrd'
+```
+
+```
+sources: int/list = Gaia DR3 source/Gaia DR3 sources
+```
+
+```
+identifiers: str / list = positional identifier of target in format JHHMMSS.SS±DDMMSS.SS (list if multiple sources)
+```
+
+```
+data: list = list of returned data for each survey with each entry in the form:
+             {
+              'bp-rp': gaia bp magnitude - gaia rp magnitude
+              'absg': absolute gaia g magnitude
+             }
+```
+
+```
+fname: str = the default file name that this data structure will be saved to using the savedata() and saveplot() methods (no extension)
+```
+
+*Methods:*
+
+```
+plot() - plots HRD data.
+         
+Returns the original data class with additional attributes:
+ - figure: bokeh figure = the actual plot object
+```
+
+```
+savedata() - saves the data structure to local files
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKhrd'
+
+Returns:
+- file name
+```
+
+```
+showdata() - prints data structure to std out in a readable format
+
+Arguments:
+- raw: bool = if True, prints data in its raw form (may not be readable)
+```
+
+```
+showplot() - shows the plot created by the plot() method (and also saves it locally)
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKhrd'
+
+Returns:
+- file name
+```
+
+```
+saveplot() - saves the plot created by the plot() method to local storage.
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKhrd'
+
+Returns:
+- file name
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 1.9. reddening query<a id="reddeningquery"></a>
+
+**Additional Parameters:**
+
+```
+survey: str = target survey
+              Can be one of:
+               - 'stilism'
+               - 'gdre'
+```
+
+```
+!radius: int = search radius in arcseconds
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)], target position
+```
+
+```
+source: int = Gaia DR3 source_id.
+              Target Gaia DR3 source
+```
+
+**Note:** For stilism queries, source input is required as a parallax is needed for distance calculations.
+
+**Returns:**
+
+```
+DataStruct: class = ATK Data Structure
+```
+
+*Attributes:*
+
+```
+kind: str = 'data'
+```
+
+```
+subkind: str = 'reddening'
+```
+
+```
+survey: str = target survey of query
+```
+
+```
+catalogue: str = None
+```
+
+```
+source: int = target Gaia DR3 source
+```
+
+```
+pos: list = target position 
+```
+
+```
+identifier: str = positional identifier of target in format JHHMMSS.SS±DDMMSS.SS
+```
+
+```
+data: dict = returned data, where:
+             keys: str = column headers
+             values : float = column values
+```
+
+```
+fname: str = the default file name that this data structure will be saved to using the savedata() and saveplot() methods (no extension)
+```
+
+*Methods:*
+
+```
+savedata() - saves the data structure to local files
+
+Arguments:
+- name = file name to save to (without extension).  File name will also include the ATKSUFFIX,
+         '_ATKreddening'
+
+Returns:
+- file name
+```
+
+```
+showdata() - prints data structure to std out in a readable format
+
+Arguments:
+- raw: bool = if True, prints data in its raw form (may not be readable)
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 2. correctpm<a id="correctpm"></a>
+
+Automatically corrects for proper motion between two surveys or two times for a given Gaia DR3 source *or* position if proper motion measurements also provided.
+
+**Usage:**
+
+```
+correctpm(*)
+```
+
+With any valid combination of input parameters:
+```
+source: int = Gaia DR3 source_id
+
+target_time: list = [year,month], time to correct source's coordinates to
+```
+
+```
+source: int = Gaia DR3 source_id
+
+target_survey: str = survey to correct source's coordinates to=
+                     Can be one of:
+                      - any survey supported by data query
+                      - any survey supported by lightcurve query
+```
+
+```
+pos: list = [right ascension (deg), declination (deg)], target position
+
+input_time: list = [year,month], time of object's input position
+
+target_time: list = [year, month] time to correct position to 
+
+pmra: float = right ascension component of proper motion in mas/yr
+
+pmdec: float = declination component of proper motion in mas/yr
+```
+
+```
+pos: list = [right ascension (deg), declination (deg)], target position
+
+input_survey: str = survey to which position refers
+                     Can be one of:
+                      - any survey supported by data query
+                      - any survey supported by lightcurve query
+
+target_survey: str = survey to correct position to.
+                     Can be one of:
+                      - any survey supported by data query
+                      - any survey supported by lightcurve query
+
+pmra: float = right ascension component of proper motion in mas/yr
+
+pmdec: float = declination component of proper motion in mas/yr
+
+```
+
+**Returns:**
+
+```
+position: list = [right ascension (deg), declination (deg)], corrected coordinates of input source/position
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 4. readdata<a id="readdata"></a>
+
+Allows for reading of any ATK files to reproduce the original data structure.
+
+**Usage:**
+
+```
+readdata(fname)
+```
+
+**Where:**
+
+```
+fname: str = name of file to read
+```
+
+**Returns:**
+
+```
+Data Structure: class = ATK data structure that was used to create the file
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 5. search<a id="search"></a>
+
+Searches for a given position or Gaia DR3 source in SIMBAD or Vizier (opens in the webbrowser)
+
+**Usage:**
+
+```
+search(kind, !radius, *)
+```
+
+**Where:**
+
+```
+kind: str = search type
+            Can be one of:
+            - 'simbad'
+            - 'vizier'
+```
+
+```
+!radius: int = search radius
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)]
+            Position around which to search
+```
+
+```
+source: int = Gaia DR3 source_id.
+              Target Gaia DR3 source
+```
+
+**Returns:** None
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 6. readfits<a id="readfits"></a>
+
+Reads columns from a given fits file.
+
+**Usage:**
+
+```
+readfits(fname,columns)
+```
+
+**Where:**
+
+```
+fname: str = path to a .fits file
+```
+
+```
+columns: str/list = columns to fetch from fits file
+```
+
+**Returns:**
+
+```
+data: list = list of returned data, in order it was asked for.
+             E.g. for columns =['ra','dec'], returned data = [[returned ra],[returned dec]]
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 6. deg2hms<a id="deg2hms"></a>
+
+Converts coordinates in degrees to coordinates in HHMMSS±DDMMSS
+
+**Usage:**
+
+```
+deg2hms(pos)
+```
+
+**Where:**
+
+```
+pos: list = [right ascension (deg), declination (deg)], coordinates to convert
+```
+
+**Returns:**
+
+```
+converted coordinates: str = string representing converted coordinates in above format
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 7. hms2deg<a id="hms2deg"></a>
+
+Converts coordinates in format returned by deg2hms (HHMMSS±DDMMSS)
+
+**Usage:**
+
+```
+hms2deg(pos)
+```
+
+**Where:**
+
+```
+pos: str = position in format given above
+```
+
+**Returns:**
+
+```
+converted coordinates: list = [right ascension (deg), declination (deg)]
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+#### 7. tsanalysis<a id="tsanalysis"></a>
+
+Allows for time series analysis of light curve data using PyAOV
+
+**Usage:**
+
+```
+tsanalysis(data)
+```
+
+**Where:**
+
+```
+data: ATK lightcurve structure = lightcurve data structure returned by ATK lightcurve queries
+```
+
+**Returns:** None
+
+<br>
+
+
+
+
+
+
+
+
+
+
+## AstroToolkit.Datapages<a id="datapages"></a>
+
+### 1.gridsetup<a id="gridsetup"></a>
+
+**Usage:**
+
+```
+gridsetup(dimensions,plots,!grid_size)
+```
+
+**Where:**
+
+```
+dimensions: dict = total dimensions of grid in form {'width': int, 'height': int}
+```
+
+```
+plots: list = list of dicts, where each dict forms a panel in the datapage:
+
+              {
+               'name': name to assign to the plot
+               'figure': The figure to give this panel. This can take the form of:
+                         - an ATK DataStructure that has a plot, i.e. that has had plot() performed on it)
+                         - a Bokeh figure
+                         - None (to fill empty space)
+               'width': width of the panel in grid units
+               'height': height of the panel in grid units
+              }
+```
+
+**Note:** The total area covered by panels must match the area specified by *dimensions*. Empty space must therefore be filled with empty space (entries with *None* in place of a figure).
+
+```
+!grid_size: int = the size that each grid unit represents
+```
+
+<br>
+
+See [Examples](#examples) for an example datapage script.
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 2. buttons<a id="buttons"></a>
+
+Generates a datapage element containing two buttons for Vizier/Simbad queries at the position/source the datapage is built around.
+
+**Usage:**
+
+```
+buttons(!radius, !grid_size, *)
+```
+
+**Where:**
+
+```
+!radius: float = radius to use in the search in arcseconds
+```
+
+```
+!grid_size: int = the grid_size of the datapage. Scales the buttons to match.
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)]
+            Position around which to search
+```
+
+```
+source: int = Gaia DR3 source_id.
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 3. datatable<a id="datatable"></a>
+
+Generates a datatable datapage element using data from supported surveys, along with any custom data.
+
+**Usage:**
+
+```
+datatable(selection, !radius, *)
+```
+
+**Where:**
+
+```
+!radius: float = radius to use when gathering datatable data in arcseconds
+```
+
+and
+
+```
+selection: dict = datatable entry in the format:
+
+'survey' : 'default'
+
+to include basic preset information for a given survey, or:
+                  
+'survey' : {
+            'parameters' : list of strings, names of parameters (i.e. column headers) that exist in that survey
+            'errors' : list of strings, names of errors (i.e. column headers) for these parameters that exist in that survey
+            'notes' : list of strings, any notes to include on this parameter/error/etc.
+           }
+
+where 'survey' is any survey supported by dataquery.
+```
+
+If an entry is provided who's key is not the name of a supported survey, that entry will be interpreted as a custom entry. In this case, an additional 'values' key must be included, and the values/errors must be passed manually. For example:
+
+```
+selection: dict = custom datatable entry in the format
+                 
+'custom' : {
+            'parameters' : list of strings, names of parameters
+            'values' : list of floats, parameter values
+            'errors' : list of floats, error values
+            'notes' : list of strings, any notes to include on this parameter.
+           }
+```
+
+Additionally, requires one of:
+
+```
+pos: list = [right ascension (deg), declination (deg)]
+            Position around which to search
+```
+
+```
+source: int = Gaia DR3 source_id.
+```
+
+<br>
+
+See [Examples](#examples) for an example datapage script.
+
+<br>
+
+
+
+
+
+
+
+
+
+
+## AstroToolkit.Config<a id="config"></a>
+
+### 1. openconfig<a id="openconfig"></a>
+
+**Usage:**
+
+```
+openconfig()
+```
+
+Opens the ATK config file for manual editing.
+
+**Returns:**
+None
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 2. editconfig<a id="editconfig"></a>
+
+**Usage:**
+
+```
+editconfig(key,value)
+```
+
+**Where:**
+
+```
+key: str = a valid config key
+           Can be one of:
+            - 'enable_notifications' = True/False
+               enables notifications of the currently running tool
+
+            - 'unit_size' = int
+               scales all ATK plots
+
+            - 'output_backend' = str
+               sets the default output backend of ATK plots.
+               Accepted values: canvas, svg, webgl
+
+            - 'font_size' = int
+               sets the default font size for all text in ATK plots
+
+            - 'font' = str
+               sets the default font for all text in ATK plots
+
+
+            - 'query_data_radius' = float
+               sets the default data query radius in arcseconds
+
+            - 'query_phot_radius' = float
+               sets the default phot query radius in arcseconds
+            
+            - 'query_bulkphot_radius' = float
+               sets the default bulkphot query radius in arcseconds
+
+            - 'query_lightcurve_radius' = float
+               sets the default lightcurve query radius in arcseconds
+
+            - 'query_spectrum_radius' = float
+               sets the default spectrum query radius in arcseconds
+
+            - 'query_sed_radius' = float
+               sets the default sed query radius in arcseconds
+
+            - 'query_reddening_radius' = float
+               sets the default reddening query radius in arcseconds
+
+            - 'query_image_size' = int 
+               sets the default image query size in arc seconds
+
+            - 'query_image_overlays' = str 
+               sets a default overlay to use in image queries
+
+            - 'query_image_band' = str 
+               sets the default band to use in image queries
+
+            - 'query_lightcurve_atlas_username' = str 
+               sets the default username to use in ATLAS lightcurve queries
+
+            - 'query_lightcurve_atlas_password' = str 
+               sets the default password to use in ATLAS lightcurve queries
+
+
+            - 'gaia_overlay_mag' = str 
+               name of default magnitude to use from Gaia in image overlays
+
+            - 'galex_overlay_mag' = str 
+               name of default magnitude to use from GALEX in image overlays
+
+            - 'wise_overlay_mag' = str 
+               name of default magnitude to use from WISE in image overlays
+
+            - 'sdss_overlay_mag' = str 
+               name of default magnitude to use from SDSS in image overlays
+
+            - 'twomass_overlay_mag' = str 
+               name of default magnitude to use from 2MASS in image overlays
+
+            - 'skymapper_overlay_mag' = str 
+               name of default magnitude to use from SkyMapper in image overlays
+
+            - 'panstarrs_overlay_mag' = str 
+               name of default magnitude to use from PanSTARRS in image overlays
+            
+            - 'overlay_piggyback_radius' = int
+               sets the default 'piggyback' radius to use when proper motion correcting non-Gaia surveys in
+               imaging overlays. Larger radius will result in more detections being corrected, but a larger
+               chance of this correction being erroneous.
+    
+
+            - 'search_radius' = float 
+               sets the default radius to use for search (SIMBAD and Vizier query) tool in arcseconds
+
+
+            - 'datapage_search_button_radius' = float 
+               sets the default radius to use for SIMBAD/Vizier search buttons in arcseconds
+
+            - 'datapage_datatable_radius' = float
+               sets the default radius to use for datatable queries
+
+            - 'datapage_grid_size' = int 
+               sets the default size to scale all plots to in gridsetup
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 3. outputconfig<a id="outputconfig"></a>
+
+Prints the current config values.
+
+**Usage:**
+
+```
+outputconfig()
+```
+
+**Returns:**
+None
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 4. resetconfig<a id="resetconfig"></a>
+
+Resets the config to default settings.
+
+**Usage:**
+
+```
+resetconfig()
+```
+
+**Returns:**
+None
+
+<br>
+
+
+
+
+
+
+
+
+
+
+## AstroToolkit.Models<a id="models"></a>
+
+This module allows for ATK features, such as plotting, saving and analysis, to be used with custom data by providing a set of empty (i.e. all attributes set to None) structures that ATK can use. These can then be filled with any relevant custom data.
+
+**Note:** For information on the format that data should take in these structures, see the relevant [query](#query). In some cases it may not be necessary to provide information for every attribute of a structure. Once a structure has been filled with the necessary information in the correct format, ATK should treat it as if it were directly supported. 
+
+### 1. CustomDataStruct
+
+This provides an empty data structure used by data, phot, bulkphot and reddening queries.
+
+**Usage:**
+
+```
+CustomDataStruct()
+```
+
+**Returns:** Empty ATK Data Structure
+
+<br>
+
+### 2. CustomLightcurveStruct
+
+This provides an empty data structure used by light curve queries.
+
+**Usage:**
+
+```
+CustomLightcurveStruct()
+```
+
+**Returns:** Empty ATK Lightcurve Structure
+
+<br>
+
+### 3. CustomImageStruct
+
+This provides an empty data structure used by imaging queries.
+
+**Usage:**
+
+```
+CustomImageStruct()
+```
+
+**Returns:** Empty ATK Image Structure
+
+<br>
+
+### 4. CustomHrdStruct
+
+This provides an empty data structure used by HRD queries.
+
+**Usage:**
+
+```
+CustomHrdStruct()
+```
+
+**Returns:** Empty ATK HRD Structure
+
+<br>
+
+### 5. CustomSedStruct
+
+This provides an empty data structure used by sed queries.
+
+**Usage:**
+
+```
+CustomSedStruct()
+```
+
+**Returns:** Empty ATK SED Structure
+
+<br>
+
+### 6. CustomSpectrumStruct
+
+This provides an empty data structure used by spectrum queries.
+
+**Usage:**
+
+```
+CustomSpectrumStruct()
+```
+
+**Returns:** Empty ATK Spectrum Structure
+
+<br>
+
+
+
+
+
+
+
+
+
+
+## AstroToolkit.Setup<a id="setup"></a>
+
+This module helps with installing the PyAOV time series analysis tools.
+
+### 1. PyAOV Guide<a id='tsguide'></a>
+
+The guide to installing PyAOV and its pre-requisites can be shown using:
+
+```
+tsguide()
+```
+
+Your platform will be automatically detected. Passing platform='windows'/'linux' will override this and output the instructions for the chosen platform.
+
+
+
+
+
+
+
+
+
+
+### 2. PyAOV Compilation<a id='tsbuild'></a>
+
+As noted in the instructions in tsguide(), the required executables can be built using:
+
+```
+tsbuild()
+```
+
+This is only required on initial installation. Once the executables have been successfully built, PyAOV is ready to use.
+
+<br>
+
+
+
+
+
+
+
+
+
+
+## Examples<a id="examples"></a>
+
+### 1. Query Examples<a id='queryexamples'></a>
+
+```
+from AstroToolkit.Tools import query
+
+# specify a Gaia source
+source = 587316166180416640
+
+# retrieve GALEX data, no radius is given so this will be taken from the config.
+galex_data = query(kind="data", source=source, survey="galex")
+
+# output this data to the terminal
+print(galex_data.data)
+
+
+# retrieve Gaia data, this time supplying a radius - overriding the config value.
+gaia_data = query(kind="data", source=source, survey="gaia", radius=5)
+
+# grab the parallax from Gaia
+parallax = gaia_data.data["parallax"][0]
+
+
+# retrieve WISE photometry
+wise_phot = query(kind="phot", source=source, survey="wise")
+
+
+# retrieve all available photometry
+bulkphot = query(kind="bulkphot", source=source)
+
+# grab the panstarrs and skymapper photometry from bulkphot
+panstarrs_phot = bulkphot.data["panstarrs"]
+skymapper_phot = bulkphot.data["skymapper"]
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 2. Lightcurve Example<a id="lightcurveexample"></a>
+
+```
+from AstroToolkit.Tools import query
+
+# specify a Gaia source
+source = 587316166180416640
+
+# retrieve ZTF light curve data and plot it, specifying the colours for each band.
+# No radius  is given, so this will be taken from the config.
+figure = query(kind="lightcurve", source=source, survey="ztf").plot(
+    colours=["green", "red", "blue"]
+)
+
+# show the lightcurves in the browser (and save to a static .html file)
+figure.showplot()
+```
+
+![](https://github.com/WD-planets/AstroToolkit/raw/latest/README_Images/lightcurve_example.png?raw=true)
+
+**Note:** This example can be loaded from within the package using:
+
+```
+from AstroToolkit.Examples import lightcurve
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 3. Lomb-Scargle Timeseries Example<a id="timeseriesexample"></a>
+
+```
+from AstroToolkit.Tools import query
+
+# specify a Gaia source
+source = 6050296829033196032
+
+# retrieve ztf data for our Gaia source, plot it as a power spectrum, and then show it.
+power_spectrum=query(kind='lightcurve',source=source,survey='ztf').plot(kind='powspec').showplot()
+
+# retrieve ztf data for our Gaia source, phase fold it, and then show it.
+phase_fold=query(kind='lightcurve',source=source,survey='ztf').plot(kind='phase').showplot()
+```
+
+![](https://github.com/WD-planets/AstroToolkit/raw/latest/README_Images/timeseries_example.png?raw=true)
+
+**Note:** This example can be loaded from within the package using:
+
+```
+from AstroToolkit.Examples import timeseries
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+### 4. Image Example<a id="imageexample"></a>
+
+```
+from AstroToolkit.Tools import query
+
+# specify a Gaia source
+source = 587316166180416640
+
+""" 
+Retrieve any available image and plot it.
+No size or band is given, so these will be taken from the config. 
+Since overlays is given as a list, only the magnitude listed for each survey in the config
+will be overlayed as a detection (in this case, phot_g_mean_mag for gaia, and NUVmag for GALEX)
+"""
+figure = query(
+    kind="image", source=source, survey="any", overlays=["gaia", "galex"]
+).plot()
+
+# show the image in the browser (and save to a static .html file)
+figure.showplot()
+
+# Now, give overlays as a dict containing all magnitudes to overlay.
+figure_allmags = query(
+    kind="image",
+    source=source,
+    survey="any",
+    overlays={
+        "gaia": ["phot_g_mean_mag", "phot_bp_mean_mag", "phot_rp_mean_mag"],
+        "galex": ["NUVmag", "FUVmag"],
+    },
+).plot()
+
+# show the image in the browser (and save to a static .html file)
+figure_allmags.showplot()
+
+"""
+Now, include a light curve survey as an overlay. For surveys with enough positional
+precision, this can be used to trace the motion of the object through time.
+We have also specified an image size, which will override the value in the config.
+A different gaia source with a large proper motion has been used.
+"""
+figure_tracer = query(
+    kind="image",
+    source=2552928187080872832,
+    survey="panstarrs",
+    overlays=["crts"],
+    size=60,
+).plot()
+
+figure_tracer.showplot()
+```
+
+![](https://github.com/WD-planets/AstroToolkit/raw/latest/README_Images/image_example.png?raw=true)
+
+**Note:** This example can be loaded from within the package using:
+
+```
+from AstroToolkit.Examples import image
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 5. Spectrum Example<a id="spectrumexample"></a>
+
+```
+from AstroToolkit.Tools import query
+
+# specify a Gaia source
+source = 587316166180416640
+
+# retrieve an SDSS spectrum for the gaia source, plot it and then show it.
+# As no radius is given, this will be taken from the config.
+spectrum = query(kind="spectrum", source=source, survey="sdss").plot().showplot()
+```
+
+![](https://github.com/WD-planets/AstroToolkit/raw/latest/README_Images/spectrum_example.png?raw=true)
+
+**Note:** This example can be loaded from within the package using:
+
+```
+from AstroToolkit.Examples import spectrum
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 6. SED Example<a id="sedexample"></a>
+
+```
+from AstroToolkit.Tools import query
+
+# specify a Gaia source
+source = 587316166180416640
+
+# retrieve and plot an sed, with an overlayed SDSS spectrum.
+sed=query(kind='sed',source=source).plot(spectrum_overlay=True,survey='sdss')
+
+# show the figure in the browser (and save to a static .html file)
+sed.showplot()
+```
+
+![](https://github.com/WD-planets/AstroToolkit/raw/latest/README_Images/sed_example.png?raw=true)
+
+**Note:** This example can be loaded from within the package using:
+
+```
+from AstroToolkit.Examples import sed
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 7. HRD Example<a id="hrdexample"></a>
+
+```
+from AstroToolkit.Tools import query
+
+# specify a Gaia source
+source1 = 587316166180416640
+
+# Specify a second Gaia source. This is not necessary - any number of sources can be overlayed.
+source2 = 6050296829033196032
+
+# retrieve Gaia hrd data for our list of sources, plot it and then show it.
+hrd=query(kind='hrd',sources=[source1,source2]).plot().showplot()
+```
+
+![](https://github.com/WD-planets/AstroToolkit/raw/latest/README_Images/hrd_example.png?raw=true)
+
+**Note:** This example can be loaded from within the package using:
+
+```
+from AstroToolkit.Examples import hrd
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 8. Local Files Example<a id="localfileexample"></a>
+
+```
+from AstroToolkit.Tools import query, readdata, savedata
+
+# specify a Gaia source
+source = 587316166180416640
+
+# retrieve ZTF light curve data for our source and save this structure to a local file
+filename = query(kind="lightcurve", source=source, survey="ztf").savedata()
+
+# recreate the original data structure from the local file
+recreated_data = readdata(filename)
+
+# plot only the g band of this data in the colour green, and show it.
+recreated_data.plot(colours=["green"], bands=["g"]).showplot()
+```
+
+![](https://github.com/WD-planets/AstroToolkit/raw/latest/README_Images/localfiles_example.png?raw=true)
+
+**Note:** This example can be loaded from within the package using:
+
+```
+from AstroToolkit.Examples import localfiles
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 9. Datapage Example<a id="datapageexample"></a>
+
+```
+from bokeh.layouts import column, layout, row
+from bokeh.plotting import output_file, show
+
+from AstroToolkit.Datapages import buttons, datatable, gridsetup
+from AstroToolkit.Tools import query
+
+# source = Hu Leo
+source = 587316166180416640
+
+# set grid size (scales size of datapage)
+grid_size = 250
+
+# get image data and plot it
+image = query(
+    kind="image", survey="any", source=source, overlays=["gaia", "galex"]
+).plot()
+
+# get hrd data and plot it
+hrd = query(kind="hrd", sources=source).plot()
+
+# get sed data and plot it
+sed = query(kind="sed", source=source).plot(spectrum_overlay=True, survey="sdss")
+
+# get spectrum data and plot it
+spectrum = query(kind="spectrum", survey="sdss", source=source).plot()
+
+# get lightcurve data [g,r,i] and plot it
+lightcurves = query(kind="lightcurve", survey="ztf", source=source).plot(
+    colours=["green", "red", "blue"]
+)
+
+# get SIMBAD and Vizier buttons
+buttons = buttons(source=source, grid_size=grid_size)
+
+# make a custom metadatatable entry
+custom_entry = {
+    "parameters": ["one"],
+    "values": ["two"],
+    "errors": ["three"],
+    "notes": ["four"],
+}
+
+# get a metadata table with default parameters for various surveys
+metadata = datatable(
+    source=source,
+    selection={
+        "gaia": "default",
+        "galex": "default",
+        "panstarrs": "default",
+        "skymapper": "default",
+        "sdss": "default",
+        "wise": "default",
+        "twomass": "default",
+        "custom": custom_entry,
+    },
+)
+
+# formats plots for use in grid
+grid_plots = gridsetup(
+    dimensions={"width": 6, "height": 6},
+    plots=[
+        {"name": "image", "figure": image, "width": 2, "height": 2},
+        {"name": "hrd", "figure": hrd, "width": 2, "height": 2},
+        {"name": "sed", "figure": sed, "width": 2, "height": 2},
+        {"name": "lightcurves", "figure": lightcurves, "width": 2, "height": 1},
+        {"name": "buttons", "figure": buttons, "width": 2, "height": 1},
+        {"name": "spectrum", "figure": spectrum, "width": 4, "height": 2},
+        {"name": "metadata_table", "figure": metadata, "width": 6, "height": 2},
+    ],
+    grid_size=grid_size,
+)
+
+# set up the final grid
+datapage = layout(
+    column(
+        row(
+            grid_plots["image"],
+            grid_plots["hrd"],
+            column(grid_plots["buttons"], grid_plots["lightcurves"]),
+        ),
+        row(grid_plots["sed"], grid_plots["spectrum"]),
+        row(grid_plots["metadata_table"]),
+    )
+)
+
+# give output file a name
+output_file(f"{source}_datapage.html")
+
+# show the datapage (also saves it)
+show(datapage)
+```
+
+![](https://github.com/WD-planets/AstroToolkit/raw/latest/README_Images/datapage_example.png?raw=true)
+
+**Note:** This example can be loaded from within the package using:
+
+```
+from AstroToolkit.Examples import datapage
+```
+
+<br>
+
+
+
+
+
+
+
+
+
+
+### 9. PyAOV Example<a id="pyaovexample"></a>
+
+```
+from AstroToolkit.Tools import tsanalysis,query
+
+# perform PyAOV time series analysis on a light curve data structure
+tsanalysis(query(kind='lightcurve',source=6050296829033196032,survey='ztf'))
+```
+
+**Note:** This example can be loaded from within the package using:
+
+```
+from AstroToolkit.Examples import pyaov
+````
