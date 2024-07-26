@@ -1,0 +1,12 @@
+{
+  "hash": "189512c638675db20d4fef71690369c9",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Get started with pins\njupyter: python3\n---\n\n\ncoming soon\n\n::: {#5365a1a1 .cell execution_count=2}\n``` {.python .cell-code}\nprint('coming soon')\n```\n\n::: {.cell-output .cell-output-stdout}\n```\ncoming soon\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "get_started_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
