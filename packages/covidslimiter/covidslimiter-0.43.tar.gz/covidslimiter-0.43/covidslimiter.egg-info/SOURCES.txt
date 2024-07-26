@@ -1,0 +1,9 @@
+setup.py
+covidslimiter/__init__.py
+covidslimiter/decorator.py
+covidslimiter/rate_limiter.py
+covidslimiter.egg-info/PKG-INFO
+covidslimiter.egg-info/SOURCES.txt
+covidslimiter.egg-info/dependency_links.txt
+covidslimiter.egg-info/requires.txt
+covidslimiter.egg-info/top_level.txt
