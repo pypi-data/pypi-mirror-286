@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ftmq-search
+Version: 0.0.1
+Summary: followthemoney search based on ftmq
+Home-page: https://github.com/investigativedata/ftmq-search
+License: AGPL
+Author: Simon Wörpel
+Author-email: simon.woerpel@pm.me
+Requires-Python: >=3.11,<4
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ftmq (>=0.6.10,<0.7.0)
+Requires-Dist: structlog (>=24.4.0,<25.0.0)
+Project-URL: Bug Tracker, https://github.com/investigativedata/ftmq-search/issues
+Project-URL: Documentation, https://github.com/investigativedata/ftmq-search
+Project-URL: Repository, https://github.com/investigativedata/ftmq-search
+Description-Content-Type: text/markdown
+
+[![ftmq-search on pypi](https://img.shields.io/pypi/v/ftmq-search)](https://pypi.org/project/ftmq-search/) [![Python test and package](https://github.com/investigativedata/ftmq-search/actions/workflows/python.yml/badge.svg)](https://github.com/investigativedata/ftmq-search/actions/workflows/python.yml) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit) [![Coverage Status](https://coveralls.io/repos/github/investigativedata/ftmq-search/badge.svg?branch=main)](https://coveralls.io/github/investigativedata/ftmq-search?branch=main) [![MIT License](https://img.shields.io/pypi/l/ftmq-search)](./LICENSE)
+
+# ftmq-search
+
+Search stores logic for ftmq
+
