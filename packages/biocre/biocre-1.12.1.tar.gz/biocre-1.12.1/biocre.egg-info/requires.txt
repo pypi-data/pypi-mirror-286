@@ -1,0 +1,7 @@
+diopy
+scipy
+scanpy
+pandas
+numpy==1.23.4
+natsort
+matplotlib
