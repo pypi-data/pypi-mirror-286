@@ -1,0 +1,16 @@
+modelhub/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelhub/client.py,sha256=0rtF9jh00zdlmk0_1dFs76j6hNvVIADfXXeNo1RaLlE,3977
+modelhub/decorators.py,sha256=uAW0z_ZFkZRjdqUxjESEN5Uw968j-ht5yZ4elCJ8X2k,107
+modelhub/pipelines.py,sha256=m7dpW-DrOqViG70dWY3qdPlBq-TzJNfIF2257JixAWw,7265
+modelhub/utils.py,sha256=MIK388EZTnia8ccnlLrr6hEU86OOHTOLOoZyAl9gLpI,1052
+recipe_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recipe_project/main.py,sha256=MbAkB-ANjJkJbynXYRRNmXRB2txlpgR4ueqRSpmKQb0,606
+recipe_project/steps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recipe_project/steps/evaluate.py,sha256=ZS1xaBkoioeDMfDQU7uHLYFs5214LKBqAwtC2Nf046w,134
+recipe_project/steps/preprocess.py,sha256=E8G_64s1Sk2_Lt-SSjCYsiL2o9zRR7hElrxOlQq7lc4,2772
+recipe_project/steps/train.py,sha256=ReEiyAI4PBnrge0g660pUu9VjSdTWTpRJWmY6Qv7Ur8,1797
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelhub_sdk-0.1.2.dist-info/METADATA,sha256=8DyFRFgjRZ8c9VYDgvk4OVsuJFOe68TiNttqbYGnejw,639
+modelhub_sdk-0.1.2.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+modelhub_sdk-0.1.2.dist-info/top_level.txt,sha256=4bh_WyJlRxRHGH2f22Nqnr9rKv_ptaYvvscKyWEfouo,30
+modelhub_sdk-0.1.2.dist-info/RECORD,,
