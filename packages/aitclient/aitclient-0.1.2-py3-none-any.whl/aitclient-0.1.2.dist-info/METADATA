@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: aitclient
+Version: 0.1.2
+Summary: A Python library for AIT client operations
+Home-page: https://github.com/I835834/aitclient
+Author: Bobby Svidron
+Author-email: bobby.svidron@sap.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+
+# AIT Client Library
+
+[![PyPI version](https://badge.fury.io/py/aitclient.svg)](https://badge.fury.io/py/aitclient)
+
+AIT Client Library is a Python package that provides functions to authenticate and upload files to the AIT service.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install aitclient
