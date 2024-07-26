@@ -1,0 +1,7 @@
+README.md
+prjpath.py
+setup.py
+prjpath.egg-info/PKG-INFO
+prjpath.egg-info/SOURCES.txt
+prjpath.egg-info/dependency_links.txt
+prjpath.egg-info/top_level.txt
