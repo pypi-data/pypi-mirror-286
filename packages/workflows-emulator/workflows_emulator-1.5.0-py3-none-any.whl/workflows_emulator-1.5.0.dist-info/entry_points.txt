@@ -1,0 +1,4 @@
+[console_scripts]
+get-discovery-documents=workflows_emulator.utils:get_discovery_documents
+workflows-emulator=workflows_emulator.cli:cli
+
