@@ -1,0 +1,9 @@
+babel>=2.15.0
+tld>=0.13
+urllib3<3,>=1.26
+
+[dev]
+black
+mypy
+pytest
+pytest-cov
