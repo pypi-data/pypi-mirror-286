@@ -1,0 +1,102 @@
+# input data file for generating daily data using CMIP naming conventions
+variables :
+  name :
+    - "tas"
+    - "psl"
+    - "zg500"
+    - "huss"
+    - "sfcWind"
+    - "hfls"
+    - "ts"
+    - "pr"
+tas :
+  atts :
+    long_name : 'Near-Surface Air Temperature'
+    units : 'K'
+    cell_methods : 'area: time: mean'
+    cell_measures : 'area: areacella'
+    standard_name : 'air_temperature'
+    interp_method : 'conserve_order2'
+    original_name : 'tas'
+  stats :
+    - [277.8414001464844, 21.905702590942383]
+psl :
+  atts :
+    long_name : 'Sea Level Pressure'
+    units : 'Pa'
+    cell_methods : 'area: time: mean'
+    cell_measures : 'area: areacella'
+    standard_name : 'air_pressure_at_mean_sea_level'
+    interp_method : 'conserve_order2'
+    original_name : 'psl'
+  stats :
+    - [100787.9140625, 1471.68212890625]
+zg500 :
+  atts :
+    long_name : 'Geopotential Height at 500 hPa'
+    units : 'm'
+    cell_methods : 'area: time: mean'
+    cell_measures : 'area: areacella'
+    standard_name : 'geopotential_height'
+    interp_method : 'conserve_order1'
+    original_name : 'zg500'
+  stats :
+    - [5500.68798828125, 351.7859802246094]
+
+huss:
+  atts:
+    long_name: 'Near-Surface Specific Humidity'
+    units: '1'
+    cell_methods: 'area: time: mean'
+    cell_measures: 'area: areacella'
+    standard_name: 'specific_humidity'
+    interp_method: 'conserve_order1'
+    original_name: 'huss'
+  stats:
+    - [ 0.008853504, 0.001309792 ]
+
+hfls:
+  atts:
+    long_name: 'Surface Upward Latent Heat Flux'
+    units: 'W m-2'
+    cell_methods: 'area: time: mean'
+    cell_measures: 'area: areacella'
+    standard_name: 'surface_upward_latent_heat_flux'
+    interp_method: 'conserve_order1'
+    original_name: 'hfls'
+  stats:
+    - [ 200.8302, 30.204777 ]
+
+sfcWind:
+  atts:
+    long_name: 'Daily-Mean Near-Surface Wind Speed'
+    units: 'm s-1'
+    cell_methods: 'area: time: mean'
+    cell_measures: 'area: areacella'
+    standard_name: 'wind_speed'
+    interp_method: 'conserve_order1'
+    original_name: 'sfcWind'
+  stats:
+    - [ 6.75016, 1.806484 ]
+ts :
+  atts :
+    long_name : 'Surface Temperature'
+    units : 'K'
+    cell_methods : 'area: time: mean'
+    cell_measures : 'area: areacella'
+    standard_name : 'surface_temperature'
+    interp_method : 'conserve_order2'
+    original_name : 'ts'
+  stats :
+    - [299.31054, 2.530572]
+pr :
+  atts :
+    long_name : "Precipitation"
+    units : "kg m-2 s-1"
+    cell_methods : "time : mean"
+    cell_measures : "area : area"
+    time_avg_info" : "average_T1,average_T2,average_DT"
+    standard_name : "precipitation_flux"
+    interp_method": "conserve_order1"
+  stats :
+    - [3.116272e-05, 2.2157835e-05]
