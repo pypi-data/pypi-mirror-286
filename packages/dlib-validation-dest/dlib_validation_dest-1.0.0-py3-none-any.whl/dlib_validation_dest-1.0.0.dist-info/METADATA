@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dlib-validation-dest
+Version: 1.0.0
+Summary: library for trainning model ai
+Home-page: UNKNOWN
+Author: Jack Ma
+Author-email: ma.jack@email.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: dateutil
+Requires-Dist: dlib
+Requires-Dist: joblib
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: scikit-image
+
+UNKNOWN
+
