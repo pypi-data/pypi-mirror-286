@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: LSFExtractor
+Version: 0.0.1
+Summary: A Python module to estimate the Line Spread Function
+License: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+Requires-Dist: astropy ==6.1.1
+Requires-Dist: astropy-iers-data ==0.2024.7.8.0.31.19
+Requires-Dist: certifi ==2024.7.4
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: contourpy ==1.2.1
+Requires-Dist: cycler ==0.12.1
+Requires-Dist: docutils ==0.21.2
+Requires-Dist: fonttools ==4.53.1
+Requires-Dist: idna ==3.7
+Requires-Dist: importlib-metadata ==8.0.0
+Requires-Dist: jaraco.classes ==3.4.0
+Requires-Dist: jaraco.context ==5.3.0
+Requires-Dist: jaraco.functools ==4.0.1
+Requires-Dist: keyring ==25.2.1
+Requires-Dist: kiwisolver ==1.4.5
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: matplotlib ==3.9.1
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: more-itertools ==10.3.0
+Requires-Dist: nh3 ==0.2.18
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: packaging ==24.1
+Requires-Dist: pillow ==10.4.0
+Requires-Dist: pkginfo ==1.10.0
+Requires-Dist: pyerfa ==2.0.1.4
+Requires-Dist: Pygments ==2.18.0
+Requires-Dist: pyparsing ==3.1.2
+Requires-Dist: python-dateutil ==2.9.0.post0
+Requires-Dist: pywin32-ctypes ==0.2.2
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: readme-renderer ==44.0
+Requires-Dist: requests ==2.32.3
+Requires-Dist: requests-toolbelt ==1.0.0
+Requires-Dist: rfc3986 ==2.0.0
+Requires-Dist: rich ==13.7.1
+Requires-Dist: scipy ==1.14.0
+Requires-Dist: setuptools ==70.3.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: tqdm ==4.66.4
+Requires-Dist: twine ==5.1.1
+Requires-Dist: urllib3 ==2.2.2
+Requires-Dist: wheel ==0.43.0
+Requires-Dist: zipp ==3.19.2
+
+# LSFExtractor
+
+## Description
+
+This module enables users to extract the Line Spread Function (LSF) from any type of spectral cube. The provided code automatically handles multiple axes in the datacube. 
+
+Currently, the code estimates the LSF only for ALMA data cubes, but we are actively developing support for additional types of cubes.
+
+
+## Getting Started
+
+### Installing
+
+Releases are registered on PyPI, and development is occurring at the project's [GitHub page](https://github.com/nsotostuardo/LSFExtractor).
+
+
+
+### Executing program
+
+
+First we need to import the module to the python script or notebook.
+
+```
+import LSFExtractor as lsf
+```
+
+The module executes by creating an instance of the class with just the path to a cube file, and then using the `get_LSF` method.
+
+```
+cube = lsf.Cube('path_to_file')
+cube.get_LSF()
+```
+
+The method returns a list of length three corresponding to LSF, LSF lower error, and LSF upper error, respectively. It can also be accessed using the `.LSF` attribute of the class
+
+```
+ LSF, LSF_lower, LSF_upper = cube.LSF
+````
+
+The class includes the method `.save_LSF(path, format = '.3f', write = True)` which creates an Astropy QTable with the code's output and saves it as an ASCII table in the file named `path_LSF.dat`
+
+
+```
+cube.save_LSF('new_path')
+```
+
+More documentation can be found inside the .py files.
+
+## Authors
+
+
+* [jigonzal](https://github.com/jigonzal)
+* [nsotostuardo](https://github.com/nsotostuardo)
+
+## Version History
+
+* 0.1
+    * Initial Release
+
+## License
+
+This project is licensed under a MIT style license - see the LICENSE.md file for details
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+
+* [LSF](https://github.com/jigonzal/LSF)
+* [The Astropy Project](https://github.com/astropy)
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
