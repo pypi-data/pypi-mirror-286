@@ -1,0 +1,4 @@
+ladybug-core==0.43.2
+
+[mapping]
+numpy<2.0.0
