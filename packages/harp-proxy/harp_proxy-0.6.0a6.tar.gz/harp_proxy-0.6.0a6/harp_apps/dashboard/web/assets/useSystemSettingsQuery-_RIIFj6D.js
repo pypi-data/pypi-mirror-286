@@ -1,0 +1,1 @@
+import{u as e}from"./reactQuery-30dTS3V2.js";import{u}from"./index-hWB3L7vb.js";function i(){const s=u();return e(["system","settings"],()=>s.fetch("/system/settings").then(t=>t.json()))}export{i as u};
