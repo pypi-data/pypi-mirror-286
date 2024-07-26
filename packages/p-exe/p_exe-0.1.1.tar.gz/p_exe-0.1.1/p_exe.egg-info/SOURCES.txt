@@ -1,0 +1,8 @@
+setup.py
+p_exe.egg-info/PKG-INFO
+p_exe.egg-info/SOURCES.txt
+p_exe.egg-info/dependency_links.txt
+p_exe.egg-info/requires.txt
+p_exe.egg-info/top_level.txt
+pale_exe/__init__.py
+pale_exe/pale_exe.py
