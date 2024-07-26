@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/drf_yasg_serializer_converter/__init__.py
+src/drf_yasg_serializer_converter/default_values.py
+src/drf_yasg_serializer_converter.egg-info/PKG-INFO
+src/drf_yasg_serializer_converter.egg-info/SOURCES.txt
+src/drf_yasg_serializer_converter.egg-info/dependency_links.txt
+src/drf_yasg_serializer_converter.egg-info/requires.txt
+src/drf_yasg_serializer_converter.egg-info/top_level.txt
+src/drf_yasg_serializer_converter/swaggers_schema_properties/__init__.py
+src/drf_yasg_serializer_converter/swaggers_schema_properties/openapi_schema_converters.py
+src/drf_yasg_serializer_converter/swaggers_schema_properties/swagger_basic_params.py
+src/drf_yasg_serializer_converter/swaggers_schema_properties/swagger_basic_responses.py
+tests/test_basic_responses.py
+tests/test_convert_schema.py
