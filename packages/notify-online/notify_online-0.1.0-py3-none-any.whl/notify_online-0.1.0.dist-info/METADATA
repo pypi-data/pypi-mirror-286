@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: notify_online
+Version: 0.1.0
+Summary: A package to send email notifications when the device comes online
+Home-page: https://github.com/datlt4
+Author: Koi
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: Flask-CORS
+Requires-Dist: Flask-Mail
+Requires-Dist: Jinja2
+Requires-Dist: requests
+
+# Setup dev environment
+
+```bash
+python3 -m pip install -r requirements.txt
+pre-commit install
+```
+
+# Export environment variables
+
+```bash
+export MAIL_SERVER="smtp.gmail.com"
+export MAIL_PORT=587
+export MAIL_USERNAME="********************************"
+export MAIL_RECEIPIENT="********************************"
+export MAIL_PASSWORD="********************************"
+export MAIL_USE_TLS=1
+export MAIL_USER_SSL=0
+```
+
+# Run application
+
+```bash
+python3 -c "from notify_online import notify_online; notify_online()"
+```
+
+# Build package
+
+```bash
+python3 setup.py sdist bdist_wheel
+```
+
+# Publish package to Pypi
+
+```bash
+twine upload dist/*
+```
