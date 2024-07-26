@@ -1,0 +1,8 @@
+nanogcg/__init__.py,sha256=dD6UxiVNaqHIZBOtQJyECPXSl8hGzQCjiVKWItDThK0,665
+nanogcg/gcg.py,sha256=C3MOHclT260UnH96PRPmSMYDIBpKXPS8Lesc-k6l8lU,17915
+nanogcg/utils.py,sha256=U9nhgyTwUWhuJM-hISEiwwiJHnTykn8N5lyaULeNMfY,4124
+nanogcg-0.1.0.dist-info/LICENSE,sha256=95DKrUgL2FWnpaMCubL_xyLa9YSsMw6YAmNtVOwE-Iw,1068
+nanogcg-0.1.0.dist-info/METADATA,sha256=07djN19GjwOlmz_PMUSwBUDdUKsSm78OIG06oa8fTZ0,6077
+nanogcg-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+nanogcg-0.1.0.dist-info/top_level.txt,sha256=q2PFFfKbPIaWVjCjZqpzZeSVGVuZf90A5t7Oa7z0P3w,8
+nanogcg-0.1.0.dist-info/RECORD,,
