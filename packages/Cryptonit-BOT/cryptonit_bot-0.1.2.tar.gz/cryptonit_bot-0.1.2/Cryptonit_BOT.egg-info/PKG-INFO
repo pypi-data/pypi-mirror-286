@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Cryptonit-BOT
+Version: 0.1.2
+Summary: A bot for encryption and decryption using Telegram
+Home-page: https://github.com/ruslanlap/Cryptonit-BOT-COPYY
+Author: ruslanlap
+Author-email: your.email@example.com
+License-File: LICENSE
+Requires-Dist: cryptography
+Requires-Dist: pyTelegramBotAPI
