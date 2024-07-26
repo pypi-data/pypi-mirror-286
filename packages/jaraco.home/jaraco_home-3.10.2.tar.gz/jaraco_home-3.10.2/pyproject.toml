@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61.2", "setuptools_scm[toml]>=3.4.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jaraco.home"
+authors = [
+	{ name = "Jason R. Coombs", email = "jaraco@jaraco.com" },
+]
+description = "Some functions supporting the devices in jaraco's home"
+readme = "README.rst"
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"License :: OSI Approved :: MIT License",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+]
+requires-python = ">=3.8"
+dependencies = [
+	"requests",
+	"lxml>=4.2.6",
+	"pymongo",
+	"jaraco.functools",
+	"jaraco.mongodb",
+	"dnspython",
+	"keyring",
+	"jaraco.collections",
+	"splinter[selenium]",
+	"autocommand",
+	"python-dateutil",
+	"victor-smart-kill",
+	'importlib_resources; python_version < "3.9"',
+	"jaraco.compat>=4.1",
+	"tempora>=5.7",
+]
+dynamic = ["version"]
+
+[project.urls]
+Source = "https://github.com/jaraco/jaraco.home"
+
+[project.optional-dependencies]
+test = [
+	# upstream
+	"pytest >= 6, != 8.1.*",
+	"pytest-checkdocs >= 2.4",
+	"pytest-cov",
+	"pytest-mypy",
+	"pytest-enabler >= 2.2",
+	"pytest-ruff >= 0.2.1; sys_platform != 'cygwin'",
+
+	# local
+	"types-requests",
+	"mockproc",
+	"types-python-dateutil",
+]
+doc = [
+	# upstream
+	"sphinx >= 3.5",
+	"jaraco.packaging >= 9.3",
+	"rst.linker >= 1.9",
+	"furo",
+	"sphinx-lint",
+
+	# local
+]
+
+[tool.setuptools_scm]
