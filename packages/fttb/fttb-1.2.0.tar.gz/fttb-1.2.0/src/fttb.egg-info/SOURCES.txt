@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/fttb/__main__.py
+src/fttb/utils.py
+src/fttb.egg-info/PKG-INFO
+src/fttb.egg-info/SOURCES.txt
+src/fttb.egg-info/dependency_links.txt
+src/fttb.egg-info/entry_points.txt
+src/fttb.egg-info/requires.txt
+src/fttb.egg-info/top_level.txt
+src/fttb/cmds/clear.py
+src/fttb/cmds/config.py
+src/fttb/cmds/download.py
+src/fttb/cmds/infos.py
+src/fttb/cmds/list.py
+src/fttb/cmds/remove.py
+src/fttb/cmds/use.py
