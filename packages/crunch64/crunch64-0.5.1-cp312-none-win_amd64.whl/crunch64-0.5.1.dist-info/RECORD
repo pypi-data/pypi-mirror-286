@@ -1,0 +1,15 @@
+crunch64-0.5.1.dist-info/METADATA,sha256=F1CDrtnKRQXidiijgb6EesccMPHhAnOzfp7zg1D26ow,475
+crunch64-0.5.1.dist-info/WHEEL,sha256=sQXnPsWoXsDCZmdDlJigIim-C6FshLZQTsYzMDlXQVI,95
+crunch64/crunch64.pyi,sha256=RbtjIESjSKdvlsNJeaqlyOqTCf9CKJaKoO9P5iCCgdY,176
+crunch64/gzip.py,sha256=Hb9mtWKwNYjm1licn5ryIEJ6I2yAXFlNWIP9fiULc3Y,113
+crunch64/gzip.pyi,sha256=2Q1ctWIVXHGqT_PDSlSCx9xyt_RIdnigzWokaHy9Pq4,146
+crunch64/mio0.py,sha256=mQQFMSmUOoiugnyIiYbT4Eo2Px3maA6CAMjtwQ-MxGw,166
+crunch64/mio0.pyi,sha256=PNK_kE-E2WT0ojlj5qL36krIBPQsia6k00hGIb15Lgs,148
+crunch64/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crunch64/yay0.py,sha256=8Foq0YpFK8hCMlWcu5Fh5PgTagCco9rjK3H5PjbXAi8,166
+crunch64/yay0.pyi,sha256=PNK_kE-E2WT0ojlj5qL36krIBPQsia6k00hGIb15Lgs,148
+crunch64/yaz0.py,sha256=Y_d-wugoDOtzAc-SGBUzxCHQS4lOCj9cN5fR1AvpQ4s,166
+crunch64/yaz0.pyi,sha256=PNK_kE-E2WT0ojlj5qL36krIBPQsia6k00hGIb15Lgs,148
+crunch64/__init__.py,sha256=r4HLwDEGBK1WUKgKERZI1vIdu_Af4If2WgO2euYJbQE,357
+crunch64/crunch64.cp312-win_amd64.pyd,sha256=VKVqy9LrK045joeiNslc8-XWbQvy_RhKL6wfz8pmAmk,292864
+crunch64-0.5.1.dist-info/RECORD,,
