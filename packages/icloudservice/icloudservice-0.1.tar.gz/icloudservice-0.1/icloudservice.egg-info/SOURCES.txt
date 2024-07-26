@@ -1,0 +1,11 @@
+.gitignore
+README.md
+setup.py
+.github/workflows/publish.yml
+icloudservice/__init__.py
+icloudservice/icloudservice.py
+icloudservice.egg-info/PKG-INFO
+icloudservice.egg-info/SOURCES.txt
+icloudservice.egg-info/dependency_links.txt
+icloudservice.egg-info/requires.txt
+icloudservice.egg-info/top_level.txt
