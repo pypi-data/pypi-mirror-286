@@ -1,0 +1,17 @@
+qnngds-3.1.0.dist-info/METADATA,sha256=RvNY9jdLxT5cDDuD5LFaz6Noh3VMQ6lRGqbPJtydbLk,4348
+qnngds-3.1.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+qnngds-3.1.0.dist-info/licenses/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+qnngds/__init__.py,sha256=5ZSGQoIlV9DxA6NthxvLxztLLnaOUrMF8PVR2BbQqho,543
+qnngds/cells.py,sha256=4K72GJ0orYymqzKm2dIr58pixd2y2tP0iJtVtuND5H8,24324
+qnngds/circuits.py,sha256=ndhZOiVJXHLYhkiDz4_JPHU5VMDuG5cFmIV8urj5g40,10385
+qnngds/design.py,sha256=6-7L-VvoALcjWCnyfTRn1UQ2eRDBjvCtlLTdP1hQ4Co,29286
+qnngds/devices/__init__.py,sha256=C2Zn8roHfYIDz8h9rRP7M5Mk8q7X76ZGQz3CgyyHgc8,158
+qnngds/devices/htron.py,sha256=W-E2DBvbml3r5NMzl_tpogPRPRPR1Vjz_P3GnAoZT3k,231
+qnngds/devices/nanowire.py,sha256=Va5H4WIks4i47DbhyuWzcIisq7382oEKGGxnx0dDGRA,1256
+qnngds/devices/ntron.py,sha256=L9VCmYBJy9qymCXvtlKqO4CMcajQvFCj_GyDTu4zvpE,3287
+qnngds/devices/resistor.py,sha256=Bzs5q3nk2j0YFbN1JYQ3hoyjKikpQPbk-0z8-QTNK9k,6271
+qnngds/devices/snspd.py,sha256=ZEtYksB05bGuBO42TpfLaPhYq0R7uOc56KNHm8u4f8I,6343
+qnngds/geometries.py,sha256=clumZ_NPNGjq-R9aeHo7Dq9AQ6jyzuKXb7fav0yWCTk,1237
+qnngds/tests.py,sha256=Lu_YABAcqWb4I_HBdli1Q2tzJoNFqVUaUqEOrmMs9LU,8606
+qnngds/utilities.py,sha256=IOgaVnip5qqntutqVh9E4Uv61Y6jdGYG_3xkkqrC5PQ,30838
+qnngds-3.1.0.dist-info/RECORD,,
