@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Pale_exe
+Version: 0.1
+Requires-Python: >=3.7
+Requires-Dist: maturin>=1.7.0
+Provides-Extra: dev
+Requires-Dist: twine>=4.0.2; extra == "dev"
