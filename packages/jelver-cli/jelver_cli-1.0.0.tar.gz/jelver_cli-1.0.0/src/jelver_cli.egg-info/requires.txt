@@ -1,0 +1,6 @@
+requests
+emoji
+colorama
+tqdm
+tabulate
+docopt
