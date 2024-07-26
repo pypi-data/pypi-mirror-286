@@ -1,0 +1,11 @@
+[project]
+name = "pyedge_dot"
+version = "0.0.0"
+description = """"Placeholder to mitigate to dependency confusion attacks."""
+authors = [
+    {name = "Zywave", email = "miedge_pl@zyawve.com"}
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,5 @@
+pyproject.toml
+pyedge_dot.egg-info/PKG-INFO
+pyedge_dot.egg-info/SOURCES.txt
+pyedge_dot.egg-info/dependency_links.txt
+pyedge_dot.egg-info/top_level.txt
