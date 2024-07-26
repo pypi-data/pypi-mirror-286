@@ -1,0 +1,10 @@
+README.md
+setup.py
+env_config/__init__.py
+env_config/main.py
+envmate.egg-info/PKG-INFO
+envmate.egg-info/SOURCES.txt
+envmate.egg-info/dependency_links.txt
+envmate.egg-info/entry_points.txt
+envmate.egg-info/requires.txt
+envmate.egg-info/top_level.txt
