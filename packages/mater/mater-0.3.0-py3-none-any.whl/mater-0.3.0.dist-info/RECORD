@@ -1,0 +1,10 @@
+mater/__init__.py,sha256=ERzyWrVGxclfqEfCccCIWe9qotRiTgU2WVq-iYQZai8,156
+mater/_bio_physical.py,sha256=Uw_jZKf63_PjR6HQIQ1dKac-YKG-co_ilvo68Kube1I,33678
+mater/_non_physical.py,sha256=8wSMx1aB1Vyg8NI1eMPeiQuGLUDRAmj2Z2c5Kc5QSq8,7569
+mater/_pre_processing.py,sha256=pCvWuFSxatgnMoioiur1-F7uFaGc0HOGxfst-vUQyH8,27155
+mater/_utils.py,sha256=xpyAoRfX8W1hUCTmdVLXHoMFIyk7mlartAPuCHr2o1k,4910
+mater/model.py,sha256=Zs9giQZF-a07i1zs4J7f7NFB-fBI1ayz89_EY1iadrQ,12552
+mater-0.3.0.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+mater-0.3.0.dist-info/METADATA,sha256=-YbzeS2hNRjWAG4aaU4loOvNJLPYPVuSwPSEOVJe7jM,1337
+mater-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mater-0.3.0.dist-info/RECORD,,
