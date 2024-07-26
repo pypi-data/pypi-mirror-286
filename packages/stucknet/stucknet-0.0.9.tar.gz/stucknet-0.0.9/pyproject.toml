@@ -1,0 +1,30 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools]
+package-data = { "sample" = ['*.dat'] }
+
+[project]
+name = 'stucknet'
+version = '0.0.9'
+readme = 'README.md'
+
+dependencies = [] # independent package!
+
+authors = [
+    { name = 'Yehuda Elyasaf', email = '30yehuda26@gmail.com' },
+]
+maintainers = [
+    { name = 'Yehuda Elyasaf', email = '30yehuda26@gmail.com' },
+]
+
+license = { file = 'LICESNSE' }
+
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+]
+
+[project.urls]
+Homepage = 'https://github.com/YehudaElyasaf/stucknet'
