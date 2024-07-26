@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mcb-test-package
+Version: 0.0.1
+Summary: A sample test package
+Home-page: https://github.com/gituser/mcb-test-tackage
+Author: Bhagyaraj
+Author-email: mc_raj4u@yahoo.co.in
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<HEADER>
+    <H1>"This is Bhagyaraj"</H1>
+</HEADER>
+<div>
+<body>This is test package</body>
+</div>
+
+
