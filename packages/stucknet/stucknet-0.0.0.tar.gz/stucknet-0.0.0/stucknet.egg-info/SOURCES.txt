@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+stucknet/stucknet.py
+stucknet.egg-info/PKG-INFO
+stucknet.egg-info/SOURCES.txt
+stucknet.egg-info/dependency_links.txt
+stucknet.egg-info/top_level.txt
