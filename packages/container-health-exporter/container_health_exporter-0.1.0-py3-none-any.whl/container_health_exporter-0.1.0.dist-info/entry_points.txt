@@ -1,0 +1,2 @@
+[console_scripts]
+container_health_exporter = main:main
