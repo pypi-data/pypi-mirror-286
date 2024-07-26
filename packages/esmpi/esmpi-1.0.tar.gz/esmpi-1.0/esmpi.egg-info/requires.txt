@@ -1,0 +1,6 @@
+torch
+mpi4py
+
+[full]
+stable-baselines3
+cmaes
