@@ -1,0 +1,16 @@
+[package]
+name = "llguidance_parser"
+version = "0.1.5"
+edition = "2021"
+
+[dependencies]
+toktrie = { git = "https://github.com/microsoft/toktrie", rev = "ae506a08efc9d41928155d7e447011965e172aa6" }
+derivre = { git = "https://github.com/microsoft/derivre", rev = "e83d8fb3cd92d2c6dd0437e98bfa9b64d8d8284b" }
+serde = { version = "1.0.192", features = ["derive"] }
+serde_json = "1.0.108"
+anyhow = "1.0.75"
+rustc-hash = "2.0.0"
+
+[features]
+default = []
+logging = []
