@@ -1,0 +1,10 @@
+rcsbapi/__init__.py,sha256=3eK04BZC_PyXaLP99dHd9p0r-DrgxsmHWqrZjSEe8Go,210
+rcsbapi/data/__init__.py,sha256=tFGMwLHaK135r2dzzV67VRFnBocjkjgt7SX_uRDsimg,165
+rcsbapi/data/query.py,sha256=tx2O_PSlypj18LT4MR7YsipBQP06pZsxSAtOtgOyRV4,5002
+rcsbapi/data/schema.py,sha256=14_tJYtav13Z-hki4MeR3HIQ75Ntqh6p9asQLaF73cc,28436
+rcsbapi/resources/data_api_schema.json,sha256=IvL7hB6--kzk2Uy6vzejsTKc6xvmSjapzIr2E4Zjs8E,1771007
+rcsb_api-0.2.0.dist-info/LICENSE,sha256=jFdfp4-j1dWjHcGjkMswp9D4sXxRsjz01ixAIQRo3OY,1065
+rcsb_api-0.2.0.dist-info/METADATA,sha256=4i8pvPw_2zhESkKXNLg8BmkmAZJn15nw7NLQT_f6FNY,20191
+rcsb_api-0.2.0.dist-info/WHEEL,sha256=ANi2y8tYx-p70pj7MSdqQMJNFJEUgAOyfPpHzqz0w84,109
+rcsb_api-0.2.0.dist-info/top_level.txt,sha256=jcE11C-JZ-lfORcm-78iwwnXdiSWltaHWesYk9dzeuE,8
+rcsb_api-0.2.0.dist-info/RECORD,,
