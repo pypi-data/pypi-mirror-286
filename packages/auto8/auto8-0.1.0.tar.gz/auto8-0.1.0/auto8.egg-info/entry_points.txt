@@ -1,0 +1,3 @@
+[console_scripts]
+auto8 = auto8.main:main
+
