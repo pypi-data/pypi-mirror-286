@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: guardpy
+Version: 0.0.0
+Summary: A Python Package for Geospatial Uncertainty-Aware Road-Width Detection (GAURD)
+Home-page: https://github.com/rmsolgi/GUARDpy.git
+Author: Ryan Solgi
+Author-email: ryan.solgi@gmail.com
+Maintainer: Ryan Solgi
+Keywords: Road Width,Bayesian,Classificatoin,Emergency Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GUARDpy
+Geospatial Uncertainty-Aware Road-Width Detection

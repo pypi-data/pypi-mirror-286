@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/guardpy/__init__.py
+src/guardpy.egg-info/PKG-INFO
+src/guardpy.egg-info/SOURCES.txt
+src/guardpy.egg-info/dependency_links.txt
+src/guardpy.egg-info/top_level.txt
