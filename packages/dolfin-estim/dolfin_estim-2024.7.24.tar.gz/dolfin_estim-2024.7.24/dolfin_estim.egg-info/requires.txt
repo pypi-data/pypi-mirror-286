@@ -1,0 +1,8 @@
+meshio
+numpy
+scipy
+fire
+ufl
+dolfin
+dolfin_mech
+dolfin_warp
