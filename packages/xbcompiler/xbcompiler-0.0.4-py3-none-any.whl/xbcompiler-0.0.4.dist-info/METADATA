@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: xbcompiler
+Version: 0.0.4
+Summary: Xilia Base Compiler (XLA => LUA)
+Author-email: Artemii Kravchuk <artemiykra@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+
+# XB Compiler
+
+Xilia Base (XB) Compiler - Python implementation for XLA-compatible level
+compiler.
+
+![Flowchart for XBCompiler](https://jpcdn.it/img/4129be07b56ec7b7fb121809cb091d79.png)
+
+## ToDo list
+
+- [ ] Add testing
