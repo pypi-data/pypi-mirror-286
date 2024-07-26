@@ -1,0 +1,13 @@
+dialtone/__init__.py,sha256=LZQeQehj9X86vmW7dZW3NxkTGkxAOgqwAQvcYQGBfqE,176
+dialtone/config.py,sha256=9ifJ_INtk6KFtslhtUAZ5-98yd8PQAD29OyM6j6xWsA,101
+dialtone/dialtone/async_dialtone.py,sha256=VesvxltIhLnIMklASmNRdAMMtkDmKqZ4E5uKVpOAs2I,5266
+dialtone/dialtone/dialtone.py,sha256=HrWaxtegrw1S4lJ8leErIZRWEoZiVlQJKSQju1EiJvY,5215
+dialtone/dialtone/dialtone_base.py,sha256=RpVng0lYSZuQlcmboSr3NA2_0tBHbeWqBxvavvLCdTg,2476
+dialtone/errors.py,sha256=O0LD_QxoXUvPAgFthGoKp3s11T66WuAc6WyRIuoDxv0,3759
+dialtone/types.py,sha256=5dsYNlC8YJFF4VGC7ErmqkQEKX8uBlHUU4aP-E_TAtU,11247
+dialtone/utils/api.py,sha256=J1fx7jlJJ_e0NfcXBt4D_G_KUO81ctn6p0HUkilJzEo,7863
+dialtone/utils/prepare_payload.py,sha256=AshG4U08kBsIcHSa_2a47PzI4iIEcDVTA32LCBbyKQ8,2558
+dialtone-0.0.31.dist-info/LICENSE,sha256=nkjYLrQQyuCDGqYFA_mS0I_bQQOSP7DtLiPKoqtno5k,1068
+dialtone-0.0.31.dist-info/METADATA,sha256=TeCpCnam2kZsVisv5N70_lO_04eAOPdQt2AXxNw2wTs,2605
+dialtone-0.0.31.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dialtone-0.0.31.dist-info/RECORD,,
