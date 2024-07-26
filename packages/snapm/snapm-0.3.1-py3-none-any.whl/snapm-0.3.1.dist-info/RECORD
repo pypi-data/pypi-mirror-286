@@ -1,0 +1,16 @@
+snapm/__init__.py,sha256=3fmQndSkAlWmNbE80HA3AIkN_K40ddM9iScOa73HrPk,720
+snapm/_snapm.py,sha256=3NW_u0-lb1G-mXRqO_FGZG2e7kdKJvnU-x1l2_dtJeo,35918
+snapm/command.py,sha256=04KKpQ97m2H_8Z2Ep-JIIxDbqiAwEZxGx2yBNtQ40Lg,40528
+snapm/report.py,sha256=T0i7WFQg_Z7MNvhGWckbaeiJnPJHi3nP78oaBeyvfMo,43133
+snapm/manager/__init__.py,sha256=to8ljL5ul46ptUyg6NbffKrbdWDmMnEpHrD8Q449rl8,707
+snapm/manager/_manager.py,sha256=wh6_g7DdKQFCNCEDWdOlZdCLIDfce9F4M5EuLw1qzKw,36616
+snapm/manager/boot.py,sha256=VgrELhvsOq6rAK4np_ag7ov3_KwJKT4pEIqnAOYaNGk,12230
+snapm/manager/plugins/__init__.py,sha256=_wn1OmW9Sm8R5uHorEch-eVVSB2EdhDfxqnVZ_2wreY,710
+snapm/manager/plugins/_plugin.py,sha256=_VOuckuJPVicyq9b5J8RBqmaDTaRofNWXt6LaxXaZKg,6884
+snapm/manager/plugins/lvm2.py,sha256=sc7E_7vnRvGtOJ_81xAc7V8U0n2oHmhC8oxYpC-xE8c,30559
+snapm-0.3.1.data/scripts/snapm,sha256=Jpzlle4_1XF0026BnYTWtAdV277Mo6u82zmBIrBUC30,119
+snapm-0.3.1.dist-info/COPYING,sha256=52-80vuXzyAtozAwEyd1TS21xYtbS-vTqKdJOT52A9E,17995
+snapm-0.3.1.dist-info/METADATA,sha256=yY26XD89M0aMXhLaNrXy7pSoiBAO4h-sZnbDrA8E3j8,53181
+snapm-0.3.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+snapm-0.3.1.dist-info/top_level.txt,sha256=3CLN6mJ6EbIBiiQavaJam3GQyhwnWyQw-N7eZsgo4ZQ,6
+snapm-0.3.1.dist-info/RECORD,,
