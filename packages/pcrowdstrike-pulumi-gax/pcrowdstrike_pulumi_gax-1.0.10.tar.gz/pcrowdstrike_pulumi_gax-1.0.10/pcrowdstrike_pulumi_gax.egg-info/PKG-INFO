@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pcrowdstrike-pulumi-gax
+Version: 1.0.10
+Summary: A Pulumi package for creating and managing Crowdstrike resources
+Home-page: https://github.com/gtheodorio/pulumi-crowdstrike
+License: Apache-2.0
+Project-URL: Repository, https://github.com/gtheodorio/pulumi-crowdstrike
+Keywords: pulumi crowdstrike category/infrastructure
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Crowdstrike Resource Provider
+
+The Crowdstrike Resource Provider lets you manage [crowdstrike](https://www.pulumi.com/registry/packages/crowdstrike/) resources.
+
+## Installing
+
+This package is available for several languages/platforms:
+
+### Node.js (JavaScript/TypeScript)
+
+To use from JavaScript or TypeScript in Node.js, install using either `npm`:
+
+```bash
+npm install @gtheocrwd/pulumi-crowdstrike
+```
+
+or `yarn`:
+
+```bash
+yarn add @gtheocrwd/pulumi-crowdstrike
+```
+
+### Python
+
+To use from Python, install using `pip`:
+
+```bash
+pip install pcrowdstrike_pulumi_gax
+```
+
+### Go
+
+To use from Go, use `go get` to grab the latest version of the library:
+
+```bash
+go get github.com/gtheodorio/pulumi-crowdstrike/sdk/go/...
+```
+
+### .NET
+
+To use from .NET, install using `dotnet add package`:
+
+```bash
+dotnet add package CrowdStrike.Crowdstrike
+```
+
+## Reference
+
+For detailed reference documentation, please visit [the Pulumi registry](https://www.pulumi.com/registry/packages/crowdstrike/api-docs/).
+
+
