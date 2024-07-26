@@ -1,0 +1,2 @@
+[console_scripts]
+hk = hakuin.hk:main

@@ -1,0 +1,6 @@
+{% extends 'base.jinja' %}
+
+
+{% block select %}
+SELECT  bool_and({{ column | sql_is_ascii }})
+{% endblock %}
