@@ -1,0 +1,15 @@
+icloudservice/__init__.py,sha256=5jqz_uVveASKIp9m68bj3CAVmrDLAQn6feqxst7VPT8,44
+icloudservice/icloudservice.py,sha256=r-JhiChIty3E-8sRJTuS19aL6GHlMguquETd9vSyAjw,1270
+icloudservice/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icloudservice/src/provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icloudservice/src/provider/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icloudservice/src/provider/aws/aws_provider.py,sha256=RL6rJX7o-dZ3bJvS05uwTGV7u38umnpzpfC3yG5Z64o,641
+icloudservice/src/provider/azure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icloudservice/src/provider/azure/azure_provider.py,sha256=U6ZgHQ3onCJlyTpzEqofoweXD9WdbvGdm2SHfNv5Kw0,817
+icloudservice/src/service/aws/aws_services.py,sha256=MuF1ZiBkVM7Mr30MUp71J8bb18PD14vSOFC9Q5nH3bI,3449
+icloudservice/src/service/azure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icloudservice/src/service/azure/azure_services.py,sha256=SKglPZCanr4r0Bku7nvoTDHt4tirElOCtIiGFtQ9_3s,3930
+icloudservice-0.6.dist-info/METADATA,sha256=q8W4HTdHNWLFye40yPVVf3tO4GYtf9pwt3-uzP6zQBg,1352
+icloudservice-0.6.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+icloudservice-0.6.dist-info/top_level.txt,sha256=Ua3XITwwq3x4Ot9yLFcg8bCvVb55yvuv2nLgwAC092k,14
+icloudservice-0.6.dist-info/RECORD,,
