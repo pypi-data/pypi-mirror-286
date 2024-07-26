@@ -1,0 +1,13 @@
+iam_sdk/__init__.py,sha256=G-RA06bnJZ9YUNGPGmxTwl8bGTss3j0HGz2u1ifv17k,748
+iam_sdk/api.py,sha256=7aUm8q78VA5WggZUDGBeJrThpwxrPHIso6PJmZvNQA8,11881
+iam_sdk/config.py,sha256=jypqv1TASubfnPXWUl04CUQM3qDcssCdoGmbBwMDWU4,776
+iam_sdk/context.py,sha256=JVdQDXZhASjQ4EUQsMvlwpEemKvx7P7PvGio6LQBLqI,3079
+iam_sdk/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iam_sdk/domain/client_repository.py,sha256=VyU2Ngf1tpK4P_-QavHEfuxyEnkWi-8iM95wKUB_4pA,746
+iam_sdk/exceptions.py,sha256=5YQP5JViKY0V2bU4x5zcHjKqet77r0LLz2ifudwaV9A,1069
+iam_sdk/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iam_sdk/services/iam.py,sha256=gmVgwoHltO61GsJ3zDhDHyQJW49qUi9IBpCHHuCRfww,29319
+iam_sdk_python-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+iam_sdk_python-0.3.0.dist-info/METADATA,sha256=1aPH10deGzdCVWWyTf14e0FmZcekx6EpSj14boPydVI,992
+iam_sdk_python-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+iam_sdk_python-0.3.0.dist-info/RECORD,,
