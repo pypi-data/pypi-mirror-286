@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: appboot
+Version: 0.1.5
+Summary: App Boot is a FastAPI project template, Designed to provide a Django-like structure and development experience.
+Author: liyatao
+Author-email: liyatao001@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: pydantic-settings
+Requires-Dist: fastapi (>=0.89.0)
+Requires-Dist: jinja2 (>=2.11.2)
+Requires-Dist: pydantic (>=1.10.6)
+Requires-Dist: pydantic-settings (>=2.0.0,<3.0.0) ; extra == "pydantic-settings"
+Requires-Dist: python-dotenv (>=0.10.4)
+Requires-Dist: sqlalchemy[asyncio] (>=2.0.0,<3.0.0)
+Requires-Dist: typer (>=0.8.0)
+Requires-Dist: typing_extensions (>=4.2.0)
+Requires-Dist: uvicorn[standard] (>=0.21.0)
+Description-Content-Type: text/markdown
+
+# App Boot
+App Boot a FastAPI project template, Designed to provide a Django-like structure and development experience.
+
+# Installation
+Require Python 3.9+
+```shell
+pip3 install appboot
+```
+
+# Quick start
+Startup up a new project
+```shell
+# Create the project directory
+mkdir mysite
+cd mysite
+
+# Create a virtual environment to isolate our package dependencies locally
+python3 -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
+
+# Install appboot and aiosqlite into the virtual environment
+pip3 install appboot aiosqlite
+
+# Set up a new project with a single application
+appboot startproject mysite .  # Note the trailing '.' character
+
+# start runserver Application running on http://127.0.0.1:8000
+python3 manage.py runserver
+```
+Startup up a new app
+```shell
+python3 manage.py startapp polls
+```
+# Try out examples
+Go to [Examples](./examples)
+
