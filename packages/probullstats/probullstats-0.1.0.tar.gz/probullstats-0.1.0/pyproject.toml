@@ -1,0 +1,39 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "probullstats"
+version = "0.1.0"
+description = ""
+authors = ["Guy Hoozdis <GuyHoozdis@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "probullstats", from = "src"}]
+
+[tool.poetry.scripts]
+probullstats = "probullstats.console:cli"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+argparse = "^1.4.0"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "*"
+ipdb = "^0.13.13"
+
+[tool.poetry.group.test.dependencies]
+testtools = "^2.7.2"
+coverage = {extras = ["toml"], version = "^7.6.0"}
+mypy = "^1.11.0"
+ruff = "^0.5.4"
+behave = "^1.2.6"
+
+[tool.poetry.group.nox.dependencies]
+nox = "^2024.4.15"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.4.7"
