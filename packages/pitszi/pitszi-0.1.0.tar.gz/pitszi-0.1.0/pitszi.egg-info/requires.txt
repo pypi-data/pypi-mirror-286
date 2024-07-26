@@ -1,0 +1,10 @@
+numpy>=1.6
+scipy
+astropy>=1.2.1
+matplotlib
+emcee
+pandas
+seaborn
+dill
+pathos
+minot
