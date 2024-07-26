@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: auto8
+Version: 0.1.0
+Summary: A tool to automatically fix flake8 issues
+Home-page: https://github.com/naserjamal/auto8
+Author: Naser Jamal
+Author-email: naser.dll@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: flake8
+
+# auto8
+
+auto8 is a tool that automatically fixes flake8 issues in your Python code.
+
+## Installation
+
+```python
+pip install auto8
+```
+
+## Usage
+
+Run `auto8` in your project directory:
+
+```python
+auto8
+```
+
+This will run flake8 and attempt to fix the issues it finds.
+
+## Note
+
+Automatically fixing code can sometimes lead to unexpected results. Always review the changes and run tests after using auto8.
+
+requirements.txt:
+
+flake8==3.9.2 or above
+

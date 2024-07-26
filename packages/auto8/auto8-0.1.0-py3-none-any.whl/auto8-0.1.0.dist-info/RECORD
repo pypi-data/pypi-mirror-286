@@ -1,0 +1,14 @@
+auto8/__init__.py,sha256=MigXIT7A1M9YZuH2MyjKReSziFwzbZX2boVYsLosR6s,22
+auto8/main.py,sha256=3q8a9mElXfpUvCwYsF9FDfz0hzSihaJzXEqpQhT5Moo,2732
+auto8/fixers/__init__.py,sha256=bga0O2AbneCXQ9nQStMgMYi9m7Jdaha37dWXqtzsEPc,245
+auto8/fixers/e128_continuation_line_under_indented.py,sha256=_jSPj_KI_cRGxUcatKlq3iot2kT6NkRWx98awSXXCj4,800
+auto8/fixers/e501_line_too_long.py,sha256=byf2jHPi9KWMlTDa7WBEwwSB0-v0i_MyZjTaCgt3wt8,2910
+auto8/fixers/e502_redundant_backslash.py,sha256=rsoX87KYU7hR-dFvOHhYuovg0BMouKMaIozUJO9ORdc,801
+auto8/fixers/w291_trailing_whitespace.py,sha256=n0DgG0XyuVMmZepArdZ-TFex4LkpL2E2Kg-XYoNcY2A,563
+auto8/fixers/w292_no_newline_at_eof.py,sha256=dgtgg6Tj5rNTcBLcSFultKd55shA6Ys_gXZNuCMMpno,216
+auto8/fixers/w293_blank_line_whitespace.py,sha256=E8JuNNk5klOSFPh2DtTVOL4TPlCCnv7paEYmardI_HM,418
+auto8-0.1.0.dist-info/METADATA,sha256=0-ysbm_cxlL-PsoR5IwCI1qNU3w83zzxqYxZwIeX894,939
+auto8-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+auto8-0.1.0.dist-info/entry_points.txt,sha256=BsbmAp8ev0BO0orKAWpUmLevnTJfijhzwyBMTM4dhPw,43
+auto8-0.1.0.dist-info/top_level.txt,sha256=e8LMoor9JSpHbgvCgEshXgSoqQ1sEYI_y2EzAnv2ZX0,6
+auto8-0.1.0.dist-info/RECORD,,
