@@ -1,0 +1,12 @@
+file_processor_sdk/__init__.py,sha256=kGcMGNHbUNMO3Ki2bGa6X0F298Lrpe2eQLTj1E_Cmlk,112
+file_processor_sdk/process_doc.py,sha256=pMa2_iw4GBKgNSon9qwuFnKKpmQsHqqm5qXOC873u5w,433
+file_processor_sdk/process_docx.py,sha256=8JcskSxM3tLFfNpc_w2Cl9FI9YUKBrSQTz-yXxktpng,208
+file_processor_sdk/process_file.py,sha256=4Ja4Q6D7ccoVwp018DYkeebwnRskkwovywjl2EAQXg8,931
+file_processor_sdk/process_pdf.py,sha256=Tao-px2XFEwFgBB0M0ySWC-kyejea3TZdoqUay9VvYc,285
+file_processor_sdk/process_txt.py,sha256=asKRLcPgpzvJhLyUoaCa8MWVWt3ttafzUE1F7vRiqeo,162
+file_processor_sdk/save_to_txt.py,sha256=paA6Gmep4-FpdTA2h-qsfIpbFtMi9hNc2CpPcWgOaug,170
+file_processor_sdk-0.1.0.dist-info/METADATA,sha256=NGmDv00_qmkqHmP54KlXcgv288NNG0jwuyeh6GvArGg,485
+file_processor_sdk-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+file_processor_sdk-0.1.0.dist-info/entry_points.txt,sha256=GHRbGD5O-cmr5JK9UMzHgAfQeVBE_1aCyga7dr7MDVM,67
+file_processor_sdk-0.1.0.dist-info/top_level.txt,sha256=IH4QwZV_4gRE5qLrsPemCS1JYWdieKq0QzN_u3thiUU,19
+file_processor_sdk-0.1.0.dist-info/RECORD,,
