@@ -1,0 +1,6 @@
+
+[all]
+PyGithub~=2.3
+
+[github]
+PyGithub~=2.3

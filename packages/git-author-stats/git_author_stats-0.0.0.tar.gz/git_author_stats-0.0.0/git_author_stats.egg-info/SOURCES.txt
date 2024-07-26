@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+git_author_stats/__init__.py
+git_author_stats/__main__.py
+git_author_stats/_github.py
+git_author_stats/_stats.py
+git_author_stats/py.typed
+git_author_stats.egg-info/PKG-INFO
+git_author_stats.egg-info/SOURCES.txt
+git_author_stats.egg-info/dependency_links.txt
+git_author_stats.egg-info/entry_points.txt
+git_author_stats.egg-info/requires.txt
+git_author_stats.egg-info/top_level.txt
+tests/test_github.py
+tests/test_stats.py
