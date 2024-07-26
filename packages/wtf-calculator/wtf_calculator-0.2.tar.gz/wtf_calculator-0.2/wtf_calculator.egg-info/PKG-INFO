@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wtf_calculator
+Version: 0.2
+Summary: Une librairie pour faire des calculs complètement faux.
+Home-page: https://github.com/votre-utilisateur/wtf_calculator
+Author: Zmeypp
+Author-email: lmayel@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+License-File: LICENSE
