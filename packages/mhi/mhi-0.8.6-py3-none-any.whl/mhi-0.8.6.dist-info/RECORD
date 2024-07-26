@@ -1,0 +1,12 @@
+mhi/__init__.py,sha256=HH6FziVqFsdaKK87O6Hm2YNb2Gm7_rqy5Ecu1rRzw8U,30
+mhi/main.py,sha256=HZK3GYBiKXkiEt0uJwf_ZmXiKRG5CjPWBq5oGdRSLz0,34736
+mhi/readlisp.py,sha256=DiU3g-E6EzegNiEcbacNGOW2QE1-lnIWZE6tn4t4ZBg,4235
+mhi/sexpr.py,sha256=_eX4-_O6siBU5ZMP7KYzfFwXNByO8_80aPsHDq4QgNQ,4471
+mhi/mklinks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mhi/mklinks/__main__.py,sha256=-lpIJi4EYQrmbIa04qI7xFKxvrLJUaFmZ-kYeyUrtqE,1083
+mhi-0.8.6.dist-info/LICENSE,sha256=VFq6ljAzcpMCBiLF-acIFiM6kBx3i0N7GoO35wQdKq0,35416
+mhi-0.8.6.dist-info/METADATA,sha256=n3kXfVFq9USLxNY2OIUONL6Ao7oqursW0ilYvueXF8M,44063
+mhi-0.8.6.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+mhi-0.8.6.dist-info/entry_points.txt,sha256=vquW95rR20XgjtzYpQateBm96gxK3ofIYjMREY0daFo,51
+mhi-0.8.6.dist-info/top_level.txt,sha256=K3uum2bvGx0puBc2JFddiJZoY9hBCdmM9bCy5Qg9-aw,4
+mhi-0.8.6.dist-info/RECORD,,
