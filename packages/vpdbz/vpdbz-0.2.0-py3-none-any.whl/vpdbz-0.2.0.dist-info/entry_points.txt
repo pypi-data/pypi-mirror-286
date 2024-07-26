@@ -1,0 +1,3 @@
+[console_scripts]
+vpdbz=vpdbz.main:__main__
+
