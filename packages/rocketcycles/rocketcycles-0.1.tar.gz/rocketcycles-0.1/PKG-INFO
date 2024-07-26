@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: rocketcycles
+Version: 0.1
+Summary: Python package for analysis and sizing of staged combustion rocket engines
+Home-page: https://github.com/janstruzinski/RocketCycles.git
+Author: Jan Struzinski
+License: MIT
+License-File: LICENSE
