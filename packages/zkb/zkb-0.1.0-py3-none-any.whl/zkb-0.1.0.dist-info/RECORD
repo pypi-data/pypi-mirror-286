@@ -1,0 +1,9 @@
+zkb/__init__.py,sha256=_jZEjp3z-ya08l4sXRrFYI4IpKSYSR_uHBFQim-8Qnc,40
+zkb/cli.py,sha256=cAaT6S5HvQCfFzhrwsUIAI4dFmLhzR-YfgnLB0adXd0,2286
+zkb/db.py,sha256=6nYBaDwnrwrcg3TtANXFTtH7dNDqO1S0tOaiLh_GGIQ,3348
+zkb/note.py,sha256=A1pDi2KyOYKhwiYSxnDULO3uxlFJBfArqngPaci7uJk,2196
+zkb/zkb.py,sha256=Gysl_oKZhHsHzpK209zv_R9ipbTe9JNBvDHGQsiEZpA,9283
+zkb-0.1.0.dist-info/METADATA,sha256=D0WObBgd_7oyV1iMSa0-Gtx6iVLl6TpZDTQmGAEAXsU,6225
+zkb-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+zkb-0.1.0.dist-info/licenses/LICENSE,sha256=5-7mFoyiCnpiWBREqLWyZ3TFD5NzD-9kkl-qjuqxvxE,1072
+zkb-0.1.0.dist-info/RECORD,,
