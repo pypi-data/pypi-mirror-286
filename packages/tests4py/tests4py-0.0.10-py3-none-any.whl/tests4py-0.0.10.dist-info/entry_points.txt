@@ -1,0 +1,2 @@
+[console_scripts]
+t4p = tests4py.cli:main
