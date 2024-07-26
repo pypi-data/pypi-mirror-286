@@ -1,0 +1,2 @@
+[console_scripts]
+get_answer = hqs_python_template:get_answer
