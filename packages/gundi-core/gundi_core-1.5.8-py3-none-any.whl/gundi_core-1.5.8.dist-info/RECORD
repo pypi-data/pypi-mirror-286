@@ -1,0 +1,14 @@
+gundi_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gundi_core/events/__init__.py,sha256=oiBELqWDlugCInelTOCIpTXgP3xLedio988EQQnO0dM,100
+gundi_core/events/core.py,sha256=EmX4fRift6lW3X5xLqGz2XRo3XoDFh9rqkpEdjKLoDk,1197
+gundi_core/events/dispatchers.py,sha256=JlhaQgmEx8vi42u6bYmPTNy6DfBDNkhIXMHHmZfo3VM,497
+gundi_core/events/gundi_api.py,sha256=rDrLR-vtZYJ-eFJZX3hTRioiZSUgkmOJLirZ0OVMQlg,484
+gundi_core/events/integrations.py,sha256=rckuDQPSDf9hxHgkXE_Mt-zbBaUT7M6BTv6fR2o0H14,4143
+gundi_core/events/transformers.py,sha256=CMjob5I8mM4PbCNZotelRFZYchmpZip_Wfs2HtuwGQ8,490
+gundi_core/schemas/__init__.py,sha256=vqejll2E9RqziU20KGMogw7K_u1xEpiTUpou9iKICaU,114
+gundi_core/schemas/v1.py,sha256=aJnIj5rCfpTzYmOp3zib6XfpUDFaiqKMl5uhFsgDUHA,13883
+gundi_core/schemas/v2.py,sha256=BS6X_dWM3iFVM2-i2CBTSiAoxocxs8GNVGZ1jTIqaUY,30099
+gundi_core-1.5.8.dist-info/LICENSE,sha256=EJ4rKolu3oTHPzwIz6BqjK6dhxnYZZ2AtkGCT7rPwaA,11352
+gundi_core-1.5.8.dist-info/METADATA,sha256=m653mnrAL4IOa-ouvy7VO1RITod7A8-h-dyNUE18p2I,623
+gundi_core-1.5.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gundi_core-1.5.8.dist-info/RECORD,,
