@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dd-azure-worker-extension
+Version: 0.1.0
+Summary: Python Worker Extension for starting Datadog Tracer and a top level span to enable auto-instrumenting of Azure Function Apps
+Author: Datadog
+License: License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: azure-functions <2.0.0,>=1.7.0
+Requires-Dist: ddtrace
+
+# Python Worker Tracer Extension
+
+This extension imports the Datadog Python Tracer, automatically patches all available modules, and creates a root span for an Azure Function.
+
+## Usage
+
+1. pip install the package 
+
+    - `pip install dd-azure-worker-extension`
+
+2. import it into the code of the function app
+
+    - `import dd-azure-worker-extension`
+
+3. Add the following environment variable to the Azure Function App
+    - `PYTHON_ENABLE_WORKER_EXTENSIONS=1`
