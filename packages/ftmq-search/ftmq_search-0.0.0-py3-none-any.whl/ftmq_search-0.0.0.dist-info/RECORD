@@ -1,0 +1,14 @@
+ftmq_search/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+ftmq_search/cli.py,sha256=yyXnCwRvv63OQ_XlxzYMNT0ahuTVYjldpsgPq-fJ__Q,2987
+ftmq_search/exceptions.py,sha256=gzrLLPvNzndCGZbZ943jVCW9jBNo-0oglhiWrTQOAk4,46
+ftmq_search/logging.py,sha256=-3euCNaacYwckL6oSlvr-iLKvBvwNrXiLHU3V2HiQSc,3445
+ftmq_search/model.py,sha256=wQBc2phfmP7lrXoR4kFaI6PDTNiI_E4m1niFi18dFWw,2766
+ftmq_search/settings.py,sha256=w9OxW8fRZ_LbV2iNH55Hz-zQK0wfS-jwhleJONnjjqk,414
+ftmq_search/store/__init__.py,sha256=VNwUzQB54LipYGGGmqRLtxQUxi_V6-Ec5g5_-HJhEtA,993
+ftmq_search/store/base.py,sha256=8P9pqUYG2b_8E3OPE_CirrCNy7oSMv-2E9f9ziv89d4,1442
+ftmq_search/store/sqlite.py,sha256=X1I-Lb5Yvthb8x1gI1hQaTJ98Ytsl1sRSNO77bURS_0,6755
+ftmq_search-0.0.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ftmq_search-0.0.0.dist-info/METADATA,sha256=HomLyfEPa3dpz5CYPWYwW1rO0u4HB1bMblgUzNss7UA,990
+ftmq_search-0.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ftmq_search-0.0.0.dist-info/entry_points.txt,sha256=kyMbb_DDe_ReIIcAhoXi0PmgHlX_J5h9kcApfqwJZpg,45
+ftmq_search-0.0.0.dist-info/RECORD,,
