@@ -1,0 +1,11 @@
+README.md
+setup.py
+FiinQuant/FiinIndicator.py
+FiinQuant/FiinIndicator.pyi
+FiinQuant/FiinSession.py
+FiinQuant/FiinSession.pyi
+FiinQuant.egg-info/PKG-INFO
+FiinQuant.egg-info/SOURCES.txt
+FiinQuant.egg-info/dependency_links.txt
+FiinQuant.egg-info/requires.txt
+FiinQuant.egg-info/top_level.txt
