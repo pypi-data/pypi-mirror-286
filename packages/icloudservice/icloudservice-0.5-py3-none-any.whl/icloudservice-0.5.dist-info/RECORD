@@ -1,0 +1,9 @@
+provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+provider/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+provider/aws/aws_provider.py,sha256=RL6rJX7o-dZ3bJvS05uwTGV7u38umnpzpfC3yG5Z64o,641
+provider/azure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+provider/azure/azure_provider.py,sha256=U6ZgHQ3onCJlyTpzEqofoweXD9WdbvGdm2SHfNv5Kw0,817
+icloudservice-0.5.dist-info/METADATA,sha256=umWWUmdEkMT2IL1jT3sjT8aMlLrYu4aW-iuY_xJ7UpA,1352
+icloudservice-0.5.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+icloudservice-0.5.dist-info/top_level.txt,sha256=vV-BCB99MJ8LXIBea6wnRaCtb16DLBR7Y1Oi3KDUd94,9
+icloudservice-0.5.dist-info/RECORD,,
