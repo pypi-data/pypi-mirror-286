@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/clustering.py
+src/makima.py
+src/pade.py
+src/rvp.py
+src/stabilization.py
+src/automatic_rvp.egg-info/PKG-INFO
+src/automatic_rvp.egg-info/SOURCES.txt
+src/automatic_rvp.egg-info/dependency_links.txt
+src/automatic_rvp.egg-info/not-zip-safe
+src/automatic_rvp.egg-info/requires.txt
+src/automatic_rvp.egg-info/top_level.txt
