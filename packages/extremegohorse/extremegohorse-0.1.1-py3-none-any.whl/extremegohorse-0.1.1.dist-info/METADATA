@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: extremegohorse
+Version: 0.1.1
+Summary: I think, therefore I am not XGH
+Home-page: UNKNOWN
+Author: Shane Busenitz
+Author-email: shanebusenitz@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: tqdm
+
+# XGH
+
+If you aren't living on the edge, you aren't living.
+
+## Installation
+
+```bash
+pip install extremegohorse
+```
+
+## Usage
+
+Don't think, just do
+
