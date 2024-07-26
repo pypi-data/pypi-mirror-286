@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+suave_deletes/__init__.py
+suave_deletes/mixins.py
+suave_deletes/queries.py
+suave_deletes/sessions.py
+suave_deletes.egg-info/PKG-INFO
+suave_deletes.egg-info/SOURCES.txt
+suave_deletes.egg-info/dependency_links.txt
+suave_deletes.egg-info/requires.txt
+suave_deletes.egg-info/top_level.txt
+tests/__init__.py
+tests/test_suave_deletes.py
