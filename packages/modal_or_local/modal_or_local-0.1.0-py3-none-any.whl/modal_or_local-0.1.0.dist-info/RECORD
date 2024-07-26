@@ -1,0 +1,11 @@
+modal_or_local-0.1.0.dist-info/METADATA,sha256=ZuvgaCHf1Ih5u7wiCFEKv6Nx4e5pEgf-GUYqhaVpEyY,5986
+modal_or_local-0.1.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+modal_or_local-0.1.0.dist-info/licenses/LICENSE,sha256=o29enGbFMuKPMFtrVQgJWiaaAaJOMgxTXVU2ju5VX7w,1070
+modal_or_local/__init__.py,sha256=7UXKoGKYdopSkrvm2_JHmI889ujtFrkGF_jze4_G5HE,265
+modal_or_local/logging_config.py,sha256=ExZv8LJpBfc1SwGpuDYGNAY--MEzbnx_KAIoHpOR880,1342
+modal_or_local/logs/app.log,sha256=xJ0-vF2makPsMDxFlev0fz7OnDEkxRbdkeA7JL78k5U,28038
+modal_or_local/modal_image_prep.py,sha256=227W6i3bjnEv_V7taURO_jOFOjWHANwIRJlKj_pqJTY,1304
+modal_or_local/modal_or_local.py,sha256=NcNV2U36gBlZCS7DkRfNFWxgWXclKM1_g_lCq4rgR1U,22380
+modal_or_local/modal_or_local_copy.py,sha256=Cc2iS7dM4RSb1WBvOR5scHyAKOQFgnPpljmEhf023JU,5446
+modal_or_local/modal_or_local_dir.py,sha256=WAKzd43OzBEh3pc91MYbwdC1D9ymyfuUBh6-irjYhFI,12901
+modal_or_local-0.1.0.dist-info/RECORD,,

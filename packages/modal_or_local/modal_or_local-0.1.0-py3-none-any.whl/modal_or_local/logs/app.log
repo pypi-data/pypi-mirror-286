@@ -1,0 +1,372 @@
+2024-07-09 21:23:38,343:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-YtuSvD69ptQVi8eOANpuNa failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:23:38,344:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-YtuSvD69ptQVi8eOANpuNa failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:23:38,345:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-YtuSvD69ptQVi8eOANpuNa failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:23:38,346:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-YtuSvD69ptQVi8eOANpuNa failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:23:38,346:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-YtuSvD69ptQVi8eOANpuNa failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:23:38,347:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-YtuSvD69ptQVi8eOANpuNa failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:23:38,349:ERROR - Exception when resolving Function(test_write_to_and_read_file_from_volume) - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-YtuSvD69ptQVi8eOANpuNa failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:23:38,349:ERROR - Exception when resolving Function(test_listdir) - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-YtuSvD69ptQVi8eOANpuNa failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:23:38,349:ERROR - Exception when resolving Function(test_create_or_remove_dir) - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-YtuSvD69ptQVi8eOANpuNa failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:32:41,737:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:32:41,742:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:32:41,742:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:32:41,743:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:32:41,743:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:32:41,743:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:32:41,743:ERROR - Exception when resolving Function(test_write_to_and_read_file_from_volume) - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:32:41,744:ERROR - Exception when resolving Function(test_listdir) - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:32:41,744:ERROR - Exception when resolving Function(test_create_or_remove_dir) - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:33:41,637:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:33:41,637:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:33:41,638:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:33:41,638:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 127, in loader
+    await obj._load(obj, self, existing_object_id)
+  File "/usr/local/lib/python3.10/site-packages/modal/image.py", line 441, in _load
+    raise RemoteError(f"Image build for {image_id} failed with the exception:\n{result.exception}")
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:33:41,638:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:33:41,638:ERROR - Exception when resolving Image() - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:33:41,639:ERROR - Exception when resolving Function(test_write_to_and_read_file_from_volume) - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:33:41,639:ERROR - Exception when resolving Function(test_listdir) - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
+2024-07-09 21:33:41,639:ERROR - Exception when resolving Function(test_create_or_remove_dir) - /usr/local/lib/python3.10/site-packages/modal/_resolver.py:153-
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 123, in loader
+    await TaskContext.gather(*[self.load(dep) for dep in obj.deps()])
+  File "/usr/local/lib/python3.10/site-packages/modal/_utils/async_utils.py", line 231, in gather
+    results = await asyncio.gather(*(tc.create_task(coro) for coro in coros))
+  File "/usr/local/lib/python3.10/site-packages/modal/_resolver.py", line 151, in load
+    return await cached_future
+modal.exception.RemoteError: Image build for im-COCDHHFNc5LH2j2cYA0QTR failed with the exception:
+task exited with failure, status = exit status: 1
