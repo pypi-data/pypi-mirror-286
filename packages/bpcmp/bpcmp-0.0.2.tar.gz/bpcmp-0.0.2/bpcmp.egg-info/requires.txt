@@ -1,0 +1,12 @@
+setuptools-scm
+numpy
+adios2
+termcolor
+autopep8
+flake8
+
+[docs]
+sphinx
+sphinx_rtd_theme
+readthedocs-sphinx-search
+sphinx-autobuild
