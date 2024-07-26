@@ -1,0 +1,16 @@
+gladeparser/__init__.py,sha256=HrwSmSVzQ_W3SlDIXcllcIBW1TArfZd0hQoLvVJQ44w,289
+gladeparser/columns.py,sha256=7pep9U9UT7Y4KkwPZFydDPNASbJbZMO1YTONBB6ugl4,4165
+gladeparser/expressions.py,sha256=H4oNeXonTPX4Z7Id7sWIxxcs5680fQ8nVz7Od9Eeg3Q,599
+gladeparser/filters.py,sha256=EGh4j8uqtGoJAWDJbq-Y2xTqUxsO9Docg-xt2tDoyyk,1254
+gladeparser/parser.py,sha256=ye5WSaYhBtTpwIOYPaoqGZmzlMOhzRFIKAodAf1vL18,3469
+gladeparser/utils.py,sha256=Uz8VaPnLsYe9AqewkmIj0p9jS8nnvcHUlBSKBW18EIg,80
+gladeparser/backends/__init__.py,sha256=xhMOaJdlcz7jjQuI46DJCzJgKgVFNR48ObDLdaSz2W8,153
+gladeparser/backends/dataframe.py,sha256=IQ0oHA3oXnKkO8SToaN2Qc5YL6XscGHs3IA536cRqb4,324
+gladeparser/backends/hdf5.py,sha256=6bDwiRZI2CmpVw2cP64JoU32Sdr6OhlgoVXdFqERJ7E,341
+gladeparser/backends/pandas.py,sha256=J_OT-qacQdUWjpx_j4IU5kHA2A7M1uT-43Vs6Wx0fCM,1734
+gladeparser/backends/polars.py,sha256=gIxm7kvbJymYtVnTN9NL0nJed8QKb4BA4dzukiXJDkc,1237
+gladeparser-0.0.0.dist-info/LICENSE,sha256=5s1cpCwwzjwBvwqM-n4-kZWG6mMk59RpOT6iUtW5B5E,1080
+gladeparser-0.0.0.dist-info/METADATA,sha256=5gLTJrDQ3S6P5nPJK7aBFbzKVCr0P45elPkWQJ6m3Vg,3490
+gladeparser-0.0.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+gladeparser-0.0.0.dist-info/top_level.txt,sha256=SfauUiTXBEqmhqXN6vzuMfj0Q5BXIC-pLvI6u-OAPvw,12
+gladeparser-0.0.0.dist-info/RECORD,,
