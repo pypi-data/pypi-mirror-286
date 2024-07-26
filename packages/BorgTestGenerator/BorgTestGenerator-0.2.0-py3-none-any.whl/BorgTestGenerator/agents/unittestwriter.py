@@ -1,0 +1,88 @@
+#coding: utf-8
+
+from .base_agent_writer import BaseAgentWriter, FilesListToUpload
+import uuid
+
+class UnitTestWriter(BaseAgentWriter):
+    def __init__(self, 
+                 assistant_id: str|None = None,
+                 code_language: str = "python"):
+        super().__init__(assistant_id)
+        self.FilesToUpload = FilesListToUpload()
+        self.user_input = ""
+        self.code_language = code_language
+
+    # #####################################
+    # Gestion des instructions utilisateur
+    # #####################################
+    def set_user_input(self,
+                       user_input: str) -> object:
+        self.user_input = user_input
+        return self
+
+    def unset_user_input(self) -> object:
+        self.user_input = ""
+        return self
+    
+    def get_user_input(self) -> str:
+        return self.user_input
+    
+    def user_input_is_empty(self) -> bool:
+        return len(self.user_input) == 0
+    
+    # #####################################
+    # Gestion des fichiers à télécharger
+    # #####################################
+    def add_upload(self, 
+                   filepath: str|list[str]) -> object:
+        if type(filepath) == str:
+            self.FilesToUpload.add_file(filepath)
+        elif type(filepath) == list[str]:
+            self.FilesToUpload.add_files(filepath)
+        return self
+    
+    def del_upload(self, 
+                   filepath: str|list[str]) -> object:
+        if type(filepath) == str:
+            self.FilesToUpload.remove_file(filepath)
+        elif type(filepath) == list[str]:
+            for file in filepath:
+                self.FilesToUpload.remove_file(file)
+        return self
+    
+    def ls_upload(self) -> list[str]:
+        return self.FilesToUpload.list_files()
+    
+    def define_vector_store_name(self,
+                                 vector_store_name: str|None) -> object:
+        def generate_unique_name() -> str:
+            return f"{uuid.uuid4()}"
+        if type(vector_store_name) == None:
+            self.FilesToUpload.set_vector_store_name(generate_unique_name())
+        else:
+            self.FilesToUpload.set_vector_store_name(vector_store_name)
+        
+        if self.FilesToUpload.is_unnamed():
+            self.FilesToUpload.set_vector_store_name(generate_unique_name())
+        
+        return self
+    
+    def generate(self) -> object:
+        def check_values_errors() -> None:
+            if self.user_input_is_empty():
+                raise ValueError("Aucune instruction utilisateur n'a été définie.")
+            if  self.FilesToUpload.is_empty():
+                raise ValueError("Aucun fichier à télécharger n'a été défini.")
+            if self.FilesToUpload.is_unnamed():
+                raise ValueError("Aucun nom de vector store n'a été défini.")
+
+        check_values_errors()
+        self.run_generation(message_from_user=self.user_input,
+                            vector_store_name=self.FilesToUpload.get_vector_store_name(),
+                            files_to_upload=self.FilesToUpload.list_files())
+        self.save_generation(output_filepath=f"test_{self.FilesToUpload.get_vector_store_name()}.py",
+                             language= self.code_language,
+                             force_overwrite=False,
+                             backup_if_exists=True)
+        return self
+        
