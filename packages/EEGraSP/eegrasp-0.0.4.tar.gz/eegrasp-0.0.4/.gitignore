@@ -1,0 +1,16 @@
+__pycache__/
+datasets
+data
+
+# Visual Studio Code
+.vscode/
+.pytest_cache
+
+# Mac OS files
+.DS_Store
+
+# Jupyter notebook files
+.ipynb_checkpoints/
+
+# Dont include distribution files
+dist/
