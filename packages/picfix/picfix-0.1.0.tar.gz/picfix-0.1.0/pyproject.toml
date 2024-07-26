@@ -1,0 +1,74 @@
+[project]
+name = "picfix"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "Hamza Y", email = "letters2hamza@gmail.com" },
+]
+dependencies = [
+    "typer[all]>=0.12.3",
+    "Pillow>=10.4.0",
+    "loguru>=0.7.2",
+    "pydantic>=2.8.2",
+    "pytest>=8.3.2",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+picfix = "picfix.cli:app"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.mypy]
+strict = true
+exclude = "tests/assets/*"
+
+[tool.ruff.format]
+line-ending = "auto"
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "F",
+    "I",
+    "B",
+    "C4",
+    "UP",
+]
+ignore = [
+    "E501",
+    "B008",
+    "C901",
+    "W191",
+    "UP007",
+    "UP035",
+]
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "file"
+path = "src/picfix/__init__.py"
+
+[tool.pdm.build]
+source-includes = [
+    "tests/",
+    "requirements*.txt",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "twine>=5.1.1",
+]
