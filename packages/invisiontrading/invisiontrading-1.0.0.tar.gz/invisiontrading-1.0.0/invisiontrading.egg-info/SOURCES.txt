@@ -1,0 +1,5 @@
+setup.py
+invisiontrading.egg-info/PKG-INFO
+invisiontrading.egg-info/SOURCES.txt
+invisiontrading.egg-info/dependency_links.txt
+invisiontrading.egg-info/top_level.txt
