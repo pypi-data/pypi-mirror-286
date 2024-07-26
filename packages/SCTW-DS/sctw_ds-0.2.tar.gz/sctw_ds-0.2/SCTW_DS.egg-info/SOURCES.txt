@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+NeuralNetwork/Classifier.py
+NeuralNetwork/Layer.py
+NeuralNetwork/__init__.py
+Regression/__init__.py
+SCTW_DS.egg-info/PKG-INFO
+SCTW_DS.egg-info/SOURCES.txt
+SCTW_DS.egg-info/dependency_links.txt
+SCTW_DS.egg-info/requires.txt
+SCTW_DS.egg-info/top_level.txt
+Utils/DataPoint.py
+Utils/__init__.py
+Utils/generateDataset.py
+Utils/progress_bar.py
+Utils/trainTestSplit.py
