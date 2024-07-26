@@ -1,0 +1,13 @@
+interfacy_cli/__init__.py,sha256=_d_4BS1BuN6EOBI7gw9fl9D6PJY1-ZAj7OkIyEpBUYM,212
+interfacy_cli/argparse_parser.py,sha256=7nCUVcGGoYPSRUnxTkPk7PpYTa_-MfNcYGoY-nJNVgI,21653
+interfacy_cli/cli.py,sha256=YPPdEn3NtZ4fQ1D0IpVRElTKuT6OT3NmLmBKduPT0OM,2147
+interfacy_cli/click_parser.py,sha256=I5tp6hHjEbcyJ5QBGmnzbhNDI4iDxxhZncp9Pw5OzBc,13393
+interfacy_cli/core.py,sha256=0wnBCL14lYpRBMqfO5DuWOGoQ_TjwQQf3pTUEHXsUsE,6624
+interfacy_cli/exceptions.py,sha256=XMQkm3xoOwRwqumSm2ZkDGGZD-4v8ytwTF8aPMKa4O8,686
+interfacy_cli/themes.py,sha256=7o1d9JrPS6J5WMOrqFTbudQk1YPrIo-y40Z6KIeLHWc,4366
+interfacy_cli/util.py,sha256=rgSOrJB0WV3G8yrQbHOEWZ1XsZV_bg1Lw2RCWAU3U3Q,3965
+interfacy_cli-0.1.0.dist-info/LICENSE,sha256=QZDpZpY8EeSqcJeD9h21EnBz9IcIMlPaIhoxjYuDKzE,1071
+interfacy_cli-0.1.0.dist-info/METADATA,sha256=62jWYuZSqAr22t_5Oj7hHh34dy-XAmnHmVl7wnXtj_4,1865
+interfacy_cli-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+interfacy_cli-0.1.0.dist-info/top_level.txt,sha256=37W5M_w4SYm5FbsdyyK0j-cZ291p6c7TjIpbydQy6ZU,14
+interfacy_cli-0.1.0.dist-info/RECORD,,
