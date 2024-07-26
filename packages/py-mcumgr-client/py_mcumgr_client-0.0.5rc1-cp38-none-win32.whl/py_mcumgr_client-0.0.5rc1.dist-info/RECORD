@@ -1,0 +1,5 @@
+py_mcumgr_client-0.0.5rc1.dist-info/METADATA,sha256=xsK_QT8HoNm0hJ5MHJa_Dhn0nXaHTshb1UJVS4NLJBo,1049
+py_mcumgr_client-0.0.5rc1.dist-info/WHEEL,sha256=efqlbyoWVaRpv3_pmcpfQMmn5BxUR3OkPLmrUDmnQP0,90
+py_mcumgr_client/__init__.py,sha256=RyKdZ0-qb3ZbPB_dxw2Fsb7pscvSnqAlsI62Y3AN6Y4,147
+py_mcumgr_client/py_mcumgr_client.cp38-win32.pyd,sha256=vu-TV3fFwUTU-Sg3H9-LwSOP078hUFkyGEx43vKmRX8,607744
+py_mcumgr_client-0.0.5rc1.dist-info/RECORD,,
