@@ -1,0 +1,5 @@
+requests
+pyppeteer
+nest_asyncio
+PySocks
+pygrab_ll
