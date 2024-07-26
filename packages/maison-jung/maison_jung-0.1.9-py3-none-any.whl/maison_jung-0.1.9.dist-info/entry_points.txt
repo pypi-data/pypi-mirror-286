@@ -1,0 +1,3 @@
+[console_scripts]
+maison-jung=maison_jung.cli:run
+
