@@ -1,0 +1,9 @@
+impc_api_helper/__init__.py,sha256=bNdULRShKupusOilVS1TZqifzO10mELUEemsRrHknVY,278
+impc_api_helper/facet_request.py,sha256=ClEA3bp3uhAWKlkInEBvTbUn2bhGwOm-2hNmXlexS6k,2722
+impc_api_helper/iterator_solr_request.py,sha256=9kzpQ3aYEBoWyC2Q_JUlZfegcgFXyfv3AnqC7NYQB-g,5501
+impc_api_helper/solr_request.py,sha256=yYZl3vKApjxJfaFtJqnDk5rYOPninEws1qwydq5A4Kk,4662
+impc_api_helper-0.1.0.dist-info/LICENSE,sha256=Q0JCh9wl-MnNFXYu1cfXR-v0l9ZHE2HE3jETvPlbMII,11416
+impc_api_helper-0.1.0.dist-info/METADATA,sha256=6T2sH6BeWE9ZEuAXX7iUalUSjXmxSf_NBgTe3KI_ivw,2757
+impc_api_helper-0.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+impc_api_helper-0.1.0.dist-info/top_level.txt,sha256=w2flbqd80CGnsQAoTuSrHqH4YrQzRgxJcF6CPwO3R8w,16
+impc_api_helper-0.1.0.dist-info/RECORD,,
