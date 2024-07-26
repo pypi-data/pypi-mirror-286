@@ -1,0 +1,8 @@
+README.md
+setup.py
+hnt_sap_financeiro_library.egg-info/PKG-INFO
+hnt_sap_financeiro_library.egg-info/SOURCES.txt
+hnt_sap_financeiro_library.egg-info/dependency_links.txt
+hnt_sap_financeiro_library.egg-info/requires.txt
+hnt_sap_financeiro_library.egg-info/top_level.txt
+tests/test_fv60.py
