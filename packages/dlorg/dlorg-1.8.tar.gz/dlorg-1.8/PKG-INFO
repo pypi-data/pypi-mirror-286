@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: dlorg
+Version: 1.8
+Summary: A Python script to organize your downloads folder by file extensions and watch for new files.
+Home-page: https://github.com/at-pyrix/download-organizer
+License: GPL-3.0
+Author: pyrix
+Author-email: probablynotyasho@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Project-URL: Repository, https://github.com/at-pyrix/download-organizer
+Description-Content-Type: text/markdown
+
+<h1 align=center>Download Organizer ⬇️</h1>
+<p align=center>
+<img src="https://raw.githubusercontent.com/at-pyrix/download-organizer/main/demo.gif"/>
+</p>
+<p align=center>A Python script to organize your downloads folder by file extensions.</p>
+<!--It can also watch the folder for new files and automatically sort them.-->
+
+## Installation
+
+> [!WARNING]
+> If you get this error: `error: externally-managed-environment`, run the command `pip install . --break-system-packages` (this may break stuff)
+
+### Using PIP
+
+```
+pip install download-organizer
+```
+
+### Manual
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/at-pyrix/download-organizer.git
+    cd download-organizer
+    ```
+
+2. Install the dependencies and the CLI tool:
+
+    ```sh
+    pip install .
+    ```
+
+## Usage
+
+<!-- ### Manual Sorting -->
+
+<!--To sort your downloads folder manually, run:-->
+
+```sh
+$ dlorg
+```
+<!--
+### Watching Downloads Folder
+
+To watch the downloads folder and sort new files automatically, run:
+
+```sh
+dlorg --watch
+```-->
+<!--
+## Running the script at startup (linux)
+
+To ensure the `--watch` script runs automatically at system startup, follow these steps:
+
+1. **Open Crontab for Editing**
+
+   Open your crontab configuration file in edit mode:
+
+   ```sh
+   crontab -e
+   ```
+
+2. **Add an Entry to Run the Script at Startup**
+
+   Add the following line to the crontab file to run the `dlorg` command at startup:
+
+   ```sh
+   @reboot ~/.local/bin/dlorg --watch
+   ```
+
+3. **Verify Crontab Entry**
+
+   Ensure that the new entry is added to the crontab:
+
+   ```sh
+   crontab -l
+   ```-->
+
+### Custom Downloads Folder
+
+If your downloads folder is different from the default (`~/Downloads`), update the `folder` variable in `organizer.py` to the desired path.
+
+## Folder Categories
+
+The script sorts files into the following categories:
+
+- **Audio**: 8svx, aac, ac3, aiff, amb, au, avr, caf, cdda, cvs, cvsd, cvu, dts, dvms, fap, flac, fssd, gsrt, hcom, htk, ima, ircam, m4a, m4r, maud, mp2, mp3, nist, oga, ogg, opus, paf, prc, pvf, ra, sd2, sln, smp, snd, sndr, sndt, sou, sph, spx, tta, txw, vms, voc, vox, w64, wma, wv
+- **Archive**: 7z, deb, pkg, rar, rpm, tar.gz, z, zip, tar.bz2, tar.xz, gz, bz2, xz
+- **Code**: c, class, cpp, cs, css, go, h, htaccess, html, java, js, json, kml, php, pl, py, rb, sql, swift, vb, yaml
+- **Documents**: csv, djvu, doc, docx, odp, ods, odt, ott, pdf, ppt, rtf, txt, xls, xlsx
+- **Ebooks**: azw3, epub, fb2, lrf, mobi, pdb, snb
+- **Images**: bmp, cr2, cur, dds, dng, erf, exr, fts, gif, hdr, heic, heif, ico, jfif, jp2, jpe, jpeg, jpg, jps, mng, nef, nrw, orf, pam, pbm, pcd, pcx, pef, pes, pfm, pgm, picon, pict, png, pnm, ppm, psd, raf, ras, rw2, sfw, sgi, svg, tga, tiff, wbmp, webp, wpg, x3f, xbm, xcf, xpm, xwd
+- **Programs**: apk, bin, jar, msi, exe, appimage, run
+- **Videos**: 3gp, asf, avi, f4v, flv, hevc, m2ts, m2v, m4v, mjpeg, mkv, mov, mp4, mpeg, mpg, mts, mxf, ogv, rm, swf, ts, vob, webm, wmv
+- **Fonts**: cff, dfont, otf, pfb, ps, sfd, ttf, woff
+- **Others**: any other file types
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the `LICENSE` file for details.
+
