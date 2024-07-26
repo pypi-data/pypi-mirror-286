@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+api_emissions_tracker/__init__.py
+api_emissions_tracker/api_emissions_tracker.py
+api_emissions_tracker/azure_open_ai.py
+api_emissions_tracker/emission_factors.json
+api_emissions_tracker/logger.py
+api_emissions_tracker/stub_azure_open_ai.py
+api_emissions_tracker.egg-info/PKG-INFO
+api_emissions_tracker.egg-info/SOURCES.txt
+api_emissions_tracker.egg-info/dependency_links.txt
+api_emissions_tracker.egg-info/requires.txt
+api_emissions_tracker.egg-info/top_level.txt
