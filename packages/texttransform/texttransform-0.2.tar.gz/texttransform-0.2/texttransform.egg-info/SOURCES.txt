@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+text_transform.py
+texttransform.egg-info/PKG-INFO
+texttransform.egg-info/SOURCES.txt
+texttransform.egg-info/dependency_links.txt
+texttransform.egg-info/entry_points.txt
+texttransform.egg-info/top_level.txt
