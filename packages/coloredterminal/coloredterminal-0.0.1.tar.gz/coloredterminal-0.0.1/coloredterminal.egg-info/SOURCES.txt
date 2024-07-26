@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+coloredterminal.egg-info/PKG-INFO
+coloredterminal.egg-info/SOURCES.txt
+coloredterminal.egg-info/dependency_links.txt
+coloredterminal.egg-info/top_level.txt
+colorfullog/__init__.py
+colorfullog/colorfullog.py
+colorfullog/libs/__init__.py
+colorfullog/libs/argparse.py
+colorfullog/libs/os.py
