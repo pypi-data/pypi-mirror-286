@@ -1,0 +1,5 @@
+{
+  "resource": true,
+  "name": "crowdstrike",
+  "server": "github://api.github.com/gtheodorio/pulumi-crowdstrike"
+}
