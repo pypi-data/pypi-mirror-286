@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "sendmsg_toclient"
+version = "0.1.0"
+description = "Этот пакет преднозначен для отправки сообщений на электронною почту"
+authors = ["marakhd <marakin09@mail.ru>"]
+license = "https://mit-license.org"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
