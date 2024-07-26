@@ -1,0 +1,5 @@
+torch==2.4.0
+scikit-learn==1.5.1
+padelpy==0.1.16
+alvadescpy==0.1.3
+ecabc==3.0.1
