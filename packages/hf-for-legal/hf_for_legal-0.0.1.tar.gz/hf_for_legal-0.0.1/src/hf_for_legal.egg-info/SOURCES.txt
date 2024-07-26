@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/hf_for_legal/__init__.py
+src/hf_for_legal/_decorators.py
+src/hf_for_legal/datasets.py
+src/hf_for_legal.egg-info/PKG-INFO
+src/hf_for_legal.egg-info/SOURCES.txt
+src/hf_for_legal.egg-info/dependency_links.txt
+src/hf_for_legal.egg-info/requires.txt
+src/hf_for_legal.egg-info/top_level.txt
