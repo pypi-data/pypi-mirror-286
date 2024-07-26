@@ -1,0 +1,24 @@
+packaging
+scrapy>=2.0.0
+setuptools
+twisted>=17.9
+w3lib
+zope.interface
+
+[:platform_system == "Windows"]
+pywin32
+
+[docs]
+furo
+sphinx
+sphinx-autobuild
+sphinxcontrib-zopeext
+
+[test]
+coveralls
+py-html-checker
+pytest
+pytest-cov
+pytest-twisted
+requests
+twisted>=19.7
