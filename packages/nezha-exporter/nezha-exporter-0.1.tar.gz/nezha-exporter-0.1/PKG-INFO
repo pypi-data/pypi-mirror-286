@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nezha-exporter
+Version: 0.1
+Summary: nezha 面板 api 转 prometheus metrics 接口
+Home-page: https://github.com/aitsc/nezha-exporter
+Author: aitsc
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 介绍
+nezha 面板 api 转 prometheus metrics 接口
+
+## 安装
+- pip install nezha-exporter
+- nezha-prometheus-exporter --endpoint http://dashboard.example.com:8008 --endpoint-token xxx
+- 配置 prometheus.yml
+```yaml
+scrape_configs:
+  - job_name: 'nezha'
+    static_configs:
+      - targets: ['localhost:9221']
+```
