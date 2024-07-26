@@ -1,0 +1,21 @@
+__pycache__
+*.wav
+*.pkl
+obj
+dist
+build
+*egg-info
+env
+_version.py
+test.py
+*.json
+build.log
+
+# Exclude ipynb except some defined
+*.ipynb
+!install.ipynb
+.ipynb_checkpoints/
+
+# Test 
+.coverage
+*.log
