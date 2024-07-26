@@ -1,0 +1,8 @@
+python-can
+pyusb
+
+[libusb]
+libusb
+
+[viewer]
+PySide6
