@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bursty_dynamics
+Version: 0.0.4
+Summary: bursty_dynamics is a Python package designed to facilitate the analysis of temporal patterns in longitudinal data. It provides functions to calculate the burstiness parameter (BP) and memory coefficient (MC), detect event trains, and visualize results.
+Home-page: https://github.com/ai-multiply/bursty_dynamics
+Author: Alisha Angdmebe
+Author-email: alisha.angdembe1@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+Long description of the bursty_dynamics package. Readme.md not found.
