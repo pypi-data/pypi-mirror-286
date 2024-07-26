@@ -1,0 +1,2 @@
+[console_scripts]
+bemm-gen = bemm_gen:main
