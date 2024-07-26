@@ -1,0 +1,11 @@
+fastapi==0.111
+gymnasium==0.28
+py4j==0.10
+ray==2.31
+ray[rllib]==2.10
+tensorflow==2.16
+torch==2.3
+uvicorn==0.30
+
+[docs]
+sphinx_rtd_theme
