@@ -1,0 +1,730 @@
+,e1,r,e2,0,1,2
+0,Attacks,can_harm,public domain,Attacks,can_harm,public domain
+1,IDS,uses,Intrusion Detection,IDS,uses,Intrusion Detection
+2,Snort,uses,Intrusion Detection,Snort,uses,Intrusion Detection
+3,Snort,can_detect,network attacks,Snort,can_detect,network attacks
+4,packet logger,is_part_of,Snort,packet logger,is_part_of,Snort
+5,Snort,can_analyze,traffic,Snort,can_analyze,traffic
+6,Snort,has_a,data flow,Snort,has_a,data flow
+7,Snort,uses,protocol analysis,Snort,uses,protocol analysis
+8,Snort,uses,detection technique,Snort,uses,detection technique
+9,detection technique,can_detect,attacks,detection technique,can_detect,attacks
+10,Snort,can_analyze,packet,Snort,can_analyze,packet
+11,Snort rules,has_a,language,Snort rules,has_a,language
+12,Snort,can_analyze,previous attack pattern,Snort,can_analyze,previous attack pattern
+13,Snort,can_analyze,network behavior,Snort,can_analyze,network behavior
+14,Snort,can_analyze,bad packet,Snort,can_analyze,bad packet
+15,Packet Decoder,is_part_of,Snort,Packet Decoder,is_part_of,Snort
+16,Packet Decoder,can_analyze,packets,Packet Decoder,can_analyze,packets
+17,Packet Decoder,has_a,protocols,Packet Decoder,has_a,protocols
+18,Packet Decoder,can_analyze,packet,Packet Decoder,can_analyze,packet
+19,Packet Decoder,can_analyze,header anomalies,Packet Decoder,can_analyze,header anomalies
+20,Preprocessor,is_part_of,Snort,Preprocessor,is_part_of,Snort
+21,Preprocessor,can_analyze,HTTP anomalies,Preprocessor,can_analyze,HTTP anomalies
+22,Preprocessor,can_analyze,FTP anomalies,Preprocessor,can_analyze,FTP anomalies
+23,Preprocessor,can_analyze,packet data,Preprocessor,can_analyze,packet data
+24,Detection Engine,is_part_of,Snort,Detection Engine,is_part_of,Snort
+25,Detection Engine,uses,detection technique,Detection Engine,uses,detection technique
+26,detection technique,can_detect,intrusion,detection technique,can_detect,intrusion
+27,intrusion,can_harm,packet,intrusion,can_harm,packet
+28,Detection Engine,has_a,rules,Detection Engine,has_a,rules
+29,Log Alert system,is_part_of,Snort,Log Alert system,is_part_of,Snort
+30,Output Module,is_part_of,Snort,Output Module,is_part_of,Snort
+31,Output Module,has_a,output,Output Module,has_a,output
+32,Output Module,has_a,alerts,Output Module,has_a,alerts
+33,Snort,has_a,Sniff mode,Snort,has_a,Sniff mode
+34,Snort,uses,sniff,Snort,uses,sniff
+35,Ingress,can_analyze,incoming traffic,Ingress,can_analyze,incoming traffic
+36,packet logger,can_analyze,data,packet logger,can_analyze,data
+37,Snort,can_analyze,tcpdump pcap,Snort,can_analyze,tcpdump pcap
+38,unified2,is_part_of,Snort,unified2,is_part_of,Snort
+39,Wireshark,can_analyze,tcpdump pcap,Wireshark,can_analyze,tcpdump pcap
+40,Detection alert,can_analyze,IP packets,Detection alert,can_analyze,IP packets
+41,Snort rules,can_analyze,system variables,Snort rules,can_analyze,system variables
+42,Snort rules,has_a,payload options,Snort rules,has_a,payload options
+43,payload options,can_analyze,data,payload options,can_analyze,data
+44,Snort rules,has_a,non payload options,Snort rules,has_a,non payload options
+45,Packet forwarding,can_analyze,Gateway,Packet forwarding,can_analyze,Gateway
+46,Firewall,uses,sniff,Firewall,uses,sniff
+47,Firewall,has_a,testing,Firewall,has_a,testing
+48,Nmap,has_a,open source,Nmap,has_a,open source
+49,open source,is_part_of,tool,open source,is_part_of,tool
+50,Nmap,uses,network discovery,Nmap,uses,network discovery
+51,Nmap,uses,security auditing,Nmap,uses,security auditing
+52,Nmap,can_analyze,exposed,Nmap,can_analyze,exposed
+53,target machine,uses,information,target machine,uses,information
+54,nmap,can_analyze,packets,nmap,can_analyze,packets
+55,Nmap,has_a,network mapper,Nmap,has_a,network mapper
+56,network discovery,has_a,tools,network discovery,has_a,tools
+57,Nmap,is_part_of,tools,Nmap,is_part_of,tools
+58,network administrators,implements,map,network administrators,implements,map
+59,map,can_analyze,networks,map,can_analyze,networks
+60,program,can_analyze,live hosts,program,can_analyze,live hosts
+61,Nmap,uses,network scanning,Nmap,uses,network scanning
+62,network scanning,has_a,tool,network scanning,has_a,tool
+63,tool,can_analyze,IP packets,tool,can_analyze,IP packets
+64,network,uses,information,network,uses,information
+65,Nmap,can_analyze,enterprise-scale networks,Nmap,can_analyze,enterprise-scale networks
+66,scan,can_analyze,connected devices,scan,can_analyze,connected devices
+67,Nmap,uses,IoT security,Nmap,uses,IoT security
+68,Nmap,can_analyze,information,Nmap,can_analyze,information
+69,legitimate,can_analyze,service,legitimate,can_analyze,service
+70,live hosts,has_a,open ports,live hosts,has_a,open ports
+71,open ports,can_analyze,OS,open ports,can_analyze,OS
+72,scan,can_analyze,server,scan,can_analyze,server
+73,hacker,implements,attack,hacker,implements,attack
+74,attack,can_harm,site,attack,can_harm,site
+75,Nmap,uses,processes,Nmap,uses,processes
+76,active,can_analyze,networks,active,can_analyze,networks
+77,networks,has_a,IP,networks,has_a,IP
+78,administrators,can_analyze,IP,administrators,can_analyze,IP
+79,tool,uses,system monitoring,tool,uses,system monitoring
+80,Nmap,is_part_of,Metasploit framework,Nmap,is_part_of,Metasploit framework
+81,Metasploit framework,uses,probe,Metasploit framework,uses,probe
+82,probe,can_analyze,network vulnerabilities,probe,can_analyze,network vulnerabilities
+83,users,uses,personal,users,uses,personal
+84,Nmap,uses,scan,Nmap,uses,scan
+85,web server,has_a,hosting,web server,has_a,hosting
+86,hosting,can_analyze,website,hosting,can_analyze,website
+87,hacker,uses,process,hacker,uses,process
+88,process,can_detect,attack,process,can_detect,attack
+89,Attacking,can_harm,site,Attacking,can_harm,site
+90,site,can_expose,security vulnerabilities,site,can_expose,security vulnerabilities
+91,system admins,implements,programs,system admins,implements,programs
+92,tools,has_a,program,tools,has_a,program
+93,network monitoring,has_a,tools,network monitoring,has_a,tools
+94,Nmap,is_part_of,command-line interfaces,Nmap,is_part_of,command-line interfaces
+95,scripts,has_a,automate,scripts,has_a,automate
+96,target,has_a,IP address,target,has_a,IP address
+97,open,can_analyze,operating system,open,can_analyze,operating system
+98,operating system,has_a,TCP,operating system,has_a,TCP
+99,three-way handshake,has_a,port scanner,three-way handshake,has_a,port scanner
+100,port scanner,has_a,connection,port scanner,has_a,connection
+101,connection,can_detect,DOS,connection,can_detect,DOS
+102,log,can_analyze,sender,log,can_analyze,sender
+103,sender,has_a,IP address,sender,has_a,IP address
+104,IP address,is_part_of,Intrusion Detection Systems,IP address,is_part_of,Intrusion Detection Systems
+105,3-way handshake,can_analyze,scanned,3-way handshake,can_analyze,scanned
+106,Sends,has_a,SYN,Sends,has_a,SYN
+107,sending,has_a,ACK,sending,has_a,ACK
+108,connection,can_analyze,FIN packets,connection,can_analyze,FIN packets
+109,closed,can_analyze,sender,closed,can_analyze,sender
+110,received,has_a,response,received,has_a,response
+111,response,can_analyze,RESET packet,response,can_analyze,RESET packet
+112,incoming,can_analyze,UDP packet,incoming,can_analyze,UDP packet
+113,reveal,can_detect,Trojan horses,reveal,can_detect,Trojan horses
+114,high UDP ports,can_analyze,hidden RPC services,high UDP ports,can_analyze,hidden RPC services
+115,machines,has_a,slow down responses,machines,has_a,slow down responses
+116,slow down responses,can_analyze,traffic,slow down responses,can_analyze,traffic
+117,Windows OS,has_a,slowdown feature,Windows OS,has_a,slowdown feature
+118,target system,uses,ICMP Port Unreachable message,target system,uses,ICMP Port Unreachable message
+119,send,has_a,response,send,has_a,response
+120,response,is_part_of,Nmap,response,is_part_of,Nmap
+121,Nmap,has_a,time out,Nmap,has_a,time out
+122,Closed ports,can_analyze,ICMP port unreachable error,Closed ports,can_analyze,ICMP port unreachable error
+123,host-timeout,can_analyze,slow hosts,host-timeout,can_analyze,slow hosts
+124,chill out,is_part_of,Nmap,chill out,is_part_of,Nmap
+125,port scanner,can_analyze,raw IP packets,port scanner,can_analyze,raw IP packets
+126,port scanner,can_analyze,SYN packet,port scanner,can_analyze,SYN packet
+127,respond,can_analyze,SYN-ACK packet,respond,can_analyze,SYN-ACK packet
+128,scanner,can_analyze,host,scanner,can_analyze,host
+129,host,has_a,responds,host,has_a,responds
+130,responds,can_analyze,RST packet,responds,can_analyze,RST packet
+131,unfiltered,can_analyze,target,unfiltered,can_analyze,target
+132,target,has_a,respond,target,has_a,respond
+133,respond,can_analyze,RST packet,respond,can_analyze,RST packet
+134,scan,can_detect,intrusive,scan,can_detect,intrusive
+135,intrusive,can_harm,target host,intrusive,can_harm,target host
+136,receive,has_a,connection,receive,has_a,connection
+137,Attacker,uses,RESET RST,Attacker,uses,RESET RST
+138,established,can_analyze,target,established,can_analyze,target
+139,log,has_a,connection,log,has_a,connection
+140,closed,can_analyze,destination,closed,can_analyze,destination
+141,destination,has_a,RESET,destination,has_a,RESET
+142,SYN flood,is_part_of,accidental,SYN flood,is_part_of,accidental
+143,accidental,is_part_of,denial-of-service attacks,accidental,is_part_of,denial-of-service attacks
+144,denial-of-service attacks,can_harm,target,denial-of-service attacks,can_harm,target
+145,target,has_a,slow,target,has_a,slow
+146,sends,can_analyze,TCP FIN packet,sends,can_analyze,TCP FIN packet
+147,negatives,is_part_of,IDS,negatives,is_part_of,IDS
+148,IDS,has_a,programs,IDS,has_a,programs
+149,probe,has_a,firewall,probe,has_a,firewall
+150,firewall,has_a,rulesets,firewall,has_a,rulesets
+151,established connections,can_analyze,packets ACK bit,established connections,can_analyze,packets ACK bit
+152,stateful,is_part_of,firewall,stateful,is_part_of,firewall
+153,attacker,uses,packet filtering,attacker,uses,packet filtering
+154,attacker,uses,established connections,attacker,uses,established connections
+155,established connections,is_part_of,firewall,established connections,is_part_of,firewall
+156,firewall,can_analyze,router,firewall,can_analyze,router
+157,network,has_a,ports,network,has_a,ports
+158,ports,is_part_of,firewall,ports,is_part_of,firewall
+159,firewall,has_a,established connection,firewall,has_a,established connection
+160,response,can_analyze,ICMP Port Unreachable message,response,can_analyze,ICMP Port Unreachable message
+161,Nmap,has_a,target port,Nmap,has_a,target port
+162,non-Windows servers,has_a,firewall,non-Windows servers,has_a,firewall
+163,Windows machines,has_a,respond,Windows machines,has_a,respond
+164,flags,can_analyze,packet,flags,can_analyze,packet
+165,Remote Procedure Call,can_analyze,services,Remote Procedure Call,can_analyze,services
+166,remote commands,can_analyze,machine,remote commands,can_analyze,machine
+167,machine,has_a,service,machine,has_a,service
+168,RPC services,has_a,ports,RPC services,has_a,ports
+169,open,can_analyze,machine,open,can_analyze,machine
+170,program,has_a,name,program,has_a,name
+171,RPC services,has_a,open,RPC services,has_a,open
+172,TCP/UDP ports,can_analyze,target,TCP/UDP ports,can_analyze,target
+173,program,has_a,listening,program,has_a,listening
+174,host,has_a,requirements,host,has_a,requirements
+175,IP address,can_analyze,zombie host,IP address,can_analyze,zombie host
+176,zombie host,has_a,port number,zombie host,has_a,port number
+177,Nmap,can_detect,malicious attacks,Nmap,can_detect,malicious attacks
+178,zombie,has_a,IP ID,zombie,has_a,IP ID
+179,IP ID,can_analyze,Forge,IP ID,can_analyze,Forge
+180,zombie,has_a,port,zombie,has_a,port
+181,port,can_analyze,target,port,can_analyze,target
+182,port state,can_analyze,target,port state,can_analyze,target
+183,IP ID,can_analyze,target,IP ID,can_analyze,target
+184,target,has_a,port state,target,has_a,port state
+185,NSE,is_part_of,Nmap Scripting Engine,NSE,is_part_of,Nmap Scripting Engine
+186,Nmap scripts,has_a,default,Nmap scripts,has_a,default
+187,default,is_part_of,Nmap,default,is_part_of,Nmap
+188,Nmap,has_a,features,Nmap,has_a,features
+189,features,is_part_of,Nmap,features,is_part_of,Nmap
+190,Nmap,has_a,output,Nmap,has_a,output
+191,Nmap,has_a,default,Nmap,has_a,default
+192,Nmap,can_analyze,target,Nmap,can_analyze,target
+193,scanning,has_a,Nmap,scanning,has_a,Nmap
+194,Nmap,can_analyze,data,Nmap,can_analyze,data
+195,run,has_a,services,run,has_a,services
+196,services,can_analyze,remote host,services,can_analyze,remote host
+197,run,can_analyze,web servers,run,can_analyze,web servers
+198,scripts,has_a,broadcast,scripts,has_a,broadcast
+199,broadcast,can_analyze,intel,broadcast,can_analyze,intel
+200,scripts,can_detect,brute force attacks,scripts,can_detect,brute force attacks
+201,dos script,can_detect,Denial of service attack,dos script,can_detect,Denial of service attack
+202,perform,can_detect,DOS,perform,can_detect,DOS
+203,DOS,is_part_of,floods,DOS,is_part_of,floods
+204,service exploitation,can_analyze,CVEs,service exploitation,can_analyze,CVEs
+205,Scripts,can_analyze,3rd party services,Scripts,can_analyze,3rd party services
+206,3rd party services,uses,data,3rd party services,uses,data
+207,perform,can_detect,fuzzing attacks,perform,can_detect,fuzzing attacks
+208,fuzzing attacks,can_harm,apps,fuzzing attacks,can_harm,apps
+209,intrusive script,has_a,aggressive,intrusive script,has_a,aggressive
+210,scripts,has_a,network noise,scripts,has_a,network noise
+211,safe script,has_a,Safe,safe script,has_a,Safe
+212,version script,can_analyze,OS,version script,can_analyze,OS
+213,Nmap,can_analyze,vuln,Nmap,can_analyze,vuln
+214,Nmap,has_a,run,Nmap,has_a,run
+215,scripts,has_a,FTP,scripts,has_a,FTP
+216,brute force,has_a,password,brute force,has_a,password
+217,NSE,has_a,scripts,NSE,has_a,scripts
+218,scripts,has_a,locally,scripts,has_a,locally
+219,locally,can_analyze,operating system,locally,can_analyze,operating system
+220,Firewall,is_part_of,Intrusion Prevention Systems IPS,Firewall,is_part_of,Intrusion Prevention Systems IPS
+221,Intrusion Prevention Systems IPS,is_part_of,Intrusion Detection Systems IDS,Intrusion Prevention Systems IPS,is_part_of,Intrusion Detection Systems IDS
+222,Intrusion Detection Systems IDS,has_a,configure,Intrusion Detection Systems IDS,has_a,configure
+223,IPS security,has_a,Firewall,IPS security,has_a,Firewall
+224,cybercriminals,implements,hack,cybercriminals,implements,hack
+225,scanning,can_analyze,weaknesses,scanning,can_analyze,weaknesses
+226,blocked,is_part_of,portmapper,blocked,is_part_of,portmapper
+227,portmapper,has_a,port,portmapper,has_a,port
+228,port,is_part_of,Nmap,port,is_part_of,Nmap
+229,Nmap,uses,RPC scanning,Nmap,uses,RPC scanning
+230,firewalls,can_analyze,devices,firewalls,can_analyze,devices
+231,evading,has_a,IDS,evading,has_a,IDS
+232,IDS,uses,Product evaluation,IDS,uses,Product evaluation
+233,attackers,uses,Nmap,attackers,uses,Nmap
+234,Nmap,has_a,flag,Nmap,has_a,flag
+235,flag,can_analyze,system,flag,can_analyze,system
+236,system,has_a,protection,system,has_a,protection
+237,Pentesting tools,is_part_of,Nmap,Pentesting tools,is_part_of,Nmap
+238,Nmap,is_part_of,Metasploit,Nmap,is_part_of,Metasploit
+239,Metasploit,uses,evading,Metasploit,uses,evading
+240,sneaking past,has_a,IDSs,sneaking past,has_a,IDSs
+241,attackers,can_exploit,security holes,attackers,can_exploit,security holes
+242,firewall rule,can_analyze,setup,firewall rule,can_analyze,setup
+243,setup,has_a,IDS system,setup,has_a,IDS system
+244,system admin,can_analyze,iptables,system admin,can_analyze,iptables
+245,snort rules,can_analyze,setup,snort rules,can_analyze,setup
+246,iptables,is_part_of,snort,iptables,is_part_of,snort
+247,snort,can_analyze,system,snort,can_analyze,system
+248,system,can_expose,weakness,system,can_expose,weakness
+249,pen tester,can_analyze,iptables,pen tester,can_analyze,iptables
+250,iptables,has_a,snort,iptables,has_a,snort
+251,snort,has_a,configurations,snort,has_a,configurations
+252,configurations,can_analyze,networking system setup,configurations,can_analyze,networking system setup
+253,pen tester,uses,monitor,pen tester,uses,monitor
+254,pen tester,uses,explore,pen tester,uses,explore
+255,explore,can_analyze,vulnerabilities,explore,can_analyze,vulnerabilities
+256,System configurations,is_part_of,firewall,System configurations,is_part_of,firewall
+257,firewall,can_analyze,setup,firewall,can_analyze,setup
+258,setup,has_a,open,setup,has_a,open
+259,ports,can_analyze,services,ports,can_analyze,services
+260,nodes,has_a,firewall,nodes,has_a,firewall
+261,firewall,uses,performance measurements,firewall,uses,performance measurements
+262,IDS,can_analyze,setup,IDS,can_analyze,setup
+263,setup,has_a,detection threshold setup,setup,has_a,detection threshold setup
+264,detection threshold setup,can_detect,attack scenarios,detection threshold setup,can_detect,attack scenarios
+265,pen tester,uses,assess,pen tester,uses,assess
+266,security performance,has_a,firewall,security performance,has_a,firewall
+267,firewall,is_part_of,IDS,firewall,is_part_of,IDS
+268,IDS,uses,detect,IDS,uses,detect
+269,deployed,can_detect,attacks,deployed,can_detect,attacks
+270,pen tester,can_detect,configuration vulnerabilities,pen tester,can_detect,configuration vulnerabilities
+271,pen tester,uses,pentest,pen tester,uses,pentest
+272,template,is_part_of,firewall,template,is_part_of,firewall
+273,IDS,has_a,rules,IDS,has_a,rules
+274,assessing,has_a,firewall,assessing,has_a,firewall
+275,security,has_a,firewall,security,has_a,firewall
+276,resolve,can_analyze,vulnerable issues,resolve,can_analyze,vulnerable issues
+277,pen tester,can_analyze,client VM,pen tester,can_analyze,client VM
+278,client VM,has_a,Nmap,client VM,has_a,Nmap
+279,Nmap,is_part_of,hping3,Nmap,is_part_of,hping3
+280,hping3,is_part_of,MSF Metasploit framework,hping3,is_part_of,MSF Metasploit framework
+281,MSF Metasploit framework,is_part_of,tcpdump,MSF Metasploit framework,is_part_of,tcpdump
+282,tools,has_a,testing,tools,has_a,testing
+283,tools,is_part_of,ping,tools,is_part_of,ping
+284,ping,is_part_of,traceroute,ping,is_part_of,traceroute
+285,traceroute,is_part_of,nmap,traceroute,is_part_of,nmap
+286,nmap,is_part_of,hpings,nmap,is_part_of,hpings
+287,hpings,is_part_of,msfconsole,hpings,is_part_of,msfconsole
+288,msfconsole,can_analyze,client node,msfconsole,can_analyze,client node
+289,run,can_analyze,iptables,run,can_analyze,iptables
+290,iptables,has_a,firewall,iptables,has_a,firewall
+291,firewall,is_part_of,snort,firewall,is_part_of,snort
+292,snort,has_a,protect,snort,has_a,protect
+293,protect,can_analyze,server node,protect,can_analyze,server node
+294,snort,can_analyze,configuration files,snort,can_analyze,configuration files
+295,iptables,uses,configuration files,iptables,uses,configuration files
+296,snort rule,can_analyze,files,snort rule,can_analyze,files
+297,reset,can_analyze,interfaces,reset,can_analyze,interfaces
+298,interfaces,has_a,IP addresses,interfaces,has_a,IP addresses
+299,default,can_analyze,VM,default,can_analyze,VM
+300,Metasploitable 2,can_expose,vulnerable,Metasploitable 2,can_expose,vulnerable
+301,snort,is_part_of,Nmap,snort,is_part_of,Nmap
+302,Metasploit,can_analyze,security services,Metasploit,can_analyze,security services
+303,security services,has_a,tools,security services,has_a,tools
+304,Iptables,is_part_of,firewall,Iptables,is_part_of,firewall
+305,firewall,is_part_of,Snort IDS,firewall,is_part_of,Snort IDS
+306,deploy,can_detect,attacks,deploy,can_detect,attacks
+307,exploit,can_analyze,vulnerabilities,exploit,can_analyze,vulnerabilities
+308,service,has_a,access,service,has_a,access
+309,access,is_part_of,command shell,access,is_part_of,command shell
+310,command shell,can_analyze,data,command shell,can_analyze,data
+311,service,has_a,parameters,service,has_a,parameters
+312,critical,can_analyze,data,critical,can_analyze,data
+313,system configuration,can_analyze,setup,system configuration,can_analyze,setup
+314,identify,can_analyze,vulnerability,identify,can_analyze,vulnerability
+315,Metasploit,uses,explore,Metasploit,uses,explore
+316,explore,can_analyze,vulnerability,explore,can_analyze,vulnerability
+317,Subverting,has_a,Firewalls,Subverting,has_a,Firewalls
+318,Firewalls,is_part_of,Intrusion Detection Systems,Firewalls,is_part_of,Intrusion Detection Systems
+319,scans,has_a,firewall,scans,has_a,firewall
+320,firewall,has_a,reset,firewall,has_a,reset
+321,firewall rules,has_a,blacklist,firewall rules,has_a,blacklist
+322,Nmap,is_part_of,Metasploit Framework,Nmap,is_part_of,Metasploit Framework
+323,Metasploit Framework,can_analyze,Client,Metasploit Framework,can_analyze,Client
+324,Gateway,has_a,firewall,Gateway,has_a,firewall
+325,firewall,uses,defend,firewall,uses,defend
+326,scan,can_detect,attack,scan,can_detect,attack
+327,tcpdump,uses,monitor,tcpdump,uses,monitor
+328,ports,can_analyze,gateway,ports,can_analyze,gateway
+329,TCP protocol,can_analyze,systems,TCP protocol,can_analyze,systems
+330,systems,has_a,RFC 793,systems,has_a,RFC 793
+331,connection requests,can_analyze,TCP RST reset packet,connection requests,can_analyze,TCP RST reset packet
+332,ports,is_part_of,Nmap,ports,is_part_of,Nmap
+333,Filtering,can_analyze,devices,Filtering,can_analyze,devices
+334,devices,has_a,firewalls,devices,has_a,firewalls
+335,firewalls,can_analyze,packets,firewalls,can_analyze,packets
+336,Nmap,has_a,reliably,Nmap,has_a,reliably
+337,closed,can_analyze,target,closed,can_analyze,target
+338,target,has_a,RFC 793,target,has_a,RFC 793
+339,Firewalls,has_a,block,Firewalls,has_a,block
+340,firewall,has_a,response,firewall,has_a,response
+341,response,can_analyze,ICMP destination unreachable error,response,can_analyze,ICMP destination unreachable error
+342,Nmap,can_analyze,ACK packets,Nmap,can_analyze,ACK packets
+343,filtered ports,is_part_of,Nmap,filtered ports,is_part_of,Nmap
+344,Nmap,uses,ACK scan,Nmap,uses,ACK scan
+345,Stateless,is_part_of,firewall,Stateless,is_part_of,firewall
+346,firewall,has_a,block,firewall,has_a,block
+347,incoming,can_analyze,SYN packets,incoming,can_analyze,SYN packets
+348,Blocking,can_analyze,ACK packets,Blocking,can_analyze,ACK packets
+349,block,can_detect,unsolicited,block,can_detect,unsolicited
+350,unsolicited,can_harm,ACK packets,unsolicited,can_harm,ACK packets
+351,firewalls,has_a,statefully,firewalls,has_a,statefully
+352,iptables,is_part_of,firewall,iptables,is_part_of,firewall
+353,firewall,has_a,rules,firewall,has_a,rules
+354,rules,has_a,stateful,rules,has_a,stateful
+355,stateful,is_part_of,firewalls,stateful,is_part_of,firewalls
+356,firewalls,has_a,secure,firewalls,has_a,secure
+357,firewall,has_a,reboot,firewall,has_a,reboot
+358,reboot,can_analyze,device,reboot,can_analyze,device
+359,device,has_a,state,device,has_a,state
+360,Nmap,uses,scans,Nmap,uses,scans
+361,Nmap,has_a,outputs,Nmap,has_a,outputs
+362,Systems,has_a,TCP protocol,Systems,has_a,TCP protocol
+363,deny-by-default,is_part_of,firewall,deny-by-default,is_part_of,firewall
+364,firewall,has_a,policy,firewall,has_a,policy
+365,responses,is_part_of,firewall,responses,is_part_of,firewall
+366,ACK scan,can_analyze,TCP packets,ACK scan,can_analyze,TCP packets
+367,RFC 793,can_analyze,RST packet,RFC 793,can_analyze,RST packet
+368,stateless,is_part_of,firewall,stateless,is_part_of,firewall
+369,firewall,has_a,policies,firewall,has_a,policies
+370,policies,can_analyze,setup,policies,can_analyze,setup
+371,port,can_analyze,machine,port,can_analyze,machine
+372,machine,uses,network traffic,machine,uses,network traffic
+373,machine,has_a,IP ID,machine,has_a,IP ID
+374,Windows XP,has_a,Nping,Windows XP,has_a,Nping
+375,Nping,can_analyze,SYN packets,Nping,can_analyze,SYN packets
+376,flooding,can_harm,host,flooding,can_harm,host
+377,address,is_part_of,nping,address,is_part_of,nping
+378,nping,can_analyze,node,nping,can_analyze,node
+379,addresses,is_part_of,firewall,addresses,is_part_of,firewall
+380,source,has_a,address,source,has_a,address
+381,netblocks,has_a,firewall,netblocks,has_a,firewall
+382,firewall,has_a,blocked,firewall,has_a,blocked
+383,UDP,can_analyze,applications,UDP,can_analyze,applications
+384,applications,uses,packets,applications,uses,packets
+385,scanner,has_a,port,scanner,has_a,port
+386,Nmap,uses,port scanning,Nmap,uses,port scanning
+387,Nmap,can_analyze,source,Nmap,can_analyze,source
+388,source,has_a,port,source,has_a,port
+389,port,can_analyze,source,port,can_analyze,source
+390,source,has_a,ports,source,has_a,ports
+391,ports,can_analyze,transmitted packets,ports,can_analyze,transmitted packets
+392,intrusion detection systems,is_part_of,intrusion prevention systems,intrusion detection systems,is_part_of,intrusion prevention systems
+393,network,has_a,IDS,network,has_a,IDS
+394,IDS,has_a,triggered packet responses,IDS,has_a,triggered packet responses
+395,IPS systems,can_analyze,network,IPS systems,can_analyze,network
+396,network,has_a,packet flow,network,has_a,packet flow
+397,packet flow,can_analyze,suspicious activity,packet flow,can_analyze,suspicious activity
+398,IPS,has_a,block,IPS,has_a,block
+399,block,can_analyze,traffic,block,can_analyze,traffic
+400,port scanned,can_detect,buffer overflow exploit,port scanned,can_detect,buffer overflow exploit
+401,Attackers,uses,port scan,Attackers,uses,port scan
+402,system,has_a,open ports,system,has_a,open ports
+403,Attackers,uses,blocked,Attackers,uses,blocked
+404,IDS,has_a,flagged,IDS,has_a,flagged
+405,IDSs,can_analyze,network,IDSs,can_analyze,network
+406,network,can_expose,forge,network,can_expose,forge
+407,packets,can_expose,forged,packets,can_expose,forged
+408,scanning,can_detect,Packet Forgery,scanning,can_detect,Packet Forgery
+409,Firewall,is_part_of,Intrusion Detection Systems,Firewall,is_part_of,Intrusion Detection Systems
+410,system,uses,packets,system,uses,packets
+411,icmp-host-prohibited,can_analyze,ICMP error message,icmp-host-prohibited,can_analyze,ICMP error message
+412,rules,has_a,TCP protocol,rules,has_a,TCP protocol
+413,broken,can_analyze,mail hosts,broken,can_analyze,mail hosts
+414,Forging,can_harm,RST packets,Forging,can_harm,RST packets
+415,firewalls,is_part_of,IDS,firewalls,is_part_of,IDS
+416,IDS,is_part_of,IPS,IDS,is_part_of,IPS
+417,IPS,has_a,port 113,IPS,has_a,port 113
+418,network operators,uses,scanners,network operators,uses,scanners
+419,scanners,has_a,port,scanners,has_a,port
+420,timeout,can_analyze,dropped packets,timeout,can_analyze,dropped packets
+421,detect,has_a,IDSs,detect,has_a,IDSs
+422,IDSs,can_analyze,suspicious,IDSs,can_analyze,suspicious
+423,machines,has_a,traceroutes,machines,has_a,traceroutes
+424,operating systems,has_a,traceroute,operating systems,has_a,traceroute
+425,traceroute,has_a,command,traceroute,has_a,command
+426,Nmap,is_part_of,traceroute,Nmap,is_part_of,traceroute
+427,inline,is_part_of,IDSs,inline,is_part_of,IDSs
+428,IDSs,has_a,passively,IDSs,has_a,passively
+429,Nmap,has_a,ping,Nmap,has_a,ping
+430,commands,can_analyze,information,commands,can_analyze,information
+431,detected,has_a,IDS,detected,has_a,IDS
+432,IDS,is_part_of,snort,IDS,is_part_of,snort
+433,snort,uses,detect,snort,uses,detect
+434,slow down,can_analyze,DNS proxying,slow down,can_analyze,DNS proxying
+435,deploy,can_analyze,testing environment,deploy,can_analyze,testing environment
+436,snort,has_a,rules,snort,has_a,rules
+437,Nmap,uses,scanning,Nmap,uses,scanning
+438,Nmap,has_a,timing modes,Nmap,has_a,timing modes
+439,paranoid option,is_part_of,Nmap,paranoid option,is_part_of,Nmap
+440,Nmap,uses,probe,Nmap,uses,probe
+441,IP fragments,is_part_of,intrusion detection systems,IP fragments,is_part_of,intrusion detection systems
+442,fragmentation assembly timeouts,can_analyze,platforms,fragmentation assembly timeouts,can_analyze,platforms
+443,IDS,can_analyze,remote system,IDS,can_analyze,remote system
+444,remote system,uses,packet,remote system,uses,packet
+445,Nmap,can_analyze,bytes,Nmap,can_analyze,bytes
+446,fragment,can_analyze,byte,fragment,can_analyze,byte
+447,Fragmentation,has_a,Nmap�s,Fragmentation,has_a,Nmap�s
+448,Nmap,can_analyze,raw packet,Nmap,can_analyze,raw packet
+449,version detection,has_a,Nmap Scripting Engine,version detection,has_a,Nmap Scripting Engine
+450,Nmap Scripting Engine,uses,fragmentation,Nmap Scripting Engine,uses,fragmentation
+451,host,has_a,TCP stack,host,has_a,TCP stack
+452,TCP stack,can_analyze,target services,TCP stack,can_analyze,target services
+453,source,has_a,IP,source,has_a,IP
+454,IP,is_part_of,Nmap,IP,is_part_of,Nmap
+455,Nmap,uses,port scan,Nmap,uses,port scan
+456,target,can_expose,spoofed,target,can_expose,spoofed
+457,Nmap,has_a,responses,Nmap,has_a,responses
+458,IDS,has_a,alarms,IDS,has_a,alarms
+459,alarms,can_analyze,target,alarms,can_analyze,target
+460,administrators,uses,IDS,administrators,uses,IDS
+461,IDS,has_a,accuracy,IDS,has_a,accuracy
+462,idle scan,can_analyze,spoofing,idle scan,can_analyze,spoofing
+463,source,has_a,IP address,source,has_a,IP address
+464,IP identification field,can_analyze,systems,IP identification field,can_analyze,systems
+465,Nmap,has_a,reverse-DNS resolution,Nmap,has_a,reverse-DNS resolution
+466,reverse-DNS resolution,has_a,responsive,reverse-DNS resolution,has_a,responsive
+467,responsive,can_analyze,host,responsive,can_analyze,host
+468,configured,can_analyze,machine,configured,can_analyze,machine
+469,machine,has_a,Nmap,machine,has_a,Nmap
+470,dns servers,has_a,Nmap,dns servers,has_a,Nmap
+471,Nmap,has_a,DNS queries,Nmap,has_a,DNS queries
+472,DNS queries,can_analyze,proxied,DNS queries,can_analyze,proxied
+473,scanning,can_analyze,vulnerabilities,scanning,can_analyze,vulnerabilities
+474,Metasploit Framework msf,has_a,deploy,Metasploit Framework msf,has_a,deploy
+475,Metasploit Framework MSF,is_part_of,command-line CLI,Metasploit Framework MSF,is_part_of,command-line CLI
+476,command-line CLI,uses,penetration testing,command-line CLI,uses,penetration testing
+477,Metasploit,uses,discover,Metasploit,uses,discover
+478,identify,can_analyze,system vulnerabilities,identify,can_analyze,system vulnerabilities
+479,Metasploit Framework,can_analyze,vulnerability,Metasploit Framework,can_analyze,vulnerability
+480,Metasploit Framework,can_analyze,vulnerable,Metasploit Framework,can_analyze,vulnerable
+481,Metasploit,uses,computer security,Metasploit,uses,computer security
+482,information,can_expose,security vulnerabilities,information,can_expose,security vulnerabilities
+483,open-source,is_part_of,Metasploit Framework,open-source,is_part_of,Metasploit Framework
+484,Metasploit Framework,is_part_of,tool,Metasploit Framework,is_part_of,tool
+485,tool,has_a,exploit code,tool,has_a,exploit code
+486,exploit code,can_analyze,remote target machine,exploit code,can_analyze,remote target machine
+487,Metasploit,uses,anti-forensic,Metasploit,uses,anti-forensic
+488,evasion,has_a,tools,evasion,has_a,tools
+489,tools,is_part_of,Metasploit Framework,tools,is_part_of,Metasploit Framework
+490,Metasploit,can_analyze,Kali Linux operating system,Metasploit,can_analyze,Kali Linux operating system
+491,command-line,has_a,version,command-line,has_a,version
+492,version,is_part_of,msfconsole,version,is_part_of,msfconsole
+493,msfconsole,can_analyze,Ubuntu Linux,msfconsole,can_analyze,Ubuntu Linux
+494,Metasploit framework,has_a,exploits,Metasploit framework,has_a,exploits
+495,exploits,can_analyze,payloads,exploits,can_analyze,payloads
+496,Ruby,has_a,classes,Ruby,has_a,classes
+497,plugins,has_a,scripts,plugins,has_a,scripts
+498,scripts,can_analyze,user interfaces,scripts,can_analyze,user interfaces
+499,Metasploit framework,can_analyze,information-,Metasploit framework,can_analyze,information-
+500,tools,is_part_of,auxiliary modules,tools,is_part_of,auxiliary modules
+501,Auxiliary modules,uses,port scanning,Auxiliary modules,uses,port scanning
+502,modules,is_part_of,plugins,modules,is_part_of,plugins
+503,Metasploit,can_analyze,information,Metasploit,can_analyze,information
+504,module,has_a,default,module,has_a,default
+505,msfconsole,can_analyze,user interface,msfconsole,can_analyze,user interface
+506,graphical user interface,has_a,Metasploit,graphical user interface,has_a,Metasploit
+507,Metasploit,can_analyze,Armitage,Metasploit,can_analyze,Armitage
+508,Kali Linux,has_a,rolling edition,Kali Linux,has_a,rolling edition
+509,rolling edition,is_part_of,Metasploit framework,rolling edition,is_part_of,Metasploit framework
+510,Metasploit framework,is_part_of,msfconsole,Metasploit framework,is_part_of,msfconsole
+511,msfconsole,is_part_of,Metasploit,msfconsole,is_part_of,Metasploit
+512,Metasploit,can_analyze,dock,Metasploit,can_analyze,dock
+513,Metasploit,has_a,installed,Metasploit,has_a,installed
+514,installed,can_analyze,system,installed,can_analyze,system
+515,Metasploit,has_a,module,Metasploit,has_a,module
+516,msfconsole,has_a,module,msfconsole,has_a,module
+517,command line,has_a,exploit,command line,has_a,exploit
+518,exploit,can_analyze,realvnc_client,exploit,can_analyze,realvnc_client
+519,exploit parameters,can_analyze,target,exploit parameters,can_analyze,target
+520,msfconsole,has_a,back command,msfconsole,has_a,back command
+521,msfconsole,can_analyze,Linux terminal,msfconsole,can_analyze,Linux terminal
+522,use command,can_analyze,information,use command,can_analyze,information
+523,name,can_analyze,platform,name,can_analyze,platform
+524,author,uses,targets,author,uses,targets
+525,exploit,can_analyze,ie_execcommand_ua,exploit,can_analyze,ie_execcommand_ua
+526,Metasploit,uses,exploits,Metasploit,uses,exploits
+527,exploits,has_a,Flash player,exploits,has_a,Flash player
+528,module,has_a,names,module,has_a,names
+529,exploits,can_analyze,vulnerable,exploits,can_analyze,vulnerable
+530,OSVDB ID,can_analyze,platform,OSVDB ID,can_analyze,platform
+531,targets,has_a,advanced,targets,has_a,advanced
+532,show options command,has_a,parameters,show options command,has_a,parameters
+533,show options command,can_analyze,target,show options command,can_analyze,target
+534,set command,has_a,name,set command,has_a,name
+535,show options command,has_a,SRVHOST,show options command,has_a,SRVHOST
+536,msfconsole,can_analyze,payloads,msfconsole,can_analyze,payloads
+537,set command,can_analyze,payload,set command,can_analyze,payload
+538,show targets command,can_analyze,operating systems,show targets command,can_analyze,operating systems
+539,operating systems,can_expose,vulnerable,operating systems,can_expose,vulnerable
+540,command,can_analyze,adobe_flash_shader_drawing_fill exploit,command,can_analyze,adobe_flash_shader_drawing_fill exploit
+541,exploit,can_analyze,targets,exploit,can_analyze,targets
+542,command set,has_a,target ID,command set,has_a,target ID
+543,target,uses,payloads,target,uses,payloads
+544,show advanced command,has_a,advanced options,show advanced command,has_a,advanced options
+545,set command,has_a,advanced,set command,has_a,advanced
+546,IPS,has_a,signatures,IPS,has_a,signatures
+547,NOP generators,can_analyze,CPU architecture,NOP generators,can_analyze,CPU architecture
+548,exploit,can_analyze,payload,exploit,can_analyze,payload
+549,msfconsole,has_a,exploit,msfconsole,has_a,exploit
+550,host,has_a,open,host,has_a,open
+551,services,has_a,ports,services,has_a,ports
+552,username/password,can_analyze,Metasploitable 2,username/password,can_analyze,Metasploitable 2
+553,Metasploitable 2,has_a,msfadmin/msfadmin,Metasploitable 2,has_a,msfadmin/msfadmin
+554,ifconfig command,can_analyze,IP address,ifconfig command,can_analyze,IP address
+555,netdiscover,can_analyze,Kali Linux machine,netdiscover,can_analyze,Kali Linux machine
+556,IP addresses,can_analyze,target host,IP addresses,can_analyze,target host
+557,open ports,can_analyze,services,open ports,can_analyze,services
+558,services,has_a,version,services,has_a,version
+559,version,can_analyze,operating system,version,can_analyze,operating system
+560,SSH service,has_a,OpenSSH,SSH service,has_a,OpenSSH
+561,OpenSSH,can_analyze,telnet service,OpenSSH,can_analyze,telnet service
+562,services,can_expose,vulnerabilities,services,can_expose,vulnerabilities
+563,users,uses,server,users,uses,server
+564,users,uses,network,users,uses,network
+565,penetration tester,uses,brute force,penetration tester,uses,brute force
+566,enumerate,has_a,user accounts,enumerate,has_a,user accounts
+567,user accounts,can_analyze,target machine,user accounts,can_analyze,target machine
+568,Rpcclient,can_analyze,Linux,Rpcclient,can_analyze,Linux
+569,connection,can_analyze,samba,connection,can_analyze,samba
+570,sessions,can_analyze,legacy systems,sessions,can_analyze,legacy systems
+571,open port,can_analyze,target host,open port,can_analyze,target host
+572,window,has_a,session,window,has_a,session
+573,session,can_analyze,Metasploitable 2,session,can_analyze,Metasploitable 2
+574,users,uses,system,users,uses,system
+575,Enum4linux,can_analyze,Kali Linux,Enum4linux,can_analyze,Kali Linux
+576,enumerate,can_analyze,Windows,enumerate,can_analyze,Windows
+577,hosts,has_a,Perl,hosts,has_a,Perl
+578,wrapper,can_analyze,smbclient,wrapper,can_analyze,smbclient
+579,rpcclient,has_a,nmblookup,rpcclient,has_a,nmblookup
+580,enum4linux,can_analyze,Metasploitable 2,enum4linux,can_analyze,Metasploitable 2
+581,Metasploit,is_part_of,console,Metasploit,is_part_of,console
+582,console,can_analyze,information,console,can_analyze,information
+583,IP address,can_analyze,Operating System,IP address,can_analyze,Operating System
+584,Operating System,has_a,ports,Operating System,has_a,ports
+585,opened,can_analyze,vulnerability,opened,can_analyze,vulnerability
+586,Metasploit,is_part_of,Nmap,Metasploit,is_part_of,Nmap
+587,Nmap,is_part_of,console,Nmap,is_part_of,console
+588,output,can_analyze,information,output,can_analyze,information
+589,scans,has_a,NSE,scans,has_a,NSE
+590,NSE,uses,ARP Ping Scan,NSE,uses,ARP Ping Scan
+591,NSE,has_a,post scan scripts,NSE,has_a,post scan scripts
+592,post scan scripts,can_analyze,vulnerabilities,post scan scripts,can_analyze,vulnerabilities
+593,Nmap,can_analyze,security holes,Nmap,can_analyze,security holes
+594,exploits,can_detect,hack,exploits,can_detect,hack
+595,hack,can_harm,target,hack,can_harm,target
+596,target,has_a,Metasploit,target,has_a,Metasploit
+597,Metasploit,has_a,commands,Metasploit,has_a,commands
+598,Metasploit,can_detect,backdoor,Metasploit,can_detect,backdoor
+599,backdoor,is_part_of,hack,backdoor,is_part_of,hack
+600,target,has_a,FTP,target,has_a,FTP
+601,command shell,can_detect,backdoor,command shell,can_detect,backdoor
+602,ls,can_analyze,targeting system,ls,can_analyze,targeting system
+603,Syslog,can_analyze,Linux,Syslog,can_analyze,Linux
+604,Linux,uses,file,Linux,uses,file
+605,Syslog,can_analyze,System Log,Syslog,can_analyze,System Log
+606,detection,can_analyze,issues,detection,can_analyze,issues
+607,architecture,has_a,severity,architecture,has_a,severity
+608,severity,can_analyze,error,severity,can_analyze,error
+609,logs,can_analyze,system messages,logs,can_analyze,system messages
+610,syslog,is_part_of,rsyslog,syslog,is_part_of,rsyslog
+611,rsyslog,is_part_of,logging system,rsyslog,is_part_of,logging system
+612,logging system,can_analyze,system log,logging system,can_analyze,system log
+613,syslog,can_analyze,syslogconf,syslog,can_analyze,syslogconf
+614,rsyslog,has_a,configures,rsyslog,has_a,configures
+615,configures,has_a,/etc/rsyslogd/,configures,has_a,/etc/rsyslogd/
+616,/etc/rsyslogd/,can_analyze,folder,/etc/rsyslogd/,can_analyze,folder
+617,rule,has_a,fields,rule,has_a,fields
+618,selector field,can_analyze,facility,selector field,can_analyze,facility
+619,facility,has_a,priority,facility,has_a,priority
+620,facility,has_a,auth,facility,has_a,auth
+621,cron,is_part_of,daemon,cron,is_part_of,daemon
+622,daemon,can_analyze,kern,daemon,can_analyze,kern
+623,mail,has_a,mark,mail,has_a,mark
+624,auth,is_part_of,syslog,auth,is_part_of,syslog
+625,subsystem,uses,message,subsystem,uses,message
+626,log,can_analyze,mail,log,can_analyze,mail
+627,warn,can_analyze,warning,warn,can_analyze,warning
+628,err,can_analyze,error,err,can_analyze,error
+629,crit,can_analyze,alert,crit,can_analyze,alert
+630,severity,can_analyze,message,severity,can_analyze,message
+631,log,has_a,critical,log,has_a,critical
+632,critical,can_analyze,Linux machine,critical,can_analyze,Linux machine
+633,Linux machine,uses,log file,Linux machine,uses,log file
+634,/var/log,can_analyze,criticallog,/var/log,can_analyze,criticallog
+635,Log,can_analyze,kernel,Log,can_analyze,kernel
+636,kernel,uses,messages,kernel,uses,messages
+637,user,uses,terminals,user,uses,terminals
+638,firewall,can_analyze,warning,firewall,can_analyze,warning
+639,node,uses,syslogd,node,uses,syslogd
+640,logged,can_analyze,disk file,logged,can_analyze,disk file
+641,Unix/Linux,has_a,domain socket,Unix/Linux,has_a,domain socket
+642,domain socket,can_analyze,log messages,domain socket,can_analyze,log messages
+643,syslog,can_analyze,standard C library,syslog,can_analyze,standard C library
+644,syslog,has_a,port,syslog,has_a,port
+645,port,can_analyze,messages,port,can_analyze,messages
+646,remote,can_analyze,messages,remote,can_analyze,messages
+647,syslogd,uses,error message,syslogd,uses,error message
+648,remote host,uses,configuration file,remote host,uses,configuration file
+649,Ubuntu,uses,rsyslogd,Ubuntu,uses,rsyslogd
+650,configure,can_analyze,syslog,configure,can_analyze,syslog
+651,log,can_analyze,iptables,log,can_analyze,iptables
+652,iptables,uses,messages,iptables,uses,messages
+653,logged,has_a,/var/log/messages,logged,has_a,/var/log/messages
+654,rsyslog,can_analyze,errors,rsyslog,can_analyze,errors
+655,firewall,can_analyze,logs,firewall,can_analyze,logs
+656,print,can_analyze,iptables,print,can_analyze,iptables
+657,iptables,uses,logs,iptables,uses,logs
+658,monitoring,has_a,console,monitoring,has_a,console
+659,logging,can_analyze,kernel,logging,can_analyze,kernel
+660,ubuntu distribution,uses,rsyslogd,ubuntu distribution,uses,rsyslogd
+661,setup,has_a,rsyslog,setup,has_a,rsyslog
+662,rsyslog,has_a,forwarding,rsyslog,has_a,forwarding
+663,forwarding,can_analyze,client,forwarding,can_analyze,client
+664,syslog,is_part_of,Syslog,syslog,is_part_of,Syslog
+665,Syslog,can_analyze,syslogd,Syslog,can_analyze,syslogd
+666,Logging,can_analyze,Linux,Logging,can_analyze,Linux
+667,Linux,has_a,rsyslog,Linux,has_a,rsyslog
+668,rsyslog,is_part_of,syslog,rsyslog,is_part_of,syslog
+669,syslog,can_analyze,log,syslog,can_analyze,log
+670,facilities,has_a,actions,facilities,has_a,actions
+671,Ubuntu system,uses,syslog.conf,Ubuntu system,uses,syslog.conf
+672,rsyslog,is_part_of,rsyslog,rsyslog,is_part_of,rsyslog
+673,rsyslog,can_analyze,configuration file,rsyslog,can_analyze,configuration file
+674,rsyslog,can_analyze,configuration files,rsyslog,can_analyze,configuration files
+675,Default,is_part_of,rsyslog,Default,is_part_of,rsyslog
+676,rsyslog,has_a,setup configurations,rsyslog,has_a,setup configurations
+677,setup configurations,can_analyze,file,setup configurations,can_analyze,file
+678,Selectors,can_analyze,Facility,Selectors,can_analyze,Facility
+679,Facility,has_a,Severity Levels,Facility,has_a,Severity Levels
+680,/var/log/,can_analyze,Linux,/var/log/,can_analyze,Linux
+681,location,uses,log files,location,uses,log files
+682,kernel,uses,logs,kernel,uses,logs
+683,/var/log,can_analyze,files,/var/log,can_analyze,files
+684,vendors,uses,application,vendors,uses,application
+685,machines,uses,logs,machines,uses,logs
+686,machine,uses,authlog,machine,uses,authlog
+687,client,uses,logs,client,uses,logs
+688,rsyslog,can_analyze,machine,rsyslog,can_analyze,machine
+689,configured,can_analyze,client-server,configured,can_analyze,client-server
+690,client-server,has_a,syslog,client-server,has_a,syslog
+691,syslog,can_analyze,instances,syslog,can_analyze,instances
+692,rsyslog,can_analyze,client,rsyslog,can_analyze,client
+693,client,has_a,forward,client,has_a,forward
+694,forward,can_analyze,log,forward,can_analyze,log
+695,transmitted,can_analyze,log data,transmitted,can_analyze,log data
+696,module,can_analyze,network,module,can_analyze,network
+697,network,has_a,down,network,has_a,down
+698,Access,can_analyze,logs,Access,can_analyze,logs
+699,access privilege,can_analyze,machines,access privilege,can_analyze,machines
+700,architecture,uses,logs,architecture,uses,logs
+701,machine,uses,log data,machine,uses,log data
+702,centralized system,has_a,single-point failure,centralized system,has_a,single-point failure
+703,log server,uses,logs,log server,uses,logs
+704,clients,uses,messages,clients,uses,messages
+705,locally,can_analyze,server,locally,can_analyze,server
+706,syslog,can_analyze,Ubuntu,syslog,can_analyze,Ubuntu
+707,configure,can_analyze,rsyslog server,configure,can_analyze,rsyslog server
+708,rsyslog server,uses,logs,rsyslog server,uses,logs
+709,templates,can_analyze,files,templates,can_analyze,files
+710,facility,has_a,severity,facility,has_a,severity
+711,severity,can_analyze,remote server,severity,can_analyze,remote server
+712,remote server,has_a,template,remote server,has_a,template
+713,rsyslog,has_a,path,rsyslog,has_a,path
+714,path,can_analyze,data,path,can_analyze,data
+715,computer name,can_analyze,log,computer name,can_analyze,log
+716,syslog,can_analyze,facility,syslog,can_analyze,facility
+717,restart,can_analyze,rsyslog server,restart,can_analyze,rsyslog server
+718,rsyslog server,has_a,listening,rsyslog server,has_a,listening
+719,server,uses,logs,server,uses,logs
+720,hostname,can_analyze,host,hostname,can_analyze,host
+721,Restart,can_analyze,rsyslog server,Restart,can_analyze,rsyslog server
+722,rsyslog server,uses,errors,rsyslog server,uses,errors
+723,server side,uses,folder,server side,uses,folder
+724,client,has_a,hostname,client,has_a,hostname
+725,hostname,can_analyze,ubuntu,hostname,can_analyze,ubuntu
+726,syslog,has_a,log,syslog,has_a,log
+727,logged,can_analyze,remote server,logged,can_analyze,remote server
+728,log-level,can_analyze,warning,log-level,can_analyze,warning
