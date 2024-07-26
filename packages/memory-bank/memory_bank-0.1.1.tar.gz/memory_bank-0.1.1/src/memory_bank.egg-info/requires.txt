@@ -1,0 +1,5 @@
+langchain-core
+
+[dev]
+langchain-anthropic
+python-dotenv
