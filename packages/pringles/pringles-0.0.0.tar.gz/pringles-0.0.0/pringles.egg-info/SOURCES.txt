@@ -1,0 +1,9 @@
+requirements.txt
+setup.cfg
+setup.py
+pringles/__init__.py
+pringles.egg-info/PKG-INFO
+pringles.egg-info/SOURCES.txt
+pringles.egg-info/dependency_links.txt
+pringles.egg-info/requires.txt
+pringles.egg-info/top_level.txt
