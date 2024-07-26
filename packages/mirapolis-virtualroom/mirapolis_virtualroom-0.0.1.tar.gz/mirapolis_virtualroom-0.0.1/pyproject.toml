@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mirapolis-virtualroom"
+version = "0.0.1"
+description = "Python API Client for Mirapolis VirtualRoom. Based on original documentation. Uses Pydantic and aiohttp."
+authors = ["gulyaeve <gulyaeve@icloud.com>"]
+license = "GPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.9.3"
+pydantic = "^2.6.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
