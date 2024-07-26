@@ -1,0 +1,14 @@
+icplot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icplot/cairo_interface.py,sha256=55JqNKmZ-KeN0nEHEmCxZcioP7aTJtRp-gdW-Sqi4fM,2105
+icplot/gantt.py,sha256=pbk2fkpM6eep_LAgGUnu2mOn646IAokuqc44qKD8FSA,1909
+icplot/geometry.py,sha256=C8y3u2oBnGNL7o1gqb-JotH7zOwH9iRSUB811OycYMc,1033
+icplot/image_utils.py,sha256=wwMQHuu-wkP_pkssCaTGpF7-OY450APruxxI1wZdkk4,1014
+icplot/main_cli.py,sha256=Xc2bs-MpyTeJWhzEhYHxBZlVQpf51XFfzetDQ2MKyWM,1766
+icplot/project_elements.py,sha256=xXCNc4vTNCo9PKCsxe28GBMG4WDNYK_wGnKjliVjyY4,66
+icplot/tex_interface.py,sha256=QtyT5KLi8LnnuefpTF5QOi43Yl-6rnO-zWQW4qCPGA0,2605
+icplot-0.0.4.dist-info/LICENSE,sha256=JedcPd23DfREo3CH5_Sc8He0jmmbOWIm1_sQaisXZ9E,34592
+icplot-0.0.4.dist-info/METADATA,sha256=AkqhhPYegUIuPvWuoBEJG5S5ruXgIStyV4jS2h4rT-Y,2156
+icplot-0.0.4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+icplot-0.0.4.dist-info/entry_points.txt,sha256=6CdEGO5Z4NTQoOeRITTKGtzT3xNX47CGHZuWNWxZuZs,52
+icplot-0.0.4.dist-info/top_level.txt,sha256=T_ecIGmXlOO4_xP86S-OFL8nnoxmDQFXjcDoIwpiHQk,7
+icplot-0.0.4.dist-info/RECORD,,
