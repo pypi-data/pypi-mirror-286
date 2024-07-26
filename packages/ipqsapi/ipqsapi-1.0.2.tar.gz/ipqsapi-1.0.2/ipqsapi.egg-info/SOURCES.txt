@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ipqsapi.egg-info/PKG-INFO
+ipqsapi.egg-info/SOURCES.txt
+ipqsapi.egg-info/dependency_links.txt
+ipqsapi.egg-info/requires.txt
+ipqsapi.egg-info/top_level.txt
