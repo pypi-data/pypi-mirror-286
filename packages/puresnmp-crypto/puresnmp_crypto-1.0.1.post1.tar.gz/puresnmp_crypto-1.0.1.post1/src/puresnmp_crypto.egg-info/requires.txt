@@ -1,0 +1,12 @@
+cryptography>=38.0.1
+
+[dev]
+mypy
+black
+pylint
+sphinx
+furo
+
+[test]
+pytest
+pytest-cov
