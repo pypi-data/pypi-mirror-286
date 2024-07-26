@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: snapshotkockpit
+Version: 0.0.1
+Summary: A library for creating snapshots of data over specified date ranges using Spark.
+Author: Naveen Gulati, Shubham Rawat
+Author-email: gulati1432@gmail.com, rawatshubham71@gmail.com
+Keywords: Snapshot,pyspark,Naveen Gulati,Shubham Rawat
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Snapshot Library
+
+This library provides functionality to create snapshots of data over a specified date range using Apache Spark. It allows users to efficiently capture and analyze data states at specific points in time, which is useful for backup, recovery, and historical data analysis.
+
+## Features
+
+- **Flexible Date Range**: Create snapshots for any specified start and end dates.
+- **Data Aggregation**: Automatically groups and sums data by specified columns.
+- **Spark Integration**: Leverages the power of Apache Spark for distributed data processing.
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install Snapshot
