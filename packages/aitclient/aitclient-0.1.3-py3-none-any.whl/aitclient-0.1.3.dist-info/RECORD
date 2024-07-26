@@ -1,0 +1,9 @@
+aitclient/__init__.py,sha256=wMQTD_pKVnF-UzWqekvID9aqB-fwvItlchgaM5LgDWE,56
+aitclient/auth.py,sha256=AQdNZzsHVaJeVNyxo16Em-7FUOA4S1vYfFWG4Amnyjs,3334
+aitclient/upload.py,sha256=egDqvGGskDzmn7llKi513AgimzPfC4nxxrAUqi-O3po,8482
+aitclient-0.1.3.dist-info/LICENSE,sha256=ZVo899N9J3OCdYC-Fm0R5iX0Eql87llZav0zIbtFGaI,1091
+aitclient-0.1.3.dist-info/METADATA,sha256=88HcyzjhGSQGDmOl_WH-L61s1yQ3KbMqOo58_Xnh-AU,810
+aitclient-0.1.3.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+aitclient-0.1.3.dist-info/entry_points.txt,sha256=c0kSKF627k19VGqEyCU2NWWuacxR52XqDIxbuWy6cSE,45
+aitclient-0.1.3.dist-info/top_level.txt,sha256=kWPfMivEo7p-euqn_sk4iKJ1bj6nuzyWEADYLHKX-KI,10
+aitclient-0.1.3.dist-info/RECORD,,
