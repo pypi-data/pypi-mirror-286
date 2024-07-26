@@ -1,0 +1,12 @@
+unlimited_classifier/__init__.py,sha256=cTgqaMbGnZYIuPV7L6ugTSgqC0pDBvtrjJwB3aPScwg,32
+unlimited_classifier/labels_trie.pyx,sha256=74xdjsAunZwSww1YWzoip80kASos9hHGt16sfs9z2A0,984
+unlimited_classifier/labels_trie.pyxbld,sha256=taOj_XIEQ-PsAC56gAlsoVCpV1r5Rjz7EpuPaInFwYA,373
+unlimited_classifier/main.py,sha256=p6GhmC9ku1gg2rNjo6fz0bWYmF5BzbZg8nBbQ8kJcsI,11033
+unlimited_classifier/scorer.py,sha256=Gs1P9brqsVgi0gxwR1_vMwvzL4iS4WH1BhffOiAZVTo,1442
+unlimited_classifier/trie.cpp,sha256=KVVxefpsSIjYGrtPXfrLZV2woMLY2qxL_biXu3Gytf0,3830
+unlimited_classifier/trie.h,sha256=x0tHWo5n4V4_9ESAOL2E5uBjI57FJnvg-N_mpVegUos,1121
+unlimited_classifier/trie.pxd,sha256=uTn0tW_cDKML7gMgXt8MQDynXNeaRw_Hp1MfprDsyLo,570
+unlimited_classifier-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+unlimited_classifier-0.0.3.dist-info/METADATA,sha256=1gJnICUlij4BRLR8CxidFzBTrVB8DEWF1xnUyt1jtSU,5302
+unlimited_classifier-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+unlimited_classifier-0.0.3.dist-info/RECORD,,
