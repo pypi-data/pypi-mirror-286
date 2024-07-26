@@ -1,0 +1,104 @@
+
+# -*- coding: utf-8 -*-
+# 1 : imports of python lib
+import hashlib
+import hmac
+from datetime import datetime
+from requests import Request, Response
+from timpypi.utils import exception
+
+
+@exception
+def calcSignature(req: Request, secret: str):
+    queries = dict(req.params)
+    keys = [k for k in queries if k not in ["sign", "access_token"]]
+    keys.sort()
+    input = "".join(k + str(queries[k]) for k in keys)
+    input = req.url + input
+    input = secret + input + secret
+    return generateSHA256(input, secret)
+
+
+@exception
+def generateSHA256(input: str, secret: str):
+    h = hmac.new(secret.encode(), input.encode(), hashlib.sha256)
+    return h.hexdigest()
+
+
+@staticmethod
+@exception
+def effectRainbow(message: str, meme=""):
+    if not meme:
+        meme = "web/static/img/smile.svg"
+    return {
+        "effect": {
+            "fadeout": "slow",
+            "message": message,
+            "img_url": meme,
+            "type": "rainbow_man",
+        }
+    }
+
+
+@staticmethod
+@exception
+def convertDictValueToString(data: dict, keys: list):
+    """
+    @Description:
+        Convert value to string
+        Keys contain value break
+    @Return: dict()
+    """
+    convert_data = data
+    for k, v in data.items():
+        if k in keys:
+            continue
+        convert_data[k] = str(v)
+    return convert_data
+
+
+@exception
+def generateSign(api: str, params: dict, secret: str):
+    timestamp = str(int(datetime.timestamp(datetime.now())))
+    if params.get("timestamp", False):
+        params.update({"timestamp": timestamp})
+    req = Request(url=api, params=params)
+    return calcSignature(req, secret)
+
+
+@staticmethod
+@exception
+def requestGeneral(
+    method: Request,
+    domain: str,
+    api: str,
+    params: dict,
+    body: dict,
+    secret: str,
+    key="data"
+) -> Response:
+    timestamp = str(int(datetime.timestamp(datetime.now())))
+    if "timestamp" not in params.keys():
+        params["timestamp"] = timestamp
+    sinature = generateSign(api=api, params=params, secret=secret)
+    params.update({"sign": sinature})
+    if key == "json":
+        return method(url=meticulousteURL(domain=f"{domain}{api}", params=params), params=params, json=body)
+    return method(url=meticulousteURL(domain=f"{domain}{api}", params=params), params=params, data=body)
+
+
+@exception
+def meticulousteURL(domain: str, params: dict) -> str:
+    pairs = [f"{key}={value}" for key, value in params.items()]
+    return domain + "?" + "&".join(pairs)
+
+
+@exception
+def __request__(method, domain, api, headers, body, params, ttype):
+    if "timestamp" not in params.keys():
+        params["timestamp"] = str(int(datetime.timestamp(datetime.now())))
+    pairs = [f"{key}={value}" for key, value in params.items()]
+    url = domain + api + "?" + "&".join(pairs)
+    if ttype == "json":
+        return method(url, params=params, headers=headers, json=body)
+    return method(url, params=params, headers=headers, data=body)
