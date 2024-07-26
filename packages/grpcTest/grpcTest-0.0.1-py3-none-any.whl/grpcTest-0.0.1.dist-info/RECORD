@@ -1,0 +1,11 @@
+grpcTest/__init__.py,sha256=0dFkjS-9vD6mga-56xe0W102jXD1w3JKvu-dQcOn6fE,11
+grpcTest/helloworld_grpc_client.py,sha256=VUc9Qvq43yO76c721g782ygb2z70Z4h4x6rm5t7Pn4E,483
+grpcTest/helloworld_grpc_server.py,sha256=y-F_bNEzh3r1vLgP8GLGjV8mU7JJgntcsInIpTi_ElE,852
+grpcTest/helloworld_pb2.py,sha256=LQdfe0HuXKsX0GhXvYLJA0JfHb8bIarV3qpV8HTtUvY,1445
+grpcTest/helloworld_pb2_grpc.py,sha256=07_OyAc6d4YjyC4RTz2e9mFm5hnfPaXceJBxksfQasg,3860
+grpcTest/test.py,sha256=e31dn8CN0oFPka6RR1WtBWYK2D62fvy2hnM-0gGIAfM,31
+grpcTest-0.0.1.dist-info/METADATA,sha256=kzIvxXgXu6YkJ4qofQgvYn8FpQdbpK-glPR86YnKMw8,574
+grpcTest-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+grpcTest-0.0.1.dist-info/license,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+grpcTest-0.0.1.dist-info/top_level.txt,sha256=szqHZZ1BrzIllzomCDQzCaFecsHcDeiivECD5GNAdRg,9
+grpcTest-0.0.1.dist-info/RECORD,,
