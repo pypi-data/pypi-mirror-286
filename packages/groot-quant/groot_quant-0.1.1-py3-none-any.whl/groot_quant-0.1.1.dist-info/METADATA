@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: groot-quant
+Version: 0.1.1
+Summary: A quantitative tool that run strategy through a large model semantic filtering
+Home-page: https://github.com/JaneShine/groot
+Author: xiejingxian
+Author-email: xiejingxian@zju.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dash (==1.20.0)
+Requires-Dist: dash-core-components (==1.16.0)
+Requires-Dist: dash-html-components (==1.1.3)
+Requires-Dist: numpy (==1.24.4)
+Requires-Dist: pandas (==2.0.3)
+Requires-Dist: plotly (==4.14.3)
+Requires-Dist: pywencai (==0.12.2)
+Requires-Dist: setuptools (==69.5.1)
+Requires-Dist: tqdm (==4.66.2)
+Requires-Dist: tushare (==1.2.62)
+
+# groot: Make your flash of thought tradable
+一个通过大模型语义理解选股并完成A股策略回测与策略报告输出的量化玩具，目的是**快速验证投资小念头**。
+
+`groot`是一个将某种投资思维进行量化验证的尝试，其目的在于把一些投资思路转化为可交易的信号。
+
+---
+ A quantitative tool that selects stocks through a large model semantic filtering and completes *A-share* strategy backtesting and strategy report output, aiming to **quickly verify investment ideas.**
+
+`groot` is an attempt to quantitatively verify institutional subjective thinking, with the goal of transforming some investment ideas into **tradable** signals.
+
+## Quick Start
+[See README.md in github](https://github.com/JaneShine/groot)
