@@ -1,0 +1,3 @@
+[console_scripts]
+generate-keys = github_to_sops.__init__:generate_keys
+github-to-sops = github_to_sops.__init__:main
