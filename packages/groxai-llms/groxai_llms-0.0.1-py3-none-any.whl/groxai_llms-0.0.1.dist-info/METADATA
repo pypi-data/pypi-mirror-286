@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: groxai_llms
+Version: 0.0.1
+Summary: Helps to use the groxai_llms package for the devlopment
+Home-page: https://github.com/Intrepid-AI/groxai_llms
+Author: Intrepid-AI
+Author-email: jaiyesh0002@gmail.com
+Project-URL: Bug Tracker, https://github.com/Intrepid-AI/groxai_llms/issues
+Requires-Python: >3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: mypy ; extra == 'testing'
+Requires-Dist: flake8 ; extra == 'testing'
+Requires-Dist: tox ; extra == 'testing'
+Requires-Dist: black ; extra == 'testing'
+
+# groxai_llms
+pip package for using different llms
+
+
+Supports gpt and gemini
+
+
+Ensure you have your openai and google api key as system path variables like:
+
+OPENAI_API_KEY: <Your API KEY>
+GOOGLE_API_KEY: <Your API KEY>
