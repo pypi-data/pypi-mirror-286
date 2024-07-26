@@ -1,0 +1,766 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-05 13:56+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+
+#: __init__.py:42 views_conf.py:172 views_conf.py:175 views_conf.py:178
+msgid "Diacamma payoff"
+msgstr "Règlement Diacamma"
+
+#: editors.py:163
+msgid "payoff null!"
+msgstr "règlement vide !"
+
+#: editors.py:187
+msgid "linked"
+msgstr "associé"
+
+#: editors.py:255 models.py:608
+msgid "No-valid selection!"
+msgstr "Sélection non valide!"
+
+#: editors.py:295
+msgid "repartition mode"
+msgstr "répartition proportionnelle"
+
+#: info.html:5 info.html:132
+msgid "Information"
+msgstr "Information"
+
+#: models.py:60
+msgid "third"
+msgstr "tiers"
+
+#: models.py:61
+msgid "is revenu"
+msgstr "est un revenu"
+
+#: models.py:63
+msgid "total payed"
+msgstr "total payé"
+
+#: models.py:64
+msgid "rest to pay"
+msgstr "restant dû"
+
+#: models.py:79 models.py:80 models.py:448
+msgid "supporting"
+msgstr "support"
+
+#: models.py:140
+msgid "no third selected"
+msgstr "aucun tiers sélectionné"
+
+#: models.py:145
+msgid "third has not correct account"
+msgstr "le tiers n'a pas de compte d'ouvert"
+
+#: models.py:154
+msgid "date not include in current fiscal year"
+msgstr "la date n'est pas incluse dans l'exercice"
+
+#: models.py:247
+msgid "saved PDF report not found !"
+msgstr "rapport PDF non trouvé !"
+
+#: models.py:384
+msgid "designation"
+msgstr "désignation"
+
+#: models.py:385 models.py:454 models.py:732 views_deposit.py:155
+#: views_deposit.py:307
+msgid "reference"
+msgstr "référence"
+
+#: models.py:386 models.py:456 models.py:462 models.py:730 models.py:893
+#: views_conf.py:129
+msgid "bank account"
+msgstr "compte bancaire"
+
+#: models.py:387
+msgid "order key"
+msgstr "ordre"
+
+#: models.py:388
+msgid "is disabled"
+msgstr "désactivé"
+
+#: models.py:390
+msgid "bank journal"
+msgstr "journal de banque"
+
+#: models.py:391
+msgid "temporary account"
+msgstr "compte d'attente"
+
+#: models.py:392
+msgid "temporary journal"
+msgstr "journal d’attente"
+
+#: models.py:394
+msgid "fee account"
+msgstr "imputation des frais"
+
+#: models.py:428
+msgid "bank code"
+msgstr "code bancaires"
+
+#: models.py:429
+msgid "bank codes"
+msgstr "codes bancaires"
+
+#: models.py:441
+msgid "cash"
+msgstr "espèces"
+
+#: models.py:441 payment_type.py:190
+msgid "cheque"
+msgstr "chèque"
+
+#: models.py:441 payment_type.py:168
+msgid "transfer"
+msgstr "virement"
+
+#: models.py:442
+msgid "credit card"
+msgstr "carte de crédit"
+
+#: models.py:442
+msgid "other"
+msgstr "autre"
+
+#: models.py:442
+msgid "levy"
+msgstr "prélèvement"
+
+#: models.py:442
+msgid "internal"
+msgstr "interne"
+
+#: models.py:446
+msgid "by ratio"
+msgstr "par prorata"
+
+#: models.py:446
+msgid "by date"
+msgstr "sur dette la plus ancienne"
+
+#: models.py:449 models.py:731 models.py:951 views_deposit.py:152
+#: views_deposit.py:306
+msgid "date"
+msgstr "date"
+
+#: models.py:450 models.py:461 models.py:846 models.py:954 payment_type.py:150
+#: views_deposit.py:154 views_deposit.py:305
+msgid "amount"
+msgstr "montant"
+
+#: models.py:452
+msgid "mode"
+msgstr "mode"
+
+#: models.py:453 models.py:953 views_deposit.py:153 views_deposit.py:304
+msgid "payer"
+msgstr "payeur"
+
+#: models.py:455
+msgid "entry"
+msgstr "écriture"
+
+#: models.py:457
+msgid "bank fee"
+msgstr "frais bancaires"
+
+#: models.py:459
+msgid "linked payoff"
+msgstr "élément associé"
+
+#: models.py:486
+#, python-format
+msgid "%(bank)s (fee = %(fee)s)"
+msgstr "%(bank)s (frais = %(fee)s)"
+
+#: models.py:494 models.py:566
+msgid "an entry associated to this payoff is closed!"
+msgstr "une écriture associée à ce règlement est clôturée !"
+
+#: models.py:514 models.py:647 models.py:984
+#, python-format
+msgid "payoff for %s"
+msgstr "règlement de %s"
+
+#: models.py:558 models.py:783
+msgid "account is not defined!"
+msgstr "le compte n'est pas défini !"
+
+#: models.py:649 models.py:986
+#, python-format
+msgid "payoff for %d multi-pay"
+msgstr "règlement de %d factures"
+
+#: models.py:678
+msgid "bill type different !"
+msgstr "type de justificatifs différents !"
+
+#: models.py:719 models.py:844
+msgid "payoff"
+msgstr "règlement"
+
+#: models.py:720 views_deposit.py:68
+msgid "payoffs"
+msgstr "règlements"
+
+#: models.py:727
+msgid "building deposit"
+msgstr "en création"
+
+#: models.py:727
+msgid "closed deposit"
+msgstr "clôturé"
+
+#: models.py:727
+msgid "valid deposit"
+msgstr "validé"
+
+#: models.py:729 models.py:952
+msgid "status"
+msgstr "statut"
+
+#: models.py:734
+msgid "total"
+msgstr "total"
+
+#: models.py:735
+msgid "number"
+msgstr "nombre"
+
+#: models.py:764
+#, python-format
+msgid "Remove of %s impossible!"
+msgstr "Supression de %s impossible !"
+
+#: models.py:767
+msgid "To Close"
+msgstr "Clôturer"
+
+#: models.py:773
+msgid "Validate"
+msgstr "Valider"
+
+#: models.py:779
+#, python-format
+msgid "Deposit slip '%s' validate"
+msgstr "Bordereau de chèques N°%s"
+
+#: models.py:838
+msgid "deposit slip"
+msgstr "remise de chèques"
+
+#: models.py:839
+msgid "deposit slips"
+msgstr "remises de chèques"
+
+#: models.py:843 views_deposit.py:157
+msgid "deposit"
+msgstr "remise"
+
+#: models.py:847 views_deposit.py:156 views_deposit.py:303
+msgid "link document"
+msgstr "document associé"
+
+#: models.py:883
+msgid "deposit detail"
+msgstr "détail de la remise"
+
+#: models.py:884
+msgid "deposit details"
+msgstr "détails"
+
+#: models.py:891
+msgid "type"
+msgstr "type"
+
+#: models.py:894
+msgid "data"
+msgstr "data"
+
+#: models.py:896 views_conf.py:131
+msgid "parameters"
+msgstr "paramètres"
+
+#: models.py:940
+msgid "payment method"
+msgstr "moyen de paiement"
+
+#: models.py:941
+msgid "payment methods"
+msgstr "moyens de paiement"
+
+#: models.py:949
+msgid "failure"
+msgstr "échec"
+
+#: models.py:949
+msgid "success"
+msgstr "succès"
+
+#: models.py:956
+msgid "contains"
+msgstr "contenu"
+
+#: models.py:967
+msgid "bank transaction"
+msgstr "transaction bancaire"
+
+#: models.py:968
+msgid "bank transactions"
+msgstr "transactions bancaires"
+
+#: models.py:1032
+msgid "payoff-cash-account"
+msgstr "compte de caisse"
+
+#: models.py:1034
+msgid "payoff-email-message"
+msgstr "message de courriel par défaut"
+
+#: models.py:1035
+msgid "#name{[br/]}{[br/]}Joint in this email #doc.{[br/]}{[br/]}Regards"
+msgstr ""
+"#name{[br/]}{[br/]}Veuillez trouver joint à ce courriel #doc.{[br/]}{[br/]}"
+"Sincères salutations"
+
+#: models.py:1036
+msgid "payoff-email-subject"
+msgstr "sujet de courriel par défaut"
+
+#: models.py:1037
+msgid "#reference"
+msgstr "#reference"
+
+#: models.py:1039
+msgid "payoff-mode"
+msgstr "règlement > mode"
+
+#: models.py:1041
+msgid "payoff-bank_account"
+msgstr "règlement > compte bancaire"
+
+#: models.py:1065 views.py:364
+msgid "Payement methods"
+msgstr "Moyens de paiement"
+
+#: payment_type.py:147 views.py:380 views.py:383 views_externalpayment.py:45
+msgid "Payment"
+msgstr "Paiement"
+
+#: payment_type.py:149
+msgid "nature"
+msgstr "nature"
+
+#: payment_type.py:160
+msgid "Please wait, you will be logged into the payment platform."
+msgstr ""
+"Patienter s'il vous plaît, vous allez être connecté à la plateforme de "
+"règlement."
+
+#: payment_type.py:170
+msgid "help_payoff_transfer"
+msgstr " "
+
+#: payment_type.py:173 payment_type.py:179
+msgid "IBAN"
+msgstr "IBAN"
+
+#: payment_type.py:173 payment_type.py:182
+msgid "BIC"
+msgstr "BIC"
+
+#: payment_type.py:192
+msgid "help_payoff_cheque"
+msgstr " "
+
+#: payment_type.py:195 payment_type.py:210
+msgid "payable to"
+msgstr "à l'ordre de"
+
+#: payment_type.py:195 payment_type.py:214
+msgid "address"
+msgstr "adresse"
+
+#: payment_type.py:223
+msgid "PayPal"
+msgstr "PayPal"
+
+#: payment_type.py:226
+msgid "help_payoff_paypal"
+msgstr "Veuillez préciser l'adresse courriel associé à votre compte PayPal."
+
+#: payment_type.py:229
+msgid "Paypal account"
+msgstr "compte Paypal"
+
+#: payment_type.py:229
+msgid "With control"
+msgstr "avec contrôle"
+
+#: payment_type.py:236 payment_type.py:343
+msgid "This item can't be validated!"
+msgstr "Cet élément n'est pas validable !"
+
+#: payment_type.py:264
+msgid "online"
+msgstr "en ligne"
+
+#: payment_type.py:266
+msgid "help_payoff_online"
+msgstr "Indiquez le lien internet vers votre site de règlement."
+
+#: payment_type.py:269 payment_type.py:276
+msgid "web address"
+msgstr "adresse web"
+
+#: payment_type.py:269 payment_type.py:280
+msgid "info"
+msgstr "information"
+
+#: payment_type.py:289
+msgid "MoneticoPaiement"
+msgstr "MoneticoPaiement"
+
+#: payment_type.py:292
+msgid "help_payoff_moneticopaiement"
+msgstr ""
+"Veuillez prendre contact avec votre agence bancaire pour faire ouvrir votre "
+"accès et obtenir les 3 champs à remplir.{[br/]}\n"
+"De plus, vous devez déclarer à la plateforme cet adresse de retour {[b]}%s/"
+"diacamma.payoff/validationPaymentMoneticoPaiement{[/b]} pour que l'outil "
+"soit notifié des paiements."
+
+#: payment_type.py:314
+msgid "companie code"
+msgstr "code d'entreprise"
+
+#: payment_type.py:314
+msgid "TPE"
+msgstr "code TPE"
+
+#: payment_type.py:314
+msgid "key"
+msgstr "clef de sécuritée"
+
+#: payment_type.py:368
+msgid "Hello-Asso"
+msgstr "Hello-Asso"
+
+#: payment_type.py:373
+msgid "help_payoff_helloasso"
+msgstr ""
+"Depuis le portail Hello-Asso, dans le menu \"Mon compte > Intégration et "
+"API\".{[br/]}\n"
+"- Recopiez ici le {[b]}mon clientid{[/b]} et le {[b]}mon clientsecret{[/b]}."
+"{[br/]}\n"
+"- Remplissez le champ {[b]}Mon URL de callback{[/b]} par l'adresse {[b]}%s/"
+"diacamma.payoff/validationPaymentHelloAsso{[/b]} pour que l'outil soit "
+"notifié des paiements."
+
+#: payment_type.py:482
+msgid "clientid"
+msgstr "Mon clientId"
+
+#: payment_type.py:482
+msgid "clientsecret"
+msgstr "Mon clientSecret"
+
+#: views.py:59
+msgid "Add payoff"
+msgstr "Ajouter un règlement"
+
+#: views.py:60
+msgid "Modify payoff"
+msgstr "Modifier un règlement"
+
+#: views.py:90
+msgid "Internal payoff not editable !"
+msgstr "Ce règlement interne n'est pas éditable !"
+
+#: views.py:110
+msgid "Delete payoff"
+msgstr "Supprimer un règlement"
+
+#: views.py:113
+msgid "change"
+msgstr "changer"
+
+#: views.py:120 views.py:188
+msgid "Select third"
+msgstr "Sélection d'un tiers"
+
+#: views.py:154
+msgid "Filtrer by contact"
+msgstr "Filtrer sur contact"
+
+#: views.py:175 views_deposit.py:317
+msgid "select"
+msgstr "sélectionner"
+
+#: views.py:232
+msgid "Send"
+msgstr "Envoyer"
+
+#: views.py:235
+msgid "Send by email"
+msgstr "Envoyer par courriel"
+
+#: views.py:277
+msgid "No send item !"
+msgstr "Élément non envoyé !"
+
+#: views.py:296
+msgid "nb of sending"
+msgstr "nombre à envoyer"
+
+#: views.py:305
+msgid "subject"
+msgstr "sujet"
+
+#: views.py:308
+msgid "message"
+msgstr "message"
+
+#: views.py:315
+msgid "Get saved report"
+msgstr "Obtenir le rapport sauvegardé"
+
+#: views.py:397
+msgid "No payment for this document."
+msgstr "Pas de paiement pour ce document"
+
+#: views_conf.py:34
+msgid "Management of parameters and configuration of payoff"
+msgstr "Modes de paiements et paramètres"
+
+#: views_conf.py:40
+msgid "Payoff configuration"
+msgstr "Configuration des règlements"
+
+#: views_conf.py:43
+msgid "Bank code"
+msgstr "Code bancaire"
+
+#: views_conf.py:53
+msgid "show only enabled bank account"
+msgstr "afficher seulement les comptes bancaires actifs"
+
+#: views_conf.py:57 views_conf.py:178
+msgid "Payment method"
+msgstr "Moyens de paiement"
+
+#: views_conf.py:60 views_conf.py:172
+msgid "Parameters"
+msgstr "Paramètres"
+
+#: views_conf.py:72
+msgid "Add bank code"
+msgstr "Ajouter un code bancaire"
+
+#: views_conf.py:73
+msgid "Modify bank code"
+msgstr "Modifier un code bancaire"
+
+#: views_conf.py:83
+msgid "Delete bank code"
+msgstr "Supprimer un code bancaire"
+
+#: views_conf.py:86
+msgid "Up"
+msgstr "Monter"
+
+#: views_conf.py:93
+msgid "Up bank code"
+msgstr "Monter un code bancaire"
+
+#: views_conf.py:107
+msgid "Add payment method"
+msgstr "Ajouter un moyen de paiement"
+
+#: views_conf.py:108
+msgid "Modify payment method"
+msgstr "Modifier un moyen de paiement"
+
+#: views_conf.py:118
+msgid "Delete payment method"
+msgstr "Supprimer un moyen de paiement"
+
+#: views_conf.py:134
+msgid "Payoff"
+msgstr "Règlement"
+
+#: views_conf.py:172
+msgid "Configuration of payoff parameters"
+msgstr "Definissez vos paramètrages de règlement"
+
+#: views_conf.py:175
+msgid "Bank account"
+msgstr "Comptes bancaires"
+
+#: views_conf.py:175
+msgid "Configuration of bank account"
+msgstr ""
+"Ajoutez vos comptes bancaires.{[br/]}Ils apparaitront dans la liste de vos "
+"établissements financiers."
+
+#: views_conf.py:178
+msgid "Configuration of payment method"
+msgstr ""
+"Ajoutez vos moyens de paiement.{[br/]}Ces choix seront proposés à vos "
+"utilisateurs pour un règlement à distance."
+
+#: views_deposit.py:27
+msgid "Manage deposit of cheque"
+msgstr "Gestion des remises de chèques"
+
+#: views_deposit.py:33
+msgid "Deposit slips"
+msgstr "Remises de chèques"
+
+#: views_deposit.py:46
+msgid "Filter by status"
+msgstr "Filtrer sur le statut"
+
+#: views_deposit.py:55 views_deposit.py:105
+msgid "Filter by year"
+msgstr "Filtrer sur l'exercice comptable"
+
+#: views_deposit.py:75
+msgid "payoff by cheque"
+msgstr "Les règlements par chèque"
+
+#: views_deposit.py:112 views_deposit.py:270
+msgid "payer contains"
+msgstr "nom payeur contient"
+
+#: views_deposit.py:118 views_deposit.py:276
+msgid "reference contains"
+msgstr "référence contient"
+
+#: views_deposit.py:125 views_deposit.py:283
+msgid "date superior to"
+msgstr "date supérieure à"
+
+#: views_deposit.py:132 views_deposit.py:290
+msgid "date inferior to"
+msgstr "date inférieure à"
+
+#: views_deposit.py:139
+msgid "without deposit"
+msgstr "sans remise de chèques"
+
+#: views_deposit.py:179
+msgid "Add deposit slip"
+msgstr "Ajouter une remise de chèques"
+
+#: views_deposit.py:180
+msgid "Modify deposit slip"
+msgstr "Modifier une remise de chèques"
+
+#: views_deposit.py:190
+msgid "Show deposit slip"
+msgstr "Voir une remise de chèques"
+
+#: views_deposit.py:207
+msgid "show link document"
+msgstr "voir les documents associés"
+
+#: views_deposit.py:218
+msgid "Delete deposit slip"
+msgstr "Supprimer une remise de chèques"
+
+#: views_deposit.py:237
+msgid "Deposit slip"
+msgstr "Bordereau de remise de chèques"
+
+#: views_deposit.py:244
+msgid "*** NO VALIDATED ***"
+msgstr "*** NON VALIDÉ ***"
+
+#: views_deposit.py:255
+msgid "Add deposit detail"
+msgstr "Ajouter un détail"
+
+#: views_deposit.py:264
+msgid "select cheque to deposit"
+msgstr "sélectionnez les créances liées aux chèques à déposer"
+
+#: views_deposit.py:329
+msgid "Save deposit detail"
+msgstr "Sauver le détail"
+
+#: views_deposit.py:342
+msgid "Delete deposit detail"
+msgstr "Supprimer un détail"
+
+#: views_deposit.py:352
+msgid "show bank transactions"
+msgstr "voir les transactions bancaires"
+
+#: views_deposit.py:358
+msgid "Bank transactions"
+msgstr "Transactions bancaires"
+
+#: views_deposit.py:368
+msgid "Show bank transaction"
+msgstr "Voir une transaction bancaire"
+
+#: views_externalpayment.py:77
+#, python-format
+msgid "It is not possible to pay-off this item with %s !"
+msgstr "Il n'est pas possible de régler cet élément avec %s !"
+
+#: views_externalpayment.py:96
+msgid "This item is deleted, payed or disabled."
+msgstr "Cet élément est supprimé, réglé ou désactivé."
+
+#: views_externalpayment.py:194
+msgid "Payoff terminate."
+msgstr "Paiement terminé."
+
+#: views_externalpayment.py:195
+msgid "Thanks you."
+msgstr "Merci de votre visite."
+
+#: views_externalpayment.py:197
+msgid "Payoff aborded."
+msgstr "Paiement annulé ou invalide !"
+
+#~ msgid "bill"
+#~ msgstr "facture"
+
+#~ msgid "closed"
+#~ msgstr "clôturé"
+
+#~ msgid "valid"
+#~ msgstr "validé"
+
+#~ msgid "payoff-bankcharges-account"
+#~ msgstr "imputation des frais bancaires"
+
+#~ msgid "Print deposit slip"
+#~ msgstr "Imprimer un bordereau de remise de chèques"
+
+#~ msgid "value"
+#~ msgstr "valeur"
