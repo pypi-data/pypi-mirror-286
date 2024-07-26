@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Ask a Question{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+  <label for="select-advisor">Select an Advisor: </label>
+  <select name="select-advisor" id="select-advisor">
+    <option value="advisor-1">Advisor 1</option>
+    <option value="advisor-2">Advisor 2</option>
+  </select>
+  <br><br>
+  <!--<label for="user-query">Enter your query:</label><br>-->
+  <input type="text" id="user-query" name="user-query" value="Enter your query here">
+  <input type="submit" value="Submit">
+{% endblock content %}

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "happy-rag-friends"
+version = "0.1.0"
+description = "LLM advisors with varied personalities and knowledge bases"
+authors = ["J-sephB-lt-n <joseph.jazz.bolton@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+#llama-cpp-python = "^0.2.82"
+flask = "^3.0.3"
+importlib-resources = "^6.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+[tool.poetry.scripts]
+happy-rag-friends = "happy_rag_friends.cli:main"

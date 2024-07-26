@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy RAG Friends - {% block title %}{% endblock title %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="navbar">
+    <p href="#" class="logo">Happy RAG Friends</p>
+    <div class="menu">
+      <a href="{{ url_for('routes.home') }}">&#8962;</a>
+      <a href="{{ url_for('routes.ask_a_question') }}">&#9998;</a>
+      <a href="{{ url_for('routes.advisor_settings') }}">&#9863;</a>
+      <a href="{{ url_for('routes.general_settings') }}">&#x2699;</a>
+    </div>
+  </div>
+<section class="page-content-container">
+  <header>
+    {% block header %}{% endblock header %}
+  </header>
+  <main>
+    {% block content %}<p>No messages.</p>{% endblock content %}
+  <main>
+</section>
+</body>
+</html>

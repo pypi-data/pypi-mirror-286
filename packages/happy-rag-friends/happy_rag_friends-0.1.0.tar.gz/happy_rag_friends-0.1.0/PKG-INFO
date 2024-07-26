@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: happy-rag-friends
+Version: 0.1.0
+Summary: LLM advisors with varied personalities and knowledge bases
+License: GPL-3.0
+Author: J-sephB-lt-n
+Author-email: joseph.jazz.bolton@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: importlib-resources (>=6.4.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+# happy-language-friends
+
+Something Cool is Coming
+
+```bash
+python -m venv venv
+source venv/bin/activate
+
+poetry build
+```
+
