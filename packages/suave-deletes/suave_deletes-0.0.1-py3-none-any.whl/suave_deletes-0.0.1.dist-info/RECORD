@@ -1,0 +1,11 @@
+suave_deletes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+suave_deletes/mixins.py,sha256=2sm6j9ZismEUOa1gOotPMfmtEbO58gE84eqPUVZ6cxw,194
+suave_deletes/queries.py,sha256=YtIStx__3zZa2awgh-lzwll1f7d2mdrUfT8l8tpVmdM,1054
+suave_deletes/sessions.py,sha256=dW_Lfw9Uu2sCrBzwJ8lcDZXNmVEm7uDWG_rx_1Vorpg,1668
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_suave_deletes.py,sha256=6cCWZUlSWukJNTE3t9Gq3XWk-CR-XnYP3fRfqJWiRCM,1543
+suave_deletes-0.0.1.dist-info/LICENSE,sha256=grdhMtkzka90G5SCkl6tZEAYoa6gdgmZntf5T7eBU2c,1070
+suave_deletes-0.0.1.dist-info/METADATA,sha256=3WFAyxqzbQLqBAAe6E09VIHsV1lHDyHCOA3dfB9qLL8,2962
+suave_deletes-0.0.1.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+suave_deletes-0.0.1.dist-info/top_level.txt,sha256=tlztFPT2H-hiWoUg_FxZvbaf7Mzb-yOIBRAkDyogPq4,20
+suave_deletes-0.0.1.dist-info/RECORD,,
