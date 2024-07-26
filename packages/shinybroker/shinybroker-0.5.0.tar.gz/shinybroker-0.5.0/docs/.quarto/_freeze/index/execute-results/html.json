@@ -1,0 +1,12 @@
+{
+  "hash": "cfec673705a57b2522a2a5a0f1d3ed88",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Overview\naliases:\n  - ../index.html\njupyter:\n  kernelspec:\n    display_name: Python 3 (ipykernel)\n    language: python\n    name: python3\n---\n\n\n\nThe ShinyBroker intro video will be here soon, but until I shoot it and upload\nit, here's a stand-in test video about Quartodocs, the package I'm using to\nbuild the site.\n\nCheck out the below screencast for a walkthrough of creating a documentation\nsite, or read on for instructions -- it's a good platform :)\n\n\n<div style=\"position: relative; padding-bottom: 64.5933014354067%; height: 0;\"><iframe src=\"https://www.loom.com/embed/fb4eb736848e470b8409ba46b514e2ed?sid=31db7652-43c6-4474-bab3-19dea2170775\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe></div>\n<br>\n\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
