@@ -1,0 +1,11 @@
+README.md
+setup.py
+vital_model_chars2vec_onnx/__init__.py
+vital_model_chars2vec_onnx/chars2vec_onnx.py
+vital_model_chars2vec_onnx.egg-info/PKG-INFO
+vital_model_chars2vec_onnx.egg-info/SOURCES.txt
+vital_model_chars2vec_onnx.egg-info/dependency_links.txt
+vital_model_chars2vec_onnx.egg-info/requires.txt
+vital_model_chars2vec_onnx.egg-info/top_level.txt
+vital_model_chars2vec_onnx/models/en_300/model.onnx
+vital_model_chars2vec_onnx/models/en_300/model.pkl

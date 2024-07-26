@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vital-model-chars2vec-onnx
+Version: 0.1.0
+Summary: Vital Onnx version of char2vec
+Home-page: https://github.com/vital-ai/vital-onnx-model-packages
+Author: Marc Hadfield
+Author-email: marc@vital.ai
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy==1.26.4
+Requires-Dist: onnxruntime==1.18.0
