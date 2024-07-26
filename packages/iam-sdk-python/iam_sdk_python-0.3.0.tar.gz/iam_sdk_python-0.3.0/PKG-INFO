@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: iam-sdk-python
+Version: 0.3.0
+Summary: SDK for IAM 
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# iam-sdk-python
+
+## Getting Started
+Assuming that you have a supported version of Python installed, you can first
+set up your environment with:
+
+```sh
+$ python -m venv .venv
+...
+$ . .venv/bin/activate
+```
+
+Then, you can install boto3 from PyPI with:
+
+```sh
+$ python -m pip install iam-sdk-python
+```
+
+
+## Using the SDK
+
+More examples [docs/example.md](docs/example.md)
+
+```python
+import iam_sdk
+
+username = "fcd1e1..."
+password = "dd16b1..."
+
+client = iam_sdk.client(
+    api_access_key=username,
+    api_secret_key=password,
+)
+
+client.login()
+```
+
