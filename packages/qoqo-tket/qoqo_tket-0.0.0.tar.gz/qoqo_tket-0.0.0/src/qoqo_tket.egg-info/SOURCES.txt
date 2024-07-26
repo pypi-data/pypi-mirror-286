@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/qoqo_tket/__init__.py
+src/qoqo_tket/qoqo_tket.py
+src/qoqo_tket.egg-info/PKG-INFO
+src/qoqo_tket.egg-info/SOURCES.txt
+src/qoqo_tket.egg-info/dependency_links.txt
+src/qoqo_tket.egg-info/entry_points.txt
+src/qoqo_tket.egg-info/requires.txt
+src/qoqo_tket.egg-info/top_level.txt
+tests/test_qoqo_tket.py
