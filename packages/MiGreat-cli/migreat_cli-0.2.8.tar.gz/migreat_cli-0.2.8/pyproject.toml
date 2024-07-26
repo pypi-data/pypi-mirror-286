@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "MiGreat-cli"
+version = "0.2.8"
+description = "A schema isolated Postgres migrator for shared database micro services"
+authors = ["Flying Hashibuto <hashibuto@noreply.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "migreat", from = "src" }]
+
+[tool.poetry.scripts]
+migreat = "migreat.bin.migreat:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+psycopg2-binary = "^2.9.9"
+pydantic = "^1.10.14"
+PyYAML = "^6.0.1"
+sqlalchemy = "^2.0.29"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
