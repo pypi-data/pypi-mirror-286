@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: readabs
+Version: 0.0.15
+Summary: Get ABS timeseries data in pandas DataFrames
+Author-email: Bryan Palmer <palmer.bryan@gmail.com>
+Maintainer-email: Bryan Palmer <palmer.bryan@gmail.com>
+Project-URL: Homepage, https://github.com/bpalmer4/readabs
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# readabs
+
+readabs is an open-source python package to download and work with 
+timeseries data from the Australian Bureau of Statistics (ABS) and
+the Reserve Bank of Australia (RBA), using pandas DataFrames. 
+
+
+Refer to the API usage documents in the ./docs directory.
+
+---
+
