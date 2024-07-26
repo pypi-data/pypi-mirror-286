@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: thpham.lambda-layer-helmfile-v0
+Version: 2.0.2
+Summary: A Lambda Layer that contains Helmfile v0
+Home-page: https://github.com/thpham/awscdk-asset-helmfile#readme
+Author: thpham<224674+thpham@users.noreply.github.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/thpham/awscdk-asset-helmfile.git
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Lambda Layer with Helmfile
+
+<!--BEGIN STABILITY BANNER-->---
+
+
+![cdk-constructs: Stable](https://img.shields.io/badge/cdk--constructs-stable-success.svg?style=for-the-badge)
+
+---
+<!--END STABILITY BANNER-->
+
+This module exports a single class called `HelmfileLayer` which is a `lambda.LayerVersion` that
+bundles the [`helm`](https://helm.sh/) and the
+[`helmfile`](https://helmfile.readthedocs.io/en/latest/) command line.
+
+> * Helm Version: 3.15.3
+> * Helmfile Version: 0.166.0
+
+Usage:
+
+```python
+// HelmfileLayer bundles the 'helm' and 'helmfile' command lines
+import { HelmfileLayer } from '@thkpham/lambda-layer-helmfile-v0';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+
+declare const fn: lambda.Function;
+const helmfile = new HelmfileLayer(this, 'HelmfileLayer');
+fn.addLayers(helmfile);
+```
+
+`helm` will be installed under `/opt/helm/helm` and `helmfile` will be installed under `/opt/helmfile/helmfile`.
