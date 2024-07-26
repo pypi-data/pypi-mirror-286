@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: fttb
+Version: 1.2.0
+Summary: CLI for jetbrains tools
+Author-email: Benoit Roux <42benoit.roux@gmail.com>
+Project-URL: Homepage, https://github.com/BenoitRoux0/fttb
+Project-URL: Issues, https://github.com/BenoitRoux0/fttb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# FTTB  
+  
+## installation  
+  
+```shell  
+pip install fttb
+```  
+  
+## usage  
+  
+### use command  
+  
+use latest version of clion:  
+  
+```shell  
+python -m fttb use clion
+```  
+  
+use version 2023.1 of clion:  
+  
+```shell  
+python -m fttb use clion 2023.1
+```  
+  
+  
+### list command  
+  
+list all available ides:  
+  
+```shell  
+python -m fttb list
+```  
+  
+list all available versions of pycharm:  
+  
+```shell  
+python -m fttb list pycharm
+```  
+  
+  
+### links  
+  
+[pypi page](https://pypi.org/project/fttb/)
