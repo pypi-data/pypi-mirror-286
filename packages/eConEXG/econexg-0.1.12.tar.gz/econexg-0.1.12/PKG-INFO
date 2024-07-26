@@ -1,0 +1,75 @@
+Metadata-Version: 2.3
+Name: eConEXG
+Version: 0.1.12
+Summary: SDK for Niantong devices.
+Project-URL: Homepage, https://github.com/Niantong-Intelligence/eConEXG
+Project-URL: Issues, https://github.com/Niantong-Intelligence/eConEXG/issues
+Project-URL: Documentation, https://niantong-intelligence.github.io/eConEXG/
+Author-email: Alex You <yoyialex@outlook.com>
+Maintainer-email: Alex You <yoyialex@outlook.com>
+License-File: LICENSE
+Keywords: econ,eeg,emg,niantong
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: numpy
+Requires-Dist: pyserial>=3.5
+Provides-Extra: bdf
+Requires-Dist: pyedflib>=0.1.37; extra == 'bdf'
+Provides-Extra: lsl
+Requires-Dist: pylsl>=1.16.2; extra == 'lsl'
+Provides-Extra: wifi
+Requires-Dist: comtypes; (platform_system == 'Windows') and extra == 'wifi'
+Requires-Dist: netifaces2; (platform_system == 'Linux') and extra == 'wifi'
+Requires-Dist: netifaces; (platform_system == 'Darwin') and extra == 'wifi'
+Requires-Dist: netifaces; (platform_system == 'Windows') and extra == 'wifi'
+Requires-Dist: pywifi>=1.1.12; (platform_system == 'Windows') and extra == 'wifi'
+Description-Content-Type: text/markdown
+
+# eConEXG
+SDKs for Niantong devices.
+
+[![Rye](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/rye/main/artwork/badge.json)](https://rye-up.com)
+
+For more information, see the online [documentation](https://niantong-intelligence.github.io/eConEXG/).
+<!-- released start -->
+## Installation
+
+*  **Online:**
+
+    `pip install econexg`
+
+*  **Offline:**
+
+    `pip install econexg-x.x.x-py3-none-any.whl`
+
+    ##### * Network connection is required to download dependencies.
+
+#### Optional dependencies can be installed via `pip install econexg[option1,option2,...]`
+
+* Available options:
+    * bdf: save to BDF file functionality support.
+    * lsl: LSL stream functionality support.
+    * wifi: iRecorder W32 wifi model support, msvc build tools required.
+
+## Quick Start
+
+Example code can be found in [examples](https://github.com/Niantong-Intelligence/eConEXG/tree/main/examples).
+
+## Platform Support
+| Hardware            | Windows       | macOS          | Linux         |
+|------------------|-----------------|--------------|---------------|
+| iRecorder USB | ✓ |   ✓  |    ✓  |
+| iRecorder W8 \| W16  | ✓ | 𐄂    | 𐄂     |
+| iRecorder W32 | ✓ |   ✓  |    ✓  |
+| iFocus        | ✓ |   ✓  |    ✓  |
+| TriggerBox    | ✓ |   ✓  |    ✓  |
+
+
+## More
+
+* [Discussion Forum](https://github.com/Niantong-Intelligence/eConEXG/discussions), to discuss the project
+  on GitHub
+* [Issue Tracker](https://github.com/Niantong-Intelligence/eConEXG/issues), if you run into bugs or have suggestions
+* License: MIT
