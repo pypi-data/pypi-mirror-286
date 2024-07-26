@@ -1,0 +1,9 @@
+pymso5000/__init__.py,sha256=AUtTIYOKMhn0hXJySrBmNHrszFC26MjU-P_8wfYY7v4,29
+pymso5000/fetchmso5000.py,sha256=jgV9vAly5zq03b6H0FvIG5kuwe0UXG6oknAF-7xhu0w,11691
+pymso5000/mso5000.py,sha256=dzGSVdo458CzB3zcJzLAdT3oZ3yxQKwxKwG7M-Ea_Bs,18669
+pymso5000_tspspi-0.0.10.dist-info/LICENSE.md,sha256=IhI7wVy8UKny1oiDQhb63UzysC-e0oIziXBFUA6o6XY,1410
+pymso5000_tspspi-0.0.10.dist-info/METADATA,sha256=JwCO50OzBO39EUofyz4uqmkb1o1R2bZKwp4uijMdkcg,4721
+pymso5000_tspspi-0.0.10.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pymso5000_tspspi-0.0.10.dist-info/entry_points.txt,sha256=pnEq5tnFW0o_O2BAx2GQH9lz6wTICipbUMfrrsJ0Xok,61
+pymso5000_tspspi-0.0.10.dist-info/top_level.txt,sha256=68vl2AztBTVssQ0P0wj-oX6T70-8P-btutPQD-di7oE,10
+pymso5000_tspspi-0.0.10.dist-info/RECORD,,
