@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: shinybroker
+Version: 0.5.1
+Summary: Python API for Interactive Brokers
+Project-URL: url, https://github.com/JakeVestal/shinybroker
+Author-email: Jake Vestal <jacob.vestal@duke.edu>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: faicons
+Requires-Dist: jinja2
+Requires-Dist: pandas
+Requires-Dist: shiny
+Description-Content-Type: text/markdown
+
+# shinybroker
+
+readme
