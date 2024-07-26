@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: rocmgid
+Version: 0.0.0.1
+Summary: A tool to check the env variable of `HIP_VISIBLE_DEVICES` for AMD GPU id.
+Author: Jintu Zheng
+Author-email: jintu.zheng@amd.com,zhengjintu22@mails.ucas.ac.cn
+License: MIT
+Keywords: rocmgid
+Requires-Python: >=3.0
+
