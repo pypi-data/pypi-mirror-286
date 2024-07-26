@@ -1,0 +1,11 @@
+pds4indextools/_version.py,sha256=CqDGE4B1ZqZ-56mxeOFcXRTmlxrdOh4ayrjbcPjziE4,411
+pds4indextools/default_config.yaml,sha256=ZMSWvqSz4_ksu8uVa9pBJnZsZOdsV8RXrh734LGOKk4,1035
+pds4indextools/index_label_template_pds.xml,sha256=yYU6g2ye1cLSKvE9CLLTZC0fjyAJ5-0iFqCcJuU7dJg,7796
+pds4indextools/pds4_create_collection_product.py,sha256=kCwHe_TlF187w5oudKV4yf5n4QDb5seqBcY0cEyLkHI,3628
+pds4indextools/pds4_create_xml_index.py,sha256=xrmy0hDwHoPuvD5y7wNG3VkHgMxw49a5Fpc4lAgp0_E,63018
+rms_pds4indextools-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rms_pds4indextools-1.1.0.dist-info/METADATA,sha256=fuoEbilSVbx0lHIjEMoOPCy-e8Zn3whDmqpNqS7whJ8,8789
+rms_pds4indextools-1.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+rms_pds4indextools-1.1.0.dist-info/entry_points.txt,sha256=swEP8v3VsS4Nk1g6gWBxd6zRYDamP8ztyHprDhYCvVs,168
+rms_pds4indextools-1.1.0.dist-info/top_level.txt,sha256=z4YO4WXCBIPI6XgAawJkhtsYKvxvX1AbSpDuyDlkhvc,15
+rms_pds4indextools-1.1.0.dist-info/RECORD,,
