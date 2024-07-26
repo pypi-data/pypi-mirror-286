@@ -1,0 +1,2 @@
+[console_scripts]
+dsboot_generate = dsboot.commands.generate:main

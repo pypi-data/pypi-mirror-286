@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+dsboot/__init__.py
+dsboot/base.py
+dsboot/generator.py
+dsboot/utils.py
+dsboot.egg-info/PKG-INFO
+dsboot.egg-info/SOURCES.txt
+dsboot.egg-info/dependency_links.txt
+dsboot.egg-info/entry_points.txt
+dsboot.egg-info/requires.txt
+dsboot.egg-info/top_level.txt
+dsboot/commands/__init__.py
+dsboot/commands/generate.py
+dsboot/tests/__init__.py
+dsboot/tests/generator.py
