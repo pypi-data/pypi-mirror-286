@@ -1,0 +1,2 @@
+/*! For license information please see variableEdit.a4c6580299f11a60090d.js.LICENSE.txt */
+!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.Airflow=t():(e.Airflow=e.Airflow||{},e.Airflow.variableEdit=t())}(self,(function(){return function(){const e=document.getElementById("val"),t=Math.min(.5*window.innerHeight,e.scrollHeight);return e.style.height="".concat(t,"px"),{}}()}));
