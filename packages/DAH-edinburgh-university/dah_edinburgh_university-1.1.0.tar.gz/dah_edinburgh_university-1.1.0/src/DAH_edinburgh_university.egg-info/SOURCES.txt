@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/DAH/DS18B20.py
+src/DAH/MCP23S17.py
+src/DAH/MCP3208.py
+src/DAH/MCP4922.py
+src/DAH/PCF8574.py
+src/DAH/__init__.py
+src/DAH_edinburgh_university.egg-info/PKG-INFO
+src/DAH_edinburgh_university.egg-info/SOURCES.txt
+src/DAH_edinburgh_university.egg-info/dependency_links.txt
+src/DAH_edinburgh_university.egg-info/requires.txt
+src/DAH_edinburgh_university.egg-info/top_level.txt

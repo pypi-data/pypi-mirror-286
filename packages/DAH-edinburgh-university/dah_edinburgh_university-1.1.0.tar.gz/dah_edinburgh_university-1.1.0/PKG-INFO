@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: DAH-edinburgh-university
+Version: 1.1.0
+Summary: Access 1-wire, SPI, or I2C devices from Raspberry Pi
+Home-page: https://github.com/DruidFish/DAHwebiopiReplace
+Author: Benjamin Wynne
+Author-email: ben.wynne@gmail.com
+Project-URL: Bug Tracker, https://github.com/DruidFish/DAHwebiopiReplace/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Other OS
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: spidev
+Requires-Dist: smbus
+
+# Data Aquisition and Handling
+
+This package provides methods to access a set of devices over 1-wire, SPI, or I2C bus from a Raspberry Pi.
+ * DS18B20
+ * MCP23S17
+ * MCP3208
+ * MCP4922
+ * PCF8574
+
+It is intended for use in the Edinburgh University course **Data Acquisition and Handling** but should work for any Raspberry Pi with the Raspbian OS installed.
+
+NB: there's a difference between the GPIO pin handling with the RPi 5 compared to earlier boards. This code is updated for the RPi 5, and not guaranteed to work with earlier boards.
+
+Replacement for [webiopi](http://webiopi.trouch.com/)
