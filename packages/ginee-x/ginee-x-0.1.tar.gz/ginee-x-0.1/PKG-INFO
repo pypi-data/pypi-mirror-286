@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ginee-x
+Version: 0.1
+Summary: This is a Python SDK for Ginee X, which provides a Python interface to interact with Ginee X's OpenAPI.
+Home-page: https://www.ginee-x.com
+Author: yi.xu
+Author-email: widebluesky@qq.com

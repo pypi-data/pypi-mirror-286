@@ -1,0 +1,8 @@
+setup.py
+ginee_x.egg-info/PKG-INFO
+ginee_x.egg-info/SOURCES.txt
+ginee_x.egg-info/dependency_links.txt
+ginee_x.egg-info/top_level.txt
+ginee_x/agent/__init__.py
+ginee_x/chat/__init__.py
+ginee_x/knowledge/__init__.py
