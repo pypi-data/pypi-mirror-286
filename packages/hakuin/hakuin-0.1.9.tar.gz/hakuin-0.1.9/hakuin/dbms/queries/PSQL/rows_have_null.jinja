@@ -1,0 +1,6 @@
+{% extends 'base.jinja' %}
+
+
+{% block select %}
+SELECT  bool_or({{ column }} is NULL)
+{% endblock %}
