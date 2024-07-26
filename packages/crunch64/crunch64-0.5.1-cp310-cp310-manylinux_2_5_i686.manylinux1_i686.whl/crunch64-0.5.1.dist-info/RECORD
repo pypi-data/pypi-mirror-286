@@ -1,0 +1,15 @@
+crunch64-0.5.1.dist-info/METADATA,sha256=F1CDrtnKRQXidiijgb6EesccMPHhAnOzfp7zg1D26ow,475
+crunch64-0.5.1.dist-info/WHEEL,sha256=x9HTTU4YM3FSQ30edGLju9VysbAKELt4_LZaHEP34qA,121
+crunch64/yay0.py,sha256=FBSweptj0sB1KjE6HcTS1Lc71QzhYltI89YFYDiLWfw,160
+crunch64/gzip.py,sha256=L-yhwWI0nX6-OuT11ZmGAe_XpIXCH1Vi9wU9159WGEc,108
+crunch64/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crunch64/mio0.py,sha256=DNY4R0UAEzhwb-dLCU1seK0_X4xLNC7LUMvz1FtHfOk,160
+crunch64/crunch64.pyi,sha256=ZqDVW7ctikZDDFr57xdKWPeMq8YuieLqq_fY8ZWCx5o,168
+crunch64/yaz0.pyi,sha256=O3KfOKgdX5byZ967NYDgnxstENtqakGeH2ezFeyxfQ8,142
+crunch64/mio0.pyi,sha256=O3KfOKgdX5byZ967NYDgnxstENtqakGeH2ezFeyxfQ8,142
+crunch64/yaz0.py,sha256=qkeVzVkUZgKAkLbKBFxWQQKCWhC0zBkgDE-N_BHJH94,160
+crunch64/yay0.pyi,sha256=O3KfOKgdX5byZ967NYDgnxstENtqakGeH2ezFeyxfQ8,142
+crunch64/__init__.py,sha256=frWretoWq8_Zq_pAsBFRrJodUslNrGlHVL2mFT8gF9E,344
+crunch64/gzip.pyi,sha256=sQxgARaOeMdfwkOSmSqB8tqdQS-ccA0_FRdve3SkXSA,141
+crunch64/crunch64.cpython-310-i386-linux-gnu.so,sha256=YGmU5o86WjhoR6rFOG0Cb5PWM8WAd5m68kpgHc14L90,589380
+crunch64-0.5.1.dist-info/RECORD,,
