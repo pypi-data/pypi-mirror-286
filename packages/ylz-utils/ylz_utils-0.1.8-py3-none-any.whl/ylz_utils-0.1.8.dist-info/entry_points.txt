@@ -1,0 +1,4 @@
+[console_scripts]
+post-install=ylz_utils.cli.hooks:post_install
+ylz_utils=ylz_utils.cli.main:run
+
