@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/rubin/squarebot/__init__.py
+src/rubin/squarebot/py.typed
+src/rubin/squarebot/models/__init__.py
+src/rubin/squarebot/models/kafka.py
+src/rubin/squarebot/models/slack.py
+src/rubin_squarebot.egg-info/PKG-INFO
+src/rubin_squarebot.egg-info/SOURCES.txt
+src/rubin_squarebot.egg-info/dependency_links.txt
+src/rubin_squarebot.egg-info/requires.txt
+src/rubin_squarebot.egg-info/top_level.txt
