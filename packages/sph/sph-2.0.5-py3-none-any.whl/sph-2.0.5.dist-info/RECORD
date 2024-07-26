@@ -1,0 +1,9 @@
+sph/__init__.py,sha256=SE6PluvJCy7rQKNyfOBlt-5ij8GmXz84ddD_Nmn_7q0,69
+sph/command.py,sha256=_FdS3Z2VG4mZztxgKMMf3ul4CoNOqVvbeIfO4zPBCMg,13400
+sph/editable.py,sha256=xhreXsDIFxpjm2p1uirtl6TFNT4aGnspMXcXUKlPap8,1259
+sph/utils.py,sha256=qqFmFVN923NhtcMgAXIx3aKD-DQpb5VAt-CkIsofmDM,4215
+sph-2.0.5.dist-info/LICENSE,sha256=tr5_ihwPazXr1_Kw53zaH9BawXCh1JUUM2Pq6aTu81U,1067
+sph-2.0.5.dist-info/METADATA,sha256=n8-NNbVfnEmP5xaK-cq5wv8eEJbPD7rPxCEbLAiBxeM,473
+sph-2.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sph-2.0.5.dist-info/entry_points.txt,sha256=3fKLZl7yg7P_cJRk6P9aLaIeOJWdpORoXO1KWNG1600,40
+sph-2.0.5.dist-info/RECORD,,
