@@ -1,0 +1,2 @@
+[console_scripts]
+speedybot-loco = speedybot.cli:main
