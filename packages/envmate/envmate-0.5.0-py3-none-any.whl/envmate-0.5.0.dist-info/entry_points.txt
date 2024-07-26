@@ -1,0 +1,2 @@
+[console_scripts]
+envmate = envmate.main:main
