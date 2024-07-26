@@ -1,0 +1,12 @@
+dolfin_estim/FEMU.py,sha256=KQ4DS1qf893Od7JI2Usbmwp3DwXzy_RO4rKvD_e_zQI,2486
+dolfin_estim/__init__.py,sha256=yolEsKF_pO1RVzdQfjhX5raHf8_-NRIaQU0KOQADEHM,204
+dolfin_estim/equilibrium_gap.py,sha256=oSnXCy4oBv_GF1J3IZ9IGCE8XzkLIrjVLtrX7nZOOOc,3879
+dolfin_estim/get_measured_disp.py,sha256=A5KSiC6EZOvbRmiPm4vkQX4j7JVT_x31WuDI2HCAWac,7394
+dolfin_estim/starting_estimation.py,sha256=rUuheLQO0nagoQptWWB_jEKYVZeMhFe8797zM4a1r1U,1446
+dolfin_estim/virtual_fields_method.py,sha256=MTmysVAp08JU6cdFeZPtqq9wvWnZ0snrZVCVqIsWlbw,6699
+dolfin_estim/virtual_fields_method_plane_wave.py,sha256=htvBcWasclXf6hyeKEJPKf2wB__Y8PV44WDa0y7Ncfc,2311
+dolfin_estim-2024.7.25.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+dolfin_estim-2024.7.25.dist-info/METADATA,sha256=lPX-bGHqbLEun3IZlOD5-yn4Cx2BWp4fSMzNXGGnEuQ,1467
+dolfin_estim-2024.7.25.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+dolfin_estim-2024.7.25.dist-info/top_level.txt,sha256=-AFpznSAo5ad9dM4jRwUmYvvv-TyrHcWJkM4tv9nNY8,13
+dolfin_estim-2024.7.25.dist-info/RECORD,,
