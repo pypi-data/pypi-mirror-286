@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: can_01_chatbot
+Version: 0.4
+Summary: A chatbot that responds in Cantonese using OpenAI and Google Cloud services.
+Home-page: https://github.com/yourusername/can_01_chatbot
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: pyaudio
+Requires-Dist: pydub
+Requires-Dist: google-cloud-speech
+Requires-Dist: google-cloud-texttospeech
+Requires-Dist: six
+Requires-Dist: python-dotenv
+
+# CAN.01 Chatbot
+
+CAN.01 Chatbot is a Python-based chatbot that responds in Cantonese using OpenAI and Google Cloud services.
+
+## Features
+
+- Real-time speech recognition using Google Cloud Speech-to-Text.
+- Generates responses using OpenAI's GPT-3.5 model.
+- Converts text responses to Cantonese speech using Google Cloud Text-to-Speech.
+- Continuous listening and response capabilities.
+
+## Installation
+
+```bash
+pip install can_01_chatbot
