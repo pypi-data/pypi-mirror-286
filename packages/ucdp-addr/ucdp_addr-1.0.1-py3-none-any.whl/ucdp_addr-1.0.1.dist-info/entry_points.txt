@@ -1,0 +1,3 @@
+[ucdp.cli]
+lsaddrmap = ucdp_addr.cli.lsaddrmap
+
