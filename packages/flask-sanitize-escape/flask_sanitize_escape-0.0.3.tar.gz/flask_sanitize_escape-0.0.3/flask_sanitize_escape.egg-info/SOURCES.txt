@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+flask_sanitize_escape/__init__.py
+flask_sanitize_escape.egg-info/PKG-INFO
+flask_sanitize_escape.egg-info/SOURCES.txt
+flask_sanitize_escape.egg-info/dependency_links.txt
+flask_sanitize_escape.egg-info/requires.txt
+flask_sanitize_escape.egg-info/top_level.txt
