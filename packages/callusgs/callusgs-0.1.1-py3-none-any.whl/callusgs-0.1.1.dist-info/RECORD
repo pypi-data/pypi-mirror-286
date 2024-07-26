@@ -1,0 +1,12 @@
+callusgs/__init__.py,sha256=KvUnx9427wc0GsHkXvXMwY-B3OEvloKTcGBLHnTtltw,187
+callusgs/api.py,sha256=41Y0LmORMNNcrAyzpOjQvR-RJ0TyPJ8elUxVc3m6A6g,97041
+callusgs/cli.py,sha256=-yKX1vCxFRPiNxKA3R2gRzuromoHZV-U_QKCELtqSsU,7298
+callusgs/cli_funcs.py,sha256=nNwLl0maMEq7nBB6AMHVObrC_aE7u_EADqTB5wShOqk,11992
+callusgs/errors.py,sha256=QY4u9AoSGRg-88HlX-jhuDZxsxI9Ak7tJEcYtewYRjY,7014
+callusgs/types.py,sha256=AntAgdpIP0AMfeCSobQp60TjOgd7x1vY-rU6roneBmM,55198
+callusgs/utils.py,sha256=8YiEUv_6JflKM2qgotIr5uZrE6mdzEfN7Rf3hTF2JHI,4980
+callusgs-0.1.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+callusgs-0.1.1.dist-info/METADATA,sha256=-_ii-q7vicfCPuNgku2oOB3vnRBlxfIFkhro6rhYq_Y,3101
+callusgs-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+callusgs-0.1.1.dist-info/entry_points.txt,sha256=quiBeyzv_YOcDO33KD4lcJZq9aMrEYy_8tTGWWJjtOU,46
+callusgs-0.1.1.dist-info/RECORD,,

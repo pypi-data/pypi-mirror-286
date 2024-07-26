@@ -1,0 +1,3 @@
+[console_scripts]
+callusgs=callusgs.cli:main
+
