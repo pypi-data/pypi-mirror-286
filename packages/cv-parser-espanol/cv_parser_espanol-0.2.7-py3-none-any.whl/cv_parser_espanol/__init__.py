@@ -1,0 +1,1 @@
+from .cv_parser_espanol import parse_cv, extract_text,pdf_to_text,extract_email,extract_phone,extract_sections,docx_to_text
