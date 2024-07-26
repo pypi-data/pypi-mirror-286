@@ -1,0 +1,125 @@
+[project]
+name = "pytest_grunnur"
+version = "0.3.0"
+description = "Py.Test plugin for Grunnur-based packages."
+authors = [
+    { name = "Bogdan Opanchuk", email = "bogdan@opanchuk.net" },
+]
+dependencies = [
+    "pytest>=6",
+    "grunnur>=0.3",
+]
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+
+[project.urls]
+homepage = "https://github.com/fjarri/pytest-grunnur"
+
+[project.optional-dependencies]
+tests = [
+    "pytest-cov",
+]
+docs = [
+    "sphinx>=4",
+    "furo",
+    "setuptools-scm",
+]
+lint = [
+    "mypy>=1.4",
+    "ruff>=0.5",
+]
+
+[project.entry-points.pytest11]
+pytest_grunnur = "pytest_grunnur.plugin"
+
+[tool.pdm.build]
+source-includes = [
+    "tests/*.py",
+    "docs/*.rst",
+    "docs/*.py",
+    "docs/*.bat",
+    "docs/Makefile",
+    ".coveragerc",
+    "mypy.ini",
+    "pytest.ini",
+]
+
+[tool.setuptools_scm]
+
+[tool.mypy]
+strict = true
+warn_unreachable = true
+implicit_reexport = true
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "ALL",
+]
+ignore = [
+    "C408",
+    "B008",
+    "B006",
+    "ANN101",
+    "ANN401",
+    "ANN204",
+    "ANN102",
+    "COM812",
+    "EM102",
+    "TRY003",
+    "D212",
+    "D203",
+    "TD002",
+    "EM101",
+    "D205",
+    "D401",
+    "TD003",
+    "FIX002",
+    "N818",
+    "PLR0913",
+    "ISC001",
+    "RUF009",
+    "INP001",
+    "ICN001",
+    "D105",
+    "TID252",
+    "S702",
+    "ERA001",
+    "PYI019",
+    "D400",
+    "D415",
+    "D100",
+    "D104",
+]
+fixable = [
+    "ALL",
+]
+unfixable = []
+exclude = [
+    ".eggs",
+    ".git",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pypackages__",
+    "build",
+    "dist",
+]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.per-file-ignores]
+
+[tool.ruff.lint.isort]
+known-first-party = [
+    "pytest_grunnur",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
