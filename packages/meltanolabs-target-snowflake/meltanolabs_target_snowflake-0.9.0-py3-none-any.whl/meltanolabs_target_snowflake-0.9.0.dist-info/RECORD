@@ -1,0 +1,11 @@
+target_snowflake/__init__.py,sha256=1h2syu4FQPtFQZKZz_Z3nX1SNchiAT0scwFb8VjqvJo,125
+target_snowflake/connector.py,sha256=V2GMMTEsHqMwa8gdsAnoY7zwT4TQpKOMB-RhmA2InG4,24238
+target_snowflake/initializer.py,sha256=clTLH2_4SRQBVTvhs7yhL3swiKVW6IlX2nsDuserI_I,2889
+target_snowflake/sinks.py,sha256=OxXoUitkl20iCqCxr0OTS90l8X2P5R6tVQgeQ64lCQ8,8484
+target_snowflake/snowflake_types.py,sha256=w6VhMYvJmUEAkyTQFEqMSl5CvarneXN9MDV4JSprgng,859
+target_snowflake/target.py,sha256=dnaEOd42JWdM_bkFbhBevMltnVOf34g2byxdZXK_2nQ,3728
+meltanolabs_target_snowflake-0.9.0.dist-info/LICENSE,sha256=SCVQGLQfwOllsRFa9-Z3m8IYu4pnR9Vh2oANUCJiKqI,3860
+meltanolabs_target_snowflake-0.9.0.dist-info/METADATA,sha256=G4RZIkkQWpoXn_jk4etW6Fxj1p4DEsDNtl_1uI9RbEs,13792
+meltanolabs_target_snowflake-0.9.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+meltanolabs_target_snowflake-0.9.0.dist-info/entry_points.txt,sha256=qyByNKTobvI-tgWeyvIBVoj3HlT4h82HPAKletp2mLs,80
+meltanolabs_target_snowflake-0.9.0.dist-info/RECORD,,
