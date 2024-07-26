@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+freemind_flow.egg-info/PKG-INFO
+freemind_flow.egg-info/SOURCES.txt
+freemind_flow.egg-info/dependency_links.txt
+freemind_flow.egg-info/top_level.txt
