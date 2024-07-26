@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: target-approximation
+Version: 0.0.1
+Summary: Python implementation of the Target-Approximation-Model.
+Home-page: https://github.com/paul-krug/target-approximation
+Author: Paul Krug
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: tools-io
+
+# Target-Approximation-Model
