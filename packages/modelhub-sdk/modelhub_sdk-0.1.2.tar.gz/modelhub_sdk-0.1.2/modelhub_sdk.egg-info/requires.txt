@@ -1,0 +1,9 @@
+pandas
+pyyaml
+jinja2
+kubernetes
+requests
+aiohttp
+mlflow
+azure-storage-blob
+azure-identity
