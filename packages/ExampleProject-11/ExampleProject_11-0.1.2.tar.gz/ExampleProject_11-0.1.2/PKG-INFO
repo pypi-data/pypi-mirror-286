@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ExampleProject_11
+Version: 0.1.2
+Summary: An example project for testing.
+Home-page: https://github.com/dehe1011/ExampleProject
+Author: Dennis Herb
+Author-email: dennis.herb@uni-ulm.de
+License: BSD-3-Clause
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+[![Documentation Status](https://readthedocs.org/projects/exampleproject-11/badge/?version=latest)](https://exampleproject-11.readthedocs.io/en/latest/?badge=latest)
+[![Coverage Status](https://coveralls.io/repos/github/dehe1011/ExampleProject/badge.svg?branch=main)](https://coveralls.io/github/dehe1011/ExampleProject?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/dehe1011/ExampleProject/badge.svg?branch=main)](https://coveralls.io/github/dehe1011/ExampleProject?branch=main)
+
+Some description of the project...
