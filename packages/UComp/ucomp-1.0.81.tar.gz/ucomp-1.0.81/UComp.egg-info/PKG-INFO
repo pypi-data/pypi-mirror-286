@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: UComp
+Version: 1.0.81
+Summary: Modelling and forecasting univariate time series
+Home-page: https://github.com/djpedregal/UComp
+Author: Diego J. Pedregal
+Author-email: diego.pedregal@uclm.es
+Keywords: paquete ejemplo
+Requires-Dist: numpy>=1.18.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+Modelling and forecasting univariate time series
