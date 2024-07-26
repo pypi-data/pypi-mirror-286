@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mkdocs_plugins/__init__.py
+mkdocs_plugins/task_collector.py
+mkdocs_task_collector.egg-info/PKG-INFO
+mkdocs_task_collector.egg-info/SOURCES.txt
+mkdocs_task_collector.egg-info/dependency_links.txt
+mkdocs_task_collector.egg-info/entry_points.txt
+mkdocs_task_collector.egg-info/requires.txt
+mkdocs_task_collector.egg-info/top_level.txt
