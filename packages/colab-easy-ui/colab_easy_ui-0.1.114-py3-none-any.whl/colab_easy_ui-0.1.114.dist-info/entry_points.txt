@@ -1,0 +1,4 @@
+[console_scripts]
+main=colab_easy_ui.main:main
+uploader=colab_easy_ui.simple_fileuploader:main
+
