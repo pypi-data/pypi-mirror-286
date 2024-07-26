@@ -1,0 +1,7 @@
+[build-system]
+requires = ['setuptools',
+	    'numpy', 'taurex',
+		'matplotlib', 'tqdm',
+		'pandas', 'gdown', 'pyarrow'
+	    ]
+build-backend = "setuptools.build_meta"
