@@ -1,0 +1,2 @@
+[console_scripts]
+piggaga_models = piggaga_models.piggaga_models:print_all_models
