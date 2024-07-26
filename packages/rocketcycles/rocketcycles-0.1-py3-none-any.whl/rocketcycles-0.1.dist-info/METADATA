@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rocketcycles
+Version: 0.1
+Summary: Python package for analysis and sizing of staged combustion rocket engines
+Home-page: https://github.com/janstruzinski/RocketCycles.git
+Author: Jan Struzinski
+License: MIT
+Keywords: staged combustion liquid rocket engine full flow
+License-File: LICENSE
+Requires-Dist: rocketcea
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: nasaPoly
+Requires-Dist: pyfluids
+
