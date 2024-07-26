@@ -1,0 +1,96 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info
+*.manifest
+*.spec
+
+# Byte-compiled / optimized / DLL files #
+###########################################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging #
+#############################
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+*.egg-info/
+*.egg/
+*.whl
+test.py
+# Virtualenv #
+##############
+.venv/
+.env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VSCode #
+##########
+.vscode/
+
+# PyCharm #
+###########
+.idea/
+
+# Jupyter Notebook #
+####################
+.ipynb_checkpoints/
+
+# mypy #
+#########
+.mypy_cache/
+.dmypy.json
+.dmypy.jsonl
+
+# pytype #
+###########
+.pytype/
+
+# Docker #
+###########
+docker-compose.override.yml
+
+# SQLAlchemy #
+###############
+sqlalchemy_data/
+
+# Log files #
+##############
+*.log
+
+# Local configuration #
+########################
+*.local
+
+# MacOS #
+##########
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows #
+############
+Thumbs.db
+Desktop.ini
