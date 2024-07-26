@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: SuffixAutomaton
+Version: 0.1.2
+Summary: suffix automaton by words, to get text common substrings
+Home-page: https://github.com/laohur/SuffixAutomaton
+Author: laohur
+Author-email: laohur@gmail.com
+License: [Anti-996 License](https: // github.com/996icu/996.ICU/blob/master/LICENSE)
+Keywords: Suffix Automaton,sam
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+
+# SuffixAutomaton 后缀自动机
+find LCS (longest common substrings) by suffix automaton 
+
+## usage
+> pip install SuffixAutomaton 
+
+```python
+from SuffixAutomaton import SuffixAutomaton,lcs1,lcs2,logger
+# from SuffixAutomaton import 
+raw = """
+ASE : International Conference on Automated Software Engineering
+ESEC/FSE : ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering
+ICSE : International Conference on Software Engineering
+ISSTA : The International Symposium on Software Testing and Analysis
+OOPSLA : Conference on Object-Oriented Programming Systems, Languages, and Applications
+OSDI : Operating Systems Design and Implementation
+PLDI : ACM SIGPLAN conference on Programming Language Design and Implementation
+POPL : ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages
+SOSP : ACM Symposium on Operating Systems Principles
+"""
+doc = raw.strip().splitlines()
+doc = [x.split() for x in doc]
+# for tokens
+R=lcs1(doc[1], doc[2])[0]
+start1, length, start2=R
+common=doc[1][start1:start1+length]
+assert doc[1][start2:start2+length]==common
+logger.info((common,R))  # (['Software', 'Engineering'], (14, 5, 2))
+
+R=lcs2(doc[0], doc[1:4])
+logger.info([ (doc[0][a:a+b],a,b) for (a,b) in R])   # [([':'], 1, 1), (['on'], 4, 1), (['Software'], 6, 1)]
+logger.info(lcs1(doc[1], doc[2], 1)) # [(1, 1, 1), (7, 1, 3), (10, 1, 4), (14, 2, 5)]
+logger.info(lcs2(doc[0], doc[1:4], 1)) # [(1, 1), (4, 1), (6, 1)]
+
+# for chars
+poet = "江天一色无纤尘皎皎空中孤月轮 江畔何人初见月江月何年初照人 人生代代无穷已江月年年望相似 不知江月待何人但见长江送流水"
+doc = poet.split()   
+R=lcs1(doc[1], doc[3])
+logger.info([ (doc[1][a:a+l],a,l,b) for (a,l,b) in R])   # [('何人', 2, 2, 5), ('江月', 7, 2, 2)]
+
+R=lcs1(doc[1], doc[3],1)
+logger.info([ (doc[1][a:a+l],a,l,b) for (a,l,b) in R])   # [('江', 0, 1, 10), ('何人', 2, 2, 5), ('见', 5, 1, 8), ('江月', 7, 2, 2)]
+
+# for lcs of doc
+R=lcs2(doc[1], doc[2:4])
+logger.info([ (doc[1][a:a+l],a,l) for (a,l) in R])   # [('江月', 7, 2)]
+R=lcs2(doc[1], doc[2:4], 1)
+logger.info([ (doc[1][a:a+l],a,l) for (a,l) in R])   # [('江月', 7, 2)]
+
+# faster when iterally
+sam=SuffixAutomaton(doc[0])
+for x in doc[1:]:
+    R=sam.lcs1(x)
+    logger.info([x]+[ (x[b:b+l],a,l,b) for (a,l,b) in R])   # [('江月', 7, 2)]
+"""
+['江畔何人初见月江月何年初照人', ('江', 0, 1, 0), ('月', 12, 1, 6)]
+['人生代代无穷已江月年年望相似', ('江', 0, 1, 7), ('无', 4, 1, 4), ('月', 12, 1, 8)]
+['不知江月待何人但见长江送流水', ('江', 0, 1, 2), ('月', 12, 1, 3)]
+"""
+
+# lcs() -> [(str, start, cand_start)], sort in length decending. may overlap. 
+R=lcs2("布架 拖把抹布悬挂沥水洁具架 ", ["抹布架"], 1)
+logger.info([ ("布架 拖把抹布悬挂沥水洁具架 "[a:a+l],a,l) for (a,l) in R])   # [('布架', 0, 2), ('抹', 5, 1), ('抹布', 5, 2), ('架', 13, 1)]
+
+
+```
+
+## feature
+* suffix automaton [in words] 可分词后缀自动机
+* [Longest] Common Substring of two lines 两文[最长]共串
+* [Longest] Common Substring of document 多文[最长]共串
+
+## update
+* 20240726 return positions instead sub-sequence for saving memory
+
+## inspired by 
+    参照：https://www.cnblogs.com/shld/p/10444808.html
+    讲解：https://www.cnblogs.com/zjp-shadow/p/9218214.html
+    详解：https://www.cnblogs.com/1625--H/p/12416198.html
+    证明：https://oi-wiki.org/string/sam/
+    题解：https://www.cnblogs.com/Lyush/archive/2013/08/25/3281546.html https://www.cnblogs.com/mollnn/p/13175736.html
