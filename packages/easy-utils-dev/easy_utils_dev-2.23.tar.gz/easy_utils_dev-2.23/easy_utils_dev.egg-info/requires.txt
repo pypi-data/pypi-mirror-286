@@ -1,0 +1,4 @@
+psutil
+ping3
+flask
+flask_cors
