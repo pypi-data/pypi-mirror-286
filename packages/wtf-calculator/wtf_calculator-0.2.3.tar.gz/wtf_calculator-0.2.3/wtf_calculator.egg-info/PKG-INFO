@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: wtf_calculator
+Version: 0.2.3
+Summary: Une librairie pour faire des calculs complètement faux.
+Home-page: https://github.com/votre-utilisateur/wtf_calculator
+Author: Zmeypp
+Author-email: lmayel@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wtf_calculator
+
+`wtf_calculator` est une librairie pour effectuer des calculs complètement faux.
+
+## Installation
+
+Vous pouvez installer `wtf_calculator` en utilisant pip :
+
+pip install wtf_calculator
+
+Utilisation
+Voici comment utiliser la librairie :
+
+from wtf_calculator import absurd_add, absurd_subtract, absurd_multiply, absurd_divide
+
+print(absurd_add(1, 1))         # Résultat complètement absurde
+print(absurd_subtract(1, 1))    # Résultat complètement absurde
+print(absurd_multiply(1, 1))    # Résultat complètement absurde
+print(absurd_divide(1, 1))      # Résultat complètement absurde
+print(absurd_power(1, 1))       # Résultat complètement absurde
+print(absurd_sqrt(1))           # Résultat complètement absurde
+print(absurd_log(1))            # Résultat complètement absurde
+print(absurd_mod(1, 1))         # Résultat complètement absurde
+print(absurd_sin(1))            # Résultat complètement absurde
+print(absurd_cos(1))            # Résultat complètement absurde
+print(absurd_random)            # Simple chiffre random entre -1000000 et 1000000
