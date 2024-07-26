@@ -1,0 +1,8 @@
+snakemake_executor_plugin_azure_batch/__init__.py,sha256=Ed0t7QqHSKDKd1DMzMCy-HIelp3x_Pdh9UOC4W6wawk,21966
+snakemake_executor_plugin_azure_batch/build.py,sha256=poXbNu4wL18xyPhsasUIdL0Np2DD7yIBhj8lXC1Pjhs,7644
+snakemake_executor_plugin_azure_batch/constant.py,sha256=HDQE1F0YSu2hcpnNYX2x_wCThbsXPWhmYLjDjEspbms,524
+snakemake_executor_plugin_azure_batch/util.py,sha256=cvEbcHVD1_2dQ2ufk_jN6Pe65gxWlhCoA4ZsBud8Bjc,4804
+snakemake_executor_plugin_azure_batch-0.2.1.dist-info/LICENSE,sha256=YVc4xTLWMqGfFL36120k7rzXtsT6e4RkJsh68VVn12s,1076
+snakemake_executor_plugin_azure_batch-0.2.1.dist-info/METADATA,sha256=NDY1R-ROatcfSSNzcUKc3Ghr8d71d-XlRE5Wd8xTRyw,1478
+snakemake_executor_plugin_azure_batch-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+snakemake_executor_plugin_azure_batch-0.2.1.dist-info/RECORD,,
