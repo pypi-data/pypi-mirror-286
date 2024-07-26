@@ -1,0 +1,2 @@
+[console_scripts]
+process_files = file_processor_sdk.__main__:main

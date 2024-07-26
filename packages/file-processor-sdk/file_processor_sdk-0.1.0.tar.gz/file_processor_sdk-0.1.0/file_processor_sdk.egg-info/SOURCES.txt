@@ -1,0 +1,14 @@
+setup.py
+file_processor_sdk/__init__.py
+file_processor_sdk/process_doc.py
+file_processor_sdk/process_docx.py
+file_processor_sdk/process_file.py
+file_processor_sdk/process_pdf.py
+file_processor_sdk/process_txt.py
+file_processor_sdk/save_to_txt.py
+file_processor_sdk.egg-info/PKG-INFO
+file_processor_sdk.egg-info/SOURCES.txt
+file_processor_sdk.egg-info/dependency_links.txt
+file_processor_sdk.egg-info/entry_points.txt
+file_processor_sdk.egg-info/requires.txt
+file_processor_sdk.egg-info/top_level.txt
