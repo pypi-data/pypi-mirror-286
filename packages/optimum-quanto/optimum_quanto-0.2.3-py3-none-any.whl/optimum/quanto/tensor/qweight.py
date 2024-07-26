@@ -1,0 +1,82 @@
+# Copyright 2024 The HuggingFace Team. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+from typing import Optional
+
+import torch
+
+from .optimizers import AbsmaxOptimizer, AffineOptimizer, MaxOptimizer, Optimizer, SymmetricOptimizer
+from .qbits import QBitsTensor
+from .qbytes import QBytesTensor
+from .qtype import qtype
+
+
+__all__ = ["quantize_weight"]
+
+
+default_affine_optimizer = MaxOptimizer()
+default_symmetric_optimizer = AbsmaxOptimizer()
+
+
+def quantize_weight(
+    t: torch.Tensor,
+    qtype: qtype,
+    axis: int,
+    group_size: Optional[int] = None,
+    optimizer: Optional[Optimizer] = None,
+    zeropoint: bool = False,
+):
+    """Quantize a weight Tensor.
+
+    Weights are always quantized per-axis.
+
+    Args:
+        t (`torch.Tensor`): the weight Tensor to quantize
+        qtype (`quanto.qtype`): The target quantization type
+        axis ('int`): The quantization axis (0 or -1)
+        group_size (`Optional[int]`): The quantization group size
+        optimizer (`Optional[quanto.Optimizer]`): An optimizer to evaluate the scale if not provided.
+            Defaults to a max Optimizer.
+        zeropoint (`bool`): Allow an exact representation of zero. If True, the shifts are stored as
+            integer instead of float, which results in a slightly smaller model, but might also reduce
+            the model performance. Defaults to False.
+
+    Returns:
+        A quantized Tensor.
+    """
+    if axis not in (0, -1):
+        raise ValueError("axis parameter must be 0 (first axis) or -1 (last axis)")
+    if qtype.bits == 8:
+        if optimizer is None:
+            optimizer = default_symmetric_optimizer
+        else:
+            if not isinstance(optimizer, SymmetricOptimizer):
+                raise ValueError("A SymmetricOptimizer is expected")
+        if group_size is not None:
+            raise ValueError("group_size cannot be specified for 8-bit qtypes.")
+        if axis is not None and t.shape[axis] == 1:
+            # Quantizing along an axis of dimension 1 means quantizing per-tensor
+            axis = None
+        scale = optimizer(t, qtype.qmax, axis)
+        return QBytesTensor.quantize(t, qtype, axis, scale)
+    if optimizer is None:
+        optimizer = default_affine_optimizer
+    else:
+        if not isinstance(optimizer, AffineOptimizer):
+            raise ValueError("An AffineOptimizer is expected")
+    scale, shift = optimizer(t, qtype.bits, axis, group_size)
+    if zeropoint:
+        # Round shift to make sure zero can be represented exactly using 'shift' as quantized value
+        shift = torch.clamp(torch.round(shift / scale), 0, 2**qtype.bits - 1).to(torch.uint8)
+    return QBitsTensor.quantize(t, qtype, axis, group_size, scale, shift)
