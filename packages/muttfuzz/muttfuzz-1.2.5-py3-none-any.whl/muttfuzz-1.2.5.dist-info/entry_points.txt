@@ -1,0 +1,6 @@
+
+    [console_scripts]
+    muttfuzz = muttfuzz.fuzz:main
+    apply_mutant = muttfuzz.apply_mutant:main
+    libfuzzer_prune = muttfuzz.libfuzzer_prune:main
+    
