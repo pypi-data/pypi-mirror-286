@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sph
+Version: 2.0.6
+Summary: 
+Author: François Poizat
+Author-email: francois.poizat@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: argcomplete (>=3.4.0,<4.0.0)
+Requires-Dist: pip (>=24.1.1,<25.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
