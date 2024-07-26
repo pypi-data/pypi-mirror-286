@@ -1,0 +1,10 @@
+rubin/squarebot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubin/squarebot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubin/squarebot/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubin/squarebot/models/kafka.py,sha256=gXz3YXNjxIxNR2RrgwOM4-d6dgsAswd7wERlnKtmx44,6324
+rubin/squarebot/models/slack.py,sha256=9E8-pl_q_rr_elJ6Mb9KPJu6rZDBbfOvqF8fvhiUSno,9486
+rubin_squarebot-0.9.0.dist-info/LICENSE,sha256=HRokC_gX5O7I06OH-XfnNZ1uKGqVwP2Y7joWPOW6rUg,1138
+rubin_squarebot-0.9.0.dist-info/METADATA,sha256=9TlS1w9nT7G6LYOXYbLif17_v-9jkKWL9UF-eOE2k5Y,5224
+rubin_squarebot-0.9.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+rubin_squarebot-0.9.0.dist-info/top_level.txt,sha256=H4T4WkAdqgaG1jgfW1hpFRQhwpqYfHVm3n1gRUpxKcw,6
+rubin_squarebot-0.9.0.dist-info/RECORD,,
