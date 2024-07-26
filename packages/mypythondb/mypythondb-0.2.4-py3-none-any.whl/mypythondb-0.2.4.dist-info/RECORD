@@ -1,0 +1,10 @@
+mypythondb/__init__.py,sha256=rzTwCp_5dRHT5f-FArksHnyWXMFR3h_lTxAm0N3rYSg,399
+mypythondb/console.py,sha256=EdOVWbX9GPhb4wFZvOUkOUyGKzYU1u8PqkKEWfsiigg,4796
+mypythondb/mysession.py,sha256=xAsodRjcW3QJ10k10JrFldJXtVyKcbCSRbAONYBOZsk,22322
+mypythondb/queryprocessor.py,sha256=Hto2_yRNSDHt9a560bGk-k7HXz1NjVkk4enwfmOp90s,6162
+mypythondb/qwebserv.py,sha256=w4ukF_tBdEZujkBTOGgh42lUi3kPRqRxdVZL66ELFxQ,6517
+mypythondb-0.2.4.dist-info/LICENSE,sha256=Uwg5ZhoeolhSddt0eWnHn3SaqQaEpW8LgtTLpWYKAx0,1073
+mypythondb-0.2.4.dist-info/METADATA,sha256=bfHA0vjuEUhcRQlFA5P6_0KvFSl_bmH-bIWBeBjHtrY,4200
+mypythondb-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mypythondb-0.2.4.dist-info/entry_points.txt,sha256=-vXLVn4n0uA8tlMegHaKrPHrsXRmdYbxTwkj1XZmjpM,52
+mypythondb-0.2.4.dist-info/RECORD,,
