@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Jarvislib/__init__.py
+Jarvislib.egg-info/PKG-INFO
+Jarvislib.egg-info/SOURCES.txt
+Jarvislib.egg-info/dependency_links.txt
+Jarvislib.egg-info/not-zip-safe
+Jarvislib.egg-info/top_level.txt
