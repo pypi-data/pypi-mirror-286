@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "pydaraja"
+version = "0.3.6"
+description = "Python wrapper for Mpesa's Daraja API"
+authors = [
+  {name = "Raymond Kipkorir", email = "raykipkorir02@gmail.com" }
+]
+maintainers = [
+  {name = "Raymond Kipkorir", email = "raykipkorir02@gmail.com" }
+]
+
+readme = "README.md"
+license = {file = "LICENSE"}
+
+requires-python = ">=3.7"
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+    "requests>=2.31.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit~=3.7.0",
+    "virtualenv~=20.23.1",
+    "black~=23.3.0",
+    "coverage~=7.6.0",
+    "pytest~=8.3.1",
+    "flake8~=7.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/raykipkorir/pydaraja"
+"Bug Tracker" = "https://github.com/raykipkorir/pydaraja/issues"
