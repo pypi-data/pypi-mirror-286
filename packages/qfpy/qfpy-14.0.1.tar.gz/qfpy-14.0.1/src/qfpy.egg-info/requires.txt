@@ -1,0 +1,6 @@
+zhconv
+psutil
+chepy
+pycryptodome
+loguru
+pymupdf
