@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: django-sage-mailbox
+Version: 0.1.2
+Summary: A Django package for mailbox client integration.
+Home-page: https://github.com/sageteamorg/django-sage-mailbox
+License: MIT
+Keywords: django,email,imap,mailbox,sageteam,django-packages
+Author: Sepehr Akbarzadeh
+Author-email: sepehr@sageteam.org
+Requires-Python: >=3.12,<4.0
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=5.0.7,<6.0.0)
+Requires-Dist: django-jsonform (>=2.22.0,<3.0.0)
+Requires-Dist: python-dateutil (>=2.9.0.post0,<3.0.0)
+Requires-Dist: python-sage-imap (>=0.4.2,<0.5.0)
+Requires-Dist: setuptools (>=70.2.0,<71.0.0)
+Requires-Dist: twine (>=5.1.1,<6.0.0)
+Requires-Dist: wheel (>=0.43.0,<0.44.0)
+Project-URL: Documentation, https://django-sage-mailbox.readthedocs.io/en/latest/
+Project-URL: Issues, https://github.com/sageteamorg/django-sage-mailbox/issues
+Project-URL: Repository, https://github.com/sageteamorg/django-sage-mailbox
+Description-Content-Type: text/markdown
+
+# Django Sage Mailbox
+
+## Overview
+
+A package has been developed to enable seamless interaction with various IMAP providers within Django. With this package, organizational emails can be managed directly within Django, providing functionality akin to a mailbox client. Nearly all operations typically available in a mailbox client, similar to those in applications like SOGo or Outlook, can be performed.
+
+## Features
+
+- Seamless integration with multiple IMAP providers
+- Direct management of organizational emails within Django
+- Comprehensive mailbox client functionality
+- Operations similar to SOGo or Outlook
+
+## Installation
+
+To install the package, use pip:
+
+```bash
+pip install django-sage-mailbox
+```
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.
+
+## License
+
+This project is licensed under the MIT License.
+
