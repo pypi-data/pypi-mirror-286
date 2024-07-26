@@ -1,0 +1,13 @@
+class: GitHub
+main: app.py
+permissions:
+  - "github.all"
+dependencies:
+  - name: python
+    version: "^3.10"
+  - name: npiai
+    version: "^0.2.3.dev1"
+  - name: openai
+    version: "^1.30.3"
+  - name: pygithub
+    version: "^2.3.0"
