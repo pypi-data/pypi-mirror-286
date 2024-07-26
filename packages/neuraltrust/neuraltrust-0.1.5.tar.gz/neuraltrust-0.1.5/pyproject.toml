@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "neuraltrust"
+version = "0.1.5"
+description = "Python client library for the NeuralTrust"
+authors = ["Victor Garcia <victor.garcia@neuraltrust.ai>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/singularly/neuraltrust-sdk"
+repository = "https://github.com/singularly/neuraltrust-sdk"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+httpx = "^0.24.1"
+attrs = "^23.1.0"
+python-dateutil = "^2.8.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
