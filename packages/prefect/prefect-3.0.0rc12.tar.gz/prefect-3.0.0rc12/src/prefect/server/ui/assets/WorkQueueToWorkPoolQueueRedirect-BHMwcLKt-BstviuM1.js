@@ -1,0 +1,2 @@
+import{d as a,f as n,g as k,t as l,h as m,i as p}from"./index-CgvuCQfr.js";const i=a({__name:"WorkQueueToWorkPoolQueueRedirect",setup(w){const u=n("workQueueId"),s=k(),t=l(s.workQueues.getWorkQueue,[u]),o=p(),r=m();return t.promise().then(({response:e})=>{if(!e.workPoolName){o.replace(r.workPools());return}o.replace(r.workPoolQueue(e.workPoolName,e.name))}),()=>{}}});export{i as default};
+//# sourceMappingURL=WorkQueueToWorkPoolQueueRedirect-BHMwcLKt-BstviuM1.js.map
