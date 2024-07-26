@@ -1,0 +1,6 @@
+PREFLIGHT_CUSTOMER_HEADER='Preflight-Customer-ID'
+PREFLIGHT_VERSION_HEADER='Preflight-Version'
+PREFLIGHT_CLIENT_LIBRARY_HEADER='Preflight-Library'
+PREFLIGHT_SERVICE_START_ID_HEADER='Preflight-Service-Start-Id'
+PROD_BACKEND_URL='https://preflight-backend.onrender.com'
+LOCAL_BACKEND_URL='http://localhost:4317'
