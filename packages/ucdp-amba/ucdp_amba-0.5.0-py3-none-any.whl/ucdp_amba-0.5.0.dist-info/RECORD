@@ -1,0 +1,10 @@
+ucdp_amba-0.5.0.dist-info/METADATA,sha256=0fY3fzxslCCxwavo6KNc3X4zo8RC6WH0U3CTwSP1YnY,1574
+ucdp_amba-0.5.0.dist-info/WHEEL,sha256=rSwsxJWe3vzyR5HCwjWXQruDgschpei4h_giTm0dJVE,90
+ucdp_amba-0.5.0.dist-info/licenses/LICENSE,sha256=C5dC7xMg5vdkSj6eKxdnX0qszqjdI49MsHgvMhGCIq4,1067
+ucdp_amba/__init__.py,sha256=4L5z8nfIBKmFnAsW835cT9O5jA6p0tMldYQ7CkUAMbc,1155
+ucdp_amba/types.py,sha256=6PPFXcsQrZ5eXiDUMX0f3_OwPoKPPEA1z3BRLbm6gp4,30067
+ucdp_amba/ucdp-templates/ucdp_ahb2apb.sv.mako,sha256=kmfa87g6Ts63aWiQGiwAMVkMUkAAbaTmZgYH5giGuXc,9199
+ucdp_amba/ucdp_ahb2apb.py,sha256=nRXGTncVeaYJR8C21S4J8kh694qtXZg69XociIWyR5A,8307
+ucdp_amba/ucdp_ahb_ml.py,sha256=BkJLrvfIP9f4fggKZ5xP09wn4dBb3MlKHxQ-N3-V2IA,9599
+ucdp_amba/ucdp_apb2mem.py,sha256=0WZdOTgb-b7_mg-3tdjl-HOZ7CWwCOaC2lx5doJJCoc,2513
+ucdp_amba-0.5.0.dist-info/RECORD,,
