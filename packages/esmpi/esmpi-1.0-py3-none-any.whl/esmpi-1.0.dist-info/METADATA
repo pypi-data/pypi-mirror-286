@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: esmpi
+Version: 1.0
+Summary: Collection of Evolution Strategies optimizers with native MPI parallelization.
+Author: Giacomo Spigler <http://www.spigler.net/giacomo>
+License: MIT License
+        
+        Copyright (c) [year] [fullname]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://airlab-tilburg.github.io
+Project-URL: GitHub, https://github.com/spiglerg/esmpi
+Keywords: evolution strategies,cma-es,mpi,openai-es
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: mpi4py
+Provides-Extra: full
+Requires-Dist: stable-baselines3 ; extra == 'full'
+Requires-Dist: cmaes ; extra == 'full'
+
+
+## About
+
+Compact implementation of Evolution Strategies using MPI, together with an MPI-based wrapper for the `cmaes' Python library (only parallelizing the function evaluations). This repository uses part of the code from OpenAI's implementation (https://github.com/openai/evolution-strategies-starter).
+
+Example usage:
+```python
+from esmpi import ES_MPI
+
+def eval_fn(x):
+    time.sleep(0.01)
+    return (x[0] - 3) ** 2 + (10 * (x[1] + 2)) ** 2
+
+optimizer = ES_MPI(n_params=2, population_size=16, learning_rate=0.1, sigma=0.02)
+
+for i in range(50):
+    fit = optimizer.step(eval_fn)
+
+    if optimizer.is_master == 0:
+        print(f"{i}: fitness {np.mean(fit)}, current best params {optimizer.get_parameters()}\n")
+
+```
