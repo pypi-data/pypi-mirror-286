@@ -1,0 +1,3 @@
+[console_scripts]
+nvd-search=nvd_search.cli:app
+
