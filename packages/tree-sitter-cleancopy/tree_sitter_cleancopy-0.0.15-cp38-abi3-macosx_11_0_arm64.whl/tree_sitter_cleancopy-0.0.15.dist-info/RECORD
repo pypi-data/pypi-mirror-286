@@ -1,0 +1,10 @@
+tree_sitter_cleancopy-0.0.15.dist-info/RECORD,,
+tree_sitter_cleancopy-0.0.15.dist-info/LICENSE,sha256=lN3kl4f-c2W9UiHeYdAORt2AZyBEp9iQQKwxvOVjGng,1061
+tree_sitter_cleancopy-0.0.15.dist-info/WHEEL,sha256=VRbKcSl-nASKPo7myXU_5TUlzFB9tHwwgdpcFgZx6qo,108
+tree_sitter_cleancopy-0.0.15.dist-info/top_level.txt,sha256=DoBE_ubsM9kK1EymasNnAZBhYcWsb5MRNr0KSJfvv80,31
+tree_sitter_cleancopy-0.0.15.dist-info/METADATA,sha256=QmTQb2ZDM5a94h6TmaDq-k-S1xAk5cY5GUmqNNe7xJs,638
+tree_sitter_cleancopy/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_cleancopy/binding.c,sha256=40WxM0dU0rRqLnR4atza047ZWeGCKlr92wvQ-SI1ni0,642
+tree_sitter_cleancopy/__init__.py,sha256=ETbRerFk3WLeWC7-UsM4UV0FNxLdG4vAryeA_9hlxcw,92
+tree_sitter_cleancopy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_cleancopy/_binding.abi3.so,sha256=d9KzuJR3Yfl1n-jA036jnn_4-TeIM6rMi5JTQ3s4Xlk,123904

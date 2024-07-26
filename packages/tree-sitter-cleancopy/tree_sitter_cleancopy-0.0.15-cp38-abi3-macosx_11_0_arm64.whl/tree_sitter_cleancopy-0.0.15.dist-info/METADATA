@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tree-sitter-cleancopy
+Version: 0.0.15
+Summary: Cleancopy grammar for tree-sitter
+License: MIT
+Project-URL: Homepage, https://github.com/tree-sitter/tree-sitter-cleancopy
+Keywords: incremental,parsing,tree-sitter,cleancopy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: core
+Requires-Dist: tree-sitter ~=0.21 ; extra == 'core'
+
