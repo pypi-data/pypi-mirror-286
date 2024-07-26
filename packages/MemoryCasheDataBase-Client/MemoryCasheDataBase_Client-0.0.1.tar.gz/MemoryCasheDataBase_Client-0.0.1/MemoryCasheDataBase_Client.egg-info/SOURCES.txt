@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+MemoryCasheDataBase_Client/MemoryCasheDataBase_Client.py
+MemoryCasheDataBase_Client/StaticSystemNumeral.py
+MemoryCasheDataBase_Client/__init__.py
+MemoryCasheDataBase_Client.egg-info/PKG-INFO
+MemoryCasheDataBase_Client.egg-info/SOURCES.txt
+MemoryCasheDataBase_Client.egg-info/dependency_links.txt
+MemoryCasheDataBase_Client.egg-info/top_level.txt

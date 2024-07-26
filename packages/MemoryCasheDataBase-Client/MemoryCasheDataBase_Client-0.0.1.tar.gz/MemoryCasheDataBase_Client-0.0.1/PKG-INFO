@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: MemoryCasheDataBase_Client
+Version: 0.0.1
+Summary: Python client for MemoryCasheDataBase_Server database and key-value store
+Home-page: https://github.com/ma-karov/MemoryCasheDataBase_Client/
+Author: Никита Макаров, Мария Кутыркина
+Author-email: ma-kar-ov@yandex.ru, mariahkutyrkina@yandex.ru
+License: Apache License, Version 2.0, see LICENSE file
+Download-URL: https://github.com/ma-karov/MemoryCasheDataBase_Client/archive/refs/tags/0.0.1.zip
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+
+# MemoryCasheDataBase_Client
+
+![PyPI](https://img.shields.io/pypi/v/clubhouse_api?color=orange) ![Python 3.6, 3.7, 3.8](https://img.shields.io/pypi/pyversions/clubhouse?color=blueviolet) ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/peopl3s/club-house-api?color=blueviolet) ![License](https://img.shields.io/pypi/l/clubhouse-api?color=blueviolet) ![Forks](https://img.shields.io/github/forks/peopl3s/club-house-api?style=social)
+
+**Python API module for MemoryCasheDataBase_Server** - this module is a Python client library for connect to DB MemoryCasheDataBase_Server
+
+
+**MemoryCasheDataBase** is collaborative project management that streamlines and refines your existing workflow. The intuitive and powerful project management platform loved by software teams of all sizes. [Clubhouse](https://clubhouse.io) is here.
+
+
+## Installation
+
+Install the current version with [PyPI](https://pypi.org/project/MemoryCasheDataBase_Client/):
+
+```bash
+pip install MemoryCasheDataBase_Client 
+```
+
+## Start project 
+```python 
+from MemoryCasheDataBase_Client import MemoryCasheDataBase_Client; 
+
+```
+
+
+## Example
+
+Add record(s) in DataBase.
+
+```python
+import MemoryCasheDataBase_Client; 
+
+NewMemoryCasheDataBase_Client : MemoryCasheDataBase_Client = MemoryCasheDataBase_Client()
+
+print(NewMemoryCasheDataBase_Client.AddRangeRecords( RequestDictionary = dict( ( ( "Key", "Value" ), ( "Key #2", "Value #2" ) ) ) )) 
+
+``` 
+
+Change record(s) in DataBase. 
+
+```python 
+
+NewMemoryCasheDataBase_Client : MemoryCasheDataBase_Client = MemoryCasheDataBase_Client()
+
+print(NewMemoryCasheDataBase_Client.ChangeRangeRecords( RequestDictionary = dict( ( ( "Key", "ValueNew" ), ) ) )) 
+
+```	
+
+Get record(s) from DataBase. 
+
+```python 
+
+NewMemoryCasheDataBase_Client : MemoryCasheDataBase_Client = MemoryCasheDataBase_Client()
+
+print(NewMemoryCasheDataBase_Client.GetRangeRecords( RequestTuple = ( "Key", "Key #2" ) )) 
+
+``` 
+
+Delete record(s) from DataBase. 
+
+```python 
+
+NewMemoryCasheDataBase_Client : MemoryCasheDataBase_Client = MemoryCasheDataBase_Client()
+
+print(NewMemoryCasheDataBase_Client.DeleteRangeRecords( RequestTuple = ( "Key #2", ) )) 
+
+``` 
+
+Add file in DataBase. 
+
+```python 
+
+NewMemoryCasheDataBase_Client : MemoryCasheDataBase_Client = MemoryCasheDataBase_Client() 
+
+with open("Image.JPG", "rb") as FileRead: 
+    print(NewMemoryCasheDataBase_Client.AddFile("ImageDB", FileRead.read())); 
+
+```
+
+
+## Contributing
+
+Bug reports and/or pull requests are welcome
+
+
+## License
+
+The module is available as open source under the terms of the [Apache License, Version 2.0](https://opensource.org/licenses/Apache-2.0)
+
+
+
+
