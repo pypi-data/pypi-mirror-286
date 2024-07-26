@@ -1,0 +1,10 @@
+vital-model-chars2vec-onnx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vital-model-chars2vec-onnx/chars2vec_onnx.py,sha256=WW3EgPMqWBYRzuugDCt2J7RxRsM5NqxQpZ8QyAl3hbA,3338
+vital_model_chars2vec_onnx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vital_model_chars2vec_onnx/chars2vec_onnx.py,sha256=WW3EgPMqWBYRzuugDCt2J7RxRsM5NqxQpZ8QyAl3hbA,3338
+vital_model_chars2vec_onnx/models/en_300/model.onnx,sha256=ig9rPKheC6ZVZSHmkFS_EZEA_flPMyeiCQojrC8UTiE,4635229
+vital_model_chars2vec_onnx/models/en_300/model.pkl,sha256=rNXF664ZKG_usYGF6KWDNUvzkR8p0kGnG7ZEB7E5Ens,606
+vital_model_chars2vec_onnx-0.1.0.dist-info/METADATA,sha256=MvmEa40D8aS4GCdzTNySKebNpe0KuLaac-paSvr6FD8,545
+vital_model_chars2vec_onnx-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vital_model_chars2vec_onnx-0.1.0.dist-info/top_level.txt,sha256=Vp5GL2n67ZNA6CHL8NLsHa7OQnufPbfwKcLXROzXmdk,27
+vital_model_chars2vec_onnx-0.1.0.dist-info/RECORD,,

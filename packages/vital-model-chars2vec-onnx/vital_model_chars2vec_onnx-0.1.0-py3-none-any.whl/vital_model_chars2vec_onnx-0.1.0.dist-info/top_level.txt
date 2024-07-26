@@ -1,0 +1,1 @@
+vital_model_chars2vec_onnx
