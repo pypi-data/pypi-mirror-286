@@ -1,0 +1,6 @@
+pyyaml==6.0.1
+python-auditor==0.6.1
+
+[build]
+build==1.2.1
+setuptools==71.1.0
