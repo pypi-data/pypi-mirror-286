@@ -1,0 +1,14 @@
+qoqo-1.15.2a1.dist-info/METADATA,sha256=I2QGe4WkCStEd5n5A5FN2ULUQiAn9azzyQS2oivBQcs,4510
+qoqo-1.15.2a1.dist-info/WHEEL,sha256=e5ZTP295C-777Hl7Aa01bz3UBWdARAT0bjosCHT4HUw,106
+qoqo-1.15.2a1.dist-info/license_files/LICENSE,sha256=thSdGlswu9EjvrIv6YHCxroEUGf26Xu_e-8Ddsm8swE,11363
+qoqo/operations.pyi,sha256=jfSux91enxQyYaGHgcIxCU-KtmL5ekTDqWm2IsUAmpg,384800
+qoqo/qoqo.pyi,sha256=NGl-rM92yrf5caA-jqCU4qX1BrSbOlYDUCPgJoapDs4,21970
+qoqo/DEPENDENCIES,sha256=lNL7izGeLokneae0h1lQaGH42ENfgngEZdncH6I_DLE,2313788
+qoqo/__init__.py,sha256=Q_VwfJPNYqZ3wBQ6TXm0j4lSJ8P5zJJdFbvUxUbiNvE,1221
+qoqo/noise_models.pyi,sha256=Hk3VBbIf9dbDOpXCX3w-3eBqzgGBUzznmaB1F8VfhcQ,33198
+qoqo/PYTHON_LICENSE,sha256=XOFAyOs9NtmMoe5ONwPg6ycCVjNduuUMsxqUqebn80M,2404
+qoqo/LICENSE_FOR_BINARY_DISTRIBUTION,sha256=x_S16j4O1TRJ8WZeif0JzmQBgPsxKnfpAnCsaaQjIs8,11881
+qoqo/measurements.pyi,sha256=SbSg9_bOY4SoFAKmpYeNqhXVTs0K530VL0PkGZMwkTA,34165
+qoqo/devices.pyi,sha256=OaiB5FayNquCym9NJVhbYF02rB2ZDlVTRTWdVgyFatc,42088
+qoqo/qoqo.cpython-310-darwin.so,sha256=eA0qNtvZHS0UmYoShdFucqVZdwriZ-5wEgf5acuUX5E,10051456
+qoqo-1.15.2a1.dist-info/RECORD,,
