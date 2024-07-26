@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: teams-puppet
+Version: 0.1.3
+Summary: Retrieves teams users JSON web tokens.
+Home-page: https://github.com/Jheesbrough/MS-Teams-Puppet-Account-Manager
+Author: Jheesbrough
+Author-email: 71599416+Jheesbrough@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: apscheduler (>=3.10.4,<4.0.0)
+Requires-Dist: blinker (<1.8.0)
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
+Requires-Dist: selenium-wire (>=5.1.0,<6.0.0)
+Requires-Dist: setuptools (>=71.0.3,<72.0.0)
+Requires-Dist: webdriver-manager (>=4.0.1,<5.0.0)
+Project-URL: Repository, https://github.com/Jheesbrough/MS-Teams-Puppet-Account-Manager
+Description-Content-Type: text/markdown
+
+# Teams Puppet
+Manages microsoft accounts to retrieve teams JSON web tokens for automating tasks that are not supported by the graph API.
+
+```python
+import teams_puppet
+import requests
+
+puppet = teams_puppet.Puppet("email", "password")
+
+headers = {
+    "accept": "application/json",
+    "Content-Type": "application/json",
+    "authorization": "Bearer " + puppet.get_token("teams"),
+    "X-ClientType": "MicrosoftTeamsAngular",
+    "X-HostAppRing": "general"
+}
+
+response = requests.get("https://teams.microsoft.com/api/example", headers=headers)
+```
+
+The token is fetched on puppet initialization. If the token expires, a new one will be fetched automatically.
+
+The puppet can either fetch the teams token that uses the Skype backend scope or the token used to access loki.delve.office.com.
+
+```python
+puppet = teams_puppet.Puppet("email", "password")
+skype_token = puppet.get_token("teams")
+loki_token = puppet.get_token("loki")
+```
+
+## Installation
+Available on PyPi
+[pypi.org/project/teams-puppet/](https://pypi.org/project/teams-puppet/)
+```bash
+pip install teams-puppet
+```
+
