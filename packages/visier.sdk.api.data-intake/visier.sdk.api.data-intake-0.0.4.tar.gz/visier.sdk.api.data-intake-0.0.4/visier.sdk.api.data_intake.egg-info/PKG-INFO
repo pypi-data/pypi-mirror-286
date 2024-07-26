@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: visier.sdk.api.data-intake
+Version: 0.0.4
+Summary: Visier Data Intake APIs
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: Apache License, Version 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Visier Data Intake APIs
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+    Visier APIs for sending raw or untransformed source data to Visier
+    
+
