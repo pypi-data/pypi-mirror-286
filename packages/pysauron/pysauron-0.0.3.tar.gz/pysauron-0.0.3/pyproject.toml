@@ -1,0 +1,28 @@
+[project]
+name = "pysauron"
+version = "0.0.3"
+description = "A collection of datasets for video anomaly detection"
+readme = "README.md"
+requires-python =">=3.8.0"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Bogdan Ivanyuk-Skulskyi", email = "ivanyuk.bogdan1999@gmail.com"},
+]
+keywords = ["anomaly-detection"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
+urls = {repository = "https://github.com/KyloRen1/PySauron" }
+dependencies = [
+  "scipy==1.11.4",
+  "Pillow==10.1.0",
+  "torch==2.1.0",
+  "torchvision==0.16.0",
+  "numpy==1.26.4",
+  "av==10.0.0"
+]
