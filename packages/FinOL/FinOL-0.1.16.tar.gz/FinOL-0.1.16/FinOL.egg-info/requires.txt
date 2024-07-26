@@ -1,0 +1,16 @@
+captum
+IPython
+matplotlib==3.5.0
+numpy
+openpyxl
+optuna
+pandas
+requests
+scikit-learn
+torch
+torch_optimizer
+tqdm
+
+[document]
+sphinx_rtd_theme
+sphinx_copybutton
