@@ -1,0 +1,22 @@
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+include:
+  - component: $CI_SERVER_FQDN/thht-ci-components/python/test@1.4.0
+    inputs:
+      job_name: lint
+      test_stage: lint
+      test_cmd: pixi run lint_ci
+
+  - component: $CI_SERVER_FQDN/thht-ci-components/python/test@1.4.0
+    inputs:
+      job_name: test
+      coverage_folder: "plus_sync"
+      run_before_script: |
+        apt-get update
+        apt-get install -y rclone
+
+  - component: $CI_SERVER_FQDN/thht-ci-components/python/build_distribute@1.4.0
