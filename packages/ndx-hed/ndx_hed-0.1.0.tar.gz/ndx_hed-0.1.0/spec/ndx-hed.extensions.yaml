@@ -1,0 +1,12 @@
+datasets:
+- neurodata_type_def: HedTags
+  neurodata_type_inc: VectorData
+  dtype: text
+  doc: An extension of VectorData for Hierarchical Event Descriptor (HED) tags. If
+    HED tags are used, the HED schema version must be specified in the NWB file using
+    the HedMetadata type.
+  attributes:
+  - name: hed_version
+    dtype: text
+    doc: "The version of the HED schema used to validate the HED tags, e.g., '8.2.0'.
+      (Required). "
