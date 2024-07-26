@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/scholaretl/__init__.py
+src/scholaretl.egg-info/PKG-INFO
+src/scholaretl.egg-info/SOURCES.txt
+src/scholaretl.egg-info/dependency_links.txt
+src/scholaretl.egg-info/top_level.txt

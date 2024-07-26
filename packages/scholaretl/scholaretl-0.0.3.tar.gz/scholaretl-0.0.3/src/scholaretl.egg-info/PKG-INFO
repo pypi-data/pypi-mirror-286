@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: scholaretl
+Version: 0.0.3
+Summary: ETL for scientific papers
+Author: Blue Brain Project, EPFL
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Description
