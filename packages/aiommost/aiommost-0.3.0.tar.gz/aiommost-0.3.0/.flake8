@@ -1,0 +1,31 @@
+[flake8]
+exclude = tests/*
+ignore =
+    D100,
+    D101,
+    D102,
+    D103,
+    D104,
+    D105,
+    D106,
+    D107,
+    DAR101,
+    DAR201,
+    WPS110,
+    WPS115,
+    WPS125,
+    WPS201,
+    WPS211,
+    WPS214,
+    WPS226,
+    WPS229,
+    WPS305,
+    WPS306,
+    WPS323,
+    WPS410,
+    WPS412,
+    WPS531,
+
+max-module-members = 12
+max-local-variables = 9
+max-line-length = 99
