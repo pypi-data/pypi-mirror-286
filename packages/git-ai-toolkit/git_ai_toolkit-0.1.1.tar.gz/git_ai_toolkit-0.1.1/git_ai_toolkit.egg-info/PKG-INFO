@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: git_ai_toolkit
+Version: 0.1.1
+Summary: A toolkit for using OpenAI's GPT-4o model to assist with Git workflows.
+Author: Maximilian Lemberg
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE.txt
+Requires-Dist: openai>=1.37.0
+Requires-Dist: colorama>=0.4.6
