@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/xbcompiler/__init__.py
+src/xbcompiler/main.py
+src/xbcompiler.egg-info/PKG-INFO
+src/xbcompiler.egg-info/SOURCES.txt
+src/xbcompiler.egg-info/dependency_links.txt
+src/xbcompiler.egg-info/top_level.txt
