@@ -1,0 +1,376 @@
+"""
+This module defines the core `Factory` type representation.
+"""
+
+import uuid
+import yaml
+from typing import Any, Optional
+from dataclasses import dataclass
+from typing import Any, Optional, Literal
+import importlib.resources as pkg_resources
+
+from .components import (
+    FactoryDefinitions,
+    FactoryPrompt,
+    FactoryOutput,
+    FactoryInput,
+    FactoryMask,
+)
+
+
+class ChainFactoryLink:
+    """
+    This type is the representation of a factory.
+    """
+
+    _name: str
+    _source: Optional[str]
+    _parsed_source: Optional[Any]
+    _link_type: Literal["sequential", "parallel"] = "sequential"
+
+    definitions: Optional[FactoryDefinitions]
+    output: Optional[FactoryOutput]
+    prompt: Optional[FactoryPrompt]
+
+    def __init__(
+        self,
+        name: str,
+        source: Optional[str] = None,
+        parsed_source: Optional[Any] = None,
+        definitions: Optional[FactoryDefinitions] = None,
+        output: Optional[FactoryOutput] = None,
+        prompt: Optional[FactoryPrompt] = None,
+        mask: Optional[FactoryMask] = None,
+        link_type: Literal["sequential", "parallel"] = "sequential",
+    ):
+        self._name = name
+        self._source = source  # the YAML template
+        self._parsed_source = parsed_source  # the parsed YAML object / dictionary
+
+        self.definitions: Optional[FactoryDefinitions] = definitions  # section `def`
+        self.prompt: Optional[FactoryPrompt] = prompt  # section `prompt`
+        self.mask: Optional[FactoryMask] = (
+            mask  # section `mask` (only for convex chains)
+        )
+        self.output: Optional[FactoryOutput] = output  # section `out`
+        self._link_type = link_type
+
+    @classmethod
+    def from_file(
+        cls,
+        name: str,
+        file_path: str | None = None,
+        file_content: str | None = None,
+        link_type: Literal["sequential", "parallel"] = "sequential",
+        mask: Optional[FactoryMask] = None,
+        convex: bool = False,
+        engine_cls: Any | None = None,
+    ) -> "ChainFactoryLink":
+        """
+        Parse the source .fctr file into a `ChainFactoryLink` object.
+        Extensions are not supported yet.
+
+        Args:
+            file_path (str): The path to the .fctr file.
+        Returns:
+            ChainFactoryLink: The parsed `ChainFactoryLink` object.
+        """
+        if file_content:
+            source = yaml.safe_load(file_content)
+        elif file_path:
+            source = yaml.safe_load(open(file_path, "r"))
+        else:
+            raise ValueError("Either file_path or file_object must be provided.")
+
+        input = source.get("in")
+        purpose = source.get("purpose")
+        prompt = source.get("prompt")
+        defs = source.get("def")
+        output = source.get("out")
+        mask = source.get("mask")
+
+        if isinstance(prompt, str):
+            prompt = {
+                "type": "template",
+                "template": prompt,
+                "purpose": None,
+            }
+
+        if prompt and not purpose:
+            purpose = prompt.get("purpose")
+
+        if not prompt and not purpose:
+            raise ValueError("Neither purpose nor a prompt template were provided.")
+
+        factory_input = None if not input else FactoryInput(attributes=input)
+        input_variables = None if not factory_input else factory_input.input_variables
+
+        if purpose:
+            assert engine_cls
+            with pkg_resources.open_text(
+                "chainfactory.chains", "generate_prompt_template.fctr"
+            ) as file:
+                file_content = file.read()
+
+                engine = engine_cls.from_str(file_content)
+
+                generated_prompt_template = engine(
+                    purpose=purpose,
+                    input_variables=[name] if convex else input_variables,
+                ).prompt_template
+
+                factory_prompt = FactoryPrompt(
+                    template=generated_prompt_template,
+                    purpose=purpose,
+                    input_variables=input_variables,
+                )
+        elif prompt:
+            factory_prompt = FactoryPrompt(
+                template=prompt["template"],
+                purpose=None,
+                input_variables=input_variables,
+            )
+        else:
+            raise ValueError(
+                "prompt / prompt.template or purpose / prompt.purpose must be provided."
+            )
+
+        factory_defs = None if not defs else FactoryDefinitions(definitions=defs)
+        factory_output = (
+            None
+            if not output
+            else FactoryOutput(
+                attributes=output,
+                definitions=None if not factory_defs else factory_defs.defined_types,
+            )
+        )
+
+        if isinstance(mask, str):
+            if mask == "auto":
+                factory_mask = FactoryMask(
+                    type="auto",
+                    variables=[],
+                    template=None,
+                )
+            else:
+                factory_mask = FactoryMask(
+                    type="template",
+                    template=mask,
+                    variables=[],
+                )
+        elif isinstance(mask, dict):
+            template = mask.get("template", None)
+            variables = mask.get("variables", [])
+            if not template and not variables:
+                raise ValueError(
+                    "FactoryMask.variables cannot be empty when type is auto."
+                )
+            elif not template:
+                assert engine_cls
+                with pkg_resources.open_text(
+                    "chainfactory.chains", "generate_mask_template.fctr"
+                ) as file:
+                    file_content = file.read()
+                    engine = engine_cls.from_str(file_content)
+
+                    generated_mask_template = engine(
+                        variables=variables,
+                    ).template
+
+                    factory_mask = FactoryMask(
+                        template=generated_mask_template,
+                        variables=variables,
+                    )
+            else:
+                factory_mask = FactoryMask(
+                    template=mask.get("template"),
+                    variables=[],
+                )
+        else:
+            if convex:
+                raise ValueError(
+                    f"A convex (parallel to sequential) chainlink necessarily requires a valid mask. Please provide a mask or alter the convexity by either making preceding chain sequential or the current chain: {name} parallel."
+                )
+
+            factory_mask = None
+
+        return cls(
+            name=name,
+            source=file_path,
+            parsed_source=source,
+            prompt=factory_prompt,
+            output=factory_output,
+            definitions=factory_defs,
+            mask=factory_mask,
+            link_type=link_type,
+        )
+
+
+@dataclass
+class ChainFactory:
+    """
+    This type is the representation of multiple factories.
+    """
+
+    links: list[ChainFactoryLink]
+
+    @classmethod
+    def from_file(cls, file_path: str, engine_cls: Any | None = None) -> "ChainFactory":
+        """
+        Parse the source .fctr file into a `Factory` object.
+
+        Args:
+            file_path (str): The path to the .fctr file.
+            engine_cls (Any): The engine class to generate the prompt template from purpose.
+
+        Returns:
+            Factory: The parsed `ChainFactory` object.
+        """
+        with open(file_path, "r") as file:
+            content = file.read()
+
+        return cls.from_str(content, engine_cls=engine_cls)
+
+    @classmethod
+    def from_str(cls, content: str, engine_cls: Any | None = None) -> "ChainFactory":
+        """
+        Parse the content of a .fctr file into a `ChainFactory` object.
+
+        Args:
+            content (str): The content of the .fctr file.
+            engine_cls (Any): The engine class to generate the prompt template from purpose.
+
+        Returns:
+            Factory: The parsed `ChainFactory` object.
+        """
+        lines = content.splitlines()
+        parts = {}
+        current_part = None
+
+        if "@chainlink" not in content:
+            return cls(
+                links=[
+                    ChainFactoryLink.from_file(
+                        name="chainlink-0", file_content=content
+                    ),
+                ]
+            )
+
+        for i, line in enumerate(lines):
+            if not line:
+                continue
+
+            if line.startswith("#"):
+                continue
+
+            new_portion_start = line.strip().startswith("@chainlink")
+
+            if not new_portion_start and current_part:
+                parts[current_part]["lines"].append(line)
+                continue
+
+            if line.startswith("  "):
+                line = line.replace("  ", "\t")
+
+            tokens = [token for token in line.strip().split(" ")]
+
+            if len(tokens) > 3:
+                raise ValueError(
+                    f"Error on line {i}. Invalid @chainlink definition. Must be of the form `@chainlink <name> <link_type>`."
+                )
+            elif len(tokens) == 3:
+                name = tokens[1]
+                link_type = tokens[2]
+
+                if link_type not in ["sequential", "parallel", "--", "||"]:
+                    raise ValueError(
+                        f"Error on line {i}. Invalid @chainlink definition. Must be of the form `@chainlink [name] [link_type: 'sequential' | '--' | 'parallel' | '||']."
+                    )
+
+                if name in parts:
+                    raise ValueError(
+                        f"Error on line {i}. Invalid @chainlink definition. Another chainlink with the same name exists."
+                    )
+
+            elif len(tokens) == 2:
+                unknown_token = tokens[1]
+                if unknown_token in ["sequential", "parallel", "--", "||"]:
+                    # assign random name
+                    name = "chainlink-" + str(uuid.uuid4().hex)
+                    link_type = unknown_token
+                else:
+                    name = tokens[1]
+                    link_type = "sequential"
+            else:
+                name = "chainlink-" + str(uuid.uuid4().hex)
+                link_type = "sequential"
+
+            if link_type == "--":
+                link_type = "sequential"
+            elif link_type == "||":
+                link_type = "parallel"
+
+            current_part = name
+            parts[name] = {
+                "beginning_line": i,
+                "link_type": link_type,
+                "lines": [],
+            }
+
+        chainlinks = []
+        previous_link = None
+        for name, part in parts.items():
+            if not part["lines"]:
+                raise ValueError(
+                    f"Error on line {part['beginning_line']}. Chainlink definition cannot be empty."
+                )
+
+            if (
+                previous_link
+                and previous_link._link_type == "parallel"
+                and part["link_type"] == "sequential"
+            ):
+                convex = True
+            else:
+                convex = False
+
+            link = ChainFactoryLink.from_file(
+                name=name,
+                file_content="\n".join(part["lines"]).replace("\t", "  "),
+                link_type=part["link_type"],
+                convex=convex,
+                engine_cls=engine_cls,
+            )
+
+            if previous_link and previous_link._link_type == "parallel":
+                assert link.prompt
+                assert link.prompt.input_variables
+                assert link.prompt.template
+
+                match link._link_type:
+                    case "parallel":
+                        updated_input_variables = []
+                        for var in link.prompt.input_variables:
+                            if var.startswith(previous_link._name):
+                                continue
+
+                            full_var = f"{previous_link._name}$element${var}"
+                            updated_input_variables.append(full_var)
+                            link.prompt.template = link.prompt.template.replace(
+                                "{" + var + "}",
+                                "{" + full_var + "}",
+                            )
+
+                        if updated_input_variables:
+                            link.prompt.input_variables = updated_input_variables
+                    case "sequential":
+                        pass
+                    case _:
+                        raise ValueError(
+                            f"Invalid chainlink type: {link._link_type}. Must be one of 'sequential', '--', 'parallel', '||' or empty."
+                        )
+
+            previous_link = link
+            chainlinks.append(link)
+
+        return cls(links=chainlinks)
