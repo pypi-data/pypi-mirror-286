@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+sial/__init__.py
+sial/crosser.py
+sial/inferer.py
+sial/utils.py
+sial_pkg.egg-info/PKG-INFO
+sial_pkg.egg-info/SOURCES.txt
+sial_pkg.egg-info/dependency_links.txt
+sial_pkg.egg-info/requires.txt
+sial_pkg.egg-info/top_level.txt
