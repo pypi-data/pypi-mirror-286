@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+git_ai_toolkit.egg-info/PKG-INFO
+git_ai_toolkit.egg-info/SOURCES.txt
+git_ai_toolkit.egg-info/dependency_links.txt
+git_ai_toolkit.egg-info/entry_points.txt
+git_ai_toolkit.egg-info/requires.txt
+git_ai_toolkit.egg-info/top_level.txt
