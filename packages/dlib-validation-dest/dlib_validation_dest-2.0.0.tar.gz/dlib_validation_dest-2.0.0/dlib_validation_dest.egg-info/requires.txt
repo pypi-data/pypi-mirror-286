@@ -1,0 +1,6 @@
+dlib
+joblib
+numpy
+opencv-python
+python-dateutil
+scikit-image

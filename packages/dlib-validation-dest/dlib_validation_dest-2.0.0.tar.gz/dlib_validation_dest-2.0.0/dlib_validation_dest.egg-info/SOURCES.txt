@@ -1,0 +1,9 @@
+README.md
+setup.py
+dlib_validation_dest/__init__.py
+dlib_validation_dest/validatingv2.py
+dlib_validation_dest.egg-info/PKG-INFO
+dlib_validation_dest.egg-info/SOURCES.txt
+dlib_validation_dest.egg-info/dependency_links.txt
+dlib_validation_dest.egg-info/requires.txt
+dlib_validation_dest.egg-info/top_level.txt
