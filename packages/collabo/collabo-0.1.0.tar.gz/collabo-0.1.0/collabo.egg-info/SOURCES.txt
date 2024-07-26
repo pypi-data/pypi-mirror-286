@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+collabo/__init__.py
+collabo/main.py
+collabo/utils.py
+collabo.egg-info/PKG-INFO
+collabo.egg-info/SOURCES.txt
+collabo.egg-info/dependency_links.txt
+collabo.egg-info/top_level.txt
