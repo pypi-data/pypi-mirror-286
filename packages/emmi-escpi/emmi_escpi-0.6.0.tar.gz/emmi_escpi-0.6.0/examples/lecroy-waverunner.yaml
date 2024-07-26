@@ -1,0 +1,70 @@
+visa:
+  port: "TCPIP::10.0.0.XX::INSTR"
+  
+epics:
+  prefix: "KMC3:XPP:LC1"
+
+properties:
+
+  # Each of these automatically add two EPICS PVs:
+  #  - (prefix):(property)_VAL: setter variable
+  #  - (prefix):(property)_RBV: getter variable (read-back value)
+
+  # advanced triggering mode enable:
+  # ADVT 0 turns off
+  # ADVT 1 turns on
+  - property: "ADVT"
+    kind: "analog"
+
+  # prescale factor:
+  # PRES i, j
+  # for channels i, the prescale factor is set to j
+  # i = 0 is trigger input, 1 is output AB, ...
+  - property: "PRES"
+    kind: "analog"
+
+  # external trigger level
+  # TLVL v
+  - property: "TLVL"
+    kind: "analog"
+
+  # external trigger source:
+  # TSRC i
+  # i = 0 internal, 1 external rising, 2 external falling
+  - property: "TSRC"
+    kind: "analog"
+
+  # set internal trigger rate:
+  # TRAT f (in Hz)
+  - property: "TRAT"
+    kind: "analog"
+
+  # delay
+  # DLAY c, d, t
+  # set delay of channel c relative to channel d to value t
+  # DLAY 2,0,10e-6 sets delay of channel A to T0 + 10e-6 s
+  # 0 = T0, 1 =  T1, 2 = A, 3 = B, 4 = C, 5 = D, 6 = E, 7 = F, 8 = G, 9 = H
+  - property: "DLAY"
+    kind: "analog"
+
+  # level amplitude
+  # LAMP b, v
+  # sets lavel of output b to v in Volt
+  # 0 = T0, 1 = AB, 2 = CD, 3 = EF, 4 = GH
+  - property: "LAMP"
+    kind: "analog"
+
+  # level offset
+  # LOFF b, v
+  # sets level offset of channel b to v in Volt
+  - property: "LOFF"
+    kind: "analog"
+
+  # level polarity
+  # LPOL b, i
+  # sets the polarity of output b to i
+  # i = 1 is positive, i = 0 is negative
+  - property: "LPOL"
+    kind: "analog"
+
+  

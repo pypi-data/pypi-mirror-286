@@ -1,0 +1,129 @@
+spec: 1.1
+devices:
+  KEITH3390:
+    eom:
+      ASRL INSTR:
+        q: "\n"
+        r: "\n"
+
+      TCPIP INSTR:
+        q: "\n"
+        r: "\n"
+
+    error:
+      response:
+        command_error: "Nope."
+
+    dialogues:
+      - q: "*IDN?"
+        r: "Something Something Keithley 3390"
+
+      #- q: "VOLT:UNIT {}"
+      #  r: "Error register stuff"
+
+      # clear error
+      #- q: "*CLS"
+
+      #- q: "LERR?"
+      #  r: "Never gonna give you up"
+        
+      #- q: "INSR?"
+      #  r: "Status register stuff"        
+
+    properties:
+
+      volt_unit:
+        default: "VPP"
+        setter:
+          q: "VOLT:UNIT {}"
+        getter:
+          q: "VOLT:UNIT?"
+          r: "{}"
+
+      func:
+        default: "SIN"
+        setter:
+          q: "FUNC {}"
+        getter:
+          q: "FUNC?"
+          r: "{}"
+
+      func_user:
+        default: "PUND40"
+        setter:
+          q: "FUNC:USER {}"
+        getter:
+          q: "FUNC:USER?"
+          r: "{}"
+
+      freq:
+        default: 1.0
+        setter:
+          q: "FREQ {}"
+        getter:
+          q: "FREQ?"
+          r: "{}"
+
+      ampl:
+        default: 5.0
+        setter:
+          q: "VOLT {}"
+        getter:
+          q: "VOLT?"
+          r: "{}"
+
+      offs:
+        default: 0.5
+        setter:
+          q: "VOLT:OFFS {}"
+        getter:
+          q: "VOLT:OFFS?"
+          r: "{}"
+
+      burst_mode:
+        default: "TRIG"
+        setter:
+          q: "BURS:MODE {}"
+        getter:
+          q: "BURS:MODE?"
+          r: "{}"
+
+      burst_cycles:
+        default: 1
+        setter:
+          q: "BURS:NCYC {}"
+        getter:
+          q: "BURS:NCYC?"
+          r: "{}"
+
+      burst_cycles:
+        default: "ON"
+        setter:
+          q: "BURS:STAT {}"
+        getter:
+          q: "BURS:STAT?"
+          r: "{}"
+              
+      trig_source:
+        default: "EXT"
+        setter:
+          q: "TRIG:SOURCE {}"
+        getter:
+          q: "TRIG:SOURCE?"
+          r: "{}"
+          
+      trig_slope:
+        default: "POS"
+        setter:
+          q: "TRIG:SLOP {}"
+        getter:
+          q: "TRIG:SLOP?"
+          r: "{}"
+    
+resources:
+  
+  ASRL1::INSTR:
+    device: KEITH3390
+
+  TCPIP::keith3390-sim::INSTR:
+    device: KEITH3390

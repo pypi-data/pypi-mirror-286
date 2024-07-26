@@ -1,0 +1,186 @@
+visa:
+  port: "TCPIP::keith3390-sim::INSTR"
+
+epics:
+  prefix: "KMC3:XPP:KEITH"
+
+startup:
+  inline: |
+    VOLT:UNIT VPP
+    #BURS:TRIG:SOUR EXT
+
+fields:
+
+  #- recordType: "signal"
+  #  signal:
+  #    name: "id"
+  #    kind: "text"
+
+  - recordType: "property"
+    property:
+      name: "func"
+      access: "FUNC"
+      kind: "strings"
+      validator:
+        values:
+          - SIN
+          - DC
+          - NOISE
+          - SQUA
+          - RAMP
+          - USER
+      actor:
+        suffix: "func"
+      signal:
+        suffix: "func_RBV"
+      
+
+  # select user function
+  #- recordType: "property"
+  #  property:
+  #    name: "FUNC:USER"
+  #    kind: "text"
+      #kind: "strings"
+      #values:
+      #  - EXP_RISE
+      #  - EXP_FALL
+      #  - NEG_RAMP
+      #  - SINC
+      #  - CARDIAC
+      #  - ASYMPULS1075
+      #  - PUND40
+      #  - AYMPULSE080
+      #  - AYMPULSE105
+      #  - VOLATILE
+        
+  # frequency
+  - recordType: "property"
+    property:
+      name: "freq"
+      access: "FREQ"
+      kind: "analog"
+      signal:
+        suffix: "freq_RBV"
+      actor:
+        suffix: "freq"
+
+  # amplitude
+  - recordType: "property"
+    property:
+      name: "ampl"
+      access: "VOLT"
+      kind: "analog"
+      signal:
+        suffix: "ampl_RBV"
+      actor:
+        suffix: "ampl"
+
+  # amplitude offset
+  - recordType: "property"
+    property:
+      name: "offs"
+      access: "VOLT:OFFS"
+      kind: "analog"
+      signal:
+        suffix: "offs_RBV"
+      actor:
+        suffix: "offs"
+
+  # unit of amplitude: "Vpp"/"Vrms"/"dBm"
+  #- type: "property"
+  #  name: "VOLT:UNIT"
+  #  kind: "strings"
+  #  values:
+  #    - VPP
+  #    - VRMS
+  #    - DBM
+ 
+  # get list of all stored waveforms
+  #- type: "property"
+  #  kind: "text"
+  #  name: "DATA:CAT"
+
+  # duty cycle of SQU function in %
+  #- type: "property"
+  #  name: "FUNC:SQU:DCYC"
+  #  kind: "analog"
+  #    limits:
+  #      min:
+  #        value: 0.0
+  #        inclusive: true
+  #      max:
+  #        value: 100.0
+  #        inclusive: true
+
+  # symmetry of RAMP function in %
+  #- type: "property"
+  #  name: "FUNC:RAMP:SYMM"
+  #  kind: "analog"
+  #    limits:
+  #      min:
+  #        value: 0.0
+  #        inclusive: true
+  #      max:
+  #        value: 100.0
+  #        inclusive: true    
+  #    
+
+  # burst mode: "TRIG" or "GATED"
+  # - type: "property"
+  #    name: "BURS:MODE"
+  #    kind: "strings"
+  #    values:
+  #      - TRIG
+  #      - GATED
+  
+  # burst mode: number of cycles sent upon trigger
+  #- type: "property"
+  #  name: "BURS:NCYC"
+  #  kind: "analog"
+
+  # burst mode trigger source "IMM", "EXT", "BUS" 
+#  - type: "property"
+#    name: "TRIG:SOURCE"
+#    kind: "strings"
+#    values:
+#      - IMM
+#      - EXT
+#      - BUS
+
+  # burst mode trigger edge "POS", "NEG",
+#  - type: "property"
+#    name: "TRIG:SLOP"
+#    kind: "strings"
+#    values:
+#      - POS
+#      - NEG
+
+  # set burst mode to "ON"/"OFF"
+#  - type: "property"
+#    name: "BURS:STAT"
+#    kind: "switch"
+
+  # turn FG output "ON"/"OFF"
+  - recordType: "actor"
+    actor:
+      name: "onoff"
+      access: "OUTP"
+      kind: "switch"
+
+  # polarity of output "NORM"/"INV"
+#  - type: "property"
+#    name: "OUTP:POL"
+#    kind: "strings"
+#    values:
+#      - NORM
+#      - INV
+
+  # output termination: <ohms>
+#  - type: "property"
+#    name: "OUTP:LOAD"
+#    kind: "analog"
+
+  # output sync signal: "ON"/"OFF"
+#  - type: "property"
+#    name: "OUTP:SYNC"
+#    kind: "switch"

@@ -1,0 +1,68 @@
+[build-system]
+requires = [
+    "setuptools>=64.0",
+    "setuptools_scm[toml]>=6.2"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emmi-escpi"
+authors = [
+  { name="Florin Boariu", email="florin.pt@rootshell.ro" },
+  { name = "Matthias Rössle", email = "matthias.roessle@helmholtz-berlin.de" },  
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering"
+]
+dependencies = [
+    "emmi[softioc,scpi]>=0.6.0",
+    "pyvisa-py",
+    "pyvisa-sim",
+]
+dynamic = [
+    "version"
+]
+description = "EPICS-SCPI Integration Tool"
+readme = "README.md"
+requires-python = ">= 3.8"
+keywords = []
+
+
+[project.urls]
+"Homepage" = "https://emmi.rootshell.ro/escpi"
+"Source Code" = "https://gitlab.com/codedump2/escpi/"
+"Bug Tracker" = "https://gitlab.com/codedump2/escpi/-/issues"
+
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-asyncio",
+]
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -s"
+log_cli = true
+testpaths = [ "test" ]
+
+[tool.coverage.run]
+branch = true
+command_line = "pytest"
+include = [ "src/emmi_escpi/" ]
+source_pkgs = [ "emmi_escpi" ]
+omit = [ "./test/*" ]
+
+[tool.setuptools_scm]
+write_to = "src/emmi_escpi/_version.py"
+
+[project.scripts]
+escpi-ioc = "emmi_escpi.main:main"
