@@ -1,0 +1,3 @@
+[console_scripts]
+post-install=youht_test:init
+
