@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: geotz
+Version: 0.0.1a0
+Summary: Simple library for offline lookup of the timezone for a location.
+License: ## License for included geographic data
+        
+        The geographic data provided with this package is derived from GeoNames
+        (www.geonames.org), which is licensed under the Creative Commons Attribution
+        4.0 International License (CC BY 4.0).
+        
+        A summary of this license and the full license text are available at
+        https://creativecommons.org/licenses/by/4.0/.
+        
+        Further redistribution of the geographic data bundled with this package must
+        provide attribution to GeoNames. Redistribution includes any form of sharing
+        the data with third parties in original or modified form, including publishing,
+        distributing, or embedding it within other software. A simple link to
+        www.geonames.org is considered sufficient attribution under the terms of the
+        license.
+        
+        Simply using this library to infer timezones does not produce outputs that
+        directly copy or modify the original licensed geographic data. Thus, using
+        the library to infer timezones should not constitute a derivative work
+        that requires direct attribution under the terms of the license.
+        
+        ## Main license
+        
+        MIT License
+        
+        Copyright (c) 2024 Daniel Mayo
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Source, https://github.com/dmayo3/geotz
+Project-URL: Docs, http://geotz.readthedocs.io/
+Keywords: geo,timezones,tz
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: tzfpy ~=0.15
+Provides-Extra: docs
+Requires-Dist: sphinx-rtd-theme >=1.2.0 ; extra == 'docs'
+Provides-Extra: pytz
+Requires-Dist: tzfpy[pytz] ~=0.15 ; extra == 'pytz'
+
+GeoTZ v0.0.1-alpha
+------------------
+
+Docs: https://geotz.readthedocs.io/
+
+This is a small library for looking up the timezone for a given country code
+and postal code / postal code prefix.
+
+Compared to alternatives like `geopy` or `pgeocode`, it's intended to be
+easier to use, less feature rich, and more lightweight.
+
+It uses offline data from www.geonames.org to find the approximate location
+and then uses another library to convert that into a timezone.
+
+Please read the LICENSE file for important information about using this
+library and the data contained within.
+
+Motivation
+----------
+
+1. Easy to use. No API key or external API service required.
+
+2. Fast offline lookup.
+
+3. No downloads required; the necessary data comes bundled with the package.
+
+4. No network requests.
+
+5. I tried to keep the extra dependencies to a minimum.
+
+6. Data is loaded from disk on demand, so as to not use unnecessary memory.

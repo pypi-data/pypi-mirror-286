@@ -1,0 +1,10 @@
+geotz/__init__.py,sha256=fhoMYpC_17EiB1AdtFpCvKI_ZJX9x-tSX7pDJPC9lz8,3336
+geotz/geolookup.py,sha256=10es0Wj1wWXtCVgaW9OSUdvnIJ9zgHJgAJ38p8cBmbY,4275
+geotz/tzlookup.py,sha256=8o9ZC8CMz01zxZqz3FKJ94-j-MtrsZSG9j4FmKT6GYc,3146
+geotz/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geotz/data/geonames_all_countries_sorted.tsv,sha256=kXCscHU7sj4QOhm5jS3FW8b4jvnm2I2bm1DrBpUR9eI,134
+geotz-0.0.1a0.dist-info/LICENSE,sha256=BeKQc_aYvOBgDCsBrEind2FZrm99Osb6wjRl2VlyvwQ,2109
+geotz-0.0.1a0.dist-info/METADATA,sha256=OHY2_3rBFj9E3Nhy3yY1lHDIn0u2zMXcNIjSd96UV3g,4771
+geotz-0.0.1a0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+geotz-0.0.1a0.dist-info/top_level.txt,sha256=UhagoBAOGS66ixMxZQwfQc25cgYBgAl7bdyPVvOUpkU,6
+geotz-0.0.1a0.dist-info/RECORD,,
