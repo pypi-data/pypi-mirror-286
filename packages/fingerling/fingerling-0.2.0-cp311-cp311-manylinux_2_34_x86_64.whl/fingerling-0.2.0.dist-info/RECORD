@@ -1,0 +1,7 @@
+fingerling-0.2.0.dist-info/METADATA,sha256=lKtFGz8ysDuwRDaLzj-U5qA0GQmxbldDqvjqYYraFss,2832
+fingerling-0.2.0.dist-info/WHEEL,sha256=cv8X4Xq5etCV12Mm-jmFoHB15bq-xb5lkKgPV9ZnFKM,108
+fingerling-0.2.0.dist-info/license_files/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fingerling/__main__.py,sha256=tohT0yUEv98H4kJbDwqV-T--u2xtmIIfcn9hTgOJBJw,5150
+fingerling/__init__.py,sha256=QNSbqL08sjxTIi4zp7H3lSse2GAsi7zrVKG6aJpoCUI,360
+fingerling/fingerling.cpython-311-x86_64-linux-gnu.so,sha256=BUfz6MYXUAPeXL7CtUZwhA6mrp9lwndHFPftVf586oQ,626168
+fingerling-0.2.0.dist-info/RECORD,,
