@@ -1,0 +1,3 @@
+[console_scripts]
+grappa_export = grappa.training.export_model:grappa_export
+grappa_gmx = grappa.wrappers.gromacs_wrapper:main
