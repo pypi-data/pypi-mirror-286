@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: text-categorization
+Version: 0.1.0.dev3
+Author: Google Inc. (gTech gPS CSE team)
+Author-email: no-reply@google.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
