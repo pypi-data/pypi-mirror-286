@@ -1,0 +1,16 @@
+indipyclient/__init__.py,sha256=Wvove4vasmulE1VGmXTcqCbGpxdTJsE2KBQTQtX_f6c,332
+indipyclient/__main__.py,sha256=1ANPylJGztbglKMnFGZG8DAuheYvaejJIMRAFpUExUQ,4223
+indipyclient/events.py,sha256=SlfrOncobNth2R6R_sFdb675EjkTEuVWb8uR8iTu_Bg,27266
+indipyclient/ipyclient.py,sha256=T1g407OcHl7NWVqBi4GESLJbrPJYQSL_06DOFvsu2uI,37044
+indipyclient/propertymembers.py,sha256=7OagghMNsXpVjG5XlmKMZL6y0no8hnkwOpSv5jzWtRM,17289
+indipyclient/propertyvectors.py,sha256=TotjhFW5Uc_1h6ZDR34Ezj1acrvKpgxRjlOGsbfa2vQ,29282
+indipyclient/console/__init__.py,sha256=xXF-XU2HVeRS4bHvTzrgiPb0XEyLkX0Lg5j4mA_qseg,41
+indipyclient/console/consoleclient.py,sha256=JXDok0BXJ8KXPMcLVOtBs-XBjy0OT5-OpIbbm3AGtaY,19979
+indipyclient/console/vectorscreen.py,sha256=aoIcqYdWxVE1QZWeqNr_8zaybShorffUB6yzchTAikw,48586
+indipyclient/console/widgets.py,sha256=Ih78RYbpNMcPzrUNkLFReHRjs_lNiXiXs7S20KPBV-o,50178
+indipyclient/console/windows.py,sha256=jZnuzlOx1M2NMxVgspgPWwRmaTsuQ5Rq-6-rApWKDUo,96265
+indipyclient-0.3.3.dist-info/entry_points.txt,sha256=KUsuQcGyJWWdjcVaBxGJMOsvkRICsZ6RiOR5bZLxMgw,59
+indipyclient-0.3.3.dist-info/LICENSE,sha256=Ewre6DzPIFbp0guwsGTiBHwr1lGZnCQANOcfZ7CHDA0,1078
+indipyclient-0.3.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+indipyclient-0.3.3.dist-info/METADATA,sha256=-eFtkjQgUPg0Y6sOIQ65tA2ITZ27tSr3XVzpmuXHAs0,3706
+indipyclient-0.3.3.dist-info/RECORD,,
