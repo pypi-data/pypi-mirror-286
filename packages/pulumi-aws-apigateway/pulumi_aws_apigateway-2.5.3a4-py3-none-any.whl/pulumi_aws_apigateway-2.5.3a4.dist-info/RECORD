@@ -1,0 +1,12 @@
+pulumi_aws_apigateway/__init__.py,sha256=RoNAMO6Va0tdiVpaxvabQ6QS0rOoyfdaVzpOkhAQwgw,718
+pulumi_aws_apigateway/_enums.py,sha256=GY4S2fT72PJRKnJVxT6iWOXIvcAfj1LDSmDeQ3Q7jEI,1129
+pulumi_aws_apigateway/_inputs.py,sha256=N5eLpZlVFslYUIVoBBAYTnsF_JfPvIYAKWyfFTzMWWc,38050
+pulumi_aws_apigateway/_utilities.py,sha256=TZWmMJOOzIbeJ63eFk5Tkx9TRUBUL4deSG05KQZyUug,10488
+pulumi_aws_apigateway/provider.py,sha256=vQPj8rTFa7_yf5nIXMczlMfpwtkd8mHA-4bBhXazAnU,2756
+pulumi_aws_apigateway/pulumi-plugin.json,sha256=uAtsKaGaAzrPzKWZIaNKHGZQUP8lTUIKS-t0wYebAdc,81
+pulumi_aws_apigateway/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulumi_aws_apigateway/rest_api.py,sha256=4PvJ7h4FsT671kkLJWfyoXotvqhQpyReviPPtn9O35o,21485
+pulumi_aws_apigateway-2.5.3a4.dist-info/METADATA,sha256=KpLAeMZSoyUkvddvRAJYlh2S5oSolObyMyK0O9tCRt0,2935
+pulumi_aws_apigateway-2.5.3a4.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+pulumi_aws_apigateway-2.5.3a4.dist-info/top_level.txt,sha256=YY2wCK-Qy789n9y-8rwjASV5533Pg_6X5fH0hoDSif4,22
+pulumi_aws_apigateway-2.5.3a4.dist-info/RECORD,,
