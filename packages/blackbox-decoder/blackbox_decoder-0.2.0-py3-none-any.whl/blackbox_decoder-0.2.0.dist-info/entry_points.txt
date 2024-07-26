@@ -1,0 +1,3 @@
+[console_scripts]
+blackbox-decoder=blackbox_decoder.app:main
+
