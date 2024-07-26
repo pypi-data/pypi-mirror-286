@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+encryptedcode/encrypted_code.py
+encryptedcode.egg-info/PKG-INFO
+encryptedcode.egg-info/SOURCES.txt
+encryptedcode.egg-info/dependency_links.txt
+encryptedcode.egg-info/requires.txt
+encryptedcode.egg-info/top_level.txt
