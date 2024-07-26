@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: acuimax
+Version: 0.1.3
+Summary: CAPACIDAD DE CARGA MÁXIMA Y TIEMPO DE AGOTAMIENTO ENTRE DOS ACUÍFEROS.
+Home-page: https://github.com/JonathanTapia-1/AcuiMax.git
+Author: Ajila Nagua Ana Isabel, Ordoñez Salinas Xavi Alexander, Jonathan Tapia Cuenca, Taipe Jaramillo Josselyn Estefania
+Author-email: xavial152001@gmail.com, aiajila@utpl.edu.ec, jetaipe@utpl.edu.ec, jatapia14@utpl.edu.ec 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AcuiMax
+
+# Importar las funciones del archivo `funciones_acuiferos.py`
+```python
+from AcuiMax import calcular_capacidad_carga, calcular_tiempo_agotamiento
+
+# Datos del acuÃ­fero A (ejemplo)
+T_A = 2000   # Transmisividad del acuÃ­fero A [m^2/dÃ­a]
+R_A = 0.5    # Recarga anual del acuÃ­fero A [m/dÃ­a]
+alpha_A = 0.9  # Factor de seguridad para el acuÃ­fero A
+V_A = 1000000  # Volumen total del acuÃ­fero A [mÂ³]
+
+# Datos del acuÃ­fero B (ejemplo)
+T_B = 5000   # Transmisividad del acuÃ­fero B [m^2/dÃ­a]
+R_B = 0.8    # Recarga anual del acuÃ­fero B [m/dÃ­a]
+alpha_B = 0.95  # Factor de seguridad para el acuÃ­fero B
+V_B = 2000000  # Volumen total del acuÃ­fero B [mÂ³]
+
+# Calcular la capacidad de carga y el tiempo de agotamiento para el acuÃ­fero A
+Q_max_A = calcular_capacidad_carga(T_A, R_A, alpha_A)
+t_agot_A = calcular_tiempo_agotamiento(V_A, Q_max_A)
+
+# Calcular la capacidad de carga y el tiempo de agotamiento para el acuÃ­fero B
+Q_max_B = calcular_capacidad_carga(T_B, R_B, alpha_B)
+t_agot_B = calcular_tiempo_agotamiento(V_B, Q_max_B)
+
+# ImpresiÃ³n de los resultados
+print("Los resultados son:")
+print(f"AcuÃ­fero A: Capacidad de carga mÃ¡xima = {Q_max_A:.2f} mÂ³/dÃ­a, Tiempo de agotamiento = {t_agot_A:.2f} dÃ­as")
+print(f"AcuÃ­fero B: Capacidad de carga mÃ¡xima = {Q_max_B:.2f} mÂ³/dÃ­a, Tiempo de agotamiento = {t_agot_B:.2f} dÃ­as")
+
+
+

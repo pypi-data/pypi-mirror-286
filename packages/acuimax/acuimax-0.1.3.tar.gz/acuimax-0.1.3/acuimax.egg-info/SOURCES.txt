@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+acuimax/AcuiMax.py
+acuimax/__init__.py
+acuimax.egg-info/PKG-INFO
+acuimax.egg-info/SOURCES.txt
+acuimax.egg-info/dependency_links.txt
+acuimax.egg-info/requires.txt
+acuimax.egg-info/top_level.txt
