@@ -1,0 +1,83 @@
+[build-system]
+requires = [
+  "cython>=3.0.0",
+  "extension-helpers",
+  "numpy>=2.0.0",
+  "setuptools_scm>=7.0",
+  "setuptools>=69",
+  "wheel",
+]
+build-backend = 'setuptools.build_meta'
+
+[tool.cibuildwheel]
+manylinux-x86_64-image = "manylinux_2_28"
+
+[tool.cibuildwheel.linux]
+before-all = "yum -y install fftw-devel; git clean -xfd -e dist"
+
+[tool.cibuildwheel.macos]
+before-all = "brew install fftw; git clean -xfd -e dist"
+environment = {MACOSX_DEPLOYMENT_TARGET=12.0}
+
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | docs
+    | .history
+  )/
+)
+'''
+
+[tool.towncrier]
+    package = "pyflct"
+    filename = "CHANGELOG.rst"
+    directory = "changelog/"
+    issue_format = "`#{issue} <https://github.com/sunpy/pyflct/pull/{issue}>`__"
+    title_format = "{version} ({project_date})"
+
+    [[tool.towncrier.type]]
+        directory = "breaking"
+        name = "Backwards Incompatible Changes"
+        showcontent = true
+
+    [[tool.towncrier.type]]
+        directory = "api"
+        name = "API Changes"
+        showcontent = true
+
+    [[tool.towncrier.type]]
+      directory = "removal"
+      name = "Deprecations and Removals"
+      showcontent = true
+
+    [[tool.towncrier.type]]
+      directory = "feature"
+      name = "Features"
+      showcontent = true
+
+    [[tool.towncrier.type]]
+      directory = "bugfix"
+      name = "Bug Fixes"
+      showcontent = true
+
+    [[tool.towncrier.type]]
+      directory = "doc"
+      name = "Improved Documentation"
+      showcontent = true
+
+    [[tool.towncrier.type]]
+      directory = "trivial"
+      name = "Trivial/Internal Changes"
+      showcontent = true
