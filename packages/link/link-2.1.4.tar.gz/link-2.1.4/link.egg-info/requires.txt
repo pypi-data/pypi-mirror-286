@@ -1,0 +1,7 @@
+requests>=2.0.0
+requests_oauthlib>=0.4.0
+xmltodict
+six
+
+[pandas]
+pandas>=1.0.0
