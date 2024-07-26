@@ -1,0 +1,3 @@
+[console_scripts]
+gitfix=python_gitfix.main:main
+
