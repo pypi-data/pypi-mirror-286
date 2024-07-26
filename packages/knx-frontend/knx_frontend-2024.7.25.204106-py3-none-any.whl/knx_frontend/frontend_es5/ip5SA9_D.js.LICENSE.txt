@@ -1,0 +1,13 @@
+/*! js-yaml 4.1.0 https://github.com/nodeca/js-yaml @license MIT */
+
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/**
+ * @license
+ * Copyright 2023 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */
