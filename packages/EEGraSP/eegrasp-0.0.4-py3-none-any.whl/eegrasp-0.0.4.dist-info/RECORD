@@ -1,0 +1,10 @@
+eegrasp/__init__.py,sha256=miFJfj414PB7NFADREkJxr2-L0CBd192lgedtp9ah3M,257
+eegrasp/eegrasp.py,sha256=jKIdP2l8UlMgW20zECnnWYCm5k__sT2T_MccdAqxB0g,16113
+eegrasp/tests/compare_distance_method.py,sha256=TqhgMLGx9NlIY6v-h_zmCoXqxk3CdnNaC8oiIbapfEU,1860
+eegrasp/tests/compare_with_pygsp.py,sha256=eOYj1GF1ZLr0tBbRyG9KpUIzbkCfgmhIfMiluOq2oR8,3846
+eegrasp/tests/df_100.pkl,sha256=TH7YUgDOubv99ba3AUTkHKh1v8UEt3gKLFkvl-R0kUk,2056
+eegrasp/tests/df_pos.pkl,sha256=xlV-DcCIz7pv1i-Mi6CGuyR9CG6TvrVXCHvzpK4TVOs,2500
+eegrasp-0.0.4.dist-info/METADATA,sha256=u7r3iMrp-mf6QMrl4kJWHACFfywxgfuc-wz4FoA6CPM,4628
+eegrasp-0.0.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+eegrasp-0.0.4.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+eegrasp-0.0.4.dist-info/RECORD,,
