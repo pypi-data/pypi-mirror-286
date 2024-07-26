@@ -1,0 +1,13 @@
+numpy<2.0
+polars
+pandas
+tables
+tqdm
+
+[ci]
+pytest
+
+[dev]
+pytest
+ruff
+pre-commit
