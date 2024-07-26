@@ -1,0 +1,4 @@
+'one' - 'digit'
+'ten' - 'digit'
+'cat' - 'pet'
+'dog' - 'pet'
