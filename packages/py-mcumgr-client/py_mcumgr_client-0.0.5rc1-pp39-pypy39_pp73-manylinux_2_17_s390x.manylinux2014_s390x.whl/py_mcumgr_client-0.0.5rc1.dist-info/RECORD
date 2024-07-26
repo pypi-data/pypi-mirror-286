@@ -1,0 +1,5 @@
+py_mcumgr_client-0.0.5rc1.dist-info/METADATA,sha256=VvsyXEQCf04blSOSPQlwzQWAss1QY3x7TArjuOt9-dY,1027
+py_mcumgr_client-0.0.5rc1.dist-info/WHEEL,sha256=8ImhR1AmFxEp5dPxMBzbtVWQhahxaEGHrm7aFDXTEWw,132
+py_mcumgr_client/__init__.py,sha256=RyKdZ0-qb3ZbPB_dxw2Fsb7pscvSnqAlsI62Y3AN6Y4,147
+py_mcumgr_client/py_mcumgr_client.pypy39-pp73-s390x-linux-gnu.so,sha256=vXmHou9ef-rMBRg_T6XryeCYglML5D0fuWHcvwiojf8,1377936
+py_mcumgr_client-0.0.5rc1.dist-info/RECORD,,
