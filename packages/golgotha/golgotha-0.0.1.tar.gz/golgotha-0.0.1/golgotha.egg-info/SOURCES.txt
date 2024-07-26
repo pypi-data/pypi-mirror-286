@@ -1,0 +1,7 @@
+golgotha.py
+license.txt
+pyproject.toml
+golgotha.egg-info/PKG-INFO
+golgotha.egg-info/SOURCES.txt
+golgotha.egg-info/dependency_links.txt
+golgotha.egg-info/top_level.txt
