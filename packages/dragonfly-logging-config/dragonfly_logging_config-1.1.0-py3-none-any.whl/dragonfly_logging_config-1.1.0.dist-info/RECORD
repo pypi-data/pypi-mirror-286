@@ -1,0 +1,8 @@
+tests.py,sha256=M70-jE8zgPBRshg5w_gF-4sSM7LUnPJo4FOh7RQE7cs,2668
+logging_config/__init__.py,sha256=F3QQWZGWCFbtO36YKZ6AbYNFxOhMHbutJrgnwoli9IU,2320
+logging_config/middleware.py,sha256=8mzNvK3MSHQDrYhF7VZG-TU5a9EGDCDthuDSvTiCooU,2193
+dragonfly_logging_config-1.1.0.dist-info/LICENSE,sha256=kq2ZWF81HHsTwpW2OtXI0FhrwkUoHraJwyc4c1sEYiA,1071
+dragonfly_logging_config-1.1.0.dist-info/METADATA,sha256=FGhEVGzpmG8x8gpSgu4LJqfeugO2FlTD48gW7clW6nA,463
+dragonfly_logging_config-1.1.0.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+dragonfly_logging_config-1.1.0.dist-info/top_level.txt,sha256=wfnMKWFy0Mazg88q_GsgHWPpxJB7caRwJq9PR4TA5Qg,21
+dragonfly_logging_config-1.1.0.dist-info/RECORD,,
