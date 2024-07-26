@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: stacksim
+Version: 0.0.1
+Summary: Stack Visualization Tool
+Requires-Dist: prompt_toolkit
+Requires-Dist: Sphinx
+Requires-Dist: jinja2
+Requires-Dist: rich
+Requires-Dist: termcolor

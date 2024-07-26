@@ -1,0 +1,2 @@
+[spinx.extension]
+stack = stacksim.StackDirective
