@@ -1,0 +1,26 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "py-mcumgr-client"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+# This is edited by the CI when a tag is pushed
+version = "0.0.5rc1"
+description = "Python bindings for the rust library mcumgr-client"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+  { name="Adrien Bruant" },
+]
+
+[project.urls]
+Repository = "https://github.com/comap-smart-home/py-mcumgr-client"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

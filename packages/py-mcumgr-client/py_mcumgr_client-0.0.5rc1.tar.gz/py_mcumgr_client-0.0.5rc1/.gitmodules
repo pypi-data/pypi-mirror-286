@@ -1,0 +1,4 @@
+[submodule "mcumgr-client"]
+	path = mcumgr-client
+	url = https://github.com/vouch-opensource/mcumgr-client
+	branch = main
