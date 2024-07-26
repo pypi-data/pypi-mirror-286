@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gjdatactest
+Version: 0.0.1
+Summary: 测试包1
+Home-page: UNKNOWN
+Author: yin
+Author-email: 2018209921@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+
+此包是测试包
+巴拉巴拉
+
