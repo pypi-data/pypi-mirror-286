@@ -1,0 +1,3 @@
+[console_scripts]
+rocmgid = rocmgid.cli:main
+
