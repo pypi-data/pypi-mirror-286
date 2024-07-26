@@ -1,0 +1,21 @@
+[run]
+# List of package names.
+source_pkgs = incremental
+# List of directory names.
+source = tests
+branch = True
+parallel = True
+# This must be an absolute path because the example tests
+# run Python processes with alternative working directories.
+data_file = ${TOX_INI_DIR-.}/.coverage
+
+[paths]
+source =
+   src/
+   .tox/*/lib/python*/site-packages/
+   .tox/pypy*/site-packages/
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if TYPE_CHECKING:
