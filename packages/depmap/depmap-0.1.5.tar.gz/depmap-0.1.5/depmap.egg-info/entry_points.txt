@@ -1,0 +1,2 @@
+[console_scripts]
+depmap = cli.cli:main
