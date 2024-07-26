@@ -1,0 +1,13 @@
+txtfrompdf/__init__.py,sha256=V0f_a5PvxRappmtgOZAwh-xGlxdz-g6hK8T8kSOaMRs,255
+txtfrompdf/__main__.py,sha256=vj-pStQf7q318NNuL5BaQ6WIpl8GaDbUSHgvUcpGnbc,2565
+txtfrompdf/_pdfminer.py,sha256=4IbLk2-5bk5rdNpzcA_BvKyZEMJdtFH_c31nndzGVOg,3313
+txtfrompdf/extract.py,sha256=a7s25vtwa8lD1Vdr9Bnrwls1OKGwWfZXpzAmkHNpeI4,6482
+txtfrompdf/filter.py,sha256=cYVTBVvTJhte9Ol0wrhoV3RYUUozBeUuhRqS7q27Qa8,6575
+txtfrompdf/fix_unicode.py,sha256=1uC-PnGlWYCPSo1cWxqAN4GwgaE7P-Z20RDrsysX9PQ,5983
+txtfrompdf/utils.py,sha256=eFujrpV3QcIehxYaoXvZK9vhSDJ3ULiRLo96XY1LTUw,511
+txt_from_pdf-1.2.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+txt_from_pdf-1.2.2.dist-info/METADATA,sha256=9ayuvoHkv6f5r_ct06281I56oFOITFk396lfJyzs718,2665
+txt_from_pdf-1.2.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+txt_from_pdf-1.2.2.dist-info/entry_points.txt,sha256=a7aOnI8jMMOsF2oSN6siyraFCRM1PdkVqZ7s5JSFu4A,62
+txt_from_pdf-1.2.2.dist-info/top_level.txt,sha256=7TzSdSND0Prlyy1QosCj2GcA6ydik6mO5Ob3V8_K2nw,11
+txt_from_pdf-1.2.2.dist-info/RECORD,,
