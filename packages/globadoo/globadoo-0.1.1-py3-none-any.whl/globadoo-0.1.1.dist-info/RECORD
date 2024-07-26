@@ -1,0 +1,10 @@
+globadoo/chat.py,sha256=bEQr3cxBZ3xAz92IiVaf_ofeaAi2Fl6PXOtm0_-n-cc,578
+globadoo/client.py,sha256=fXXzupBb-0ctzQCJrJA5XE1nHyatwbLaehZKcJW8-A4,341
+globadoo/find_country.py,sha256=S-k_9Zd9_knByTVkIr1FfaCKpQPYxAgtcvkaBDuTHpw,1086
+globadoo/main.py,sha256=qT4h21djglA3Cp5BDZ_UcVD45lMLZubfS4uVD6OzYKw,284
+globadoo/models.py,sha256=fSeWkymG9abjHcR9xFBQO_axNSn2qK_WdMvkqseKqoo,410
+globadoo/prompt.py,sha256=0woaLJiP64vA03EImz-ONDATl85qOtObtpc-5xWbDew,571
+globadoo-0.1.1.dist-info/entry_points.txt,sha256=xeaQq03G_ePA-PnKxHwSfitydi6PqhQG2Nco1OmZ4tc,47
+globadoo-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+globadoo-0.1.1.dist-info/METADATA,sha256=yP8EgFI_fAFQXqnNb6_5aC-EEa4QpOEZnc5W9sKKBjo,1706
+globadoo-0.1.1.dist-info/RECORD,,

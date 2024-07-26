@@ -1,0 +1,3 @@
+[console_scripts]
+globadoo=globadoo.main:main
+
