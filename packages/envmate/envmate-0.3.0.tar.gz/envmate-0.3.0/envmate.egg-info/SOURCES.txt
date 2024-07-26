@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+envmate/__init__.py
+envmate/main.py
+envmate.egg-info/PKG-INFO
+envmate.egg-info/SOURCES.txt
+envmate.egg-info/dependency_links.txt
+envmate.egg-info/entry_points.txt
+envmate.egg-info/requires.txt
+envmate.egg-info/top_level.txt
