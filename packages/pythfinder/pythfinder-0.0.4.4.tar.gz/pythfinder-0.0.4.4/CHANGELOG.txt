@@ -1,0 +1,101 @@
+Change Log
+==========
+
+
+0.0.1 (30/03/2024)
+------------------
+- First 'official' release of the EV3 enhanced hardware code (current 'pythfinder-quick-start').
+- It includes: 
+    * on-brick button managing;
+    * a robot run handler;
+    * led control;
+    * robot localisation;
+    * pure feedback-approach for pathing;
+    * PID controller;
+    * edge detector;
+
+NOTE: This release is not part of the library, it's external code for EV3 robots,
+      for it's usage it needs to be copied in the robot code folder
+
+
+0.0.2 (UNRELEASED)
+------------------
+- Creating a separate simulator project, used for visualising robot's motion.
+- Downsides:
+    * limited use, can't directly influence robot's real life motion;
+    * needs the the same code from the robot's project to be translated 
+      (micropython to python and vice versa);
+    * very limited user-friendly interface interraction;
+    * hardcoded > abstraction;
+
+
+0.0.3.17 (17.05.2024)
+---------------------
+- First easy-use version out of all.
+- Small unusable versions were needed for packaging all the data right.
+- Improvements:
+    * adding feedforward approach through complex trajectory building techniques,
+      with velocity-constrained motion profiles, assuring continuity, for more 
+      precise applications;
+    * markers, interrupters and volatile constraints, which are more or less
+      modifiers for the trajectory's behaviour. Markers enable you to perform
+      multithreading-related tasks inside the trajectory;
+    * in-game menu for easier manipulation of constants (NOT FULLY IMPLEMENTED)
+    * migrating to more complex abstraction for elements such as the menu or the
+      actual robot 
+    * PS4 and PS5 controllers are now supported, but not any Nintendo device
+    * visualisaltion of the velocity and acceleration profiles using matlib
+
+
+0.0.3.19 (17.05.2024)
+---------------------
+- you can take screenshots now! (press on the left joystick button and find them
+  in the 'Screenshots' folder where the library is installed)
+- easter egg?
+- fixed more visual bugs 
+- fixed 0.0.3.18 (buttons weren't accessible)
+
+0.0.3.21 (23.05.2024)
+---------------------
+- fixed typos
+- updated README.md 
+- fixed little errors
+
+0.0.4.0 (01.07.2024)
+---------------------
+- added more kinematics (Tank, H-Drive, Mecanum, Kiwi, X-Drive, Swerve)
+- added the option to change the turning center of the robot
+- now you can move the robot on the field with the mouse
+- customizable velocity graph
+- now the trail does resize with the window
+- compleate rework of the trajectory system
+- added presets (default presets include FTC and FLL fields), customizable by the user
+- fixed display bugs in the menu
+- now the simulation window is resizable
+
+0.0.4.1 (04.07.2024)
+---------------------
+- fixed trajectory generation bugs
+
+0.0.4.2 (07.07.2024)
+---------------------
+- now you need to click ON the robot to move it with the mouse
+- acceleration graph ends correctly on the X axis
+- no more acceleration spikes when interrupting a motion segment
+  (they are supposed to but it limits the user view of the graph)
+- changed FLL robot rotation center to match our robot exactly
+- trail doesn't freeze anymore when changing presets
+- coordinates resize acording to the screen 
+- now the autonomus mode applies correctly
+
+0.0.4.3 (08.07.2024)
+---------------------
+- robot image path "\" inversed in settings menu for 'ftc_robot.png'
+- cursor coordinates are back under the robot image
+- simulator doesn't crash anymore when disconnecting a controller while menu is opened
+
+0.0.4.4 (25.07.2024)
+---------------------
+- you can't move the robot with the cursor when setting menu is enabled or in auto anymore
+- holonomic drivetrains don't move tiny amounts anymore when the joystick is resting
+- added documentation and merch files
