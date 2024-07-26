@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+coloredterminal/__init__.py
+coloredterminal/coloredterminal.py
+coloredterminal.egg-info/PKG-INFO
+coloredterminal.egg-info/SOURCES.txt
+coloredterminal.egg-info/dependency_links.txt
+coloredterminal.egg-info/top_level.txt
+coloredterminal/libs/__init__.py
+coloredterminal/libs/argparse.py
+coloredterminal/libs/os.py
