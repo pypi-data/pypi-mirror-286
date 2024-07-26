@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/DouBaoChat/__init__.py
+src/DouBaoChat/bot.py
+src/DouBaoChat/typings.py
+src/DouBaoChat/version.py
+src/DouBaoChat.egg-info/PKG-INFO
+src/DouBaoChat.egg-info/SOURCES.txt
+src/DouBaoChat.egg-info/dependency_links.txt
+src/DouBaoChat.egg-info/requires.txt
+src/DouBaoChat.egg-info/top_level.txt
