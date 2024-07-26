@@ -1,0 +1,17 @@
+happy_rag_friends/__init__.py,sha256=yoq_z-KEBROhVDdom2b6kw0aqie4dmiu3MKntQGKlqw,240
+happy_rag_friends/cli.py,sha256=4LG65UzDR35tYqc0zqwZrfcXth3fEczv8BNLtykuiZ8,371
+happy_rag_friends/first_time_setup.py,sha256=HX8sRO02tgh1ZSzQe2c5mgNz4SH9qqr_ye44_RmgmpI,1397
+happy_rag_friends/routes.py,sha256=hHmPjMNc_tw1bjPMCpzs6EKQgDtlhikR1iRgwzLAbs4,597
+happy_rag_friends/static/styles.css,sha256=LAmWCgbcfqATCyAFj_AgqBLN8uX1GiLymGZ3TLKwdGk,664
+happy_rag_friends/templates/base.html,sha256=yIdr2ntrLZllPFgbk95GQUla2_eOGMkaGlP4TrdWno0,910
+happy_rag_friends/templates/components/navbar.html,sha256=U4t8Q4pP9DsQ5QEE0FUJpmByMDHyqH4yh-HiF1AJqRc,152
+happy_rag_friends/templates/pages/about.html,sha256=T7vvYjq2C2irT0eLSHJ_7ehdvfBv-PWx95v09E8rgRo,222
+happy_rag_friends/templates/pages/advisor-settings.html,sha256=uD23BqkIU1QRdwnkWCUUr3DT5s3WTKEpgVlF_G3-Ung,1124
+happy_rag_friends/templates/pages/ask-a-question.html,sha256=0dRDvnqCWYD_WMrW-iXvSceFteu3ufyZmOYI5gbOTbo,595
+happy_rag_friends/templates/pages/general-settings.html,sha256=LfyLXdLQJBMQxNBZb4VsAlCFBS73Y9JOwQL5-cE2mKc,288
+happy_rag_friends/templates/pages/home.html,sha256=s3NrWMUY4oKmr5CixNRPQUG4ryjDi6tslzAYLo8N-IQ,276
+happy_rag_friends-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+happy_rag_friends-0.1.0.dist-info/METADATA,sha256=QuxJTR9_MxodFJY0OgUajkC74CQCyZ6Fu16e6xhfMWo,670
+happy_rag_friends-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+happy_rag_friends-0.1.0.dist-info/entry_points.txt,sha256=bmycEr0tIvW5rlA3NPtsoy7pN84EvaBS9yTeF9kVny0,64
+happy_rag_friends-0.1.0.dist-info/RECORD,,

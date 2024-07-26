@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Advisor Settings{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+  <label for="select-advisor">Select an Advisor: </label>
+  <select name="select-advisor" id="select-advisor">
+    <option value="advisor-1">Advisor 1</option>
+    <option value="advisor-2">Advisor 2</option>
+    <option value="create-new-advisor">[+] create new advisor</option>
+  </select>
+  <input type="submit" value="&#128465;">
+  <br><br>
+  <p style="display:inline">Advisor Name:&emsp;</p>
+  <input type="text" id="advisor-name" name="advisor-name" value="Joe">
+  <br><br>
+  <p style="display:inline">Advisor Personality: Joe is &emsp;</p>
+  <input type="text" id="advisor-personality" name="advisor-personality" value="an expert in business, and a seasoned business decision-maker.">
+  <br><br>
+  <p style="display:inline">Path to model file (GGUF): &emsp;</p>
+  <input type="file" id="model-path" name="model-path" accept=".gguf" />
+  <br><br>
+  <input type="submit" value="Apply Changes">
+  <input type="submit" value="Discard Changes">
+{% endblock content %}

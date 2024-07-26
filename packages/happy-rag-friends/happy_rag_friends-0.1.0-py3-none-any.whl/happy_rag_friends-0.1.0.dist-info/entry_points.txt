@@ -1,0 +1,3 @@
+[console_scripts]
+happy-rag-friends=happy_rag_friends.cli:main
+
