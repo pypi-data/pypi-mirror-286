@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: zyx
+Version: 0.1.92
+Summary: A fun ai toolkit of other people's stuff
+Author: Hammad Saeed
+Author-email: hvmmad@gmail.com
+Requires-Python: >=3.9
+Requires-Dist: instructor
+Requires-Dist: cohere
+Requires-Dist: litellm
+Requires-Dist: huggingface-hub
+Requires-Dist: langchain-core
+Requires-Dist: langchain-openai
+Requires-Dist: langchain-anthropic
+Requires-Dist: mem0ai
+Requires-Dist: langgraph
+Requires-Dist: sqlmodel
+Requires-Dist: qdrant-client
+Requires-Dist: fastapi
+Requires-Dist: loguru
+Requires-Dist: rich
+Requires-Dist: tqdm
+Requires-Dist: uvicorn
+
