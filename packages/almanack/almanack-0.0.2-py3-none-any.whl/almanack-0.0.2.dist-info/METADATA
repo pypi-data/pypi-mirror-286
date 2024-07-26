@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: almanack
+Version: 0.0.2
+Summary: An open-source handbook of applied guidance and tools for sustainable software development and maintenance.
+License: BSD-3-Clause
+Author: Software Gardening Community
+Requires-Python: >=3.9,<=3.12
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: gitpython (>=3.1.43,<4.0.0)
+Requires-Dist: pygit2 (>=1.15.1,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Description-Content-Type: text/markdown
+
+# The Software Gardening Almanack
+
+An open-source handbook of applied guidance and tools for sustainable software development and maintenance.
+
+Please see the following links to access published content:
+
+- __Online (HTML)__: https://software-gardening.github.io/almanack/
+- __Offline (PDF)__: [software-gardening-almanack.pdf](https://software-gardening.github.io/almanack/software-gardening-almanack.pdf)
+
+## CONTRIBUTING
+
+Please see our [`CONTRIBUTING.md`](CONTRIBUTING.md) document for more information on how to contribute to this project.
+
