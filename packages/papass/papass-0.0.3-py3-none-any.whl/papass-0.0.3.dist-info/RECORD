@@ -1,0 +1,16 @@
+papass/__init__.py,sha256=O5-IjhpCyFZtAtYteWEdPM50tsJthW1q-HjlsP1LJTw,2515
+papass/__main__.py,sha256=zB4iJEwiwlrgBM_T5SijgwcnjHSa2JTFZefQHLfvzVo,2590
+papass/phrase_generator.py,sha256=3Cyea4Dcd8RyoObpSsdrUgtphGMOn2kU1h90WfsGUx4,3179
+papass/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+papass/utils.py,sha256=6TT1Hza1lIAKe3c5YpdUoitEaullQhu9S7Q2aA6AZnY,680
+papass/wordlist.py,sha256=nD74IZpwoJxcYGoj_EhzHeufFBTHzeSDuOYVaiZkZXo,4423
+papass/random/__init__.py,sha256=GzdZQ41l6Zqd0NWaiNcdUyLgW60f8MwtgNJPeiVtIf8,471
+papass/random/base.py,sha256=3CSfOFQ3DYcAG2wQ2zQMOicNsI3KeimBWf_BmqY3p3E,704
+papass/random/dice.py,sha256=gv19kRmM-ULr9zuAovkO5VJi6FCqpLfHlfPJqoZr1No,4849
+papass/random/registry.py,sha256=xtbALXlf6Rxam7vNVCFHa1ZEkKyLm-L6LeIeriVMWa4,1610
+papass/random/system.py,sha256=FyOMAHg4CeV1TGjHTiLP2lRteTi2irxPp9UHf7HiP68,392
+papass-0.0.3.dist-info/entry_points.txt,sha256=U6KsixgbPzBOahqwy5jM8t2jL7Kw4NXvB1DjjppAWiI,46
+papass-0.0.3.dist-info/LICENSE,sha256=rCoVEKnfBz7ti-Xzg_QIn6whaHMMWBvkRehU_jfHZ-A,1081
+papass-0.0.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+papass-0.0.3.dist-info/METADATA,sha256=0k3VM2V4010DrWqbFPHydtl1vtWL-EWHEE9fQ764QAs,2527
+papass-0.0.3.dist-info/RECORD,,
