@@ -1,0 +1,10 @@
+README.md
+setup.py
+rgbdslam/__init__.py
+rgbdslam/rgbdslam.py
+rgbdslam.egg-info/PKG-INFO
+rgbdslam.egg-info/SOURCES.txt
+rgbdslam.egg-info/dependency_links.txt
+rgbdslam.egg-info/entry_points.txt
+rgbdslam.egg-info/requires.txt
+rgbdslam.egg-info/top_level.txt
