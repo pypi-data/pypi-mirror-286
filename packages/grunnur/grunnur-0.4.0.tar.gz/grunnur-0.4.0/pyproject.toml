@@ -1,0 +1,139 @@
+[project]
+name = "grunnur"
+version = "0.4.0"
+description = "Uniform API for PyOpenCL and PyCUDA."
+authors = [
+    { name = "Bogdan Opanchuk", email = "bogdan@opanchuk.net" },
+]
+dependencies = [
+    "numpy>=2",
+    "mako>=1",
+]
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+
+[project.urls]
+homepage = "https://github.com/fjarri/grunnur"
+
+[project.optional-dependencies]
+pyopencl = [
+    "pyopencl>=2019.1.1",
+]
+pycuda = [
+    "pycuda>=2019.1.1",
+]
+tests = [
+    "pytest>=6",
+    "pytest-cov",
+    "pytest-grunnur>=0.3",
+]
+docs = [
+    "sphinx>=4",
+    "furo",
+    "setuptools-scm>=7",
+]
+lint = [
+    "mypy>=1.4",
+    "ruff>=0.2",
+]
+
+[tool.pdm.build]
+source-includes = [
+    "**/*.pyi",
+    "examples/*.py",
+    "tests/*.py",
+    "docs/*.rst",
+    "docs/*.py",
+    "docs/*.bat",
+    "docs/Makefile",
+    ".coveragerc",
+    "mypy.ini",
+    "pytest.ini",
+]
+
+[tool.setuptools_scm]
+
+[tool.pytest.ini_options]
+addopts = "-p no:pytest_grunnur"
+
+[tool.mypy]
+strict = true
+warn_unreachable = true
+implicit_reexport = true
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "ALL",
+]
+ignore = [
+    "C408",
+    "B008",
+    "B006",
+    "ANN101",
+    "ANN401",
+    "ANN204",
+    "ANN102",
+    "COM812",
+    "EM102",
+    "TRY003",
+    "D212",
+    "D203",
+    "TD002",
+    "EM101",
+    "D205",
+    "D401",
+    "TD003",
+    "FIX002",
+    "N818",
+    "PLR0913",
+    "ISC001",
+    "RUF009",
+    "INP001",
+    "ICN001",
+    "D104",
+    "D100",
+    "F401",
+    "D107",
+    "D105",
+    "D102",
+    "D101",
+    "D103",
+    "D106",
+    "TID252",
+    "S702",
+    "ERA001",
+    "PYI019",
+]
+fixable = [
+    "ALL",
+]
+unfixable = []
+exclude = [
+    ".eggs",
+    ".git",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pypackages__",
+    "build",
+    "dist",
+]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.per-file-ignores]
+
+[tool.ruff.lint.isort]
+known-first-party = [
+    "grunnur",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
