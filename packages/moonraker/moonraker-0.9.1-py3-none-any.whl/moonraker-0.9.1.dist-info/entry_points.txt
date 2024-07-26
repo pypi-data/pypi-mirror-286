@@ -1,0 +1,3 @@
+[console_scripts]
+moonraker = moonraker.server:main
+
