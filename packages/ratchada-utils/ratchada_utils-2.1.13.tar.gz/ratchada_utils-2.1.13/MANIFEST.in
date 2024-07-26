@@ -1,0 +1,8 @@
+include requirements.txt
+include README.md
+include LICENSE
+
+include ratchada_utils/processor/english.json
+
+recursive-include ratchada_utils/processor *.py
+recursive-include ratchada_utils/test *.py
