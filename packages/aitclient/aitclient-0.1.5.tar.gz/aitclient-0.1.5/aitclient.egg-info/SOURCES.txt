@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+aitclient/__init__.py
+aitclient/auth.py
+aitclient/upload.py
+aitclient.egg-info/PKG-INFO
+aitclient.egg-info/SOURCES.txt
+aitclient.egg-info/dependency_links.txt
+aitclient.egg-info/entry_points.txt
+aitclient.egg-info/requires.txt
+aitclient.egg-info/top_level.txt
