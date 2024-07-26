@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: visier.sdk.api.consolidated-analytics
+Version: 0.0.4
+Summary: Visier Consolidated Analytics APIs
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: Apache License, Version 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Visier Consolidated Analytics APIs
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+    Visier APIs for managing consolidated analytics (CA) tenants.
+    
+
